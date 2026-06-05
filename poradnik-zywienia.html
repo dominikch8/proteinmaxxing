@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/theme-init.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/consent-head.js"></script>
+    <title>Poradnik żywienia — składniki, dieta i tipy | ProteinMaxxing.pl</title>
+    <meta name="description" content="Encyklopedia składników odżywczych, zasady zdrowego odżywiania i praktyczne tipy — białko, tłuszcze, węglowodany, mikroelementy i nawyki na co dzień.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://proteinmaxxing.pl/poradnik-zywienia.html">
+    <meta property="og:title" content="Poradnik żywienia | ProteinMaxxing.pl">
+    <meta property="og:description" content="Składniki odżywcze, zdrowe odżywianie i tipy — edukacyjnie, pod kątem liczenia makro.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://proteinmaxxing.pl/poradnik-zywienia.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/theme-switch.css">
+    <link rel="stylesheet" href="css/poradnik.css">
+</head>
+<body class="poradnik-page">
+    <header class="site-header">
+        <nav>
+            <a href="index.html" class="logo">
+                <img class="logo-mark" src="images/favicon.svg" alt="" width="56" height="56" decoding="async">
+                <span>ProteinMaxxing.pl</span>
+            </a>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="index.html">Kalkulator</a></li>
+                <li><a class="nav-link" href="dieta.html">Dieta</a></li>
+                <li><a class="nav-link" href="porownaj-produkty.html">Porównaj produkty</a></li>
+                <li><a class="nav-link" href="dodaj-produkt.html">Dodaj produkty</a></li>
+                <li><a class="nav-link active" href="poradnik-zywienia.html" aria-current="page">Poradnik</a></li>
+                <li><a class="nav-link" href="trening.html">Trening</a></li>
+                <li><a class="nav-link" href="informacje.html">Informacje</a></li>
+                <li><a class="nav-link" href="o-mnie.html">O mnie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-container">
+        <main class="main-content">
+            <div class="page-with-subtabs">
+                <nav class="sub-nav sub-nav--full" aria-label="Sekcje poradnika">
+                    <button class="btn-sub active" type="button" onclick="switchSubTab('poradnik-skladniki', this)">🧬 Składniki</button>
+                    <button class="btn-sub" type="button" onclick="switchSubTab('poradnik-odzywianie', this)">🥗 Odżywianie</button>
+                    <button class="btn-sub" type="button" onclick="switchSubTab('poradnik-tipy', this)">💡 Tipy</button>
+                </nav>
+
+                <div id="poradnik-skladniki" class="sub-tab-content active">
+                    <div class="info-tab">
+                        <div class="page-hero">
+                            <h1>Składniki odżywcze</h1>
+                            <p class="subtitle">Każdy składnik krótko, praktycznie i ciekawie</p>
+                        </div>
+
+                        <div class="poradnik-nutrient-grid" role="navigation" aria-label="Składniki odżywcze">
+                            <a href="skladniki-kalorie.html" class="poradnik-nutrient-tile"><span class="poradnik-nutrient-tile-label">Kalorie</span></a>
+                            <a href="skladniki-bialko.html" class="poradnik-nutrient-tile"><span class="poradnik-nutrient-tile-label">Białko</span></a>
+                            <a href="skladniki-weglowodany.html" class="poradnik-nutrient-tile"><span class="poradnik-nutrient-tile-label">Węglowodany</span></a>
+                            <a href="skladniki-mineraly.html" class="poradnik-nutrient-tile"><span class="poradnik-nutrient-tile-label">Minerały</span></a>
+                            <a href="skladniki-tluszcz.html" class="poradnik-nutrient-tile"><span class="poradnik-nutrient-tile-label">Tłuszcz</span></a>
+                            <a href="skladniki-tluszcze-nasycone.html" class="poradnik-nutrient-tile"><span class="poradnik-nutrient-tile-label">Tłuszcze nasycone</span></a>
+                            <a href="skladniki-tluszcze-nienasycone.html" class="poradnik-nutrient-tile"><span class="poradnik-nutrient-tile-label">Tłuszcze nienasycone</span></a>
+                            <a href="skladniki-blonnik.html" class="poradnik-nutrient-tile"><span class="poradnik-nutrient-tile-label">Błonnik</span></a>
+                            <a href="skladniki-witaminy.html" class="poradnik-nutrient-tile"><span class="poradnik-nutrient-tile-label">Witaminy</span></a>
+                        </div>
+
+                        <div class="info-callout">
+                            <strong>Chcesz liczyć makro pod siebie?</strong> Użyj <a href="index.html">kalkulatora</a>, a potem wybieraj produkty z <a href="dieta.html#produkty">bazy diety</a> lub <a href="porownaj-produkty.html">porównaj dwa produkty</a> obok siebie.
+                        </div>
+                    </div>
+                </div>
+
+                <div id="poradnik-odzywianie" class="sub-tab-content">
+                    <div class="info-tab">
+                        <div class="page-hero">
+                            <h1>Zdrowe odżywianie</h1>
+                            <p class="subtitle">Zasady, które działają długoterminowo — bez skrajności</p>
+                        </div>
+
+                        <div class="info-warning">
+                            Treści mają charakter edukacyjny i nie zastępują porady lekarza ani dietetyka klinicznego. Przy chorobach przewlekłych, ciąży lub zaburzeniach odżywiania skonsultuj plan ze specjalistą.
+                        </div>
+
+                        <h2>1. Bilans energetyczny</h2>
+                        <p>Żeby schudnąć, musisz średnio spożywać <strong>mniej energii niż zużywasz</strong> (deficyt). Żeby przytyć — odwrotnie (nadwyżka). To fizyka, nie magia. Deficyt 300–500 kcal/dzień to często bezpieczny start; agresywne cięcie (1000+ kcal) bywa krótkoterminowe i męczące.</p>
+
+                        <h2>2. Jakość > sama liczba kalorii</h2>
+                        <p>Można schudnąć na pączkach w deficycie — ale trudniej o sytość, mikroelementy i dobre samopoczucie. Sensowna baza to:</p>
+                        <ul>
+                            <li>białko w każdym większym posiłku,</li>
+                            <li>warzywa i owoce (błonnik, witaminy),</li>
+                            <li>pełnowartościowe węglowodany przy aktywności,</li>
+                            <li>zdrowe tłuszcze zamiast wyłącznie przetworzonej żywności.</li>
+                        </ul>
+
+                        <h2>3. Model talerza (prosto)</h2>
+                        <p>Na obiad wizualnie: <strong>½ talerza warzywa</strong>, <strong>¼ białko</strong> (mięso, ryby, tofu, jaja, nabiał), <strong>¼ węglowodany</strong> (ryż, ziemniaki, kasza, makaron). Do tego tłuszcz w rozsądnej ilości (oliwa, orzechy, sos na bazie jogurtu).</p>
+
+                        <h2>4. Białko — priorytet przy treningu</h2>
+                        <p>Po treningu siłowym organizm potrzebuje aminokwasów do naprawy włókien mięśniowych. Rozłożenie białka na <strong>3–5 posiłków</strong> w ciągu dnia działa lepiej niż jedna ogromna porcja wieczorem. Zobacz też <a href="trening.html">zakładkę Trening</a>.</p>
+
+                        <h2>5. Przetworzona żywność</h2>
+                        <p>Gotowce, fast food i słodycze nie są „zakazane”, ale zwykle mają dużo kcal przy małej objętości i słabym profilu odżywczym. Strategia: <strong>80% diety z prostych produktów</strong>, 20% na elastyczność — łatwiej utrzymać rok niż tydzień na „czystej” diecie.</p>
+
+                        <h2>6. Nawodnienie i sen</h2>
+                        <p>Woda wspiera trawienie i wydolność; sen (7–9 h) wpływa na głód, regenerację i wyniki na siłowni. Bez snu nawet idealne makro gorzej „siada”.</p>
+
+                        <div class="info-callout">
+                            <strong>Następny krok:</strong> policz zapotrzebowanie w <a href="index.html">kalkulatorze</a>, ustaw cel (redukcja / utrzymanie / masa) i dobierz produkty z bazy pod swoje makro.
+                        </div>
+                    </div>
+                </div>
+
+                <div id="poradnik-tipy" class="sub-tab-content">
+                    <div class="info-tab">
+                        <div class="page-hero">
+                            <h1>Tipy na co dzień</h1>
+                            <p class="subtitle">Praktyka, która ułatwia trzymanie diety bez obsesji</p>
+                        </div>
+
+                        <ul class="poradnik-tips-list">
+                            <li><strong>Waż i mierz na początku.</strong> Tydzień z wagą kuchenną uczy realnych porcji — potem możesz częściej „na oko”.</li>
+                            <li><strong>Czytaj etykietę na 100 g</strong>, nie tylko „na porcję” — producent często zaniża porcję w opakowaniu.</li>
+                            <li><strong>Planuj białko z wyprzedzeniem</strong> — gotuj kurczaka, jajka lub twaróg na 2–3 dni; mniej impulsywnych zamówień.</li>
+                            <li><strong>Mrożonki warzyw</strong> to pełnowartościowa opcja — szybki obiad, gdy brak czasu.</li>
+                            <li><strong>Nie wykluczaj grup produktów</strong> bez powodu (np. „węgle po 18” dla każdego) — liczy się dzienny bilans i jakość.</li>
+                            <li><strong>Alkohol liczy się do kcal</strong> (7 kcal/g) i obniża jakość regeneracji — uwzględnij go w bilansie, jeśli pijesz.</li>
+                            <li><strong>Sosy i olej dolewaj osobno</strong> — łyżka oliwy to ~90 kcal, łatwo o tym zapomnieć.</li>
+                            <li><strong>Porównuj podobne produkty</strong> w bazie — np. dwa rodzaje sera, jogurtu albo batonów (<a href="porownaj-produkty.html">porównywarka</a>).</li>
+                            <li><strong>Brakuje produktu?</strong> Możesz <a href="dodaj-produkt.html">zgłosić własny</a> — zweryfikuję i dodam do bazy.</li>
+                            <li><strong>Tygodniowy trend &gt; jeden dzień.</strong> Jedna kolacja „poza planem” nie psuje wyników — liczy się średnia z tygodnia.</li>
+                        </ul>
+
+                        <h2>Mity w skrócie</h2>
+                        <ul>
+                            <li><strong>„Od razu po 18 nie jeść”</strong> — dla wielu osób bez znaczenia; ważniejszy całkowity deficyt/nadwyżka.</li>
+                            <li><strong>„Tłuszcz tyczy, węgle nie”</strong> — tyczy nadwyżka kcal, nie jedna grupa makro.</li>
+                            <li><strong>„Detoks sokowy”</strong> — wątroba i nerki radzą sobie same; lepszy regularny jadłospis.</li>
+                            <li><strong>„Im więcej białka, tym lepiej”</strong> — powyżej sensownego progu korzyści rosną wolno; nadmiar to też kcal.</li>
+                        </ul>
+
+                        <h2>Przydatne narzędzia na stronie</h2>
+                        <nav class="poradnik-links" aria-label="Narzędzia ProteinMaxxing">
+                            <a href="index.html">Kalkulator kalorii</a>
+                            <a href="dieta.html#produkty">Baza produktów</a>
+                            <a href="bialko-maxxing.html">Ranking białka</a>
+                            <a href="cena-bialka.html">Cena za 100 g białka</a>
+                            <a href="porownaj-produkty.html">Porównaj produkty</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p class="site-footer-brand"><strong>ProteinMaxxing.pl</strong> — kalkulator dietetyczny i baza produktów</p>
+        <nav class="site-footer-nav" aria-label="Nawigacja w stopce">
+            <a href="informacje.html">Informacje</a>
+            <span aria-hidden="true">·</span>
+            <a href="o-mnie.html">O mnie</a>
+            <span aria-hidden="true">·</span>
+            <a href="dieta.html#produkty">Wszystkie produkty</a>
+            <span aria-hidden="true">·</span>
+            <a href="porownaj-produkty.html">Porównaj produkty</a>
+            <span aria-hidden="true">·</span>
+            <a href="dodaj-produkt.html">Dodaj produkty</a>
+            <span aria-hidden="true">·</span>
+            <a href="poradnik-zywienia.html">Poradnik</a>
+        </nav>
+        <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="js/subtabs.js"></script>
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <script src="js/cookie-banner.js"></script>
+    <link rel="stylesheet" href="css/partner-ads.css">
+    <script src="js/partner-ads.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

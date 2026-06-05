@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/theme-init.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/consent-head.js"></script>
+    <meta name="google-adsense-account" content="ca-pub-8540801395510703">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8540801395510703"
+        crossorigin="anonymous"></script>
+    <title>Kalkulator Dietetyczny & BMI | ProteinMaxxing.pl</title>
+    <meta name="description" content="Kalkulator TDEE, BMI, makro, wody, witamin i minerałów. Oblicz kalorie, białko, tłuszcze i węglowodany pod swój cel: redukcję i odchudzanie lub masę">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://proteinmaxxing.pl/">
+    <meta property="og:title" content="Kalkulator dietetyczny | ProteinMaxxing.pl">
+    <meta property="og:description" content="TDEE, BMI i białko pod cel: redukcja, masa lub utrzymanie wagi">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://proteinmaxxing.pl/">
+    <!-- pm:site-head -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta property="og:image" content="https://proteinmaxxing.pl/images/og-home.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ProteinMaxxing.pl — kalkulator dietetyczny i baza białka">
+    <meta property="og:locale" content="pl_PL">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://proteinmaxxing.pl/images/og-home.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/theme-switch.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <a href="index.html" class="logo">
+                <img class="logo-mark" src="images/favicon.svg" alt="" width="56" height="56" decoding="async">
+                <span>ProteinMaxxing.pl</span>
+            </a>
+            <ul class="nav-links">
+                <li><a class="nav-link active" href="index.html">Kalkulator</a></li>
+                <li><a class="nav-link" href="dieta.html">Dieta</a></li>
+                <li><a class="nav-link" href="porownaj-produkty.html">Porównaj produkty</a></li>
+                <li><a class="nav-link" href="dodaj-produkt.html">Dodaj produkty</a></li>
+                <li><a class="nav-link" href="poradnik-zywienia.html">Poradnik</a></li>
+                <li><a class="nav-link" href="trening.html">Trening</a></li>
+                <li><a class="nav-link" href="informacje.html">Informacje</a></li>
+                <li><a class="nav-link" href="o-mnie.html">O mnie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-container">
+        <main class="main-content">
+<div class="page-hero">
+                    <h1>BMI Kalkulator Dietetyczny</h1>
+                    <p class="subtitle calc-features">
+                        <span>BMI</span><span class="calc-features-sep" aria-hidden="true"></span>
+                        <span>Kalorie</span><span class="calc-features-sep" aria-hidden="true"></span>
+                        <span>Białko</span><span class="calc-features-sep" aria-hidden="true"></span>
+                        <span>Węglowodany</span><span class="calc-features-sep" aria-hidden="true"></span>
+                        <span>Tłuszcze</span><span class="calc-features-sep" aria-hidden="true"></span>
+                        <span>Witaminy</span><span class="calc-features-sep" aria-hidden="true"></span>
+                        <span>Minerały</span>
+                    </p>
+                </div>
+
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label>Płeć</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="gender" value="male" checked> Mężczyzna</label>
+                            <label class="radio-label"><input type="radio" name="gender" value="female"> Kobieta</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="age">Wiek (lata)</label>
+                        <input type="number" id="age" placeholder="np. 25">
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label for="weight">Waga (kg)</label>
+                        <input type="number" id="weight" placeholder="np. 75" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="height">Wzrost (cm)</label>
+                        <input type="number" id="height" placeholder="np. 180">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="activity">Poziom aktywności fizycznej</label>
+                    <select id="activity">
+                        <option value="1.2">Brak aktywności / praca siedząca (1.2)</option>
+                        <option value="1.375">Niska aktywność (trening 1-3 razy w tygodniu) (1.375)</option>
+                        <option value="1.55">Średnia aktywność (trening 3-5 razy w tygodniu) (1.55)</option>
+                        <option value="1.725">Wysoka aktywność (intensywny trening codziennie) (1.725)</option>
+                        <option value="1.9">Ekstremalna aktywność (sportowcy zawodowi) (1.9)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="goal">Twój cel sylwetkowy</label>
+                    <select id="goal">
+                        <option value="maintain">Utrzymanie obecnej wagi</option>
+                        <option value="lose">Odchudzanie (redukcja tkanki tłuszczowej)</option>
+                        <option value="gain">Budowa masy mięśniowej</option>
+                    </select>
+                </div>
+
+                <button class="btn-calc" onclick="calculateEverything()">Oblicz zapotrzebowanie</button>
+
+                <div class="result-box" id="resultBox">
+                    
+                    <div class="section-title">Twój Wskaźnik BMI</div>
+                    <div class="bmi-card">
+                        <div class="bmi-val" id="bmiValue">22.5</div>
+                        <div class="bmi-status" id="bmiStatus">Waga prawidłowa</div>
+                        <div class="bmi-bar"><div class="bmi-pointer" id="bmiPointer"></div></div>
+                    </div>
+
+                    <div class="danger-box" id="bmiDangerBox">
+                        <h4 id="bmiDangerTitle">⚠️ Uwaga! Zagrożenie dla zdrowia</h4>
+                        <p id="bmiDangerText">Treść ostrzeżenia zdrowotnego.</p>
+                    </div>
+
+                    <div class="section-title">Zapotrzebowanie Kaloryczne i Makroskładniki</div>
+                    <div class="macro-grid">
+                        <div class="macro-card kcal-card">
+                            <label>Kalorie (TDEE)</label>
+                            <div class="macro-num" id="calcKcal">0 kcal</div>
+                        </div>
+                        <div class="macro-card">
+                            <label>Białko</label>
+                            <div class="macro-num" id="calcProtein">0g</div>
+                        </div>
+                        <div class="macro-card">
+                            <label>Tłuszcze</label>
+                            <div class="macro-num" id="calcFat">0g</div>
+                        </div>
+                        <div class="macro-card">
+                            <label>Węglowodany</label>
+                            <div class="macro-num" id="calcCarbs">0g</div>
+                        </div>
+                    </div>
+
+                    <div class="section-title">Zapotrzebowanie na płyny</div>
+                    <div class="water-card">
+                        <div>
+                            <div class="water-title">Rekomendowane spożycie wody</div>
+                            <div class="water-text" id="waterNote">Zoptymalizowane pod Twój profil.</div>
+                        </div>
+                        <div class="water-num" id="calcWater">0 Litra</div>
+                    </div>
+
+                    <div class="section-title">Dostosuj swoją dietę do maksimum białka i minimum kalorii</div>
+                    <a href="bialko-maxxing.html" class="calc-protein-maxxing-cta">
+                        <span class="calc-protein-maxxing-cta-emoji" aria-hidden="true">🔥</span>
+                        <span class="calc-protein-maxxing-cta-text">
+                            <strong>Białko maxxing</strong>
+                            <small>Ranking produktów z najlepszym stosunkiem białka do kalorii — sprawdź, co warto jeść przy Twoim celu.</small>
+                        </span>
+                        <span class="calc-protein-maxxing-cta-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                    <div class="section-title">Zapotrzebowanie na Witaminy i Minerały</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Składnik</th>
+                                    <th>Zalecane codzienne spożycie (RDA/AI)</th>
+                                    <th>Główne źródła w diecie</th>
+                                </tr>
+                            </thead>
+                            <tbody id="microTableBody"></tbody>
+                        </table>
+                    </div>
+
+                    <div class="shopping-box">
+                        <h3 id="shopTitle">🛒 Co pomaga w Twoim celu</h3>
+                        <div class="shopping-grid" id="shopGrid"></div>
+                    </div>
+
+                    <div class="tips-box" id="reductionTips">
+                        <h3>Niezbędnik Skutecznego Odchudzania – Jak podkręcić redukcję?</h3>
+                        <ul class="tips-list">
+                            <li><strong>Błonnik (Klucz do sytości):</strong> Wiąże wodę i fizycznie hamuje głód.</li>
+                            <li><strong>Chrom (Stop słodyczom):</strong> Stabilizuje poziom glukozy, zmniejszając chęć na cukier.</li>
+                            <li><strong>Kwasy Omega-3:</strong> Poprawiają wrażliwość leptynową (hormon sytości).</li>
+                        </ul>
+                    </div>
+
+                    <center>
+                        <button class="btn-pdf" onclick="window.print()">📥 Pobierz darmowy raport (PDF)</button>
+                    </center>
+                </div>
+        </main>
+    </div>
+
+            <footer class="site-footer">
+        <p class="site-footer-brand"><strong>ProteinMaxxing.pl</strong> — kalkulator dietetyczny i baza produktów</p>
+        <nav class="site-footer-nav" aria-label="Nawigacja w stopce">
+            <a href="informacje.html">Informacje</a>
+            <span aria-hidden="true">·</span>
+            <a href="o-mnie.html">O mnie</a>
+            <span aria-hidden="true">·</span>
+            <a href="dieta.html#produkty">Wszystkie produkty</a>
+        </nav>
+        <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="js/products-data-raw.js"></script>
+    <script src="js/product-utils.js"></script>
+    <script src="js/products-data.js"></script>
+    <script src="js/calculator.js"></script>
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <script src="js/cookie-banner.js"></script>
+    <link rel="stylesheet" href="css/partner-ads.css">
+    <script src="js/partner-ads.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

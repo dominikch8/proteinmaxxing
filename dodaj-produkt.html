@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/theme-init.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/consent-head.js"></script>
+    <title>Dodaj produkt do bazy | ProteinMaxxing.pl</title>
+    <meta name="description" content="Zgłoś własny produkt spożywczy — makro na 100 g, kategoria i porcja. Po weryfikacji administratora trafi do bazy ProteinMaxxing.pl.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://proteinmaxxing.pl/dodaj-produkt.html">
+    <meta property="og:title" content="Dodaj produkt | ProteinMaxxing.pl">
+    <meta property="og:description" content="Wypełnij skład na 100 g i wyślij produkt do weryfikacji.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://proteinmaxxing.pl/dodaj-produkt.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/theme-switch.css">
+    <link rel="stylesheet" href="css/add-product.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <a href="index.html" class="logo">
+                <img class="logo-mark" src="images/favicon.svg" alt="" width="56" height="56" decoding="async">
+                <span>ProteinMaxxing.pl</span>
+            </a>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="index.html">Kalkulator</a></li>
+                <li><a class="nav-link" href="dieta.html">Dieta</a></li>
+                <li><a class="nav-link" href="porownaj-produkty.html">Porównaj produkty</a></li>
+                <li><a class="nav-link active" href="dodaj-produkt.html" aria-current="page">Dodaj produkty</a></li>
+                <li><a class="nav-link" href="poradnik-zywienia.html">Poradnik</a></li>
+                <li><a class="nav-link" href="trening.html">Trening</a></li>
+                <li><a class="nav-link" href="informacje.html">Informacje</a></li>
+                <li><a class="nav-link" href="o-mnie.html">O mnie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-container">
+        <main class="main-content">
+            <div class="page-hero add-product-hero">
+                <h1>Dodaj produkt</h1>
+                <p class="subtitle">Uzupełnij dane na <strong>100 g</strong> produktu. Po wysłaniu zweryfikuję zgłoszenie i dodam pozycję do bazy, jeśli wszystko się zgadza.</p>
+            </div>
+
+            <div class="add-product-notice" role="status">
+                <p><strong>Jak to działa?</strong> Wypełnij formularz — dostanę zgłoszenie e-mailem. Produkt pojawi się w kalkulatorze i porównywce dopiero po akceptacji.</p>
+            </div>
+
+            <form id="addProductForm" class="add-product-form" novalidate>
+                <fieldset class="add-product-section">
+                    <legend>Podstawowe</legend>
+                    <div class="form-grid">
+                        <div class="input-group add-product-span-2">
+                            <label for="apName">Nazwa produktu <span class="req">*</span></label>
+                            <input type="text" id="apName" name="name" required maxlength="120" autocomplete="off" placeholder="np. Twaróg wiejski light">
+                        </div>
+                        <div class="input-group">
+                            <label for="apCategory">Kategoria <span class="req">*</span></label>
+                            <select id="apCategory" name="category" required></select>
+                        </div>
+                        <div class="input-group">
+                            <label for="apEmoji">Emotka (opcjonalnie)</label>
+                            <input type="text" id="apEmoji" name="emoji" maxlength="8" placeholder="🍽️" inputmode="text">
+                            <span class="field-hint">Jedna emotka obok nazwy w bazie</span>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="add-product-section">
+                    <legend>Makroskładniki na 100 g</legend>
+                    <p class="add-product-section-desc">Wszystkie wartości poniżej dotyczą <strong>100 g</strong> produktu (nie porcji).</p>
+                    <div class="form-grid form-grid--macro">
+                        <div class="input-group">
+                            <label for="apKcal">Kalorie (kcal) <span class="req">*</span></label>
+                            <input type="number" id="apKcal" name="kcal" required min="0" max="9999" step="1" inputmode="numeric">
+                        </div>
+                        <div class="input-group">
+                            <label for="apProtein">Białko (g) <span class="req">*</span></label>
+                            <input type="number" id="apProtein" name="protein" required min="0" max="100" step="0.1" inputmode="decimal">
+                        </div>
+                        <div class="input-group">
+                            <label for="apCarbs">Węglowodany (g) <span class="req">*</span></label>
+                            <input type="number" id="apCarbs" name="carbs" required min="0" max="100" step="0.1" inputmode="decimal">
+                        </div>
+                        <div class="input-group">
+                            <label for="apFat">Tłuszcz (g) <span class="req">*</span></label>
+                            <input type="number" id="apFat" name="fat" required min="0" max="100" step="0.1" inputmode="decimal">
+                        </div>
+                        <div class="input-group">
+                            <label for="apSatFat">Tłuszcze nasycone (g) <span class="req">*</span></label>
+                            <input type="number" id="apSatFat" name="satFat" required min="0" max="100" step="0.1" inputmode="decimal">
+                        </div>
+                        <div class="input-group">
+                            <label for="apUnsatFat">Tłuszcze nienasycone (g) <span class="req">*</span></label>
+                            <input type="number" id="apUnsatFat" name="unsatFat" required min="0" max="100" step="0.1" inputmode="decimal">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="add-product-section">
+                    <legend>Porcja i cena (opcjonalnie)</legend>
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <label for="apServingText">Opis porcji <span class="req">*</span></label>
+                            <input type="text" id="apServingText" name="servingText" required maxlength="80" placeholder="np. sztuka (200 g)">
+                        </div>
+                        <div class="input-group">
+                            <label for="apServingGrams">Gramatura porcji (g) <span class="req">*</span></label>
+                            <input type="number" id="apServingGrams" name="servingGrams" required min="1" max="5000" step="1" inputmode="numeric">
+                        </div>
+                        <div class="input-group">
+                            <label for="apServingPrice">Cena porcji (PLN)</label>
+                            <input type="number" id="apServingPrice" name="servingPricePln" min="0" max="9999" step="0.01" inputmode="decimal" placeholder="opcjonalnie">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="add-product-section">
+                    <legend>Dodatkowe informacje</legend>
+                    <div class="input-group">
+                        <label for="apMicros">Mikroelementy / witaminy</label>
+                        <input type="text" id="apMicros" name="micros" maxlength="200" placeholder="np. Wapń, B12, Żelazo">
+                    </div>
+                    <div class="input-group">
+                        <label for="apExtra">Krótki opis</label>
+                        <textarea id="apExtra" name="extra" rows="3" maxlength="500" placeholder="np. Dobre źródło białka na redukcji."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="apEmail">Twój e-mail (opcjonalnie)</label>
+                        <input type="email" id="apEmail" name="contactEmail" maxlength="120" autocomplete="email" placeholder="gdybym miał dopytać">
+                    </div>
+                </fieldset>
+
+                <div class="add-product-check">
+                    <label class="add-product-check-label">
+                        <input type="checkbox" id="apConfirm" name="confirm" required value="1">
+                        <span>Potwierdzam, że podane makra i tłuszcze dotyczą <strong>100 g</strong> produktu i są możliwie zgodne z etykietą lub wiarygodnym źródłem.</span>
+                    </label>
+                </div>
+
+                <p class="add-product-form-error" id="addProductFormError" hidden role="alert"></p>
+                <p class="add-product-form-success" id="addProductFormSuccess" hidden role="status"></p>
+
+                <div class="add-product-actions">
+                    <button type="submit" class="btn-primary add-product-submit" id="addProductSubmit">Wyślij do weryfikacji</button>
+                    <button type="reset" class="btn-secondary add-product-reset">Wyczyść formularz</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p class="site-footer-brand"><strong>ProteinMaxxing.pl</strong> — kalkulator dietetyczny i baza produktów</p>
+        <nav class="site-footer-nav" aria-label="Nawigacja w stopce">
+            <a href="informacje.html">Informacje</a>
+            <span aria-hidden="true">·</span>
+            <a href="o-mnie.html">O mnie</a>
+            <span aria-hidden="true">·</span>
+            <a href="dieta.html#produkty">Wszystkie produkty</a>
+            <span aria-hidden="true">·</span>
+            <a href="porownaj-produkty.html">Porównaj produkty</a>
+            <span aria-hidden="true">·</span>
+            <a href="dodaj-produkt.html">Dodaj produkty</a>
+            <span aria-hidden="true">·</span>
+            <a href="poradnik-zywienia.html">Poradnik</a>
+        </nav>
+        <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="js/product-utils.js"></script>
+    <script src="js/submission-store.js"></script>
+    <script src="js/add-product.js"></script>
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <script src="js/cookie-banner.js"></script>
+    <link rel="stylesheet" href="css/partner-ads.css">
+    <script src="js/partner-ads.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

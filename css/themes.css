@@ -1,0 +1,161 @@
+/* Motyw jasny — bordowo-ciemnoniebieski */
+:root {
+    --primary: #800000;
+    --primary-dark: #660000;
+    --primary-hover: #991010;
+    --primary-light: #a52a2a;
+    --primary-glow: rgba(128, 0, 0, 0.35);
+    --accent: #1e3a5f;
+    --accent-soft: #2563eb;
+    --accent-hot: #172554;
+    --bg-main: #f8f9fc;
+    --bg-gradient:
+        radial-gradient(ellipse 110% 70% at 0% -15%, rgba(30, 58, 138, 0.12), transparent 52%),
+        radial-gradient(ellipse 90% 55% at 100% 5%, rgba(128, 0, 0, 0.1), transparent 48%),
+        radial-gradient(ellipse 70% 45% at 50% 105%, rgba(23, 37, 84, 0.06), transparent 42%),
+        #f8f9fc;
+    --surface: #ffffff;
+    --surface-elevated: #fefeff;
+    --surface-hover: #f1f5f9;
+    --text-dark: #1e293b;
+    --text-muted: #57534e;
+    --text-light: #78716c;
+    --white: #ffffff;
+    --border: #e2e8f0;
+    --border-soft: #f1f5f9;
+    --danger: #dc2626;
+    --danger-bg: #fef2f2;
+    --ink: #0f172a;
+    --header-bg: rgba(255, 254, 255, 0.9);
+    --header-border: rgba(226, 232, 240, 0.85);
+    --header-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+    --main-border: rgba(255, 255, 255, 0.75);
+    --main-top-bar: linear-gradient(90deg, var(--accent-soft), var(--accent), var(--primary-light), var(--primary));
+    --main-glow: radial-gradient(circle, rgba(37, 99, 235, 0.12), transparent 70%);
+    --btn-calc-bg: linear-gradient(135deg, var(--accent) 0%, var(--primary-dark) 100%);
+    --btn-calc-color: #ffffff;
+    --btn-calc-shadow: 0 8px 28px rgba(30, 58, 138, 0.28), 0 4px 12px var(--primary-glow);
+    --nav-active-bg: linear-gradient(135deg, var(--accent) 0%, var(--primary-dark) 100%);
+    --nav-active-color: #ffffff;
+    --nav-active-shadow: 0 4px 16px rgba(30, 58, 138, 0.25), 0 2px 8px var(--primary-glow);
+    --subnav-full-bg: linear-gradient(
+        135deg,
+        rgba(239, 246, 255, 0.95) 0%,
+        rgba(219, 234, 254, 0.92) 32%,
+        rgba(254, 226, 226, 0.9) 68%,
+        rgba(254, 215, 215, 0.88) 100%
+    );
+    --subnav-full-border: rgba(30, 58, 138, 0.2);
+    --subnav-full-shadow: 0 8px 28px rgba(30, 58, 138, 0.1), 0 4px 16px rgba(128, 0, 0, 0.1);
+    --subnav-btn-color: var(--text-muted);
+    --subnav-btn-hover-color: var(--ink);
+    --subnav-btn-hover-bg: rgba(255, 255, 255, 0.72);
+    --subnav-active-bg: linear-gradient(135deg, var(--accent) 0%, var(--primary-dark) 100%);
+    --subnav-active-color: #fff;
+    --kcal-badge-bg: linear-gradient(135deg, #eff6ff, #dbeafe);
+    --kcal-badge-color: #1e40af;
+    --kcal-badge-border: #93c5fd;
+    --calc-tile-bg: linear-gradient(145deg, rgba(37, 99, 235, 0.09) 0%, rgba(239, 246, 255, 0.92) 100%);
+    --calc-tile-border: rgba(37, 99, 235, 0.24);
+    --calc-tile-bg-emphasis: linear-gradient(145deg, rgba(37, 99, 235, 0.14) 0%, rgba(219, 234, 254, 0.55) 100%);
+    --calc-tile-border-emphasis: rgba(30, 58, 138, 0.42);
+    --calc-alert-bg: linear-gradient(145deg, rgba(37, 99, 235, 0.1) 0%, rgba(219, 234, 254, 0.5) 100%);
+    --calc-alert-border: #93c5fd;
+    --rank-stat-badge-bg: linear-gradient(135deg, #f0fdf9 0%, #ecfdf5 42%, #e0f2fe 100%);
+    --rank-stat-badge-color: #0f766e;
+    --rank-stat-badge-border: #7dd3c0;
+    --ratio-badge-bg: linear-gradient(135deg, #fff1f2, #ffe4e6);
+    --ratio-badge-border: #fca5a5;
+    --ratio-badge-color: #660000;
+    --h1-gradient: linear-gradient(135deg, var(--ink) 0%, var(--primary) 50%, var(--accent) 100%);
+    --ranking-title-max: linear-gradient(135deg, var(--ink) 0%, var(--primary-dark) 45%, var(--accent) 100%);
+    --ranking-title-price: linear-gradient(135deg, var(--ink) 0%, var(--accent) 50%, var(--accent-soft) 100%);
+    --logo-gradient: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    --radius-sm: 12px;
+    --radius-md: 16px;
+    --radius-lg: 22px;
+    --radius-xl: 28px;
+    --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05), 0 2px 4px rgba(15, 23, 42, 0.04);
+    --shadow-md: 0 8px 20px -6px rgba(15, 23, 42, 0.08), 0 4px 12px -4px rgba(30, 58, 138, 0.12);
+    --shadow-lg: 0 24px 48px -16px rgba(15, 23, 42, 0.14), 0 12px 24px -8px rgba(128, 0, 0, 0.08);
+    --shadow-card: 0 2px 8px rgba(15, 23, 42, 0.04), 0 16px 32px rgba(15, 23, 42, 0.06);
+    --transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Motyw ciemny — bordowo-ciemnoniebieski */
+[data-theme='dark'] {
+    --primary: #f0a0a0;
+    --primary-dark: #e07a7a;
+    --primary-hover: #ffd4d4;
+    --primary-light: #ffe4e4;
+    --primary-glow: rgba(224, 122, 122, 0.4);
+    --accent: #93c5fd;
+    --accent-soft: #bfdbfe;
+    --accent-hot: #60a5fa;
+    --bg-main: #0a0e1a;
+    --bg-gradient:
+        radial-gradient(ellipse 100% 80% at 10% -20%, rgba(37, 99, 235, 0.14), transparent 50%),
+        radial-gradient(ellipse 80% 60% at 95% 10%, rgba(128, 0, 0, 0.16), transparent 45%),
+        radial-gradient(ellipse 60% 50% at 50% 110%, rgba(23, 37, 84, 0.35), transparent 40%),
+        #0a0e1a;
+    --surface: #12182a;
+    --surface-elevated: #1a2238;
+    --surface-hover: #24304a;
+    --text-dark: #f8fafc;
+    --text-muted: #94a3b8;
+    --text-light: #64748b;
+    --border: #334155;
+    --border-soft: #1e293b;
+    --danger: #f87171;
+    --danger-bg: rgba(127, 29, 29, 0.35);
+    --ink: #f8fafc;
+    --header-bg: rgba(10, 14, 26, 0.9);
+    --header-border: rgba(59, 130, 246, 0.18);
+    --header-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+    --main-border: rgba(147, 197, 253, 0.14);
+    --main-top-bar: linear-gradient(90deg, var(--accent), var(--accent-soft), var(--primary), var(--primary-dark));
+    --main-glow: radial-gradient(circle, rgba(37, 99, 235, 0.12), transparent 68%);
+    --btn-calc-bg: linear-gradient(135deg, var(--accent-hot) 0%, var(--primary-dark) 55%, #660000 100%);
+    --btn-calc-color: #0a0e1a;
+    --btn-calc-shadow: 0 8px 32px rgba(37, 99, 235, 0.35), 0 4px 16px var(--primary-glow);
+    --nav-active-bg: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+    --nav-active-color: #0a0e1a;
+    --nav-active-shadow: 0 4px 20px rgba(37, 99, 235, 0.3), 0 0 24px var(--primary-glow);
+    --subnav-full-bg: linear-gradient(
+        135deg,
+        rgba(30, 58, 138, 0.35) 0%,
+        rgba(23, 37, 84, 0.5) 45%,
+        rgba(128, 0, 0, 0.35) 75%,
+        rgba(10, 14, 26, 0.95) 100%
+    );
+    --subnav-full-border: rgba(147, 197, 253, 0.28);
+    --subnav-full-shadow: 0 0 36px rgba(37, 99, 235, 0.12), 0 8px 24px rgba(128, 0, 0, 0.15);
+    --subnav-btn-color: var(--text-muted);
+    --subnav-btn-hover-color: var(--accent-soft);
+    --subnav-btn-hover-bg: rgba(37, 99, 235, 0.12);
+    --subnav-active-bg: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+    --subnav-active-color: #0a0e1a;
+    --kcal-badge-bg: rgba(37, 99, 235, 0.15);
+    --kcal-badge-color: var(--accent-soft);
+    --kcal-badge-border: rgba(147, 197, 253, 0.3);
+    --calc-tile-bg: linear-gradient(145deg, rgba(37, 99, 235, 0.18) 0%, rgba(18, 24, 42, 0.55) 100%);
+    --calc-tile-border: rgba(96, 165, 250, 0.28);
+    --calc-tile-bg-emphasis: linear-gradient(145deg, rgba(37, 99, 235, 0.24) 0%, rgba(30, 58, 95, 0.38) 100%);
+    --calc-tile-border-emphasis: rgba(147, 197, 253, 0.4);
+    --calc-alert-bg: linear-gradient(145deg, rgba(37, 99, 235, 0.16) 0%, rgba(30, 58, 95, 0.42) 100%);
+    --calc-alert-border: rgba(147, 197, 253, 0.35);
+    --rank-stat-badge-bg: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(37, 99, 235, 0.14) 100%);
+    --rank-stat-badge-color: #6ee7b7;
+    --rank-stat-badge-border: rgba(110, 231, 183, 0.38);
+    --ratio-badge-bg: rgba(128, 0, 0, 0.25);
+    --ratio-badge-border: rgba(224, 122, 122, 0.3);
+    --ratio-badge-color: var(--primary-light);
+    --h1-gradient: linear-gradient(135deg, #fff 0%, var(--primary-light) 45%, var(--accent) 100%);
+    --ranking-title-max: linear-gradient(135deg, #fff 0%, var(--primary-light) 50%, var(--accent-soft) 100%);
+    --ranking-title-price: linear-gradient(135deg, #fff 0%, var(--accent) 45%, var(--accent-hot) 100%);
+    --logo-gradient: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(59, 130, 246, 0.08);
+    --shadow-lg: 0 24px 56px rgba(0, 0, 0, 0.55), 0 0 40px rgba(128, 0, 0, 0.08);
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.4);
+}

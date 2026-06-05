@@ -1,0 +1,69 @@
+/**
+ * Wspólne tagi <head>: favicon + Open Graph / Twitter.
+ * prefix: '' (root) lub '../' (produkty/)
+ */
+
+const SITE = 'https://proteinmaxxing.pl';
+
+export function buildFaviconLinks(prefix = '') {
+    const p = prefix;
+    return `    <link rel="icon" href="${p}images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="${p}images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="${p}images/favicon-192.png">
+    <link rel="apple-touch-icon" href="${p}images/apple-touch-icon.png">`;
+}
+
+/**
+ * @param {string} prefix — '' lub '../'
+ * @param {string} imagePath — ścieżka względem root (np. images/og-home.jpg) lub pełny URL
+ * @param {{ width?: number, height?: number, alt?: string }} [opts]
+ */
+export function buildSocialImageMeta(prefix, imagePath, opts = {}) {
+    const { width = 1200, height = 630, alt = 'ProteinMaxxing.pl — kalkulator dietetyczny i baza białka' } = opts;
+    const rel = imagePath.startsWith('http') ? imagePath : `${SITE}/${imagePath.replace(/^\//, '')}`;
+    return `    <meta property="og:image" content="${rel}">
+    <meta property="og:image:width" content="${width}">
+    <meta property="og:image:height" content="${height}">
+    <meta property="og:image:alt" content="${alt.replace(/"/g, '&quot;')}">
+    <meta property="og:locale" content="pl_PL">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="${rel}">`;
+}
+
+export function buildDefaultSiteHead(prefix = '') {
+    return `${buildFaviconLinks(prefix)}
+${buildSocialImageMeta(prefix, 'images/og-home.jpg')}`;
+}
+
+export function productOgImagePath(slug) {
+    return `images/products/${slug}.jpg`;
+}
+
+/** Early theme flash prevention — load immediately after charset. */
+export function buildThemeInitScript(prefix = '') {
+    return `    <script src="${prefix}js/theme-init.js"></script>`;
+}
+
+/**
+ * themes.css + main stylesheet + theme-switch.css
+ * @param {string} prefix — '' lub '../' / '../../'
+ * @param {{ productPage?: boolean }} [opts]
+ */
+export function buildThemeStylesheets(prefix = '', opts = {}) {
+    const main = opts.productPage ? 'product-page.css' : 'site.css';
+    return `    <link rel="stylesheet" href="${prefix}css/themes.css">
+    <link rel="stylesheet" href="${prefix}css/${main}">
+    <link rel="stylesheet" href="${prefix}css/theme-switch.css">`;
+}
+
+export function buildThemeBodyScript(prefix = '') {
+    return `    <script src="${prefix}js/theme.js"></script>`;
+}
+
+export function buildThemeAssets(prefix = '', opts = {}) {
+    return {
+        init: buildThemeInitScript(prefix),
+        styles: buildThemeStylesheets(prefix, opts),
+        body: buildThemeBodyScript(prefix)
+    };
+}

@@ -1,0 +1,14 @@
+{
+  "name": "proteinmaxxing",
+  "private": true,
+  "scripts": {
+    "start": "serve . -l 8080",
+    "dev": "serve . -l 8080"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

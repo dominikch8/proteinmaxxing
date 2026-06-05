@@ -1,0 +1,64 @@
+.theme-switch {
+    position: fixed;
+    top: 14px;
+    right: 14px;
+    z-index: 200;
+    display: inline-flex;
+    padding: 4px;
+    gap: 4px;
+    border-radius: 999px;
+    background: var(--surface-elevated);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.theme-switch-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text-muted);
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background var(--transition), color var(--transition), box-shadow var(--transition);
+    white-space: nowrap;
+}
+
+.theme-switch-btn:hover {
+    color: var(--text-dark);
+    background: var(--surface-hover);
+}
+
+.theme-switch-btn.is-active {
+    background: var(--nav-active-bg);
+    color: var(--nav-active-color);
+    box-shadow: var(--nav-active-shadow);
+}
+
+.theme-switch-text {
+    line-height: 1;
+}
+
+@media (max-width: 520px) {
+    .theme-switch {
+        top: auto;
+        bottom: 16px;
+        right: 12px;
+    }
+
+    .theme-switch-text {
+        display: none;
+    }
+
+    .theme-switch-btn {
+        padding: 10px 12px;
+        font-size: 1rem;
+    }
+}

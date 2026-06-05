@@ -1,0 +1,634 @@
+.poradnik-page .info-tab {
+    max-width: 980px;
+}
+
+@media (max-width: 1000px) {
+    .poradnik-page .info-tab {
+        max-width: 860px;
+    }
+}
+
+.poradnik-nutrient-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin: 20px 0 28px;
+}
+
+@media (max-width: 720px) {
+    .poradnik-nutrient-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+}
+
+.poradnik-page .info-tab a.poradnik-nutrient-tile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    padding: 14px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: inherit;
+    border-bottom: none;
+    overflow: hidden;
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition),
+        transform var(--transition);
+}
+
+.poradnik-nutrient-tile::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(28, 25, 23, 0.22) 0%,
+        rgba(37, 99, 235, 0.38) 45%,
+        rgba(128, 0, 0, 0.28) 100%
+    );
+    transition: opacity 0.22s ease;
+}
+
+.poradnik-nutrient-tile-label {
+    position: relative;
+    z-index: 1;
+    font-size: clamp(1.05rem, 2.8vw, 1.22rem);
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+    transition: color 0.22s ease;
+}
+
+.poradnik-page .info-tab a.poradnik-nutrient-tile:hover,
+.poradnik-page .info-tab a.poradnik-nutrient-tile:focus-visible {
+    color: var(--text-dark);
+    border-bottom: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 1px var(--primary-light), 0 8px 24px var(--primary-glow);
+    transform: translateY(-2px);
+}
+
+.poradnik-page .info-tab a.poradnik-nutrient-tile:hover::before,
+.poradnik-page .info-tab a.poradnik-nutrient-tile:focus-visible::before {
+    opacity: 1;
+}
+
+.poradnik-page .info-tab a.poradnik-nutrient-tile:hover .poradnik-nutrient-tile-label,
+.poradnik-page .info-tab a.poradnik-nutrient-tile:focus-visible .poradnik-nutrient-tile-label {
+    color: var(--primary-dark);
+}
+
+[data-theme='dark'] .poradnik-page .info-tab a.poradnik-nutrient-tile:hover .poradnik-nutrient-tile-label,
+[data-theme='dark'] .poradnik-page .info-tab a.poradnik-nutrient-tile:focus-visible .poradnik-nutrient-tile-label {
+    color: var(--ink);
+}
+
+[data-theme='dark'] .poradnik-nutrient-tile::before {
+    background: linear-gradient(
+        135deg,
+        rgba(30, 58, 138, 0.4) 0%,
+        rgba(59, 130, 246, 0.45) 50%,
+        rgba(128, 0, 0, 0.35) 100%
+    );
+}
+
+.poradnik-practical-box {
+    position: relative;
+    margin: 28px 0;
+    padding: 22px 24px;
+    border: 2px solid transparent;
+    border-radius: var(--radius-lg);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(248, 250, 255, 0.98) 0%,
+            rgba(239, 246, 255, 0.94) 50%,
+            rgba(254, 226, 226, 0.94) 100%
+        )
+        padding-box,
+        linear-gradient(
+            135deg,
+            var(--accent) 0%,
+            #fbbf24 12%,
+            var(--primary-light) 32%,
+            var(--primary) 58%,
+            var(--primary-dark) 82%,
+            var(--accent) 100%
+        )
+        border-box;
+    background-clip: padding-box, border-box;
+    box-shadow:
+        0 0 0 1px rgba(128, 0, 0, 0.12),
+        0 1px 0 rgba(255, 255, 255, 0.7) inset,
+        0 2px 8px rgba(128, 0, 0, 0.06),
+        0 12px 32px rgba(128, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.poradnik-practical-box::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    pointer-events: none;
+    border-radius: calc(var(--radius-lg) - 2px);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.45),
+        inset 0 1px 12px rgba(255, 255, 255, 0.35);
+}
+
+.poradnik-practical-box::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: inherit;
+    background: linear-gradient(
+        160deg,
+        rgba(255, 255, 255, 0.35) 0%,
+        transparent 42%,
+        transparent 100%
+    );
+}
+
+.poradnik-practical-box h2 {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 14px;
+    padding: 0;
+    border-bottom: none;
+    font-size: 0.88rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary-dark);
+}
+
+.poradnik-practical-box p {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 12px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.65;
+    color: var(--text-dark);
+}
+
+.poradnik-practical-box p:last-child {
+    margin-bottom: 0;
+}
+
+.poradnik-practical-box ul {
+    position: relative;
+    z-index: 1;
+    margin: 8px 0 14px;
+    padding-left: 1.2em;
+    font-size: 0.94rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+.poradnik-practical-box ul:last-child {
+    margin-bottom: 0;
+}
+
+.poradnik-practical-box li {
+    margin-bottom: 6px;
+}
+
+.poradnik-practical-box li::marker {
+    color: var(--primary);
+}
+
+.poradnik-practical-box a {
+    font-weight: 600;
+    color: var(--primary-dark);
+    border-bottom-color: rgba(128, 0, 0, 0.35);
+}
+
+.poradnik-practical-box a:hover {
+    color: var(--primary-hover);
+}
+
+.poradnik-practical-box .poradnik-intake-intro {
+    margin-bottom: 14px;
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+.poradnik-table-wrap {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-md);
+    box-shadow: 0 1px 4px rgba(128, 0, 0, 0.08);
+}
+
+.poradnik-intake-table {
+    width: 100%;
+    min-width: 320px;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.45;
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.poradnik-intake-table thead th {
+    padding: 11px 14px;
+    text-align: left;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(
+        135deg,
+        var(--primary-dark) 0%,
+        var(--primary) 55%,
+        var(--primary-light) 100%
+    );
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    white-space: nowrap;
+}
+
+.poradnik-intake-table thead th:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.poradnik-intake-table tbody th,
+.poradnik-intake-table tbody td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid rgba(128, 0, 0, 0.14);
+}
+
+.poradnik-intake-table tbody th {
+    font-weight: 700;
+    color: var(--primary-dark);
+    background: rgba(255, 243, 230, 0.85);
+    white-space: nowrap;
+}
+
+.poradnik-intake-table tbody td {
+    color: var(--text-dark);
+}
+
+.poradnik-intake-table tbody tr:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.poradnik-intake-table tbody tr:nth-child(even) th {
+    background: rgba(254, 226, 226, 0.65);
+}
+
+.poradnik-intake-table tbody tr:last-child th,
+.poradnik-intake-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.poradnik-intake-table tbody tr:hover td,
+.poradnik-intake-table tbody tr:hover th {
+    background: rgba(187, 247, 208, 0.55);
+}
+
+@media (max-width: 520px) {
+    .poradnik-intake-table {
+        font-size: 0.84rem;
+    }
+
+    .poradnik-intake-table thead th,
+    .poradnik-intake-table tbody th,
+    .poradnik-intake-table tbody td {
+        padding: 10px 11px;
+    }
+
+    .poradnik-intake-table thead th {
+        font-size: 0.72rem;
+        white-space: normal;
+    }
+}
+
+[data-theme='dark'] .poradnik-practical-box {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(18, 20, 12, 0.85) 0%,
+            rgba(37, 99, 235, 0.55) 50%,
+            rgba(102, 0, 0, 0.45) 100%
+        )
+        padding-box,
+        linear-gradient(
+            135deg,
+            var(--accent) 0%,
+            #fde047 14%,
+            var(--primary-light) 34%,
+            var(--primary) 60%,
+            #660000 85%,
+            var(--accent) 100%
+        )
+        border-box;
+    box-shadow:
+        0 0 0 1px rgba(59, 130, 246, 0.1),
+        0 1px 0 rgba(255, 255, 255, 0.06) inset,
+        0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme='dark'] .poradnik-practical-box::before {
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+        inset 0 1px 10px rgba(255, 255, 255, 0.04);
+}
+
+[data-theme='dark'] .poradnik-practical-box::after {
+    background: linear-gradient(
+        160deg,
+        rgba(255, 255, 255, 0.08) 0%,
+        transparent 40%,
+        transparent 100%
+    );
+}
+
+[data-theme='dark'] .poradnik-practical-box h2 {
+    color: var(--primary-light);
+}
+
+[data-theme='dark'] .poradnik-practical-box p,
+[data-theme='dark'] .poradnik-practical-box ul {
+    color: var(--text-dark);
+}
+
+[data-theme='dark'] .poradnik-practical-box a {
+    color: var(--primary-light);
+}
+
+[data-theme='dark'] .poradnik-practical-box .poradnik-intake-intro {
+    color: var(--primary-light);
+}
+
+[data-theme='dark'] .poradnik-intake-table {
+    background: rgba(15, 45, 28, 0.65);
+}
+
+[data-theme='dark'] .poradnik-intake-table thead th {
+    background: linear-gradient(
+        135deg,
+        #14532d 0%,
+        #166534 50%,
+        #660000 100%
+    );
+}
+
+[data-theme='dark'] .poradnik-intake-table tbody th {
+    color: var(--primary-light);
+    background: rgba(37, 99, 235, 0.75);
+}
+
+[data-theme='dark'] .poradnik-intake-table tbody td {
+    color: var(--text-dark);
+}
+
+[data-theme='dark'] .poradnik-intake-table tbody tr:nth-child(even) td {
+    background: rgba(37, 99, 235, 0.35);
+}
+
+[data-theme='dark'] .poradnik-intake-table tbody tr:nth-child(even) th {
+    background: rgba(128, 0, 0, 0.45);
+}
+
+[data-theme='dark'] .poradnik-intake-table tbody tr:hover td,
+[data-theme='dark'] .poradnik-intake-table tbody tr:hover th {
+    background: rgba(128, 0, 0, 0.22);
+}
+
+[data-theme='dark'] .poradnik-table-wrap {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+}
+
+.poradnik-fun-fact {
+    margin: 28px 0 24px;
+    padding: 18px 20px;
+    border: 1px solid rgba(251, 191, 36, 0.4);
+    border-radius: var(--radius-md);
+    background: rgba(255, 251, 235, 0.75);
+    box-shadow: 0 2px 10px rgba(245, 158, 11, 0.06);
+}
+
+.poradnik-fun-fact-label {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-transform: none;
+    color: #b45309;
+}
+
+.poradnik-fun-fact-label::before {
+    content: '💡 ';
+}
+
+.poradnik-fun-fact-text {
+    margin: 0;
+    font-size: 0.96rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--text-dark);
+}
+
+[data-theme='dark'] .poradnik-fun-fact {
+    border-color: rgba(251, 191, 36, 0.22);
+    background: rgba(69, 26, 3, 0.35);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .poradnik-fun-fact-label {
+    color: #fbbf24;
+}
+
+[data-theme='dark'] .poradnik-fun-fact-text {
+    color: var(--text-dark);
+}
+
+.poradnik-product-rank-note {
+    margin: 0 0 12px;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.poradnik-product-ranks {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 0 0 24px;
+}
+
+.poradnik-product-rank-label {
+    margin: 0 0 8px;
+    font-size: 0.86rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.poradnik-product-mini-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+}
+
+@media (max-width: 520px) {
+    .poradnik-product-mini-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 6px;
+    }
+}
+
+.poradnik-page .info-tab a.poradnik-product-mini {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-height: 84px;
+    padding: 10px 6px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+    border-bottom: none;
+    text-align: center;
+    overflow: hidden;
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition),
+        transform var(--transition);
+}
+
+.poradnik-product-mini::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(28, 25, 23, 0.14) 0%,
+        rgba(37, 99, 235, 0.28) 50%,
+        rgba(128, 0, 0, 0.18) 100%
+    );
+    transition: opacity 0.2s ease;
+}
+
+.poradnik-product-mini-emoji {
+    position: relative;
+    z-index: 1;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.poradnik-product-mini-name {
+    position: relative;
+    z-index: 1;
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--text-dark);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.poradnik-product-mini-value {
+    position: relative;
+    z-index: 1;
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+.poradnik-page .info-tab a.poradnik-product-mini:hover,
+.poradnik-page .info-tab a.poradnik-product-mini:focus-visible {
+    color: inherit;
+    border-bottom: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 1px var(--primary-light), 0 6px 16px var(--primary-glow);
+    transform: translateY(-1px);
+}
+
+.poradnik-page .info-tab a.poradnik-product-mini:hover::before,
+.poradnik-page .info-tab a.poradnik-product-mini:focus-visible::before {
+    opacity: 1;
+}
+
+[data-theme='dark'] .poradnik-product-mini-value {
+    color: var(--primary-light);
+}
+
+.poradnik-tips-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 24px;
+}
+
+.poradnik-tips-list li {
+    position: relative;
+    padding: 14px 16px 14px 44px;
+    margin-bottom: 10px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-soft);
+    background: var(--surface);
+    line-height: 1.55;
+    font-size: 0.94rem;
+}
+
+.poradnik-tips-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 16px;
+    top: 14px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.poradnik-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.poradnik-links a {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    background: var(--surface-hover);
+    font-weight: 600;
+    font-size: 0.88rem;
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: border-color var(--transition), background var(--transition);
+}
+
+.poradnik-links a:hover {
+    border-color: var(--primary);
+    background: rgba(128, 0, 0, 0.08);
+}
