@@ -72,19 +72,19 @@
 
         .logo {
             font-weight: 800;
-            font-size: 1.15rem;
+            font-size: 1.5rem;
             letter-spacing: -0.03em;
             color: var(--text-dark);
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             flex-shrink: 0;
             text-decoration: none;
         }
 
         .logo-mark {
-            width: 36px;
-            height: 36px;
+            width: 42px;
+            height: 42px;
             object-fit: contain;
             flex-shrink: 0;
             display: block;
@@ -208,9 +208,9 @@
 
         @media (max-width: 480px) {
             nav { padding: 6px 6px 5px; gap: 5px; }
-            .logo { font-size: 0.95rem; gap: 8px; }
-            .logo-mark { width: 29px; height: 29px; }
-            .logo span { font-size: 0.9rem; }
+            .logo { font-size: 1.2rem; gap: 10px; }
+            .logo-mark { width: 34px; height: 34px; }
+            .logo span { font-size: 1.15rem; }
             .nav-links {
                 gap: 2px;
                 padding: 9px 6px 15px;
