@@ -195,10 +195,23 @@
         inner.className = 'pm-ad-footer-strip__inner';
         strip.appendChild(inner);
 
-        footer.parentNode.insertBefore(strip, footer);
+        const rowEcpm = document.createElement('div');
+        rowEcpm.className = 'pm-ad-footer-strip__row pm-ad-footer-strip__row--ecpm';
+        inner.appendChild(rowEcpm);
+        loadEcpmInvoke(rowEcpm);
 
-        queueHpfAd(inner, HPF.banner468);
-        loadEcpmInvoke(inner);
+        const rowHpf = document.createElement('div');
+        rowHpf.className = 'pm-ad-footer-strip__row pm-ad-footer-strip__row--hpf';
+        inner.appendChild(rowHpf);
+
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
+        const footerAds = isMobile
+            ? [HPF.rect300, HPF.banner468, HPF.rect300, HPF.mobileBar]
+            : [HPF.leaderboard, HPF.rect300, HPF.rect300, HPF.banner468, HPF.banner468, HPF.leaderboard];
+
+        footerAds.forEach((ad) => queueHpfAd(rowHpf, ad));
+
+        footer.parentNode.insertBefore(strip, footer);
     }
 
     function unwrapLegacyGrid() {

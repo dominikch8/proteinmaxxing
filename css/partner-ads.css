@@ -127,28 +127,78 @@
     }
 }
 
-/* —— Pasek nad stopką (bez kwadratu w treści) —— */
+/* —— Panel reklam nad stopką —— */
 .pm-ad-footer-strip {
     max-width: var(--site-content-max);
-    margin: 0 auto 20px;
-    padding: 0 24px;
+    margin: 0 auto 24px;
+    padding: 0 clamp(10px, 2.5vw, 24px);
 }
 
 .pm-ad-footer-strip__inner {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px 24px;
-    padding: 16px 12px;
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px clamp(12px, 2vw, 20px) 24px;
     border-radius: var(--radius-lg, 12px);
     border: 1px dashed var(--border, #e7e5e4);
     background: rgba(255, 255, 255, 0.4);
+    min-height: 200px;
 }
 
 [data-theme='dark'] .pm-ad-footer-strip__inner {
-    background: rgba(28, 25, 23, 0.3);
+    background: rgba(28, 25, 23, 0.35);
     border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Górny rząd — native / ECPM (4 miniatury + baner) */
+.pm-ad-footer-strip__row--ecpm {
+    width: 100%;
+}
+
+.pm-ad-footer-strip__row--ecpm .pm-ad-slot--ecpm-invoke {
+    width: 100%;
+    max-width: none;
+    min-height: 300px;
+}
+
+.pm-ad-footer-strip__row--ecpm #container-658eec4fdcf15651f91c6d8adbe4f016 {
+    width: 100%;
+    min-height: 260px;
+    overflow: hidden;
+}
+
+/* Dolny rząd — banery HPF w siatce */
+.pm-ad-footer-strip__row--hpf {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    justify-items: center;
+    align-items: start;
+    width: 100%;
+}
+
+.pm-ad-footer-strip__row--hpf .pm-ad-slot--728x90 {
+    grid-column: 1 / -1;
+}
+
+@media (min-width: 900px) {
+    .pm-ad-footer-strip__inner {
+        min-height: 420px;
+        gap: 22px;
+        padding: 24px 20px 28px;
+    }
+
+    .pm-ad-footer-strip__row--ecpm .pm-ad-slot--ecpm-invoke {
+        min-height: 340px;
+    }
+
+    .pm-ad-footer-strip__row--ecpm #container-658eec4fdcf15651f91c6d8adbe4f016 {
+        min-height: 300px;
+    }
+
+    .pm-ad-footer-strip__row--hpf {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
 
 /* —— Sloty wg formatu —— */
@@ -204,18 +254,50 @@
 
 .pm-ad-slot--ecpm-invoke {
     width: 100%;
-    max-width: 728px;
+    max-width: none;
     min-height: 50px;
 }
 
+/* —— Mobile —— */
 @media (max-width: 768px) {
+    .pm-ad-leaderboard {
+        display: none;
+    }
+
     .pm-ad-footer-strip {
-        padding: 0 12px;
+        margin-bottom: 16px;
     }
 
     .pm-ad-footer-strip__inner {
-        flex-direction: column;
-        align-items: center;
+        gap: 14px;
+        padding: 14px 10px 18px;
+        min-height: 360px;
+    }
+
+    .pm-ad-footer-strip__row--ecpm .pm-ad-slot--ecpm-invoke {
+        min-height: 280px;
+    }
+
+    .pm-ad-footer-strip__row--ecpm #container-658eec4fdcf15651f91c6d8adbe4f016 {
+        min-height: 240px;
+    }
+
+    .pm-ad-footer-strip__row--hpf {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .pm-ad-footer-strip__row--hpf .pm-ad-slot {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .pm-ad-footer-strip .pm-ad-slot--728x90 {
+        display: none;
+    }
+
+    .pm-ad-footer-strip__row--ecpm iframe {
+        max-width: 100% !important;
     }
 
     .pm-ad-slot--728x90,
