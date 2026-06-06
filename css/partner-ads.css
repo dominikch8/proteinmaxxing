@@ -32,6 +32,25 @@
     }
 }
 
+/* —— Reklamy w treści strony —— */
+.pm-ad-in-content {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 0 12px;
+    max-width: var(--pm-content-max);
+}
+
+.pm-ad-in-content--hero {
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.pm-ad-in-content--banner {
+    margin-top: 28px;
+    margin-bottom: 8px;
+}
+
 /* —— Leaderboard pod nagłówkiem (728×90) —— */
 .pm-ad-leaderboard {
     display: none;
@@ -62,8 +81,33 @@
 }
 
 @media (min-width: 769px) {
-    .pm-ad-mobile-bar {
+    .pm-ad-mobile-bar:not(.pm-ad-mobile-bar--bottom) {
         display: none;
+    }
+}
+
+/* —— Przyklejony pasek na dole (mobile) —— */
+.pm-ad-mobile-bar--bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 120;
+    margin: 0;
+    padding: 6px 12px calc(6px + env(safe-area-inset-bottom, 0px));
+    border-top: 1px solid var(--border-soft, #e7e5e4);
+    border-bottom: none;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+    .pm-ad-mobile-bar--bottom {
+        display: flex;
+    }
+
+    body.pm-ads-mobile-bottom {
+        padding-bottom: calc(62px + env(safe-area-inset-bottom, 0px));
     }
 }
 
@@ -168,6 +212,7 @@
 @media print {
     .pm-ad-leaderboard,
     .pm-ad-mobile-bar,
+    .pm-ad-in-content,
     .pm-ad-footer-strip,
     .pm-ad-rail {
         display: none !important;

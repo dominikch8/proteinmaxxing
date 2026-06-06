@@ -99,6 +99,15 @@
         return el;
     }
 
+    function getContentMain() {
+        return (
+            document.querySelector('.page-container .main-content') ||
+            document.querySelector('.page-container > main') ||
+            document.querySelector('main.product-page') ||
+            document.querySelector('.page-container')
+        );
+    }
+
     function mountSideRails() {
         let railLeft = document.getElementById('pm-ad-rail-left');
         let railRight = document.getElementById('pm-ad-rail-right');
@@ -107,15 +116,65 @@
             railLeft = createZone('pm-ad-rail-left', 'pm-ad-rail pm-ad-rail--left', 'Reklama — lewa kolumna');
             document.body.appendChild(railLeft);
             queueHpfAd(railLeft, HPF.railLeft);
+            queueHpfAd(railLeft, HPF.railRight);
         }
 
         if (!railRight) {
             railRight = createZone('pm-ad-rail-right', 'pm-ad-rail pm-ad-rail--right', 'Reklama — prawa kolumna');
             document.body.appendChild(railRight);
             queueHpfAd(railRight, HPF.railRight);
+            queueHpfAd(railRight, HPF.banner468);
         }
 
         return { railLeft, railRight };
+    }
+
+    function mountInContentAds() {
+        const main = getContentMain();
+        if (!main) return;
+
+        if (!document.getElementById('pm-ad-mid-hero')) {
+            const midHero = createZone('pm-ad-mid-hero', 'pm-ad-in-content pm-ad-in-content--hero', 'Reklama');
+            queueHpfAd(midHero, HPF.rect300);
+
+            const anchor =
+                main.querySelector('.page-hero') ||
+                main.querySelector('h1')?.parentElement ||
+                main.firstElementChild;
+
+            if (anchor) {
+                anchor.insertAdjacentElement('afterend', midHero);
+            } else {
+                main.prepend(midHero);
+            }
+        }
+
+        if (!document.getElementById('pm-ad-mid-banner')) {
+            const midBanner = createZone('pm-ad-mid-banner', 'pm-ad-in-content pm-ad-in-content--banner', 'Reklama');
+            queueHpfAd(midBanner, HPF.leaderboard);
+
+            const footer = document.querySelector('.site-footer');
+            if (footer && main.contains(footer) === false) {
+                main.appendChild(midBanner);
+            } else if (footer?.parentNode) {
+                footer.parentNode.insertBefore(midBanner, footer);
+            } else {
+                main.appendChild(midBanner);
+            }
+        }
+    }
+
+    function mountMobileBottomBar() {
+        if (document.getElementById('pm-ad-mobile-bar-bottom')) return;
+
+        const bar = createZone(
+            'pm-ad-mobile-bar-bottom',
+            'pm-ad-mobile-bar pm-ad-mobile-bar--bottom',
+            'Reklama'
+        );
+        queueHpfAd(bar, HPF.mobileBar);
+        document.body.appendChild(bar);
+        document.body.classList.add('pm-ads-mobile-bottom');
     }
 
     function mountFooterStrip() {
@@ -183,6 +242,8 @@
         }
 
         mountSideRails();
+        mountInContentAds();
+        mountMobileBottomBar();
         mountFooterStrip();
     }
 
