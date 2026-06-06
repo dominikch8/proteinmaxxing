@@ -1,11 +1,26 @@
+function getSubtabsContainer(subTabEl) {
+    let node = subTabEl;
+    while (node) {
+        const parent = node.parentElement;
+        if (parent?.classList.contains('page-with-subtabs')) {
+            const panels = [...parent.children].filter((c) => c.classList.contains('sub-tab-content'));
+            if (panels.includes(subTabEl)) return parent;
+        }
+        node = parent;
+    }
+    return subTabEl.closest('.page-with-subtabs');
+}
+
 function switchSubTab(subTabId, btn, options = {}) {
     const { preserveCategory = false, skipUrlSync = false } = options;
     const target = document.getElementById(subTabId);
     if (!target) return;
-    const parent = target.closest('.page-with-subtabs');
+    const parent = getSubtabsContainer(target);
     if (!parent) return;
-    parent.querySelectorAll('.sub-tab-content').forEach((content) => content.classList.remove('active'));
-    parent.querySelectorAll('.btn-sub').forEach((b) => b.classList.remove('active'));
+
+    parent.querySelectorAll(':scope > .sub-tab-content').forEach((content) => content.classList.remove('active'));
+    parent.querySelector(':scope > .sub-nav')?.querySelectorAll('.btn-sub').forEach((b) => b.classList.remove('active'));
+
     target.classList.add('active');
     if (btn) btn.classList.add('active');
     if (subTabId === 'protein-max') {
@@ -39,7 +54,6 @@ function switchSubTab(subTabId, btn, options = {}) {
 }
 
 const PORADNIK_HASH = {
-    start: { tab: 'poradnik-start' },
     skladniki: { tab: 'poradnik-skladniki' },
     odzywianie: { tab: 'poradnik-odzywianie' },
     tipy: { tab: 'poradnik-tipy' },
@@ -51,9 +65,7 @@ const PORADNIK_HASH = {
 function initPoradnikFromHash() {
     if (!document.body.classList.contains('poradnik-page')) return;
     const key = (location.hash || '').replace(/^#/, '').toLowerCase();
-    if (!key) return;
-    const cfg = PORADNIK_HASH[key];
-    if (!cfg) return;
+    const cfg = PORADNIK_HASH[key] || PORADNIK_HASH.skladniki;
 
     const tabBtn = document.querySelector(`.btn-sub[data-tab="${cfg.tab}"]`);
     switchSubTab(cfg.tab, tabBtn, { skipUrlSync: true });

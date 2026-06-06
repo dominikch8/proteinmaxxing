@@ -46,52 +46,13 @@
         <main class="main-content">
             <div class="page-with-subtabs">
                 <nav class="sub-nav sub-nav--full" aria-label="Sekcje poradnika">
-                    <button class="btn-sub active" type="button" data-tab="poradnik-start" onclick="switchSubTab('poradnik-start', this)">📖 Poradnik</button>
-                    <button class="btn-sub" type="button" data-tab="poradnik-skladniki" onclick="switchSubTab('poradnik-skladniki', this)">🧬 Składniki</button>
+                    <button class="btn-sub active" type="button" data-tab="poradnik-skladniki" onclick="switchSubTab('poradnik-skladniki', this)">🧬 Składniki</button>
                     <button class="btn-sub" type="button" data-tab="poradnik-odzywianie" onclick="switchSubTab('poradnik-odzywianie', this)">🥗 Odżywianie</button>
                     <button class="btn-sub" type="button" data-tab="poradnik-tipy" onclick="switchSubTab('poradnik-tipy', this)">💡 Tipy</button>
                     <button class="btn-sub" type="button" data-tab="poradnik-trening" onclick="switchSubTab('poradnik-trening', this)">💪 Trening</button>
                 </nav>
 
-                <div id="poradnik-start" class="sub-tab-content active">
-                    <div class="info-tab">
-                        <div class="page-hero">
-                            <h1>Poradnik żywienia</h1>
-                            <p class="subtitle">Edukacja o makro, składnikach i nawykach — praktycznie, bez skrajności</p>
-                        </div>
-
-                        <p>Tu znajdziesz wiedzę ułożoną tak, żeby łatwo połączyć ją z <a href="index.html">kalkulatorem</a> i <a href="dieta.html#produkty">bazą produktów</a>. Wybierz sekcję poniżej albo przełącz zakładkę u góry.</p>
-
-                        <div class="poradnik-hub-grid" role="navigation" aria-label="Sekcje poradnika">
-                            <button type="button" class="poradnik-hub-tile" onclick="switchSubTab('poradnik-skladniki', document.querySelector('.btn-sub[data-tab=poradnik-skladniki]'))">
-                                <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧬</span>
-                                <span class="poradnik-hub-tile-title">Składniki</span>
-                                <span class="poradnik-hub-tile-desc">Kalorie, białko, tłuszcze, węglowodany, witaminy i minerały — krótko i na temat.</span>
-                            </button>
-                            <button type="button" class="poradnik-hub-tile" onclick="switchSubTab('poradnik-odzywianie', document.querySelector('.btn-sub[data-tab=poradnik-odzywianie]'))">
-                                <span class="poradnik-hub-tile-emoji" aria-hidden="true">🥗</span>
-                                <span class="poradnik-hub-tile-title">Odżywianie</span>
-                                <span class="poradnik-hub-tile-desc">Bilans kaloryczny, model talerza, białko, przetworzona żywność i sen.</span>
-                            </button>
-                            <button type="button" class="poradnik-hub-tile" onclick="switchSubTab('poradnik-tipy', document.querySelector('.btn-sub[data-tab=poradnik-tipy]'))">
-                                <span class="poradnik-hub-tile-emoji" aria-hidden="true">💡</span>
-                                <span class="poradnik-hub-tile-title">Tipy</span>
-                                <span class="poradnik-hub-tile-desc">Ważenie porcji, etykiety, mity i codzienne nawyki ułatwiające dietę.</span>
-                            </button>
-                            <button type="button" class="poradnik-hub-tile" onclick="switchSubTab('poradnik-trening', document.querySelector('.btn-sub[data-tab=poradnik-trening]'))">
-                                <span class="poradnik-hub-tile-emoji" aria-hidden="true">💪</span>
-                                <span class="poradnik-hub-tile-title">Trening</span>
-                                <span class="poradnik-hub-tile-desc">Plan siłowy, białko po wysiłku, regeneracja i obalanie mitów ze siłowni.</span>
-                            </button>
-                        </div>
-
-                        <div class="info-callout">
-                            <strong>Zacznij od liczb:</strong> oblicz TDEE i makro w <a href="index.html">kalkulatorze</a>, potem dobierz produkty z <a href="bialko-maxxing.html">rankingu białka</a> lub <a href="porownaj-produkty.html">porównaj dwa produkty</a> obok siebie.
-                        </div>
-                    </div>
-                </div>
-
-                <div id="poradnik-skladniki" class="sub-tab-content">
+                <div id="poradnik-skladniki" class="sub-tab-content active">
                     <div class="info-tab">
                         <div class="page-hero">
                             <h1>Składniki odżywcze</h1>
