@@ -1,8 +1,8 @@
 /* —— Boczne reklamy w szarych marginesach viewportu —— */
 :root {
-    --pm-content-max: 1240px;
     --pm-rail-width: 160px;
     --pm-rail-gap: 18px;
+    --pm-rail-col-gap: 12px;
 }
 
 .pm-ad-rail {
@@ -19,23 +19,29 @@
     overflow: hidden;
 }
 
-/* Jedna kolumna boczna — od ~1600px szerokości */
-@media (min-width: 1597px) {
+/* Jedna kolumna boczna */
+@media (min-width: 1536px) {
     .pm-ad-rail--col1 {
         display: flex;
     }
 }
 
 .pm-ad-rail--left.pm-ad-rail--col1 {
-    left: max(8px, calc((100vw - var(--pm-content-max)) / 2 - var(--pm-rail-width) - var(--pm-rail-gap)));
+    left: max(
+        8px,
+        calc((100vw - var(--site-content-max)) / 2 - var(--pm-rail-width) - var(--pm-rail-gap))
+    );
 }
 
 .pm-ad-rail--right.pm-ad-rail--col1 {
-    right: max(8px, calc((100vw - var(--pm-content-max)) / 2 - var(--pm-rail-width) - var(--pm-rail-gap)));
+    right: max(
+        8px,
+        calc((100vw - var(--site-content-max)) / 2 - var(--pm-rail-width) - var(--pm-rail-gap))
+    );
 }
 
-/* Druga kolumna — ultra-wide, podwaja liczbę slotów */
-@media (min-width: 1952px) {
+/* Druga kolumna — od Full HD (1920px) w górę */
+@media (min-width: 1880px) {
     .pm-ad-rail--col2 {
         display: flex;
     }
@@ -44,14 +50,20 @@
 .pm-ad-rail--left.pm-ad-rail--col2 {
     left: max(
         8px,
-        calc((100vw - var(--pm-content-max)) / 2 - var(--pm-rail-width) * 2 - var(--pm-rail-gap) * 2)
+        calc(
+            (100vw - var(--site-content-max)) / 2 - var(--pm-rail-width) * 2 - var(--pm-rail-gap) -
+                var(--pm-rail-col-gap)
+        )
     );
 }
 
 .pm-ad-rail--right.pm-ad-rail--col2 {
     right: max(
         8px,
-        calc((100vw - var(--pm-content-max)) / 2 - var(--pm-rail-width) * 2 - var(--pm-rail-gap) * 2)
+        calc(
+            (100vw - var(--site-content-max)) / 2 - var(--pm-rail-width) * 2 - var(--pm-rail-gap) -
+                var(--pm-rail-col-gap)
+        )
     );
 }
 
@@ -60,7 +72,7 @@
     display: none;
     justify-content: center;
     padding: 10px 16px 4px;
-    max-width: var(--pm-content-max);
+    max-width: var(--site-content-max);
     margin: 0 auto;
 }
 
@@ -117,7 +129,7 @@
 
 /* —— Pasek nad stopką (bez kwadratu w treści) —— */
 .pm-ad-footer-strip {
-    max-width: var(--pm-content-max);
+    max-width: var(--site-content-max);
     margin: 0 auto 20px;
     padding: 0 24px;
 }

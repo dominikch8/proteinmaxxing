@@ -154,19 +154,16 @@
 
         mountRailColumn('pm-ad-rail-left', 'pm-ad-rail pm-ad-rail--left pm-ad-rail--col1', stack);
         mountRailColumn('pm-ad-rail-right', 'pm-ad-rail pm-ad-rail--right pm-ad-rail--col1', stack);
-
-        if (window.matchMedia('(min-width: 1952px)').matches) {
-            mountRailColumn(
-                'pm-ad-rail-left-2',
-                'pm-ad-rail pm-ad-rail--left pm-ad-rail--col2',
-                stack
-            );
-            mountRailColumn(
-                'pm-ad-rail-right-2',
-                'pm-ad-rail pm-ad-rail--right pm-ad-rail--col2',
-                stack
-            );
-        }
+        mountRailColumn(
+            'pm-ad-rail-left-2',
+            'pm-ad-rail pm-ad-rail--left pm-ad-rail--col2',
+            stack
+        );
+        mountRailColumn(
+            'pm-ad-rail-right-2',
+            'pm-ad-rail pm-ad-rail--right pm-ad-rail--col2',
+            stack
+        );
     }
 
     function removeInContentAds() {

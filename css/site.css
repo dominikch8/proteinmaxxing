@@ -58,7 +58,7 @@
         }
 
         nav {
-            max-width: 1240px;
+            max-width: var(--site-content-max);
             margin: 0 auto;
             padding: 0 24px 6px;
             min-height: 47px;
@@ -169,7 +169,7 @@
         }
 
         .page-container {
-            max-width: 1240px;
+            max-width: var(--site-content-max);
             margin: 32px auto 48px;
             padding: 0 24px;
         }
@@ -224,7 +224,7 @@
         .main-content {
             background: var(--surface-elevated);
             border-radius: var(--radius-xl);
-            padding: 36px 40px;
+            padding: clamp(24px, 3vw, 36px) clamp(20px, 3.2vw, 36px);
             box-shadow: var(--shadow-lg);
             border: 1px solid var(--main-border);
             position: relative;
