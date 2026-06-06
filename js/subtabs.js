@@ -73,7 +73,7 @@ function initPoradnikFromHash() {
     if (cfg.inner) {
         const innerBtn = document
             .getElementById('poradnik-trening')
-            ?.querySelector(`.btn-sub[onclick*="${cfg.inner}"]`);
+            ?.querySelector(`.btn-sub[data-tab="${cfg.inner}"]`);
         switchSubTab(cfg.inner, innerBtn, { skipUrlSync: true });
     }
 }
