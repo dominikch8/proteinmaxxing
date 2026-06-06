@@ -146,6 +146,29 @@
         return groups;
     }
 
+    function layoutSuggestions(slotKey) {
+        const { search, suggestions: ul } = slots[slotKey];
+        if (!search || !ul || ul.hidden) return;
+
+        const rect = search.getBoundingClientRect();
+        const gap = 4;
+        const bottomPad = 16;
+        const top = rect.bottom + gap;
+        const maxHeight = Math.max(160, window.innerHeight - top - bottomPad);
+
+        ul.style.top = `${top}px`;
+        ul.style.left = `${rect.left}px`;
+        ul.style.width = `${rect.width}px`;
+        ul.style.maxHeight = `${maxHeight}px`;
+    }
+
+    function scheduleLayoutSuggestions() {
+        window.requestAnimationFrame(() => {
+            if (!slots.a.suggestions?.hidden) layoutSuggestions('a');
+            if (!slots.b.suggestions?.hidden) layoutSuggestions('b');
+        });
+    }
+
     function openSuggestions(slotKey) {
         const search = slots[slotKey]?.search;
         if (!search || search.hidden) return;
@@ -186,6 +209,7 @@
             )
             .join('');
         ul.hidden = false;
+        layoutSuggestions(slotKey);
     }
 
     function renderSelectedCard(slotKey, product) {
@@ -532,5 +556,7 @@
 
     bindSlot('a');
     bindSlot('b');
+    window.addEventListener('resize', scheduleLayoutSuggestions);
+    window.addEventListener('scroll', scheduleLayoutSuggestions, true);
     readUrlProducts();
 })();

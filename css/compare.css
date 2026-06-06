@@ -47,16 +47,18 @@
 }
 
 .compare-suggestions {
-    position: absolute;
-    z-index: 40;
+    position: fixed;
+    z-index: 200;
     left: 0;
-    right: 0;
-    top: calc(100% + 4px);
+    top: 0;
+    width: auto;
     margin: 0;
     padding: 6px;
     list-style: none;
-    max-height: min(52vh, 380px);
+    max-height: calc(100dvh - 2rem);
     overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
     background: var(--surface-elevated);
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
