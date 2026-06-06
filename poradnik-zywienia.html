@@ -5,8 +5,8 @@
     <script src="js/theme-init.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/consent-head.js"></script>
-    <title>Poradnik żywienia — składniki, dieta i tipy | ProteinMaxxing.pl</title>
-    <meta name="description" content="Encyklopedia składników odżywczych, zasady zdrowego odżywiania i praktyczne tipy — białko, tłuszcze, węglowodany, mikroelementy i nawyki na co dzień.">
+    <title>Poradnik — składniki, dieta, tipy i trening | ProteinMaxxing.pl</title>
+    <meta name="description" content="Składniki odżywcze, zdrowe odżywianie, tipy i przewodnik treningowy — białko, makro, siłownia i obalanie mitów.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://proteinmaxxing.pl/poradnik-zywienia.html">
     <meta property="og:title" content="Poradnik żywienia | ProteinMaxxing.pl">
@@ -36,7 +36,6 @@
                 <li><a class="nav-link" href="porownaj-produkty.html">Porównaj produkty</a></li>
                 <li><a class="nav-link" href="dodaj-produkt.html">Dodaj produkty</a></li>
                 <li><a class="nav-link active" href="poradnik-zywienia.html" aria-current="page">Poradnik</a></li>
-                <li><a class="nav-link" href="trening.html">Trening</a></li>
                 <li><a class="nav-link" href="informacje.html">Informacje</a></li>
                 <li><a class="nav-link" href="o-mnie.html">O mnie</a></li>
             </ul>
@@ -51,6 +50,7 @@
                     <button class="btn-sub" type="button" data-tab="poradnik-skladniki" onclick="switchSubTab('poradnik-skladniki', this)">🧬 Składniki</button>
                     <button class="btn-sub" type="button" data-tab="poradnik-odzywianie" onclick="switchSubTab('poradnik-odzywianie', this)">🥗 Odżywianie</button>
                     <button class="btn-sub" type="button" data-tab="poradnik-tipy" onclick="switchSubTab('poradnik-tipy', this)">💡 Tipy</button>
+                    <button class="btn-sub" type="button" data-tab="poradnik-trening" onclick="switchSubTab('poradnik-trening', this)">💪 Trening</button>
                 </nav>
 
                 <div id="poradnik-start" class="sub-tab-content active">
@@ -77,6 +77,11 @@
                                 <span class="poradnik-hub-tile-emoji" aria-hidden="true">💡</span>
                                 <span class="poradnik-hub-tile-title">Tipy</span>
                                 <span class="poradnik-hub-tile-desc">Ważenie porcji, etykiety, mity i codzienne nawyki ułatwiające dietę.</span>
+                            </button>
+                            <button type="button" class="poradnik-hub-tile" onclick="switchSubTab('poradnik-trening', document.querySelector('.btn-sub[data-tab=poradnik-trening]'))">
+                                <span class="poradnik-hub-tile-emoji" aria-hidden="true">💪</span>
+                                <span class="poradnik-hub-tile-title">Trening</span>
+                                <span class="poradnik-hub-tile-desc">Plan siłowy, białko po wysiłku, regeneracja i obalanie mitów ze siłowni.</span>
                             </button>
                         </div>
 
@@ -138,7 +143,7 @@
                         <p>Na obiad wizualnie: <strong>½ talerza warzywa</strong>, <strong>¼ białko</strong> (mięso, ryby, tofu, jaja, nabiał), <strong>¼ węglowodany</strong> (ryż, ziemniaki, kasza, makaron). Do tego tłuszcz w rozsądnej ilości (oliwa, orzechy, sos na bazie jogurtu).</p>
 
                         <h2>4. Białko — priorytet przy treningu</h2>
-                        <p>Po treningu siłowym organizm potrzebuje aminokwasów do naprawy włókien mięśniowych. Rozłożenie białka na <strong>3–5 posiłków</strong> w ciągu dnia działa lepiej niż jedna ogromna porcja wieczorem. Zobacz też <a href="trening.html">zakładkę Trening</a>.</p>
+                        <p>Po treningu siłowym organizm potrzebuje aminokwasów do naprawy włókien mięśniowych. Rozłożenie białka na <strong>3–5 posiłków</strong> w ciągu dnia działa lepiej niż jedna ogromna porcja wieczorem. Zobacz też <a href="poradnik-zywienia.html#trening">zakładkę Trening w poradniku</a>.</p>
 
                         <h2>5. Przetworzona żywność</h2>
                         <p>Gotowce, fast food i słodycze nie są „zakazane”, ale zwykle mają dużo kcal przy małej objętości i słabym profilu odżywczym. Strategia: <strong>80% diety z prostych produktów</strong>, 20% na elastyczność — łatwiej utrzymać rok niż tydzień na „czystej” diecie.</p>
@@ -188,6 +193,226 @@
                             <a href="cena-bialka.html">Cena za 100 g białka</a>
                             <a href="porownaj-produkty.html">Porównaj produkty</a>
                         </nav>
+                    </div>
+                </div>
+
+                <div id="poradnik-trening" class="sub-tab-content">
+                    <div class="page-with-subtabs page-with-subtabs--nested">
+                        <nav class="sub-nav" aria-label="Sekcje treningu">
+                            <button class="btn-sub active" type="button" onclick="switchSubTab('trening-przewodnik', this)">💪 Przewodnik treningowy</button>
+                            <button class="btn-sub" type="button" onclick="switchSubTab('trening-mity', this)">🧪 Obalanie mitów</button>
+                        </nav>
+
+                        <div id="trening-przewodnik" class="sub-tab-content active">
+<div class="info-tab">
+                    <div class="page-hero">
+                        <h1>Trening</h1>
+                        <p class="subtitle">Edukacyjny przewodnik po sile, objętości i białku po wysiłku</p>
+                    </div>
+
+                    <p>Treści na tej stronie mają charakter ogólnoedukacyjny i nie zastępują konsultacji z lekarzem, fizjoterapeutą ani certyfikowanym trenerem. Zawsze dostosuj plan do swojego stanu zdrowia, doświadczenia i możliwości regeneracji.</p>
+
+                    <figure class="info-tab-figure">
+                        <img src="images/trening/trening-silownia-intro.jpg" alt="Wnętrze siłowni ze sprzętem do treningu siłowego" width="1200" height="675" loading="lazy" decoding="async">
+                        <figcaption>Siłownia — regularność, progresja i odpoczynek idą w parze</figcaption>
+                    </figure>
+
+                    <h2>Jak zbudować skuteczny plan treningowy</h2>
+                    <p>Największy efekt sylwetkowy i siłowy daje połączenie <strong>regularności</strong>, <strong>progresji obciążenia</strong> i <strong>odpoczynku</strong>. Same „dobre ćwiczenia” bez systemu rzadko wystarczą.</p>
+
+                    <h3>1. Częstotliwość i objętość</h3>
+                    <ul>
+                        <li><strong>Początkujący:</strong> 2–3 treningi tygodniowo, każda grupa mięśniowa 2× w tygodniu (np. całe ciało lub góra–dół).</li>
+                        <li><strong>Średnio zaawansowany:</strong> 3–4 treningi, split np. Push / Pull / Nogi lub góra–dół 4×.</li>
+                        <li><strong>Zaawansowany:</strong> 4–5 treningów, wyższa objętość, ale nadal z dniem regeneracji na grupę.</li>
+                    </ul>
+                    <p>Praktyczna objętość na jedną grupę mięśniową w tygodniu to zwykle <strong>10–20 serii</strong> (liczone blisko upadku mięśniowego, nie tylko „rozgrzewkowe” serie). Więcej nie zawsze znaczy lepiej — sen, stres i dieta też budują mięśnie.</p>
+
+                    <h3>2. Ćwiczenia wielostawowe na pierwszym planie</h3>
+                    <p>Baza planu to ruchy angażujące wiele stawów i dużą masę mięśniową:</p>
+                    <ul>
+                        <li>przysiad (lub jego warianty), martwy ciąg / rumuński,</li>
+                        <li>wyciskanie (sztanga, hantle, na maszynie),</li>
+                        <li>podciąganie / wiosłowanie, wypychanie nogami lub przysiad.</li>
+                    </ul>
+                    <p>Ćwiczenia izolowane (biceps, triceps, rozpiętki) warto dodać <strong>po</strong> bazie, gdy masz jeszcze siłę na technikę.</p>
+
+                    <h3>3. Progresja — serce skutecznego treningu</h3>
+                    <ul>
+                        <li><strong>Więcej obciążenia</strong> przy tej samej liczbie powtórzeń i dobrej technice.</li>
+                        <li><strong>Więcej powtórzeń</strong> przy tym samym ciężarze.</li>
+                        <li><strong>Więcej serii</strong> lub lepsza jakość (wolniejsze opuszczanie, pełny zakres).</li>
+                    </ul>
+                    <p>Zapisuj wyniki (ciężar × powtórzenia). Bez zapisu trudno realnie „dobić” progresji.</p>
+
+                    <h3>4. Serie, powtórzenia i przerwy</h3>
+                    <ul>
+                        <li><strong>Siła / ciężkie serie:</strong> ok. 3–6 powtórzeń, przerwa 2–4 min między seriami.</li>
+                        <li><strong>Hipertrofia:</strong> ok. 6–12 powtórzeń, przerwa 1,5–3 min.</li>
+                        <li><strong>Wytrzymałość mięśniowa:</strong> 12+ powtórzeń, krótsze przerwy — uzupełnienie, nie baza pod masę.</li>
+                    </ul>
+                    <p>Ostatnie powtórzenia w serii powinny być <strong>wymagające</strong>, ale wykonane kontrolowanie — bez szarpania, bez bólu stawowego.</p>
+
+                    <h2>Obciążenie blisko Twoich możliwości — bezpiecznie i mądrze</h2>
+                    <p>W literaturze sportowej chodzi o trening z <strong>wysokim wysiłkiem względnym</strong>: ciężar, przy którym ostatnie powtórzenia są trudne, ale technika pozostaje poprawna. To nie jest zachęta do „maksów na siłowni za wszelką cenę”.</p>
+
+                    <h3>Co to oznacza w praktyce</h3>
+                    <ul>
+                        <li>Pracujesz z obciążeniem, które pozwala wykonać zaplanowaną liczbę powtórzeń z <strong>1–3 powtórzeniami „w zapasie”</strong> (RIR) albo blisko upadku technicznego (RPE 8–9/10).</li>
+                        <li>Co kilka tygodni <strong>delikatnie</strong> zwiększasz ciężar lub powtórzenia — mały krok (np. +2,5 kg na sztandze, +1 powtórzenie) sumuje się w miesiące.</li>
+                        <li>Okresowo (np. co 4–8 tygodni) robisz <strong>tydzień lżejszy</strong> (deload) — mniej objętości lub mniejsze ciężary, żeby stawy i układ nerwowy odetchnęły.</li>
+                    </ul>
+
+                    <div class="info-warning">
+                        <strong>Ważne (zdrowie i prawo):</strong> Unikaj ćwiczeń na granicy kontroli bez doświadczenia, bez rozgrzewki i bez znajomości techniki. Testy maksymalne (1RM) i bardzo ciężkie serie warto wykonywać pod okiem trenera lub po przygotowaniu, z asekuracją i bez bólu w stawach. Osoby z chorobami układu krążenia, stawów lub po kontuzji — najpierw lekarz lub fizjoterapeuta. Trening na własną odpowiedzialność; strona nie ponosi odpowiedzialności za skutki indywidualnych decyzji treningowych.
+                    </div>
+
+                    <h3>Czego unikać</h3>
+                    <ul>
+                        <li>„Ścigania” ciężaru kosztem zakresu ruchu i kręgosłupa.</li>
+                        <li>Treningu do absolutnej niemożności podniesienia ciężaru przy każdej serii (często zbędne i obciąża regenerację).</li>
+                        <li>Braku rozgrzewki przed seriami roboczymi i braku rozciągania ruchowego po treningu (mobilność, nie siła).</li>
+                    </ul>
+
+                    <h2>Białko po treningu — ile i kiedy</h2>
+                    <p>Po treningu siłowym mięśnie są bardziej „otwarte” na wykorzystanie aminokwasów. Białko <strong>nie musi</strong> być wypite w 30 minut, ale sensowne okno to <strong>do ok. 2 godzin</strong> po zakończeniu wysiłku.</p>
+
+                    <h3>Ile białka po treningu?</h3>
+                    <ul>
+                        <li>Orientacyjnie: <strong>0,3–0,4 g białka na kg masy ciała</strong> w jednym posiłku po treningu.<br>
+                            <em>Przykład:</em> przy 75 kg → ok. <strong>23–30 g białka</strong> (np. ok. 100–130 g twarogu chudego, 1 porcja skyr + jajko, shake z 25–30 g proszku).</li>
+                        <li>Większa jednorazowa porcja (np. 60 g) nie zawsze buduje więcej mięśni — lepiej rozłożyć białko na <strong>3–5 posiłków</strong> w ciągu dnia.</li>
+                    </ul>
+
+                    <h3>Całkowite dzienne białko (ważniejsze niż sam „shake po”)</h3>
+                    <p>Dla budowy masy i utrzymania mięśni większość badań sugeruje:</p>
+                    <ul>
+                        <li><strong>1,6–2,2 g białka / kg masy ciała / dzień</strong> (przy redukcji często bliżej górnej granicy).</li>
+                        <li>Posiłek po treningu to część tego dziennego celu — użyj <a href="index.html"><strong>kalkulatora</strong></a>, że policzyć swoje zapotrzebowanie pod cel.</li>
+                    </ul>
+                    <p>Źródła o wysokiej jakości: nabiał, jaja, drób, ryby, chude mięso, tofu, odżywki białkowe (wygoda, nie konieczność). W stronie <a href="dieta.html"><strong>Dieta → Białko Maxxing</strong></a> zobaczysz produkty z najlepszym stosunkiem białka do kalorii.</p>
+
+                    <h3>Węglowodany i nawodnienie po treningu</h3>
+                    <ul>
+                        <li>Węglowodany uzupełniają glikogen — ważne przy częstym treningu (ryż, ziemniaki, owsianka, pieczywo pełnoziarniste).</li>
+                        <li>Woda + elektrolity (sód z posiłkiem, potas z warzyw/owoców) — zwłaszcza po intensywnym poceniu.</li>
+                    </ul>
+
+                    <h2>Regeneracja — bez tego trening nie działa</h2>
+                    <ul>
+                        <li><strong>Sen:</strong> 7–9 h — hormony wzrostu i naprawa tkanek.</li>
+                        <li><strong>Dni wolne:</strong> minimum 1–2 pełne odpoczynki od ciężkiej siłowni; możesz spacer / lekki ruch.</li>
+                        <li><strong>Ból stawów vs. zakwas:</strong> zakwas ≠ koniecznie dobry trening; ostry ból stawu = przerwa i konsultacja.</li>
+                    </ul>
+
+                    <div class="info-callout">
+                        <strong>Skrót w jednym zdaniu:</strong> Trenuj 3–4× w tygodniu z ciężkimi, wielostawowymi seriami blisko swoich możliwości (bezpieczna technika), jedz białko rozłożone w ciągu dnia (ok. 0,3–0,4 g/kg po treningu + 1,6–2,2 g/kg łącznie), śpij i co jakiś czas odciąż organizm. Połącz to z kalkulatorem kalorii i listą produktów w ProteinMaxxing.pl.
+                    </div>
+
+                    <figure class="info-tab-figure">
+                        <img src="images/trening/trening-silownia-outro.jpg" alt="Odpoczynek i regeneracja po treningu siłowym" width="1200" height="675" loading="lazy" decoding="async">
+                        <figcaption>Regeneracja po treningu — sen, odżywienie i dni wolne</figcaption>
+                    </figure>
+                </div>
+                </div>
+                        </div>
+
+                        <div id="trening-mity" class="sub-tab-content">
+<div class="info-tab">
+                    <div class="page-hero">
+                        <h1>Obalanie mitów</h1>
+                        <p class="subtitle">Najczęstsze przekonania z siłowni i kulturystyki — co mówi nauka, a co to tylko „bro science”</p>
+                    </div>
+
+                    <p>Poniżej zebraliśmy mity, które najczęściej słychać w szatni, na forach i w social mediach. Krótko: co jest nieprawdą lub mocno przesadzone, i na czym warto się oprzeć.</p>
+
+                    <ul class="myth-list">
+                        <li>
+                            <strong>Mit: „Musisz zjeść białko w ciągu 30 minut po treningu, inaczej stracisz zyski.”</strong>
+                            Okno anaboliczne jest znacznie szersze (wiele godzin). Ważniejsze jest <strong>dzienne</strong> białko (ok. 1,6–2,2 g/kg) i regularne posiłki niż magiczny „shake w 20 minut”.
+                        </li>
+                        <li>
+                            <strong>Mit: „Trzeba jeść co 2–3 godziny, żeby ciało nie zjadało mięśni.”</strong>
+                            Organizm nie przełącza się w katabolizm po jednym dłuższym przerwie. Liczy się suma kalorii i białka w ciągu doby oraz trening z progresją.
+                        </li>
+                        <li>
+                            <strong>Mit: „Bez bólu i ogromnego zakwasu trening się nie liczy.”</strong>
+                            Zakwas i ból mięśni nie są miarą jakości sesji. Liczy się obciążenie blisko możliwości, objętość i technika — nie każda seria musi kończyć się absolutnym upadkiem.
+                        </li>
+                        <li>
+                            <strong>Mit: „Musisz się maksymalnie pompować, żeby mięśnie rosły.”</strong>
+                            „Pump” to efekt uboczny, nie warunek hipertrofii. Budują ją przede wszystkim progresywne obciążenie, wystarczająca objętość i regeneracja.
+                        </li>
+                        <li>
+                            <strong>Mit: „Tylko serie 8–12 budują masę; mniej lub więcej powtórzeń to strata czasu.”</strong>
+                            Hipertrofia pojawia się w szerokim zakresie powtórzeń (np. ok. 5–30), jeśli seria jest wymagająca. Różne zakresy warto mieszać w planie.
+                        </li>
+                        <li>
+                            <strong>Mit: „Każda grupa mięśniowa musi być trenowana dokładnie raz w tygodniu (klasyczny bro split).”</strong>
+                            To jeden z wielu sprawdzonych układów, nie jedyna prawda. Split góra–dół, Push/Pull/Legs czy trening całego ciała 2–3× często dają podobne efekty przy dobrej objętości.
+                        </li>
+                        <li>
+                            <strong>Mit: „Ciężkie hantle robią „masę”, lekkie — „rysy” i tonują.”</strong>
+                            Mięśnie rosną lub się kurczą; nie ma osobnego trybu „tonowania”. Wygląd zależy od masy mięśniowej, poziomu tłuszczu i genetyki — nie od samej wagi sztangielki.
+                        </li>
+                        <li>
+                            <strong>Mit: „Kobiety od ciężkich ciężarów od razu „spuchną” jak kulturyści.”</strong>
+                            Duża masa mięśniowa u kobiet wymaga lat treningu, diety i często suplementacji hormonalnej. Trening siłowy u kobiet poprawia sylwetkę, kości i zdrowie metaboliczne.
+                        </li>
+                        <li>
+                            <strong>Mit: „Brzuszki i ćwiczenia na brzuch spalają tłuszcz z brzucha.”</strong>
+                            Nie da się redukować tłuszczu punktowo z jednego miejsca. Spada on ogólnie (deficyt kaloryczny), a trening brzucha wzmacnia mięśnie pod skórą.
+                        </li>
+                        <li>
+                            <strong>Mit: „Im więcej pocisz się na cardio, tym więcej spalasz tłuszczu.”</strong>
+                            Pot to głównie woda i termoregulacja, nie miara utraty tkanki tłuszczowej. Liczą się czas, intensywność i bilans kaloryczny.
+                        </li>
+                        <li>
+                            <strong>Mit: „Kardio zawsze niszczy zyski siłowe i masę mięśniową.”</strong>
+                            Umiarkowane cardio wspiera serce i regenerację. Problemem jest ekstremalna objętość cardio przy agresywnym deficycie i braku białka — nie sam bieg czy rower.
+                        </li>
+                        <li>
+                            <strong>Mit: „Przysiad poniżej równoległej zawsze niszczy kolana.”</strong>
+                            Przy poprawnej technice i mobilności głęboki przysiad bywa bezpieczny dla wielu osób. Ryzyko rośnie przy złej osi kolan, szarpaniu i zbyt szybkiej progresji bez przygotowania.
+                        </li>
+                        <li>
+                            <strong>Mit: „Kreatyna szkodzi nerkom i jest „chemią”.”</strong>
+                        U zdrowych osób kreatyna monohydrat jest jednym z najlepiej przebadanych suplementów. Przy chorobach nerek — konsultacja z lekarzem, nie samodzielna diagnoza z internetu.
+                        </li>
+                        <li>
+                            <strong>Mit: „BCAA są konieczne, jeśli ćwiczysz na siłowni.”</strong>
+                        Przy wystarczającym białku z jedzenia (lub shakeu) aminokwasy rozgałęzione z proszku zwykle nic nie dodają — masz już leucynę i resztę EAA w posiłku.
+                        </li>
+                        <li>
+                            <strong>Mit: „Booster testosteronowy z półki zastąpi trening i dietę.”</strong>
+                        Większość „test boosterów” ma minimalny lub zerowy efekt u zdrowych mężczyzn. Poziom testosteronu regulują sen, masa ciała, stres i trening — nie magiczna mieszanka ziół.
+                        </li>
+                        <li>
+                            <strong>Mit: „Tłuszcz zamienia się w mięśnie (albo odwrotnie).”</strong>
+                        To dwie różne tkanki. Możesz budować mięśnie i tracić tłuszcz jednocześnie (recomp) przy odpowiednim planie, ale nie ma „przemiany” jednej w drugą.
+                        </li>
+                        <li>
+                            <strong>Mit: „Jedzenie po 18:00 lub w nocy automatycznie tuczy.”</strong>
+                        Przybiera się od nadwyżki kalorii w ciągu doby, nie od zegarka. Późny posiłek po treningu może wręcz pomóc w regeneracji.
+                        </li>
+                        <li>
+                            <strong>Mit: „Detoks, głodówki i „oczyszczanie organizmu” są potrzebne po „złej diecie”.”</strong>
+                        Wątroba i nerki same „detoksują” na co dzień. Nie ma sensownych dowodów na magiczne soki czy plastry — liczy się długoterminowa, zbilansowana dieta.
+                        </li>
+                        <li>
+                            <strong>Mit: „Im więcej serii na każdą partię, tym zawsze lepiej — bez limitu.”</strong>
+                        Po przekroczeniu sensownej objętości (często ok. 15–25 serii tygodniowo na grupę u większości osób) zyski maleją, a zmęczenie i kontuzje rosną.
+                        </li>
+                        <li>
+                            <strong>Mit: „Naturalny kulturysta na scenie wygląda tak samo jak Ty po roku na siłowni — tylko „mocniej ćwiczy”.”</strong>
+                        Sylwetka zawodników to lata treningu, dieta, genetyka, oświetlenie, pozowanie i często środki farmakologiczne. Porównywanie się do nich bywa demotywujące i nierealne.
+                        </li>
+                    </ul>
+
+                    <div class="info-callout">
+                        <strong>Na co stawiać zamiast mitów:</strong> regularny trening z progresją, sen, dzienne białko i kalorie pod cel, umiarkowane cardio i cierpliwość. W razie wątpliwości — dietetyk, lekarz lub certyfikowany trener, nie losowy influencer.
+                    </div>
+                        </div>
                     </div>
                 </div>
             </div>

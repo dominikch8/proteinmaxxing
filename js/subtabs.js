@@ -37,3 +37,37 @@ function switchSubTab(subTabId, btn, options = {}) {
     }
     if (!skipUrlSync && typeof syncDietaUrl === 'function') syncDietaUrl(true);
 }
+
+const PORADNIK_HASH = {
+    start: { tab: 'poradnik-start' },
+    skladniki: { tab: 'poradnik-skladniki' },
+    odzywianie: { tab: 'poradnik-odzywianie' },
+    tipy: { tab: 'poradnik-tipy' },
+    trening: { tab: 'poradnik-trening', inner: 'trening-przewodnik' },
+    mity: { tab: 'poradnik-trening', inner: 'trening-mity' },
+    'trening-mity': { tab: 'poradnik-trening', inner: 'trening-mity' }
+};
+
+function initPoradnikFromHash() {
+    if (!document.body.classList.contains('poradnik-page')) return;
+    const key = (location.hash || '').replace(/^#/, '').toLowerCase();
+    if (!key) return;
+    const cfg = PORADNIK_HASH[key];
+    if (!cfg) return;
+
+    const tabBtn = document.querySelector(`.btn-sub[data-tab="${cfg.tab}"]`);
+    switchSubTab(cfg.tab, tabBtn, { skipUrlSync: true });
+
+    if (cfg.inner) {
+        const innerBtn = document
+            .getElementById('poradnik-trening')
+            ?.querySelector(`.btn-sub[onclick*="${cfg.inner}"]`);
+        switchSubTab(cfg.inner, innerBtn, { skipUrlSync: true });
+    }
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPoradnikFromHash);
+} else {
+    initPoradnikFromHash();
+}
