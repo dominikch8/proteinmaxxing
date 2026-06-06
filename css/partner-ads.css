@@ -1,31 +1,34 @@
-/* —— Boczne skyscraper'y (desktop) —— */
+/* —— Boczne reklamy w szarych marginesach viewportu —— */
+:root {
+    --pm-content-max: 1240px;
+    --pm-rail-width: 160px;
+    --pm-rail-gap: 18px;
+}
+
 .pm-ad-rail {
     position: fixed;
-    top: 96px;
-    z-index: 90;
-    width: 160px;
-    display: none;
+    z-index: 40;
+    top: 92px;
+    width: var(--pm-rail-width);
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    pointer-events: none;
-}
-
-.pm-ad-rail .pm-ad-slot {
     pointer-events: auto;
 }
 
 .pm-ad-rail--left {
-    left: max(8px, calc(50% - 620px - 176px));
+    left: max(8px, calc((100vw - var(--pm-content-max)) / 2 - var(--pm-rail-width) - var(--pm-rail-gap)));
 }
 
 .pm-ad-rail--right {
-    right: max(8px, calc(50% - 620px - 176px));
+    right: max(8px, calc((100vw - var(--pm-content-max)) / 2 - var(--pm-rail-width) - var(--pm-rail-gap)));
 }
 
-@media (min-width: 1320px) {
+/* Ukryj boki, gdy brakuje miejsca obok treści (1240 + 2×160 + 2×gap ≈ 1596px) */
+@media (max-width: 1596px) {
     .pm-ad-rail {
-        display: flex;
+        display: none !important;
     }
 }
 
@@ -33,8 +36,8 @@
 .pm-ad-leaderboard {
     display: none;
     justify-content: center;
-    padding: 10px 16px 0;
-    max-width: 1240px;
+    padding: 10px 16px 4px;
+    max-width: var(--pm-content-max);
     margin: 0 auto;
 }
 
@@ -49,9 +52,6 @@
     display: flex;
     justify-content: center;
     padding: 8px 12px;
-    position: sticky;
-    top: 0;
-    z-index: 85;
     background: var(--header-bg, rgba(255, 254, 251, 0.92));
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-soft, #e7e5e4);
@@ -67,9 +67,9 @@
     }
 }
 
-/* —— Pasek nad stopką: banner + rectangle + ECPM —— */
+/* —— Pasek nad stopką —— */
 .pm-ad-footer-strip {
-    max-width: 1240px;
+    max-width: var(--pm-content-max);
     margin: 0 auto 20px;
     padding: 0 24px;
 }
@@ -95,11 +95,16 @@
 .pm-ad-slot {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     overflow: hidden;
     max-width: 100%;
-    min-height: 1px;
     line-height: 0;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+}
+
+[data-theme='dark'] .pm-ad-slot {
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .pm-ad-slot--728x90 {
@@ -143,6 +148,10 @@
 }
 
 @media (max-width: 768px) {
+    .pm-ad-footer-strip {
+        padding: 0 12px;
+    }
+
     .pm-ad-footer-strip__inner {
         flex-direction: column;
         align-items: center;
@@ -157,10 +166,10 @@
 }
 
 @media print {
-    .pm-ad-rail,
     .pm-ad-leaderboard,
     .pm-ad-mobile-bar,
-    .pm-ad-footer-strip {
+    .pm-ad-footer-strip,
+    .pm-ad-rail {
         display: none !important;
     }
 }
