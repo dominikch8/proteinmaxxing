@@ -107,7 +107,7 @@ async function fetchCommonsImageOnce(search) {
         origin: '*'
     });
     const url = `https://commons.wikimedia.org/w/api.php?${params}`;
-    const res = await fetch(url, { headers: { 'User-Agent': 'ProteinMaxxing.pl/1.0 (educational nutrition site)' } });
+    const res = await fetch(url, { headers: { 'User-Agent': 'Proteiner/1.0 (educational nutrition site)' } });
     if (!res.ok) return null;
     const data = await res.json();
     const pages = data?.query?.pages;

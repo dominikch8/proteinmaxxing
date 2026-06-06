@@ -3,7 +3,7 @@
  * prefix: '' (root) lub '../' (produkty/)
  */
 
-const SITE = 'https://proteinmaxxing.pl';
+const SITE = 'https://proteiner.pl';
 
 export function buildFaviconLinks(prefix = '') {
     const p = prefix;
@@ -19,7 +19,7 @@ export function buildFaviconLinks(prefix = '') {
  * @param {{ width?: number, height?: number, alt?: string }} [opts]
  */
 export function buildSocialImageMeta(prefix, imagePath, opts = {}) {
-    const { width = 1200, height = 630, alt = 'ProteinMaxxing.pl — kalkulator dietetyczny i baza białka' } = opts;
+    const { width = 1200, height = 630, alt = 'Proteiner — kalkulator dietetyczny i baza białka' } = opts;
     const rel = imagePath.startsWith('http') ? imagePath : `${SITE}/${imagePath.replace(/^\//, '')}`;
     return `    <meta property="og:image" content="${rel}">
     <meta property="og:image:width" content="${width}">

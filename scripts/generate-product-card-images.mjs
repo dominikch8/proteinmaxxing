@@ -86,7 +86,7 @@ function buildSvg(p) {
   <text x="400" y="500" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#334155">
     Białko <tspan font-weight="700">${p.protein} g</tspan>  ·  Węgle <tspan font-weight="700">${p.carbs} g</tspan>  ·  Tłuszcz <tspan font-weight="700">${p.fat} g</tspan>
   </text>
-  <text x="400" y="545" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#94a3b8">ProteinMaxxing.pl</text>
+  <text x="400" y="545" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#94a3b8">Proteiner</text>
 </svg>`;
 }
 

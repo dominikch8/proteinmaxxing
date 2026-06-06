@@ -108,7 +108,7 @@
         const p = data.product;
         const catLabel = CATEGORY_LABELS[p.category] || p.category;
         const lines = [
-            'Nowe zgłoszenie produktu — ProteinMaxxing.pl',
+            'Nowe zgłoszenie produktu — Proteiner',
             '',
             `Data: ${data.submittedAt}`,
             p.contactEmail ? `Kontakt: ${data.contactEmail}` : 'Kontakt: (brak)',
@@ -154,7 +154,7 @@
         const p = data.product;
         const catLabel = CATEGORY_LABELS[p.category] || p.category;
         const body = {
-            _subject: `[ProteinMaxxing] Nowy produkt: ${p.name}`,
+            _subject: `[Proteiner] Nowy produkt: ${p.name}`,
             _template: 'box',
             _captcha: 'false',
             name: p.name,

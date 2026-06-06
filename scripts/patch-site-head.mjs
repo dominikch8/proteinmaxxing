@@ -68,7 +68,7 @@ for (const file of walk(root)) {
             const imgExists = fs.existsSync(path.join(root, imgRel));
             const ogPath = imgExists ? imgRel : 'images/og-home.jpg';
             const titleMatch = html.match(/<title>([^<]*)<\/title>/);
-            const alt = titleMatch ? titleMatch[1].replace(/\s*\|\s*ProteinMaxxing\.pl\s*$/i, '').trim() : slug;
+            const alt = titleMatch ? titleMatch[1].replace(/\s*\|\s*Proteiner\s*$/i, '').trim() : slug;
             html = injectAfterOgUrl(
                 html,
                 buildSocialImageMeta(prefix, ogPath, { alt })

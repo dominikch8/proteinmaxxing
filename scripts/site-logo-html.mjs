@@ -1,5 +1,5 @@
 /**
- * Ikona marki obok „ProteinMaxxing.pl” w nagłówku.
+ * Ikona marki obok „Proteiner” w nagłówku.
  * prefix: '' (root) lub '../' (produkty/)
  */
 export function buildLogoMark(prefix = '') {

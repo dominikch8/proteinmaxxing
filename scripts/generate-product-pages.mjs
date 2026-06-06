@@ -298,9 +298,9 @@ function buildSeoText(p) {
 }
 
 function buildPage(p, similar = []) {
-    const title = `${p.name} – białko, kalorie, węglowodany, tłuszcz | ProteinMaxxing.pl`;
-    const desc = `${p.name}: ${p.protein}g białka, ${p.kcal} kcal, ${p.carbs}g węglowodanów, ${p.fat}g tłuszczu na 100g. Zdrowe odżywianie, proteiny, odchudzanie – makro i mikro na ProteinMaxxing.pl.`;
-    const canonical = `https://proteinmaxxing.pl/produkty/${p.slug}.html`;
+    const title = `${p.name} – białko, kalorie, węglowodany, tłuszcz | Proteiner`;
+    const desc = `${p.name}: ${p.protein}g białka, ${p.kcal} kcal, ${p.carbs}g węglowodanów, ${p.fat}g tłuszczu na 100g. Zdrowe odżywianie, proteiny, odchudzanie – makro i mikro na Proteiner.`;
+    const canonical = `https://proteiner.pl/produkty/${p.slug}.html`;
     const catLabel = CATEGORY_LABELS[p.category] || p.category;
     const porcjaProtein = (p.protein * p.servingRatio).toFixed(1);
     const porcjaCarbs = (p.carbs * p.servingRatio).toFixed(1);
@@ -383,7 +383,7 @@ ${buildThemeStylesheets('../', { productPage: true })}
         <nav>
             <a class="logo" href="../index.html">
                 ${buildLogoMark('../')}
-                <span>ProteinMaxxing.pl</span>
+                <span>Proteiner</span>
             </a>
             <a class="nav-back" href="../dieta.html">← Baza produktów</a>
         </nav>
@@ -441,7 +441,7 @@ ${buildThemeStylesheets('../', { productPage: true })}
 
         <section class="seo-block">
             <h2>${esc(p.name)} a zdrowa dieta, odchudzanie i białko</h2>
-            <p>Szukając <strong>kalorii</strong>, <strong>białka</strong> i <strong>węglowodanów</strong> w jednym miejscu, warto porównać ${esc(p.name)} z innymi produktami w bazie ProteinMaxxing.pl. Przy <strong>odchudzaniu</strong> liczy się deficyt kaloryczny i sytość — stąd profil ${p.kcal} kcal i ${p.protein} g proteinów na 100 g. Przy budowie masy mięśniowej zwróć uwagę na proporcję białka do energii oraz na <strong>zdrowe</strong> źródła tłuszczu (${p.satFat} g nasyconych / ${p.unsatFat} g nienasyconych).</p>
+            <p>Szukając <strong>kalorii</strong>, <strong>białka</strong> i <strong>węglowodanów</strong> w jednym miejscu, warto porównać ${esc(p.name)} z innymi produktami w bazie Proteiner. Przy <strong>odchudzaniu</strong> liczy się deficyt kaloryczny i sytość — stąd profil ${p.kcal} kcal i ${p.protein} g proteinów na 100 g. Przy budowie masy mięśniowej zwróć uwagę na proporcję białka do energii oraz na <strong>zdrowe</strong> źródła tłuszczu (${p.satFat} g nasyconych / ${p.unsatFat} g nienasyconych).</p>
             <p>${esc(p.extra)}</p>
             <div class="seo-keywords">
                 ${['białko', 'proteiny', 'kalorie', 'kcal', 'węglowodany', 'tłuszcz', 'makro', 'mikro', 'zdrowe', 'odchudzanie', 'redukcja', 'dieta', 'odżywianie'].map((k) => `<span>${k}</span>`).join('')}
@@ -473,7 +473,7 @@ function generateLegacyCategoryRedirects() {
     for (const slug of CATEGORY_ORDER) {
         const label = CATEGORY_LABELS[slug] || slug;
         const target = `../../dieta.html#produkty/kategoria/${encodeURIComponent(slug)}`;
-        const canonical = `https://proteinmaxxing.pl/dieta.html#produkty/kategoria/${slug}`;
+        const canonical = `https://proteiner.pl/dieta.html#produkty/kategoria/${slug}`;
         fs.writeFileSync(
             path.join(legacyDir, `${slug}.html`),
             `<!DOCTYPE html>
@@ -484,7 +484,7 @@ ${buildThemeInitScript('../../')}
     <meta http-equiv="refresh" content="0;url=${target}">
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="${canonical}">
-    <title>Przekierowanie: ${label} | ProteinMaxxing.pl</title>
+    <title>Przekierowanie: ${label} | Proteiner</title>
     <script>location.replace('${target.replace(/'/g, "\\'")}');</script>
 </head>
 <body>
@@ -511,47 +511,47 @@ for (const p of products) {
 generateLegacyCategoryRedirects();
 
 const sitemapUrls = products.map(
-    (p) => `  <url>\n    <loc>https://proteinmaxxing.pl/produkty/${p.slug}.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`
+    (p) => `  <url>\n    <loc>https://proteiner.pl/produkty/${p.slug}.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`
 );
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://proteinmaxxing.pl/</loc>
+    <loc>https://proteiner.pl/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://proteinmaxxing.pl/dieta.html</loc>
+    <loc>https://proteiner.pl/dieta.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://proteinmaxxing.pl/bialko-maxxing.html</loc>
+    <loc>https://proteiner.pl/bialko-maxxing.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://proteinmaxxing.pl/cena-bialka.html</loc>
+    <loc>https://proteiner.pl/cena-bialka.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://proteinmaxxing.pl/porownaj-produkty.html</loc>
+    <loc>https://proteiner.pl/porownaj-produkty.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://proteinmaxxing.pl/trening.html</loc>
+    <loc>https://proteiner.pl/trening.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://proteinmaxxing.pl/informacje.html</loc>
+    <loc>https://proteiner.pl/informacje.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://proteinmaxxing.pl/o-mnie.html</loc>
+    <loc>https://proteiner.pl/o-mnie.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
@@ -571,8 +571,8 @@ ${buildThemeInitScript('../')}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="0;url=../dieta.html#produkty">
     <meta name="robots" content="noindex, follow">
-    <link rel="canonical" href="https://proteinmaxxing.pl/dieta.html">
-    <title>Przekierowanie do bazy produktów | ProteinMaxxing.pl</title>
+    <link rel="canonical" href="https://proteiner.pl/dieta.html">
+    <title>Przekierowanie do bazy produktów | Proteiner</title>
     <script>location.replace('../dieta.html#produkty');</script>
 </head>
 <body>

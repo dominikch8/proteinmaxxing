@@ -11,7 +11,7 @@ function walk(dir, list = []) {
     return list;
 }
 
-const BASE = 'https://proteinmaxxing.pl';
+const BASE = 'https://proteiner.pl';
 
 function fileToUrl(filePath) {
     const p = filePath.replace(/\\/g, '/');
@@ -64,9 +64,9 @@ fs.writeFileSync(
         '',
         `**${productsBoth.length}** kart produktów — każda ma unikalny title i description (makro w opisie).`,
         '',
-        '**Wzór title:** `{Nazwa} – białko, kalorie, węglowodany, tłuszcz | ProteinMaxxing.pl`',
+        '**Wzór title:** `{Nazwa} – białko, kalorie, węglowodany, tłuszcz | Proteiner`',
         '',
-        '**Wzór description:** `{Nazwa}: {białko}g białka, {kcal} kcal, {węgle}g węglowodanów, {tłuszcz}g tłuszczu na 100g. Zdrowe odżywianie, proteiny, odchudzanie – makro i mikro na ProteinMaxxing.pl.`',
+        '**Wzór description:** `{Nazwa}: {białko}g białka, {kcal} kcal, {węgle}g węglowodanów, {tłuszcz}g tłuszczu na 100g. Zdrowe odżywianie, proteiny, odchudzanie – makro i mikro na Proteiner.`',
         '',
         '<details><summary>Pełna lista slugów produktów</summary>',
         '',

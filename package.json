@@ -1,5 +1,5 @@
 {
-  "name": "proteinmaxxing",
+  "name": "proteiner",
   "private": true,
   "scripts": {
     "start": "serve . -l 8080",

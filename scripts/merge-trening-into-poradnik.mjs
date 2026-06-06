@@ -85,8 +85,8 @@ if (!poradnik.includes('poradnik-hub-tile-title">Trening')) {
 }
 
 poradnik = poradnik.replace(
-    '<title>Poradnik żywienia — składniki, dieta i tipy | ProteinMaxxing.pl</title>',
-    '<title>Poradnik — składniki, dieta, tipy i trening | ProteinMaxxing.pl</title>'
+    '<title>Poradnik żywienia — składniki, dieta i tipy | Proteiner</title>',
+    '<title>Poradnik — składniki, dieta, tipy i trening | Proteiner</title>'
 );
 poradnik = poradnik.replace(
     'content="Encyklopedia składników odżywczych, zasady zdrowego odżywiania i praktyczne tipy — białko, tłuszcze, węglowodany, mikroelementy i nawyki na co dzień."',

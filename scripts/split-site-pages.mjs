@@ -180,7 +180,7 @@ function buildNav(activeId) {
         <nav>
             <a href="index.html" class="logo">
                 <div class="logo-mark">P</div>
-                <span>ProteinMaxxing.pl</span>
+                <span>Proteiner</span>
             </a>
             <ul class="nav-links">
                 ${links}
@@ -190,7 +190,7 @@ function buildNav(activeId) {
 }
 
 const FOOTER = `    <footer class="site-footer">
-        <p><strong>ProteinMaxxing.pl</strong> — kalkulator dietetyczny i baza produktów</p>
+        <p><strong>Proteiner</strong> — kalkulator dietetyczny i baza produktów</p>
         <p style="margin-top: 8px;">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>`;
 
@@ -278,11 +278,11 @@ const productScripts = [
 fs.writeFileSync(
     path.join(root, 'index.html'),
     pageShell({
-        title: 'Kalkulator Dietetyczny & BMI | ProteinMaxxing.pl',
+        title: 'Kalkulator Dietetyczny & BMI | Proteiner',
         description:
             'Kalkulator TDEE, BMI, makro, wody, witamin i minerałów. Oblicz kalorie, białko, tłuszcze i węglowodany pod swój cel: redukcję i odchudzanie lub masę',
-        canonical: 'https://proteinmaxxing.pl/',
-        ogTitle: 'Kalkulator dietetyczny | ProteinMaxxing.pl',
+        canonical: 'https://proteiner.pl/',
+        ogTitle: 'Kalkulator dietetyczny | Proteiner',
         ogDesc: 'TDEE, BMI i białko pod cel: redukcja, masa lub utrzymanie wagi',
         activeNav: 'kalkulator',
         body: sections.kalkulator,
@@ -294,11 +294,11 @@ fs.writeFileSync(
 fs.writeFileSync(
     path.join(root, 'dieta.html'),
     pageShell({
-        title: 'Dieta — baza produktów i rankingi białka | ProteinMaxxing.pl',
+        title: 'Dieta — baza produktów i rankingi białka | Proteiner',
         description:
             'Wartości odżywcze 342 produktów. Ranking Białko Maxxing i Top 10: kalorie i cena na 100 g białka. Idealne przy odchudzaniu lub budowaniu masy mięśniowej',
-        canonical: 'https://proteinmaxxing.pl/dieta.html',
-        ogTitle: 'Baza produktów i rankingi białka | ProteinMaxxing.pl',
+        canonical: 'https://proteiner.pl/dieta.html',
+        ogTitle: 'Baza produktów i rankingi białka | Proteiner',
         ogDesc: '342 produkty, białko maxxing, cena za 100 g białka - porównaj składniki odżywcze i ceny',
         activeNav: 'dieta',
         body: `<div class="page-with-subtabs">\n${sections.dieta}\n</div>`,
@@ -310,11 +310,11 @@ fs.writeFileSync(
 fs.writeFileSync(
     path.join(root, 'trening.html'),
     pageShell({
-        title: 'Trening siłowy — przewodnik i mity | ProteinMaxxing.pl',
+        title: 'Trening siłowy — przewodnik i mity | Proteiner',
         description:
             'Przewodnik po treningu siłowym: objętość, progresja, białko po treningu, regeneracja. Sekcja obalania mitów ze siłowni.',
-        canonical: 'https://proteinmaxxing.pl/trening.html',
-        ogTitle: 'Trening i odżywianie | ProteinMaxxing.pl',
+        canonical: 'https://proteiner.pl/trening.html',
+        ogTitle: 'Trening i odżywianie | Proteiner',
         ogDesc: 'Plan treningowy, białko po wysiłku, regeneracja — edukacyjnie, bez zastępowania trenera.',
         activeNav: 'trening',
         body: `<div class="page-with-subtabs">\n${sections.trening}\n</div>`,
@@ -326,11 +326,11 @@ fs.writeFileSync(
 fs.writeFileSync(
     path.join(root, 'informacje.html'),
     pageShell({
-        title: 'Informacje — polityka prywatności | ProteinMaxxing.pl',
+        title: 'Informacje — polityka prywatności | Proteiner',
         description:
-            'Polityka prywatności, pliki cookie i reklamy Google AdSense na ProteinMaxxing.pl.',
-        canonical: 'https://proteinmaxxing.pl/informacje.html',
-        ogTitle: 'Informacje i polityka prywatności | ProteinMaxxing.pl',
+            'Polityka prywatności, pliki cookie i reklamy Google AdSense na Proteiner.',
+        canonical: 'https://proteiner.pl/informacje.html',
+        ogTitle: 'Informacje i polityka prywatności | Proteiner',
         ogDesc: 'Cookies, AdSense i prawa użytkownika.',
         activeNav: 'informacje',
         body: sections.informacje,
@@ -342,10 +342,10 @@ fs.writeFileSync(
 fs.writeFileSync(
     path.join(root, 'o-mnie.html'),
     pageShell({
-        title: 'O mnie — kontakt | ProteinMaxxing.pl',
-        description: 'Kontakt, wsparcie i sugestie dotyczące ProteinMaxxing.pl.',
-        canonical: 'https://proteinmaxxing.pl/o-mnie.html',
-        ogTitle: 'O mnie | ProteinMaxxing.pl',
+        title: 'O mnie — kontakt | Proteiner',
+        description: 'Kontakt, wsparcie i sugestie dotyczące Proteiner.',
+        canonical: 'https://proteiner.pl/o-mnie.html',
+        ogTitle: 'O mnie | Proteiner',
         ogDesc: 'Napisz z pytaniem lub sugestią ulepszenia strony.',
         activeNav: 'o-mnie',
         body: sections['o-mnie'],
