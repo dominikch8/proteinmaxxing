@@ -37,9 +37,6 @@
 
     const KPI_METRICS = COMPARE_METRICS;
 
-    const DEFAULT_SLUG_A = 'twarog-chudy';
-    const DEFAULT_SLUG_B = 'piers-z-kurczaka';
-
     /** Kolejność kategorii w podpowiedziach — fast food i polskie obiadki na górze. */
     const SUGGESTION_CATEGORY_ORDER = [
         'fastfood',
@@ -246,12 +243,12 @@
 
     function readUrlProducts() {
         const params = new URLSearchParams(window.location.search);
-        const slugA = params.get('a');
-        const slugB = params.get('b');
-        const a = getProductBySlug(slugA) || getProductBySlug(DEFAULT_SLUG_A);
-        const b = getProductBySlug(slugB) || getProductBySlug(DEFAULT_SLUG_B);
-        setProduct('a', a);
-        setProduct('b', b);
+        state.a = getProductBySlug(params.get('a'));
+        state.b = getProductBySlug(params.get('b'));
+        renderSelectedCard('a', state.a);
+        renderSelectedCard('b', state.b);
+        syncUrl();
+        renderComparison();
     }
 
     function getMetricDef(key) {
