@@ -10,45 +10,49 @@
     z-index: 40;
     top: 92px;
     width: var(--pm-rail-width);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 12px;
     pointer-events: auto;
+    max-height: calc(100vh - 108px);
+    overflow: hidden;
 }
 
-.pm-ad-rail--left {
-    left: max(8px, calc((100vw - var(--pm-content-max)) / 2 - var(--pm-rail-width) - var(--pm-rail-gap)));
-}
-
-.pm-ad-rail--right {
-    right: max(8px, calc((100vw - var(--pm-content-max)) / 2 - var(--pm-rail-width) - var(--pm-rail-gap)));
-}
-
-/* Ukryj boki, gdy brakuje miejsca obok treści (1240 + 2×160 + 2×gap ≈ 1596px) */
-@media (max-width: 1596px) {
-    .pm-ad-rail {
-        display: none !important;
+/* Jedna kolumna boczna — od ~1600px szerokości */
+@media (min-width: 1597px) {
+    .pm-ad-rail--col1 {
+        display: flex;
     }
 }
 
-/* —— Reklamy w treści strony —— */
-.pm-ad-in-content {
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
-    padding: 0 12px;
-    max-width: var(--pm-content-max);
+.pm-ad-rail--left.pm-ad-rail--col1 {
+    left: max(8px, calc((100vw - var(--pm-content-max)) / 2 - var(--pm-rail-width) - var(--pm-rail-gap)));
 }
 
-.pm-ad-in-content--hero {
-    margin-top: 8px;
-    margin-bottom: 24px;
+.pm-ad-rail--right.pm-ad-rail--col1 {
+    right: max(8px, calc((100vw - var(--pm-content-max)) / 2 - var(--pm-rail-width) - var(--pm-rail-gap)));
 }
 
-.pm-ad-in-content--banner {
-    margin-top: 28px;
-    margin-bottom: 8px;
+/* Druga kolumna — ultra-wide, podwaja liczbę slotów */
+@media (min-width: 1952px) {
+    .pm-ad-rail--col2 {
+        display: flex;
+    }
+}
+
+.pm-ad-rail--left.pm-ad-rail--col2 {
+    left: max(
+        8px,
+        calc((100vw - var(--pm-content-max)) / 2 - var(--pm-rail-width) * 2 - var(--pm-rail-gap) * 2)
+    );
+}
+
+.pm-ad-rail--right.pm-ad-rail--col2 {
+    right: max(
+        8px,
+        calc((100vw - var(--pm-content-max)) / 2 - var(--pm-rail-width) * 2 - var(--pm-rail-gap) * 2)
+    );
 }
 
 /* —— Leaderboard pod nagłówkiem (728×90) —— */
@@ -111,7 +115,7 @@
     }
 }
 
-/* —— Pasek nad stopką —— */
+/* —— Pasek nad stopką (bez kwadratu w treści) —— */
 .pm-ad-footer-strip {
     max-width: var(--pm-content-max);
     margin: 0 auto 20px;
@@ -145,6 +149,7 @@
     line-height: 0;
     background: rgba(0, 0, 0, 0.04);
     border-radius: 6px;
+    flex-shrink: 0;
 }
 
 [data-theme='dark'] .pm-ad-slot {
@@ -212,7 +217,6 @@
 @media print {
     .pm-ad-leaderboard,
     .pm-ad-mobile-bar,
-    .pm-ad-in-content,
     .pm-ad-footer-strip,
     .pm-ad-rail {
         display: none !important;

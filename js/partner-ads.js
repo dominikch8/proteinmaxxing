@@ -11,13 +11,16 @@
     ];
 
     const HPF = {
-        railLeft: { key: '80251502c79aab83754f86505251e1c9', width: 160, height: 600, className: '160x600' },
-        railRight: { key: '8dd5a04bd51b190b2cdaf588219cbcea', width: 160, height: 300, className: '160x300' },
+        sky600: { key: '80251502c79aab83754f86505251e1c9', width: 160, height: 600, className: '160x600' },
+        sky300: { key: '8dd5a04bd51b190b2cdaf588219cbcea', width: 160, height: 300, className: '160x300' },
         leaderboard: { key: '771a5950ad069c158ee79ef6a5943958', width: 728, height: 90, className: '728x90' },
         mobileBar: { key: 'a87d0b3fe2ab743d8626ade2069d3128', width: 320, height: 50, className: '320x50' },
         banner468: { key: 'ba53866ada7a0867cc0d44a70cd71eb9', width: 468, height: 60, className: '468x60' },
         rect300: { key: '0f3d22d42185c00bdff61f40130d8357', width: 300, height: 250, className: '300x250' }
     };
+
+    const RAIL_TOP = 92;
+    const RAIL_GAP = 12;
 
     function hasConsent() {
         try {
@@ -99,69 +102,76 @@
         return el;
     }
 
-    function getContentMain() {
-        return (
-            document.querySelector('.page-container .main-content') ||
-            document.querySelector('.page-container > main') ||
-            document.querySelector('main.product-page') ||
-            document.querySelector('.page-container')
-        );
+    /** Ile skyscraperów zmieści się w wysokości okna (160×600 i 160×300). */
+    function buildRailStack() {
+        const available = window.innerHeight - RAIL_TOP - 20;
+        const stack = [];
+        let used = 0;
+
+        if (available >= HPF.sky600.height) {
+            stack.push(HPF.sky600);
+            used += HPF.sky600.height + RAIL_GAP;
+        }
+
+        while (used + HPF.sky300.height <= available) {
+            stack.push(HPF.sky300);
+            used += HPF.sky300.height + RAIL_GAP;
+        }
+
+        if (stack.length === 0 && available >= HPF.sky300.height) {
+            stack.push(HPF.sky300);
+        }
+
+        if (used + HPF.sky600.height <= available) {
+            stack.push(HPF.sky600);
+            used += HPF.sky600.height + RAIL_GAP;
+            while (used + HPF.sky300.height <= available) {
+                stack.push(HPF.sky300);
+                used += HPF.sky300.height + RAIL_GAP;
+            }
+        }
+
+        return stack.length ? stack : [HPF.sky600, HPF.sky300];
+    }
+
+    function fillRail(rail, stack) {
+        stack.forEach((ad) => queueHpfAd(rail, ad));
+    }
+
+    function mountRailColumn(id, className, stack) {
+        let rail = document.getElementById(id);
+        if (!rail) {
+            rail = createZone(id, className, 'Reklama — kolumna boczna');
+            document.body.appendChild(rail);
+            fillRail(rail, stack);
+        }
+        return rail;
     }
 
     function mountSideRails() {
-        let railLeft = document.getElementById('pm-ad-rail-left');
-        let railRight = document.getElementById('pm-ad-rail-right');
+        const stack = buildRailStack();
+        document.body.dataset.pmRailStack = String(stack.length);
 
-        if (!railLeft) {
-            railLeft = createZone('pm-ad-rail-left', 'pm-ad-rail pm-ad-rail--left', 'Reklama — lewa kolumna');
-            document.body.appendChild(railLeft);
-            queueHpfAd(railLeft, HPF.railLeft);
-            queueHpfAd(railLeft, HPF.railRight);
+        mountRailColumn('pm-ad-rail-left', 'pm-ad-rail pm-ad-rail--left pm-ad-rail--col1', stack);
+        mountRailColumn('pm-ad-rail-right', 'pm-ad-rail pm-ad-rail--right pm-ad-rail--col1', stack);
+
+        if (window.matchMedia('(min-width: 1952px)').matches) {
+            mountRailColumn(
+                'pm-ad-rail-left-2',
+                'pm-ad-rail pm-ad-rail--left pm-ad-rail--col2',
+                stack
+            );
+            mountRailColumn(
+                'pm-ad-rail-right-2',
+                'pm-ad-rail pm-ad-rail--right pm-ad-rail--col2',
+                stack
+            );
         }
-
-        if (!railRight) {
-            railRight = createZone('pm-ad-rail-right', 'pm-ad-rail pm-ad-rail--right', 'Reklama — prawa kolumna');
-            document.body.appendChild(railRight);
-            queueHpfAd(railRight, HPF.railRight);
-            queueHpfAd(railRight, HPF.banner468);
-        }
-
-        return { railLeft, railRight };
     }
 
-    function mountInContentAds() {
-        const main = getContentMain();
-        if (!main) return;
-
-        if (!document.getElementById('pm-ad-mid-hero')) {
-            const midHero = createZone('pm-ad-mid-hero', 'pm-ad-in-content pm-ad-in-content--hero', 'Reklama');
-            queueHpfAd(midHero, HPF.rect300);
-
-            const anchor =
-                main.querySelector('.page-hero') ||
-                main.querySelector('h1')?.parentElement ||
-                main.firstElementChild;
-
-            if (anchor) {
-                anchor.insertAdjacentElement('afterend', midHero);
-            } else {
-                main.prepend(midHero);
-            }
-        }
-
-        if (!document.getElementById('pm-ad-mid-banner')) {
-            const midBanner = createZone('pm-ad-mid-banner', 'pm-ad-in-content pm-ad-in-content--banner', 'Reklama');
-            queueHpfAd(midBanner, HPF.leaderboard);
-
-            const footer = document.querySelector('.site-footer');
-            if (footer && main.contains(footer) === false) {
-                main.appendChild(midBanner);
-            } else if (footer?.parentNode) {
-                footer.parentNode.insertBefore(midBanner, footer);
-            } else {
-                main.appendChild(midBanner);
-            }
-        }
+    function removeInContentAds() {
+        document.getElementById('pm-ad-mid-hero')?.remove();
+        document.getElementById('pm-ad-mid-banner')?.remove();
     }
 
     function mountMobileBottomBar() {
@@ -191,7 +201,6 @@
         footer.parentNode.insertBefore(strip, footer);
 
         queueHpfAd(inner, HPF.banner468);
-        queueHpfAd(inner, HPF.rect300);
         loadEcpmInvoke(inner);
     }
 
@@ -210,8 +219,6 @@
         }
 
         grid.remove();
-        document.getElementById('pm-ad-rail-left')?.remove();
-        document.getElementById('pm-ad-rail-right')?.remove();
     }
 
     function buildAdsLayout() {
@@ -220,6 +227,7 @@
         document.body.classList.add('pm-ads-active');
         document.getElementById('pm-partner-ads')?.remove();
         unwrapLegacyGrid();
+        removeInContentAds();
 
         const header = document.querySelector('.site-header');
 
@@ -242,7 +250,6 @@
         }
 
         mountSideRails();
-        mountInContentAds();
         mountMobileBottomBar();
         mountFooterStrip();
     }
