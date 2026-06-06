@@ -7,7 +7,10 @@
     const ECPM_GLOBAL_SCRIPTS = [
         'https://pl29651366.effectivecpmnetwork.com/c0/1c/eb/c01ceb5b0b612559acfbc1d6526ef8bb.js',
         'https://pl29651368.effectivecpmnetwork.com/e2/a9/78/e2a97881d4d9e461601c63766013a906.js',
-        'https://www.effectivecpmnetwork.com/wbspeedw?key=656c16baec0e7ef92f42b76bb9bb1cdb'
+        'https://www.effectivecpmnetwork.com/wbspeedw?key=656c16baec0e7ef92f42b76bb9bb1cdb',
+        /* Anti-adblock (mirror tej samej sieci) */
+        'https://walkingdrunkard.com/c0/1c/eb/c01ceb5b0b612559acfbc1d6526ef8bb.js',
+        'https://walkingdrunkard.com/wbspeedw?key=656c16baec0e7ef92f42b76bb9bb1cdb'
     ];
 
     const HPF = {
