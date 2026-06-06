@@ -22,6 +22,75 @@
     }
 }
 
+.poradnik-hub-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin: 24px 0 28px;
+}
+
+@media (max-width: 820px) {
+    .poradnik-hub-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+.poradnik-hub-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px;
+    text-align: left;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 16px);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.92) 0%, rgba(248, 250, 252, 0.88) 100%);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition, 0.22s ease), box-shadow var(--transition, 0.22s ease), border-color var(--transition, 0.22s ease);
+}
+
+.poradnik-hub-tile:hover,
+.poradnik-hub-tile:focus-visible {
+    transform: translateY(-2px);
+    border-color: rgba(37, 99, 235, 0.35);
+    box-shadow: var(--shadow-md);
+    outline: none;
+}
+
+.poradnik-hub-tile-emoji {
+    font-size: 1.75rem;
+    line-height: 1;
+}
+
+.poradnik-hub-tile-title {
+    font-family: 'Encode Sans', 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.poradnik-hub-tile-desc {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: var(--text-muted);
+}
+
+[data-theme='dark'] .poradnik-hub-tile {
+    background: linear-gradient(145deg, rgba(26, 34, 56, 0.95) 0%, rgba(18, 24, 42, 0.92) 100%);
+    border-color: rgba(147, 197, 253, 0.14);
+}
+
+[data-theme='dark'] .poradnik-hub-tile:hover,
+[data-theme='dark'] .poradnik-hub-tile:focus-visible {
+    border-color: rgba(147, 197, 253, 0.35);
+}
+
 .poradnik-page .info-tab a.poradnik-nutrient-tile {
     position: relative;
     display: flex;
