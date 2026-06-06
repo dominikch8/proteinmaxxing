@@ -10,6 +10,7 @@ import {
     buildThemeBodyScript
 } from './site-head-assets.mjs';
 import { buildLogoMark } from './site-logo-html.mjs';
+import { buildServingTableHtml } from './serving-table-html.mjs';
 import { CATEGORY_ORDER, CATEGORY_LABELS } from './category-seo.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -302,9 +303,10 @@ function buildPage(p, similar = []) {
     const desc = `${p.name}: ${p.protein}g białka, ${p.kcal} kcal, ${p.carbs}g węglowodanów, ${p.fat}g tłuszczu na 100g. Zdrowe odżywianie, proteiny, odchudzanie – makro i mikro na Proteiner.`;
     const canonical = `https://proteiner.pl/produkty/${p.slug}.html`;
     const catLabel = CATEGORY_LABELS[p.category] || p.category;
-    const porcjaProtein = (p.protein * p.servingRatio).toFixed(1);
-    const porcjaCarbs = (p.carbs * p.servingRatio).toFixed(1);
-    const porcjaFat = (p.fat * p.servingRatio).toFixed(1);
+    const servingTableHtml = buildServingTableHtml(p, {
+        esc,
+        formatPrice: formatPlnPrice
+    });
     const remoteImg = PRODUCT_IMAGE_URLS[p.slug] || PRODUCT_IMAGE_CACHE[p.slug];
     const localJpg = `../images/products/${p.slug}.jpg`;
     const localWebp = `../images/products/${p.slug}.webp`;
@@ -416,7 +418,7 @@ ${buildThemeStylesheets('../', { productPage: true })}
                         ${buildProductPricePill(p)}
                     </div>
                     ${buildProductPriceUpdatedNote(p)}
-                    <p><strong>Porcja:</strong> ${esc(p.servingText)} — ${porcjaProtein} g białka, ${porcjaCarbs} g węgli, ${porcjaFat} g tłuszczu (kalorie podane wyłącznie na 100 g).${p.servingPricePln != null ? ` Cena porcji (szac.): ~${formatPlnPrice(p.servingPricePln)}.` : ''}</p>
+                    ${servingTableHtml}
                     ${noteBlock}
                 </div>
             </div>

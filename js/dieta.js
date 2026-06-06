@@ -874,9 +874,10 @@ function buildBazaProductCardHtml(p) {
                     kcalPer100gProtein = 'Brak białka — brak przeliczenia kcal';
                 }
             }
-            const servingLine = !p.isGroup && p.servingPricePln != null && p.servingGrams != null
-                ? `Porcja ${p.servingGrams} g = ${formatPln(p.servingPricePln)} · ${(p.proteinInServing ?? (p.protein * p.servingRatio)).toFixed(1)} g białka`
-                : '';
+            const servingTableHtml =
+                !p.isGroup && typeof buildServingTableHtml === 'function'
+                    ? buildServingTableHtml(p, { compact: true })
+                    : '';
             const detailsHtml = p.isGroup
                 ? buildRankingGroupDetailsHtml(p, 'price')
                 : `<div class="prod-details" style="border-top: 1px dashed rgba(0,0,0,0.1); color: var(--text-dark); opacity: 0.9;">
@@ -895,7 +896,7 @@ function buildBazaProductCardHtml(p) {
                             <div class="prod-img" style="background: rgba(255,255,255,0.5);">${p.emoji}</div>
                             <div>
                                 <div class="prod-title" style="${textStyle}">${p.name}</div>
-                                ${servingLine ? `<div style="font-size:0.78rem;opacity:0.88;font-weight:600;margin-top:4px;${textStyle}">${servingLine}</div>` : ''}
+                                ${servingTableHtml}
                             </div>
                         </div>
                         <div class="pm-ratio-badge pm-stat-muted">

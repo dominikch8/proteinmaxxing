@@ -305,6 +305,83 @@ a.product-category:hover {
     width: 45%;
 }
 
+.serving-table-wrap {
+    margin-top: 14px;
+    max-width: min(100%, 300px);
+}
+
+.serving-table-caption {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+.serving-table-caption strong {
+    color: var(--text-dark);
+    font-weight: 700;
+}
+
+.serving-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.serving-table th,
+.serving-table td {
+    padding: 7px 11px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.serving-table th {
+    font-weight: 600;
+    color: var(--text-muted);
+    width: 46%;
+    background: var(--surface-hover);
+}
+
+.serving-table td {
+    font-weight: 700;
+    color: var(--text-dark);
+    font-variant-numeric: tabular-nums;
+}
+
+.serving-table tr:last-child th,
+.serving-table tr:last-child td {
+    border-bottom: none;
+}
+
+.serving-table--compact {
+    font-size: 0.72rem;
+    border-radius: 8px;
+}
+
+.serving-table--compact th,
+.serving-table--compact td {
+    padding: 4px 8px;
+}
+
+.serving-table-wrap .serving-table--compact {
+    max-width: 100%;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .seo-block {
     margin-top: 28px;
     padding: 24px;
