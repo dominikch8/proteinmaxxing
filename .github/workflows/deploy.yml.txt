@@ -1,0 +1,23 @@
+name: Deploy na serwer LH.pl
+
+on:
+  push:
+    branches:
+      - main # jeśli Twoja główna gałąź to "master", zmień to na master
+
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Pobranie kodu
+      uses: actions/checkout@v3
+      
+    - name: Sync plików przez FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./
+        server-dir: /public_html/proteiner.pl/
