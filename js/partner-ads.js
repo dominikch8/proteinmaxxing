@@ -4,15 +4,6 @@
     const hpfQueue = [];
     let hpfBusy = false;
 
-    const ECPM_GLOBAL_SCRIPTS = [
-        'https://pl29651366.effectivecpmnetwork.com/c0/1c/eb/c01ceb5b0b612559acfbc1d6526ef8bb.js',
-        'https://pl29651368.effectivecpmnetwork.com/e2/a9/78/e2a97881d4d9e461601c63766013a906.js',
-        'https://www.effectivecpmnetwork.com/wbspeedw?key=656c16baec0e7ef92f42b76bb9bb1cdb',
-        /* Anti-adblock (mirror tej samej sieci) */
-        'https://walkingdrunkard.com/c0/1c/eb/c01ceb5b0b612559acfbc1d6526ef8bb.js',
-        'https://walkingdrunkard.com/wbspeedw?key=656c16baec0e7ef92f42b76bb9bb1cdb'
-    ];
-
     const HPF = {
         sky600: { key: '80251502c79aab83754f86505251e1c9', width: 160, height: 600, className: '160x600' },
         sky300: { key: '8dd5a04bd51b190b2cdaf588219cbcea', width: 160, height: 300, className: '160x300' },
@@ -31,18 +22,6 @@
         } catch {
             return false;
         }
-    }
-
-    function injectScript(src, attrs) {
-        const exists = Array.from(document.querySelectorAll('script[src]')).some(
-            (s) => s.getAttribute('src') === src
-        );
-        if (exists) return;
-        const s = document.createElement('script');
-        s.src = src;
-        s.async = true;
-        if (attrs) Object.entries(attrs).forEach(([k, v]) => s.setAttribute(k, v));
-        document.body.appendChild(s);
     }
 
     function queueHpfAd(parent, ad) {
@@ -270,7 +249,6 @@
     function loadPartnerAds() {
         if (loaded || !hasConsent()) return;
         loaded = true;
-        ECPM_GLOBAL_SCRIPTS.forEach((src) => injectScript(src));
         buildAdsLayout();
     }
 
