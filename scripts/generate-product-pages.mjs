@@ -6,6 +6,7 @@ import {
     buildFaviconLinks,
     buildSocialImageMeta,
     buildThemeInitScript,
+    buildAdSenseHead,
     buildThemeStylesheets,
     buildThemeBodyScript
 } from './site-head-assets.mjs';
@@ -349,10 +350,7 @@ ${buildSocialImageMeta('../', ogImagePath, { alt: p.name })}`;
     <meta charset="UTF-8">
 ${buildThemeInitScript('../')}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/consent-head.js"></script>
-    <meta name="google-adsense-account" content="ca-pub-8540801395510703">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8540801395510703"
-        crossorigin="anonymous"></script>
+${buildAdSenseHead()}
     <title>${esc(title)}</title>
     <meta name="description" content="${esc(desc)}">
     <meta name="keywords" content="${esc(keywords.join(', '))}">
@@ -453,10 +451,6 @@ ${buildSimilarProductsSection(p, similar)}
     </main>
 
 ${buildSiteFooter('../')}
-    <link rel="stylesheet" href="../css/cookie-consent.css">
-    <script src="../js/cookie-banner.js"></script>
-    <link rel="stylesheet" href="../css/partner-ads.css">
-    <script src="../js/partner-ads.js"></script>
 ${buildThemeBodyScript('../')}
 </body>
 </html>`;

@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { buildAdSenseHead } from './site-head-assets.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const srcPath = path.join(root, 'index.html');
@@ -194,10 +195,6 @@ const FOOTER = `    <footer class="site-footer">
         <p style="margin-top: 8px;">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>`;
 
-const ADSENSE = `    <meta name="google-adsense-account" content="ca-pub-8540801395510703">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8540801395510703"
-        crossorigin="anonymous"></script>`;
-
 const FONTS = `    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
@@ -210,7 +207,7 @@ function pageShell({ title, description, canonical, ogTitle, ogDesc, activeNav, 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-${ADSENSE}
+${buildAdSenseHead()}
     <title>${title}</title>
     <meta name="description" content="${description}">
     <meta name="robots" content="index, follow">
@@ -328,10 +325,10 @@ fs.writeFileSync(
     pageShell({
         title: 'Informacje — polityka prywatności | Proteiner',
         description:
-            'Polityka prywatności, pliki cookie i reklamy Google AdSense na Proteiner.',
+            'Polityka prywatności i pliki cookie na Proteiner.',
         canonical: 'https://proteiner.pl/informacje.html',
         ogTitle: 'Informacje i polityka prywatności | Proteiner',
-        ogDesc: 'Cookies, AdSense i prawa użytkownika.',
+        ogDesc: 'Polityka prywatności i prawa użytkownika.',
         activeNav: 'informacje',
         body: sections.informacje,
         scripts: [],

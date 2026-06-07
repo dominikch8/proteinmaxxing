@@ -1,6 +1,6 @@
 /* Motyw jasny — bordowo-ciemnoniebieski */
 :root {
-    /* Szerokość kolumny treści — 1180px daje 2 banery 160px po bokach na Full HD (1920px) */
+    /* Maksymalna szerokość kolumny treści */
     --site-content-max: 1180px;
     --site-rail-min-single: 1536px;
     --site-rail-min-dual: 1880px;
