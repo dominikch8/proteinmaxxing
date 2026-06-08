@@ -14,6 +14,7 @@ import {
     buildThemeBodyScript
 } from './site-head-assets.mjs';
 import { buildLogoMark } from './site-logo-html.mjs';
+import { buildSiteLayoutOpen, buildSiteLayoutClose, buildAdRailsScript } from './site-ad-rails-html.mjs';
 import { buildServingTableHtml } from './serving-table-html.mjs';
 import { CATEGORY_ORDER, CATEGORY_LABELS } from './category-seo.mjs';
 
@@ -395,6 +396,7 @@ ${buildThemeStylesheets('../', { productPage: true })}
         </nav>
     </header>
 
+${buildSiteLayoutOpen()}
     <main class="product-page">
         <nav class="breadcrumb" aria-label="Nawigacja">
             <a href="../index.html">Strona główna</a> ›
@@ -457,6 +459,8 @@ ${buildSimilarProductsSection(p, similar)}
     </main>
 
 ${buildSiteFooter('../')}
+${buildSiteLayoutClose()}
+${buildAdRailsScript('../')}
 ${buildThemeBodyScript('../')}
 </body>
 </html>`;
