@@ -7,6 +7,7 @@ import {
     buildSocialImageMeta,
     buildThemeInitScript,
     buildAdSenseHead,
+    buildMultitagHead,
     buildThemeStylesheets,
     buildThemeBodyScript
 } from './site-head-assets.mjs';
@@ -350,6 +351,7 @@ ${buildSocialImageMeta('../', ogImagePath, { alt: p.name })}`;
     <meta charset="UTF-8">
 ${buildThemeInitScript('../')}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+${buildMultitagHead()}
 ${buildAdSenseHead()}
     <title>${esc(title)}</title>
     <meta name="description" content="${esc(desc)}">

@@ -51,6 +51,11 @@ export function buildAdSenseHead() {
         crossorigin="anonymous"></script>`;
 }
 
+/** Multitag (quge5.com) — zaraz po otwarciu head / viewport. */
+export function buildMultitagHead() {
+    return `    <script src="https://quge5.com/88/tag.min.js" data-zone="247555" async data-cfasync="false"></script>`;
+}
+
 /**
  * themes.css + main stylesheet + theme-switch.css
  * @param {string} prefix — '' lub '../' / '../../'
