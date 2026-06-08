@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# proteinmaxxing.pl → proteiner.pl (zachowaj ścieżkę i parametry URL)
+RewriteCond %{HTTP_HOST} ^(www\.)?proteinmaxxing\.pl$ [NC]
+RewriteRule ^(.*)$ https://proteiner.pl/$1 [R=301,L,QSA]

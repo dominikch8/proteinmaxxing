@@ -21,3 +21,19 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./
         server-dir: /public_html/proteiner.pl/
+
+  redirect-proteinmaxxing:
+    name: Przekierowanie proteinmaxxing.pl
+    runs-on: ubuntu-latest
+    steps:
+    - name: Pobranie kodu
+      uses: actions/checkout@v3
+
+    - name: Wgraj przekierowanie 301
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./domains/proteinmaxxing/
+        server-dir: /public_html/proteinmaxxing.pl/
