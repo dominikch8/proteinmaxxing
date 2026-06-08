@@ -60,10 +60,11 @@ function buildZoneLoaderScript(zone, src) {
     return `    <script>(function(s){s.dataset.zone='${zone}',s.src='${src}'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>`;
 }
 
-/** In-Page Push (nap5k.com) — Joyful + Interesting. */
+/** In-Page Push (nap5k.com) — Joyful + Interesting + Wise. */
 export function buildNap5kInPagePushHead() {
     return `${buildZoneLoaderScript('11118313', 'https://nap5k.com/tag.min.js')}
-${buildZoneLoaderScript('11118333', 'https://nap5k.com/tag.min.js')}`;
+${buildZoneLoaderScript('11118333', 'https://nap5k.com/tag.min.js')}
+${buildZoneLoaderScript('11118646', 'https://nap5k.com/tag.min.js')}`;
 }
 
 /** Vignette (n6wxm.com) — Perfect tag. */

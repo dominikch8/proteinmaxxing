@@ -1,13 +1,17 @@
-/** Wstawia oba skrypty In-Page Push (Joyful + Interesting) do <head>. */
+/** Wstawia skrypty In-Page Push (Joyful + Interesting + Wise) do <head>. */
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { buildNap5kInPagePushHead } from './site-head-assets.mjs';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
-const joyful = "s.dataset.zone='11118313'";
-const interesting = "s.dataset.zone='11118333'";
+const zones = {
+    joyful: '11118313',
+    interesting: '11118333',
+    wise: '11118646'
+};
 const fullSnippet = buildNap5kInPagePushHead();
+const wiseLine = `    <script>(function(s){s.dataset.zone='${zones.wise}',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>\n`;
 
 function walkHtml(dir, list = []) {
     for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -22,21 +26,32 @@ function walkHtml(dir, list = []) {
     return list;
 }
 
+function zoneMarker(id) {
+    return `s.dataset.zone='${id}'`;
+}
+
 let changed = 0;
 for (const fp of walkHtml(root)) {
     let html = fs.readFileSync(fp, 'utf8');
-    const hasJoyful = html.includes(joyful);
-    const hasInteresting = html.includes(interesting);
+    const has = Object.fromEntries(Object.entries(zones).map(([k, id]) => [k, html.includes(zoneMarker(id))]));
 
-    if (hasJoyful && hasInteresting) continue;
+    if (has.joyful && has.interesting && has.wise) continue;
 
-    if (hasInteresting && !hasJoyful) {
+    if (has.interesting && !has.joyful) {
         const joyfulLine = fullSnippet.split('\n')[0] + '\n';
         html = html.replace(
-            new RegExp(`\\s*<script>\\(function\\(s\\)\\{s\\.dataset\\.zone='11118333'[\\s\\S]*?</script>\\s*`, 'i'),
+            new RegExp(`\\s*<script>\\(function\\(s\\)\\{s\\.dataset\\.zone='${zones.interesting}'[\\s\\S]*?</script>\\s*`, 'i'),
             `${joyfulLine}$&`
         );
-    } else if (!hasJoyful && !hasInteresting) {
+        has.joyful = true;
+    }
+
+    if (has.joyful && has.interesting && !has.wise) {
+        html = html.replace(
+            new RegExp(`(<script>\\(function\\(s\\)\\{s\\.dataset\\.zone='${zones.interesting}'[\\s\\S]*?</script>\\s*)`, 'i'),
+            `$1${wiseLine}`
+        );
+    } else if (!has.joyful && !has.interesting && !has.wise) {
         const reQuge = /(<script src="https:\/\/quge5\.com\/88\/tag\.min\.js"[^>]*><\/script>\s*)/i;
         if (reQuge.test(html)) {
             html = html.replace(reQuge, `$1${fullSnippet}\n`);
@@ -53,4 +68,4 @@ for (const fp of walkHtml(root)) {
     changed++;
 }
 
-console.log(`Zaktualizowano nap5k (Joyful + Interesting) w ${changed} plikach HTML.`);
+console.log(`Zaktualizowano nap5k (Joyful + Interesting + Wise) w ${changed} plikach HTML.`);
