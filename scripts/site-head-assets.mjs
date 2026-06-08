@@ -56,9 +56,14 @@ export function buildMultitagHead() {
     return `    <script src="https://quge5.com/88/tag.min.js" data-zone="247555" async data-cfasync="false"></script>`;
 }
 
-/** In-Page Push (nap5k.com) — Joyful tag. */
+function buildNap5kPushScript(zone) {
+    return `    <script>(function(s){s.dataset.zone='${zone}',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>`;
+}
+
+/** In-Page Push (nap5k.com) — Joyful + Interesting. */
 export function buildNap5kInPagePushHead() {
-    return `    <script>(function(s){s.dataset.zone='11118313',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>`;
+    return `${buildNap5kPushScript('11118313')}
+${buildNap5kPushScript('11118333')}`;
 }
 
 /**

@@ -1,12 +1,13 @@
-/** Wstawia skrypt In-Page Push (nap5k.com) do <head> wszystkich stron HTML. */
+/** Wstawia oba skrypty In-Page Push (Joyful + Interesting) do <head>. */
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { buildNap5kInPagePushHead } from './site-head-assets.mjs';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
-const snippet = buildNap5kInPagePushHead();
-const marker = 'nap5k.com/tag.min.js';
+const joyful = "s.dataset.zone='11118313'";
+const interesting = "s.dataset.zone='11118333'";
+const fullSnippet = buildNap5kInPagePushHead();
 
 function walkHtml(dir, list = []) {
     for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -24,19 +25,32 @@ function walkHtml(dir, list = []) {
 let changed = 0;
 for (const fp of walkHtml(root)) {
     let html = fs.readFileSync(fp, 'utf8');
-    if (html.includes(marker)) continue;
+    const hasJoyful = html.includes(joyful);
+    const hasInteresting = html.includes(interesting);
 
-    const reQuge = /(<script src="https:\/\/quge5\.com\/88\/tag\.min\.js"[^>]*><\/script>\s*)/i;
-    if (reQuge.test(html)) {
-        html = html.replace(reQuge, `$1${snippet}\n`);
+    if (hasJoyful && hasInteresting) continue;
+
+    if (hasInteresting && !hasJoyful) {
+        const joyfulLine = fullSnippet.split('\n')[0] + '\n';
+        html = html.replace(
+            new RegExp(`\\s*<script>\\(function\\(s\\)\\{s\\.dataset\\.zone='11118333'[\\s\\S]*?</script>\\s*`, 'i'),
+            `${joyfulLine}$&`
+        );
+    } else if (!hasJoyful && !hasInteresting) {
+        const reQuge = /(<script src="https:\/\/quge5\.com\/88\/tag\.min\.js"[^>]*><\/script>\s*)/i;
+        if (reQuge.test(html)) {
+            html = html.replace(reQuge, `$1${fullSnippet}\n`);
+        } else {
+            const reViewport = /(<meta name="viewport"[^>]*>\s*)/i;
+            if (!reViewport.test(html)) continue;
+            html = html.replace(reViewport, `$1${fullSnippet}\n`);
+        }
     } else {
-        const reViewport = /(<meta name="viewport"[^>]*>\s*)/i;
-        if (!reViewport.test(html)) continue;
-        html = html.replace(reViewport, `$1${snippet}\n`);
+        continue;
     }
 
     fs.writeFileSync(fp, html, 'utf8');
     changed++;
 }
 
-console.log(`Dodano nap5k In-Page Push do ${changed} plików HTML.`);
+console.log(`Zaktualizowano nap5k (Joyful + Interesting) w ${changed} plikach HTML.`);
