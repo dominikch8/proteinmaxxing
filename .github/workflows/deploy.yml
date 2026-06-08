@@ -3,7 +3,7 @@ name: Deploy na serwer LH.pl
 on:
   push:
     branches:
-      - main # jeśli Twoja główna gałąź to "master", zmień to na master
+      - main
 
 jobs:
   web-deploy:
@@ -11,26 +11,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Pobranie kodu
-      uses: actions/checkout@v3
-      
+      uses: actions/checkout@v4
+
     - name: Sync plików przez FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./
         server-dir: /public_html/proteiner.pl/
+        exclude: |
+          **/.git*
+          **/.github/**
+          **/node_modules/**
+          **/.cursor/**
 
   redirect-proteinmaxxing:
     name: Przekierowanie proteinmaxxing.pl
     runs-on: ubuntu-latest
+    needs: web-deploy
     steps:
     - name: Pobranie kodu
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Wgraj przekierowanie 301
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
