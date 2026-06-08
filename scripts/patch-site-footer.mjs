@@ -11,32 +11,31 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 const FOOTER_RE = /<footer class="site-footer">[\s\S]*?<\/footer>/;
 
-function patchFile(filePath, prefix) {
+function walkHtml(dir, list = []) {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+        const p = path.join(dir, e.name);
+        if (e.isDirectory()) {
+            if (e.name === 'node_modules' || e.name === '.git') continue;
+            walkHtml(p, list);
+        } else if (e.name.endsWith('.html')) {
+            list.push(p);
+        }
+    }
+    return list;
+}
+
+let count = 0;
+for (const filePath of walkHtml(root)) {
+    const rel = path.relative(root, filePath).replace(/\\/g, '/');
+    const prefix = rel.startsWith('produkty/') ? '../' : '';
     let html = fs.readFileSync(filePath, 'utf8');
     if (!FOOTER_RE.test(html)) {
-        console.warn('Brak stopki:', filePath);
-        return false;
+        console.warn('Brak stopki:', rel);
+        continue;
     }
     html = html.replace(FOOTER_RE, buildSiteFooter(prefix));
     fs.writeFileSync(filePath, html, 'utf8');
-    return true;
+    count++;
 }
 
-function walkHtml(dir, prefix) {
-    let n = 0;
-    for (const name of fs.readdirSync(dir)) {
-        const full = path.join(dir, name);
-        if (name.endsWith('.html')) {
-            if (patchFile(full, prefix)) n++;
-        }
-    }
-    return n;
-}
-
-const rootPages = ['index.html', 'dieta.html', 'trening.html', 'informacje.html', 'o-mnie.html'];
-let count = 0;
-for (const f of rootPages) {
-    if (patchFile(path.join(root, f), '')) count++;
-}
-count += walkHtml(path.join(root, 'produkty'), '../');
 console.log(`Zaktualizowano stopkę w ${count} plikach HTML.`);
