@@ -51,25 +51,6 @@ export function buildAdSenseHead() {
         crossorigin="anonymous"></script>`;
 }
 
-/** Multitag (quge5.com) — zaraz po otwarciu head / viewport. */
-export function buildMultitagHead() {
-    return `    <script src="https://quge5.com/88/tag.min.js" data-zone="247555" async data-cfasync="false"></script>`;
-}
-
-function buildZoneLoaderScript(zone, src) {
-    return `    <script>(function(s){s.dataset.zone='${zone}',s.src='${src}'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>`;
-}
-
-/** In-Page Push (nap5k.com) — Interesting (Joyful + Wise w bocznych slotach). */
-export function buildNap5kInPagePushHead() {
-    return buildZoneLoaderScript('11118333', 'https://nap5k.com/tag.min.js');
-}
-
-/** Vignette (n6wxm.com) — Perfect tag. */
-export function buildN6wxmVignetteHead() {
-    return buildZoneLoaderScript('11118551', 'https://n6wxm.com/vignette.min.js');
-}
-
 /**
  * themes.css + main stylesheet + theme-switch.css
  * @param {string} prefix — '' lub '../' / '../../'
@@ -79,7 +60,6 @@ export function buildThemeStylesheets(prefix = '', opts = {}) {
     const main = opts.productPage ? 'product-page.css' : 'site.css';
     return `    <link rel="stylesheet" href="${prefix}css/themes.css">
     <link rel="stylesheet" href="${prefix}css/${main}">
-    <link rel="stylesheet" href="${prefix}css/site-ad-rails.css">
     <link rel="stylesheet" href="${prefix}css/theme-switch.css">`;
 }
 

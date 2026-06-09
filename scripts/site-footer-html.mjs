@@ -1,6 +1,3 @@
-/** Link partnerski (omg10) — ten sam na wszystkich stronach. */
-export const PARTNER_OFFERS_URL = 'https://omg10.com/4/11118561';
-
 /**
  * Wspólna stopka HTML — prefix: '' (root) lub '../' (produkty/).
  */
@@ -19,8 +16,6 @@ export function buildSiteFooter(prefix = '') {
             <a href="${prefix}dodaj-produkt.html">Dodaj produkty</a>
             <span aria-hidden="true">·</span>
             <a href="${prefix}poradnik-zywienia.html">Poradnik</a>
-            <span aria-hidden="true">·</span>
-            <a class="site-footer-partner" href="${PARTNER_OFFERS_URL}" rel="nofollow sponsored noopener" target="_blank">Oferty partnerskie</a>
         </nav>
         <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>`;

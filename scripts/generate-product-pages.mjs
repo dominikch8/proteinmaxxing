@@ -7,14 +7,10 @@ import {
     buildSocialImageMeta,
     buildThemeInitScript,
     buildAdSenseHead,
-    buildMultitagHead,
-    buildNap5kInPagePushHead,
-    buildN6wxmVignetteHead,
     buildThemeStylesheets,
     buildThemeBodyScript
 } from './site-head-assets.mjs';
 import { buildLogoMark } from './site-logo-html.mjs';
-import { buildSiteLayoutOpen, buildSiteLayoutClose, buildAdRailsScript } from './site-ad-rails-html.mjs';
 import { buildServingTableHtml } from './serving-table-html.mjs';
 import { CATEGORY_ORDER, CATEGORY_LABELS } from './category-seo.mjs';
 
@@ -354,9 +350,6 @@ ${buildSocialImageMeta('../', ogImagePath, { alt: p.name })}`;
     <meta charset="UTF-8">
 ${buildThemeInitScript('../')}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-${buildMultitagHead()}
-${buildNap5kInPagePushHead()}
-${buildN6wxmVignetteHead()}
 ${buildAdSenseHead()}
     <title>${esc(title)}</title>
     <meta name="description" content="${esc(desc)}">
@@ -396,7 +389,6 @@ ${buildThemeStylesheets('../', { productPage: true })}
         </nav>
     </header>
 
-${buildSiteLayoutOpen()}
     <main class="product-page">
         <nav class="breadcrumb" aria-label="Nawigacja">
             <a href="../index.html">Strona główna</a> ›
@@ -459,8 +451,6 @@ ${buildSimilarProductsSection(p, similar)}
     </main>
 
 ${buildSiteFooter('../')}
-${buildSiteLayoutClose()}
-${buildAdRailsScript('../')}
 ${buildThemeBodyScript('../')}
 </body>
 </html>`;
