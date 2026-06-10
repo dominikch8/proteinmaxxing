@@ -818,14 +818,8 @@ function buildBazaProductCardHtml(p) {
                     || (p.name === 'Makaron'
                         ? `Średnia z ${p.groupCount} makaronów (suche)`
                         : p.groupNote || `Średnia z ${p.groupCount} produktów w grupie`))
-                : `100g dostarcza: ${p.protein}g białka | ${p.kcal} kcal`;
-            const detailsHtml = p.isGroup
-                ? buildRankingGroupDetailsHtml(p, 'maxxing')
-                : `<div class="prod-details" style="border-top: 1px dashed rgba(0,0,0,0.1); color: var(--text-dark); opacity: 0.9;">
-                            <div>• Tłuszcze: <strong>${p.fat}g</strong> | Węglowodany: <strong>${p.carbs}g</strong></div>
-                            <div style="font-size:0.75rem; font-style: italic; margin-top:4px;">${p.extra}</div>
-                            ${p.note ? `<div class="prod-note" style="margin-top:8px;">💡 ${p.note}</div>` : ''}
-                        </div>`;
+                : '';
+            const detailsHtml = p.isGroup ? buildRankingGroupDetailsHtml(p, 'maxxing') : '';
             const cta = p.isGroup && p.groupCategory
                 ? 'Przejdź do kategorii →'
                 : p.isGroup
@@ -838,7 +832,7 @@ function buildBazaProductCardHtml(p) {
                             <div class="prod-img" style="background: rgba(255,255,255,0.5);">${p.emoji}</div>
                             <div>
                                 <div class="prod-title" style="${textStyle}">${p.name}</div>
-                                <div style="font-size: 0.8rem; opacity: 0.85; font-weight:600; ${textStyle}">${macroLine}</div>
+                                ${macroLine ? `<div style="font-size: 0.8rem; opacity: 0.85; font-weight:600; ${textStyle}">${macroLine}</div>` : ''}
                             </div>
                         </div>
                         <div class="pm-ratio-badge pm-stat-muted">
@@ -866,24 +860,7 @@ function buildBazaProductCardHtml(p) {
         function appendPriceRankingCard(grid, p, rank) {
             const pres = p._pres || computePricePresentation(p);
             const { bgStyle, textStyle, costText } = pres;
-            let kcalPer100gProtein = '';
-            if (!p.isGroup) {
-                if (p.protein > 0) {
-                    kcalPer100gProtein = `${((p.kcal / p.protein) * 100).toFixed(1)} kcal / 100 g białka`;
-                } else {
-                    kcalPer100gProtein = 'Brak białka — brak przeliczenia kcal';
-                }
-            }
-            const servingTableHtml =
-                !p.isGroup && typeof buildServingTableHtml === 'function'
-                    ? buildServingTableHtml(p, { compact: true })
-                    : '';
-            const detailsHtml = p.isGroup
-                ? buildRankingGroupDetailsHtml(p, 'price')
-                : `<div class="prod-details" style="border-top: 1px dashed rgba(0,0,0,0.1); color: var(--text-dark); opacity: 0.9;">
-                            <div><span class="kcal-highlight">${kcalPer100gProtein}</span></div>
-                            ${p.note ? `<div class="prod-note" style="margin-top:8px;">💡 ${p.note}</div>` : ''}
-                        </div>`;
+            const detailsHtml = p.isGroup ? buildRankingGroupDetailsHtml(p, 'price') : '';
             const cta = p.isGroup && p.groupCategory
                 ? 'Przejdź do kategorii →'
                 : p.isGroup
@@ -896,7 +873,6 @@ function buildBazaProductCardHtml(p) {
                             <div class="prod-img" style="background: rgba(255,255,255,0.5);">${p.emoji}</div>
                             <div>
                                 <div class="prod-title" style="${textStyle}">${p.name}</div>
-                                ${servingTableHtml}
                             </div>
                         </div>
                         <div class="pm-ratio-badge pm-stat-muted">
