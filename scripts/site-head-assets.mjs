@@ -44,11 +44,21 @@ export function buildThemeInitScript(prefix = '') {
     return `    <script src="${prefix}js/theme-init.js"></script>`;
 }
 
+/** Google Consent Mode v2 — przed AdSense. */
+export function buildConsentHeadScript(prefix = '') {
+    return `    <script src="${prefix}js/consent-head.js"></script>`;
+}
+
 /** Google AdSense — meta + loader script (after viewport). */
 export function buildAdSenseHead() {
     return `    <meta name="google-adsense-account" content="ca-pub-8540801395510703">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8540801395510703"
         crossorigin="anonymous"></script>`;
+}
+
+export function buildCookieConsentBody(prefix = '') {
+    return `    <link rel="stylesheet" href="${prefix}css/cookie-consent.css">
+    <script src="${prefix}js/cookie-banner.js"></script>`;
 }
 
 /**

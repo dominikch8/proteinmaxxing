@@ -6,7 +6,9 @@ import {
     buildFaviconLinks,
     buildSocialImageMeta,
     buildThemeInitScript,
+    buildConsentHeadScript,
     buildAdSenseHead,
+    buildCookieConsentBody,
     buildThemeStylesheets,
     buildThemeBodyScript
 } from './site-head-assets.mjs';
@@ -350,6 +352,7 @@ ${buildSocialImageMeta('../', ogImagePath, { alt: p.name })}`;
     <meta charset="UTF-8">
 ${buildThemeInitScript('../')}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+${buildConsentHeadScript('../')}
 ${buildAdSenseHead()}
     <title>${esc(title)}</title>
     <meta name="description" content="${esc(desc)}">
@@ -451,6 +454,7 @@ ${buildSimilarProductsSection(p, similar)}
     </main>
 
 ${buildSiteFooter('../')}
+${buildCookieConsentBody('../')}
 ${buildThemeBodyScript('../')}
 </body>
 </html>`;
