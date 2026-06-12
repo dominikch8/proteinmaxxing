@@ -53,12 +53,14 @@
         a: {
             search: document.getElementById('compareSearchA'),
             suggestions: document.getElementById('compareSuggestionsA'),
-            selected: document.getElementById('compareSelectedA')
+            chip: document.getElementById('compareChipA'),
+            field: document.querySelector('[data-slot="a"] .compare-field')
         },
         b: {
             search: document.getElementById('compareSearchB'),
             suggestions: document.getElementById('compareSuggestionsB'),
-            selected: document.getElementById('compareSelectedB')
+            chip: document.getElementById('compareChipB'),
+            field: document.querySelector('[data-slot="b"] .compare-field')
         }
     };
 
@@ -213,37 +215,39 @@
     }
 
     function renderSelectedCard(slotKey, product) {
-        const box = slots[slotKey].selected;
-        const input = slots[slotKey].search;
-        const wrap = input?.closest('.compare-search-wrap');
-        if (!box) return;
+        const { search: input, chip, field } = slots[slotKey];
+        if (!chip || !field) return;
+
+        const emojiEl = chip.querySelector('.compare-chip-emoji');
+        const nameEl = chip.querySelector('.compare-chip-name');
 
         if (!product) {
-            box.hidden = true;
-            box.innerHTML = '';
+            chip.hidden = true;
+            field.classList.remove('compare-field--filled');
             if (input) {
                 input.value = '';
                 input.hidden = false;
             }
-            if (wrap) wrap.hidden = false;
             return;
         }
 
-        if (input) input.hidden = true;
-        if (wrap) wrap.hidden = true;
-
-        box.hidden = false;
-        box.innerHTML = `
-            <span class="compare-selected-emoji" aria-hidden="true">${product.emoji}</span>
-            <span class="compare-selected-name">${escapeHtml(product.name)}</span>
-            <button type="button" class="compare-selected-change" data-clear="${slotKey}">Zmień</button>
-        `;
+        if (emojiEl) emojiEl.textContent = product.emoji;
+        if (nameEl) nameEl.textContent = product.name;
+        chip.hidden = false;
+        field.classList.add('compare-field--filled');
+        if (input) {
+            input.value = '';
+            input.hidden = true;
+        }
     }
 
     function beginProductChange(slotKey) {
         renderSelectedCard(slotKey, null);
         hideSuggestions(slotKey);
-        window.requestAnimationFrame(() => openSuggestions(slotKey));
+        window.requestAnimationFrame(() => {
+            slots[slotKey].search?.focus();
+            openSuggestions(slotKey);
+        });
     }
 
     function setProduct(slotKey, product) {
@@ -541,7 +545,7 @@
             hideSuggestions('a');
             hideSuggestions('b');
         }
-        const changeBtn = e.target.closest('.compare-selected-change');
+        const changeBtn = e.target.closest('.compare-chip-clear');
         if (changeBtn) {
             const key = changeBtn.dataset.clear;
             if (key) beginProductChange(key);

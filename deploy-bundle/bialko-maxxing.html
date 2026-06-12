@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/theme-init.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/consent-head.js"></script>
+    <meta name="google-adsense-account" content="ca-pub-8540801395510703">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8540801395510703"
+        crossorigin="anonymous"></script>
+<title>Ranking Białko Maxxing: MAX białka, minimum kcal | Proteiner</title>
+    <meta name="description" content="Ranking produktów z najlepszym stosunkiem białka do kalorii. Idealne przy budowaniu masy mięśniowej, odchudzaniu i redukcji. Mięso czy nabiał? Sprawdź!">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://proteiner.pl/bialko-maxxing.html">
+    <meta property="og:title" content="Ranking Białko Maxxing: MAX białka, minimum kcal | Proteiner">
+    <meta property="og:description" content="Ranking produktów z najlepszym stosunkiem białka do kalorii. Idealne przy budowaniu masy mięśniowej, odchudzaniu i redukcji. Mięso czy nabiał? Sprawdź!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://proteiner.pl/bialko-maxxing.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/theme-switch.css">
+</head>
+<body data-ranking-mode="maxxing">
+    <header class="site-header">
+        <nav>
+            <a href="index.html" class="logo">
+                <img class="logo-mark" src="images/favicon.svg" alt="" width="56" height="56" decoding="async">
+                <span>Proteiner</span>
+            </a>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="index.html">Kalkulator</a></li>
+                <li><a class="nav-link active" href="dieta.html">Dieta</a></li>
+                <li><a class="nav-link" href="porownaj-produkty.html">Porównaj produkty</a></li>
+                <li><a class="nav-link" href="dodaj-produkt.html">Dodaj produkty</a></li>
+                <li><a class="nav-link" href="poradnik-zywienia.html">Poradnik</a></li>
+                <li><a class="nav-link" href="informacje.html">Informacje</a></li>
+                <li><a class="nav-link" href="o-mnie.html">O mnie</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="page-container">
+        <main class="main-content">
+            <div class="page-with-subtabs">
+                <nav class="sub-nav sub-nav--full" aria-label="Sekcje bazy produktów">
+                    <a class="btn-sub" href="dieta.html#produkty">Wszystkie produkty 🍕</a>
+                    <a class="btn-sub active" href="bialko-maxxing.html" aria-current="page">Białko maxxing 🔥</a>
+                    <a class="btn-sub" href="cena-bialka.html">Cena za 100g białka 💰</a>
+                </nav>
+
+                <div id="protein-max" class="sub-tab-content active">
+                    <div class="page-hero">
+                        <h1 class="pm-ranking-title">Ranking Białko Maxxing</h1>
+                        <p class="subtitle">Maksymalizacja białka względem kalorii — im mniej kcal na 1 g białka, tym lepiej przy redukcji i budowie sylwetki.</p>
+                    </div>
+
+                    <div class="search-bar">
+                        <input type="text" id="proteinMaxSearch" oninput="renderProteinMaxxing()" placeholder="Wyszukaj produkt... (np. kurczak, twaróg, tuńczyk)">
+                    </div>
+
+                    <div class="input-group pm-category-select">
+                        <select id="categoryFilter" onchange="onRankingCategoryChange('maxxing')" aria-label="Kategoria żywności">
+                            <option value="all">Wszystkie kategorie</option>
+                        </select>
+                    </div>
+
+                    <h2 class="random-products-heading" id="proteinMaxRandomHeading"><span>Ranking produktów w bazie:</span></h2>
+                    <div class="products-grid" id="proteinMaxxingGrid"></div>
+                    <div class="products-show-more-wrap" id="proteinMaxShowMoreWrap" hidden>
+                        <button type="button" class="btn-show-more" onclick="showMoreProteinMaxxing(); return false;">Pokaż więcej</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+            <footer class="site-footer">
+        <p class="site-footer-brand"><strong>Proteiner</strong> — kalkulator dietetyczny i baza produktów</p>
+        <nav class="site-footer-nav" aria-label="Nawigacja w stopce">
+            <a href="informacje.html">Informacje</a>
+            <span aria-hidden="true">·</span>
+            <a href="o-mnie.html">O mnie</a>
+            <span aria-hidden="true">·</span>
+            <a href="dieta.html#produkty">Wszystkie produkty</a>
+            <span aria-hidden="true">·</span>
+            <a href="porownaj-produkty.html">Porównaj produkty</a>
+            <span aria-hidden="true">·</span>
+            <a href="dodaj-produkt.html">Dodaj produkty</a>
+            <span aria-hidden="true">·</span>
+            <a href="poradnik-zywienia.html">Poradnik</a>
+        </nav>
+        <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
+    </footer>
+<script src="js/products-data-raw.js"></script>
+    <script src="js/product-utils.js"></script>
+    <script src="js/products-data.js"></script>
+    <script src="js/dieta.js"></script>
+    <script src="js/ranking-page.js"></script>
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <script src="js/cookie-banner.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>

@@ -4,11 +4,13 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   web-deploy:
     name: Deploy
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
     - name: Pobranie kodu
       uses: actions/checkout@v4
@@ -21,11 +23,27 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./
         server-dir: /public_html/proteiner.pl/
+        log-level: verbose
         exclude: |
           **/.git*
           **/.github/**
           **/node_modules/**
           **/.cursor/**
+          **/deploy-bundle/**
+          **/scripts/**
+          **/package.json
+          **/package-lock.json
+
+    - name: Weryfikacja — cookie-banner.js na serwerze
+      run: |
+        sleep 15
+        CODE=$(curl -s -o /dev/null -w "%{http_code}" "https://proteiner.pl/js/cookie-banner.js" || true)
+        echo "HTTP $CODE dla cookie-banner.js"
+        if [ "$CODE" != "200" ]; then
+          echo "::error::Deploy FTP zakończył się, ale cookie-banner.js nadal nie jest na serwerze (HTTP $CODE)."
+          echo "Sprawdź ścieżkę server-dir w workflow lub wgraj ręcznie folder deploy-bundle/."
+          exit 1
+        fi
 
   redirect-proteinmaxxing:
     name: Przekierowanie proteinmaxxing.pl

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/theme-init.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/consent-head.js"></script>
+    <meta name="google-adsense-account" content="ca-pub-8540801395510703">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8540801395510703"
+        crossorigin="anonymous"></script>
+<meta name="robots" content="noindex, nofollow">
+    <title>Panel zgłoszeń produktów | Proteiner</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/theme-switch.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <a href="index.html" class="logo">
+                <img class="logo-mark" src="images/favicon.svg" alt="" width="56" height="56" decoding="async">
+                <span>Proteiner</span>
+            </a>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="dodaj-produkt.html">Formularz publiczny</a></li>
+                <li><button type="button" class="nav-link admin-logout" id="adminLogoutBtn" hidden>Wyloguj</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-container">
+        <main class="main-content">
+            <section id="adminGate" class="admin-gate">
+                <h1>Panel administratora</h1>
+                <p>Zgłoszenia produktów z formularza i import z e-maila. Hasło ustawiasz w <code>js/admin-config.js</code>.</p>
+                <form id="adminLoginForm">
+                    <div class="input-group">
+                        <label for="adminPin">Hasło</label>
+                        <input type="password" id="adminPin" name="pin" required autocomplete="current-password">
+                    </div>
+                    <p class="admin-login-error" id="adminLoginError" hidden role="alert"></p>
+                    <button type="submit" class="admin-btn admin-btn--primary" style="width:100%;margin-top:8px;">Zaloguj</button>
+                </form>
+            </section>
+
+            <section id="adminPanel" class="admin-panel" hidden>
+                <div class="page-hero" style="margin-bottom:20px;">
+                    <h1>Zgłoszenia produktów</h1>
+                    <p class="subtitle">Weryfikacja przed dodaniem do bazy — kopiuj JSON do <code>products-data-raw.js</code></p>
+                </div>
+
+                <p class="admin-toast" id="adminToast" hidden role="status"></p>
+
+                <div class="admin-toolbar">
+                    <div class="admin-filters" id="adminFilters">
+                        <button type="button" class="btn-sub active" data-filter="pending">Oczekujące (<span id="countPending">0</span>)</button>
+                        <button type="button" class="btn-sub" data-filter="all">Wszystkie (<span id="countAll">0</span>)</button>
+                        <button type="button" class="btn-sub" data-filter="approved">Zaakceptowane</button>
+                        <button type="button" class="btn-sub" data-filter="rejected">Odrzucone</button>
+                    </div>
+                    <div class="admin-actions-row">
+                        <button type="button" class="admin-btn" id="adminSyncServerBtn">Sync z serwera</button>
+                        <button type="button" class="admin-btn" id="adminExportBtn">Eksport JSON</button>
+                    </div>
+                </div>
+
+                <div class="admin-list" id="adminList"></div>
+                <p class="admin-empty" id="adminEmpty" hidden>Brak zgłoszeń w tej kategorii.</p>
+
+                <div class="admin-import">
+                    <h2>Import z e-maila</h2>
+                    <p>Wklej JSON produktu albo całą treść wiadomości z FormSubmit (pole <code>json</code> lub blok na końcu maila). Zgłoszenia z formularza użytkowników trafiają na mail — <strong>wklej je tutaj</strong>, bo przeglądarka gościa nie widzi Twojego localStorage.</p>
+                    <p style="margin-top:8px;font-size:0.82rem;">Opcjonalnie: wyeksportuj listę jako JSON, wklej do <code>data/pending-submissions.json</code> na serwerze i kliknij „Sync z serwera”.</p>
+                    <textarea id="adminImportText" placeholder='{"name":"...","category":"nabial",...}'></textarea>
+                    <button type="button" class="admin-btn admin-btn--primary" id="adminImportBtn">Importuj do listy</button>
+                </div>
+            </section>
+        </main>
+<script src="js/admin-config.js"></script>
+    <script src="js/product-utils.js"></script>
+    <script src="js/submission-store.js"></script>
+    <script src="js/admin-submissions.js"></script>
+        <link rel="stylesheet" href="css/cookie-consent.css">
+    <script src="js/cookie-banner.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>

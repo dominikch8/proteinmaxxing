@@ -53,24 +53,36 @@
             </div>
 
             <div class="compare-pickers">
-                <div class="compare-picker" data-slot="a">
+                <div class="compare-picker compare-picker--a" data-slot="a">
                     <label class="compare-picker-label" for="compareSearchA">Produkt A</label>
                     <div class="compare-search-wrap">
-                        <input type="search" id="compareSearchA" class="compare-search" placeholder="Wyszukaj produkt…" autocomplete="off" spellcheck="false">
+                        <div class="compare-field">
+                            <input type="search" id="compareSearchA" class="compare-search" placeholder="Wyszukaj produkt…" autocomplete="off" spellcheck="false">
+                            <div class="compare-field-chip" id="compareChipA" hidden>
+                                <span class="compare-chip-emoji" aria-hidden="true"></span>
+                                <span class="compare-chip-name"></span>
+                                <button type="button" class="compare-chip-clear" data-clear="a" aria-label="Zmień produkt A">×</button>
+                            </div>
+                        </div>
                         <ul class="compare-suggestions" id="compareSuggestionsA" hidden></ul>
                     </div>
-                    <div class="compare-selected" id="compareSelectedA" hidden></div>
                 </div>
 
                 <button type="button" class="compare-swap-btn" id="compareSwapBtn" title="Zamień produkty miejscami" aria-label="Zamień produkty A i B">⇄</button>
 
-                <div class="compare-picker" data-slot="b">
+                <div class="compare-picker compare-picker--b" data-slot="b">
                     <label class="compare-picker-label" for="compareSearchB">Produkt B</label>
                     <div class="compare-search-wrap">
-                        <input type="search" id="compareSearchB" class="compare-search" placeholder="Wyszukaj produkt…" autocomplete="off" spellcheck="false">
+                        <div class="compare-field">
+                            <input type="search" id="compareSearchB" class="compare-search" placeholder="Wyszukaj produkt…" autocomplete="off" spellcheck="false">
+                            <div class="compare-field-chip" id="compareChipB" hidden>
+                                <span class="compare-chip-emoji" aria-hidden="true"></span>
+                                <span class="compare-chip-name"></span>
+                                <button type="button" class="compare-chip-clear" data-clear="b" aria-label="Zmień produkt B">×</button>
+                            </div>
+                        </div>
                         <ul class="compare-suggestions" id="compareSuggestionsB" hidden></ul>
                     </div>
-                    <div class="compare-selected" id="compareSelectedB" hidden></div>
                 </div>
             </div>
 
