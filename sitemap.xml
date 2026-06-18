@@ -26,6 +26,26 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://proteiner.pl/poradnik-zywienia.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/deficyt-kaloryczny-praktyka.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/planowanie-posilkow.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/dodaj-produkt.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://proteiner.pl/trening.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -39,6 +59,56 @@
     <loc>https://proteiner.pl/o-mnie.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-kalorie.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-bialko.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-weglowodany.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-tluszcz.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-tluszcze-nasycone.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-tluszcze-nienasycone.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-blonnik.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-witaminy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-mineraly.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-mikroelementy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://proteiner.pl/produkty/kategoria/mieso.html</loc>

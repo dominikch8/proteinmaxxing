@@ -516,10 +516,41 @@ for (const p of products) {
 
 generateCategoryPages(products);
 
+const STATIC_SITEMAP_ENTRIES = [
+    { loc: 'https://proteiner.pl/', changefreq: 'weekly', priority: '1.0' },
+    { loc: 'https://proteiner.pl/dieta.html', changefreq: 'weekly', priority: '0.9' },
+    { loc: 'https://proteiner.pl/bialko-maxxing.html', changefreq: 'weekly', priority: '0.85' },
+    { loc: 'https://proteiner.pl/cena-bialka.html', changefreq: 'weekly', priority: '0.85' },
+    { loc: 'https://proteiner.pl/porownaj-produkty.html', changefreq: 'weekly', priority: '0.85' },
+    { loc: 'https://proteiner.pl/poradnik-zywienia.html', changefreq: 'weekly', priority: '0.9' },
+    { loc: 'https://proteiner.pl/deficyt-kaloryczny-praktyka.html', changefreq: 'monthly', priority: '0.85' },
+    { loc: 'https://proteiner.pl/planowanie-posilkow.html', changefreq: 'monthly', priority: '0.85' },
+    { loc: 'https://proteiner.pl/dodaj-produkt.html', changefreq: 'monthly', priority: '0.5' },
+    { loc: 'https://proteiner.pl/trening.html', changefreq: 'monthly', priority: '0.8' },
+    { loc: 'https://proteiner.pl/informacje.html', changefreq: 'yearly', priority: '0.4' },
+    { loc: 'https://proteiner.pl/o-mnie.html', changefreq: 'yearly', priority: '0.4' },
+    { loc: 'https://proteiner.pl/skladniki-kalorie.html', changefreq: 'monthly', priority: '0.8' },
+    { loc: 'https://proteiner.pl/skladniki-bialko.html', changefreq: 'monthly', priority: '0.8' },
+    { loc: 'https://proteiner.pl/skladniki-weglowodany.html', changefreq: 'monthly', priority: '0.8' },
+    { loc: 'https://proteiner.pl/skladniki-tluszcz.html', changefreq: 'monthly', priority: '0.8' },
+    { loc: 'https://proteiner.pl/skladniki-tluszcze-nasycone.html', changefreq: 'monthly', priority: '0.75' },
+    { loc: 'https://proteiner.pl/skladniki-tluszcze-nienasycone.html', changefreq: 'monthly', priority: '0.75' },
+    { loc: 'https://proteiner.pl/skladniki-blonnik.html', changefreq: 'monthly', priority: '0.75' },
+    { loc: 'https://proteiner.pl/skladniki-witaminy.html', changefreq: 'monthly', priority: '0.75' },
+    { loc: 'https://proteiner.pl/skladniki-mineraly.html', changefreq: 'monthly', priority: '0.75' },
+    { loc: 'https://proteiner.pl/skladniki-mikroelementy.html', changefreq: 'monthly', priority: '0.75' }
+];
+
+function sitemapUrlEntry({ loc, changefreq, priority }) {
+    return `  <url>\n    <loc>${loc}</loc>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
+}
+
 const categorySitemapUrls = CATEGORY_ORDER.map(
     (slug) =>
         `  <url>\n    <loc>https://proteiner.pl/produkty/kategoria/${slug}.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`
 );
+
+const staticSitemapUrls = STATIC_SITEMAP_ENTRIES.map(sitemapUrlEntry);
 
 const sitemapUrls = products
     .filter((p) => productHasRichContent(p, editorialBySlug) || generatedEditorialIsRich(p))
@@ -528,46 +559,7 @@ const sitemapUrls = products
 );
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://proteiner.pl/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://proteiner.pl/dieta.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://proteiner.pl/bialko-maxxing.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://proteiner.pl/cena-bialka.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://proteiner.pl/porownaj-produkty.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://proteiner.pl/trening.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://proteiner.pl/informacje.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://proteiner.pl/o-mnie.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
+${staticSitemapUrls.join('\n')}
 ${categorySitemapUrls.join('\n')}
 ${sitemapUrls.join('\n')}
 </urlset>
