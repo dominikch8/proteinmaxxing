@@ -2054,3 +2054,40 @@
             line-height: 1.6;
             color: var(--text-dark);
         }
+
+        .calc-intro-bottom {
+            margin-top: 32px;
+        }
+
+        .calc-methodology {
+            margin-top: 20px;
+        }
+
+        .calc-methodology h3 {
+            margin: 20px 0 8px;
+            font-size: 1rem;
+            color: var(--accent);
+        }
+
+        .calc-methodology h3:first-of-type {
+            margin-top: 12px;
+        }
+
+        .calc-formula-list {
+            margin: 8px 0 12px;
+            padding-left: 1.25rem;
+            line-height: 1.65;
+        }
+
+        .calc-formula-list li {
+            margin-bottom: 6px;
+        }
+
+        .calc-methodology code {
+            display: inline-block;
+            margin: 4px 0;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: var(--surface-hover);
+            font-size: 0.9rem;
+        }

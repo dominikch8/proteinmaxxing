@@ -9,6 +9,10 @@ import {
     MIN_EXTRA_FOR_INDEX
 } from './category-editorial.mjs';
 import {
+    generateProductEditorial,
+    generatedEditorialIsRich
+} from './product-editorial-generator.mjs';
+import {
     buildFaviconLinks,
     buildSocialImageMeta,
     buildThemeInitScript,
@@ -310,8 +314,15 @@ function buildSeoLead(p) {
     return `${p.name}: ${p.protein} g białka, ${p.kcal} kcal, ${p.carbs} g węglowodanów i ${p.fat} g tłuszczu na 100 g. Kategoria: ${cat}.`;
 }
 
+function getProductEditorial(p) {
+    if (editorialBySlug[p.slug]?.paragraphs?.length) {
+        return editorialBySlug[p.slug];
+    }
+    return generateProductEditorial(p);
+}
+
 function buildProductGuideSection(p) {
-    const ed = editorialBySlug[p.slug];
+    const ed = getProductEditorial(p);
     if (ed?.paragraphs?.length) {
         const paras = ed.paragraphs.map((para) => `            <p>${para}</p>`).join('\n');
         return `        <section class="product-guide">
@@ -352,7 +363,7 @@ function buildPage(p, similar = []) {
         ? `<div class="extra-box"><strong>Uwaga:</strong> ${esc(p.note)}</div>`
         : '';
 
-    const indexable = productHasRichContent(p, editorialBySlug);
+    const indexable = productHasRichContent(p, editorialBySlug) || generatedEditorialIsRich(p);
     const robotsMeta = indexable ? 'index, follow' : 'noindex, follow';
 
     const hasLocalImg = fs.existsSync(path.join(root, 'images', 'products', `${p.slug}.jpg`));
@@ -516,13 +527,13 @@ for (const p of products) {
     const similar = getSimilarProducts(p, products);
     fs.writeFileSync(path.join(outDir, `${p.slug}.html`), buildPage(p, similar), 'utf8');
     written++;
-    if (productHasRichContent(p, editorialBySlug)) indexedCount++;
+    if (productHasRichContent(p, editorialBySlug) || generatedEditorialIsRich(p)) indexedCount++;
 }
 
 generateLegacyCategoryRedirects();
 
 const sitemapUrls = products
-    .filter((p) => productHasRichContent(p, editorialBySlug))
+    .filter((p) => productHasRichContent(p, editorialBySlug) || generatedEditorialIsRich(p))
     .map(
     (p) => `  <url>\n    <loc>https://proteiner.pl/produkty/${p.slug}.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`
 );
