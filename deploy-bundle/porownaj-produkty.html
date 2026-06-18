@@ -52,25 +52,49 @@
                 <p class="subtitle">Wybierz dwa produkty z bazy i zobacz składniki odżywcze na 100 g na jednym wykresie — makro i tłuszcze obok siebie.</p>
             </div>
 
+            <section class="compare-guide editorial-intro" aria-labelledby="compare-guide-heading">
+                <h2 id="compare-guide-heading">Jak korzystać z porównywarki?</h2>
+                <p>Wpisz nazwę produktu w pole A i B — np. pierś z kurczaka i twaróg chudy. Wykres pokaże kalorie, białko, węglowodany, tłuszcz, stosunek kcal do białka oraz proporcję tłuszczów nienasyconych do nasyconych. Zielony / wyróżniony wynik oznacza lepszą wartość w danej kategorii (np. więcej białka lub mniej kcal).</p>
+                <p>Przykłady gotowych porównań:</p>
+                <ul class="compare-examples">
+                    <li><a href="?a=piers-z-kurczaka&amp;b=twarog-chudy">Kurczak vs twaróg</a></li>
+                    <li><a href="?a=jajko-kurze-cale&amp;b=skyr-naturalny">Jajka vs skyr</a></li>
+                    <li><a href="?a=losos-atlantycki&amp;b=dorsz-swiezy">Łosoś vs dorsz</a></li>
+                    <li><a href="?a=ryz-bialy&amp;b=platki-owsiane">Ryż vs płatki owsiane</a></li>
+                </ul>
+            </section>
+
             <div class="compare-pickers">
-                <div class="compare-picker" data-slot="a">
+                <div class="compare-picker compare-picker--a" data-slot="a">
                     <label class="compare-picker-label" for="compareSearchA">Produkt A</label>
                     <div class="compare-search-wrap">
-                        <input type="search" id="compareSearchA" class="compare-search" placeholder="Wyszukaj produkt…" autocomplete="off" spellcheck="false">
+                        <div class="compare-field">
+                            <input type="search" id="compareSearchA" class="compare-search" placeholder="Wyszukaj produkt…" autocomplete="off" spellcheck="false">
+                            <div class="compare-field-chip" id="compareChipA" hidden>
+                                <span class="compare-chip-emoji" aria-hidden="true"></span>
+                                <span class="compare-chip-name"></span>
+                                <button type="button" class="compare-chip-clear" data-clear="a" aria-label="Zmień produkt A">×</button>
+                            </div>
+                        </div>
                         <ul class="compare-suggestions" id="compareSuggestionsA" hidden></ul>
                     </div>
-                    <div class="compare-selected" id="compareSelectedA" hidden></div>
                 </div>
 
                 <button type="button" class="compare-swap-btn" id="compareSwapBtn" title="Zamień produkty miejscami" aria-label="Zamień produkty A i B">⇄</button>
 
-                <div class="compare-picker" data-slot="b">
+                <div class="compare-picker compare-picker--b" data-slot="b">
                     <label class="compare-picker-label" for="compareSearchB">Produkt B</label>
                     <div class="compare-search-wrap">
-                        <input type="search" id="compareSearchB" class="compare-search" placeholder="Wyszukaj produkt…" autocomplete="off" spellcheck="false">
+                        <div class="compare-field">
+                            <input type="search" id="compareSearchB" class="compare-search" placeholder="Wyszukaj produkt…" autocomplete="off" spellcheck="false">
+                            <div class="compare-field-chip" id="compareChipB" hidden>
+                                <span class="compare-chip-emoji" aria-hidden="true"></span>
+                                <span class="compare-chip-name"></span>
+                                <button type="button" class="compare-chip-clear" data-clear="b" aria-label="Zmień produkt B">×</button>
+                            </div>
+                        </div>
                         <ul class="compare-suggestions" id="compareSuggestionsB" hidden></ul>
                     </div>
-                    <div class="compare-selected" id="compareSelectedB" hidden></div>
                 </div>
             </div>
 
@@ -92,6 +116,10 @@
                     <tbody id="compareTableBody"></tbody>
                 </table>
             </section>
+
+            <aside class="health-disclaimer health-disclaimer--compact" role="note">
+                <p><strong>Informacja:</strong> Porównania służą celom edukacyjnym. Nie stanowią porady medycznej. <a href="o-mnie.html">O autorze</a> · <a href="informacje.html">Polityka</a></p>
+            </aside>
         </main>
     </div>
 
