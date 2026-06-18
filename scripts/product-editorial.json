@@ -78,5 +78,12 @@
       "Kalorie zależą od marki (koncentrat vs izolat, dodatki smakowe). Warto liczyć porcję według etykiety producenta i wpisywać do dziennego bilansu z kalkulatora.",
       "Porównaj odżywkę z twarogiem, skyrem i jogurtem greckim pod kątem ceny za 100 g białka w rankingu na stronie Dieta."
     ]
+  },
+  "pizza-hawajska": {
+    "title": "Lubię czy nie lubię",
+    "paragraphs": [
+      "Pizza Hawajska (255 kcal / 100 g, 11 g białka) — niezależnie od gustu, makro liczysz tak samo: zważ porcję i wpisz do kalkulatora TDEE.",
+      "Są 2 typy ludzi — albo kochasz, albo nienawidzisz — którym jesteś?"
+    ]
   }
 }
