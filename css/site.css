@@ -2063,6 +2063,15 @@
             margin-top: 32px;
         }
 
+        .poradnik-intro-block {
+            margin-bottom: 24px;
+        }
+
+        .poradnik-intro-block + .poradnik-nutrient-grid,
+        .poradnik-intro-block + h2 {
+            margin-top: 8px;
+        }
+
         .calc-methodology {
             margin-top: 20px;
         }
