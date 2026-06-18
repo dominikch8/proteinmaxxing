@@ -38,9 +38,9 @@ function pickRandomN(items, count) {
             const shopTitle = document.getElementById('shopTitle');
             const sGrid = document.getElementById('shopGrid');
             const titles = {
-                lose: '🛒 Co pomaga w odchudzaniu',
-                gain: '🛒 Co pomaga w budowie masy mięśniowej',
-                maintain: '🛒 Co pomaga w utrzymaniu wagi'
+                lose: '🥗 Produkty na redukcję (z bazy)',
+                gain: '💪 Produkty na masę (z bazy)',
+                maintain: '🍽️ Produkty do utrzymania wagi'
             };
             shopTitle.innerText = titles[goal] || titles.maintain;
 

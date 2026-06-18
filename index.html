@@ -56,7 +56,7 @@
     </header>
 <div class="page-container">
         <main class="main-content">
-<div class="page-hero">
+                <div class="page-hero">
                     <h1>BMI Kalkulator Dietetyczny</h1>
                     <p class="subtitle calc-features">
                         <span>BMI</span><span class="calc-features-sep" aria-hidden="true"></span>
@@ -68,6 +68,12 @@
                         <span>Minerały</span>
                     </p>
                 </div>
+
+                <section class="editorial-intro" aria-labelledby="calc-intro-heading">
+                    <h2 id="calc-intro-heading">Jak działa kalkulator?</h2>
+                    <p>Proteiner szacuje Twoje dzienne zapotrzebowanie energetyczne (TDEE) na podstawie płci, wieku, wagi, wzrostu i aktywności — według wzorów Mifflina–St Jeora. Po wybraniu celu (redukcja, masa lub utrzymanie) zobaczysz orientacyjną liczbę kalorii oraz rozkład białka, tłuszczu i węglowodanów.</p>
+                    <p>To punkt wyjścia do planowania posiłków, nie gotowa dieta. Szczegóły produktów sprawdzisz w <a href="dieta.html">bazie produktów</a> lub <a href="porownaj-produkty.html">porównywarce</a>. Więcej o metodzie i źródłach danych na stronie <a href="o-mnie.html">O mnie</a>.</p>
+                </section>
 
                 <div class="form-grid">
                     <div class="input-group">
@@ -179,12 +185,16 @@
                                     <th>Główne źródła w diecie</th>
                                 </tr>
                             </thead>
-                            <tbody id="microTableBody"></tbody>
+                            <tbody id="microTableBody">
+                                <tr><td>Witamina C</td><td>75–90 mg</td><td>Papryka, cytrusy, brokuły</td></tr>
+                                <tr><td>Wapń</td><td>1000 mg</td><td>Nabiał, tofu, zielone warzywa</td></tr>
+                                <tr><td>Żelazo</td><td>8–18 mg</td><td>Mięso, rośliny strączkowe, kasze</td></tr>
+                            </tbody>
                         </table>
                     </div>
 
                     <div class="shopping-box">
-                        <h3 id="shopTitle">🛒 Co pomaga w Twoim celu</h3>
+                        <h3 id="shopTitle">Produkty z bazy pod Twój cel</h3>
                         <div class="shopping-grid" id="shopGrid"></div>
                     </div>
 
@@ -200,6 +210,17 @@
                     <center>
                         <button class="btn-pdf" onclick="window.print()">📥 Pobierz darmowy raport (PDF)</button>
                     </center>
+
+                    <aside class="health-disclaimer" role="note" aria-labelledby="health-disclaimer-heading">
+                        <h2 id="health-disclaimer-heading">Ważna informacja zdrowotna</h2>
+                        <p>Proteiner pomaga <strong>szacować</strong> zapotrzebowanie kaloryczne i porównywać produkty. Treści mają charakter edukacyjny — nie zastępują porady lekarza ani dietetyka. Przy chorobach przewlekłych, ciąży lub lekach skonsultuj plan żywienia ze specjalistą.</p>
+                        <p><a href="o-mnie.html">O autorze</a> · <a href="poradnik-zywienia.html">Poradnik</a> · <a href="informacje.html">Polityka prywatności</a></p>
+                    </aside>
+
+                    <section class="data-sources-note" aria-labelledby="data-sources-heading">
+                        <h2 id="data-sources-heading">Skąd bierzemy dane?</h2>
+                        <p>Makroskładniki zestawiamy na podstawie publicznych tabel wartości odżywczych i etykiet producentów. Szczegóły opisujemy na stronie <a href="o-mnie.html">O mnie</a>.</p>
+                    </section>
                 </div>
         </main>
     </div>

@@ -2,6 +2,12 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { buildSiteFooter } from './site-footer-html.mjs';
+import { buildHealthDisclaimer } from './site-legal-html.mjs';
+import {
+    buildCategoryEditorialHtml,
+    productHasRichContent,
+    MIN_EXTRA_FOR_INDEX
+} from './category-editorial.mjs';
 import {
     buildFaviconLinks,
     buildSocialImageMeta,
@@ -18,6 +24,10 @@ import { CATEGORY_ORDER, CATEGORY_LABELS } from './category-seo.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
+
+const editorialBySlug = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'product-editorial.json'), 'utf8')
+);
 
 const retailPath = path.join(__dirname, 'retail-prices-pl.json');
 const retailMeta = fs.existsSync(retailPath)
@@ -295,10 +305,28 @@ function dietaCategoryHref(category) {
     return `../dieta.html#produkty/kategoria/${encodeURIComponent(category)}`;
 }
 
-function buildSeoText(p) {
+function buildSeoLead(p) {
     const cat = CATEGORY_LABELS[p.category] || p.category;
-    const ratio = p.protein > 0 ? (p.kcal / p.protein).toFixed(1) : '—';
-    return `${p.name} to produkt z kategorii ${cat}. Na 100 g znajdziesz ${p.protein} g białka (proteinów), ${p.kcal} kcal kalorii, ${p.carbs} g węglowodanów oraz ${p.fat} g tłuszczu — idealne dane przy zdrowym odżywianiu, odchudzaniu lub budowie masy mięśniowej. Współczynnik ok. ${ratio} kcal na 1 g białka pomaga porównać gęstość odżywczą. ${p.extra}`;
+    return `${p.name}: ${p.protein} g białka, ${p.kcal} kcal, ${p.carbs} g węglowodanów i ${p.fat} g tłuszczu na 100 g. Kategoria: ${cat}.`;
+}
+
+function buildProductGuideSection(p) {
+    const ed = editorialBySlug[p.slug];
+    if (ed?.paragraphs?.length) {
+        const paras = ed.paragraphs.map((para) => `            <p>${para}</p>`).join('\n');
+        return `        <section class="product-guide">
+            <h2>${esc(ed.title || p.name)}</h2>
+${paras}
+        </section>`;
+    }
+    const extra = (p.extra || '').trim();
+    if (extra.length >= MIN_EXTRA_FOR_INDEX) {
+        return `        <section class="product-guide">
+            <h2>Praktyczne wskazówki</h2>
+            <p>${esc(extra)}</p>
+        </section>`;
+    }
+    return buildCategoryEditorialHtml(p.category, '../');
 }
 
 function buildPage(p, similar = []) {
@@ -320,25 +348,12 @@ function buildPage(p, similar = []) {
         ? `this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${esc(remoteImg)}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};};`
         : `this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};`;
 
-    const keywords = [
-        p.name,
-        'białko',
-        'proteiny',
-        'kalorie',
-        'kcal',
-        'węglowodany',
-        'tłuszcz',
-        'makro',
-        'zdrowe odżywianie',
-        'odchudzanie',
-        'redukcja',
-        'masa mięśniowa',
-        catLabel
-    ];
-
     const noteBlock = p.note
         ? `<div class="extra-box"><strong>Uwaga:</strong> ${esc(p.note)}</div>`
         : '';
+
+    const indexable = productHasRichContent(p, editorialBySlug);
+    const robotsMeta = indexable ? 'index, follow' : 'noindex, follow';
 
     const hasLocalImg = fs.existsSync(path.join(root, 'images', 'products', `${p.slug}.jpg`));
     const ogImagePath = hasLocalImg ? `images/products/${p.slug}.jpg` : 'images/og-home.jpg';
@@ -356,8 +371,7 @@ ${buildConsentHeadScript('../')}
 ${buildAdSenseHead()}
     <title>${esc(title)}</title>
     <meta name="description" content="${esc(desc)}">
-    <meta name="keywords" content="${esc(keywords.join(', '))}">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="${robotsMeta}">
     <link rel="canonical" href="${esc(canonical)}">
     <meta property="og:title" content="${esc(title)}">
     <meta property="og:description" content="${esc(desc)}">
@@ -410,7 +424,7 @@ ${buildThemeStylesheets('../', { productPage: true })}
                 <div>
                     <a class="product-category" href="${dietaCategoryHref(p.category)}">${esc(catLabel)}</a>
                     <h1 itemprop="name">${esc(p.name)}</h1>
-                    <p class="seo-lead" itemprop="description">${esc(buildSeoText(p))}</p>
+                    <p class="seo-lead" itemprop="description">${esc(buildSeoLead(p))}</p>
                     <div class="macro-highlight">
                         <div class="macro-pill kcal-pill"><span>Kalorie</span><strong itemprop="calories">${p.kcal} kcal</strong><small>na 100 g</small></div>
                         <div class="macro-pill"><span>Białko / proteiny</span><strong itemprop="proteinContent">${p.protein} g</strong></div>
@@ -442,15 +456,10 @@ ${buildThemeStylesheets('../', { productPage: true })}
             </section>
         </article>
 
-        <section class="seo-block">
-            <h2>${esc(p.name)} a zdrowa dieta, odchudzanie i białko</h2>
-            <p>Szukając <strong>kalorii</strong>, <strong>białka</strong> i <strong>węglowodanów</strong> w jednym miejscu, warto porównać ${esc(p.name)} z innymi produktami w bazie Proteiner. Przy <strong>odchudzaniu</strong> liczy się deficyt kaloryczny i sytość — stąd profil ${p.kcal} kcal i ${p.protein} g proteinów na 100 g. Przy budowie masy mięśniowej zwróć uwagę na proporcję białka do energii oraz na <strong>zdrowe</strong> źródła tłuszczu (${p.satFat} g nasyconych / ${p.unsatFat} g nienasyconych).</p>
-            <p>${esc(p.extra)}</p>
-            <div class="seo-keywords">
-                ${['białko', 'proteiny', 'kalorie', 'kcal', 'węglowodany', 'tłuszcz', 'makro', 'mikro', 'zdrowe', 'odchudzanie', 'redukcja', 'dieta', 'odżywianie'].map((k) => `<span>${k}</span>`).join('')}
-            </div>
-        </section>
+${buildProductGuideSection(p)}
 ${buildSimilarProductsSection(p, similar)}
+
+${buildHealthDisclaimer('../', { compact: true })}
     </main>
 
 ${buildSiteFooter('../')}
@@ -502,15 +511,19 @@ fs.mkdirSync(outDir, { recursive: true });
 fs.mkdirSync(path.join(root, 'images', 'products'), { recursive: true });
 
 let written = 0;
+let indexedCount = 0;
 for (const p of products) {
     const similar = getSimilarProducts(p, products);
     fs.writeFileSync(path.join(outDir, `${p.slug}.html`), buildPage(p, similar), 'utf8');
     written++;
+    if (productHasRichContent(p, editorialBySlug)) indexedCount++;
 }
 
 generateLegacyCategoryRedirects();
 
-const sitemapUrls = products.map(
+const sitemapUrls = products
+    .filter((p) => productHasRichContent(p, editorialBySlug))
+    .map(
     (p) => `  <url>\n    <loc>https://proteiner.pl/produkty/${p.slug}.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`
 );
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -583,4 +596,4 @@ ${buildThemeBodyScript('../')}
     'utf8'
 );
 
-console.log(`Generated ${written} product pages + sitemap.xml`);
+console.log(`Generated ${written} product pages (${indexedCount} indexable, ${written - indexedCount} noindex) + sitemap.xml`);
