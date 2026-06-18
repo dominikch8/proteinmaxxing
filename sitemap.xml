@@ -41,6 +41,71 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://proteiner.pl/produkty/kategoria/mieso.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/nabial.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/warzywa.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/owoce.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/zboza.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/polskie-obiadki.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/zupy.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/orzechy.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/tluszcze.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/makarony.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/fastfood.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/slodycze.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/sosy.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://proteiner.pl/produkty/piers-z-kurczaka.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

@@ -103,6 +103,11 @@ function enrichProducts(raw) {
     });
 }
 
+function categoryPageUrl(category) {
+    if (!category || category === 'all') return 'dieta.html#produkty';
+    return `produkty/kategoria/${category}.html`;
+}
+
 function productPageUrl(slug) {
     return `produkty/${slug}.html`;
 }

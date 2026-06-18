@@ -25,6 +25,7 @@ import {
 import { buildLogoMark } from './site-logo-html.mjs';
 import { buildServingTableHtml } from './serving-table-html.mjs';
 import { CATEGORY_ORDER, CATEGORY_LABELS } from './category-seo.mjs';
+import { buildCategoryPageHtml } from './category-page-html.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
@@ -306,7 +307,7 @@ ${items}
 }
 
 function dietaCategoryHref(category) {
-    return `../dieta.html#produkty/kategoria/${encodeURIComponent(category)}`;
+    return `kategoria/${encodeURIComponent(category)}.html`;
 }
 
 function buildSeoLead(p) {
@@ -486,32 +487,15 @@ if (!rawMatch) throw new Error('Cannot parse products-data-raw.js');
 const raw = JSON.parse(rawMatch[1]);
 const products = enrichProducts(raw);
 
-/** Stare URL /produkty/kategoria/*.html → filtr na stronie Dieta */
-function generateLegacyCategoryRedirects() {
-    const legacyDir = path.join(root, 'produkty', 'kategoria');
-    fs.mkdirSync(legacyDir, { recursive: true });
+/** Pełne strony kategorii z tekstem redakcyjnym i listą produktów. */
+function generateCategoryPages(allProducts) {
+    const catDir = path.join(root, 'produkty', 'kategoria');
+    fs.mkdirSync(catDir, { recursive: true });
     for (const slug of CATEGORY_ORDER) {
-        const label = CATEGORY_LABELS[slug] || slug;
-        const target = `../../dieta.html#produkty/kategoria/${encodeURIComponent(slug)}`;
-        const canonical = `https://proteiner.pl/dieta.html#produkty/kategoria/${slug}`;
+        const inCategory = allProducts.filter((p) => p.category === slug);
         fs.writeFileSync(
-            path.join(legacyDir, `${slug}.html`),
-            `<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-${buildThemeInitScript('../../')}
-    <meta http-equiv="refresh" content="0;url=${target}">
-    <meta name="robots" content="noindex, follow">
-    <link rel="canonical" href="${canonical}">
-    <title>Przekierowanie: ${label} | Proteiner</title>
-    <script>location.replace('${target.replace(/'/g, "\\'")}');</script>
-</head>
-<body>
-    <p>Przekierowanie do <a href="${target}">${label}</a> na stronie Dieta…</p>
-${buildThemeBodyScript('../../')}
-</body>
-</html>`,
+            path.join(catDir, `${slug}.html`),
+            buildCategoryPageHtml(slug, inCategory),
             'utf8'
         );
     }
@@ -530,7 +514,12 @@ for (const p of products) {
     if (productHasRichContent(p, editorialBySlug) || generatedEditorialIsRich(p)) indexedCount++;
 }
 
-generateLegacyCategoryRedirects();
+generateCategoryPages(products);
+
+const categorySitemapUrls = CATEGORY_ORDER.map(
+    (slug) =>
+        `  <url>\n    <loc>https://proteiner.pl/produkty/kategoria/${slug}.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`
+);
 
 const sitemapUrls = products
     .filter((p) => productHasRichContent(p, editorialBySlug) || generatedEditorialIsRich(p))
@@ -579,6 +568,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
+${categorySitemapUrls.join('\n')}
 ${sitemapUrls.join('\n')}
 </urlset>
 `;
