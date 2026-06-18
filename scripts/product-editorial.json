@@ -7,6 +7,30 @@
       "Porównaj pierś z kurczaka z indykiem, tofu lub twarogiem w porównywarce Proteiner — zobaczysz, które źródło białka najlepiej pasuje do Twojego dziennego limitu z kalkulatora TDEE."
     ]
   },
+  "piers-z-indyka": {
+    "title": "Indyk zamiast kurczaka?",
+    "paragraphs": [
+      "Pierś z indyka ma nieco więcej białka i mniej tłuszczu niż kurczak — ok. 24 g proteinów przy 114 kcal na 100 g. Dla wielu osób smak jest delikatniejszy, ale suchszy; dobrze łączy się z bulionem, jogurtem lub marynatą z cytryną.",
+      "Indyk szybciej wysycha na patelni niż kurczak — krótsze smażenie i odpoczynek po obróbce (5 min pod folią) robią różnicę. Mielony indyk to też świetna baza na pulpety i sos bolognese z niższą kalorycznością niż wołowina.",
+      "Jeśli liczysz na tanie białko, indyk bywa droższy za 100 g proteinów niż kurczak — w rankingu ceny białka na Proteiner widać to od razu."
+    ]
+  },
+  "wolowina-poledwica": {
+    "title": "Wołowina — żelazo i siła",
+    "paragraphs": [
+      "Polędwica wołowa to ok. 26 g białka i 150 kcal na 100 g — więcej tłuszczu niż u kurczaka, ale też więcej żelaza hemu, które organizm przyswaja lepiej niż z roślin. Po ciężkim treningu siłowym taki posiłek często daje lepszą sytość niż sama pierś drobiowa.",
+      "Stek z polędwicy najlepiej wychodzi na patelni rozgrzanej mocno i krótko — przesuszenie to najczęstszy błąd. Sosy z masłem i śmietaną potrafią dodać 200–300 kcal do porcji, która sama w sobie ma ok. 225 kcal.",
+      "Wołowina jest droższa za gram białka niż drób czy twaróg. Warto ją traktować jako rotację w tygodniu, a nie jedyne źródło proteinów."
+    ]
+  },
+  "indyk-mielony": {
+    "title": "Mielony indyk w kuchni",
+    "paragraphs": [
+      "Indyk mielony (ok. 20 g białka, 148 kcal na 100 g) to kompromis między chudym kurczakiem a bardziej tłustą wołowiną. Nadaje się do sosów, zapiekanek i burgerów domowych — wtedy kontrolujesz ilość tłuszczu i soli.",
+      "Na patelni często wypływa trochę wody; gotuj bez przykrycia, aż odparuje, zanim dodasz przyprawy. Do mielonego indyka dobrze pasują papryka wędzona, czosnek i koncentrat pomidorowy zamiast gotowych sosów.",
+      "Porcja 150 g daje ok. 30 g białka — wystarczy jako baza obiadu, jeśli dołożysz warzywa i źródło węglowodanów."
+    ]
+  },
   "twarog-chudy": {
     "title": "Twaróg chudy — białko na redukcji",
     "paragraphs": [
@@ -31,6 +55,22 @@
       "Porównaj skyr z jogurtem greckim i twarogiem półtłustym w porównywarce — różnice w cenie za 100 g białka też są widoczne w rankingu „Cena za 100 g białka”."
     ]
   },
+  "jogurt-grecki-naturalny": {
+    "title": "Jogurt grecki — gęsty i sycący",
+    "paragraphs": [
+      "Jogurt grecki naturalny ma ok. 9 g białka i 97 kcal na 100 g — mniej proteinów niż skyr czy twaróg chudy, ale kremowa konsystencja sprawia, że w małej porcji czujesz sytość. Kubek 150 g to wygodna przekąska z ok. 14 g białka.",
+      "Wersje „light” lub owocowe często mają dodany cukier i mniej tłuszczu, co zmienia profil makro. Do naturalnego możesz dodać orzechy, granolę lub owoce — pamiętaj, że orzechy szybko podbijają kalorie.",
+      "Grecki jogurt świetnie zastępuje śmietanę w dipach i sosach — obniżasz kcal, a białko rośnie."
+    ]
+  },
+  "ser-cottage": {
+    "title": "Cottage cheese — miękki twaróg",
+    "paragraphs": [
+      "Ser cottage (ok. 11 g białka, 98 kcal na 100 g) to delikatniejsza wersja twarogu z widocznymi ziarenkami. Popularny za granicą na tostach i w sałatkach; w Polsce coraz łatwiej go dostać w większych marketach.",
+      "Smakuje dobrze z pomidorami, pieprzem i oregano albo z dżemem niskocukrowym na śniadanie. Porcja 150 g daje ok. 16 g białka przy niskiej kaloryczności.",
+      "Jeśli wolisz gęstszą konsystencję, zostań przy twarogu lub skyrem — makro jest podobne, różni się głównie tekstura."
+    ]
+  },
   "platki-owsiane": {
     "title": "Płatki owsiane — błonnik i węglowodany",
     "paragraphs": [
@@ -47,12 +87,76 @@
       "Łącz ryż z chudym mięsem, rybą lub tofu — sam ryż rzadko zaspokaja zapotrzebowanie na białko w jednym posiłku."
     ]
   },
+  "ryz-brazowy-suchy": {
+    "title": "Ryż brązowy — więcej błonnika",
+    "paragraphs": [
+      "Ryż brązowy w formie suchej ma ok. 362 kcal i 7,5 g białka na 100 g — więcej błonnika i mikroelementów niż u białego, ale dłuższy czas gotowania i inna tekstura. Po ugotowaniu kalorie na 100 g są niższe (woda zwiększa masę).",
+      "Wielu ludzi myli wagę suchego ziarna z gotowego — to najczęstszy błąd przy liczeniu makro. Z ważenia przed gotowaniem wynika, że 100 g suchego to znacznie więcej energii niż 100 g po ugotowaniu.",
+      "Brązowy ryż lepiej pasuje do dań, gdzie zależy Ci na sytości z błonnika; biały — gdy chcesz szybkiej energii po treningu."
+    ]
+  },
+  "makaron-spaghetti-suchy": {
+    "title": "Makaron suchy — licz przed gotowaniem",
+    "paragraphs": [
+      "Makaron spaghetti w paczce ma ok. 371 kcal i 13 g białka na 100 g suchego produktu. Po ugotowaniu masa rośnie 2–2,5× przez wodę, więc 100 g gotowego makaronu to mniej kalorii niż 100 g suchego — stąd ważenie suchego makaronu przed wrzuceniem do garnka.",
+      "Makaron pełnoziarnisty ma więcej błonnika i nieco więcej białka, ale smak i czas gotowania są inne. Sam makaron to głównie węgle; żeby posiłek miał sens przy wysokim zapotrzebowaniu na białko, dołóż mięso, rybę, tofu lub ser.",
+      "Porcja 100 g sucha to solidna podstawa obiadu — po ugotowaniu wychodzi z tego spory talerz."
+    ]
+  },
+  "spaghetti-bolognese": {
+    "title": "Spaghetti bolognese — gotowe danie",
+    "paragraphs": [
+      "Spaghetti bolognese (ok. 132 kcal, 6,5 g białka na 100 g) to makaron z sosem mięsnym — profil zależy od proporcji mięsa do makaronu i ilości oleju na patelni. Porcja 350 g to typowy obiad z ok. 23 g białka.",
+      "Domowa wersja z mielonym indykiem lub wołowiną 5% i dużą ilością pomidorów bywa chudsza niż restauracyjna, gdzie sos często startuje od bekonu i oliwy. Własne gotowanie daje kontrolę nad solą i porcją.",
+      "Jeśli bolognese to Twój stały obiad, zmierz raz porcję na wadze — łatwo przecenić wielkość talerza „na oko”."
+    ]
+  },
+  "spaghetti-carbonara": {
+    "title": "Carbonara — tłuszcz i białko z jajek",
+    "paragraphs": [
+      "Spaghetti carbonara (ok. 220 kcal, 9 g białka na 100 g) to jedno z bardziej kalorycznych dań makaronowych przez guanciale lub boczek, jaja i ser. Porcja 350 g to często 770 kcal i ok. 31 g białka — syte, ale nie lekkie.",
+      "Wersja „fit” z jogurtem greckim zamiast śmietany i zmniejszoną ilością sera ma inne makro — warto liczyć osobno, jeśli gotujesz po swojemu. Klasyczna carbonara nie jest daniem na codzienną redukcję, ale raz w tygodniu mieści się w planie, gdy reszta dnia jest dopasowana.",
+      "Białko pochodzi głównie z jajek i sera, nie z makaronu — to ważne przy planowaniu pozostałych posiłków."
+    ]
+  },
   "losos-atlantycki": {
     "title": "Łosoś — białko i kwasy omega-3",
     "paragraphs": [
       "Łosoś dostarcza wysokiej jakości białka oraz tłuszczów nienasyconych omega-3 (EPA i DHA), ważnych dla układu krążenia i mózgu. Kaloryczność jest wyższa niż u białej ryby ze względu na tłuszcz — to normalne i wartościowe w zbilansowanej diecie.",
       "Wersja wędzona lub w sosie ma więcej soli i często więcej kcal. Filet pieczony z cytryną i ziołami to najprostszy sposób na kontrolę makro.",
       "Porównaj łososia z dorszem, tuńczykiem w wodzie i śledziem — zobaczysz różnicę między „chudą” a „tłustą” rybą w jednej tabeli."
+    ]
+  },
+  "dorsz-swiezy": {
+    "title": "Dorsz — chude białko z morza",
+    "paragraphs": [
+      "Dorsz świeży to ok. 18 g białka przy zaledwie 78 kcal na 100 g — jeden z najchudszych produktów w bazie. Filet 150 g daje ok. 27 g proteinów przy ~117 kcal, zanim dodasz olej do smażenia.",
+      "Mięso jest delikatne i szybko się rozpada; lepiej piec lub gotować na parze niż mocno smażyć. Panierka i frytki obok zmieniają obiad z „dietetycznego” w kaloryczny — licz cały posiłek.",
+      "Dorsz nie ma tłuszczów omega-3 w ilościach jak łosoś — warto rotować gatunki ryb w tygodniu."
+    ]
+  },
+  "tunczyk-w-wodzie": {
+    "title": "Tuńczyk z puszki — szybkie białko",
+    "paragraphs": [
+      "Tuńczyk w wodzie (ok. 21 g białka, 96 kcal na 100 g) to jeden z najwygodniejszych sposobów na dołożenie proteinów bez gotowania. Puszka 130 g po odsączeniu daje ok. 27 g białka — idealna na sałatkę, kanapkę lub makaron.",
+      "Wersja w oleju ma prawie dwukrotnie więcej kalorii — jeśli odsączysz rybę, część tłuszczu zostaje, ale nadal jest chudsza niż świeży łosoś. Uważaj na dodaną sól w puszkach; woda z tuńczyka nie zastępuje przypraw.",
+      "Nie jedz tego samego produktu codziennie przez ograniczenia rtęci w dużych tuńczykach — 2–3 razy w tygodniu to rozsądny rytm dla większości osób."
+    ]
+  },
+  "krewetki-gotowane": {
+    "title": "Krewetki — białko bez tłuszczu",
+    "paragraphs": [
+      "Krewetki gotowane mają ok. 24 g białka przy 99 kcal na 100 g — profil podobny do kurczaka, z dodatkiem jodu i selenu. Smażone w cieście lub z sosem maślanym mają zupełnie inne makro; w bazie są osobne wpisy.",
+      "Szybko się przygotowują: wrzucenie na patelnię z czosnkiem i odrobiną oliwy to 5 minut. Nie przesuszaj — krewetki stają się gumowate.",
+      "Alergia na skorupiaki wyklucza ten produkt; dla reszty to dobra zmiana od kurczaka i twarogu."
+    ]
+  },
+  "tofu-naturalne": {
+    "title": "Tofu — białko roślinne",
+    "paragraphs": [
+      "Tofu naturalne (ok. 8 g białka, 76 kcal na 100 g) to podstawa wegetariańskiej diety wysokobiałkowej. Same w sobie jest blando — smak bierze z marynaty, sosu i obróbki (smażenie, pieczenie). Porcja 150 g to ok. 12 g białka.",
+      "Twarde tofu lepiej nadaje się na patelnię; miękkie — do zup i smoothie. Odsącz je i obtocz w skrobi ziemniaczanej przed smażeniem, jeśli chcesz chrupiącą skórkę.",
+      "Roślinne białko warto łączyć z innymi źródłami w ciągu dnia (soczewica, ciecierzyca, odżywka) — tofu rzadko wystarczy jako jedyne źródło przy wysokim zapotrzebowaniu."
     ]
   },
   "banan": {
@@ -63,12 +167,52 @@
       "Na redukcji banan może być w planie, o ile mieści się w dziennej puli węglowodanów z kalkulatora TDEE."
     ]
   },
-  "big-mac-styl": {
-    "title": "Fast food a liczenie makro",
+  "awokado": {
+    "title": "Awokado — tłuszcze, nie białko",
     "paragraphs": [
-      "Burgery typu Big Mac mają znaczną kaloryczność z powodu bułki, sosu i tłuszczu z mięsa — to nie „złe” jedzenie kategoriami, tylko produkt o konkretnym profilu makro. Świadomy wybór raz na jakiś czas mieści się w diecie, jeśli reszta dnia jest dopasowana do deficytu lub nadwyżki.",
-      "Porównaj burger z grillowanym kurczakiem, wrapem lub sałatką z białkiem w tej samej kategorii fast food — różnica w kcal na 100 g bywa duża.",
-      "Sól i tłuszcze nasycone w fast foodzie mogą być wysokie; nie traktuj jednego posiłku jako wzorca na cały tydzień."
+      "Awokado (ok. 160 kcal, 2 g białka na 100 g) to przede wszystkim tłuszcze jednonienasycone i błonnik, nie źródło proteinów. Połówka na tostach z jajkiem to śniadanie z dobrym balansem makro; sama awokado nie zastąpi mięsa ani twarogu.",
+      "Dojrzałe owoce szybko brązowieją — skrop cytryną. Zamrożone awokado nadaje się do smoothie, ale tekstura na kanapce już nie.",
+      "Kalorie rosną szybko: łyżka pasty z awokado to ok. 25 g produktu, cała połówka to 100 g. Waż, jeśli liczysz dokładnie."
+    ]
+  },
+  "maslo-orzechowe": {
+    "title": "Masło orzechowe — kalorie w łyżce",
+    "paragraphs": [
+      "Masło orzechowe ma ok. 25 g białka, ale też 610 kcal na 100 g — gęste kalorycznie przez tłuszcz. Jedna łyżka (15 g) to ok. 90 kcal i 4 g białka; łatwo zjeść trzy łyżki „przy okazji”, nie zauważając porcji.",
+      "Wersje bez cukru i palmowego tłuszczu mają prostszy skład; „light” często ma dodany cukier zamiast tłuszczu. Sprawdź etykietę, nie tylko front opakowania.",
+      "Świetne do owsianki i smoothie, ale na redukcji mierz łyżką, nie płynie w oczy jak białko w kurczaku."
+    ]
+  },
+  "szynka-drobiowa": {
+    "title": "Szynka drobiowa na kanapce",
+    "paragraphs": [
+      "Szynka drobiowa (ok. 18 g białka, 98 kcal na 100 g) to wygodny sposób na białko w śniadaniu — plaster 20 g to ok. 3,6 g proteinów. Chudsza niż szynka wieprzowa, ale nadal produkt przetworzony z dodatkiem soli.",
+      "Na co dzień lepsze są jajka, twaróg lub pieczone mięso; wędlina sprawdza się w podróży i gdy brakuje czasu. Łącz z chlebem razowym i warzywami, nie tylko z masłem.",
+      "Porównaj szynkę drobiową z indykiem w plastrach i polędwicą — różnice w soli i cenie bywają duże."
+    ]
+  },
+  "chleb-zytni-pelnoziarnisty": {
+    "title": "Chleb razowy — węgle do posiłku",
+    "paragraphs": [
+      "Chleb żytni pełnoziarnisty (ok. 214 kcal, 6 g białka na 100 g) to ok. 86 kcal i 2,4 g białka na kromkę 40 g. Sam w sobie nie dostarcza dużo proteinów — dopiero z jajkiem, serem, szynką lub pastą z twarogu robi pełne śniadanie.",
+      "„Pełnoziarnisty” na etykiecie nie zawsze znaczy 100% mąki razowej — sprawdź skład. Im wyżej mąka pszenna, tym mniej błonnika.",
+      "Na redukcji dwie kromki to często wystarczająca porcja węglowodanów na śniadanie; resztę dnia rozdziel na ryż, ziemniaki lub owoce."
+    ]
+  },
+  "kefir": {
+    "title": "Kefir — nabiał na trawienie",
+    "paragraphs": [
+      "Kefir (ok. 3,4 g białka, 50 kcal na 100 g) to rzadszy wybór niż jogurt, ale wartościowy ze względu na probiotyki. Butelka 400 ml to ok. 14 g białka — mniej niż twaróg, ale lekki napój po treningu lub na wieczór.",
+      "Nie każdy toleruje kefir po treningu na pusty żołądek — sprawdź u siebie. Wersje smakowe mają dodany cukier; naturalny jest lepszy do liczenia makro.",
+      "Jeśli potrzebujesz dużo białka w małej objętości, kefir nie zastąpi skyru — to inny typ produktu."
+    ]
+  },
+  "mleko-2": {
+    "title": "Mleko 2% — białko w napoju",
+    "paragraphs": [
+      "Mleko 2% ma ok. 3,3 g białka i 50 kcal na 100 g — szklanka 250 ml to ok. 8 g proteinów. Mniej niż twaróg, ale wygodne do kawy, owsianki i shake’ów.",
+      "Mleko roślinne (sojowe, owsiane) ma inne makro — sojowe bywa bliższe mleku krowiemu pod kątem białka, owsiane ma go zwykle mało. Nie zamieniaj produktów bez sprawdzenia etykiety.",
+      "Laktoza u części osób sprawia, że lepszy jest kefir, jogurt lub mleko bez laktozy — makro bywa podobne."
     ]
   },
   "odzywka-bialkowa-serwatkowa": {
@@ -79,11 +223,140 @@
       "Porównaj odżywkę z twarogiem, skyrem i jogurtem greckim pod kątem ceny za 100 g białka w rankingu na stronie Dieta."
     ]
   },
-  "pizza-hawajska": {
-    "title": "Lubię czy nie lubię",
+  "baton-proteinowy": {
+    "title": "Baton proteinowy — czy warto?",
     "paragraphs": [
-      "Pizza Hawajska (255 kcal / 100 g, 11 g białka) — niezależnie od gustu, makro liczysz tak samo: zważ porcję i wpisz do kalkulatora TDEE.",
-      "Są 2 typy ludzi — albo kochasz, albo nienawidzisz — którym jesteś?"
+      "Baton proteinowy (ok. 33 g białka, 360 kcal na 100 g) brzmi idealnie, ale sztuka 60 g to ok. 20 g białka i ~216 kcal — często więcej cukru i tłuszczu niż myślisz. Porównaj z twarogiem: 250 g twarogu chudego da podobne białko za mniej kcal i mniej pieniędzy.",
+      "Sprawdza się w podróży, na lotnisku lub gdy nie masz lodówki. Na co dzień lepsze są normalne posiłki; baton to awaryjna opcja, nie podstawa diety.",
+      "Czytaj skład — część „proteinowych” batonów ma białko z kolagenu gorszej jakości niż serwatka lub izolat."
+    ]
+  },
+  "pizza-margherita": {
+    "title": "Pizza Margherita — klasyczne makro",
+    "paragraphs": [
+      "Pizza Margherita (ok. 266 kcal, 11 g białka na 100 g) to ciasto, ser i sos — węglowodany i tłuszcz dominują nad białkiem. Kawałek 100 g to orientacyjna porcja; cała pizza z pieca to często 600–900 g, więc łatwo zjeść 1500+ kcal bez zauważenia.",
+      "Margherita ma zwykle mniej kcal niż pepperoni czy kebab pizza — mniej tłustego mięsa na wierzchu. Nadal to posiłek okazjonalny, nie codzienny obiad na redukcji.",
+      "Jeśli lubisz pizzę, zmierz raz realny kawałek z Twojej pizzerii — rozmiary mocno się różnią między lokalem a wpisem w bazie."
+    ]
+  },
+  "pizza-pepperoni": {
+    "title": "Pizza pepperoni — więcej tłuszczu",
+    "paragraphs": [
+      "Pizza pepperoni (ok. 290 kcal, 12 g białka na 100 g) ma więcej kalorii niż margherita przez salami i tłuszcz z wędliny. Białko rośnie nieznacznie, ale głównie dokładasz tłuszcz nasycony i sól.",
+      "Dwa kawałki po 120 g to już ok. 700 kcal — przy deficycie kalorycznym to spory ułamek dnia. Można, ale świadomie i rzadziej niż „bo zostało w lodówce”.",
+      "Domowa pizza na cienkim cieście z dobrą mozzarellą i szynką zamiast pepperoni często wychodzi lżej — jeśli liczysz makro, gotuj sam."
+    ]
+  },
+  "pizza-hawajska": {
+    "title": "Pizza hawajska — ananas na pizzy",
+    "paragraphs": [
+      "Pizza hawajska (ok. 255 kcal, 11 g białka na 100 g) dzieli ludzi bardziej niż makro — ale kalorie liczą się tak samo jak przy każdej innej pizzy. Ananas dodaje cukru, szynka trochę białka; profil zbliżony do innych wariantów z wędliną.",
+      "Są dwa obozy: team ananas i team „to nie pizza”. Obie strony mogą się zgodzić co do jednego — cała średnia pizza to 1500–2000 kcal, niezależnie od dodatków.",
+      "Jedz z umiarem, waż kawałek i nie traktuj sporu o ananas jako wymówki od liczenia porcji."
+    ]
+  },
+  "pizza-kebab": {
+    "title": "Pizza kebab — dwa fast foody w jednym",
+    "paragraphs": [
+      "Pizza kebab (ok. 275 kcal, 13 g białka na 100 g) łączy ciasto z mięsem kebabowym i sosem — więcej białka niż czysta margherita, ale też więcej tłuszczu i soli. Kawałek 120 g to ok. 330 kcal.",
+      "To jeden z cięższych wariantów pizzy pod kątem kalorii na 100 g. Po imprezie lub na mieście OK; na diecie redukcyjnej lepiej wybrać mniejszą porcję i dołożyć sałatkę zamiast drugiego kawałka.",
+      "Kebab na talerzu zamiast pizzy kebab często daje więcej mięsa przy podobnej kaloryczności całego posiłku — porównaj oba wpisy."
+    ]
+  },
+  "kebab-w-ciescie": {
+    "title": "Kebab w cieście — porcja ma znaczenie",
+    "paragraphs": [
+      "Kebab w cieście (ok. 215 kcal, 12 g białka na 100 g) to cała sztuka ok. 400 g — czyli ~860 kcal i ok. 48 g białka w jednym posiłku, zanim dołożysz frytki i napój. Ciasto i sos często ważą więcej niż samo mięso.",
+      "Po południu w mieście łatwo przekroczyć dzienny limit tłuszczu jednym takim kebabem. Wersja na talerzu z ryżem i sałatką bywa lżejsza i daje więcej kontroli nad proporcjami.",
+      "Jeśli jesz kebab regularnie, raz zmierz porcję — wielkość tortilli i ilość sosu mocno się różnią między budkami."
+    ]
+  },
+  "kebab-na-talerzu": {
+    "title": "Kebab na talerzu — lżejsza opcja",
+    "paragraphs": [
+      "Kebab na talerzu (ok. 140 kcal, 11 g białka na 100 g) zwykle ma więcej warzyw i ryżu, mniej ciasta niż wersja w tortilli. Porcja 400 g to ok. 560 kcal i 44 g białka — syty obiad, ale nadal fast food z dużą ilością soli.",
+      "Poproś o sos osobno i dolej sam — wtedy kontrolujesz kalorie. Bez sosu czosnkowego i majonezu oszczędzasz nawet 150–200 kcal.",
+      "Mięso z budki to często mieszanka drobiowa z przyprawami — smaczne, ale nie to samo co grillowany filet z kurczaka w domu."
+    ]
+  },
+  "hamburger": {
+    "title": "Hamburger — bułka i sos liczą się",
+    "paragraphs": [
+      "Hamburger (ok. 254 kcal, 12 g białka na 100 g) to kotlet, bułka i dodatki — sama wołowina to tylko część kalorii. Sztuka 100 g to mały burger; w McDonald’s i podobnych porcje są większe i mają osobne wpisy w bazie.",
+      "Domowy burger z chudą wołowiną 5%, pieczywem razowym i dużą ilością warzyw może mieć lepsze makro niż fast food — licz składniki osobno.",
+      "Jeden burger w planie tygodnia nie psuje redukcji; codzienny fast food już tak."
+    ]
+  },
+  "big-mac-styl": {
+    "title": "Fast food a liczenie makro",
+    "paragraphs": [
+      "Burgery typu Big Mac mają znaczną kaloryczność z powodu bułki, sosu i tłuszczu z mięsa — to nie „złe” jedzenie kategoriami, tylko produkt o konkretnym profilu makro. Świadomy wybór raz na jakiś czas mieści się w diecie, jeśli reszta dnia jest dopasowana do deficytu lub nadwyżki.",
+      "Porównaj burger z grillowanym kurczakiem, wrapem lub sałatką z białkiem w tej samej kategorii fast food — różnica w kcal na 100 g bywa duża.",
+      "Sól i tłuszcze nasycone w fast foodzie mogą być wysokie; nie traktuj jednego posiłku jako wzorca na cały tydzień."
+    ]
+  },
+  "whopper-styl": {
+    "title": "Whopper — większa porcja",
+    "paragraphs": [
+      "Whopper w stylu fast food (ok. 265 kcal, 12 g białka na 100 g) to większy burger niż klasyczny hamburger — sztuka ok. 270 g to ~715 kcal. Więcej mięsa, ale też więcej bułki i sosu.",
+      "Opcja bez majonezu i z mniejszą porcją frytek realnie obcina kalorie. Sałatka zamiast frytek to często lepszy wybór przy tym samym głównym daniu.",
+      "Porównaj z Big Maciem i z domowym burgerem — zobaczysz, ile dokładają sosy i pieczywo."
+    ]
+  },
+  "frytki": {
+    "title": "Frytki — węgle i tłuszcz",
+    "paragraphs": [
+      "Frytki (ok. 312 kcal, 3,4 g białka na 100 g) to głównie ziemniaki i olej — białka prawie brak. Porcja 100 g to niewielki kubełek; w restauracji łatwo dostać 200–300 g jako dodatek.",
+      "Frytki z piekarnika z odrobiną oleju mają mniej kcal niż głębokie smażenie, ale nadal nie są „warzywami na diecie”. Licz je jako węglowodany z tłuszczem.",
+      "Loaded fries z serem i boczkiem to osobny wpis — jeszcze więcej kalorii przy podobnej porcji ziemniaków."
+    ]
+  },
+  "nuggetsy-z-kurczaka": {
+    "title": "Nuggetsy — panierka dodaje kcal",
+    "paragraphs": [
+      "Nuggetsy z kurczaka (ok. 296 kcal, 15 g białka na 100 g) mają więcej tłuszczu i węgli niż sama pierś, bo panierka i smażenie. Porcja 100 g to ok. 15 g białka — mniej niż 100 g filetu z kurczaka za podobną lub wyższą cenę kaloryczną.",
+      "Dzieci i dorośli jedzą je „z ketchupu” — sos dokłada cukier. Pieczone w piekarniku zamiast smażonych lekko obcinają tłuszcz, ale profil nadal odbiega od chudego mięsa.",
+      "Jako szybki protein w podróży OK; na co dzień lepszy jest kurczak z piekarnika."
+    ]
+  },
+  "pierogi-ruskie-8-szt": {
+    "title": "Pierogi ruskie — polski comfort food",
+    "paragraphs": [
+      "Pierogi ruskie (ok. 175 kcal, 6 g białka na 100 g) to ciasto, ziemniaki i twaróg — syte, ale nie wysokobiałkowe. Porcja 8 sztuk (280 g) to ok. 490 kcal i 17 g białka; ze śmietaną i skwarkami kalorie rosną szybko.",
+      "Gotowane na parze są lżejsze niż smażone na maśle. Pierogi z mięsem mają więcej białka — warto rotować nadzienia.",
+      "Na redukcji pierogi mogą być w planie jako obiad, jeśli kontrolujesz porcję i ograniczasz tłuste dodatki."
+    ]
+  },
+  "bigos": {
+    "title": "Bigos — kapusta i mięso",
+    "paragraphs": [
+      "Bigos (ok. 108 kcal, 7 g białka na 100 g) to kapusta, mięso i przyprawy — po kilku dniach na garnku smak jest lepszy, ale kalorie się nie zmieniają. Porcja 300 g to ok. 324 kcal i 21 g białka, zależnie od ilości kiełbasy i boczku w przepisie.",
+      "Domowy bigos z większą ilością kapusty i chudszym mięsem jest lżejszy niż wersja „na bogato”. Kiełbasa i boczek podbijają tłuszcz nasycony i sól.",
+      "Świetny na meal prep zimą — zamrażanie nie psuje makro, o ile porcje ważysz po podgrzaniu."
+    ]
+  },
+  "zapiekanka": {
+    "title": "Zapiekanka — po imprezie i na mieście",
+    "paragraphs": [
+      "Zapiekanka (ok. 230 kcal, 10,5 g białka na 100 g) to bagietka, ser, pieczarki i często ketchu majonez — polski fast food po latach 90. Sztuka ok. 275 g to ~630 kcal; z dodatkowym mięsem więcej białka, ale też więcej tłuszczu.",
+      "Po alkoholu łatwo zjeść całą bez liczenia — to właśnie wtedy warto mieć w głowie orientacyjne kcal. Połówka zapiekanki z sałatką to kompromis.",
+      "Domowa wersja na pieczywie razowym z mozzarellą light i dużą ilością pieczarek ma inne makro — licz składniki osobno."
+    ]
+  },
+  "ser-mozzarella": {
+    "title": "Mozzarella — ser do pizzy i sałatek",
+    "paragraphs": [
+      "Ser mozzarella (ok. 18 g białka, 254 kcal na 100 g) ma sporo białka, ale też dużo tłuszczu — kula 125 g to ok. 22 g proteinów i 318 kcal. Na pizzy i w caprese łatwo przekroczyć porcję, bo ser rozciąga się wizualnie „na mało”.",
+      "Mozzarella light ma mniej tłuszczu i mniej kcal, ale też gorszą teksturę po rozgrzaniu. Do sałatki caprese z pomidorami i oliwą pamiętaj o oliwie — to osobne kalorie.",
+      "Ricotta i twaróg dają więcej białka przy mniejszej kaloryczności; mozzarella to wybór smakowy, nie dietetyczny."
+    ]
+  },
+  "czekolada-gorzka-80": {
+    "title": "Czekolada gorzka — mała porcja",
+    "paragraphs": [
+      "Czekolada gorzka 80% (ok. 598 kcal na 100 g) ma mało cukru, dużo tłuszczu kakaowego i ok. 8 g białka. Dwie kostki (10 g) to ~60 kcal — sensowna przekąska, jeśli nie zjadasz całej tabliczki „bo gorzka jest zdrowa”.",
+      "Im wyższy % kakao, tym mniej cukru, ale kalorie na 100 g nadal są wysokie. Nie myl gorzkiej czekolady z niskokalorycznym deserem.",
+      "Na redukcji 10–20 g dziennie mieści się w planie; cała tabliczka 100 g to już 600 kcal."
     ]
   }
 }
