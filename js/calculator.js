@@ -137,6 +137,15 @@ function pickRandomN(items, count) {
                 `<tr><td><strong>${name}</strong></td><td>${dose}</td><td>${sources}</td></tr>`
             ).join('');
 
+            const microBadge = document.getElementById('microCollapseBadge');
+            const microSub = document.getElementById('microCollapseSub');
+            if (microBadge) microBadge.textContent = String(micros.length);
+            if (microSub) {
+                microSub.textContent = `Orientacyjne RDA/AI dla ${isMale ? 'mężczyzny' : 'kobiety'} — rozwiń pełną tabelę`;
+            }
+            const microCollapse = document.getElementById('microCollapse');
+            if (microCollapse) microCollapse.open = false;
+
             document.getElementById('reductionTips').style.display = (goal==='lose'?'block':'none');
             document.getElementById('resultBox').style.display = "block";
             document.getElementById('resultBox').scrollIntoView({ behavior: 'smooth' });
