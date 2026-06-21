@@ -26,6 +26,8 @@ const WORD_CASES = new Map([
     ['masło', { gen: 'masła', acc: 'masło', inst: 'masłem', loc: 'maśle' }],
     ['pomidor', { gen: 'pomidora', acc: 'pomidora', inst: 'pomidorze', loc: 'pomidorze' }],
     ['banan', { gen: 'banana', acc: 'banana', inst: 'bananem', loc: 'bananie' }],
+    ['morele', { gen: 'moreli', acc: 'morele', inst: 'morelami', loc: 'morelach' }],
+    ['pieczarki', { gen: 'pieczarek', acc: 'pieczarki', inst: 'pieczarkami', loc: 'pieczarkach' }],
     ['dorsz', { gen: 'dorsza', acc: 'dorsza', inst: 'dorszem', loc: 'dorszu' }],
     ['tuńczyk', { gen: 'tuńczyka', acc: 'tuńczyka', inst: 'tuńczykiem', loc: 'tuńczyku' }],
     ['łosoś', { gen: 'łososia', acc: 'łososia', inst: 'łososiem', loc: 'łososiu' }],
@@ -69,31 +71,130 @@ const WORD_CASES = new Map([
     ['koncentrat', { gen: 'koncentratu', acc: 'koncentrat', inst: 'koncentratem', loc: 'koncentracie' }],
 ]);
 
-function isAdjective(word) {
-    return /(owy|owa|owe|ny|na|ne|cki|ska|cke|ski|ska|kie|chudy|chuda|chude|gotowan|śwież|mielon|naturaln|półtłust|tłust|such|biał|brązow|czekoladow|wieprzow|wołow|drobiow|kurz|atlantyck)/i.test(
-        word
-    );
+const PLURAL_NOUNS = new Set([
+    'morele', 'pieczarki', 'krewetki', 'płatki', 'ziemniaki', 'pierogi', 'frytki', 'lody', 'żelki',
+    'chipsy', 'orzechy', 'migdały', 'brokuły', 'stripsy', 'nuggetsy', 'gofry', 'parówki', 'jagody',
+    'maliny', 'truskawki', 'borówki', 'śliwki', 'gruszki', 'pomidory', 'ogórki', 'marchewki', 'penne',
+]);
+
+function preserveCase(original, declined) {
+    const oParts = original.split(/\s+/);
+    return declined
+        .split(/\s+/)
+        .map((part, i) => {
+            if (oParts[i] && oParts[i][0] === oParts[i][0].toUpperCase()) {
+                return part.charAt(0).toUpperCase() + part.slice(1);
+            }
+            return part;
+        })
+        .join(' ');
 }
 
-function declineAdjective(adj, gender, grammaticalCase) {
-    if (grammaticalCase === 'nom') return adj;
-    const lower = adj.toLowerCase();
+function isAdjectiveWord(word) {
+    const w = word.toLowerCase();
+    if (PLURAL_NOUNS.has(w) || WORD_CASES.has(w)) return false;
+    return /(owy|owa|owe|ny|na|ne|cki|ska|cke|ski|ska|kie|chud|gotow|śwież|swiez|mielon|naturaln|półtłust|poltlust|tłust|tlust|such|biał|bial|brązow|brazow|czekoladow|wieprzow|wołow|wolow|drobiow|kurz|atlantyck|susz|marynow|panier|wędz|wedz|ugotow|mroż|mroz|kroj|piecz|smazon|pełno|pelno)$/i.test(
+        w
+    ) || /(one|ane|owe|ny|na|ne|i|y|e)$/i.test(w);
+}
 
-    if (/chudy$/i.test(lower)) return adj.replace(/chudy$/i, grammaticalCase === 'gen' ? 'chudego' : adj);
-    if (/chuda$/i.test(lower)) return adj.replace(/chuda$/i, grammaticalCase === 'gen' ? 'chudej' : adj);
-    if (/gotowane$/i.test(lower)) return adj.replace(/gotowane$/i, grammaticalCase === 'gen' ? 'gotowanych' : adj);
-    if (/owy$/i.test(lower)) {
+function isLikelyNoun(word) {
+    const w = word.toLowerCase();
+    if (WORD_CASES.has(w) || PLURAL_NOUNS.has(w)) return true;
+    if (/^(z|ze)$/i.test(word)) return false;
+    return !isAdjectiveWord(word);
+}
+
+function isPluralNoun(word) {
+    const w = word.toLowerCase();
+    if (PLURAL_NOUNS.has(w)) return true;
+    return detectGender(word) === 'pl';
+}
+
+function namePattern(parts) {
+    const zIdx = parts.findIndex((p) => /^z(e)?$/i.test(p));
+    if (zIdx > 0) return 'noun-z-noun';
+
+    if (parts.length >= 2 && isAdjectiveWord(parts[0]) && isLikelyNoun(parts[parts.length - 1])) {
+        return 'adj-noun';
+    }
+    if (parts.length >= 2 && isLikelyNoun(parts[0]) && isAdjectiveWord(parts[parts.length - 1])) {
+        return 'noun-adj';
+    }
+    if (parts.length >= 2 && isLikelyNoun(parts[0]) && isAdjectiveWord(parts[1])) {
+        return 'noun-adj';
+    }
+    return 'single';
+}
+
+function declineAdjective(adj, gender, grammaticalCase, plural = false) {
+    if (grammaticalCase === 'nom') return adj;
+    if (grammaticalCase === 'acc' && !plural && gender !== 'f' && gender !== 'pl') {
+        return declineAdjective(adj, gender, 'gen', false);
+    }
+
+    if (plural || gender === 'pl') {
+        if (grammaticalCase === 'gen') {
+            if (/one$/i.test(adj)) return adj.replace(/one$/i, 'onych');
+            if (/ane$/i.test(adj)) return adj.replace(/ane$/i, 'anych');
+            if (/owe$/i.test(adj)) return adj.replace(/owe$/i, 'owych');
+            if (/ne$/i.test(adj)) return adj.replace(/ne$/i, 'nych');
+            if (/y$/i.test(adj)) return adj.replace(/y$/i, 'ych');
+            if (/i$/i.test(adj)) return adj.replace(/i$/i, 'ych');
+        }
+        if (grammaticalCase === 'inst') {
+            if (/one$/i.test(adj)) return adj.replace(/one$/i, 'onymi');
+            if (/ane$/i.test(adj)) return adj.replace(/ane$/i, 'anymi');
+            if (/owe$/i.test(adj)) return adj.replace(/owe$/i, 'owymi');
+        }
+        return adj;
+    }
+
+    if (/chudy$/i.test(adj)) {
+        if (grammaticalCase === 'gen') return adj.replace(/chudy$/i, 'chudego');
+        if (grammaticalCase === 'inst') return adj.replace(/chudy$/i, 'chudym');
+    }
+    if (/chuda$/i.test(adj)) {
+        if (grammaticalCase === 'gen') return adj.replace(/chuda$/i, 'chudej');
+        if (grammaticalCase === 'acc') return adj.replace(/chuda$/i, 'chudą');
+        if (grammaticalCase === 'inst') return adj.replace(/chuda$/i, 'chudą');
+    }
+    if (/chude$/i.test(adj)) {
+        if (grammaticalCase === 'gen') return adj.replace(/chude$/i, 'chudego');
+    }
+    if (/gotowane$/i.test(adj)) return adj.replace(/gotowane$/i, grammaticalCase === 'gen' ? 'gotowanych' : adj);
+    if (/marynowane$/i.test(adj)) return adj.replace(/marynowane$/i, grammaticalCase === 'gen' ? 'marynowanych' : adj);
+    if (/świeży$/i.test(adj) || /swiezy$/i.test(adj)) {
+        if (grammaticalCase === 'gen') return adj.replace(/(świeży|swiezy)$/i, 'świeżego');
+    }
+    if (/świeża$/i.test(adj)) {
+        if (grammaticalCase === 'gen') return adj.replace(/świeża$/i, 'świeżej');
+    }
+    if (/atlantycki$/i.test(adj)) {
+        if (grammaticalCase === 'gen') return adj.replace(/atlantycki$/i, 'atlantyckiego');
+    }
+    if (/owy$/i.test(adj)) {
         if (grammaticalCase === 'gen') return adj.replace(/owy$/i, 'owego');
         if (grammaticalCase === 'inst') return adj.replace(/owy$/i, 'owym');
     }
-    if (/owa$/i.test(lower)) {
+    if (/owa$/i.test(adj)) {
         if (grammaticalCase === 'gen') return adj.replace(/owa$/i, 'owej');
         if (grammaticalCase === 'acc') return adj.replace(/owa$/i, 'ową');
         if (grammaticalCase === 'inst') return adj.replace(/owa$/i, 'ową');
     }
-    if (/ny$/i.test(lower) && gender === 'f') {
-        if (grammaticalCase === 'gen') return adj.replace(/ny$/i, 'nej');
-        if (grammaticalCase === 'acc') return adj.replace(/ny$/i, 'ną');
+    if (/owe$/i.test(adj)) {
+        if (grammaticalCase === 'gen') return adj.replace(/owe$/i, 'owego');
+        if (grammaticalCase === 'inst') return adj.replace(/owe$/i, 'owym');
+    }
+    if (/ny$/i.test(adj)) {
+        if (grammaticalCase === 'gen' && gender === 'f') return adj.replace(/ny$/i, 'nej');
+        if (grammaticalCase === 'acc' && gender === 'f') return adj.replace(/ny$/i, 'ną');
+        if (grammaticalCase === 'gen') return adj.replace(/ny$/i, 'nego');
+    }
+    if (/na$/i.test(adj)) {
+        if (grammaticalCase === 'gen') return adj.replace(/na$/i, 'nej');
+        if (grammaticalCase === 'acc') return adj.replace(/na$/i, 'ną');
+        if (grammaticalCase === 'inst') return adj.replace(/na$/i, 'ną');
     }
 
     return adj;
@@ -108,17 +209,25 @@ function declineWord(word, grammaticalCase) {
     }
 
     const gender = detectGender(word);
+    const plural = isPluralNoun(word) || gender === 'pl';
 
-    if (gender === 'pl') {
+    if (plural) {
         if (grammaticalCase === 'gen') {
             if (/ki$/i.test(word)) return word.replace(/ki$/i, 'ek');
             if (/y$/i.test(word)) return word.replace(/y$/i, 'ów');
+            if (/e$/i.test(word) && !/ek$/i.test(word)) return word.replace(/e$/i, 'i');
+        }
+        if (grammaticalCase === 'inst') {
+            if (/ki$/i.test(word)) return word.replace(/ki$/i, 'kami');
+            if (/y$/i.test(word)) return word.replace(/y$/i, 'ami');
+            if (/e$/i.test(word)) return word.replace(/e$/i, 'ami');
         }
         return word;
     }
 
     if (gender === 'f') {
         if (grammaticalCase === 'gen') {
+            if (/ia$/i.test(word)) return word.replace(/ia$/i, 'ii');
             if (/a$/i.test(word)) return word.replace(/a$/i, 'y');
             if (/ść$/i.test(word)) return word.replace(/ść$/i, 'ści');
         }
@@ -147,11 +256,6 @@ function declineWord(word, grammaticalCase) {
     return word;
 }
 
-function capitalize(word, template) {
-    if (!word || word[0] !== word[0].toUpperCase()) return template;
-    return template.charAt(0).toUpperCase() + template.slice(1);
-}
-
 /**
  * @param {string} name
  * @param {GramCase} grammaticalCase
@@ -162,37 +266,45 @@ export function declineProductName(name, grammaticalCase) {
     const parenMatch = name.match(/^(.+?)\s*(\([^)]+\))\s*$/);
     const main = (parenMatch ? parenMatch[1] : name).trim();
     const paren = parenMatch ? ` ${parenMatch[2]}` : '';
-
     const parts = main.split(/\s+/);
     if (parts.length === 0) return name;
 
-    const zIdx = parts.findIndex((p) => /^z(e)?$/i.test(p));
-    if (zIdx > 0) {
+    const pattern = namePattern(parts);
+    let declined;
+
+    if (pattern === 'adj-noun') {
+        const adj = parts[0];
+        const noun = parts.slice(1).join(' ');
+        const plural = isPluralNoun(noun);
+        const g = plural ? 'pl' : detectGender(noun);
+        declined = [
+            declineAdjective(adj, g, grammaticalCase, plural),
+            declineWord(noun, grammaticalCase),
+        ].join(' ');
+    } else if (pattern === 'noun-adj') {
+        const adj = parts[parts.length - 1];
+        const noun = parts.slice(0, -1).join(' ');
+        const plural = isPluralNoun(parts[0]);
+        const g = plural ? 'pl' : detectGender(parts[0]);
+        declined = [
+            declineWord(noun, grammaticalCase),
+            declineAdjective(adj, g, grammaticalCase, plural),
+        ].join(' ');
+    } else if (pattern === 'noun-z-noun') {
+        const zIdx = parts.findIndex((p) => /^z(e)?$/i.test(p));
         const head = parts[0];
         const g = detectGender(head);
         parts[0] = declineWord(head, grammaticalCase);
-        if (zIdx === 2 && isAdjective(parts[1])) {
+        if (zIdx === 2 && isAdjectiveWord(parts[1])) {
             parts[1] = declineAdjective(parts[1], g, grammaticalCase);
         }
-        return parts.join(' ') + paren;
+        declined = parts.join(' ');
+    } else {
+        declined = declineWord(parts[0], grammaticalCase);
+        if (parts.length > 1) declined = [declined, ...parts.slice(1)].join(' ');
     }
 
-    if (parts.length >= 2 && isAdjective(parts[1])) {
-        const g = detectGender(parts[0]);
-        parts[0] = declineWord(parts[0], grammaticalCase);
-        parts[1] = declineAdjective(parts[1], g, grammaticalCase);
-        return parts.join(' ') + paren;
-    }
-
-    if (parts.length >= 2 && isAdjective(parts[parts.length - 1])) {
-        const g = detectGender(parts[0]);
-        parts[0] = declineWord(parts[0], grammaticalCase);
-        parts[parts.length - 1] = declineAdjective(parts[parts.length - 1], g, grammaticalCase);
-        return parts.join(' ') + paren;
-    }
-
-    parts[0] = declineWord(parts[0], grammaticalCase);
-    return parts.join(' ') + paren;
+    return preserveCase(name, declined + paren);
 }
 
 export function getProductNameForms(name) {
@@ -206,7 +318,7 @@ export function getProductNameForms(name) {
 
 /** @param {string} before @returns {GramCase} */
 function detectCaseFromContext(before) {
-    const ctx = before.slice(-120).toLowerCase();
+    const ctx = before.slice(-140).toLowerCase();
 
     const accPatterns = [
         /\b(zjesz|zjecie|zjedz|dodaj|dodasz|wpisz|wpisujesz|planując|planuj|jedząc|kupując|stosując|łącząc|wybierz|włącz|uwzględnij|kup|stosuj|używasz|jesz|jem|spożywasz|spożyj|porównaj|porównajcie|zamień|weź|spróbuj|wypróbuj|degustuj|smakuj)\s*$/i,
@@ -219,17 +331,16 @@ function detectCaseFromContext(before) {
         /\b(porcja|porcj[aęę]|szklanka|kubek|łyżka|łyżeczka|garść|opakowanie|kostka|plaster|kawałek|sztuka|paczka|puszka|słoik|butelka|miska|miseczka|talerz)\s+$/i,
         /\b(z|ze|bez|do|od|dla|u|zamiast|oprócz|zamian[aęę])\s+$/i,
         /\b(posiłek|posiłku|przekąska|przekąski|dodatek|dodatku|energia|smak|połączenie|zestaw|typ\s+posiłku)\s+z\s+$/i,
-        /\b(kaloryczność|strona produktu)\s+$/i,
+        /\b(kaloryczność)\s+$/i,
         /\b(na|Na)\s+100\s+g\s+$/i,
         /\b100\s+g\s+$/i,
         /\b(w|W)\s+(małej|dużej)\s+objętości\s+$/i,
-        /\b(meal prep|Meal prep)\s+z\s+$/i,
-        /\b(typowy|Typowy)\s+posiłek\s+z\s+$/i,
         /\b(energia|Energia)\s+z\s+$/i,
         /\b(w|W)\s+praktyce\s+$/i,
         /\b(po|Po)\s+$/i,
         /\bprzed\s+$/i,
         /\b(zamiana)\s+$/i,
+        /\b(przy|Przy)\s+(liczeniu|gotowaniu|pieczeniu|smażeniu|dodawaniu)\s+$/i,
     ];
     if (genPatterns.some((re) => re.test(ctx))) return 'gen';
 
@@ -269,10 +380,7 @@ function highlightExistingForms(text, productName) {
     for (const form of getProductNameForms(productName)) {
         if (!out.includes(form)) continue;
         const re = new RegExp(escapeRegex(form), 'g');
-        out = out.replace(re, (m) => {
-            if (out.includes(`${MARKER}${m}${MARKER_END}`)) return m;
-            return `${MARKER}${m}${MARKER_END}`;
-        });
+        out = out.replace(re, (m) => `${MARKER}${m}${MARKER_END}`);
     }
     return out;
 }

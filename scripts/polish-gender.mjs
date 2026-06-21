@@ -30,7 +30,10 @@ const OVERRIDES = new Map([
     ['whopper', 'm'], ['bigos', 'm'], ['żurek', 'm'], ['rosół', 'm'],
     ['lasagne', 'f'], ['penne', 'pl'], ['spaghetti', 'n'], ['risotto', 'n'],
     ['stripsy', 'pl'], ['nuggetsy', 'pl'], ['nuggets', 'pl'],
+    ['morele', 'pl'], ['pieczarki', 'pl'],
 ]);
+
+const LEADING_ADJ = /^(suszone|gotowane|marynowane|świeże|świeży|pieczone|smażone|smazone|ugotowane|mrożone|krojone|naturalne|naturalny|naturalna|pełno|pełne|suszone|suszona|suszony)$/i;
 
 const FEMININE_SUFFIXES = ['acja', 'acja', 'acja', 'ica', 'nica', 'anka', 'ina', 'yna', 'owa', 'awa', 'ewa'];
 const NEUTER_SUFFIXES = ['ko', 'ło', 'to', 'no', 'um', 'eum'];
@@ -38,8 +41,10 @@ const NEUTER_SUFFIXES = ['ko', 'ło', 'to', 'no', 'um', 'eum'];
 /** Główny rzeczownik z nazwy produktu (pierwsze słowo lub fraza przed nawiasem). */
 export function headNoun(name) {
     const clean = name.replace(/\([^)]*\)/g, '').trim();
-    const first = clean.split(/\s+/)[0].toLowerCase();
-    const two = clean.split(/\s+/).slice(0, 2).join(' ').toLowerCase();
+    const parts = clean.split(/\s+/);
+    const startIdx = parts.length > 1 && LEADING_ADJ.test(parts[0]) ? 1 : 0;
+    const first = parts[startIdx].toLowerCase();
+    const two = parts.slice(startIdx, startIdx + 2).join(' ').toLowerCase();
     if (OVERRIDES.has(two)) return two;
     if (OVERRIDES.has(first)) return first;
     return first;

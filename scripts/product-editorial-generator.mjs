@@ -4,32 +4,17 @@
  */
 import { CATEGORY_LABELS } from './category-seo.mjs';
 import {
-    agree,
+    contextualMealTip,
+    contextualPlateTip,
+    contextualPracticalAddon,
+} from './editorial-context.mjs';
+import { fmt, hashSlug, pick, servingPhrase } from './editorial-utils.mjs';
+import {
     cheaperPair,
-    detectGender,
     nieJestDietetyczny,
     polishEditorial,
     wygodnaOpcja,
 } from './polish-gender.mjs';
-
-function hashSlug(slug, salt = 0) {
-    let h = salt ^ 0x811c9dc5;
-    for (let i = 0; i < slug.length; i++) {
-        h ^= slug.charCodeAt(i);
-        h = Math.imul(h, 0x01000193);
-    }
-    return h >>> 0;
-}
-
-function pick(arr, slug, salt = 0) {
-    if (!arr.length) return '';
-    return arr[hashSlug(slug, salt) % arr.length];
-}
-
-function fmt(n) {
-    const v = Number(n);
-    return Number.isInteger(v) ? String(v) : v.toFixed(1).replace(/\.0$/, '');
-}
 
 function proteinKcalRatio(p) {
     return p.protein > 0 ? p.kcal / p.protein : null;
@@ -49,13 +34,6 @@ function macroProfile(p) {
     return 'balanced';
 }
 
-function servingPhrase(p) {
-    if (p.servingText) return p.servingText;
-    if (p.servingGrams) return `porcja ok. ${p.servingGrams} g`;
-    if (p.servingRatio) return `porcja (${p.servingRatio} × 100 g)`;
-    return 'porcja z tabeli powyżej';
-}
-
 function microSnippet(p) {
     if (!p.micros || p.micros === '-') return '';
     const parts = p.micros.split(/[,;]/).map((s) => s.trim()).filter(Boolean);
@@ -63,6 +41,54 @@ function microSnippet(p) {
     if (parts.length === 1) return parts[0];
     if (parts.length === 2) return `${parts[0]} i ${parts[1]}`;
     return `${parts.slice(0, 2).join(', ')} oraz ${parts[2]}`;
+}
+
+function buildMealCombo(p) {
+    const plate = contextualPlateTip(p);
+    if (plate) return plate;
+    return contextualMealTip(p);
+}
+
+function buildPractical(p) {
+    const profile = macroProfile(p);
+    const serving = servingPhrase(p);
+
+    const reduction = [
+        `Na redukcji ${p.name} najlepiej sprawdza się w porcji zważonej (${serving}) — wpisz ją do dziennego bilansu.`,
+        `Jeśli z kalkulatora wynika deficyt, ${p.name} możesz włączyć do planu, o ile mieści się w limicie białka i kalorii.`,
+        `Przy odchudzaniu liczy się cały dzień, nie jeden produkt. ${p.name} obok warzyw i źródła białka daje syty posiłek bez rezygnowania z ulubionych smaków.`,
+    ];
+
+    const mass = [
+        `Przy budowie masy ${p.name} może uzupełniać nadwyżkę kaloryczną — zwłaszcza gdy trudno zjeść kolejny klasyczny posiłek. Porcja ${serving} to punkt startowy; dostosuj ją do wyniku z kalkulatora (+ ok. 300 kcal nad utrzymaniem).`,
+        `Na masie ${p.name} bywa dodatkiem do obiadu lub przekąską po treningu. Zwróć uwagę na tłuszcz (${fmt(p.fat)} g / 100 g) — przy bardzo wysokiej kaloryczności łatwo przejść z „nadwyżki” w nadmiar tłuszczu w diecie.`,
+        `Większa porcja ${p.name} to szybki sposób na dołożenie energii — dopasuj ją do puli węglowodanów z kalkulatora.`,
+    ];
+
+    const maintain = [
+        `Przy utrzymaniu wagi ${p.name} wpisujesz jak każdy inny składnik — porcja ${serving}, reszta dnia według TDEE bez korekty ±300–400 kcal.`,
+        `Nie musisz traktować ${p.name} jako produktu „na specjalną okazję”. Przy stabilnej wadze rotacja kilku ulubionych pozycji ułatwia trzymanie makro bez nudnej diety.`,
+        `Utrzymanie to balans: ${p.name} razem z warzywami, zbożami i białkiem z mięsa lub nabiału. Sprawdź w bazie podobne produkty — czasem wymiana poprawia sytość przy tych samych kcal.`,
+    ];
+
+    const goalPool =
+        profile === 'calorie-dense' || profile === 'treat'
+            ? hashSlug(p.slug, 7) % 2 === 0
+                ? mass
+                : maintain
+            : profile === 'lean-protein' || profile === 'very-low-cal'
+              ? hashSlug(p.slug, 7) % 2 === 0
+                  ? reduction
+                  : maintain
+              : pick([reduction, mass, maintain], p.slug, 7);
+
+    let text = pick(goalPool, p.slug, 13);
+    const addon = contextualPracticalAddon(p);
+    if (addon) text += ` ${addon}`;
+    if (p.note && p.note.length > 15) {
+        text += ` Uwaga z bazy: ${p.note.replace(/\.$/, '')}.`;
+    }
+    return text;
 }
 
 function priceSnippet(p) {
@@ -183,100 +209,6 @@ function buildOpening(p) {
     }
     if (p.extra && p.extra.length > 20 && hashSlug(p.slug, 5) % 2 === 0) {
         text += ` ${p.extra.charAt(0).toUpperCase()}${p.extra.slice(1).replace(/\.$/, '')}.`;
-    }
-    return text;
-}
-
-function buildMealCombo(p) {
-    const name = p.name;
-    const profile = macroProfile(p);
-    const g = detectGender(name);
-    const cat = p.category;
-
-    const withProtein = [
-        `W praktyce ${name} rzadko jadasz solo. Połączenie z ${p.protein >= 10 ? 'ryżem lub ziemniakami' : 'chudym mięsem lub nabiałem'} daje pełniejszy profil aminokwasów niż sama porcja z tabeli.`,
-        `${name} (${servingPhrase(p)}) to zwykle część talerza, nie cały posiłek — dołóż warzywa i źródło białka, żeby domknąć makro dnia.`,
-        `Przy liczeniu ${name} pamiętaj o dodatkach: olej, sos i pieczywo obok potrafią dodać więcej kcal niż sama porcja z tabeli.`
-    ];
-
-    const carbPair = [
-        `${name} najlepiej smakuje w towarzystwie białka i błonnika — sałatka, surówka lub warzywa na parze obniżają indeks glikemiczny posiłku przy tych samych węglowodanach z produktu.`,
-        `Przed treningiem ${name} może uzupełnić węglowodany (${fmt(p.carbs)} g / 100 g); po treningu dołóż ${fmt(Math.max(p.protein, 20))} g białka z innego składnika, jeśli sam produkt ma ich mniej.`,
-        `Na talerzu liczy się proporcja: ${name} (${servingPhrase(p)}) plus warzywa to często 300–500 kcal — wpisz całość do dziennika, nie tylko główny składnik.`
-    ];
-
-    const treatNote = [
-        `Planując ${name} w tygodniu, wpisz porcję rano do kalkulatora — reszta posiłków łatwiej się ułoży bez „ratowania” deficytu wieczorem.`,
-        `${name} w wersji domowej (mniej tłuszczu, mniejsza porcja) bywa ${agree('lżejsz', g)} niż ta sama potrawa w restauracji — zawsze zakładaj margines +15–25% kcal poza domem.`,
-        `Po ${name} warto domknąć dzień warzywami i białkiem — sam produkt (${fmt(p.kcal)} kcal / 100 g) nie wypełni zapotrzebowania na mikroelementy.`
-    ];
-
-    const pool =
-        profile === 'treat' || profile === 'calorie-dense'
-            ? treatNote
-            : profile === 'carb-heavy' || cat === 'zboza' || cat === 'makaron'
-              ? carbPair
-              : withProtein;
-
-    return pick(pool, p.slug, 31);
-}
-
-function buildPractical(p) {
-    const profile = macroProfile(p);
-    const serving = servingPhrase(p);
-    const cat = p.category;
-
-    const reduction = [
-        `Na redukcji ${p.name} najlepiej sprawdza się w porcji zważonej (${serving}) — wpisz ją do dziennego bilansu razem z dodatkami. Sos, olej do smażenia czy bułka obok potrafią zmienić kcal bardziej niż sam produkt.`,
-        `Jeśli z kalkulatora wynika deficyt, ${p.name} możesz włączyć do planu, o ile mieści się w limicie białka i kalorii. Unikaj „ocznego” szacowania — jedna większa porcja to często +150–300 kcal.`,
-        `Przy odchudzaniu liczy się cały dzień, nie jeden produkt. ${p.name} na talerzu obok warzyw i źródła białka daje syty posiłek bez rezygnowania z ulubionych smaków.`
-    ];
-
-    const mass = [
-        `Przy budowie masy ${p.name} może uzupełniać nadwyżkę kaloryczną — zwłaszcza gdy trudno zjeść kolejny klasyczny posiłek. Porcja ${serving} to punkt startowy; dostosuj ją do wyniku z kalkulatora (+ ok. 300 kcal nad utrzymaniem).`,
-        `Na masie ${p.name} bywa dodatkiem do obiadu lub przekąską po treningu. Zwróć uwagę na tłuszcz (${fmt(p.fat)} g / 100 g) — przy bardzo wysokiej kaloryczności łatwo przejść z „nadwyżki” w nadmiar tłuszczu w diecie.`,
-        `Większa porcja ${p.name} to szybki sposób na dołożenie energii. Łącz z ryżem, ziemniakami lub pieczywem tylko wtedy, gdy węglowodany z kalkulatora na to pozwalają.`
-    ];
-
-    const maintain = [
-        `Przy utrzymaniu wagi ${p.name} wpisujesz jak każdy inny składnik — porcja ${serving}, reszta dnia według TDEE bez korekty ±300–400 kcal. To najprostszy scenariusz do testowania w kalkulatorze Proteiner.`,
-        `Nie musisz traktować ${p.name} jako produktu „na specjalną okazję”. Przy stabilnej wadze rotacja kilku ulubionych pozycji ułatwia trzymanie makro bez nudnej diety.`,
-        `Utrzymanie to balans: ${p.name} razem z warzywami, zbożami i białkiem z mięsa lub nabiału. Sprawdź w bazie podobne produkty — czasem wymiana na inną pozycję z tej samej kategorii poprawia sytość przy tych samych kcal.`
-    ];
-
-    const categoryTips = {
-        mieso: `Mięso i ryby piecz lub grilluj bez panierki — wtedy profil zbliża się do tabeli na 100 g. Smażenie w głębokim tłuszczu podbija kalorie niezależnie od gatunku.`,
-        nabial: `W nabiale smak często idzie w parze z tłuszczem — wersje „light” mają mniej kcal, ale sprawdź, czy nie dokładano cukru. Naturalny skład zwykle ułatwia liczenie makro.`,
-        warzywa: `Warzywa gotuj na parze lub krótko na patelni — mniej witamin traci się niż przy długim gotowaniu w dużej ilości wody. Do sałatek olej licz osobno.`,
-        owoce: `Owoce dojrzałe są słodsze i mają więcej cukrów prostych niż mniej dojrzałe. Do jogurtu lub owsianki dodawaj owoce na wadze, nie „na oko”.`,
-        zboza: `Zboża i kasze zyskują wodę podczas gotowania — wartości na 100 g w bazie odnoszą się do formy podanej w opisie porcji; suchy produkt ≠ ugotowany.`,
-        'polskie-obiadki': `Polskie dania często zawierają ukryte tłuszcze w sosie i smażeniu. Jeśli jesz poza domem, przyjmij wyższą kaloryczność niż w tabeli domowej.`,
-        zupy: `Zupy kremowe ze śmietaną mają więcej kcal niż rosół czy jarzynowa. Bulion domowy z mięsem podbija białko w porcji — instant zwykle go nie ma.`,
-        orzechy: `Orzechy i nasiona kupuj luzem i odmierzaj łyżką wagi. „Garść” to często 40–50 g, czyli dwa razy więcej kalorii niż planowałeś.`,
-        tluszcze: `Oleje dodawaj po obróbce termicznej sałatek, nie zawsze do smażenia na pełnym ogniu — smak i makro zostają, a mniej tłuszczu wchłania się w jedzenie.`,
-        makarony: `Makaron al dente ma nieco mniejszy indeks glikemiczny niż rozgotowany. Sosy serowe i śmietanowe potrafią podwoić kcal porcji względem samego makaronu.`,
-        fastfood: `Fast food jedz rzadziej, ale świadomie: wpisz ${p.name} do dnia z góry, a resztę posiłków dostosuj (więcej warzyw, mniej sosów).`,
-        slodycze: `Słodycze najlepiej planować z góry — jeśli wiesz, że zjesz ${p.name}, od rana zostaw miejsce w węglowodanach i tłuszczach.`,
-        sosy: `Sosy i dressings to najczęstszy „cichy” dodatek kalorii. Odmierz łyżkę stołową zamiast polać „do smaku”.`
-    };
-
-    const goalPool =
-        profile === 'calorie-dense' || profile === 'treat'
-            ? hashSlug(p.slug, 7) % 2 === 0
-                ? mass
-                : maintain
-            : profile === 'lean-protein' || profile === 'very-low-cal'
-              ? hashSlug(p.slug, 7) % 2 === 0
-                  ? reduction
-                  : maintain
-              : pick([reduction, mass, maintain], p.slug, 7);
-
-    let text = pick(goalPool, p.slug, 13);
-    if (categoryTips[cat]) {
-        text += ` ${categoryTips[cat]}`;
-    }
-  if (p.note && p.note.length > 15) {
-        text += ` Uwaga z bazy: ${p.note.replace(/\.$/, '')}.`;
     }
     return text;
 }

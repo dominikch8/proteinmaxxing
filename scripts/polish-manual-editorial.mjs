@@ -5,8 +5,8 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { contextualMealTip } from './editorial-context.mjs';
 import { polishEditorial } from './polish-gender.mjs';
-import { generateProductEditorial } from './product-editorial-generator.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
@@ -48,8 +48,7 @@ for (const [slug, entry] of Object.entries(editorial)) {
     // Wzbogać krótkie opisy (3 akapity, <900 znaków) o dodatkowy akapit z generatora
     const chars = updated.paragraphs.join(' ').length;
     if (product && updated.paragraphs.length <= 3 && chars < 900) {
-        const gen = generateProductEditorial(product);
-        const extra = gen.paragraphs[2]; // trzeci akapit z generatora (bez meal prep)
+        const extra = contextualMealTip(product);
         if (extra && !updated.paragraphs.some((p) => p.slice(0, 60) === extra.slice(0, 60))) {
             updated.paragraphs.splice(updated.paragraphs.length - 1, 0, extra);
             enriched++;
