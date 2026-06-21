@@ -3,6 +3,14 @@
  * Używany gdy brak ręcznego wpisu w product-editorial.json.
  */
 import { CATEGORY_LABELS } from './category-seo.mjs';
+import {
+    agree,
+    cheaperPair,
+    detectGender,
+    nieJestDietetyczny,
+    polishEditorial,
+    wygodnaOpcja,
+} from './polish-gender.mjs';
 
 function hashSlug(slug, salt = 0) {
     let h = salt ^ 0x811c9dc5;
@@ -140,10 +148,10 @@ function buildOpening(p) {
         'low-cal': [
             `${name} (${fmt(p.kcal)} kcal, ${fmt(p.protein)} g białka na 100 g) pasuje do dni, gdy chcesz zostawić miejsce na bardziej kaloryczny obiad lub deser. W kategorii ${cat.toLowerCase()} to rozsądny wybór na redukcji.`,
             `Kaloryczność ${name} na poziomie ${fmt(p.kcal)} kcal / 100 g pozwala włączyć produkt do sałatki, smoothie lub drugiego dania bez psucia bilansu z kalkulatora Proteiner.`,
-            `${name} nie jest „dietetyczny” dlatego, że tak pisze producent — po prostu ma niewiele energii na 100 g (${fmt(p.kcal)} kcal) przy ${fmt(p.fat)} g tłuszczu.`
+            `${nieJestDietetyczny(name)} dlatego, że tak pisze producent — po prostu ma niewiele energii na 100 g (${fmt(p.kcal)} kcal) przy ${fmt(p.fat)} g tłuszczu.`
         ],
         'high-fat': [
-            `${name} jest gęsty kalorycznie: ${fmt(p.kcal)} kcal i ${fmt(p.fat)} g tłuszczu na 100 g. To nie wada — tłuszcz sytni i potrzebny w zbilansowanej diecie — ale łatwo przesadzić z porcją, jeśli nie ważysz produktu.`,
+            `${name} ma gęsty profil kaloryczny: ${fmt(p.kcal)} kcal i ${fmt(p.fat)} g tłuszczu na 100 g. To nie wada — tłuszcz sytni i potrzebny w zbilansowanej diecie — ale łatwo przesadzić z porcją, jeśli nie ważysz produktu.`,
             `W małej objętości ${name} kryje sporo energii (${fmt(p.kcal)} kcal / 100 g). Białka jest ${fmt(p.protein)} g, więc nie traktuj tego produktu jak głównego źródła proteinów; licz go przede wszystkim w puli tłuszczów.`,
             `${name} często ląduje w diecie jako dodatek — do owsianki, sałatki lub pieczenia. Przy ${fmt(p.fat)} g tłuszczu na 100 g wystarczy zmienić łyżkę więcej, by wybić się z planu kalorycznego.`
         ],
@@ -155,7 +163,7 @@ function buildOpening(p) {
         'calorie-dense': [
             `${name} ma ${fmt(p.kcal)} kcal na 100 g — to produkt, który szybko domyka dzienny bilans energetyczny. Przy ${fmt(p.protein)} g białka warto świadomie zaplanować porcję, zwłaszcza na deficycie.`,
             `Jedna porcja ${name} (${servingPhrase(p)}) potrafi odpowiadać pełnemu, lekkostrawnemu posiłkowi pod względem kalorii. Zanim dodasz go do dnia, sprawdź w kalkulatorze, ile kcal zostało Ci jeszcze „w budżecie”.`,
-            `${name} nie jest „zakazany” — po prostu ma gęsty profil energetyczny (${fmt(p.kcal)} kcal, ${fmt(p.fat)} g tłuszczu na 100 g). Na masie bywa wygodny; na redukcji wymaga mniejszej porcji lub rzadszego włączenia.`
+            `${name} nie jest „zakazany” — po prostu ma gęsty profil energetyczny (${fmt(p.kcal)} kcal, ${fmt(p.fat)} g tłuszczu na 100 g). Na masie ${name} to ${wygodnaOpcja(name)}; na redukcji wymaga mniejszej porcji lub rzadszego włączenia.`
         ],
         treat: [
             `${name} (${fmt(p.kcal)} kcal / 100 g) to raczej okazjonalny wybór niż baza tygodnia. Na Proteinerze pokazujemy makro bez moralizowania — licz porcję i wpisz ją do dziennego limitu z kalkulatora.`,
@@ -179,6 +187,40 @@ function buildOpening(p) {
     return text;
 }
 
+function buildMealCombo(p) {
+    const name = p.name;
+    const profile = macroProfile(p);
+    const g = detectGender(name);
+    const cat = p.category;
+
+    const withProtein = [
+        `Typowy posiłek z ${name}: dodaj źródło białka (kurczak, twaróg, jajka, ryba) i warzywa — wtedy ${fmt(p.kcal)} kcal z samego produktu stanowią tylko część talerza, a sytość rośnie bez dokładania pustych kalorii.`,
+        `W praktyce ${name} rzadko jadasz solo. Połączenie z ${p.protein >= 10 ? 'ryżem lub ziemniakami' : 'chudym mięsem lub nabiałem'} daje pełniejszy profil aminokwasów niż sama porcja z tabeli.`,
+        `Meal prep z ${name} trzyma się 2–3 dni w lodówce — przed podgrzaniem sprawdź, czy sosy i tłuszcze nie dokładają kcal ponad tabelę na 100 g.`
+    ];
+
+    const carbPair = [
+        `${name} najlepiej smakuje w towarzystwie białka i błonnika — sałatka, surówka lub warzywa na parze obniżają indeks glikemiczny posiłku przy tych samych węglowodanach z produktu.`,
+        `Przed treningiem ${name} może uzupełnić węglowodany (${fmt(p.carbs)} g / 100 g); po treningu dołóż ${fmt(Math.max(p.protein, 20))} g białka z innego składnika, jeśli sam produkt ma ich mniej.`,
+        `Na talerzu liczy się proporcja: ${name} (${servingPhrase(p)}) plus warzywa to często 300–500 kcal — wpisz całość do dziennika, nie tylko główny składnik.`
+    ];
+
+    const treatNote = [
+        `Planując ${name} w tygodniu, wpisz porcję rano do kalkulatora — reszta posiłków łatwiej się ułoży bez „ratowania” deficytu wieczorem.`,
+        `${name} w wersji domowej (mniej tłuszczu, mniejsza porcja) bywa ${agree('lżejsz', g)} niż ta sama potrawa w restauracji — zawsze zakładaj margines +15–25% kcal poza domem.`,
+        `Po ${name} warto domknąć dzień warzywami i białkiem — sam produkt (${fmt(p.kcal)} kcal / 100 g) nie wypełni zapotrzebowania na mikroelementy.`
+    ];
+
+    const pool =
+        profile === 'treat' || profile === 'calorie-dense'
+            ? treatNote
+            : profile === 'carb-heavy' || cat === 'zboza' || cat === 'makaron'
+              ? carbPair
+              : withProtein;
+
+    return pick(pool, p.slug, 31);
+}
+
 function buildPractical(p) {
     const profile = macroProfile(p);
     const serving = servingPhrase(p);
@@ -193,7 +235,7 @@ function buildPractical(p) {
     const mass = [
         `Przy budowie masy ${p.name} może uzupełniać nadwyżkę kaloryczną — zwłaszcza gdy trudno zjeść kolejny klasyczny posiłek. Porcja ${serving} to punkt startowy; dostosuj ją do wyniku z kalkulatora (+ ok. 300 kcal nad utrzymaniem).`,
         `Na masie ${p.name} bywa dodatkiem do obiadu lub przekąską po treningu. Zwróć uwagę na tłuszcz (${fmt(p.fat)} g / 100 g) — przy bardzo wysokiej kaloryczności łatwo przejść z „nadwyżki” w nadmiar tłuszczu w diecie.`,
-        `Większa porcja ${p.name} to szybki sposób na dołożenie energii. Łącz go z ryżem, ziemniakami lub pieczywem tylko wtedy, gdy węglowodany z kalkulatora na to pozwalają.`
+        `Większa porcja ${p.name} to szybki sposób na dołożenie energii. Łącz z ryżem, ziemniakami lub pieczywem tylko wtedy, gdy węglowodany z kalkulatora na to pozwalają.`
     ];
 
     const maintain = [
@@ -245,7 +287,7 @@ function buildClosing(p) {
         `Porównaj ${p.name} z inną pozycją z kategorii ${CATEGORY_LABELS[p.category] || p.category} w <a href="../porownaj-produkty.html">porównywarce Proteiner</a> — zobaczysz różnicę w białku, kcal i cenie za 100 g proteinu na jednym wykresie.`,
         `W <a href="../dieta.html#produkty">bazie produktów</a> znajdziesz podobne makro w tej samej kategorii. Czasem zamiana ${p.name} na inną pozycję pozwala zostać w deficycie bez głodu.`,
         `Strona produktu ${p.name} to punkt wyjścia — resztę dnia ułóż z warzyw, węgli i innych źródeł białka, żeby domknąć plan z <a href="../index.html">kalkulatora TDEE</a>.`,
-        `Jeśli liczysz koszty, sprawdź ranking na stronie <a href="../cena-bialka.html">Cena białka</a> — ${p.name} może okazać się tańszy lub droższy niż myślisz, zależnie od promocji w sklepie.`,
+        `Jeśli liczysz koszty, sprawdź ranking na stronie <a href="../cena-bialka.html">Cena białka</a> — ${p.name} może okazać się ${cheaperPair(p.name)} niż myślisz, zależnie od promocji w sklepie.`,
         `Makro na etykiecie bywa inne niż w domowej porcji (np. po dodaniu tłuszczu do patelni). Tabela na tej stronie odnosi się do typowej porcji: ${servingPhrase(p)}.`,
         `Zerknij na <a href="../produkty/kategoria/${p.category}.html">stronę kategorii ${CATEGORY_LABELS[p.category] || p.category}</a> — tam są podobne produkty i praktyczne wskazówki do planowania posiłków.`
     ];
@@ -262,15 +304,16 @@ function buildClosing(p) {
  * @returns {{ title: string, paragraphs: string[] }}
  */
 export function generateProductEditorial(p) {
-    return {
+    const raw = {
         title: buildTitle(p),
-        paragraphs: [buildOpening(p), buildPractical(p), buildClosing(p)]
+        paragraphs: [buildOpening(p), buildPractical(p), buildMealCombo(p), buildClosing(p)]
     };
+    return polishEditorial(raw, p.name);
 }
 
 /** Czy wygenerowany opis ma wystarczającą długość do indeksowania. */
 export function generatedEditorialIsRich(p) {
     const ed = generateProductEditorial(p);
     const chars = ed.paragraphs.join(' ').length;
-    return ed.paragraphs.length >= 3 && chars >= 280;
+    return ed.paragraphs.length >= 3 && chars >= 350;
 }

@@ -12,6 +12,7 @@ import {
     generateProductEditorial,
     generatedEditorialIsRich
 } from './product-editorial-generator.mjs';
+import { polishEditorial } from './polish-gender.mjs';
 import {
     buildFaviconLinks,
     buildSocialImageMeta,
@@ -317,7 +318,7 @@ function buildSeoLead(p) {
 
 function getProductEditorial(p) {
     if (editorialBySlug[p.slug]?.paragraphs?.length) {
-        return editorialBySlug[p.slug];
+        return polishEditorial(editorialBySlug[p.slug], p.name);
     }
     return generateProductEditorial(p);
 }
