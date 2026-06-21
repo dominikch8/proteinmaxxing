@@ -49,7 +49,7 @@ for (const [slug, entry] of Object.entries(editorial)) {
     const chars = updated.paragraphs.join(' ').length;
     if (product && updated.paragraphs.length <= 3 && chars < 900) {
         const gen = generateProductEditorial(product);
-        const extra = gen.paragraphs[2]; // meal combo — unikalny per produkt
+        const extra = gen.paragraphs[2]; // trzeci akapit z generatora (bez meal prep)
         if (extra && !updated.paragraphs.some((p) => p.slice(0, 60) === extra.slice(0, 60))) {
             updated.paragraphs.splice(updated.paragraphs.length - 1, 0, extra);
             enriched++;

@@ -194,9 +194,9 @@ function buildMealCombo(p) {
     const cat = p.category;
 
     const withProtein = [
-        `Typowy posiłek z ${name}: dodaj źródło białka (kurczak, twaróg, jajka, ryba) i warzywa — wtedy ${fmt(p.kcal)} kcal z samego produktu stanowią tylko część talerza, a sytość rośnie bez dokładania pustych kalorii.`,
         `W praktyce ${name} rzadko jadasz solo. Połączenie z ${p.protein >= 10 ? 'ryżem lub ziemniakami' : 'chudym mięsem lub nabiałem'} daje pełniejszy profil aminokwasów niż sama porcja z tabeli.`,
-        `Meal prep z ${name} trzyma się 2–3 dni w lodówce — przed podgrzaniem sprawdź, czy sosy i tłuszcze nie dokładają kcal ponad tabelę na 100 g.`
+        `${name} (${servingPhrase(p)}) to zwykle część talerza, nie cały posiłek — dołóż warzywa i źródło białka, żeby domknąć makro dnia.`,
+        `Przy liczeniu ${name} pamiętaj o dodatkach: olej, sos i pieczywo obok potrafią dodać więcej kcal niż sama porcja z tabeli.`
     ];
 
     const carbPair = [
