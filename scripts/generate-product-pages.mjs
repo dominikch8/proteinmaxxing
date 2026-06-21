@@ -14,6 +14,10 @@ import {
 } from './product-editorial-generator.mjs';
 import { polishEditorial } from './polish-gender.mjs';
 import {
+    applyProductNameCases,
+    renderEditorialFragment
+} from './polish-cases.mjs';
+import {
     buildFaviconLinks,
     buildSocialImageMeta,
     buildThemeInitScript,
@@ -323,12 +327,23 @@ function getProductEditorial(p) {
     return generateProductEditorial(p);
 }
 
+function renderEditorialParagraph(para, productName) {
+    const withCases = applyProductNameCases(para, productName);
+    return withCases
+        .split(/(<[^>]+>)/)
+        .map((part) => (part.startsWith('<') ? part : renderEditorialFragment(part, esc)))
+        .join('');
+}
+
 function buildProductGuideSection(p) {
     const ed = getProductEditorial(p);
     if (ed?.paragraphs?.length) {
-        const paras = ed.paragraphs.map((para) => `            <p>${para}</p>`).join('\n');
+        const titleHtml = renderEditorialParagraph(ed.title || p.name, p.name);
+        const paras = ed.paragraphs
+            .map((para) => `            <p>${renderEditorialParagraph(para, p.name)}</p>`)
+            .join('\n');
         return `        <section class="product-guide">
-            <h2>${esc(ed.title || p.name)}</h2>
+            <h2>${titleHtml}</h2>
 ${paras}
         </section>`;
     }

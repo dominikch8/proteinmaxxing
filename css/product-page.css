@@ -421,6 +421,16 @@ a.product-category:hover {
     font-weight: 600;
 }
 
+.product-name-inline {
+    color: var(--primary-light);
+    font-weight: 650;
+}
+
+.product-guide .product-name-inline {
+    color: var(--primary-light);
+    font-weight: 650;
+}
+
 .seo-block h2 {
     font-size: 1.1rem;
     color: var(--primary-dark);
