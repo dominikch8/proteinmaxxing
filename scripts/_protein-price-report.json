@@ -2290,6 +2290,16 @@
     "formula": "1.8 × 100 / 5.4 = 33.33"
   },
   {
+    "name": "Czekolada 100%",
+    "serving": "2 kostki (10g)",
+    "servingGrams": 10,
+    "servingPricePln": 0.4,
+    "proteinPer100g": 12,
+    "proteinInServing": 1.2,
+    "pricePer100gProtein": 33.33,
+    "formula": "0.4 × 100 / 1.2 = 33.33"
+  },
+  {
     "name": "Pasztetowa",
     "serving": "plastry (40g)",
     "servingGrams": 40,
