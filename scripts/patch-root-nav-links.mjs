@@ -1,5 +1,5 @@
 /**
- * Zamienia linki nawigacji na ścieżki od root z .html (najpewniejsze na LH.pl).
+ * Linki nawigacji — względne ścieżki .html (najpewniejsze na LH.pl).
  */
 import fs from 'fs';
 import path from 'path';
@@ -8,29 +8,18 @@ import { fileURLToPath } from 'url';
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SKIP_DIRS = new Set(['node_modules', '.git', 'deploy-bundle', 'domains']);
 
-const REPLACEMENTS = [
-    [/href="\/"/g, 'href="/index.html"'],
-    [/href="(?:\.\.\/)*index\.html"/g, 'href="/index.html"'],
-    [/href="\/dieta#produkty"/g, 'href="/dieta.html#produkty"'],
-    [/href="(?:\.\.\/)*dieta\.html#produkty"/g, 'href="/dieta.html#produkty"'],
-    [/href="\/dieta"/g, 'href="/dieta.html"'],
-    [/href="(?:\.\.\/)*dieta\.html"/g, 'href="/dieta.html"'],
-    [/href="\/porownaj-produkty"/g, 'href="/porownaj-produkty.html"'],
-    [/href="(?:\.\.\/)*porownaj-produkty\.html"/g, 'href="/porownaj-produkty.html"'],
-    [/href="\/dodaj-produkt"/g, 'href="/dodaj-produkt.html"'],
-    [/href="(?:\.\.\/)*dodaj-produkt\.html"/g, 'href="/dodaj-produkt.html"'],
-    [/href="\/poradnik-zywienia"/g, 'href="/poradnik-zywienia.html"'],
-    [/href="(?:\.\.\/)*poradnik-zywienia\.html"/g, 'href="/poradnik-zywienia.html"'],
-    [/href="\/informacje"/g, 'href="/informacje.html"'],
-    [/href="(?:\.\.\/)*informacje\.html"/g, 'href="/informacje.html"'],
-    [/href="\/o-mnie"/g, 'href="/o-mnie.html"'],
-    [/href="(?:\.\.\/)*o-mnie\.html"/g, 'href="/o-mnie.html"'],
-    [/href="\/bialko-maxxing/g, 'href="/bialko-maxxing.html'],
-    [/href="(?:\.\.\/)*bialko-maxxing\.html/g, 'href="/bialko-maxxing.html'],
-    [/href="\/cena-bialka/g, 'href="/cena-bialka.html'],
-    [/href="(?:\.\.\/)*cena-bialka\.html/g, 'href="/cena-bialka.html'],
-    [/href="\/trening"/g, 'href="/trening.html"'],
-    [/href="(?:\.\.\/)*trening\.html"/g, 'href="/trening.html"']
+const ROOT_PAGES = [
+    ['index.html', 'index.html'],
+    ['dieta.html#produkty', 'dieta.html#produkty'],
+    ['dieta.html', 'dieta.html'],
+    ['porownaj-produkty.html', 'porownaj-produkty.html'],
+    ['dodaj-produkt.html', 'dodaj-produkt.html'],
+    ['poradnik-zywienia.html', 'poradnik-zywienia.html'],
+    ['informacje.html', 'informacje.html'],
+    ['o-mnie.html', 'o-mnie.html'],
+    ['bialko-maxxing.html', 'bialko-maxxing.html'],
+    ['cena-bialka.html', 'cena-bialka.html'],
+    ['trening.html', 'trening.html']
 ];
 
 function walkHtml(dir, list = []) {
@@ -46,15 +35,39 @@ function walkHtml(dir, list = []) {
     return list;
 }
 
+function prefixFor(rel) {
+    const depth = rel.split('/').length - 1;
+    if (depth <= 0) return '';
+    return '../'.repeat(depth);
+}
+
+function patchNavLinks(html, rel) {
+    const prefix = prefixFor(rel);
+    let out = html;
+
+    for (const [page, target] of ROOT_PAGES) {
+        const bare = page.replace('.html', '').replace('#produkty', '');
+        const patterns = [
+            new RegExp(`href="/${page.replace('.', '\\.')}"`, 'g'),
+            new RegExp(`href="/${bare}"`, 'g'),
+            new RegExp(`href="(?:\\.\\./)*${page.replace('.', '\\.')}"`, 'g')
+        ];
+        const replacement = `href="${prefix}${target}"`;
+        for (const re of patterns) {
+            out = out.replace(re, replacement);
+        }
+    }
+
+    return out;
+}
+
 let changed = 0;
 for (const fp of walkHtml(root)) {
-    let html = fs.readFileSync(fp, 'utf8');
-    const before = html;
-    for (const [re, to] of REPLACEMENTS) {
-        html = html.replace(re, to);
-    }
-    if (html !== before) {
-        fs.writeFileSync(fp, html, 'utf8');
+    const rel = path.relative(root, fp).replace(/\\/g, '/');
+    const before = fs.readFileSync(fp, 'utf8');
+    const after = patchNavLinks(before, rel);
+    if (after !== before) {
+        fs.writeFileSync(fp, after, 'utf8');
         changed++;
     }
 }

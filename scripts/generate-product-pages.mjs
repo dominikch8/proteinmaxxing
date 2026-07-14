@@ -287,7 +287,7 @@ function buildSimilarProductsSection(p, similar) {
     const items = similar
         .map(
             (s) => `                <li>
-                    <a class="similar-product-link" href="/produkty/${esc(s.slug)}.html">
+                    <a class="similar-product-link" href="${esc(s.slug)}.html">
                         <span class="similar-product-emoji" aria-hidden="true">${s.emoji}</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">${esc(s.name)}</span>
@@ -312,7 +312,7 @@ ${items}
 }
 
 function dietaCategoryHref(category) {
-    return `/produkty/kategoria/${encodeURIComponent(category)}.html`;
+    return `kategoria/${encodeURIComponent(category)}.html`;
 }
 
 function buildSeoLead(p) {
@@ -426,18 +426,18 @@ ${buildThemeStylesheets('../', { productPage: true })}
 <body>
     <header class="site-header">
         <nav>
-            <a class="logo" href="/index.html">
+            <a class="logo" href="../index.html">
                 ${buildLogoMark('../')}
                 <span>Proteiner</span>
             </a>
-            <a class="nav-back" href="/dieta.html">← Baza produktów</a>
+            <a class="nav-back" href="../dieta.html">← Baza produktów</a>
         </nav>
     </header>
 
     <main class="product-page">
         <nav class="breadcrumb" aria-label="Nawigacja">
-            <a href="/index.html">Strona główna</a> ›
-            <a href="/dieta.html">Dieta</a> ›
+            <a href="../index.html">Strona główna</a> ›
+            <a href="../dieta.html">Dieta</a> ›
             <span>${esc(p.name)}</span>
         </nav>
 

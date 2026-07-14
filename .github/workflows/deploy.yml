@@ -24,8 +24,13 @@ jobs:
     - name: Zależności
       run: npm ci
 
-    - name: Build deploy-bundle
-      run: node scripts/build-deploy.mjs
+    - name: Build przed deployem
+      run: |
+        node scripts/build-products-lite.mjs
+        node scripts/generate-product-card-images.mjs --only-missing
+        node scripts/generate-product-pages.mjs
+        node scripts/patch-products-lite.mjs
+        node scripts/patch-root-nav-links.mjs
 
     - name: Sync plików przez FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -33,7 +38,7 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./deploy-bundle/
+        local-dir: ./
         server-dir: /public_html/proteiner.pl/
         log-level: verbose
         exclude: |
@@ -41,6 +46,10 @@ jobs:
           **/.github/**
           **/node_modules/**
           **/.cursor/**
+          **/deploy-bundle/**
+          **/scripts/**
+          **/package.json
+          **/package-lock.json
           **/sw.js
           **/admin-*
           **/js/admin-*
@@ -49,9 +58,10 @@ jobs:
       run: |
         sleep 20
         for url in \
-          "https://proteiner.pl/js/cookie-banner.js" \
-          "https://proteiner.pl/js/products-lite.js" \
-          "https://proteiner.pl/produkty/czekolada-100"; do
+          "https://proteiner.pl/index.html" \
+          "https://proteiner.pl/dieta.html" \
+          "https://proteiner.pl/porownaj-produkty.html" \
+          "https://proteiner.pl/js/products-lite.js"; do
           CODE=$(curl -s -o /dev/null -w "%{http_code}" "$url" || true)
           echo "HTTP $CODE → $url"
           if [ "$CODE" != "200" ]; then
