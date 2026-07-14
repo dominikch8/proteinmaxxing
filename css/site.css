@@ -2217,6 +2217,31 @@
             display: none;
         }
 
+        .legal-fine-print {
+            margin: 24px 0 0;
+            padding: 0;
+            border: none;
+            background: none;
+            font-size: 0.78rem;
+            line-height: 1.5;
+            color: var(--text-muted);
+        }
+
+        .legal-fine-print a {
+            color: var(--text-muted);
+            font-weight: 400;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .legal-fine-print a:hover {
+            color: var(--text-dark);
+        }
+
+        .legal-fine-print strong {
+            font-weight: 600;
+        }
+
         .data-sources-note {
             margin: 20px 0 0;
             padding: 16px 18px;
