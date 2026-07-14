@@ -2238,14 +2238,15 @@
         }
 
         .calc-intro-bottom {
-            margin-top: 32px;
+            margin-top: 48px;
         }
 
         .home-info-tiles {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 12px;
             margin: 0;
+            align-items: stretch;
         }
 
         .home-info-tile {
@@ -2254,11 +2255,18 @@
             background: var(--calc-tile-bg);
             box-shadow: var(--shadow-sm);
             overflow: hidden;
-            align-self: start;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
         }
 
         .home-info-tile[open] {
             grid-column: 1 / -1;
+        }
+
+        .home-info-tile[open] > .home-info-tile-bar {
+            flex: 0 0 auto;
+            min-height: 0;
         }
 
         .home-info-tile-bar {
@@ -2266,10 +2274,13 @@
             align-items: center;
             gap: 12px;
             padding: 14px 16px;
+            min-height: 76px;
+            box-sizing: border-box;
             cursor: pointer;
             list-style: none;
             user-select: none;
             transition: background var(--transition);
+            flex: 1;
         }
 
         .home-info-tile-bar::-webkit-details-marker { display: none; }
@@ -2301,12 +2312,20 @@
             color: var(--text-dark);
             line-height: 1.3;
             letter-spacing: -0.02em;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
 
         .home-info-tile-sub {
             font-size: 0.78rem;
             color: var(--text-muted);
             line-height: 1.3;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
 
         .home-info-tile-chevron {
