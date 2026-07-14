@@ -289,9 +289,6 @@ function buildBazaProductCardHtml(p) {
             test: (p) => /dorsz|sandacz|mintaj|halibut|flądra|fladra/i.test(p.name)
         };
 
-        const MAKARON_GROUP_HINT =
-            'Zobacz kategorię <strong>Zboża i kasze</strong> dla rozpisu każdej osobno.';
-
         const MAKARON_SUCHY_GROUP = {
             id: 'makaron-suchy',
             label: 'Makaron',
@@ -422,7 +419,7 @@ function buildBazaProductCardHtml(p) {
                 return kinds.join(' i ');
             }
             if (rule.id === 'makaron-suchy') {
-                return MAKARON_GROUP_HINT;
+                return '';
             }
             if (rule.id === 'kasze') {
                 const kinds = members.map((m) => shortenKaszaKind(m.name));
@@ -790,9 +787,7 @@ function buildBazaProductCardHtml(p) {
 
         function buildRankingGroupDetailsHtml(p, mode) {
             if (p.name === 'Makaron') {
-                return `<div class="prod-details" style="border-top: 1px dashed rgba(0,0,0,0.1); color: var(--text-dark); opacity: 0.9;">
-                            <div style="font-size:0.82rem;">${MAKARON_GROUP_HINT}</div>
-                        </div>`;
+                return '';
             }
             if (p.name === 'Chude ryby') {
                 if (mode === 'maxxing') {
@@ -802,9 +797,11 @@ function buildBazaProductCardHtml(p) {
                             <div style="font-size:0.82rem;">Wybierz kategorię <strong>Mięsa i Ryby</strong>, aby zobaczyć każdą rybę osobno.</div>
                         </div>`;
             }
-            return `<div class="prod-details" style="border-top: 1px dashed rgba(0,0,0,0.1); color: var(--text-dark); opacity: 0.9;">
-                            ${p.groupNote ? `<div style="font-size:0.82rem;">${p.groupNote}</div>` : ''}
-                        </div>`;
+            return p.groupNote
+                ? `<div class="prod-details" style="border-top: 1px dashed rgba(0,0,0,0.1); color: var(--text-dark); opacity: 0.9;">
+                            <div style="font-size:0.82rem;">${p.groupNote}</div>
+                        </div>`
+                : '';
         }
 
         function appendMaxxingRankingCard(grid, p, rank) {
