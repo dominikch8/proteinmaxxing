@@ -25,6 +25,7 @@ run('build-products-lite.mjs');
 run('generate-product-card-images.mjs', ['--only-missing']);
 run('generate-product-pages.mjs');
 run('patch-products-lite.mjs');
+run('patch-root-nav-links.mjs');
 run('pack-for-hosting.mjs');
 
 const bundle = path.join(root, 'deploy-bundle');
