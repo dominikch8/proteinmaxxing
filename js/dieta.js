@@ -292,9 +292,6 @@ function buildBazaProductCardHtml(p) {
         const MAKARON_GROUP_HINT =
             'Zobacz kategorię <strong>Zboża i kasze</strong> dla rozpisu każdej osobno.';
 
-        const LEAN_FISH_MAXXING_HINT =
-            'Zobacz kategorię <strong>Mięsa i ryby</strong> dla szczegółowego rozpisu.';
-
         const MAKARON_SUCHY_GROUP = {
             id: 'makaron-suchy',
             label: 'Makaron',
@@ -798,11 +795,11 @@ function buildBazaProductCardHtml(p) {
                         </div>`;
             }
             if (p.name === 'Chude ryby') {
-                const hint = mode === 'maxxing'
-                    ? LEAN_FISH_MAXXING_HINT
-                    : 'Wybierz kategorię <strong>Mięsa i Ryby</strong>, aby zobaczyć każdą rybę osobno.';
+                if (mode === 'maxxing') {
+                    return '';
+                }
                 return `<div class="prod-details" style="border-top: 1px dashed rgba(0,0,0,0.1); color: var(--text-dark); opacity: 0.9;">
-                            <div style="font-size:0.82rem;">${hint}</div>
+                            <div style="font-size:0.82rem;">Wybierz kategorię <strong>Mięsa i Ryby</strong>, aby zobaczyć każdą rybę osobno.</div>
                         </div>`;
             }
             return `<div class="prod-details" style="border-top: 1px dashed rgba(0,0,0,0.1); color: var(--text-dark); opacity: 0.9;">
