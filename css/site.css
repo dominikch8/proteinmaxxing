@@ -2241,6 +2241,158 @@
             margin-top: 32px;
         }
 
+        .home-info-tiles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin: 0;
+        }
+
+        .home-info-tile {
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--calc-tile-border);
+            background: var(--calc-tile-bg);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            align-self: start;
+        }
+
+        .home-info-tile[open] {
+            grid-column: 1 / -1;
+        }
+
+        .home-info-tile-bar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px;
+            cursor: pointer;
+            list-style: none;
+            user-select: none;
+            transition: background var(--transition);
+        }
+
+        .home-info-tile-bar::-webkit-details-marker { display: none; }
+
+        .home-info-tile-bar::marker { content: ''; }
+
+        .home-info-tile-bar:hover,
+        .home-info-tile[open] > .home-info-tile-bar {
+            background: var(--calc-tile-bg-emphasis);
+        }
+
+        .home-info-tile-icon {
+            font-size: 1.35rem;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .home-info-tile-text {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .home-info-tile-title {
+            font-weight: 700;
+            font-size: 0.92rem;
+            color: var(--text-dark);
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+        }
+
+        .home-info-tile-sub {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            line-height: 1.3;
+        }
+
+        .home-info-tile-chevron {
+            flex-shrink: 0;
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid var(--text-muted);
+            border-bottom: 2px solid var(--text-muted);
+            transform: rotate(45deg);
+            margin-top: -4px;
+            transition: transform 0.25s ease, margin 0.25s ease;
+        }
+
+        .home-info-tile[open] .home-info-tile-chevron {
+            transform: rotate(-135deg);
+            margin-top: 4px;
+        }
+
+        .home-info-tile-panel {
+            padding: 16px 18px 18px;
+            border-top: 1px solid var(--border-soft);
+            animation: microPanelIn 0.28s ease;
+        }
+
+        .home-info-tile .editorial-intro,
+        .home-info-tile .calc-methodology {
+            margin: 0;
+            padding: 0;
+            border: none;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .home-info-tile--warning {
+            border-color: rgba(180, 83, 9, 0.25);
+        }
+
+        .home-info-tile--warning > .home-info-tile-bar {
+            background: linear-gradient(180deg, #fffbeb 0%, #fef3c7 100%);
+            color: #78350f;
+        }
+
+        .home-info-tile--warning > .home-info-tile-bar:hover,
+        .home-info-tile--warning[open] > .home-info-tile-bar {
+            background: linear-gradient(180deg, #fef3c7 0%, #fde68a 100%);
+        }
+
+        .home-info-tile--warning .home-info-tile-title,
+        .home-info-tile--warning .home-info-tile-sub {
+            color: inherit;
+        }
+
+        .home-info-tile--warning .home-info-tile-chevron {
+            border-color: currentColor;
+        }
+
+        .home-info-tile .health-disclaimer {
+            margin: 0;
+            padding: 0;
+            border: none;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+            color: inherit;
+        }
+
+        [data-theme='dark'] .home-info-tile--warning {
+            border-color: rgba(251, 191, 36, 0.25);
+        }
+
+        [data-theme='dark'] .home-info-tile--warning > .home-info-tile-bar {
+            background: linear-gradient(180deg, rgba(120, 53, 15, 0.35) 0%, rgba(69, 26, 3, 0.5) 100%);
+            color: #fde68a;
+        }
+
+        [data-theme='dark'] .home-info-tile--warning > .home-info-tile-bar:hover,
+        [data-theme='dark'] .home-info-tile--warning[open] > .home-info-tile-bar {
+            background: linear-gradient(180deg, rgba(120, 53, 15, 0.5) 0%, rgba(69, 26, 3, 0.65) 100%);
+        }
+
+        @media (max-width: 768px) {
+            .home-info-tiles {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .dieta-intro-bottom {
             margin-top: 32px;
         }
