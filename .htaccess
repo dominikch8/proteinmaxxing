@@ -1,12 +1,19 @@
 RewriteEngine On
 RewriteBase /
 
+Options -Indexes
+DirectorySlash Off
+
 # HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Serwuj strony .html bez rozszerzenia (tylko wewnętrzny rewrite — bez 301)
-RewriteCond %{REQUEST_FILENAME} !-d
+# /dieta lub /dieta/ → dieta.html (jeden segment)
+RewriteCond %{REQUEST_URI} ^/([^./]+)/?$
+RewriteCond %{DOCUMENT_ROOT}/%1.html -f
+RewriteRule ^[^./]+/?$ %1.html [L]
+
+# /produkty/slug, /produkty/kategoria/x itd.
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]

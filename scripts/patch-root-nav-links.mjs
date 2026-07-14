@@ -1,5 +1,5 @@
 /**
- * Zamienia linki nawigacji na ścieżki od root (/dieta zamiast dieta.html).
+ * Zamienia linki nawigacji na ścieżki od root z .html (najpewniejsze na LH.pl).
  */
 import fs from 'fs';
 import path from 'path';
@@ -9,17 +9,28 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SKIP_DIRS = new Set(['node_modules', '.git', 'deploy-bundle', 'domains']);
 
 const REPLACEMENTS = [
-    [/href="(?:\.\.\/)*index\.html"/g, 'href="/"'],
-    [/href="(?:\.\.\/)*dieta\.html#produkty"/g, 'href="/dieta#produkty"'],
-    [/href="(?:\.\.\/)*dieta\.html"/g, 'href="/dieta"'],
-    [/href="(?:\.\.\/)*porownaj-produkty\.html"/g, 'href="/porownaj-produkty"'],
-    [/href="(?:\.\.\/)*dodaj-produkt\.html"/g, 'href="/dodaj-produkt"'],
-    [/href="(?:\.\.\/)*poradnik-zywienia\.html"/g, 'href="/poradnik-zywienia"'],
-    [/href="(?:\.\.\/)*informacje\.html"/g, 'href="/informacje"'],
-    [/href="(?:\.\.\/)*o-mnie\.html"/g, 'href="/o-mnie"'],
-    [/href="(?:\.\.\/)*bialko-maxxing\.html/g, 'href="/bialko-maxxing'],
-    [/href="(?:\.\.\/)*cena-bialka\.html/g, 'href="/cena-bialka'],
-    [/href="(?:\.\.\/)*trening\.html"/g, 'href="/trening"']
+    [/href="\/"/g, 'href="/index.html"'],
+    [/href="(?:\.\.\/)*index\.html"/g, 'href="/index.html"'],
+    [/href="\/dieta#produkty"/g, 'href="/dieta.html#produkty"'],
+    [/href="(?:\.\.\/)*dieta\.html#produkty"/g, 'href="/dieta.html#produkty"'],
+    [/href="\/dieta"/g, 'href="/dieta.html"'],
+    [/href="(?:\.\.\/)*dieta\.html"/g, 'href="/dieta.html"'],
+    [/href="\/porownaj-produkty"/g, 'href="/porownaj-produkty.html"'],
+    [/href="(?:\.\.\/)*porownaj-produkty\.html"/g, 'href="/porownaj-produkty.html"'],
+    [/href="\/dodaj-produkt"/g, 'href="/dodaj-produkt.html"'],
+    [/href="(?:\.\.\/)*dodaj-produkt\.html"/g, 'href="/dodaj-produkt.html"'],
+    [/href="\/poradnik-zywienia"/g, 'href="/poradnik-zywienia.html"'],
+    [/href="(?:\.\.\/)*poradnik-zywienia\.html"/g, 'href="/poradnik-zywienia.html"'],
+    [/href="\/informacje"/g, 'href="/informacje.html"'],
+    [/href="(?:\.\.\/)*informacje\.html"/g, 'href="/informacje.html"'],
+    [/href="\/o-mnie"/g, 'href="/o-mnie.html"'],
+    [/href="(?:\.\.\/)*o-mnie\.html"/g, 'href="/o-mnie.html"'],
+    [/href="\/bialko-maxxing/g, 'href="/bialko-maxxing.html'],
+    [/href="(?:\.\.\/)*bialko-maxxing\.html/g, 'href="/bialko-maxxing.html'],
+    [/href="\/cena-bialka/g, 'href="/cena-bialka.html'],
+    [/href="(?:\.\.\/)*cena-bialka\.html/g, 'href="/cena-bialka.html'],
+    [/href="\/trening"/g, 'href="/trening.html"'],
+    [/href="(?:\.\.\/)*trening\.html"/g, 'href="/trening.html"']
 ];
 
 function walkHtml(dir, list = []) {
