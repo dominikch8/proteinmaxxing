@@ -529,6 +529,7 @@
             width: 100%;
             padding: 16px 24px;
             margin-top: 8px;
+            margin-bottom: 12px;
             background: var(--btn-calc-bg);
             color: var(--btn-calc-color);
             border: none;
@@ -2238,14 +2239,14 @@
         }
 
         .calc-intro-bottom {
-            margin-top: 64px;
+            margin-top: 0;
         }
 
         .home-info-tiles {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 12px;
-            margin: 0;
+            margin-top: 28px;
             align-items: stretch;
         }
 
