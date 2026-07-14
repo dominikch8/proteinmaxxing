@@ -287,7 +287,7 @@ function buildSimilarProductsSection(p, similar) {
     const items = similar
         .map(
             (s) => `                <li>
-                    <a class="similar-product-link" href="${esc(s.slug)}.html">
+                    <a class="similar-product-link" href="${esc(s.slug)}">
                         <span class="similar-product-emoji" aria-hidden="true">${s.emoji}</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">${esc(s.name)}</span>
@@ -312,7 +312,7 @@ ${items}
 }
 
 function dietaCategoryHref(category) {
-    return `kategoria/${encodeURIComponent(category)}.html`;
+    return `kategoria/${encodeURIComponent(category)}`;
 }
 
 function buildSeoLead(p) {
@@ -360,7 +360,7 @@ ${paras}
 function buildPage(p, similar = []) {
     const title = `${p.name} – białko, kalorie, węglowodany, tłuszcz | Proteiner`;
     const desc = `${p.name}: ${p.protein}g białka, ${p.kcal} kcal, ${p.carbs}g węglowodanów, ${p.fat}g tłuszczu na 100g. Zdrowe odżywianie, proteiny, odchudzanie – makro i mikro na Proteiner.`;
-    const canonical = `https://proteiner.pl/produkty/${p.slug}.html`;
+    const canonical = `https://proteiner.pl/produkty/${p.slug}`;
     const catLabel = CATEGORY_LABELS[p.category] || p.category;
     const servingTableHtml = buildServingTableHtml(p, {
         esc,
@@ -563,7 +563,7 @@ function sitemapUrlEntry({ loc, changefreq, priority }) {
 
 const categorySitemapUrls = CATEGORY_ORDER.map(
     (slug) =>
-        `  <url>\n    <loc>https://proteiner.pl/produkty/kategoria/${slug}.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`
+        `  <url>\n    <loc>https://proteiner.pl/produkty/kategoria/${slug}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`
 );
 
 const staticSitemapUrls = STATIC_SITEMAP_ENTRIES.map(sitemapUrlEntry);
@@ -571,7 +571,7 @@ const staticSitemapUrls = STATIC_SITEMAP_ENTRIES.map(sitemapUrlEntry);
 const sitemapUrls = products
     .filter((p) => productHasRichContent(p, editorialBySlug) || generatedEditorialIsRich(p))
     .map(
-    (p) => `  <url>\n    <loc>https://proteiner.pl/produkty/${p.slug}.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`
+    (p) => `  <url>\n    <loc>https://proteiner.pl/produkty/${p.slug}</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`
 );
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

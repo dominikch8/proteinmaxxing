@@ -1,5 +1,5 @@
 /**
- * Pakuje pliki do ręcznego wgrania na LH.pl (FTP / menedżer plików).
+ * Pakuje pliki do wgrania na LH.pl (FTP / menedżer plików).
  * Uruchom: node scripts/pack-for-hosting.mjs
  * Wynik: folder deploy-bundle/ — wgraj całą zawartość do /public_html/proteiner.pl/
  */
@@ -11,12 +11,25 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const out = path.join(root, 'deploy-bundle');
 const SKIP_DIRS = new Set(['node_modules', '.git', '.github', '.cursor', 'deploy-bundle', 'domains']);
 
+const SKIP_FILES = new Set([
+    'sw.js',
+    'package.json',
+    'package-lock.json'
+]);
+
+const SKIP_PREFIXES = ['scripts/', 'admin-', 'js/admin-', 'js/products-data-raw.js'];
+
 function shouldSkip(rel) {
-    const parts = rel.split(/[/\\]/);
+    const norm = rel.replace(/\\/g, '/');
+    const parts = norm.split('/');
     if (parts.some((p) => SKIP_DIRS.has(p))) return true;
-    if (rel.startsWith('scripts' + path.sep) || rel.startsWith('scripts/')) return true;
-    if (/\.(mjs|ts)$/i.test(rel)) return true;
-    if (rel === 'package.json' || rel === 'package-lock.json') return true;
+    if (SKIP_FILES.has(parts[parts.length - 1])) return true;
+    if (norm.startsWith('scripts/')) return true;
+    if (/\.(mjs|ts)$/i.test(norm)) return true;
+    for (const prefix of SKIP_PREFIXES) {
+        if (norm.startsWith(prefix) || norm.includes(`/${prefix}`)) return true;
+    }
+    if (norm === 'js/products-data-raw.js') return true;
     return false;
 }
 

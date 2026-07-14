@@ -66,6 +66,8 @@ function pickRandomN(items, count) {
             if (!age || !weight || !heightCm) { alert("Wypełnij formularz!"); return; }
 
             const bmi = (weight / ((heightCm/100) * (heightCm/100))).toFixed(1);
+
+            const finish = () => {
             document.getElementById('bmiValue').innerText = bmi;
 
             let pointerPos = 50; let sText = "Waga prawidłowa"; let sClass = "status-normal";
@@ -149,4 +151,11 @@ function pickRandomN(items, count) {
             document.getElementById('reductionTips').style.display = (goal==='lose'?'block':'none');
             document.getElementById('resultBox').style.display = "block";
             document.getElementById('resultBox').scrollIntoView({ behavior: 'smooth' });
+            };
+
+            if (typeof ensureProductsDatabase === 'function') {
+                ensureProductsDatabase().then(finish).catch(finish);
+            } else {
+                finish();
+            }
         }

@@ -1,3 +1,36 @@
 RewriteEngine On
+
+# HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Przekieruj .html → czysty URL (zewnętrznie)
+RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Serwuj pliki .html bez rozszerzenia
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# Cache statycznych zasobów
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js|jpg|jpeg|png|webp|svg|woff2)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    <FilesMatch "\.(html)$">
+        Header set Cache-Control "public, max-age=3600"
+    </FilesMatch>
+</IfModule>

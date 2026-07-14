@@ -4,7 +4,8 @@
   "scripts": {
     "start": "serve . -l 8080",
     "dev": "serve . -l 8080",
-    "pack:hosting": "node scripts/pack-for-hosting.mjs"
+    "pack:hosting": "node scripts/pack-for-hosting.mjs",
+    "build:deploy": "node scripts/build-deploy.mjs"
   },
   "dependencies": {
     "sharp": "^0.34.5"

@@ -34,7 +34,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/themes.css">
     <link rel="stylesheet" href="css/site.css">
-<link rel="stylesheet" href="css/theme-switch.css">
+    <link rel="stylesheet" href="css/theme-switch.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebApplication",
+                "name": "Proteiner — kalkulator dietetyczny",
+                "url": "https://proteiner.pl/",
+                "applicationCategory": "HealthApplication",
+                "operatingSystem": "Any",
+                "browserRequirements": "Requires JavaScript",
+                "inLanguage": "pl",
+                "description": "Kalkulator TDEE, BMI, makroskładników, wody oraz orientacyjnego zapotrzebowania na witaminy i minerały.",
+                "offers": { "@type": "Offer", "price": "0", "priceCurrency": "PLN" },
+                "featureList": [
+                    "Kalkulator TDEE i BMI",
+                    "Szacowanie białka, tłuszczów i węglowodanów",
+                    "Baza ponad 500 produktów spożywczych",
+                    "Porównywarka makro produktów"
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Jak obliczyć dzienne zapotrzebowanie kaloryczne?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Proteiner liczy BMR wzorami Mifflina-St Jeora, mnoży przez współczynnik aktywności i dostosowuje wynik do celu: redukcji, masy lub utrzymania wagi."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Ile białka powinienem jeść dziennie?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kalkulator sugeruje około 1,6–2,0 g białka na kg masy ciała w zależności od celu sylwetkowego i poziomu aktywności."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Czy Proteiner zastępuje poradę dietetyka?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nie. Proteiner to narzędzie edukacyjne do szacowania zapotrzebowania i porównywania produktów. Przy chorobach przewlekłych skonsultuj plan z lekarzem lub dietetykiem."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -290,10 +343,9 @@
         </nav>
         <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>
-<script src="js/products-data-raw.js"></script>
-    <script src="js/product-utils.js"></script>
-    <script src="js/products-data.js"></script>
-    <script src="js/calculator.js"></script>
+<script src="js/product-utils.js"></script>
+<script src="js/products-loader.js"></script>
+<script src="js/calculator.js"></script>
     <link rel="stylesheet" href="css/cookie-consent.css">
     <script src="js/cookie-banner.js"></script>
 <script src="js/theme.js"></script>

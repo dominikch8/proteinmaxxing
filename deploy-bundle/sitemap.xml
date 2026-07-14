@@ -26,6 +26,26 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://proteiner.pl/poradnik-zywienia.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/deficyt-kaloryczny-praktyka.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/planowanie-posilkow.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/dodaj-produkt.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://proteiner.pl/trening.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -41,2502 +61,2622 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/piers-z-kurczaka.html</loc>
+    <loc>https://proteiner.pl/skladniki-kalorie.html</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-bialko.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-weglowodany.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-tluszcz.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-tluszcze-nasycone.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-tluszcze-nienasycone.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-blonnik.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-witaminy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-mineraly.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/skladniki-mikroelementy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/mieso</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/nabial</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/warzywa</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/owoce</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/zboza</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/polskie-obiadki</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/zupy</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/orzechy</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/tluszcze</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/makarony</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/fastfood</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/slodycze</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/sosy</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/piers-z-kurczaka</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/piers-z-indyka</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/piers-z-indyka.html</loc>
+    <loc>https://proteiner.pl/produkty/wolowina-poledwica</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/wolowina-poledwica.html</loc>
+    <loc>https://proteiner.pl/produkty/wieprzowina-schab-bez-kosci</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/wieprzowina-schab-bez-kosci.html</loc>
+    <loc>https://proteiner.pl/produkty/szynka-wieprzowa-wedlina</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/szynka-wieprzowa-wedlina.html</loc>
+    <loc>https://proteiner.pl/produkty/salami</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/salami.html</loc>
+    <loc>https://proteiner.pl/produkty/parowki-wieprzowe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/parowki-wieprzowe.html</loc>
+    <loc>https://proteiner.pl/produkty/kielbasa-slaska</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kielbasa-slaska.html</loc>
+    <loc>https://proteiner.pl/produkty/kabanosy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kabanosy.html</loc>
+    <loc>https://proteiner.pl/produkty/dorsz-swiezy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/dorsz-swiezy.html</loc>
+    <loc>https://proteiner.pl/produkty/losos-atlantycki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/losos-atlantycki.html</loc>
+    <loc>https://proteiner.pl/produkty/tunczyk-w-wodzie</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/tunczyk-w-wodzie.html</loc>
+    <loc>https://proteiner.pl/produkty/pstrag</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pstrag.html</loc>
+    <loc>https://proteiner.pl/produkty/karp-smazony</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/karp-smazony.html</loc>
+    <loc>https://proteiner.pl/produkty/sledz-marynowany</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sledz-marynowany.html</loc>
+    <loc>https://proteiner.pl/produkty/makrela-wedzona</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makrela-wedzona.html</loc>
+    <loc>https://proteiner.pl/produkty/tunczyk-w-oleju</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/tunczyk-w-oleju.html</loc>
+    <loc>https://proteiner.pl/produkty/sandacz</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sandacz.html</loc>
+    <loc>https://proteiner.pl/produkty/mintaj</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mintaj.html</loc>
+    <loc>https://proteiner.pl/produkty/krewetki-gotowane</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/krewetki-gotowane.html</loc>
+    <loc>https://proteiner.pl/produkty/kalmary</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kalmary.html</loc>
+    <loc>https://proteiner.pl/produkty/udko-z-kurczaka-z-skora</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/udko-z-kurczaka-z-skora.html</loc>
+    <loc>https://proteiner.pl/produkty/skrzydelka-kurze</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/skrzydelka-kurze.html</loc>
+    <loc>https://proteiner.pl/produkty/boczek-surowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/boczek-surowy.html</loc>
+    <loc>https://proteiner.pl/produkty/karkowka-wieprzowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/karkowka-wieprzowa.html</loc>
+    <loc>https://proteiner.pl/produkty/poledwica-wieprzowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/poledwica-wieprzowa.html</loc>
+    <loc>https://proteiner.pl/produkty/cielecina</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/cielecina.html</loc>
+    <loc>https://proteiner.pl/produkty/jagniecina</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/jagniecina.html</loc>
+    <loc>https://proteiner.pl/produkty/kaczka-filet</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kaczka-filet.html</loc>
+    <loc>https://proteiner.pl/produkty/indyk-mielony</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/indyk-mielony.html</loc>
+    <loc>https://proteiner.pl/produkty/kurczak-mielony</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kurczak-mielony.html</loc>
+    <loc>https://proteiner.pl/produkty/mortadela</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mortadela.html</loc>
+    <loc>https://proteiner.pl/produkty/pasztet-podwawelski</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pasztet-podwawelski.html</loc>
+    <loc>https://proteiner.pl/produkty/nuggetsy-z-kurczaka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/nuggetsy-z-kurczaka.html</loc>
+    <loc>https://proteiner.pl/produkty/twarog-chudy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/twarog-chudy.html</loc>
+    <loc>https://proteiner.pl/produkty/serek-wiejski</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/serek-wiejski.html</loc>
+    <loc>https://proteiner.pl/produkty/skyr-naturalny</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/skyr-naturalny.html</loc>
+    <loc>https://proteiner.pl/produkty/jogurt-naturalny</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/jogurt-naturalny.html</loc>
+    <loc>https://proteiner.pl/produkty/kefir</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kefir.html</loc>
+    <loc>https://proteiner.pl/produkty/smietana-18</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/smietana-18.html</loc>
+    <loc>https://proteiner.pl/produkty/jajko-kurze-cale</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/jajko-kurze-cale.html</loc>
+    <loc>https://proteiner.pl/produkty/bialka-jaj</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/bialka-jaj.html</loc>
+    <loc>https://proteiner.pl/produkty/izolat-bialka-wpi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/izolat-bialka-wpi.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-gouda</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-gouda.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-camembert</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-camembert.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-mozzarella</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-mozzarella.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-parmezan</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-parmezan.html</loc>
+    <loc>https://proteiner.pl/produkty/mleko-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mleko-2.html</loc>
+    <loc>https://proteiner.pl/produkty/mleko-3-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mleko-3-2.html</loc>
+    <loc>https://proteiner.pl/produkty/jogurt-grecki-naturalny</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/jogurt-grecki-naturalny.html</loc>
+    <loc>https://proteiner.pl/produkty/jogurt-pitny</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/jogurt-pitny.html</loc>
+    <loc>https://proteiner.pl/produkty/maslanka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/maslanka.html</loc>
+    <loc>https://proteiner.pl/produkty/twarog-poltlusty</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/twarog-poltlusty.html</loc>
+    <loc>https://proteiner.pl/produkty/ricotta</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ricotta.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-feta</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-feta.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-brie</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-brie.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-edamski</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-edamski.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-zolty-plastry</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-zolty-plastry.html</loc>
+    <loc>https://proteiner.pl/produkty/serek-homogenizowany-danio</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/serek-homogenizowany-danio.html</loc>
+    <loc>https://proteiner.pl/produkty/budyn-na-mleku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/budyn-na-mleku.html</loc>
+    <loc>https://proteiner.pl/produkty/smietanka-30</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/smietanka-30.html</loc>
+    <loc>https://proteiner.pl/produkty/koncentrat-bialka-serwatkowego-wpc</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/koncentrat-bialka-serwatkowego-wpc.html</loc>
+    <loc>https://proteiner.pl/produkty/ziemniaki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ziemniaki.html</loc>
+    <loc>https://proteiner.pl/produkty/pomidor</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pomidor.html</loc>
+    <loc>https://proteiner.pl/produkty/ogorek</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ogorek.html</loc>
+    <loc>https://proteiner.pl/produkty/cebula</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/cebula.html</loc>
+    <loc>https://proteiner.pl/produkty/marchew</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/marchew.html</loc>
+    <loc>https://proteiner.pl/produkty/kapusta-biala</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kapusta-biala.html</loc>
+    <loc>https://proteiner.pl/produkty/papryka-czerwona</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/papryka-czerwona.html</loc>
+    <loc>https://proteiner.pl/produkty/burak</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/burak.html</loc>
+    <loc>https://proteiner.pl/produkty/czosnek</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/czosnek.html</loc>
+    <loc>https://proteiner.pl/produkty/salata-maslowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/salata-maslowa.html</loc>
+    <loc>https://proteiner.pl/produkty/szpinak-swiezy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/szpinak-swiezy.html</loc>
+    <loc>https://proteiner.pl/produkty/brokuly</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/brokuly.html</loc>
+    <loc>https://proteiner.pl/produkty/kalafior</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kalafior.html</loc>
+    <loc>https://proteiner.pl/produkty/baklazan</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/baklazan.html</loc>
+    <loc>https://proteiner.pl/produkty/cukinia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/cukinia.html</loc>
+    <loc>https://proteiner.pl/produkty/dynia-miazsz</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/dynia-miazsz.html</loc>
+    <loc>https://proteiner.pl/produkty/fasolka-szparagowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/fasolka-szparagowa.html</loc>
+    <loc>https://proteiner.pl/produkty/groszek-zielony</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/groszek-zielony.html</loc>
+    <loc>https://proteiner.pl/produkty/kukurydza-konserwowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kukurydza-konserwowa.html</loc>
+    <loc>https://proteiner.pl/produkty/rzodkiewka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/rzodkiewka.html</loc>
+    <loc>https://proteiner.pl/produkty/rukola</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/rukola.html</loc>
+    <loc>https://proteiner.pl/produkty/jarmuz</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/jarmuz.html</loc>
+    <loc>https://proteiner.pl/produkty/pieczarka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pieczarka.html</loc>
+    <loc>https://proteiner.pl/produkty/ciecierzyca-gotowana</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ciecierzyca-gotowana.html</loc>
+    <loc>https://proteiner.pl/produkty/soczewica-czerwona-gotowana</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/soczewica-czerwona-gotowana.html</loc>
+    <loc>https://proteiner.pl/produkty/fasola-biala-gotowana</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/fasola-biala-gotowana.html</loc>
+    <loc>https://proteiner.pl/produkty/jablko</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/jablko.html</loc>
+    <loc>https://proteiner.pl/produkty/banan</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/banan.html</loc>
+    <loc>https://proteiner.pl/produkty/truskawki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/truskawki.html</loc>
+    <loc>https://proteiner.pl/produkty/maliny</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/maliny.html</loc>
+    <loc>https://proteiner.pl/produkty/sliwki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sliwki.html</loc>
+    <loc>https://proteiner.pl/produkty/wisnie</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/wisnie.html</loc>
+    <loc>https://proteiner.pl/produkty/gruszka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/gruszka.html</loc>
+    <loc>https://proteiner.pl/produkty/czeresnie</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/czeresnie.html</loc>
+    <loc>https://proteiner.pl/produkty/borowki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/borowki.html</loc>
+    <loc>https://proteiner.pl/produkty/winogrona</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/winogrona.html</loc>
+    <loc>https://proteiner.pl/produkty/awokado</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/awokado.html</loc>
+    <loc>https://proteiner.pl/produkty/kiwi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kiwi.html</loc>
+    <loc>https://proteiner.pl/produkty/pomarancza</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pomarancza.html</loc>
+    <loc>https://proteiner.pl/produkty/mandarynki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mandarynki.html</loc>
+    <loc>https://proteiner.pl/produkty/arbuz</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/arbuz.html</loc>
+    <loc>https://proteiner.pl/produkty/melon</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/melon.html</loc>
+    <loc>https://proteiner.pl/produkty/granat</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/granat.html</loc>
+    <loc>https://proteiner.pl/produkty/ananas-swiezy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ananas-swiezy.html</loc>
+    <loc>https://proteiner.pl/produkty/mango</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mango.html</loc>
+    <loc>https://proteiner.pl/produkty/zurawina-suszona</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zurawina-suszona.html</loc>
+    <loc>https://proteiner.pl/produkty/rodzynki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/rodzynki.html</loc>
+    <loc>https://proteiner.pl/produkty/platki-owsiane</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/platki-owsiane.html</loc>
+    <loc>https://proteiner.pl/produkty/ryz-bialy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ryz-bialy.html</loc>
+    <loc>https://proteiner.pl/produkty/kasza-gryczana</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kasza-gryczana.html</loc>
+    <loc>https://proteiner.pl/produkty/kasza-jaglana</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kasza-jaglana.html</loc>
+    <loc>https://proteiner.pl/produkty/kasza-jeczmienna-peczak</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kasza-jeczmienna-peczak.html</loc>
+    <loc>https://proteiner.pl/produkty/kuskus</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kuskus.html</loc>
+    <loc>https://proteiner.pl/produkty/komosa-ryzowa-quinoa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/komosa-ryzowa-quinoa.html</loc>
+    <loc>https://proteiner.pl/produkty/amarantus</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/amarantus.html</loc>
+    <loc>https://proteiner.pl/produkty/ryz-brazowy-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ryz-brazowy-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/makaron-pszenny-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makaron-pszenny-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/bulgur-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/bulgur-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/chleb-zytni-pelnoziarnisty</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/chleb-zytni-pelnoziarnisty.html</loc>
+    <loc>https://proteiner.pl/produkty/chleb-tostowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/chleb-tostowy.html</loc>
+    <loc>https://proteiner.pl/produkty/baguette</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/baguette.html</loc>
+    <loc>https://proteiner.pl/produkty/tortilla-pszenna</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/tortilla-pszenna.html</loc>
+    <loc>https://proteiner.pl/produkty/platki-sniadaniowe-cukier</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/platki-sniadaniowe-cukier.html</loc>
+    <loc>https://proteiner.pl/produkty/granola</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/granola.html</loc>
+    <loc>https://proteiner.pl/produkty/kasza-manna</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kasza-manna.html</loc>
+    <loc>https://proteiner.pl/produkty/ryz-basmati-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ryz-basmati-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/peczak-jeczmienny-gotowany</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/peczak-jeczmienny-gotowany.html</loc>
+    <loc>https://proteiner.pl/produkty/chipsy-ziemniaczane</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/chipsy-ziemniaczane.html</loc>
+    <loc>https://proteiner.pl/produkty/migdaly</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/migdaly.html</loc>
+    <loc>https://proteiner.pl/produkty/orzechy-wloskie</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/orzechy-wloskie.html</loc>
+    <loc>https://proteiner.pl/produkty/orzechy-laskowe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/orzechy-laskowe.html</loc>
+    <loc>https://proteiner.pl/produkty/orzechy-ziemne</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/orzechy-ziemne.html</loc>
+    <loc>https://proteiner.pl/produkty/orzechy-nerkowca</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/orzechy-nerkowca.html</loc>
+    <loc>https://proteiner.pl/produkty/orzechy-pistacjowe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/orzechy-pistacjowe.html</loc>
+    <loc>https://proteiner.pl/produkty/orzechy-brazylijskie</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/orzechy-brazylijskie.html</loc>
+    <loc>https://proteiner.pl/produkty/orzechy-pekan</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/orzechy-pekan.html</loc>
+    <loc>https://proteiner.pl/produkty/maslo-orzechowe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/maslo-orzechowe.html</loc>
+    <loc>https://proteiner.pl/produkty/orzechy-makadamia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/orzechy-makadamia.html</loc>
+    <loc>https://proteiner.pl/produkty/pestki-dyni</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pestki-dyni.html</loc>
+    <loc>https://proteiner.pl/produkty/nasiona-slonecznika</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/nasiona-slonecznika.html</loc>
+    <loc>https://proteiner.pl/produkty/nasiona-chia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/nasiona-chia.html</loc>
+    <loc>https://proteiner.pl/produkty/tahini-pasta-sezamowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/tahini-pasta-sezamowa.html</loc>
+    <loc>https://proteiner.pl/produkty/ketchup</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ketchup.html</loc>
+    <loc>https://proteiner.pl/produkty/majonez</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/majonez.html</loc>
+    <loc>https://proteiner.pl/produkty/musztarda-kremowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/musztarda-kremowa.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-czosnkowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-czosnkowy.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-tatarski</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-tatarski.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-sojowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-sojowy.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-barbecue</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-barbecue.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-ostry-chilli</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-ostry-chilli.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-ranch</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-ranch.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-slodko-kwasny</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-slodko-kwasny.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-pesto-zielone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-pesto-zielone.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-1000-wysp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-1000-wysp.html</loc>
+    <loc>https://proteiner.pl/produkty/musztarda-delikatesowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/musztarda-delikatesowa.html</loc>
+    <loc>https://proteiner.pl/produkty/oliwa-z-oliwek</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/oliwa-z-oliwek.html</loc>
+    <loc>https://proteiner.pl/produkty/olej-rzepakowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/olej-rzepakowy.html</loc>
+    <loc>https://proteiner.pl/produkty/maslo-ekstra-82</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/maslo-ekstra-82.html</loc>
+    <loc>https://proteiner.pl/produkty/smalec</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/smalec.html</loc>
+    <loc>https://proteiner.pl/produkty/olej-slonecznikowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/olej-slonecznikowy.html</loc>
+    <loc>https://proteiner.pl/produkty/olej-kokosowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/olej-kokosowy.html</loc>
+    <loc>https://proteiner.pl/produkty/margaryna</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/margaryna.html</loc>
+    <loc>https://proteiner.pl/produkty/baton-np-snickers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/baton-np-snickers.html</loc>
+    <loc>https://proteiner.pl/produkty/czekolada-mleczna</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/czekolada-mleczna.html</loc>
+    <loc>https://proteiner.pl/produkty/czekolada-gorzka-80</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/czekolada-gorzka-80.html</loc>
+    <loc>https://proteiner.pl/produkty/ptasie-mleczko</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ptasie-mleczko.html</loc>
+    <loc>https://proteiner.pl/produkty/raffaello</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/raffaello.html</loc>
+    <loc>https://proteiner.pl/produkty/baton-proteinowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/baton-proteinowy.html</loc>
+    <loc>https://proteiner.pl/produkty/lody-waniliowe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/lody-waniliowe.html</loc>
+    <loc>https://proteiner.pl/produkty/paczek-z-nadzieniem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/paczek-z-nadzieniem.html</loc>
+    <loc>https://proteiner.pl/produkty/herbatniki-maslane</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/herbatniki-maslane.html</loc>
+    <loc>https://proteiner.pl/produkty/wafel-czekoladowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/wafel-czekoladowy.html</loc>
+    <loc>https://proteiner.pl/produkty/zelki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zelki.html</loc>
+    <loc>https://proteiner.pl/produkty/lukrecja</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/lukrecja.html</loc>
+    <loc>https://proteiner.pl/produkty/nutella</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/nutella.html</loc>
+    <loc>https://proteiner.pl/produkty/krakersy-pelnoziarniste</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/krakersy-pelnoziarniste.html</loc>
+    <loc>https://proteiner.pl/produkty/popcorn-solony-gotowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/popcorn-solony-gotowy.html</loc>
+    <loc>https://proteiner.pl/produkty/hot-dog</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/hot-dog.html</loc>
+    <loc>https://proteiner.pl/produkty/pizza-margherita</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pizza-margherita.html</loc>
+    <loc>https://proteiner.pl/produkty/hamburger</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/hamburger.html</loc>
+    <loc>https://proteiner.pl/produkty/cheeseburger</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/cheeseburger.html</loc>
+    <loc>https://proteiner.pl/produkty/kebab-w-ciescie</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kebab-w-ciescie.html</loc>
+    <loc>https://proteiner.pl/produkty/frytki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/frytki.html</loc>
+    <loc>https://proteiner.pl/produkty/big-mac-styl</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/big-mac-styl.html</loc>
+    <loc>https://proteiner.pl/produkty/mcchicken-kurczak-w-panierce</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mcchicken-kurczak-w-panierce.html</loc>
+    <loc>https://proteiner.pl/produkty/wrap-z-kurczakiem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/wrap-z-kurczakiem.html</loc>
+    <loc>https://proteiner.pl/produkty/kebab-na-talerzu</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kebab-na-talerzu.html</loc>
+    <loc>https://proteiner.pl/produkty/kolba-kukurydzy-smazona</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kolba-kukurydzy-smazona.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-chinska-instant</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-chinska-instant.html</loc>
+    <loc>https://proteiner.pl/produkty/tortilla-z-farszem-gotowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/tortilla-z-farszem-gotowa.html</loc>
+    <loc>https://proteiner.pl/produkty/skrzydelka-kfc-style</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/skrzydelka-kfc-style.html</loc>
+    <loc>https://proteiner.pl/produkty/makaron-pelnoziarnisty-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makaron-pelnoziarnisty-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/spaghetti-bolognese</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/spaghetti-bolognese.html</loc>
+    <loc>https://proteiner.pl/produkty/spaghetti-carbonara</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/spaghetti-carbonara.html</loc>
+    <loc>https://proteiner.pl/produkty/lasagne-z-miesem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/lasagne-z-miesem.html</loc>
+    <loc>https://proteiner.pl/produkty/penne-z-kurczakiem-i-brokulami</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/penne-z-kurczakiem-i-brokulami.html</loc>
+    <loc>https://proteiner.pl/produkty/makaron-jajeczny-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makaron-jajeczny-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/tagliatelle-z-lososiem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/tagliatelle-z-lososiem.html</loc>
+    <loc>https://proteiner.pl/produkty/makaron-z-pesto-i-kurczakiem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makaron-z-pesto-i-kurczakiem.html</loc>
+    <loc>https://proteiner.pl/produkty/ramen-z-bulionem-miska</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ramen-z-bulionem-miska.html</loc>
+    <loc>https://proteiner.pl/produkty/cannelloni-z-ricotta</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/cannelloni-z-ricotta.html</loc>
+    <loc>https://proteiner.pl/produkty/zapiekanka-makaronowa-gotowiec</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zapiekanka-makaronowa-gotowiec.html</loc>
+    <loc>https://proteiner.pl/produkty/szynka-drobiowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/szynka-drobiowa.html</loc>
+    <loc>https://proteiner.pl/produkty/szynka-krucha</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/szynka-krucha.html</loc>
+    <loc>https://proteiner.pl/produkty/poledwica-z-losia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/poledwica-z-losia.html</loc>
+    <loc>https://proteiner.pl/produkty/kielbasa-krakowska</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kielbasa-krakowska.html</loc>
+    <loc>https://proteiner.pl/produkty/kielbasa-parowkowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kielbasa-parowkowa.html</loc>
+    <loc>https://proteiner.pl/produkty/baleron</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/baleron.html</loc>
+    <loc>https://proteiner.pl/produkty/szynka-parmenska</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/szynka-parmenska.html</loc>
+    <loc>https://proteiner.pl/produkty/watrobka-drobiowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/watrobka-drobiowa.html</loc>
+    <loc>https://proteiner.pl/produkty/watrobka-wolowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/watrobka-wolowa.html</loc>
+    <loc>https://proteiner.pl/produkty/ozor-wolowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ozor-wolowy.html</loc>
+    <loc>https://proteiner.pl/produkty/poledwica-sopocka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/poledwica-sopocka.html</loc>
+    <loc>https://proteiner.pl/produkty/sardynki-w-oleju</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sardynki-w-oleju.html</loc>
+    <loc>https://proteiner.pl/produkty/sledz-w-oleju</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sledz-w-oleju.html</loc>
+    <loc>https://proteiner.pl/produkty/fladra</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/fladra.html</loc>
+    <loc>https://proteiner.pl/produkty/halibut</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/halibut.html</loc>
+    <loc>https://proteiner.pl/produkty/tunczyk-w-sosie-wlasnym</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/tunczyk-w-sosie-wlasnym.html</loc>
+    <loc>https://proteiner.pl/produkty/krolik</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/krolik.html</loc>
+    <loc>https://proteiner.pl/produkty/golonka-wieprzowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/golonka-wieprzowa.html</loc>
+    <loc>https://proteiner.pl/produkty/zeberka-wieprzowe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zeberka-wieprzowe.html</loc>
+    <loc>https://proteiner.pl/produkty/stripsy-z-kurczaka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/stripsy-z-kurczaka.html</loc>
+    <loc>https://proteiner.pl/produkty/ryba-po-grecku-gotowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ryba-po-grecku-gotowa.html</loc>
+    <loc>https://proteiner.pl/produkty/kotlet-mielony-wieprzowo-wolowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kotlet-mielony-wieprzowo-wolowy.html</loc>
+    <loc>https://proteiner.pl/produkty/schabowy-panierowany</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/schabowy-panierowany.html</loc>
+    <loc>https://proteiner.pl/produkty/mleko-0</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mleko-0.html</loc>
+    <loc>https://proteiner.pl/produkty/mleko-roslinne-sojowe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mleko-roslinne-sojowe.html</loc>
+    <loc>https://proteiner.pl/produkty/mleko-roslinne-owsiane</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mleko-roslinne-owsiane.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-twarogowy-tlusty</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-twarogowy-tlusty.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-topiony-plastry</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-topiony-plastry.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-mascarpone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-mascarpone.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-plesniowy-blue</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-plesniowy-blue.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-halloumi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-halloumi.html</loc>
+    <loc>https://proteiner.pl/produkty/jogurt-owocowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/jogurt-owocowy.html</loc>
+    <loc>https://proteiner.pl/produkty/protein-pudding</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/protein-pudding.html</loc>
+    <loc>https://proteiner.pl/produkty/smietana-12</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/smietana-12.html</loc>
+    <loc>https://proteiner.pl/produkty/mleko-skondensowane-slodzone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mleko-skondensowane-slodzone.html</loc>
+    <loc>https://proteiner.pl/produkty/twarog-wiejski</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/twarog-wiejski.html</loc>
+    <loc>https://proteiner.pl/produkty/por</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/por.html</loc>
+    <loc>https://proteiner.pl/produkty/seler-naciowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/seler-naciowy.html</loc>
+    <loc>https://proteiner.pl/produkty/seler-korzeniowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/seler-korzeniowy.html</loc>
+    <loc>https://proteiner.pl/produkty/pietruszka-korzen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pietruszka-korzen.html</loc>
+    <loc>https://proteiner.pl/produkty/brukselka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/brukselka.html</loc>
+    <loc>https://proteiner.pl/produkty/kapusta-kiszona</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kapusta-kiszona.html</loc>
+    <loc>https://proteiner.pl/produkty/kapusta-pekinska</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kapusta-pekinska.html</loc>
+    <loc>https://proteiner.pl/produkty/kapusta-czerwona</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kapusta-czerwona.html</loc>
+    <loc>https://proteiner.pl/produkty/szparagi-zielone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/szparagi-zielone.html</loc>
+    <loc>https://proteiner.pl/produkty/karczoch</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/karczoch.html</loc>
+    <loc>https://proteiner.pl/produkty/kiszony-ogorek</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kiszony-ogorek.html</loc>
+    <loc>https://proteiner.pl/produkty/pomidory-suszone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pomidory-suszone.html</loc>
+    <loc>https://proteiner.pl/produkty/bob-mlody</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/bob-mlody.html</loc>
+    <loc>https://proteiner.pl/produkty/brukselka-mrozona</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/brukselka-mrozona.html</loc>
+    <loc>https://proteiner.pl/produkty/mix-salat-torebka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mix-salat-torebka.html</loc>
+    <loc>https://proteiner.pl/produkty/chrzan</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/chrzan.html</loc>
+    <loc>https://proteiner.pl/produkty/imbir-swiezy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/imbir-swiezy.html</loc>
+    <loc>https://proteiner.pl/produkty/brzoskwinia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/brzoskwinia.html</loc>
+    <loc>https://proteiner.pl/produkty/nektarynka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/nektarynka.html</loc>
+    <loc>https://proteiner.pl/produkty/morela</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/morela.html</loc>
+    <loc>https://proteiner.pl/produkty/pomelo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pomelo.html</loc>
+    <loc>https://proteiner.pl/produkty/grejpfrut</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/grejpfrut.html</loc>
+    <loc>https://proteiner.pl/produkty/porzeczki-czarne</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/porzeczki-czarne.html</loc>
+    <loc>https://proteiner.pl/produkty/porzeczki-czerwone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/porzeczki-czerwone.html</loc>
+    <loc>https://proteiner.pl/produkty/jagody-borowki-lesne</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/jagody-borowki-lesne.html</loc>
+    <loc>https://proteiner.pl/produkty/pigwa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pigwa.html</loc>
+    <loc>https://proteiner.pl/produkty/figi-swieze</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/figi-swieze.html</loc>
+    <loc>https://proteiner.pl/produkty/daktyle-suszone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/daktyle-suszone.html</loc>
+    <loc>https://proteiner.pl/produkty/kokos-swiezy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kokos-swiezy.html</loc>
+    <loc>https://proteiner.pl/produkty/marakuja</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/marakuja.html</loc>
+    <loc>https://proteiner.pl/produkty/papaja</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/papaja.html</loc>
+    <loc>https://proteiner.pl/produkty/kasza-bulgur-sucha</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kasza-bulgur-sucha.html</loc>
+    <loc>https://proteiner.pl/produkty/kasza-kuskus-gotowana</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kasza-kuskus-gotowana.html</loc>
+    <loc>https://proteiner.pl/produkty/ryz-jalowcowy-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ryz-jalowcowy-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/ryz-dziki-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ryz-dziki-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/makaron-ryzowy-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makaron-ryzowy-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/makaron-swiderki-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makaron-swiderki-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/makaron-penne-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makaron-penne-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/makaron-spaghetti-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makaron-spaghetti-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/chleb-pszenny-razowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/chleb-pszenny-razowy.html</loc>
+    <loc>https://proteiner.pl/produkty/bulka-grahamka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/bulka-grahamka.html</loc>
+    <loc>https://proteiner.pl/produkty/bulka-pszenna</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/bulka-pszenna.html</loc>
+    <loc>https://proteiner.pl/produkty/precel</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/precel.html</loc>
+    <loc>https://proteiner.pl/produkty/pumpernikiel</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pumpernikiel.html</loc>
+    <loc>https://proteiner.pl/produkty/maka-pszenna-typ-500</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/maka-pszenna-typ-500.html</loc>
+    <loc>https://proteiner.pl/produkty/kasza-quinoa-gotowana</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kasza-quinoa-gotowana.html</loc>
+    <loc>https://proteiner.pl/produkty/ryz-arborio-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ryz-arborio-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/platki-musli-bez-cukru</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/platki-musli-bez-cukru.html</loc>
+    <loc>https://proteiner.pl/produkty/orzechy-nerkowca-prazone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/orzechy-nerkowca-prazone.html</loc>
+    <loc>https://proteiner.pl/produkty/pestki-slonecznika-luskane</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pestki-slonecznika-luskane.html</loc>
+    <loc>https://proteiner.pl/produkty/nasiona-lniane</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/nasiona-lniane.html</loc>
+    <loc>https://proteiner.pl/produkty/nasiona-konopi-luskane</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/nasiona-konopi-luskane.html</loc>
+    <loc>https://proteiner.pl/produkty/kokos-suszony-wiorki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kokos-suszony-wiorki.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-worcestershire</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-worcestershire.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-teriyaki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-teriyaki.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-holenderski</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-holenderski.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-musztardowo-miodowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-musztardowo-miodowy.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-pomidorowy-ketchupowy-styl</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-pomidorowy-ketchupowy-styl.html</loc>
+    <loc>https://proteiner.pl/produkty/hummus</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/hummus.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-tzatziki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-tzatziki.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-salatkowy-winegret</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-salatkowy-winegret.html</loc>
+    <loc>https://proteiner.pl/produkty/maslo-klarowane-ghee</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/maslo-klarowane-ghee.html</loc>
+    <loc>https://proteiner.pl/produkty/olej-lniany</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/olej-lniany.html</loc>
+    <loc>https://proteiner.pl/produkty/olej-sezamowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/olej-sezamowy.html</loc>
+    <loc>https://proteiner.pl/produkty/tluszcz-kaczy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/tluszcz-kaczy.html</loc>
+    <loc>https://proteiner.pl/produkty/miod</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/miod.html</loc>
+    <loc>https://proteiner.pl/produkty/dzem-truskawkowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/dzem-truskawkowy.html</loc>
+    <loc>https://proteiner.pl/produkty/croissant</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/croissant.html</loc>
+    <loc>https://proteiner.pl/produkty/sernik-kawalek</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sernik-kawalek.html</loc>
+    <loc>https://proteiner.pl/produkty/szarlotka-kawalek</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/szarlotka-kawalek.html</loc>
+    <loc>https://proteiner.pl/produkty/piernik</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/piernik.html</loc>
+    <loc>https://proteiner.pl/produkty/makowiec</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makowiec.html</loc>
+    <loc>https://proteiner.pl/produkty/chalwa-sezamowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/chalwa-sezamowa.html</loc>
+    <loc>https://proteiner.pl/produkty/babka-drozdzowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/babka-drozdzowa.html</loc>
+    <loc>https://proteiner.pl/produkty/krem-czekoladowy-nutella-styl</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/krem-czekoladowy-nutella-styl.html</loc>
+    <loc>https://proteiner.pl/produkty/ciastka-maslane</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ciastka-maslane.html</loc>
+    <loc>https://proteiner.pl/produkty/rocky-road</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/rocky-road.html</loc>
+    <loc>https://proteiner.pl/produkty/pizza-pepperoni</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pizza-pepperoni.html</loc>
+    <loc>https://proteiner.pl/produkty/pizza-hawajska</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pizza-hawajska.html</loc>
+    <loc>https://proteiner.pl/produkty/pizza-kebab</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pizza-kebab.html</loc>
+    <loc>https://proteiner.pl/produkty/bulka-z-parowka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/bulka-z-parowka.html</loc>
+    <loc>https://proteiner.pl/produkty/chrupki-kurze-kfc-styl</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/chrupki-kurze-kfc-styl.html</loc>
+    <loc>https://proteiner.pl/produkty/ryz-z-kurczakiem-box</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ryz-z-kurczakiem-box.html</loc>
+    <loc>https://proteiner.pl/produkty/frytki-z-serem-loaded</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/frytki-z-serem-loaded.html</loc>
+    <loc>https://proteiner.pl/produkty/nalesniki-z-dzemem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/nalesniki-z-dzemem.html</loc>
+    <loc>https://proteiner.pl/produkty/gofry-z-bita-smietana</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/gofry-z-bita-smietana.html</loc>
+    <loc>https://proteiner.pl/produkty/ramen-instant-zupka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ramen-instant-zupka.html</loc>
+    <loc>https://proteiner.pl/produkty/makaron-lazanki-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makaron-lazanki-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/makaron-fusilli-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makaron-fusilli-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/makaron-rigatoni-suchy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makaron-rigatoni-suchy.html</loc>
+    <loc>https://proteiner.pl/produkty/pierogi-ruskie-8-szt</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pierogi-ruskie-8-szt.html</loc>
+    <loc>https://proteiner.pl/produkty/pierogi-z-miesem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pierogi-z-miesem.html</loc>
+    <loc>https://proteiner.pl/produkty/kopytka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kopytka.html</loc>
+    <loc>https://proteiner.pl/produkty/kluski-slaskie</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kluski-slaskie.html</loc>
+    <loc>https://proteiner.pl/produkty/placki-ziemniaczane</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/placki-ziemniaczane.html</loc>
+    <loc>https://proteiner.pl/produkty/gulasz-wolowy-z-makaronem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/gulasz-wolowy-z-makaronem.html</loc>
+    <loc>https://proteiner.pl/produkty/makaron-z-serem-kraft-styl</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makaron-z-serem-kraft-styl.html</loc>
+    <loc>https://proteiner.pl/produkty/rosol-z-makaronem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/rosol-z-makaronem.html</loc>
+    <loc>https://proteiner.pl/produkty/pomidorowa-z-ryzem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pomidorowa-z-ryzem.html</loc>
+    <loc>https://proteiner.pl/produkty/pierogi-z-kapusta-i-grzybami</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pierogi-z-kapusta-i-grzybami.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-jarzynowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-jarzynowa.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-pomidorowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-pomidorowa.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-pieczarkowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-pieczarkowa.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-ogorkowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-ogorkowa.html</loc>
+    <loc>https://proteiner.pl/produkty/barszcz-czerwony</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/barszcz-czerwony.html</loc>
+    <loc>https://proteiner.pl/produkty/zurek</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zurek.html</loc>
+    <loc>https://proteiner.pl/produkty/kapusniak</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kapusniak.html</loc>
+    <loc>https://proteiner.pl/produkty/grochowka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/grochowka.html</loc>
+    <loc>https://proteiner.pl/produkty/flaki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/flaki.html</loc>
+    <loc>https://proteiner.pl/produkty/golabki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/golabki.html</loc>
+    <loc>https://proteiner.pl/produkty/bigos</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/bigos.html</loc>
+    <loc>https://proteiner.pl/produkty/pyzy-z-miesem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pyzy-z-miesem.html</loc>
+    <loc>https://proteiner.pl/produkty/nalesniki-z-twarogiem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/nalesniki-z-twarogiem.html</loc>
+    <loc>https://proteiner.pl/produkty/zapiekanka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zapiekanka.html</loc>
+    <loc>https://proteiner.pl/produkty/krupnik</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/krupnik.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-fasolowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-fasolowa.html</loc>
+    <loc>https://proteiner.pl/produkty/barszcz-bialy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/barszcz-bialy.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-szczawiowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-szczawiowa.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-cebulowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-cebulowa.html</loc>
+    <loc>https://proteiner.pl/produkty/krem-brokulowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/krem-brokulowy.html</loc>
+    <loc>https://proteiner.pl/produkty/minestrone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/minestrone.html</loc>
+    <loc>https://proteiner.pl/produkty/pho-zupa-ryzowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pho-zupa-ryzowa.html</loc>
+    <loc>https://proteiner.pl/produkty/whopper-styl</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/whopper-styl.html</loc>
+    <loc>https://proteiner.pl/produkty/kinder-bueno</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kinder-bueno.html</loc>
+    <loc>https://proteiner.pl/produkty/oreo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/oreo.html</loc>
+    <loc>https://proteiner.pl/produkty/mars</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mars.html</loc>
+    <loc>https://proteiner.pl/produkty/twix</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/twix.html</loc>
+    <loc>https://proteiner.pl/produkty/bounty</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/bounty.html</loc>
+    <loc>https://proteiner.pl/produkty/kit-kat</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kit-kat.html</loc>
+    <loc>https://proteiner.pl/produkty/tofu-naturalne</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/tofu-naturalne.html</loc>
+    <loc>https://proteiner.pl/produkty/falafel-smazony</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/falafel-smazony.html</loc>
+    <loc>https://proteiner.pl/produkty/burrito-z-kurczakiem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/burrito-z-kurczakiem.html</loc>
+    <loc>https://proteiner.pl/produkty/sushi-maki-z-lososiem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sushi-maki-z-lososiem.html</loc>
+    <loc>https://proteiner.pl/produkty/salatka-grecka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/salatka-grecka.html</loc>
+    <loc>https://proteiner.pl/produkty/salatka-cezar-z-kurczakiem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/salatka-cezar-z-kurczakiem.html</loc>
+    <loc>https://proteiner.pl/produkty/krokiety-z-miesem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/krokiety-z-miesem.html</loc>
+    <loc>https://proteiner.pl/produkty/pierogi-leniwe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pierogi-leniwe.html</loc>
+    <loc>https://proteiner.pl/produkty/cytryna</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/cytryna.html</loc>
+    <loc>https://proteiner.pl/produkty/bataty</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/bataty.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-cheddar</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-cheddar.html</loc>
+    <loc>https://proteiner.pl/produkty/kielbasa-biala</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kielbasa-biala.html</loc>
+    <loc>https://proteiner.pl/produkty/kaszanka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kaszanka.html</loc>
+    <loc>https://proteiner.pl/produkty/losos-wedzony</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/losos-wedzony.html</loc>
+    <loc>https://proteiner.pl/produkty/mcflurry-oreo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mcflurry-oreo.html</loc>
+    <loc>https://proteiner.pl/produkty/pad-thai-z-kurczakiem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pad-thai-z-kurczakiem.html</loc>
+    <loc>https://proteiner.pl/produkty/curry-kurczak</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/curry-kurczak.html</loc>
+    <loc>https://proteiner.pl/produkty/risotto-z-grzybami</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/risotto-z-grzybami.html</loc>
+    <loc>https://proteiner.pl/produkty/omlet</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/omlet.html</loc>
+    <loc>https://proteiner.pl/produkty/jajecznica-na-masle</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/jajecznica-na-masle.html</loc>
+    <loc>https://proteiner.pl/produkty/herbatniki-digestive</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/herbatniki-digestive.html</loc>
+    <loc>https://proteiner.pl/produkty/prince-polo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/prince-polo.html</loc>
+    <loc>https://proteiner.pl/produkty/lody-magnum-classic</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/lody-magnum-classic.html</loc>
+    <loc>https://proteiner.pl/produkty/cheesecake</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/cheesecake.html</loc>
+    <loc>https://proteiner.pl/produkty/tiramisu</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/tiramisu.html</loc>
+    <loc>https://proteiner.pl/produkty/brownie-czekoladowe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/brownie-czekoladowe.html</loc>
+    <loc>https://proteiner.pl/produkty/donut-z-lukrem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/donut-z-lukrem.html</loc>
+    <loc>https://proteiner.pl/produkty/shawarma-w-picie</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/shawarma-w-picie.html</loc>
+    <loc>https://proteiner.pl/produkty/quesadilla-z-kurczakiem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/quesadilla-z-kurczakiem.html</loc>
+    <loc>https://proteiner.pl/produkty/tacos-z-wolowina</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/tacos-z-wolowina.html</loc>
+    <loc>https://proteiner.pl/produkty/kielbasa-mysliwska</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kielbasa-mysliwska.html</loc>
+    <loc>https://proteiner.pl/produkty/pasztetowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pasztetowa.html</loc>
+    <loc>https://proteiner.pl/produkty/poledwica-lososiowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/poledwica-lososiowa.html</loc>
+    <loc>https://proteiner.pl/produkty/pstrag-wedzony</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pstrag-wedzony.html</loc>
+    <loc>https://proteiner.pl/produkty/szprotki-w-oleju</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/szprotki-w-oleju.html</loc>
+    <loc>https://proteiner.pl/produkty/sledz-po-japonsku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sledz-po-japonsku.html</loc>
+    <loc>https://proteiner.pl/produkty/krewetki-smazone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/krewetki-smazone.html</loc>
+    <loc>https://proteiner.pl/produkty/mieso-mielone-wolowe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mieso-mielone-wolowe.html</loc>
+    <loc>https://proteiner.pl/produkty/biftek-wolowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/biftek-wolowy.html</loc>
+    <loc>https://proteiner.pl/produkty/antrykot-wolowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/antrykot-wolowy.html</loc>
+    <loc>https://proteiner.pl/produkty/szynka-gotowana</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/szynka-gotowana.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-cottage</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-cottage.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-emmental</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-emmental.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-provolone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-provolone.html</loc>
+    <loc>https://proteiner.pl/produkty/ser-wedzony</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ser-wedzony.html</loc>
+    <loc>https://proteiner.pl/produkty/mleko-bez-laktozy-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mleko-bez-laktozy-2.html</loc>
+    <loc>https://proteiner.pl/produkty/twarog-sernikowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/twarog-sernikowy.html</loc>
+    <loc>https://proteiner.pl/produkty/jogurt-kokosowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/jogurt-kokosowy.html</loc>
+    <loc>https://proteiner.pl/produkty/pomidorki-koktajlowe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pomidorki-koktajlowe.html</loc>
+    <loc>https://proteiner.pl/produkty/papryka-zolta</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/papryka-zolta.html</loc>
+    <loc>https://proteiner.pl/produkty/papryka-zielona</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/papryka-zielona.html</loc>
+    <loc>https://proteiner.pl/produkty/kalarepa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kalarepa.html</loc>
+    <loc>https://proteiner.pl/produkty/szczypiorek</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/szczypiorek.html</loc>
+    <loc>https://proteiner.pl/produkty/bazylia-swieza</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/bazylia-swieza.html</loc>
+    <loc>https://proteiner.pl/produkty/roszponka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/roszponka.html</loc>
+    <loc>https://proteiner.pl/produkty/kapusta-wloska</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kapusta-wloska.html</loc>
+    <loc>https://proteiner.pl/produkty/korniszony</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/korniszony.html</loc>
+    <loc>https://proteiner.pl/produkty/pieczarki-marynowane</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pieczarki-marynowane.html</loc>
+    <loc>https://proteiner.pl/produkty/limonka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/limonka.html</loc>
+    <loc>https://proteiner.pl/produkty/figi-suszone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/figi-suszone.html</loc>
+    <loc>https://proteiner.pl/produkty/suszone-morele</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/suszone-morele.html</loc>
+    <loc>https://proteiner.pl/produkty/chleb-orkiszowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/chleb-orkiszowy.html</loc>
+    <loc>https://proteiner.pl/produkty/chleb-gryczany</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/chleb-gryczany.html</loc>
+    <loc>https://proteiner.pl/produkty/bulka-kajzerka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/bulka-kajzerka.html</loc>
+    <loc>https://proteiner.pl/produkty/bulka-wiejska</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/bulka-wiejska.html</loc>
+    <loc>https://proteiner.pl/produkty/platki-kukurydziane</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/platki-kukurydziane.html</loc>
+    <loc>https://proteiner.pl/produkty/otreby-pszenne</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/otreby-pszenne.html</loc>
+    <loc>https://proteiner.pl/produkty/ryz-do-sushi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ryz-do-sushi.html</loc>
+    <loc>https://proteiner.pl/produkty/wafle-ryzowe-naturalne</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/wafle-ryzowe-naturalne.html</loc>
+    <loc>https://proteiner.pl/produkty/kotlet-de-volaille</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kotlet-de-volaille.html</loc>
+    <loc>https://proteiner.pl/produkty/sznycel-po-wiedensku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sznycel-po-wiedensku.html</loc>
+    <loc>https://proteiner.pl/produkty/zrazy-zawijane</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zrazy-zawijane.html</loc>
+    <loc>https://proteiner.pl/produkty/rolada-wieprzowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/rolada-wieprzowa.html</loc>
+    <loc>https://proteiner.pl/produkty/klopsiki-w-sosie-pomidorowym</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/klopsiki-w-sosie-pomidorowym.html</loc>
+    <loc>https://proteiner.pl/produkty/kotlety-mielone-drobiowe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kotlety-mielone-drobiowe.html</loc>
+    <loc>https://proteiner.pl/produkty/tatar-wolowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/tatar-wolowy.html</loc>
+    <loc>https://proteiner.pl/produkty/salatka-jarzynowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/salatka-jarzynowa.html</loc>
+    <loc>https://proteiner.pl/produkty/salatka-z-tunczykiem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/salatka-z-tunczykiem.html</loc>
+    <loc>https://proteiner.pl/produkty/salatka-waldorf</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/salatka-waldorf.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-kalafiorowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-kalafiorowa.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-dyniowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-dyniowa.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-krem-szpinakowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-krem-szpinakowy.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-grzybowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-grzybowa.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-z-soczewicy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-z-soczewicy.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-pomidorowa-kremowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-pomidorowa-kremowa.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-gulaszowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-gulaszowa.html</loc>
+    <loc>https://proteiner.pl/produkty/zupa-tom-yum</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zupa-tom-yum.html</loc>
+    <loc>https://proteiner.pl/produkty/makaron-udon</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makaron-udon.html</loc>
+    <loc>https://proteiner.pl/produkty/gnocchi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/gnocchi.html</loc>
+    <loc>https://proteiner.pl/produkty/ravioli-z-ricotta</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ravioli-z-ricotta.html</loc>
+    <loc>https://proteiner.pl/produkty/tortellini-z-miesem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/tortellini-z-miesem.html</loc>
+    <loc>https://proteiner.pl/produkty/lasagne-warzywna</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/lasagne-warzywna.html</loc>
+    <loc>https://proteiner.pl/produkty/makaron-chinski-gotowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/makaron-chinski-gotowy.html</loc>
+    <loc>https://proteiner.pl/produkty/filet-o-fish-styl</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/filet-o-fish-styl.html</loc>
+    <loc>https://proteiner.pl/produkty/cheeseburger-podwojny</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/cheeseburger-podwojny.html</loc>
+    <loc>https://proteiner.pl/produkty/pizza-quattro-formaggi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pizza-quattro-formaggi.html</loc>
+    <loc>https://proteiner.pl/produkty/pizza-capricciosa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pizza-capricciosa.html</loc>
+    <loc>https://proteiner.pl/produkty/lion</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/lion.html</loc>
+    <loc>https://proteiner.pl/produkty/milky-way</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/milky-way.html</loc>
+    <loc>https://proteiner.pl/produkty/3-bit</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/3-bit.html</loc>
+    <loc>https://proteiner.pl/produkty/delicje</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/delicje.html</loc>
+    <loc>https://proteiner.pl/produkty/biszkopty</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/biszkopty.html</loc>
+    <loc>https://proteiner.pl/produkty/galaretka-owocowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/galaretka-owocowa.html</loc>
+    <loc>https://proteiner.pl/produkty/m-m-s</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/m-m-s.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-sriracha</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-sriracha.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-sweet-chilli</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-sweet-chilli.html</loc>
+    <loc>https://proteiner.pl/produkty/guacamole</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/guacamole.html</loc>
+    <loc>https://proteiner.pl/produkty/salsa-meksykanska</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/salsa-meksykanska.html</loc>
+    <loc>https://proteiner.pl/produkty/sos-curry-pasta</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/sos-curry-pasta.html</loc>
+    <loc>https://proteiner.pl/produkty/pistacje-prazone-solone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pistacje-prazone-solone.html</loc>
+    <loc>https://proteiner.pl/produkty/orzechy-laskowe-prazone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/orzechy-laskowe-prazone.html</loc>
+    <loc>https://proteiner.pl/produkty/krakersy-solone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/krakersy-solone.html</loc>
+    <loc>https://proteiner.pl/produkty/paluszki-slone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/paluszki-slone.html</loc>
+    <loc>https://proteiner.pl/produkty/chipsy-nachos</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/chipsy-nachos.html</loc>
+    <loc>https://proteiner.pl/produkty/salatka-z-makaronem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/salatka-z-makaronem.html</loc>
+    <loc>https://proteiner.pl/produkty/ryba-w-panierce</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ryba-w-panierce.html</loc>
+    <loc>https://proteiner.pl/produkty/kotlet-z-piersi-indyka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kotlet-z-piersi-indyka.html</loc>
+    <loc>https://proteiner.pl/produkty/nalesniki-z-serem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/nalesniki-z-serem.html</loc>
+    <loc>https://proteiner.pl/produkty/placki-po-wegiersku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/placki-po-wegiersku.html</loc>
+    <loc>https://proteiner.pl/produkty/kasza-gryczana-z-jajkiem</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/kasza-gryczana-z-jajkiem.html</loc>
+    <loc>https://proteiner.pl/produkty/ryz-z-warzywami</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ryz-z-warzywami.html</loc>
+    <loc>https://proteiner.pl/produkty/ziemniaki-gotowane</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/ziemniaki-gotowane.html</loc>
+    <loc>https://proteiner.pl/produkty/surowka-z-marchewki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/surowka-z-marchewki.html</loc>
+    <loc>https://proteiner.pl/produkty/surowka-z-bialej-kapusty</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/surowka-z-bialej-kapusty.html</loc>
+    <loc>https://proteiner.pl/produkty/mizeria</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/mizeria.html</loc>
+    <loc>https://proteiner.pl/produkty/krem-czekoladowy-milka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/krem-czekoladowy-milka.html</loc>
+    <loc>https://proteiner.pl/produkty/wafel-tortowy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/wafel-tortowy.html</loc>
+    <loc>https://proteiner.pl/produkty/karkowka-pieczona</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/karkowka-pieczona.html</loc>
+    <loc>https://proteiner.pl/produkty/cwiartka-kurczaka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/cwiartka-kurczaka.html</loc>
+    <loc>https://proteiner.pl/produkty/salceson</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/salceson.html</loc>
+    <loc>https://proteiner.pl/produkty/pasztet-rzymski</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pasztet-rzymski.html</loc>
+    <loc>https://proteiner.pl/produkty/czekolada-100</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

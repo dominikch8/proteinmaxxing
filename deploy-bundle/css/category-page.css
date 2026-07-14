@@ -1,0 +1,231 @@
+.category-page .category-main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.category-breadcrumb {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+.category-breadcrumb a {
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.category-hero {
+    margin-bottom: 24px;
+}
+
+.category-count-badge {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--accent);
+    background: rgba(37, 99, 235, 0.1);
+}
+
+.category-editorial {
+    margin-bottom: 28px;
+}
+
+.category-editorial h2 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+}
+
+.category-tips-list {
+    margin: 14px 0 16px;
+    padding-left: 1.25rem;
+    color: var(--text-dark);
+    line-height: 1.55;
+}
+
+.category-tips-list li {
+    margin-bottom: 6px;
+}
+
+.category-cta-links {
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+.category-cta-links a {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.category-cta-links a:hover {
+    text-decoration: underline;
+}
+
+.category-top-products {
+    margin-bottom: 32px;
+    padding: 20px 22px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-soft);
+    background: var(--calc-tile-bg, var(--white));
+}
+
+.category-top-products h2 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.category-top-lead {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+}
+
+.category-top-list {
+    list-style: none;
+    display: grid;
+    gap: 8px;
+}
+
+@media (min-width: 640px) {
+    .category-top-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.category-top-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-soft);
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.category-top-link:hover {
+    background: var(--surface-hover);
+    border-color: var(--accent-soft);
+}
+
+.category-top-emoji {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.category-top-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.category-top-name {
+    font-weight: 700;
+    font-size: 0.92rem;
+}
+
+.category-top-meta {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+.category-products-section {
+    margin-bottom: 36px;
+}
+
+.category-products-section > h2 {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+.category-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+    align-items: stretch;
+}
+
+.category-toolbar .search-bar {
+    flex: 1 1 220px;
+    margin: 0;
+}
+
+.category-toolbar .pm-category-select {
+    flex: 0 1 200px;
+    margin: 0;
+}
+
+.category-faq {
+    margin-bottom: 32px;
+    padding-top: 8px;
+}
+
+.category-faq h2 {
+    font-size: 1.15rem;
+    margin-bottom: 16px;
+}
+
+.category-faq-item {
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.category-faq-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.category-faq-item h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.category-faq-item p {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+}
+
+.category-nav-other {
+    margin-bottom: 28px;
+}
+
+.category-nav-other-title {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.category-nav-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.category-nav-chip {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-dark);
+    background: var(--calc-tile-bg, var(--white));
+    border: 1px solid var(--border-soft);
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.category-nav-chip:hover {
+    border-color: var(--accent-soft);
+    background: var(--surface-hover);
+}

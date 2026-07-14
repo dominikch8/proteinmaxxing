@@ -15,13 +15,25 @@ jobs:
     - name: Pobranie kodu
       uses: actions/checkout@v4
 
+    - name: Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: npm
+
+    - name: Zależności
+      run: npm ci
+
+    - name: Build deploy-bundle
+      run: node scripts/build-deploy.mjs
+
     - name: Sync plików przez FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./
+        local-dir: ./deploy-bundle/
         server-dir: /public_html/proteiner.pl/
         log-level: verbose
         exclude: |
@@ -29,21 +41,24 @@ jobs:
           **/.github/**
           **/node_modules/**
           **/.cursor/**
-          **/deploy-bundle/**
-          **/scripts/**
-          **/package.json
-          **/package-lock.json
+          **/sw.js
+          **/admin-*
+          **/js/admin-*
 
-    - name: Weryfikacja — cookie-banner.js na serwerze
+    - name: Weryfikacja deployu
       run: |
-        sleep 15
-        CODE=$(curl -s -o /dev/null -w "%{http_code}" "https://proteiner.pl/js/cookie-banner.js" || true)
-        echo "HTTP $CODE dla cookie-banner.js"
-        if [ "$CODE" != "200" ]; then
-          echo "::error::Deploy FTP zakończył się, ale cookie-banner.js nadal nie jest na serwerze (HTTP $CODE)."
-          echo "Sprawdź ścieżkę server-dir w workflow lub wgraj ręcznie folder deploy-bundle/."
-          exit 1
-        fi
+        sleep 20
+        for url in \
+          "https://proteiner.pl/js/cookie-banner.js" \
+          "https://proteiner.pl/js/products-lite.js" \
+          "https://proteiner.pl/produkty/czekolada-100"; do
+          CODE=$(curl -s -o /dev/null -w "%{http_code}" "$url" || true)
+          echo "HTTP $CODE → $url"
+          if [ "$CODE" != "200" ]; then
+            echo "::error::Weryfikacja nie powiodła się dla $url (HTTP $CODE)"
+            exit 1
+          fi
+        done
 
   redirect-proteinmaxxing:
     name: Przekierowanie proteinmaxxing.pl

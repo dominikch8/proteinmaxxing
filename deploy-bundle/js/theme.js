@@ -58,9 +58,64 @@
         applyTheme(getStoredTheme());
     }
 
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', mountThemeSwitch);
-    } else {
+    function mountMobileNav() {
+        const nav = document.querySelector('.site-header nav');
+        const links = nav?.querySelector('.nav-links');
+        if (!nav || !links || nav.querySelector('.nav-toggle')) return;
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'nav-toggle';
+        btn.setAttribute('aria-label', 'Otwórz menu');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-controls', 'site-nav-links');
+        btn.innerHTML = '<span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span>';
+
+        links.id = 'site-nav-links';
+
+        const backdrop = document.createElement('div');
+        backdrop.className = 'nav-backdrop';
+        backdrop.hidden = true;
+
+        const close = () => {
+            nav.classList.remove('nav-open');
+            btn.setAttribute('aria-expanded', 'false');
+            btn.setAttribute('aria-label', 'Otwórz menu');
+            backdrop.hidden = true;
+            document.body.classList.remove('nav-menu-open');
+        };
+
+        const open = () => {
+            nav.classList.add('nav-open');
+            btn.setAttribute('aria-expanded', 'true');
+            btn.setAttribute('aria-label', 'Zamknij menu');
+            backdrop.hidden = false;
+            document.body.classList.add('nav-menu-open');
+        };
+
+        btn.addEventListener('click', () => {
+            if (nav.classList.contains('nav-open')) close();
+            else open();
+        });
+
+        backdrop.addEventListener('click', close);
+        links.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') close();
+        });
+
+        nav.insertBefore(btn, links);
+        document.body.appendChild(backdrop);
+    }
+
+    function initUi() {
         mountThemeSwitch();
+        mountMobileNav();
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initUi);
+    } else {
+        initUi();
     }
 })();

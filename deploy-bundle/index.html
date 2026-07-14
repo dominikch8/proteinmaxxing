@@ -34,7 +34,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/themes.css">
     <link rel="stylesheet" href="css/site.css">
-<link rel="stylesheet" href="css/theme-switch.css">
+    <link rel="stylesheet" href="css/theme-switch.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebApplication",
+                "name": "Proteiner — kalkulator dietetyczny",
+                "url": "https://proteiner.pl/",
+                "applicationCategory": "HealthApplication",
+                "operatingSystem": "Any",
+                "browserRequirements": "Requires JavaScript",
+                "inLanguage": "pl",
+                "description": "Kalkulator TDEE, BMI, makroskładników, wody oraz orientacyjnego zapotrzebowania na witaminy i minerały.",
+                "offers": { "@type": "Offer", "price": "0", "priceCurrency": "PLN" },
+                "featureList": [
+                    "Kalkulator TDEE i BMI",
+                    "Szacowanie białka, tłuszczów i węglowodanów",
+                    "Baza ponad 500 produktów spożywczych",
+                    "Porównywarka makro produktów"
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Jak obliczyć dzienne zapotrzebowanie kaloryczne?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Proteiner liczy BMR wzorami Mifflina-St Jeora, mnoży przez współczynnik aktywności i dostosowuje wynik do celu: redukcji, masy lub utrzymania wagi."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Ile białka powinienem jeść dziennie?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kalkulator sugeruje około 1,6–2,0 g białka na kg masy ciała w zależności od celu sylwetkowego i poziomu aktywności."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Czy Proteiner zastępuje poradę dietetyka?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nie. Proteiner to narzędzie edukacyjne do szacowania zapotrzebowania i porównywania produktów. Przy chorobach przewlekłych skonsultuj plan z lekarzem lub dietetykiem."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -169,23 +222,36 @@
                         <span class="calc-protein-maxxing-cta-arrow" aria-hidden="true">→</span>
                     </a>
 
-                    <div class="section-title">Zapotrzebowanie na Witaminy i Minerały</div>
-                    <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Składnik</th>
-                                    <th>Zalecane codzienne spożycie (RDA/AI)</th>
-                                    <th>Główne źródła w diecie</th>
-                                </tr>
-                            </thead>
-                            <tbody id="microTableBody">
-                                <tr><td>Witamina C</td><td>75–90 mg</td><td>Papryka, cytrusy, brokuły</td></tr>
-                                <tr><td>Wapń</td><td>1000 mg</td><td>Nabiał, tofu, zielone warzywa</td></tr>
-                                <tr><td>Żelazo</td><td>8–18 mg</td><td>Mięso, rośliny strączkowe, kasze</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <details class="micro-collapse" id="microCollapse">
+                        <summary class="micro-collapse-bar">
+                            <span class="micro-collapse-icon" aria-hidden="true">🧬</span>
+                            <span class="micro-collapse-text">
+                                <span class="micro-collapse-title">Zapotrzebowanie na witaminy i minerały</span>
+                                <span class="micro-collapse-sub" id="microCollapseSub">Orientacyjne RDA/AI — rozwiń pełną tabelę</span>
+                            </span>
+                            <span class="micro-collapse-badge" id="microCollapseBadge" aria-hidden="true">28</span>
+                            <span class="micro-collapse-chevron" aria-hidden="true"></span>
+                        </summary>
+                        <div class="micro-collapse-panel">
+                            <p class="micro-collapse-note">Wartości zależą od płci i wieku — poniżej normy dla Twojego profilu z kalkulatora.</p>
+                            <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Składnik</th>
+                                            <th>Zalecane codzienne spożycie (RDA/AI)</th>
+                                            <th>Główne źródła w diecie</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="microTableBody">
+                                        <tr><td>Witamina C</td><td>75–90 mg</td><td>Papryka, cytrusy, brokuły</td></tr>
+                                        <tr><td>Wapń</td><td>1000 mg</td><td>Nabiał, tofu, zielone warzywa</td></tr>
+                                        <tr><td>Żelazo</td><td>8–18 mg</td><td>Mięso, rośliny strączkowe, kasze</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </details>
 
                     <div class="shopping-box">
                         <h3 id="shopTitle">Produkty z bazy pod Twój cel</h3>
@@ -277,10 +343,9 @@
         </nav>
         <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>
-<script src="js/products-data-raw.js"></script>
-    <script src="js/product-utils.js"></script>
-    <script src="js/products-data.js"></script>
-    <script src="js/calculator.js"></script>
+<script src="js/product-utils.js"></script>
+<script src="js/products-loader.js"></script>
+<script src="js/calculator.js"></script>
     <link rel="stylesheet" href="css/cookie-consent.css">
     <script src="js/cookie-banner.js"></script>
 <script src="js/theme.js"></script>

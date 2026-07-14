@@ -174,51 +174,100 @@
             padding: 0 24px;
         }
 
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            width: 44px;
+            height: 44px;
+            padding: 10px;
+            border: 1px solid var(--border-soft);
+            border-radius: 12px;
+            background: var(--surface-elevated);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .nav-toggle-bar {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: var(--text-dark);
+            border-radius: 2px;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .nav-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.45);
+            z-index: 99;
+        }
+
+        body.nav-menu-open { overflow: hidden; }
+
         @media (max-width: 960px) {
             .page-container { margin-top: 24px; }
             nav {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto auto;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: space-between;
                 height: auto;
-                padding: 8px 8px 10px;
-                gap: 6px;
-                justify-content: stretch;
+                padding: 8px 12px 10px;
+                gap: 10px;
             }
             .logo {
-                grid-row: 1;
-                width: 100%;
-                justify-content: center;
-            }
-            .nav-links {
-                grid-row: 2;
-                width: 100%;
-                max-width: 100%;
-                min-width: 0;
-                overflow-x: auto;
-                overflow-y: visible;
-                -webkit-overflow-scrolling: touch;
+                width: auto;
                 justify-content: flex-start;
-                scroll-padding-inline: 8px;
-                border-top: 1px solid var(--border-soft);
-                padding: 10px 8px 15px;
             }
-            .nav-links button, .nav-links a.nav-link { padding: 7px 8px 4px; font-size: 0.8rem; }
+            .nav-toggle { display: inline-flex; }
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: min(320px, 88vw);
+                height: 100vh;
+                height: 100dvh;
+                margin: 0;
+                padding: 72px 16px 24px;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 4px;
+                background: var(--header-bg);
+                border-left: 1px solid var(--header-border);
+                box-shadow: -12px 0 40px rgba(15, 23, 42, 0.18);
+                transform: translateX(105%);
+                transition: transform 0.25s ease;
+                z-index: 101;
+                overflow-y: auto;
+            }
+            .site-header nav.nav-open .nav-links {
+                transform: translateX(0);
+            }
+            .nav-links li { width: 100%; }
+            .nav-links button, .nav-links a.nav-link {
+                display: block;
+                width: 100%;
+                padding: 14px 16px;
+                font-size: 1rem;
+                border-radius: 12px;
+            }
+            .site-header nav.nav-open .nav-toggle-bar:nth-child(1) {
+                transform: translateY(7px) rotate(45deg);
+            }
+            .site-header nav.nav-open .nav-toggle-bar:nth-child(2) { opacity: 0; }
+            .site-header nav.nav-open .nav-toggle-bar:nth-child(3) {
+                transform: translateY(-7px) rotate(-45deg);
+            }
         }
 
         @media (max-width: 480px) {
-            nav { padding: 6px 6px 5px; gap: 5px; }
+            nav { padding: 6px 10px 8px; }
             .logo { font-size: 1.2rem; gap: 10px; }
             .logo-mark { width: 34px; height: 34px; }
             .logo span { font-size: 1.15rem; }
-            .nav-links {
-                gap: 2px;
-                padding: 9px 6px 15px;
-            }
-            .nav-links button, .nav-links a.nav-link {
-                padding: 6px 7px 4px;
-                font-size: 0.72rem;
-            }
         }
 
         .main-content {
@@ -651,6 +700,112 @@
         .water-num { font-size: 2rem; font-weight: 800; color: var(--accent-soft); white-space: nowrap; letter-spacing: -0.03em; }
         .water-text { font-size: 0.88rem; color: var(--text-muted); }
 
+        .micro-collapse {
+            margin: 0 0 28px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--calc-tile-border);
+            background: var(--calc-tile-bg);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .micro-collapse-bar {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 20px;
+            cursor: pointer;
+            list-style: none;
+            user-select: none;
+            transition: background var(--transition);
+        }
+
+        .micro-collapse-bar::-webkit-details-marker { display: none; }
+
+        .micro-collapse-bar::marker { content: ''; }
+
+        .micro-collapse-bar:hover,
+        .micro-collapse[open] .micro-collapse-bar {
+            background: var(--calc-tile-bg-emphasis);
+        }
+
+        .micro-collapse-icon {
+            font-size: 1.5rem;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .micro-collapse-text {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .micro-collapse-title {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--text-dark);
+            letter-spacing: -0.02em;
+        }
+
+        .micro-collapse-sub {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            line-height: 1.35;
+        }
+
+        .micro-collapse-badge {
+            flex-shrink: 0;
+            min-width: 2rem;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: rgba(37, 99, 235, 0.12);
+            color: var(--accent);
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .micro-collapse-chevron {
+            flex-shrink: 0;
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid var(--text-muted);
+            border-bottom: 2px solid var(--text-muted);
+            transform: rotate(45deg);
+            margin-top: -4px;
+            transition: transform 0.25s ease, margin 0.25s ease;
+        }
+
+        .micro-collapse[open] .micro-collapse-chevron {
+            transform: rotate(-135deg);
+            margin-top: 4px;
+        }
+
+        .micro-collapse-panel {
+            padding: 0 20px 20px;
+            border-top: 1px solid var(--border-soft);
+            animation: microPanelIn 0.28s ease;
+        }
+
+        @keyframes microPanelIn {
+            from { opacity: 0; transform: translateY(-6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .micro-collapse-note {
+            margin: 14px 0 12px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.45;
+        }
+
+        .micro-collapse .table-wrapper {
+            margin: 0;
+        }
+
         .calc-protein-maxxing-cta {
             display: flex;
             align-items: center;
@@ -1058,6 +1213,31 @@
         [data-theme='dark'] .product-card:hover {
             box-shadow: var(--shadow-lg), 0 0 0 1px rgba(244, 63, 94, 0.25);
             border-color: rgba(244, 63, 94, 0.4);
+        }
+
+        /* Dieta → Wszystkie produkty: lekki fioletowo-bordowy tint kafelków */
+        #baza-prod .products-grid .product-card {
+            background: linear-gradient(160deg, #fcf9fb 0%, #faf6f9 55%, #f9f5fa 100%);
+            border-color: rgba(92, 36, 68, 0.11);
+            box-shadow: var(--shadow-card), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+        }
+
+        #baza-prod .products-grid .product-card-link:hover .product-card,
+        #baza-prod .products-grid .product-card:hover {
+            background: linear-gradient(160deg, #fbf6f9 0%, #f9f3f8 100%);
+            border-color: rgba(102, 0, 51, 0.2);
+        }
+
+        [data-theme='dark'] #baza-prod .products-grid .product-card {
+            background: linear-gradient(160deg, rgba(56, 32, 50, 0.58) 0%, rgba(38, 26, 46, 0.68) 100%);
+            border-color: rgba(200, 140, 170, 0.14);
+            box-shadow: var(--shadow-card);
+        }
+
+        [data-theme='dark'] #baza-prod .products-grid .product-card-link:hover .product-card,
+        [data-theme='dark'] #baza-prod .products-grid .product-card:hover {
+            background: linear-gradient(160deg, rgba(66, 38, 58, 0.72) 0%, rgba(48, 32, 54, 0.78) 100%);
+            border-color: rgba(240, 160, 160, 0.26);
         }
 
         .prod-header {
@@ -1887,6 +2067,8 @@
             .page-container { margin: 0; padding: 0; }
             .main-content { border: none; box-shadow: none; padding: 0; }
             .result-box { display: block !important; }
+            .micro-collapse-bar { display: none !important; }
+            .micro-collapse-panel { display: block !important; padding: 0; border: none; }
         }
     
         .nav-links a.nav-link {
@@ -2057,6 +2239,19 @@
 
         .calc-intro-bottom {
             margin-top: 32px;
+        }
+
+        .dieta-intro-bottom {
+            margin-top: 32px;
+        }
+
+        .poradnik-intro-block {
+            margin-bottom: 24px;
+        }
+
+        .poradnik-intro-block + .poradnik-nutrient-grid,
+        .poradnik-intro-block + h2 {
+            margin-top: 8px;
         }
 
         .calc-methodology {
