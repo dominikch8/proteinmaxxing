@@ -965,3 +965,24 @@
         grid-template-columns: 1fr;
     }
 }
+
+.compare-share-wrap {
+    margin: 0 0 16px;
+    text-align: center;
+}
+
+.compare-copy-link-btn {
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent, #660000);
+    background: transparent;
+    border: 1px solid currentColor;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.compare-copy-link-btn:hover {
+    background: color-mix(in srgb, var(--accent, #660000) 8%, transparent);
+}

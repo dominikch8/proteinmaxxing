@@ -19,6 +19,7 @@ import {
     buildCookieConsentBody,
     buildThemeStylesheets,
     buildThemeBodyScript,
+    buildFontLinks,
 } from './site-head-assets.mjs';
 import { buildLogoMark } from './site-logo-html.mjs';
 
@@ -147,9 +148,7 @@ ${buildAdSenseHead()}
     <meta property="og:url" content="${canonical}">
 ${buildFaviconLinks(PREFIX)}
 ${buildSocialImageMeta(PREFIX, 'images/og-home.jpg')}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+${buildFontLinks(PREFIX)}
 ${buildThemeStylesheets(PREFIX)}
     <link rel="stylesheet" href="${PREFIX}css/category-page.css">
 </head>
@@ -231,9 +230,8 @@ ${buildHealthDisclaimer(PREFIX, { compact: true })}
     </div>
 
 ${buildSiteFooter(PREFIX)}
-    <script src="${PREFIX}js/products-data-raw.js"></script>
     <script src="${PREFIX}js/product-utils.js"></script>
-    <script src="${PREFIX}js/products-data.js"></script>
+    <script src="${PREFIX}js/products-loader.js"></script>
     <script src="${PREFIX}js/category-page.js"></script>
 ${buildCookieConsentBody(PREFIX)}
 ${buildThemeBodyScript(PREFIX)}

@@ -1,4 +1,4 @@
-(function () {
+(async function () {
     const COMPARE_METRICS = [
         { key: 'kcal', label: 'Kalorie', unit: 'kcal', icon: '🔥', decimals: 0, higherIsBetter: false, hint: 'mniej = lepiej' },
         { key: 'protein', label: 'Białko', unit: 'g', icon: '💪', decimals: 1, higherIsBetter: true, hint: 'więcej = lepiej' },
@@ -45,7 +45,11 @@
     ];
 
 
-    if (typeof productsDatabase === 'undefined') return;
+    if (typeof ensureProductsDatabase === 'function') {
+        await ensureProductsDatabase();
+    } else if (typeof productsDatabase === 'undefined') {
+        return;
+    }
 
     const state = { a: null, b: null };
 
@@ -72,6 +76,8 @@
     const thA = document.getElementById('compareThA');
     const thB = document.getElementById('compareThB');
     const swapBtn = document.getElementById('compareSwapBtn');
+    const shareWrap = document.getElementById('compareShareWrap');
+    const copyLinkBtn = document.getElementById('compareCopyLinkBtn');
 
     function escapeHtml(s) {
         return String(s)
@@ -256,6 +262,16 @@
         hideSuggestions(slotKey);
         syncUrl();
         renderComparison();
+    }
+
+    function buildCompareShareUrl() {
+        const params = new URLSearchParams();
+        if (state.a?.slug) params.set('a', state.a.slug);
+        if (state.b?.slug) params.set('b', state.b.slug);
+        const qs = params.toString();
+        return qs
+            ? `${window.location.origin}${window.location.pathname}?${qs}`
+            : `${window.location.origin}${window.location.pathname}`;
     }
 
     function syncUrl() {
@@ -500,9 +516,11 @@
         if (!a || !b) {
             if (emptyEl) emptyEl.hidden = false;
             if (sectionEl) sectionEl.hidden = true;
+            if (shareWrap) shareWrap.hidden = true;
             return;
         }
         if (emptyEl) emptyEl.hidden = true;
+        if (shareWrap) shareWrap.hidden = false;
         if (sectionEl) {
             sectionEl.hidden = false;
             sectionEl.classList.add('compare-chart-section--mounted');
@@ -556,6 +574,20 @@
         const tmp = state.a;
         setProduct('a', state.b);
         setProduct('b', tmp);
+    });
+
+    copyLinkBtn?.addEventListener('click', async () => {
+        const url = buildCompareShareUrl();
+        try {
+            await navigator.clipboard.writeText(url);
+            const prev = copyLinkBtn.textContent;
+            copyLinkBtn.textContent = 'Skopiowano link ✓';
+            setTimeout(() => {
+                copyLinkBtn.textContent = prev;
+            }, 2000);
+        } catch {
+            window.prompt('Skopiuj link do porównania:', url);
+        }
     });
 
     bindSlot('a');

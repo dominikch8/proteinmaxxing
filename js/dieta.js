@@ -63,6 +63,18 @@ function buildBazaProductCardHtml(p) {
                     </a>`;
         }
 
+        function debounce(fn, delayMs) {
+            let timer;
+            return function debounced(...args) {
+                clearTimeout(timer);
+                timer = setTimeout(() => fn.apply(this, args), delayMs);
+            };
+        }
+
+        window.debouncedBazaSearchInput = debounce(() => {
+            if (typeof onDietaCategoryChange === 'function') onDietaCategoryChange('baza');
+        }, 200);
+
         function renderProductsList(products, { append = false, fromIndex = 0 } = {}) {
             const grid = document.getElementById('productsGrid');
             if (!grid) return;
@@ -1076,6 +1088,11 @@ function buildBazaProductCardHtml(p) {
             populateCategorySelect(document.getElementById('priceCategoryFilter'), { includeTop10: true });
         }
 
+        async function bootDietaPage() {
+            if (typeof ensureProductsDatabase === 'function') {
+                await ensureProductsDatabase();
+            }
+
         if (document.getElementById('productsGrid')) {
             initDietaCategorySelects();
             const urlKat =
@@ -1097,3 +1114,6 @@ function buildBazaProductCardHtml(p) {
         }
 
         if (typeof initDietaFromUrl === 'function') initDietaFromUrl();
+        }
+
+        bootDietaPage().catch((err) => console.error('dieta:', err));

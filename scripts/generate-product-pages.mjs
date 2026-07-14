@@ -25,7 +25,8 @@ import {
     buildAdSenseHead,
     buildCookieConsentBody,
     buildThemeStylesheets,
-    buildThemeBodyScript
+    buildThemeBodyScript,
+    buildFontLinks
 } from './site-head-assets.mjs';
 import { buildLogoMark } from './site-logo-html.mjs';
 import { buildServingTableHtml } from './serving-table-html.mjs';
@@ -360,21 +361,17 @@ ${paras}
 function buildPage(p, similar = []) {
     const title = `${p.name} – białko, kalorie, węglowodany, tłuszcz | Proteiner`;
     const desc = `${p.name}: ${p.protein}g białka, ${p.kcal} kcal, ${p.carbs}g węglowodanów, ${p.fat}g tłuszczu na 100g. Zdrowe odżywianie, proteiny, odchudzanie – makro i mikro na Proteiner.`;
-    const canonical = `https://proteiner.pl/produkty/${p.slug}`;
+    const canonical = `https://proteiner.pl/produkty/${p.slug}.html`;
     const catLabel = CATEGORY_LABELS[p.category] || p.category;
     const servingTableHtml = buildServingTableHtml(p, {
         esc,
         formatPrice: formatPlnPrice
     });
-    const remoteImg = PRODUCT_IMAGE_URLS[p.slug] || PRODUCT_IMAGE_CACHE[p.slug];
     const localJpg = `../images/products/${p.slug}.jpg`;
     const localWebp = `../images/products/${p.slug}.webp`;
     const placeholder = '../images/products/placeholder.svg';
-    // Najpierw Twój plik lokalny (.jpg → .webp), potem cache z internetu, na końcu placeholder
     const imgSrc = localJpg;
-    const imgOnError = remoteImg
-        ? `this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${esc(remoteImg)}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};};`
-        : `this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};`;
+    const imgOnError = `this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};`;
 
     const noteBlock = p.note
         ? `<div class="extra-box"><strong>Uwaga:</strong> ${esc(p.note)}</div>`
@@ -406,9 +403,7 @@ ${buildAdSenseHead()}
     <meta property="og:type" content="article">
     <meta property="og:url" content="${esc(canonical)}">
 ${headAssets}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+${buildFontLinks('../')}
 ${buildThemeStylesheets('../', { productPage: true })}
     <script type="application/ld+json">
     {
@@ -563,7 +558,7 @@ function sitemapUrlEntry({ loc, changefreq, priority }) {
 
 const categorySitemapUrls = CATEGORY_ORDER.map(
     (slug) =>
-        `  <url>\n    <loc>https://proteiner.pl/produkty/kategoria/${slug}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`
+        `  <url>\n    <loc>https://proteiner.pl/produkty/kategoria/${slug}.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`
 );
 
 const staticSitemapUrls = STATIC_SITEMAP_ENTRIES.map(sitemapUrlEntry);
@@ -571,7 +566,7 @@ const staticSitemapUrls = STATIC_SITEMAP_ENTRIES.map(sitemapUrlEntry);
 const sitemapUrls = products
     .filter((p) => productHasRichContent(p, editorialBySlug) || generatedEditorialIsRich(p))
     .map(
-    (p) => `  <url>\n    <loc>https://proteiner.pl/produkty/${p.slug}</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`
+    (p) => `  <url>\n    <loc>https://proteiner.pl/produkty/${p.slug}.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`
 );
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
