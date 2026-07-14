@@ -59,19 +59,6 @@
                         <p class="subtitle">Maksymalizacja białka względem kalorii — im mniej kcal na 1 g białka, tym lepiej przy redukcji i budowie sylwetki.</p>
                     </div>
 
-                    <section class="editorial-intro" aria-labelledby="maxxing-intro-heading">
-                        <h2 id="maxxing-intro-heading">Co to jest „białko maxxing”?</h2>
-                        <p>Chodzi o produkty, które dają <strong>dużo białka przy małej liczbie kalorii</strong>. W rankingu sortujemy po współczynniku kcal na 1 g białka — im niższy, tym lepiej „wychodzi” produkt przy redukcji i przy budowaniu sylwetki bez nadmiaru energii.</p>
-                        <p>Na szczycie listy zwykle lądują: pierś z kurczaka, twaróg chudy, skyr, tuńczyk w wodzie, białka jaj, chude ryby. Na dole — produkty kaloryczne z małą ilością proteinów (słodycze, tłuste sosy, część pieczywa). To nie znaczy, że dolne pozycje są „zakazane” — po prostu gorzej domykają dzienne białko w limicie kcal.</p>
-                        <h3>Jak czytać ranking?</h3>
-                        <ul>
-                            <li><strong>Filtr kategorii</strong> — np. tylko nabiał albo tylko mięso; łatwiej porównać podobne produkty.</li>
-                            <li><strong>Wyszukiwarka</strong> — wpisz „twaróg” lub „indyk”, żeby nie przewijać całej listy.</li>
-                            <li><strong>Klik w kartę</strong> — przejdziesz na stronę produktu z pełnym makro, porcją i opisem praktycznym.</li>
-                        </ul>
-                        <p>Ranking to narzędzie porównawcze w bazie Proteiner — wartości pochodzą z tabel odżywczych i mogą różnić się od konkretnej marki. Więcej o źródłach na stronie <a href="o-mnie.html">O mnie</a>.</p>
-                    </section>
-
                     <div class="search-bar">
                         <input type="text" id="proteinMaxSearch" oninput="renderProteinMaxxing()" placeholder="Wyszukaj produkt... (np. kurczak, twaróg, tuńczyk)">
                     </div>
@@ -86,6 +73,30 @@
                     <div class="products-grid" id="proteinMaxxingGrid"></div>
                     <div class="products-show-more-wrap" id="proteinMaxShowMoreWrap" hidden>
                         <button type="button" class="btn-show-more" onclick="showMoreProteinMaxxing(); return false;">Pokaż więcej</button>
+                    </div>
+
+                    <div class="home-info-tiles home-info-tiles--1 dieta-intro-bottom" aria-label="Informacje o rankingu">
+                        <details class="home-info-tile" id="maxxing-tile-intro">
+                            <summary class="home-info-tile-bar">
+                                <span class="home-info-tile-icon" aria-hidden="true">🔥</span>
+                                <span class="home-info-tile-text">
+                                    <span class="home-info-tile-title" id="maxxing-intro-heading">Co to jest „białko maxxing”?</span>
+                                    <span class="home-info-tile-sub">Ranking kcal na 1 g białka</span>
+                                </span>
+                                <span class="home-info-tile-chevron" aria-hidden="true"></span>
+                            </summary>
+                            <div class="home-info-tile-panel editorial-intro calc-methodology">
+                                <p>Chodzi o produkty, które dają <strong>dużo białka przy małej liczbie kalorii</strong>. W rankingu sortujemy po współczynniku kcal na 1 g białka — im niższy, tym lepiej „wychodzi” produkt przy redukcji i przy budowaniu sylwetki bez nadmiaru energii.</p>
+                                <p>Na szczycie listy zwykle lądują: pierś z kurczaka, twaróg chudy, skyr, tuńczyk w wodzie, białka jaj, chude ryby. Na dole — produkty kaloryczne z małą ilością proteinów (słodycze, tłuste sosy, część pieczywa). To nie znaczy, że dolne pozycje są „zakazane” — po prostu gorzej domykają dzienne białko w limicie kcal.</p>
+                                <h3>Jak czytać ranking?</h3>
+                                <ul>
+                                    <li><strong>Filtr kategorii</strong> — np. tylko nabiał albo tylko mięso; łatwiej porównać podobne produkty.</li>
+                                    <li><strong>Wyszukiwarka</strong> — wpisz „twaróg” lub „indyk”, żeby nie przewijać całej listy.</li>
+                                    <li><strong>Klik w kartę</strong> — przejdziesz na stronę produktu z pełnym makro, porcją i opisem praktycznym.</li>
+                                </ul>
+                                <p>Ranking to narzędzie porównawcze w bazie Proteiner — wartości pochodzą z tabel odżywczych i mogą różnić się od konkretnej marki. Więcej o źródłach na stronie <a href="o-mnie.html">O mnie</a>.</p>
+                            </div>
+                        </details>
                     </div>
                 </div>
             </div>
