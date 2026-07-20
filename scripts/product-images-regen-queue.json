@@ -1,1 +1,112 @@
-[]
+[
+  {
+    "slug": "gofry-z-bita-smietana",
+    "name": "Gofry z bitą śmietaną",
+    "emoji": "🧇",
+    "category": "fastfood",
+    "need": true,
+    "reason": "silhouette",
+    "whiteR": 0.97,
+    "blackR": 0.008541666666666666,
+    "colorR": 0
+  },
+  {
+    "slug": "herbatniki-digestive",
+    "name": "Herbatniki digestive",
+    "emoji": "🍪",
+    "category": "slodycze",
+    "need": true,
+    "reason": "silhouette",
+    "whiteR": 0.9729166666666667,
+    "blackR": 0.0022916666666666667,
+    "colorR": 0
+  },
+  {
+    "slug": "kotlet-de-volaille",
+    "name": "Kotlet de volaille",
+    "emoji": "🍗",
+    "category": "polskie-obiadki",
+    "need": true,
+    "reason": "silhouette",
+    "whiteR": 0.9747916666666666,
+    "blackR": 0.01375,
+    "colorR": 0
+  },
+  {
+    "slug": "nalesniki-z-serem",
+    "name": "Naleśniki z serem",
+    "emoji": "🥞",
+    "category": "polskie-obiadki",
+    "need": true,
+    "reason": "silhouette",
+    "whiteR": 0.96,
+    "blackR": 0.006875,
+    "colorR": 0
+  },
+  {
+    "slug": "placki-po-wegiersku",
+    "name": "Placki po węgiersku",
+    "emoji": "🥔",
+    "category": "polskie-obiadki",
+    "need": true,
+    "reason": "silhouette",
+    "whiteR": 0.9577083333333334,
+    "blackR": 0.0275,
+    "colorR": 0
+  },
+  {
+    "slug": "platki-kukurydziane",
+    "name": "Płatki kukurydziane",
+    "emoji": "🥣",
+    "category": "zboza",
+    "need": true,
+    "reason": "silhouette",
+    "whiteR": 0.9677083333333333,
+    "blackR": 0.009166666666666667,
+    "colorR": 0
+  },
+  {
+    "slug": "sledz-po-japonsku",
+    "name": "Śledź po japońsku",
+    "emoji": "🐟",
+    "category": "mieso",
+    "need": true,
+    "reason": "silhouette",
+    "whiteR": 0.97375,
+    "blackR": 0.014583333333333334,
+    "colorR": 0
+  },
+  {
+    "slug": "twarog-sernikowy",
+    "name": "Twaróg sernikowy",
+    "emoji": "🧀",
+    "category": "nabial",
+    "need": true,
+    "reason": "silhouette",
+    "whiteR": 0.964375,
+    "blackR": 0.018958333333333334,
+    "colorR": 0
+  },
+  {
+    "slug": "zupa-grzybowa",
+    "name": "Zupa grzybowa",
+    "emoji": "🍲",
+    "category": "zupy",
+    "need": true,
+    "reason": "silhouette",
+    "whiteR": 0.9645833333333333,
+    "blackR": 0.005208333333333333,
+    "colorR": 0
+  },
+  {
+    "slug": "zupa-z-soczewicy",
+    "name": "Zupa z soczewicy",
+    "emoji": "🍲",
+    "category": "zupy",
+    "need": true,
+    "reason": "silhouette",
+    "whiteR": 0.9645833333333333,
+    "blackR": 0.005208333333333333,
+    "colorR": 0
+  }
+]
