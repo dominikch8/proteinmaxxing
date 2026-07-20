@@ -56,8 +56,15 @@ function seedFromSlug(slug) {
 
 function buildPrompt(name) {
     const clean = name.replace(/\([^)]*\)/g, '').trim();
+    const lower = clean.toLowerCase();
+    let subject = clean;
+    if (/oliwa|olej|oil|ghee|tłuszcz|tluszcz/i.test(lower)) {
+        subject = `clear glass bottle of ${clean}, golden liquid, no label text`;
+    } else if (/masło|maslo|butter/i.test(lower)) {
+        subject = `stick or block of ${clean} on white plate`;
+    }
     return (
-        `Professional e-commerce product photo of ${clean}, food item only, centered on pure white background, ` +
+        `Professional e-commerce product photo of ${subject}, food item only, centered on pure white background, ` +
         `soft subtle shadow underneath, minimalist studio lighting, photorealistic, no text, no people, no hands, no logo, no packaging labels`
     );
 }
