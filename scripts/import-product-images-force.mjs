@@ -21,14 +21,53 @@ const assetsDir = process.argv.includes('--assets')
     : defaultAssets;
 const outDir = path.join(root, 'images', 'products');
 
-const args = process.argv.slice(2).filter((a) => a !== '--assets' && !a.startsWith('--'));
+const args = process.argv.slice(2).filter((a) => a !== '--assets' && (a === '--all-from-assets' || !a.startsWith('--')));
 
 let slugs = args;
+const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+
+function productSlugsSet() {
+    const raw = fs.readFileSync(path.join(root, 'js', 'products-data-raw.js'), 'utf8');
+    const list = JSON.parse(raw.match(/productsDatabaseRaw = (\[[\s\S]*\]);/)[1]);
+    function slugify(name) {
+        return name
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/ą/g, 'a')
+            .replace(/ć/g, 'c')
+            .replace(/ę/g, 'e')
+            .replace(/ł/g, 'l')
+            .replace(/ń/g, 'n')
+            .replace(/ó/g, 'o')
+            .replace(/ś/g, 's')
+            .replace(/ź/g, 'z')
+            .replace(/ż/g, 'z')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
+    }
+    const seen = {};
+    const slugs = new Set();
+    for (const p of list) {
+        let base = slugify(p.name);
+        let slug = base;
+        let n = 2;
+        while (seen[slug]) {
+            slug = `${base}-${n++}`;
+        }
+        seen[slug] = true;
+        slugs.add(slug);
+    }
+    return slugs;
+}
+
 if (args[0] === '--all-from-assets') {
+    const valid = productSlugsSet();
     slugs = fs
         .readdirSync(assetsDir)
         .filter((f) => /\.(png|jpe?g|webp)$/i.test(f))
-        .map((f) => f.replace(/\.(png|jpe?g|webp)$/i, ''));
+        .map((f) => f.replace(/\.(png|jpe?g|webp)$/i, ''))
+        .filter((slug) => SLUG_RE.test(slug) && valid.has(slug));
 }
 
 if (!slugs.length) {
@@ -55,7 +94,7 @@ for (const slug of slugs) {
     }
     try {
         await sharp(src)
-            .resize(800, 600, { fit: 'cover', position: 'centre' })
+            .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255 } })
             .jpeg({ quality: 72, mozjpeg: true })
             .toFile(path.join(outDir, `${slug}.jpg`));
         ok++;
