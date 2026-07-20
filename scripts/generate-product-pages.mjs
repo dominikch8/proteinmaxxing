@@ -419,6 +419,7 @@ ${buildThemeStylesheets('../', { productPage: true })}
     </script>
 </head>
 <body>
+${buildCookieConsentBody('../')}
     <header class="site-header">
         <nav>
             <a class="logo" href="../">
@@ -486,7 +487,6 @@ ${buildHealthDisclaimer('../', { compact: true })}
     </main>
 
 ${buildSiteFooter('../')}
-${buildCookieConsentBody('../')}
 ${buildThemeBodyScript('../')}
 </body>
 </html>`;

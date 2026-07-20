@@ -66,9 +66,9 @@ export function buildAdSenseHead() {
         crossorigin="anonymous"></script>`;
 }
 
-/** Baner cookie — Clickio (consent_249709.js w head). */
+/** Clickio tracking (di.js) — na początku body, strony z CMP (bez Prism). */
 export function buildCookieConsentBody(_prefix = '') {
-    return '';
+    return `    <script defer src="https://s.clickiocdn.com/t/249709/di.js"></script>`;
 }
 
 /**

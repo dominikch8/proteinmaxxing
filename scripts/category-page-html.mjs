@@ -153,6 +153,7 @@ ${buildThemeStylesheets(PREFIX)}
     <link rel="stylesheet" href="${PREFIX}css/category-page.css">
 </head>
 <body class="category-page" data-category="${esc(category)}">
+${buildCookieConsentBody(PREFIX)}
     <header class="site-header">
         <nav>
             <a href="${PREFIX}" class="logo">
@@ -233,7 +234,6 @@ ${buildSiteFooter(PREFIX)}
     <script src="${PREFIX}js/product-utils.js"></script>
     <script src="${PREFIX}js/products-loader.js"></script>
     <script src="${PREFIX}js/category-page.js"></script>
-${buildCookieConsentBody(PREFIX)}
 ${buildThemeBodyScript(PREFIX)}
 </body>
 </html>`;

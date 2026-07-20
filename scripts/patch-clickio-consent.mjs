@@ -10,6 +10,8 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SKIP_DIRS = new Set(['node_modules', '.git', 'domains']);
 const CLICKIO =
     '<script async type="text/javascript" src="//clickiocmp.com/t/consent_249709.js"></script>';
+const CLICKIO_DI =
+    '    <script defer src="https://s.clickiocdn.com/t/249709/di.js"></script>';
 
 function walkHtml(dir, list = []) {
     for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -34,6 +36,9 @@ function patch(html) {
     }
     out = out.replace(/\s*<link rel="stylesheet" href="[^"]*cookie-consent\.css">\s*\n?/g, '\n');
     out = out.replace(/\s*<script src="[^"]*cookie-banner\.js"><\/script>\s*\n?/g, '\n');
+    if (out.includes('consent-head.js') && !out.includes('clickiocdn.com/t/249709/di.js')) {
+        out = out.replace(/(<body[^>]*>)/i, `$1\n${CLICKIO_DI}`);
+    }
     return out;
 }
 
