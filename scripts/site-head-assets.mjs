@@ -53,9 +53,10 @@ export function buildThemeInitScript(prefix = '') {
     return `    <script src="${prefix}js/theme-init.js"></script>`;
 }
 
-/** Google Consent Mode v2 — przed AdSense. */
+/** Google Consent Mode v2 + Clickio CMP — przed AdSense. */
 export function buildConsentHeadScript(prefix = '') {
-    return `    <script src="${prefix}js/consent-head.js"></script>`;
+    return `    <script src="${prefix}js/consent-head.js"></script>
+    <script async type="text/javascript" src="//clickiocmp.com/t/consent_249709.js"></script>`;
 }
 
 /** Google AdSense — meta + loader script (after viewport). */
@@ -65,9 +66,9 @@ export function buildAdSenseHead() {
         crossorigin="anonymous"></script>`;
 }
 
-export function buildCookieConsentBody(prefix = '') {
-    return `    <link rel="stylesheet" href="${prefix}css/cookie-consent.css">
-    <script src="${prefix}js/cookie-banner.js"></script>`;
+/** Baner cookie — Clickio (consent_249709.js w head). */
+export function buildCookieConsentBody(_prefix = '') {
+    return '';
 }
 
 /**

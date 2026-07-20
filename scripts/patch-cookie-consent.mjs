@@ -1,5 +1,6 @@
 /**
- * Dodaje Google Consent Mode (consent-head.js) przed AdSense oraz baner cookie przed </body>.
+ * Dodaje Google Consent Mode (consent-head.js) + Clickio przed AdSense.
+ * Stary baner cookie-banner.js nie jest już wstawiany (Clickio CMP).
  * Uruchom: node scripts/patch-cookie-consent.mjs
  */
 import fs from 'fs';
@@ -32,18 +33,14 @@ function htmlPrefix(filePath) {
 function patchHead(html, prefix) {
     if (html.includes('consent-head.js')) return html;
     if (!html.includes(HEAD_MARKER)) return null;
-    const insert = `    <script src="${prefix}js/consent-head.js"></script>\n    `;
+    const insert = `    <script src="${prefix}js/consent-head.js"></script>
+    <script async type="text/javascript" src="//clickiocmp.com/t/consent_249709.js"></script>
+    `;
     return html.replace(HEAD_MARKER, insert + HEAD_MARKER);
 }
 
-function patchFoot(html, prefix) {
-    if (html.includes('cookie-banner.js')) return html;
-    const insert = `    <link rel="stylesheet" href="${prefix}css/cookie-consent.css">\n    <script src="${prefix}js/cookie-banner.js"></script>\n`;
-    const themeRe = new RegExp(`(<script src="${prefix.replace(/\./g, '\\.')}js/theme\\.js"><\\/script>)`);
-    if (themeRe.test(html)) {
-        return html.replace(themeRe, `${insert}$1`);
-    }
-    return html.replace('</body>', `${insert}</body>`);
+function patchFoot(html) {
+    return html;
 }
 
 let changed = 0;
@@ -60,7 +57,7 @@ for (const fp of walkHtml(root)) {
         noAdsense++;
         continue;
     }
-    html = patchFoot(html, prefix);
+    html = patchFoot(html);
 
     if (html !== before) {
         fs.writeFileSync(fp, html, 'utf8');
