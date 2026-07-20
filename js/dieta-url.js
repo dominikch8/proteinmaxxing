@@ -124,7 +124,7 @@ function redirectDietaCategoryHashToStandalone() {
 
     if (!kategoria || kategoria === 'all' || !isProductsTab) return false;
 
-    window.location.replace(`produkty/kategoria/${encodeURIComponent(kategoria)}.html`);
+    window.location.replace(`produkty/kategoria/${encodeURIComponent(kategoria)}`);
     return true;
 }
 
@@ -138,7 +138,7 @@ function redirectDietaRankingHashToStandalone() {
     const { tabId, kategoria } = parseDietaHash();
     if (tabId !== 'protein-max' && tabId !== 'protein-price') return false;
 
-    const base = tabId === 'protein-max' ? 'bialko-maxxing.html' : 'cena-bialka.html';
+    const base = tabId === 'protein-max' ? 'bialko-maxxing' : 'cena-bialka';
     const hash =
         kategoria && kategoria !== 'all'
             ? `#kategoria/${encodeURIComponent(kategoria)}`

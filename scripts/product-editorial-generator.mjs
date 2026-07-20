@@ -193,7 +193,7 @@ function buildOpening(p) {
         ],
         treat: [
             `${name} (${fmt(p.kcal)} kcal / 100 g) to raczej okazjonalny wybór niż baza tygodnia. Na Proteinerze pokazujemy makro bez moralizowania — licz porcję i wpisz ją do dziennego limitu z kalkulatora.`,
-            `Słodycze i fast food mają sens w diecie wtedy, gdy reszta dnia jest poukładana. ${name} ma ${fmt(p.carbs)} g węglowodanów i ${fmt(p.fat)} g tłuszczu na 100 g — porównaj z domową alternatywą w <a href="../porownaj-produkty.html">porównywarce</a>.`,
+            `Słodycze i fast food mają sens w diecie wtedy, gdy reszta dnia jest poukładana. ${name} ma ${fmt(p.carbs)} g węglowodanów i ${fmt(p.fat)} g tłuszczu na 100 g — porównaj z domową alternatywą w <a href="../porownaj-produkty">porównywarce</a>.`,
             `${name} często wybierany „z rozpędu”, a potem trudno domknąć deficyt. Warto z góry wiedzieć, że 100 g to ${fmt(p.kcal)} kcal — czasem tyle co spokojny obiad z warzywami i mięsem.`
         ],
         balanced: [
@@ -216,12 +216,12 @@ function buildOpening(p) {
 function buildClosing(p) {
     const price = priceSnippet(p);
     const closings = [
-        `Porównaj ${p.name} z inną pozycją z kategorii ${CATEGORY_LABELS[p.category] || p.category} w <a href="../porownaj-produkty.html">porównywarce Proteiner</a> — zobaczysz różnicę w białku, kcal i cenie za 100 g proteinu na jednym wykresie.`,
-        `W <a href="../dieta.html#produkty">bazie produktów</a> znajdziesz podobne makro w tej samej kategorii. Czasem zamiana ${p.name} na inną pozycję pozwala zostać w deficycie bez głodu.`,
-        `Strona produktu ${p.name} to punkt wyjścia — resztę dnia ułóż z warzyw, węgli i innych źródeł białka, żeby domknąć plan z <a href="../index.html">kalkulatora TDEE</a>.`,
-        `Jeśli liczysz koszty, sprawdź ranking na stronie <a href="../cena-bialka.html">Cena białka</a> — ${p.name} może okazać się ${cheaperPair(p.name)} niż myślisz, zależnie od promocji w sklepie.`,
+        `Porównaj ${p.name} z inną pozycją z kategorii ${CATEGORY_LABELS[p.category] || p.category} w <a href="../porownaj-produkty">porównywarce Proteiner</a> — zobaczysz różnicę w białku, kcal i cenie za 100 g proteinu na jednym wykresie.`,
+        `W <a href="../dieta#produkty">bazie produktów</a> znajdziesz podobne makro w tej samej kategorii. Czasem zamiana ${p.name} na inną pozycję pozwala zostać w deficycie bez głodu.`,
+        `Strona produktu ${p.name} to punkt wyjścia — resztę dnia ułóż z warzyw, węgli i innych źródeł białka, żeby domknąć plan z <a href="../">kalkulatora TDEE</a>.`,
+        `Jeśli liczysz koszty, sprawdź ranking na stronie <a href="../cena-bialka">Cena białka</a> — ${p.name} może okazać się ${cheaperPair(p.name)} niż myślisz, zależnie od promocji w sklepie.`,
         `Makro na etykiecie bywa inne niż w domowej porcji (np. po dodaniu tłuszczu do patelni). Tabela na tej stronie odnosi się do typowej porcji: ${servingPhrase(p)}.`,
-        `Zerknij na <a href="../produkty/kategoria/${p.category}.html">stronę kategorii ${CATEGORY_LABELS[p.category] || p.category}</a> — tam są podobne produkty i praktyczne wskazówki do planowania posiłków.`
+        `Zerknij na <a href="../produkty/kategoria/${p.category}">stronę kategorii ${CATEGORY_LABELS[p.category] || p.category}</a> — tam są podobne produkty i praktyczne wskazówki do planowania posiłków.`
     ];
 
     let text = pick(closings, p.slug, 19);

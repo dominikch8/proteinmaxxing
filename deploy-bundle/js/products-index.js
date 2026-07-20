@@ -42,7 +42,7 @@
         listEl.innerHTML = items
             .map(
                 (p) =>
-                    `<li><a href="${p.slug}.html">${escapeHtml(p.name)}</a> <span class="products-index-cat">${escapeHtml(CATEGORY_LABELS[p.category] || p.category)}</span></li>`
+                    `<li><a href="${p.slug}">${escapeHtml(p.name)}</a> <span class="products-index-cat">${escapeHtml(CATEGORY_LABELS[p.category] || p.category)}</span></li>`
             )
             .join('');
     }

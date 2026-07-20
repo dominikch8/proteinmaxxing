@@ -38,8 +38,8 @@
 
     function policyUrl() {
         return window.location.pathname.includes('/produkty/')
-            ? '../informacje.html'
-            : 'informacje.html';
+            ? '../informacje'
+            : 'informacje';
     }
 
     function removeBanner() {

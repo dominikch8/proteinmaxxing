@@ -104,12 +104,12 @@ function enrichProducts(raw) {
 }
 
 function categoryPageUrl(category) {
-    if (!category || category === 'all') return '/dieta.html#produkty';
-    return `/produkty/kategoria/${category}.html`;
+    if (!category || category === 'all') return 'dieta#produkty';
+    return `produkty/kategoria/${category}`;
 }
 
 function productPageUrl(slug) {
-    return `/produkty/${slug}.html`;
+    return `produkty/${slug}`;
 }
 
 function productImagePaths(slug) {

@@ -3,6 +3,14 @@ const SHOW_STEP = 12;
 let pool = [];
 let visibleCount = SHOW_STEP;
 
+function debounce(fn, delayMs) {
+    let timer;
+    return function debounced(...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => fn.apply(this, args), delayMs);
+    };
+}
+
 function getCategoryId() {
     return document.body.dataset.category || '';
 }
@@ -34,7 +42,7 @@ function sortPool(list, sortKey) {
 }
 
 function buildCardHtml(p) {
-    const url = `../${p.slug}.html`;
+    const url = `../${p.slug}`;
     return `
         <a href="${url}" class="product-card-link" title="${p.name} – makro na 100 g">
             <article class="product-card">
@@ -95,17 +103,23 @@ function showMore() {
     updateShowMore(sorted.length);
 }
 
-function initCategoryPage() {
+async function initCategoryPage() {
     const cat = getCategoryId();
-    if (!cat || typeof productsDatabase === 'undefined') return;
+    if (!cat) return;
+
+    if (typeof ensureProductsDatabase === 'function') {
+        await ensureProductsDatabase();
+    }
+    if (typeof productsDatabase === 'undefined') return;
 
     pool = productsDatabase.filter((p) => p.category === cat);
 
     const search = document.getElementById('categorySearch');
     const sort = document.getElementById('categorySort');
     const moreBtn = document.getElementById('categoryShowMoreBtn');
+    const debouncedSearch = debounce(() => renderGrid(true), 200);
 
-    if (search) search.addEventListener('input', () => renderGrid(true));
+    if (search) search.addEventListener('input', debouncedSearch);
     if (sort) sort.addEventListener('change', () => renderGrid(true));
     if (moreBtn) moreBtn.addEventListener('click', showMore);
 
@@ -113,7 +127,9 @@ function initCategoryPage() {
 }
 
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initCategoryPage);
+    document.addEventListener('DOMContentLoaded', () => {
+        initCategoryPage().catch((err) => console.error('category-page:', err));
+    });
 } else {
-    initCategoryPage();
+    initCategoryPage().catch((err) => console.error('category-page:', err));
 }

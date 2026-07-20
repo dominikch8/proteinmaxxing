@@ -2,7 +2,7 @@
 import { CATEGORY_LABELS } from './category-seo.mjs';
 
 export const CATEGORY_EDITORIAL = {
-    mieso: `Mięso, drób i ryby to główne źródła pełnowartościowego białka w diecie. Przy redukcji liczy się deficyt kaloryczny i sytość — chude gatunki (pierś z kurczaka, indyk, dorsz) dają dużo proteinów przy małej liczbie kcal. Przy masie warto uwzględnić także tłuszcz i żelazo z czerwonego mięsa. Porównaj kilka pozycji w <a href="../porownaj-produkty.html">porównywarce</a> zamiast patrzeć tylko na jedną etykietę.`,
+    mieso: `Mięso, drób i ryby to główne źródła pełnowartościowego białka w diecie. Przy redukcji liczy się deficyt kaloryczny i sytość — chude gatunki (pierś z kurczaka, indyk, dorsz) dają dużo proteinów przy małej liczbie kcal. Przy masie warto uwzględnić także tłuszcz i żelazo z czerwonego mięsa. Porównaj kilka pozycji w <a href="../porownaj-produkty">porównywarce</a> zamiast patrzeć tylko na jedną etykietę.`,
 
     nabial: `Nabiał i jaja dostarczają białka, wapnia i witamin z grupy B. Twaróg chudy i skyr wyróżniają się wysoką zawartością proteinów przy umiarkowanej kaloryczności — często wybierane przy odchudzaniu. Sery tłuste mają więcej nasyconych kwasów tłuszczowych; warto patrzeć na porcję, nie tylko na 100 g.`,
 
@@ -33,7 +33,7 @@ export function buildCategoryEditorialHtml(category, prefix = '../') {
     const text = CATEGORY_EDITORIAL[category];
     if (!text) return '';
     const label = CATEGORY_LABELS[category] || category;
-    const linked = text.replace('../porownaj-produkty.html', `${prefix}porownaj-produkty.html`);
+    const linked = text.replace('../porownaj-produkty.html', `${prefix}porownaj-produkty`).replace('../porownaj-produkty', `${prefix}porownaj-produkty`);
     return `        <section class="product-guide product-guide--category">
             <h2>O produktach z kategorii ${label}</h2>
             <p>${linked}</p>

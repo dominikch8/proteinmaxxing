@@ -288,7 +288,7 @@ function buildSimilarProductsSection(p, similar) {
     const items = similar
         .map(
             (s) => `                <li>
-                    <a class="similar-product-link" href="${esc(s.slug)}.html">
+                    <a class="similar-product-link" href="${esc(s.slug)}">
                         <span class="similar-product-emoji" aria-hidden="true">${s.emoji}</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">${esc(s.name)}</span>
@@ -313,7 +313,7 @@ ${items}
 }
 
 function dietaCategoryHref(category) {
-    return `kategoria/${encodeURIComponent(category)}.html`;
+    return `kategoria/${encodeURIComponent(category)}`;
 }
 
 function buildSeoLead(p) {
@@ -361,7 +361,7 @@ ${paras}
 function buildPage(p, similar = []) {
     const title = `${p.name} – białko, kalorie, węglowodany, tłuszcz | Proteiner`;
     const desc = `${p.name}: ${p.protein}g białka, ${p.kcal} kcal, ${p.carbs}g węglowodanów, ${p.fat}g tłuszczu na 100g. Zdrowe odżywianie, proteiny, odchudzanie – makro i mikro na Proteiner.`;
-    const canonical = `https://proteiner.pl/produkty/${p.slug}.html`;
+    const canonical = `https://proteiner.pl/produkty/${p.slug}`;
     const catLabel = CATEGORY_LABELS[p.category] || p.category;
     const servingTableHtml = buildServingTableHtml(p, {
         esc,
@@ -421,18 +421,18 @@ ${buildThemeStylesheets('../', { productPage: true })}
 <body>
     <header class="site-header">
         <nav>
-            <a class="logo" href="../index.html">
+            <a class="logo" href="../">
                 ${buildLogoMark('../')}
                 <span>Proteiner</span>
             </a>
-            <a class="nav-back" href="../dieta.html">← Baza produktów</a>
+            <a class="nav-back" href="../dieta">← Baza produktów</a>
         </nav>
     </header>
 
     <main class="product-page">
         <nav class="breadcrumb" aria-label="Nawigacja">
-            <a href="../index.html">Strona główna</a> ›
-            <a href="../dieta.html">Dieta</a> ›
+            <a href="../">Strona główna</a> ›
+            <a href="../dieta">Dieta</a> ›
             <span>${esc(p.name)}</span>
         </nav>
 
@@ -529,27 +529,27 @@ generateCategoryPages(products);
 
 const STATIC_SITEMAP_ENTRIES = [
     { loc: 'https://proteiner.pl/', changefreq: 'weekly', priority: '1.0' },
-    { loc: 'https://proteiner.pl/dieta.html', changefreq: 'weekly', priority: '0.9' },
-    { loc: 'https://proteiner.pl/bialko-maxxing.html', changefreq: 'weekly', priority: '0.85' },
-    { loc: 'https://proteiner.pl/cena-bialka.html', changefreq: 'weekly', priority: '0.85' },
-    { loc: 'https://proteiner.pl/porownaj-produkty.html', changefreq: 'weekly', priority: '0.85' },
-    { loc: 'https://proteiner.pl/poradnik-zywienia.html', changefreq: 'weekly', priority: '0.9' },
-    { loc: 'https://proteiner.pl/deficyt-kaloryczny-praktyka.html', changefreq: 'monthly', priority: '0.85' },
-    { loc: 'https://proteiner.pl/planowanie-posilkow.html', changefreq: 'monthly', priority: '0.85' },
-    { loc: 'https://proteiner.pl/dodaj-produkt.html', changefreq: 'monthly', priority: '0.5' },
-    { loc: 'https://proteiner.pl/trening.html', changefreq: 'monthly', priority: '0.8' },
-    { loc: 'https://proteiner.pl/informacje.html', changefreq: 'yearly', priority: '0.4' },
-    { loc: 'https://proteiner.pl/o-mnie.html', changefreq: 'yearly', priority: '0.4' },
-    { loc: 'https://proteiner.pl/skladniki-kalorie.html', changefreq: 'monthly', priority: '0.8' },
-    { loc: 'https://proteiner.pl/skladniki-bialko.html', changefreq: 'monthly', priority: '0.8' },
-    { loc: 'https://proteiner.pl/skladniki-weglowodany.html', changefreq: 'monthly', priority: '0.8' },
-    { loc: 'https://proteiner.pl/skladniki-tluszcz.html', changefreq: 'monthly', priority: '0.8' },
-    { loc: 'https://proteiner.pl/skladniki-tluszcze-nasycone.html', changefreq: 'monthly', priority: '0.75' },
-    { loc: 'https://proteiner.pl/skladniki-tluszcze-nienasycone.html', changefreq: 'monthly', priority: '0.75' },
-    { loc: 'https://proteiner.pl/skladniki-blonnik.html', changefreq: 'monthly', priority: '0.75' },
-    { loc: 'https://proteiner.pl/skladniki-witaminy.html', changefreq: 'monthly', priority: '0.75' },
-    { loc: 'https://proteiner.pl/skladniki-mineraly.html', changefreq: 'monthly', priority: '0.75' },
-    { loc: 'https://proteiner.pl/skladniki-mikroelementy.html', changefreq: 'monthly', priority: '0.75' }
+    { loc: 'https://proteiner.pl/dieta', changefreq: 'weekly', priority: '0.9' },
+    { loc: 'https://proteiner.pl/bialko-maxxing', changefreq: 'weekly', priority: '0.85' },
+    { loc: 'https://proteiner.pl/cena-bialka', changefreq: 'weekly', priority: '0.85' },
+    { loc: 'https://proteiner.pl/porownaj-produkty', changefreq: 'weekly', priority: '0.85' },
+    { loc: 'https://proteiner.pl/poradnik-zywienia', changefreq: 'weekly', priority: '0.9' },
+    { loc: 'https://proteiner.pl/deficyt-kaloryczny-praktyka', changefreq: 'monthly', priority: '0.85' },
+    { loc: 'https://proteiner.pl/planowanie-posilkow', changefreq: 'monthly', priority: '0.85' },
+    { loc: 'https://proteiner.pl/dodaj-produkt', changefreq: 'monthly', priority: '0.5' },
+    { loc: 'https://proteiner.pl/trening', changefreq: 'monthly', priority: '0.8' },
+    { loc: 'https://proteiner.pl/informacje', changefreq: 'yearly', priority: '0.4' },
+    { loc: 'https://proteiner.pl/o-mnie', changefreq: 'yearly', priority: '0.4' },
+    { loc: 'https://proteiner.pl/skladniki-kalorie', changefreq: 'monthly', priority: '0.8' },
+    { loc: 'https://proteiner.pl/skladniki-bialko', changefreq: 'monthly', priority: '0.8' },
+    { loc: 'https://proteiner.pl/skladniki-weglowodany', changefreq: 'monthly', priority: '0.8' },
+    { loc: 'https://proteiner.pl/skladniki-tluszcz', changefreq: 'monthly', priority: '0.8' },
+    { loc: 'https://proteiner.pl/skladniki-tluszcze-nasycone', changefreq: 'monthly', priority: '0.75' },
+    { loc: 'https://proteiner.pl/skladniki-tluszcze-nienasycone', changefreq: 'monthly', priority: '0.75' },
+    { loc: 'https://proteiner.pl/skladniki-blonnik', changefreq: 'monthly', priority: '0.75' },
+    { loc: 'https://proteiner.pl/skladniki-witaminy', changefreq: 'monthly', priority: '0.75' },
+    { loc: 'https://proteiner.pl/skladniki-mineraly', changefreq: 'monthly', priority: '0.75' },
+    { loc: 'https://proteiner.pl/skladniki-mikroelementy', changefreq: 'monthly', priority: '0.75' }
 ];
 
 function sitemapUrlEntry({ loc, changefreq, priority }) {
@@ -558,7 +558,7 @@ function sitemapUrlEntry({ loc, changefreq, priority }) {
 
 const categorySitemapUrls = CATEGORY_ORDER.map(
     (slug) =>
-        `  <url>\n    <loc>https://proteiner.pl/produkty/kategoria/${slug}.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`
+        `  <url>\n    <loc>https://proteiner.pl/produkty/kategoria/${slug}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`
 );
 
 const staticSitemapUrls = STATIC_SITEMAP_ENTRIES.map(sitemapUrlEntry);
@@ -566,7 +566,7 @@ const staticSitemapUrls = STATIC_SITEMAP_ENTRIES.map(sitemapUrlEntry);
 const sitemapUrls = products
     .filter((p) => productHasRichContent(p, editorialBySlug) || generatedEditorialIsRich(p))
     .map(
-    (p) => `  <url>\n    <loc>https://proteiner.pl/produkty/${p.slug}.html</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`
+    (p) => `  <url>\n    <loc>https://proteiner.pl/produkty/${p.slug}</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`
 );
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -586,14 +586,14 @@ fs.writeFileSync(
     <meta charset="UTF-8">
 ${buildThemeInitScript('../')}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0;url=../dieta.html#produkty">
+    <meta http-equiv="refresh" content="0;url=../dieta#produkty">
     <meta name="robots" content="noindex, follow">
-    <link rel="canonical" href="https://proteiner.pl/dieta.html">
+    <link rel="canonical" href="https://proteiner.pl/dieta">
     <title>Przekierowanie do bazy produktów | Proteiner</title>
-    <script>location.replace('../dieta.html#produkty');</script>
+    <script>location.replace('../dieta#produkty');</script>
 </head>
 <body>
-    <p>Przekierowanie do <a href="../dieta.html#produkty">bazy produktów na stronie Dieta</a>…</p>
+    <p>Przekierowanie do <a href="../dieta#produkty">bazy produktów na stronie Dieta</a>…</p>
 ${buildThemeBodyScript('../')}
 </body>
 </html>`,

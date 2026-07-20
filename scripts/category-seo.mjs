@@ -289,6 +289,6 @@ export const CATEGORY_FAQ = {
 };
 
 export function categoryPagePath(category) {
-    return `produkty/kategoria/${category}.html`;
+    return `produkty/kategoria/${category}`;
 }
 

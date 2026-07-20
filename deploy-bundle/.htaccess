@@ -8,13 +8,18 @@ DirectorySlash Off
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# /dieta lub /dieta/ → dieta.html (jeden segment)
+# Stare URL-e .html → czyste ścieżki (301)
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# /dieta lub /dieta/ → dieta.html
 RewriteCond %{REQUEST_URI} ^/([^./]+)/?$
 RewriteCond %{DOCUMENT_ROOT}/%1.html -f
 RewriteRule ^[^./]+/?$ %1.html [L]
 
 # /produkty/slug, /produkty/kategoria/x itd.
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]
 

@@ -35,9 +35,9 @@ function esc(s) {
 
 function linkifyEditorial(text) {
     return text
-        .replace(/\.\.\/porownaj-produkty\.html/g, `${PREFIX}porownaj-produkty.html`)
-        .replace(/\.\.\/index\.html/g, `${PREFIX}index.html`)
-        .replace(/\.\.\/dieta\.html/g, `${PREFIX}dieta.html`);
+        .replace(/\.\.\/porownaj-produkty\.html/g, `${PREFIX}porownaj-produkty`)
+        .replace(/\.\.\/index\.html/g, `${PREFIX}`)
+        .replace(/\.\.\/dieta\.html/g, `${PREFIX}dieta`);
 }
 
 function proteinKcalRatio(p) {
@@ -52,7 +52,7 @@ function buildTopProductsHtml(products, category) {
     const items = top
         .map(
             (p) => `                        <li>
-                            <a href="../${esc(p.slug)}.html" class="category-top-link">
+                            <a href="../${esc(p.slug)}" class="category-top-link">
                                 <span class="category-top-emoji" aria-hidden="true">${p.emoji}</span>
                                 <span class="category-top-text">
                                     <span class="category-top-name">${esc(p.name)}</span>
@@ -75,7 +75,7 @@ function buildOtherCategoriesNav(current) {
     const links = CATEGORY_ORDER.filter((id) => id !== current)
         .map(
             (id) =>
-                `                        <a class="category-nav-chip" href="${esc(id)}.html">${esc(CATEGORY_LABELS[id] || id)}</a>`
+                `                        <a class="category-nav-chip" href="${esc(id)}">${esc(CATEGORY_LABELS[id] || id)}</a>`
         )
         .join('\n');
     return `                    <nav class="category-nav-other" aria-label="Inne kategorie">
@@ -125,7 +125,7 @@ export function buildCategoryPageHtml(category, categoryProducts) {
     const metaPhrase = CATEGORY_META_PHRASE[category] || 'kalorie i makro na 100 g';
     const title = `${label} — ${metaPhrase} | Proteiner`;
     const description = `${label}: ${countLabel} w bazie Proteiner. ${intro.slice(0, 140)}… Kalorie, białko, węglowodany i tłuszcz na 100 g.`;
-    const canonical = `https://proteiner.pl/produkty/kategoria/${category}.html`;
+    const canonical = `https://proteiner.pl/produkty/kategoria/${category}`;
 
     const editorialLinked = editorial ? linkifyEditorial(editorial) : '';
 
@@ -155,18 +155,18 @@ ${buildThemeStylesheets(PREFIX)}
 <body class="category-page" data-category="${esc(category)}">
     <header class="site-header">
         <nav>
-            <a href="${PREFIX}index.html" class="logo">
+            <a href="${PREFIX}" class="logo">
                 ${buildLogoMark(PREFIX)}
                 <span>Proteiner</span>
             </a>
             <ul class="nav-links">
-                <li><a class="nav-link" href="${PREFIX}index.html">Kalkulator</a></li>
-                <li><a class="nav-link active" href="${PREFIX}dieta.html" aria-current="page">Dieta</a></li>
-                <li><a class="nav-link" href="${PREFIX}porownaj-produkty.html">Porównaj produkty</a></li>
-                <li><a class="nav-link" href="${PREFIX}dodaj-produkt.html">Dodaj produkty</a></li>
-                <li><a class="nav-link" href="${PREFIX}poradnik-zywienia.html">Poradnik</a></li>
-                <li><a class="nav-link" href="${PREFIX}informacje.html">Informacje</a></li>
-                <li><a class="nav-link" href="${PREFIX}o-mnie.html">O mnie</a></li>
+                <li><a class="nav-link" href="${PREFIX}">Kalkulator</a></li>
+                <li><a class="nav-link active" href="${PREFIX}dieta" aria-current="page">Dieta</a></li>
+                <li><a class="nav-link" href="${PREFIX}porownaj-produkty">Porównaj produkty</a></li>
+                <li><a class="nav-link" href="${PREFIX}dodaj-produkt">Dodaj produkty</a></li>
+                <li><a class="nav-link" href="${PREFIX}poradnik-zywienia">Poradnik</a></li>
+                <li><a class="nav-link" href="${PREFIX}informacje">Informacje</a></li>
+                <li><a class="nav-link" href="${PREFIX}o-mnie">O mnie</a></li>
             </ul>
         </nav>
     </header>
@@ -174,8 +174,8 @@ ${buildThemeStylesheets(PREFIX)}
     <div class="page-container">
         <main class="main-content category-main">
             <nav class="breadcrumb category-breadcrumb" aria-label="Nawigacja">
-                <a href="${PREFIX}index.html">Strona główna</a> ›
-                <a href="${PREFIX}dieta.html#produkty">Dieta</a> ›
+                <a href="${PREFIX}">Strona główna</a> ›
+                <a href="${PREFIX}dieta#produkty">Dieta</a> ›
                 <span>${esc(label)}</span>
             </nav>
 
@@ -190,11 +190,11 @@ ${buildThemeStylesheets(PREFIX)}
                 ${editorialLinked ? `<p>${editorialLinked}</p>` : ''}
                 ${buildTipsHtml(category)}
                 <p class="category-cta-links">
-                    <a href="${PREFIX}bialko-maxxing.html#kategoria/${encodeURIComponent(category)}">Ranking Białko maxxing</a>
+                    <a href="${PREFIX}bialko-maxxing#kategoria/${encodeURIComponent(category)}">Ranking Białko maxxing</a>
                     ·
-                    <a href="${PREFIX}cena-bialka.html#kategoria/${encodeURIComponent(category)}">Cena za 100 g białka</a>
+                    <a href="${PREFIX}cena-bialka#kategoria/${encodeURIComponent(category)}">Cena za 100 g białka</a>
                     ·
-                    <a href="${PREFIX}index.html">Kalkulator TDEE</a>
+                    <a href="${PREFIX}">Kalkulator TDEE</a>
                 </p>
             </section>
 

@@ -5,9 +5,9 @@
 
 export function buildHealthDisclaimer(prefix = '', opts = {}) {
     const { compact = false } = opts;
-    const about = `${prefix}o-mnie.html`;
-    const poradnik = `${prefix}poradnik-zywienia.html`;
-    const informacje = `${prefix}informacje.html`;
+    const about = `${prefix}o-mnie`;
+    const poradnik = `${prefix}poradnik-zywienia`;
+    const informacje = `${prefix}informacje`;
 
     if (compact) {
         return `    <aside class="health-disclaimer health-disclaimer--compact" role="note">
@@ -26,6 +26,6 @@ export function buildHealthDisclaimer(prefix = '', opts = {}) {
 export function buildDataSourcesNote(prefix = '') {
     return `    <section class="data-sources-note" aria-labelledby="data-sources-heading">
         <h2 id="data-sources-heading">Skąd bierzemy dane?</h2>
-        <p>Makroskładniki zestawiamy na podstawie tabel wartości odżywczych (m.in. <a href="https://www.ilewazy.pl/" target="_blank" rel="noopener noreferrer">IleWazy.pl</a>, bazy USDA oraz etykiety producentów dostępne publicznie). Ceny są szacunkowe na podstawie gazetek sieci Biedronka i Lidl — służą do porównań, nie do transakcji. Szczegóły opisujemy na stronie <a href="${prefix}o-mnie.html">O mnie</a>.</p>
+        <p>Makroskładniki zestawiamy na podstawie tabel wartości odżywczych (m.in. <a href="https://www.ilewazy.pl/" target="_blank" rel="noopener noreferrer">IleWazy.pl</a>, bazy USDA oraz etykiety producentów dostępne publicznie). Ceny są szacunkowe na podstawie gazetek sieci Biedronka i Lidl — służą do porównań, nie do transakcji. Szczegóły opisujemy na stronie <a href="${prefix}o-mnie">O mnie</a>.</p>
     </section>`;
 }

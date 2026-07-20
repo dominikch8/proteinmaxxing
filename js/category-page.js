@@ -42,7 +42,7 @@ function sortPool(list, sortKey) {
 }
 
 function buildCardHtml(p) {
-    const url = `../${p.slug}.html`;
+    const url = `../${p.slug}`;
     return `
         <a href="${url}" class="product-card-link" title="${p.name} – makro na 100 g">
             <article class="product-card">
