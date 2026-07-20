@@ -11,6 +11,9 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dir = path.join(root, 'images', 'products');
 const asJson = process.argv.includes('--json');
 
+const MIN_WHITE = 0.45;
+const MIN_CORNERS = 4;
+
 const sharp = (await import('sharp')).default;
 const files = fs.readdirSync(dir).filter((f) => f.endsWith('.jpg'));
 const flagged = [];
@@ -51,7 +54,7 @@ for (const f of files) {
     }
     const mean = sum / (w * h * ch);
     const whiteRatio = white / (w * h);
-    const needsFix = mean < 25 || whiteRatio < 0.12 || cornerWhite < 2;
+    const needsFix = whiteRatio < MIN_WHITE || cornerWhite < MIN_CORNERS || mean < 25;
     if (needsFix) {
         flagged.push({
             slug,
