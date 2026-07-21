@@ -169,10 +169,13 @@ const EXTRA_QUERIES = {
     'salatka-jarzynowa': ['vegetable salad Polish', 'salad vegetables'],
     'salatka-waldorf': ['Waldorf salad', 'apple celery salad'],
     'salatka-z-makaronem': ['pasta salad', 'macaroni salad'],
-    'placki-po-wegiersku': ['Hungarian potato pancakes goulash', 'placki z gulaszem']
+    'placki-po-wegiersku': ['Hungarian potato pancakes goulash', 'placki z gulaszem'],
+    'fasolka-szparagowa': ['green beans fresh pile', 'French beans vegetable', 'haricots verts'],
+    migdaly: ['raw almonds nuts', 'almonds whole shelled', 'almond nuts']
 };
 
 const BAD_IMAGE = /logo|icon|banner|sprite|button|avatar|stamp|seal/i;
+const BAD_TITLE = /logo|icon|diagram|map|flag|coat of arms|symbol|chart|graph|list of|disambiguation|category:/i;
 
 function slugify(name) {
     return name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')

@@ -7,6 +7,8 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 /** Ręczne zapytania dla trudnych produktów */
 const SLUG_QUERIES = {
+    'fasolka-szparagowa': ['green beans fresh', 'French beans vegetable', 'haricots verts'],
+    migdaly: ['raw almonds nuts', 'almonds whole', 'almond nuts food'],
     'zapiekanka-studentska': ['zapiekanka polish open sandwich', 'zapiekanka food'],
     'bialka-jaj': ['egg white', 'egg whites food'],
     'izolat-bialka-wpi': ['whey protein isolate powder', 'whey protein supplement'],

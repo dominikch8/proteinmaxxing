@@ -8,11 +8,12 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 import os from 'os';
-import { fileURLToPath } from 'url';
+import { fileURLToPath, pathToFileURL } from 'url';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const outDir = path.join(root, 'images', 'products');
 const queuePath = path.join(root, 'scripts', 'product-images-regen-queue.json');
+const queriesPath = path.join(root, 'js', 'product-search-queries.js');
 
 const UA = 'Proteiner/1.0 (nutrition education; contact: dominikchw1@gmail.com)';
 
@@ -54,18 +55,43 @@ function seedFromSlug(slug) {
     return h.readUInt32BE(0) % 2147483646;
 }
 
-function buildPrompt(name) {
-    const clean = name.replace(/\([^)]*\)/g, '').trim();
-    const lower = clean.toLowerCase();
-    let subject = clean;
-    if (/oliwa|olej|oil|ghee|tłuszcz|tluszcz/i.test(lower)) {
-        subject = `clear glass bottle of ${clean}, golden liquid, no label text`;
-    } else if (/masło|maslo|butter/i.test(lower)) {
-        subject = `stick or block of ${clean} on white plate`;
+function buildPrompt(p, englishName) {
+    const en = englishName || p.name.replace(/\([^)]*\)/g, '').trim();
+    const lower = `${en} ${p.name}`.toLowerCase();
+    let subject = en;
+    if (/oliwa|olej|oil|ghee|tluszcz|tłuszcz|smalec|maslo klarowane/i.test(lower)) {
+        subject = `${en}, clear glass bottle with golden liquid, blank label area`;
+    } else if (/masło|maslo|butter|margaryna/i.test(lower) && !/orzechow/i.test(lower)) {
+        subject = `${en}, stick or wrapped block`;
+    } else if (/sos |ketchup|mayo|musztard|pesto|sriracha|sojow|barbecue|teriyaki|tzatziki|hummus/i.test(lower)) {
+        subject = `${en}, small bowl or bottle without readable text`;
+    } else if (/zupa|soup|rosol|minestrone|barszcz|krem /i.test(lower)) {
+        subject = `${en}, white ceramic bowl`;
+    } else if (/protein|whey|wpc|wpi|izolat|koncentrat bialka/i.test(lower)) {
+        subject = `${en}, protein powder in scoop`;
+    } else if (/pizza|burger|kebab|wrap|frytk|nugget|mcchicken|big mac|hot dog/i.test(lower)) {
+        subject = `${en}, single serving portion`;
     }
+    const catHint = {
+        warzywa: 'fresh vegetable',
+        owoce: 'fresh fruit',
+        mieso: 'meat or fish',
+        nabial: 'dairy product',
+        zboza: 'grain or bakery product',
+        orzechy: 'nuts or seeds',
+        sosy: 'condiment',
+        tluszcze: 'cooking fat or oil',
+        makarony: 'pasta dish',
+        zupy: 'soup',
+        fastfood: 'fast food item',
+        slodycze: 'sweet snack',
+        'polskie-obiadki': 'Polish home-style dish'
+    }[p.category];
+    const hint = catHint ? `, ${catHint}` : '';
     return (
-        `Professional e-commerce product photo of ${subject}, food item only, centered on pure white background, ` +
-        `soft subtle shadow underneath, minimalist studio lighting, photorealistic, no text, no people, no hands, no logo, no packaging labels`
+        `Professional e-commerce product photo of ${subject}${hint}, food only, centered on pure white background, ` +
+        `soft subtle shadow, minimalist studio lighting, photorealistic, no text, no people, no hands, no logo, ` +
+        `no watermark, no extra props, no confusing labels`
     );
 }
 
@@ -120,11 +146,28 @@ const allProducts = enrichProducts(raw);
 const sharp = (await import('sharp')).default;
 fs.mkdirSync(outDir, { recursive: true });
 
+let PRODUCT_SEARCH_QUERIES = {};
+if (fs.existsSync(queriesPath)) {
+    const mod = await import(pathToFileURL(queriesPath).href);
+    PRODUCT_SEARCH_QUERIES = mod.PRODUCT_SEARCH_QUERIES || {};
+}
+
 const slugArgs = process.argv.filter((a) => a.startsWith('--slug=')).map((a) => a.slice(7));
+const keepArg = process.argv.find((a) => a.startsWith('--keep-slugs='));
+const keepSlugs = new Set((keepArg?.split('=')[1] || '').split(',').map((s) => s.trim()).filter(Boolean));
 let todo = allProducts;
 
 if (slugArgs.length) {
     const set = new Set(slugArgs);
+    todo = allProducts.filter((p) => set.has(p.slug));
+} else if (process.argv.includes('--from-audit')) {
+    const auditPath = path.join(root, 'scripts', 'product-images-to-fix.json');
+    if (!fs.existsSync(auditPath)) {
+        console.error('Brak', auditPath, '— uruchom: node scripts/audit-product-image-style.mjs --json > scripts/product-images-to-fix.json');
+        process.exit(1);
+    }
+    const flagged = JSON.parse(fs.readFileSync(auditPath, 'utf8').replace(/^\uFEFF/, ''));
+    const set = new Set(flagged.map((f) => f.slug));
     todo = allProducts.filter((p) => set.has(p.slug));
 } else if (process.argv.includes('--queue')) {
     if (!fs.existsSync(queuePath)) {
@@ -137,11 +180,14 @@ if (slugArgs.length) {
 } else if (process.argv.includes('--all')) {
     todo = allProducts;
 } else {
-    console.error('Użyj --all, --queue lub --slug=nazwa');
+    console.error('Użyj --all, --queue, --from-audit lub --slug=nazwa');
     process.exit(1);
 }
 
+if (keepSlugs.size) todo = todo.filter((p) => !keepSlugs.has(p.slug));
+
 const skipExisting = process.argv.includes('--skip-ok');
+const noEmojiFallback = process.argv.includes('--no-emoji-fallback') || process.argv.includes('--from-audit');
 const delayMs = parseInt(process.argv.find((a) => a.startsWith('--delay='))?.split('=')[1] || '800', 10);
 
 console.log(`Do wygenerowania: ${todo.length} zdjęć`);
@@ -185,17 +231,12 @@ for (let i = 0; i < todo.length; i++) {
         }
     }
 
-    const prompt = encodeURIComponent(buildPrompt(p.name));
+    const english = PRODUCT_SEARCH_QUERIES[p.slug]?.[0];
+    const prompt = encodeURIComponent(buildPrompt(p, english));
     const seed = seedFromSlug(p.slug);
     const url = `https://image.pollinations.ai/prompt/${prompt}?width=800&height=600&nologo=true&seed=${seed}`;
 
     process.stdout.write(`[${i + 1}/${todo.length}] ${p.slug} … `);
-
-    try {
-        if (fs.existsSync(outPath)) fs.unlinkSync(outPath);
-    } catch {
-        /* ignore */
-    }
 
     let lastErr = null;
     for (let attempt = 0; attempt < 4; attempt++) {
@@ -209,6 +250,7 @@ for (let i = 0; i < todo.length; i++) {
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             const buf = Buffer.from(await res.arrayBuffer());
             if (buf.length < 5000) throw new Error('za mały plik');
+            if (fs.existsSync(outPath)) fs.unlinkSync(outPath);
             await writeProductJpeg(sharp, outPath, buf);
             console.log(attempt ? `OK (retry ${attempt})` : 'OK');
             ok++;
@@ -220,13 +262,18 @@ for (let i = 0; i < todo.length; i++) {
     }
 
     if (lastErr) {
-        try {
-            await writeProductJpeg(sharp, outPath, buildMinimalSvg(p.emoji));
-            console.log(`fallback emoji (${lastErr.message})`);
-            ok++;
-        } catch (e2) {
-            console.log(`FAIL (${e2.message})`);
+        if (noEmojiFallback) {
+            console.log(`FAIL (${lastErr.message}) — zostawiam poprzednie`);
             fail++;
+        } else {
+            try {
+                await writeProductJpeg(sharp, outPath, buildMinimalSvg(p.emoji));
+                console.log(`fallback emoji (${lastErr.message})`);
+                ok++;
+            } catch (e2) {
+                console.log(`FAIL (${e2.message})`);
+                fail++;
+            }
         }
     }
 
