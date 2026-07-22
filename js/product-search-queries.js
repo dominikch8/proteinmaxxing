@@ -846,9 +846,10 @@ export const PRODUCT_SEARCH_QUERIES = {
     "marshmallow ingredient photo"
   ],
   "raffaello": [
-    "candy",
-    "candy food",
-    "candy ingredient photo"
+    "Raffaello candy",
+    "Raffaello coconut confection",
+    "Raffaello candy food",
+    "Raffaello candy ingredient photo"
   ],
   "baton-proteinowy": [
     "candy bar protein bar",
@@ -1829,29 +1830,34 @@ export const PRODUCT_SEARCH_QUERIES = {
     "Kinder Bueno ingredient photo"
   ],
   "oreo": [
-    "Oreo",
-    "Oreo food",
-    "Oreo ingredient photo"
+    "Oreo cookies",
+    "Oreo biscuit",
+    "Oreo cookies food",
+    "Oreo cookies ingredient photo"
   ],
   "mars": [
-    "Mars",
-    "Mars food",
-    "Mars ingredient photo"
+    "Mars chocolate bar",
+    "Mars candy bar",
+    "Mars chocolate bar food",
+    "Mars chocolate bar ingredient photo"
   ],
   "twix": [
-    "Twix",
-    "Twix food",
-    "Twix ingredient photo"
+    "Twix chocolate bar",
+    "Twix candy",
+    "Twix chocolate bar food",
+    "Twix chocolate bar ingredient photo"
   ],
   "bounty": [
-    "Bounty",
-    "Bounty food",
-    "Bounty ingredient photo"
+    "Bounty chocolate bar",
+    "Bounty coconut chocolate",
+    "Bounty chocolate bar food",
+    "Bounty chocolate bar ingredient photo"
   ],
   "kit-kat": [
-    "Kit Kat",
-    "Kit Kat food",
-    "Kit Kat ingredient photo"
+    "Kit Kat chocolate bar",
+    "KitKat wafer",
+    "Kit Kat chocolate bar food",
+    "Kit Kat chocolate bar ingredient photo"
   ],
   "tofu-naturalne": [
     "Tofu naturalne",
@@ -2339,24 +2345,29 @@ export const PRODUCT_SEARCH_QUERIES = {
     "pizza ingredient photo"
   ],
   "lion": [
-    "Lion",
-    "Lion food",
-    "Lion ingredient photo"
+    "Lion chocolate bar",
+    "Lion candy bar Nestle",
+    "Lion chocolate wafer bar",
+    "Lion chocolate bar food",
+    "Lion chocolate bar ingredient photo"
   ],
   "milky-way": [
-    "Milky Way",
-    "Milky Way food",
-    "Milky Way ingredient photo"
+    "Milky Way chocolate bar",
+    "Milky Way candy bar",
+    "Milky Way chocolate bar food",
+    "Milky Way chocolate bar ingredient photo"
   ],
   "3-bit": [
-    "3 BIT",
-    "3 BIT food",
-    "3 BIT ingredient photo"
+    "3 Bit chocolate bar",
+    "3Bit Polish chocolate",
+    "3 Bit chocolate bar food",
+    "3 Bit chocolate bar ingredient photo"
   ],
   "delicje": [
-    "Delicje",
-    "Delicje food",
-    "Delicje ingredient photo"
+    "Delicje cookies",
+    "Delicje chocolate jam biscuit",
+    "Delicje cookies food",
+    "Delicje cookies ingredient photo"
   ],
   "biszkopty": [
     "Biszkopty",

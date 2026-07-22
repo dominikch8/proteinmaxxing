@@ -7,6 +7,17 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 /** Ręczne zapytania dla trudnych produktów */
 const SLUG_QUERIES = {
+    lion: ['Lion chocolate bar', 'Lion candy bar Nestle', 'Lion chocolate wafer bar'],
+    'milky-way': ['Milky Way chocolate bar', 'Milky Way candy bar'],
+    mars: ['Mars chocolate bar', 'Mars candy bar'],
+    twix: ['Twix chocolate bar', 'Twix candy'],
+    snickers: ['Snickers chocolate bar', 'Snickers candy'],
+    bounty: ['Bounty chocolate bar', 'Bounty coconut chocolate'],
+    oreo: ['Oreo cookies', 'Oreo biscuit'],
+    'kit-kat': ['Kit Kat chocolate bar', 'KitKat wafer'],
+    raffaello: ['Raffaello candy', 'Raffaello coconut confection'],
+    '3-bit': ['3 Bit chocolate bar', '3Bit Polish chocolate'],
+    delicje: ['Delicje cookies', 'Delicje chocolate jam biscuit'],
     'fasolka-szparagowa': ['green beans fresh', 'French beans vegetable', 'haricots verts'],
     migdaly: ['raw almonds nuts', 'almonds whole', 'almond nuts food'],
     'zapiekanka-studentska': ['zapiekanka polish open sandwich', 'zapiekanka food'],
