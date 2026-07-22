@@ -1,14 +1,10 @@
 /**
- * Regeneracja WSZYSTKICH zdjęć produktów — zawsze kontekst JEDZENIA.
- * Zapytanie = nazwa EN + "food" / "chocolate bar" itd. (żeby Lion ≠ lew).
- *
- * Kolejność:
- * 1) Commons/Openverse z food-query
- * 2) Wikipedia tylko z food-specific titles
- * 3) Pollinations: "edible food product photo of …"
+ * Generuje WSZYSTKIE zdjęcia produktów (bez Wikimedia/Openverse).
+ * Tylko AI: białe tło + kontekst JEDZENIA.
  *
  * node scripts/rebuild-all-product-photos.mjs
- * node scripts/rebuild-all-product-photos.mjs --keep-slugs=banan,jablko
+ * node scripts/rebuild-all-product-photos.mjs --keep-slugs=banan,lion
+ * node scripts/rebuild-all-product-photos.mjs --slug=lion --slug=mars
  */
 import fs from 'fs';
 import path from 'path';
@@ -22,133 +18,74 @@ const outDir = path.join(root, 'images', 'products');
 const queriesPath = path.join(root, 'js', 'product-search-queries.js');
 const UA = 'Proteiner/1.0 (nutrition education; contact: dominikchw1@gmail.com)';
 
-const BAD_TITLE =
-    /logo|icon|diagram|map|flag|coat of arms|symbol|chart|graph|list of|disambiguation|category:|svg|stamp|seal|signature|portrait|building|aircraft|vehicle|watermark|screenshot|qr|panthera|wildlife|zoo|safari|lioness|male lion|african lion|constellation|astronomy|galaxy|milky way galaxy|planet|moon|star /i;
-
-const ANIMAL_ONLY =
-    /^(lion|tiger|bear|wolf|fox|deer|eagle|hawk|owl|shark|whale|dolphin|snake|spider|ant|bee|cat|dog|horse|cow|pig|sheep|goat|rabbit|mouse|rat|monkey|ape|gorilla|elephant|giraffe|zebra|hippo|rhino|crocodile|alligator|frog|toad|lizard|turtle|penguin|parrot|crow|raven|duck|goose|swan|peacock|flamingo|kangaroo|koala|panda|sloth|otter|seal|walrus|bat|hedgehog|squirrel|chipmunk|raccoon|skunk|moose|elk|bison|buffalo|camel|llama|alpaca|donkey|mule|pony|ferret|hamster|guinea pig|chinchilla|lemur|meerkat|mongoose|hyena|cheetah|leopard|jaguar|cougar|lynx|bobcat|wildcat)$/i;
-
-/** Jawny temat JEDZENIA (EN) — obowiązkowy kontekst food */
+/** Jawny temat JEDZENIA (EN) — nigdy zwierzę / planeta / galaktyka */
 const FOOD_SUBJECT = {
-    lion: 'Lion chocolate candy bar Nestle',
-    'milky-way': 'Milky Way chocolate candy bar',
-    mars: 'Mars chocolate candy bar',
-    twix: 'Twix chocolate cookie candy bar',
-    snickers: 'Snickers chocolate peanut candy bar',
+    lion: 'Lion Nestle chocolate candy bar wafer caramel cereal',
+    'milky-way': 'Milky Way chocolate nougat candy bar',
+    mars: 'Mars chocolate nougat caramel candy bar',
+    twix: 'Twix chocolate cookie caramel candy bars',
+    snickers: 'Snickers chocolate peanut nougat candy bar',
     bounty: 'Bounty coconut chocolate candy bar',
-    oreo: 'Oreo chocolate sandwich cookies',
-    'kit-kat': 'Kit Kat chocolate wafer bar',
-    raffaello: 'Raffaello coconut almond candy',
-    '3-bit': '3 Bit Polish chocolate wafer bar',
-    delicje: 'Delicje Polish jam chocolate cookies',
-    'kinder-bueno': 'Kinder Bueno chocolate hazelnut bar',
+    oreo: 'Oreo chocolate cream sandwich cookies',
+    'kit-kat': 'Kit Kat chocolate wafer candy bar',
+    raffaello: 'Raffaello white coconut almond candy balls',
+    '3-bit': '3 Bit Polish chocolate wafer candy bar',
+    delicje: 'Delicje Polish jam filled chocolate cookies',
+    'kinder-bueno': 'Kinder Bueno chocolate hazelnut wafer bar',
     'prince-polo': 'Prince Polo chocolate wafer bar',
     'ptasie-mleczko': 'Ptasie mleczko marshmallow chocolate candy',
-    'baton-proteinowy': 'protein chocolate bar food',
-    'krem-czekoladowy-milka': 'Milka chocolate hazelnut spread jar food',
-    'czekolada-mleczna': 'milk chocolate bar food',
-    'czekolada-gorzka': 'dark chocolate bar food',
-    'czekolada-100': '100 percent dark chocolate bar food',
-    hamburger: 'hamburger beef burger food',
-    'big-mac-styl': 'Big Mac style double burger food',
-    'whopper-styl': 'Whopper style burger food',
-    'hot-dog': 'hot dog sausage in bun food',
-    frytki: 'french fries potato food',
-    'piers-z-kurczaka': 'raw chicken breast meat food',
-    'piers-z-indyka': 'raw turkey breast meat food',
-    banan: 'yellow banana fruit food',
-    jablko: 'red apple fruit food',
-    'fasolka-szparagowa': 'fresh green beans vegetable food',
-    migdaly: 'raw almonds nuts food',
-    'sos-sojowy': 'soy sauce bottle food',
-    cytryna: 'yellow lemon fruit food',
-    pomidor: 'red tomato vegetable food',
-    ogorek: 'green cucumber vegetable food',
-    ketchup: 'tomato ketchup bottle food',
-    majonez: 'mayonnaise jar food',
-    guacamole: 'guacamole avocado dip bowl food',
-    'losos-atlantycki': 'raw salmon fillet fish food',
-    'twarog-chudy': 'cottage cheese curd bowl food',
-    'ryz-bialy-gotowany': 'cooked white rice bowl food',
-    bigos: 'Polish bigos hunter stew food',
-    'pierogi-ruskie': 'Polish pierogi dumplings food',
-    'rosol': 'Polish chicken broth soup food',
-    'ser-mozzarella': 'mozzarella cheese ball food',
-    'mleko-2': 'glass of cow milk food',
-    'jajko-kurze-cale': 'brown chicken egg food',
-    'orzechy-wloskie': 'walnuts nuts food',
-    'orzechy-laskowe': 'hazelnuts nuts food',
-    'orzechy-ziemne': 'peanuts nuts food',
-    truskawki: 'fresh strawberries fruit food',
-    maliny: 'fresh raspberries fruit food',
-    rukola: 'fresh arugula leaves food',
-    kalafior: 'cauliflower vegetable food',
-    brokuly: 'broccoli vegetable food',
-    ziemniaki: 'potato vegetable food',
-    marchew: 'carrots vegetable food',
-    salami: 'salami sausage slices food',
-    ricotta: 'ricotta cheese bowl food',
-    'oliwa-z-oliwek': 'olive oil bottle food',
-    maslo: 'butter stick food',
-    'szpinak-swiezy': 'fresh spinach leaves food',
-    winogrona: 'grapes fruit food',
-    'cielecina': 'veal meat food',
-    'indyk-mielony': 'ground turkey meat food',
-    'kurczak-mielony': 'ground chicken meat food',
-    'mieso-mielone-wolowe': 'ground beef meat food'
-};
-
-/** Wikipedia titles that are food articles (never animals) */
-const WIKI_TITLES = {
-    lion: ['Lion (chocolate bar)'],
-    'milky-way': ['Milky Way (chocolate bar)'],
-    mars: ['Mars (chocolate bar)'],
-    twix: ['Twix'],
-    snickers: ['Snickers'],
-    bounty: ['Bounty (chocolate bar)'],
-    oreo: ['Oreo'],
-    'kit-kat': ['Kit Kat'],
-    raffaello: ['Raffaello (confection)'],
-    'kinder-bueno': ['Kinder Bueno'],
-    'piers-z-kurczaka': ['Chicken as food'],
-    'piers-z-indyka': ['Turkey as food'],
-    banan: ['Banana'],
-    jablko: ['Apple'],
-    'fasolka-szparagowa': ['Green bean'],
-    migdaly: ['Almond'],
-    hamburger: ['Hamburger'],
-    frytki: ['French fries'],
-    'losos-atlantycki': ['Salmon as food'],
-    'twarog-chudy': ['Cottage cheese'],
-    bigos: ['Bigos'],
-    'pierogi-ruskie': ['Pierogi'],
-    ketchup: ['Ketchup'],
-    majonez: ['Mayonnaise'],
-    guacamole: ['Guacamole'],
-    'jajko-kurze-cale': ['Egg as food'],
-    'ser-mozzarella': ['Mozzarella'],
-    'mleko-2': ['Milk'],
-    salami: ['Salami'],
-    ricotta: ['Ricotta'],
-    'oliwa-z-oliwek': ['Olive oil'],
-    maslo: ['Butter'],
-    truskawki: ['Strawberry'],
-    maliny: ['Raspberry'],
-    rukola: ['Arugula'],
-    kalafior: ['Cauliflower'],
-    brokuly: ['Broccoli'],
-    ziemniaki: ['Potato'],
-    marchew: ['Carrot'],
-    pomidor: ['Tomato'],
-    ogorek: ['Cucumber'],
-    cytryna: ['Lemon'],
-    'szpinak-swiezy': ['Spinach'],
-    winogrona: ['Grape'],
-    'orzechy-wloskie': ['Walnut'],
-    'orzechy-laskowe': ['Hazelnut'],
-    'orzechy-ziemne': ['Peanut'],
-    'sos-sojowy': ['Soy sauce'],
-    'ryz-bialy-gotowany': ['Cooked rice']
+    'baton-proteinowy': 'protein chocolate candy bar',
+    'krem-czekoladowy-milka': 'chocolate hazelnut spread in glass jar',
+    'czekolada-mleczna': 'milk chocolate bar',
+    'czekolada-gorzka': 'dark chocolate bar',
+    'czekolada-100': '100 percent dark chocolate bar',
+    hamburger: 'beef hamburger burger with bun',
+    'big-mac-styl': 'double cheeseburger Big Mac style',
+    'whopper-styl': 'flame grilled burger Whopper style',
+    'hot-dog': 'hot dog sausage in bun',
+    frytki: 'french fries potato chips',
+    'piers-z-kurczaka': 'raw chicken breast fillets',
+    'piers-z-indyka': 'raw turkey breast fillet meat',
+    banan: 'ripe yellow banana fruit',
+    jablko: 'red apple fruit',
+    'fasolka-szparagowa': 'fresh green beans vegetable',
+    migdaly: 'raw whole almonds nuts',
+    'sos-sojowy': 'dark soy sauce in clear glass bottle',
+    cytryna: 'yellow lemon citrus fruit',
+    pomidor: 'red tomato vegetable',
+    ogorek: 'green cucumber vegetable',
+    ketchup: 'tomato ketchup in bottle',
+    majonez: 'mayonnaise in glass jar',
+    guacamole: 'guacamole avocado dip in bowl',
+    'losos-atlantycki': 'raw salmon fillet fish',
+    'twarog-chudy': 'cottage cheese curds in bowl',
+    'ryz-bialy-gotowany': 'cooked white rice in bowl',
+    bigos: 'Polish bigos hunter stew cabbage meat',
+    'pierogi-ruskie': 'Polish pierogi dumplings',
+    rosol: 'Polish chicken broth clear soup',
+    'ser-mozzarella': 'fresh mozzarella cheese ball',
+    'mleko-2': 'glass of white cow milk',
+    'jajko-kurze-cale': 'brown chicken egg',
+    'orzechy-wloskie': 'walnuts nuts',
+    'orzechy-laskowe': 'hazelnuts nuts',
+    'orzechy-ziemne': 'peanuts nuts',
+    truskawki: 'fresh red strawberries',
+    maliny: 'fresh red raspberries',
+    rukola: 'fresh arugula salad leaves',
+    kalafior: 'white cauliflower head',
+    brokuly: 'green broccoli head',
+    ziemniaki: 'brown potato vegetable',
+    marchew: 'orange carrots vegetable',
+    salami: 'salami sausage slices',
+    ricotta: 'ricotta cheese in bowl',
+    'oliwa-z-oliwek': 'olive oil in clear glass bottle',
+    maslo: 'yellow butter stick',
+    'szpinak-swiezy': 'fresh spinach leaves',
+    winogrona: 'purple grapes fruit',
+    cielecina: 'raw veal meat',
+    'indyk-mielony': 'raw ground turkey meat',
+    'kurczak-mielony': 'raw ground chicken meat',
+    'mieso-mielone-wolowe': 'raw ground beef meat'
 };
 
 const CATEGORY_FOOD_SUFFIX = {
@@ -156,16 +93,18 @@ const CATEGORY_FOOD_SUFFIX = {
     nabial: 'dairy food',
     warzywa: 'vegetable food',
     owoce: 'fruit food',
-    zboza: 'grain food',
-    orzechy: 'nuts food',
-    sosy: 'sauce food condiment',
+    zboza: 'grain cereal food',
+    orzechy: 'nuts seeds food',
+    sosy: 'sauce condiment food',
     tluszcze: 'cooking oil fat food',
     makarony: 'pasta food',
     zupy: 'soup food',
     fastfood: 'fast food meal',
     slodycze: 'sweet candy dessert food',
-    'polskie-obiadki': 'Polish food dish'
+    'polskie-obiadki': 'Polish cooked food dish'
 };
+
+const ANIMAL_OR_AMBIGUOUS = /^(lion|mars|bounty|turkey|apple|orange|kiwi|mercury|venus|earth|jupiter|saturn|neptune|pluto)$/i;
 
 function slugify(name) {
     return name
@@ -204,170 +143,52 @@ function sleep(ms) {
     return new Promise((r) => setTimeout(r, ms));
 }
 
-function keywords(q) {
-    return q
-        .toLowerCase()
-        .replace(/[^a-z0-9\s]/g, ' ')
-        .split(/\s+/)
-        .filter(
-            (w) =>
-                w.length > 2 &&
-                !['food', 'fresh', 'the', 'and', 'photo', 'ingredient', 'dish', 'cooked', 'candy', 'bar', 'chocolate'].includes(w)
-        );
-}
-
-/** Buduje temat jedzenia: zawsze kończy się kontekstem food */
 function buildFoodSubject(p, queries) {
     if (FOOD_SUBJECT[p.slug]) return FOOD_SUBJECT[p.slug];
 
-    const base = (queries[0] || p.name.replace(/\([^)]*\)/g, '').trim())
+    let base = (queries[0] || p.name.replace(/\([^)]*\)/g, '').trim())
         .replace(/\s+food$/i, '')
         .replace(/\s+ingredient photo$/i, '')
         .trim();
 
-    // Unikaj gołych nazw zwierząt / marek bez "food"
-    if (ANIMAL_ONLY.test(base) || /^(lion|mars|bounty|turkey|apple|orange|kiwi)$/i.test(base)) {
-        const suffix = CATEGORY_FOOD_SUFFIX[p.category] || 'food';
-        if (/lion/i.test(base)) return 'Lion chocolate candy bar food';
-        if (/mars/i.test(base)) return 'Mars chocolate candy bar food';
-        if (/bounty/i.test(base)) return 'Bounty chocolate candy bar food';
-        if (/turkey/i.test(base)) return 'turkey meat food';
-        if (/^apple$/i.test(base)) return 'apple fruit food';
-        if (/^orange$/i.test(base)) return 'orange fruit food';
-        if (/^kiwi$/i.test(base)) return 'kiwi fruit food';
-        return `${base} ${suffix}`;
+    if (ANIMAL_OR_AMBIGUOUS.test(base)) {
+        if (/lion/i.test(base)) return 'Lion Nestle chocolate candy bar';
+        if (/mars/i.test(base)) return 'Mars chocolate candy bar';
+        if (/bounty/i.test(base)) return 'Bounty coconut chocolate candy bar';
+        if (/turkey/i.test(base)) return 'raw turkey breast meat';
+        if (/^apple$/i.test(base)) return 'red apple fruit';
+        if (/^orange$/i.test(base)) return 'orange citrus fruit';
+        if (/^kiwi$/i.test(base)) return 'kiwi fruit';
     }
 
     const suffix = CATEGORY_FOOD_SUFFIX[p.category] || 'food';
-    if (/\b(food|fruit|vegetable|meat|cheese|soup|candy|chocolate|bar|sauce|oil|nut|seed|bread|pasta|rice|egg|milk)\b/i.test(base)) {
-        return `${base} food`.replace(/\s+food\s+food$/i, ' food');
+    if (/\b(food|fruit|vegetable|meat|cheese|soup|candy|chocolate|bar|sauce|oil|nut|seed|bread|pasta|rice|egg|milk|cookie|wafer)\b/i.test(base)) {
+        return base;
     }
     return `${base} ${suffix}`;
 }
 
-function foodQueries(p, queries) {
-    const subject = buildFoodSubject(p, queries);
-    const list = [
-        subject,
-        `${subject} edible`,
-        `${p.name.replace(/\([^)]*\)/g, '').trim()} jedzenie`,
-        ...queries.map((q) => (/food|chocolate|candy|fruit|meat|cheese/i.test(q) ? q : `${q} food`))
-    ];
-    return [...new Set(list.filter(Boolean))];
-}
-
-function isFoodSafeWiki(data, title) {
-    if (!data || data.type === 'disambiguation') return false;
-    const t = `${title} ${data.title || ''} ${data.description || ''} ${data.extract || ''}`.toLowerCase();
-    if (BAD_TITLE.test(t)) return false;
-    if (/\b(mammal|carnivore|felidae|animal|species of|constellation|astronomy|galaxy|planet)\b/.test(t) && !/\b(food|chocolate|candy|cuisine|dish|cheese|meat|fruit|vegetable|confection|snack|bar)\b/.test(t)) {
-        return false;
-    }
-    // Require food signal for short/ambiguous titles
-    if (ANIMAL_ONLY.test(title) || /^(lion|mars|bounty|turkey)$/i.test(title)) return false;
-    return true;
-}
-
-async function wikiRestImage(title) {
-    const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`;
-    const res = await fetch(url, {
-        headers: { 'User-Agent': UA, Accept: 'application/json' },
-        signal: AbortSignal.timeout(20000)
-    });
-    if (!res.ok) return null;
-    const data = await res.json();
-    if (!isFoodSafeWiki(data, title)) return null;
-    const src = data?.originalimage?.source || data?.thumbnail?.source;
-    if (!src || BAD_TITLE.test(src)) return null;
-    return src;
-}
-
-async function commonsBest(query) {
-    const foodQuery = /food|chocolate|candy|fruit|meat|cheese|soup|sauce|vegetable/i.test(query)
-        ? query
-        : `${query} food`;
-    const params = new URLSearchParams({
-        action: 'query',
-        generator: 'search',
-        gsrsearch: `filetype:bitmap ${foodQuery}`,
-        gsrnamespace: '6',
-        gsrlimit: '12',
-        prop: 'imageinfo',
-        iiprop: 'url',
-        iiurlwidth: '800',
-        format: 'json',
-        origin: '*'
-    });
-    const res = await fetch(`https://commons.wikimedia.org/w/api.php?${params}`, {
-        headers: { 'User-Agent': UA },
-        signal: AbortSignal.timeout(20000)
-    });
-    if (!res.ok) return null;
-    const data = await res.json();
-    const pages = Object.values(data?.query?.pages || {});
-    const kws = keywords(foodQuery);
-    let best = null;
-    for (const page of pages) {
-        const title = page?.title || '';
-        if (BAD_TITLE.test(title)) continue;
-        if (/\blion\b/i.test(title) && !/chocolate|candy|bar|nestle|confect/i.test(title)) continue;
-        if (/\bmars\b/i.test(title) && !/chocolate|candy|bar|confect/i.test(title)) continue;
-        const info = page?.imageinfo?.[0];
-        const url = info?.thumburl || info?.url;
-        if (!url || !/\.(jpg|jpeg|png|webp)/i.test(url)) continue;
-        let score = 0;
-        const t = title.toLowerCase();
-        for (const w of kws) if (t.includes(w)) score += 15;
-        if (/food|chocolate|candy|fruit|vegetable|meat|cheese|soup|sauce|bread|pasta|rice|egg|milk|nut/.test(t)) score += 10;
-        if (score < 20) continue;
-        if (!best || score > best.score) best = { url, score };
-    }
-    return best?.url || null;
-}
-
-async function openverseBest(query) {
-    const foodQuery = /food|chocolate|candy/i.test(query) ? query : `${query} food`;
-    const params = new URLSearchParams({
-        q: foodQuery,
-        page_size: '8',
-        license_type: 'commercial,modification',
-        extension: 'jpg,jpeg,png,webp'
-    });
-    const res = await fetch(`https://api.openverse.engineering/v1/images/?${params}`, {
-        headers: { 'User-Agent': UA },
-        signal: AbortSignal.timeout(20000)
-    });
-    if (!res.ok) return null;
-    const data = await res.json();
-    for (const hit of data?.results || []) {
-        const title = `${hit?.title || ''} ${hit?.id || ''}`;
-        if (BAD_TITLE.test(title)) continue;
-        if (/\blion\b/i.test(title) && !/chocolate|candy|bar/i.test(title)) continue;
-        const url = hit?.url || hit?.thumbnail;
-        if (url && /\.(jpg|jpeg|png|webp)/i.test(url)) return url;
-    }
-    return null;
-}
-
 function pollinationsUrl(foodSubject, slug) {
-    const subject = String(foodSubject).slice(0, 100);
+    const subject = String(foodSubject).slice(0, 110);
     const prompt =
-        `edible food product photograph of ${subject}, real food only, not an animal, ` +
-        `not a person, grocery catalog, pure white background, studio lighting, photorealistic, no text, no watermark`;
-    const seed = crypto.createHash('md5').update(`food-v4-${slug}`).digest().readUInt32BE(0) % 2147483646;
+        `Professional e-commerce product photo of edible food: ${subject}. ` +
+        `This is FOOD only, never an animal, never a planet, never a person. ` +
+        `Centered on pure seamless white background, soft subtle shadow, ` +
+        `minimalist studio lighting, photorealistic, no text, no watermark, no logo print`;
+    const seed = crypto.createHash('md5').update(`gen-white-v5-${slug}`).digest().readUInt32BE(0) % 2147483646;
     return `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=800&height=600&nologo=true&seed=${seed}`;
 }
 
-async function saveFromUrl(sharp, url, outPath) {
+async function saveGenerated(sharp, url, outPath) {
     let lastErr;
     for (let attempt = 0; attempt < 5; attempt++) {
         try {
             const res = await fetch(url, {
                 headers: { 'User-Agent': UA },
-                signal: AbortSignal.timeout(90000)
+                signal: AbortSignal.timeout(120000)
             });
             if (res.status === 429) {
-                await sleep(1000 * (attempt + 1) ** 2);
+                await sleep(1500 * (attempt + 1) ** 2);
                 continue;
             }
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -377,6 +198,7 @@ async function saveFromUrl(sharp, url, outPath) {
             try {
                 await sharp(buf)
                     .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255 } })
+                    .flatten({ background: { r: 255, g: 255, b: 255 } })
                     .jpeg({ quality: 88, mozjpeg: true })
                     .toFile(tmp);
                 fs.writeFileSync(outPath, fs.readFileSync(tmp));
@@ -390,46 +212,10 @@ async function saveFromUrl(sharp, url, outPath) {
             return;
         } catch (e) {
             lastErr = e;
-            await sleep(400 * (attempt + 1));
+            await sleep(600 * (attempt + 1));
         }
     }
     throw lastErr;
-}
-
-async function findImage(p, queries) {
-    const fq = foodQueries(p, queries);
-    const subject = buildFoodSubject(p, queries);
-
-    // 1) Food-safe Wikipedia titles first (explicit)
-    for (const title of WIKI_TITLES[p.slug] || []) {
-        try {
-            const url = await wikiRestImage(title);
-            if (url) return { url, source: 'wiki', query: title };
-        } catch {
-            /* next */
-        }
-        await sleep(30);
-    }
-
-    // 2) Commons + Openverse with food queries
-    for (const q of fq.slice(0, 4)) {
-        try {
-            const url = await commonsBest(q);
-            if (url) return { url, source: 'commons', query: q };
-        } catch {
-            /* next */
-        }
-        try {
-            const url = await openverseBest(q);
-            if (url) return { url, source: 'openverse', query: q };
-        } catch {
-            /* next */
-        }
-        await sleep(40);
-    }
-
-    // 3) Generated food photo (always food-context prompt)
-    return { url: pollinationsUrl(subject, p.slug), source: 'pollinations', query: subject };
 }
 
 // --- main ---
@@ -471,7 +257,7 @@ const keepSlugs = new Set(
 );
 const limitArg = process.argv.find((a) => a.startsWith('--limit='));
 const maxItems = limitArg ? parseInt(limitArg.split('=')[1], 10) : Infinity;
-const delayMs = parseInt(process.argv.find((a) => a.startsWith('--delay='))?.split('=')[1] || '450', 10);
+const delayMs = parseInt(process.argv.find((a) => a.startsWith('--delay='))?.split('=')[1] || '1800', 10);
 
 let todo = products;
 if (slugArgs.length) {
@@ -481,7 +267,7 @@ if (slugArgs.length) {
 if (keepSlugs.size) todo = todo.filter((p) => !keepSlugs.has(p.slug));
 todo = todo.slice(0, maxItems);
 
-console.log(`Regeneracja (FOOD ONLY): ${todo.length} produktów`);
+console.log(`GENERACJA (tylko AI, białe tło, FOOD): ${todo.length} produktów`);
 
 let ok = 0;
 let fail = 0;
@@ -490,14 +276,15 @@ const failed = [];
 for (let i = 0; i < todo.length; i++) {
     const p = todo[i];
     const outPath = path.join(outDir, `${p.slug}.jpg`);
-    const queries = PRODUCT_SEARCH_QUERIES[p.slug] || [p.name.replace(/\([^)]*\)/g, '').trim(), `${p.name} food`];
+    const queries = PRODUCT_SEARCH_QUERIES[p.slug] || [p.name.replace(/\([^)]*\)/g, '').trim()];
+    const subject = buildFoodSubject(p, queries);
+    const url = pollinationsUrl(subject, p.slug);
 
-    process.stdout.write(`[${i + 1}/${todo.length}] ${p.slug} `);
+    process.stdout.write(`[${i + 1}/${todo.length}] ${p.slug} … `);
 
     try {
-        const hit = await findImage(p, queries);
-        await saveFromUrl(sharp, hit.url, outPath);
-        console.log(`✓ ${hit.source} (${String(hit.query).slice(0, 40)})`);
+        await saveGenerated(sharp, url, outPath);
+        console.log(`OK (${subject.slice(0, 42)})`);
         ok++;
     } catch (e) {
         console.log(`✗ ${e.message}`);
