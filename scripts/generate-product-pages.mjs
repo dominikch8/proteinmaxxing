@@ -313,7 +313,7 @@ ${items}
 }
 
 function dietaCategoryHref(category) {
-    return `kategoria/${encodeURIComponent(category)}`;
+    return `../dieta#produkty/kategoria/${encodeURIComponent(category)}`;
 }
 
 function buildSeoLead(p) {

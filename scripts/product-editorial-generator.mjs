@@ -221,7 +221,7 @@ function buildClosing(p) {
         `Strona produktu ${p.name} to punkt wyjścia — resztę dnia ułóż z warzyw, węgli i innych źródeł białka, żeby domknąć plan z <a href="../">kalkulatora TDEE</a>.`,
         `Jeśli liczysz koszty, sprawdź ranking na stronie <a href="../cena-bialka">Cena białka</a> — ${p.name} może okazać się ${cheaperPair(p.name)} niż myślisz, zależnie od promocji w sklepie.`,
         `Makro na etykiecie bywa inne niż w domowej porcji (np. po dodaniu tłuszczu do patelni). Tabela na tej stronie odnosi się do typowej porcji: ${servingPhrase(p)}.`,
-        `Zerknij na <a href="../produkty/kategoria/${p.category}">stronę kategorii ${CATEGORY_LABELS[p.category] || p.category}</a> — tam są podobne produkty i praktyczne wskazówki do planowania posiłków.`
+        `Zerknij na <a href="../dieta#produkty/kategoria/${p.category}">kategorię ${CATEGORY_LABELS[p.category] || p.category}</a> w bazie produktów — tam szybko przejrzysz podobne pozycje.`
     ];
 
     let text = pick(closings, p.slug, 19);

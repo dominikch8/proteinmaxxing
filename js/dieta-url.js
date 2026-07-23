@@ -108,26 +108,6 @@ function onDietaCategoryChange(mode) {
     syncDietaUrl(false);
 }
 
-/** Stare linki dieta.html#produkty/kategoria/… → osobna strona kategorii. */
-function redirectDietaCategoryHashToStandalone() {
-    const path = (window.location.pathname || '').replace(/\/$/, '');
-    const onDieta =
-        path.endsWith('dieta.html') || path === '/dieta' || path.endsWith('/dieta');
-    if (!onDieta) return false;
-
-    const { tabId, kategoria } = parseDietaHash();
-    const hashRaw = (window.location.hash || '').replace(/^#/, '').trim();
-    const parts = hashRaw.split('/').map((p) => decodeURIComponent(p).trim());
-    const head = (parts[0] || '').toLowerCase();
-    const isProductsTab =
-        tabId === 'baza-prod' || head === 'produkty' || head === 'baza-prod' || !tabId;
-
-    if (!kategoria || kategoria === 'all' || !isProductsTab) return false;
-
-    window.location.replace(`produkty/kategoria/${encodeURIComponent(kategoria)}`);
-    return true;
-}
-
 /** Stare linki dieta.html#protein-max → osobna podstrona rankingu. */
 function redirectDietaRankingHashToStandalone() {
     const path = (window.location.pathname || '').replace(/\/$/, '');
@@ -149,7 +129,6 @@ function redirectDietaRankingHashToStandalone() {
 
 function initDietaFromUrl() {
     if (redirectDietaRankingHashToStandalone()) return;
-    if (redirectDietaCategoryHashToStandalone()) return;
 
     const kategoria = getKategoriaFromUrl();
     const { tabId: tabFromHash } = parseDietaHash();
@@ -172,7 +151,15 @@ function initDietaFromUrl() {
         }
     }
 
-    if (kategoria) applyCategoryToTab(tabId, kategoria);
+    if (kategoria) {
+        applyCategoryToTab(tabId, kategoria);
+    } else if (tabId === 'baza-prod') {
+        const sel = getCategorySelectForTab(tabId);
+        if (sel && sel.value !== 'all') {
+            sel.value = 'all';
+            if (typeof filterProducts === 'function') filterProducts();
+        }
+    }
     syncDietaUrl(true);
 }
 

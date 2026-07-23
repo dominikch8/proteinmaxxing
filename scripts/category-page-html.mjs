@@ -35,7 +35,7 @@ function buildOtherCategoriesNav(current) {
     const links = CATEGORY_ORDER.filter((id) => id !== current)
         .map(
             (id) =>
-                `                        <a class="category-nav-chip" href="${esc(id)}">${esc(CATEGORY_LABELS[id] || id)}</a>`
+                `                        <a class="category-nav-chip" href="${PREFIX}dieta#produkty/kategoria/${esc(id)}">${esc(CATEGORY_LABELS[id] || id)}</a>`
         )
         .join('\n');
     return `                    <nav class="category-nav-other" aria-label="Inne kategorie">

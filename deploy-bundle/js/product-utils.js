@@ -105,7 +105,7 @@ function enrichProducts(raw) {
 
 function categoryPageUrl(category) {
     if (!category || category === 'all') return 'dieta#produkty';
-    return `produkty/kategoria/${category}`;
+    return `dieta#produkty/kategoria/${encodeURIComponent(category)}`;
 }
 
 function productPageUrl(slug) {
