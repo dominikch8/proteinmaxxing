@@ -623,10 +623,30 @@ export const PRODUCT_SEARCH_QUERIES = {
     "tortilla wheat food",
     "tortilla wheat ingredient photo"
   ],
-  "platki-sniadaniowe-cukier": [
-    "flakes cereal sugar",
-    "flakes cereal sugar food",
-    "flakes cereal sugar ingredient photo"
+  "platki-nesquik": [
+    "nesquik cereal",
+    "nesquik chocolate cereal",
+    "nesquik breakfast flakes"
+  ],
+  "platki-lion": [
+    "lion cereal",
+    "lion nestle cereal",
+    "lion caramel chocolate cereal"
+  ],
+  "platki-cini-minis": [
+    "cini minis",
+    "cini minis cereal",
+    "cinnamon cereal nestle"
+  ],
+  "platki-cookie-crisps": [
+    "cookie crisp cereal",
+    "cookie crisps",
+    "cookie crisp nestle"
+  ],
+  "platki-corn-flakes": [
+    "corn flakes",
+    "cornflakes cereal",
+    "corn flakes breakfast"
   ],
   "granola": [
     "granola",

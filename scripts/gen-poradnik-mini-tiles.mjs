@@ -95,7 +95,7 @@ const blocks = {
     weglowodany: block(
         'Najwięcej węglowodanów na 100 g',
         [
-            ['Płatki śniadaniowe (cukier)', '84 g'],
+            ['Płatki Corn Flakes', '84 g'],
             ['Makaron ryżowy (suchy)', '84 g'],
             ['Żurawina suszona', '82 g']
         ],

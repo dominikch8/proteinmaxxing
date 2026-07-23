@@ -811,7 +811,27 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/platki-sniadaniowe-cukier</loc>
+    <loc>https://proteiner.pl/produkty/platki-nesquik</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/platki-lion</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/platki-cini-minis</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/platki-cookie-crisps</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/platki-corn-flakes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

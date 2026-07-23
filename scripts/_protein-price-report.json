@@ -410,6 +410,16 @@
     "formula": "5.09 × 100 / 46 = 11.07"
   },
   {
+    "name": "Płatki Nesquik",
+    "serving": "miseczka (30g)",
+    "servingGrams": 30,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 8.7,
+    "proteinInServing": 2.61,
+    "pricePer100gProtein": 11.11,
+    "formula": "0.29 × 100 / 2.61 = 11.11"
+  },
+  {
     "name": "Udko z kurczaka (z skórą)",
     "serving": "sztuka (150g)",
     "servingGrams": 150,
@@ -518,6 +528,16 @@
     "proteinInServing": 38.5,
     "pricePer100gProtein": 12.18,
     "formula": "4.69 × 100 / 38.5 = 12.18"
+  },
+  {
+    "name": "Płatki Lion",
+    "serving": "miseczka (30g)",
+    "servingGrams": 30,
+    "servingPricePln": 0.3,
+    "proteinPer100g": 8.1,
+    "proteinInServing": 2.43,
+    "pricePer100gProtein": 12.35,
+    "formula": "0.3 × 100 / 2.43 = 12.35"
   },
   {
     "name": "Granola",
@@ -670,6 +690,16 @@
     "formula": "6.19 × 100 / 45 = 13.76"
   },
   {
+    "name": "Płatki Corn Flakes",
+    "serving": "miseczka (30g)",
+    "servingGrams": 30,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 7,
+    "proteinInServing": 2.1,
+    "pricePer100gProtein": 13.81,
+    "formula": "0.29 × 100 / 2.1 = 13.81"
+  },
+  {
     "name": "Płatki kukurydziane",
     "serving": "porcja (30g)",
     "servingGrams": 30,
@@ -740,16 +770,6 @@
     "formula": "4.19 × 100 / 28.8 = 14.55"
   },
   {
-    "name": "Płatki śniadaniowe (cukier)",
-    "serving": "miseczka (40g)",
-    "servingGrams": 40,
-    "servingPricePln": 0.35,
-    "proteinPer100g": 6,
-    "proteinInServing": 2.4,
-    "pricePer100gProtein": 14.58,
-    "formula": "0.35 × 100 / 2.4 = 14.58"
-  },
-  {
     "name": "Kasza gryczana z jajkiem",
     "serving": "porcja (250g)",
     "servingGrams": 250,
@@ -788,6 +808,16 @@
     "proteinInServing": 5.4,
     "pricePer100gProtein": 14.81,
     "formula": "0.8 × 100 / 5.4 = 14.81"
+  },
+  {
+    "name": "Płatki Cookie Crisps",
+    "serving": "miseczka (30g)",
+    "servingGrams": 30,
+    "servingPricePln": 0.3,
+    "proteinPer100g": 6.7,
+    "proteinInServing": 2.01,
+    "pricePer100gProtein": 14.93,
+    "formula": "0.3 × 100 / 2.01 = 14.93"
   },
   {
     "name": "Twaróg wiejski",
@@ -1200,6 +1230,16 @@
     "formula": "1.3 × 100 / 7.05 = 18.44"
   },
   {
+    "name": "Płatki Cini Minis",
+    "serving": "miseczka (30g)",
+    "servingGrams": 30,
+    "servingPricePln": 0.3,
+    "proteinPer100g": 5.4,
+    "proteinInServing": 1.62,
+    "pricePer100gProtein": 18.52,
+    "formula": "0.3 × 100 / 1.62 = 18.52"
+  },
+  {
     "name": "Ser Gouda",
     "serving": "plaster (15g)",
     "servingGrams": 15,
@@ -1360,7 +1400,7 @@
     "formula": "1.85 × 100 / 9 = 20.56"
   },
   {
-    "name": "Fasola biała (gotowana)",
+    "name": "Fasola biała",
     "serving": "porcja (150g)",
     "servingGrams": 150,
     "servingPricePln": 1.85,
@@ -1920,7 +1960,7 @@
     "formula": "0.95 × 100 / 3.4 = 27.94"
   },
   {
-    "name": "Tofu naturalne",
+    "name": "Tofu",
     "serving": "porcja (150g)",
     "servingGrams": 150,
     "servingPricePln": 3.39,
