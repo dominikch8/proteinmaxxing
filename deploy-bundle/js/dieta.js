@@ -63,10 +63,23 @@ function buildBazaProductCardHtml(p) {
                     </a>`;
         }
 
-        function renderProductsList(products, { append = false, fromIndex = 0 } = {}) {
+        function debounce(fn, delayMs) {
+            let timer;
+            return function debounced(...args) {
+                clearTimeout(timer);
+                timer = setTimeout(() => fn.apply(this, args), delayMs);
+            };
+        }
+
+        window.debouncedBazaSearchInput = debounce(() => {
+            if (typeof onDietaCategoryChange === 'function') onDietaCategoryChange('baza');
+        }, 200);
+
+        function renderProductsList(products, { append = false, fromIndex = 0, toIndex } = {}) {
             const grid = document.getElementById('productsGrid');
             if (!grid) return;
-            const slice = append ? products.slice(fromIndex) : products;
+            const end = toIndex == null ? products.length : toIndex;
+            const slice = append ? products.slice(fromIndex, end) : products;
             const html = slice.map((p) => buildBazaProductCardHtml(p)).join('');
             if (append) {
                 grid.insertAdjacentHTML('beforeend', html);
@@ -197,7 +210,11 @@ function buildBazaProductCardHtml(p) {
                 bazaVisibleCount + BAZA_SHOW_MORE_STEP,
                 bazaRandomPool.length
             );
-            renderProductsList(bazaRandomPool, { append: true, fromIndex: prevCount });
+            renderProductsList(bazaRandomPool, {
+                append: true,
+                fromIndex: prevCount,
+                toIndex: bazaVisibleCount
+            });
             updateBazaRandomHeading();
             updateProductsShowMoreUi();
         }
@@ -288,12 +305,6 @@ function buildBazaProductCardHtml(p) {
             alwaysAggregate: true,
             test: (p) => /dorsz|sandacz|mintaj|halibut|flądra|fladra/i.test(p.name)
         };
-
-        const MAKARON_GROUP_HINT =
-            'Zobacz kategorię <strong>Zboża i kasze</strong> dla rozpisu każdej osobno.';
-
-        const LEAN_FISH_MAXXING_HINT =
-            'Zobacz kategorię <strong>Mięsa i ryby</strong> dla szczegółowego rozpisu.';
 
         const MAKARON_SUCHY_GROUP = {
             id: 'makaron-suchy',
@@ -425,7 +436,7 @@ function buildBazaProductCardHtml(p) {
                 return kinds.join(' i ');
             }
             if (rule.id === 'makaron-suchy') {
-                return MAKARON_GROUP_HINT;
+                return '';
             }
             if (rule.id === 'kasze') {
                 const kinds = members.map((m) => shortenKaszaKind(m.name));
@@ -793,21 +804,21 @@ function buildBazaProductCardHtml(p) {
 
         function buildRankingGroupDetailsHtml(p, mode) {
             if (p.name === 'Makaron') {
-                return `<div class="prod-details" style="border-top: 1px dashed rgba(0,0,0,0.1); color: var(--text-dark); opacity: 0.9;">
-                            <div style="font-size:0.82rem;">${MAKARON_GROUP_HINT}</div>
-                        </div>`;
+                return '';
             }
             if (p.name === 'Chude ryby') {
-                const hint = mode === 'maxxing'
-                    ? LEAN_FISH_MAXXING_HINT
-                    : 'Wybierz kategorię <strong>Mięsa i Ryby</strong>, aby zobaczyć każdą rybę osobno.';
+                if (mode === 'maxxing') {
+                    return '';
+                }
                 return `<div class="prod-details" style="border-top: 1px dashed rgba(0,0,0,0.1); color: var(--text-dark); opacity: 0.9;">
-                            <div style="font-size:0.82rem;">${hint}</div>
+                            <div style="font-size:0.82rem;">Wybierz kategorię <strong>Mięsa i Ryby</strong>, aby zobaczyć każdą rybę osobno.</div>
                         </div>`;
             }
-            return `<div class="prod-details" style="border-top: 1px dashed rgba(0,0,0,0.1); color: var(--text-dark); opacity: 0.9;">
-                            ${p.groupNote ? `<div style="font-size:0.82rem;">${p.groupNote}</div>` : ''}
-                        </div>`;
+            return p.groupNote
+                ? `<div class="prod-details" style="border-top: 1px dashed rgba(0,0,0,0.1); color: var(--text-dark); opacity: 0.9;">
+                            <div style="font-size:0.82rem;">${p.groupNote}</div>
+                        </div>`
+                : '';
         }
 
         function appendMaxxingRankingCard(grid, p, rank) {
@@ -1082,6 +1093,11 @@ function buildBazaProductCardHtml(p) {
             populateCategorySelect(document.getElementById('priceCategoryFilter'), { includeTop10: true });
         }
 
+        async function bootDietaPage() {
+            if (typeof ensureProductsDatabase === 'function') {
+                await ensureProductsDatabase();
+            }
+
         if (document.getElementById('productsGrid')) {
             initDietaCategorySelects();
             const urlKat =
@@ -1103,3 +1119,6 @@ function buildBazaProductCardHtml(p) {
         }
 
         if (typeof initDietaFromUrl === 'function') initDietaFromUrl();
+        }
+
+        bootDietaPage().catch((err) => console.error('dieta:', err));

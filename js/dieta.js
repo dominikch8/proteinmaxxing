@@ -75,10 +75,11 @@ function buildBazaProductCardHtml(p) {
             if (typeof onDietaCategoryChange === 'function') onDietaCategoryChange('baza');
         }, 200);
 
-        function renderProductsList(products, { append = false, fromIndex = 0 } = {}) {
+        function renderProductsList(products, { append = false, fromIndex = 0, toIndex } = {}) {
             const grid = document.getElementById('productsGrid');
             if (!grid) return;
-            const slice = append ? products.slice(fromIndex) : products;
+            const end = toIndex == null ? products.length : toIndex;
+            const slice = append ? products.slice(fromIndex, end) : products;
             const html = slice.map((p) => buildBazaProductCardHtml(p)).join('');
             if (append) {
                 grid.insertAdjacentHTML('beforeend', html);
@@ -209,7 +210,11 @@ function buildBazaProductCardHtml(p) {
                 bazaVisibleCount + BAZA_SHOW_MORE_STEP,
                 bazaRandomPool.length
             );
-            renderProductsList(bazaRandomPool, { append: true, fromIndex: prevCount });
+            renderProductsList(bazaRandomPool, {
+                append: true,
+                fromIndex: prevCount,
+                toIndex: bazaVisibleCount
+            });
             updateBazaRandomHeading();
             updateProductsShowMoreUi();
         }
