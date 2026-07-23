@@ -15,11 +15,14 @@ const ROOT_PAGES = [
     ['porownaj-produkty.html', 'porownaj-produkty.html'],
     ['dodaj-produkt.html', 'dodaj-produkt.html'],
     ['poradnik-zywienia.html', 'poradnik-zywienia.html'],
+    ['artykuly.html', 'artykuly.html'],
     ['informacje.html', 'informacje.html'],
     ['o-mnie.html', 'o-mnie.html'],
     ['bialko-maxxing.html', 'bialko-maxxing.html'],
     ['cena-bialka.html', 'cena-bialka.html'],
-    ['trening.html', 'trening.html']
+    ['trening.html', 'trening.html'],
+    ['deficyt-kaloryczny-praktyka.html', 'deficyt-kaloryczny-praktyka.html'],
+    ['planowanie-posilkow.html', 'planowanie-posilkow.html']
 ];
 
 function walkHtml(dir, list = []) {

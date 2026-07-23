@@ -32,6 +32,7 @@
     <meta name="twitter:image" content="https://proteiner.pl/images/og-home.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/themes.css">
     <link rel="stylesheet" href="css/site.css">
@@ -100,12 +101,13 @@
             </a>
             <ul class="nav-links">
                 <li><a class="nav-link active" href="/">Kalkulator</a></li>
-                <li><a class="nav-link" href="/dieta">Dieta</a></li>
-                <li><a class="nav-link" href="/porownaj-produkty">Porównaj produkty</a></li>
-                <li><a class="nav-link" href="/dodaj-produkt">Dodaj produkty</a></li>
-                <li><a class="nav-link" href="/poradnik-zywienia">Poradnik</a></li>
-                <li><a class="nav-link" href="/informacje">Informacje</a></li>
-                <li><a class="nav-link" href="/o-mnie">O mnie</a></li>
+                <li><a class="nav-link" href="dieta">Dieta</a></li>
+                <li><a class="nav-link" href="porownaj-produkty">Porównaj produkty</a></li>
+                <li><a class="nav-link" href="dodaj-produkt">Dodaj produkty</a></li>
+                <li><a class="nav-link" href="poradnik-zywienia">Poradnik</a></li>
+                <li><a class="nav-link" href="artykuly">Artykuły</a></li>
+                <li><a class="nav-link" href="informacje">Informacje</a></li>
+                <li><a class="nav-link" href="o-mnie">O mnie</a></li>
             </ul>
         </nav>
     </header>
@@ -215,7 +217,7 @@
                     </div>
 
                     <div class="section-title">Dostosuj swoją dietę do maksimum białka i minimum kalorii</div>
-                    <a href="/bialko-maxxing" class="calc-protein-maxxing-cta">
+                    <a href="bialko-maxxing" class="calc-protein-maxxing-cta">
                         <span class="calc-protein-maxxing-cta-emoji" aria-hidden="true">🔥</span>
                         <span class="calc-protein-maxxing-cta-text">
                             <strong>Białko maxxing</strong>
@@ -274,74 +276,105 @@
                     </center>
                 </div>
 
-                <section class="editorial-intro calc-intro-bottom" aria-labelledby="calc-intro-heading">
-                    <h2 id="calc-intro-heading">Jak działa kalkulator?</h2>
-                    <p>Proteiner szacuje Twoje dzienne zapotrzebowanie energetyczne (TDEE) na podstawie płci, wieku, wagi, wzrostu i aktywności — według wzorów Mifflina–St Jeora. Po wybraniu celu (redukcja, masa lub utrzymanie) zobaczysz orientacyjną liczbę kalorii oraz rozkład białka, tłuszczu i węglowodanów.</p>
-                    <p>To punkt wyjścia do planowania posiłków, nie gotowa dieta. Szczegóły produktów sprawdzisz w <a href="/dieta">bazie produktów</a> lub <a href="/porownaj-produkty">porównywarce</a>. Więcej o metodzie i źródłach danych na stronie <a href="/o-mnie">O mnie</a>.</p>
-                </section>
+                <div class="home-info-tiles calc-intro-bottom" aria-label="Informacje o kalkulatorze">
+                    <details class="home-info-tile" id="home-tile-how">
+                        <summary class="home-info-tile-bar">
+                            <span class="home-info-tile-icon" aria-hidden="true">📊</span>
+                            <span class="home-info-tile-text">
+                                <span class="home-info-tile-title" id="calc-intro-heading">Jak działa kalkulator?</span>
+                                <span class="home-info-tile-sub">TDEE, makro i punkt wyjścia</span>
+                            </span>
+                            <span class="home-info-tile-chevron" aria-hidden="true"></span>
+                        </summary>
+                        <div class="home-info-tile-panel editorial-intro">
+                            <p>Proteiner szacuje Twoje dzienne zapotrzebowanie energetyczne (TDEE) na podstawie płci, wieku, wagi, wzrostu i aktywności — według wzorów Mifflina–St Jeora. Po wybraniu celu (redukcja, masa lub utrzymanie) zobaczysz orientacyjną liczbę kalorii oraz rozkład białka, tłuszczu i węglowodanów.</p>
+                            <p>To punkt wyjścia do planowania posiłków, nie gotowa dieta. Szczegóły produktów sprawdzisz w <a href="dieta">bazie produktów</a> lub <a href="porownaj-produkty">porównywarce</a>. Więcej o metodzie i źródłach danych na stronie <a href="o-mnie">O mnie</a>.</p>
+                        </div>
+                    </details>
 
-                <section class="calc-methodology editorial-intro" aria-labelledby="calc-method-heading">
-                    <h2 id="calc-method-heading">Jak liczymy wyniki i skąd biorą się dane?</h2>
-                    <p>Poniżej opisujemy dokładnie to, co robi kalkulator po kliknięciu „Oblicz”. Wszystkie wartości są <strong>szacunkowe</strong> — traktuj je jako punkt wyjścia, nie gotową dietę.</p>
+                    <details class="home-info-tile" id="home-tile-method">
+                        <summary class="home-info-tile-bar">
+                            <span class="home-info-tile-icon" aria-hidden="true">🧮</span>
+                            <span class="home-info-tile-text">
+                                <span class="home-info-tile-title" id="calc-method-heading">Jak liczymy wyniki i skąd biorą się dane?</span>
+                                <span class="home-info-tile-sub">Wzory, RDA i baza produktów</span>
+                            </span>
+                            <span class="home-info-tile-chevron" aria-hidden="true"></span>
+                        </summary>
+                        <div class="home-info-tile-panel calc-methodology editorial-intro">
+                            <p>Poniżej opisujemy dokładnie to, co robi kalkulator po kliknięciu „Oblicz”. Wszystkie wartości są <strong>szacunkowe</strong> — traktuj je jako punkt wyjścia, nie gotową dietę.</p>
 
-                    <h3>BMI (wskaźnik masy ciała)</h3>
-                    <p><code>BMI = waga (kg) ÷ [wzrost (m)]²</code></p>
-                    <p>Interpretacja WHO: poniżej 18,5 — niedowaga; 18,5–24,9 — norma; 25–29,9 — nadwaga; 30+ — otyłość.</p>
+                            <h3>BMI (wskaźnik masy ciała)</h3>
+                            <p><code>BMI = waga (kg) ÷ [wzrost (m)]²</code></p>
+                            <p>Interpretacja WHO: poniżej 18,5 — niedowaga; 18,5–24,9 — norma; 25–29,9 — nadwaga; 30+ — otyłość.</p>
 
-                    <h3>Kalorie (TDEE)</h3>
-                    <p>Najpierw liczymy <strong>podstawową przemianę materii (BMR)</strong> wzorami <strong>Mifflina–St Jeora</strong> (1990):</p>
-                    <ul class="calc-formula-list">
-                        <li><strong>Mężczyzna:</strong> BMR = 10 × waga + 6,25 × wzrost (cm) − 5 × wiek + 5</li>
-                        <li><strong>Kobieta:</strong> BMR = 10 × waga + 6,25 × wzrost (cm) − 5 × wiek − 161</li>
-                    </ul>
-                    <p>Potem mnożymy BMR przez <strong>współczynnik aktywności</strong> (1,2 – 1,9 z listy w formularzu) — otrzymujesz szacunkowe dzienne zapotrzebowanie (TDEE).</p>
-                    <p>Korekta pod cel:</p>
-                    <ul class="calc-formula-list">
-                        <li><strong>Odchudzanie</strong> — ok. <strong>−400 kcal</strong> (umiarkowany deficyt)</li>
-                        <li><strong>Budowa masy</strong> — ok. <strong>+300 kcal</strong> (niewielka nadwyżka)</li>
-                        <li><strong>Utrzymanie wagi</strong> — bez korekty</li>
-                    </ul>
+                            <h3>Kalorie (TDEE)</h3>
+                            <p>Najpierw liczymy <strong>podstawową przemianę materii (BMR)</strong> wzorami <strong>Mifflina–St Jeora</strong> (1990):</p>
+                            <ul class="calc-formula-list">
+                                <li><strong>Mężczyzna:</strong> BMR = 10 × waga + 6,25 × wzrost (cm) − 5 × wiek + 5</li>
+                                <li><strong>Kobieta:</strong> BMR = 10 × waga + 6,25 × wzrost (cm) − 5 × wiek − 161</li>
+                            </ul>
+                            <p>Potem mnożymy BMR przez <strong>współczynnik aktywności</strong> (1,2 – 1,9 z listy w formularzu) — otrzymujesz szacunkowe dzienne zapotrzebowanie (TDEE).</p>
+                            <p>Korekta pod cel:</p>
+                            <ul class="calc-formula-list">
+                                <li><strong>Odchudzanie</strong> — ok. <strong>−400 kcal</strong> (umiarkowany deficyt)</li>
+                                <li><strong>Budowa masy</strong> — ok. <strong>+300 kcal</strong> (niewielka nadwyżka)</li>
+                                <li><strong>Utrzymanie wagi</strong> — bez korekty</li>
+                            </ul>
 
-                    <h3>Białko, tłuszcz i węglowodany</h3>
-                    <p><strong>Białko</strong> (g/dzień) = waga (kg) × mnożnik zależny od celu:</p>
-                    <ul class="calc-formula-list">
-                        <li><strong>Odchudzanie:</strong> 2,0 g/kg — więcej białka przy deficycie, żeby wspierać sytość i ograniczyć utratę masy mięśniowej</li>
-                        <li><strong>Budowa masy:</strong> 1,8 g/kg</li>
-                        <li><strong>Utrzymanie:</strong> 1,6 g/kg</li>
-                    </ul>
-                    <p><strong>Tłuszcz:</strong> ok. <strong>25%</strong> dziennych kalorii ÷ 9 (każdy gram tłuszczu to ~9 kcal).</p>
-                    <p><strong>Węglowodany:</strong> pozostałe kalorie po odjęciu białka (4 kcal/g) i tłuszczu, podzielone przez 4.</p>
-                    <p><strong>Woda:</strong> ok. <strong>35 ml na 1 kg</strong> masy ciała (0,035 l × waga).</p>
+                            <h3>Białko, tłuszcz i węglowodany</h3>
+                            <p><strong>Białko</strong> (g/dzień) = waga (kg) × mnożnik zależny od celu:</p>
+                            <ul class="calc-formula-list">
+                                <li><strong>Odchudzanie:</strong> 2,0 g/kg — więcej białka przy deficycie, żeby wspierać sytość i ograniczyć utratę masy mięśniowej</li>
+                                <li><strong>Budowa masy:</strong> 1,8 g/kg</li>
+                                <li><strong>Utrzymanie:</strong> 1,6 g/kg</li>
+                            </ul>
+                            <p><strong>Tłuszcz:</strong> ok. <strong>25%</strong> dziennych kalorii ÷ 9 (każdy gram tłuszczu to ~9 kcal).</p>
+                            <p><strong>Węglowodany:</strong> pozostałe kalorie po odjęciu białka (4 kcal/g) i tłuszczu, podzielone przez 4.</p>
+                            <p><strong>Woda:</strong> ok. <strong>35 ml na 1 kg</strong> masy ciała (0,035 l × waga).</p>
 
-                    <h3>Witaminy i minerały</h3>
-                    <p>Tabela pokazuje orientacyjne <strong>dzienne zalecenia (RDA/AI)</strong> dla dorosłych — wartości różnią się dla mężczyzn i kobiet tam, gdzie normy się rozchodzą (np. żelazo, witamina C). Źródła norm: zalecenia żywieniowe dla populacji (m.in. Instytut Żywności i Żywienia, EFSA). Przykładowe produkty w kolumnie „źródła w diecie” pochodzą z naszej <a href="/dieta">bazy produktów</a>.</p>
+                            <h3>Witaminy i minerały</h3>
+                            <p>Tabela pokazuje orientacyjne <strong>dzienne zalecenia (RDA/AI)</strong> dla dorosłych — wartości różnią się dla mężczyzn i kobiet tam, gdzie normy się rozchodzą (np. żelazo, witamina C). Źródła norm: zalecenia żywieniowe dla populacji (m.in. Instytut Żywności i Żywienia, EFSA). Przykładowe produkty w kolumnie „źródła w diecie” pochodzą z naszej <a href="dieta">bazy produktów</a>.</p>
 
-                    <h3>Skąd dane o produktach?</h3>
-                    <p>Makro w bazie i sugestie produktów pod Twój cel pochodzą z publicznych tabel wartości odżywczych, etykiet producentów i ręcznej weryfikacji — opisujemy to szerzej na stronie <a href="/o-mnie">O mnie</a>. Ceny w bazie to szacunki z gazetek sklepowych, nie oferty handlowe.</p>
-                </section>
+                            <h3>Skąd dane o produktach?</h3>
+                            <p>Makro w bazie i sugestie produktów pod Twój cel pochodzą z publicznych tabel wartości odżywczych, etykiet producentów i ręcznej weryfikacji — opisujemy to szerzej na stronie <a href="o-mnie">O mnie</a>. Ceny w bazie to szacunki z gazetek sklepowych, nie oferty handlowe.</p>
+                        </div>
+                    </details>
 
-                <aside class="health-disclaimer" role="note" aria-labelledby="health-disclaimer-heading">
-                    <h2 id="health-disclaimer-heading">Ważna informacja zdrowotna</h2>
-                    <p>Proteiner pomaga <strong>szacować</strong> zapotrzebowanie kaloryczne i porównywać produkty. Treści mają charakter edukacyjny — nie zastępują porady lekarza ani dietetyka. Przy chorobach przewlekłych, ciąży lub lekach skonsultuj plan żywienia ze specjalistą.</p>
-                    <p><a href="/o-mnie">O autorze</a> · <a href="/poradnik-zywienia">Poradnik</a> · <a href="/informacje">Polityka prywatności</a></p>
-                </aside>
+                    <details class="home-info-tile home-info-tile--warning" id="home-tile-health">
+                        <summary class="home-info-tile-bar">
+                            <span class="home-info-tile-icon" aria-hidden="true">⚠️</span>
+                            <span class="home-info-tile-text">
+                                <span class="home-info-tile-title" id="health-disclaimer-heading">Ważna informacja zdrowotna</span>
+                                <span class="home-info-tile-sub">Treść edukacyjna, nie porada medyczna</span>
+                            </span>
+                            <span class="home-info-tile-chevron" aria-hidden="true"></span>
+                        </summary>
+                        <div class="home-info-tile-panel health-disclaimer" role="note">
+                            <p>Proteiner pomaga <strong>szacować</strong> zapotrzebowanie kaloryczne i porównywać produkty. Treści mają charakter edukacyjny — nie zastępują porady lekarza ani dietetyka. Przy chorobach przewlekłych, ciąży lub lekach skonsultuj plan żywienia ze specjalistą.</p>
+                            <p><a href="o-mnie">O autorze</a> · <a href="poradnik-zywienia">Poradnik</a> · <a href="informacje">Polityka prywatności</a></p>
+                        </div>
+                    </details>
+                </div>
         </main>
     </div>
 
                     <footer class="site-footer">
         <p class="site-footer-brand"><strong>Proteiner</strong> — kalkulator dietetyczny i baza produktów</p>
         <nav class="site-footer-nav" aria-label="Nawigacja w stopce">
-            <a href="/informacje">Informacje</a>
+            <a href="informacje">Informacje</a>
             <span aria-hidden="true">·</span>
-            <a href="/o-mnie">O mnie</a>
+            <a href="o-mnie">O mnie</a>
             <span aria-hidden="true">·</span>
-            <a href="/dieta#produkty">Wszystkie produkty</a>
+            <a href="dieta#produkty">Wszystkie produkty</a>
             <span aria-hidden="true">·</span>
-            <a href="/porownaj-produkty">Porównaj produkty</a>
+            <a href="porownaj-produkty">Porównaj produkty</a>
             <span aria-hidden="true">·</span>
-            <a href="/dodaj-produkt">Dodaj produkty</a>
+            <a href="dodaj-produkt">Dodaj produkty</a>
             <span aria-hidden="true">·</span>
-            <a href="/poradnik-zywienia">Poradnik</a>
+            <a href="poradnik-zywienia">Poradnik</a>
+            <span aria-hidden="true">·</span>
+            <a href="artykuly">Artykuły</a>
         </nav>
         <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>

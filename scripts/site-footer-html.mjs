@@ -16,6 +16,8 @@ export function buildSiteFooter(prefix = '') {
             <a href="${prefix}dodaj-produkt">Dodaj produkty</a>
             <span aria-hidden="true">·</span>
             <a href="${prefix}poradnik-zywienia">Poradnik</a>
+            <span aria-hidden="true">·</span>
+            <a href="${prefix}artykuly">Artykuły</a>
         </nav>
         <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>`;

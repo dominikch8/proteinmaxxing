@@ -367,11 +367,16 @@ function buildPage(p, similar = []) {
         esc,
         formatPrice: formatPlnPrice
     });
+    const localPng = `../images/products/${p.slug}.png`;
     const localJpg = `../images/products/${p.slug}.jpg`;
     const localWebp = `../images/products/${p.slug}.webp`;
     const placeholder = '../images/products/placeholder.svg';
-    const imgSrc = localJpg;
-    const imgOnError = `this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};`;
+    const hasPng = fs.existsSync(path.join(root, 'images', 'products', `${p.slug}.png`));
+    const hasJpg = fs.existsSync(path.join(root, 'images', 'products', `${p.slug}.jpg`));
+    const imgSrc = hasPng ? localPng : localJpg;
+    const imgOnError = hasPng
+        ? `this.onerror=null;this.src='${localJpg}';this.onerror=function(){this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};};`
+        : `this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};`;
 
     const noteBlock = p.note
         ? `<div class="extra-box"><strong>Uwaga:</strong> ${esc(p.note)}</div>`
@@ -380,8 +385,12 @@ function buildPage(p, similar = []) {
     const indexable = productHasRichContent(p, editorialBySlug) || generatedEditorialIsRich(p);
     const robotsMeta = indexable ? 'index, follow' : 'noindex, follow';
 
-    const hasLocalImg = fs.existsSync(path.join(root, 'images', 'products', `${p.slug}.jpg`));
-    const ogImagePath = hasLocalImg ? `images/products/${p.slug}.jpg` : 'images/og-home.jpg';
+    const hasLocalImg = hasPng || hasJpg;
+    const ogImagePath = hasJpg
+        ? `images/products/${p.slug}.jpg`
+        : hasPng
+          ? `images/products/${p.slug}.png`
+          : 'images/og-home.jpg';
     const headAssets = `${buildFaviconLinks('../')}
     <!-- pm:site-head -->
 ${buildSocialImageMeta('../', ogImagePath, { alt: p.name })}`;
@@ -534,6 +543,7 @@ const STATIC_SITEMAP_ENTRIES = [
     { loc: 'https://proteiner.pl/cena-bialka', changefreq: 'weekly', priority: '0.85' },
     { loc: 'https://proteiner.pl/porownaj-produkty', changefreq: 'weekly', priority: '0.85' },
     { loc: 'https://proteiner.pl/poradnik-zywienia', changefreq: 'weekly', priority: '0.9' },
+    { loc: 'https://proteiner.pl/artykuly', changefreq: 'weekly', priority: '0.9' },
     { loc: 'https://proteiner.pl/deficyt-kaloryczny-praktyka', changefreq: 'monthly', priority: '0.85' },
     { loc: 'https://proteiner.pl/planowanie-posilkow', changefreq: 'monthly', priority: '0.85' },
     { loc: 'https://proteiner.pl/dodaj-produkt', changefreq: 'monthly', priority: '0.5' },

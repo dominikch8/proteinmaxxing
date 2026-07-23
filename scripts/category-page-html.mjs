@@ -166,6 +166,7 @@ ${buildCookieConsentBody(PREFIX)}
                 <li><a class="nav-link" href="${PREFIX}porownaj-produkty">Porównaj produkty</a></li>
                 <li><a class="nav-link" href="${PREFIX}dodaj-produkt">Dodaj produkty</a></li>
                 <li><a class="nav-link" href="${PREFIX}poradnik-zywienia">Poradnik</a></li>
+                <li><a class="nav-link" href="${PREFIX}artykuly">Artykuły</a></li>
                 <li><a class="nav-link" href="${PREFIX}informacje">Informacje</a></li>
                 <li><a class="nav-link" href="${PREFIX}o-mnie">O mnie</a></li>
             </ul>

@@ -22,6 +22,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/themes.css">
     <link rel="stylesheet" href="css/site.css">
@@ -38,12 +39,13 @@
             </a>
             <ul class="nav-links">
                 <li><a class="nav-link" href="/">Kalkulator</a></li>
-                <li><a class="nav-link" href="/dieta">Dieta</a></li>
-                <li><a class="nav-link active" href="/porownaj-produkty" aria-current="page">Porównaj produkty</a></li>
-                <li><a class="nav-link" href="/dodaj-produkt">Dodaj produkty</a></li>
-                <li><a class="nav-link" href="/poradnik-zywienia">Poradnik</a></li>
-                <li><a class="nav-link" href="/informacje">Informacje</a></li>
-                <li><a class="nav-link" href="/o-mnie">O mnie</a></li>
+                <li><a class="nav-link" href="dieta">Dieta</a></li>
+                <li><a class="nav-link active" href="porownaj-produkty" aria-current="page">Porównaj produkty</a></li>
+                <li><a class="nav-link" href="dodaj-produkt">Dodaj produkty</a></li>
+                <li><a class="nav-link" href="poradnik-zywienia">Poradnik</a></li>
+                <li><a class="nav-link" href="artykuly">Artykuły</a></li>
+                <li><a class="nav-link" href="informacje">Informacje</a></li>
+                <li><a class="nav-link" href="o-mnie">O mnie</a></li>
             </ul>
         </nav>
     </header>
@@ -53,18 +55,6 @@
                 <h1>Porównaj produkty</h1>
                 <p class="subtitle">Wybierz dwa produkty z bazy i zobacz składniki odżywcze na 100 g na jednym wykresie — makro i tłuszcze obok siebie.</p>
             </div>
-
-            <section class="compare-guide editorial-intro" aria-labelledby="compare-guide-heading">
-                <h2 id="compare-guide-heading">Jak korzystać z porównywarki?</h2>
-                <p>Wpisz nazwę produktu w pole A i B — np. pierś z kurczaka i twaróg chudy. Wykres pokaże kalorie, białko, węglowodany, tłuszcz, stosunek kcal do białka oraz proporcję tłuszczów nienasyconych do nasyconych. Zielony / wyróżniony wynik oznacza lepszą wartość w danej kategorii (np. więcej białka lub mniej kcal).</p>
-                <p>Przykłady gotowych porównań:</p>
-                <ul class="compare-examples">
-                    <li><a href="?a=piers-z-kurczaka&amp;b=twarog-chudy">Kurczak vs twaróg</a></li>
-                    <li><a href="?a=jajko-kurze-cale&amp;b=skyr-naturalny">Jajka vs skyr</a></li>
-                    <li><a href="?a=losos-atlantycki&amp;b=dorsz-swiezy">Łosoś vs dorsz</a></li>
-                    <li><a href="?a=ryz-bialy&amp;b=platki-owsiane">Ryż vs płatki owsiane</a></li>
-                </ul>
-            </section>
 
             <div class="compare-pickers">
                 <div class="compare-picker compare-picker--a" data-slot="a">
@@ -100,6 +90,10 @@
                 </div>
             </div>
 
+            <p class="compare-share-wrap" id="compareShareWrap" hidden>
+                <button type="button" class="compare-copy-link-btn" id="compareCopyLinkBtn">Kopiuj link do porównania</button>
+            </p>
+
             <p class="compare-empty" id="compareEmpty">Wybierz oba produkty, aby zobaczyć wykres porównawczy.</p>
 
             <section class="compare-chart-section" id="compareChartSection" hidden aria-labelledby="compareChartHeading">
@@ -119,32 +113,31 @@
                 </table>
             </section>
 
-            <aside class="health-disclaimer health-disclaimer--compact" role="note">
-                <p><strong>Informacja:</strong> Porównania służą celom edukacyjnym. Nie stanowią porady medycznej. <a href="/o-mnie">O autorze</a> · <a href="/informacje">Polityka</a></p>
-            </aside>
+            <p class="legal-fine-print" role="note"><strong>Informacja:</strong> Porównania służą celom edukacyjnym. Nie stanowią porady medycznej. <a href="o-mnie">O autorze</a> · <a href="informacje">Polityka</a></p>
         </main>
     </div>
 
             <footer class="site-footer">
         <p class="site-footer-brand"><strong>Proteiner</strong> — kalkulator dietetyczny i baza produktów</p>
         <nav class="site-footer-nav" aria-label="Nawigacja w stopce">
-            <a href="/informacje">Informacje</a>
+            <a href="informacje">Informacje</a>
             <span aria-hidden="true">·</span>
-            <a href="/o-mnie">O mnie</a>
+            <a href="o-mnie">O mnie</a>
             <span aria-hidden="true">·</span>
-            <a href="/dieta#produkty">Wszystkie produkty</a>
+            <a href="dieta#produkty">Wszystkie produkty</a>
             <span aria-hidden="true">·</span>
-            <a href="/porownaj-produkty">Porównaj produkty</a>
+            <a href="porownaj-produkty">Porównaj produkty</a>
             <span aria-hidden="true">·</span>
-            <a href="/dodaj-produkt">Dodaj produkty</a>
+            <a href="dodaj-produkt">Dodaj produkty</a>
             <span aria-hidden="true">·</span>
-            <a href="/poradnik-zywienia">Poradnik</a>
+            <a href="poradnik-zywienia">Poradnik</a>
+            <span aria-hidden="true">·</span>
+            <a href="artykuly">Artykuły</a>
         </nav>
         <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>
-<script src="js/products-lite.js"></script>
-    <script src="js/product-utils.js"></script>
-    <script src="js/products-data.js"></script>
+<script src="js/product-utils.js"></script>
+    <script src="js/products-loader.js"></script>
     <script src="js/compare-products.js"></script>
 <script src="js/theme.js"></script>
 </body>

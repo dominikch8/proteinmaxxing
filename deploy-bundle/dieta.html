@@ -32,6 +32,7 @@
     <meta name="twitter:image" content="https://proteiner.pl/images/og-home.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/themes.css">
     <link rel="stylesheet" href="css/site.css">
@@ -47,12 +48,13 @@
             </a>
             <ul class="nav-links">
                 <li><a class="nav-link" href="/">Kalkulator</a></li>
-                <li><a class="nav-link active" href="/dieta">Dieta</a></li>
-                <li><a class="nav-link" href="/porownaj-produkty">Porównaj produkty</a></li>
-                <li><a class="nav-link" href="/dodaj-produkt">Dodaj produkty</a></li>
-                <li><a class="nav-link" href="/poradnik-zywienia">Poradnik</a></li>
-                <li><a class="nav-link" href="/informacje">Informacje</a></li>
-                <li><a class="nav-link" href="/o-mnie">O mnie</a></li>
+                <li><a class="nav-link active" href="dieta">Dieta</a></li>
+                <li><a class="nav-link" href="porownaj-produkty">Porównaj produkty</a></li>
+                <li><a class="nav-link" href="dodaj-produkt">Dodaj produkty</a></li>
+                <li><a class="nav-link" href="poradnik-zywienia">Poradnik</a></li>
+                <li><a class="nav-link" href="artykuly">Artykuły</a></li>
+                <li><a class="nav-link" href="informacje">Informacje</a></li>
+                <li><a class="nav-link" href="o-mnie">O mnie</a></li>
             </ul>
         </nav>
     </header>
@@ -60,9 +62,9 @@
         <main class="main-content">
 <div class="page-with-subtabs">
 <nav class="sub-nav sub-nav--full" aria-label="Sekcje bazy produktów">
-                    <a class="btn-sub active" href="/dieta#produkty" aria-current="page">Wszystkie produkty 🍕</a>
-                    <a class="btn-sub" href="/bialko-maxxing">Białko maxxing 🔥</a>
-                    <a class="btn-sub" href="/cena-bialka">Cena za 100g białka 💰</a>
+                    <a class="btn-sub active" href="dieta#produkty" aria-current="page">Wszystkie produkty 🍕</a>
+                    <a class="btn-sub" href="bialko-maxxing">Białko maxxing 🔥</a>
+                    <a class="btn-sub" href="cena-bialka">Cena za 100g białka 💰</a>
                 </nav>
 
                 <div id="baza-prod" class="sub-tab-content active">
@@ -72,7 +74,7 @@
                     </div>
 
                     <div class="search-bar">
-                        <input type="text" id="productSearch" oninput="onDietaCategoryChange('baza')" placeholder="Wyszukaj produkt... (np. kurczak, jajko, pizza)">
+                        <input type="text" id="productSearch" oninput="debouncedBazaSearchInput()" placeholder="Wyszukaj produkt... (np. kurczak, jajko, pizza)">
                     </div>
                     <div class="pm-baza-filters">
                         <div class="input-group pm-category-select">
@@ -102,51 +104,73 @@
                 </div>
 </div>
 
-                    <section class="editorial-intro dieta-intro-bottom" aria-labelledby="dieta-intro-heading">
-                        <h2 id="dieta-intro-heading">Polska baza makro na 100 g</h2>
-                        <p>Zebraliśmy produkty spożywcze popularne w Polsce — od kurczaka i twarogu po dania z restauracji i fast food. Każda karta pokazuje kalorie, białko, węglowodany i tłuszcz na 100 g, często także szacunkową cenę za 100 g białka. Dane pochodzą z tabel odżywczych i etykiet; szczegóły na stronie <a href="/o-mnie">O mnie</a>.</p>
-                        <p>Przykładowe produkty i kategorie:</p>
-                        <ul class="category-quick-links">
-                            <li><a href="deficyt-kaloryczny-praktyka">Deficyt kaloryczny — przewodnik</a></li>
-                            <li><a href="planowanie-posilkow">Planowanie posiłków</a></li>
-                            <li><a href="produkty/piers-z-kurczaka">Pierś z kurczaka</a></li>
-                            <li><a href="produkty/twarog-chudy">Twaróg chudy</a></li>
-                            <li><a href="produkty/jajko-kurze-cale">Jajka</a></li>
-                            <li><a href="produkty/skyr-naturalny">Skyr</a></li>
-                            <li><a href="produkty/kategoria/mieso">Mięsa i ryby</a></li>
-                            <li><a href="produkty/kategoria/nabial">Nabiał</a></li>
-                            <li><a href="produkty/kategoria/fastfood">Fast food</a></li>
-                            <li><a href="/bialko-maxxing">Ranking białka maxxing</a></li>
-                            <li><a href="/cena-bialka">Cena za 100 g białka</a></li>
-                        </ul>
-                    </section>
+                    <div class="home-info-tiles home-info-tiles--2 dieta-intro-bottom" aria-label="Informacje o bazie produktów">
+                        <details class="home-info-tile" id="dieta-tile-intro">
+                            <summary class="home-info-tile-bar">
+                                <span class="home-info-tile-icon" aria-hidden="true">🍎</span>
+                                <span class="home-info-tile-text">
+                                    <span class="home-info-tile-title" id="dieta-intro-heading">Polska baza makro na 100 g</span>
+                                    <span class="home-info-tile-sub">500+ produktów, makro i kategorie</span>
+                                </span>
+                                <span class="home-info-tile-chevron" aria-hidden="true"></span>
+                            </summary>
+                            <div class="home-info-tile-panel editorial-intro">
+                                <p>Zebraliśmy produkty spożywcze popularne w Polsce — od kurczaka i twarogu po dania z restauracji i fast food. Każda karta pokazuje kalorie, białko, węglowodany i tłuszcz na 100 g, często także szacunkową cenę za 100 g białka. Dane pochodzą z tabel odżywczych i etykiet; szczegóły na stronie <a href="o-mnie">O mnie</a>.</p>
+                                <p>Przykładowe produkty i kategorie:</p>
+                                <ul class="category-quick-links">
+                                    <li><a href="deficyt-kaloryczny-praktyka">Deficyt kaloryczny — przewodnik</a></li>
+                                    <li><a href="planowanie-posilkow">Planowanie posiłków</a></li>
+                                    <li><a href="produkty/piers-z-kurczaka">Pierś z kurczaka</a></li>
+                                    <li><a href="produkty/twarog-chudy">Twaróg chudy</a></li>
+                                    <li><a href="produkty/jajko-kurze-cale">Jajka</a></li>
+                                    <li><a href="produkty/skyr-naturalny">Skyr</a></li>
+                                    <li><a href="produkty/kategoria/mieso">Mięsa i ryby</a></li>
+                                    <li><a href="produkty/kategoria/nabial">Nabiał</a></li>
+                                    <li><a href="produkty/kategoria/fastfood">Fast food</a></li>
+                                    <li><a href="bialko-maxxing">Ranking białka maxxing</a></li>
+                                    <li><a href="cena-bialka">Cena za 100 g białka</a></li>
+                                </ul>
+                            </div>
+                        </details>
 
-            <aside class="health-disclaimer health-disclaimer--compact" role="note">
-                <p><strong>Informacja:</strong> Wartości odżywcze mają charakter orientacyjny i nie zastępują porady dietetycznej. Sprawdź etykietę produktu lub skonsultuj się ze specjalistą. <a href="/o-mnie">Źródła danych</a></p>
-            </aside>
+                        <details class="home-info-tile home-info-tile--warning" id="dieta-tile-info">
+                            <summary class="home-info-tile-bar">
+                                <span class="home-info-tile-icon" aria-hidden="true">⚠️</span>
+                                <span class="home-info-tile-text">
+                                    <span class="home-info-tile-title">Informacja</span>
+                                    <span class="home-info-tile-sub">Wartości orientacyjne, nie porada dietetyczna</span>
+                                </span>
+                                <span class="home-info-tile-chevron" aria-hidden="true"></span>
+                            </summary>
+                            <div class="home-info-tile-panel health-disclaimer" role="note">
+                                <p><strong>Informacja:</strong> Wartości odżywcze mają charakter orientacyjny i nie zastępują porady dietetycznej. Sprawdź etykietę produktu lub skonsultuj się ze specjalistą. <a href="o-mnie">Źródła danych</a></p>
+                            </div>
+                        </details>
+                    </div>
         </main>
     </div>
 
                 <footer class="site-footer">
         <p class="site-footer-brand"><strong>Proteiner</strong> — kalkulator dietetyczny i baza produktów</p>
         <nav class="site-footer-nav" aria-label="Nawigacja w stopce">
-            <a href="/informacje">Informacje</a>
+            <a href="informacje">Informacje</a>
             <span aria-hidden="true">·</span>
-            <a href="/o-mnie">O mnie</a>
+            <a href="o-mnie">O mnie</a>
             <span aria-hidden="true">·</span>
-            <a href="/dieta#produkty">Wszystkie produkty</a>
+            <a href="dieta#produkty">Wszystkie produkty</a>
             <span aria-hidden="true">·</span>
-            <a href="/porownaj-produkty">Porównaj produkty</a>
+            <a href="porownaj-produkty">Porównaj produkty</a>
             <span aria-hidden="true">·</span>
-            <a href="/dodaj-produkt">Dodaj produkty</a>
+            <a href="dodaj-produkt">Dodaj produkty</a>
             <span aria-hidden="true">·</span>
-            <a href="/poradnik-zywienia">Poradnik</a>
+            <a href="poradnik-zywienia">Poradnik</a>
+            <span aria-hidden="true">·</span>
+            <a href="artykuly">Artykuły</a>
         </nav>
         <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>
-<script src="js/products-lite.js"></script>
-    <script src="js/product-utils.js"></script>
-    <script src="js/products-data.js"></script>
+<script src="js/product-utils.js"></script>
+    <script src="js/products-loader.js"></script>
     <script src="js/dieta-url.js"></script>
     <script src="js/dieta.js"></script>
 <script src="js/theme.js"></script>

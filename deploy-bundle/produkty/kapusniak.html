@@ -31,7 +31,8 @@
     <meta name="twitter:image" content="https://proteiner.pl/images/products/kapusniak.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/themes.css">
     <link rel="stylesheet" href="../css/product-page.css">
     <link rel="stylesheet" href="../css/theme-switch.css">
@@ -52,18 +53,18 @@
     <script defer src="https://s.clickiocdn.com/t/249709/di.js"></script>
     <header class="site-header">
         <nav>
-            <a class="logo" href="/">
+            <a class="logo" href="../">
                 <img class="logo-mark" src="../images/favicon.svg" alt="" width="56" height="56" decoding="async">
                 <span>Proteiner</span>
             </a>
-            <a class="nav-back" href="/dieta">← Baza produktów</a>
+            <a class="nav-back" href="../dieta">← Baza produktów</a>
         </nav>
     </header>
 
     <main class="product-page">
         <nav class="breadcrumb" aria-label="Nawigacja">
-            <a href="/">Strona główna</a> ›
-            <a href="/dieta">Dieta</a> ›
+            <a href="../">Strona główna</a> ›
+            <a href="../dieta">Dieta</a> ›
             <span>Kapuśniak</span>
         </nav>
 
@@ -76,7 +77,7 @@
                     </div>
                 </div>
                 <div>
-                    <a class="product-category" href="/produkty/kategoria/zupy">Zupy</a>
+                    <a class="product-category" href="kategoria/zupy">Zupy</a>
                     <h1 itemprop="name">Kapuśniak</h1>
                     <p class="seo-lead" itemprop="description">Kapuśniak: 2.5 g białka, 52 kcal, 6 g węglowodanów i 2 g tłuszczu na 100 g. Kategoria: Zupy.</p>
                     <div class="macro-highlight">
@@ -134,7 +135,7 @@
             <p class="similar-products-lead">Inne z kategorii <strong>Zupy</strong> o zbliżonym profilu makro:</p>
             <ul class="similar-products-list">
                 <li>
-                    <a class="similar-product-link" href="/produkty/krem-brokulowy">
+                    <a class="similar-product-link" href="krem-brokulowy">
                         <span class="similar-product-emoji" aria-hidden="true">🥦</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Krem brokułowy</span>
@@ -143,7 +144,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="similar-product-link" href="/produkty/zupa-szczawiowa">
+                    <a class="similar-product-link" href="zupa-szczawiowa">
                         <span class="similar-product-emoji" aria-hidden="true">🥬</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Zupa szczawiowa</span>
@@ -152,7 +153,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="similar-product-link" href="/produkty/zupa-grzybowa">
+                    <a class="similar-product-link" href="zupa-grzybowa">
                         <span class="similar-product-emoji" aria-hidden="true">🍲</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Zupa grzybowa</span>
@@ -161,7 +162,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="similar-product-link" href="/produkty/zupa-kalafiorowa">
+                    <a class="similar-product-link" href="zupa-kalafiorowa">
                         <span class="similar-product-emoji" aria-hidden="true">🍲</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Zupa kalafiorowa</span>
@@ -170,7 +171,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="similar-product-link" href="/produkty/zupa-cebulowa">
+                    <a class="similar-product-link" href="zupa-cebulowa">
                         <span class="similar-product-emoji" aria-hidden="true">🧅</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Zupa cebulowa</span>
@@ -179,7 +180,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="similar-product-link" href="/produkty/zupa-pieczarkowa">
+                    <a class="similar-product-link" href="zupa-pieczarkowa">
                         <span class="similar-product-emoji" aria-hidden="true">🍄</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Zupa pieczarkowa</span>
@@ -189,7 +190,7 @@
                 </li>
             </ul>
             <p class="similar-products-more">
-                <a href="/produkty/kategoria/zupy">Zobacz całą kategorię Zupy →</a>
+                <a href="kategoria/zupy">Zobacz całą kategorię Zupy →</a>
             </p>
         </section>
 
@@ -212,9 +213,11 @@
             <a href="../dodaj-produkt">Dodaj produkty</a>
             <span aria-hidden="true">·</span>
             <a href="../poradnik-zywienia">Poradnik</a>
+            <span aria-hidden="true">·</span>
+            <a href="../artykuly">Artykuły</a>
         </nav>
         <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>
-<script src="../js/theme.js"></script>
+    <script src="../js/theme.js"></script>
 </body>
 </html>

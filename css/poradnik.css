@@ -67,6 +67,7 @@
     margin: 0;
     padding: 20px 18px;
     text-align: left;
+    text-decoration: none;
     font: inherit;
     color: inherit;
     cursor: pointer;
@@ -75,6 +76,16 @@
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.92) 0%, rgba(248, 250, 252, 0.88) 100%);
     box-shadow: var(--shadow-sm);
     transition: transform var(--transition, 0.22s ease), box-shadow var(--transition, 0.22s ease), border-color var(--transition, 0.22s ease);
+}
+
+.artykuly-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 640px) {
+    .artykuly-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 .poradnik-hub-tile:hover,

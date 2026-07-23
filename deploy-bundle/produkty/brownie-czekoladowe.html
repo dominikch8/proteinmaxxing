@@ -31,7 +31,8 @@
     <meta name="twitter:image" content="https://proteiner.pl/images/products/brownie-czekoladowe.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/themes.css">
     <link rel="stylesheet" href="../css/product-page.css">
     <link rel="stylesheet" href="../css/theme-switch.css">
@@ -52,18 +53,18 @@
     <script defer src="https://s.clickiocdn.com/t/249709/di.js"></script>
     <header class="site-header">
         <nav>
-            <a class="logo" href="/">
+            <a class="logo" href="../">
                 <img class="logo-mark" src="../images/favicon.svg" alt="" width="56" height="56" decoding="async">
                 <span>Proteiner</span>
             </a>
-            <a class="nav-back" href="/dieta">← Baza produktów</a>
+            <a class="nav-back" href="../dieta">← Baza produktów</a>
         </nav>
     </header>
 
     <main class="product-page">
         <nav class="breadcrumb" aria-label="Nawigacja">
-            <a href="/">Strona główna</a> ›
-            <a href="/dieta">Dieta</a> ›
+            <a href="../">Strona główna</a> ›
+            <a href="../dieta">Dieta</a> ›
             <span>Brownie czekoladowe</span>
         </nav>
 
@@ -76,7 +77,7 @@
                     </div>
                 </div>
                 <div>
-                    <a class="product-category" href="/produkty/kategoria/slodycze">Słodycze i przekąski</a>
+                    <a class="product-category" href="kategoria/slodycze">Słodycze i przekąski</a>
                     <h1 itemprop="name">Brownie czekoladowe</h1>
                     <p class="seo-lead" itemprop="description">Brownie czekoladowe: 5 g białka, 405 kcal, 52 g węglowodanów i 20 g tłuszczu na 100 g. Kategoria: Słodycze i przekąski.</p>
                     <div class="macro-highlight">
@@ -135,7 +136,7 @@
             <p class="similar-products-lead">Inne z kategorii <strong>Słodycze i przekąski</strong> o zbliżonym profilu makro:</p>
             <ul class="similar-products-list">
                 <li>
-                    <a class="similar-product-link" href="/produkty/donut-z-lukrem">
+                    <a class="similar-product-link" href="donut-z-lukrem">
                         <span class="similar-product-emoji" aria-hidden="true">🍩</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Donut z lukrem</span>
@@ -144,7 +145,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="similar-product-link" href="/produkty/wafel-tortowy">
+                    <a class="similar-product-link" href="wafel-tortowy">
                         <span class="similar-product-emoji" aria-hidden="true">🍰</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Wafel tortowy</span>
@@ -153,7 +154,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="similar-product-link" href="/produkty/paczek-z-nadzieniem">
+                    <a class="similar-product-link" href="paczek-z-nadzieniem">
                         <span class="similar-product-emoji" aria-hidden="true">🍩</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Pączek z nadzieniem</span>
@@ -162,7 +163,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="similar-product-link" href="/produkty/mars">
+                    <a class="similar-product-link" href="mars">
                         <span class="similar-product-emoji" aria-hidden="true">🍫</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Mars</span>
@@ -171,7 +172,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="similar-product-link" href="/produkty/rocky-road">
+                    <a class="similar-product-link" href="rocky-road">
                         <span class="similar-product-emoji" aria-hidden="true">🍫</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Rocky Road</span>
@@ -180,7 +181,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="similar-product-link" href="/produkty/delicje">
+                    <a class="similar-product-link" href="delicje">
                         <span class="similar-product-emoji" aria-hidden="true">🍪</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Delicje</span>
@@ -190,7 +191,7 @@
                 </li>
             </ul>
             <p class="similar-products-more">
-                <a href="/produkty/kategoria/slodycze">Zobacz całą kategorię Słodycze i przekąski →</a>
+                <a href="kategoria/slodycze">Zobacz całą kategorię Słodycze i przekąski →</a>
             </p>
         </section>
 
@@ -213,9 +214,11 @@
             <a href="../dodaj-produkt">Dodaj produkty</a>
             <span aria-hidden="true">·</span>
             <a href="../poradnik-zywienia">Poradnik</a>
+            <span aria-hidden="true">·</span>
+            <a href="../artykuly">Artykuły</a>
         </nav>
         <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>
-<script src="../js/theme.js"></script>
+    <script src="../js/theme.js"></script>
 </body>
 </html>

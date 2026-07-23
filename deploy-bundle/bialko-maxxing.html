@@ -22,6 +22,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/themes.css">
     <link rel="stylesheet" href="css/site.css">
@@ -37,12 +38,13 @@
             </a>
             <ul class="nav-links">
                 <li><a class="nav-link" href="/">Kalkulator</a></li>
-                <li><a class="nav-link active" href="/dieta">Dieta</a></li>
-                <li><a class="nav-link" href="/porownaj-produkty">Porównaj produkty</a></li>
-                <li><a class="nav-link" href="/dodaj-produkt">Dodaj produkty</a></li>
-                <li><a class="nav-link" href="/poradnik-zywienia">Poradnik</a></li>
-                <li><a class="nav-link" href="/informacje">Informacje</a></li>
-                <li><a class="nav-link" href="/o-mnie">O mnie</a></li>
+                <li><a class="nav-link active" href="dieta">Dieta</a></li>
+                <li><a class="nav-link" href="porownaj-produkty">Porównaj produkty</a></li>
+                <li><a class="nav-link" href="dodaj-produkt">Dodaj produkty</a></li>
+                <li><a class="nav-link" href="poradnik-zywienia">Poradnik</a></li>
+                <li><a class="nav-link" href="artykuly">Artykuły</a></li>
+                <li><a class="nav-link" href="informacje">Informacje</a></li>
+                <li><a class="nav-link" href="o-mnie">O mnie</a></li>
             </ul>
         </nav>
     </header>
@@ -50,9 +52,9 @@
         <main class="main-content">
             <div class="page-with-subtabs">
                 <nav class="sub-nav sub-nav--full" aria-label="Sekcje bazy produktów">
-                    <a class="btn-sub" href="/dieta#produkty">Wszystkie produkty 🍕</a>
-                    <a class="btn-sub active" href="/bialko-maxxing" aria-current="page">Białko maxxing 🔥</a>
-                    <a class="btn-sub" href="/cena-bialka">Cena za 100g białka 💰</a>
+                    <a class="btn-sub" href="dieta#produkty">Wszystkie produkty 🍕</a>
+                    <a class="btn-sub active" href="bialko-maxxing" aria-current="page">Białko maxxing 🔥</a>
+                    <a class="btn-sub" href="cena-bialka">Cena za 100g białka 💰</a>
                 </nav>
 
                 <div id="protein-max" class="sub-tab-content active">
@@ -60,19 +62,6 @@
                         <h1 class="pm-ranking-title">Ranking Białko Maxxing</h1>
                         <p class="subtitle">Maksymalizacja białka względem kalorii — im mniej kcal na 1 g białka, tym lepiej przy redukcji i budowie sylwetki.</p>
                     </div>
-
-                    <section class="editorial-intro" aria-labelledby="maxxing-intro-heading">
-                        <h2 id="maxxing-intro-heading">Co to jest „białko maxxing”?</h2>
-                        <p>Chodzi o produkty, które dają <strong>dużo białka przy małej liczbie kalorii</strong>. W rankingu sortujemy po współczynniku kcal na 1 g białka — im niższy, tym lepiej „wychodzi” produkt przy redukcji i przy budowaniu sylwetki bez nadmiaru energii.</p>
-                        <p>Na szczycie listy zwykle lądują: pierś z kurczaka, twaróg chudy, skyr, tuńczyk w wodzie, białka jaj, chude ryby. Na dole — produkty kaloryczne z małą ilością proteinów (słodycze, tłuste sosy, część pieczywa). To nie znaczy, że dolne pozycje są „zakazane” — po prostu gorzej domykają dzienne białko w limicie kcal.</p>
-                        <h3>Jak czytać ranking?</h3>
-                        <ul>
-                            <li><strong>Filtr kategorii</strong> — np. tylko nabiał albo tylko mięso; łatwiej porównać podobne produkty.</li>
-                            <li><strong>Wyszukiwarka</strong> — wpisz „twaróg” lub „indyk”, żeby nie przewijać całej listy.</li>
-                            <li><strong>Klik w kartę</strong> — przejdziesz na stronę produktu z pełnym makro, porcją i opisem praktycznym.</li>
-                        </ul>
-                        <p>Ranking to narzędzie porównawcze w bazie Proteiner — wartości pochodzą z tabel odżywczych i mogą różnić się od konkretnej marki. Więcej o źródłach na stronie <a href="/o-mnie">O mnie</a>.</p>
-                    </section>
 
                     <div class="search-bar">
                         <input type="text" id="proteinMaxSearch" oninput="renderProteinMaxxing()" placeholder="Wyszukaj produkt... (np. kurczak, twaróg, tuńczyk)">
@@ -90,14 +79,29 @@
                         <button type="button" class="btn-show-more" onclick="showMoreProteinMaxxing(); return false;">Pokaż więcej</button>
                     </div>
 
-                    <section class="editorial-intro calc-methodology" aria-labelledby="maxxing-faq-heading">
-                        <h2 id="maxxing-faq-heading">Najczęstsze pytania</h2>
-                        <h3>Czy najwyższe białko na 100 g = najlepszy wybór?</h3>
-                        <p>Nie zawsze. Odżywka ma dużo białka, ale to suplement — pełnowartościowe jedzenie daje też witaminy, błonnik i sytość. Przy codziennej diecie lepiej bazować na mięsie, rybach, nabiale i roślinach strączkowych, a odżywkę traktować jako uzupełnienie.</p>
-                        <h3>Redukcja czy masa — ten sam ranking?</h3>
-                        <p>Tak, bo chude źródła białka sprawdzają się w obu celach. Na masie dołożysz węglowodany i tłuszcz obok; na redukcji ten sam kurczak czy twaróg po prostu zajmuje mniejszy ułamek dziennych kalorii.</p>
-                        <p>Policz swoje dzienne zapotrzebowanie w <a href="/">kalkulatorze TDEE</a>, a potem dobierz porcje z rankingu. Porównaj dwa produkty obok siebie w <a href="/porownaj-produkty">porównywarce</a> albo zobacz <a href="/cena-bialka">cenę za 100 g białka</a>, jeśli liczy się budżet.</p>
-                    </section>
+                    <div class="home-info-tiles home-info-tiles--1 dieta-intro-bottom" aria-label="Informacje o rankingu">
+                        <details class="home-info-tile" id="maxxing-tile-intro">
+                            <summary class="home-info-tile-bar">
+                                <span class="home-info-tile-icon" aria-hidden="true">🔥</span>
+                                <span class="home-info-tile-text">
+                                    <span class="home-info-tile-title" id="maxxing-intro-heading">Co to jest „białko maxxing”?</span>
+                                    <span class="home-info-tile-sub">Ranking kcal na 1 g białka</span>
+                                </span>
+                                <span class="home-info-tile-chevron" aria-hidden="true"></span>
+                            </summary>
+                            <div class="home-info-tile-panel editorial-intro calc-methodology">
+                                <p>Chodzi o produkty, które dają <strong>dużo białka przy małej liczbie kalorii</strong>. W rankingu sortujemy po współczynniku kcal na 1 g białka — im niższy, tym lepiej „wychodzi” produkt przy redukcji i przy budowaniu sylwetki bez nadmiaru energii.</p>
+                                <p>Na szczycie listy zwykle lądują: pierś z kurczaka, twaróg chudy, skyr, tuńczyk w wodzie, białka jaj, chude ryby. Na dole — produkty kaloryczne z małą ilością proteinów (słodycze, tłuste sosy, część pieczywa). To nie znaczy, że dolne pozycje są „zakazane” — po prostu gorzej domykają dzienne białko w limicie kcal.</p>
+                                <h3>Jak czytać ranking?</h3>
+                                <ul>
+                                    <li><strong>Filtr kategorii</strong> — np. tylko nabiał albo tylko mięso; łatwiej porównać podobne produkty.</li>
+                                    <li><strong>Wyszukiwarka</strong> — wpisz „twaróg” lub „indyk”, żeby nie przewijać całej listy.</li>
+                                    <li><strong>Klik w kartę</strong> — przejdziesz na stronę produktu z pełnym makro, porcją i opisem praktycznym.</li>
+                                </ul>
+                                <p>Ranking to narzędzie porównawcze w bazie Proteiner — wartości pochodzą z tabel odżywczych i mogą różnić się od konkretnej marki. Więcej o źródłach na stronie <a href="o-mnie">O mnie</a>.</p>
+                            </div>
+                        </details>
+                    </div>
                 </div>
             </div>
         </main>
@@ -106,23 +110,24 @@
             <footer class="site-footer">
         <p class="site-footer-brand"><strong>Proteiner</strong> — kalkulator dietetyczny i baza produktów</p>
         <nav class="site-footer-nav" aria-label="Nawigacja w stopce">
-            <a href="/informacje">Informacje</a>
+            <a href="informacje">Informacje</a>
             <span aria-hidden="true">·</span>
-            <a href="/o-mnie">O mnie</a>
+            <a href="o-mnie">O mnie</a>
             <span aria-hidden="true">·</span>
-            <a href="/dieta#produkty">Wszystkie produkty</a>
+            <a href="dieta#produkty">Wszystkie produkty</a>
             <span aria-hidden="true">·</span>
-            <a href="/porownaj-produkty">Porównaj produkty</a>
+            <a href="porownaj-produkty">Porównaj produkty</a>
             <span aria-hidden="true">·</span>
-            <a href="/dodaj-produkt">Dodaj produkty</a>
+            <a href="dodaj-produkt">Dodaj produkty</a>
             <span aria-hidden="true">·</span>
-            <a href="/poradnik-zywienia">Poradnik</a>
+            <a href="poradnik-zywienia">Poradnik</a>
+            <span aria-hidden="true">·</span>
+            <a href="artykuly">Artykuły</a>
         </nav>
         <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>
-<script src="js/products-lite.js"></script>
-    <script src="js/product-utils.js"></script>
-    <script src="js/products-data.js"></script>
+<script src="js/product-utils.js"></script>
+    <script src="js/products-loader.js"></script>
     <script src="js/dieta.js"></script>
     <script src="js/ranking-page.js"></script>
 <script src="js/theme.js"></script>
