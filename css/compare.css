@@ -1,4 +1,13 @@
-/* —— Porównywarka produktów —— */
+/* =============================================================================
+   Proteiner — Porównywarka produktów (compare.css)
+   Brand: burgundy #660000 / #800000 · navy #1e3a5f / #2563eb
+   Fonts: Encode Sans + Plus Jakarta Sans
+   ============================================================================= */
+
+
+/* -------------------------------------------------------------------------- */
+/* 1. Design tokens                                                           */
+/* -------------------------------------------------------------------------- */
 
 .compare-page {
     --compare-a: #660000;
@@ -17,6 +26,10 @@
     --compare-b-soft: rgba(30, 58, 95, 0.1);
     --compare-b-border: rgba(30, 58, 95, 0.28);
     --compare-b-glow: rgba(30, 58, 95, 0.2);
+    --compare-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --compare-ease-spring: cubic-bezier(0.34, 1.15, 0.64, 1);
+    position: relative;
+    isolation: isolate;
 }
 
 [data-theme='dark'] .compare-page {
@@ -38,7 +51,322 @@
     --compare-b-glow: rgba(59, 130, 246, 0.4);
 }
 
-/* Hero */
+
+/* -------------------------------------------------------------------------- */
+/* 2. Keyframes                                                               */
+/* -------------------------------------------------------------------------- */
+
+@keyframes compareAtmosphereDriftA {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(3%, -2%) scale(1.04); }
+    66% { transform: translate(-2%, 3%) scale(0.98); }
+}
+
+@keyframes compareAtmosphereDriftB {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    40% { transform: translate(-3%, 2%) scale(1.03); }
+    70% { transform: translate(2%, -2%) scale(0.97); }
+}
+
+@keyframes compareGridPulse {
+    0%, 100% { opacity: 0.35; }
+    50% { opacity: 0.55; }
+}
+
+@keyframes compareFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes compareOrbBreathe {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.88;
+    }
+    50% {
+        transform: scale(1.06);
+        opacity: 1;
+    }
+}
+
+@keyframes compareVsPulse {
+    0%, 100% { transform: scale(1); opacity: 0.72; }
+    50% { transform: scale(1.08); opacity: 1; }
+}
+
+@keyframes compareChipPopIn {
+    from {
+        opacity: 0;
+        transform: scale(0.94) translateY(4px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes compareSectionReveal {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes compareSlideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-22px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes compareSlideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(22px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes compareVsScalePulse {
+    0% { transform: scale(0.82); opacity: 0.5; }
+    55% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes compareScorelineFill {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+}
+
+@keyframes compareKpiFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes compareBarShine {
+    from { transform: translateX(-120%) skewX(-12deg); }
+    to { transform: translateX(220%) skewX(-12deg); }
+}
+
+@keyframes compareRowFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes compareSwapSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes compareSuggestionsOpen {
+    from {
+        opacity: 0;
+        transform: translateY(-6px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes compareCopyBounce {
+    0% { transform: scale(1); }
+    35% { transform: scale(1.06); }
+    65% { transform: scale(0.98); }
+    100% { transform: scale(1); }
+}
+
+@keyframes compareReveal {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* 3. Reduced motion                                                          */
+/* -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+    .compare-atmosphere-blob,
+    .compare-atmosphere-grid,
+    body.compare-body .compare-hero,
+    body.compare-body .compare-stage,
+    body.compare-body.is-ready .compare-hero,
+    body.compare-body.is-ready .compare-stage,
+    .compare-empty-orb,
+    .compare-empty-vs,
+    .compare-field-chip:not([hidden]),
+    .compare-chart-section.is-entering,
+    .compare-chart-section:not(.compare-chart-section--mounted),
+    .compare-matchup-side,
+    .compare-matchup-vs,
+    .compare-scoreline-fill--a,
+    .compare-scoreline-fill--b,
+    .compare-dashboard.is-animating .compare-kpi-card,
+    .compare-glass-fill,
+    .compare-glass-fill.is-run::after,
+    .compare-chart-section:not([hidden]) .compare-table tbody tr,
+    .compare-swap-btn.is-spinning,
+    .compare-suggestions:not([hidden]),
+    .compare-copy-link-btn.is-copied {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .compare-glass-fill,
+    .compare-dashboard.is-animating .compare-glass-fill {
+        width: var(--bar-pct, var(--bar-inline, 0%)) !important;
+        transition: none !important;
+    }
+
+    .compare-scoreline-fill--a,
+    .compare-scoreline-fill--b {
+        transform: scaleX(1) !important;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* 4. Page shell & ambient atmosphere                                         */
+/* -------------------------------------------------------------------------- */
+
+body.compare-body {
+    overflow-x: clip;
+}
+
+.compare-atmosphere {
+    position: absolute;
+    inset: -40px 0 auto;
+    height: min(520px, 72vh);
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.compare-atmosphere-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(72px);
+    will-change: transform;
+}
+
+.compare-atmosphere-blob--a {
+    width: min(42vw, 340px);
+    height: min(42vw, 340px);
+    top: -8%;
+    left: -6%;
+    background: radial-gradient(circle, rgba(128, 0, 0, 0.16) 0%, rgba(102, 0, 0, 0.04) 68%, transparent 100%);
+    animation: compareAtmosphereDriftA 22s ease-in-out infinite;
+}
+
+.compare-atmosphere-blob--b {
+    width: min(46vw, 380px);
+    height: min(46vw, 380px);
+    top: 4%;
+    right: -8%;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.14) 0%, rgba(30, 58, 95, 0.04) 68%, transparent 100%);
+    animation: compareAtmosphereDriftB 26s ease-in-out infinite;
+}
+
+.compare-atmosphere-grid {
+    position: absolute;
+    inset: 0;
+    opacity: 0.42;
+    background-image:
+        linear-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+    background-size: 28px 28px;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, transparent 92%);
+    animation: compareGridPulse 8s ease-in-out infinite;
+}
+
+[data-theme='dark'] .compare-atmosphere-blob--a {
+    background: radial-gradient(circle, rgba(176, 64, 64, 0.2) 0%, rgba(102, 0, 0, 0.05) 68%, transparent 100%);
+}
+
+[data-theme='dark'] .compare-atmosphere-blob--b {
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.18) 0%, rgba(30, 58, 95, 0.05) 68%, transparent 100%);
+}
+
+[data-theme='dark'] .compare-atmosphere-grid {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    opacity: 0.28;
+}
+
+.compare-page > :not(.compare-atmosphere) {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* 5. Page entrance — hero & stage                                            */
+/* -------------------------------------------------------------------------- */
+
+body.compare-body .compare-hero,
+body.compare-body .compare-stage {
+    opacity: 0;
+    transform: translateY(18px);
+}
+
+body.compare-body .compare-hero {
+    animation: compareFadeUp 0.68s var(--compare-ease-out) 0.05s both;
+}
+
+body.compare-body .compare-stage {
+    animation: compareFadeUp 0.68s var(--compare-ease-out) 0.16s both;
+}
+
+body.compare-body.is-ready .compare-hero {
+    animation: compareFadeUp 0.68s var(--compare-ease-out) 0.05s both;
+}
+
+body.compare-body.is-ready .compare-stage {
+    animation: compareFadeUp 0.68s var(--compare-ease-out) 0.16s both;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* 6. Hero, kicker & eyebrow alias                                            */
+/* -------------------------------------------------------------------------- */
+
 .compare-hero {
     margin-bottom: 28px;
     padding-bottom: 8px;
@@ -48,25 +376,36 @@
     margin-top: 18px;
 }
 
+.compare-kicker,
 .compare-eyebrow {
-    display: inline-block;
-    margin: 0 0 10px;
-    padding: 5px 12px;
+    display: block;
+    margin: 0 0 12px;
+    padding: 0;
     font-family: 'Encode Sans', 'Plus Jakarta Sans', sans-serif;
     font-size: 0.72rem;
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--primary-dark);
-    background: linear-gradient(135deg, rgba(128, 0, 0, 0.08), rgba(30, 58, 95, 0.08));
-    border: 1px solid rgba(128, 0, 0, 0.14);
-    border-radius: 999px;
+    color: var(--text-muted);
+    background: none;
+    border: none;
+    border-radius: 0;
 }
 
+.compare-kicker::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 1px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: linear-gradient(90deg, var(--compare-a-mid), var(--compare-b-mid));
+    opacity: 0.65;
+}
+
+[data-theme='dark'] .compare-kicker,
 [data-theme='dark'] .compare-eyebrow {
-    color: var(--primary);
-    background: linear-gradient(135deg, rgba(224, 122, 122, 0.12), rgba(96, 165, 250, 0.1));
-    border-color: rgba(224, 122, 122, 0.28);
+    color: rgba(226, 232, 240, 0.72);
 }
 
 .compare-hero .subtitle {
@@ -76,15 +415,21 @@
     line-height: 1.55;
 }
 
-/* Stage / pickers */
+
+/* -------------------------------------------------------------------------- */
+/* 7. Stage & product pickers                                                 */
+/* -------------------------------------------------------------------------- */
+
 .compare-stage {
     margin: 0 0 28px;
-    padding: 22px 20px 20px;
+    padding: 24px 22px 22px;
     border-radius: 22px;
-    border: 1px solid var(--border-soft);
+    border: 1px solid rgba(15, 23, 42, 0.08);
     background:
-        linear-gradient(165deg, rgba(255, 255, 255, 0.92) 0%, rgba(248, 250, 252, 0.88) 100%);
-    box-shadow: 0 12px 36px rgba(15, 23, 42, 0.05);
+        linear-gradient(165deg, rgba(255, 255, 255, 0.94) 0%, rgba(248, 250, 252, 0.86) 42%, rgba(241, 245, 249, 0.82) 100%);
+    box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.8) inset,
+        0 16px 40px rgba(15, 23, 42, 0.06);
     position: relative;
     overflow: hidden;
 }
@@ -95,18 +440,28 @@
     inset: 0;
     pointer-events: none;
     background:
-        radial-gradient(ellipse 55% 80% at 8% 20%, rgba(102, 0, 0, 0.07), transparent 70%),
-        radial-gradient(ellipse 55% 80% at 92% 80%, rgba(30, 58, 95, 0.07), transparent 70%);
+        radial-gradient(ellipse 55% 80% at 6% 18%, rgba(102, 0, 0, 0.08), transparent 72%),
+        radial-gradient(ellipse 55% 80% at 94% 82%, rgba(30, 58, 95, 0.08), transparent 72%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, transparent 38%);
+}
+
+.compare-stage::after {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(128, 0, 0, 0.18), rgba(37, 99, 235, 0.18), transparent);
+    pointer-events: none;
 }
 
 [data-theme='dark'] .compare-stage {
-    background: linear-gradient(165deg, var(--surface-elevated) 0%, var(--surface) 100%);
+    background: linear-gradient(165deg, rgba(30, 41, 59, 0.72) 0%, rgba(15, 23, 42, 0.88) 100%);
     border-color: var(--border);
-    box-shadow: none;
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
 }
 
 [data-theme='dark'] .compare-stage::before {
-    opacity: 0.7;
+    opacity: 0.75;
 }
 
 .compare-pickers {
@@ -146,12 +501,12 @@
 
 .compare-slot-badge--a {
     background: linear-gradient(145deg, var(--compare-a-mid), var(--compare-a-deep));
-    box-shadow: 0 4px 12px var(--compare-a-glow);
+    box-shadow: 0 4px 14px var(--compare-a-glow);
 }
 
 .compare-slot-badge--b {
     background: linear-gradient(145deg, var(--compare-b-mid), var(--compare-b-deep));
-    box-shadow: 0 4px 12px var(--compare-b-glow);
+    box-shadow: 0 4px 14px var(--compare-b-glow);
 }
 
 .compare-picker-label {
@@ -162,7 +517,13 @@
     letter-spacing: 0.02em;
     margin: 0;
     color: var(--text-dark);
+    cursor: pointer;
 }
+
+
+/* -------------------------------------------------------------------------- */
+/* 8. Search field & selected chip                                            */
+/* -------------------------------------------------------------------------- */
 
 .compare-search-wrap {
     position: relative;
@@ -178,7 +539,11 @@
     border-radius: 16px;
     background: var(--surface);
     box-shadow: var(--shadow-sm);
-    transition: border-color var(--transition), box-shadow var(--transition), background var(--transition), transform var(--transition);
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background var(--transition),
+        transform var(--transition);
     overflow: hidden;
 }
 
@@ -203,6 +568,7 @@
 .compare-field:focus-within {
     border-color: var(--primary);
     box-shadow: 0 0 0 3px var(--primary-glow), var(--shadow-sm);
+    transform: translateY(-1px);
 }
 
 .compare-field--filled {
@@ -263,6 +629,10 @@
     gap: 12px;
     width: 100%;
     min-width: 0;
+}
+
+.compare-field-chip:not([hidden]) {
+    animation: compareChipPopIn 0.42s var(--compare-ease-spring) both;
 }
 
 .compare-chip-media {
@@ -337,19 +707,24 @@
     background: transparent;
     color: var(--text-muted);
     cursor: pointer;
-    transition: background var(--transition), color var(--transition);
+    transition: background var(--transition), color var(--transition), transform var(--transition);
 }
 
 .compare-chip-clear:hover {
     background: rgba(15, 23, 42, 0.06);
     color: var(--text-dark);
+    transform: scale(1.04);
 }
 
 [data-theme='dark'] .compare-chip-clear:hover {
     background: rgba(255, 255, 255, 0.08);
 }
 
-/* Suggestions */
+
+/* -------------------------------------------------------------------------- */
+/* 9. Suggestions dropdown                                                    */
+/* -------------------------------------------------------------------------- */
+
 .compare-suggestions {
     position: fixed;
     z-index: 200;
@@ -367,6 +742,11 @@
     border: 1px solid var(--border);
     border-radius: 16px;
     box-shadow: var(--shadow-lg);
+    transform-origin: top center;
+}
+
+.compare-suggestions:not([hidden]) {
+    animation: compareSuggestionsOpen 0.28s var(--compare-ease-out) both;
 }
 
 .compare-suggestions li {
@@ -407,13 +787,14 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    transition: background var(--transition);
+    transition: background var(--transition), transform var(--transition);
 }
 
 .compare-suggestions button:hover,
 .compare-suggestions button:focus-visible {
     background: var(--surface-hover);
     outline: none;
+    transform: translateX(4px);
 }
 
 .compare-suggestions .sug-emoji {
@@ -431,6 +812,11 @@
     margin-top: 1px;
 }
 
+
+/* -------------------------------------------------------------------------- */
+/* 10. Swap control                                                           */
+/* -------------------------------------------------------------------------- */
+
 .compare-swap-btn {
     align-self: center;
     margin-top: 34px;
@@ -444,7 +830,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.45s cubic-bezier(0.34, 1.15, 0.64, 1), box-shadow var(--transition), border-color var(--transition), color var(--transition), background var(--transition);
+    transition:
+        transform 0.45s var(--compare-ease-spring),
+        box-shadow var(--transition),
+        border-color var(--transition),
+        color var(--transition),
+        background var(--transition);
     box-shadow: var(--shadow-sm);
 }
 
@@ -456,19 +847,28 @@
     background: linear-gradient(145deg, #fff, #fff8f8);
 }
 
+.compare-swap-btn.is-spinning {
+    animation: compareSwapSpin 0.55s var(--compare-ease-out) both;
+}
+
 [data-theme='dark'] .compare-swap-btn:hover {
     background: var(--surface-hover);
     color: var(--primary);
 }
 
-/* Empty state */
+
+/* -------------------------------------------------------------------------- */
+/* 11. Empty state & quick picks                                              */
+/* -------------------------------------------------------------------------- */
+
 .compare-empty {
     text-align: center;
     margin: 8px 0 12px;
-    padding: 40px 20px 36px;
+    padding: 42px 22px 36px;
     border-radius: 20px;
     border: 1px dashed var(--border);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(248, 250, 252, 0.4));
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.62) 0%, rgba(248, 250, 252, 0.38) 100%);
 }
 
 [data-theme='dark'] .compare-empty {
@@ -495,11 +895,13 @@
 .compare-empty-orb--a {
     background: linear-gradient(145deg, rgba(128, 0, 0, 0.12), rgba(128, 0, 0, 0.04));
     border-color: var(--compare-a-border);
+    animation: compareOrbBreathe 3.6s ease-in-out infinite;
 }
 
 .compare-empty-orb--b {
     background: linear-gradient(145deg, rgba(30, 58, 95, 0.12), rgba(30, 58, 95, 0.04));
     border-color: var(--compare-b-border);
+    animation: compareOrbBreathe 3.6s ease-in-out 0.6s infinite;
 }
 
 .compare-empty-vs {
@@ -509,6 +911,7 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--text-light);
+    animation: compareVsPulse 2.8s ease-in-out infinite;
 }
 
 .compare-empty-title {
@@ -528,7 +931,78 @@
     color: var(--text-muted);
 }
 
-/* Results section */
+.compare-quick {
+    margin-top: 26px;
+    padding-top: 22px;
+    border-top: 1px solid var(--border-soft);
+}
+
+.compare-quick-label {
+    margin: 0 0 12px;
+    font-family: 'Encode Sans', 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.compare-quick-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px 18px;
+}
+
+.compare-quick-btn {
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 6px 2px;
+    font: inherit;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    cursor: pointer;
+    position: relative;
+    transition: color var(--transition);
+}
+
+.compare-quick-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    height: 1px;
+    background: linear-gradient(90deg, var(--compare-a-mid), var(--compare-b-mid));
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.28s var(--compare-ease-out);
+}
+
+.compare-quick-btn:hover,
+.compare-quick-btn:focus-visible {
+    color: var(--primary-dark);
+    outline: none;
+}
+
+.compare-quick-btn:hover::after,
+.compare-quick-btn:focus-visible::after {
+    transform: scaleX(1);
+}
+
+[data-theme='dark'] .compare-quick-btn:hover,
+[data-theme='dark'] .compare-quick-btn:focus-visible {
+    color: var(--primary);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* 12. Results section entrance                                               */
+/* -------------------------------------------------------------------------- */
+
 .compare-chart-section {
     --compare-a: #660000;
     --compare-a-mid: #800000;
@@ -549,22 +1023,15 @@
 }
 
 .compare-chart-section:not(.compare-chart-section--mounted) {
-    animation: compareReveal 0.45s cubic-bezier(0.34, 1.1, 0.64, 1);
+    animation: compareReveal 0.45s var(--compare-ease-spring);
+}
+
+.compare-chart-section.is-entering {
+    animation: compareSectionReveal 0.55s var(--compare-ease-out) both;
 }
 
 .compare-chart-section--mounted {
     animation: none;
-}
-
-@keyframes compareReveal {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
 }
 
 [data-theme='dark'] .compare-chart-section {
@@ -586,7 +1053,11 @@
     --compare-b-glow: rgba(59, 130, 246, 0.65);
 }
 
-/* Matchup */
+
+/* -------------------------------------------------------------------------- */
+/* 13. Matchup header                                                         */
+/* -------------------------------------------------------------------------- */
+
 .compare-matchup {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -596,7 +1067,7 @@
     padding: 18px 16px;
     border-radius: 20px;
     border: 1px solid var(--border-soft);
-    background: linear-gradient(135deg, rgba(102, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.7) 48%, rgba(30, 58, 95, 0.06) 100%);
+    background: linear-gradient(135deg, rgba(102, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.72) 48%, rgba(30, 58, 95, 0.06) 100%);
     box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
 }
 
@@ -613,9 +1084,14 @@
     min-width: 0;
 }
 
+.compare-matchup-side--a {
+    animation: compareSlideInLeft 0.55s var(--compare-ease-out) 0.08s both;
+}
+
 .compare-matchup-side--b {
     flex-direction: row-reverse;
     text-align: right;
+    animation: compareSlideInRight 0.55s var(--compare-ease-out) 0.08s both;
 }
 
 .compare-matchup-media {
@@ -690,9 +1166,162 @@
     background: var(--surface);
     border: 1px solid var(--border);
     box-shadow: var(--shadow-sm);
+    animation: compareVsScalePulse 0.6s var(--compare-ease-spring) 0.2s both;
 }
 
-/* Toolbar */
+
+/* -------------------------------------------------------------------------- */
+/* 14. Scoreline                                                              */
+/* -------------------------------------------------------------------------- */
+
+.compare-scoreline {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px 14px;
+    align-items: center;
+    margin: 0 0 20px;
+    padding: 16px 18px;
+    border-radius: 18px;
+    border: 1px solid var(--border-soft);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(248, 250, 252, 0.55) 100%);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+[data-theme='dark'] .compare-scoreline {
+    background: linear-gradient(180deg, rgba(30, 41, 59, 0.55) 0%, rgba(15, 23, 42, 0.72) 100%);
+    border-color: var(--border);
+}
+
+.compare-scoreline-side {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.compare-scoreline-side--a {
+    text-align: left;
+}
+
+.compare-scoreline-side--b {
+    text-align: right;
+    align-items: flex-end;
+}
+
+.compare-scoreline-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.compare-scoreline-side--a .compare-scoreline-label {
+    color: var(--compare-a);
+}
+
+.compare-scoreline-side--b .compare-scoreline-label {
+    color: var(--compare-b);
+}
+
+.compare-scoreline-value {
+    font-family: 'Encode Sans', 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+    color: var(--text-dark);
+}
+
+.compare-scoreline-mid {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 0 8px;
+}
+
+.compare-scoreline-score {
+    font-family: 'Encode Sans', 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.04em;
+    color: var(--text-dark);
+    white-space: nowrap;
+}
+
+.compare-scoreline-score-sep {
+    margin: 0 0.12em;
+    color: var(--text-light);
+    font-weight: 700;
+}
+
+.compare-scoreline-caption {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.compare-scoreline-tracks {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.compare-scoreline-track {
+    position: relative;
+    height: 6px;
+    border-radius: 999px;
+    overflow: hidden;
+    background: rgba(15, 23, 42, 0.06);
+}
+
+[data-theme='dark'] .compare-scoreline-track {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.compare-scoreline-fill--a,
+.compare-scoreline-fill--b {
+    display: block;
+    height: 100%;
+    width: var(--score-pct, 50%);
+    border-radius: inherit;
+    transform-origin: left center;
+    transform: scaleX(0);
+    animation: compareScorelineFill 0.85s var(--compare-ease-out) both;
+}
+
+.compare-scoreline-fill--a {
+    background: linear-gradient(90deg, var(--compare-a-deep), var(--compare-a-mid));
+}
+
+.compare-scoreline-fill--b {
+    background: linear-gradient(90deg, var(--compare-b-mid), var(--compare-b-end));
+}
+
+.compare-scoreline-side--b + .compare-scoreline-tracks .compare-scoreline-fill--b,
+.compare-scoreline-tracks .compare-scoreline-track:last-child .compare-scoreline-fill--b {
+    transform-origin: right center;
+}
+
+.compare-scoreline.is-animating .compare-scoreline-fill--a,
+.compare-scoreline.is-animating .compare-scoreline-fill--b {
+    animation-delay: var(--score-delay, 0ms);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* 15. Toolbar & copy link                                                    */
+/* -------------------------------------------------------------------------- */
+
 .compare-toolbar {
     display: flex;
     align-items: center;
@@ -736,7 +1365,12 @@
     padding: 9px 14px;
     cursor: pointer;
     box-shadow: var(--shadow-sm);
-    transition: border-color var(--transition), box-shadow var(--transition), background var(--transition), color var(--transition);
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background var(--transition),
+        color var(--transition),
+        transform var(--transition);
 }
 
 .compare-copy-link-btn:hover {
@@ -749,6 +1383,7 @@
     color: #047857;
     border-color: rgba(4, 120, 87, 0.35);
     background: rgba(16, 185, 129, 0.08);
+    animation: compareCopyBounce 0.45s var(--compare-ease-spring);
 }
 
 [data-theme='dark'] .compare-copy-link-btn.is-copied {
@@ -757,7 +1392,11 @@
     background: rgba(16, 185, 129, 0.12);
 }
 
-/* Legend */
+
+/* -------------------------------------------------------------------------- */
+/* 16. Legend (hidden by default, kept for JS)                                */
+/* -------------------------------------------------------------------------- */
+
 .compare-legend {
     display: none;
 }
@@ -816,11 +1455,15 @@
     background: rgba(255, 255, 255, 0.04);
 }
 
+
+/* -------------------------------------------------------------------------- */
+/* 17. Dashboard & KPI cards                                                  */
+/* -------------------------------------------------------------------------- */
+
 .compare-dashboard {
     margin-bottom: 28px;
 }
 
-/* KPI */
 .compare-kpi-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -844,6 +1487,18 @@
     overflow: hidden;
     transition: transform var(--transition), box-shadow var(--transition);
 }
+
+.compare-dashboard.is-animating .compare-kpi-card {
+    opacity: 0;
+    animation: compareKpiFadeUp 0.55s var(--compare-ease-out) both;
+}
+
+.compare-dashboard.is-animating .compare-kpi-card:nth-child(1) { animation-delay: 0ms; }
+.compare-dashboard.is-animating .compare-kpi-card:nth-child(2) { animation-delay: 55ms; }
+.compare-dashboard.is-animating .compare-kpi-card:nth-child(3) { animation-delay: 110ms; }
+.compare-dashboard.is-animating .compare-kpi-card:nth-child(4) { animation-delay: 165ms; }
+.compare-dashboard.is-animating .compare-kpi-card:nth-child(5) { animation-delay: 220ms; }
+.compare-dashboard.is-animating .compare-kpi-card:nth-child(6) { animation-delay: 275ms; }
 
 .compare-kpi-card::before {
     content: '';
@@ -950,10 +1605,27 @@
 
 .compare-kpi-val--a.is-winner {
     color: var(--compare-a-deep);
+    text-shadow: 0 0 0 transparent;
+    position: relative;
 }
 
 .compare-kpi-val--b.is-winner {
     color: var(--compare-b-deep);
+    position: relative;
+}
+
+.compare-kpi-val--a.is-winner::after,
+.compare-kpi-val--b.is-winner::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 18px;
+    height: 2px;
+    transform: translateX(-50%);
+    border-radius: 999px;
+    background: currentColor;
+    opacity: 0.45;
 }
 
 [data-theme='dark'] .compare-kpi-val--a.is-winner {
@@ -974,13 +1646,18 @@
     flex-shrink: 0;
 }
 
-/* Glass chart */
+
+/* -------------------------------------------------------------------------- */
+/* 18. Glass bar chart                                                        */
+/* -------------------------------------------------------------------------- */
+
 .compare-glass-panel {
     margin: 0;
     padding: 24px 22px 20px;
     border-radius: 20px;
     border: 1px solid var(--border-soft);
-    background: linear-gradient(180deg, #ffffff 0%, #f8f6f3 55%, #f3f0ec 100%);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(248, 250, 252, 0.88) 55%, rgba(241, 245, 249, 0.82) 100%);
     box-shadow: 0 16px 40px rgba(15, 23, 42, 0.07);
     position: relative;
     overflow: hidden;
@@ -992,8 +1669,8 @@
     inset: 0;
     opacity: 0.4;
     background:
-        radial-gradient(ellipse 65% 80% at 0% 35%, rgba(102, 0, 0, 0.12), transparent 70%),
-        radial-gradient(ellipse 65% 80% at 100% 65%, rgba(30, 58, 138, 0.1), transparent 70%);
+        radial-gradient(ellipse 65% 80% at 0% 35%, rgba(102, 0, 0, 0.1), transparent 70%),
+        radial-gradient(ellipse 65% 80% at 100% 65%, rgba(30, 58, 95, 0.08), transparent 70%);
     pointer-events: none;
 }
 
@@ -1021,6 +1698,17 @@
     border: none;
     background: transparent;
 }
+
+.compare-chart-section:not([hidden]) .compare-glass-row {
+    animation: compareRowFadeIn 0.45s var(--compare-ease-out) both;
+}
+
+.compare-chart-section:not([hidden]) .compare-glass-row:nth-child(1) { animation-delay: 0ms; }
+.compare-chart-section:not([hidden]) .compare-glass-row:nth-child(2) { animation-delay: 45ms; }
+.compare-chart-section:not([hidden]) .compare-glass-row:nth-child(3) { animation-delay: 90ms; }
+.compare-chart-section:not([hidden]) .compare-glass-row:nth-child(4) { animation-delay: 135ms; }
+.compare-chart-section:not([hidden]) .compare-glass-row:nth-child(5) { animation-delay: 180ms; }
+.compare-chart-section:not([hidden]) .compare-glass-row:nth-child(6) { animation-delay: 225ms; }
 
 .compare-glass-metric-body {
     display: grid;
@@ -1175,12 +1863,18 @@
     top: 3px;
     height: calc(100% - 6px);
     min-width: 0;
+    width: 0%;
     border-radius: 9px;
     box-sizing: border-box;
-    transition: width 0.55s cubic-bezier(0.34, 1.1, 0.64, 1);
+    transition: width 0.85s var(--compare-ease-out);
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(15, 23, 42, 0.1);
     z-index: 1;
+}
+
+.compare-dashboard.is-animating .compare-glass-fill {
+    width: var(--bar-pct, 0%);
+    transition-delay: var(--bar-delay, 0ms);
 }
 
 .compare-glass-fill--a {
@@ -1214,6 +1908,20 @@
 .compare-glass-fill.is-winner,
 .compare-glass-fill--b.is-winner {
     filter: saturate(1.06) brightness(1.02);
+}
+
+.compare-glass-fill.is-run::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        105deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.28) 48%,
+        transparent 66%
+    );
+    animation: compareBarShine 0.75s var(--compare-ease-out) 0.55s both;
+    pointer-events: none;
 }
 
 .compare-glass-fill-val .compare-metric-ratio-n {
@@ -1272,7 +1980,11 @@
     color: var(--accent-soft);
 }
 
-/* Table */
+
+/* -------------------------------------------------------------------------- */
+/* 19. Comparison table                                                       */
+/* -------------------------------------------------------------------------- */
+
 .compare-table-block {
     margin-top: 8px;
     padding: 22px 0 0;
@@ -1355,6 +2067,23 @@
     border-bottom: none;
 }
 
+.compare-table tbody tr {
+    opacity: 0;
+}
+
+.compare-chart-section:not([hidden]) .compare-table tbody tr {
+    animation: compareRowFadeIn 0.42s var(--compare-ease-out) both;
+}
+
+.compare-chart-section:not([hidden]) .compare-table tbody tr:nth-child(1) { animation-delay: 0ms; }
+.compare-chart-section:not([hidden]) .compare-table tbody tr:nth-child(2) { animation-delay: 40ms; }
+.compare-chart-section:not([hidden]) .compare-table tbody tr:nth-child(3) { animation-delay: 80ms; }
+.compare-chart-section:not([hidden]) .compare-table tbody tr:nth-child(4) { animation-delay: 120ms; }
+.compare-chart-section:not([hidden]) .compare-table tbody tr:nth-child(5) { animation-delay: 160ms; }
+.compare-chart-section:not([hidden]) .compare-table tbody tr:nth-child(6) { animation-delay: 200ms; }
+.compare-chart-section:not([hidden]) .compare-table tbody tr:nth-child(7) { animation-delay: 240ms; }
+.compare-chart-section:not([hidden]) .compare-table tbody tr:nth-child(8) { animation-delay: 280ms; }
+
 .compare-table tbody tr:hover td,
 .compare-table tbody tr:hover th {
     background: rgba(15, 23, 42, 0.015);
@@ -1372,15 +2101,31 @@
 
 .compare-table .cell-winner {
     font-weight: 800;
+    position: relative;
 }
 
 .compare-table .cell-winner--a {
     color: var(--compare-a-end);
+    background: linear-gradient(90deg, rgba(102, 0, 0, 0.06), transparent 72%);
 }
 
 .compare-table .cell-winner--b {
     color: var(--compare-b-end);
+    background: linear-gradient(270deg, rgba(30, 58, 95, 0.06), transparent 72%);
 }
+
+[data-theme='dark'] .compare-table .cell-winner--a {
+    background: linear-gradient(90deg, rgba(176, 64, 64, 0.1), transparent 72%);
+}
+
+[data-theme='dark'] .compare-table .cell-winner--b {
+    background: linear-gradient(270deg, rgba(59, 130, 246, 0.1), transparent 72%);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* 20. Utilities                                                              */
+/* -------------------------------------------------------------------------- */
 
 .visually-hidden {
     position: absolute;
@@ -1394,9 +2139,18 @@
     border: 0;
 }
 
+
+/* -------------------------------------------------------------------------- */
+/* 21. Responsive breakpoints                                                 */
+/* -------------------------------------------------------------------------- */
+
 @media (max-width: 1100px) {
     .compare-kpi-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .compare-scoreline-tracks {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1431,6 +2185,22 @@
         margin: 2px auto;
     }
 
+    .compare-scoreline {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .compare-scoreline-mid {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .compare-scoreline-side--b {
+        align-items: center;
+        text-align: center;
+    }
+
     .compare-kpi-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1460,10 +2230,20 @@
     .compare-toolbar {
         justify-content: center;
     }
+
+    .compare-quick-list {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 
 @media (max-width: 420px) {
     .compare-kpi-grid {
         grid-template-columns: 1fr;
+    }
+
+    .compare-atmosphere-blob--a,
+    .compare-atmosphere-blob--b {
+        filter: blur(56px);
     }
 }
