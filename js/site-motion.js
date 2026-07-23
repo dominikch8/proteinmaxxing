@@ -1,43 +1,35 @@
 /**
- * Proteiner — site-wide motion
- * Page entrance + IntersectionObserver reveals for cards/tiles.
- * Skips .compare-page (has its own motion system).
+ * Proteiner — lightweight site-wide motion
  */
 (function () {
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const root = document.documentElement;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function markReady() {
+        document.body.classList.add('pm-motion-ready');
+    }
 
     if (reduce) {
         root.classList.add('pm-motion-reduce');
-        document.body.classList.add('pm-motion-ready');
+        markReady();
         return;
     }
 
     root.classList.add('pm-motion');
+    markReady();
 
     const REVEAL_SELECTOR = [
         '.product-card-link',
-        '.products-grid > .product-card',
         '.macro-card',
         '.bmi-card',
         '.water-card',
         '.poradnik-nutrient-tile',
         '.home-info-tile',
         'a.shop-item',
-        '.tips-list > li',
         '.pm-podium-card',
         '.calc-protein-maxxing-cta',
-        '.shopping-box',
-        '.micro-collapse',
         '.nutrition-section',
-        '.serving-table-wrap',
-        '.related-products .product-card-link',
         '.product-page .macro-pill',
-        '.myth-list > li',
-        '.category-quick-links > a',
-        '.info-section',
-        '.auth-card',
-        '.add-product-card',
         '[data-pm-reveal]'
     ].join(',');
 
@@ -49,13 +41,11 @@
                 io.unobserve(entry.target);
             }
         },
-        { rootMargin: '0px 0px -6% 0px', threshold: 0.06 }
+        { rootMargin: '0px 0px -4% 0px', threshold: 0.05 }
     );
 
     function shouldSkip(el) {
-        if (!el || el.classList.contains('pm-reveal') || el.classList.contains('pm-revealed')) {
-            return true;
-        }
+        if (!el || el.classList.contains('pm-reveal') || el.classList.contains('pm-revealed')) return true;
         if (el.closest('.compare-page')) return true;
         if (el.closest('[hidden]')) return true;
         return false;
@@ -65,16 +55,16 @@
         const nodes = scope.querySelectorAll(REVEAL_SELECTOR);
         let i = 0;
         const vh = window.innerHeight || 800;
+
         nodes.forEach((el) => {
             if (shouldSkip(el)) return;
             el.classList.add('pm-reveal');
-            el.style.setProperty('--pm-stagger', `${Math.min(i % 12, 11) * 40}ms`);
+            el.style.setProperty('--pm-stagger', `${Math.min(i % 8, 7) * 30}ms`);
             i += 1;
 
             const rect = el.getBoundingClientRect();
-            const inView = rect.top < vh * 0.96 && rect.bottom > -40;
-            if (inView) {
-                requestAnimationFrame(() => el.classList.add('pm-revealed'));
+            if (rect.top < vh && rect.bottom > 0) {
+                el.classList.add('pm-revealed');
             } else {
                 io.observe(el);
             }
@@ -82,18 +72,20 @@
     }
 
     function boot() {
-        requestAnimationFrame(() => {
-            document.body.classList.add('pm-motion-ready');
-            observeTree(document);
+        observeTree(document);
 
-            const grids = document.querySelectorAll('#productsGrid, .products-grid, .related-products, .pm-top10-list, .shopping-grid');
-            grids.forEach((grid) => {
-                const mo = new MutationObserver(() => {
+        const grid = document.getElementById('productsGrid');
+        if (grid) {
+            let scheduled = false;
+            new MutationObserver(() => {
+                if (scheduled) return;
+                scheduled = true;
+                requestAnimationFrame(() => {
+                    scheduled = false;
                     observeTree(grid);
                 });
-                mo.observe(grid, { childList: true, subtree: false });
-            });
-        });
+            }).observe(grid, { childList: true });
+        }
     }
 
     if (document.readyState === 'loading') {
@@ -101,4 +93,15 @@
     } else {
         boot();
     }
+
+    // Safety: never leave hero/content stuck invisible
+    setTimeout(() => {
+        document.querySelectorAll('.page-hero, .pm-reveal').forEach((el) => {
+            if (getComputedStyle(el).opacity === '0') {
+                el.classList.add('pm-revealed');
+                el.style.opacity = '1';
+                el.style.transform = 'none';
+            }
+        });
+    }, 1200);
 })();

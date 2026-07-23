@@ -1,18 +1,16 @@
 /* =============================================================================
-   Proteiner — site-wide motion
-   Subtle, professional entrance + scroll reveals. Skips .compare-page internals.
+   Proteiner — site-wide motion (lightweight)
    ============================================================================= */
 
 :root {
     --pm-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
     --pm-ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
-    --pm-motion-duration: 0.55s;
 }
 
 @keyframes pmFadeUp {
     from {
         opacity: 0;
-        transform: translateY(16px);
+        transform: translateY(12px);
     }
     to {
         opacity: 1;
@@ -20,228 +18,57 @@
     }
 }
 
-@keyframes pmFadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+/* Page entrance — only when body is ready (never leave content invisible) */
+html.pm-motion body.pm-motion-ready:not(.compare-body) .page-hero {
+    animation: pmFadeUp 0.5s var(--pm-ease-out) both;
 }
 
-@keyframes pmScaleIn {
-    from {
-        opacity: 0;
-        transform: scale(0.97) translateY(8px);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
+html.pm-motion body.pm-motion-ready:not(.compare-body) .main-content > .sub-nav,
+html.pm-motion body.pm-motion-ready:not(.compare-body) .product-page > .product-hero-card {
+    animation: pmFadeUp 0.45s var(--pm-ease-out) 0.05s both;
 }
 
-@keyframes pmNavUnderline {
-    from { transform: scaleX(0.4); opacity: 0; }
-    to { transform: scaleX(1); opacity: 1; }
-}
-
-/* -------------------------------------------------------------------------- */
-/* Page entrance                                                              */
-/* -------------------------------------------------------------------------- */
-
-html.pm-motion body:not(.compare-body) .site-header {
-    animation: pmFadeIn 0.45s var(--pm-ease-out) both;
-}
-
-html.pm-motion body:not(.compare-body) .page-hero {
+/* Scroll reveals — start visible-ish; only animate when marked */
+html.pm-motion .pm-reveal:not(.pm-revealed) {
     opacity: 0;
-}
-
-html.pm-motion.pm-motion-ready body:not(.compare-body) .page-hero {
-    animation: pmFadeUp 0.65s var(--pm-ease-out) both;
-}
-
-html.pm-motion body:not(.compare-body) .main-content > .sub-nav,
-html.pm-motion body:not(.compare-body) .main-content > .search-bar,
-html.pm-motion body:not(.compare-body) .main-content > .pm-baza-filters,
-html.pm-motion body:not(.compare-body) .product-page > .breadcrumb,
-html.pm-motion body:not(.compare-body) .product-page > .product-hero-card {
-    opacity: 0;
-}
-
-html.pm-motion.pm-motion-ready body:not(.compare-body) .main-content > .sub-nav {
-    animation: pmFadeUp 0.6s var(--pm-ease-out) 0.06s both;
-}
-
-html.pm-motion.pm-motion-ready body:not(.compare-body) .main-content > .search-bar,
-html.pm-motion.pm-motion-ready body:not(.compare-body) .main-content > .pm-baza-filters {
-    animation: pmFadeUp 0.6s var(--pm-ease-out) 0.12s both;
-}
-
-html.pm-motion.pm-motion-ready body:not(.compare-body) .product-page > .breadcrumb {
-    animation: pmFadeUp 0.5s var(--pm-ease-out) 0.04s both;
-}
-
-html.pm-motion.pm-motion-ready body:not(.compare-body) .product-page > .product-hero-card {
-    animation: pmScaleIn 0.65s var(--pm-ease-out) 0.1s both;
-}
-
-/* -------------------------------------------------------------------------- */
-/* Scroll / grid reveals                                                      */
-/* -------------------------------------------------------------------------- */
-
-html.pm-motion .pm-reveal {
-    opacity: 0;
-    transform: translateY(18px);
-    transition:
-        opacity var(--pm-motion-duration) var(--pm-ease-out),
-        transform var(--pm-motion-duration) var(--pm-ease-out);
-    transition-delay: var(--pm-stagger, 0ms);
-    will-change: opacity, transform;
+    transform: translateY(14px);
 }
 
 html.pm-motion .pm-reveal.pm-revealed {
     opacity: 1;
     transform: none;
-    will-change: auto;
-}
-
-/* -------------------------------------------------------------------------- */
-/* Interactive polish (site-wide, including compare)                          */
-/* -------------------------------------------------------------------------- */
-
-.btn-calc,
-.btn-pdf,
-.btn-show-more,
-.compare-copy-link-btn,
-.theme-switch-btn {
     transition:
-        transform 0.28s var(--pm-ease-out),
-        box-shadow 0.28s var(--pm-ease-out),
-        background 0.22s var(--pm-ease-soft),
-        border-color 0.22s var(--pm-ease-soft),
-        color 0.22s var(--pm-ease-soft) !important;
+        opacity 0.4s var(--pm-ease-out),
+        transform 0.4s var(--pm-ease-out);
+    transition-delay: var(--pm-stagger, 0ms);
 }
 
+/* Light hover polish */
 .btn-calc:hover,
 .btn-pdf:hover,
 .btn-show-more:hover {
     transform: translateY(-2px);
 }
 
-.btn-calc:active,
-.btn-pdf:active,
-.btn-show-more:active {
-    transform: translateY(0);
-}
-
-.nav-links a.nav-link,
-.nav-links button {
-    transition:
-        color 0.22s var(--pm-ease-soft),
-        background 0.22s var(--pm-ease-soft),
-        transform 0.28s var(--pm-ease-out) !important;
-}
-
-.nav-links a.nav-link:hover:not(.active),
-.nav-links button:hover:not(.active) {
-    transform: translateY(-1px);
-}
-
-.product-card-link .product-card,
-.product-card {
-    transition:
-        transform 0.35s var(--pm-ease-out),
-        box-shadow 0.35s var(--pm-ease-out),
-        border-color 0.25s var(--pm-ease-soft) !important;
-}
-
 .product-card-link:hover .product-card,
 .product-card:hover {
-    transform: translateY(-5px);
-}
-
-.macro-card,
-.bmi-card,
-.water-card,
-.poradnik-nutrient-tile,
-.home-info-tile,
-a.shop-item,
-.calc-protein-maxxing-cta,
-.macro-pill,
-.product-hero-card {
-    transition:
-        transform 0.35s var(--pm-ease-out),
-        box-shadow 0.35s var(--pm-ease-out),
-        border-color 0.25s var(--pm-ease-soft),
-        background 0.25s var(--pm-ease-soft) !important;
+    transform: translateY(-4px);
 }
 
 .macro-card:hover,
 .bmi-card:hover,
 .water-card:hover,
 .poradnik-nutrient-tile:hover,
-a.shop-item:hover,
-.calc-protein-maxxing-cta:hover {
-    transform: translateY(-3px);
+a.shop-item:hover {
+    transform: translateY(-2px);
 }
-
-.btn-sub {
-    transition:
-        color 0.22s var(--pm-ease-soft),
-        background 0.22s var(--pm-ease-soft),
-        transform 0.28s var(--pm-ease-out),
-        box-shadow 0.28s var(--pm-ease-out) !important;
-}
-
-.btn-sub:hover:not(.active) {
-    transform: translateY(-1px);
-}
-
-.sub-tab-content.active,
-.tab-content.active {
-    animation: pmFadeUp 0.4s var(--pm-ease-out) both;
-}
-
-.site-footer {
-    transition: opacity 0.4s var(--pm-ease-soft);
-}
-
-html.pm-motion.pm-motion-ready .site-footer {
-    animation: pmFadeIn 0.7s var(--pm-ease-out) 0.2s both;
-}
-
-.logo {
-    transition: transform 0.35s var(--pm-ease-out), opacity 0.25s var(--pm-ease-soft);
-}
-
-.logo:hover {
-    transform: scale(1.02);
-}
-
-.theme-switch {
-    transition: transform 0.35s var(--pm-ease-out), opacity 0.3s var(--pm-ease-soft);
-}
-
-html.pm-motion.pm-motion-ready .theme-switch {
-    animation: pmScaleIn 0.5s var(--pm-ease-out) 0.25s both;
-}
-
-/* -------------------------------------------------------------------------- */
-/* Reduced motion                                                             */
-/* -------------------------------------------------------------------------- */
 
 @media (prefers-reduced-motion: reduce) {
-    html.pm-motion .pm-reveal,
+    html.pm-motion .pm-reveal:not(.pm-revealed),
     html.pm-motion .pm-reveal.pm-revealed,
-    html.pm-motion body:not(.compare-body) .site-header,
-    html.pm-motion body:not(.compare-body) .page-hero,
-    html.pm-motion.pm-motion-ready body:not(.compare-body) .page-hero,
-    html.pm-motion.pm-motion-ready body:not(.compare-body) .main-content > .sub-nav,
-    html.pm-motion.pm-motion-ready body:not(.compare-body) .main-content > .search-bar,
-    html.pm-motion.pm-motion-ready body:not(.compare-body) .main-content > .pm-baza-filters,
-    html.pm-motion.pm-motion-ready body:not(.compare-body) .product-page > .breadcrumb,
-    html.pm-motion.pm-motion-ready body:not(.compare-body) .product-page > .product-hero-card,
-    html.pm-motion.pm-motion-ready .site-footer,
-    html.pm-motion.pm-motion-ready .theme-switch,
-    .sub-tab-content.active,
-    .tab-content.active {
+    html.pm-motion body.pm-motion-ready:not(.compare-body) .page-hero,
+    html.pm-motion body.pm-motion-ready:not(.compare-body) .main-content > .sub-nav,
+    html.pm-motion body.pm-motion-ready:not(.compare-body) .product-page > .product-hero-card {
         animation: none !important;
         transition: none !important;
         opacity: 1 !important;
@@ -257,11 +84,7 @@ html.pm-motion.pm-motion-ready .theme-switch {
     .bmi-card:hover,
     .water-card:hover,
     .poradnik-nutrient-tile:hover,
-    a.shop-item:hover,
-    .calc-protein-maxxing-cta:hover,
-    .nav-links a.nav-link:hover:not(.active),
-    .btn-sub:hover:not(.active),
-    .logo:hover {
+    a.shop-item:hover {
         transform: none !important;
     }
 }
