@@ -51,8 +51,11 @@ jobs:
           **/package.json
           **/package-lock.json
           **/sw.js
-          **/admin-*
-          **/js/admin-*
+          **/js/products-data-raw.js
+          **/api/config.local.php
+          **/data/*.sqlite
+          **/images/products/*.png
+          **/domains/**
 
     - name: Weryfikacja deployu
       run: |
