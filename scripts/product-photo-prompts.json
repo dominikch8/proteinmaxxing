@@ -868,11 +868,39 @@
     "prompt": "Photorealistic ecommerce food photo: tortilla wheat, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
   },
   {
-    "slug": "platki-sniadaniowe-cukier",
-    "name": "Płatki śniadaniowe (cukier)",
+    "slug": "platki-nesquik",
+    "name": "Płatki Nesquik",
     "category": "zboza",
-    "subject": "flakes cereal sugar, grain cereal bakery food",
-    "prompt": "Photorealistic ecommerce food photo: flakes cereal sugar, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    "subject": "nesquik chocolate cereal balls, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: nesquik chocolate cereal balls, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "platki-lion",
+    "name": "Płatki Lion",
+    "category": "zboza",
+    "subject": "lion caramel chocolate cereal flakes, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: lion caramel chocolate cereal flakes, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "platki-cini-minis",
+    "name": "Płatki Cini Minis",
+    "category": "zboza",
+    "subject": "cini minis cinnamon cereal squares, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: cini minis cinnamon cereal squares, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "platki-cookie-crisps",
+    "name": "Płatki Cookie Crisps",
+    "category": "zboza",
+    "subject": "cookie crisp mini cookie cereal, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: cookie crisp mini cookie cereal, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "platki-corn-flakes",
+    "name": "Płatki Corn Flakes",
+    "category": "zboza",
+    "subject": "corn flakes cereal, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: corn flakes cereal, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
   },
   {
     "slug": "granola",
