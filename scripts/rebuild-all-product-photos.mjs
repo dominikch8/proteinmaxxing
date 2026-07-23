@@ -132,7 +132,7 @@ const FOOD_SUBJECT = {
     'twarog-wiejski': 'Polish twaróg wiejski country cottage cheese with soft white curds in bowl',
     'ser-wedzony': 'smoked cheese block or slices with brown smoked rind, clearly smoked dairy cheese, smoked look',
     'ser-topiony-plastry': 'stack of processed melting cheese slices, individually separated style yellow cheese slices for toast',
-    'papryka-zielona': 'ONE whole ripe RED bell pepper, deep glossy red skin, green stem, red capsicum only',
+    'papryka-zielona': 'ONE whole ripe GREEN bell pepper, bright fresh green skin, green stem, green capsicum only, NOT red, NOT yellow',
     'papryka-zolta': 'ONE whole ripe YELLOW bell pepper, bright golden yellow skin, green stem, yellow capsicum only, NOT red',
     'papryka-czerwona': 'ONE whole ripe RED bell pepper, deep glossy red skin, green stem',
     pieczarka: 'ONE fresh white button mushroom Agaricus, pale grayish-white cap, short white stem, classic white pieczarka, NOT brown cremini',
