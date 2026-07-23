@@ -80,12 +80,14 @@ export function buildThemeStylesheets(prefix = '', opts = {}) {
     const main = opts.productPage ? 'product-page.css' : 'site.css';
     return `    <link rel="stylesheet" href="${prefix}css/themes.css">
     <link rel="stylesheet" href="${prefix}css/${main}">
-    <link rel="stylesheet" href="${prefix}css/theme-switch.css">`;
+    <link rel="stylesheet" href="${prefix}css/theme-switch.css">
+    <link rel="stylesheet" href="${prefix}css/site-motion.css">`;
 }
 
 export function buildThemeBodyScript(prefix = '') {
     return `    <script src="${prefix}js/auth-ui.js"></script>
-    <script src="${prefix}js/theme.js"></script>`;
+    <script src="${prefix}js/theme.js"></script>
+    <script src="${prefix}js/site-motion.js"></script>`;
 }
 
 export function buildThemeAssets(prefix = '', opts = {}) {
