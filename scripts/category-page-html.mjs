@@ -1,10 +1,8 @@
-import { CATEGORY_EDITORIAL } from './category-editorial.mjs';
 import {
     CATEGORY_ORDER,
     CATEGORY_LABELS,
     CATEGORY_INTRO,
     CATEGORY_META_PHRASE,
-    CATEGORY_TIPS,
     CATEGORY_FAQ,
     formatProductCount,
 } from './category-seo.mjs';
@@ -31,44 +29,6 @@ function esc(s) {
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;');
-}
-
-function linkifyEditorial(text) {
-    return text
-        .replace(/\.\.\/porownaj-produkty\.html/g, `${PREFIX}porownaj-produkty`)
-        .replace(/\.\.\/index\.html/g, `${PREFIX}`)
-        .replace(/\.\.\/dieta\.html/g, `${PREFIX}dieta`);
-}
-
-function proteinKcalRatio(p) {
-    return p.protein > 0 ? p.kcal / p.protein : Infinity;
-}
-
-function buildTopProductsHtml(products, category) {
-    const top = [...products]
-        .sort((a, b) => proteinKcalRatio(a) - proteinKcalRatio(b))
-        .slice(0, 8);
-    if (!top.length) return '';
-    const items = top
-        .map(
-            (p) => `                        <li>
-                            <a href="../${esc(p.slug)}" class="category-top-link">
-                                <span class="category-top-emoji" aria-hidden="true">${p.emoji}</span>
-                                <span class="category-top-text">
-                                    <span class="category-top-name">${esc(p.name)}</span>
-                                    <span class="category-top-meta">${p.protein} g białka · ${p.kcal} kcal / 100 g</span>
-                                </span>
-                            </a>
-                        </li>`
-        )
-        .join('\n');
-    return `                    <section class="category-top-products" aria-labelledby="category-top-heading">
-                        <h2 id="category-top-heading">Wysokie białko, mniej kcal — przykłady</h2>
-                        <p class="category-top-lead">Produkty z tej kategorii z korzystnym stosunkiem kalorii do białka (orientacyjnie):</p>
-                        <ul class="category-top-list">
-${items}
-                        </ul>
-                    </section>`;
 }
 
 function buildOtherCategoriesNav(current) {
@@ -103,15 +63,6 @@ ${items}
                     </section>`;
 }
 
-function buildTipsHtml(category) {
-    const tips = CATEGORY_TIPS[category];
-    if (!tips?.length) return '';
-    const items = tips.map((t) => `                            <li>${esc(t)}</li>`).join('\n');
-    return `                        <ul class="category-tips-list">
-${items}
-                        </ul>`;
-}
-
 /**
  * @param {string} category
  * @param {object[]} categoryProducts — produkty z tej kategorii (ze slug)
@@ -121,13 +72,10 @@ export function buildCategoryPageHtml(category, categoryProducts) {
     const count = categoryProducts.length;
     const countLabel = formatProductCount(count);
     const intro = CATEGORY_INTRO[category] || '';
-    const editorial = CATEGORY_EDITORIAL[category] || '';
     const metaPhrase = CATEGORY_META_PHRASE[category] || 'kalorie i makro na 100 g';
     const title = `${label} — ${metaPhrase} | Proteiner`;
     const description = `${label}: ${countLabel} w bazie Proteiner. ${intro.slice(0, 140)}… Kalorie, białko, węglowodany i tłuszcz na 100 g.`;
     const canonical = `https://proteiner.pl/produkty/kategoria/${category}`;
-
-    const editorialLinked = editorial ? linkifyEditorial(editorial) : '';
 
     return `<!DOCTYPE html>
 <html lang="pl">
@@ -186,21 +134,6 @@ ${buildCookieConsentBody(PREFIX)}
                 <p class="subtitle">${esc(intro)}</p>
                 <p class="category-count-badge">${countLabel} w bazie</p>
             </div>
-
-            <section class="editorial-intro category-editorial">
-                <h2>Jak korzystać z tej kategorii?</h2>
-                ${editorialLinked ? `<p>${editorialLinked}</p>` : ''}
-                ${buildTipsHtml(category)}
-                <p class="category-cta-links">
-                    <a href="${PREFIX}bialko-maxxing#kategoria/${encodeURIComponent(category)}">Ranking Białko maxxing</a>
-                    ·
-                    <a href="${PREFIX}cena-bialka#kategoria/${encodeURIComponent(category)}">Cena za 100 g białka</a>
-                    ·
-                    <a href="${PREFIX}">Kalkulator TDEE</a>
-                </p>
-            </section>
-
-${buildTopProductsHtml(categoryProducts, category)}
 
             <section class="category-products-section" aria-labelledby="category-products-heading">
                 <h2 id="category-products-heading">Wszystkie produkty — ${esc(label)}</h2>
