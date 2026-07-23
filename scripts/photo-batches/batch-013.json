@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "sos-sojowy",
+    "name": "Sos sojowy",
+    "category": "sosy",
+    "subject": "soy sauce",
+    "prompt": "Photorealistic ecommerce food photo: soy sauce. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sos-barbecue",
+    "name": "Sos barbecue",
+    "category": "sosy",
+    "subject": "bbq sauce",
+    "prompt": "Photorealistic ecommerce food photo: bbq sauce. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sos-ostry-chilli",
+    "name": "Sos ostry (chilli)",
+    "category": "sosy",
+    "subject": "hot chili, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: hot chili, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sos-ranch",
+    "name": "Sos ranch",
+    "category": "sosy",
+    "subject": "ranch, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: ranch, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sos-slodko-kwasny",
+    "name": "Sos słodko-kwaśny",
+    "category": "sosy",
+    "subject": "sweet sour, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: sweet sour, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sos-pesto-zielone",
+    "name": "Sos pesto (zielone)",
+    "category": "sosy",
+    "subject": "pesto green, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: pesto green, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sos-1000-wysp",
+    "name": "Sos 1000 wysp",
+    "category": "sosy",
+    "subject": "island, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: island, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "musztarda-delikatesowa",
+    "name": "Musztarda delikatesowa",
+    "category": "sosy",
+    "subject": "mustard, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: mustard, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "oliwa-z-oliwek",
+    "name": "Oliwa z oliwek",
+    "category": "tluszcze",
+    "subject": "olive, cooking oil or fat",
+    "prompt": "Photorealistic ecommerce food photo: olive, cooking oil or fat. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "olej-rzepakowy",
+    "name": "Olej rzepakowy",
+    "category": "tluszcze",
+    "subject": "oil canola",
+    "prompt": "Photorealistic ecommerce food photo: oil canola. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "maslo-ekstra-82",
+    "name": "Masło ekstra 82%",
+    "category": "tluszcze",
+    "subject": "butter, cooking oil or fat",
+    "prompt": "Photorealistic ecommerce food photo: butter, cooking oil or fat. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "smalec",
+    "name": "Smalec",
+    "category": "tluszcze",
+    "subject": "lard, cooking oil or fat",
+    "prompt": "Photorealistic ecommerce food photo: lard, cooking oil or fat. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

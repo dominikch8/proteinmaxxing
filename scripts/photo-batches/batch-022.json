@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "brzoskwinia",
+    "name": "Brzoskwinia",
+    "category": "owoce",
+    "subject": "peach, fresh fruit",
+    "prompt": "Photorealistic ecommerce food photo: peach, fresh fruit. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "nektarynka",
+    "name": "Nektarynka",
+    "category": "owoce",
+    "subject": "nectarine, fresh fruit",
+    "prompt": "Photorealistic ecommerce food photo: nectarine, fresh fruit. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "morela",
+    "name": "Morela",
+    "category": "owoce",
+    "subject": "apricot, fresh fruit",
+    "prompt": "Photorealistic ecommerce food photo: apricot, fresh fruit. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pomelo",
+    "name": "Pomelo",
+    "category": "owoce",
+    "subject": "pomelo, fresh fruit",
+    "prompt": "Photorealistic ecommerce food photo: pomelo, fresh fruit. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "grejpfrut",
+    "name": "Grejpfrut",
+    "category": "owoce",
+    "subject": "grapefruit",
+    "prompt": "Photorealistic ecommerce food photo: grapefruit. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "porzeczki-czarne",
+    "name": "Porzeczki czarne",
+    "category": "owoce",
+    "subject": "currant black, fresh fruit",
+    "prompt": "Photorealistic ecommerce food photo: currant black, fresh fruit. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "porzeczki-czerwone",
+    "name": "Porzeczki czerwone",
+    "category": "owoce",
+    "subject": "currant red, fresh fruit",
+    "prompt": "Photorealistic ecommerce food photo: currant red, fresh fruit. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "jagody-borowki-lesne",
+    "name": "Jagody (borówki leśne)",
+    "category": "owoce",
+    "subject": "berry blueberry wild, fresh fruit",
+    "prompt": "Photorealistic ecommerce food photo: berry blueberry wild, fresh fruit. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pigwa",
+    "name": "Pigwa",
+    "category": "owoce",
+    "subject": "quince, fresh fruit",
+    "prompt": "Photorealistic ecommerce food photo: quince, fresh fruit. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "figi-swieze",
+    "name": "Figi świeże",
+    "category": "owoce",
+    "subject": "fig, fresh fruit",
+    "prompt": "Photorealistic ecommerce food photo: fig, fresh fruit. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "daktyle-suszone",
+    "name": "Daktyle suszone",
+    "category": "owoce",
+    "subject": "date sun dried, fresh fruit",
+    "prompt": "Photorealistic ecommerce food photo: date sun dried, fresh fruit. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kokos-swiezy",
+    "name": "Kokos świeży",
+    "category": "owoce",
+    "subject": "coconut",
+    "prompt": "Photorealistic ecommerce food photo: coconut. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

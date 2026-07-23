@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "cukinia",
+    "name": "Cukinia",
+    "category": "warzywa",
+    "subject": "zucchini, fresh vegetable",
+    "prompt": "Photorealistic ecommerce food photo: zucchini, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "dynia-miazsz",
+    "name": "Dynia (miąższ)",
+    "category": "warzywa",
+    "subject": "pumpkin, fresh vegetable",
+    "prompt": "Photorealistic ecommerce food photo: pumpkin, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "fasolka-szparagowa",
+    "name": "Fasolka szparagowa",
+    "category": "warzywa",
+    "subject": "green beans fresh, fresh vegetable",
+    "prompt": "Photorealistic ecommerce food photo: green beans fresh, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "groszek-zielony",
+    "name": "Groszek zielony",
+    "category": "warzywa",
+    "subject": "peas green, fresh vegetable",
+    "prompt": "Photorealistic ecommerce food photo: peas green, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kukurydza-konserwowa",
+    "name": "Kukurydza konserwowa",
+    "category": "warzywa",
+    "subject": "corn, fresh vegetable",
+    "prompt": "Photorealistic ecommerce food photo: corn, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "rzodkiewka",
+    "name": "Rzodkiewka",
+    "category": "warzywa",
+    "subject": "radish, fresh vegetable",
+    "prompt": "Photorealistic ecommerce food photo: radish, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "rukola",
+    "name": "Rukola",
+    "category": "warzywa",
+    "subject": "arugula, fresh vegetable",
+    "prompt": "Photorealistic ecommerce food photo: arugula, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "jarmuz",
+    "name": "Jarmuż",
+    "category": "warzywa",
+    "subject": "kale, fresh vegetable",
+    "prompt": "Photorealistic ecommerce food photo: kale, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pieczarka",
+    "name": "Pieczarka",
+    "category": "warzywa",
+    "subject": "mushroom, fresh vegetable",
+    "prompt": "Photorealistic ecommerce food photo: mushroom, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "ciecierzyca-gotowana",
+    "name": "Ciecierzyca (gotowana)",
+    "category": "warzywa",
+    "subject": "chickpeas, fresh vegetable",
+    "prompt": "Photorealistic ecommerce food photo: chickpeas, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "soczewica-czerwona-gotowana",
+    "name": "Soczewica czerwona (gotowana)",
+    "category": "warzywa",
+    "subject": "lentils red, fresh vegetable",
+    "prompt": "Photorealistic ecommerce food photo: lentils red, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "fasola-biala-gotowana",
+    "name": "Fasola biała (gotowana)",
+    "category": "warzywa",
+    "subject": "beans white, fresh vegetable",
+    "prompt": "Photorealistic ecommerce food photo: beans white, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

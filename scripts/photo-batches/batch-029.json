@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "zupa-pomidorowa",
+    "name": "Zupa pomidorowa",
+    "category": "zupy",
+    "subject": "soup tomato",
+    "prompt": "Photorealistic ecommerce food photo: soup tomato. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "zupa-pieczarkowa",
+    "name": "Zupa pieczarkowa",
+    "category": "zupy",
+    "subject": "soup",
+    "prompt": "Photorealistic ecommerce food photo: soup. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "zupa-ogorkowa",
+    "name": "Zupa ogórkowa",
+    "category": "zupy",
+    "subject": "soup",
+    "prompt": "Photorealistic ecommerce food photo: soup. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "barszcz-czerwony",
+    "name": "Barszcz czerwony",
+    "category": "zupy",
+    "subject": "Barszcz czerwony, soup in a bowl",
+    "prompt": "Photorealistic ecommerce food photo: Barszcz czerwony, soup in a bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "zurek",
+    "name": "Żurek",
+    "category": "zupy",
+    "subject": "Żurek, soup in a bowl",
+    "prompt": "Photorealistic ecommerce food photo: Żurek, soup in a bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kapusniak",
+    "name": "Kapuśniak",
+    "category": "zupy",
+    "subject": "Kapuśniak, soup in a bowl",
+    "prompt": "Photorealistic ecommerce food photo: Kapuśniak, soup in a bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "grochowka",
+    "name": "Grochówka",
+    "category": "zupy",
+    "subject": "Grochówka, soup in a bowl",
+    "prompt": "Photorealistic ecommerce food photo: Grochówka, soup in a bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "flaki",
+    "name": "Flaki",
+    "category": "zupy",
+    "subject": "Flaki, soup in a bowl",
+    "prompt": "Photorealistic ecommerce food photo: Flaki, soup in a bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "golabki",
+    "name": "Gołąbki",
+    "category": "polskie-obiadki",
+    "subject": "Gołąbki, Polish traditional cooked dish",
+    "prompt": "Photorealistic ecommerce food photo: Gołąbki, Polish traditional cooked dish. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "bigos",
+    "name": "Bigos",
+    "category": "polskie-obiadki",
+    "subject": "Bigos, Polish traditional cooked dish",
+    "prompt": "Photorealistic ecommerce food photo: Bigos, Polish traditional cooked dish. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pyzy-z-miesem",
+    "name": "Pyzy z mięsem",
+    "category": "polskie-obiadki",
+    "subject": "meat",
+    "prompt": "Photorealistic ecommerce food photo: meat. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "nalesniki-z-twarogiem",
+    "name": "Naleśniki z twarogiem",
+    "category": "polskie-obiadki",
+    "subject": "Naleśniki z twarogiem, Polish traditional cooked dish",
+    "prompt": "Photorealistic ecommerce food photo: Naleśniki z twarogiem, Polish traditional cooked dish. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

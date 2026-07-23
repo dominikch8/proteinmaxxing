@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "miod",
+    "name": "Miód",
+    "category": "slodycze",
+    "subject": "honey, candy chocolate dessert",
+    "prompt": "Photorealistic ecommerce food photo: honey, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "dzem-truskawkowy",
+    "name": "Dżem truskawkowy",
+    "category": "slodycze",
+    "subject": "jam strawberry, candy chocolate dessert",
+    "prompt": "Photorealistic ecommerce food photo: jam strawberry, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "croissant",
+    "name": "Croissant",
+    "category": "slodycze",
+    "subject": "croissant, candy chocolate dessert",
+    "prompt": "Photorealistic ecommerce food photo: croissant, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sernik-kawalek",
+    "name": "Sernik (kawałek)",
+    "category": "slodycze",
+    "subject": "cheesecake",
+    "prompt": "Photorealistic ecommerce food photo: cheesecake. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "szarlotka-kawalek",
+    "name": "Szarlotka (kawałek)",
+    "category": "slodycze",
+    "subject": "apple pie, candy chocolate dessert",
+    "prompt": "Photorealistic ecommerce food photo: apple pie, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "piernik",
+    "name": "Piernik",
+    "category": "slodycze",
+    "subject": "gingerbread",
+    "prompt": "Photorealistic ecommerce food photo: gingerbread. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "makowiec",
+    "name": "Makowiec",
+    "category": "slodycze",
+    "subject": "poppy cake, candy chocolate dessert",
+    "prompt": "Photorealistic ecommerce food photo: poppy cake, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "chalwa-sezamowa",
+    "name": "Chałwa sezamowa",
+    "category": "slodycze",
+    "subject": "halva sesame, candy chocolate dessert",
+    "prompt": "Photorealistic ecommerce food photo: halva sesame, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "babka-drozdzowa",
+    "name": "Babka drożdżowa",
+    "category": "slodycze",
+    "subject": "cake yeast, candy chocolate dessert",
+    "prompt": "Photorealistic ecommerce food photo: cake yeast, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "krem-czekoladowy-nutella-styl",
+    "name": "Krem czekoladowy (Nutella styl)",
+    "category": "slodycze",
+    "subject": "spread chocolate nutella",
+    "prompt": "Photorealistic ecommerce food photo: spread chocolate nutella. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "ciastka-maslane",
+    "name": "Ciastka maślane",
+    "category": "slodycze",
+    "subject": "cookies butter, candy chocolate dessert",
+    "prompt": "Photorealistic ecommerce food photo: cookies butter, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "rocky-road",
+    "name": "Rocky Road",
+    "category": "slodycze",
+    "subject": "rocky road, candy chocolate dessert",
+    "prompt": "Photorealistic ecommerce food photo: rocky road, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

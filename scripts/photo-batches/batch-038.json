@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "zupa-dyniowa",
+    "name": "Zupa dyniowa",
+    "category": "zupy",
+    "subject": "soup",
+    "prompt": "Photorealistic ecommerce food photo: soup. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "zupa-krem-szpinakowy",
+    "name": "Zupa krem szpinakowy",
+    "category": "zupy",
+    "subject": "soup spread",
+    "prompt": "Photorealistic ecommerce food photo: soup spread. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "zupa-grzybowa",
+    "name": "Zupa grzybowa",
+    "category": "zupy",
+    "subject": "soup",
+    "prompt": "Photorealistic ecommerce food photo: soup. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "zupa-z-soczewicy",
+    "name": "Zupa z soczewicy",
+    "category": "zupy",
+    "subject": "soup",
+    "prompt": "Photorealistic ecommerce food photo: soup. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "zupa-pomidorowa-kremowa",
+    "name": "Zupa pomidorowa kremowa",
+    "category": "zupy",
+    "subject": "soup tomato mustard",
+    "prompt": "Photorealistic ecommerce food photo: soup tomato mustard. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "zupa-gulaszowa",
+    "name": "Zupa gulaszowa",
+    "category": "zupy",
+    "subject": "soup",
+    "prompt": "Photorealistic ecommerce food photo: soup. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "zupa-tom-yum",
+    "name": "Zupa tom yum",
+    "category": "zupy",
+    "subject": "soup",
+    "prompt": "Photorealistic ecommerce food photo: soup. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "makaron-udon",
+    "name": "Makaron udon",
+    "category": "makarony",
+    "subject": "pasta",
+    "prompt": "Photorealistic ecommerce food photo: pasta. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "gnocchi",
+    "name": "Gnocchi",
+    "category": "makarony",
+    "subject": "Gnocchi, pasta food",
+    "prompt": "Photorealistic ecommerce food photo: Gnocchi, pasta food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "ravioli-z-ricotta",
+    "name": "Ravioli z ricottą",
+    "category": "makarony",
+    "subject": "ricotta, pasta food",
+    "prompt": "Photorealistic ecommerce food photo: ricotta, pasta food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "tortellini-z-miesem",
+    "name": "Tortellini z mięsem",
+    "category": "makarony",
+    "subject": "meat",
+    "prompt": "Photorealistic ecommerce food photo: meat. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "lasagne-warzywna",
+    "name": "Lasagne warzywna",
+    "category": "makarony",
+    "subject": "lasagne, pasta food",
+    "prompt": "Photorealistic ecommerce food photo: lasagne, pasta food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

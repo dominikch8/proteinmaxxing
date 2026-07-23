@@ -1,110 +1,132 @@
 /**
- * Generuje WSZYSTKIE zdjęcia produktów (bez Wikimedia/Openverse).
- * Tylko AI: białe tło + kontekst JEDZENIA.
+ * Research → realistyczne minimalistyczne zdjęcia produktów (FOOD ONLY).
+ *
+ * 1) Szuka 2–3 referencji w internecie (Commons/Openverse) — potwierdza, że to jedzenie
+ * 2) Preferuje pobranie prawdziwego zdjęcia na jasnym/białym tle + wycięcie tła
+ * 3) Fallback: generacja Pollinations (Flux) — minimalizm, izolowany produkt
+ * 4) Zapisuje PNG (przezroczyste tło) + JPG na białym
  *
  * node scripts/rebuild-all-product-photos.mjs
- * node scripts/rebuild-all-product-photos.mjs --keep-slugs=banan,lion
- * node scripts/rebuild-all-product-photos.mjs --slug=lion --slug=mars
+ * node scripts/rebuild-all-product-photos.mjs --slug=lion --slug=banan
+ * node scripts/rebuild-all-product-photos.mjs --limit=20 --delay=2000
+ * node scripts/rebuild-all-product-photos.mjs --force-ai   # tylko generacja AI
+ * node scripts/rebuild-all-product-photos.mjs --prefer-photo  # domyślnie: real photo first
  */
 import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 import os from 'os';
 import { fileURLToPath, pathToFileURL } from 'url';
+import { removeEdgeBackground, defringeLightHalos } from './remove-edge-background.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 const outDir = path.join(root, 'images', 'products');
 const queriesPath = path.join(root, 'js', 'product-search-queries.js');
+const researchLogPath = path.join(root, 'scripts', 'product-photo-research-log.json');
 const UA = 'Proteiner/1.0 (nutrition education; contact: dominikchw1@gmail.com)';
 
-/** Jawny temat JEDZENIA (EN) — nigdy zwierzę / planeta / galaktyka */
+const BAD =
+    /logo|icon|diagram|map|flag|coat|symbol|chart|graph|list of|disambiguation|category:|svg|stamp|seal|portrait|building|aircraft|vehicle|panthera|wildlife|zoo|safari|lioness|galaxy|constellation|astronomy|planet|moon|person|people|selfie|hatching|spiral egg cup|soup|smoothie|salad bowl|pizza with|platter|buffet/i;
+
+/** Precyzyjne opisy — unikają mylenia z zwierzętami/planetami/innymi produktami */
 const FOOD_SUBJECT = {
-    lion: 'Lion Nestle chocolate candy bar wafer caramel cereal',
+    lion: 'Lion Nestle Polish chocolate candy wafer bar with caramel cereal filling, wrapped snack bar shape',
     'milky-way': 'Milky Way chocolate nougat candy bar',
-    mars: 'Mars chocolate nougat caramel candy bar',
-    twix: 'Twix chocolate cookie caramel candy bars',
-    snickers: 'Snickers chocolate peanut nougat candy bar',
+    mars: 'Mars chocolate candy bar with caramel nougat',
+    twix: 'Twix chocolate caramel cookie bars',
+    snickers: 'Snickers chocolate peanut candy bar',
     bounty: 'Bounty coconut chocolate candy bar',
-    oreo: 'Oreo chocolate cream sandwich cookies',
-    'kit-kat': 'Kit Kat chocolate wafer candy bar',
+    oreo: 'stack of Oreo chocolate sandwich cookies',
+    'kit-kat': 'Kit Kat chocolate wafer bar broken sticks',
     raffaello: 'Raffaello white coconut almond candy balls',
-    '3-bit': '3 Bit Polish chocolate wafer candy bar',
-    delicje: 'Delicje Polish jam filled chocolate cookies',
+    '3-bit': '3 Bit Polish chocolate wafer bar',
+    delicje: 'Delicje Polish jam chocolate cookies',
     'kinder-bueno': 'Kinder Bueno chocolate hazelnut wafer bar',
     'prince-polo': 'Prince Polo chocolate wafer bar',
-    'ptasie-mleczko': 'Ptasie mleczko marshmallow chocolate candy',
-    'baton-proteinowy': 'protein chocolate candy bar',
-    'krem-czekoladowy-milka': 'chocolate hazelnut spread in glass jar',
-    'czekolada-mleczna': 'milk chocolate bar',
-    'czekolada-gorzka': 'dark chocolate bar',
+    'ptasie-mleczko': 'Ptasie mleczko Polish chocolate-covered marshmallow candy pieces',
+    'baton-proteinowy': 'plain chocolate protein bar without readable brand text',
+    'baton-np-snickers': 'chocolate peanut nougat candy bar like Snickers',
+    'krem-czekoladowy-milka': 'chocolate hazelnut spread in open glass jar',
+    'czekolada-mleczna': 'milk chocolate bar broken squares',
+    'czekolada-gorzka-80': 'dark 80 percent chocolate bar squares',
     'czekolada-100': '100 percent dark chocolate bar',
-    hamburger: 'beef hamburger burger with bun',
-    'big-mac-styl': 'double cheeseburger Big Mac style',
-    'whopper-styl': 'flame grilled burger Whopper style',
-    'hot-dog': 'hot dog sausage in bun',
-    frytki: 'french fries potato chips',
-    'piers-z-kurczaka': 'raw chicken breast fillets',
-    'piers-z-indyka': 'raw turkey breast fillet meat',
-    banan: 'ripe yellow banana fruit',
-    jablko: 'red apple fruit',
-    'fasolka-szparagowa': 'fresh green beans vegetable',
-    migdaly: 'raw whole almonds nuts',
-    'sos-sojowy': 'dark soy sauce in clear glass bottle',
-    cytryna: 'yellow lemon citrus fruit',
-    pomidor: 'red tomato vegetable',
-    ogorek: 'green cucumber vegetable',
-    ketchup: 'tomato ketchup in bottle',
-    majonez: 'mayonnaise in glass jar',
-    guacamole: 'guacamole avocado dip in bowl',
-    'losos-atlantycki': 'raw salmon fillet fish',
-    'twarog-chudy': 'cottage cheese curds in bowl',
-    'ryz-bialy-gotowany': 'cooked white rice in bowl',
-    bigos: 'Polish bigos hunter stew cabbage meat',
-    'pierogi-ruskie': 'Polish pierogi dumplings',
-    rosol: 'Polish chicken broth clear soup',
+    hamburger: 'classic beef hamburger with bun lettuce tomato',
+    'big-mac-styl': 'double cheeseburger with sesame bun',
+    'whopper-styl': 'flame grilled beef burger',
+    'hot-dog': 'hot dog sausage in bun with mustard',
+    frytki: 'portion of golden french fries',
+    'piers-z-kurczaka': 'two raw pale pink skinless boneless chicken breast fillets, poultry meat only, NOT fish, NOT salmon',
+    'piers-z-indyka': 'raw turkey breast fillet pale meat',
+    banan: 'ONE single ripe yellow banana with ONE stem, Cavendish banana fruit',
+    jablko: 'one whole red apple fruit',
+    'fasolka-szparagowa': 'fresh green beans pile',
+    migdaly: 'raw whole almonds pile',
+    'sos-sojowy': 'soy sauce in clear glass bottle blank label',
+    cytryna: 'one whole yellow lemon',
+    pomidor: 'one ripe red tomato',
+    ogorek: 'one green cucumber',
+    ketchup: 'tomato ketchup in glass bottle blank label',
+    majonez: 'mayonnaise in glass jar blank label',
+    guacamole: 'guacamole dip in small white bowl',
+    'losos-atlantycki': 'one raw Atlantic salmon fillet orange-pink with white fat lines',
+    'twarog-chudy': 'plain white cottage cheese in bowl',
+    'ryz-bialy': 'uncooked white rice grains',
+    'ryz-bialy-gotowany': 'cooked white rice in white bowl',
+    bigos: 'Polish bigos hunter stew in bowl',
+    'pierogi-ruskie': 'Polish pierogi ruskie dumplings on plate',
+    rosol: 'clear Polish chicken broth soup with noodles in white bowl',
     'ser-mozzarella': 'fresh mozzarella cheese ball',
     'mleko-2': 'glass of white cow milk',
-    'jajko-kurze-cale': 'brown chicken egg',
-    'orzechy-wloskie': 'walnuts nuts',
-    'orzechy-laskowe': 'hazelnuts nuts',
-    'orzechy-ziemne': 'peanuts nuts',
+    'jajko-kurze-cale': 'ONE whole intact brown chicken egg with unbroken shell, whole egg only, NOT cracked, NOT open, NOT yolk',
+    'skyr-naturalny': 'plain natural skyr Icelandic yogurt pure white thick cream in small white bowl, NO chocolate, NO toppings, NO sauce swirl',
+    'orzechy-wloskie': 'shelled walnuts pile',
+    'orzechy-laskowe': 'hazelnuts pile',
+    'orzechy-ziemne': 'roasted peanuts pile',
+    'orzechy-pekan': 'pecan nuts pile',
     truskawki: 'fresh red strawberries',
     maliny: 'fresh red raspberries',
-    rukola: 'fresh arugula salad leaves',
-    kalafior: 'white cauliflower head',
-    brokuly: 'green broccoli head',
-    ziemniaki: 'brown potato vegetable',
-    marchew: 'orange carrots vegetable',
+    rukola: 'fresh arugula leaves',
+    kalafior: 'one white cauliflower head',
+    brokuly: 'one green broccoli head',
+    ziemniaki: 'raw potatoes',
+    marchew: 'fresh orange carrots',
     salami: 'salami sausage slices',
     ricotta: 'ricotta cheese in bowl',
     'oliwa-z-oliwek': 'olive oil in clear glass bottle',
-    maslo: 'yellow butter stick',
+    maslo: 'butter stick or block',
+    'maslo-ekstra-82': 'butter stick wrapped or block',
     'szpinak-swiezy': 'fresh spinach leaves',
-    winogrona: 'purple grapes fruit',
+    winogrona: 'bunch of grapes',
     cielecina: 'raw veal meat',
     'indyk-mielony': 'raw ground turkey meat',
     'kurczak-mielony': 'raw ground chicken meat',
-    'mieso-mielone-wolowe': 'raw ground beef meat'
+    'mieso-mielone-wolowe': 'raw ground beef',
+    awokado: 'Hass avocado half with pit and one whole avocado',
+    'jogurt-grecki-naturalny': 'plain Greek yogurt white in bowl no toppings',
+    'jogurt-naturalny': 'plain natural yogurt white in bowl no toppings',
+    'serek-wiejski': 'Polish cottage cheese serek wiejski in bowl',
+    'protein-pudding': 'plain protein pudding cream in bowl no chocolate swirl'
 };
 
-const CATEGORY_FOOD_SUFFIX = {
-    mieso: 'meat food',
-    nabial: 'dairy food',
-    warzywa: 'vegetable food',
-    owoce: 'fruit food',
-    zboza: 'grain cereal food',
-    orzechy: 'nuts seeds food',
-    sosy: 'sauce condiment food',
-    tluszcze: 'cooking oil fat food',
-    makarony: 'pasta food',
-    zupy: 'soup food',
-    fastfood: 'fast food meal',
-    slodycze: 'sweet candy dessert food',
-    'polskie-obiadki': 'Polish cooked food dish'
+const CATEGORY_SUFFIX = {
+    mieso: 'raw meat or fish food product',
+    nabial: 'dairy food product',
+    warzywa: 'fresh vegetable',
+    owoce: 'fresh fruit',
+    zboza: 'grain cereal or bakery food',
+    orzechy: 'nuts or seeds food',
+    sosy: 'sauce or condiment food',
+    tluszcze: 'cooking oil or fat food',
+    makarony: 'pasta food dish',
+    zupy: 'soup in bowl food',
+    fastfood: 'fast food item',
+    slodycze: 'candy chocolate dessert food',
+    'polskie-obiadki': 'Polish traditional food dish'
 };
 
-const ANIMAL_OR_AMBIGUOUS = /^(lion|mars|bounty|turkey|apple|orange|kiwi|mercury|venus|earth|jupiter|saturn|neptune|pluto)$/i;
+const NEGATIVE =
+    'no people, no hands, no animals, no wildlife, no lion animal, no planet Mars, no text, no watermark, no logo, no barcode, no brand name readable, no plate clutter, no busy props, no gray background, no black background, no gradient background, no AI artifacts, no deformed anatomy';
 
 function slugify(name) {
     return name
@@ -143,49 +165,255 @@ function sleep(ms) {
     return new Promise((r) => setTimeout(r, ms));
 }
 
-function buildFoodSubject(p, queries) {
+function foodSubject(p, queries) {
     if (FOOD_SUBJECT[p.slug]) return FOOD_SUBJECT[p.slug];
-
     let base = (queries[0] || p.name.replace(/\([^)]*\)/g, '').trim())
         .replace(/\s+food$/i, '')
         .replace(/\s+ingredient photo$/i, '')
         .trim();
-
-    if (ANIMAL_OR_AMBIGUOUS.test(base)) {
-        if (/lion/i.test(base)) return 'Lion Nestle chocolate candy bar';
+    if (/^(lion|mars|bounty|turkey)$/i.test(base)) {
+        if (/lion/i.test(base)) return 'Lion chocolate candy bar Nestle';
         if (/mars/i.test(base)) return 'Mars chocolate candy bar';
-        if (/bounty/i.test(base)) return 'Bounty coconut chocolate candy bar';
-        if (/turkey/i.test(base)) return 'raw turkey breast meat';
-        if (/^apple$/i.test(base)) return 'red apple fruit';
-        if (/^orange$/i.test(base)) return 'orange citrus fruit';
-        if (/^kiwi$/i.test(base)) return 'kiwi fruit';
+        if (/bounty/i.test(base)) return 'Bounty chocolate candy bar';
+        if (/turkey/i.test(base)) return 'turkey breast meat food';
     }
-
-    const suffix = CATEGORY_FOOD_SUFFIX[p.category] || 'food';
-    if (/\b(food|fruit|vegetable|meat|cheese|soup|candy|chocolate|bar|sauce|oil|nut|seed|bread|pasta|rice|egg|milk|cookie|wafer)\b/i.test(base)) {
+    const suffix = CATEGORY_SUFFIX[p.category] || 'food product';
+    if (/\b(food|fruit|meat|cheese|candy|chocolate|soup|sauce|oil|nut|pasta|rice|egg|milk)\b/i.test(base)) {
         return base;
     }
     return `${base} ${suffix}`;
 }
 
-function pollinationsUrl(foodSubject, slug) {
-    const subject = String(foodSubject).slice(0, 110);
-    const prompt =
-        `Professional e-commerce product photo of edible food: ${subject}. ` +
-        `This is FOOD only, never an animal, never a planet, never a person. ` +
-        `Centered on pure seamless white background, soft subtle shadow, ` +
-        `minimalist studio lighting, photorealistic, no text, no watermark, no logo print`;
-    const seed = crypto.createHash('md5').update(`gen-white-v5-${slug}`).digest().readUInt32BE(0) % 2147483646;
-    return `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=800&height=600&nologo=true&seed=${seed}`;
+function researchQueries(subject, p) {
+    const short = subject.split(',')[0].trim();
+    return [
+        `${short} white background`,
+        `${short} isolated food`,
+        `${short} food photography`,
+        `${p.name.replace(/\([^)]*\)/g, '').trim()} jedzenie`,
+        `${short} product photo`
+    ];
 }
 
-async function saveGenerated(sharp, url, outPath) {
+function scoreRef(title, query, subject) {
+    const t = `${title} ${query}`.toLowerCase();
+    let score = 0;
+    if (/food|fruit|vegetable|meat|cheese|chocolate|candy|egg|milk|nut|fish|bread|pasta|rice|cookie|burger|oil|butter|yogurt|skyr|chicken|pork|beef|salmon|banana|avocado/i.test(t))
+        score += 3;
+    if (/white background|isolated|studio|cutout|transparent/i.test(t)) score += 4;
+    if (BAD.test(title)) score -= 20;
+    // subject tokens
+    for (const tok of subject.toLowerCase().split(/\s+/).filter((w) => w.length > 3).slice(0, 4)) {
+        if (t.includes(tok)) score += 1;
+    }
+    // known false friends
+    if (/\blion\b/i.test(t) && !/chocolate|candy|bar|nestle|wafer/i.test(t)) score -= 15;
+    if (/\bmars\b/i.test(t) && !/chocolate|candy|bar/i.test(t)) score -= 15;
+    if (/hatching|chick|incubator/i.test(t)) score -= 10;
+    if (/soup|smoothie/i.test(t) && /avocado/i.test(subject)) score -= 8;
+    return score;
+}
+
+async function searchCommons(query) {
+    const params = new URLSearchParams({
+        action: 'query',
+        generator: 'search',
+        gsrsearch: `filetype:bitmap ${query}`,
+        gsrnamespace: '6',
+        gsrlimit: '10',
+        prop: 'imageinfo',
+        iiprop: 'url|extmetadata|size',
+        iiurlwidth: '800',
+        format: 'json',
+        origin: '*'
+    });
+    const res = await fetch(`https://commons.wikimedia.org/w/api.php?${params}`, {
+        headers: { 'User-Agent': UA },
+        signal: AbortSignal.timeout(20000)
+    });
+    if (!res.ok) return [];
+    const data = await res.json();
+    const out = [];
+    for (const page of Object.values(data?.query?.pages || {})) {
+        const title = page?.title || '';
+        if (BAD.test(title)) continue;
+        const info = page?.imageinfo?.[0];
+        const url = info?.thumburl || info?.url;
+        if (!url || !/\.(jpg|jpeg|png|webp)/i.test(url)) continue;
+        out.push({ source: 'commons', title: title.replace(/^File:/, ''), url });
+    }
+    return out;
+}
+
+async function searchOpenverse(query) {
+    const params = new URLSearchParams({
+        q: query,
+        page_size: '8',
+        license_type: 'commercial,modification',
+        extension: 'jpg,jpeg,png,webp'
+    });
+    const res = await fetch(`https://api.openverse.engineering/v1/images/?${params}`, {
+        headers: { 'User-Agent': UA },
+        signal: AbortSignal.timeout(20000)
+    });
+    if (!res.ok) return [];
+    const data = await res.json();
+    const out = [];
+    for (const hit of data?.results || []) {
+        const title = hit?.title || '';
+        if (BAD.test(title)) continue;
+        const url = hit?.url || hit?.thumbnail;
+        if (!url) continue;
+        out.push({ source: 'openverse', title, url });
+    }
+    return out;
+}
+
+async function researchProduct(subject, p) {
+    const refs = [];
+    const seen = new Set();
+    for (const q of researchQueries(subject, p)) {
+        for (const fn of [searchCommons, searchOpenverse]) {
+            try {
+                const hits = await fn(q);
+                for (const h of hits) {
+                    const key = h.url.split('?')[0];
+                    if (seen.has(key)) continue;
+                    seen.add(key);
+                    const score = scoreRef(h.title, q, subject);
+                    if (score < 1) continue;
+                    refs.push({ ...h, query: q, score });
+                }
+            } catch {
+                /* next */
+            }
+            await sleep(40);
+        }
+    }
+    refs.sort((a, b) => b.score - a.score);
+    return refs.slice(0, 5);
+}
+
+function buildPrompt(subject, refs) {
+    const clues = refs
+        .slice(0, 3)
+        .map((r) => r.title.replace(/\.[a-z0-9]+$/i, '').replace(/[_-]+/g, ' '))
+        .filter(Boolean)
+        .join('; ');
+    const lookLike = clues ? ` Look exactly like real edible food (reference names: ${clues.slice(0, 140)}).` : '';
+    return (
+        `Ultra realistic minimalist ecommerce catalog food photo: ${subject}.` +
+        lookLike +
+        ` Single product only, centered, soft natural shadow.` +
+        ` Pure solid white background #FFFFFF, no gray, no black, no textured backdrop.` +
+        ` Photorealistic, sharp focus, correct anatomy, ${NEGATIVE}`
+    );
+}
+
+function pollinationsUrl(prompt, slug, attempt = 0) {
+    const seed =
+        (crypto.createHash('md5').update(`real-food-v3-${slug}-${attempt}`).digest().readUInt32BE(0) +
+            attempt * 9973) %
+        2147483646;
+    const enc = encodeURIComponent(prompt.slice(0, 480));
+    return `https://image.pollinations.ai/prompt/${enc}?width=800&height=600&nologo=true&enhance=true&model=flux&seed=${seed}`;
+}
+
+async function cornersAreWhite(sharp, buf) {
+    const { data, info } = await sharp(buf).resize(100, 75).raw().toBuffer({ resolveWithObject: true });
+    const w = info.width;
+    const h = info.height;
+    const ch = info.channels;
+    const pts = [
+        [2, 2],
+        [w - 3, 2],
+        [2, h - 3],
+        [w - 3, h - 3],
+        [Math.floor(w / 2), 2],
+        [2, Math.floor(h / 2)],
+        [w - 3, Math.floor(h / 2)],
+        [Math.floor(w / 2), h - 3]
+    ];
+    let white = 0;
+    for (const [x, y] of pts) {
+        const i = (y * w + x) * ch;
+        if (data[i] > 238 && data[i + 1] > 238 && data[i + 2] > 238) white++;
+    }
+    return white >= 5;
+}
+
+/** Edge flood-fill + soft threshold → przezroczyste PNG */
+async function toTransparentPng(sharp, inputBuf) {
+    const resized = await sharp(inputBuf)
+        .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255, alpha: 1 } })
+        .ensureAlpha()
+        .raw()
+        .toBuffer({ resolveWithObject: true });
+
+    let data = removeEdgeBackground(resized.data, resized.info.width, resized.info.height, 4, {
+        lumMin: 236,
+        satMax: 32
+    });
+    data = defringeLightHalos(data, 4);
+
+    // dodatkowe wybielenie prawie białych
+    for (let i = 0; i < data.length; i += 4) {
+        if (data[i + 3] === 0) continue;
+        const r = data[i];
+        const g = data[i + 1];
+        const b = data[i + 2];
+        if (r >= 250 && g >= 250 && b >= 250) data[i + 3] = 0;
+        else if (r > 242 && g > 242 && b > 242) {
+            const whiteness = (r + g + b) / 3;
+            data[i + 3] = Math.max(0, Math.min(255, Math.round((255 - whiteness) * 10)));
+        }
+    }
+
+    return sharp(data, {
+        raw: { width: resized.info.width, height: resized.info.height, channels: 4 }
+    })
+        .png()
+        .toBuffer();
+}
+
+async function saveProductImages(sharp, generatedBuf, slug) {
+    const pngBuf = await toTransparentPng(sharp, generatedBuf);
+    const pngPath = path.join(outDir, `${slug}.png`);
+    const jpgPath = path.join(outDir, `${slug}.jpg`);
+    const tmpPng = path.join(os.tmpdir(), `proteiner-${crypto.randomBytes(6).toString('hex')}.png`);
+    const tmpJpg = path.join(os.tmpdir(), `proteiner-${crypto.randomBytes(6).toString('hex')}.jpg`);
+
+    try {
+        fs.writeFileSync(tmpPng, pngBuf);
+        fs.copyFileSync(tmpPng, pngPath);
+
+        await sharp(pngBuf)
+            .flatten({ background: { r: 255, g: 255, b: 255 } })
+            .jpeg({ quality: 90, mozjpeg: true })
+            .toFile(tmpJpg);
+        fs.copyFileSync(tmpJpg, jpgPath);
+    } finally {
+        try {
+            fs.unlinkSync(tmpPng);
+        } catch {
+            /* ignore */
+        }
+        try {
+            fs.unlinkSync(tmpJpg);
+        } catch {
+            /* ignore */
+        }
+    }
+}
+
+async function fetchBuffer(url) {
     let lastErr;
     for (let attempt = 0; attempt < 5; attempt++) {
         try {
             const res = await fetch(url, {
                 headers: { 'User-Agent': UA },
-                signal: AbortSignal.timeout(120000)
+                signal: AbortSignal.timeout(120000),
+                redirect: 'follow'
             });
             if (res.status === 429) {
                 await sleep(1500 * (attempt + 1) ** 2);
@@ -193,29 +421,69 @@ async function saveGenerated(sharp, url, outPath) {
             }
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             const buf = Buffer.from(await res.arrayBuffer());
-            if (buf.length < 4000) throw new Error('za mały plik');
-            const tmp = path.join(os.tmpdir(), `proteiner-${crypto.randomBytes(8).toString('hex')}.jpg`);
-            try {
-                await sharp(buf)
-                    .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255 } })
-                    .flatten({ background: { r: 255, g: 255, b: 255 } })
-                    .jpeg({ quality: 88, mozjpeg: true })
-                    .toFile(tmp);
-                fs.writeFileSync(outPath, fs.readFileSync(tmp));
-            } finally {
-                try {
-                    fs.unlinkSync(tmp);
-                } catch {
-                    /* ignore */
-                }
-            }
-            return;
+            if (buf.length < 3000) throw new Error('za mały plik');
+            return buf;
         } catch (e) {
             lastErr = e;
-            await sleep(600 * (attempt + 1));
+            await sleep(700 * (attempt + 1));
         }
     }
     throw lastErr;
+}
+
+async function tryRealPhoto(sharp, refs) {
+    for (const ref of refs.slice(0, 4)) {
+        try {
+            const buf = await fetchBuffer(ref.url);
+            // wymuś białe marginesy contain, potem sprawdź czy tło da się wyciąć
+            const onWhite = await sharp(buf)
+                .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255 } })
+                .jpeg({ quality: 92 })
+                .toBuffer();
+            // akceptuj jeśli narożniki białe LUB oryginał ma dość jasne tło
+            if (await cornersAreWhite(sharp, onWhite)) {
+                return { buf: onWhite, via: `photo:${ref.source}` };
+            }
+            // nawet bez idealnych narożników — jeśli score wysoki i white-background w query
+            if (ref.score >= 6 && /white|isolated/i.test(ref.query || '')) {
+                return { buf: onWhite, via: `photo-soft:${ref.source}` };
+            }
+        } catch {
+            /* next ref */
+        }
+    }
+    return null;
+}
+
+async function generateAi(sharp, subject, refs, slug) {
+    const prompt = buildPrompt(subject, refs);
+    let buf = null;
+    for (let attempt = 0; attempt < 5; attempt++) {
+        const url = pollinationsUrl(prompt, slug, attempt);
+        const candidate = await fetchBuffer(url);
+        if (await cornersAreWhite(sharp, candidate)) {
+            buf = candidate;
+            break;
+        }
+        // spróbuj wymusić białe tło przez contain
+        const forced = await sharp(candidate)
+            .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255 } })
+            .jpeg({ quality: 90 })
+            .toBuffer();
+        if (await cornersAreWhite(sharp, forced)) {
+            buf = forced;
+            break;
+        }
+        await sleep(350);
+    }
+    if (!buf) {
+        const url = pollinationsUrl(prompt + ' white seamless background only', slug, 11);
+        buf = await sharp(await fetchBuffer(url))
+            .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255 } })
+            .jpeg({ quality: 90 })
+            .toBuffer();
+    }
+    return buf;
 }
 
 // --- main ---
@@ -258,6 +526,8 @@ const keepSlugs = new Set(
 const limitArg = process.argv.find((a) => a.startsWith('--limit='));
 const maxItems = limitArg ? parseInt(limitArg.split('=')[1], 10) : Infinity;
 const delayMs = parseInt(process.argv.find((a) => a.startsWith('--delay='))?.split('=')[1] || '1800', 10);
+const skipResearch = process.argv.includes('--skip-research');
+const forceAi = process.argv.includes('--force-ai');
 
 let todo = products;
 if (slugArgs.length) {
@@ -267,34 +537,66 @@ if (slugArgs.length) {
 if (keepSlugs.size) todo = todo.filter((p) => !keepSlugs.has(p.slug));
 todo = todo.slice(0, maxItems);
 
-console.log(`GENERACJA (tylko AI, białe tło, FOOD): ${todo.length} produktów`);
+console.log(`Research + realistyczne zdjęcia (PNG alpha): ${todo.length}`);
 
 let ok = 0;
 let fail = 0;
 const failed = [];
+const researchLog = {};
 
 for (let i = 0; i < todo.length; i++) {
     const p = todo[i];
-    const outPath = path.join(outDir, `${p.slug}.jpg`);
     const queries = PRODUCT_SEARCH_QUERIES[p.slug] || [p.name.replace(/\([^)]*\)/g, '').trim()];
-    const subject = buildFoodSubject(p, queries);
-    const url = pollinationsUrl(subject, p.slug);
+    const subject = foodSubject(p, queries);
 
-    process.stdout.write(`[${i + 1}/${todo.length}] ${p.slug} … `);
+    process.stdout.write(`[${i + 1}/${todo.length}] ${p.slug} `);
 
     try {
-        await saveGenerated(sharp, url, outPath);
-        console.log(`OK (${subject.slice(0, 42)})`);
+        let refs = [];
+        if (!skipResearch) {
+            refs = await researchProduct(subject, p);
+            researchLog[p.slug] = {
+                subject,
+                refs: refs.map((r) => ({ source: r.source, title: r.title, query: r.query, score: r.score }))
+            };
+            process.stdout.write(`refs=${refs.length} `);
+        }
+
+        let buf = null;
+        let via = 'ai';
+
+        if (!forceAi && refs.length) {
+            const photo = await tryRealPhoto(sharp, refs);
+            if (photo) {
+                buf = photo.buf;
+                via = photo.via;
+            }
+        }
+
+        if (!buf) {
+            buf = await generateAi(sharp, subject, refs, p.slug);
+            via = 'ai';
+        }
+
+        await saveProductImages(sharp, buf, p.slug);
+        console.log(`✓ ${via}`);
         ok++;
     } catch (e) {
         console.log(`✗ ${e.message}`);
         fail++;
         failed.push(p.slug);
     }
+
     if (i < todo.length - 1) await sleep(delayMs);
+
+    if ((i + 1) % 25 === 0) {
+        fs.writeFileSync(researchLogPath, JSON.stringify(researchLog, null, 2));
+    }
 }
 
+fs.writeFileSync(researchLogPath, JSON.stringify(researchLog, null, 2));
 if (failed.length) {
     fs.writeFileSync(path.join(root, 'scripts', 'rebuild-failed.txt'), failed.join('\n'));
 }
-console.log(`\nGotowe: ${ok} OK, ${fail} błędów`);
+console.log(`\nGotowe: ${ok} OK, ${fail} błędów → PNG+JPG w ${outDir}`);
+console.log(`Research log: ${researchLogPath}`);

@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "zapiekanka",
+    "name": "Zapiekanka",
+    "category": "polskie-obiadki",
+    "subject": "baguette sandwich, Polish traditional cooked dish",
+    "prompt": "Photorealistic ecommerce food photo: baguette sandwich, Polish traditional cooked dish. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "krupnik",
+    "name": "Krupnik",
+    "category": "zupy",
+    "subject": "Krupnik, soup in a bowl",
+    "prompt": "Photorealistic ecommerce food photo: Krupnik, soup in a bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "zupa-fasolowa",
+    "name": "Zupa fasolowa",
+    "category": "zupy",
+    "subject": "soup",
+    "prompt": "Photorealistic ecommerce food photo: soup. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "barszcz-bialy",
+    "name": "Barszcz biały",
+    "category": "zupy",
+    "subject": "white, soup in a bowl",
+    "prompt": "Photorealistic ecommerce food photo: white, soup in a bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "zupa-szczawiowa",
+    "name": "Zupa szczawiowa",
+    "category": "zupy",
+    "subject": "soup",
+    "prompt": "Photorealistic ecommerce food photo: soup. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "zupa-cebulowa",
+    "name": "Zupa cebulowa",
+    "category": "zupy",
+    "subject": "soup",
+    "prompt": "Photorealistic ecommerce food photo: soup. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "krem-brokulowy",
+    "name": "Krem brokułowy",
+    "category": "zupy",
+    "subject": "spread, soup in a bowl",
+    "prompt": "Photorealistic ecommerce food photo: spread, soup in a bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "minestrone",
+    "name": "Minestrone",
+    "category": "zupy",
+    "subject": "Minestrone, soup in a bowl",
+    "prompt": "Photorealistic ecommerce food photo: Minestrone, soup in a bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pho-zupa-ryzowa",
+    "name": "Pho (zupa ryżowa)",
+    "category": "zupy",
+    "subject": "soup",
+    "prompt": "Photorealistic ecommerce food photo: soup. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "whopper-styl",
+    "name": "Whopper (styl)",
+    "category": "fastfood",
+    "subject": "Whopper, fast food item",
+    "prompt": "Photorealistic ecommerce food photo: Whopper, fast food item. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kinder-bueno",
+    "name": "Kinder Bueno",
+    "category": "slodycze",
+    "subject": "Kinder Bueno, candy chocolate dessert",
+    "prompt": "Photorealistic ecommerce food photo: Kinder Bueno, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "oreo",
+    "name": "Oreo",
+    "category": "slodycze",
+    "subject": "Oreo chocolate sandwich cookies stack",
+    "prompt": "Photorealistic ecommerce food photo: Oreo chocolate sandwich cookies stack. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "sos-sweet-chilli",
+    "name": "Sos sweet chilli",
+    "category": "sosy",
+    "subject": "chili, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: chili, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "guacamole",
+    "name": "Guacamole",
+    "category": "sosy",
+    "subject": "Guacamole, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: Guacamole, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "salsa-meksykanska",
+    "name": "Salsa meksykańska",
+    "category": "sosy",
+    "subject": "Salsa meksykańska, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: Salsa meksykańska, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sos-curry-pasta",
+    "name": "Sos curry (pasta)",
+    "category": "sosy",
+    "subject": "Sos curry, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: Sos curry, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pistacje-prazone-solone",
+    "name": "Pistacje prażone solone",
+    "category": "orzechy",
+    "subject": "roasted, nuts or seeds",
+    "prompt": "Photorealistic ecommerce food photo: roasted, nuts or seeds. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "orzechy-laskowe-prazone",
+    "name": "Orzechy laskowe prażone",
+    "category": "orzechy",
+    "subject": "nuts hazelnut roasted",
+    "prompt": "Photorealistic ecommerce food photo: nuts hazelnut roasted. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "krakersy-solone",
+    "name": "Krakersy solone",
+    "category": "zboza",
+    "subject": "crackers, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: crackers, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "paluszki-slone",
+    "name": "Paluszki słone",
+    "category": "zboza",
+    "subject": "Paluszki słone, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: Paluszki słone, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "chipsy-nachos",
+    "name": "Chipsy nachos",
+    "category": "zboza",
+    "subject": "potato chips, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: potato chips, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "salatka-z-makaronem",
+    "name": "Sałatka z makaronem",
+    "category": "polskie-obiadki",
+    "subject": "salad pasta",
+    "prompt": "Photorealistic ecommerce food photo: salad pasta. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "ryba-w-panierce",
+    "name": "Ryba w panierce",
+    "category": "polskie-obiadki",
+    "subject": "fish breaded",
+    "prompt": "Photorealistic ecommerce food photo: fish breaded. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kotlet-z-piersi-indyka",
+    "name": "Kotlet z piersi indyka",
+    "category": "polskie-obiadki",
+    "subject": "cutlet turkey",
+    "prompt": "Photorealistic ecommerce food photo: cutlet turkey. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

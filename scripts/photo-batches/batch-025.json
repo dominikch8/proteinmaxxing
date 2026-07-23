@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "sos-worcestershire",
+    "name": "Sos worcestershire",
+    "category": "sosy",
+    "subject": "worcestershire, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: worcestershire, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sos-teriyaki",
+    "name": "Sos teriyaki",
+    "category": "sosy",
+    "subject": "teriyaki, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: teriyaki, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sos-holenderski",
+    "name": "Sos holenderski",
+    "category": "sosy",
+    "subject": "hollandaise, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: hollandaise, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sos-musztardowo-miodowy",
+    "name": "Sos musztardowo-miodowy",
+    "category": "sosy",
+    "subject": "honey mustard honey, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: honey mustard honey, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sos-pomidorowy-ketchupowy-styl",
+    "name": "Sos pomidorowy (ketchupowy styl)",
+    "category": "sosy",
+    "subject": "tomato, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: tomato, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "hummus",
+    "name": "Hummus",
+    "category": "sosy",
+    "subject": "hummus, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: hummus, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sos-tzatziki",
+    "name": "Sos tzatziki",
+    "category": "sosy",
+    "subject": "tzatziki, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: tzatziki, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sos-salatkowy-winegret",
+    "name": "Sos sałatkowy winegret",
+    "category": "sosy",
+    "subject": "salad vinaigrette, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: salad vinaigrette, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "maslo-klarowane-ghee",
+    "name": "Masło klarowane (ghee)",
+    "category": "tluszcze",
+    "subject": "butter ghee, cooking oil or fat",
+    "prompt": "Photorealistic ecommerce food photo: butter ghee, cooking oil or fat. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "olej-lniany",
+    "name": "Olej lniany",
+    "category": "tluszcze",
+    "subject": "oil flaxseed",
+    "prompt": "Photorealistic ecommerce food photo: oil flaxseed. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "olej-sezamowy",
+    "name": "Olej sezamowy",
+    "category": "tluszcze",
+    "subject": "oil sesame",
+    "prompt": "Photorealistic ecommerce food photo: oil sesame. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "tluszcz-kaczy",
+    "name": "Tłuszcz kaczy",
+    "category": "tluszcze",
+    "subject": "fat duck, cooking oil or fat",
+    "prompt": "Photorealistic ecommerce food photo: fat duck, cooking oil or fat. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

@@ -50,67 +50,124 @@
         </nav>
     </header>
 <div class="page-container">
-        <main class="main-content">
+        <main class="main-content compare-page">
             <div class="page-hero compare-hero">
+                <p class="compare-eyebrow">Porównywarka makro</p>
                 <h1>Porównaj produkty</h1>
-                <p class="subtitle">Wybierz dwa produkty z bazy i zobacz składniki odżywcze na 100 g na jednym wykresie — makro i tłuszcze obok siebie.</p>
+                <p class="subtitle">Ustaw dwa produkty obok siebie i od razu zobacz różnice w kaloriach, białku, węglowodanach i tłuszczu — wszystko na 100&nbsp;g.</p>
             </div>
 
-            <div class="compare-pickers">
-                <div class="compare-picker compare-picker--a" data-slot="a">
-                    <label class="compare-picker-label" for="compareSearchA">Produkt A</label>
-                    <div class="compare-search-wrap">
-                        <div class="compare-field">
-                            <input type="search" id="compareSearchA" class="compare-search" placeholder="Wyszukaj produkt…" autocomplete="off" spellcheck="false">
-                            <div class="compare-field-chip" id="compareChipA" hidden>
-                                <span class="compare-chip-emoji" aria-hidden="true"></span>
-                                <span class="compare-chip-name"></span>
-                                <button type="button" class="compare-chip-clear" data-clear="a" aria-label="Zmień produkt A">×</button>
-                            </div>
+            <div class="compare-stage">
+                <div class="compare-pickers">
+                    <div class="compare-picker compare-picker--a" data-slot="a">
+                        <div class="compare-picker-head">
+                            <span class="compare-slot-badge compare-slot-badge--a" aria-hidden="true">A</span>
+                            <label class="compare-picker-label" for="compareSearchA">Produkt A</label>
                         </div>
-                        <ul class="compare-suggestions" id="compareSuggestionsA" hidden></ul>
+                        <div class="compare-search-wrap">
+                            <div class="compare-field">
+                                <span class="compare-field-icon" aria-hidden="true">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                                </span>
+                                <input type="search" id="compareSearchA" class="compare-search" placeholder="Szukaj produktu…" autocomplete="off" spellcheck="false">
+                                <div class="compare-field-chip" id="compareChipA" hidden>
+                                    <span class="compare-chip-media" aria-hidden="true">
+                                        <img class="compare-chip-img" alt="" width="40" height="40" decoding="async">
+                                        <span class="compare-chip-emoji"></span>
+                                    </span>
+                                    <span class="compare-chip-text">
+                                        <span class="compare-chip-name"></span>
+                                        <span class="compare-chip-meta"></span>
+                                    </span>
+                                    <button type="button" class="compare-chip-clear" data-clear="a" aria-label="Zmień produkt A">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="compare-suggestions" id="compareSuggestionsA" hidden></ul>
+                        </div>
                     </div>
-                </div>
 
-                <button type="button" class="compare-swap-btn" id="compareSwapBtn" title="Zamień produkty miejscami" aria-label="Zamień produkty A i B">⇄</button>
+                    <button type="button" class="compare-swap-btn" id="compareSwapBtn" title="Zamień produkty miejscami" aria-label="Zamień produkty A i B">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M7 7h11l-3-3M17 17H6l3 3"/>
+                        </svg>
+                    </button>
 
-                <div class="compare-picker compare-picker--b" data-slot="b">
-                    <label class="compare-picker-label" for="compareSearchB">Produkt B</label>
-                    <div class="compare-search-wrap">
-                        <div class="compare-field">
-                            <input type="search" id="compareSearchB" class="compare-search" placeholder="Wyszukaj produkt…" autocomplete="off" spellcheck="false">
-                            <div class="compare-field-chip" id="compareChipB" hidden>
-                                <span class="compare-chip-emoji" aria-hidden="true"></span>
-                                <span class="compare-chip-name"></span>
-                                <button type="button" class="compare-chip-clear" data-clear="b" aria-label="Zmień produkt B">×</button>
-                            </div>
+                    <div class="compare-picker compare-picker--b" data-slot="b">
+                        <div class="compare-picker-head">
+                            <span class="compare-slot-badge compare-slot-badge--b" aria-hidden="true">B</span>
+                            <label class="compare-picker-label" for="compareSearchB">Produkt B</label>
                         </div>
-                        <ul class="compare-suggestions" id="compareSuggestionsB" hidden></ul>
+                        <div class="compare-search-wrap">
+                            <div class="compare-field">
+                                <span class="compare-field-icon" aria-hidden="true">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                                </span>
+                                <input type="search" id="compareSearchB" class="compare-search" placeholder="Szukaj produktu…" autocomplete="off" spellcheck="false">
+                                <div class="compare-field-chip" id="compareChipB" hidden>
+                                    <span class="compare-chip-media" aria-hidden="true">
+                                        <img class="compare-chip-img" alt="" width="40" height="40" decoding="async">
+                                        <span class="compare-chip-emoji"></span>
+                                    </span>
+                                    <span class="compare-chip-text">
+                                        <span class="compare-chip-name"></span>
+                                        <span class="compare-chip-meta"></span>
+                                    </span>
+                                    <button type="button" class="compare-chip-clear" data-clear="b" aria-label="Zmień produkt B">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="compare-suggestions" id="compareSuggestionsB" hidden></ul>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <p class="compare-share-wrap" id="compareShareWrap" hidden>
-                <button type="button" class="compare-copy-link-btn" id="compareCopyLinkBtn">Kopiuj link do porównania</button>
-            </p>
-
-            <p class="compare-empty" id="compareEmpty">Wybierz oba produkty, aby zobaczyć wykres porównawczy.</p>
+            <div class="compare-empty" id="compareEmpty">
+                <div class="compare-empty-art" aria-hidden="true">
+                    <span class="compare-empty-orb compare-empty-orb--a"></span>
+                    <span class="compare-empty-vs">vs</span>
+                    <span class="compare-empty-orb compare-empty-orb--b"></span>
+                </div>
+                <p class="compare-empty-title">Wybierz dwa produkty</p>
+                <p class="compare-empty-text">Wpisz nazwę w polach powyżej — porównanie makro, wykres i tabela pojawią się automatycznie.</p>
+            </div>
 
             <section class="compare-chart-section" id="compareChartSection" hidden aria-labelledby="compareChartHeading">
-                <div class="compare-legend" id="compareLegend"></div>
+                <div class="compare-matchup" id="compareMatchup"></div>
+
+                <div class="compare-toolbar">
+                    <span class="compare-unit-badge">Wartości na 100&nbsp;g</span>
+                    <button type="button" class="compare-copy-link-btn" id="compareCopyLinkBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L11 4.76"/><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L13 19.24"/></svg>
+                        <span class="compare-copy-link-label">Kopiuj link</span>
+                    </button>
+                </div>
+
                 <h2 class="visually-hidden" id="compareChartHeading">Wykres składników na 100 g</h2>
                 <div class="compare-dashboard" id="compareChart"></div>
-                <table class="compare-table" id="compareTable">
-                    <caption class="visually-hidden">Tabela wartości na 100 g</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Składnik</th>
-                            <th scope="col" id="compareThA">Produkt A</th>
-                            <th scope="col" id="compareThB">Produkt B</th>
-                        </tr>
-                    </thead>
-                    <tbody id="compareTableBody"></tbody>
-                </table>
+
+                <div class="compare-table-block">
+                    <div class="compare-table-head">
+                        <h2 class="compare-table-title">Szczegółowe porównanie</h2>
+                        <p class="compare-table-note">Pogrubienie oznacza korzystniejszą wartość w danej kategorii.</p>
+                    </div>
+                    <div class="compare-table-scroll">
+                        <table class="compare-table" id="compareTable">
+                            <caption class="visually-hidden">Tabela wartości na 100 g</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Składnik</th>
+                                    <th scope="col" id="compareThA">Produkt A</th>
+                                    <th scope="col" id="compareThB">Produkt B</th>
+                                </tr>
+                            </thead>
+                            <tbody id="compareTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
             </section>
 
             <p class="legal-fine-print" role="note"><strong>Informacja:</strong> Porównania służą celom edukacyjnym. Nie stanowią porady medycznej. <a href="o-mnie">O autorze</a> · <a href="informacje">Polityka</a></p>
@@ -139,7 +196,6 @@
 <script src="js/product-utils.js"></script>
     <script src="js/products-loader.js"></script>
     <script src="js/compare-products.js"></script>
-<script src="js/auth-ui.js"></script>
 <script src="js/theme.js"></script>
 </body>
 </html>

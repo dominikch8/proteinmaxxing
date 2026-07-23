@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "penne-z-kurczakiem-i-brokulami",
+    "name": "Penne z kurczakiem i brokułami",
+    "category": "makarony",
+    "subject": "penne chicken broccoli",
+    "prompt": "Photorealistic ecommerce food photo: penne chicken broccoli. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "makaron-jajeczny-suchy",
+    "name": "Makaron jajeczny (suchy)",
+    "category": "zboza",
+    "subject": "pasta egg",
+    "prompt": "Photorealistic ecommerce food photo: pasta egg. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "tagliatelle-z-lososiem",
+    "name": "Tagliatelle z łososiem",
+    "category": "makarony",
+    "subject": "salmon, pasta food",
+    "prompt": "Photorealistic ecommerce food photo: salmon, pasta food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "makaron-z-pesto-i-kurczakiem",
+    "name": "Makaron z pesto i kurczakiem",
+    "category": "makarony",
+    "subject": "pasta pesto chicken",
+    "prompt": "Photorealistic ecommerce food photo: pasta pesto chicken. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "ramen-z-bulionem-miska",
+    "name": "Ramen z bulionem (miska)",
+    "category": "zupy",
+    "subject": "broth, soup in a bowl",
+    "prompt": "Photorealistic ecommerce food photo: broth, soup in a bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "cannelloni-z-ricotta",
+    "name": "Cannelloni z ricottą",
+    "category": "makarony",
+    "subject": "cannoni ricotta, pasta food",
+    "prompt": "Photorealistic ecommerce food photo: cannoni ricotta, pasta food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "zapiekanka-makaronowa-gotowiec",
+    "name": "Zapiekanka makaronowa (gotowiec)",
+    "category": "polskie-obiadki",
+    "subject": "baguette sandwich pasta bake",
+    "prompt": "Photorealistic ecommerce food photo: baguette sandwich pasta bake. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "szynka-drobiowa",
+    "name": "Szynka drobiowa",
+    "category": "mieso",
+    "subject": "ham poultry",
+    "prompt": "Photorealistic ecommerce food photo: ham poultry. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "szynka-krucha",
+    "name": "Szynka krucha",
+    "category": "mieso",
+    "subject": "ham",
+    "prompt": "Photorealistic ecommerce food photo: ham. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "poledwica-z-losia",
+    "name": "Polędwica z łosia",
+    "category": "mieso",
+    "subject": "tenderloin, meat or seafood food product",
+    "prompt": "Photorealistic ecommerce food photo: tenderloin, meat or seafood food product. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kielbasa-krakowska",
+    "name": "Kiełbasa krakowska",
+    "category": "mieso",
+    "subject": "sausage",
+    "prompt": "Photorealistic ecommerce food photo: sausage. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kielbasa-parowkowa",
+    "name": "Kiełbasa parówkowa",
+    "category": "mieso",
+    "subject": "sausage",
+    "prompt": "Photorealistic ecommerce food photo: sausage. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

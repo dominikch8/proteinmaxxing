@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "bulka-pszenna",
+    "name": "Bułka pszenna",
+    "category": "zboza",
+    "subject": "roll wheat, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: roll wheat, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "precel",
+    "name": "Precel",
+    "category": "zboza",
+    "subject": "pretzel, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: pretzel, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pumpernikiel",
+    "name": "Pumpernikiel",
+    "category": "zboza",
+    "subject": "pumpernickel, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: pumpernickel, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "maka-pszenna-typ-500",
+    "name": "Mąka pszenna (typ 500)",
+    "category": "zboza",
+    "subject": "flour wheat, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: flour wheat, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kasza-quinoa-gotowana",
+    "name": "Kasza quinoa (gotowana)",
+    "category": "zboza",
+    "subject": "Kasza quinoa, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: Kasza quinoa, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "ryz-arborio-suchy",
+    "name": "Ryż arborio (suchy)",
+    "category": "zboza",
+    "subject": "rice arborio",
+    "prompt": "Photorealistic ecommerce food photo: rice arborio. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "platki-musli-bez-cukru",
+    "name": "Płatki musli bez cukru",
+    "category": "zboza",
+    "subject": "flakes muesli sugar, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: flakes muesli sugar, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "orzechy-nerkowca-prazone",
+    "name": "Orzechy nerkowca prażone",
+    "category": "orzechy",
+    "subject": "nuts cashew roasted",
+    "prompt": "Photorealistic ecommerce food photo: nuts cashew roasted. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pestki-slonecznika-luskane",
+    "name": "Pestki słonecznika łuskane",
+    "category": "orzechy",
+    "subject": "seeds sunflower hulled, nuts or seeds",
+    "prompt": "Photorealistic ecommerce food photo: seeds sunflower hulled, nuts or seeds. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "nasiona-lniane",
+    "name": "Nasiona lniane",
+    "category": "orzechy",
+    "subject": "Nasiona lniane, nuts or seeds",
+    "prompt": "Photorealistic ecommerce food photo: Nasiona lniane, nuts or seeds. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "nasiona-konopi-luskane",
+    "name": "Nasiona konopi (łuskane)",
+    "category": "orzechy",
+    "subject": "hemp hulled, nuts or seeds",
+    "prompt": "Photorealistic ecommerce food photo: hemp hulled, nuts or seeds. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kokos-suszony-wiorki",
+    "name": "Kokos suszony (wiórki)",
+    "category": "orzechy",
+    "subject": "coconut dried shredded",
+    "prompt": "Photorealistic ecommerce food photo: coconut dried shredded. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

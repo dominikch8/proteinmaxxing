@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "makaron-chinski-gotowy",
+    "name": "Makaron chiński (gotowy)",
+    "category": "makarony",
+    "subject": "pasta ready",
+    "prompt": "Photorealistic ecommerce food photo: pasta ready. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "filet-o-fish-styl",
+    "name": "Filet-O-Fish (styl)",
+    "category": "fastfood",
+    "subject": "fillet, fast food item",
+    "prompt": "Photorealistic ecommerce food photo: fillet, fast food item. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "cheeseburger-podwojny",
+    "name": "Cheeseburger podwójny",
+    "category": "fastfood",
+    "subject": "cheeseburger",
+    "prompt": "Photorealistic ecommerce food photo: cheeseburger. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pizza-quattro-formaggi",
+    "name": "Pizza quattro formaggi",
+    "category": "fastfood",
+    "subject": "pizza, fast food item",
+    "prompt": "Photorealistic ecommerce food photo: pizza, fast food item. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pizza-capricciosa",
+    "name": "Pizza capricciosa",
+    "category": "fastfood",
+    "subject": "pizza, fast food item",
+    "prompt": "Photorealistic ecommerce food photo: pizza, fast food item. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "milky-way",
+    "name": "Milky Way",
+    "category": "slodycze",
+    "subject": "Milky Way chocolate bar",
+    "prompt": "Photorealistic ecommerce food photo: Milky Way chocolate bar. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "3-bit",
+    "name": "3 BIT",
+    "category": "slodycze",
+    "subject": "3 Bit chocolate bar",
+    "prompt": "Photorealistic ecommerce food photo: 3 Bit chocolate bar. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "delicje",
+    "name": "Delicje",
+    "category": "slodycze",
+    "subject": "Delicje cookies, candy chocolate dessert",
+    "prompt": "Photorealistic ecommerce food photo: Delicje cookies, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "biszkopty",
+    "name": "Biszkopty",
+    "category": "slodycze",
+    "subject": "Biszkopty, candy chocolate dessert",
+    "prompt": "Photorealistic ecommerce food photo: Biszkopty, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "galaretka-owocowa",
+    "name": "Galaretka owocowa",
+    "category": "slodycze",
+    "subject": "Galaretka owocowa, candy chocolate dessert",
+    "prompt": "Photorealistic ecommerce food photo: Galaretka owocowa, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "m-m-s",
+    "name": "M&M's",
+    "category": "slodycze",
+    "subject": "M&M's, candy chocolate dessert",
+    "prompt": "Photorealistic ecommerce food photo: M&M's, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sos-sriracha",
+    "name": "Sos sriracha",
+    "category": "sosy",
+    "subject": "Sos sriracha, sauce or condiment",
+    "prompt": "Photorealistic ecommerce food photo: Sos sriracha, sauce or condiment. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

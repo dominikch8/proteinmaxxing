@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "baleron",
+    "name": "Baleron",
+    "category": "mieso",
+    "subject": "ham",
+    "prompt": "Photorealistic ecommerce food photo: ham. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "szynka-parmenska",
+    "name": "Szynka parmeńska",
+    "category": "mieso",
+    "subject": "ham parma ham",
+    "prompt": "Photorealistic ecommerce food photo: ham parma ham. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "watrobka-drobiowa",
+    "name": "Wątróbka drobiowa",
+    "category": "mieso",
+    "subject": "liver poultry, meat or seafood food product",
+    "prompt": "Photorealistic ecommerce food photo: liver poultry, meat or seafood food product. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "watrobka-wolowa",
+    "name": "Wątróbka wołowa",
+    "category": "mieso",
+    "subject": "liver beef",
+    "prompt": "Photorealistic ecommerce food photo: liver beef. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "ozor-wolowy",
+    "name": "Ozór wołowy",
+    "category": "mieso",
+    "subject": "tongue beef",
+    "prompt": "Photorealistic ecommerce food photo: tongue beef. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "poledwica-sopocka",
+    "name": "Polędwica sopocka",
+    "category": "mieso",
+    "subject": "tenderloin ham",
+    "prompt": "Photorealistic ecommerce food photo: tenderloin ham. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sardynki-w-oleju",
+    "name": "Sardynki w oleju",
+    "category": "mieso",
+    "subject": "sardines oil",
+    "prompt": "Photorealistic ecommerce food photo: sardines oil. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sledz-w-oleju",
+    "name": "Śledź w oleju",
+    "category": "mieso",
+    "subject": "herring oil",
+    "prompt": "Photorealistic ecommerce food photo: herring oil. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "fladra",
+    "name": "Flądra",
+    "category": "mieso",
+    "subject": "flounder, meat or seafood food product",
+    "prompt": "Photorealistic ecommerce food photo: flounder, meat or seafood food product. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "halibut",
+    "name": "Halibut",
+    "category": "mieso",
+    "subject": "halibut, meat or seafood food product",
+    "prompt": "Photorealistic ecommerce food photo: halibut, meat or seafood food product. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "tunczyk-w-sosie-wlasnym",
+    "name": "Tuńczyk w sosie własnym",
+    "category": "mieso",
+    "subject": "tuna sauce canned",
+    "prompt": "Photorealistic ecommerce food photo: tuna sauce canned. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "krolik",
+    "name": "Królik",
+    "category": "mieso",
+    "subject": "rabbit, meat or seafood food product",
+    "prompt": "Photorealistic ecommerce food photo: rabbit, meat or seafood food product. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

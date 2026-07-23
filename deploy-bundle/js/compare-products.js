@@ -1,4 +1,4 @@
-(function () {
+(async function () {
     const COMPARE_METRICS = [
         { key: 'kcal', label: 'Kalorie', unit: 'kcal', icon: '🔥', decimals: 0, higherIsBetter: false, hint: 'mniej = lepiej' },
         { key: 'protein', label: 'Białko', unit: 'g', icon: '💪', decimals: 1, higherIsBetter: true, hint: 'więcej = lepiej' },
@@ -44,8 +44,11 @@
         ...CATEGORY_ORDER.filter((id) => id !== 'fastfood' && id !== 'polskie-obiadki')
     ];
 
-
-    if (typeof productsDatabase === 'undefined') return;
+    if (typeof ensureProductsDatabase === 'function') {
+        await ensureProductsDatabase();
+    } else if (typeof productsDatabase === 'undefined') {
+        return;
+    }
 
     const state = { a: null, b: null };
 
@@ -67,11 +70,12 @@
     const emptyEl = document.getElementById('compareEmpty');
     const sectionEl = document.getElementById('compareChartSection');
     const chartEl = document.getElementById('compareChart');
-    const legendEl = document.getElementById('compareLegend');
+    const matchupEl = document.getElementById('compareMatchup');
     const tableBody = document.getElementById('compareTableBody');
     const thA = document.getElementById('compareThA');
     const thB = document.getElementById('compareThB');
     const swapBtn = document.getElementById('compareSwapBtn');
+    const copyLinkBtn = document.getElementById('compareCopyLinkBtn');
 
     function escapeHtml(s) {
         return String(s)
@@ -84,6 +88,34 @@
     function getProductBySlug(slug) {
         if (!slug) return null;
         return productsDatabase.find((p) => p.slug === slug) || null;
+    }
+
+    function productImageCandidates(slug) {
+        if (!slug) return [];
+        return [`images/products/${slug}.png`, `images/products/${slug}.jpg`];
+    }
+
+    function bindProductImage(imgEl, product) {
+        if (!imgEl) return;
+        imgEl.classList.remove('is-loaded');
+        imgEl.removeAttribute('src');
+        if (!product?.slug) return;
+
+        const candidates = productImageCandidates(product.slug);
+        let i = 0;
+
+        const tryNext = () => {
+            if (i >= candidates.length) {
+                imgEl.classList.remove('is-loaded');
+                imgEl.removeAttribute('src');
+                return;
+            }
+            imgEl.src = candidates[i++];
+        };
+
+        imgEl.onload = () => imgEl.classList.add('is-loaded');
+        imgEl.onerror = tryNext;
+        tryNext();
     }
 
     function formatValue(value, decimals) {
@@ -102,6 +134,10 @@
 
     function productSummary(p) {
         return `${p.kcal} kcal · ${p.protein} g białka · ${p.carbs} g węgli · ${p.fat} g tłuszczu`;
+    }
+
+    function productChipMeta(p) {
+        return `${p.kcal} kcal · ${p.protein} g B`;
     }
 
     function getSuggestionProducts(query) {
@@ -152,8 +188,8 @@
         const { search, suggestions: ul } = slots[slotKey];
         if (!search || !ul || ul.hidden) return;
 
-        const rect = search.getBoundingClientRect();
-        const gap = 4;
+        const rect = search.closest('.compare-field')?.getBoundingClientRect() || search.getBoundingClientRect();
+        const gap = 6;
         const bottomPad = 16;
         const top = rect.bottom + gap;
         const maxHeight = Math.max(160, window.innerHeight - top - bottomPad);
@@ -220,6 +256,8 @@
 
         const emojiEl = chip.querySelector('.compare-chip-emoji');
         const nameEl = chip.querySelector('.compare-chip-name');
+        const metaEl = chip.querySelector('.compare-chip-meta');
+        const imgEl = chip.querySelector('.compare-chip-img');
 
         if (!product) {
             chip.hidden = true;
@@ -228,11 +266,14 @@
                 input.value = '';
                 input.hidden = false;
             }
+            bindProductImage(imgEl, null);
             return;
         }
 
         if (emojiEl) emojiEl.textContent = product.emoji;
         if (nameEl) nameEl.textContent = product.name;
+        if (metaEl) metaEl.textContent = productChipMeta(product);
+        bindProductImage(imgEl, product);
         chip.hidden = false;
         field.classList.add('compare-field--filled');
         if (input) {
@@ -253,9 +294,20 @@
     function setProduct(slotKey, product) {
         state[slotKey] = product;
         renderSelectedCard(slotKey, product);
-        hideSuggestions(slotKey);
+        hideSuggestions('a');
+        hideSuggestions('b');
         syncUrl();
         renderComparison();
+    }
+
+    function buildCompareShareUrl() {
+        const params = new URLSearchParams();
+        if (state.a?.slug) params.set('a', state.a.slug);
+        if (state.b?.slug) params.set('b', state.b.slug);
+        const qs = params.toString();
+        return qs
+            ? `${window.location.origin}${window.location.pathname}?${qs}`
+            : `${window.location.origin}${window.location.pathname}`;
     }
 
     function syncUrl() {
@@ -289,11 +341,6 @@
         if (def.compute) return def.compute(product);
         const n = Number(product[key]);
         return Number.isFinite(n) ? n : null;
-    }
-
-    function metricNumeric(product, key) {
-        const v = metricRaw(product, key);
-        return v == null ? 0 : v;
     }
 
     function formatRatioCompact(value, decimals) {
@@ -339,12 +386,29 @@
         return va < vb ? 'a' : 'b';
     }
 
-    function renderLegend() {
-        if (!legendEl) return;
-        legendEl.innerHTML = `
-            <span class="compare-legend-pill compare-legend-pill--a">Produkt A</span>
-            <span class="compare-legend-pill compare-legend-pill--b">Produkt B</span>
+    function matchupSideHtml(product, side) {
+        return `
+            <div class="compare-matchup-side compare-matchup-side--${side}">
+                <span class="compare-matchup-media" aria-hidden="true">
+                    <img class="compare-matchup-img" data-matchup-img="${side}" alt="" width="56" height="56" decoding="async">
+                    <span class="compare-matchup-emoji">${product.emoji}</span>
+                </span>
+                <span class="compare-matchup-copy">
+                    <span class="compare-matchup-name">${escapeHtml(product.name)}</span>
+                    <span class="compare-matchup-meta">${escapeHtml(productChipMeta(product))}</span>
+                </span>
+            </div>`;
+    }
+
+    function renderMatchup(a, b) {
+        if (!matchupEl) return;
+        matchupEl.innerHTML = `
+            ${matchupSideHtml(a, 'a')}
+            <span class="compare-matchup-vs" aria-hidden="true">vs</span>
+            ${matchupSideHtml(b, 'b')}
         `;
+        bindProductImage(matchupEl.querySelector('[data-matchup-img="a"]'), a);
+        bindProductImage(matchupEl.querySelector('[data-matchup-img="b"]'), b);
     }
 
     function renderKpiGrid(a, b) {
@@ -507,7 +571,7 @@
             sectionEl.hidden = false;
             sectionEl.classList.add('compare-chart-section--mounted');
         }
-        renderLegend();
+        renderMatchup(a, b);
         renderChart(a, b);
         renderTable(a, b);
     }
@@ -517,9 +581,7 @@
         if (!search) return;
 
         search.addEventListener('input', () => openSuggestions(slotKey));
-
         search.addEventListener('focus', () => openSuggestions(slotKey));
-
         search.addEventListener('click', () => openSuggestions(slotKey));
 
         const picker = search.closest('.compare-picker');
@@ -556,6 +618,25 @@
         const tmp = state.a;
         setProduct('a', state.b);
         setProduct('b', tmp);
+    });
+
+    copyLinkBtn?.addEventListener('click', async () => {
+        const url = buildCompareShareUrl();
+        const labelEl = copyLinkBtn.querySelector('.compare-copy-link-label');
+        const prev = labelEl?.textContent || copyLinkBtn.textContent;
+        try {
+            await navigator.clipboard.writeText(url);
+            copyLinkBtn.classList.add('is-copied');
+            if (labelEl) labelEl.textContent = 'Skopiowano';
+            else copyLinkBtn.textContent = 'Skopiowano';
+            setTimeout(() => {
+                copyLinkBtn.classList.remove('is-copied');
+                if (labelEl) labelEl.textContent = prev;
+                else copyLinkBtn.textContent = prev;
+            }, 2000);
+        } catch {
+            window.prompt('Skopiuj link do porównania:', url);
+        }
     });
 
     bindSlot('a');

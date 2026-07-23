@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "makaron-rigatoni-suchy",
+    "name": "Makaron rigatoni (suchy)",
+    "category": "zboza",
+    "subject": "pasta rigatoni",
+    "prompt": "Photorealistic ecommerce food photo: pasta rigatoni. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pierogi-ruskie-8-szt",
+    "name": "Pierogi ruskie (8 szt.)",
+    "category": "polskie-obiadki",
+    "subject": "pierogi potato cheese",
+    "prompt": "Photorealistic ecommerce food photo: pierogi potato cheese. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pierogi-z-miesem",
+    "name": "Pierogi z mięsem",
+    "category": "polskie-obiadki",
+    "subject": "pierogi meat",
+    "prompt": "Photorealistic ecommerce food photo: pierogi meat. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kopytka",
+    "name": "Kopytka",
+    "category": "polskie-obiadki",
+    "subject": "potato dumplings, Polish traditional cooked dish",
+    "prompt": "Photorealistic ecommerce food photo: potato dumplings, Polish traditional cooked dish. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kluski-slaskie",
+    "name": "Kluski śląskie",
+    "category": "polskie-obiadki",
+    "subject": "silesian, Polish traditional cooked dish",
+    "prompt": "Photorealistic ecommerce food photo: silesian, Polish traditional cooked dish. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "placki-ziemniaczane",
+    "name": "Placki ziemniaczane",
+    "category": "polskie-obiadki",
+    "subject": "pancakes potato, Polish traditional cooked dish",
+    "prompt": "Photorealistic ecommerce food photo: pancakes potato, Polish traditional cooked dish. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "gulasz-wolowy-z-makaronem",
+    "name": "Gulasz wołowy z makaronem",
+    "category": "polskie-obiadki",
+    "subject": "stew beef pasta",
+    "prompt": "Photorealistic ecommerce food photo: stew beef pasta. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "makaron-z-serem-kraft-styl",
+    "name": "Makaron z serem (Kraft styl)",
+    "category": "makarony",
+    "subject": "pasta cheese",
+    "prompt": "Photorealistic ecommerce food photo: pasta cheese. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "rosol-z-makaronem",
+    "name": "Rosół z makaronem",
+    "category": "zupy",
+    "subject": "broth pasta",
+    "prompt": "Photorealistic ecommerce food photo: broth pasta. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pomidorowa-z-ryzem",
+    "name": "Pomidorowa z ryżem",
+    "category": "zupy",
+    "subject": "tomato rice",
+    "prompt": "Photorealistic ecommerce food photo: tomato rice. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pierogi-z-kapusta-i-grzybami",
+    "name": "Pierogi z kapustą i grzybami",
+    "category": "polskie-obiadki",
+    "subject": "pierogi cabbage, Polish traditional cooked dish",
+    "prompt": "Photorealistic ecommerce food photo: pierogi cabbage, Polish traditional cooked dish. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "zupa-jarzynowa",
+    "name": "Zupa jarzynowa",
+    "category": "zupy",
+    "subject": "soup",
+    "prompt": "Photorealistic ecommerce food photo: soup. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

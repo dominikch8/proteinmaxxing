@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "sledz-marynowany",
+    "name": "Śledź marynowany",
+    "category": "mieso",
+    "subject": "pickled herring pieces",
+    "prompt": "Photorealistic ecommerce food photo: pickled herring pieces. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "makrela-wedzona",
+    "name": "Makrela wędzona",
+    "category": "mieso",
+    "subject": "smoked mackerel fillet",
+    "prompt": "Photorealistic ecommerce food photo: smoked mackerel fillet. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "tunczyk-w-oleju",
+    "name": "Tuńczyk w oleju",
+    "category": "mieso",
+    "subject": "open can of tuna in oil or tuna chunks in oil",
+    "prompt": "Photorealistic ecommerce food photo: open can of tuna in oil or tuna chunks in oil. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sandacz",
+    "name": "Sandacz",
+    "category": "mieso",
+    "subject": "raw zander pike-perch fillet",
+    "prompt": "Photorealistic ecommerce food photo: raw zander pike-perch fillet. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "mintaj",
+    "name": "Mintaj",
+    "category": "mieso",
+    "subject": "raw pollock fillet",
+    "prompt": "Photorealistic ecommerce food photo: raw pollock fillet. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "krewetki-gotowane",
+    "name": "Krewetki gotowane",
+    "category": "mieso",
+    "subject": "cooked peeled shrimp",
+    "prompt": "Photorealistic ecommerce food photo: cooked peeled shrimp. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kalmary",
+    "name": "Kalmary",
+    "category": "mieso",
+    "subject": "raw or cleaned squid rings/tubes",
+    "prompt": "Photorealistic ecommerce food photo: raw or cleaned squid rings/tubes. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "udko-z-kurczaka-z-skora",
+    "name": "Udko z kurczaka (z skórą)",
+    "category": "mieso",
+    "subject": "raw chicken drumstick with skin",
+    "prompt": "Photorealistic ecommerce food photo: raw chicken drumstick with skin. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "skrzydelka-kurze",
+    "name": "Skrzydełka kurze",
+    "category": "mieso",
+    "subject": "raw chicken wings",
+    "prompt": "Photorealistic ecommerce food photo: raw chicken wings. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "boczek-surowy",
+    "name": "Boczek surowy",
+    "category": "mieso",
+    "subject": "raw pork bacon belly strips",
+    "prompt": "Photorealistic ecommerce food photo: raw pork bacon belly strips. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "karkowka-wieprzowa",
+    "name": "Karkówka wieprzowa",
+    "category": "mieso",
+    "subject": "raw pork neck steaks",
+    "prompt": "Photorealistic ecommerce food photo: raw pork neck steaks. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "poledwica-wieprzowa",
+    "name": "Polędwica wieprzowa",
+    "category": "mieso",
+    "subject": "raw pork tenderloin",
+    "prompt": "Photorealistic ecommerce food photo: raw pork tenderloin. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

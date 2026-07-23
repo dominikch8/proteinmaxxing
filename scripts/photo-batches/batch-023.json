@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "marakuja",
+    "name": "Marakuja",
+    "category": "owoce",
+    "subject": "passion fruit",
+    "prompt": "Photorealistic ecommerce food photo: passion fruit. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "papaja",
+    "name": "Papaja",
+    "category": "owoce",
+    "subject": "papaya, fresh fruit",
+    "prompt": "Photorealistic ecommerce food photo: papaya, fresh fruit. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kasza-bulgur-sucha",
+    "name": "Kasza bulgur (sucha)",
+    "category": "zboza",
+    "subject": "bulgur, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: bulgur, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kasza-kuskus-gotowana",
+    "name": "Kasza kuskus (gotowana)",
+    "category": "zboza",
+    "subject": "couscous, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: couscous, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "ryz-jalowcowy-suchy",
+    "name": "Ryż jałowcowy (suchy)",
+    "category": "zboza",
+    "subject": "rice juniper",
+    "prompt": "Photorealistic ecommerce food photo: rice juniper. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "ryz-dziki-suchy",
+    "name": "Ryż dziki (suchy)",
+    "category": "zboza",
+    "subject": "rice wild",
+    "prompt": "Photorealistic ecommerce food photo: rice wild. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "makaron-ryzowy-suchy",
+    "name": "Makaron ryżowy (suchy)",
+    "category": "zboza",
+    "subject": "pasta",
+    "prompt": "Photorealistic ecommerce food photo: pasta. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "makaron-swiderki-suchy",
+    "name": "Makaron świderki (suchy)",
+    "category": "zboza",
+    "subject": "pasta",
+    "prompt": "Photorealistic ecommerce food photo: pasta. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "makaron-penne-suchy",
+    "name": "Makaron penne (suchy)",
+    "category": "zboza",
+    "subject": "pasta penne",
+    "prompt": "Photorealistic ecommerce food photo: pasta penne. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "makaron-spaghetti-suchy",
+    "name": "Makaron spaghetti (suchy)",
+    "category": "zboza",
+    "subject": "pasta spaghetti",
+    "prompt": "Photorealistic ecommerce food photo: pasta spaghetti. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "chleb-pszenny-razowy",
+    "name": "Chleb pszenny razowy",
+    "category": "zboza",
+    "subject": "bread wheat wholegrain",
+    "prompt": "Photorealistic ecommerce food photo: bread wheat wholegrain. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "bulka-grahamka",
+    "name": "Bułka grahamka",
+    "category": "zboza",
+    "subject": "roll, grain cereal bakery food",
+    "prompt": "Photorealistic ecommerce food photo: roll, grain cereal bakery food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

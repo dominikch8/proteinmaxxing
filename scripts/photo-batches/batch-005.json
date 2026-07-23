@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "twarog-poltlusty",
+    "name": "Twaróg półtłusty",
+    "category": "nabial",
+    "subject": "cottage cheese semi-fat",
+    "prompt": "Photorealistic ecommerce food photo: cottage cheese semi-fat. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "ricotta",
+    "name": "Ricotta",
+    "category": "nabial",
+    "subject": "ricotta, dairy food product",
+    "prompt": "Photorealistic ecommerce food photo: ricotta, dairy food product. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "ser-feta",
+    "name": "Ser Feta",
+    "category": "nabial",
+    "subject": "cheese feta",
+    "prompt": "Photorealistic ecommerce food photo: cheese feta. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "ser-brie",
+    "name": "Ser Brie",
+    "category": "nabial",
+    "subject": "cheese brie",
+    "prompt": "Photorealistic ecommerce food photo: cheese brie. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "ser-edamski",
+    "name": "Ser Edamski",
+    "category": "nabial",
+    "subject": "cheese edam",
+    "prompt": "Photorealistic ecommerce food photo: cheese edam. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "ser-zolty-plastry",
+    "name": "Ser żółty plastry",
+    "category": "nabial",
+    "subject": "cheese yellow",
+    "prompt": "Photorealistic ecommerce food photo: cheese yellow. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "serek-homogenizowany-danio",
+    "name": "Serek homogenizowany (Danio)",
+    "category": "nabial",
+    "subject": "cottage cheese cream cheese",
+    "prompt": "Photorealistic ecommerce food photo: cottage cheese cream cheese. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "budyn-na-mleku",
+    "name": "Budyń na mleku",
+    "category": "nabial",
+    "subject": "custard, dairy food product",
+    "prompt": "Photorealistic ecommerce food photo: custard, dairy food product. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "smietanka-30",
+    "name": "Śmietanka 30%",
+    "category": "nabial",
+    "subject": "whipping cream, dairy food product",
+    "prompt": "Photorealistic ecommerce food photo: whipping cream, dairy food product. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "koncentrat-bialka-serwatkowego-wpc",
+    "name": "Koncentrat białka serwatkowego (WPC)",
+    "category": "nabial",
+    "subject": "whey protein concentrate powder, dairy food product",
+    "prompt": "Photorealistic ecommerce food photo: whey protein concentrate powder, dairy food product. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "ziemniaki",
+    "name": "Ziemniaki",
+    "category": "warzywa",
+    "subject": "potato, fresh vegetable",
+    "prompt": "Photorealistic ecommerce food photo: potato, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pomidor",
+    "name": "Pomidor",
+    "category": "warzywa",
+    "subject": "tomato, fresh vegetable",
+    "prompt": "Photorealistic ecommerce food photo: tomato, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "big-mac-styl",
+    "name": "Big Mac (styl)",
+    "category": "fastfood",
+    "subject": "big mac burger, fast food item",
+    "prompt": "Photorealistic ecommerce food photo: big mac burger, fast food item. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "mcchicken-kurczak-w-panierce",
+    "name": "McChicken / kurczak w panierce",
+    "category": "fastfood",
+    "subject": "mcchicken sandwich",
+    "prompt": "Photorealistic ecommerce food photo: mcchicken sandwich. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "wrap-z-kurczakiem",
+    "name": "Wrap z kurczakiem",
+    "category": "fastfood",
+    "subject": "wrap chicken",
+    "prompt": "Photorealistic ecommerce food photo: wrap chicken. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kebab-na-talerzu",
+    "name": "Kebab na talerzu",
+    "category": "fastfood",
+    "subject": "kebab plate, fast food item",
+    "prompt": "Photorealistic ecommerce food photo: kebab plate, fast food item. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kolba-kukurydzy-smazona",
+    "name": "Kolba kukurydzy smażona",
+    "category": "fastfood",
+    "subject": "corn fried, fast food item",
+    "prompt": "Photorealistic ecommerce food photo: corn fried, fast food item. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "zupa-chinska-instant",
+    "name": "Zupa chińska instant",
+    "category": "zupy",
+    "subject": "soup chinese instant",
+    "prompt": "Photorealistic ecommerce food photo: soup chinese instant. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "tortilla-z-farszem-gotowa",
+    "name": "Tortilla z farszem (gotowa)",
+    "category": "fastfood",
+    "subject": "tortilla filled, fast food item",
+    "prompt": "Photorealistic ecommerce food photo: tortilla filled, fast food item. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "skrzydelka-kfc-style",
+    "name": "Skrzydełka KFC-style",
+    "category": "fastfood",
+    "subject": "chicken wings fried chicken",
+    "prompt": "Photorealistic ecommerce food photo: chicken wings fried chicken. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "makaron-pelnoziarnisty-suchy",
+    "name": "Makaron pełnoziarnisty (suchy)",
+    "category": "zboza",
+    "subject": "pasta whole wheat",
+    "prompt": "Photorealistic ecommerce food photo: pasta whole wheat. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "spaghetti-bolognese",
+    "name": "Spaghetti Bolognese",
+    "category": "makarony",
+    "subject": "spaghetti bolognese, pasta food",
+    "prompt": "Photorealistic ecommerce food photo: spaghetti bolognese, pasta food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "spaghetti-carbonara",
+    "name": "Spaghetti Carbonara",
+    "category": "makarony",
+    "subject": "spaghetti carbonara, pasta food",
+    "prompt": "Photorealistic ecommerce food photo: spaghetti carbonara, pasta food. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "lasagne-z-miesem",
+    "name": "Lasagne z mięsem",
+    "category": "makarony",
+    "subject": "lasagne meat",
+    "prompt": "Photorealistic ecommerce food photo: lasagne meat. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

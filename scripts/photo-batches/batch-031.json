@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "mars",
+    "name": "Mars",
+    "category": "slodycze",
+    "subject": "Mars chocolate caramel nougat candy bar — candy ONLY not planet",
+    "prompt": "Photorealistic ecommerce food photo: Mars chocolate caramel nougat candy bar — candy ONLY not planet. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "twix",
+    "name": "Twix",
+    "category": "slodycze",
+    "subject": "Twix chocolate bar",
+    "prompt": "Photorealistic ecommerce food photo: Twix chocolate bar. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "bounty",
+    "name": "Bounty",
+    "category": "slodycze",
+    "subject": "Bounty coconut chocolate candy bar",
+    "prompt": "Photorealistic ecommerce food photo: Bounty coconut chocolate candy bar. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "kit-kat",
+    "name": "Kit Kat",
+    "category": "slodycze",
+    "subject": "Kit Kat chocolate bar",
+    "prompt": "Photorealistic ecommerce food photo: Kit Kat chocolate bar. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "tofu-naturalne",
+    "name": "Tofu naturalne",
+    "category": "warzywa",
+    "subject": "Tofu naturalne, fresh vegetable",
+    "prompt": "Photorealistic ecommerce food photo: Tofu naturalne, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "falafel-smazony",
+    "name": "Falafel smażony",
+    "category": "fastfood",
+    "subject": "fried, fast food item",
+    "prompt": "Photorealistic ecommerce food photo: fried, fast food item. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "burrito-z-kurczakiem",
+    "name": "Burrito z kurczakiem",
+    "category": "fastfood",
+    "subject": "chicken",
+    "prompt": "Photorealistic ecommerce food photo: chicken. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "sushi-maki-z-lososiem",
+    "name": "Sushi maki z łososiem",
+    "category": "fastfood",
+    "subject": "salmon, fast food item",
+    "prompt": "Photorealistic ecommerce food photo: salmon, fast food item. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "salatka-grecka",
+    "name": "Sałatka grecka",
+    "category": "polskie-obiadki",
+    "subject": "salad, Polish traditional cooked dish",
+    "prompt": "Photorealistic ecommerce food photo: salad, Polish traditional cooked dish. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "salatka-cezar-z-kurczakiem",
+    "name": "Sałatka Cezar z kurczakiem",
+    "category": "polskie-obiadki",
+    "subject": "salad chicken",
+    "prompt": "Photorealistic ecommerce food photo: salad chicken. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "krokiety-z-miesem",
+    "name": "Krokiety z mięsem",
+    "category": "polskie-obiadki",
+    "subject": "meat",
+    "prompt": "Photorealistic ecommerce food photo: meat. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  },
+  {
+    "slug": "pierogi-leniwe",
+    "name": "Pierogi leniwe",
+    "category": "polskie-obiadki",
+    "subject": "pierogi, Polish traditional cooked dish",
+    "prompt": "Photorealistic ecommerce food photo: pierogi, Polish traditional cooked dish. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+  }
+]

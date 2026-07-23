@@ -1,0 +1,37 @@
+{
+  "piers-z-kurczaka": {
+    "subject": "two raw pale pink skinless boneless chicken breast fillets, poultry meat only, NOT fish, NOT salmon",
+    "refs": []
+  },
+  "losos-atlantycki": {
+    "subject": "one raw Atlantic salmon fillet orange-pink with white fat lines",
+    "refs": []
+  },
+  "skyr-naturalny": {
+    "subject": "plain natural skyr Icelandic yogurt pure white thick cream in small white bowl, NO chocolate, NO toppings, NO sauce swirl",
+    "refs": []
+  },
+  "jajko-kurze-cale": {
+    "subject": "ONE whole intact brown chicken egg with unbroken shell, whole egg only, NOT cracked, NOT open, NOT yolk",
+    "refs": []
+  },
+  "banan": {
+    "subject": "ONE single ripe yellow banana with ONE stem, Cavendish banana fruit",
+    "refs": [
+      {
+        "source": "commons",
+        "title": "Eastern fruit (1912) (20513659473).jpg",
+        "query": "ONE single ripe yellow banana with ONE stem product photo",
+        "score": 7
+      }
+    ]
+  },
+  "awokado": {
+    "subject": "Hass avocado half with pit and one whole avocado",
+    "refs": []
+  },
+  "lion": {
+    "subject": "Lion Nestle Polish chocolate candy wafer bar with caramel cereal filling, wrapped snack bar shape",
+    "refs": []
+  }
+}
