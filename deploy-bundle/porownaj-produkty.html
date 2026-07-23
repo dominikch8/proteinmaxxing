@@ -29,7 +29,7 @@
 <link rel="stylesheet" href="css/theme-switch.css">
     <link rel="stylesheet" href="css/compare.css">
 </head>
-<body>
+<body class="compare-body">
     <script defer src="https://s.clickiocdn.com/t/249709/di.js"></script>
     <header class="site-header">
         <nav>
@@ -51,8 +51,14 @@
     </header>
 <div class="page-container">
         <main class="main-content compare-page">
+            <div class="compare-atmosphere" aria-hidden="true">
+                <span class="compare-atmosphere-blob compare-atmosphere-blob--a"></span>
+                <span class="compare-atmosphere-blob compare-atmosphere-blob--b"></span>
+                <span class="compare-atmosphere-grid"></span>
+            </div>
+
             <div class="page-hero compare-hero">
-                <p class="compare-eyebrow">Porównywarka makro</p>
+                <p class="compare-kicker">Proteiner · porównanie makro</p>
                 <h1>Porównaj produkty</h1>
                 <p class="subtitle">Ustaw dwa produkty obok siebie i od razu zobacz różnice w kaloriach, białku, węglowodanach i tłuszczu — wszystko na 100&nbsp;g.</p>
             </div>
@@ -133,10 +139,19 @@
                 </div>
                 <p class="compare-empty-title">Wybierz dwa produkty</p>
                 <p class="compare-empty-text">Wpisz nazwę w polach powyżej — porównanie makro, wykres i tabela pojawią się automatycznie.</p>
+                <div class="compare-quick" id="compareQuick">
+                    <p class="compare-quick-label">Szybkie porównania</p>
+                    <div class="compare-quick-list" role="group" aria-label="Przykładowe porównania">
+                        <button type="button" class="compare-quick-btn" data-a="piers-z-kurczaka" data-b="twarog-poltlusty">Pierś z kurczaka vs twaróg</button>
+                        <button type="button" class="compare-quick-btn" data-a="jajko-kurze-cale" data-b="losos-atlantycki">Jajko vs łosoś</button>
+                        <button type="button" class="compare-quick-btn" data-a="ryz-bialy" data-b="kasza-gryczana">Ryż vs kasza gryczana</button>
+                    </div>
+                </div>
             </div>
 
             <section class="compare-chart-section" id="compareChartSection" hidden aria-labelledby="compareChartHeading">
                 <div class="compare-matchup" id="compareMatchup"></div>
+                <div class="compare-scoreline" id="compareScoreline" hidden></div>
 
                 <div class="compare-toolbar">
                     <span class="compare-unit-badge">Wartości na 100&nbsp;g</span>

@@ -51,6 +51,7 @@
     }
 
     const state = { a: null, b: null };
+    const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const slots = {
         a: {
@@ -71,11 +72,15 @@
     const sectionEl = document.getElementById('compareChartSection');
     const chartEl = document.getElementById('compareChart');
     const matchupEl = document.getElementById('compareMatchup');
+    const scorelineEl = document.getElementById('compareScoreline');
     const tableBody = document.getElementById('compareTableBody');
     const thA = document.getElementById('compareThA');
     const thB = document.getElementById('compareThB');
     const swapBtn = document.getElementById('compareSwapBtn');
     const copyLinkBtn = document.getElementById('compareCopyLinkBtn');
+    const quickEl = document.getElementById('compareQuick');
+
+    document.body.classList.add('is-ready');
 
     function escapeHtml(s) {
         return String(s)
@@ -386,6 +391,22 @@
         return va < vb ? 'a' : 'b';
     }
 
+    function tallyWins(a, b) {
+        let winsA = 0;
+        let winsB = 0;
+        let scored = 0;
+        for (const m of COMPARE_METRICS) {
+            const rawA = metricRaw(a, m.key);
+            const rawB = metricRaw(b, m.key);
+            const winner = metricWinner(rawA ?? 0, rawB ?? 0, m.key, rawA, rawB);
+            if (winner == null) continue;
+            scored += 1;
+            if (winner === 'a') winsA += 1;
+            if (winner === 'b') winsB += 1;
+        }
+        return { winsA, winsB, scored };
+    }
+
     function matchupSideHtml(product, side) {
         return `
             <div class="compare-matchup-side compare-matchup-side--${side}">
@@ -409,6 +430,55 @@
         `;
         bindProductImage(matchupEl.querySelector('[data-matchup-img="a"]'), a);
         bindProductImage(matchupEl.querySelector('[data-matchup-img="b"]'), b);
+    }
+
+    function renderScoreline(a, b) {
+        if (!scorelineEl) return;
+        const { winsA, winsB, scored } = tallyWins(a, b);
+        if (!scored) {
+            scorelineEl.hidden = true;
+            scorelineEl.innerHTML = '';
+            return;
+        }
+
+        const pctA = Math.round((winsA / scored) * 100);
+        const pctB = Math.round((winsB / scored) * 100);
+        const lead =
+            winsA === winsB
+                ? 'Remis w kategoriach punktowanych'
+                : winsA > winsB
+                  ? `${escapeHtml(a.name)} prowadzi`
+                  : `${escapeHtml(b.name)} prowadzi`;
+
+        scorelineEl.hidden = false;
+        scorelineEl.classList.remove('is-animating');
+        scorelineEl.innerHTML = `
+            <div class="compare-scoreline-side compare-scoreline-side--a">
+                <span class="compare-scoreline-label">Produkt A</span>
+                <span class="compare-scoreline-value">${winsA}</span>
+            </div>
+            <div class="compare-scoreline-mid">
+                <span class="compare-scoreline-score">${winsA}<span class="compare-scoreline-score-sep">:</span>${winsB}</span>
+                <span class="compare-scoreline-caption">kategorie</span>
+            </div>
+            <div class="compare-scoreline-side compare-scoreline-side--b">
+                <span class="compare-scoreline-label">Produkt B</span>
+                <span class="compare-scoreline-value">${winsB}</span>
+            </div>
+            <div class="compare-scoreline-tracks" aria-label="${lead}">
+                <div class="compare-scoreline-track">
+                    <span class="compare-scoreline-fill--a" style="--score-pct:${pctA}%; --score-delay:40ms"></span>
+                </div>
+                <div class="compare-scoreline-track">
+                    <span class="compare-scoreline-fill--b" style="--score-pct:${pctB}%; --score-delay:120ms"></span>
+                </div>
+            </div>`;
+
+        if (!reduceMotion()) {
+            requestAnimationFrame(() => scorelineEl.classList.add('is-animating'));
+        } else {
+            scorelineEl.classList.add('is-animating');
+        }
     }
 
     function renderKpiGrid(a, b) {
@@ -440,8 +510,9 @@
         return Math.ceil(m * 10) / 10 || 1;
     }
 
-    function buildGlassBarParts(slot, pct, label, isWinner, productName) {
+    function buildGlassBarParts(slot, pct, label, isWinner, productName, barIndex) {
         const fillW = pct > 0 ? pct : 0;
+        const delay = barIndex * 70;
         return {
             slot: `
                 <div class="compare-glass-slot compare-glass-slot--${slot}">
@@ -450,15 +521,15 @@
                 </div>`,
             track: `
                 <div class="compare-glass-track compare-glass-track--${slot}">
-                    <div class="compare-glass-fill compare-glass-fill--${slot}${isWinner ? ' is-winner' : ''}" style="width:${fillW}%"></div>
+                    <div class="compare-glass-fill compare-glass-fill--${slot}${isWinner ? ' is-winner' : ''}" style="--bar-pct:${fillW}%; --bar-delay:${delay}ms" data-pct="${fillW}"></div>
                     <span class="compare-glass-fill-val">${label}</span>
                 </div>`
         };
     }
 
-    function buildGlassBarsGrid(aName, bName, pctA, labelA, winA, pctB, labelB, winB, hintText) {
-        const partsA = buildGlassBarParts('a', pctA, labelA, winA, aName);
-        const partsB = buildGlassBarParts('b', pctB, labelB, winB, bName);
+    function buildGlassBarsGrid(aName, bName, pctA, labelA, winA, pctB, labelB, winB, hintText, rowIndex) {
+        const partsA = buildGlassBarParts('a', pctA, labelA, winA, aName, rowIndex * 2);
+        const partsB = buildGlassBarParts('b', pctB, labelB, winB, bName, rowIndex * 2 + 1);
         const hintEl = hintText
             ? `<p class="compare-glass-hint compare-glass-hint--${hintText.kind}" role="note">${escapeHtml(hintText.text)}</p>`
             : '';
@@ -478,7 +549,7 @@
     }
 
     function buildGlassBarsHtml(a, b) {
-        const rows = COMPARE_METRICS.map((m) => {
+        const rows = COMPARE_METRICS.map((m, rowIndex) => {
             const rawA = metricRaw(a, m.key);
             const rawB = metricRaw(b, m.key);
             const va = rawA ?? 0;
@@ -502,7 +573,7 @@
                         <span class="compare-glass-metric-name">${escapeHtml(m.label)}</span>
                         <span class="compare-glass-metric-max">skala 0–${escapeHtml(formatMetricScaleMax(m, max))}</span>
                     </div>
-                    ${buildGlassBarsGrid(a.name, b.name, pctA, labelA, winA, pctB, labelB, winB, hintText)}
+                    ${buildGlassBarsGrid(a.name, b.name, pctA, labelA, winA, pctB, labelB, winB, hintText, rowIndex)}
                 </div>`;
         }).join('');
 
@@ -510,6 +581,36 @@
             <div class="compare-glass-chart" role="img" aria-label="Wykres składników na 100 g: ${escapeHtml(a.name)} i ${escapeHtml(b.name)}">
                 ${rows}
             </div>`;
+    }
+
+    function playDashboardMotion() {
+        if (!chartEl) return;
+        chartEl.classList.remove('is-animating');
+
+        const fills = chartEl.querySelectorAll('.compare-glass-fill');
+        fills.forEach((el) => {
+            el.classList.remove('is-run');
+            if (reduceMotion()) {
+                el.style.width = `${el.dataset.pct || 0}%`;
+            } else {
+                el.style.width = '0%';
+            }
+        });
+
+        if (reduceMotion()) {
+            chartEl.classList.add('is-animating');
+            fills.forEach((el) => el.classList.add('is-run'));
+            return;
+        }
+
+        void chartEl.offsetWidth;
+        requestAnimationFrame(() => {
+            chartEl.classList.add('is-animating');
+            fills.forEach((el) => {
+                el.style.width = '';
+                el.classList.add('is-run');
+            });
+        });
     }
 
     function renderChart(a, b) {
@@ -526,6 +627,8 @@
                 ${buildGlassBarsHtml(a, b)}
             </div>
             <p class="compare-chart-footnote">Wszystkie wartości na 100 g produktu.</p>`;
+
+        playDashboardMotion();
     }
 
     function renderTable(a, b) {
@@ -563,15 +666,29 @@
         const { a, b } = state;
         if (!a || !b) {
             if (emptyEl) emptyEl.hidden = false;
-            if (sectionEl) sectionEl.hidden = true;
+            if (sectionEl) {
+                sectionEl.hidden = true;
+                sectionEl.classList.remove('is-entering', 'compare-chart-section--mounted');
+            }
+            if (scorelineEl) {
+                scorelineEl.hidden = true;
+                scorelineEl.innerHTML = '';
+            }
             return;
         }
         if (emptyEl) emptyEl.hidden = true;
         if (sectionEl) {
+            const firstShow = sectionEl.hidden;
             sectionEl.hidden = false;
+            sectionEl.classList.remove('is-entering');
+            if (firstShow && !reduceMotion()) {
+                void sectionEl.offsetWidth;
+                sectionEl.classList.add('is-entering');
+            }
             sectionEl.classList.add('compare-chart-section--mounted');
         }
         renderMatchup(a, b);
+        renderScoreline(a, b);
         renderChart(a, b);
         renderTable(a, b);
     }
@@ -615,9 +732,22 @@
     });
 
     swapBtn?.addEventListener('click', () => {
-        const tmp = state.a;
-        setProduct('a', state.b);
-        setProduct('b', tmp);
+        if (!reduceMotion()) {
+            swapBtn.classList.remove('is-spinning');
+            void swapBtn.offsetWidth;
+            swapBtn.classList.add('is-spinning');
+            setTimeout(() => swapBtn.classList.remove('is-spinning'), 650);
+        }
+        const nextA = state.b;
+        const nextB = state.a;
+        state.a = nextA;
+        state.b = nextB;
+        renderSelectedCard('a', state.a);
+        renderSelectedCard('b', state.b);
+        hideSuggestions('a');
+        hideSuggestions('b');
+        syncUrl();
+        renderComparison();
     });
 
     copyLinkBtn?.addEventListener('click', async () => {
@@ -637,6 +767,23 @@
         } catch {
             window.prompt('Skopiuj link do porównania:', url);
         }
+    });
+
+    quickEl?.addEventListener('click', (e) => {
+        const btn = e.target.closest('.compare-quick-btn');
+        if (!btn) return;
+        const productA = getProductBySlug(btn.dataset.a);
+        const productB = getProductBySlug(btn.dataset.b);
+        if (!productA || !productB) return;
+        state.a = productA;
+        state.b = productB;
+        renderSelectedCard('a', productA);
+        renderSelectedCard('b', productB);
+        hideSuggestions('a');
+        hideSuggestions('b');
+        syncUrl();
+        renderComparison();
+        sectionEl?.scrollIntoView({ behavior: reduceMotion() ? 'auto' : 'smooth', block: 'start' });
     });
 
     bindSlot('a');
