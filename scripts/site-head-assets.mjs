@@ -84,7 +84,8 @@ export function buildThemeStylesheets(prefix = '', opts = {}) {
 }
 
 export function buildThemeBodyScript(prefix = '') {
-    return `    <script src="${prefix}js/theme.js"></script>`;
+    return `    <script src="${prefix}js/auth-ui.js"></script>
+    <script src="${prefix}js/theme.js"></script>`;
 }
 
 export function buildThemeAssets(prefix = '', opts = {}) {

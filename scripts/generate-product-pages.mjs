@@ -546,6 +546,8 @@ const STATIC_SITEMAP_ENTRIES = [
     { loc: 'https://proteiner.pl/artykuly', changefreq: 'weekly', priority: '0.9' },
     { loc: 'https://proteiner.pl/deficyt-kaloryczny-praktyka', changefreq: 'monthly', priority: '0.85' },
     { loc: 'https://proteiner.pl/planowanie-posilkow', changefreq: 'monthly', priority: '0.85' },
+    { loc: 'https://proteiner.pl/logowanie', changefreq: 'yearly', priority: '0.3' },
+    { loc: 'https://proteiner.pl/rejestracja', changefreq: 'yearly', priority: '0.3' },
     { loc: 'https://proteiner.pl/dodaj-produkt', changefreq: 'monthly', priority: '0.5' },
     { loc: 'https://proteiner.pl/trening', changefreq: 'monthly', priority: '0.8' },
     { loc: 'https://proteiner.pl/informacje', changefreq: 'yearly', priority: '0.4' },

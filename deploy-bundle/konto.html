@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/theme-init.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/consent-head.js"></script>
+    <script async type="text/javascript" src="//clickiocmp.com/t/consent_249709.js"></script>
+    <meta name="google-adsense-account" content="ca-pub-8540801395510703">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8540801395510703"
+        crossorigin="anonymous"></script>
+    <title>Moje konto | Proteiner</title>
+    <meta name="description" content="Twoje konto Proteiner — dane logowania i dostęp do panelu administratora.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://proteiner.pl/konto">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/theme-switch.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-page">
+    <script defer src="https://s.clickiocdn.com/t/249709/di.js"></script>
+    <header class="site-header">
+        <nav>
+            <a href="/" class="logo">
+                <img class="logo-mark" src="images/favicon.svg" alt="" width="56" height="56" decoding="async">
+                <span>Proteiner</span>
+            </a>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="/">Kalkulator</a></li>
+                <li><a class="nav-link" href="dieta">Dieta</a></li>
+                <li><a class="nav-link" href="porownaj-produkty">Porównaj produkty</a></li>
+                <li><a class="nav-link" href="dodaj-produkt">Dodaj produkty</a></li>
+                <li><a class="nav-link" href="poradnik-zywienia">Poradnik</a></li>
+                <li><a class="nav-link" href="artykuly">Artykuły</a></li>
+                <li><a class="nav-link" href="informacje">Informacje</a></li>
+                <li><a class="nav-link" href="o-mnie">O mnie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-container">
+        <main class="main-content">
+            <div class="info-tab">
+                <div class="page-hero">
+                    <h1>Moje konto</h1>
+                    <p class="subtitle">Dane sesji i uprawnienia</p>
+                </div>
+
+                <div id="accountGuest" class="auth-account-card" hidden>
+                    <p>Nie jesteś zalogowany.</p>
+                    <div class="auth-account-actions">
+                        <a class="auth-submit" href="logowanie" style="text-align:center;text-decoration:none;display:inline-block;width:auto;">Zaloguj się</a>
+                        <a href="rejestracja">Załóż konto</a>
+                    </div>
+                </div>
+
+                <div id="accountBox" class="auth-account-card" hidden>
+                    <dl>
+                        <div>
+                            <dt>Imię</dt>
+                            <dd id="accountName">—</dd>
+                        </div>
+                        <div>
+                            <dt>E-mail</dt>
+                            <dd id="accountEmail">—</dd>
+                        </div>
+                        <div>
+                            <dt>Rola</dt>
+                            <dd id="accountRole">—</dd>
+                        </div>
+                    </dl>
+                    <div class="auth-account-actions">
+                        <a id="accountAdminLink" class="auth-submit" href="admin-zgloszenia" hidden style="text-align:center;text-decoration:none;display:inline-block;width:auto;">Panel zgłoszeń</a>
+                        <button type="button" class="admin-btn" id="accountLogoutBtn" style="padding:12px 16px;border-radius:12px;border:1px solid var(--border);background:var(--surface);font:inherit;font-weight:700;cursor:pointer;">Wyloguj</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="site-footer">
+        <p class="site-footer-brand"><strong>Proteiner</strong> — kalkulator dietetyczny i baza produktów</p>
+        <nav class="site-footer-nav" aria-label="Nawigacja w stopce">
+            <a href="informacje">Informacje</a>
+            <span aria-hidden="true">·</span>
+            <a href="o-mnie">O mnie</a>
+            <span aria-hidden="true">·</span>
+            <a href="dieta#produkty">Wszystkie produkty</a>
+            <span aria-hidden="true">·</span>
+            <a href="porownaj-produkty">Porównaj produkty</a>
+            <span aria-hidden="true">·</span>
+            <a href="dodaj-produkt">Dodaj produkty</a>
+            <span aria-hidden="true">·</span>
+            <a href="poradnik-zywienia">Poradnik</a>
+            <span aria-hidden="true">·</span>
+            <a href="artykuly">Artykuły</a>
+        </nav>
+        <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
+    </footer>
+<script src="js/auth-api.js"></script>
+<script src="js/auth-forms.js"></script>
+<script src="js/auth-ui.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>

@@ -17,7 +17,8 @@ const SKIP_FILES = new Set([
     'package-lock.json'
 ]);
 
-const SKIP_PREFIXES = ['scripts/', 'admin-', 'js/admin-', 'js/products-data-raw.js'];
+// Admin panel i API PHP mają być w deploy-bundle (auth + zgłoszenia).
+const SKIP_PREFIXES = ['scripts/', 'js/products-data-raw.js'];
 
 function shouldSkip(rel) {
     const norm = rel.replace(/\\/g, '/');
