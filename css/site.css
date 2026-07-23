@@ -2254,10 +2254,23 @@
             display: flex;
             flex-direction: column;
             min-width: 0;
+            transition:
+                box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                border-color 0.35s ease,
+                transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
         }
 
-        .home-info-tile[open] {
+        .home-info-tile:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-1px);
+        }
+
+        .home-info-tile[open],
+        .home-info-tile.is-animating-open {
             grid-column: 1 / -1;
+            box-shadow: var(--shadow-md);
+            transform: none;
+            border-color: rgba(37, 99, 235, 0.22);
         }
 
         .home-info-tile[open] > .home-info-tile-bar {
@@ -2275,7 +2288,7 @@
             cursor: pointer;
             list-style: none;
             user-select: none;
-            transition: background var(--transition);
+            transition: background 0.3s ease;
             flex: 1;
         }
 
@@ -2292,6 +2305,12 @@
             font-size: 1.35rem;
             line-height: 1;
             flex-shrink: 0;
+            transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .home-info-tile[open] .home-info-tile-icon,
+        .home-info-tile.is-animating-open .home-info-tile-icon {
+            transform: scale(1.08);
         }
 
         .home-info-tile-text {
@@ -2332,18 +2351,87 @@
             border-bottom: 2px solid var(--text-muted);
             transform: rotate(45deg);
             margin-top: -4px;
-            transition: transform 0.25s ease, margin 0.25s ease;
+            transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), margin 0.4s ease, border-color 0.3s ease;
         }
 
-        .home-info-tile[open] .home-info-tile-chevron {
+        .home-info-tile[open] .home-info-tile-chevron,
+        .home-info-tile.is-animating-open .home-info-tile-chevron {
             transform: rotate(-135deg);
             margin-top: 4px;
+            border-color: var(--accent, #2563eb);
         }
 
         .home-info-tile-panel {
             padding: 16px 18px 18px;
             border-top: 1px solid var(--border-soft);
-            animation: microPanelIn 0.28s ease;
+        }
+
+        html.js-info-tiles .home-info-tile-panel {
+            padding: 0 18px;
+            border-top: 1px solid transparent;
+            overflow: hidden;
+            height: 0;
+            opacity: 0;
+            will-change: height, opacity;
+        }
+
+        html.js-info-tiles .home-info-tile[open] .home-info-tile-panel,
+        html.js-info-tiles .home-info-tile.is-animating-open .home-info-tile-panel {
+            border-top-color: var(--border-soft);
+        }
+
+        html.js-info-tiles .home-info-tile-panel.is-expanded {
+            height: auto;
+            opacity: 1;
+            padding: 16px 18px 18px;
+        }
+
+        html.js-info-tiles .home-info-tile-panel > * {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        html.js-info-tiles .home-info-tile.is-open-animated .home-info-tile-panel > * {
+            animation: infoTileContentIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        html.js-info-tiles .home-info-tile.is-open-animated .home-info-tile-panel > *:nth-child(1) { animation-delay: 0.04s; }
+        html.js-info-tiles .home-info-tile.is-open-animated .home-info-tile-panel > *:nth-child(2) { animation-delay: 0.1s; }
+        html.js-info-tiles .home-info-tile.is-open-animated .home-info-tile-panel > *:nth-child(3) { animation-delay: 0.16s; }
+        html.js-info-tiles .home-info-tile.is-open-animated .home-info-tile-panel > *:nth-child(4) { animation-delay: 0.22s; }
+        html.js-info-tiles .home-info-tile.is-open-animated .home-info-tile-panel > *:nth-child(n+5) { animation-delay: 0.28s; }
+
+        @keyframes infoTileContentIn {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .home-info-tile,
+            .home-info-tile-chevron,
+            .home-info-tile-icon,
+            .home-info-tile-panel {
+                transition: none !important;
+                animation: none !important;
+            }
+
+            html.js-info-tiles .home-info-tile-panel > * {
+                opacity: 1;
+                transform: none;
+                animation: none !important;
+            }
+
+            html.js-info-tiles .home-info-tile[open] .home-info-tile-panel {
+                height: auto;
+                opacity: 1;
+                padding: 16px 18px 18px;
+            }
         }
 
         .home-info-tile .editorial-intro,
