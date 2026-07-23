@@ -36,16 +36,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/logowanie</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://proteiner.pl/rejestracja</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://proteiner.pl/deficyt-kaloryczny-praktyka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -54,6 +44,16 @@
     <loc>https://proteiner.pl/planowanie-posilkow</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/logowanie</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/rejestracja</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://proteiner.pl/dodaj-produkt</loc>

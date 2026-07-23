@@ -158,7 +158,7 @@
   "tofu-naturalne": {
     "title": "Tofu — białko roślinne",
     "paragraphs": [
-      "Tofu naturalne (ok. 8 g białka, 76 kcal na 100 g) to podstawa wegetariańskiej diety wysokobiałkowej. Same w sobie jest blando — smak bierze z marynaty, sosu i obróbki (smażenie, pieczenie). Porcja 150 g to ok. 12 g białka.",
+      "Tofu (ok. 8 g białka, 76 kcal na 100 g) to podstawa wegetariańskiej diety wysokobiałkowej. Same w sobie jest blando — smak bierze z marynaty, sosu i obróbki (smażenie, pieczenie). Porcja 150 g to ok. 12 g białka.",
       "Twarde tofu lepiej nadaje się na patelnię; miękkie — do zup i smoothie. Odsącz je i obtocz w skrobi ziemniaczanej przed smażeniem, jeśli chcesz chrupiącą skórkę.",
       "Roślinne białko warto łączyć z innymi źródłami w ciągu dnia (soczewica, ciecierzyca, odżywka) — tofu rzadko wystarczy jako jedyne źródło przy wysokim zapotrzebowaniu."
     ]
@@ -561,11 +561,11 @@
     ]
   },
   "ziemniaki-gotowane": {
-    "title": "Ziemniaki gotowane",
+    "title": "Ziemniaki tłuczone",
     "paragraphs": [
-      "Ziemniaki gotowane (ok. 87 kcal, 2 g białka na 100 g) to prosta baza obiadu. Średni ziemniak 150 g to ~130 kcal — dwie sztuki to już solidna porcja węglowodanów.",
-      "Do gotowanych ziemniaków masło, śmietana lub frytka z patelni szybko podwaja kalorie. Z kefirem, twarogiem lub pieczonym kurczakiem — zbilansowany obiad.",
-      "Mierz po ugotowaniu, jeśli wpisujesz do dziennika — waga surowa i gotowa się różni."
+      "Ziemniaki tłuczone (ok. 87 kcal, 2 g białka na 100 g w samej bazie ziemniaka) to klasyczna baza obiadu. Masło, mleko lub śmietana w puree szybko podnoszą kalorie — licz dodatki osobno.",
+      "Z kefirem, twarogiem lub pieczonym kurczakiem — zbilansowany obiad. Sam puree nie zbuduje posiłku wysokobiałkowego.",
+      "Mierz porcję na talerzu, jeśli wpisujesz do dziennika — gęstość puree zależy od ilości płynu."
     ]
   },
   "bulka-pszenna": {

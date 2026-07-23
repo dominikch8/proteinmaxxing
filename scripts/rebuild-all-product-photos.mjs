@@ -76,7 +76,7 @@ const FOOD_SUBJECT = {
     bigos: 'Polish bigos hunter stew in bowl',
     'pierogi-ruskie': 'Polish pierogi ruskie dumplings on plate',
     rosol: 'clear Polish chicken broth soup with noodles in white bowl',
-    'ser-mozzarella': 'fresh mozzarella cheese ball',
+    'ser-mozzarella': 'two or three fresh white mozzarella cheese balls ciliegine, smooth wet surface, mozzarella only, NO packaging',
     'mleko-2': 'glass of white cow milk',
     'jajko-kurze-cale': 'ONE whole intact brown chicken egg with unbroken shell, whole egg only, NOT cracked, NOT open, NOT yolk',
     'skyr-naturalny': 'plain natural skyr Icelandic yogurt pure white thick cream in small white bowl, NO chocolate, NO toppings, NO sauce swirl',
@@ -92,7 +92,7 @@ const FOOD_SUBJECT = {
     ziemniaki: 'raw potatoes',
     marchew: 'fresh orange carrots',
     salami: 'salami sausage slices',
-    ricotta: 'ricotta cheese in bowl',
+    ricotta: 'creamy white ricotta cheese in a small white bowl, soft curds, ricotta only',
     'oliwa-z-oliwek': 'olive oil in clear glass bottle',
     maslo: 'butter stick or block',
     'maslo-ekstra-82': 'butter stick wrapped or block',
@@ -106,7 +106,39 @@ const FOOD_SUBJECT = {
     'jogurt-grecki-naturalny': 'plain Greek yogurt white in bowl no toppings',
     'jogurt-naturalny': 'plain natural yogurt white in bowl no toppings',
     'serek-wiejski': 'Polish cottage cheese serek wiejski in bowl',
-    'protein-pudding': 'plain protein pudding cream in bowl no chocolate swirl'
+    'protein-pudding': 'smooth vanilla protein pudding only in small cup, creamy pudding surface, NO chocolate drizzle, NO toppings, NO spoon clutter',
+    'ser-gouda': 'classic Dutch Gouda cheese wedge, smooth pale yellow-orange rind and interior, mild young Gouda, NOT smoked, NO brown smoked rind, NO paprika coating',
+    omlet: 'simple plain folded omelette on white plate, yellow egg omelette only, NO toppings, NO cheese pile, NO vegetables',
+    'jogurt-owocowy': 'fruit yogurt in small white bowl, soft pink-peach fruit yogurt color, smooth dairy, NO whole fruit chunks dominating, NO chocolate',
+    'mleko-bez-laktozy-2': 'clear glass of white lactose-free cow milk, plain white milk only, NO chocolate, NO cereal, NO cookies around',
+    'jajecznica-na-masle': 'classic soft scrambled eggs cooked in butter on a white plate, fluffy yellow scrambled eggs only',
+    'smietana-12': 'pourable light cream 12 percent fat in a small clear glass, thin liquid white cream, NOT whipped, NOT thick sour cream block',
+    'mleko-0': 'clear glass of skim white cow milk 0 percent fat, pure white milk only, NO chocolate rim, NO cocoa powder, NO cookies',
+    'ser-plesniowy-blue': 'wedge of blue cheese Roquefort style with blue-green mold veins, cheese only, NO fruit, NO honey, NO crackers',
+    'ser-cheddar': 'block or thick slices of orange cheddar cheese, classic cheddar color and texture, NO blue mold, NOT blue cheese',
+    'ser-cottage': 'cottage cheese with soft white curds in a small white bowl, cottage cheese only',
+    'smietana-18': 'pourable cream 18 percent in a clear glass, liquid white cream, NOT whipped peaks, NOT solid',
+    'smietanka-30': 'pourable heavy cream 30 percent in a clear glass, liquid thick cream, NOT whipped cream swirls',
+    'mleko-roslinne-owsiane': 'glass of oat plant milk, beige-white oat milk, plain drink only, NO oats flakes pile dominating, NO cereal bowl',
+    'ser-zolty-plastry': 'stack of yellow cheese slices, thin square sandwich cheese slices, sliced cheese only',
+    'izolat-bialka-wpi': 'scoop of white whey protein isolate powder on white background, protein powder mound only, NO bowl of food, NO shaker bottle clutter',
+    'twarog-sernikowy': 'smooth cream cheese style twaróg sernikowy for cheesecake, dense white creamy cheese block or bowl resembling cheesecake filling',
+    'ser-twarogowy-tlusty': 'full-fat Polish twaróg quark cheese white block or crumbled in bowl, fresh white cheese',
+    'jogurt-kokosowy': 'coconut yogurt in a small white bowl, white creamy yogurt with light coconut look, NOT served inside a hollow coconut shell, NO whole coconut fruit as bowl',
+    'serek-homogenizowany-danio': 'Danio style homogenized yogurt cheese in small plastic cup, creamy thick dessert yogurt, cup of Danio-like serek, NO random fruit salad',
+    'ser-mascarpone': 'mascarpone cheese in a small white bowl, smooth thick Italian cream cheese',
+    'mleko-skondensowane-slodzone': 'sweetened condensed milk metal tube squeezed with thick white condensed milk, classic condensed milk tube packaging style, dairy product',
+    'ser-emmental': 'Swiss Emmental cheese wedge with characteristic large round holes, pale yellow cheese',
+    'twarog-wiejski': 'Polish twaróg wiejski country cottage cheese with soft white curds in bowl',
+    'ser-wedzony': 'smoked cheese block or slices with brown smoked rind, clearly smoked dairy cheese, smoked look',
+    'ser-topiony-plastry': 'stack of processed melting cheese slices, individually separated style yellow cheese slices for toast',
+    'papryka-zielona': 'ONE whole ripe RED bell pepper, deep glossy red skin, green stem, red capsicum only',
+    'papryka-zolta': 'ONE whole ripe YELLOW bell pepper, bright golden yellow skin, green stem, yellow capsicum only, NOT red',
+    'papryka-czerwona': 'ONE whole ripe RED bell pepper, deep glossy red skin, green stem',
+    pieczarka: 'ONE fresh white button mushroom Agaricus, pale grayish-white cap, short white stem, classic white pieczarka, NOT brown cremini',
+    'tofu-naturalne': 'plain firm white tofu block with a few tofu cubes, tofu only, NO herbs, NO parsley, NO greens',
+    'kukurydza-konserwowa': 'open metal can of canned sweet corn with yellow corn kernels in brine, canned corn product',
+    'ziemniaki-gotowane': 'creamy mashed potatoes puree in a small white bowl, ziemniaki tłuczone, smooth mashed potato only, NOT whole raw potato'
 };
 
 const CATEGORY_SUFFIX = {
@@ -312,7 +344,7 @@ function buildPrompt(subject, refs) {
 
 function pollinationsUrl(prompt, slug, attempt = 0) {
     const seed =
-        (crypto.createHash('md5').update(`real-food-v3-${slug}-${attempt}`).digest().readUInt32BE(0) +
+        (crypto.createHash('md5').update(`dairy-fix-v2-${slug}-${attempt}`).digest().readUInt32BE(0) +
             attempt * 9973) %
         2147483646;
     const enc = encodeURIComponent(prompt.slice(0, 480));

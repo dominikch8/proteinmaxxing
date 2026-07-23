@@ -91,11 +91,11 @@ function populateCategorySelect(selectEl, opts = {}) {
 function enrichProducts(raw) {
     const seen = {};
     return raw.map((p) => {
-        let base = slugify(p.name);
+        let base = p.slug && String(p.slug).trim() ? String(p.slug).trim() : slugify(p.name);
         let slug = base;
         let n = 2;
         while (seen[slug]) {
-            slug = `${base}-${p.category}`;
+            slug = `${base}-${p.category || 'x'}`;
             if (seen[slug]) slug = `${base}-${n++}`;
         }
         seen[slug] = true;
