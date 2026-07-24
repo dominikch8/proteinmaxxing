@@ -438,7 +438,7 @@ main.main-content,
 [data-theme='dark'] .pm-atmosphere-ring--a { border-color: rgba(224, 122, 122, 0.18); }
 [data-theme='dark'] .pm-atmosphere-ring--b { border-color: rgba(96, 165, 250, 0.2); }
 
-/* Inner atmosphere — inside the content card, warmer rose + soft teal */
+/* Inner atmosphere — inside the content card, same burgundy/blue family */
 .pm-atmosphere-inner-host {
     position: relative;
     isolation: isolate;
@@ -460,56 +460,56 @@ main.main-content,
 }
 
 .pm-atmosphere--inner .pm-atmosphere-blob--a {
-    background: radial-gradient(circle, rgba(190, 68, 88, 0.16) 0%, rgba(190, 68, 88, 0.03) 68%, transparent 100%);
+    background: radial-gradient(circle, rgba(128, 0, 0, 0.12) 0%, rgba(102, 0, 0, 0.03) 68%, transparent 100%);
 }
 
 .pm-atmosphere--inner .pm-atmosphere-blob--b {
-    background: radial-gradient(circle, rgba(14, 148, 156, 0.14) 0%, rgba(15, 118, 110, 0.03) 68%, transparent 100%);
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.11) 0%, rgba(30, 58, 95, 0.03) 68%, transparent 100%);
 }
 
 .pm-atmosphere--inner .pm-atmosphere-blob--c {
-    background: radial-gradient(circle, rgba(190, 68, 88, 0.08) 0%, rgba(14, 148, 156, 0.08) 48%, transparent 72%);
+    background: radial-gradient(circle, rgba(128, 0, 0, 0.07) 0%, rgba(37, 99, 235, 0.07) 48%, transparent 72%);
 }
 
 .pm-atmosphere--inner .pm-atmosphere-blob--d {
-    background: radial-gradient(circle, rgba(14, 148, 156, 0.11) 0%, rgba(190, 68, 88, 0.05) 55%, transparent 100%);
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.09) 0%, rgba(128, 0, 0, 0.04) 55%, transparent 100%);
 }
 
 .pm-atmosphere--inner .pm-atmosphere-blob--e {
-    background: radial-gradient(circle, rgba(190, 68, 88, 0.1) 0%, rgba(14, 148, 156, 0.06) 50%, transparent 100%);
+    background: radial-gradient(circle, rgba(128, 0, 0, 0.08) 0%, rgba(37, 99, 235, 0.05) 50%, transparent 100%);
 }
 
 .pm-atmosphere--inner .pm-atmosphere-ring--a {
-    border-color: rgba(190, 68, 88, 0.14);
+    border-color: rgba(128, 0, 0, 0.1);
 }
 
 .pm-atmosphere--inner .pm-atmosphere-ring--b {
-    border-color: rgba(14, 148, 156, 0.16);
+    border-color: rgba(37, 99, 235, 0.12);
 }
 
 .pm-atmosphere--inner .pm-atmosphere-ring--c {
-    border-color: rgba(190, 68, 88, 0.12);
+    border-color: rgba(128, 0, 0, 0.09);
 }
 
 .pm-atmosphere--inner .pm-atmosphere-dot {
-    background: linear-gradient(135deg, #be4458, #0e949c);
-    box-shadow: 0 0 12px rgba(190, 68, 88, 0.35);
+    background: linear-gradient(135deg, #800000, #2563eb);
+    box-shadow: 0 0 12px rgba(128, 0, 0, 0.32);
 }
 
 .pm-atmosphere--inner .pm-atmosphere-dot--2 {
-    background: linear-gradient(135deg, #0e949c, #be4458);
+    background: linear-gradient(135deg, #2563eb, #800000);
 }
 
 [data-theme='dark'] .pm-atmosphere--inner .pm-atmosphere-blob--a {
-    background: radial-gradient(circle, rgba(244, 114, 132, 0.16) 0%, rgba(190, 68, 88, 0.04) 68%, transparent 100%);
+    background: radial-gradient(circle, rgba(176, 64, 64, 0.14) 0%, rgba(102, 0, 0, 0.04) 68%, transparent 100%);
 }
 
 [data-theme='dark'] .pm-atmosphere--inner .pm-atmosphere-blob--b {
-    background: radial-gradient(circle, rgba(45, 212, 191, 0.14) 0%, rgba(14, 148, 156, 0.04) 68%, transparent 100%);
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.13) 0%, rgba(30, 58, 95, 0.04) 68%, transparent 100%);
 }
 
-[data-theme='dark'] .pm-atmosphere--inner .pm-atmosphere-ring--a { border-color: rgba(251, 113, 133, 0.2); }
-[data-theme='dark'] .pm-atmosphere--inner .pm-atmosphere-ring--b { border-color: rgba(45, 212, 191, 0.22); }
+[data-theme='dark'] .pm-atmosphere--inner .pm-atmosphere-ring--a { border-color: rgba(224, 122, 122, 0.16); }
+[data-theme='dark'] .pm-atmosphere--inner .pm-atmosphere-ring--b { border-color: rgba(96, 165, 250, 0.18); }
 
 @media (prefers-reduced-motion: reduce) {
     .pm-atmosphere-blob,
