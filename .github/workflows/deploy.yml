@@ -55,6 +55,7 @@ jobs:
           **/api/config.local.php
           **/data/*.sqlite
           **/images/products/*.png
+          !**/images/products/sos-1000-wysp.png
           **/domains/**
 
     - name: Weryfikacja deployu
