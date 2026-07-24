@@ -1,0 +1,290 @@
+﻿[
+    {
+        "file":  "images/articles/stores/biedronka/b-skyr-go-active.jpg",
+        "store":  "biedronka",
+        "source":  "https://images.openfoodfacts.org/images/products/859/558/820/5302/front_en.8.400.jpg",
+        "fallback":  false,
+        "product":  "Protein Pudding Że Wsadem",
+        "ok":  true,
+        "bytes":  19096
+    },
+    {
+        "file":  "images/articles/stores/biedronka/b-twarog.jpg",
+        "store":  "biedronka",
+        "source":  "https://images.openfoodfacts.org/images/products/590/082/002/1962/front_en.21.400.jpg",
+        "fallback":  false,
+        "product":  "Twaróg Klinek (Chudy)",
+        "ok":  true,
+        "bytes":  17878
+    },
+    {
+        "file":  "images/articles/stores/biedronka/b-piers-kurczaka.jpg",
+        "store":  "biedronka",
+        "source":  "https://images.openfoodfacts.org/images/products/590/019/601/1369/front_pl.5.400.jpg",
+        "fallback":  false,
+        "product":  "Pieczona Pierś Z Kurczaka",
+        "ok":  true,
+        "bytes":  34890
+    },
+    {
+        "file":  "images/articles/stores/biedronka/b-jajka.jpg",
+        "store":  "biedronka",
+        "source":  "https://images.openfoodfacts.org/images/products/000/002/014/7242/front_pl.28.400.jpg",
+        "fallback":  false,
+        "product":  "Jaja Z Chowu Na Wolnym Wybiegu M",
+        "ok":  true,
+        "bytes":  28865
+    },
+    {
+        "file":  "images/articles/stores/biedronka/b-tunczyk.jpg",
+        "store":  "biedronka",
+        "source":  "https://images.openfoodfacts.org/images/products/590/389/563/9179/front_pl.4.400.jpg",
+        "fallback":  false,
+        "product":  "Tuna Canned In Water",
+        "ok":  true,
+        "bytes":  21117
+    },
+    {
+        "file":  "images/articles/stores/biedronka/b-serek-wiejski.jpg",
+        "store":  "biedronka",
+        "source":  "https://images.openfoodfacts.org/images/products/590/053/100/0010/front_en.27.400.jpg",
+        "fallback":  false,
+        "product":  "SEREK WIEJSKI",
+        "ok":  true,
+        "bytes":  39808
+    },
+    {
+        "file":  "images/articles/stores/biedronka/b-szynka-drobiowa.jpg",
+        "store":  "biedronka",
+        "source":  "https://images.openfoodfacts.org/images/products/590/033/161/0204/front_pl.4.400.jpg",
+        "fallback":  false,
+        "product":  "Szynka Drobiowa Gotowana",
+        "ok":  true,
+        "bytes":  28571
+    },
+    {
+        "file":  "images/articles/stores/biedronka/b-mintaj.jpg",
+        "store":  "biedronka",
+        "source":  "https://images.openfoodfacts.org/images/products/590/097/200/7920/front_en.3.400.jpg",
+        "fallback":  false,
+        "product":  "Złoty mintaj",
+        "ok":  true,
+        "bytes":  29147
+    },
+    {
+        "file":  "images/articles/stores/lidl/l-pilos-skyr.jpg",
+        "store":  "lidl",
+        "source":  "https://images.openfoodfacts.org/images/products/590/053/100/4667/front_en.4.400.jpg",
+        "fallback":  false,
+        "product":  "Skyr",
+        "ok":  true,
+        "bytes":  16445
+    },
+    {
+        "file":  "images/articles/stores/lidl/l-pilos-pudding.jpg",
+        "store":  "lidl",
+        "source":  "https://images.openfoodfacts.org/images/products/433/561/912/6398/front_pl.9.400.jpg",
+        "fallback":  false,
+        "product":  "High Protein Pudding - Citrom",
+        "ok":  true,
+        "bytes":  43024
+    },
+    {
+        "file":  "images/articles/stores/lidl/l-pilos-twarog.jpg",
+        "store":  "lidl",
+        "source":  "https://images.openfoodfacts.org/images/products/000/002/085/8094/front_en.9.400.jpg",
+        "fallback":  false,
+        "product":  "twaróg",
+        "ok":  true,
+        "bytes":  20352
+    },
+    {
+        "file":  "images/articles/stores/lidl/l-nixe-tunczyk.jpg",
+        "store":  "lidl",
+        "source":  "https://images.openfoodfacts.org/images/products/405/648/925/4676/front_en.89.400.jpg",
+        "fallback":  false,
+        "product":  "Thunfisch Filets in Sonnenblumenöl",
+        "ok":  true,
+        "bytes":  21866
+    },
+    {
+        "file":  "images/articles/stores/lidl/l-crane-kurczak.jpg",
+        "store":  "lidl",
+        "source":  "https://images.openfoodfacts.org/images/products/000/002/069/0069/front_en.9.400.jpg",
+        "fallback":  false,
+        "product":  "Piratki Filet z Kurczaka",
+        "ok":  true,
+        "bytes":  33669
+    },
+    {
+        "file":  "images/articles/stores/lidl/l-tofu.jpg",
+        "store":  "lidl",
+        "source":  "https://images.openfoodfacts.org/images/products/405/648/952/9712/front_pl.25.400.jpg",
+        "fallback":  false,
+        "product":  "Tofu plain",
+        "ok":  true,
+        "bytes":  15647
+    },
+    {
+        "file":  "images/articles/stores/lidl/l-bialka-jaj.jpg",
+        "store":  "lidl",
+        "source":  "https://images.openfoodfacts.org/images/products/506/015/094/0002/front_en.58.400.jpg",
+        "fallback":  false,
+        "product":  "Liquid Egg Whites",
+        "ok":  true,
+        "bytes":  26465
+    },
+    {
+        "file":  "images/articles/stores/lidl/l-poledwica.jpg",
+        "store":  "lidl",
+        "source":  "https://images.openfoodfacts.org/images/products/405/648/978/9857/front_en.24.400.jpg",
+        "fallback":  false,
+        "product":  "Smoked Salmon Slices",
+        "ok":  true,
+        "bytes":  34844
+    },
+    {
+        "file":  "images/articles/stores/auchan/a-twarog-auchan.jpg",
+        "store":  "auchan",
+        "source":  "https://images.openfoodfacts.org/images/products/590/082/002/1962/front_en.21.400.jpg",
+        "fallback":  false,
+        "product":  "Twaróg Klinek (Chudy)",
+        "ok":  true,
+        "bytes":  17878
+    },
+    {
+        "file":  "images/articles/stores/auchan/a-serek-hp.jpg",
+        "store":  "auchan",
+        "source":  "images/products/serek-wiejski.jpg",
+        "fallback":  true,
+        "product":  null,
+        "ok":  true,
+        "bytes":  21155
+    },
+    {
+        "file":  "images/articles/stores/auchan/a-tofu.jpg",
+        "store":  "auchan",
+        "source":  "https://images.openfoodfacts.org/images/products/590/421/514/5738/front_pl.3.400.jpg",
+        "fallback":  false,
+        "product":  "Tofu naturalne",
+        "ok":  true,
+        "bytes":  22846
+    },
+    {
+        "file":  "images/articles/stores/auchan/a-piers-kurczaka.jpg",
+        "store":  "auchan",
+        "source":  "https://images.openfoodfacts.org/images/products/404/777/714/4953/front_en.3.400.jpg",
+        "fallback":  false,
+        "product":  "Mf piers z kurczaka",
+        "ok":  true,
+        "bytes":  20510
+    },
+    {
+        "file":  "images/articles/stores/auchan/a-indyk-mielony.jpg",
+        "store":  "auchan",
+        "source":  "https://images.openfoodfacts.org/images/products/405/648/988/1667/front_de.32.400.jpg",
+        "fallback":  false,
+        "product":  "",
+        "ok":  true,
+        "bytes":  29139
+    },
+    {
+        "file":  "images/articles/stores/auchan/a-dorsz.jpg",
+        "store":  "auchan",
+        "source":  "https://images.openfoodfacts.org/images/products/000/000/244/7423/front_pl.5.400.jpg",
+        "fallback":  false,
+        "product":  "Dorsz z oliwą i czosnkiem",
+        "ok":  true,
+        "bytes":  15196
+    },
+    {
+        "file":  "images/articles/stores/auchan/a-krewetki.jpg",
+        "store":  "auchan",
+        "source":  "https://images.openfoodfacts.org/images/products/345/097/009/2043/front_fr.19.400.jpg",
+        "fallback":  false,
+        "product":  "Crevettes décortiquées cuites",
+        "ok":  true,
+        "bytes":  33141
+    },
+    {
+        "file":  "images/articles/stores/auchan/a-fasola.jpg",
+        "store":  "auchan",
+        "source":  "https://images.openfoodfacts.org/images/products/590/671/620/8479/front_pl.3.400.jpg",
+        "fallback":  false,
+        "product":  "Fasola biała konserwowa",
+        "ok":  true,
+        "bytes":  24532
+    },
+    {
+        "file":  "images/articles/stores/carrefour/c-skyr.jpg",
+        "store":  "carrefour",
+        "source":  "https://images.openfoodfacts.org/images/products/590/578/436/3165/front_pl.3.400.jpg",
+        "fallback":  false,
+        "product":  "Skyr Naturalny",
+        "ok":  true,
+        "bytes":  19035
+    },
+    {
+        "file":  "images/articles/stores/carrefour/c-cottage.jpg",
+        "store":  "carrefour",
+        "source":  "https://images.openfoodfacts.org/images/products/000/002/000/2183/front_it.417.400.jpg",
+        "fallback":  false,
+        "product":  "Fiocchi di latte",
+        "ok":  true,
+        "bytes":  41674
+    },
+    {
+        "file":  "images/articles/stores/carrefour/c-losos-wedzony.jpg",
+        "store":  "carrefour",
+        "source":  "https://images.openfoodfacts.org/images/products/590/262/749/6172/front_en.4.400.jpg",
+        "fallback":  false,
+        "product":  "Salmone argentato coho della Patagonia",
+        "ok":  true,
+        "bytes":  25550
+    },
+    {
+        "file":  "images/articles/stores/carrefour/c-szynka.jpg",
+        "store":  "carrefour",
+        "source":  "https://images.openfoodfacts.org/images/products/590/033/161/0204/front_pl.4.400.jpg",
+        "fallback":  false,
+        "product":  "Szynka Drobiowa Gotowana",
+        "ok":  true,
+        "bytes":  28571
+    },
+    {
+        "file":  "images/articles/stores/carrefour/c-tunczyk.jpg",
+        "store":  "carrefour",
+        "source":  "https://images.openfoodfacts.org/images/products/000/000/019/2125/front_en.49.400.jpg",
+        "fallback":  false,
+        "product":  "Tunа Chunks in Spring Water",
+        "ok":  true,
+        "bytes":  30702
+    },
+    {
+        "file":  "images/articles/stores/carrefour/c-jajka.jpg",
+        "store":  "carrefour",
+        "source":  "https://images.openfoodfacts.org/images/products/000/002/014/7242/front_pl.28.400.jpg",
+        "fallback":  false,
+        "product":  "Jaja Z Chowu Na Wolnym Wybiegu M",
+        "ok":  true,
+        "bytes":  28865
+    },
+    {
+        "file":  "images/articles/stores/carrefour/c-tofu.jpg",
+        "store":  "carrefour",
+        "source":  "https://images.openfoodfacts.org/images/products/356/007/122/2499/front_fr.45.400.jpg",
+        "fallback":  false,
+        "product":  "Poêlée de nouilles chinoises",
+        "ok":  true,
+        "bytes":  44120
+    },
+    {
+        "file":  "images/articles/stores/carrefour/c-piers-kurczaka.jpg",
+        "store":  "carrefour",
+        "source":  "https://images.openfoodfacts.org/images/products/590/019/601/1369/front_pl.5.400.jpg",
+        "fallback":  false,
+        "product":  "Pieczona Pierś Z Kurczaka",
+        "ok":  true,
+        "bytes":  34890
+    }
+]

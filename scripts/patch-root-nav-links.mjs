@@ -27,7 +27,11 @@ const ROOT_PAGES = [
     ['trening.html', 'trening.html'],
     ['deficyt-kaloryczny-praktyka.html', 'deficyt-kaloryczny-praktyka.html'],
     ['planowanie-posilkow.html', 'planowanie-posilkow.html'],
-    ['najlepsze-zrodla-bialka-biedronka-lidl-auchan-carrefour.html', 'najlepsze-zrodla-bialka-biedronka-lidl-auchan-carrefour.html']
+    ['najlepsze-zrodla-bialka-biedronka-lidl-auchan-carrefour.html', 'najlepsze-zrodla-bialka-biedronka-lidl-auchan-carrefour.html'],
+    ['zrodla-bialka-biedronka.html', 'zrodla-bialka-biedronka.html'],
+    ['zrodla-bialka-lidl.html', 'zrodla-bialka-lidl.html'],
+    ['zrodla-bialka-auchan.html', 'zrodla-bialka-auchan.html'],
+    ['zrodla-bialka-carrefour.html', 'zrodla-bialka-carrefour.html']
 ];
 
 function walkHtml(dir, list = []) {
