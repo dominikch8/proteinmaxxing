@@ -62,8 +62,9 @@
 .compare-atmosphere-blob--c {
     width: min(36vw, 280px);
     height: min(36vw, 280px);
-    top: 42%;
-    left: 38%;
+    top: auto;
+    bottom: 10%;
+    left: 32%;
     background: radial-gradient(circle, rgba(128, 0, 0, 0.08) 0%, rgba(37, 99, 235, 0.07) 45%, transparent 72%);
     animation: compareAtmosphereDriftA 22s ease-in-out infinite reverse;
     filter: blur(80px);
@@ -79,7 +80,7 @@
 .compare-atmosphere-ring--a {
     width: min(48vw, 420px);
     height: min(48vw, 420px);
-    top: -4%;
+    top: 6%;
     left: 8%;
     border-color: rgba(128, 0, 0, 0.12);
     animation: compareRingPulse 4.2s ease-out infinite;
@@ -88,7 +89,8 @@
 .compare-atmosphere-ring--b {
     width: min(42vw, 360px);
     height: min(42vw, 360px);
-    top: 8%;
+    top: auto;
+    bottom: 14%;
     right: 6%;
     border-color: rgba(37, 99, 235, 0.14);
     animation: compareRingPulse 4.6s ease-out 1s infinite;
@@ -104,12 +106,12 @@
     animation: compareSparkFloat 3.6s ease-in-out infinite;
 }
 
-.compare-atmosphere-spark--1 { top: 18%; left: 14%; }
+.compare-atmosphere-spark--1 { top: 14%; left: 14%; }
 .compare-atmosphere-spark--2 { top: 28%; right: 18%; animation-delay: 0.7s; background: linear-gradient(135deg, #2563eb, #800000); }
 .compare-atmosphere-spark--3 { top: 48%; left: 22%; animation-delay: 1.3s; width: 4px; height: 4px; }
-.compare-atmosphere-spark--4 { top: 22%; left: 52%; animation-delay: 1.9s; }
-.compare-atmosphere-spark--5 { top: 40%; right: 28%; animation-delay: 2.4s; width: 3px; height: 3px; }
-.compare-atmosphere-spark--6 { top: 12%; right: 40%; animation-delay: 3s; }
+.compare-atmosphere-spark--4 { top: 62%; left: 52%; animation-delay: 1.9s; }
+.compare-atmosphere-spark--5 { top: 76%; right: 28%; animation-delay: 2.4s; width: 3px; height: 3px; }
+.compare-atmosphere-spark--6 { top: 88%; left: 40%; animation-delay: 3s; }
 
 
 /* Hero arena */

@@ -272,8 +272,7 @@ body.compare-body {
 
 .compare-atmosphere {
     position: absolute;
-    inset: -40px 0 auto;
-    height: min(520px, 72vh);
+    inset: -36px -16px;
     pointer-events: none;
     z-index: 0;
     overflow: hidden;
@@ -289,7 +288,7 @@ body.compare-body {
 .compare-atmosphere-blob--a {
     width: min(42vw, 340px);
     height: min(42vw, 340px);
-    top: -8%;
+    top: 6%;
     left: -6%;
     background: radial-gradient(circle, rgba(128, 0, 0, 0.16) 0%, rgba(102, 0, 0, 0.04) 68%, transparent 100%);
     animation: compareAtmosphereDriftA 16s ease-in-out infinite;
@@ -298,7 +297,7 @@ body.compare-body {
 .compare-atmosphere-blob--b {
     width: min(46vw, 380px);
     height: min(46vw, 380px);
-    top: 4%;
+    top: 22%;
     right: -8%;
     background: radial-gradient(circle, rgba(37, 99, 235, 0.14) 0%, rgba(30, 58, 95, 0.04) 68%, transparent 100%);
     animation: compareAtmosphereDriftB 19s ease-in-out infinite;
