@@ -20,10 +20,13 @@
     updateScrollState();
     window.addEventListener('scroll', updateScrollState, { passive: true });
 
-    // Enable header transitions only after first paint (prevents tab-switch flicker)
-    requestAnimationFrame(() => {
-        requestAnimationFrame(markChromeReady);
-    });
+    // Enable chrome transitions + page settle only after first paint
+    // (avoids opacity/backdrop flash when switching top-nav tabs)
+    function afterFirstPaint(fn) {
+        requestAnimationFrame(() => {
+            requestAnimationFrame(fn);
+        });
+    }
 
     if (reduce) {
         root.classList.add('pm-motion-reduce');
@@ -33,7 +36,10 @@
     }
 
     root.classList.add('pm-motion');
-    markReady();
+    afterFirstPaint(() => {
+        markChromeReady();
+        markReady();
+    });
 
     const REVEAL_SELECTOR = [
         '.product-card-link',

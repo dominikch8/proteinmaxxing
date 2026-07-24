@@ -32,7 +32,7 @@
     --danger: #dc2626;
     --danger-bg: #fef2f2;
     --ink: #0f172a;
-    --header-bg: rgba(255, 255, 255, 0.82);
+    --header-bg: rgba(255, 255, 255, 0.92);
     --header-border: rgba(226, 232, 240, 0.9);
     --header-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 8px 28px rgba(15, 23, 42, 0.06);
     --main-border: rgba(226, 232, 240, 0.85);
@@ -120,7 +120,7 @@
     --danger: #f87171;
     --danger-bg: rgba(127, 29, 29, 0.35);
     --ink: #f8fafc;
-    --header-bg: rgba(10, 14, 26, 0.86);
+    --header-bg: rgba(10, 14, 26, 0.94);
     --header-border: rgba(59, 130, 246, 0.2);
     --header-shadow: 0 10px 36px rgba(0, 0, 0, 0.45);
     --main-border: rgba(147, 197, 253, 0.16);

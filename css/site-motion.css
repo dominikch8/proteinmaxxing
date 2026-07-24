@@ -8,24 +8,21 @@
     --pm-ease-spring: cubic-bezier(0.34, 1.2, 0.64, 1);
 }
 
+/* Page settle — no opacity:0 (that caused a flash on every top-nav click) */
 @keyframes pmFadeUp {
     from {
-        opacity: 0;
-        transform: translateY(16px);
+        transform: translateY(8px);
     }
     to {
-        opacity: 1;
         transform: none;
     }
 }
 
 @keyframes pmFadeScale {
     from {
-        opacity: 0;
-        transform: translateY(12px) scale(0.985);
+        transform: translateY(6px) scale(0.992);
     }
     to {
-        opacity: 1;
         transform: none;
     }
 }
@@ -40,23 +37,23 @@
     50% { box-shadow: 0 12px 34px rgba(30, 58, 138, 0.32), 0 6px 16px var(--primary-glow); }
 }
 
-/* Page entrance */
+/* Page entrance — transform only, fill-mode forwards (never hide content) */
 html.pm-motion body.pm-motion-ready:not(.compare-body) .page-hero {
-    animation: pmFadeUp 0.58s var(--pm-ease-out) both;
+    animation: pmFadeUp 0.45s var(--pm-ease-out) forwards;
 }
 
 html.pm-motion body.pm-motion-ready:not(.compare-body) .page-hero::after {
     transform-origin: center;
-    animation: pmBarGrow 0.7s var(--pm-ease-out) 0.18s both;
+    animation: pmBarGrow 0.7s var(--pm-ease-out) 0.12s forwards;
 }
 
 html.pm-motion body.pm-motion-ready:not(.compare-body) .main-content > .sub-nav,
 html.pm-motion body.pm-motion-ready:not(.compare-body) .product-page > .product-hero-card {
-    animation: pmFadeScale 0.5s var(--pm-ease-out) 0.06s both;
+    animation: pmFadeScale 0.4s var(--pm-ease-out) 0.04s forwards;
 }
 
 html.pm-motion body.pm-motion-ready:not(.compare-body) .main-content {
-    animation: pmFadeScale 0.55s var(--pm-ease-out) both;
+    animation: pmFadeScale 0.42s var(--pm-ease-out) forwards;
 }
 
 /* Scroll reveals */
@@ -75,13 +72,15 @@ html.pm-motion .pm-reveal.pm-revealed {
     transition-delay: var(--pm-stagger, 0ms);
 }
 
-/* Header scroll state */
+/* Header: keep sticky + high z-index (do not demote to relative/z-index:1) */
 .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     transition:
         background 0.35s var(--pm-ease-soft),
         box-shadow 0.35s var(--pm-ease-soft),
-        border-color 0.35s var(--pm-ease-soft),
-        backdrop-filter 0.35s var(--pm-ease-soft);
+        border-color 0.35s var(--pm-ease-soft);
 }
 
 /* Avoid header chrome twitching on first paint / tab navigation */
@@ -94,7 +93,7 @@ html:not(.pm-chrome-ready) .nav-links a.nav-link {
 }
 
 html.pm-scrolled .site-header {
-    background: color-mix(in srgb, var(--header-bg) 96%, #fff 4%);
+    background: color-mix(in srgb, var(--header-bg) 98%, #fff 2%);
     box-shadow: 0 10px 32px rgba(15, 23, 42, 0.08);
     border-bottom-color: color-mix(in srgb, var(--header-border) 80%, transparent);
 }
@@ -325,7 +324,6 @@ html.pm-scrolled .main-content {
     position: relative;
 }
 
-.site-header,
 .page-container,
 .site-footer,
 main.product-page,
