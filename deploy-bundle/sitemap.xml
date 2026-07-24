@@ -46,6 +46,36 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://proteiner.pl/produkty-bialkowe-czy-oplacalne</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/najlepsze-zrodla-bialka-biedronka-lidl-auchan-carrefour</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/zrodla-bialka-biedronka</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/zrodla-bialka-lidl</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/zrodla-bialka-auchan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/zrodla-bialka-carrefour</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://proteiner.pl/logowanie</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
