@@ -368,7 +368,7 @@
             background: var(--main-glow);
             pointer-events: none;
             z-index: 0;
-            animation: pmMainGlowDrift 18s ease-in-out infinite;
+            animation: pmMainGlowDrift 13s ease-in-out infinite;
         }
 
         @keyframes pmMainGlowDrift {
