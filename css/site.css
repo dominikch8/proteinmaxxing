@@ -2319,35 +2319,61 @@
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 12px;
             margin-top: 28px;
-            align-items: stretch;
+            align-items: start;
         }
 
-        /* Dzieci (pasek + panel) trafiają do siatki rodzica — kafelki zostają w rzędzie,
-           a treść otwiera się pełną szerokością pod nimi. */
         .home-info-tile {
-            display: contents;
-        }
-
-        .home-info-tile > .home-info-tile-bar {
-            grid-row: 1;
-            min-width: 0;
-        }
-
-        .home-info-tile:nth-child(1) > .home-info-tile-bar { grid-column: 1; }
-        .home-info-tile:nth-child(2) > .home-info-tile-bar { grid-column: 2; }
-        .home-info-tile:nth-child(3) > .home-info-tile-bar { grid-column: 3; }
-
-        .home-info-tile > .home-info-tile-panel {
-            grid-column: 1 / -1;
-            grid-row: 2;
             border-radius: var(--radius-lg);
             border: 1px solid var(--calc-tile-border);
             background: var(--calc-tile-bg);
             box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            align-self: stretch;
+            transition:
+                box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                border-color 0.35s ease,
+                transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
         }
 
-        .home-info-tile:not([open]):not(.is-animating-open) > .home-info-tile-panel {
-            display: none;
+        .home-info-tile:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-1px);
+        }
+
+        .home-info-tile[open],
+        .home-info-tile.is-animating-open {
+            box-shadow: var(--shadow-md);
+            transform: none;
+            border-color: rgba(37, 99, 235, 0.22);
+        }
+
+        /* Pełna szerokość pod rzędem kafelków (JS przenosi tu panel) */
+        .home-info-tiles-outlet {
+            grid-column: 1 / -1;
+            width: 100%;
+            min-width: 0;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--calc-tile-border);
+            background: var(--calc-tile-bg);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .home-info-tiles-outlet[hidden] {
+            display: none !important;
+        }
+
+        .home-info-tiles-outlet.is-warning {
+            border-color: rgba(180, 83, 9, 0.25);
+            background: linear-gradient(180deg, #fffbeb 0%, #fef3c7 100%);
+        }
+
+        [data-theme='dark'] .home-info-tiles-outlet.is-warning {
+            border-color: rgba(251, 191, 36, 0.25);
+            background: linear-gradient(180deg, rgba(120, 53, 15, 0.35) 0%, rgba(69, 26, 3, 0.5) 100%);
         }
 
         .home-info-tile-bar {
@@ -2360,34 +2386,18 @@
             cursor: pointer;
             list-style: none;
             user-select: none;
-            border-radius: var(--radius-lg);
-            border: 1px solid var(--calc-tile-border);
-            background: var(--calc-tile-bg);
-            box-shadow: var(--shadow-sm);
-            transition:
-                background 0.3s ease,
-                box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
-                border-color 0.35s ease,
-                transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-        }
-
-        .home-info-tile-bar:hover {
-            box-shadow: var(--shadow-md);
-            transform: translateY(-1px);
-            background: var(--calc-tile-bg-emphasis);
-        }
-
-        .home-info-tile[open] > .home-info-tile-bar,
-        .home-info-tile.is-animating-open > .home-info-tile-bar {
-            box-shadow: var(--shadow-md);
-            transform: none;
-            border-color: rgba(37, 99, 235, 0.22);
-            background: var(--calc-tile-bg-emphasis);
+            transition: background 0.3s ease;
+            flex: 1;
         }
 
         .home-info-tile-bar::-webkit-details-marker { display: none; }
 
         .home-info-tile-bar::marker { content: ''; }
+
+        .home-info-tile-bar:hover,
+        .home-info-tile[open] > .home-info-tile-bar {
+            background: var(--calc-tile-bg-emphasis);
+        }
 
         .home-info-tile-icon {
             font-size: 1.35rem;
@@ -2451,36 +2461,53 @@
 
         .home-info-tile-panel {
             padding: 16px 18px 18px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
-        html.js-info-tiles .home-info-tile-panel {
+        /* Bez JS: otwarty kafelek rozciąga się na całą szerokość */
+        html:not(.js-info-tiles) .home-info-tile[open] {
+            grid-column: 1 / -1;
+        }
+
+        /* Z JS: panel w kafelku jest schowany — treść jest w outletcie */
+        html.js-info-tiles .home-info-tile > .home-info-tile-panel {
+            display: none;
+        }
+
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel {
+            display: block;
             padding: 0 18px;
             overflow: hidden;
             height: 0;
             opacity: 0;
             will-change: height, opacity;
+            border: none;
+            background: transparent;
+            box-shadow: none;
         }
 
-        html.js-info-tiles .home-info-tile-panel.is-expanded {
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded {
             height: auto;
             opacity: 1;
             padding: 16px 18px 18px;
         }
 
-        html.js-info-tiles .home-info-tile-panel > * {
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel > * {
             opacity: 0;
             transform: translateY(10px);
         }
 
-        html.js-info-tiles .home-info-tile.is-open-animated .home-info-tile-panel > * {
+        html.js-info-tiles .home-info-tile.is-open-animated ~ .home-info-tiles-outlet > .home-info-tile-panel > *,
+        html.js-info-tiles .home-info-tiles-outlet:has(.home-info-tile-panel.is-expanded) > .home-info-tile-panel.is-expanded > * {
             animation: infoTileContentIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
         }
 
-        html.js-info-tiles .home-info-tile.is-open-animated .home-info-tile-panel > *:nth-child(1) { animation-delay: 0.04s; }
-        html.js-info-tiles .home-info-tile.is-open-animated .home-info-tile-panel > *:nth-child(2) { animation-delay: 0.1s; }
-        html.js-info-tiles .home-info-tile.is-open-animated .home-info-tile-panel > *:nth-child(3) { animation-delay: 0.16s; }
-        html.js-info-tiles .home-info-tile.is-open-animated .home-info-tile-panel > *:nth-child(4) { animation-delay: 0.22s; }
-        html.js-info-tiles .home-info-tile.is-open-animated .home-info-tile-panel > *:nth-child(n+5) { animation-delay: 0.28s; }
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(1) { animation-delay: 0.04s; }
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(2) { animation-delay: 0.1s; }
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(3) { animation-delay: 0.16s; }
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(4) { animation-delay: 0.22s; }
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(n+5) { animation-delay: 0.28s; }
 
         @keyframes infoTileContentIn {
             from {
@@ -2494,7 +2521,7 @@
         }
 
         @media (prefers-reduced-motion: reduce) {
-            .home-info-tile-bar,
+            .home-info-tile,
             .home-info-tile-chevron,
             .home-info-tile-icon,
             .home-info-tile-panel {
@@ -2502,13 +2529,13 @@
                 animation: none !important;
             }
 
-            html.js-info-tiles .home-info-tile-panel > * {
+            html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel > * {
                 opacity: 1;
                 transform: none;
                 animation: none !important;
             }
 
-            html.js-info-tiles .home-info-tile[open] .home-info-tile-panel {
+            html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded {
                 height: auto;
                 opacity: 1;
                 padding: 16px 18px 18px;
@@ -2516,7 +2543,9 @@
         }
 
         .home-info-tile .editorial-intro,
-        .home-info-tile .calc-methodology {
+        .home-info-tile .calc-methodology,
+        .home-info-tiles-outlet .editorial-intro,
+        .home-info-tiles-outlet .calc-methodology {
             margin: 0;
             padding: 0;
             border: none;
@@ -2524,22 +2553,18 @@
             box-shadow: none;
         }
 
-        .home-info-tile--warning > .home-info-tile-bar {
+        .home-info-tile--warning {
             border-color: rgba(180, 83, 9, 0.25);
+        }
+
+        .home-info-tile--warning > .home-info-tile-bar {
             background: linear-gradient(180deg, #fffbeb 0%, #fef3c7 100%);
             color: #78350f;
         }
 
         .home-info-tile--warning > .home-info-tile-bar:hover,
-        .home-info-tile--warning[open] > .home-info-tile-bar,
-        .home-info-tile--warning.is-animating-open > .home-info-tile-bar {
+        .home-info-tile--warning[open] > .home-info-tile-bar {
             background: linear-gradient(180deg, #fef3c7 0%, #fde68a 100%);
-            border-color: rgba(180, 83, 9, 0.35);
-        }
-
-        .home-info-tile--warning > .home-info-tile-panel {
-            border-color: rgba(180, 83, 9, 0.25);
-            background: linear-gradient(180deg, #fffbeb 0%, #fef3c7 100%);
         }
 
         .home-info-tile--warning .home-info-tile-title,
@@ -2551,7 +2576,8 @@
             border-color: currentColor;
         }
 
-        .home-info-tile .health-disclaimer {
+        .home-info-tile .health-disclaimer,
+        .home-info-tiles-outlet .health-disclaimer {
             margin: 0;
             padding: 0;
             border: none;
@@ -2561,49 +2587,32 @@
             color: var(--text-muted);
         }
 
-        [data-theme='dark'] .home-info-tile--warning > .home-info-tile-bar {
+        [data-theme='dark'] .home-info-tile--warning {
             border-color: rgba(251, 191, 36, 0.25);
+        }
+
+        [data-theme='dark'] .home-info-tile--warning > .home-info-tile-bar {
             background: linear-gradient(180deg, rgba(120, 53, 15, 0.35) 0%, rgba(69, 26, 3, 0.5) 100%);
             color: #fde68a;
         }
 
         [data-theme='dark'] .home-info-tile--warning > .home-info-tile-bar:hover,
-        [data-theme='dark'] .home-info-tile--warning[open] > .home-info-tile-bar,
-        [data-theme='dark'] .home-info-tile--warning.is-animating-open > .home-info-tile-bar {
+        [data-theme='dark'] .home-info-tile--warning[open] > .home-info-tile-bar {
             background: linear-gradient(180deg, rgba(120, 53, 15, 0.5) 0%, rgba(69, 26, 3, 0.65) 100%);
-        }
-
-        [data-theme='dark'] .home-info-tile--warning > .home-info-tile-panel {
-            border-color: rgba(251, 191, 36, 0.25);
-            background: linear-gradient(180deg, rgba(120, 53, 15, 0.35) 0%, rgba(69, 26, 3, 0.5) 100%);
         }
 
         .home-info-tiles--2 {
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
-        .home-info-tiles--2 .home-info-tile:nth-child(1) > .home-info-tile-bar { grid-column: 1; }
-        .home-info-tiles--2 .home-info-tile:nth-child(2) > .home-info-tile-bar { grid-column: 2; }
-
         .home-info-tiles--1 {
             grid-template-columns: 1fr;
         }
-
-        .home-info-tiles--1 .home-info-tile:nth-child(1) > .home-info-tile-bar { grid-column: 1; }
 
         @media (max-width: 768px) {
             .home-info-tiles,
             .home-info-tiles--2 {
                 grid-template-columns: 1fr;
-            }
-
-            .home-info-tile:nth-child(1) > .home-info-tile-bar { grid-column: 1; grid-row: 1; }
-            .home-info-tile:nth-child(2) > .home-info-tile-bar { grid-column: 1; grid-row: 2; }
-            .home-info-tile:nth-child(3) > .home-info-tile-bar { grid-column: 1; grid-row: 3; }
-
-            .home-info-tile > .home-info-tile-panel {
-                grid-column: 1;
-                grid-row: 99;
             }
         }
 
