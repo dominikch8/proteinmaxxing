@@ -52,11 +52,16 @@
             top: 0;
             z-index: 100;
             overflow: visible;
-            background: var(--header-bg);
-            backdrop-filter: blur(18px) saturate(1.35);
-            -webkit-backdrop-filter: blur(18px) saturate(1.35);
+            background: color-mix(in srgb, var(--header-bg) 92%, #ffffff 8%);
+            backdrop-filter: blur(14px) saturate(1.2);
+            -webkit-backdrop-filter: blur(14px) saturate(1.2);
             border-bottom: 1px solid var(--header-border);
             box-shadow: var(--header-shadow);
+            isolation: isolate;
+        }
+
+        [data-theme='dark'] .site-header {
+            background: color-mix(in srgb, var(--header-bg) 94%, #0a0e1a 6%);
         }
 
         nav {

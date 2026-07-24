@@ -9,6 +9,10 @@
         document.body.classList.add('pm-motion-ready');
     }
 
+    function markChromeReady() {
+        document.documentElement.classList.add('pm-chrome-ready');
+    }
+
     function updateScrollState() {
         root.classList.toggle('pm-scrolled', window.scrollY > 8);
     }
@@ -16,9 +20,15 @@
     updateScrollState();
     window.addEventListener('scroll', updateScrollState, { passive: true });
 
+    // Enable header transitions only after first paint (prevents tab-switch flicker)
+    requestAnimationFrame(() => {
+        requestAnimationFrame(markChromeReady);
+    });
+
     if (reduce) {
         root.classList.add('pm-motion-reduce');
         markReady();
+        markChromeReady();
         return;
     }
 
@@ -176,6 +186,11 @@
             new ResizeObserver(sync).observe(host);
         }
         [400, 1200, 2500].forEach((ms) => setTimeout(sync, ms));
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                layer.classList.add('is-live');
+            });
+        });
     }
 
     function syncCompareAtmosphere() {
@@ -224,6 +239,13 @@
             }
 
             [400, 1200, 2500].forEach((ms) => setTimeout(syncHeight, ms));
+
+            // Activate motion after paint so sticky header doesn't sample animating blur
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    layer.classList.add('is-live');
+                });
+            });
         }
 
         mountInnerAtmosphere();

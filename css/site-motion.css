@@ -84,8 +84,17 @@ html.pm-motion .pm-reveal.pm-revealed {
         backdrop-filter 0.35s var(--pm-ease-soft);
 }
 
+/* Avoid header chrome twitching on first paint / tab navigation */
+html:not(.pm-chrome-ready) .site-header,
+html:not(.pm-chrome-ready) .site-header .logo,
+html:not(.pm-chrome-ready) .site-header .logo-mark,
+html:not(.pm-chrome-ready) .nav-links button,
+html:not(.pm-chrome-ready) .nav-links a.nav-link {
+    transition: none !important;
+}
+
 html.pm-scrolled .site-header {
-    background: color-mix(in srgb, var(--header-bg) 92%, transparent);
+    background: color-mix(in srgb, var(--header-bg) 96%, #fff 4%);
     box-shadow: 0 10px 32px rgba(15, 23, 42, 0.08);
     border-bottom-color: color-mix(in srgb, var(--header-border) 80%, transparent);
 }
@@ -95,7 +104,7 @@ html.pm-scrolled .site-header {
 }
 
 html.pm-scrolled .site-header .logo-mark {
-    transform: scale(0.92);
+    transform: scale(0.96);
 }
 
 .site-header .logo-mark {
@@ -127,7 +136,7 @@ html.pm-scrolled .site-header .logo-mark {
 
 .nav-links button.active,
 .nav-links a.nav-link.active {
-    transform: translateY(-1px);
+    transform: none;
 }
 
 /* Buttons */
@@ -298,13 +307,20 @@ main.main-content,
 
 .pm-atmosphere {
     position: absolute;
-    top: 0;
+    top: 56px;
     left: 0;
     width: 100%;
-    min-height: 100%;
+    min-height: calc(100% - 56px);
     pointer-events: none;
     z-index: 0;
     overflow: hidden;
+}
+
+/* Start ambient motion only after first paint — avoids header blur flicker */
+.pm-atmosphere:not(.is-live) .pm-atmosphere-blob,
+.pm-atmosphere:not(.is-live) .pm-atmosphere-ring,
+.pm-atmosphere:not(.is-live) .pm-atmosphere-dot {
+    animation: none !important;
 }
 
 .pm-atmosphere-blob {
