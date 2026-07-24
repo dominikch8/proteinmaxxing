@@ -34,9 +34,9 @@
                 return product.unsatFat / product.satFat;
             }
         },
+        { key: 'fat', label: 'Tłuszcz', unit: 'g', icon: '🥑', decimals: 1, higherIsBetter: false, hint: 'mniej = lepiej' },
         /* Kontekstowe — na końcu, wizualnie bledsze */
-        { key: 'carbs', label: 'Węglowodany', unit: 'g', icon: '🌾', decimals: 1, neutral: true, hint: 'zależy od celu', hintKind: 'goal' },
-        { key: 'fat', label: 'Tłuszcz', unit: 'g', icon: '🥑', decimals: 1, neutral: true, hint: 'zależy od celu', hintKind: 'goal' }
+        { key: 'carbs', label: 'Węglowodany', unit: 'g', icon: '🌾', decimals: 1, neutral: true, hint: 'zależy od celu', hintKind: 'goal' }
     ];
 
     const KPI_METRICS = COMPARE_METRICS;
