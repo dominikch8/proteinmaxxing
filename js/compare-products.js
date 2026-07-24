@@ -97,7 +97,7 @@
 
     function productImageCandidates(slug) {
         if (!slug) return [];
-        return [`images/products/${slug}.png`, `images/products/${slug}.jpg`];
+        return [`images/products/${slug}.jpg`, `images/products/${slug}.webp`, `images/products/${slug}.png`];
     }
 
     function bindProductImage(imgEl, product) {

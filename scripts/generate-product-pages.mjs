@@ -373,10 +373,13 @@ function buildPage(p, similar = []) {
     const placeholder = '../images/products/placeholder.svg';
     const hasPng = fs.existsSync(path.join(root, 'images', 'products', `${p.slug}.png`));
     const hasJpg = fs.existsSync(path.join(root, 'images', 'products', `${p.slug}.jpg`));
-    const imgSrc = hasPng ? localPng : localJpg;
-    const imgOnError = hasPng
-        ? `this.onerror=null;this.src='${localJpg}';this.onerror=function(){this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};};`
-        : `this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};`;
+    // Prefer JPG: product PNGs are excluded from FTP deploy (see deploy.yml).
+    const imgSrc = hasJpg ? localJpg : localPng;
+    const imgOnError = hasJpg
+        ? `this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};`
+        : hasPng
+          ? `this.onerror=null;this.src='${localJpg}';this.onerror=function(){this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};};`
+          : `this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};`;
 
     const noteBlock = p.note
         ? `<div class="extra-box"><strong>Uwaga:</strong> ${esc(p.note)}</div>`
