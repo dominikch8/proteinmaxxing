@@ -1740,11 +1740,6 @@ body.compare-body.is-ready .compare-stage {
     background: transparent;
 }
 
-/* Row entrance handled by compare-chart-fx.css (.is-visible) */
-.compare-chart-section:not([hidden]) .compare-glass-row {
-    animation: none;
-}
-
 .compare-glass-metric-body {
     display: grid;
     grid-template-columns: minmax(120px, 32%) 1fr;

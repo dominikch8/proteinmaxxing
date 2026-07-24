@@ -189,13 +189,26 @@
 }
 
 .compare-glass-row.is-visible {
+    opacity: 1;
+    transform: none;
+    filter: none;
     animation: compareChartRowIn 0.65s var(--compare-ease-out) var(--row-delay, 0ms) both;
+}
+
+.compare-chart-section .compare-glass-row.is-visible {
+    opacity: 1;
+    transform: none;
+    filter: none;
 }
 
 .compare-glass-row:hover {
     transform: translateY(-3px);
     box-shadow: 0 18px 40px rgba(15, 23, 42, 0.1);
     border-color: rgba(128, 0, 0, 0.14);
+}
+
+.compare-glass-row.is-visible:hover {
+    transform: translateY(-3px);
 }
 
 .compare-glass-row--lead-a {
