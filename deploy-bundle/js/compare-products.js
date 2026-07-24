@@ -530,7 +530,7 @@
                 ${isLead ? '<span class="compare-matchup-crown" aria-hidden="true">★</span>' : ''}
                 <span class="compare-matchup-media" aria-hidden="true">
                     <span class="compare-matchup-media-glow"></span>
-                    <img class="compare-matchup-img" data-matchup-img="${side}" alt="" width="56" height="56" decoding="async">
+                    <img class="compare-matchup-img" data-matchup-img="${side}" alt="" width="40" height="40" decoding="async">
                     <span class="compare-matchup-emoji">${product.emoji}</span>
                 </span>
                 <span class="compare-matchup-copy">
