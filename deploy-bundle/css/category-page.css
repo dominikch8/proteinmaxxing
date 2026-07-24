@@ -4,15 +4,12 @@
 }
 
 .category-breadcrumb {
-    font-size: 0.82rem;
-    color: var(--text-muted);
-    margin-bottom: 16px;
+    /* base styles in site.css — keep page-specific tweaks here if needed */
+    margin-bottom: 10px;
 }
 
 .category-breadcrumb a {
     color: var(--primary-dark);
-    text-decoration: none;
-    font-weight: 600;
 }
 
 .category-hero {

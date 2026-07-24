@@ -195,6 +195,42 @@
             padding: 0 24px;
         }
 
+        .breadcrumb,
+        .category-breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.15em 0.3em;
+            margin: 0 0 12px;
+            padding: 0;
+            font-size: 0.72rem;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .breadcrumb a,
+        .category-breadcrumb a {
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: none;
+        }
+
+        .breadcrumb a:hover,
+        .category-breadcrumb a:hover {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .breadcrumb span,
+        .category-breadcrumb span {
+            color: var(--text-muted);
+            font-weight: 500;
+            min-width: 0;
+        }
+
         .nav-toggle {
             display: none;
             flex-direction: column;
