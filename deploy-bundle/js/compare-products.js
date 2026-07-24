@@ -165,10 +165,6 @@
         return `${p.kcal} kcal · ${p.protein} g białka · ${p.carbs} g węgli · ${p.fat} g tłuszczu`;
     }
 
-    function productChipMeta(p) {
-        return `${p.kcal} kcal · ${p.protein} g B`;
-    }
-
     function otherSlotSlug(slotKey) {
         const other = slotKey === 'a' ? state.b : state.a;
         return other?.slug || null;
@@ -372,7 +368,6 @@
 
         const emojiEl = chip.querySelector('.compare-chip-emoji');
         const nameEl = chip.querySelector('.compare-chip-name');
-        const metaEl = chip.querySelector('.compare-chip-meta');
         const imgEl = chip.querySelector('.compare-chip-img');
 
         if (!product) {
@@ -390,7 +385,6 @@
 
         if (emojiEl) emojiEl.textContent = product.emoji;
         if (nameEl) nameEl.textContent = product.name;
-        if (metaEl) metaEl.textContent = productChipMeta(product);
         bindProductImage(imgEl, product);
         chip.hidden = false;
         chip.removeAttribute('hidden');
@@ -536,7 +530,6 @@
                 <span class="compare-matchup-copy">
                     <span class="compare-matchup-slot">Produkt ${side.toUpperCase()}</span>
                     <span class="compare-matchup-name">${escapeHtml(product.name)}</span>
-                    <span class="compare-matchup-meta">${escapeHtml(productChipMeta(product))}</span>
                 </span>
             </div>`;
     }
