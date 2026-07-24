@@ -19,6 +19,7 @@
                 return (product.protein / product.kcal) * 100;
             }
         },
+        { key: 'fat', label: 'Tłuszcz', unit: 'g', icon: '🥑', decimals: 1, higherIsBetter: false, hint: 'mniej = lepiej' },
         {
             key: 'unsatSatRatio',
             label: 'Nienasycone do nasyconych',
@@ -34,7 +35,6 @@
                 return product.unsatFat / product.satFat;
             }
         },
-        { key: 'fat', label: 'Tłuszcz', unit: 'g', icon: '🥑', decimals: 1, higherIsBetter: false, hint: 'mniej = lepiej' },
         /* Kontekstowe — na końcu, wizualnie bledsze */
         { key: 'carbs', label: 'Węglowodany', unit: 'g', icon: '🌾', decimals: 1, neutral: true, hint: 'zależy od celu', hintKind: 'goal' }
     ];
