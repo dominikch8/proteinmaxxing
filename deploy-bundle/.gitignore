@@ -1,6 +1,0 @@
-node_modules/
-data/users.sqlite
-data/*.sqlite
-api/config.local.php
-.DS_Store
-*.log

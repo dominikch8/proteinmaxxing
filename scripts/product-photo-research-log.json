@@ -1,50 +1,37 @@
 {
-  "smietana-18": {
-    "subject": "liquid pourable cream 18 percent filling a clear glass, white liquid cream with flat surface like milk, NOT whipped cream, NO stiff peaks",
+  "piers-z-kurczaka": {
+    "subject": "two raw pale pink skinless boneless chicken breast fillets, poultry meat only, NOT fish, NOT salmon",
     "refs": []
   },
-  "izolat-bialka-wpi": {
-    "subject": "loose mound of white whey protein isolate powder directly on white surface, powder only, NO bowl, NO dish, NO cup, NO container",
+  "losos-atlantycki": {
+    "subject": "one raw Atlantic salmon fillet orange-pink with white fat lines",
     "refs": []
   },
-  "ser-gouda": {
-    "subject": "young Dutch Gouda cheese wedge, pale yellow interior, thin yellow wax rind, smooth mild cheese, absolutely NOT smoked, NO dark brown rind, NO orange smoked coating",
+  "skyr-naturalny": {
+    "subject": "plain natural skyr Icelandic yogurt pure white thick cream in small white bowl, NO chocolate, NO toppings, NO sauce swirl",
     "refs": []
   },
-  "ser-mozzarella": {
-    "subject": "two or three fresh white mozzarella cheese balls ciliegine, smooth wet surface, mozzarella only, NO packaging",
+  "jajko-kurze-cale": {
+    "subject": "ONE whole intact brown chicken egg with unbroken shell, whole egg only, NOT cracked, NOT open, NOT yolk",
     "refs": []
   },
-  "serek-homogenizowany-danio": {
-    "subject": "small plastic yogurt cup filled with thick creamy homogenized yogurt cheese like Polish Danio, cup packaging dairy dessert, smooth cream top",
+  "banan": {
+    "subject": "ONE single ripe yellow banana with ONE stem, Cavendish banana fruit",
+    "refs": [
+      {
+        "source": "commons",
+        "title": "Eastern fruit (1912) (20513659473).jpg",
+        "query": "ONE single ripe yellow banana with ONE stem product photo",
+        "score": 7
+      }
+    ]
+  },
+  "awokado": {
+    "subject": "Hass avocado half with pit and one whole avocado",
     "refs": []
   },
-  "smietanka-30": {
-    "subject": "liquid heavy cream 30 percent filling a clear glass cup, pourable white cream liquid surface, NOT whipped cream peaks, NOT stiff meringue texture",
-    "refs": []
-  },
-  "protein-pudding": {
-    "subject": "smooth vanilla protein pudding only in small cup, creamy pudding surface, NO chocolate drizzle, NO toppings, NO spoon clutter",
-    "refs": []
-  },
-  "smietana-12": {
-    "subject": "liquid pourable sour cream 12 percent in clear drinking glass, white cream filling glass like a drink, flat liquid surface, NOT whipped peaks, NOT stiff cream",
-    "refs": []
-  },
-  "mleko-skondensowane-slodzone": {
-    "subject": "metal squeeze tube of sweetened condensed milk with thick white milk coming from the nozzle, aluminum tube dairy product, condensed milk tube, NOT a bowl",
-    "refs": []
-  },
-  "ser-cheddar": {
-    "subject": "bright orange cheddar cheese block wedge, solid orange cheddar color throughout, cheddar cheese only, absolutely NO blue mold, NO green veins, NOT Roquefort, NOT blue cheese",
-    "refs": []
-  },
-  "ser-wedzony": {
-    "subject": "smoked cheese round or block with dark brown smoked outer rind and pale interior, clearly smoked cheese look",
-    "refs": []
-  },
-  "twarog-sernikowy": {
-    "subject": "smooth cream cheese style twaróg sernikowy for cheesecake, dense white creamy cheese block or bowl resembling cheesecake filling",
+  "lion": {
+    "subject": "Lion Nestle Polish chocolate candy wafer bar with caramel cereal filling, wrapped snack bar shape",
     "refs": []
   }
 }

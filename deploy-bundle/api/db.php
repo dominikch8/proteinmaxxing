@@ -1,6 +1,6 @@
 <?php
 /**
- * SQLite: użytkownicy + treści admina (produkty, artykuły).
+ * SQLite: użytkownicy Proteiner.
  */
 
 declare(strict_types=1);
@@ -36,33 +36,8 @@ function pmx_db(array $config): PDO
             updated_at TEXT NOT NULL
         )'
     );
-    $pdo->exec(
-        'CREATE TABLE IF NOT EXISTS custom_products (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            slug TEXT NOT NULL UNIQUE,
-            payload TEXT NOT NULL,
-            created_by TEXT NOT NULL,
-            created_at TEXT NOT NULL,
-            updated_at TEXT NOT NULL
-        )'
-    );
-    $pdo->exec(
-        'CREATE TABLE IF NOT EXISTS articles (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            slug TEXT NOT NULL UNIQUE,
-            title TEXT NOT NULL,
-            subtitle TEXT NOT NULL DEFAULT \'\',
-            emoji TEXT NOT NULL DEFAULT \'📝\',
-            body TEXT NOT NULL,
-            published INTEGER NOT NULL DEFAULT 1,
-            created_by TEXT NOT NULL,
-            created_at TEXT NOT NULL,
-            updated_at TEXT NOT NULL
-        )'
-    );
 
     pmx_bootstrap_admin($pdo, $config);
-    pmx_sync_admin_emails($pdo, $config);
     return $pdo;
 }
 
@@ -104,41 +79,4 @@ function pmx_bootstrap_admin(PDO $pdo, array $config): void
         $now,
         $now,
     ]);
-}
-
-function pmx_sync_admin_emails(PDO $pdo, array $config): void
-{
-    $admins = $config['admin_emails'] ?? [];
-    if (!is_array($admins)) {
-        return;
-    }
-    $now = gmdate('c');
-    $upd = $pdo->prepare('UPDATE users SET role = ?, updated_at = ? WHERE email = ? AND role != ?');
-    foreach ($admins as $adminEmail) {
-        $email = pmx_normalize_email((string) $adminEmail);
-        if ($email === '') {
-            continue;
-        }
-        $upd->execute(['admin', $now, $email, 'admin']);
-    }
-}
-
-function pmx_slugify(string $text): string
-{
-    $map = [
-        'ą' => 'a', 'ć' => 'c', 'ę' => 'e', 'ł' => 'l', 'ń' => 'n',
-        'ó' => 'o', 'ś' => 's', 'ź' => 'z', 'ż' => 'z',
-        'Ą' => 'a', 'Ć' => 'c', 'Ę' => 'e', 'Ł' => 'l', 'Ń' => 'n',
-        'Ó' => 'o', 'Ś' => 's', 'Ź' => 'z', 'Ż' => 'z',
-    ];
-    $text = strtr($text, $map);
-    if (function_exists('iconv')) {
-        $converted = @iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $text);
-        if (is_string($converted) && $converted !== '') {
-            $text = $converted;
-        }
-    }
-    $text = strtolower($text);
-    $text = preg_replace('/[^a-z0-9]+/', '-', $text) ?? '';
-    return trim($text, '-') ?: 'pozycja';
 }

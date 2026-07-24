@@ -9,7 +9,6 @@ $default = [
     // Konta z tymi e-mailami zawsze dostają rolę admin (przy rejestracji i logowaniu).
     'admin_emails' => [
         'dominikchw1@gmail.com',
-        'bambolejo8888@seznam.cz',
     ],
     // Tworzone przy pierwszym starcie API, jeśli konto jeszcze nie istnieje.
     'bootstrap_admin' => [

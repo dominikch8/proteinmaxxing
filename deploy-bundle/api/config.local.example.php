@@ -3,7 +3,6 @@
 return [
     'admin_emails' => [
         'dominikchw1@gmail.com',
-        'bambolejo8888@seznam.cz',
     ],
     'bootstrap_admin' => [
         'email' => 'dominikchw1@gmail.com',

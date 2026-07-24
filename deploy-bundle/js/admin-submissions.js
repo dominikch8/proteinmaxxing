@@ -1,6 +1,3 @@
-/**
- * Panel admina: zgłoszenia + dodawanie produktów i artykułów.
- */
 (function () {
     const gate = document.getElementById('adminGate');
     const panel = document.getElementById('adminPanel');
@@ -11,7 +8,6 @@
     const toastEl = document.getElementById('adminToast');
     const filtersEl = document.getElementById('adminFilters');
     const gateStatus = document.getElementById('adminGateStatus');
-    const tabsEl = document.getElementById('adminTabs');
 
     let currentFilter = 'pending';
     let currentUser = null;
@@ -192,27 +188,6 @@
         bindListEvents();
     }
 
-    function switchTab(tab) {
-        document.querySelectorAll('[data-admin-panel]').forEach((el) => {
-            el.hidden = el.getAttribute('data-admin-panel') !== tab;
-        });
-        if (tabsEl) {
-            tabsEl.querySelectorAll('[data-tab]').forEach((btn) => {
-                btn.classList.toggle('active', btn.getAttribute('data-tab') === tab);
-            });
-        }
-        if (tab === 'products-live') loadLiveProducts();
-        if (tab === 'articles') loadArticlesAdmin();
-    }
-
-    if (tabsEl) {
-        tabsEl.addEventListener('click', (e) => {
-            const btn = e.target.closest('[data-tab]');
-            if (!btn) return;
-            switchTab(btn.getAttribute('data-tab'));
-        });
-    }
-
     if (logoutBtn) {
         logoutBtn.addEventListener('click', async () => {
             try {
@@ -276,201 +251,6 @@
         }
     });
 
-    function parseNum(id, required) {
-        const el = document.getElementById(id);
-        if (!el) return required ? null : 0;
-        const raw = String(el.value).trim().replace(',', '.');
-        if (raw === '') return required ? null : 0;
-        const n = Number(raw);
-        return Number.isFinite(n) ? n : null;
-    }
-
-    const productForm = document.getElementById('adminProductForm');
-    const productCategory = document.getElementById('admCategory');
-    if (productCategory && typeof populateCategorySelect === 'function') {
-        populateCategorySelect(productCategory, { includeAll: false, useDietaLabels: true });
-    }
-
-    productForm?.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const errEl = document.getElementById('adminProductError');
-        if (errEl) {
-            errEl.hidden = true;
-            errEl.textContent = '';
-        }
-        const payload = {
-            name: document.getElementById('admName')?.value.trim(),
-            category: productCategory?.value,
-            emoji: document.getElementById('admEmoji')?.value.trim() || '🍽️',
-            kcal: parseNum('admKcal', true),
-            protein: parseNum('admProtein', true),
-            carbs: parseNum('admCarbs', true),
-            fat: parseNum('admFat', true),
-            satFat: parseNum('admSatFat', true),
-            unsatFat: parseNum('admUnsatFat', true),
-            servingText: document.getElementById('admServingText')?.value.trim(),
-            servingGrams: parseNum('admServingGrams', true),
-            servingPricePln: parseNum('admServingPrice', false),
-            micros: document.getElementById('admMicros')?.value.trim(),
-            extra: document.getElementById('admExtra')?.value.trim()
-        };
-        if (payload.servingPricePln === 0 && !document.getElementById('admServingPrice')?.value.trim()) {
-            payload.servingPricePln = null;
-        }
-        try {
-            const res = await fetch('/api/products/create.php', {
-                method: 'POST',
-                credentials: 'same-origin',
-                headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-                body: JSON.stringify(payload)
-            });
-            const data = await res.json();
-            if (!res.ok || !data.ok) throw new Error((data && data.error) || 'Nie udało się dodać produktu.');
-            productForm.reset();
-            showToast(`Dodano produkt: ${data.product.name}`);
-            switchTab('products-live');
-        } catch (err) {
-            if (errEl) {
-                errEl.textContent = err.message || 'Błąd';
-                errEl.hidden = false;
-            }
-        }
-    });
-
-    async function loadLiveProducts() {
-        const box = document.getElementById('adminLiveProducts');
-        if (!box) return;
-        box.innerHTML = '<p class="admin-empty">Ładowanie…</p>';
-        try {
-            const res = await fetch('/api/products/list.php', { credentials: 'same-origin' });
-            const data = await res.json();
-            const items = (data && data.products) || [];
-            if (!items.length) {
-                box.innerHTML = '<p class="admin-empty">Brak produktów dodanych przez panel. Dodaj pierwszy w zakładce „Dodaj produkt”.</p>';
-                return;
-            }
-            box.innerHTML = items
-                .map((p) => {
-                    const cat = CATEGORY_LABELS[p.category] || p.category;
-                    return `<article class="admin-card is-open">
-                        <div class="admin-card-head">
-                            <div>
-                                <h2 class="admin-card-title">${escapeHtml(p.emoji || '')} ${escapeHtml(p.name)}</h2>
-                                <p class="admin-card-meta">${escapeHtml(cat)} · ${p.kcal} kcal · B ${p.protein} g · slug: ${escapeHtml(p.slug || '')}</p>
-                            </div>
-                            <button type="button" class="admin-btn admin-btn--danger" data-del-product="${escapeHtml(p.slug || '')}">Usuń</button>
-                        </div>
-                    </article>`;
-                })
-                .join('');
-            box.querySelectorAll('[data-del-product]').forEach((btn) => {
-                btn.addEventListener('click', async () => {
-                    const slug = btn.getAttribute('data-del-product');
-                    if (!confirm('Usunąć ten produkt z bazy live?')) return;
-                    const r = await fetch('/api/products/delete.php', {
-                        method: 'POST',
-                        credentials: 'same-origin',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ slug })
-                    });
-                    const d = await r.json();
-                    if (!r.ok || !d.ok) {
-                        showToast((d && d.error) || 'Nie usunięto.', true);
-                        return;
-                    }
-                    showToast('Usunięto produkt.');
-                    loadLiveProducts();
-                });
-            });
-        } catch {
-            box.innerHTML = '<p class="admin-empty">Nie udało się wczytać produktów.</p>';
-        }
-    }
-
-    const articleForm = document.getElementById('adminArticleForm');
-    articleForm?.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const errEl = document.getElementById('adminArticleError');
-        if (errEl) {
-            errEl.hidden = true;
-            errEl.textContent = '';
-        }
-        const payload = {
-            title: document.getElementById('artTitle')?.value.trim(),
-            subtitle: document.getElementById('artSubtitle')?.value.trim(),
-            emoji: document.getElementById('artEmoji')?.value.trim() || '📝',
-            slug: document.getElementById('artSlug')?.value.trim(),
-            body: document.getElementById('artBody')?.value.trim()
-        };
-        try {
-            const res = await fetch('/api/articles/create.php', {
-                method: 'POST',
-                credentials: 'same-origin',
-                headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-                body: JSON.stringify(payload)
-            });
-            const data = await res.json();
-            if (!res.ok || !data.ok) throw new Error((data && data.error) || 'Nie udało się dodać artykułu.');
-            articleForm.reset();
-            showToast(`Opublikowano: ${data.article.title}`);
-            loadArticlesAdmin();
-        } catch (err) {
-            if (errEl) {
-                errEl.textContent = err.message || 'Błąd';
-                errEl.hidden = false;
-            }
-        }
-    });
-
-    async function loadArticlesAdmin() {
-        const box = document.getElementById('adminArticlesList');
-        if (!box) return;
-        box.innerHTML = '<p class="admin-empty">Ładowanie…</p>';
-        try {
-            const res = await fetch('/api/articles/list.php', { credentials: 'same-origin' });
-            const data = await res.json();
-            const items = (data && data.articles) || [];
-            if (!items.length) {
-                box.innerHTML = '<p class="admin-empty">Brak artykułów z panelu. Dodaj pierwszy powyżej.</p>';
-                return;
-            }
-            box.innerHTML = items
-                .map(
-                    (a) => `<article class="admin-card is-open">
-                        <div class="admin-card-head">
-                            <div>
-                                <h2 class="admin-card-title">${escapeHtml(a.emoji || '')} ${escapeHtml(a.title)}</h2>
-                                <p class="admin-card-meta"><a href="${escapeHtml(a.url)}" target="_blank" rel="noopener">Otwórz</a> · ${escapeHtml(formatDate(a.createdAt))}</p>
-                            </div>
-                            <button type="button" class="admin-btn admin-btn--danger" data-del-article="${escapeHtml(a.slug)}">Usuń</button>
-                        </div>
-                    </article>`
-                )
-                .join('');
-            box.querySelectorAll('[data-del-article]').forEach((btn) => {
-                btn.addEventListener('click', async () => {
-                    const slug = btn.getAttribute('data-del-article');
-                    if (!confirm('Usunąć ten artykuł?')) return;
-                    const r = await fetch('/api/articles/delete.php', {
-                        method: 'POST',
-                        credentials: 'same-origin',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ slug })
-                    });
-                    const d = await r.json();
-                    if (!r.ok || !d.ok) {
-                        showToast((d && d.error) || 'Nie usunięto.', true);
-                        return;
-                    }
-                    showToast('Usunięto artykuł.');
-                    loadArticlesAdmin();
-                });
-            });
-        } catch {
-            box.innerHTML = '<p class="admin-empty">Nie udało się wczytać artykułów.</p>';
-        }
-    }
-
     async function initAuth() {
         showPanel(false);
         setGateMessage('Sprawdzam sesję…');
@@ -514,7 +294,6 @@
         showPanel(true);
         PmxSubmissions.migrateLegacy();
         render();
-        switchTab('submissions');
     }
 
     initAuth();

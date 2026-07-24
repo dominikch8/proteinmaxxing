@@ -31,7 +31,7 @@ function loadScript(url) {
 }
 
 async function ensureProductsDatabase() {
-    if (typeof productsDatabase !== 'undefined' && productsDatabase.length && productsDatabase._customMerged) {
+    if (typeof productsDatabase !== 'undefined' && productsDatabase.length) {
         return productsDatabase;
     }
     if (_productsLoadPromise) return _productsLoadPromise;
@@ -46,38 +46,6 @@ async function ensureProductsDatabase() {
         }
         if (typeof productsDatabase === 'undefined') {
             await loadScript(`${base}products-data.js`);
-        }
-
-        try {
-            const prefix = base.replace(/js\/?$/, '');
-            const res = await fetch(`${prefix}api/products/list.php`, {
-                credentials: 'same-origin',
-                headers: { Accept: 'application/json' }
-            });
-            if (res.ok) {
-                const data = await res.json();
-                const custom = (data && data.products) || [];
-                if (custom.length && Array.isArray(productsDatabase)) {
-                    const existingNames = new Set(
-                        productsDatabase.map((p) => String(p.name || '').toLowerCase())
-                    );
-                    for (const p of custom) {
-                        const key = String(p.name || '').toLowerCase();
-                        if (!key || existingNames.has(key)) continue;
-                        productsDatabase.push(p);
-                        existingNames.add(key);
-                    }
-                    if (typeof enrichProducts === 'function') {
-                        enrichProducts(productsDatabase);
-                    }
-                }
-            }
-        } catch {
-            /* API niedostępne lokalnie bez PHP */
-        }
-
-        if (Array.isArray(productsDatabase)) {
-            productsDatabase._customMerged = true;
         }
         return productsDatabase;
     })();
