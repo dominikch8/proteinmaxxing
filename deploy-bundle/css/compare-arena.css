@@ -463,16 +463,18 @@
 }
 
 .compare-matchup-media {
-    width: 76px;
-    height: 76px;
-    border-radius: 22px;
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.35s var(--compare-ease-out);
     box-shadow:
-        0 14px 30px rgba(15, 23, 42, 0.12),
+        0 10px 22px rgba(15, 23, 42, 0.1),
         inset 0 0 0 1px rgba(255, 255, 255, 0.35);
     overflow: hidden;
+    display: grid;
+    place-items: center;
 }
 
 .compare-matchup-media-glow {
@@ -741,7 +743,7 @@
     .compare-hero-title-row { gap: 10px; }
     .compare-hero-orb { width: 10px; height: 10px; }
     .compare-hero-duel { gap: 12px; padding: 8px 12px; }
-    .compare-matchup-media { width: 64px; height: 64px; }
+    .compare-matchup-media { width: 52px; height: 52px; border-radius: 14px; }
     .compare-matchup-vs-wrap { margin: 4px auto; }
     .compare-quick-list { gap: 10px; }
     .compare-quick-btn { width: 100%; justify-content: center; }

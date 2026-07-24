@@ -637,10 +637,10 @@ body.compare-body.is-ready .compare-stage {
 
 .compare-chip-media {
     position: relative;
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     flex-shrink: 0;
-    border-radius: 12px;
+    border-radius: 11px;
     overflow: hidden;
     background: var(--surface-hover);
     border: 1px solid var(--border-soft);
@@ -649,9 +649,10 @@ body.compare-body.is-ready .compare-stage {
 }
 
 .compare-chip-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 82%;
+    height: 82%;
+    object-fit: contain;
+    object-position: center;
     display: none;
 }
 
@@ -1136,8 +1137,8 @@ body.compare-body.is-ready .compare-stage {
 }
 
 .compare-matchup-media {
-    width: 56px;
-    height: 56px;
+    width: 52px;
+    height: 52px;
     border-radius: 14px;
     overflow: hidden;
     flex-shrink: 0;
@@ -1149,9 +1150,10 @@ body.compare-body.is-ready .compare-stage {
 }
 
 .compare-matchup-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 78%;
+    height: 78%;
+    object-fit: contain;
+    object-position: center;
     display: none;
 }
 
