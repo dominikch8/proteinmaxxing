@@ -64,10 +64,13 @@ function initRankingPage(mode) {
     syncRankingPageUrl(sel.value, true);
 }
 
-function bootRankingPage() {
+async function bootRankingPage() {
     const mode = document.body.dataset.rankingMode;
     if (!mode) return;
     try {
+        if (typeof ensureProductsDatabase === 'function') {
+            await ensureProductsDatabase();
+        }
         initRankingPage(mode);
     } catch (err) {
         console.error('ranking-page:', err);

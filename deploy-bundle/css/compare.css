@@ -1577,6 +1577,23 @@ body.compare-body.is-ready .compare-stage {
     max-height: none;
 }
 
+.compare-kpi-card--muted {
+    opacity: 0.68;
+    filter: saturate(0.7);
+    box-shadow: none;
+    border-color: rgba(15, 23, 42, 0.05);
+    background: rgba(248, 250, 252, 0.55);
+}
+
+.compare-kpi-card--muted:hover {
+    opacity: 0.85;
+}
+
+[data-theme='dark'] .compare-kpi-card--muted {
+    background: rgba(30, 41, 59, 0.4);
+    border-color: rgba(148, 163, 184, 0.08);
+}
+
 .compare-kpi-icon {
     font-size: 1.25rem;
     line-height: 1;
@@ -2099,6 +2116,15 @@ body.compare-body.is-ready .compare-stage {
 
 .compare-table tbody tr {
     opacity: 0;
+}
+
+.compare-table tbody tr.compare-table-row--muted {
+    color: #64748b;
+}
+
+.compare-table tbody tr.compare-table-row--muted th,
+.compare-table tbody tr.compare-table-row--muted td {
+    opacity: 0.72;
 }
 
 .compare-chart-section:not([hidden]) .compare-table tbody tr {

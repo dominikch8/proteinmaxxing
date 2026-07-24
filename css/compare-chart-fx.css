@@ -318,6 +318,65 @@
     font-weight: 700;
 }
 
+.compare-glass-delta--soft {
+    color: #64748b;
+    background: rgba(148, 163, 184, 0.12);
+    border-color: rgba(148, 163, 184, 0.22);
+    font-weight: 700;
+}
+
+/* Kontekstowe metryki (węgle / tłuszcz) — na końcu, bledsze od głównych */
+.compare-glass-row--muted {
+    border-color: rgba(15, 23, 42, 0.04);
+    background:
+        linear-gradient(160deg, rgba(248, 250, 252, 0.55), rgba(241, 245, 249, 0.4));
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.03);
+}
+
+.compare-glass-row--muted.is-visible {
+    opacity: 0.72;
+}
+
+.compare-glass-row--muted:hover,
+.compare-glass-row--muted.is-visible:hover {
+    opacity: 0.88;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+.compare-glass-row--muted .compare-glass-metric-badge {
+    background: linear-gradient(145deg, #475569, #64748b);
+    box-shadow: 0 6px 14px rgba(71, 85, 105, 0.18);
+    opacity: 0.85;
+}
+
+.compare-glass-row--muted .compare-glass-metric-name,
+.compare-glass-row--muted .compare-glass-metric-max {
+    color: #64748b;
+}
+
+.compare-glass-row--muted .compare-glass-fill,
+.compare-glass-row--muted .compare-glass-value-pill {
+    opacity: 0.82;
+    filter: saturate(0.75);
+}
+
+[data-theme='dark'] .compare-glass-row--muted {
+    background: linear-gradient(160deg, rgba(30, 41, 59, 0.45), rgba(15, 23, 42, 0.4));
+    border-color: rgba(148, 163, 184, 0.08);
+}
+
+[data-theme='dark'] .compare-glass-row--muted .compare-glass-metric-name,
+[data-theme='dark'] .compare-glass-row--muted .compare-glass-metric-max {
+    color: #94a3b8;
+}
+
+[data-theme='dark'] .compare-glass-delta--soft {
+    color: #94a3b8;
+    background: rgba(148, 163, 184, 0.12);
+    border-color: rgba(148, 163, 184, 0.2);
+}
+
 [data-theme='dark'] .compare-glass-delta {
     color: #e2e8f0;
     background: rgba(255, 255, 255, 0.06);
@@ -571,6 +630,11 @@
         opacity: 1;
         transform: none;
         filter: none;
+    }
+
+    .compare-glass-row--muted,
+    .compare-glass-row--muted.is-visible {
+        opacity: 0.72;
     }
 }
 

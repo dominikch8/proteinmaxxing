@@ -93,10 +93,39 @@ for (const slug of slugs) {
         continue;
     }
     try {
-        await sharp(src)
-            .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255 } })
-            .jpeg({ quality: 72, mozjpeg: true })
+        const resized = await sharp(src)
+            .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255, alpha: 1 } })
+            .ensureAlpha()
+            .raw()
+            .toBuffer({ resolveWithObject: true });
+
+        const { data, info } = resized;
+        const out = Buffer.from(data);
+        const thr = 248;
+        for (let i = 0; i < out.length; i += 4) {
+            const r = out[i];
+            const g = out[i + 1];
+            const b = out[i + 2];
+            if (r >= thr && g >= thr && b >= thr) out[i + 3] = 0;
+            else if (r > 230 && g > 230 && b > 230) {
+                const whiteness = (r + g + b) / 3;
+                out[i + 3] = Math.max(0, Math.min(255, Math.round((255 - whiteness) * 8)));
+            }
+        }
+
+        const pngBuf = await sharp(out, {
+            raw: { width: info.width, height: info.height, channels: 4 }
+        })
+            .png()
+            .toBuffer();
+
+        fs.writeFileSync(path.join(outDir, `${slug}.png`), pngBuf);
+
+        await sharp(pngBuf)
+            .flatten({ background: { r: 255, g: 255, b: 255 } })
+            .jpeg({ quality: 88, mozjpeg: true })
             .toFile(path.join(outDir, `${slug}.jpg`));
+
         ok++;
         console.log('OK', slug);
     } catch (e) {

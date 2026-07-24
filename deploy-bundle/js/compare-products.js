@@ -2,8 +2,6 @@
     const COMPARE_METRICS = [
         { key: 'kcal', label: 'Kalorie', unit: 'kcal', icon: '🔥', decimals: 0, higherIsBetter: false, hint: 'mniej = lepiej' },
         { key: 'protein', label: 'Białko', unit: 'g', icon: '💪', decimals: 1, higherIsBetter: true, hint: 'więcej = lepiej' },
-        { key: 'carbs', label: 'Węglowodany', unit: 'g', icon: '🌾', decimals: 1, neutral: true, hint: 'zależy od celu', hintKind: 'goal' },
-        { key: 'fat', label: 'Tłuszcz', unit: 'g', icon: '🥑', decimals: 1, neutral: true, hint: 'zależy od celu', hintKind: 'goal' },
         {
             key: 'proteinPerKcal',
             label: 'Białko / 100 kcal',
@@ -35,7 +33,10 @@
                 if (!product || !(product.satFat > 0)) return null;
                 return product.unsatFat / product.satFat;
             }
-        }
+        },
+        /* Kontekstowe — na końcu, wizualnie bledsze */
+        { key: 'carbs', label: 'Węglowodany', unit: 'g', icon: '🌾', decimals: 1, neutral: true, hint: 'zależy od celu', hintKind: 'goal' },
+        { key: 'fat', label: 'Tłuszcz', unit: 'g', icon: '🥑', decimals: 1, neutral: true, hint: 'zależy od celu', hintKind: 'goal' }
     ];
 
     const KPI_METRICS = COMPARE_METRICS;
@@ -661,7 +662,7 @@
             const winner = metricWinner(va, vb, m.key, rawA, rawB);
 
             return `
-                <div class="compare-kpi-card${m.key === 'unsatSatRatio' ? ' compare-kpi-card--unsat-sat' : ''}">
+                <div class="compare-kpi-card${m.key === 'unsatSatRatio' ? ' compare-kpi-card--unsat-sat' : ''}${m.neutral ? ' compare-kpi-card--muted' : ''}">
                     <span class="compare-kpi-icon" aria-hidden="true">${m.icon}</span>
                     <span class="compare-kpi-name">${escapeHtml(m.label)}</span>
                     <div class="compare-kpi-row">
@@ -740,7 +741,7 @@
             const labelA = formatMetricLabel(a, m);
             const labelB = formatMetricLabel(b, m);
             const delta =
-                rawA != null && rawB != null && !m.neutral && Math.abs(va - vb) > 0.0001
+                rawA != null && rawB != null && Math.abs(va - vb) > 0.0001
                     ? Math.abs(va - vb)
                     : null;
             const deltaText =
@@ -754,8 +755,11 @@
                 ? { text: m.hint, kind: hintKindForMetric(m) }
                 : null;
 
+            const mutedClass = m.neutral ? ' compare-glass-row--muted' : '';
+            const rowClasses = `compare-glass-row${mutedClass}${m.hint ? ' compare-glass-row--has-hint' : ''}${winner ? ` compare-glass-row--lead-${winner}` : ''}`;
+
             return `
-                <article class="compare-glass-row${m.hint ? ' compare-glass-row--has-hint' : ''}${winner ? ` compare-glass-row--lead-${winner}` : ''}" style="--row-delay:${rowIndex * 70}ms">
+                <article class="${rowClasses}" style="--row-delay:${rowIndex * 70}ms">
                     <div class="compare-glass-row-head">
                         <span class="compare-glass-metric-badge" aria-hidden="true">
                             <span class="compare-glass-metric-icon">${m.icon}</span>
@@ -766,8 +770,8 @@
                         </div>
                         ${
                             deltaText
-                                ? `<span class="compare-glass-delta" title="Różnica">Δ ${escapeHtml(deltaText)}</span>`
-                                : '<span class="compare-glass-delta compare-glass-delta--neutral">remis</span>'
+                                ? `<span class="compare-glass-delta${m.neutral ? ' compare-glass-delta--soft' : ''}" title="Różnica">Δ ${escapeHtml(deltaText)}</span>`
+                                : `<span class="compare-glass-delta compare-glass-delta--neutral">${m.neutral ? 'kontekst' : 'remis'}</span>`
                         }
                     </div>
                     ${buildGlassBarsGrid(a.name, b.name, pctA, labelA, winA, pctB, labelB, winB, hintText, rowIndex)}
@@ -852,7 +856,7 @@
             const vb = rawB ?? 0;
             const winA = metricWinner(va, vb, m.key, rawA, rawB) === 'a';
             const winB = metricWinner(va, vb, m.key, rawA, rawB) === 'b';
-            return `<tr>
+            return `<tr${m.neutral ? ' class="compare-table-row--muted"' : ''}>
                 <th scope="row">${escapeHtml(m.labelFull || m.label)}</th>
                 <td class="${winA ? 'cell-winner cell-winner--a' : ''}">${formatMetricLabel(a, m)}</td>
                 <td class="${winB ? 'cell-winner cell-winner--b' : ''}">${formatMetricLabel(b, m)}</td>
