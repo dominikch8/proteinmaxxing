@@ -680,16 +680,22 @@
 
     function buildGlassBarParts(slot, pct, label, isWinner, productName, barIndex) {
         const fillW = pct > 0 ? pct : 0;
-        const delay = barIndex * 70;
+        const delay = 120 + barIndex * 90;
         return {
             slot: `
-                <div class="compare-glass-slot compare-glass-slot--${slot}">
+                <div class="compare-glass-slot compare-glass-slot--${slot}${isWinner ? ' is-winner' : ''}">
                     <span class="compare-glass-slot-tag">${slot.toUpperCase()}</span>
                     <span class="compare-glass-slot-name">${escapeHtml(productName)}</span>
+                    ${isWinner ? '<span class="compare-glass-slot-win" aria-hidden="true">lead</span>' : ''}
                 </div>`,
             track: `
-                <div class="compare-glass-track compare-glass-track--${slot}">
-                    <div class="compare-glass-fill compare-glass-fill--${slot}${isWinner ? ' is-winner' : ''}" style="--bar-pct:${fillW}%; --bar-delay:${delay}ms" data-pct="${fillW}"></div>
+                <div class="compare-glass-track compare-glass-track--${slot}${isWinner ? ' is-winner' : ''}" style="--bar-delay:${delay}ms">
+                    <span class="compare-glass-track-grid" aria-hidden="true"></span>
+                    <div class="compare-glass-fill compare-glass-fill--${slot}${isWinner ? ' is-winner' : ''}" style="--bar-pct:${fillW}%; --bar-delay:${delay}ms" data-pct="${fillW}">
+                        <span class="compare-glass-fill-sheen" aria-hidden="true"></span>
+                        <span class="compare-glass-fill-glow" aria-hidden="true"></span>
+                        <span class="compare-glass-fill-tip" aria-hidden="true"></span>
+                    </div>
                     <span class="compare-glass-fill-val">${label}</span>
                 </div>`
         };
@@ -725,29 +731,55 @@
             const max = axisMaxForMetric(m.key, va, vb);
             const pctA = rawA != null && max > 0 ? Math.round((va / max) * 100) : 0;
             const pctB = rawB != null && max > 0 ? Math.round((vb / max) * 100) : 0;
-            const winA = metricWinner(va, vb, m.key, rawA, rawB) === 'a';
-            const winB = metricWinner(va, vb, m.key, rawA, rawB) === 'b';
+            const winner = metricWinner(va, vb, m.key, rawA, rawB);
+            const winA = winner === 'a';
+            const winB = winner === 'b';
             const labelA = formatMetricLabel(a, m);
             const labelB = formatMetricLabel(b, m);
+            const delta =
+                rawA != null && rawB != null && !m.neutral && Math.abs(va - vb) > 0.0001
+                    ? Math.abs(va - vb)
+                    : null;
+            const deltaText =
+                delta == null
+                    ? ''
+                    : m.format === 'ratio'
+                      ? `${formatValue(delta, m.decimals)}`
+                      : `${formatValue(delta, m.decimals)} ${m.unit}`;
 
             const hintText = m.hint
                 ? { text: m.hint, kind: hintKindForMetric(m) }
                 : null;
 
             return `
-                <div class="compare-glass-row${m.hint ? ' compare-glass-row--has-hint' : ''}">
+                <article class="compare-glass-row${m.hint ? ' compare-glass-row--has-hint' : ''}${winner ? ` compare-glass-row--lead-${winner}` : ''}" style="--row-delay:${rowIndex * 70}ms">
                     <div class="compare-glass-row-head">
-                        <span class="compare-glass-metric-icon" aria-hidden="true">${m.icon}</span>
-                        <span class="compare-glass-metric-name">${escapeHtml(m.label)}</span>
-                        <span class="compare-glass-metric-max">skala 0–${escapeHtml(formatMetricScaleMax(m, max))}</span>
+                        <span class="compare-glass-metric-badge" aria-hidden="true">
+                            <span class="compare-glass-metric-icon">${m.icon}</span>
+                        </span>
+                        <div class="compare-glass-metric-copy">
+                            <span class="compare-glass-metric-name">${escapeHtml(m.label)}</span>
+                            <span class="compare-glass-metric-max">skala 0–${escapeHtml(formatMetricScaleMax(m, max))}</span>
+                        </div>
+                        ${
+                            deltaText
+                                ? `<span class="compare-glass-delta" title="Różnica">Δ ${escapeHtml(deltaText)}</span>`
+                                : '<span class="compare-glass-delta compare-glass-delta--neutral">remis</span>'
+                        }
                     </div>
                     ${buildGlassBarsGrid(a.name, b.name, pctA, labelA, winA, pctB, labelB, winB, hintText, rowIndex)}
-                </div>`;
+                </article>`;
         }).join('');
 
         return `
             <div class="compare-glass-chart" role="img" aria-label="Wykres składników na 100 g: ${escapeHtml(a.name)} i ${escapeHtml(b.name)}">
-                ${rows}
+                <div class="compare-glass-chart-head">
+                    <p class="compare-glass-chart-kicker">Arena makro</p>
+                    <p class="compare-glass-chart-title">Pojedynek wartości na 100&nbsp;g</p>
+                </div>
+                <div class="compare-glass-chart-body">
+                    ${rows}
+                </div>
             </div>`;
     }
 
@@ -756,6 +788,7 @@
         chartEl.classList.remove('is-animating');
 
         const fills = chartEl.querySelectorAll('.compare-glass-fill');
+        const rows = chartEl.querySelectorAll('.compare-glass-row');
         fills.forEach((el) => {
             el.classList.remove('is-run');
             if (reduceMotion()) {
@@ -764,16 +797,19 @@
                 el.style.width = '0%';
             }
         });
+        rows.forEach((row) => row.classList.remove('is-visible'));
 
         if (reduceMotion()) {
             chartEl.classList.add('is-animating');
             fills.forEach((el) => el.classList.add('is-run'));
+            rows.forEach((row) => row.classList.add('is-visible'));
             return;
         }
 
         void chartEl.offsetWidth;
         requestAnimationFrame(() => {
             chartEl.classList.add('is-animating');
+            rows.forEach((row) => row.classList.add('is-visible'));
             fills.forEach((el) => {
                 el.style.width = '';
                 el.classList.add('is-run');
@@ -791,7 +827,9 @@
 
         chartEl.innerHTML = `
             ${renderKpiGrid(a, b)}
-            <div class="compare-glass-panel">
+            <div class="compare-glass-panel compare-glass-panel--arena">
+                <span class="compare-glass-panel-orb compare-glass-panel-orb--a" aria-hidden="true"></span>
+                <span class="compare-glass-panel-orb compare-glass-panel-orb--b" aria-hidden="true"></span>
                 ${buildGlassBarsHtml(a, b)}
             </div>
             <p class="compare-chart-footnote">Wszystkie wartości na 100 g produktu.</p>`;

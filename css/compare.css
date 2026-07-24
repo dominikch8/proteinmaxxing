@@ -1740,16 +1740,10 @@ body.compare-body.is-ready .compare-stage {
     background: transparent;
 }
 
+/* Row entrance handled by compare-chart-fx.css (.is-visible) */
 .compare-chart-section:not([hidden]) .compare-glass-row {
-    animation: compareRowFadeIn 0.45s var(--compare-ease-out) both;
+    animation: none;
 }
-
-.compare-chart-section:not([hidden]) .compare-glass-row:nth-child(1) { animation-delay: 0ms; }
-.compare-chart-section:not([hidden]) .compare-glass-row:nth-child(2) { animation-delay: 45ms; }
-.compare-chart-section:not([hidden]) .compare-glass-row:nth-child(3) { animation-delay: 90ms; }
-.compare-chart-section:not([hidden]) .compare-glass-row:nth-child(4) { animation-delay: 135ms; }
-.compare-chart-section:not([hidden]) .compare-glass-row:nth-child(5) { animation-delay: 180ms; }
-.compare-chart-section:not([hidden]) .compare-glass-row:nth-child(6) { animation-delay: 225ms; }
 
 .compare-glass-metric-body {
     display: grid;
