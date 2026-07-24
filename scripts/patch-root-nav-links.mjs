@@ -26,7 +26,8 @@ const ROOT_PAGES = [
     ['cena-bialka.html', 'cena-bialka.html'],
     ['trening.html', 'trening.html'],
     ['deficyt-kaloryczny-praktyka.html', 'deficyt-kaloryczny-praktyka.html'],
-    ['planowanie-posilkow.html', 'planowanie-posilkow.html']
+    ['planowanie-posilkow.html', 'planowanie-posilkow.html'],
+    ['najlepsze-zrodla-bialka-biedronka-lidl-auchan-carrefour.html', 'najlepsze-zrodla-bialka-biedronka-lidl-auchan-carrefour.html']
 ];
 
 function walkHtml(dir, list = []) {

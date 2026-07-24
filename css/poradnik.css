@@ -734,3 +734,9 @@
     border-color: var(--primary);
     background: rgba(128, 0, 0, 0.08);
 }
+
+.article-byline {
+    margin: 0.35rem 0 0;
+    font-size: 0.95rem;
+    color: var(--muted, #64748b);
+}

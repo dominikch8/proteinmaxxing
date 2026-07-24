@@ -59,7 +59,7 @@ function patchFooter(html) {
 }
 
 function patchBreadcrumb(html, rel) {
-    if (rel !== 'deficyt-kaloryczny-praktyka.html' && rel !== 'planowanie-posilkow.html') {
+    if (rel !== 'deficyt-kaloryczny-praktyka.html' && rel !== 'planowanie-posilkow.html' && rel !== 'najlepsze-zrodla-bialka-biedronka-lidl-auchan-carrefour.html') {
         return html;
     }
     return html.replace(
