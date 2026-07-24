@@ -79,15 +79,16 @@ body {
 .breadcrumb a:hover { text-decoration: underline; }
 
 .product-hero-card {
-    background: rgba(255, 255, 255, 0.88);
+    background: rgba(255, 255, 255, 0.94);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--border);
     overflow: hidden;
+    isolation: isolate;
 }
 
 [data-theme='dark'] .product-hero-card {
-    background: rgba(30, 41, 59, 0.9);
+    background: rgba(30, 41, 59, 0.94);
 }
 
 .product-hero-card::before {

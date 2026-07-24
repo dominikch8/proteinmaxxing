@@ -329,17 +329,18 @@
 
         .main-content {
             background:
-                linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.9) 100%);
+                linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.97) 100%);
             border-radius: var(--radius-xl);
             padding: clamp(26px, 3.2vw, 40px) clamp(20px, 3.4vw, 40px);
             box-shadow: var(--shadow-lg);
             border: 1px solid var(--main-border);
             position: relative;
             overflow: hidden;
+            isolation: isolate;
         }
 
         [data-theme='dark'] .main-content {
-            background: linear-gradient(165deg, rgba(30, 41, 59, 0.88) 0%, rgba(15, 23, 42, 0.92) 100%);
+            background: linear-gradient(165deg, rgba(30, 41, 59, 0.94) 0%, rgba(15, 23, 42, 0.96) 100%);
         }
 
         .main-content::before {
