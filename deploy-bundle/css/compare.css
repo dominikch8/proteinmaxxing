@@ -167,8 +167,9 @@
 }
 
 @keyframes compareBarShine {
-    from { transform: translateX(-120%) skewX(-12deg); }
-    to { transform: translateX(220%) skewX(-12deg); }
+    from { transform: translateX(-20%); opacity: 0; }
+    40% { opacity: 0.5; }
+    to { transform: translateX(120%); opacity: 0; }
 }
 
 @keyframes compareRowFadeIn {
@@ -1964,14 +1965,17 @@ body.compare-body.is-ready .compare-stage {
 .compare-glass-fill.is-run::after {
     content: '';
     position: absolute;
-    inset: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 40%;
     background: linear-gradient(
-        105deg,
-        transparent 30%,
-        rgba(255, 255, 255, 0.28) 48%,
-        transparent 66%
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.22) 50%,
+        transparent 100%
     );
-    animation: compareBarShine 0.75s var(--compare-ease-out) 0.55s both;
+    animation: compareBarShine 0.8s ease-out 0.45s both;
     pointer-events: none;
 }
 
