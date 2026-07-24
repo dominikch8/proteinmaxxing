@@ -56,6 +56,7 @@ jobs:
           **/data/*.sqlite
           **/images/products/*.png
           !**/images/products/sos-1000-wysp.png
+          !**/images/products/biszkopty.png
           **/domains/**
 
     - name: Weryfikacja deployu
