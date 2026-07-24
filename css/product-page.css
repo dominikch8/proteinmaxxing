@@ -69,15 +69,11 @@ body {
 }
 
 .breadcrumb {
-    font-size: 0.82rem;
-    color: var(--text-muted);
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .breadcrumb a {
     color: var(--primary-dark);
-    text-decoration: none;
-    font-weight: 600;
 }
 
 .breadcrumb a:hover { text-decoration: underline; }

@@ -292,7 +292,7 @@ body.compare-body {
     top: -8%;
     left: -6%;
     background: radial-gradient(circle, rgba(128, 0, 0, 0.16) 0%, rgba(102, 0, 0, 0.04) 68%, transparent 100%);
-    animation: compareAtmosphereDriftA 22s ease-in-out infinite;
+    animation: compareAtmosphereDriftA 16s ease-in-out infinite;
 }
 
 .compare-atmosphere-blob--b {
@@ -301,7 +301,7 @@ body.compare-body {
     top: 4%;
     right: -8%;
     background: radial-gradient(circle, rgba(37, 99, 235, 0.14) 0%, rgba(30, 58, 95, 0.04) 68%, transparent 100%);
-    animation: compareAtmosphereDriftB 26s ease-in-out infinite;
+    animation: compareAtmosphereDriftB 19s ease-in-out infinite;
 }
 
 .compare-atmosphere-grid {

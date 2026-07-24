@@ -1,5 +1,6 @@
 (function () {
     const STORAGE_KEY = 'pm_cookie_consent';
+    const GA_ID = 'G-4FJC6S1VCX';
 
     function readChoice() {
         try {
@@ -16,28 +17,28 @@
     window.gtag = window.gtag || gtag;
 
     const choice = readChoice();
+    const accepted = choice === 'accepted';
     const base = {
         functionality_storage: 'granted',
         security_storage: 'granted',
         wait_for_update: choice ? 0 : 500
     };
 
-    if (choice === 'accepted') {
-        gtag('consent', 'default', {
-            ...base,
-            ad_storage: 'granted',
-            ad_user_data: 'granted',
-            ad_personalization: 'granted',
-            analytics_storage: 'denied'
-        });
-        return;
-    }
-
     gtag('consent', 'default', {
         ...base,
-        ad_storage: 'denied',
-        ad_user_data: 'denied',
-        ad_personalization: 'denied',
-        analytics_storage: 'denied'
+        ad_storage: accepted ? 'granted' : 'denied',
+        ad_user_data: accepted ? 'granted' : 'denied',
+        ad_personalization: accepted ? 'granted' : 'denied',
+        analytics_storage: accepted ? 'granted' : 'denied'
     });
+
+    gtag('js', new Date());
+    gtag('config', GA_ID, {
+        anonymize_ip: true
+    });
+
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+    document.head.appendChild(script);
 })();
