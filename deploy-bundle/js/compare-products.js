@@ -44,6 +44,26 @@
         ...CATEGORY_ORDER.filter((id) => id !== 'fastfood' && id !== 'polskie-obiadki')
     ];
 
+    /** Propozycje po kliknięciu pustego / otwartego pola. */
+    const PROPOSED_SLUGS = [
+        'piers-z-kurczaka',
+        'twarog-poltlusty',
+        'jajko-kurze-cale',
+        'losos-atlantycki',
+        'ryz-bialy',
+        'kasza-gryczana',
+        'jogurt-grecki-naturalny',
+        'banan',
+        'brokuly',
+        'indyk-mielony',
+        'tofu-naturalne',
+        'wolowina-poledwica',
+        'tunczyk-w-sosie-wlasnym',
+        'platki-owsiane',
+        'ser-cottage',
+        'awokado'
+    ];
+
     if (typeof ensureProductsDatabase === 'function') {
         await ensureProductsDatabase();
     } else if (typeof productsDatabase === 'undefined') {
@@ -145,13 +165,33 @@
         return `${p.kcal} kcal · ${p.protein} g B`;
     }
 
-    function getSuggestionProducts(query) {
+    function otherSlotSlug(slotKey) {
+        const other = slotKey === 'a' ? state.b : state.a;
+        return other?.slug || null;
+    }
+
+    function getProposedProducts(slotKey) {
+        const exclude = otherSlotSlug(slotKey);
+        const out = [];
+        const seen = new Set();
+        for (const slug of PROPOSED_SLUGS) {
+            if (slug === exclude || seen.has(slug)) continue;
+            const p = getProductBySlug(slug);
+            if (!p) continue;
+            seen.add(p.slug);
+            out.push(p);
+        }
+        return out;
+    }
+
+    function getSuggestionProducts(query, slotKey) {
         const q = query.toLowerCase().trim();
-        let pool = productsDatabase;
+        const exclude = otherSlotSlug(slotKey);
+        let pool = productsDatabase.filter((p) => p.slug !== exclude);
         if (q) {
             pool = pool.filter((p) => p.name.toLowerCase().includes(q));
         }
-        return [...pool];
+        return pool;
     }
 
     function categoryLabel(catId) {
@@ -172,7 +212,7 @@
             const list = byCat.get(catId);
             if (!list?.length) continue;
             list.sort((a, b) => a.name.localeCompare(b.name, 'pl'));
-            groups.push({ category: catId, products: list });
+            groups.push({ category: catId, label: categoryLabel(catId), products: list });
             used.add(catId);
         }
 
@@ -183,10 +223,22 @@
         for (const catId of rest) {
             const list = byCat.get(catId);
             list.sort((a, b) => a.name.localeCompare(b.name, 'pl'));
-            groups.push({ category: catId, products: list });
+            groups.push({ category: catId, label: categoryLabel(catId), products: list });
         }
 
         return groups;
+    }
+
+    function suggestionItemHtml(p) {
+        return `<li>
+            <button type="button" data-slug="${escapeHtml(p.slug)}">
+                <span class="sug-emoji" aria-hidden="true">${p.emoji}</span>
+                <span>
+                    <span>${escapeHtml(p.name)}</span>
+                    <span class="sug-meta">${escapeHtml(productSummary(p))}</span>
+                </span>
+            </button>
+        </li>`;
     }
 
     function layoutSuggestions(slotKey) {
@@ -212,10 +264,30 @@
         });
     }
 
+    function revealSearchForSuggestions(slotKey) {
+        const { search, chip, field } = slots[slotKey];
+        if (!search) return;
+        if (search.hidden) {
+            if (chip) chip.hidden = true;
+            field?.classList.remove('compare-field--filled');
+            search.hidden = false;
+            search.value = '';
+            search.placeholder = state[slotKey]?.name
+                ? `Szukaj zamiast „${state[slotKey].name}”…`
+                : 'Szukaj produktu…';
+        }
+    }
+
     function openSuggestions(slotKey) {
         const search = slots[slotKey]?.search;
-        if (!search || search.hidden) return;
-        showSuggestions(slotKey, getSuggestionProducts(search.value));
+        if (!search) return;
+        revealSearchForSuggestions(slotKey);
+        const query = search.value;
+        const items = getSuggestionProducts(query, slotKey);
+        showSuggestions(slotKey, items, { showProposed: !query.trim() });
+        if (document.activeElement !== search) {
+            search.focus({ preventScroll: true });
+        }
     }
 
     function hideSuggestions(slotKey) {
@@ -223,34 +295,48 @@
         if (ul) ul.hidden = true;
     }
 
-    function showSuggestions(slotKey, items) {
+    function restoreChipIfNeeded(slotKey) {
+        const { search, suggestions } = slots[slotKey];
+        if (!state[slotKey]) return;
+        if (suggestions && !suggestions.hidden) return;
+        if (search && document.activeElement === search) return;
+        renderSelectedCard(slotKey, state[slotKey]);
+        if (search) search.placeholder = 'Szukaj produktu…';
+    }
+
+    function showSuggestions(slotKey, items, opts = {}) {
         const ul = slots[slotKey].suggestions;
         if (!ul) return;
-        if (!items.length) {
+
+        const showProposed = opts.showProposed === true;
+        const proposed = showProposed ? getProposedProducts(slotKey) : [];
+        const proposedSlugs = new Set(proposed.map((p) => p.slug));
+        const restItems = showProposed ? items.filter((p) => !proposedSlugs.has(p.slug)) : items;
+
+        if (!proposed.length && !restItems.length) {
             ul.hidden = true;
             ul.innerHTML = '';
             return;
         }
-        const groups = groupProductsByCategory(items);
-        ul.innerHTML = groups
-            .map(
-                (g) => `
-            <li class="compare-suggestions-cat" role="presentation">${escapeHtml(categoryLabel(g.category))}</li>
-            ${g.products
-                .map(
-                    (p) => `<li>
-                <button type="button" data-slug="${escapeHtml(p.slug)}">
-                    <span class="sug-emoji" aria-hidden="true">${p.emoji}</span>
-                    <span>
-                        <span>${escapeHtml(p.name)}</span>
-                        <span class="sug-meta">${escapeHtml(productSummary(p))}</span>
-                    </span>
-                </button>
-            </li>`
-                )
-                .join('')}`
-            )
-            .join('');
+
+        const groups = groupProductsByCategory(restItems);
+        const parts = [];
+
+        if (proposed.length) {
+            parts.push(
+                `<li class="compare-suggestions-cat compare-suggestions-cat--proposed" role="presentation">Proponowane</li>`
+            );
+            parts.push(proposed.map(suggestionItemHtml).join(''));
+        }
+
+        for (const g of groups) {
+            parts.push(
+                `<li class="compare-suggestions-cat" role="presentation">${escapeHtml(g.label)}</li>`
+            );
+            parts.push(g.products.map(suggestionItemHtml).join(''));
+        }
+
+        ul.innerHTML = parts.join('');
         ul.hidden = false;
         layoutSuggestions(slotKey);
     }
@@ -288,12 +374,14 @@
     }
 
     function beginProductChange(slotKey) {
+        state[slotKey] = null;
         renderSelectedCard(slotKey, null);
+        const search = slots[slotKey].search;
+        if (search) search.placeholder = 'Szukaj produktu…';
         hideSuggestions(slotKey);
-        window.requestAnimationFrame(() => {
-            slots[slotKey].search?.focus();
-            openSuggestions(slotKey);
-        });
+        syncUrl();
+        renderComparison();
+        window.requestAnimationFrame(() => openSuggestions(slotKey));
     }
 
     function setProduct(slotKey, product) {
@@ -749,17 +837,32 @@
     }
 
     function bindSlot(slotKey) {
-        const { search, suggestions } = slots[slotKey];
+        const { search, suggestions, field } = slots[slotKey];
         if (!search) return;
 
         search.addEventListener('input', () => openSuggestions(slotKey));
         search.addEventListener('focus', () => openSuggestions(slotKey));
-        search.addEventListener('click', () => openSuggestions(slotKey));
+        search.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openSuggestions(slotKey);
+        });
+
+        field?.addEventListener('click', (e) => {
+            if (e.target.closest('.compare-chip-clear')) return;
+            e.preventDefault();
+            openSuggestions(slotKey);
+        });
 
         const picker = search.closest('.compare-picker');
         const label = picker?.querySelector('.compare-picker-label');
-        label?.addEventListener('click', () => {
-            window.requestAnimationFrame(() => openSuggestions(slotKey));
+        label?.addEventListener('click', (e) => {
+            e.preventDefault();
+            openSuggestions(slotKey);
+        });
+
+        suggestions?.addEventListener('mousedown', (e) => {
+            // Nie chowaj listy przez blur inputu przed wyborem.
+            e.preventDefault();
         });
 
         suggestions?.addEventListener('click', (e) => {
@@ -770,7 +873,18 @@
         });
 
         search.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') hideSuggestions(slotKey);
+            if (e.key === 'Escape') {
+                hideSuggestions(slotKey);
+                restoreChipIfNeeded(slotKey);
+                search.blur();
+            }
+        });
+
+        search.addEventListener('blur', () => {
+            window.setTimeout(() => {
+                if (suggestions && !suggestions.hidden) return;
+                restoreChipIfNeeded(slotKey);
+            }, 120);
         });
     }
 
@@ -778,6 +892,8 @@
         if (!e.target.closest('.compare-search-wrap')) {
             hideSuggestions('a');
             hideSuggestions('b');
+            restoreChipIfNeeded('a');
+            restoreChipIfNeeded('b');
         }
         const changeBtn = e.target.closest('.compare-chip-clear');
         if (changeBtn) {
