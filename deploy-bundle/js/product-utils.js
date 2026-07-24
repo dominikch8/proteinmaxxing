@@ -10,6 +10,12 @@ function slugify(name) {
         .replace(/^-+|-+$/g, '');
 }
 
+/** Grams of protein per 100 kcal (higher = denser protein). */
+function proteinPer100Kcal(p) {
+    if (!p || !(p.kcal > 0) || !(p.protein > 0)) return null;
+    return (p.protein / p.kcal) * 100;
+}
+
 const CATEGORY_LABELS = {
     mieso: 'Mięsa i ryby',
     nabial: 'Nabiał i jaja',

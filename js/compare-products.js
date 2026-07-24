@@ -6,16 +6,19 @@
         { key: 'fat', label: 'Tłuszcz', unit: 'g', icon: '🥑', decimals: 1, neutral: true, hint: 'zależy od celu', hintKind: 'goal' },
         {
             key: 'proteinPerKcal',
-            label: 'Białko do kcal',
-            labelFull: 'kcal na 1 g białka',
-            unit: 'kcal/g białka',
+            label: 'Białko / 100 kcal',
+            labelFull: 'Białko na 100 kcal',
+            unit: 'g / 100 kcal',
             icon: '⚡',
             decimals: 1,
-            higherIsBetter: false,
-            hint: 'mniej = lepiej',
+            higherIsBetter: true,
+            hint: 'więcej = lepiej',
             compute(product) {
-                if (!product || !(product.protein > 0)) return null;
-                return product.kcal / product.protein;
+                if (typeof proteinPer100Kcal === 'function') {
+                    return proteinPer100Kcal(product);
+                }
+                if (!product || !(product.kcal > 0) || !(product.protein > 0)) return null;
+                return (product.protein / product.kcal) * 100;
             }
         },
         {
@@ -822,7 +825,7 @@
 
         chartEl.setAttribute(
             'aria-label',
-            `Porównanie ${a.name} i ${b.name}: makro, kcal na 1 g białka i stosunek tłuszczu nienasyconego do nasyconego na 100 g`
+            `Porównanie ${a.name} i ${b.name}: makro, białko na 100 kcal i stosunek tłuszczu nienasyconego do nasyconego na 100 g`
         );
 
         chartEl.innerHTML = `

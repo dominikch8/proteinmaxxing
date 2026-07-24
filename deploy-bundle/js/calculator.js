@@ -23,7 +23,11 @@ function pickRandomN(items, count) {
             if (goal === 'gain') {
                 return productsDatabase
                     .filter(p => p.protein >= 8 && !skipCats.includes(p.category))
-                    .sort((a, b) => (a.kcal / a.protein) - (b.kcal / b.protein))
+                    .sort((a, b) => {
+                        const ra = typeof proteinPer100Kcal === 'function' ? proteinPer100Kcal(a) : null;
+                        const rb = typeof proteinPer100Kcal === 'function' ? proteinPer100Kcal(b) : null;
+                        return (rb ?? -1) - (ra ?? -1);
+                    })
                     .slice(0, 24);
             }
             return productsDatabase.filter(p =>

@@ -16,7 +16,11 @@ function getCategoryId() {
 }
 
 function proteinKcalRatio(p) {
-    return p.protein > 0 ? p.kcal / p.protein : Infinity;
+    if (typeof proteinPer100Kcal === 'function') {
+        const v = proteinPer100Kcal(p);
+        return v == null ? -1 : v;
+    }
+    return p.kcal > 0 && p.protein > 0 ? (p.protein / p.kcal) * 100 : -1;
 }
 
 function sortPool(list, sortKey) {
@@ -31,7 +35,7 @@ function sortPool(list, sortKey) {
         case 'ratio-asc':
             sorted.sort(
                 (a, b) =>
-                    proteinKcalRatio(a) - proteinKcalRatio(b) ||
+                    proteinKcalRatio(b) - proteinKcalRatio(a) ||
                     a.name.localeCompare(b.name, 'pl')
             );
             break;

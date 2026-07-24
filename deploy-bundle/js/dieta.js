@@ -126,9 +126,11 @@ function buildBazaProductCardHtml(p) {
                     return list.sort((a, b) => b.kcal - a.kcal || byName(a, b));
                 case 'ratio-asc':
                     return list.sort((a, b) => {
-                        const ra = a.protein > 0 ? a.kcal / a.protein : 9999;
-                        const rb = b.protein > 0 ? b.kcal / b.protein : 9999;
-                        return ra - rb || byName(a, b);
+                        const ra = typeof proteinPer100Kcal === 'function' ? proteinPer100Kcal(a) : null;
+                        const rb = typeof proteinPer100Kcal === 'function' ? proteinPer100Kcal(b) : null;
+                        const va = ra == null ? -1 : ra;
+                        const vb = rb == null ? -1 : rb;
+                        return vb - va || byName(a, b);
                     });
                 case 'price-asc':
                     return list.sort((a, b) => {
@@ -221,27 +223,28 @@ function buildBazaProductCardHtml(p) {
 
         window.showMoreBazaProducts = showMoreBazaProducts;
 
-        const RATIO_GREEN = 4.2;
-        const RATIO_RED = 36;
-        const RATIO_SPAN = RATIO_RED - RATIO_GREEN;
+        // g białka / 100 kcal — wyżej = lepiej (zielony)
+        const RATIO_GREEN = 24;
+        const RATIO_RED = 2.8;
+        const RATIO_SPAN = RATIO_GREEN - RATIO_RED;
         const COST_GREEN = 5;
         const COST_RED = 45;
         const COST_SPAN = COST_RED - COST_GREEN;
 
         function computeMaxxingPresentation(p) {
-            const ratio = p.protein > 0 ? (p.kcal / p.protein) : 9999;
+            const ratio = typeof proteinPer100Kcal === 'function' ? proteinPer100Kcal(p) : null;
             let bgStyle = '';
             let textStyle = 'color: #1f2937;';
             let badgeTextStyle = 'color: #0f172a;';
             let ratioText = '';
 
-            if (p.protein === 0) {
+            if (ratio == null) {
                 bgStyle = 'background-color: #fee2e2;';
                 textStyle = 'color: #991b1b;';
                 badgeTextStyle = 'color: #7f1d1d;';
-                ratioText = 'Brak białka (∞ kcal/1g)';
+                ratioText = 'Brak białka / kcal';
             } else {
-                let score = (ratio - RATIO_GREEN) / (RATIO_SPAN || 1);
+                let score = (RATIO_GREEN - ratio) / (RATIO_SPAN || 1);
                 if (score < 0) score = 0;
                 if (score > 1) score = 1;
                 const hue = 152 - score * 118;
@@ -252,10 +255,10 @@ function buildBazaProductCardHtml(p) {
                 bgStyle = `background-color: hsl(${hue}, ${sat}%, ${lightBg}%);`;
                 textStyle = `color: hsl(${hue}, ${Math.min(88, sat + 12)}%, ${lightText}%);`;
                 badgeTextStyle = `color: hsl(${hue}, ${Math.min(92, sat + 16)}%, ${lightBadge}%);`;
-                ratioText = `${ratio.toFixed(1)} kcal na 1g białka`;
+                ratioText = `${ratio.toFixed(1)} g białka / 100 kcal`;
             }
 
-            return { ratio, bgStyle, textStyle, badgeTextStyle, ratioText };
+            return { ratio: ratio == null ? -1 : ratio, bgStyle, textStyle, badgeTextStyle, ratioText };
         }
 
         function computePricePresentation(p) {
@@ -459,22 +462,22 @@ function buildBazaProductCardHtml(p) {
             const rest = names.length - maxNames;
             const tail = rest > 0 ? ` i ${rest} innych` : '';
             if (mode === 'maxxing') {
-                return `Uśredniony wynik kcal na 1 g białka (${members.length} produktów): ${head}${tail}.`;
+                return `Uśredniony wynik g białka / 100 kcal (${members.length} produktów): ${head}${tail}.`;
             }
             return `Uśredniona cena za 100 g białka (${members.length} produktów): ${head}${tail}.`;
         }
 
         function computeMaxxingPresentationFromRatio(ratio) {
-            if (ratio >= 9999) {
+            if (ratio == null || ratio < 0) {
                 return {
-                    ratio,
+                    ratio: -1,
                     bgStyle: 'background-color: #fee2e2;',
                     textStyle: 'color: #991b1b;',
                     badgeTextStyle: 'color: #7f1d1d;',
-                    ratioText: 'Brak białka (∞ kcal/1g)'
+                    ratioText: 'Brak białka / kcal'
                 };
             }
-            let score = (ratio - RATIO_GREEN) / (RATIO_SPAN || 1);
+            let score = (RATIO_GREEN - ratio) / (RATIO_SPAN || 1);
             if (score < 0) score = 0;
             if (score > 1) score = 1;
             const hue = 152 - score * 118;
@@ -485,7 +488,7 @@ function buildBazaProductCardHtml(p) {
             const bgStyle = `background-color: hsl(${hue}, ${sat}%, ${lightBg}%);`;
             const textStyle = `color: hsl(${hue}, ${Math.min(88, sat + 12)}%, ${lightText}%);`;
             const badgeTextStyle = `color: hsl(${hue}, ${Math.min(92, sat + 16)}%, ${lightBadge}%);`;
-            const ratioText = `${ratio.toFixed(1)} kcal na 1g białka`;
+            const ratioText = `${ratio.toFixed(1)} g białka / 100 kcal`;
             return { ratio, bgStyle, textStyle, badgeTextStyle, ratioText };
         }
 
@@ -582,7 +585,7 @@ function buildBazaProductCardHtml(p) {
             }
 
             return aggregated
-                .sort((a, b) => a.ratio - b.ratio)
+                .sort((a, b) => b.ratio - a.ratio)
                 .slice(0, 10);
         }
 
@@ -723,7 +726,7 @@ function buildBazaProductCardHtml(p) {
             }
 
             const lead = mode === 'maxxing'
-                ? 'Najwięcej białka względem kalorii — podium i miejsca 4–10'
+                ? 'Najwięcej białka na 100 kcal — podium i miejsca 4–10'
                 : 'Najbardziej ekonomiczne źródła 100 g białka. Pamiętaj, że wiele z nich dostarcza również sporą ilość węglowodanów i kalorii, dlatego uwzględnij je w swoim bilansie z głową.';
 
             const podiumOrder = [
@@ -931,12 +934,13 @@ function buildBazaProductCardHtml(p) {
             }
 
             filtered.forEach(p => {
-                p.ratio = p.protein > 0 ? (p.kcal / p.protein) : 9999;
+                const density = typeof proteinPer100Kcal === 'function' ? proteinPer100Kcal(p) : null;
+                p.ratio = density == null ? -1 : density;
             });
             if (cat === 'all' && !query) {
                 filtered = applyRankingGroupsForAllCategory(filtered, 'maxxing');
             }
-            filtered.sort((a, b) => a.ratio - b.ratio);
+            filtered.sort((a, b) => b.ratio - a.ratio);
 
             const listKey = `${cat}|${query}`;
             if (listKey !== maxxingListKey) {
