@@ -107,30 +107,30 @@ const FOOD_SUBJECT = {
     'jogurt-naturalny': 'plain natural yogurt white in bowl no toppings',
     'serek-wiejski': 'Polish cottage cheese serek wiejski in bowl',
     'protein-pudding': 'smooth vanilla protein pudding only in small cup, creamy pudding surface, NO chocolate drizzle, NO toppings, NO spoon clutter',
-    'ser-gouda': 'classic Dutch Gouda cheese wedge, smooth pale yellow-orange rind and interior, mild young Gouda, NOT smoked, NO brown smoked rind, NO paprika coating',
+    'ser-gouda': 'young Dutch Gouda cheese wedge, pale yellow interior, thin yellow wax rind, smooth mild cheese, absolutely NOT smoked, NO dark brown rind, NO orange smoked coating',
     omlet: 'simple plain folded omelette on white plate, yellow egg omelette only, NO toppings, NO cheese pile, NO vegetables',
     'jogurt-owocowy': 'fruit yogurt in small white bowl, soft pink-peach fruit yogurt color, smooth dairy, NO whole fruit chunks dominating, NO chocolate',
     'mleko-bez-laktozy-2': 'clear glass of white lactose-free cow milk, plain white milk only, NO chocolate, NO cereal, NO cookies around',
     'jajecznica-na-masle': 'classic soft scrambled eggs cooked in butter on a white plate, fluffy yellow scrambled eggs only',
-    'smietana-12': 'pourable light cream 12 percent fat in a small clear glass, thin liquid white cream, NOT whipped, NOT thick sour cream block',
+    'smietana-12': 'liquid pourable sour cream 12 percent in clear drinking glass, white cream filling glass like a drink, flat liquid surface, NOT whipped peaks, NOT stiff cream',
     'mleko-0': 'clear glass of skim white cow milk 0 percent fat, pure white milk only, NO chocolate rim, NO cocoa powder, NO cookies',
     'ser-plesniowy-blue': 'wedge of blue cheese Roquefort style with blue-green mold veins, cheese only, NO fruit, NO honey, NO crackers',
-    'ser-cheddar': 'block or thick slices of orange cheddar cheese, classic cheddar color and texture, NO blue mold, NOT blue cheese',
+    'ser-cheddar': 'bright orange cheddar cheese block wedge, solid orange cheddar color throughout, cheddar cheese only, absolutely NO blue mold, NO green veins, NOT Roquefort, NOT blue cheese',
     'ser-cottage': 'cottage cheese with soft white curds in a small white bowl, cottage cheese only',
-    'smietana-18': 'pourable cream 18 percent in a clear glass, liquid white cream, NOT whipped peaks, NOT solid',
-    'smietanka-30': 'pourable heavy cream 30 percent in a clear glass, liquid thick cream, NOT whipped cream swirls',
+    'smietana-18': 'liquid pourable cream 18 percent filling a clear glass, white liquid cream with flat surface like milk, NOT whipped cream, NO stiff peaks',
+    'smietanka-30': 'liquid heavy cream 30 percent filling a clear glass cup, pourable white cream liquid surface, NOT whipped cream peaks, NOT stiff meringue texture',
     'mleko-roslinne-owsiane': 'glass of oat plant milk, beige-white oat milk, plain drink only, NO oats flakes pile dominating, NO cereal bowl',
     'ser-zolty-plastry': 'stack of yellow cheese slices, thin square sandwich cheese slices, sliced cheese only',
-    'izolat-bialka-wpi': 'scoop of white whey protein isolate powder on white background, protein powder mound only, NO bowl of food, NO shaker bottle clutter',
+    'izolat-bialka-wpi': 'loose mound of white whey protein isolate powder directly on white surface, powder only, NO bowl, NO dish, NO cup, NO container',
     'twarog-sernikowy': 'smooth cream cheese style twaróg sernikowy for cheesecake, dense white creamy cheese block or bowl resembling cheesecake filling',
     'ser-twarogowy-tlusty': 'full-fat Polish twaróg quark cheese white block or crumbled in bowl, fresh white cheese',
-    'jogurt-kokosowy': 'coconut yogurt in a small white bowl, white creamy yogurt with light coconut look, NOT served inside a hollow coconut shell, NO whole coconut fruit as bowl',
-    'serek-homogenizowany-danio': 'Danio style homogenized yogurt cheese in small plastic cup, creamy thick dessert yogurt, cup of Danio-like serek, NO random fruit salad',
+    'jogurt-kokosowy': 'coconut yogurt in a small white ceramic bowl, white creamy yogurt, NOT inside a coconut shell, NO whole coconut fruit',
+    'serek-homogenizowany-danio': 'small plastic yogurt cup filled with thick creamy homogenized yogurt cheese like Polish Danio, cup packaging dairy dessert, smooth cream top',
     'ser-mascarpone': 'mascarpone cheese in a small white bowl, smooth thick Italian cream cheese',
-    'mleko-skondensowane-slodzone': 'sweetened condensed milk metal tube squeezed with thick white condensed milk, classic condensed milk tube packaging style, dairy product',
+    'mleko-skondensowane-slodzone': 'metal squeeze tube of sweetened condensed milk with thick white milk coming from the nozzle, aluminum tube dairy product, condensed milk tube, NOT a bowl',
     'ser-emmental': 'Swiss Emmental cheese wedge with characteristic large round holes, pale yellow cheese',
     'twarog-wiejski': 'Polish twaróg wiejski country cottage cheese with soft white curds in bowl',
-    'ser-wedzony': 'smoked cheese block or slices with brown smoked rind, clearly smoked dairy cheese, smoked look',
+    'ser-wedzony': 'smoked cheese round or block with dark brown smoked outer rind and pale interior, clearly smoked cheese look',
     'ser-topiony-plastry': 'stack of processed melting cheese slices, individually separated style yellow cheese slices for toast',
     'papryka-zielona': 'ONE whole ripe GREEN bell pepper, bright fresh green skin, green stem, green capsicum only, NOT red, NOT yellow',
     'papryka-zolta': 'ONE whole ripe YELLOW bell pepper, bright golden yellow skin, green stem, yellow capsicum only, NOT red',
@@ -344,7 +344,7 @@ function buildPrompt(subject, refs) {
 
 function pollinationsUrl(prompt, slug, attempt = 0) {
     const seed =
-        (crypto.createHash('md5').update(`dairy-fix-v2-${slug}-${attempt}`).digest().readUInt32BE(0) +
+        (crypto.createHash('md5').update(`dairy-fix-v4-${slug}-${attempt}`).digest().readUInt32BE(0) +
             attempt * 9973) %
         2147483646;
     const enc = encodeURIComponent(prompt.slice(0, 480));
