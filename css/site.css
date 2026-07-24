@@ -2350,6 +2350,24 @@
             border-color: rgba(37, 99, 235, 0.22);
         }
 
+        /* Tylko pierwszy kafelek na stronie głównej — mocniejszy niebieski */
+        #home-tile-how {
+            border-color: rgba(37, 99, 235, 0.3);
+            background: linear-gradient(145deg, rgba(37, 99, 235, 0.18) 0%, rgba(219, 234, 254, 0.95) 100%);
+        }
+
+        #home-tile-how:hover,
+        #home-tile-how[open],
+        #home-tile-how.is-animating-open {
+            border-color: rgba(37, 99, 235, 0.4);
+            background: linear-gradient(145deg, rgba(37, 99, 235, 0.22) 0%, rgba(191, 219, 254, 0.88) 100%);
+        }
+
+        #home-tile-how > .home-info-tile-bar:hover,
+        #home-tile-how[open] > .home-info-tile-bar {
+            background: rgba(37, 99, 235, 0.08);
+        }
+
         /* Pełna szerokość pod rzędem kafelków (JS przenosi tu panel) */
         .home-info-tiles-outlet {
             grid-column: 1 / -1;

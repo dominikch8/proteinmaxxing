@@ -61,9 +61,9 @@
     --kcal-badge-bg: linear-gradient(135deg, #eff6ff, #dbeafe);
     --kcal-badge-color: #1e40af;
     --kcal-badge-border: #93c5fd;
-    --calc-tile-bg: linear-gradient(145deg, rgba(37, 99, 235, 0.16) 0%, rgba(219, 234, 254, 0.92) 100%);
-    --calc-tile-border: rgba(37, 99, 235, 0.28);
-    --calc-tile-bg-emphasis: linear-gradient(145deg, rgba(37, 99, 235, 0.2) 0%, rgba(191, 219, 254, 0.72) 100%);
+    --calc-tile-bg: linear-gradient(145deg, rgba(37, 99, 235, 0.09) 0%, rgba(239, 246, 255, 0.94) 100%);
+    --calc-tile-border: rgba(37, 99, 235, 0.22);
+    --calc-tile-bg-emphasis: linear-gradient(145deg, rgba(37, 99, 235, 0.14) 0%, rgba(219, 234, 254, 0.58) 100%);
     --calc-tile-border-emphasis: rgba(30, 58, 138, 0.4);
     --calc-alert-bg: linear-gradient(145deg, rgba(37, 99, 235, 0.1) 0%, rgba(219, 234, 254, 0.52) 100%);
     --calc-alert-border: #93c5fd;
