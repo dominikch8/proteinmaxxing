@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <script src="js/theme-init.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <script src="js/consent-head.js"></script>
-    <script async type="text/javascript" src="//clickiocmp.com/t/consent_249709.js"></script>
-    <meta name="google-adsense-account" content="ca-pub-8540801395510703">
+<meta name="google-adsense-account" content="ca-pub-8540801395510703">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8540801395510703"
         crossorigin="anonymous"></script>
 <meta name="robots" content="noindex, nofollow">
-    <title>Panel zgłoszeń produktów | Proteiner</title>
+    <title>Panel administratora | Proteiner</title>
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +17,12 @@
     <link rel="stylesheet" href="css/themes.css">
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/theme-switch.css">
+    <link rel="stylesheet" href="css/site-motion.css">
     <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/auth.css">
 </head>
 <body>
-    <script defer src="https://s.clickiocdn.com/t/249709/di.js"></script>
-    <header class="site-header">
+<header class="site-header">
         <nav>
             <a href="/" class="logo">
                 <img class="logo-mark" src="images/favicon.svg" alt="" width="56" height="56" decoding="async">
@@ -47,44 +46,105 @@
             </section>
 
             <section id="adminPanel" class="admin-panel" hidden>
-                <div class="page-hero" style="margin-bottom:20px;">
-                    <h1>Zgłoszenia produktów</h1>
-                    <p class="subtitle">Weryfikacja przed dodaniem do bazy — kopiuj JSON do <code>products-data-raw.js</code></p>
+                <div class="page-hero" style="margin-bottom:16px;">
+                    <h1>Panel administratora</h1>
+                    <p class="subtitle">Zgłoszenia, produkty live i artykuły</p>
                 </div>
 
                 <p class="admin-toast" id="adminToast" hidden role="status"></p>
 
-                <div class="admin-toolbar">
-                    <div class="admin-filters" id="adminFilters">
-                        <button type="button" class="btn-sub active" data-filter="pending">Oczekujące (<span id="countPending">0</span>)</button>
-                        <button type="button" class="btn-sub" data-filter="all">Wszystkie (<span id="countAll">0</span>)</button>
-                        <button type="button" class="btn-sub" data-filter="approved">Zaakceptowane</button>
-                        <button type="button" class="btn-sub" data-filter="rejected">Odrzucone</button>
+                <nav class="admin-filters" id="adminTabs" aria-label="Sekcje panelu" style="margin-bottom:20px;">
+                    <button type="button" class="btn-sub active" data-tab="submissions">Zgłoszenia</button>
+                    <button type="button" class="btn-sub" data-tab="add-product">Dodaj produkt</button>
+                    <button type="button" class="btn-sub" data-tab="products-live">Produkty live</button>
+                    <button type="button" class="btn-sub" data-tab="articles">Artykuły</button>
+                </nav>
+
+                <div data-admin-panel="submissions">
+                    <div class="admin-toolbar">
+                        <div class="admin-filters" id="adminFilters">
+                            <button type="button" class="btn-sub active" data-filter="pending">Oczekujące (<span id="countPending">0</span>)</button>
+                            <button type="button" class="btn-sub" data-filter="all">Wszystkie (<span id="countAll">0</span>)</button>
+                            <button type="button" class="btn-sub" data-filter="approved">Zaakceptowane</button>
+                            <button type="button" class="btn-sub" data-filter="rejected">Odrzucone</button>
+                        </div>
+                        <div class="admin-actions-row">
+                            <button type="button" class="admin-btn" id="adminSyncServerBtn">Sync z serwera</button>
+                            <button type="button" class="admin-btn" id="adminExportBtn">Eksport JSON</button>
+                        </div>
                     </div>
-                    <div class="admin-actions-row">
-                        <button type="button" class="admin-btn" id="adminSyncServerBtn">Sync z serwera</button>
-                        <button type="button" class="admin-btn" id="adminExportBtn">Eksport JSON</button>
+                    <div class="admin-list" id="adminList"></div>
+                    <p class="admin-empty" id="adminEmpty" hidden>Brak zgłoszeń w tej kategorii.</p>
+                    <div class="admin-import">
+                        <h2>Import z e-maila</h2>
+                        <p>Wklej JSON produktu albo treść wiadomości z FormSubmit.</p>
+                        <textarea id="adminImportText" placeholder='{"name":"...","category":"nabial",...}'></textarea>
+                        <button type="button" class="admin-btn admin-btn--primary" id="adminImportBtn">Importuj do listy</button>
                     </div>
                 </div>
 
-                <div class="admin-list" id="adminList"></div>
-                <p class="admin-empty" id="adminEmpty" hidden>Brak zgłoszeń w tej kategorii.</p>
+                <div data-admin-panel="add-product" hidden>
+                    <form id="adminProductForm" class="auth-form" style="max-width:640px;">
+                        <div class="input-group">
+                            <label for="admName">Nazwa *</label>
+                            <input type="text" id="admName" required maxlength="120">
+                        </div>
+                        <div class="input-group">
+                            <label for="admCategory">Kategoria *</label>
+                            <select id="admCategory" required></select>
+                        </div>
+                        <div class="input-group">
+                            <label for="admEmoji">Emotka</label>
+                            <input type="text" id="admEmoji" maxlength="8" placeholder="🍽️">
+                        </div>
+                        <div class="form-grid form-grid--macro" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;">
+                            <div class="input-group"><label for="admKcal">Kcal *</label><input type="number" id="admKcal" required min="0" step="1"></div>
+                            <div class="input-group"><label for="admProtein">Białko *</label><input type="number" id="admProtein" required min="0" step="0.1"></div>
+                            <div class="input-group"><label for="admCarbs">Węgle *</label><input type="number" id="admCarbs" required min="0" step="0.1"></div>
+                            <div class="input-group"><label for="admFat">Tłuszcz *</label><input type="number" id="admFat" required min="0" step="0.1"></div>
+                            <div class="input-group"><label for="admSatFat">Nasycone *</label><input type="number" id="admSatFat" required min="0" step="0.1"></div>
+                            <div class="input-group"><label for="admUnsatFat">Nienasycone *</label><input type="number" id="admUnsatFat" required min="0" step="0.1"></div>
+                        </div>
+                        <div class="input-group"><label for="admServingText">Opis porcji *</label><input type="text" id="admServingText" required maxlength="80"></div>
+                        <div class="input-group"><label for="admServingGrams">Gramatura porcji *</label><input type="number" id="admServingGrams" required min="1" step="1"></div>
+                        <div class="input-group"><label for="admServingPrice">Cena porcji (PLN)</label><input type="number" id="admServingPrice" min="0" step="0.01"></div>
+                        <div class="input-group"><label for="admMicros">Mikroelementy</label><input type="text" id="admMicros" maxlength="200"></div>
+                        <div class="input-group"><label for="admExtra">Opis</label><textarea id="admExtra" rows="3" maxlength="500"></textarea></div>
+                        <p class="auth-error" id="adminProductError" hidden role="alert"></p>
+                        <button type="submit" class="auth-submit">Opublikuj produkt w bazie</button>
+                    </form>
+                    <p style="margin-top:12px;font-size:0.88rem;color:var(--text-muted);">Produkt od razu trafia do kalkulatora / diety (merge z API), bez czekania na deploy.</p>
+                </div>
 
-                <div class="admin-import">
-                    <h2>Import z e-maila</h2>
-                    <p>Wklej JSON produktu albo całą treść wiadomości z FormSubmit (pole <code>json</code> lub blok na końcu maila). Zgłoszenia z formularza użytkowników trafiają na mail — <strong>wklej je tutaj</strong>, bo przeglądarka gościa nie widzi Twojego localStorage.</p>
-                    <p style="margin-top:8px;font-size:0.82rem;">Opcjonalnie: wyeksportuj listę jako JSON, wklej do <code>data/pending-submissions.json</code> na serwerze i kliknij „Sync z serwera”.</p>
-                    <textarea id="adminImportText" placeholder='{"name":"...","category":"nabial",...}'></textarea>
-                    <button type="button" class="admin-btn admin-btn--primary" id="adminImportBtn">Importuj do listy</button>
+                <div data-admin-panel="products-live" hidden>
+                    <div id="adminLiveProducts"></div>
+                </div>
+
+                <div data-admin-panel="articles" hidden>
+                    <form id="adminArticleForm" class="auth-form" style="max-width:720px;margin-bottom:28px;">
+                        <div class="input-group"><label for="artTitle">Tytuł *</label><input type="text" id="artTitle" required maxlength="160"></div>
+                        <div class="input-group"><label for="artSubtitle">Podtytuł</label><input type="text" id="artSubtitle" maxlength="220"></div>
+                        <div class="input-group"><label for="artEmoji">Emotka</label><input type="text" id="artEmoji" maxlength="8" placeholder="📝"></div>
+                        <div class="input-group"><label for="artSlug">Slug URL (opcjonalnie)</label><input type="text" id="artSlug" maxlength="120" placeholder="np. białko-na-redukcji"></div>
+                        <div class="input-group"><label for="artBody">Treść * (akapity oddziel pustą linią)</label><textarea id="artBody" rows="12" required maxlength="50000"></textarea></div>
+                        <p class="auth-error" id="adminArticleError" hidden role="alert"></p>
+                        <button type="submit" class="auth-submit">Opublikuj artykuł</button>
+                    </form>
+                    <h2 style="margin:0 0 12px;font-size:1.1rem;">Opublikowane z panelu</h2>
+                    <div id="adminArticlesList"></div>
                 </div>
             </section>
         </main>
+    </div>
 <script src="js/admin-config.js"></script>
-    <script src="js/auth-api.js"></script>
-    <script src="js/product-utils.js"></script>
-    <script src="js/submission-store.js"></script>
-    <script src="js/admin-submissions.js"></script>
+<script src="js/auth-api.js"></script>
+<script src="js/product-utils.js"></script>
+<script src="js/submission-store.js"></script>
+<script src="js/admin-submissions.js"></script>
 <script src="js/auth-ui.js"></script>
 <script src="js/theme.js"></script>
+<script src="js/site-motion.js"></script>
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <script src="js/cookie-banner.js"></script>
 </body>
 </html>
