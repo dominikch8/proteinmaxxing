@@ -24,7 +24,7 @@
                 ad_storage: 'granted',
                 ad_user_data: 'granted',
                 ad_personalization: 'granted',
-                analytics_storage: 'denied'
+                analytics_storage: 'granted'
             });
             return;
         }
@@ -59,8 +59,8 @@
         wrap.innerHTML = `
             <div class="pm-cookie-banner__inner">
                 <p class="pm-cookie-banner__text">
-                    Ta strona korzysta z plików cookie (Google AdSense),
-                    m.in. do dopasowanych reklam.
+                    Ta strona korzysta z plików cookie (Google Analytics, AdSense),
+                    m.in. do statystyk i dopasowanych reklam.
                     <a href="${policyUrl()}">Więcej w Informacjach</a> (UE / RODO).
                 </p>
                 <div class="pm-cookie-banner__actions">
