@@ -284,17 +284,24 @@ html.pm-scrolled .main-content {
 
 .pm-atmosphere-host {
     position: relative;
-    isolation: isolate;
 }
 
-.pm-atmosphere-host > :not(.pm-atmosphere) {
+.site-header,
+.page-container,
+.site-footer,
+main.product-page,
+main.main-content,
+.err-wrap {
     position: relative;
     z-index: 1;
 }
 
 .pm-atmosphere {
     position: absolute;
-    inset: -36px -24px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
     pointer-events: none;
     z-index: 0;
     overflow: hidden;
@@ -312,7 +319,7 @@ html.pm-scrolled .main-content {
     height: min(48vw, 380px);
     top: 4%;
     left: -10%;
-    background: radial-gradient(circle, rgba(128, 0, 0, 0.15) 0%, rgba(102, 0, 0, 0.04) 68%, transparent 100%);
+    background: radial-gradient(circle, rgba(128, 0, 0, 0.16) 0%, rgba(102, 0, 0, 0.04) 68%, transparent 100%);
     animation: pmAtmosphereDriftA 16s ease-in-out infinite;
 }
 
@@ -321,19 +328,36 @@ html.pm-scrolled .main-content {
     height: min(52vw, 420px);
     top: 18%;
     right: -12%;
-    background: radial-gradient(circle, rgba(37, 99, 235, 0.13) 0%, rgba(30, 58, 95, 0.04) 68%, transparent 100%);
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.14) 0%, rgba(30, 58, 95, 0.04) 68%, transparent 100%);
     animation: pmAtmosphereDriftB 19s ease-in-out infinite;
 }
 
 .pm-atmosphere-blob--c {
-    width: min(40vw, 320px);
-    height: min(40vw, 320px);
-    top: auto;
-    bottom: 8%;
-    left: 28%;
-    background: radial-gradient(circle, rgba(128, 0, 0, 0.07) 0%, rgba(37, 99, 235, 0.07) 48%, transparent 72%);
+    width: min(42vw, 340px);
+    height: min(42vw, 340px);
+    top: 42%;
+    left: 22%;
+    background: radial-gradient(circle, rgba(128, 0, 0, 0.08) 0%, rgba(37, 99, 235, 0.08) 48%, transparent 72%);
     animation: pmAtmosphereDriftA 22s ease-in-out infinite reverse;
     filter: blur(82px);
+}
+
+.pm-atmosphere-blob--d {
+    width: min(44vw, 360px);
+    height: min(44vw, 360px);
+    top: 64%;
+    right: -8%;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.11) 0%, rgba(128, 0, 0, 0.05) 55%, transparent 100%);
+    animation: pmAtmosphereDriftB 20s ease-in-out infinite reverse;
+}
+
+.pm-atmosphere-blob--e {
+    width: min(40vw, 300px);
+    height: min(40vw, 300px);
+    top: 82%;
+    left: -6%;
+    background: radial-gradient(circle, rgba(128, 0, 0, 0.1) 0%, rgba(37, 99, 235, 0.06) 50%, transparent 100%);
+    animation: pmAtmosphereDriftA 18s ease-in-out infinite;
 }
 
 .pm-atmosphere-ring {
@@ -355,11 +379,19 @@ html.pm-scrolled .main-content {
 .pm-atmosphere-ring--b {
     width: min(40vw, 340px);
     height: min(40vw, 340px);
-    top: auto;
-    bottom: 12%;
+    top: 48%;
     right: 8%;
     border-color: rgba(37, 99, 235, 0.14);
     animation: pmAtmosphereRingPulse 4.8s ease-out 1.1s infinite;
+}
+
+.pm-atmosphere-ring--c {
+    width: min(36vw, 300px);
+    height: min(36vw, 300px);
+    top: 78%;
+    left: 18%;
+    border-color: rgba(128, 0, 0, 0.1);
+    animation: pmAtmosphereRingPulse 5s ease-out 0.6s infinite;
 }
 
 .pm-atmosphere-dot {
@@ -372,11 +404,11 @@ html.pm-scrolled .main-content {
     animation: pmAtmosphereDotFloat 3.8s ease-in-out infinite;
 }
 
-.pm-atmosphere-dot--1 { top: 12%; left: 16%; }
-.pm-atmosphere-dot--2 { top: 28%; right: 18%; animation-delay: 0.6s; background: linear-gradient(135deg, #2563eb, #800000); }
-.pm-atmosphere-dot--3 { top: 48%; left: 22%; animation-delay: 1.2s; width: 4px; height: 4px; }
-.pm-atmosphere-dot--4 { top: 62%; left: 58%; animation-delay: 1.8s; }
-.pm-atmosphere-dot--5 { top: 76%; right: 26%; animation-delay: 2.3s; width: 3px; height: 3px; }
+.pm-atmosphere-dot--1 { top: 10%; left: 16%; }
+.pm-atmosphere-dot--2 { top: 24%; right: 18%; animation-delay: 0.6s; background: linear-gradient(135deg, #2563eb, #800000); }
+.pm-atmosphere-dot--3 { top: 40%; left: 22%; animation-delay: 1.2s; width: 4px; height: 4px; }
+.pm-atmosphere-dot--4 { top: 56%; left: 58%; animation-delay: 1.8s; }
+.pm-atmosphere-dot--5 { top: 72%; right: 26%; animation-delay: 2.3s; width: 3px; height: 3px; }
 .pm-atmosphere-dot--6 { top: 88%; left: 38%; animation-delay: 2.9s; }
 
 [data-theme='dark'] .pm-atmosphere-blob--a {

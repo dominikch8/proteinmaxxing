@@ -114,14 +114,30 @@
         boot();
     }
 
+    function syncCompareAtmosphere() {
+        const layer = document.querySelector('.compare-atmosphere');
+        const host = document.querySelector('main.compare-page, main.main-content');
+        if (!layer || !host) return;
+        const h = Math.max(host.scrollHeight, host.clientHeight, window.innerHeight * 0.6);
+        layer.style.height = `${h}px`;
+    }
+
     function mountAtmosphere() {
         if (reduce) return;
-        if (document.querySelector('.compare-atmosphere, .pm-atmosphere')) return;
 
-        const host =
-            document.querySelector('main.main-content') ||
-            document.querySelector('main.product-page');
-        if (!host) return;
+        if (document.body.classList.contains('compare-body')) {
+            const run = () => syncCompareAtmosphere();
+            run();
+            window.addEventListener('resize', run, { passive: true });
+            [400, 1200, 2500].forEach((ms) => setTimeout(run, ms));
+            if (typeof ResizeObserver === 'function') {
+                const host = document.querySelector('main.compare-page, main.main-content');
+                if (host) new ResizeObserver(run).observe(host);
+            }
+            return;
+        }
+
+        if (document.querySelector('.pm-atmosphere')) return;
 
         const layer = document.createElement('div');
         layer.className = 'pm-atmosphere';
@@ -130,8 +146,11 @@
             <span class="pm-atmosphere-blob pm-atmosphere-blob--a"></span>
             <span class="pm-atmosphere-blob pm-atmosphere-blob--b"></span>
             <span class="pm-atmosphere-blob pm-atmosphere-blob--c"></span>
+            <span class="pm-atmosphere-blob pm-atmosphere-blob--d"></span>
+            <span class="pm-atmosphere-blob pm-atmosphere-blob--e"></span>
             <span class="pm-atmosphere-ring pm-atmosphere-ring--a"></span>
             <span class="pm-atmosphere-ring pm-atmosphere-ring--b"></span>
+            <span class="pm-atmosphere-ring pm-atmosphere-ring--c"></span>
             <span class="pm-atmosphere-dot pm-atmosphere-dot--1"></span>
             <span class="pm-atmosphere-dot pm-atmosphere-dot--2"></span>
             <span class="pm-atmosphere-dot pm-atmosphere-dot--3"></span>
@@ -139,8 +158,32 @@
             <span class="pm-atmosphere-dot pm-atmosphere-dot--5"></span>
             <span class="pm-atmosphere-dot pm-atmosphere-dot--6"></span>
         `;
-        host.prepend(layer);
-        host.classList.add('pm-atmosphere-host');
+        document.body.prepend(layer);
+        document.body.classList.add('pm-atmosphere-host');
+
+        const syncHeight = () => {
+            const h = Math.max(
+                document.documentElement.scrollHeight,
+                document.body.scrollHeight,
+                window.innerHeight
+            );
+            layer.style.height = `${h}px`;
+        };
+
+        syncHeight();
+        window.addEventListener('resize', syncHeight, { passive: true });
+        window.addEventListener('load', syncHeight, { passive: true });
+
+        if (typeof ResizeObserver === 'function') {
+            const ro = new ResizeObserver(syncHeight);
+            ro.observe(document.documentElement);
+            ro.observe(document.body);
+            const main = document.querySelector('main');
+            if (main) ro.observe(main);
+        }
+
+        // Late content (product grids, tabs, images)
+        [400, 1200, 2500].forEach((ms) => setTimeout(syncHeight, ms));
     }
 
     if (document.readyState === 'loading') {
