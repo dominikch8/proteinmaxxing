@@ -245,15 +245,22 @@
         const { search, suggestions: ul } = slots[slotKey];
         if (!search || !ul || ul.hidden) return;
 
-        const rect = search.closest('.compare-field')?.getBoundingClientRect() || search.getBoundingClientRect();
+        const field = search.closest('.compare-field') || search;
+        const rect = field.getBoundingClientRect();
         const gap = 6;
         const bottomPad = 16;
         const top = rect.bottom + gap;
         const maxHeight = Math.max(160, window.innerHeight - top - bottomPad);
 
+        if (ul.parentElement !== document.body) {
+            document.body.appendChild(ul);
+        }
+        ul.dataset.compareSlot = slotKey;
+        ul.style.position = 'fixed';
+        ul.style.zIndex = '10000';
         ul.style.top = `${top}px`;
-        ul.style.left = `${rect.left}px`;
-        ul.style.width = `${rect.width}px`;
+        ul.style.left = `${Math.max(8, rect.left)}px`;
+        ul.style.width = `${Math.min(rect.width, window.innerWidth - 16)}px`;
         ul.style.maxHeight = `${maxHeight}px`;
     }
 
@@ -268,9 +275,13 @@
         const { search, chip, field } = slots[slotKey];
         if (!search) return;
         if (search.hidden) {
-            if (chip) chip.hidden = true;
+            if (chip) {
+                chip.hidden = true;
+                chip.setAttribute('hidden', '');
+            }
             field?.classList.remove('compare-field--filled');
             search.hidden = false;
+            search.removeAttribute('hidden');
             search.value = '';
             search.placeholder = state[slotKey]?.name
                 ? `Szukaj zamiast „${state[slotKey].name}”…`
@@ -281,6 +292,9 @@
     function openSuggestions(slotKey) {
         const search = slots[slotKey]?.search;
         if (!search) return;
+        // Zamknij drugą listę, żeby nie nachodziły.
+        const other = slotKey === 'a' ? 'b' : 'a';
+        hideSuggestions(other);
         revealSearchForSuggestions(slotKey);
         const query = search.value;
         const items = getSuggestionProducts(query, slotKey);
@@ -291,8 +305,15 @@
     }
 
     function hideSuggestions(slotKey) {
-        const ul = slots[slotKey].suggestions;
-        if (ul) ul.hidden = true;
+        const wrap = document.querySelector(`[data-slot="${slotKey}"] .compare-search-wrap`);
+        const ul = slots[slotKey]?.suggestions;
+        if (!ul) return;
+        ul.hidden = true;
+        ul.setAttribute('hidden', '');
+        // Wróć listę do wrapa, żeby markup został czytelny.
+        if (wrap && ul.parentElement !== wrap) {
+            wrap.appendChild(ul);
+        }
     }
 
     function restoreChipIfNeeded(slotKey) {
@@ -314,8 +335,7 @@
         const restItems = showProposed ? items.filter((p) => !proposedSlugs.has(p.slug)) : items;
 
         if (!proposed.length && !restItems.length) {
-            ul.hidden = true;
-            ul.innerHTML = '';
+            hideSuggestions(slotKey);
             return;
         }
 
@@ -338,6 +358,7 @@
 
         ul.innerHTML = parts.join('');
         ul.hidden = false;
+        ul.removeAttribute('hidden');
         layoutSuggestions(slotKey);
     }
 
@@ -352,10 +373,12 @@
 
         if (!product) {
             chip.hidden = true;
+            chip.setAttribute('hidden', '');
             field.classList.remove('compare-field--filled');
             if (input) {
                 input.value = '';
                 input.hidden = false;
+                input.removeAttribute('hidden');
             }
             bindProductImage(imgEl, null);
             return;
@@ -366,10 +389,12 @@
         if (metaEl) metaEl.textContent = productChipMeta(product);
         bindProductImage(imgEl, product);
         chip.hidden = false;
+        chip.removeAttribute('hidden');
         field.classList.add('compare-field--filled');
         if (input) {
             input.value = '';
             input.hidden = true;
+            input.setAttribute('hidden', '');
         }
     }
 
@@ -889,7 +914,9 @@
     }
 
     document.addEventListener('click', (e) => {
-        if (!e.target.closest('.compare-search-wrap')) {
+        const inWrap = e.target.closest('.compare-search-wrap');
+        const inSuggestions = e.target.closest('.compare-suggestions');
+        if (!inWrap && !inSuggestions) {
             hideSuggestions('a');
             hideSuggestions('b');
             restoreChipIfNeeded('a');

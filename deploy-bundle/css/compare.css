@@ -749,6 +749,12 @@ body.compare-body.is-ready .compare-stage {
     animation: compareSuggestionsOpen 0.28s var(--compare-ease-out) both;
 }
 
+.compare-field-chip[hidden],
+.compare-suggestions[hidden],
+.compare-pickers .compare-field input.compare-search[hidden] {
+    display: none !important;
+}
+
 .compare-suggestions-cat--proposed {
     color: var(--primary-dark, #660000);
     letter-spacing: 0.1em;
@@ -766,6 +772,22 @@ body.compare-body.is-ready .compare-stage {
 
 .compare-field--filled {
     cursor: pointer;
+}
+
+.compare-suggestions {
+    z-index: 10000;
+}
+
+.compare-stage {
+    overflow: visible;
+}
+
+.compare-page.main-content {
+    overflow: visible;
+}
+
+.compare-picker:focus-within {
+    transform: none;
 }
 
 .compare-suggestions li {
