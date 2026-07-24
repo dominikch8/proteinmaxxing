@@ -1,5 +1,5 @@
 /**
- * Proteiner — lightweight site-wide motion
+ * Proteiner — site-wide motion + scroll polish
  */
 (function () {
     const root = document.documentElement;
@@ -8,6 +8,13 @@
     function markReady() {
         document.body.classList.add('pm-motion-ready');
     }
+
+    function updateScrollState() {
+        root.classList.toggle('pm-scrolled', window.scrollY > 8);
+    }
+
+    updateScrollState();
+    window.addEventListener('scroll', updateScrollState, { passive: true });
 
     if (reduce) {
         root.classList.add('pm-motion-reduce');
@@ -30,6 +37,15 @@
         '.calc-protein-maxxing-cta',
         '.nutrition-section',
         '.product-page .macro-pill',
+        '.compare-kpi-card',
+        '.compare-glass-panel',
+        '.compare-matchup',
+        '.compare-table-block',
+        '.section-title',
+        '.result-box',
+        '.add-product-section',
+        '.info-callout',
+        '.poradnik-product-mini',
         '[data-pm-reveal]'
     ].join(',');
 
@@ -41,12 +57,11 @@
                 io.unobserve(entry.target);
             }
         },
-        { rootMargin: '0px 0px -4% 0px', threshold: 0.05 }
+        { rootMargin: '0px 0px -6% 0px', threshold: 0.08 }
     );
 
     function shouldSkip(el) {
         if (!el || el.classList.contains('pm-reveal') || el.classList.contains('pm-revealed')) return true;
-        if (el.closest('.compare-page')) return true;
         if (el.closest('[hidden]')) return true;
         return false;
     }
@@ -59,11 +74,11 @@
         nodes.forEach((el) => {
             if (shouldSkip(el)) return;
             el.classList.add('pm-reveal');
-            el.style.setProperty('--pm-stagger', `${Math.min(i % 8, 7) * 30}ms`);
+            el.style.setProperty('--pm-stagger', `${Math.min(i % 8, 7) * 40}ms`);
             i += 1;
 
             const rect = el.getBoundingClientRect();
-            if (rect.top < vh && rect.bottom > 0) {
+            if (rect.top < vh * 0.96 && rect.bottom > 0) {
                 el.classList.add('pm-revealed');
             } else {
                 io.observe(el);
@@ -74,18 +89,23 @@
     function boot() {
         observeTree(document);
 
-        const grid = document.getElementById('productsGrid');
-        if (grid) {
+        const watched = [
+            document.getElementById('productsGrid'),
+            document.getElementById('compareChart'),
+            document.getElementById('compareChartSection')
+        ].filter(Boolean);
+
+        watched.forEach((node) => {
             let scheduled = false;
             new MutationObserver(() => {
                 if (scheduled) return;
                 scheduled = true;
                 requestAnimationFrame(() => {
                     scheduled = false;
-                    observeTree(grid);
+                    observeTree(node);
                 });
-            }).observe(grid, { childList: true });
-        }
+            }).observe(node, { childList: true, subtree: true });
+        });
     }
 
     if (document.readyState === 'loading') {
@@ -94,14 +114,14 @@
         boot();
     }
 
-    // Safety: never leave hero/content stuck invisible
+    // Safety: never leave content stuck invisible
     setTimeout(() => {
-        document.querySelectorAll('.page-hero, .pm-reveal').forEach((el) => {
+        document.querySelectorAll('.page-hero, .main-content, .pm-reveal').forEach((el) => {
             if (getComputedStyle(el).opacity === '0') {
                 el.classList.add('pm-revealed');
                 el.style.opacity = '1';
                 el.style.transform = 'none';
             }
         });
-    }, 1200);
+    }, 1400);
 })();
