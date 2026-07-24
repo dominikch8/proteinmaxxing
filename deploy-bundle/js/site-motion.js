@@ -143,6 +143,10 @@
             <span class="pm-atmosphere-dot pm-atmosphere-dot--4"></span>
             <span class="pm-atmosphere-dot pm-atmosphere-dot--5"></span>
             <span class="pm-atmosphere-dot pm-atmosphere-dot--6"></span>
+            <span class="pm-atmosphere-dot pm-atmosphere-dot--7"></span>
+            <span class="pm-atmosphere-dot pm-atmosphere-dot--8"></span>
+            <span class="pm-atmosphere-dot pm-atmosphere-dot--9"></span>
+            <span class="pm-atmosphere-dot pm-atmosphere-dot--10"></span>
         `
         };
     }
