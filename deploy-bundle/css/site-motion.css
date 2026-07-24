@@ -288,13 +288,15 @@ html.pm-scrolled .main-content {
 
 @keyframes pmAtmosphereDotFall {
     0% {
+        top: -4%;
         transform: translate3d(0, 0, 0);
         opacity: 0;
     }
     6% { opacity: 0.75; }
     78% { opacity: 0.4; }
     100% {
-        transform: translate3d(var(--fall-drift, 10px), 110vh, 0);
+        top: 100%;
+        transform: translate3d(var(--fall-drift, 10px), 0, 0);
         opacity: 0;
     }
 }
@@ -317,8 +319,11 @@ main.main-content,
     position: absolute;
     top: 56px;
     left: 0;
-    width: 100%;
-    min-height: calc(100% - 56px);
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    min-height: 0;
     pointer-events: none;
     z-index: 0;
     overflow: hidden;
@@ -329,6 +334,12 @@ main.main-content,
 .pm-atmosphere:not(.is-live) .pm-atmosphere-ring,
 .pm-atmosphere:not(.is-live) .pm-atmosphere-dot {
     animation: none !important;
+}
+
+/* Inner uses inset:0 — keep top aligned to host */
+.pm-atmosphere.pm-atmosphere--inner {
+    top: 0;
+    bottom: 0;
 }
 
 .pm-atmosphere-blob {
@@ -420,7 +431,7 @@ main.main-content,
 
 .pm-atmosphere-dot {
     position: absolute;
-    top: -3%;
+    top: -4%;
     width: 5px;
     height: 5px;
     border-radius: 50%;
@@ -428,7 +439,7 @@ main.main-content,
     box-shadow: 0 0 12px rgba(128, 0, 0, 0.4);
     animation: pmAtmosphereDotFall var(--fall-dur, 9s) linear infinite;
     animation-delay: var(--fall-delay, 0s);
-    will-change: transform, opacity;
+    will-change: top, transform, opacity;
 }
 
 .pm-atmosphere-dot--1 { left: 10%; --fall-dur: 7.2s; --fall-delay: 0s; --fall-drift: 14px; }
@@ -467,9 +478,10 @@ main.main-content,
 .pm-atmosphere--inner {
     position: absolute;
     inset: 0;
+    top: 0;
     width: auto;
-    min-height: 100%;
-    height: 100%;
+    height: auto;
+    min-height: 0;
     border-radius: inherit;
     z-index: 0;
 }

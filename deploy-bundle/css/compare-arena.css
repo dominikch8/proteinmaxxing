@@ -11,13 +11,15 @@
 
 @keyframes compareSparkFall {
     0% {
+        top: -4%;
         transform: translate3d(0, 0, 0);
         opacity: 0;
     }
     6% { opacity: 0.8; }
     78% { opacity: 0.4; }
     100% {
-        transform: translate3d(var(--fall-drift, 10px), 110vh, 0);
+        top: 100%;
+        transform: translate3d(var(--fall-drift, 10px), 0, 0);
         opacity: 0;
     }
 }
@@ -106,7 +108,7 @@
 
 .compare-atmosphere-spark {
     position: absolute;
-    top: -3%;
+    top: -4%;
     width: 5px;
     height: 5px;
     border-radius: 50%;
@@ -114,7 +116,7 @@
     box-shadow: 0 0 12px rgba(128, 0, 0, 0.45);
     animation: compareSparkFall var(--fall-dur, 9s) linear infinite;
     animation-delay: var(--fall-delay, 0s);
-    will-change: transform, opacity;
+    will-change: top, transform, opacity;
 }
 
 .compare-atmosphere-spark--1 { left: 10%; --fall-dur: 7.2s; --fall-delay: 0s; --fall-drift: 14px; }

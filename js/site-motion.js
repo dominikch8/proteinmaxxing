@@ -151,21 +151,6 @@
         };
     }
 
-    function syncLayerHeight(layer, host) {
-        if (!layer) return;
-        if (host) {
-            const h = Math.max(host.scrollHeight, host.clientHeight, 1);
-            layer.style.height = `${h}px`;
-            return;
-        }
-        const h = Math.max(
-            document.documentElement.scrollHeight,
-            document.body.scrollHeight,
-            window.innerHeight
-        );
-        layer.style.height = `${h}px`;
-    }
-
     function mountInnerAtmosphere() {
         if (document.querySelector('.pm-atmosphere--inner')) return;
 
@@ -183,13 +168,6 @@
         host.prepend(layer);
         host.classList.add('pm-atmosphere-inner-host');
 
-        const sync = () => syncLayerHeight(layer, host);
-        sync();
-        window.addEventListener('resize', sync, { passive: true });
-        if (typeof ResizeObserver === 'function') {
-            new ResizeObserver(sync).observe(host);
-        }
-        [400, 1200, 2500].forEach((ms) => setTimeout(sync, ms));
         requestAnimationFrame(() => {
             requestAnimationFrame(() => {
                 layer.classList.add('is-live');
@@ -199,10 +177,13 @@
 
     function syncCompareAtmosphere() {
         const layer = document.querySelector('.compare-atmosphere');
-        const host = document.querySelector('main.compare-page, main.main-content');
-        if (!layer || !host) return;
-        const h = Math.max(host.scrollHeight, host.clientHeight, window.innerHeight * 0.6);
-        layer.style.height = `${h}px`;
+        if (!layer) return;
+        layer.style.top = '0';
+        layer.style.left = '0';
+        layer.style.right = '0';
+        layer.style.bottom = '0';
+        layer.style.height = 'auto';
+        layer.style.width = 'auto';
     }
 
     function mountAtmosphere() {
@@ -212,11 +193,6 @@
             const run = () => syncCompareAtmosphere();
             run();
             window.addEventListener('resize', run, { passive: true });
-            [400, 1200, 2500].forEach((ms) => setTimeout(run, ms));
-            if (typeof ResizeObserver === 'function') {
-                const host = document.querySelector('main.compare-page, main.main-content');
-                if (host) new ResizeObserver(run).observe(host);
-            }
             return;
         }
 
@@ -229,22 +205,10 @@
             document.body.prepend(layer);
             document.body.classList.add('pm-atmosphere-host');
 
-            const syncHeight = () => syncLayerHeight(layer, null);
-            syncHeight();
-            window.addEventListener('resize', syncHeight, { passive: true });
-            window.addEventListener('load', syncHeight, { passive: true });
+            // Height comes from CSS top/bottom — never set scrollHeight (that created footer gap)
+            layer.style.height = '';
+            layer.style.bottom = '0';
 
-            if (typeof ResizeObserver === 'function') {
-                const ro = new ResizeObserver(syncHeight);
-                ro.observe(document.documentElement);
-                ro.observe(document.body);
-                const main = document.querySelector('main');
-                if (main) ro.observe(main);
-            }
-
-            [400, 1200, 2500].forEach((ms) => setTimeout(syncHeight, ms));
-
-            // Activate motion after paint so sticky header doesn't sample animating blur
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
                     layer.classList.add('is-live');
