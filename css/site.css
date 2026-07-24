@@ -2300,7 +2300,7 @@
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 12px;
             margin-top: 28px;
-            align-items: stretch;
+            align-items: start;
         }
 
         .home-info-tile {
@@ -2312,6 +2312,7 @@
             display: flex;
             flex-direction: column;
             min-width: 0;
+            align-self: start;
             transition:
                 box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
                 border-color 0.35s ease,
@@ -2325,7 +2326,6 @@
 
         .home-info-tile[open],
         .home-info-tile.is-animating-open {
-            grid-column: 1 / -1;
             box-shadow: var(--shadow-md);
             transform: none;
             border-color: rgba(37, 99, 235, 0.22);
