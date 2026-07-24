@@ -463,14 +463,14 @@
 }
 
 .compare-matchup-media {
-    width: 40px;
-    height: 40px;
-    border-radius: 11px;
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.35s var(--compare-ease-out);
     box-shadow:
-        0 6px 14px rgba(15, 23, 42, 0.08),
+        0 8px 18px rgba(15, 23, 42, 0.09),
         inset 0 0 0 1px rgba(255, 255, 255, 0.35);
     overflow: hidden;
     display: grid;
@@ -743,7 +743,7 @@
     .compare-hero-title-row { gap: 10px; }
     .compare-hero-orb { width: 10px; height: 10px; }
     .compare-hero-duel { gap: 12px; padding: 8px 12px; }
-    .compare-matchup-media { width: 36px; height: 36px; border-radius: 10px; }
+    .compare-matchup-media { width: 44px; height: 44px; border-radius: 12px; }
     .compare-matchup-vs-wrap { margin: 4px auto; }
     .compare-quick-list { gap: 10px; }
     .compare-quick-btn { width: 100%; justify-content: center; }

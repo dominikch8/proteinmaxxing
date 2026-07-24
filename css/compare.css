@@ -1137,9 +1137,9 @@ body.compare-body.is-ready .compare-stage {
 }
 
 .compare-matchup-media {
-    width: 40px;
-    height: 40px;
-    border-radius: 11px;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
     overflow: hidden;
     flex-shrink: 0;
     background: var(--surface);
@@ -1150,10 +1150,10 @@ body.compare-body.is-ready .compare-stage {
 }
 
 .compare-matchup-img {
-    width: 70%;
-    height: 70%;
-    max-width: 28px;
-    max-height: 28px;
+    width: 78%;
+    height: 78%;
+    max-width: 36px;
+    max-height: 36px;
     object-fit: contain;
     object-position: center;
     display: none;
@@ -1168,7 +1168,7 @@ body.compare-body.is-ready .compare-stage {
 }
 
 .compare-matchup-emoji {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     line-height: 1;
 }
 
