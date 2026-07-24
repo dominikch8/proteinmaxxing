@@ -1,0 +1,748 @@
+/* =============================================================================
+   Proteiner — Compare Arena (cinematic layer on top of compare.css)
+   Brand: burgundy vs navy · motion-first duel UI
+   ============================================================================= */
+
+@keyframes compareRingPulse {
+    0% { transform: scale(0.82); opacity: 0.55; }
+    70% { transform: scale(1.28); opacity: 0; }
+    100% { transform: scale(1.28); opacity: 0; }
+}
+
+@keyframes compareSparkFloat {
+    0%, 100% { transform: translateY(0) scale(1); opacity: 0.35; }
+    50% { transform: translateY(-18px) scale(1.35); opacity: 0.9; }
+}
+
+@keyframes compareHeroOrb {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-6px) scale(1.08); }
+}
+
+@keyframes compareCrownPop {
+    0% { opacity: 0; transform: translateY(8px) scale(0.6) rotate(-12deg); }
+    60% { opacity: 1; transform: translateY(-2px) scale(1.12) rotate(4deg); }
+    100% { opacity: 1; transform: none; }
+}
+
+@keyframes compareLeadGlow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(128, 0, 0, 0.18), 0 18px 40px rgba(15, 23, 42, 0.08); }
+    50% { box-shadow: 0 0 0 8px rgba(128, 0, 0, 0.05), 0 22px 48px rgba(128, 0, 0, 0.16); }
+}
+
+@keyframes compareLeadGlowB {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.18), 0 18px 40px rgba(15, 23, 42, 0.08); }
+    50% { box-shadow: 0 0 0 8px rgba(37, 99, 235, 0.05), 0 22px 48px rgba(37, 99, 235, 0.16); }
+}
+
+@keyframes compareMediaShine {
+    0% { transform: translateX(-130%) skewX(-18deg); }
+    100% { transform: translateX(220%) skewX(-18deg); }
+}
+
+@keyframes compareEmptyHalo {
+    0%, 100% { transform: scale(0.92); opacity: 0.35; }
+    50% { transform: scale(1.08); opacity: 0.7; }
+}
+
+@keyframes compareQuickIn {
+    from { opacity: 0; transform: translateY(10px) scale(0.96); }
+    to { opacity: 1; transform: none; }
+}
+
+@keyframes compareStageSheen {
+    0% { transform: translateX(-40%) rotate(8deg); opacity: 0; }
+    30% { opacity: 0.35; }
+    100% { transform: translateX(120%) rotate(8deg); opacity: 0; }
+}
+
+
+/* Atmosphere extras */
+
+.compare-atmosphere-blob--c {
+    width: min(36vw, 280px);
+    height: min(36vw, 280px);
+    top: 42%;
+    left: 38%;
+    background: radial-gradient(circle, rgba(128, 0, 0, 0.08) 0%, rgba(37, 99, 235, 0.07) 45%, transparent 72%);
+    animation: compareAtmosphereDriftA 30s ease-in-out infinite reverse;
+    filter: blur(80px);
+}
+
+.compare-atmosphere-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    pointer-events: none;
+}
+
+.compare-atmosphere-ring--a {
+    width: min(48vw, 420px);
+    height: min(48vw, 420px);
+    top: -4%;
+    left: 8%;
+    border-color: rgba(128, 0, 0, 0.12);
+    animation: compareRingPulse 5.5s ease-out infinite;
+}
+
+.compare-atmosphere-ring--b {
+    width: min(42vw, 360px);
+    height: min(42vw, 360px);
+    top: 8%;
+    right: 6%;
+    border-color: rgba(37, 99, 235, 0.14);
+    animation: compareRingPulse 6.2s ease-out 1.4s infinite;
+}
+
+.compare-atmosphere-spark {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #800000, #2563eb);
+    box-shadow: 0 0 12px rgba(128, 0, 0, 0.45);
+    animation: compareSparkFloat 4.8s ease-in-out infinite;
+}
+
+.compare-atmosphere-spark--1 { top: 18%; left: 14%; }
+.compare-atmosphere-spark--2 { top: 28%; right: 18%; animation-delay: 0.7s; background: linear-gradient(135deg, #2563eb, #800000); }
+.compare-atmosphere-spark--3 { top: 48%; left: 22%; animation-delay: 1.3s; width: 4px; height: 4px; }
+.compare-atmosphere-spark--4 { top: 22%; left: 52%; animation-delay: 1.9s; }
+.compare-atmosphere-spark--5 { top: 40%; right: 28%; animation-delay: 2.4s; width: 3px; height: 3px; }
+.compare-atmosphere-spark--6 { top: 12%; right: 40%; animation-delay: 3s; }
+
+
+/* Hero arena */
+
+.compare-hero {
+    text-align: center;
+    margin-bottom: 34px;
+    padding: 8px 0 18px;
+}
+
+.compare-hero-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 4px;
+}
+
+.compare-hero-orb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    animation: compareHeroOrb 3.2s ease-in-out infinite;
+}
+
+.compare-hero-orb--a {
+    background: radial-gradient(circle at 30% 30%, #c45c5c, #660000 70%);
+    box-shadow: 0 0 18px rgba(128, 0, 0, 0.55);
+}
+
+.compare-hero-orb--b {
+    background: radial-gradient(circle at 30% 30%, #60a5fa, #1e3a5f 70%);
+    box-shadow: 0 0 18px rgba(37, 99, 235, 0.5);
+    animation-delay: 0.5s;
+}
+
+.compare-hero h1 {
+    margin: 0;
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    letter-spacing: -0.035em;
+    background: var(--h1-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.compare-hero-duel {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 22px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    background: linear-gradient(135deg, rgba(102, 0, 0, 0.06), rgba(255, 255, 255, 0.55), rgba(30, 58, 95, 0.07));
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+    backdrop-filter: blur(10px);
+}
+
+[data-theme='dark'] .compare-hero-duel {
+    background: linear-gradient(135deg, rgba(102, 0, 0, 0.18), rgba(15, 23, 42, 0.7), rgba(37, 99, 235, 0.16));
+    border-color: var(--border);
+}
+
+.compare-hero-duel-side {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 0.85rem;
+    color: #fff;
+}
+
+.compare-hero-duel-side--a {
+    background: linear-gradient(145deg, var(--compare-a-mid), var(--compare-a-deep));
+    box-shadow: 0 8px 18px var(--compare-a-glow);
+}
+
+.compare-hero-duel-side--b {
+    background: linear-gradient(145deg, var(--compare-b-mid), var(--compare-b-deep));
+    box-shadow: 0 8px 18px var(--compare-b-glow);
+}
+
+.compare-hero-duel-vs {
+    position: relative;
+    width: 54px;
+    height: 54px;
+    display: grid;
+    place-items: center;
+}
+
+.compare-hero-duel-ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1.5px solid rgba(128, 0, 0, 0.28);
+    animation: compareRingPulse 2.8s ease-out infinite;
+}
+
+.compare-hero-duel-ring--delay {
+    border-color: rgba(37, 99, 235, 0.3);
+    animation-delay: 1s;
+}
+
+.compare-hero-duel-core {
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-display);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: var(--text-dark);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+}
+
+
+/* Stage cockpit */
+
+.compare-stage {
+    padding: 28px 26px 24px;
+    border-radius: 28px;
+    box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.85) inset,
+        0 24px 60px rgba(15, 23, 42, 0.08),
+        0 0 0 1px rgba(255, 255, 255, 0.4) inset;
+}
+
+.compare-stage::before {
+    background:
+        radial-gradient(ellipse 50% 70% at 0% 0%, rgba(102, 0, 0, 0.12), transparent 70%),
+        radial-gradient(ellipse 50% 70% at 100% 100%, rgba(30, 58, 95, 0.12), transparent 70%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, transparent 40%);
+}
+
+.compare-stage > .compare-pickers::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    width: 45%;
+    height: 180%;
+    background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+    pointer-events: none;
+    animation: compareStageSheen 7s ease-in-out infinite;
+    z-index: 0;
+}
+
+.compare-picker {
+    position: relative;
+    z-index: 1;
+    padding: 14px;
+    border-radius: 20px;
+    transition: transform 0.45s var(--compare-ease-spring), box-shadow 0.35s ease;
+}
+
+.compare-picker--a {
+    background: linear-gradient(160deg, rgba(102, 0, 0, 0.05), transparent 70%);
+}
+
+.compare-picker--b {
+    background: linear-gradient(200deg, rgba(30, 58, 95, 0.06), transparent 70%);
+}
+
+.compare-picker:focus-within {
+    transform: translateY(-2px);
+}
+
+.compare-field {
+    min-height: 70px;
+    border-radius: 18px;
+}
+
+.compare-field:focus-within {
+    transform: translateY(-2px) scale(1.01);
+}
+
+.compare-swap-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #fff, #f8fafc);
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    box-shadow:
+        0 10px 24px rgba(15, 23, 42, 0.1),
+        0 0 0 4px rgba(128, 0, 0, 0.04);
+    z-index: 2;
+}
+
+.compare-swap-btn:hover {
+    background: linear-gradient(145deg, #fff5f5, #eff6ff);
+    box-shadow:
+        0 14px 32px rgba(30, 58, 138, 0.16),
+        0 0 0 5px rgba(37, 99, 235, 0.08);
+}
+
+
+/* Empty duel state */
+
+.compare-empty {
+    position: relative;
+    overflow: hidden;
+    padding: 52px 24px 40px;
+    border-radius: 28px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(128, 0, 0, 0.06), transparent 55%),
+        radial-gradient(ellipse 80% 60% at 50% 100%, rgba(37, 99, 235, 0.06), transparent 55%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(248, 250, 252, 0.5));
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.06);
+}
+
+.compare-empty-art {
+    position: relative;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.compare-empty-halo {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(128, 0, 0, 0.1), rgba(37, 99, 235, 0.08), transparent 70%);
+    animation: compareEmptyHalo 4s ease-in-out infinite;
+}
+
+.compare-empty-orb {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.compare-empty-orb--a { box-shadow: 0 12px 28px var(--compare-a-glow); }
+.compare-empty-orb--b { box-shadow: 0 12px 28px var(--compare-b-glow); }
+
+.compare-empty-title {
+    font-size: clamp(1.25rem, 2.5vw, 1.55rem);
+}
+
+.compare-quick-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.05);
+    animation: compareQuickIn 0.5s var(--compare-ease-out) both;
+    transition: transform 0.3s var(--compare-ease-spring), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.compare-quick-btn:nth-child(1) { animation-delay: 0.05s; }
+.compare-quick-btn:nth-child(2) { animation-delay: 0.12s; }
+.compare-quick-btn:nth-child(3) { animation-delay: 0.19s; }
+
+.compare-quick-btn em {
+    font-style: normal;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-light);
+}
+
+.compare-quick-btn::after { display: none; }
+
+.compare-quick-btn:hover,
+.compare-quick-btn:focus-visible {
+    transform: translateY(-3px) scale(1.02);
+    border-color: rgba(128, 0, 0, 0.28);
+    box-shadow: 0 14px 28px rgba(128, 0, 0, 0.12);
+    color: var(--text-dark);
+}
+
+
+/* Matchup fighters */
+
+.compare-matchup {
+    position: relative;
+    padding: 26px 22px;
+    border-radius: 28px;
+    background:
+        linear-gradient(135deg, rgba(102, 0, 0, 0.08) 0%, rgba(255, 255, 255, 0.85) 48%, rgba(30, 58, 95, 0.09) 100%);
+    box-shadow:
+        0 24px 60px rgba(15, 23, 42, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+    perspective: 900px;
+}
+
+.compare-matchup::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 18% 50%, rgba(128, 0, 0, 0.1), transparent 42%),
+        radial-gradient(circle at 82% 50%, rgba(37, 99, 235, 0.1), transparent 42%);
+    pointer-events: none;
+}
+
+.compare-matchup--lead-a { animation: compareLeadGlow 2.8s ease-in-out infinite; }
+.compare-matchup--lead-b { animation: compareLeadGlowB 2.8s ease-in-out infinite; }
+
+.compare-matchup-side {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.compare-matchup-side.is-lead {
+    background: rgba(255, 255, 255, 0.45);
+}
+
+[data-theme='dark'] .compare-matchup-side.is-lead {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.compare-matchup-crown {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: #b45309;
+    text-shadow: 0 2px 8px rgba(180, 83, 9, 0.35);
+    animation: compareCrownPop 0.55s var(--compare-ease-spring) both;
+    z-index: 2;
+}
+
+.compare-matchup-side--b .compare-matchup-crown {
+    left: auto;
+    right: 18%;
+    transform: none;
+}
+
+.compare-matchup-media {
+    width: 76px;
+    height: 76px;
+    border-radius: 22px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.35s var(--compare-ease-out);
+    box-shadow:
+        0 14px 30px rgba(15, 23, 42, 0.12),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+    overflow: hidden;
+}
+
+.compare-matchup-media-glow {
+    position: absolute;
+    inset: -20%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.35), transparent 60%);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.compare-matchup-side.is-lead .compare-matchup-media::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.45) 50%, transparent 65%);
+    animation: compareMediaShine 1.4s var(--compare-ease-out) 0.35s both;
+}
+
+.compare-matchup-slot {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 2px;
+}
+
+.compare-matchup-side--a .compare-matchup-slot { color: var(--compare-a); }
+.compare-matchup-side--b .compare-matchup-slot { color: var(--compare-b); }
+
+.compare-matchup-name {
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+}
+
+.compare-matchup-vs-wrap {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+}
+
+.compare-matchup-vs-ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1.5px solid rgba(128, 0, 0, 0.25);
+    animation: compareRingPulse 2.6s ease-out infinite;
+}
+
+.compare-matchup-vs-ring--delay {
+    border-color: rgba(37, 99, 235, 0.28);
+    animation-delay: 0.9s;
+}
+
+.compare-matchup-vs {
+    position: relative;
+    z-index: 1;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #0f172a, #1e3a5f);
+    color: #fff;
+    border: none;
+    box-shadow:
+        0 12px 28px rgba(15, 23, 42, 0.28),
+        0 0 0 4px rgba(255, 255, 255, 0.55);
+    animation: compareVsScalePulse 0.6s var(--compare-ease-spring) 0.2s both;
+}
+
+[data-theme='dark'] .compare-matchup-vs {
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.45),
+        0 0 0 4px rgba(255, 255, 255, 0.08);
+}
+
+
+/* Stadium scoreline */
+
+.compare-scoreline {
+    padding: 20px 22px;
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.92), rgba(30, 58, 95, 0.88));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 22px 50px rgba(15, 23, 42, 0.22);
+    color: #fff;
+}
+
+.compare-scoreline-label,
+.compare-scoreline-caption {
+    color: rgba(226, 232, 240, 0.72);
+}
+
+.compare-scoreline-side--a .compare-scoreline-label { color: #fca5a5; }
+.compare-scoreline-side--b .compare-scoreline-label { color: #93c5fd; }
+
+.compare-scoreline-value,
+.compare-scoreline-score {
+    color: #fff;
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
+}
+
+.compare-scoreline-score-sep { color: rgba(255, 255, 255, 0.45); }
+
+.compare-scoreline-track {
+    background: rgba(255, 255, 255, 0.1);
+    height: 8px;
+}
+
+.compare-scoreline-fill--a {
+    background: linear-gradient(90deg, #4a0000, #dc2626, #f87171);
+    box-shadow: 0 0 16px rgba(248, 113, 113, 0.45);
+}
+
+.compare-scoreline-fill--b {
+    background: linear-gradient(90deg, #1d4ed8, #3b82f6, #93c5fd);
+    box-shadow: 0 0 16px rgba(147, 197, 253, 0.45);
+}
+
+.compare-scoreline--lead-a .compare-scoreline-side--a .compare-scoreline-value,
+.compare-scoreline--lead-b .compare-scoreline-side--b .compare-scoreline-value {
+    text-shadow: 0 0 24px rgba(255, 255, 255, 0.35);
+}
+
+
+/* Toolbar / KPI / bars */
+
+.compare-unit-badge {
+    background: linear-gradient(135deg, rgba(30, 58, 95, 0.1), rgba(128, 0, 0, 0.08));
+}
+
+.compare-copy-link-btn {
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+}
+
+.compare-copy-link-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(105deg, transparent 40%, rgba(255, 255, 255, 0.35), transparent 60%);
+    transform: translateX(-120%);
+}
+
+.compare-copy-link-btn:hover::before {
+    animation: compareMediaShine 0.7s var(--compare-ease-out);
+}
+
+.compare-kpi-card {
+    border-radius: 20px;
+    background: linear-gradient(165deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.88) 100%);
+    box-shadow:
+        0 12px 28px rgba(15, 23, 42, 0.06),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    transition:
+        transform 0.4s var(--compare-ease-spring),
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.compare-kpi-card::before {
+    background: linear-gradient(90deg, #660000, #800000, #2563eb, #1e3a5f);
+}
+
+.compare-kpi-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 22px 40px rgba(15, 23, 42, 0.12);
+    border-color: rgba(128, 0, 0, 0.18);
+}
+
+.compare-kpi-val.is-winner {
+    animation: compareVsPulse 2.2s ease-in-out infinite;
+}
+
+.compare-glass-panel {
+    border-radius: 26px;
+    padding: 28px 24px 22px;
+    box-shadow:
+        0 24px 56px rgba(15, 23, 42, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.compare-glass-track {
+    height: 46px;
+    border-radius: 14px;
+}
+
+.compare-glass-fill {
+    border-radius: 11px;
+    box-shadow:
+        0 4px 16px rgba(15, 23, 42, 0.14),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.compare-glass-fill--a {
+    background: linear-gradient(90deg, #3a0000 0%, #660000 22%, #800000 55%, #c24141 100%);
+}
+
+.compare-glass-fill--b {
+    background: linear-gradient(90deg, #0b1220 0%, #1e3a5f 22%, #2563eb 55%, #60a5fa 100%);
+}
+
+.compare-glass-fill.is-winner {
+    filter: saturate(1.15) brightness(1.05);
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.25) inset,
+        0 6px 22px rgba(15, 23, 42, 0.18),
+        0 0 24px rgba(128, 0, 0, 0.18);
+}
+
+.compare-glass-fill--b.is-winner {
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.25) inset,
+        0 6px 22px rgba(15, 23, 42, 0.18),
+        0 0 24px rgba(37, 99, 235, 0.22);
+}
+
+.compare-table-scroll {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.07);
+}
+
+.compare-table thead th {
+    background: linear-gradient(180deg, #0f172a, #1e3a5f);
+    color: #fff;
+    border-bottom: none;
+}
+
+.compare-table thead th:nth-child(2) { color: #fca5a5; }
+.compare-table thead th:nth-child(3) { color: #93c5fd; }
+.compare-table thead th:first-child { color: rgba(226, 232, 240, 0.75); }
+
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .compare-atmosphere-blob--c,
+    .compare-atmosphere-ring,
+    .compare-atmosphere-spark,
+    .compare-hero-orb,
+    .compare-hero-duel-ring,
+    .compare-stage > .compare-pickers::before,
+    .compare-empty-halo,
+    .compare-quick-btn,
+    .compare-matchup--lead-a,
+    .compare-matchup--lead-b,
+    .compare-matchup-crown,
+    .compare-matchup-vs-ring,
+    .compare-matchup-side.is-lead .compare-matchup-media::after,
+    .compare-kpi-val.is-winner,
+    .compare-copy-link-btn:hover::before {
+        animation: none !important;
+    }
+
+    .compare-matchup-media {
+        transition: none !important;
+        transform: none !important;
+    }
+}
+
+@media (max-width: 720px) {
+    .compare-hero-title-row { gap: 10px; }
+    .compare-hero-orb { width: 10px; height: 10px; }
+    .compare-hero-duel { gap: 12px; padding: 8px 12px; }
+    .compare-matchup-media { width: 64px; height: 64px; }
+    .compare-matchup-vs-wrap { margin: 4px auto; }
+    .compare-quick-list { gap: 10px; }
+    .compare-quick-btn { width: 100%; justify-content: center; }
+}

@@ -407,14 +407,17 @@
         return { winsA, winsB, scored };
     }
 
-    function matchupSideHtml(product, side) {
+    function matchupSideHtml(product, side, isLead) {
         return `
-            <div class="compare-matchup-side compare-matchup-side--${side}">
+            <div class="compare-matchup-side compare-matchup-side--${side}${isLead ? ' is-lead' : ''}" data-tilt-side="${side}">
+                ${isLead ? '<span class="compare-matchup-crown" aria-hidden="true">★</span>' : ''}
                 <span class="compare-matchup-media" aria-hidden="true">
-                    <img class="compare-matchup-img" data-matchup-img="${side}" alt="" width="56" height="56" decoding="async">
+                    <span class="compare-matchup-media-glow"></span>
+                    <img class="compare-matchup-img" data-matchup-img="${side}" alt="" width="72" height="72" decoding="async">
                     <span class="compare-matchup-emoji">${product.emoji}</span>
                 </span>
                 <span class="compare-matchup-copy">
+                    <span class="compare-matchup-slot">Produkt ${side.toUpperCase()}</span>
                     <span class="compare-matchup-name">${escapeHtml(product.name)}</span>
                     <span class="compare-matchup-meta">${escapeHtml(productChipMeta(product))}</span>
                 </span>
@@ -423,13 +426,56 @@
 
     function renderMatchup(a, b) {
         if (!matchupEl) return;
+        const { winsA, winsB, scored } = tallyWins(a, b);
+        const lead = scored && winsA !== winsB ? (winsA > winsB ? 'a' : 'b') : null;
+        matchupEl.classList.toggle('compare-matchup--lead-a', lead === 'a');
+        matchupEl.classList.toggle('compare-matchup--lead-b', lead === 'b');
         matchupEl.innerHTML = `
-            ${matchupSideHtml(a, 'a')}
-            <span class="compare-matchup-vs" aria-hidden="true">vs</span>
-            ${matchupSideHtml(b, 'b')}
+            ${matchupSideHtml(a, 'a', lead === 'a')}
+            <div class="compare-matchup-vs-wrap" aria-hidden="true">
+                <span class="compare-matchup-vs-ring"></span>
+                <span class="compare-matchup-vs-ring compare-matchup-vs-ring--delay"></span>
+                <span class="compare-matchup-vs">vs</span>
+            </div>
+            ${matchupSideHtml(b, 'b', lead === 'b')}
         `;
         bindProductImage(matchupEl.querySelector('[data-matchup-img="a"]'), a);
         bindProductImage(matchupEl.querySelector('[data-matchup-img="b"]'), b);
+        bindMatchupTilt();
+    }
+
+    function bindMatchupTilt() {
+        if (!matchupEl || reduceMotion()) return;
+        matchupEl.querySelectorAll('.compare-matchup-side').forEach((side) => {
+            const media = side.querySelector('.compare-matchup-media');
+            if (!media) return;
+            side.onpointermove = (e) => {
+                const r = media.getBoundingClientRect();
+                const x = (e.clientX - r.left) / r.width - 0.5;
+                const y = (e.clientY - r.top) / r.height - 0.5;
+                media.style.transform = `rotateY(${x * 14}deg) rotateX(${-y * 12}deg) translateZ(8px)`;
+            };
+            side.onpointerleave = () => {
+                media.style.transform = '';
+            };
+        });
+    }
+
+    function animateCount(el, to, duration = 700) {
+        if (!el) return;
+        if (reduceMotion()) {
+            el.textContent = String(to);
+            return;
+        }
+        const start = performance.now();
+        const from = 0;
+        function frame(now) {
+            const t = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - t, 3);
+            el.textContent = String(Math.round(from + (to - from) * eased));
+            if (t < 1) requestAnimationFrame(frame);
+        }
+        requestAnimationFrame(frame);
     }
 
     function renderScoreline(a, b) {
@@ -449,21 +495,25 @@
                 : winsA > winsB
                   ? `${escapeHtml(a.name)} prowadzi`
                   : `${escapeHtml(b.name)} prowadzi`;
+        const leadSide = winsA === winsB ? 'draw' : winsA > winsB ? 'a' : 'b';
 
         scorelineEl.hidden = false;
         scorelineEl.classList.remove('is-animating');
+        scorelineEl.classList.toggle('compare-scoreline--lead-a', leadSide === 'a');
+        scorelineEl.classList.toggle('compare-scoreline--lead-b', leadSide === 'b');
+        scorelineEl.classList.toggle('compare-scoreline--draw', leadSide === 'draw');
         scorelineEl.innerHTML = `
             <div class="compare-scoreline-side compare-scoreline-side--a">
                 <span class="compare-scoreline-label">Produkt A</span>
-                <span class="compare-scoreline-value">${winsA}</span>
+                <span class="compare-scoreline-value" data-count="${winsA}">0</span>
             </div>
             <div class="compare-scoreline-mid">
-                <span class="compare-scoreline-score">${winsA}<span class="compare-scoreline-score-sep">:</span>${winsB}</span>
-                <span class="compare-scoreline-caption">kategorie</span>
+                <span class="compare-scoreline-score"><span data-count-mid="a">0</span><span class="compare-scoreline-score-sep">:</span><span data-count-mid="b">0</span></span>
+                <span class="compare-scoreline-caption">${leadSide === 'draw' ? 'remis' : 'prowadzi'}</span>
             </div>
             <div class="compare-scoreline-side compare-scoreline-side--b">
                 <span class="compare-scoreline-label">Produkt B</span>
-                <span class="compare-scoreline-value">${winsB}</span>
+                <span class="compare-scoreline-value" data-count="${winsB}">0</span>
             </div>
             <div class="compare-scoreline-tracks" aria-label="${lead}">
                 <div class="compare-scoreline-track">
@@ -473,6 +523,11 @@
                     <span class="compare-scoreline-fill--b" style="--score-pct:${pctB}%; --score-delay:120ms"></span>
                 </div>
             </div>`;
+
+        animateCount(scorelineEl.querySelector('.compare-scoreline-side--a .compare-scoreline-value'), winsA);
+        animateCount(scorelineEl.querySelector('.compare-scoreline-side--b .compare-scoreline-value'), winsB);
+        animateCount(scorelineEl.querySelector('[data-count-mid="a"]'), winsA, 650);
+        animateCount(scorelineEl.querySelector('[data-count-mid="b"]'), winsB, 650);
 
         if (!reduceMotion()) {
             requestAnimationFrame(() => scorelineEl.classList.add('is-animating'));
