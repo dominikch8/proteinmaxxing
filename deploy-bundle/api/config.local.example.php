@@ -2,10 +2,10 @@
 <?php
 return [
     'admin_emails' => [
-        'dominikchw1@gmail.com',
+        'developeranios@gmail.com',
     ],
     'bootstrap_admin' => [
-        'email' => 'dominikchw1@gmail.com',
+        'email' => 'developeranios@gmail.com',
         'name' => 'Admin Proteiner',
         'password' => 'ZMIEN_TO_HASLO',
     ],

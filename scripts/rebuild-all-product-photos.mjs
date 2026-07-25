@@ -24,7 +24,7 @@ const root = path.join(__dirname, '..');
 const outDir = path.join(root, 'images', 'products');
 const queriesPath = path.join(root, 'js', 'product-search-queries.js');
 const researchLogPath = path.join(root, 'scripts', 'product-photo-research-log.json');
-const UA = 'Proteiner/1.0 (nutrition education; contact: dominikchw1@gmail.com)';
+const UA = 'Proteiner/1.0 (nutrition education; contact: developeranios@gmail.com)';
 
 const BAD =
     /logo|icon|diagram|map|flag|coat|symbol|chart|graph|list of|disambiguation|category:|svg|stamp|seal|portrait|building|aircraft|vehicle|panthera|wildlife|zoo|safari|lioness|galaxy|constellation|astronomy|planet|moon|person|people|selfie|hatching|spiral egg cup|soup|smoothie|salad bowl|pizza with|platter|buffet/i;

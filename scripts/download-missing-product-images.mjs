@@ -16,7 +16,7 @@ const root = path.join(__dirname, '..');
 const outDir = path.join(root, 'images', 'products');
 const queriesPath = path.join(root, 'js', 'product-search-queries.js');
 
-const UA = 'Proteiner/1.0 (nutrition education; contact: dominikchw1@gmail.com)';
+const UA = 'Proteiner/1.0 (nutrition education; contact: developeranios@gmail.com)';
 
 const CATEGORY_FALLBACK = {
     mieso: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/800px-Good_Food_Display_-_NCI_Visuals_Online.jpg',
