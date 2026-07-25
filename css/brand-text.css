@@ -1,5 +1,5 @@
 /**
- * Czerwone / bordowe napisy → gradient czerwono–bordowy.
+ * Napisy brandowe: od lewej czerwień → prawo granat.
  * Ładowany po site.css / product-page.css, żeby wygrać z solidnymi color:.
  */
 .brand-gradient-text,
@@ -46,8 +46,9 @@ a.product-category:hover,
 .add-product-hint a,
 .form-hint a {
     background-image: var(--brand-text-gradient) !important;
-    background-size: 140% 100%;
-    background-position: 0 50%;
+    background-size: 100% 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
     -webkit-background-clip: text !important;
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
