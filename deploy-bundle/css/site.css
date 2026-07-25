@@ -191,15 +191,16 @@
             box-shadow: var(--nav-active-shadow);
         }
 
+        /* Press feedback stays subtle — full active pill only via .active (prevents gray flash on leave) */
         .nav-links button:active:not(.active),
         .nav-links a.nav-link:active:not(.active) {
-            color: var(--nav-active-color);
+            color: var(--primary-dark);
         }
 
         .nav-links button:active:not(.active)::before,
         .nav-links a.nav-link:active:not(.active)::before {
-            opacity: 1;
-            background: var(--nav-active-bg);
+            opacity: 0.35;
+            background: rgba(128, 0, 0, 0.1);
             box-shadow: none;
         }
 
