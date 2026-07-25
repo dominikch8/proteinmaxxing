@@ -47,6 +47,77 @@
         markReady();
     });
 
+    // Soft enter only for fallback navigations (native VT already animates the swap)
+    try {
+        if (sessionStorage.getItem('pm-nav-go') === 'fallback') {
+            sessionStorage.removeItem('pm-nav-go');
+            document.body.classList.add('pm-nav-entered');
+            setTimeout(() => document.body.classList.remove('pm-nav-entered'), 520);
+        } else {
+            sessionStorage.removeItem('pm-nav-go');
+        }
+    } catch (_) {
+        /* ignore */
+    }
+
+    function sameDocumentNav(url) {
+        return (
+            url.origin === window.location.origin &&
+            url.pathname === window.location.pathname &&
+            url.search === window.location.search
+        );
+    }
+
+    function supportsCrossDocumentVT() {
+        // Chromium MPA view transitions expose pageswap / pagereveal
+        return 'onpagereveal' in window || 'onpageswap' in window;
+    }
+
+    function setupTopNavTransitions() {
+        const header = document.querySelector('.site-header');
+        if (!header) return;
+
+        header.addEventListener('click', (e) => {
+            const a = e.target.closest('a.nav-link');
+            if (!a || !header.contains(a)) return;
+            if (e.defaultPrevented || e.button !== 0) return;
+            if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+            if (a.target && a.target !== '_self') return;
+
+            let url;
+            try {
+                url = new URL(a.href, window.location.href);
+            } catch (_) {
+                return;
+            }
+            if (url.origin !== window.location.origin) return;
+            if (sameDocumentNav(url)) return; // same page / hash
+
+            // Instant destination-tab highlight
+            header.querySelectorAll('a.nav-link.pm-nav-pending').forEach((el) => {
+                el.classList.remove('pm-nav-pending');
+            });
+            a.classList.add('pm-nav-pending');
+
+            // Native cross-document VT: let the browser animate
+            if (supportsCrossDocumentVT()) return;
+
+            // Fallback: short content fade, then navigate
+            e.preventDefault();
+            try {
+                sessionStorage.setItem('pm-nav-go', 'fallback');
+            } catch (_) {
+                /* ignore */
+            }
+            document.body.classList.add('pm-nav-leaving');
+            window.setTimeout(() => {
+                window.location.href = url.href;
+            }, 180);
+        });
+    }
+
+    setupTopNavTransitions();
+
     // Keep heavy list cards out of opacity:0 reveals — they jank the sticky header on dieta/rankings
     const REVEAL_SELECTOR = [
         '.macro-card',

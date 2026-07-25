@@ -6,9 +6,13 @@
     --pm-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
     --pm-ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
     --pm-ease-spring: cubic-bezier(0.34, 1.2, 0.64, 1);
+    --pm-nav-dur: 0.38s;
 }
 
-/* Page entrance disabled — even tiny transform settle felt like a header/page “refresh” on tab switch */
+/* Cross-document tab transitions (Chrome / Edge) — header kept as its own layer */
+@view-transition {
+    navigation: auto;
+}
 
 @keyframes pmBarGrow {
     from { transform: scaleX(0.35); opacity: 0.35; }
@@ -18,6 +22,106 @@
 @keyframes pmSoftPulse {
     0%, 100% { box-shadow: var(--btn-calc-shadow); }
     50% { box-shadow: 0 12px 34px rgba(30, 58, 138, 0.32), 0 6px 16px var(--primary-glow); }
+}
+
+@keyframes pmVtRootOut {
+    to {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.992);
+        filter: blur(2px);
+    }
+}
+
+@keyframes pmVtRootIn {
+    from {
+        opacity: 0;
+        transform: translateY(14px) scale(0.992);
+        filter: blur(2px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+        filter: none;
+    }
+}
+
+@keyframes pmNavContentIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes pmNavContentOut {
+    to {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes pmNavPillIn {
+    from {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+::view-transition-group(root) {
+    animation-duration: var(--pm-nav-dur);
+    animation-timing-function: var(--pm-ease-out);
+}
+
+::view-transition-old(root) {
+    animation: pmVtRootOut 0.28s var(--pm-ease-soft) both;
+}
+
+::view-transition-new(root) {
+    animation: pmVtRootIn var(--pm-nav-dur) var(--pm-ease-out) both;
+}
+
+/* Keep sticky chrome rock-solid while page content crossfades (full top nav only) */
+.site-header:has(.nav-links) {
+    view-transition-name: pm-header;
+}
+
+::view-transition-group(pm-header) {
+    animation-duration: 0.32s;
+    animation-timing-function: var(--pm-ease-out);
+    z-index: 10000;
+}
+
+::view-transition-old(pm-header),
+::view-transition-new(pm-header) {
+    mix-blend-mode: normal;
+    height: 100%;
+    overflow: clip;
+}
+
+/* Fallback leave / enter when MPA view transitions are unavailable */
+html.pm-motion body.pm-nav-leaving .page-container,
+html.pm-motion body.pm-nav-leaving main.main-content,
+html.pm-motion body.pm-nav-leaving main.product-page,
+html.pm-motion body.pm-nav-leaving .err-wrap {
+    animation: pmNavContentOut 0.2s var(--pm-ease-soft) forwards;
+    pointer-events: none;
+}
+
+html.pm-motion body.pm-nav-entered:not(.compare-body) .page-container,
+html.pm-motion body.pm-nav-entered:not(.compare-body) main.main-content,
+html.pm-motion body.pm-nav-entered main.product-page {
+    animation: pmNavContentIn 0.42s var(--pm-ease-out) both;
+}
+
+html.pm-motion body.pm-nav-entered .nav-links a.nav-link.active::before {
+    animation: pmNavPillIn 0.34s var(--pm-ease-spring) both;
 }
 
 /* Hero underline can still grow — does not shift layout */
@@ -57,10 +161,36 @@ html.pm-scrolled .site-header {
     box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
 }
 
-/* Nav: color only — no translateY (shifts the whole bar visually) */
+/* Nav: smooth color + pill, no vertical shift of the bar */
 .nav-links button,
 .nav-links a.nav-link {
-    transition: color 0.18s var(--pm-ease-soft) !important;
+    transition:
+        color 0.22s var(--pm-ease-soft),
+        transform 0.22s var(--pm-ease-spring) !important;
+}
+
+.nav-links button::before,
+.nav-links a.nav-link::before {
+    transition:
+        opacity 0.28s var(--pm-ease-out),
+        background 0.28s var(--pm-ease-soft),
+        box-shadow 0.28s var(--pm-ease-soft),
+        transform 0.28s var(--pm-ease-spring) !important;
+}
+
+.nav-links a.nav-link:active:not(.active) {
+    transform: scale(0.97);
+}
+
+.nav-links a.nav-link.pm-nav-pending {
+    color: var(--nav-active-color);
+}
+
+.nav-links a.nav-link.pm-nav-pending::before {
+    opacity: 1;
+    background: var(--nav-active-bg);
+    box-shadow: var(--nav-active-shadow);
+    transform: scale(1.02);
 }
 
 /* Buttons */
@@ -486,6 +616,16 @@ main.main-content,
 }
 
 @media (prefers-reduced-motion: reduce) {
+    @view-transition {
+        navigation: none;
+    }
+
+    ::view-transition-group(*),
+    ::view-transition-old(*),
+    ::view-transition-new(*) {
+        animation: none !important;
+    }
+
     html.pm-motion .pm-reveal:not(.pm-revealed),
     html.pm-motion .pm-reveal.pm-revealed,
     html.pm-motion body.pm-motion-ready .page-hero,
@@ -494,11 +634,18 @@ main.main-content,
     html.pm-motion body.pm-motion-ready .main-content > .sub-nav,
     html.pm-motion body.pm-motion-ready .product-page > .product-hero-card,
     html.pm-motion body.pm-motion-ready .compare-stage,
-    html.pm-motion body.pm-motion-ready .btn-calc {
+    html.pm-motion body.pm-motion-ready .btn-calc,
+    html.pm-motion body.pm-nav-leaving .page-container,
+    html.pm-motion body.pm-nav-leaving main.main-content,
+    html.pm-motion body.pm-nav-leaving main.product-page,
+    html.pm-motion body.pm-nav-entered .page-container,
+    html.pm-motion body.pm-nav-entered main.main-content,
+    html.pm-motion body.pm-nav-entered main.product-page {
         animation: none !important;
         transition: none !important;
         opacity: 1 !important;
         transform: none !important;
+        filter: none !important;
     }
 
     .btn-calc:hover,
