@@ -73,11 +73,11 @@
     --ratio-badge-bg: linear-gradient(135deg, #fff1f2, #ffe4e6);
     --ratio-badge-border: #fca5a5;
     --ratio-badge-color: #660000;
-    /* Napisy brandowe: bordo → granat */
-    --brand-text-gradient: linear-gradient(125deg, #660000 0%, #800000 38%, #1e3a5f 100%);
+    /* Napisy brandowe: czerwień → bordo */
+    --brand-text-gradient: linear-gradient(125deg, #dc2626 0%, #b91c1c 42%, #800000 72%, #660000 100%);
     --h1-gradient: var(--brand-text-gradient);
     --ranking-title-max: var(--brand-text-gradient);
-    --ranking-title-price: linear-gradient(125deg, #660000 0%, #1e3a5f 55%, #2563eb 100%);
+    --ranking-title-price: var(--brand-text-gradient);
     --logo-gradient: var(--brand-text-gradient);
     --radius-sm: 12px;
     --radius-md: 16px;
@@ -163,10 +163,10 @@
     --ratio-badge-bg: rgba(128, 0, 0, 0.25);
     --ratio-badge-border: rgba(224, 122, 122, 0.3);
     --ratio-badge-color: var(--primary-light);
-    --brand-text-gradient: linear-gradient(125deg, #e07a7a 0%, #f0a0a0 40%, #93c5fd 100%);
+    --brand-text-gradient: linear-gradient(125deg, #fecaca 0%, #f0a0a0 40%, #e07a7a 75%, #c24141 100%);
     --h1-gradient: var(--brand-text-gradient);
     --ranking-title-max: var(--brand-text-gradient);
-    --ranking-title-price: linear-gradient(125deg, #e07a7a 0%, #93c5fd 55%, #bfdbfe 100%);
+    --ranking-title-price: var(--brand-text-gradient);
     --logo-gradient: var(--brand-text-gradient);
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
     --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(59, 130, 246, 0.08);
