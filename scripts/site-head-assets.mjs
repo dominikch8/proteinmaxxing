@@ -81,7 +81,8 @@ export function buildThemeStylesheets(prefix = '', opts = {}) {
     return `    <link rel="stylesheet" href="${prefix}css/themes.css">
     <link rel="stylesheet" href="${prefix}css/${main}">
     <link rel="stylesheet" href="${prefix}css/theme-switch.css">
-    <link rel="stylesheet" href="${prefix}css/site-motion.css">`;
+    <link rel="stylesheet" href="${prefix}css/site-motion.css">
+    <link rel="stylesheet" href="${prefix}css/brand-text.css">`;
 }
 
 export function buildThemeBodyScript(prefix = '') {

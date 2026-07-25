@@ -1,0 +1,40 @@
+/**
+ * Bordowe napisy → gradient bordo → granat / niebieski.
+ * Ładowany po site.css / product-page.css, żeby wygrać z solidnymi color:.
+ */
+.brand-gradient-text,
+.info-tab h2,
+.random-products-heading span,
+.nutrition-section h2,
+.product-guide h2,
+.seo-block h2,
+.product-name-inline,
+.product-guide .product-name-inline,
+.product-price-updated strong,
+.poradnik-practical-box h2,
+.poradnik-practical-box .poradnik-intake-intro,
+.poradnik-product-mini-value,
+.poradnik-intake-table tbody th,
+.product-card-cta,
+.compare-suggestions-cat--proposed,
+.auth-card h1,
+.err-title {
+    background-image: var(--brand-text-gradient) !important;
+    background-size: 140% 100%;
+    background-position: 0 50%;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+}
+
+[data-theme='dark'] .random-products-heading span,
+[data-theme='dark'] .poradnik-practical-box h2,
+[data-theme='dark'] .poradnik-product-mini-value,
+[data-theme='dark'] .product-card-cta {
+    background-image: var(--brand-text-gradient) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+}
