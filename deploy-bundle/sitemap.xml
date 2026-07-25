@@ -46,11 +46,6 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty-bialkowe-czy-oplacalne</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://proteiner.pl/najlepsze-zrodla-bialka-biedronka-lidl-auchan-carrefour</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -212,6 +207,11 @@
   </url>
   <url>
     <loc>https://proteiner.pl/produkty/kategoria/slodycze</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kategoria/batony</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -2742,6 +2742,106 @@
   </url>
   <url>
     <loc>https://proteiner.pl/produkty/czekolada-100</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/nuts</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/pawelek</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/grzeski</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/knoppers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/duplo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kinder-maxi-king</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kinder-country</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/picnic</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/corny-big</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/toblerone</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/princessa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/kitkat-chunky</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/snickers-white</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/bounty-dark</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/danusia</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/nestle-crunch</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/twix-white</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/mars-protein</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/snickers-protein</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/lion-white</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

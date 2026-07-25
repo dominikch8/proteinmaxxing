@@ -230,6 +230,26 @@
     "formula": "2.89 × 100 / 36 = 8.03"
   },
   {
+    "name": "Mars Protein",
+    "serving": "sztuka (57g)",
+    "servingGrams": 57,
+    "servingPricePln": 0.95,
+    "proteinPer100g": 20,
+    "proteinInServing": 11.4,
+    "pricePer100gProtein": 8.33,
+    "formula": "0.95 × 100 / 11.4 = 8.33"
+  },
+  {
+    "name": "Snickers Protein",
+    "serving": "sztuka (51g)",
+    "servingGrams": 51,
+    "servingPricePln": 0.85,
+    "proteinPer100g": 20,
+    "proteinInServing": 10.2,
+    "pricePer100gProtein": 8.33,
+    "formula": "0.85 × 100 / 10.2 = 8.33"
+  },
+  {
     "name": "Schabowy (panierowany)",
     "serving": "sztuka (150g)",
     "servingGrams": 150,
@@ -1050,6 +1070,16 @@
     "formula": "4.29 × 100 / 25.2 = 17.02"
   },
   {
+    "name": "Baton proteinowy",
+    "serving": "sztuka (60g)",
+    "servingGrams": 60,
+    "servingPricePln": 3.39,
+    "proteinPer100g": 33,
+    "proteinInServing": 19.8,
+    "pricePer100gProtein": 17.12,
+    "formula": "3.39 × 100 / 19.8 = 17.12"
+  },
+  {
     "name": "Naleśniki z twarogiem",
     "serving": "porcja (200g)",
     "servingGrams": 200,
@@ -1188,16 +1218,6 @@
     "proteinInServing": 24,
     "pricePer100gProtein": 17.88,
     "formula": "4.29 × 100 / 24 = 17.88"
-  },
-  {
-    "name": "Baton proteinowy",
-    "serving": "sztuka (60g)",
-    "servingGrams": 60,
-    "servingPricePln": 3.5900000000000003,
-    "proteinPer100g": 33,
-    "proteinInServing": 19.8,
-    "pricePer100gProtein": 18.13,
-    "formula": "3.5900000000000003 × 100 / 19.8 = 18.13"
   },
   {
     "name": "Salami",
@@ -1370,6 +1390,26 @@
     "formula": "3.89 × 100 / 20 = 19.45"
   },
   {
+    "name": "Snickers",
+    "serving": "sztuka (50g)",
+    "servingGrams": 50,
+    "servingPricePln": 0.85,
+    "proteinPer100g": 8.6,
+    "proteinInServing": 4.3,
+    "pricePer100gProtein": 19.77,
+    "formula": "0.85 × 100 / 4.3 = 19.77"
+  },
+  {
+    "name": "Nuts",
+    "serving": "sztuka (42g)",
+    "servingGrams": 42,
+    "servingPricePln": 0.75,
+    "proteinPer100g": 9,
+    "proteinInServing": 3.78,
+    "pricePer100gProtein": 19.84,
+    "formula": "0.75 × 100 / 3.78 = 19.84"
+  },
+  {
     "name": "Chrupki kurze (KFC styl)",
     "serving": "porcja (150g)",
     "servingGrams": 150,
@@ -1478,6 +1518,26 @@
     "proteinInServing": 24,
     "pricePer100gProtein": 21.63,
     "formula": "5.19 × 100 / 24 = 21.63"
+  },
+  {
+    "name": "Kinder Bueno",
+    "serving": "sztuka (43g)",
+    "servingGrams": 43,
+    "servingPricePln": 0.8,
+    "proteinPer100g": 8.6,
+    "proteinInServing": 3.7,
+    "pricePer100gProtein": 21.63,
+    "formula": "0.8 × 100 / 3.7 = 21.63"
+  },
+  {
+    "name": "Snickers White",
+    "serving": "sztuka (49g)",
+    "servingGrams": 49,
+    "servingPricePln": 0.85,
+    "proteinPer100g": 8,
+    "proteinInServing": 3.92,
+    "pricePer100gProtein": 21.68,
+    "formula": "0.85 × 100 / 3.92 = 21.68"
   },
   {
     "name": "Naleśniki z dżemem",
@@ -1590,6 +1650,16 @@
     "formula": "4.69 × 100 / 21 = 22.33"
   },
   {
+    "name": "Knoppers",
+    "serving": "sztuka (25g)",
+    "servingGrams": 25,
+    "servingPricePln": 0.45,
+    "proteinPer100g": 8,
+    "proteinInServing": 2,
+    "pricePer100gProtein": 22.5,
+    "formula": "0.45 × 100 / 2 = 22.5"
+  },
+  {
     "name": "Nuggetsy z kurczaka",
     "serving": "porcja (100g)",
     "servingGrams": 100,
@@ -1690,6 +1760,16 @@
     "formula": "5.69 × 100 / 24 = 23.71"
   },
   {
+    "name": "Kinder Country",
+    "serving": "sztuka (24g)",
+    "servingGrams": 24,
+    "servingPricePln": 0.4,
+    "proteinPer100g": 7,
+    "proteinInServing": 1.68,
+    "pricePer100gProtein": 23.81,
+    "formula": "0.4 × 100 / 1.68 = 23.81"
+  },
+  {
     "name": "Ravioli z ricottą",
     "serving": "porcja (200g)",
     "servingGrams": 200,
@@ -1718,6 +1798,16 @@
     "proteinInServing": 1.2,
     "pricePer100gProtein": 25,
     "formula": "0.3 × 100 / 1.2 = 25"
+  },
+  {
+    "name": "Picnic",
+    "serving": "sztuka (48g)",
+    "servingGrams": 48,
+    "servingPricePln": 0.85,
+    "proteinPer100g": 7,
+    "proteinInServing": 3.36,
+    "pricePer100gProtein": 25.3,
+    "formula": "0.85 × 100 / 3.36 = 25.3"
   },
   {
     "name": "Sardynki w oleju",
@@ -1788,6 +1878,16 @@
     "proteinInServing": 15,
     "pricePer100gProtein": 25.93,
     "formula": "3.89 × 100 / 15 = 25.93"
+  },
+  {
+    "name": "Kit Kat",
+    "serving": "sztuka (41.5g)",
+    "servingGrams": 41.5,
+    "servingPricePln": 0.7,
+    "proteinPer100g": 6.5,
+    "proteinInServing": 2.7,
+    "pricePer100gProtein": 25.95,
+    "formula": "0.7 × 100 / 2.7 = 25.95"
   },
   {
     "name": "Cheeseburger podwójny",
@@ -1980,6 +2080,16 @@
     "formula": "6.79 × 100 / 24 = 28.29"
   },
   {
+    "name": "Corny Big",
+    "serving": "sztuka (50g)",
+    "servingGrams": 50,
+    "servingPricePln": 0.85,
+    "proteinPer100g": 6,
+    "proteinInServing": 3,
+    "pricePer100gProtein": 28.33,
+    "formula": "0.85 × 100 / 3 = 28.33"
+  },
+  {
     "name": "Kiełbasa krakowska",
     "serving": "plaster (30g)",
     "servingGrams": 30,
@@ -2010,6 +2120,16 @@
     "formula": "1.8 × 100 / 6.3 = 28.57"
   },
   {
+    "name": "Kinder Maxi King",
+    "serving": "sztuka (35g)",
+    "servingGrams": 35,
+    "servingPricePln": 0.6,
+    "proteinPer100g": 6,
+    "proteinInServing": 2.1,
+    "pricePer100gProtein": 28.57,
+    "formula": "0.6 × 100 / 2.1 = 28.57"
+  },
+  {
     "name": "Falafel smażony",
     "serving": "porcja (4 szt., 120g)",
     "servingGrams": 120,
@@ -2028,6 +2148,26 @@
     "proteinInServing": 1,
     "pricePer100gProtein": 29,
     "formula": "0.29 × 100 / 1 = 29"
+  },
+  {
+    "name": "KitKat Chunky",
+    "serving": "sztuka (40g)",
+    "servingGrams": 40,
+    "servingPricePln": 0.7,
+    "proteinPer100g": 6,
+    "proteinInServing": 2.4,
+    "pricePer100gProtein": 29.17,
+    "formula": "0.7 × 100 / 2.4 = 29.17"
+  },
+  {
+    "name": "Nestlé Crunch",
+    "serving": "sztuka (40g)",
+    "servingGrams": 40,
+    "servingPricePln": 0.7,
+    "proteinPer100g": 6,
+    "proteinInServing": 2.4,
+    "pricePer100gProtein": 29.17,
+    "formula": "0.7 × 100 / 2.4 = 29.17"
   },
   {
     "name": "Makaron chiński (gotowy)",
@@ -2100,6 +2240,16 @@
     "formula": "4.69 × 100 / 15.6 = 30.06"
   },
   {
+    "name": "Grześki",
+    "serving": "sztuka (36g)",
+    "servingGrams": 36,
+    "servingPricePln": 0.65,
+    "proteinPer100g": 6,
+    "proteinInServing": 2.16,
+    "pricePer100gProtein": 30.09,
+    "formula": "0.65 × 100 / 2.16 = 30.09"
+  },
+  {
     "name": "Pierogi z kapustą i grzybami",
     "serving": "porcja (280g)",
     "servingGrams": 280,
@@ -2108,6 +2258,26 @@
     "proteinInServing": 14,
     "pricePer100gProtein": 30.64,
     "formula": "4.29 × 100 / 14 = 30.64"
+  },
+  {
+    "name": "Toblerone",
+    "serving": "porcja (35g)",
+    "servingGrams": 35,
+    "servingPricePln": 0.65,
+    "proteinPer100g": 6,
+    "proteinInServing": 2.1,
+    "pricePer100gProtein": 30.95,
+    "formula": "0.65 × 100 / 2.1 = 30.95"
+  },
+  {
+    "name": "Princessa",
+    "serving": "sztuka (35g)",
+    "servingGrams": 35,
+    "servingPricePln": 0.65,
+    "proteinPer100g": 6,
+    "proteinInServing": 2.1,
+    "pricePer100gProtein": 30.95,
+    "formula": "0.65 × 100 / 2.1 = 30.95"
   },
   {
     "name": "Penne z kurczakiem i brokułami",
@@ -2148,6 +2318,16 @@
     "proteinInServing": 2.4,
     "pricePer100gProtein": 31.25,
     "formula": "0.75 × 100 / 2.4 = 31.25"
+  },
+  {
+    "name": "Prince Polo",
+    "serving": "sztuka (24g)",
+    "servingGrams": 24,
+    "servingPricePln": 0.45,
+    "proteinPer100g": 6,
+    "proteinInServing": 1.44,
+    "pricePer100gProtein": 31.25,
+    "formula": "0.45 × 100 / 1.44 = 31.25"
   },
   {
     "name": "Shawarma w picie",
@@ -2258,6 +2438,16 @@
     "proteinInServing": 17,
     "pricePer100gProtein": 32.29,
     "formula": "5.49 × 100 / 17 = 32.29"
+  },
+  {
+    "name": "Duplo",
+    "serving": "sztuka (18g)",
+    "servingGrams": 18,
+    "servingPricePln": 0.35,
+    "proteinPer100g": 6,
+    "proteinInServing": 1.08,
+    "pricePer100gProtein": 32.41,
+    "formula": "0.35 × 100 / 1.08 = 32.41"
   },
   {
     "name": "Hamburger",
@@ -2400,6 +2590,46 @@
     "formula": "1.25 × 100 / 3.6 = 34.72"
   },
   {
+    "name": "3 Bit",
+    "serving": "sztuka (46g)",
+    "servingGrams": 46,
+    "servingPricePln": 0.8,
+    "proteinPer100g": 5,
+    "proteinInServing": 2.3,
+    "pricePer100gProtein": 34.78,
+    "formula": "0.8 × 100 / 2.3 = 34.78"
+  },
+  {
+    "name": "Twix White",
+    "serving": "sztuka (46g)",
+    "servingGrams": 46,
+    "servingPricePln": 0.8,
+    "proteinPer100g": 5,
+    "proteinInServing": 2.3,
+    "pricePer100gProtein": 34.78,
+    "formula": "0.8 × 100 / 2.3 = 34.78"
+  },
+  {
+    "name": "Danusia",
+    "serving": "sztuka (40g)",
+    "servingGrams": 40,
+    "servingPricePln": 0.7,
+    "proteinPer100g": 5,
+    "proteinInServing": 2,
+    "pricePer100gProtein": 35,
+    "formula": "0.7 × 100 / 2 = 35"
+  },
+  {
+    "name": "Lion White",
+    "serving": "sztuka (40g)",
+    "servingGrams": 40,
+    "servingPricePln": 0.7,
+    "proteinPer100g": 5,
+    "proteinInServing": 2,
+    "pricePer100gProtein": 35,
+    "formula": "0.7 × 100 / 2 = 35"
+  },
+  {
     "name": "Pizza capricciosa",
     "serving": "kawałek (150g)",
     "servingGrams": 150,
@@ -2448,6 +2678,26 @@
     "proteinInServing": 16,
     "pricePer100gProtein": 35.56,
     "formula": "5.69 × 100 / 16 = 35.56"
+  },
+  {
+    "name": "Pawełek",
+    "serving": "sztuka (45g)",
+    "servingGrams": 45,
+    "servingPricePln": 0.8,
+    "proteinPer100g": 5,
+    "proteinInServing": 2.25,
+    "pricePer100gProtein": 35.56,
+    "formula": "0.8 × 100 / 2.25 = 35.56"
+  },
+  {
+    "name": "Lion",
+    "serving": "sztuka (42g)",
+    "servingGrams": 42,
+    "servingPricePln": 0.75,
+    "proteinPer100g": 5,
+    "proteinInServing": 2.1,
+    "pricePer100gProtein": 35.71,
+    "formula": "0.75 × 100 / 2.1 = 35.71"
   },
   {
     "name": "Sałatka Cezar z kurczakiem",
@@ -2670,16 +2920,6 @@
     "formula": "14.49 × 100 / 31.5 = 46"
   },
   {
-    "name": "Baton (np. Snickers)",
-    "serving": "sztuka (50g)",
-    "servingGrams": 50,
-    "servingPricePln": 1.99,
-    "proteinPer100g": 8.6,
-    "proteinInServing": 4.3,
-    "pricePer100gProtein": 46.28,
-    "formula": "1.99 × 100 / 4.3 = 46.28"
-  },
-  {
     "name": "Ricotta",
     "serving": "łyżka (30g)",
     "servingGrams": 30,
@@ -2728,16 +2968,6 @@
     "proteinInServing": 2.4,
     "pricePer100gProtein": 50,
     "formula": "1.2 × 100 / 2.4 = 50"
-  },
-  {
-    "name": "Kinder Bueno",
-    "serving": "sztuka (43g)",
-    "servingGrams": 43,
-    "servingPricePln": 1.85,
-    "proteinPer100g": 8.6,
-    "proteinInServing": 3.7,
-    "pricePer100gProtein": 50.03,
-    "formula": "1.85 × 100 / 3.7 = 50.03"
   },
   {
     "name": "Czekolada gorzka (80%)",
@@ -2840,16 +3070,6 @@
     "formula": "1.35 × 100 / 2.31 = 58.44"
   },
   {
-    "name": "Kit Kat",
-    "serving": "sztuka (41.5g)",
-    "servingGrams": 41.5,
-    "servingPricePln": 1.7,
-    "proteinPer100g": 6.5,
-    "proteinInServing": 2.7,
-    "pricePer100gProtein": 63.02,
-    "formula": "1.7 × 100 / 2.7 = 63.02"
-  },
-  {
     "name": "Sernik (kawałek)",
     "serving": "porcja (120g)",
     "servingGrams": 120,
@@ -2920,16 +3140,6 @@
     "formula": "0.65 × 100 / 0.9 = 72.22"
   },
   {
-    "name": "Prince Polo",
-    "serving": "sztuka (24g)",
-    "servingGrams": 24,
-    "servingPricePln": 1.05,
-    "proteinPer100g": 6,
-    "proteinInServing": 1.44,
-    "pricePer100gProtein": 72.92,
-    "formula": "1.05 × 100 / 1.44 = 72.92"
-  },
-  {
     "name": "Gofry z bitą śmietaną",
     "serving": "sztuka (120g)",
     "servingGrams": 120,
@@ -2988,16 +3198,6 @@
     "proteinInServing": 1.25,
     "pricePer100gProtein": 80,
     "formula": "1 × 100 / 1.25 = 80"
-  },
-  {
-    "name": "Lion",
-    "serving": "sztuka (42g)",
-    "servingGrams": 42,
-    "servingPricePln": 1.7,
-    "proteinPer100g": 5,
-    "proteinInServing": 2.1,
-    "pricePer100gProtein": 80.95,
-    "formula": "1.7 × 100 / 2.1 = 80.95"
   },
   {
     "name": "M&M's",
@@ -3068,16 +3268,6 @@
     "proteinInServing": 3.5,
     "pricePer100gProtein": 82.57,
     "formula": "2.89 × 100 / 3.5 = 82.57"
-  },
-  {
-    "name": "3 BIT",
-    "serving": "sztuka (46g)",
-    "servingGrams": 46,
-    "servingPricePln": 1.9,
-    "proteinPer100g": 5,
-    "proteinInServing": 2.3,
-    "pricePer100gProtein": 82.61,
-    "formula": "1.9 × 100 / 2.3 = 82.61"
   },
   {
     "name": "Kokos suszony (wiórki)",

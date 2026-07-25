@@ -29,6 +29,7 @@ const CATEGORY_LABELS = {
     makarony: 'Dania z makaronu',
     fastfood: 'Fast food',
     slodycze: 'Słodycze i przekąski',
+    batony: 'Batony',
     sosy: 'Sosy'
 };
 
@@ -46,6 +47,7 @@ const CATEGORY_ORDER = [
     'makarony',
     'fastfood',
     'slodycze',
+    'batony',
     'sosy'
 ];
 
@@ -63,6 +65,7 @@ const CATEGORY_SELECT_LABELS_DIETA = {
     makarony: 'Dania z Makaronu',
     fastfood: 'Fast Food',
     slodycze: 'Słodycze i Przekąski',
+    batony: 'Batony',
     sosy: 'Sosy'
 };
 

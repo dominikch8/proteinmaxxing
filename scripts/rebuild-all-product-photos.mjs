@@ -45,8 +45,38 @@ const FOOD_SUBJECT = {
     'kinder-bueno': 'Kinder Bueno chocolate hazelnut wafer bar',
     'prince-polo': 'Prince Polo chocolate wafer bar',
     'ptasie-mleczko': 'Ptasie mleczko Polish chocolate-covered marshmallow candy pieces',
+    'baton-np-snickers': 'classic Snickers style chocolate peanut caramel nougat candy bar unwrapped',
     'baton-proteinowy': 'plain chocolate protein bar without readable brand text',
-    'baton-np-snickers': 'chocolate peanut nougat candy bar like Snickers',
+    '3-bit': '3 Bit Polish chocolate wafer candy bar unwrapped',
+    nuts: 'Nuts Nestle hazelnut caramel chocolate candy bar unwrapped',
+    pawelek: 'Pawelek Polish toffee chocolate candy bar unwrapped',
+    grzeski: 'Grzeski Polish chocolate wafer candy bar unwrapped',
+    knoppers: 'Knoppers hazelnut cream wafer candy bar unwrapped',
+    duplo: 'Duplo Ferrero chocolate wafer candy bar unwrapped',
+    'kinder-maxi-king': 'Kinder Maxi King cream chocolate hazelnut candy bar unwrapped',
+    'kinder-country': 'Kinder Country milk cereal chocolate candy bar unwrapped',
+    picnic: 'Picnic peanut raisin caramel chocolate candy bar unwrapped',
+    'corny-big': 'Corny Big cereal honey granola candy bar unwrapped',
+    toblerone: 'Toblerone triangular honey almond nougat chocolate bar pieces',
+    princessa: 'Princessa Polish chocolate wafer candy bar unwrapped',
+    'kitkat-chunky': 'KitKat Chunky thick chocolate wafer candy bar unwrapped',
+    'snickers-white': 'white chocolate peanut caramel nougat candy bar like Snickers White unwrapped',
+    'bounty-dark': 'Bounty Dark coconut chocolate candy bar in dark chocolate unwrapped',
+    danusia: 'Danusia Polish chocolate filled candy bar unwrapped',
+    'nestle-crunch': 'Nestle Crunch crispy rice milk chocolate candy bar unwrapped',
+    'twix-white': 'Twix White biscuit caramel white chocolate candy bars unwrapped',
+    'mars-protein': 'Mars Protein chocolate caramel protein candy bar unwrapped',
+    'snickers-protein': 'Snickers Protein peanut caramel chocolate protein bar unwrapped',
+    'lion-white': 'Lion White white chocolate caramel cereal candy bar unwrapped',
+    'kinder-bueno': 'Kinder Bueno chocolate hazelnut wafer bar unwrapped',
+    'prince-polo': 'Prince Polo chocolate wafer bar unwrapped',
+    mars: 'Mars chocolate candy bar with caramel nougat unwrapped',
+    twix: 'Twix chocolate caramel cookie bars unwrapped',
+    bounty: 'Bounty coconut chocolate candy bar unwrapped',
+    'kit-kat': 'Kit Kat chocolate wafer bar sticks unwrapped',
+    lion: 'Lion Nestle chocolate caramel cereal candy bar unwrapped',
+    'milky-way': 'Milky Way chocolate nougat candy bar unwrapped',
+    snickers: 'Snickers chocolate peanut candy bar unwrapped',
     'krem-czekoladowy-milka': 'chocolate hazelnut spread in open glass jar',
     'czekolada-mleczna': 'milk chocolate bar broken squares',
     'czekolada-gorzka-80': 'dark 80 percent chocolate bar squares',
@@ -154,6 +184,7 @@ const CATEGORY_SUFFIX = {
     zupy: 'soup in bowl food',
     fastfood: 'fast food item',
     slodycze: 'candy chocolate dessert food',
+    batony: 'chocolate candy bar snack food',
     'polskie-obiadki': 'Polish traditional food dish'
 };
 
@@ -181,7 +212,7 @@ function slugify(name) {
 function enrichProducts(raw) {
     const seen = {};
     return raw.map((p) => {
-        let base = slugify(p.name);
+        let base = p.slug && String(p.slug).trim() ? String(p.slug).trim() : slugify(p.name);
         let slug = base;
         let n = 2;
         while (seen[slug]) {

@@ -12,6 +12,7 @@ export const CATEGORY_ORDER = [
     'makarony',
     'fastfood',
     'slodycze',
+    'batony',
     'sosy',
 ];
 
@@ -28,6 +29,7 @@ export const CATEGORY_LABELS = {
     makarony: 'Dania z makaronu',
     fastfood: 'Fast food',
     slodycze: 'Słodycze i przekąski',
+    batony: 'Batony',
     sosy: 'Sosy',
 };
 
@@ -45,6 +47,7 @@ export const CATEGORY_META_PHRASE = {
     makarony: 'makaron i dania makaronowe',
     fastfood: 'burgery, pizza, kebab — makra',
     slodycze: 'słodycze i przekąski — kalorie',
+    batony: 'batony czekoladowe — kalorie i makro na 100 g',
     sosy: 'sosy i dipy — kalorie na 100 g',
 };
 
@@ -72,7 +75,9 @@ export const CATEGORY_INTRO = {
     fastfood:
         'Burgery, pizza, kebab — wysokie kalorie. Zobacz, które fast foody mają więcej białka na kcal i ile kosztuje białko w tej kategorii.',
     slodycze:
-        'Słodycze i przekąski — kalorie i cukry. Porównaj makra, jeśli wliczasz batony, czekoladę czy ciasta do dziennego bilansu.',
+        'Słodycze i przekąski — kalorie i cukry. Porównaj makra, jeśli wliczasz czekoladę czy ciasta do dziennego bilansu.',
+    batony:
+        'Snickers, Mars, Twix, 3 Bit i inne batony brandingowe — kalorie, białko i tłuszcz na 100 g. Sprawdź, ile kosztuje porcja w dziennym limicie.',
     sosy:
         'Ketchup, majonez, sosy sałatkowe — małe porcje, duży wpływ na kalorie. Sprawdź makra na 100 g w tej kategorii.',
 };
@@ -145,7 +150,12 @@ export const CATEGORY_TIPS = {
     slodycze: [
         'Planuj porcję w tygodniu — zakaz często kończy się objadaniem.',
         'Czekolada gorzka ma inne makro niż mleczna — porównaj w bazie.',
-        'Batony proteinowe nie zawsze mają mniej kcal niż zwykłe — sprawdź etykietę.',
+        'Ciastka i chipsy łatwo „znikają” z opakowania — waż porcję.',
+    ],
+    batony: [
+        'Jeden baton to często 200–280 kcal — wpisz go do limitu z góry.',
+        'Wersje „protein” nie zawsze mają mniej kcal niż klasyczne — porównaj w tabeli.',
+        'Porównaj Snickersa z batonem zbożowym: różnica w tłuszczu bywa duża.',
     ],
     sosy: [
         'Ketchup i majonez szybko podbijają kalorie — makro na 100 g.',
@@ -269,11 +279,21 @@ export const CATEGORY_FAQ = {
     slodycze: [
         [
             'Czy muszę rezygnować ze słodyczy?',
-            'Nie. Planowana porcja batonu lub ciastka w tygodniu jest lepsza niż zakaz i późniejsze objadanie.',
+            'Nie. Planowana porcja ciastka lub czekolady w tygodniu jest lepsza niż zakaz i późniejsze objadanie.',
         ],
         [
             'Dlaczego słodycze mają mało białka?',
             'To głównie cukry i tłuszcz — stąd wysoka kcal przy niskiej sytości. Traktuj jako dodatek, nie bazę posiłku.',
+        ],
+    ],
+    batony: [
+        [
+            'Ile kalorii ma typowy baton?',
+            'Większość Snickersów, Marsów czy Twixów to ok. 200–280 kcal na sztukę. W tabeli porównasz też wartości na 100 g.',
+        ],
+        [
+            'Czy baton proteinowy jest „zdrowszy”?',
+            'Ma więcej białka, ale kalorie bywają podobne. Porównaj Snickers Protein z klasycznym Snickersem w tej kategorii.',
         ],
     ],
     sosy: [

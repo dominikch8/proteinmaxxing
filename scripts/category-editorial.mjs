@@ -24,7 +24,9 @@ export const CATEGORY_EDITORIAL = {
 
     fastfood: `Fast food i dania typu „na mieście” często mają więcej tłuszczu, soli i węglowodanów niż domowe odpowiedniki. Nie chodzi o zakaz, tylko o świadomą decyzję: raz na jakiś czas wpisz produkt do dziennego limitu kcal z kalkulatora i porównaj z lżejszą alternatywą w tej samej kategorii.`,
 
-    slodycze: `Słodycze i przekąski są zwykle bogate w cukry i tłuszcz, ubogie w białko. Przy redukcji pomaga planowanie porcji zamiast całkowitej eliminacji. Sprawdź, ile kcal „kosztuje” baton lub ciastko na 100 g — często odpowiada to pełnemu posiłkowi.`,
+    slodycze: `Słodycze i przekąski są zwykle bogate w cukry i tłuszcz, ubogie w białko. Przy redukcji pomaga planowanie porcji zamiast całkowitej eliminacji. Sprawdź, ile kcal „kosztuje” ciastko lub czekolada na 100 g — często odpowiada to pełnemu posiłkowi.`,
+
+    batony: `Batony czekoladowe (Snickers, Mars, Twix, 3 Bit, Prince Polo…) to gęste kalorie w małej porcji. Porównaj makra na 100 g i na sztukę — łatwiej wpisać je świadomie do dziennego limitu zamiast „zjadać z automatu”.`,
 
     sosy: `Sosy i dodatki (ketchup, majonez, sos czosnkowy) łatwo umykają w liczeniu makro, a potrafią dodać setki kcal. Porównuj produkty na 100 g i wybieraj lżejsze wersje (musztarda, jogurtowy dip) tam, gdzie to możliwe.`
 };
