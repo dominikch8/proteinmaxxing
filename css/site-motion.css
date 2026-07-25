@@ -63,17 +63,6 @@
     }
 }
 
-@keyframes pmNavPillIn {
-    from {
-        opacity: 0;
-        transform: scale(0.92);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
 ::view-transition-group(root) {
     animation-duration: var(--pm-nav-dur);
     animation-timing-function: var(--pm-ease-out);
@@ -87,22 +76,38 @@
     animation: pmVtRootIn var(--pm-nav-dur) var(--pm-ease-out) both;
 }
 
-/* Keep sticky chrome rock-solid while page content crossfades (full top nav only) */
+/* Header as its own layer — crossfade only, never morph tab labels */
 .site-header:has(.nav-links) {
     view-transition-name: pm-header;
 }
 
 ::view-transition-group(pm-header) {
-    animation-duration: 0.32s;
-    animation-timing-function: var(--pm-ease-out);
+    /* Disable size/position morph (that garbled tab names for a frame) */
+    animation: none;
     z-index: 10000;
 }
 
-::view-transition-old(pm-header),
+::view-transition-old(pm-header) {
+    animation: pmHeaderFadeOut 0.18s var(--pm-ease-soft) both;
+}
+
 ::view-transition-new(pm-header) {
-    mix-blend-mode: normal;
-    height: 100%;
-    overflow: clip;
+    animation: pmHeaderFadeIn 0.22s var(--pm-ease-out) both;
+}
+
+@keyframes pmHeaderFadeOut {
+    to { opacity: 0; }
+}
+
+@keyframes pmHeaderFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Nav labels themselves must not participate in root morph snapshots */
+.site-header .nav-links a.nav-link,
+.site-header .nav-links button {
+    view-transition-name: none;
 }
 
 /* Fallback leave / enter when MPA view transitions are unavailable */
@@ -120,9 +125,6 @@ html.pm-motion body.pm-nav-entered main.product-page {
     animation: pmNavContentIn 0.42s var(--pm-ease-out) both;
 }
 
-html.pm-motion body.pm-nav-entered .nav-links a.nav-link.active::before {
-    animation: pmNavPillIn 0.34s var(--pm-ease-spring) both;
-}
 
 /* Hero underline can still grow — does not shift layout */
 html.pm-motion body.pm-motion-ready:not(.compare-body) .page-hero::after {
@@ -180,17 +182,6 @@ html.pm-scrolled .site-header {
 
 .nav-links a.nav-link:active:not(.active) {
     transform: scale(0.97);
-}
-
-.nav-links a.nav-link.pm-nav-pending {
-    color: var(--nav-active-color);
-}
-
-.nav-links a.nav-link.pm-nav-pending::before {
-    opacity: 1;
-    background: var(--nav-active-bg);
-    box-shadow: var(--nav-active-shadow);
-    transform: scale(1.02);
 }
 
 /* Buttons */

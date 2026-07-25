@@ -93,12 +93,6 @@
             if (url.origin !== window.location.origin) return;
             if (sameDocumentNav(url)) return; // same page / hash
 
-            // Instant destination-tab highlight
-            header.querySelectorAll('a.nav-link.pm-nav-pending').forEach((el) => {
-                el.classList.remove('pm-nav-pending');
-            });
-            a.classList.add('pm-nav-pending');
-
             // Native cross-document VT: let the browser animate
             if (supportsCrossDocumentVT()) return;
 
