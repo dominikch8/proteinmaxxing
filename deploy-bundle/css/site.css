@@ -2049,14 +2049,14 @@
             border-bottom: 2px solid var(--border-soft);
             letter-spacing: -0.02em;
             color: var(--primary-dark);
-            background: linear-gradient(115deg, #7f1d1d 0%, #9f1239 38%, #1d4ed8 100%);
+            background: linear-gradient(115deg, #4a0e1c 0%, #5c1a3a 32%, #2e3a8c 68%, #1d4ed8 100%);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         [data-theme='dark'] .info-tab h2 {
-            background: linear-gradient(115deg, #fda4af 0%, #fb7185 40%, #93c5fd 100%);
+            background: linear-gradient(115deg, #d4a5b0 0%, #b8a0c8 40%, #93c5fd 100%);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;

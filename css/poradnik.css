@@ -359,8 +359,9 @@
     color: #fff;
     background: linear-gradient(
         135deg,
-        #7f1d1d 0%,
-        #9f1239 42%,
+        #4a0e1c 0%,
+        #5c1a3a 36%,
+        #2e3a8c 72%,
         #1d4ed8 100%
     );
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
