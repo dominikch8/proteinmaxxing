@@ -61,21 +61,35 @@
     function mountMobileNav() {
         const nav = document.querySelector('.site-header nav');
         const links = nav?.querySelector('.nav-links');
-        if (!nav || !links || nav.querySelector('.nav-toggle')) return;
+        if (!nav || !links) return;
 
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'nav-toggle';
-        btn.setAttribute('aria-label', 'Otwórz menu');
-        btn.setAttribute('aria-expanded', 'false');
-        btn.setAttribute('aria-controls', 'site-nav-links');
-        btn.innerHTML = '<span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span>';
+        // Prefer toggle from HTML (no layout insert after paint)
+        let btn = nav.querySelector('.nav-toggle');
+        if (!btn) {
+            btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'nav-toggle';
+            btn.setAttribute('aria-label', 'Otwórz menu');
+            btn.setAttribute('aria-expanded', 'false');
+            btn.setAttribute('aria-controls', 'site-nav-links');
+            btn.innerHTML =
+                '<span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span>';
+            nav.insertBefore(btn, links);
+        }
 
-        links.id = 'site-nav-links';
+        if (!links.id) links.id = 'site-nav-links';
+        btn.setAttribute('aria-controls', links.id);
 
-        const backdrop = document.createElement('div');
-        backdrop.className = 'nav-backdrop';
-        backdrop.hidden = true;
+        if (btn.dataset.pmNavBound === '1') return;
+        btn.dataset.pmNavBound = '1';
+
+        let backdrop = document.querySelector('.nav-backdrop');
+        if (!backdrop) {
+            backdrop = document.createElement('div');
+            backdrop.className = 'nav-backdrop';
+            backdrop.hidden = true;
+            document.body.appendChild(backdrop);
+        }
 
         const close = () => {
             nav.classList.remove('nav-open');
@@ -103,9 +117,6 @@
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') close();
         });
-
-        nav.insertBefore(btn, links);
-        document.body.appendChild(backdrop);
     }
 
     function initUi() {

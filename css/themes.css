@@ -32,7 +32,7 @@
     --danger: #dc2626;
     --danger-bg: #fef2f2;
     --ink: #0f172a;
-    --header-bg: rgba(255, 255, 255, 0.92);
+    --header-bg: #ffffff;
     --header-border: rgba(226, 232, 240, 0.9);
     --header-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 8px 28px rgba(15, 23, 42, 0.06);
     --main-border: rgba(226, 232, 240, 0.85);
@@ -73,10 +73,12 @@
     --ratio-badge-bg: linear-gradient(135deg, #fff1f2, #ffe4e6);
     --ratio-badge-border: #fca5a5;
     --ratio-badge-color: #660000;
-    --h1-gradient: linear-gradient(135deg, var(--ink) 0%, var(--primary) 48%, var(--accent) 100%);
-    --ranking-title-max: linear-gradient(135deg, var(--ink) 0%, var(--primary-dark) 45%, var(--accent) 100%);
-    --ranking-title-price: linear-gradient(135deg, var(--ink) 0%, var(--accent) 50%, var(--accent-soft) 100%);
-    --logo-gradient: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    /* Napisy brandowe: bordo → granat */
+    --brand-text-gradient: linear-gradient(125deg, #660000 0%, #800000 38%, #1e3a5f 100%);
+    --h1-gradient: var(--brand-text-gradient);
+    --ranking-title-max: var(--brand-text-gradient);
+    --ranking-title-price: linear-gradient(125deg, #660000 0%, #1e3a5f 55%, #2563eb 100%);
+    --logo-gradient: var(--brand-text-gradient);
     --radius-sm: 12px;
     --radius-md: 16px;
     --radius-lg: 22px;
@@ -120,7 +122,7 @@
     --danger: #f87171;
     --danger-bg: rgba(127, 29, 29, 0.35);
     --ink: #f8fafc;
-    --header-bg: rgba(10, 14, 26, 0.94);
+    --header-bg: #0a0e1a;
     --header-border: rgba(59, 130, 246, 0.2);
     --header-shadow: 0 10px 36px rgba(0, 0, 0, 0.45);
     --main-border: rgba(147, 197, 253, 0.16);
@@ -161,12 +163,43 @@
     --ratio-badge-bg: rgba(128, 0, 0, 0.25);
     --ratio-badge-border: rgba(224, 122, 122, 0.3);
     --ratio-badge-color: var(--primary-light);
-    --h1-gradient: linear-gradient(135deg, #fff 0%, var(--primary-light) 45%, var(--accent) 100%);
-    --ranking-title-max: linear-gradient(135deg, #fff 0%, var(--primary-light) 50%, var(--accent-soft) 100%);
-    --ranking-title-price: linear-gradient(135deg, #fff 0%, var(--accent) 45%, var(--accent-hot) 100%);
-    --logo-gradient: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    --brand-text-gradient: linear-gradient(125deg, #e07a7a 0%, #f0a0a0 40%, #93c5fd 100%);
+    --h1-gradient: var(--brand-text-gradient);
+    --ranking-title-max: var(--brand-text-gradient);
+    --ranking-title-price: linear-gradient(125deg, #e07a7a 0%, #93c5fd 55%, #bfdbfe 100%);
+    --logo-gradient: var(--brand-text-gradient);
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
     --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(59, 130, 246, 0.08);
     --shadow-lg: 0 28px 60px rgba(0, 0, 0, 0.55), 0 0 40px rgba(128, 0, 0, 0.08);
     --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Gradient bordo→niebieski zamiast jednolitych bordowych napisów */
+.brand-gradient-text,
+h1,
+.info-tab h2,
+.section-title,
+.random-products-heading span,
+.nutrition-section h2,
+.product-guide h2,
+.seo-block h2,
+.product-name-inline,
+.product-guide .product-name-inline,
+.product-page h1,
+.compare-table-title,
+.compare-empty-title,
+.compare-kicker,
+.compare-eyebrow,
+.poradnik-practical-box h2,
+.poradnik-intake-intro,
+.poradnik-product-mini-value,
+.category-page h1,
+.err-title,
+.auth-card h1 {
+    background-image: var(--brand-text-gradient);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }

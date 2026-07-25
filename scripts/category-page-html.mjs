@@ -108,7 +108,8 @@ ${buildCookieConsentBody(PREFIX)}
                 ${buildLogoMark(PREFIX)}
                 <span>Proteiner</span>
             </a>
-            <ul class="nav-links">
+            <button type="button" class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="site-nav-links"><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span></button>
+            <ul class="nav-links" id="site-nav-links">
                 <li><a class="nav-link" href="${PREFIX}">Kalkulator</a></li>
                 <li><a class="nav-link active" href="${PREFIX}dieta" aria-current="page">Dieta</a></li>
                 <li><a class="nav-link" href="${PREFIX}porownaj-produkty">Porównaj produkty</a></li>
@@ -117,6 +118,7 @@ ${buildCookieConsentBody(PREFIX)}
                 <li><a class="nav-link" href="${PREFIX}artykuly">Artykuły</a></li>
                 <li><a class="nav-link" href="${PREFIX}informacje">Informacje</a></li>
                 <li><a class="nav-link" href="${PREFIX}o-mnie">O mnie</a></li>
+                <li id="authNavSlot" class="auth-nav-item"><a class="nav-link auth-nav-link" href="${PREFIX}logowanie">Zaloguj</a></li>
             </ul>
         </nav>
     </header>

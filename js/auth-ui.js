@@ -1,6 +1,6 @@
 /**
  * Slot konta w nawigacji (Zaloguj / Konto).
- * Cache sesji w sessionStorage, żeby nie migało „Zaloguj” → „Admin” przy każdej zakładce.
+ * Slot powinien już być w HTML (#authNavSlot) — bez doklejania po paint (skok paska).
  */
 (function () {
     const CACHE_KEY = 'pmx_auth_nav_v1';
@@ -96,20 +96,21 @@
 
         let li = document.getElementById('authNavSlot');
         if (!li) {
+            // Fallback tylko gdy HTML nie ma slotu — lepiej w szablonie
             li = document.createElement('li');
             li.id = 'authNavSlot';
+            li.className = 'auth-nav-item';
             nav.appendChild(li);
         }
 
         const prefix = scriptPrefix();
         const cached = readCache();
-        // Od razu pokaż cache (albo nic), bez pośredniego „Zaloguj” jeśli user jest zalogowany
+
+        // Zawsze widoczny stan startowy (bez visibility:hidden — mniej „mignięcia”)
         if (cached !== undefined) {
             renderSlot(li, cached, prefix);
-        } else {
-            // Placeholder o stałej szerokości — mniej skoku layoutu
-            li.className = 'auth-nav-item';
-            li.innerHTML = '<a class="nav-link auth-nav-link" href="' + prefix + 'logowanie" style="visibility:hidden">Konto</a>';
+        } else if (!li.querySelector('a')) {
+            renderSlot(li, null, prefix);
         }
 
         try {

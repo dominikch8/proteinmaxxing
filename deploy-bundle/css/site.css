@@ -51,31 +51,30 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            overflow: visible;
-            /* Denser chrome — less backdrop sampling flicker on tab navigation */
-            background: color-mix(in srgb, var(--header-bg) 96%, #ffffff 4%);
-            backdrop-filter: blur(10px) saturate(1.05);
-            -webkit-backdrop-filter: blur(10px) saturate(1.05);
+            overflow: visible; /* mobile drawer is fixed inside header */
+            /* Solid chrome — no backdrop-filter (it flickered under nav on every tab switch) */
+            background: #ffffff;
             border-bottom: 1px solid var(--header-border);
             box-shadow: var(--header-shadow);
             isolation: isolate;
+            min-height: 56px;
         }
 
         [data-theme='dark'] .site-header {
-            background: color-mix(in srgb, var(--header-bg) 97%, #0a0e1a 3%);
+            background: #0a0e1a;
         }
 
         nav {
             max-width: var(--site-content-max);
             margin: 0 auto;
-            padding: 0 24px 6px;
-            min-height: 47px;
-            height: auto;
+            padding: 0 24px;
+            min-height: 56px;
+            height: 56px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 13px;
-            overflow: visible;
+            overflow: hidden;
         }
 
         .logo {
@@ -107,13 +106,22 @@
 
         .nav-links {
             display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
             gap: 4px;
             list-style: none;
             overflow-x: auto;
-            overflow-y: visible;
+            overflow-y: hidden;
             scrollbar-width: none;
             -ms-overflow-style: none;
-            padding: 11px 6px 14px;
+            padding: 0 4px;
+            min-height: 40px;
+            margin: 0;
+        }
+
+        .auth-nav-item {
+            flex-shrink: 0;
+            min-width: 4.5rem;
         }
 
         .nav-links::-webkit-scrollbar { display: none; }
@@ -272,14 +280,17 @@
 
         @media (max-width: 960px) {
             .page-container { margin-top: 24px; }
+            .site-header { min-height: 56px; }
             nav {
                 display: flex;
                 flex-wrap: nowrap;
                 align-items: center;
                 justify-content: space-between;
-                height: auto;
-                padding: 8px 12px 10px;
+                height: 56px;
+                min-height: 56px;
+                padding: 0 12px;
                 gap: 10px;
+                overflow: visible;
             }
             .logo {
                 width: auto;

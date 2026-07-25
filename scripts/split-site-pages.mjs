@@ -183,8 +183,10 @@ function buildNav(activeId) {
                 <div class="logo-mark">P</div>
                 <span>Proteiner</span>
             </a>
-            <ul class="nav-links">
+            <button type="button" class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="site-nav-links"><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span></button>
+            <ul class="nav-links" id="site-nav-links">
                 ${links}
+                <li id="authNavSlot" class="auth-nav-item"><a class="nav-link auth-nav-link" href="logowanie">Zaloguj</a></li>
             </ul>
         </nav>
     </header>`;
