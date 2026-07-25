@@ -13,6 +13,7 @@ export const CATEGORY_ORDER = [
     'fastfood',
     'slodycze',
     'batony',
+    'batony-proteinowe',
     'sosy',
 ];
 
@@ -30,6 +31,7 @@ export const CATEGORY_LABELS = {
     fastfood: 'Fast food',
     slodycze: 'Słodycze i przekąski',
     batony: 'Batony',
+    'batony-proteinowe': 'Batony proteinowe',
     sosy: 'Sosy',
 };
 
@@ -48,6 +50,7 @@ export const CATEGORY_META_PHRASE = {
     fastfood: 'burgery, pizza, kebab — makra',
     slodycze: 'słodycze i przekąski — kalorie',
     batony: 'batony czekoladowe — kalorie i makro na 100 g',
+    'batony-proteinowe': 'batony proteinowe — białko i kalorie na 100 g',
     sosy: 'sosy i dipy — kalorie na 100 g',
 };
 
@@ -78,6 +81,8 @@ export const CATEGORY_INTRO = {
         'Słodycze i przekąski — kalorie i cukry. Porównaj makra, jeśli wliczasz czekoladę czy ciasta do dziennego bilansu.',
     batony:
         'Snickers, Mars, Twix, 3 Bit i inne batony brandingowe — kalorie, białko i tłuszcz na 100 g. Sprawdź, ile kosztuje porcja w dziennym limicie.',
+    'batony-proteinowe':
+        'Batony proteinowe (Snickers Protein, Mars Protein, Go On…) — więcej białka niż klasyczny baton, ale kalorie bywają podobne. Porównaj makro na 100 g i na sztukę.',
     sosy:
         'Ketchup, majonez, sosy sałatkowe — małe porcje, duży wpływ na kalorie. Sprawdź makra na 100 g w tej kategorii.',
 };
@@ -154,8 +159,13 @@ export const CATEGORY_TIPS = {
     ],
     batony: [
         'Jeden baton to często 200–280 kcal — wpisz go do limitu z góry.',
-        'Wersje „protein” nie zawsze mają mniej kcal niż klasyczne — porównaj w tabeli.',
         'Porównaj Snickersa z batonem zbożowym: różnica w tłuszczu bywa duża.',
+        'Batony proteinowe znajdziesz w osobnej kategorii — inne makro.',
+    ],
+    'batony-proteinowe': [
+        'Więcej białka ≠ mniej kcal — zawsze porównaj z klasycznym batonem.',
+        'Szukaj ok. 15–20 g białka na sztukę przy rozsądnych kcal.',
+        'Cukry i tłuszcze nadal się liczą — wpisz baton do dziennego limitu.',
     ],
     sosy: [
         'Ketchup i majonez szybko podbijają kalorie — makro na 100 g.',
@@ -292,8 +302,18 @@ export const CATEGORY_FAQ = {
             'Większość Snickersów, Marsów czy Twixów to ok. 200–280 kcal na sztukę. W tabeli porównasz też wartości na 100 g.',
         ],
         [
-            'Czy baton proteinowy jest „zdrowszy”?',
-            'Ma więcej białka, ale kalorie bywają podobne. Porównaj Snickers Protein z klasycznym Snickersem w tej kategorii.',
+            'Gdzie są batony proteinowe?',
+            'W osobnej kategorii „Batony proteinowe” — tam Snickers Protein, Mars Protein i podobne pozycje z wyższym białkiem.',
+        ],
+    ],
+    'batony-proteinowe': [
+        [
+            'Czy baton proteinowy jest „zdrowszy” od zwykłego?',
+            'Ma więcej białka, ale kalorie często są podobne. Porównaj Snickers Protein z klasycznym Snickersem w kategorii Batony.',
+        ],
+        [
+            'Ile białka powinien mieć dobry baton proteinowy?',
+            'Orientacyjnie 15–20 g na sztukę. Sprawdź też cukry i tłuszcz — samo „protein” na opakowaniu nie wystarczy.',
         ],
     ],
     sosy: [

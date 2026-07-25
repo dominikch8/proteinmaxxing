@@ -28,6 +28,8 @@ export const CATEGORY_EDITORIAL = {
 
     batony: `Batony czekoladowe (Snickers, Mars, Twix, 3 Bit, Prince Polo…) to gęste kalorie w małej porcji. Porównaj makra na 100 g i na sztukę — łatwiej wpisać je świadomie do dziennego limitu zamiast „zjadać z automatu”.`,
 
+    'batony-proteinowe': `Batony proteinowe mają więcej białka niż klasyczny Snickers czy Mars, ale kalorie bywają zbliżone. Porównaj kilka pozycji w tej kategorii — i nie myl ich z batonami brandingowymi z kategorii Batony.`,
+
     sosy: `Sosy i dodatki (ketchup, majonez, sos czosnkowy) łatwo umykają w liczeniu makro, a potrafią dodać setki kcal. Porównuj produkty na 100 g i wybieraj lżejsze wersje (musztarda, jogurtowy dip) tam, gdzie to możliwe.`
 };
 

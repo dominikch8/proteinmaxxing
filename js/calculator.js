@@ -13,7 +13,7 @@ function pickRandomN(items, count) {
         }
 
         function getShopPool(goal) {
-            const skipCats = ['fastfood', 'slodycze', 'batony', 'sosy', 'tluszcze'];
+            const skipCats = ['fastfood', 'slodycze', 'batony', 'batony-proteinowe', 'sosy', 'tluszcze'];
 
             if (goal === 'lose') {
                 return productsDatabase.filter(p =>
@@ -49,7 +49,7 @@ function pickRandomN(items, count) {
             shopTitle.innerText = titles[goal] || titles.maintain;
 
             let pool = getShopPool(goal);
-            if (pool.length < 6) pool = productsDatabase.filter(p => !['fastfood', 'slodycze', 'batony'].includes(p.category));
+            if (pool.length < 6) pool = productsDatabase.filter(p => !['fastfood', 'slodycze', 'batony', 'batony-proteinowe'].includes(p.category));
             const picked = pickRandomSix(pool);
 
             sGrid.innerHTML = picked.map((p) => {

@@ -80,6 +80,8 @@ const CATEGORY_IMAGES = {
     fastfood: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Cheeseburger.jpg/640px-Cheeseburger.jpg',
     slodycze: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Chocolate_%28blue_background%29.jpg/640px-Chocolate_%28blue_background%29.jpg',
     batony: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Chocolate_%28blue_background%29.jpg/640px-Chocolate_%28blue_background%29.jpg',
+    'batony-proteinowe':
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Chocolate_%28blue_background%29.jpg/640px-Chocolate_%28blue_background%29.jpg',
     sosy: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Ketchup.jpg/640px-Ketchup.jpg'
 };
 
@@ -208,6 +210,7 @@ const CATEGORY_MICRO_FALLBACKS = {
     fastfood: ['Sód', 'Żelazo', 'Witamina B1'],
     slodycze: ['Magnez', 'Żelazo', 'Wapń'],
     batony: ['Magnez', 'Żelazo', 'Wapń'],
+    'batony-proteinowe': ['Magnez', 'Żelazo', 'Wapń'],
     sosy: ['Sód', 'Potas', 'Witamina C']
 };
 

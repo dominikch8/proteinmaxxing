@@ -185,6 +185,7 @@ const CATEGORY_SUFFIX = {
     fastfood: 'fast food item',
     slodycze: 'candy chocolate dessert food',
     batony: 'chocolate candy bar snack food',
+    'batony-proteinowe': 'protein candy bar high protein snack food',
     'polskie-obiadki': 'Polish traditional food dish'
 };
 

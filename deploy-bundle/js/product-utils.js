@@ -30,6 +30,7 @@ const CATEGORY_LABELS = {
     fastfood: 'Fast food',
     slodycze: 'Słodycze i przekąski',
     batony: 'Batony',
+    'batony-proteinowe': 'Batony proteinowe',
     sosy: 'Sosy'
 };
 
@@ -48,6 +49,7 @@ const CATEGORY_ORDER = [
     'fastfood',
     'slodycze',
     'batony',
+    'batony-proteinowe',
     'sosy'
 ];
 
@@ -66,6 +68,7 @@ const CATEGORY_SELECT_LABELS_DIETA = {
     fastfood: 'Fast Food',
     slodycze: 'Słodycze i Przekąski',
     batony: 'Batony',
+    'batony-proteinowe': 'Batony proteinowe',
     sosy: 'Sosy'
 };
 

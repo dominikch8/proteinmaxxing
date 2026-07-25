@@ -100,6 +100,26 @@
     "formula": "0.85 × 100 / 13 = 6.54"
   },
   {
+    "name": "Olimp Matrix Pro",
+    "serving": "sztuka (80g)",
+    "servingGrams": 80,
+    "servingPricePln": 1.35,
+    "proteinPer100g": 25,
+    "proteinInServing": 20,
+    "pricePer100gProtein": 6.75,
+    "formula": "1.35 × 100 / 20 = 6.75"
+  },
+  {
+    "name": "Go On Protein Bar",
+    "serving": "sztuka (50g)",
+    "servingGrams": 50,
+    "servingPricePln": 0.85,
+    "proteinPer100g": 25,
+    "proteinInServing": 12.5,
+    "pricePer100gProtein": 6.8,
+    "formula": "0.85 × 100 / 12.5 = 6.8"
+  },
+  {
     "name": "Wątróbka drobiowa",
     "serving": "porcja (100g)",
     "servingGrams": 100,
@@ -220,6 +240,16 @@
     "formula": "3.0900000000000003 × 100 / 40 = 7.73"
   },
   {
+    "name": "Quest Protein Bar",
+    "serving": "sztuka (60g)",
+    "servingGrams": 60,
+    "servingPricePln": 1,
+    "proteinPer100g": 21,
+    "proteinInServing": 12.6,
+    "pricePer100gProtein": 7.94,
+    "formula": "1 × 100 / 12.6 = 7.94"
+  },
+  {
     "name": "Twaróg chudy",
     "serving": "kostka (200g)",
     "servingGrams": 200,
@@ -228,6 +258,16 @@
     "proteinInServing": 36,
     "pricePer100gProtein": 8.03,
     "formula": "2.89 × 100 / 36 = 8.03"
+  },
+  {
+    "name": "Barebells",
+    "serving": "sztuka (55g)",
+    "servingGrams": 55,
+    "servingPricePln": 0.9,
+    "proteinPer100g": 20,
+    "proteinInServing": 11,
+    "pricePer100gProtein": 8.18,
+    "formula": "0.9 × 100 / 11 = 8.18"
   },
   {
     "name": "Mars Protein",
@@ -248,6 +288,16 @@
     "proteinInServing": 10.2,
     "pricePer100gProtein": 8.33,
     "formula": "0.85 × 100 / 10.2 = 8.33"
+  },
+  {
+    "name": "MyProtein Layered Bar",
+    "serving": "sztuka (60g)",
+    "servingGrams": 60,
+    "servingPricePln": 1,
+    "proteinPer100g": 20,
+    "proteinInServing": 12,
+    "pricePer100gProtein": 8.33,
+    "formula": "1 × 100 / 12 = 8.33"
   },
   {
     "name": "Schabowy (panierowany)",

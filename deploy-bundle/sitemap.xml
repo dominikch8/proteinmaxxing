@@ -216,6 +216,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://proteiner.pl/produkty/kategoria/batony-proteinowe</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://proteiner.pl/produkty/kategoria/sosy</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -2842,6 +2847,31 @@
   </url>
   <url>
     <loc>https://proteiner.pl/produkty/lion-white</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/go-on-protein-bar</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/barebells</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/quest-protein-bar</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/myprotein-layered-bar</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/olimp-matrix-pro</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
