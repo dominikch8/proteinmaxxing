@@ -2031,13 +2031,24 @@
         .info-tab > .subtitle { text-align: center; margin-bottom: 0; }
 
         .info-tab h2 {
-            color: var(--primary-dark);
             font-size: 1.2rem;
             font-weight: 700;
             margin: 32px 0 14px 0;
             padding-bottom: 10px;
             border-bottom: 2px solid var(--border-soft);
             letter-spacing: -0.02em;
+            color: var(--primary-dark);
+            background: linear-gradient(115deg, #7f1d1d 0%, #9f1239 38%, #1d4ed8 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        [data-theme='dark'] .info-tab h2 {
+            background: linear-gradient(115deg, #fda4af 0%, #fb7185 40%, #93c5fd 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .info-tab h3 {

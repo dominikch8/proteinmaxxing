@@ -359,9 +359,9 @@
     color: #fff;
     background: linear-gradient(
         135deg,
-        var(--primary-dark) 0%,
-        var(--primary) 55%,
-        var(--primary-light) 100%
+        #7f1d1d 0%,
+        #9f1239 42%,
+        #1d4ed8 100%
     );
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     white-space: nowrap;
@@ -802,6 +802,77 @@ a.store-product-card:hover {
     background: var(--surface);
 }
 [data-theme='dark'] .store-product-card img {
+    background: #1e293b;
+}
+
+.article-media-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    align-items: center;
+    margin: 22px 0 28px;
+    padding: 16px 16px 18px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg, 18px);
+    background:
+        linear-gradient(145deg, rgba(37, 99, 235, 0.06) 0%, rgba(127, 29, 29, 0.05) 48%, rgba(255, 255, 255, 0.92) 100%);
+    box-shadow: var(--shadow-sm);
+}
+
+@media (min-width: 720px) {
+    .article-media-block {
+        grid-template-columns: minmax(0, 1fr) minmax(200px, 260px);
+        gap: 22px;
+        padding: 20px 22px;
+    }
+
+    .article-media-block--flip {
+        grid-template-columns: minmax(200px, 260px) minmax(0, 1fr);
+    }
+
+    .article-media-block--flip .article-media-shot {
+        order: -1;
+    }
+}
+
+.article-media-copy {
+    min-width: 0;
+}
+
+.article-media-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.article-media-shot {
+    margin: 0;
+    min-width: 0;
+}
+
+.article-media-shot img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid var(--border-soft, rgba(0, 0, 0, 0.06));
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+.article-media-shot figcaption {
+    margin-top: 8px;
+    font-size: 0.82rem;
+    line-height: 1.4;
+    color: var(--text-muted, #64748b);
+    text-align: center;
+}
+
+[data-theme='dark'] .article-media-block {
+    background:
+        linear-gradient(145deg, rgba(37, 99, 235, 0.14) 0%, rgba(127, 29, 29, 0.12) 45%, rgba(24, 24, 27, 0.9) 100%);
+}
+
+[data-theme='dark'] .article-media-shot img {
     background: #1e293b;
 }
 
