@@ -1,8 +1,67 @@
-.theme-switch {
+/* Right-side utility cluster: Dodaj produkty + Jasny/Neon */
+.header-utilities {
     position: fixed;
     top: 14px;
     right: 14px;
     z-index: 200;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Hide in main nav until theme.js parks it next to the theme switch */
+.nav-links > .nav-add-product {
+    display: none !important;
+}
+
+.nav-add-floating {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 11px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface-elevated);
+    box-shadow: var(--shadow-md);
+    color: #9ca3af;
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: color var(--transition), background var(--transition), border-color var(--transition);
+}
+
+[data-theme='dark'] .nav-add-floating {
+    color: #6b7280;
+}
+
+.nav-add-floating:hover {
+    color: #6b7280;
+    background: var(--surface-hover);
+}
+
+[data-theme='dark'] .nav-add-floating:hover {
+    color: #9ca3af;
+}
+
+.nav-add-floating.active {
+    color: #6b7280;
+    font-weight: 600;
+    background: rgba(107, 114, 128, 0.12);
+    border-color: rgba(107, 114, 128, 0.28);
+}
+
+[data-theme='dark'] .nav-add-floating.active {
+    color: #9ca3af;
+    background: rgba(156, 163, 175, 0.1);
+    border-color: rgba(156, 163, 175, 0.22);
+}
+
+.theme-switch {
+    position: static;
     display: inline-flex;
     padding: 4px;
     gap: 4px;
@@ -47,10 +106,16 @@
 }
 
 @media (max-width: 520px) {
-    .theme-switch {
+    .header-utilities {
         top: auto;
         bottom: 16px;
         right: 12px;
+        gap: 6px;
+    }
+
+    .nav-add-floating {
+        padding: 10px 12px;
+        font-size: 0.72rem;
     }
 
     .theme-switch-text {
