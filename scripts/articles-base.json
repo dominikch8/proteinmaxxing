@@ -1,0 +1,364 @@
+[
+  {
+    "slug": "deficyt-kaloryczny-praktyka",
+    "emoji": "📉",
+    "title": "Deficyt kaloryczny w praktyce",
+    "subtitle": "Ile kcal odjąć, jak rozłożyć białko, typowe błędy i przykładowy dzień z polskich produktów.",
+    "existing": true
+  },
+  {
+    "slug": "planowanie-posilkow",
+    "emoji": "🗓️",
+    "title": "Planowanie posiłków na tydzień",
+    "subtitle": "Meal prep, lista zakupów i szablony obiadów — mniej chaosu, więcej kontroli nad makro.",
+    "existing": true
+  },
+  {
+    "slug": "produkty-bialkowe-czy-oplacalne",
+    "emoji": "🏷️",
+    "title": "Produkty „białkowe” — czy się opłacają?",
+    "subtitle": "Batony, puddingi, skyr i WPC vs twaróg i kurczak — cena za 100 g białka bez marketingu.",
+    "existing": true
+  },
+  {
+    "slug": "mleko-bialkowe-a-kalorie",
+    "emoji": "🥛",
+    "title": "Mleko 0% vs 3,2% — białko i kalorie",
+    "subtitle": "Odtłuszczone i mleko białkowe vs pełne: ta sama ilość białka, nawet ~300 kcal mniej na litr.",
+    "existing": true
+  },
+  {
+    "slug": "najlepsze-zrodla-bialka-biedronka-lidl-auchan-carrefour",
+    "emoji": "🗺️",
+    "title": "Przegląd 4 sieci",
+    "subtitle": "Krótki hub: którą sieć wybrać i linki do osobnych przewodników zakupowych.",
+    "existing": true
+  },
+  {
+    "slug": "zrodla-bialka-biedronka",
+    "emoji": "🛒",
+    "title": "Źródła białka w Biedronce",
+    "subtitle": "Go Active, Delikate, pierś, jaja, tuńczyk — z siatką zdjęć produktów.",
+    "existing": true
+  },
+  {
+    "slug": "zrodla-bialka-lidl",
+    "emoji": "🛒",
+    "title": "Źródła białka w Lidlu",
+    "subtitle": "Pilos, Nixe, Crane — skyr, puddingi i chłodnia proteinowa.",
+    "existing": true
+  },
+  {
+    "slug": "zrodla-bialka-auchan",
+    "emoji": "🛒",
+    "title": "Źródła białka w Auchan",
+    "subtitle": "Hipermarket pod meal prep: duże paczki, lady, indyk i ryby.",
+    "existing": true
+  },
+  {
+    "slug": "zrodla-bialka-carrefour",
+    "emoji": "🛒",
+    "title": "Źródła białka w Carrefour",
+    "subtitle": "Sensation/Classic, porównanie marek, łosoś i lady na wagę.",
+    "existing": true
+  },
+  {
+    "slug": "ile-bialka-na-dzien",
+    "emoji": "🥩",
+    "title": "Ile białka jeść dziennie?",
+    "subtitle": "Gramy na kg masy ciała przy redukcji, masie i utrzymaniu — z kalkulatorem Proteiner.",
+    "metaDescription": "Ile białka dziennie przy redukcji, budowie masy i utrzymaniu wagi? Praktyczne zakresy g/kg i jak domknąć cel produktami z bazy Proteiner.",
+    "intro": "Białko to najczęściej niedoszacowany makroskładnik w polskiej diecie „na oko”. Poniżej proste zakresy i sposób, żeby policzyć je pod siebie — bez magicznych liczb z reklam odżywek.",
+    "sections": [
+      {
+        "h2": "Zakresy orientacyjne (g na kg masy ciała)",
+        "p": "Dla osób trenujących siłowo często sprawdza się 1,6–2,2 g białka na kg masy ciała. Przy redukcji bliżej górnej granicy pomaga sytość i ochrona mięśni. Przy utrzymaniu zwykle wystarczy środek zakresu.",
+        "bullets": ["Redukcja: często 1,8–2,2 g/kg", "Masa: często 1,6–2,0 g/kg", "Utrzymanie / mniej aktywności: często 1,4–1,8 g/kg"]
+      },
+      {
+        "h2": "Jak to policzyć w Proteiner",
+        "p": "W kalkulatorze na stronie głównej po wybraniu celu zobaczysz orientacyjne białko w gramach. Potem porównujesz produkty w bazie albo rankingu białko maxxing — żeby domknąć liczbę bez przepłacania."
+      },
+      {
+        "h2": "Praktyczne źródła w Polsce",
+        "p": "Twaróg chudy, pierś z kurczaka, jaja, skyr, tuńczyk w wodzie i WPC to nadal najłatwiejsza baza. Reszta to wygoda albo smak.",
+        "bullets": ["Sprawdź cenę za 100 g białka", "Porównaj dwa produkty w porównywarce", "Unikaj „protein” marketingu bez liczenia gramów"]
+      }
+    ],
+    "related": [
+      { "href": "/", "label": "kalkulator" },
+      { "href": "bialko-maxxing", "label": "białko maxxing" },
+      { "href": "cena-bialka", "label": "cena za 100 g białka" }
+    ]
+  },
+  {
+    "slug": "nadwyzka-kalorii-na-mase",
+    "emoji": "📈",
+    "title": "Nadwyżka kaloryczna na masę",
+    "subtitle": "Ile dodać kcal, jak nie „zajadać” tłuszczu i gdzie wstawić białko przy budowie sylwetki.",
+    "metaDescription": "Jak ustawić nadwyżkę kaloryczną na masę mięśniową: umiarkowany surplus, białko, waga tygodniowa i produkty z bazy Proteiner.",
+    "intro": "Masa nie wymaga jedzenia „na maksa”. Zbyt duża nadwyżka buduje głównie tłuszcz. Sensowny surplus + trening + białko działa wolniej, ale czystiej.",
+    "sections": [
+      {
+        "h2": "Ile dodać do utrzymania?",
+        "p": "W kalkulatorze Proteiner cel „budowa masy” daje orientacyjną korektę ok. +300 kcal względem utrzymania. To dobry start — łatwiej kontrolować przyrost niż gonić 700–1000 kcal nadwyżki."
+      },
+      {
+        "h2": "Białko i jakość surplusu",
+        "p": "Trzymaj białko w rozsądnym zakresie, a nadwyżkę buduj głównie z węglowodanów i umiarkowanego tłuszczu. Słodycze „na masę” działają, ale pogarszają kompozycję ciała i apetyt."
+      },
+      {
+        "h2": "Jak czytać wagę",
+        "p": "Patrz na trend tygodniowy. Przyrost 0,25–0,5 kg tygodniowo u wielu osób oznacza, że surplus nie jest przesadzony. Skoki wody po soli i treningu to norma."
+      }
+    ],
+    "related": [
+      { "href": "/", "label": "kalkulator" },
+      { "href": "deficyt-kaloryczny-praktyka", "label": "deficyt (odwrotna strona medalu)" },
+      { "href": "planowanie-posilkow", "label": "planowanie posiłków" }
+    ]
+  },
+  {
+    "slug": "tdee-i-bmr-wyjasnienie",
+    "emoji": "🧮",
+    "title": "TDEE i BMR — co oznaczają?",
+    "subtitle": "Prosto: podstawowa przemiana materii, aktywność i dlaczego kalkulator to punkt startu, nie wyrok.",
+    "metaDescription": "Czym różni się BMR od TDEE? Jak Proteiner szacuje zapotrzebowanie i dlaczego warto traktować wynik jako punkt wyjścia.",
+    "intro": "BMR to energia „na leżenie i oddychanie”. TDEE dodaje pracę, trening i codzienne ruchy. Kalkulator łączy oba — ale życie i waga i tak weryfikują liczby.",
+    "sections": [
+      {
+        "h2": "BMR (Mifflin–St Jeor)",
+        "p": "Proteiner korzysta z popularnych wzorów uwzględniających płeć, wiek, wagę i wzrost. To szacunek — nie pomiar w laboratorium."
+      },
+      {
+        "h2": "Od BMR do TDEE",
+        "p": "Współczynnik aktywności (np. 1,2–1,9) mnoży BMR. Osoby z biurkiem często zawyżają aktywność — lepiej zacząć niżej i korygować po 2–3 tygodniach wagi."
+      },
+      {
+        "h2": "Cel: redukcja / masa / utrzymanie",
+        "p": "Po TDEE kalkulator stosuje korektę pod cel. Potem makro: białko z masy ciała, tłuszcz ok. 25% kcal, reszta węglowodany."
+      }
+    ],
+    "related": [
+      { "href": "/", "label": "kalkulator" },
+      { "href": "bmi-jak-czytac-wynik", "label": "BMI — jak czytać wynik" },
+      { "href": "deficyt-kaloryczny-praktyka", "label": "deficyt w praktyce" }
+    ]
+  },
+  {
+    "slug": "bmi-jak-czytac-wynik",
+    "emoji": "⚖️",
+    "title": "BMI — jak czytać wynik?",
+    "subtitle": "Co mówi wskaźnik masy ciała, czego nie mówi (mięśnie!) i kiedy warto iść dalej niż sama liczba.",
+    "metaDescription": "Jak interpretować BMI z kalkulatora Proteiner: normy WHO, ograniczenia u osób trenujących i co robić z wynikiem.",
+    "intro": "BMI to szybki filtr populacyjny, nie wyrok o zdrowiu. Przy dużej masie mięśniowej wynik bywa „nadwagą” mimo niskiego tłuszczu — wtedy liczą się obwody, zdjęcia i samopoczucie.",
+    "sections": [
+      {
+        "h2": "Zakresy WHO (orientacyjnie)",
+        "p": "Poniżej 18,5 — niedowaga; 18,5–24,9 — norma; 25–29,9 — nadwaga; 30+ — otyłość. To kategorie statystyczne, nie diagnoza."
+      },
+      {
+        "h2": "Kiedy BMI myli",
+        "p": "Sportowcy, osoby po cyklach siłowych, kobiety w ciąży, osoby starsze z utratą mięśni — u nich sam wskaźnik bywa mało przydatny."
+      },
+      {
+        "h2": "Co zamiast paniki",
+        "p": "Policz TDEE, ustaw cel, dobierz białko i produkty. BMI zostaw jako jeden z sygnałów, nie jedyny."
+      }
+    ],
+    "related": [
+      { "href": "/", "label": "kalkulator BMI / TDEE" },
+      { "href": "tdee-i-bmr-wyjasnienie", "label": "TDEE i BMR" },
+      { "href": "ile-bialka-na-dzien", "label": "ile białka dziennie" }
+    ]
+  },
+  {
+    "slug": "weglowodany-wokol-treningu",
+    "emoji": "🍚",
+    "title": "Węglowodany przed i po treningu",
+    "subtitle": "Kiedy warto jeść więcej węgli, a kiedy „timing” jest mniej ważny niż cały dzień makro.",
+    "metaDescription": "Węglowodany wokół treningu: praktyczne wskazówki przed i po wysiłku oraz jak dobrać produkty z bazy Proteiner.",
+    "intro": "Timing węglowodanów pomaga przy intensywnych treningach, ale nie zastąpi bilansu całego dnia. Najpierw ilość kcal i białka — potem „przed / po”.",
+    "sections": [
+      {
+        "h2": "Przed treningiem",
+        "p": "Łatwo strawne źródła 1–3 h wcześniej: ryż, płatki, banana, pieczywo. Unikaj eksperymentów z ciężkostrawnym tłuszczem tuż przed ciężką sesją."
+      },
+      {
+        "h2": "Po treningu",
+        "p": "Posiłek z białkiem + węglowodanami wspiera regenerację. Nie musi to być odżywka — kurczak z ryżem albo twaróg z owocem też działają."
+      },
+      {
+        "h2": "Redukcja vs masa",
+        "p": "Na redukcji przenieś więcej węgli wokół treningu, a resztę dnia trzymaj lżej. Na masie masz więcej luzu — nadal licz total dnia."
+      }
+    ],
+    "related": [
+      { "href": "skladniki-weglowodany", "label": "węglowodany w poradniku" },
+      { "href": "dieta#produkty", "label": "baza produktów" },
+      { "href": "/", "label": "kalkulator" }
+    ]
+  },
+  {
+    "slug": "ile-tluszczu-w-diecie",
+    "emoji": "🥑",
+    "title": "Ile tłuszczu w diecie?",
+    "subtitle": "Orientacyjny udział kcal z tłuszczu, tłuszcze nasycone vs nienasycone i typowe pułapki (oleje, orzechy).",
+    "metaDescription": "Ile tłuszczu jeść dziennie? Orientacje z kalkulatora Proteiner, różnica nasyconych i nienasyconych oraz produkty warte uwagi.",
+    "intro": "Tłuszcz jest potrzebny hormononie i sytości, ale „zdrowe tłuszcze” łatwo przepychają bilans kcal. Proteiner zwykle celuje ok. 25% energii z tłuszczu — to punkt startu.",
+    "sections": [
+      {
+        "h2": "Nie schodź w skrajność",
+        "p": "Bardzo niski tłuszcz bywa niesmaczny i trudny do utrzymania. Zamiast zero oliwy — mierz łyżki i orzechy."
+      },
+      {
+        "h2": "Nasycone vs nienasycone",
+        "p": "W bazie produktów zobaczysz podział, gdzie dane są dostępne. W praktyce: więcej ryb, oliwy, orzechów; mniej smażenia na smalcu „na oko”."
+      },
+      {
+        "h2": "Pułapki kaloryczne",
+        "p": "Masło orzechowe, pesto, ser, oleje do sałatek — mała objętość, dużo kcal. Waż na początku, potem ucz się porcji."
+      }
+    ],
+    "related": [
+      { "href": "skladniki-tluszcz", "label": "tłuszcz w poradniku" },
+      { "href": "porownaj-produkty", "label": "porównywarka" },
+      { "href": "/", "label": "kalkulator" }
+    ]
+  },
+  {
+    "slug": "przekaski-wysokobialkowe",
+    "emoji": "🧀",
+    "title": "Przekąski wysokobiałkowe",
+    "subtitle": "Co jeść między posiłkami, żeby domknąć białko bez zjadania deficytu — z polskich półek.",
+    "metaDescription": "Pomysły na przekąski wysokobiałkowe: skyr, twaróg, kefir, jajka, tuńczyk. Co się opłaca, a co jest tylko marketingiem.",
+    "intro": "Dobra przekąska to 15–30 g białka i kontrolowane kcal — nie kolejny baton „fit” z syropem. Poniżej kierunki, które zwykle działają w Polsce.",
+    "sections": [
+      {
+        "h2": "Nabiał light / high protein",
+        "p": "Skyr, twaróg chudy, serek wiejski light, kefir wysokobiałkowy. Sprawdź etykietę cukru i tłuszczu."
+      },
+      {
+        "h2": "Na wynos",
+        "p": "Jajka na twardo, tuńczyk w wodzie, wędliny drobiowe (czytaj skład), odżywka WPC w shakerze."
+      },
+      {
+        "h2": "Czego unikać jako „białka”",
+        "p": "Słodycze proteinowe i batony bywają drogie za gram białka. Traktuj je jak deser, nie jak fundament."
+      }
+    ],
+    "related": [
+      { "href": "produkty-bialkowe-czy-oplacalne", "label": "czy produkty białkowe się opłacają" },
+      { "href": "mleko-bialkowe-a-kalorie", "label": "mleko i kefiry" },
+      { "href": "cena-bialka", "label": "cena białka" }
+    ]
+  },
+  {
+    "slug": "wegetarianskie-zrodla-bialka",
+    "emoji": "🌱",
+    "title": "Wegetariańskie źródła białka",
+    "subtitle": "Tofu, nabiał, rośliny strączkowe i jak składać pełne posiłki bez mięsa — z bazą Proteiner.",
+    "metaDescription": "Wegetariańskie źródła białka w praktyce: nabiał, jaja, tofu, strączki. Jak domknąć gramaturę i kalorie w Proteiner.",
+    "intro": "Bez mięsa da się zjeść dużo białka — trzeba tylko planować. Nabiał i jaja ułatwiają sprawę; na diecie roślinnej łączysz strączki, tofu i ewentualnie odżywkę.",
+    "sections": [
+      {
+        "h2": "Nabiał i jaja",
+        "p": "Twaróg, skyr, jajka, ser light — często najprostsza droga do 30+ g w posiłku."
+      },
+      {
+        "h2": "Rośliny",
+        "p": "Soczewica, ciecierzyca, fasola, tofu, tempeh. Łącz z zbożami dla wygody i smaku; licz porcje, bo węglowodany rosną szybko."
+      },
+      {
+        "h2": "Uzupełnienia",
+        "p": "Odżywka roślinna lub WPC (jeśli jesz nabiał) pomaga w dni „brak czasu”. Porównuj cenę za 100 g białka."
+      }
+    ],
+    "related": [
+      { "href": "dieta#produkty", "label": "baza produktów" },
+      { "href": "bialko-maxxing", "label": "białko maxxing" },
+      { "href": "ile-bialka-na-dzien", "label": "ile białka dziennie" }
+    ]
+  },
+  {
+    "slug": "meal-prep-bialko-budzet",
+    "emoji": "🧊",
+    "title": "Meal prep: białko na budżet",
+    "subtitle": "Jak tanio ugotować na 3–4 dni: pierś, twaróg, kasze i lista zakupów pod makro.",
+    "metaDescription": "Meal prep wysokobiałkowy na budżet: produkty, porcje, przechowywanie i powiązanie z kalkulatorem Proteiner.",
+    "intro": "Tani meal prep opiera się na powtarzalnych bazach: mięso drobiowe / twaróg / jaja + kasza / ryż + mrożone warzywa. Reszta to przyprawy i rotacja sosów light.",
+    "sections": [
+      {
+        "h2": "Lista zakupów „rdzeń”",
+        "p": "Pierś lub indyk, twaróg chudy, jaja, ryż/kasza, mrożone warzywa, przyprawy. Opcjonalnie tuńczyk i skyr na szybkie posiłki."
+      },
+      {
+        "h2": "Porcje i pojemniki",
+        "p": "Ważysz raz, pakujesz jednakowo. Na redukcji trzymaj osobno sosy i oleje — łatwiej nie „doładować” 200 kcal łyżką."
+      },
+      {
+        "h2": "Sieci i gazetki",
+        "p": "Sprawdź przewodniki Biedronka / Lidl / Auchan / Carrefour — te same kategorie, różne marki własne."
+      }
+    ],
+    "related": [
+      { "href": "planowanie-posilkow", "label": "planowanie posiłków" },
+      { "href": "zrodla-bialka-biedronka", "label": "Biedronka" },
+      { "href": "cena-bialka", "label": "cena białka" }
+    ]
+  },
+  {
+    "slug": "mity-o-bialku",
+    "emoji": "🔍",
+    "title": "Mity o białku",
+    "subtitle": "„Niszczy nerki”, „wchłania się tylko 30 g”, „sam baton wystarczy” — co warto odhaczyć.",
+    "metaDescription": "Najczęstsze mity o białku w diecie i treningu — prosto, bez paniki, z kontekstem kalkulatora i bazy Proteiner.",
+    "intro": "Wokół białka narosło sporo skrótów myślowych. Poniżej najczęstsze — i co z nimi zrobić w praktyce.",
+    "sections": [
+      {
+        "h2": "„Organizm wchłania max 30 g naraz”",
+        "p": "To uproszczenie. Większa porcja też jest wykorzystywana — tempo i kontekst posiłku mają znaczenie, ale nie musisz jeść co 2 godziny „po 30 g”."
+      },
+      {
+        "h2": "„Dużo białka niszczy nerki u zdrowych”",
+        "p": "U osób zdrowych typowe zakresy sportowe zwykle nie są dramatycznym zagrożeniem. Przy chorobach nerek decyzje należą do lekarza — nie do bloga."
+      },
+      {
+        "h2": "„Wystarczy produkt z napisem protein”",
+        "p": "Liczą się gramy i kalorie, nie etykieta. Porównaj cenę i makro — często twaróg wygrywa z batonem."
+      }
+    ],
+    "related": [
+      { "href": "produkty-bialkowe-czy-oplacalne", "label": "opłacalność produktów białkowych" },
+      { "href": "ile-bialka-na-dzien", "label": "ile białka dziennie" },
+      { "href": "skladniki-bialko", "label": "białko w poradniku" }
+    ]
+  },
+  {
+    "slug": "jak-porownywac-produkty",
+    "emoji": "⚔️",
+    "title": "Jak porównywać produkty?",
+    "subtitle": "Na co patrzeć w porównywarce Proteiner: białko, kcal, cena białka i tłuszcze — krok po kroku.",
+    "metaDescription": "Jak używać porównywarki produktów Proteiner: białko na 100 g, kcal, cena za białko i typowe pułapki przy wyborze żywności.",
+    "intro": "Porównywarka ma sens, gdy wiesz, jakie pytanie zadajesz: „więcej białka przy tych samych kcal?” czy „taniej za gram proteinów?”. Inaczej wygrywa ten ładniejszy emoji.",
+    "sections": [
+      {
+        "h2": "Ujednolić porcję",
+        "p": "Zawsze patrz na 100 g (albo tę samą porcję). „Na opakowanie” myli, gdy jedno ma 150 g, a drugie 400 g."
+      },
+      {
+        "h2": "Trzy metryki",
+        "p": "Białko, kcal, cena za 100 g białka. Na redukcji dochodzi jeszcze tłuszcz i cukry — zależnie od celu."
+      },
+      {
+        "h2": "Przykładowe pojedynki",
+        "p": "Skyr vs serek homogenizowany, pierś vs udko, WPC vs baton. Wynik bywa oczywisty dopiero po liczbach."
+      }
+    ],
+    "related": [
+      { "href": "porownaj-produkty", "label": "porównywarka" },
+      { "href": "cena-bialka", "label": "cena białka" },
+      { "href": "bialko-maxxing", "label": "białko maxxing" }
+    ]
+  }
+]

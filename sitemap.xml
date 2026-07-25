@@ -81,6 +81,61 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://proteiner.pl/ile-bialka-na-dzien</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/nadwyzka-kalorii-na-mase</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/tdee-i-bmr-wyjasnienie</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/bmi-jak-czytac-wynik</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/weglowodany-wokol-treningu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/ile-tluszczu-w-diecie</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/przekaski-wysokobialkowe</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/wegetarianskie-zrodla-bialka</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/meal-prep-bialko-budzet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/mity-o-bialku</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/jak-porownywac-produkty</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://proteiner.pl/logowanie</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
