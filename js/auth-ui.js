@@ -100,7 +100,12 @@
             li = document.createElement('li');
             li.id = 'authNavSlot';
             li.className = 'auth-nav-item';
-            nav.appendChild(li);
+            const addProduct = nav.querySelector('.nav-add-product, a[href$="dodaj-produkt"]');
+            const before = addProduct
+                ? addProduct.closest('li') || addProduct
+                : null;
+            if (before) nav.insertBefore(li, before);
+            else nav.appendChild(li);
         }
 
         const prefix = scriptPrefix();
