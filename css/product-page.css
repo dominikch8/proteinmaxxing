@@ -15,36 +15,46 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: var(--header-bg);
-    backdrop-filter: blur(12px);
+    /* Match site.css chrome — no blur (avoids tab-switch flicker) */
+    background: #ffffff;
     border-bottom: 1px solid var(--header-border);
     box-shadow: var(--header-shadow);
+    min-height: 56px;
+    overflow: visible;
+}
+
+[data-theme='dark'] .site-header {
+    background: #0a0e1a;
 }
 
 .site-header nav {
-    max-width: 900px;
+    max-width: var(--site-content-max, 1180px);
     margin: 0 auto;
-    padding: 0 20px;
-    height: 64px;
+    padding: 0 24px;
+    height: 56px;
+    min-height: 56px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
+    gap: 13px;
+    overflow: hidden;
 }
 
 .logo {
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: -0.03em;
     color: var(--text-dark);
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
+    flex-shrink: 0;
 }
 
 .logo-mark {
-    width: 52px;
-    height: 52px;
+    width: 42px;
+    height: 42px;
     object-fit: contain;
     flex-shrink: 0;
     display: block;

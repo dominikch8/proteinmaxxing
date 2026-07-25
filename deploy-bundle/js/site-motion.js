@@ -17,16 +17,22 @@
         root.classList.toggle('pm-scrolled', window.scrollY > 8);
     }
 
-    updateScrollState();
-    window.addEventListener('scroll', updateScrollState, { passive: true });
-
-    // Enable chrome transitions + page settle only after first paint
-    // (avoids opacity/backdrop flash when switching top-nav tabs)
     function afterFirstPaint(fn) {
         requestAnimationFrame(() => {
             requestAnimationFrame(fn);
         });
     }
+
+    function whenIdle(fn, timeout) {
+        if (typeof window.requestIdleCallback === 'function') {
+            window.requestIdleCallback(fn, { timeout: timeout || 1200 });
+        } else {
+            setTimeout(fn, 200);
+        }
+    }
+
+    updateScrollState();
+    window.addEventListener('scroll', updateScrollState, { passive: true });
 
     if (reduce) {
         root.classList.add('pm-motion-reduce');
@@ -41,19 +47,17 @@
         markReady();
     });
 
+    // Keep heavy list cards out of opacity:0 reveals — they jank the sticky header on dieta/rankings
     const REVEAL_SELECTOR = [
-        '.product-card-link',
         '.macro-card',
         '.bmi-card',
         '.water-card',
         '.poradnik-nutrient-tile',
         '.home-info-tile',
         'a.shop-item',
-        '.pm-podium-card',
         '.calc-protein-maxxing-cta',
         '.nutrition-section',
         '.product-page .macro-pill',
-        '.compare-kpi-card',
         '.compare-glass-panel',
         '.compare-matchup',
         '.compare-table-block',
@@ -89,20 +93,25 @@
 
         nodes.forEach((el) => {
             if (shouldSkip(el)) return;
+
+            // Avoid a one-frame opacity:0 flash: decide visibility before applying hide class
+            const rect = el.getBoundingClientRect();
+            const inView = rect.top < vh * 0.96 && rect.bottom > 0;
+
+            if (inView) {
+                el.classList.add('pm-reveal', 'pm-revealed');
+                el.style.setProperty('--pm-stagger', '0ms');
+                return;
+            }
+
             el.classList.add('pm-reveal');
             el.style.setProperty('--pm-stagger', `${Math.min(i % 8, 7) * 40}ms`);
             i += 1;
-
-            const rect = el.getBoundingClientRect();
-            if (rect.top < vh * 0.96 && rect.bottom > 0) {
-                el.classList.add('pm-revealed');
-            } else {
-                io.observe(el);
-            }
+            io.observe(el);
         });
     }
 
-    function boot() {
+    function bootReveals() {
         observeTree(document);
 
         const watched = [
@@ -124,11 +133,8 @@
         });
     }
 
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', boot);
-    } else {
-        boot();
-    }
+    // Defer reveals until after first paint so sticky header stays calm on heavy pages
+    afterFirstPaint(() => whenIdle(bootReveals, 800));
 
     function atmosphereMarkup(extraClass) {
         const cls = extraClass ? `pm-atmosphere ${extraClass}` : 'pm-atmosphere';
@@ -210,8 +216,6 @@
             layer.innerHTML = spec.html;
             document.body.prepend(layer);
             document.body.classList.add('pm-atmosphere-host');
-
-            // Height comes from CSS top/bottom — never set scrollHeight (that created footer gap)
             layer.style.height = '';
             layer.style.bottom = '0';
 
@@ -225,13 +229,9 @@
         mountInnerAtmosphere();
     }
 
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', mountAtmosphere);
-    } else {
-        mountAtmosphere();
-    }
+    // Atmosphere (blur blobs) is GPU-heavy — mount after idle so dieta/rankings don't hitch the header
+    afterFirstPaint(() => whenIdle(mountAtmosphere, 1500));
 
-    // Safety: never leave content stuck invisible
     setTimeout(() => {
         document.querySelectorAll('.page-hero, .main-content, .pm-reveal').forEach((el) => {
             if (getComputedStyle(el).opacity === '0') {
@@ -240,5 +240,5 @@
                 el.style.transform = 'none';
             }
         });
-    }, 1400);
+    }, 1600);
 })();
