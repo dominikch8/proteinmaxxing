@@ -54,9 +54,12 @@ jobs:
           **/js/products-data-raw.js
           **/api/config.local.php
           **/data/*.sqlite
+          # JPG wystarczą na hostingu; PNG pomijamy (duże).
+          # Wyjątki tylko z katalogu głównego — NIE z deploy-bundle/
+          # (inaczej FTP próbuje upload do nieistniejącego deploy-bundle/ na serwerze → 550).
           **/images/products/*.png
-          !**/images/products/sos-1000-wysp.png
-          !**/images/products/biszkopty.png
+          !images/products/sos-1000-wysp.png
+          !images/products/biszkopty.png
           **/domains/**
 
     - name: Weryfikacja deployu
