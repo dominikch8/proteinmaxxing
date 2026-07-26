@@ -1,7 +1,7 @@
 /* Right-side utility cluster: Dodaj produkty + Jasny/Neon */
 .header-utilities {
     position: fixed;
-    top: 14px;
+    top: 6px;
     right: 14px;
     z-index: 200;
     display: inline-flex;
