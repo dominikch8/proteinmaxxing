@@ -16,6 +16,8 @@ RewriteRule ^produkty/platki-sniadaniowe-cukier/?$ /produkty/platki-corn-flakes 
 
 # Stary slug ziemniaki gotowane → tłuczone
 RewriteRule ^produkty/ziemniaki-gotowane/?$ /produkty/ziemniaki-tluczone [R=301,L]
+# Usunięty produkt Olimp Matrix Pro
+RewriteRule ^produkty/olimp-matrix-pro/?$ /dieta [R=301,L]
 
 # Stare URL-e .html → czyste ścieżki (301)
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]

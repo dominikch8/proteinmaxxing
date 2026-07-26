@@ -31,21 +31,6 @@ const NEW_PROTEIN = [
         micros: '-',
         extra: 'Popularny polski baton proteinowy — ok. 20+ g białka na sztukę.',
     },
-    {
-        name: 'Olimp Matrix Pro',
-        emoji: '🍫',
-        category: 'batony-proteinowe',
-        servingText: 'sztuka (80g)',
-        servingRatio: 0.8,
-        kcal: 355,
-        protein: 25,
-        carbs: 35,
-        fat: 10,
-        satFat: 5,
-        unsatFat: 5,
-        micros: '-',
-        extra: 'Polski baton proteinowy Olimp — solidna porcja białka w większej sztuce.',
-    },
 ];
 
 const text = fs.readFileSync(rawPath, 'utf8');
