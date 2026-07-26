@@ -10,7 +10,9 @@ export const CATEGORY_EDITORIAL = {
 
     owoce: `Owoce dostarczają węglowodanów, błonnika i witamin, ale są bardziej kaloryczne niż większość warzyw. Przy redukcji liczy się całkowita dzienna pula węgli — porcja owoców po treningu lub jako przekąska jest w porządku, jeśli mieści się w Twoim planie z kalkulatora TDEE.`,
 
-    zboza: `Zboża, kasze i ryż to podstawowe źródła energii i węglowodanów. Wersje pełnoziarniste mają więcej błonnika i dłużej sytną. Przy liczeniu makro ważna jest <strong>postać sucha vs gotowana</strong> — na Proteinerze wartości są na 100 g produktu w formie podanej w bazie (sprawdź opis porcji).`,
+    zboza: `Zboża, kasze i ryż to podstawowe źródła energii i węglowodanów. Wersje pełnoziarniste mają więcej błonnika i dłużej sytną. Przy liczeniu makro ważna jest <strong>postać sucha vs gotowana</strong> — na Proteinerze wartości są na 100 g produktu w formie podanej w bazie (sprawdź opis porcji). Płatki śniadaniowe znajdziesz w osobnej kategorii.`,
+
+    'platki-sniadaniowe': `Płatki śniadaniowe, granola i musli to wygodne źródło węglowodanów na start dnia — ale różnią się mocno cukrem i kaloriami. Porównaj Corn Flakes z Nesquikiem czy musli bez cukru na 100 g i licz mleko osobno. W bazie wartości są dla produktu w formie podanej przy pozycji.`,
 
     'polskie-obiadki': `Tradycyjne dania często łączą białko, tłuszcz i skrobię w jednej porcji. Kaloryczność rośnie od sosów, smażenia i dodatków (śmietana, boczek). Porównując schab, bigos czy placki ziemniaczane, zwróć uwagę na tłuszcze nasycone i całkowite kcal — to ułatwia świadomy wybór bez rezygnacji z ulubionych smaków.`,
 

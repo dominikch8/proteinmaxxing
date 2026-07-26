@@ -177,6 +177,7 @@ const CATEGORY_SUFFIX = {
     warzywa: 'fresh vegetable',
     owoce: 'fresh fruit',
     zboza: 'grain cereal or bakery food',
+    'platki-sniadaniowe': 'breakfast cereal flakes granola bowl food',
     orzechy: 'nuts or seeds food',
     sosy: 'sauce or condiment food',
     tluszcze: 'cooking oil or fat food',
