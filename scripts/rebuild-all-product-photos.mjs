@@ -168,7 +168,11 @@ const FOOD_SUBJECT = {
     pieczarka: 'ONE fresh white button mushroom Agaricus, pale grayish-white cap, short white stem, classic white pieczarka, NOT brown cremini',
     'tofu-naturalne': 'plain firm white tofu block with a few tofu cubes, tofu only, NO herbs, NO parsley, NO greens',
     'kukurydza-konserwowa': 'open metal can of canned sweet corn with yellow corn kernels in brine, canned corn product',
-    'ziemniaki-gotowane': 'creamy mashed potatoes puree in a small white bowl, ziemniaki tłuczone, smooth mashed potato only, NOT whole raw potato'
+    'ziemniaki-gotowane': 'creamy mashed potatoes puree in a small white bowl, ziemniaki tłuczone, smooth mashed potato only, NOT whole raw potato',
+    'maka-pszenna-typ-500': 'soft mound of fine white wheat flour powder only, raw flour pile, NOT bread, NOT loaf, NOT dough',
+    'komosa-ryzowa-quinoa': 'pile of dry uncooked white quinoa seeds, loose tiny round beige grains, NOT bread, NOT cooked mush',
+    'kasza-quinoa-gotowana': 'small mound of cooked fluffy quinoa grains with tiny seed rings, cooked kasza only, NOT bread',
+    amarantus: 'pile of dry uncooked tiny cream-gold amaranth seeds, loose grain kasza, NOT snack bar, NOT puffed bar, NOT bread'
 };
 
 const CATEGORY_SUFFIX = {
