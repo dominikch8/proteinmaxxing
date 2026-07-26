@@ -3458,10 +3458,10 @@
         "prompt": "Photorealistic ecommerce food photo: rice. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
-        "slug": "ziemniaki-gotowane",
-        "name": "Ziemniaki gotowane",
+        "slug": "ziemniaki-tluczone",
+        "name": "Ziemniaki tłuczone",
         "category": "warzywa",
-        "subject": "potato, fresh vegetable",
+        "subject": "mashed potatoes puree in a bowl",
         "prompt": "Photorealistic ecommerce food photo: potato, fresh vegetable. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
