@@ -2,6 +2,7 @@
 export const CATEGORY_ORDER = [
     'mieso',
     'nabial',
+    'sery',
     'warzywa',
     'owoce',
     'zboza',
@@ -11,6 +12,7 @@ export const CATEGORY_ORDER = [
     'orzechy',
     'tluszcze',
     'makarony',
+    'mrozone-pizze',
     'fastfood',
     'slodycze',
     'batony',
@@ -21,6 +23,7 @@ export const CATEGORY_ORDER = [
 export const CATEGORY_LABELS = {
     mieso: 'Mięsa i ryby',
     nabial: 'Nabiał i jaja',
+    sery: 'Sery',
     warzywa: 'Warzywa',
     owoce: 'Owoce',
     zboza: 'Zboża i kasze',
@@ -30,6 +33,7 @@ export const CATEGORY_LABELS = {
     orzechy: 'Orzechy',
     tluszcze: 'Tłuszcze i oleje',
     makarony: 'Makarony',
+    'mrozone-pizze': 'Mrożone pizze',
     fastfood: 'Fast food',
     slodycze: 'Słodycze i przekąski',
     batony: 'Batony',
@@ -40,7 +44,8 @@ export const CATEGORY_LABELS = {
 /** Krótkie frazy pod meta description (bez powtarzania nazwy kategorii) */
 export const CATEGORY_META_PHRASE = {
     mieso: 'mięso, drób, ryby — kalorie i białko na 100 g',
-    nabial: 'nabiał, jaja, sery — kalorie i białko',
+    nabial: 'nabiał, jaja, jogurty, twarogi — kalorie i białko',
+    sery: 'gouda, mozzarella, feta, oscypek — kalorie i białko',
     warzywa: 'kalorie, białko i węglowodany na 100 g',
     owoce: 'kalorie, cukry i błonnik',
     zboza: 'zboża, kasze, ryż — makra na 100 g',
@@ -50,6 +55,7 @@ export const CATEGORY_META_PHRASE = {
     orzechy: 'orzechy i nasiona — białko i tłuszcze',
     tluszcze: 'oleje, masło, oliwa — kalorie na 100 g',
     makarony: 'makaron i dania makaronowe',
+    'mrozone-pizze': 'Guseppe, Feliciana, Dzik, Ristorante — makra na 100 g',
     fastfood: 'burgery, pizza, kebab — makra',
     slodycze: 'słodycze i przekąski — kalorie',
     batony: 'batony czekoladowe — kalorie i makro na 100 g',
@@ -61,7 +67,9 @@ export const CATEGORY_INTRO = {
     mieso:
         'Porównaj kalorie, białko i tłuszcze mięs, drobiu i ryb. Ranking Białko Maxxing pokaże, które źródła dają najwięcej proteinów przy najmniejszej liczbie kcal — ranking ceny za 100 g białka pomoże wybrać tanio.',
     nabial:
-        'Twaróg, jajka, jogurty i sery to często najtańsze źródła białka. Zobacz rankingi w tej kategorii: gęstość białka względem kalorii oraz koszt 100 g czystego proteinu.',
+        'Twaróg, jajka i jogurty to często najtańsze źródła białka. Sery znajdziesz w osobnej kategorii. Zobacz rankingi: gęstość białka względem kalorii oraz koszt 100 g proteinu.',
+    sery:
+        'Gouda, mozzarella, feta, camembert, oscypek i inne popularne sery w Polsce. Porównaj kalorie, białko i tłuszcz na 100 g oraz ranking ceny białka.',
     warzywa:
         'Warzywa zwykle mają niskie białko, ale liczą się kalorie, węglowodany i sytość na redukcji. Sprawdź makra na 100 g i porównaj produkty w tej kategorii.',
     owoce:
@@ -80,8 +88,10 @@ export const CATEGORY_INTRO = {
         'Oleje, masło, oliwa — gęste kalorie, minimalne białko. Porównaj makra i wybierz świadomie tłuszcze do diety.',
     makarony:
         'Makarony suche, gotowe i dania z makaronem. Ranking Białko Maxxing i cena białka pomogą dobrać produkt pod cel sylwetkowy.',
+    'mrozone-pizze':
+        'Mrożone pizze z marketu: Guseppe, Feliciana, Dzik, Ristorante, Wagner. Porównaj kalorie i białko na 100 g — proteinowe Dzik vs klasyczne cienkie ciasto.',
     fastfood:
-        'Burgery, pizza, kebab — wysokie kalorie. Zobacz, które fast foody mają więcej białka na kcal i ile kosztuje białko w tej kategorii.',
+        'Burgery, pizza z lokalu, kebab — wysokie kalorie. Mrożone pizze z marketu są w osobnej kategorii. Zobacz ranking białka w tej grupie.',
     slodycze:
         'Słodycze i przekąski — kalorie i cukry. Porównaj makra, jeśli wliczasz czekoladę czy ciasta do dziennego bilansu.',
     batony:
@@ -110,7 +120,12 @@ export const CATEGORY_TIPS = {
     nabial: [
         'Twaróg i skyr dają dużo białka za niską cenę — sprawdź ranking ceny białka.',
         'Jogurty owocowe mają więcej cukru niż naturalne — porównaj w bazie.',
-        'Ser tłusty licz po porcji, nie „na plaster” bez wagi.',
+        'Sery żółte i miękkie są w kategorii Sery — tam porównasz Gouda, Feta, Mozzarella.',
+    ],
+    sery: [
+        'Ser licz po gramach — plaster „na oko” szybko zawyża tłuszcz i kcal.',
+        'Gouda i edamski to klasyki kanapkowe; mozzarella i feta lepiej pasują do sałatek.',
+        'Oscypek i sery wędzone są gęste kalorycznie — mała porcja wystarczy.',
     ],
     warzywa: [
         'Duża porcja warzyw zwiększa sytość przy małej liczbie kcal.',
@@ -157,6 +172,11 @@ export const CATEGORY_TIPS = {
         'Makaron suchy ≠ ugotowany — patrz na opis w bazie.',
         'Dodaj białko: kurczak, tuńczyk, twaróg lub ser.',
     ],
+    'mrozone-pizze': [
+        'Wartości na 100 g z etykiety — cała pizza to często 300–400 g.',
+        'Linie proteinowe (np. Dzik) mają więcej białka przy podobnych węglach.',
+        'Po upieczeniu woda odparowuje — waż porcję gotową, jeśli liczysz precyzyjnie.',
+    ],
     fastfood: [
         'Wpisz posiłek do limitu z góry zamiast kompensować głodówką następnego dnia.',
         'Burger bez frytek i napoju słodzonego to inny bilans niż zestaw.',
@@ -200,6 +220,16 @@ export const CATEGORY_FAQ = {
         [
             'Co ma najwięcej białka w nabiale?',
             'Twaróg chudy, skyr i jogurt grecki 0–2% — często 10–18 g białka na 100 g przy umiarkowanych kcal.',
+        ],
+        [
+            'Gdzie są sery?',
+            'Sery (gouda, mozzarella, feta, camembert…) są w osobnej kategorii „Sery”. Tu zostają twarogi, jogurty, mleko i jajka.',
+        ],
+    ],
+    sery: [
+        [
+            'Które sery są najpopularniejsze w Polsce?',
+            'Gouda, edamski, mozzarella, camembert, feta, parmezan, cheddar, brie, halloumi i oscypek — porównaj je w tabeli poniżej.',
         ],
         [
             'Czy ser tłusty psuje dietę?',
@@ -284,6 +314,16 @@ export const CATEGORY_FAQ = {
         [
             'Jak dołożyć białko do makaronu?',
             'Kurczak, tuńczyk, twaróg, ser żółty lub odżywka — porównaj dania w porównywarce Proteiner.',
+        ],
+    ],
+    'mrozone-pizze': [
+        [
+            'Ile kalorii ma mrożona pizza?',
+            'Zwykle 190–280 kcal na 100 g zależnie od smaku. Cała pizza to często 600–900 kcal — sprawdź porcję w bazie.',
+        ],
+        [
+            'Która mrożona pizza ma najwięcej białka?',
+            'Linie proteinowe (np. Dzik) mają ok. 14–19 g białka na 100 g. Klasyczne Guseppe/Feliciana zwykle ok. 8–11 g.',
         ],
     ],
     fastfood: [

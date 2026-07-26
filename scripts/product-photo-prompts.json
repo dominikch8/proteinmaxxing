@@ -3533,5 +3533,131 @@
         "category": "slodycze",
         "subject": "chocolate",
         "prompt": "Photorealistic ecommerce food photo: chocolate. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "guseppe-szynka-i-pieczarki",
+        "name": "Guseppe Szynka i pieczarki",
+        "category": "mrozone-pizze",
+        "subject": "ham and mushroom pizza",
+        "prompt": "Photorealistic ecommerce food photo: ham and mushroom pizza. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "guseppe-4-sery",
+        "name": "Guseppe 4 sery",
+        "category": "mrozone-pizze",
+        "subject": "four cheese pizza",
+        "prompt": "Photorealistic ecommerce food photo: four cheese pizza. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "guseppe-salami",
+        "name": "Guseppe Salami",
+        "category": "mrozone-pizze",
+        "subject": "salami pizza",
+        "prompt": "Photorealistic ecommerce food photo: salami pizza. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "feliciana-margherita",
+        "name": "Feliciana Margherita",
+        "category": "mrozone-pizze",
+        "subject": "margherita pizza",
+        "prompt": "Photorealistic ecommerce food photo: margherita pizza. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "feliciana-speciale",
+        "name": "Feliciana Speciale",
+        "category": "mrozone-pizze",
+        "subject": "speciale pizza with toppings",
+        "prompt": "Photorealistic ecommerce food photo: speciale pizza with toppings. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "feliciana-prosciutto-e-funghi",
+        "name": "Feliciana Prosciutto e Funghi",
+        "category": "mrozone-pizze",
+        "subject": "prosciutto mushroom pizza",
+        "prompt": "Photorealistic ecommerce food photo: prosciutto mushroom pizza. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "feliciana-quattro-formaggi",
+        "name": "Feliciana Quattro Formaggi",
+        "category": "mrozone-pizze",
+        "subject": "four cheese pizza",
+        "prompt": "Photorealistic ecommerce food photo: four cheese pizza. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "dzik-protein-pizza-salami",
+        "name": "Dzik Protein Pizza Salami",
+        "category": "mrozone-pizze",
+        "subject": "protein salami pizza",
+        "prompt": "Photorealistic ecommerce food photo: protein salami pizza. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "dzik-protein-pizza-capricciosa",
+        "name": "Dzik Protein Pizza Capricciosa",
+        "category": "mrozone-pizze",
+        "subject": "capricciosa pizza",
+        "prompt": "Photorealistic ecommerce food photo: capricciosa pizza. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "dzik-protein-pizza-bbq-chicken",
+        "name": "Dzik Protein Pizza BBQ Chicken",
+        "category": "mrozone-pizze",
+        "subject": "bbq chicken pizza",
+        "prompt": "Photorealistic ecommerce food photo: bbq chicken pizza. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "ristorante-salami",
+        "name": "Ristorante Salami",
+        "category": "mrozone-pizze",
+        "subject": "thin crust salami pizza",
+        "prompt": "Photorealistic ecommerce food photo: thin crust salami pizza. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "ristorante-prosciutto",
+        "name": "Ristorante Prosciutto",
+        "category": "mrozone-pizze",
+        "subject": "prosciutto pizza",
+        "prompt": "Photorealistic ecommerce food photo: prosciutto pizza. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "ristorante-mozzarella",
+        "name": "Ristorante Mozzarella",
+        "category": "mrozone-pizze",
+        "subject": "mozzarella pizza",
+        "prompt": "Photorealistic ecommerce food photo: mozzarella pizza. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "wagner-steinofen-salami",
+        "name": "Wagner Steinofen Salami",
+        "category": "mrozone-pizze",
+        "subject": "stone oven salami pizza",
+        "prompt": "Photorealistic ecommerce food photo: stone oven salami pizza. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "don-peppe-margherita",
+        "name": "Don Peppe Margherita",
+        "category": "mrozone-pizze",
+        "subject": "margherita pizza",
+        "prompt": "Photorealistic ecommerce food photo: margherita pizza. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "oscypek",
+        "name": "Oscypek",
+        "category": "sery",
+        "subject": "Polish smoked oscypek cheese",
+        "prompt": "Photorealistic ecommerce food photo: Polish smoked oscypek cheese. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "ser-kozi-miekki",
+        "name": "Ser kozi miękki",
+        "category": "sery",
+        "subject": "soft goat cheese log",
+        "prompt": "Photorealistic ecommerce food photo: soft goat cheese log. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    },
+    {
+        "slug": "ser-tylzycki",
+        "name": "Ser tylżycki",
+        "category": "sery",
+        "subject": "Tilsit yellow cheese wedge",
+        "prompt": "Photorealistic ecommerce food photo: Tilsit yellow cheese wedge. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     }
 ]

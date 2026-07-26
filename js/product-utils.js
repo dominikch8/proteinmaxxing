@@ -19,6 +19,7 @@ function proteinPer100Kcal(p) {
 const CATEGORY_LABELS = {
     mieso: 'Mięsa i ryby',
     nabial: 'Nabiał i jaja',
+    sery: 'Sery',
     warzywa: 'Warzywa',
     owoce: 'Owoce',
     zboza: 'Zboża i kasze',
@@ -28,6 +29,7 @@ const CATEGORY_LABELS = {
     orzechy: 'Orzechy',
     tluszcze: 'Tłuszcze i oleje',
     makarony: 'Makarony',
+    'mrozone-pizze': 'Mrożone pizze',
     fastfood: 'Fast food',
     slodycze: 'Słodycze i przekąski',
     batony: 'Batony',
@@ -39,6 +41,7 @@ const CATEGORY_LABELS = {
 const CATEGORY_ORDER = [
     'mieso',
     'nabial',
+    'sery',
     'warzywa',
     'owoce',
     'zboza',
@@ -48,6 +51,7 @@ const CATEGORY_ORDER = [
     'orzechy',
     'tluszcze',
     'makarony',
+    'mrozone-pizze',
     'fastfood',
     'slodycze',
     'batony',
@@ -59,6 +63,7 @@ const CATEGORY_ORDER = [
 const CATEGORY_SELECT_LABELS_DIETA = {
     mieso: 'Mięsa i Ryby',
     nabial: 'Nabiał i Jaja',
+    sery: 'Sery',
     warzywa: 'Warzywa',
     owoce: 'Owoce',
     zboza: 'Zboża i Kasze',
@@ -68,6 +73,7 @@ const CATEGORY_SELECT_LABELS_DIETA = {
     orzechy: 'Orzechy',
     tluszcze: 'Tłuszcze i oleje',
     makarony: 'Makarony',
+    'mrozone-pizze': 'Mrożone pizze',
     fastfood: 'Fast Food',
     slodycze: 'Słodycze i Przekąski',
     batony: 'Batony',
