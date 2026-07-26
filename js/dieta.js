@@ -324,9 +324,9 @@ function buildBazaProductCardHtml(p) {
 
         function getRankingGroupCategory(ruleId) {
             if (ruleId === 'chude-ryby' || ruleId === 'watrobki') return 'mieso';
+            if (ruleId === 'makaron-suchy') return 'makarony';
             if (
-                ruleId === 'makaron-suchy'
-                || ruleId === 'kasze'
+                ruleId === 'kasze'
                 || ruleId === 'ryz-suchy'
                 || ruleId === 'platki-zboz'
             ) {
@@ -795,7 +795,12 @@ function buildBazaProductCardHtml(p) {
         }
 
         function appendGroupRankingCardLink(grid, cardHtml, p, mode) {
-            const catLabel = p.groupCategory === 'zboza' ? 'Zboża i kasze' : 'Mięsa i Ryby';
+            const catLabel =
+                p.groupCategory === 'makarony'
+                    ? 'Makarony'
+                    : p.groupCategory === 'zboza'
+                      ? 'Zboża i kasze'
+                      : 'Mięsa i Ryby';
             grid.innerHTML += `
                     <a href="#" class="product-card-link" role="group"
                         aria-label="${p.name} — przejdź do kategorii ${catLabel}"

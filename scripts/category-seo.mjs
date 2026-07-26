@@ -29,7 +29,7 @@ export const CATEGORY_LABELS = {
     zupy: 'Zupy',
     orzechy: 'Orzechy',
     tluszcze: 'Tłuszcze i oleje',
-    makarony: 'Dania z makaronu',
+    makarony: 'Makarony',
     fastfood: 'Fast food',
     slodycze: 'Słodycze i przekąski',
     batony: 'Batony',
@@ -67,7 +67,7 @@ export const CATEGORY_INTRO = {
     owoce:
         'Owoce to głównie węglowodany i kalorie — zobacz, które mają więcej białka lub mniej kcal na 100 g, jeśli liczysz makro w diecie.',
     zboza:
-        'Ryż, kasze i pieczywo — energia i węgle. Rankingi pokażą, które zboża mają lepszy profil białko/kcal i ile kosztuje 100 g białka z tej grupy. Płatki śniadaniowe znajdziesz w osobnej kategorii.',
+        'Ryż, kasze i pieczywo — energia i węgle (bez makaronów). Rankingi pokażą, które zboża mają lepszy profil białko/kcal i ile kosztuje 100 g białka z tej grupy. Makarony są w osobnej kategorii; płatki śniadaniowe też.',
     'platki-sniadaniowe':
         'Płatki owsiane, Corn Flakes, Nesquik, Cini Minis, granola i musli — porównaj cukier, kalorie i białko na 100 g przed śniadaniem.',
     'polskie-obiadki':
