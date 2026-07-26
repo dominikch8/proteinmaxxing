@@ -2489,10 +2489,10 @@ export const PRODUCT_SEARCH_QUERIES = {
     "rice food",
     "rice ingredient photo"
   ],
-  "ziemniaki-gotowane": [
-    "potato",
-    "potato food",
-    "potato ingredient photo"
+  "ziemniaki-tluczone": [
+    "mashed potatoes",
+    "mashed potatoes food",
+    "ziemniaki tłuczone puree"
   ],
   "surowka-z-marchewki": [
     "Surówka z marchewki",

@@ -15,6 +15,11 @@
     }
 
     function redirectAfterAuth(user) {
+        try {
+            sessionStorage.setItem('pmx_auth_nav_v1', JSON.stringify(user || null));
+        } catch {
+            /* ignore */
+        }
         const params = new URLSearchParams(window.location.search);
         const next = params.get('next');
         if (next && !/^https?:/i.test(next) && !next.startsWith('//') && !next.includes('://')) {
@@ -106,6 +111,11 @@
         logoutBtn.addEventListener('click', async () => {
             try {
                 await ProteinerAuth.logout();
+            } catch {
+                /* ignore */
+            }
+            try {
+                sessionStorage.removeItem('pmx_auth_nav_v1');
             } catch {
                 /* ignore */
             }

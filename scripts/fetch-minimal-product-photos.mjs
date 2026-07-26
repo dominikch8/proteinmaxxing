@@ -15,7 +15,7 @@ const outDir = path.join(root, 'images', 'products');
 const queuePath = path.join(root, 'scripts', 'product-images-regen-queue.json');
 const queriesPath = path.join(root, 'js', 'product-search-queries.js');
 
-const UA = 'Proteiner/1.0 (nutrition education; contact: dominikchw1@gmail.com)';
+const UA = 'Proteiner/1.0 (nutrition education; contact: developeranios@gmail.com)';
 
 function slugify(name) {
     return name

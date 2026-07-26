@@ -24,8 +24,37 @@
         });
     }
 
+    function takeAddProductLink() {
+        let link = document.querySelector('a.nav-add-floating');
+        if (link) return link;
+
+        const item = document.querySelector('.nav-add-product');
+        if (!item) return null;
+        link = item.querySelector('a');
+        if (!link) {
+            item.remove();
+            return null;
+        }
+        link.classList.add('nav-add-floating');
+        item.remove();
+        return link;
+    }
+
     function mountThemeSwitch() {
         if (document.getElementById('pm-theme-switch')) return;
+
+        let cluster = document.getElementById('pm-header-utilities');
+        if (!cluster) {
+            cluster = document.createElement('div');
+            cluster.id = 'pm-header-utilities';
+            cluster.className = 'header-utilities';
+            document.body.appendChild(cluster);
+        }
+
+        const addLink = takeAddProductLink();
+        if (addLink && !cluster.contains(addLink)) {
+            cluster.appendChild(addLink);
+        }
 
         const wrap = document.createElement('div');
         wrap.id = 'pm-theme-switch';
@@ -54,7 +83,7 @@
             applyTheme(theme);
         });
 
-        document.body.appendChild(wrap);
+        cluster.appendChild(wrap);
         applyTheme(getStoredTheme());
     }
 

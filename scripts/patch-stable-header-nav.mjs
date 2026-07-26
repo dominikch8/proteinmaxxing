@@ -37,7 +37,14 @@ function ensureAuthSlot(html, prefix) {
     const href = `${prefix}logowanie`;
     const slot = `\n                <li id="authNavSlot" class="auth-nav-item"><a class="nav-link auth-nav-link" href="${href}">Zaloguj</a></li>`;
 
-    // Insert before closing </ul> of nav-links (first match in header)
+    // Przed „Dodaj produkty”, żeby Zaloguj było po lewej od niego; inaczej przed </ul>
+    if (/href="[^"]*dodaj-produkt"/.test(html)) {
+        return html.replace(
+            /(<li[^>]*>\s*<a class="nav-link[^"]*"[^>]*href="[^"]*dodaj-produkt"[^>]*>Dodaj produkty<\/a>\s*<\/li>)/i,
+            `${slot}\n                $1`
+        );
+    }
+
     return html.replace(
         /(<ul class="nav-links"[^>]*>[\s\S]*?)(\n\s*<\/ul>\s*\n\s*<\/nav>)/,
         (_, list, close) => {

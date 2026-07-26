@@ -71,6 +71,8 @@ const CATEGORY_IMAGES = {
     warzywa: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/CSA_vegetables.jpg/640px-CSA_vegetables.jpg',
     owoce: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Various_fruits.jpg/640px-Various_fruits.jpg',
     zboza: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Various_grains.jpg/640px-Various_grains.jpg',
+    'platki-sniadaniowe':
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Oatmeal.jpg/640px-Oatmeal.jpg',
     'polskie-obiadki':
         'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Pierogi_ruskie.jpg/640px-Pierogi_ruskie.jpg',
     zupy: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Chicken_Noodle_Soup.jpg/640px-Chicken_Noodle_Soup.jpg',
@@ -202,6 +204,7 @@ const CATEGORY_MICRO_FALLBACKS = {
     warzywa: ['Witamina C', 'Kwas foliowy', 'Potas'],
     owoce: ['Witamina C', 'Potas', 'Mangan'],
     zboza: ['Magnez', 'Tiamina (B1)', 'Żelazo'],
+    'platki-sniadaniowe': ['Żelazo', 'Magnez', 'Tiamina (B1)'],
     'polskie-obiadki': ['Żelazo', 'Tiamina (B1)', 'Potas'],
     zupy: ['Potas', 'Witamina C', 'Żelazo'],
     orzechy: ['Magnez', 'Witamina E', 'Cynk'],

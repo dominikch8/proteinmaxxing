@@ -15,7 +15,7 @@ const root = path.join(__dirname, '..');
 const outDir = path.join(root, 'images', 'products');
 const queriesPath = path.join(root, 'js', 'product-search-queries.js');
 
-const UA = 'Proteiner/1.0 (nutrition education; contact: dominikchw1@gmail.com)';
+const UA = 'Proteiner/1.0 (nutrition education; contact: developeranios@gmail.com)';
 const BAD_IMAGE = /logo|icon|banner|sprite|button|avatar|stamp|seal|qr|barcode/i;
 const BAD_TITLE = /logo|icon|diagram|map|flag|coat of arms|symbol|chart|graph|list of|disambiguation|category:|svg|stamp|seal|signature|portrait|person|building|aircraft|vehicle/i;
 

@@ -24,7 +24,7 @@ const root = path.join(__dirname, '..');
 const outDir = path.join(root, 'images', 'products');
 const queriesPath = path.join(root, 'js', 'product-search-queries.js');
 const researchLogPath = path.join(root, 'scripts', 'product-photo-research-log.json');
-const UA = 'Proteiner/1.0 (nutrition education; contact: dominikchw1@gmail.com)';
+const UA = 'Proteiner/1.0 (nutrition education; contact: developeranios@gmail.com)';
 
 const BAD =
     /logo|icon|diagram|map|flag|coat|symbol|chart|graph|list of|disambiguation|category:|svg|stamp|seal|portrait|building|aircraft|vehicle|panthera|wildlife|zoo|safari|lioness|galaxy|constellation|astronomy|planet|moon|person|people|selfie|hatching|spiral egg cup|soup|smoothie|salad bowl|pizza with|platter|buffet/i;
@@ -168,7 +168,11 @@ const FOOD_SUBJECT = {
     pieczarka: 'ONE fresh white button mushroom Agaricus, pale grayish-white cap, short white stem, classic white pieczarka, NOT brown cremini',
     'tofu-naturalne': 'plain firm white tofu block with a few tofu cubes, tofu only, NO herbs, NO parsley, NO greens',
     'kukurydza-konserwowa': 'open metal can of canned sweet corn with yellow corn kernels in brine, canned corn product',
-    'ziemniaki-gotowane': 'creamy mashed potatoes puree in a small white bowl, ziemniaki tłuczone, smooth mashed potato only, NOT whole raw potato'
+    'ziemniaki-tluczone': 'creamy mashed potatoes puree in a small white bowl, ziemniaki tłuczone, smooth mashed potato only, NOT whole raw potato',
+    'maka-pszenna-typ-500': 'soft mound of fine white wheat flour powder only, raw flour pile, NOT bread, NOT loaf, NOT dough',
+    'komosa-ryzowa-quinoa': 'pile of dry uncooked white quinoa seeds, loose tiny round beige grains, NOT bread, NOT cooked mush',
+    'kasza-quinoa-gotowana': 'small mound of cooked fluffy quinoa grains with tiny seed rings, cooked kasza only, NOT bread',
+    amarantus: 'pile of dry uncooked tiny cream-gold amaranth seeds, loose grain kasza, NOT snack bar, NOT puffed bar, NOT bread'
 };
 
 const CATEGORY_SUFFIX = {
@@ -177,6 +181,7 @@ const CATEGORY_SUFFIX = {
     warzywa: 'fresh vegetable',
     owoce: 'fresh fruit',
     zboza: 'grain cereal or bakery food',
+    'platki-sniadaniowe': 'breakfast cereal flakes granola bowl food',
     orzechy: 'nuts or seeds food',
     sosy: 'sauce or condiment food',
     tluszcze: 'cooking oil or fat food',

@@ -5,6 +5,7 @@ export const CATEGORY_ORDER = [
     'warzywa',
     'owoce',
     'zboza',
+    'platki-sniadaniowe',
     'polskie-obiadki',
     'zupy',
     'orzechy',
@@ -23,6 +24,7 @@ export const CATEGORY_LABELS = {
     warzywa: 'Warzywa',
     owoce: 'Owoce',
     zboza: 'Zboża i kasze',
+    'platki-sniadaniowe': 'Płatki śniadaniowe',
     'polskie-obiadki': 'Polskie obiadki',
     zupy: 'Zupy',
     orzechy: 'Orzechy',
@@ -42,6 +44,7 @@ export const CATEGORY_META_PHRASE = {
     warzywa: 'kalorie, białko i węglowodany na 100 g',
     owoce: 'kalorie, cukry i błonnik',
     zboza: 'zboża, kasze, ryż — makra na 100 g',
+    'platki-sniadaniowe': 'płatki, granola, musli — kalorie i cukier na 100 g',
     'polskie-obiadki': 'pierogi, bigos, gołąbki i inne dania',
     zupy: 'rosół, krupnik, żurek, pomidorowa — makra',
     orzechy: 'orzechy i nasiona — białko i tłuszcze',
@@ -64,7 +67,9 @@ export const CATEGORY_INTRO = {
     owoce:
         'Owoce to głównie węglowodany i kalorie — zobacz, które mają więcej białka lub mniej kcal na 100 g, jeśli liczysz makro w diecie.',
     zboza:
-        'Ryż, kasze, płatki i pieczywo — energia i węgle. Rankingi pokażą, które zboża mają lepszy profil białko/kcal i ile kosztuje 100 g białka z tej grupy.',
+        'Ryż, kasze i pieczywo — energia i węgle. Rankingi pokażą, które zboża mają lepszy profil białko/kcal i ile kosztuje 100 g białka z tej grupy. Płatki śniadaniowe znajdziesz w osobnej kategorii.',
+    'platki-sniadaniowe':
+        'Płatki owsiane, Corn Flakes, Nesquik, Cini Minis, granola i musli — porównaj cukier, kalorie i białko na 100 g przed śniadaniem.',
     'polskie-obiadki':
         'Polskie klasyki: pierogi, bigos, placki, zapiekanka. Porównaj kalorie i białko domowych dań — przydatne przy odchudzaniu i liczeniu makro.',
     zupy:
@@ -120,7 +125,12 @@ export const CATEGORY_TIPS = {
     zboza: [
         'Porównuj makro suchego produktu z tym, co jesz po ugotowaniu.',
         'Pełnoziarniste mają więcej błonnika — często dłużej sytną.',
-        'Płatki śniadaniowe sprawdź pod kątem cukru w składzie.',
+        'Płatki śniadaniowe są w osobnej kategorii — tam łatwiej porównać cukier.',
+    ],
+    'platki-sniadaniowe': [
+        'Sprawdź cukier na 100 g — różnica między Corn Flakes a Nestlé bywa duża.',
+        'Płatki owsiane i musli bez cukru zwykle lepiej wpisują się w deficyt.',
+        'Mleko do płatków licz osobno — samo opakowanie to nie cały posiłek.',
     ],
     'polskie-obiadki': [
         'Sosy, śmietana i smażenie często dodają więcej kcal niż samo mięso.',
@@ -294,6 +304,16 @@ export const CATEGORY_FAQ = {
         [
             'Dlaczego słodycze mają mało białka?',
             'To głównie cukry i tłuszcz — stąd wysoka kcal przy niskiej sytości. Traktuj jako dodatek, nie bazę posiłku.',
+        ],
+    ],
+    'platki-sniadaniowe': [
+        [
+            'Które płatki mają najmniej cukru?',
+            'Zwykle płatki owsiane i musli bez cukru. Brandingowe (Nesquik, Cini Minis, Cookie Crisps) bywają słodsze — porównaj w tabeli na 100 g.',
+        ],
+        [
+            'Czy granola jest zdrowa?',
+            'Zależy od przepisu — często ma dużo cukru i tłuszczu. Traktuj jak gęste kalorie i waż porcję, zamiast sypać „na oko”.',
         ],
     ],
     batony: [

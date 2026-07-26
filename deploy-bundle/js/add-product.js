@@ -1,6 +1,6 @@
 (function () {
     /** E-mail administratora — FormSubmit wyśle tu zgłoszenie (przy pierwszym użyciu potwierdź link aktywacyjny). */
-    const ADMIN_EMAIL = 'dominikchw1@gmail.com';
+    const ADMIN_EMAIL = 'developeranios@gmail.com';
     const form = document.getElementById('addProductForm');
     const categoryEl = document.getElementById('apCategory');
     const errorEl = document.getElementById('addProductFormError');

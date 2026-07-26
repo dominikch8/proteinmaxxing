@@ -12,7 +12,7 @@ const root = path.join(__dirname, '..');
 const cachePath = path.join(root, 'js', 'product-images-cache.json');
 const queriesPath = path.join(root, 'js', 'product-search-queries.js');
 
-const UA = 'Proteiner/1.0 (nutrition education; contact: dominikchw1@gmail.com)';
+const UA = 'Proteiner/1.0 (nutrition education; contact: developeranios@gmail.com)';
 
 const BAD_TITLE = /logo|icon|diagram|map|flag|coat of arms|symbol|chart|graph|list of|disambiguation|category:/i;
 const BAD_IMAGE = /logo|icon|banner|sprite|button|avatar|stamp|seal/i;
