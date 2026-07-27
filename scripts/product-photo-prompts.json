@@ -2921,9 +2921,9 @@
     {
         "slug": "ser-wedzony",
         "name": "Ser wędzony",
-        "category": "nabial",
-        "subject": "cheese",
-        "prompt": "Photorealistic ecommerce food photo: cheese. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "category": "sery",
+        "subject": "Polish smoked cheese ser wedzony with golden-amber smoked rind and pale yellow interior, not burnt",
+        "prompt": "Photorealistic ecommerce food photo: Polish smoked cheese ser wedzony with golden-amber smoked rind and pale yellow interior, not burnt. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "mleko-bez-laktozy-2",
