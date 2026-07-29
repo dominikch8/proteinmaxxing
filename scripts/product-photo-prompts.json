@@ -1130,15 +1130,15 @@
         "slug": "oliwa-z-oliwek",
         "name": "Oliwa z oliwek",
         "category": "tluszcze",
-        "subject": "olive, cooking oil or fat",
-        "prompt": "Photorealistic ecommerce food photo: olive, cooking oil or fat. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "subject": "extra virgin olive oil in green glass bottle with blank label, NOT bowl",
+        "prompt": "Photorealistic ecommerce food photo: extra virgin olive oil in green glass bottle with blank label, NOT bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "olej-rzepakowy",
         "name": "Olej rzepakowy",
         "category": "tluszcze",
-        "subject": "oil canola",
-        "prompt": "Photorealistic ecommerce food photo: oil canola. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "subject": "canola rapeseed cooking oil in clear glass bottle with blank label, NOT bowl",
+        "prompt": "Photorealistic ecommerce food photo: canola rapeseed cooking oil in clear glass bottle with blank label, NOT bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "maslo-ekstra-82",
@@ -1158,15 +1158,15 @@
         "slug": "olej-slonecznikowy",
         "name": "Olej słonecznikowy",
         "category": "tluszcze",
-        "subject": "oil sunflower",
-        "prompt": "Photorealistic ecommerce food photo: oil sunflower. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "subject": "sunflower cooking oil in clear glass bottle with blank label, NOT bowl",
+        "prompt": "Photorealistic ecommerce food photo: sunflower cooking oil in clear glass bottle with blank label, NOT bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "olej-kokosowy",
         "name": "Olej kokosowy",
         "category": "tluszcze",
-        "subject": "oil coconut",
-        "prompt": "Photorealistic ecommerce food photo: oil coconut. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "subject": "refined coconut oil in glass jar or bottle with blank label, NOT bowl",
+        "prompt": "Photorealistic ecommerce food photo: refined coconut oil in glass jar or bottle with blank label, NOT bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "margaryna",
@@ -2145,15 +2145,15 @@
         "slug": "olej-lniany",
         "name": "Olej lniany",
         "category": "tluszcze",
-        "subject": "oil flaxseed",
-        "prompt": "Photorealistic ecommerce food photo: oil flaxseed. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "subject": "flaxseed linseed oil in dark glass bottle with blank label, NOT bowl",
+        "prompt": "Photorealistic ecommerce food photo: flaxseed linseed oil in dark glass bottle with blank label, NOT bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "olej-sezamowy",
         "name": "Olej sezamowy",
         "category": "tluszcze",
-        "subject": "oil sesame",
-        "prompt": "Photorealistic ecommerce food photo: oil sesame. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "subject": "sesame oil in clear glass bottle with blank label, NOT bowl",
+        "prompt": "Photorealistic ecommerce food photo: sesame oil in clear glass bottle with blank label, NOT bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "tluszcz-kaczy",
