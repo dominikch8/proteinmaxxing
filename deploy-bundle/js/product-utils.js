@@ -215,3 +215,14 @@ function buildServingTableHtml(p, opts = {}) {
         </table>
     </div>`;
 }
+
+/** Przy wpisywaniu nazwy produktu ustaw kategorię na „Wszystkie”. */
+function resetCategoryOnProductSearch(searchInputId, categorySelectId) {
+    const search = document.getElementById(searchInputId);
+    const catSelect = document.getElementById(categorySelectId);
+    if (!search || !catSelect) return false;
+    if (!search.value.trim()) return false;
+    if (catSelect.value === 'all') return false;
+    catSelect.value = 'all';
+    return true;
+}

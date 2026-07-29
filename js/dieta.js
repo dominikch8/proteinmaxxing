@@ -72,6 +72,9 @@ function buildBazaProductCardHtml(p) {
         }
 
         window.debouncedBazaSearchInput = debounce(() => {
+            if (typeof resetCategoryOnProductSearch === 'function') {
+                resetCategoryOnProductSearch('productSearch', 'bazaCategoryFilter');
+            }
             if (typeof onDietaCategoryChange === 'function') onDietaCategoryChange('baza');
         }, 200);
 
@@ -917,6 +920,12 @@ function buildBazaProductCardHtml(p) {
         }
 
         function renderProteinMaxxing() {
+            const catReset =
+                typeof resetCategoryOnProductSearch === 'function' &&
+                resetCategoryOnProductSearch('proteinMaxSearch', 'categoryFilter');
+            if (catReset && typeof syncRankingPageUrl === 'function') {
+                syncRankingPageUrl('all', false);
+            }
             const cat = document.getElementById('categoryFilter').value;
             const query = (document.getElementById('proteinMaxSearch')?.value || '').toLowerCase().trim();
             const grid = document.getElementById('proteinMaxxingGrid');
@@ -998,6 +1007,12 @@ function buildBazaProductCardHtml(p) {
         }
 
         function renderProteinPrice() {
+            const catReset =
+                typeof resetCategoryOnProductSearch === 'function' &&
+                resetCategoryOnProductSearch('proteinPriceSearch', 'priceCategoryFilter');
+            if (catReset && typeof syncRankingPageUrl === 'function') {
+                syncRankingPageUrl('all', false);
+            }
             const cat = document.getElementById('priceCategoryFilter').value;
             const query = (document.getElementById('proteinPriceSearch')?.value || '').toLowerCase().trim();
             const grid = document.getElementById('proteinPriceGrid');

@@ -16,8 +16,11 @@
     }
 
     function renderIndex() {
-        const cat = categoryEl.value;
         const query = (searchEl?.value || '').toLowerCase().trim();
+        if (query && typeof resetCategoryOnProductSearch === 'function') {
+            resetCategoryOnProductSearch('productsIndexSearch', 'productsIndexCategory');
+        }
+        const cat = categoryEl.value;
         let items = [...productsDatabase].sort((a, b) =>
             a.name.localeCompare(b.name, 'pl')
         );
