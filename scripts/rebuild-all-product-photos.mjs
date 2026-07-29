@@ -106,6 +106,17 @@ const FOOD_SUBJECT = {
     bigos: 'Polish bigos hunter stew in bowl',
     'pierogi-ruskie': 'Polish pierogi ruskie dumplings on plate',
     rosol: 'clear Polish chicken broth soup with noodles in white bowl',
+    'zupa-szczawiowa': 'Polish sorrel soup zupa szczawiowa in white bowl, bright green broth, chopped sorrel leaves, halved hard boiled egg visible, creamy green soup, NOT tripe, NOT flaki, NOT beef intestine, NO organ meat',
+    'zupa-grzybowa': 'Polish mushroom soup zupa grzybowa in white bowl, creamy beige broth, sliced forest mushrooms and parsley, mushroom cream soup, NOT tripe, NOT flaki, NOT beef intestine',
+    'zupa-ogorkowa': 'Polish pickle soup zupa ogórkowa in white bowl, pale yellow broth, diced pickled cucumber and dill, sour pickle soup, NOT tripe, NOT flaki, NOT beef intestine',
+    'zupa-fasolowa': 'Polish bean soup zupa fasolowa in white bowl, white navy beans in clear broth, carrot pieces, bean soup, NOT tripe, NOT flaki, NOT beef intestine',
+    'zupa-jarzynowa': 'Polish vegetable soup zupa jarzynowa in white bowl, clear golden broth, diced carrots potato celery peas, colorful vegetable soup, NOT tripe, NOT flaki, NOT beef intestine',
+    'zupa-tom-yum': 'Thai tom yum soup in white bowl, orange-red spicy broth, shrimp lemongrass lime leaves chili, tom yum goong, NOT tripe, NOT flaki, NOT beef intestine',
+    'zupa-dyniowa': 'Polish pumpkin soup zupa dyniowa in white bowl, smooth bright orange creamy pumpkin puree soup, NOT tripe, NOT flaki, NOT beef intestine',
+    'pho-zupa-ryzowa': 'Vietnamese pho noodle soup in white bowl, clear aromatic beef broth, flat rice noodles, fresh basil lime bean sprouts, pho bo style, NOT tripe, NOT flaki, NOT beef intestine strips',
+    'zupa-gulaszowa': 'Hungarian goulash soup zupa gulaszowa in white bowl, deep red paprika broth, beef cubes potato carrot, goulash soup, NOT tripe, NOT flaki, NOT beef intestine',
+    'zupa-z-soczewicy': 'Polish lentil soup zupa z soczewicy in white bowl, golden orange broth, red lentils and carrot pieces, lentil soup, NOT tripe, NOT flaki, NOT beef intestine',
+    'zupa-cebulowa': 'French onion soup in white ceramic bowl, golden brown broth, visible caramelized onion rings, melted cheese crust on top, bread crouton, Polish zupa cebulowa, NOT tripe, NOT flaki, NOT beef intestine, NO organ meat',
     'ser-mozzarella': 'two or three fresh white mozzarella cheese balls ciliegine, smooth wet surface, mozzarella only, NO packaging',
     'mleko-2': 'glass of white cow milk',
     'jajko-kurze-cale': 'ONE whole intact brown chicken egg with unbroken shell, whole egg only, NOT cracked, NOT open, NOT yolk',
@@ -280,6 +291,7 @@ function scoreRef(title, query, subject) {
     if (/\bmars\b/i.test(t) && !/chocolate|candy|bar/i.test(t)) score -= 15;
     if (/hatching|chick|incubator/i.test(t)) score -= 10;
     if (/soup|smoothie/i.test(t) && /avocado/i.test(subject)) score -= 8;
+    if (/flaki|tripe|intestine|offal|beef stomach|organ meat/i.test(t) && !/flaki|tripe/i.test(subject)) score -= 20;
     return score;
 }
 

@@ -1730,9 +1730,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "pierogi cabbage ingredient photo"
   ],
   "zupa-jarzynowa": [
-    "soup",
-    "soup food",
-    "soup ingredient photo"
+    "Polish vegetable soup jarzynowa",
+    "clear vegetable soup bowl carrots potato",
+    "zupa jarzynowa food"
   ],
   "zupa-pomidorowa": [
     "soup tomato",
@@ -1745,9 +1745,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "soup ingredient photo"
   ],
   "zupa-ogorkowa": [
-    "soup",
-    "soup food",
-    "soup ingredient photo"
+    "Polish pickle soup ogorkowa",
+    "pickle dill soup bowl",
+    "zupa ogorkowa food"
   ],
   "barszcz-czerwony": [
     "Barszcz czerwony",
@@ -1805,9 +1805,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "Krupnik ingredient photo"
   ],
   "zupa-fasolowa": [
-    "soup",
-    "soup food",
-    "soup ingredient photo"
+    "Polish bean soup fasolowa",
+    "white bean soup bowl",
+    "zupa fasolowa food"
   ],
   "barszcz-bialy": [
     "white",
@@ -1815,14 +1815,15 @@ export const PRODUCT_SEARCH_QUERIES = {
     "white ingredient photo"
   ],
   "zupa-szczawiowa": [
-    "soup",
-    "soup food",
-    "soup ingredient photo"
+    "Polish sorrel soup szczawiowa",
+    "green sorrel soup bowl egg",
+    "zupa szczawiowa food"
   ],
   "zupa-cebulowa": [
-    "soup",
-    "soup food",
-    "soup ingredient photo"
+    "French onion soup",
+    "onion soup bowl melted cheese",
+    "zupa cebulowa",
+    "Polish onion soup food"
   ],
   "krem-brokulowy": [
     "spread",
@@ -1835,9 +1836,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "Minestrone ingredient photo"
   ],
   "pho-zupa-ryzowa": [
-    "soup",
-    "soup food",
-    "soup ingredient photo"
+    "Vietnamese pho noodle soup",
+    "pho bo rice noodles basil",
+    "pho soup bowl food"
   ],
   "whopper-styl": [
     "Whopper",
@@ -2280,9 +2281,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "soup ingredient photo"
   ],
   "zupa-dyniowa": [
-    "soup",
-    "soup food",
-    "soup ingredient photo"
+    "Polish pumpkin soup dyniowa",
+    "orange creamy pumpkin soup bowl",
+    "zupa dyniowa food"
   ],
   "zupa-krem-szpinakowy": [
     "soup spread",
@@ -2290,14 +2291,14 @@ export const PRODUCT_SEARCH_QUERIES = {
     "soup spread ingredient photo"
   ],
   "zupa-grzybowa": [
-    "soup",
-    "soup food",
-    "soup ingredient photo"
+    "Polish mushroom soup grzybowa",
+    "cream mushroom soup bowl",
+    "zupa grzybowa food"
   ],
   "zupa-z-soczewicy": [
-    "soup",
-    "soup food",
-    "soup ingredient photo"
+    "Polish lentil soup soczewica",
+    "red lentil soup bowl",
+    "zupa z soczewicy food"
   ],
   "zupa-pomidorowa-kremowa": [
     "soup tomato mustard",
@@ -2305,14 +2306,14 @@ export const PRODUCT_SEARCH_QUERIES = {
     "soup tomato mustard ingredient photo"
   ],
   "zupa-gulaszowa": [
-    "soup",
-    "soup food",
-    "soup ingredient photo"
+    "Hungarian goulash soup gulaszowa",
+    "paprika beef goulash soup bowl",
+    "zupa gulaszowa food"
   ],
   "zupa-tom-yum": [
-    "soup",
-    "soup food",
-    "soup ingredient photo"
+    "Thai tom yum soup",
+    "tom yum goong shrimp lemongrass",
+    "tom yum soup bowl food"
   ],
   "makaron-udon": [
     "pasta",
