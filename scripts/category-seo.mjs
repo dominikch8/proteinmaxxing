@@ -54,7 +54,7 @@ export const CATEGORY_META_PHRASE = {
     zupy: 'rosół, krupnik, żurek, pomidorowa — makra',
     orzechy: 'orzechy i nasiona — białko i tłuszcze',
     tluszcze: 'oleje, masło, oliwa — kalorie na 100 g',
-    makarony: 'makaron i dania makaronowe',
+    makarony: 'makaron suchy — fusilli, penne, spaghetti na 100 g',
     'mrozone-pizze': 'Guseppe, Feliciana, Dzik, Ristorante — makra na 100 g',
     fastfood: 'burgery, pizza, kebab — makra',
     slodycze: 'słodycze i przekąski — kalorie',
@@ -87,7 +87,7 @@ export const CATEGORY_INTRO = {
     tluszcze:
         'Oleje, masło, oliwa — gęste kalorie, minimalne białko. Porównaj makra i wybierz świadomie tłuszcze do diety.',
     makarony:
-        'Makarony suche, gotowe i dania z makaronem. Ranking Białko Maxxing i cena białka pomogą dobrać produkt pod cel sylwetkowy.',
+        'Makarony suche i typy makaronu: spaghetti, penne, fusilli, tortellini. Porównaj węglowodany i kalorie przed ugotowaniem — dania z makaronem znajdziesz w Polskich obiadkach.',
     'mrozone-pizze':
         'Mrożone pizze z marketu: Guseppe, Feliciana, Dzik, Ristorante, Wagner. Porównaj kalorie i białko na 100 g — proteinowe Dzik vs klasyczne cienkie ciasto.',
     fastfood:
@@ -168,9 +168,9 @@ export const CATEGORY_TIPS = {
         'Tłuszcz jest potrzebny — chodzi o porcję z kalkulatora, nie o zerowy limit.',
     ],
     makarony: [
-        'Porównaj makaron z sosem kremowym i z kurczakiem — różnica w kcal bywa duża.',
-        'Makaron suchy ≠ ugotowany — patrz na opis w bazie.',
-        'Dodaj białko: kurczak, tuńczyk, twaróg lub ser.',
+        'Makro w bazie dotyczy formy suchej — po ugotowaniu kcal na 100 g spada przez wodę.',
+        'Pełnoziarnisty ma więcej błonnika; jajeczny nie zawsze ma więcej białka.',
+        'Carbonara, lasagne i inne dania z makaronem są w kategorii Polskie obiadki.',
     ],
     'mrozone-pizze': [
         'Wartości na 100 g z etykiety — cała pizza to często 300–400 g.',
@@ -309,11 +309,11 @@ export const CATEGORY_FAQ = {
     makarony: [
         [
             'Makaron suchy czy gotowy — jak liczyć?',
-            'W bazie makro jest dla formy podanej przy produkcie. 100 g suchego makaronu to nie to samo co 100 g ugotowanego.',
+            'W tej kategorii są suche makarony i typy (penne, spaghetti, tortellini). 100 g suchego to nie to samo co 100 g ugotowanego.',
         ],
         [
-            'Jak dołożyć białko do makaronu?',
-            'Kurczak, tuńczyk, twaróg, ser żółty lub odżywka — porównaj dania w porównywarce Proteiner.',
+            'Gdzie są dania makaronowe?',
+            'Carbonara, bolognese, lasagne i makaron z kurczakiem są w kategorii Polskie obiadki.',
         ],
     ],
     'mrozone-pizze': [

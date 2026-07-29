@@ -22,7 +22,7 @@ export const CATEGORY_EDITORIAL = {
 
     tluszcze: `Oleje i masła wpływają głównie na bilans tłuszczów, nie białka. Różnią się proporcją nienasyconych do nasyconych (oliwa vs masło). W diecie redukcyjnej tłuszcz jest potrzebny hormonalnie, ale jego nadmiar szybko podnosi kcal — licz łyżki do dressingu i smażenia.`,
 
-    makarony: `Dania makaronowe łączą węglowodany z białkiem (mięso, ser, ryby). Wersje z pełnego ziarna lub z dodatkiem warzyw mają więcej błonnika. Sosy kremowe i serowe znacząco podnoszą kalorie — porównaj carbonarę z makaronem z kurczakiem w naszej bazie.`,
+    makarony: `Makarony suche i typy makaronu (spaghetti, penne, fusilli, tortellini, ravioli) to głównie węglowodany — makro podajesz dla formy suchej z opakowania. Po ugotowaniu kalorie „rozrzedzają się” wodą. Dania gotowe z makaronem (carbonara, lasagne) znajdziesz w kategorii Polskie obiadki.`,
 
     fastfood: `Fast food i dania typu „na mieście” często mają więcej tłuszczu, soli i węglowodanów niż domowe odpowiedniki. Nie chodzi o zakaz, tylko o świadomą decyzję: raz na jakiś czas wpisz produkt do dziennego limitu kcal z kalkulatora i porównaj z lżejszą alternatywą w tej samej kategorii.`,
 

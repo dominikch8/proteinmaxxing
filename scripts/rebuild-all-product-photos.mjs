@@ -205,7 +205,7 @@ const CATEGORY_SUFFIX = {
     orzechy: 'nuts or seeds food',
     sosy: 'sauce or condiment food',
     tluszcze: 'cooking oil or fat food',
-    makarony: 'pasta food dish',
+    makarony: 'dry pasta noodles spaghetti penne food product',
     zupy: 'soup in bowl food',
     fastfood: 'fast food item',
     slodycze: 'candy chocolate dessert food',
