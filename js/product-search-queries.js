@@ -1720,9 +1720,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "broth pasta ingredient photo"
   ],
   "pomidorowa-z-ryzem": [
-    "tomato rice",
-    "tomato rice food",
-    "tomato rice ingredient photo"
+    "Polish tomato soup with rice pomidorowa",
+    "zupa pomidorowa ryż bowl red soup",
+    "tomato soup rice grains food"
   ],
   "pierogi-z-kapusta-i-grzybami": [
     "pierogi cabbage",

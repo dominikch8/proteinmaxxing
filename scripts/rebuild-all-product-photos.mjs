@@ -106,6 +106,7 @@ const FOOD_SUBJECT = {
     bigos: 'Polish bigos hunter stew in bowl',
     'pierogi-ruskie': 'Polish pierogi ruskie dumplings on plate',
     rosol: 'clear Polish chicken broth soup with noodles in white bowl',
+    'pomidorowa-z-ryzem': 'Polish tomato soup pomidorowa with rice in white bowl, bright red-orange tomato broth, visible white rice grains floating in soup, zupa pomidorowa z ryżem, tomato soup NOT plain rice bowl, NOT dry rice only, NOT risotto plate',
     'zupa-szczawiowa': 'Polish sorrel soup zupa szczawiowa in white bowl, bright green broth, chopped sorrel leaves, halved hard boiled egg visible, creamy green soup, NOT tripe, NOT flaki, NOT beef intestine, NO organ meat',
     'zupa-grzybowa': 'Polish mushroom soup zupa grzybowa in white bowl, creamy beige broth, sliced forest mushrooms and parsley, mushroom cream soup, NOT tripe, NOT flaki, NOT beef intestine',
     'zupa-ogorkowa': 'Polish pickle soup zupa ogórkowa in white bowl, pale yellow broth, diced pickled cucumber and dill, sour pickle soup, NOT tripe, NOT flaki, NOT beef intestine',
