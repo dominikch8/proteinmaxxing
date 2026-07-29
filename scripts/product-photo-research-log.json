@@ -1,46 +1,6 @@
 {
-  "zupa-jarzynowa": {
-    "subject": "Polish vegetable soup zupa jarzynowa in white bowl, clear golden broth, diced carrots potato celery peas, colorful vegetable soup, NOT tripe, NOT flaki, NOT beef intestine",
-    "refs": []
-  },
-  "zupa-ogorkowa": {
-    "subject": "Polish pickle soup zupa ogórkowa in white bowl, pale yellow broth, diced pickled cucumber and dill, sour pickle soup, NOT tripe, NOT flaki, NOT beef intestine",
-    "refs": []
-  },
-  "zupa-fasolowa": {
-    "subject": "Polish bean soup zupa fasolowa in white bowl, white navy beans in clear broth, carrot pieces, bean soup, NOT tripe, NOT flaki, NOT beef intestine",
-    "refs": []
-  },
-  "zupa-szczawiowa": {
-    "subject": "Polish sorrel soup zupa szczawiowa in white bowl, bright green broth, chopped sorrel leaves, halved hard boiled egg visible, creamy green soup, NOT tripe, NOT flaki, NOT beef intestine, NO organ meat",
-    "refs": []
-  },
-  "zupa-cebulowa": {
-    "subject": "French onion soup in white ceramic bowl, golden brown broth, visible caramelized onion rings, melted cheese crust on top, bread crouton, Polish zupa cebulowa, NOT tripe, NOT flaki, NOT beef intestine, NO organ meat",
-    "refs": []
-  },
-  "pho-zupa-ryzowa": {
-    "subject": "Vietnamese pho noodle soup in white bowl, clear aromatic beef broth, flat rice noodles, fresh basil lime bean sprouts, pho bo style, NOT tripe, NOT flaki, NOT beef intestine strips",
-    "refs": []
-  },
-  "zupa-dyniowa": {
-    "subject": "Polish pumpkin soup zupa dyniowa in white bowl, smooth bright orange creamy pumpkin puree soup, NOT tripe, NOT flaki, NOT beef intestine",
-    "refs": []
-  },
-  "zupa-grzybowa": {
-    "subject": "Polish mushroom soup zupa grzybowa in white bowl, creamy beige broth, sliced forest mushrooms and parsley, mushroom cream soup, NOT tripe, NOT flaki, NOT beef intestine",
-    "refs": []
-  },
-  "zupa-z-soczewicy": {
-    "subject": "Polish lentil soup zupa z soczewicy in white bowl, golden orange broth, red lentils and carrot pieces, lentil soup, NOT tripe, NOT flaki, NOT beef intestine",
-    "refs": []
-  },
-  "zupa-gulaszowa": {
-    "subject": "Hungarian goulash soup zupa gulaszowa in white bowl, deep red paprika broth, beef cubes potato carrot, goulash soup, NOT tripe, NOT flaki, NOT beef intestine",
-    "refs": []
-  },
-  "zupa-tom-yum": {
-    "subject": "Thai tom yum soup in white bowl, orange-red spicy broth, shrimp lemongrass lime leaves chili, tom yum goong, NOT tripe, NOT flaki, NOT beef intestine",
+  "pistacje-prazone-solone": {
+    "subject": "roasted salted pistachios in shells, pile of open cracked pistachio nuts with green kernels and beige shells, pistachio nuts only, NOT peanuts, NOT walnuts, NOT almonds, NOT hazelnuts",
     "refs": []
   }
 }

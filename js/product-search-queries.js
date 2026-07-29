@@ -2431,9 +2431,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "Sos curry ingredient photo"
   ],
   "pistacje-prazone-solone": [
-    "roasted",
-    "roasted food",
-    "roasted ingredient photo"
+    "roasted salted pistachios in shell",
+    "pistachio nuts pile green",
+    "pistacje solone food"
   ],
   "orzechy-laskowe-prazone": [
     "nuts hazelnut roasted",

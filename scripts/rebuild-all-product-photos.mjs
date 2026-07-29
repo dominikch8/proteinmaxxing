@@ -125,6 +125,8 @@ const FOOD_SUBJECT = {
     'orzechy-laskowe': 'hazelnuts pile',
     'orzechy-ziemne': 'roasted peanuts pile',
     'orzechy-pekan': 'pecan nuts pile',
+    'orzechy-pistacjowe': 'shelled green pistachio nuts pile, bright green pistachio kernels only',
+    'pistacje-prazone-solone': 'roasted salted pistachios in shells, pile of open cracked pistachio nuts with green kernels and beige shells, pistachio nuts only, NOT peanuts, NOT walnuts, NOT almonds, NOT hazelnuts',
     truskawki: 'fresh red strawberries',
     maliny: 'fresh red raspberries',
     rukola: 'fresh arugula leaves',
