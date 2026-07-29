@@ -190,8 +190,7 @@ const FOOD_SUBJECT = {
     'kukurydza-konserwowa': 'open metal can of canned sweet corn with yellow corn kernels in brine, canned corn product',
     'ziemniaki-tluczone': 'creamy mashed potatoes puree in a small white bowl, ziemniaki tłuczone, smooth mashed potato only, NOT whole raw potato',
     'maka-pszenna-typ-500': 'soft mound of fine white wheat flour powder only, raw flour pile, NOT bread, NOT loaf, NOT dough',
-    'tortellini-z-miesem': 'fresh tortellini pasta rings filled with meat, small ring-shaped stuffed pasta dumplings in pile, tortellini with meat filling, NOT raw steak, NOT ground meat pile, NOT beef chunk',
-    'ravioli-z-ricotta': 'fresh ravioli square pasta pillows filled with ricotta cheese, stuffed pasta dumplings, NOT cheese block only',
+    'ryz-z-kurczakiem-box': 'chicken and rice meal in rectangular black plastic takeaway food container with lid open, white rice and diced chicken pieces visible inside the box, meal prep bento box, NOT plain rice bowl without box, NOT raw chicken breast alone',
     'komosa-ryzowa-quinoa': 'pile of dry uncooked white quinoa seeds, loose tiny round beige grains, NOT bread, NOT cooked mush',
     'kasza-quinoa-gotowana': 'small mound of cooked fluffy quinoa grains with tiny seed rings, cooked kasza only, NOT bread',
     amarantus: 'pile of dry uncooked tiny cream-gold amaranth seeds, loose grain kasza, NOT snack bar, NOT puffed bar, NOT bread'
@@ -207,7 +206,7 @@ const CATEGORY_SUFFIX = {
     orzechy: 'nuts or seeds food',
     sosy: 'sauce or condiment food',
     tluszcze: 'cooking oil or fat food',
-    makarony: 'dry pasta noodles spaghetti penne food product',
+    makarony: 'pasta food dish',
     zupy: 'soup in bowl food',
     fastfood: 'fast food item',
     slodycze: 'candy chocolate dessert food',

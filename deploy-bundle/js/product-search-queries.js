@@ -1640,9 +1640,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "crispy chicken fried chicken ingredient photo"
   ],
   "ryz-z-kurczakiem-box": [
-    "rice chicken",
-    "rice chicken food",
-    "rice chicken ingredient photo"
+    "chicken rice takeaway box meal",
+    "rice chicken plastic food container",
+    "ryż kurczak box food"
   ],
   "frytki-z-serem-loaded": [
     "french fries cheese",
