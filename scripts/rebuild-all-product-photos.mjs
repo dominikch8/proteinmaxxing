@@ -143,7 +143,7 @@ const FOOD_SUBJECT = {
     'olej-kokosowy': 'refined coconut oil in glass jar or bottle with blank label, NOT bowl',
     'olej-lniany': 'flaxseed linseed oil in dark glass bottle with blank label, NOT bowl',
     'olej-sezamowy': 'sesame oil in clear glass bottle with blank label, NOT bowl',
-    smalec: 'traditional Polish smalec pork lard in small bowl with small golden-brown meat crackling pieces skwarki mixed in, NOT plain smooth white lard only',
+    smalec: 'authentic Polish smalec ze skwarkami, rough crumbly rendered pork fat spread in small bowl with many small crispy golden-brown pork cracklings embedded, pale ivory-beige greasy texture, NOT mashed potatoes NOT butter NOT smooth cream',
     maslo: 'butter stick or block',
     'maslo-ekstra-82': 'butter stick wrapped or block',
     'szpinak-swiezy': 'fresh spinach leaves',
