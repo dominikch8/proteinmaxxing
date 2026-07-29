@@ -2331,9 +2331,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "ricotta ingredient photo"
   ],
   "tortellini-z-miesem": [
-    "meat",
-    "meat food",
-    "meat ingredient photo"
+    "tortellini meat filled pasta",
+    "fresh tortellini rings stuffed pasta",
+    "tortellini z mięsem food"
   ],
   "lasagne-warzywna": [
     "lasagne",
