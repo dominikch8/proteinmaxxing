@@ -193,6 +193,7 @@ const FOOD_SUBJECT = {
     'pizza-kebab': 'round pizza kebab topped with shaved doner kebab meat strips on mozzarella tomato sauce, pizza with kebab meat, NOT a wrap NOT a burrito NOT dürüm',
     'tacos-z-wolowina': 'two soft corn tortilla tacos filled with seasoned ground beef lettuce tomato cheese, beef tacos, NOT raw steak NOT plain beef alone',
     'skrzydelka-kfc-style': 'KFC-style fried chicken wings with thick chunky craggy golden-brown breading, heavy crispy batter coating, NOT thin smooth skin wings',
+    'curry-kurczak': 'chicken pieces in thick yellow-orange curry sauce in a small white bowl, chicken curry dish, NOT plain grilled chicken breast alone',
     'kukurydza-konserwowa': 'open metal can of canned sweet corn with yellow corn kernels in brine, canned corn product',
     'ziemniaki-tluczone': 'creamy mashed potatoes puree in a small white bowl, ziemniaki tłuczone, smooth mashed potato only, NOT whole raw potato',
     'maka-pszenna-typ-500': 'soft mound of fine white wheat flour powder only, raw flour pile, NOT bread, NOT loaf, NOT dough',
