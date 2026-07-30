@@ -233,9 +233,9 @@
         return `<li>
             <button type="button" data-slug="${escapeHtml(p.slug)}">
                 <span class="sug-emoji" aria-hidden="true">${p.emoji}</span>
-                <span>
-                    <span>${escapeHtml(p.name)}</span>
-                    <span class="sug-meta">${escapeHtml(productSummary(p))}</span>
+                <span class="sug-copy">
+                    <span class="sug-name">${escapeHtml(p.name)}</span>
+                    <span class="sug-meta">${p.kcal} kcal · ${p.protein} g białka · ${p.fat} g tłuszczu</span>
                 </span>
             </button>
         </li>`;
@@ -519,6 +519,7 @@
     }
 
     function matchupSideHtml(product, side, isLead) {
+        const macro = `${product.kcal} kcal · ${product.protein} g białka · ${product.fat} g tłuszczu`;
         return `
             <div class="compare-matchup-side compare-matchup-side--${side}${isLead ? ' is-lead' : ''}" data-tilt-side="${side}">
                 ${isLead ? '<span class="compare-matchup-crown" aria-hidden="true">★</span>' : ''}
@@ -530,6 +531,7 @@
                 <span class="compare-matchup-copy">
                     <span class="compare-matchup-slot">Produkt ${side.toUpperCase()}</span>
                     <span class="compare-matchup-name">${escapeHtml(product.name)}</span>
+                    <span class="compare-matchup-meta">${escapeHtml(macro)}</span>
                 </span>
             </div>`;
     }
@@ -683,7 +685,7 @@
                 <div class="compare-glass-slot compare-glass-slot--${slot}${isWinner ? ' is-winner' : ''}">
                     <span class="compare-glass-slot-tag">${slot.toUpperCase()}</span>
                     <span class="compare-glass-slot-name">${escapeHtml(productName)}</span>
-                    ${isWinner ? '<span class="compare-glass-slot-win" aria-hidden="true">lead</span>' : ''}
+                    ${isWinner ? '<span class="compare-glass-slot-win" aria-hidden="true">★ lepsze</span>' : ''}
                 </div>`,
             track: `
                 <div class="compare-glass-track compare-glass-track--${slot}${isWinner ? ' is-winner' : ''}" style="--bar-delay:${delay}ms">
@@ -837,10 +839,14 @@
         playDashboardMotion();
     }
 
+    function renderTableHeadCell(product, side) {
+        return `<span class="compare-th-wrap compare-th-wrap--${side}"><span class="compare-th-badge compare-th-badge--${side}">${side.toUpperCase()}</span><span class="compare-th-name">${escapeHtml(product.name)}</span></span>`;
+    }
+
     function renderTable(a, b) {
         if (!tableBody) return;
-        if (thA) thA.textContent = a.name;
-        if (thB) thB.textContent = b.name;
+        if (thA) thA.innerHTML = renderTableHeadCell(a, 'a');
+        if (thB) thB.innerHTML = renderTableHeadCell(b, 'b');
 
         tableBody.innerHTML = COMPARE_METRICS.map((m) => {
             const rawA = metricRaw(a, m.key);
