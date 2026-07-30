@@ -1590,9 +1590,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "poppy cake ingredient photo"
   ],
   "chalwa-sezamowa": [
-    "halva sesame",
-    "halva sesame food",
-    "halva sesame ingredient photo"
+    "plain sesame halva no chocolate",
+    "chalwa sezamowa block food",
+    "sesame halva crumbly beige food"
   ],
   "babka-drozdzowa": [
     "Polish babka drożdżowa yeast cake",
