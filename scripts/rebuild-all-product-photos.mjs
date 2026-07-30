@@ -197,6 +197,7 @@ const FOOD_SUBJECT = {
     'paczek-z-nadzieniem': 'Polish paczek doughnut cut in half showing red jam filling inside fluffy dough, cross-section with filling visible, NOT whole uncut doughnut',
     'wafel-tortowy': 'plain round golden-beige Polish tort wafer sheet with waffle grid pattern, dry crisp wafel tortowy only, NO chocolate coating NO cream filling',
     croissant: 'classic plain golden butter croissant flaky pastry, NO chocolate NO chocolate chips NO pain au chocolat',
+    miod: 'golden amber honey in clear glass honey jar with blank label, pure honey only, NO chocolate bar NO candy NO nougat',
     'kukurydza-konserwowa': 'open metal can of canned sweet corn with yellow corn kernels in brine, canned corn product',
     'ziemniaki-tluczone': 'creamy mashed potatoes puree in a small white bowl, ziemniaki tłuczone, smooth mashed potato only, NOT whole raw potato',
     'maka-pszenna-typ-500': 'soft mound of fine white wheat flour powder only, raw flour pile, NOT bread, NOT loaf, NOT dough',
@@ -210,7 +211,8 @@ const FOOD_SUBJECT = {
     'pad-thai-z-kurczakiem': 'Thai pad thai chicken noodle dish on white plate, stir fried flat rice noodles with chicken pieces bean sprouts crushed peanuts lime wedge, complete pad thai meal with noodles, NOT grilled chicken breast alone, NOT raw chicken fillet, NOT plain meat without noodles',
     'bulka-z-parowka': 'Polish supermarket bakery bułka z parówką, golden baked soft yeast dough roll with whole frankfurter sausage baked inside, oblong parowka w ciescie pastry from bakery shelf, sausage peeking from ends, simple plain baked snack, NOT American hot dog in split bun, NOT mustard hot dog, NOT sausage sub with sauce and onions, NOT currywurst',
     'babka-drozdzowa': 'Polish babka drożdżowa yeast cake, tall cylindrical bundt shape with vertical fluted ridged sides, golden brown soft sweet yeast cake whole piece, traditional Polish bakery babka drozdzowa with smooth top, NOT bagel ring, NOT donut, NOT chocolate candy bar, NOT wafer caramel bar, NOT chocolate snack baton, NOT protein bar',
-    'ciastka-maslane': 'plain golden butter cookies ciastka maslane, small round pale yellow shortbread biscuits pile, simple Polish maślane ciasteczka without chocolate coating, crumbly butter cookies only, NOT chocolate covered cookies, NOT chocolate dipped biscuits, NOT Oreo, NOT chocolate cookies, NOT dark chocolate glaze'
+    'ciastka-maslane': 'plain golden butter cookies ciastka maslane, small round pale yellow shortbread biscuits pile, simple Polish maślane ciasteczka without chocolate coating, crumbly butter cookies only, NOT chocolate covered cookies, NOT chocolate dipped biscuits, NOT Oreo, NOT chocolate cookies, NOT dark chocolate glaze',
+    'chalwa-sezamowa': 'plain sesame halva chalwa sezamowa block, beige crumbly fibrous sesame candy with visible sesame texture, Polish halva slice without chocolate coating, tan sesame sweet block only, NOT chocolate coated halva, NOT chocolate covered halva, NOT milk chocolate layer, NOT chocolate bar'
 };
 
 const CATEGORY_SUFFIX = {
