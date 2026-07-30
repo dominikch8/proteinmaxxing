@@ -1816,10 +1816,10 @@ export const PRODUCT_SEARCH_QUERIES = {
     "zupa szczawiowa food"
   ],
   "zupa-cebulowa": [
-    "onion soup bowl caramelized onions",
+    "caramelized onion soup bowl cooked",
+    "French onion soup cooked onions",
     "zupa cebulowa",
-    "Polish onion soup food",
-    "French onion soup no cheese"
+    "Polish onion soup food"
   ],
   "krem-brokulowy": [
     "spread",

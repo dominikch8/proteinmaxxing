@@ -112,7 +112,7 @@ const FOOD_SUBJECT = {
     'pho-zupa-ryzowa': 'Vietnamese pho noodle soup in white bowl, clear aromatic beef broth, flat rice noodles, fresh basil lime bean sprouts, pho bo style, NOT tripe, NOT flaki, NOT beef intestine strips',
     'zupa-gulaszowa': 'Hungarian goulash soup zupa gulaszowa in white bowl, deep red paprika broth, beef cubes potato carrot, goulash soup, NOT tripe, NOT flaki, NOT beef intestine',
     'zupa-z-soczewicy': 'Polish lentil soup zupa z soczewicy in white bowl, golden orange broth, red lentils and carrot pieces, lentil soup, NOT tripe, NOT flaki, NOT beef intestine',
-    'zupa-cebulowa': 'Polish onion soup zupa cebulowa in white ceramic bowl, light golden brown clear broth, many thin translucent caramelized onion strips evenly mixed in soup, smooth uniform liquid surface, small onion pieces only, NO dark meat chunks, NO bread crouton, NO cheese crust, NO floating bread, NOT tripe, NOT flaki',
+    'zupa-cebulowa': 'Polish onion soup zupa cebulowa in white ceramic bowl, rich amber golden broth, many small soft wilted deeply cooked caramelized onion bits evenly throughout soup, onions tender translucent golden brown from long simmering, soft broken onion pieces NOT whole rings, NO raw white onion chunks, NO red purple onion, NO leek stalks, NO bread, NO cheese, uniform soup surface',
     'ser-mozzarella': 'two or three fresh white mozzarella cheese balls ciliegine, smooth wet surface, mozzarella only, NO packaging',
     'mleko-2': 'glass of white cow milk',
     'jajko-kurze-cale': 'ONE whole intact brown chicken egg with unbroken shell, whole egg only, NOT cracked, NOT open, NOT yolk',
