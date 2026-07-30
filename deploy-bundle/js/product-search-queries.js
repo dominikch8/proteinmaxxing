@@ -594,9 +594,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "rice brown ingredient photo"
   ],
   "makaron-pszenny-suchy": [
-    "pasta wheat",
-    "pasta wheat food",
-    "pasta wheat ingredient photo"
+    "dry wheat pasta uncooked",
+    "spaghetti dry nest pasta",
+    "makaron pszenny suchy food"
   ],
   "bulgur-suchy": [
     "bulgur",
@@ -1410,9 +1410,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "pasta ingredient photo"
   ],
   "makaron-swiderki-suchy": [
-    "pasta",
-    "pasta food",
-    "pasta ingredient photo"
+    "fusilli dry spiral pasta",
+    "rotini corkscrew pasta dry",
+    "swiderki makaron spiral food"
   ],
   "makaron-penne-suchy": [
     "pasta penne",
@@ -1665,9 +1665,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "instant instant noodles ingredient photo"
   ],
   "makaron-lazanki-suchy": [
-    "pasta lasagna",
-    "pasta lasagna food",
-    "pasta lasagna ingredient photo"
+    "lazanki pasta squares dry",
+    "Polish lazanki flat square pasta",
+    "lazanki noodles NOT lasagna dish"
   ],
   "makaron-fusilli-suchy": [
     "pasta fusilli",
@@ -2316,9 +2316,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "tom yum soup bowl food"
   ],
   "makaron-udon": [
-    "pasta",
-    "pasta food",
-    "pasta ingredient photo"
+    "thick udon noodles white chunky",
+    "fat Japanese udon wheat noodles pile",
+    "udon noodle strands thick round food"
   ],
   "gnocchi": [
     "Gnocchi",
