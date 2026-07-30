@@ -191,6 +191,7 @@ const FOOD_SUBJECT = {
     'falafel-smazony': 'pile of round deep-fried falafel balls, golden-brown crispy chickpea falafel, NOT chicken NOT drumstick NOT meat',
     'pizza-capricciosa': 'classic Pizza Capricciosa with pink cooked ham slices and white button mushrooms on mozzarella tomato sauce, NO salami NO pepperoni',
     'pizza-kebab': 'round pizza kebab topped with shaved doner kebab meat strips on mozzarella tomato sauce, pizza with kebab meat, NOT a wrap NOT a burrito NOT dürüm',
+    'tacos-z-wolowina': 'two soft corn tortilla tacos filled with seasoned ground beef lettuce tomato cheese, beef tacos, NOT raw steak NOT plain beef alone',
     'kukurydza-konserwowa': 'open metal can of canned sweet corn with yellow corn kernels in brine, canned corn product',
     'ziemniaki-tluczone': 'creamy mashed potatoes puree in a small white bowl, ziemniaki tłuczone, smooth mashed potato only, NOT whole raw potato',
     'maka-pszenna-typ-500': 'soft mound of fine white wheat flour powder only, raw flour pile, NOT bread, NOT loaf, NOT dough',
@@ -201,7 +202,8 @@ const FOOD_SUBJECT = {
     'makaron-swiderki-suchy': 'dry fusilli rotini pasta corkscrew spiral swiderki shape, short tight twisted pasta spirals pile uncooked yellow durum wheat, classic fusilli spirals only, NOT tagliatelle ribbons, NOT strozzapreti twists, NOT penne tubes, NOT cooked pasta dish',
     'makaron-pszenny-suchy': 'dry uncooked wheat pasta pale yellow durum, nest of dry spaghetti or short pasta shapes pile, basic makaron pszenny suchy, NOT penne tubes only, NOT whole grain brown penne, NOT cooked pasta with sauce',
     'makaron-lazanki-suchy': 'Polish lazanki dry pasta small thin flat square noodle flakes, dry lazanki pasta squares pile, NOT lasagna baked dish, NOT lasagna layers with meat sauce, NOT wide lasagna sheets with cheese',
-    'pad-thai-z-kurczakiem': 'Thai pad thai chicken noodle dish on white plate, stir fried flat rice noodles with chicken pieces bean sprouts crushed peanuts lime wedge, complete pad thai meal with noodles, NOT grilled chicken breast alone, NOT raw chicken fillet, NOT plain meat without noodles'
+    'pad-thai-z-kurczakiem': 'Thai pad thai chicken noodle dish on white plate, stir fried flat rice noodles with chicken pieces bean sprouts crushed peanuts lime wedge, complete pad thai meal with noodles, NOT grilled chicken breast alone, NOT raw chicken fillet, NOT plain meat without noodles',
+    'bulka-z-parowka': 'Polish supermarket bakery bułka z parówką, golden baked soft yeast dough roll with whole frankfurter sausage baked inside, oblong parowka w ciescie pastry from bakery shelf, sausage peeking from ends, simple plain baked snack, NOT American hot dog in split bun, NOT mustard hot dog, NOT sausage sub with sauce and onions, NOT currywurst'
 };
 
 const CATEGORY_SUFFIX = {
