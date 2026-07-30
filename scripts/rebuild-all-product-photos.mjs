@@ -200,7 +200,8 @@ const FOOD_SUBJECT = {
     'makaron-udon': 'uncooked dry thick white Japanese udon noodle sticks, fat straight cylindrical wheat noodles about 8 to 12mm thick, bundle of dry udon strands in loose pile, chunky white udon only, NO chopsticks, NO bowl, NO soup, NOT thin somen, NOT thin ramen, NOT spaghetti, NOT tagliatelle',
     'makaron-swiderki-suchy': 'dry fusilli rotini pasta corkscrew spiral swiderki shape, short tight twisted pasta spirals pile uncooked yellow durum wheat, classic fusilli spirals only, NOT tagliatelle ribbons, NOT strozzapreti twists, NOT penne tubes, NOT cooked pasta dish',
     'makaron-pszenny-suchy': 'dry uncooked wheat pasta pale yellow durum, nest of dry spaghetti or short pasta shapes pile, basic makaron pszenny suchy, NOT penne tubes only, NOT whole grain brown penne, NOT cooked pasta with sauce',
-    'makaron-lazanki-suchy': 'Polish lazanki dry pasta small thin flat square noodle flakes, dry lazanki pasta squares pile, NOT lasagna baked dish, NOT lasagna layers with meat sauce, NOT wide lasagna sheets with cheese'
+    'makaron-lazanki-suchy': 'Polish lazanki dry pasta small thin flat square noodle flakes, dry lazanki pasta squares pile, NOT lasagna baked dish, NOT lasagna layers with meat sauce, NOT wide lasagna sheets with cheese',
+    'pad-thai-z-kurczakiem': 'Thai pad thai chicken noodle dish on white plate, stir fried flat rice noodles with chicken pieces bean sprouts crushed peanuts lime wedge, complete pad thai meal with noodles, NOT grilled chicken breast alone, NOT raw chicken fillet, NOT plain meat without noodles'
 };
 
 const CATEGORY_SUFFIX = {

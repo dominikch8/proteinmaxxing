@@ -1956,9 +1956,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "McFlurry Oreo ingredient photo"
   ],
   "pad-thai-z-kurczakiem": [
-    "chicken",
-    "chicken food",
-    "chicken ingredient photo"
+    "pad thai chicken rice noodles",
+    "pad thai noodle dish chicken",
+    "pad thai z kurczakiem food"
   ],
   "curry-kurczak": [
     "chicken",
