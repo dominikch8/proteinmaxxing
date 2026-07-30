@@ -56,7 +56,6 @@ const FOOD_SUBJECT = {
     'kinder-maxi-king': 'Kinder Maxi King cream chocolate hazelnut candy bar unwrapped',
     'kinder-country': 'Kinder Country milk cereal chocolate candy bar unwrapped',
     picnic: 'Picnic peanut raisin caramel chocolate candy bar unwrapped',
-    'corny-big': 'Corny Big cereal honey granola candy bar unwrapped',
     toblerone: 'Toblerone triangular honey almond nougat chocolate bar pieces',
     princessa: 'Princessa Polish chocolate wafer candy bar unwrapped',
     'kitkat-chunky': 'KitKat Chunky thick chocolate wafer candy bar unwrapped',
