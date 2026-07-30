@@ -194,6 +194,7 @@ const FOOD_SUBJECT = {
     'tacos-z-wolowina': 'two soft corn tortilla tacos filled with seasoned ground beef lettuce tomato cheese, beef tacos, NOT raw steak NOT plain beef alone',
     'skrzydelka-kfc-style': 'KFC-style fried chicken wings with thick chunky craggy golden-brown breading, heavy crispy batter coating, NOT thin smooth skin wings',
     'curry-kurczak': 'chicken pieces in thick yellow-orange curry sauce in a small white bowl, chicken curry dish, NOT plain grilled chicken breast alone',
+    'paczek-z-nadzieniem': 'Polish paczek doughnut cut in half showing red jam filling inside fluffy dough, cross-section with filling visible, NOT whole uncut doughnut',
     'kukurydza-konserwowa': 'open metal can of canned sweet corn with yellow corn kernels in brine, canned corn product',
     'ziemniaki-tluczone': 'creamy mashed potatoes puree in a small white bowl, ziemniaki tłuczone, smooth mashed potato only, NOT whole raw potato',
     'maka-pszenna-typ-500': 'soft mound of fine white wheat flour powder only, raw flour pile, NOT bread, NOT loaf, NOT dough',
@@ -205,7 +206,8 @@ const FOOD_SUBJECT = {
     'makaron-pszenny-suchy': 'dry uncooked wheat pasta pale yellow durum, nest of dry spaghetti or short pasta shapes pile, basic makaron pszenny suchy, NOT penne tubes only, NOT whole grain brown penne, NOT cooked pasta with sauce',
     'makaron-lazanki-suchy': 'Polish lazanki dry pasta small thin flat square noodle flakes, dry lazanki pasta squares pile, NOT lasagna baked dish, NOT lasagna layers with meat sauce, NOT wide lasagna sheets with cheese',
     'pad-thai-z-kurczakiem': 'Thai pad thai chicken noodle dish on white plate, stir fried flat rice noodles with chicken pieces bean sprouts crushed peanuts lime wedge, complete pad thai meal with noodles, NOT grilled chicken breast alone, NOT raw chicken fillet, NOT plain meat without noodles',
-    'bulka-z-parowka': 'Polish supermarket bakery bułka z parówką, golden baked soft yeast dough roll with whole frankfurter sausage baked inside, oblong parowka w ciescie pastry from bakery shelf, sausage peeking from ends, simple plain baked snack, NOT American hot dog in split bun, NOT mustard hot dog, NOT sausage sub with sauce and onions, NOT currywurst'
+    'bulka-z-parowka': 'Polish supermarket bakery bułka z parówką, golden baked soft yeast dough roll with whole frankfurter sausage baked inside, oblong parowka w ciescie pastry from bakery shelf, sausage peeking from ends, simple plain baked snack, NOT American hot dog in split bun, NOT mustard hot dog, NOT sausage sub with sauce and onions, NOT currywurst',
+    'babka-drozdzowa': 'Polish babka drożdżowa yeast cake, tall golden baked bundt shaped sweet bread with fluted ridged sides, soft fluffy yeast cake whole or slice, traditional Polish bakery babka drozdzowa, NOT chocolate candy bar, NOT wafer caramel bar, NOT chocolate snack baton, NOT protein bar, NOT packaged candy'
 };
 
 const CATEGORY_SUFFIX = {
