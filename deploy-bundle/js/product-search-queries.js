@@ -1891,9 +1891,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "fried ingredient photo"
   ],
   "burrito-z-kurczakiem": [
-    "chicken",
-    "chicken food",
-    "chicken ingredient photo"
+    "chicken burrito wrapped tortilla",
+    "burrito z kurczakiem food",
+    "Mexican chicken burrito roll"
   ],
   "sushi-maki-z-lososiem": [
     "salmon",

@@ -83,6 +83,7 @@ const FOOD_SUBJECT = {
     'czekolada-100': '100 percent dark chocolate bar',
     'm-m-s': 'colorful chocolate coated candy dragees like M and M peanut chocolates, small round red blue yellow green brown candy pieces in pile, chocolate lentils, NOT cake, NOT pancake, NOT cookie, NOT muffin, NOT dessert slice, NOT sponge cake',
     hamburger: 'classic beef hamburger with bun lettuce tomato',
+    'burrito-z-kurczakiem': 'chicken burrito wrapped in flour tortilla, large rolled burrito with visible tortilla wrap and chicken filling, Mexican burrito food, NOT raw chicken breast, NOT chicken fillet alone, NOT grilled chicken piece',
     'big-mac-styl': 'double cheeseburger with sesame bun',
     'whopper-styl': 'flame grilled beef burger',
     'hot-dog': 'hot dog sausage in bun with mustard',

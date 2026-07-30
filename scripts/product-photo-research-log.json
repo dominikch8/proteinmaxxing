@@ -1,31 +1,6 @@
 {
-  "m-m-s": {
-    "subject": "colorful chocolate coated candy dragees like M and M peanut chocolates, small round red blue yellow green brown candy pieces in pile, chocolate lentils, NOT cake, NOT pancake, NOT cookie, NOT muffin, NOT dessert slice, NOT sponge cake",
-    "refs": [
-      {
-        "source": "commons",
-        "title": "Ab food 06.jpg",
-        "query": "M&M's jedzenie",
-        "score": 3
-      },
-      {
-        "source": "commons",
-        "title": "Good Food Display - NCI Visuals Online.jpg",
-        "query": "M&M's jedzenie",
-        "score": 3
-      },
-      {
-        "source": "commons",
-        "title": "Egyptian food Koshary.jpg",
-        "query": "M&M's jedzenie",
-        "score": 3
-      },
-      {
-        "source": "commons",
-        "title": "Christmas food 001.jpg",
-        "query": "M&M's jedzenie",
-        "score": 3
-      }
-    ]
+  "burrito-z-kurczakiem": {
+    "subject": "chicken burrito wrapped in flour tortilla, large rolled burrito with visible tortilla wrap and chicken filling, Mexican burrito food, NOT raw chicken breast, NOT chicken fillet alone, NOT grilled chicken piece",
+    "refs": []
   }
 }
