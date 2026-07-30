@@ -1,6 +1,31 @@
 {
-  "ryz-z-kurczakiem-box": {
-    "subject": "chicken and rice meal in rectangular black plastic takeaway food container with lid open, white rice and diced chicken pieces visible inside the box, meal prep bento box, NOT plain rice bowl without box, NOT raw chicken breast alone",
-    "refs": []
+  "m-m-s": {
+    "subject": "colorful chocolate coated candy dragees like M and M peanut chocolates, small round red blue yellow green brown candy pieces in pile, chocolate lentils, NOT cake, NOT pancake, NOT cookie, NOT muffin, NOT dessert slice, NOT sponge cake",
+    "refs": [
+      {
+        "source": "commons",
+        "title": "Ab food 06.jpg",
+        "query": "M&M's jedzenie",
+        "score": 3
+      },
+      {
+        "source": "commons",
+        "title": "Good Food Display - NCI Visuals Online.jpg",
+        "query": "M&M's jedzenie",
+        "score": 3
+      },
+      {
+        "source": "commons",
+        "title": "Egyptian food Koshary.jpg",
+        "query": "M&M's jedzenie",
+        "score": 3
+      },
+      {
+        "source": "commons",
+        "title": "Christmas food 001.jpg",
+        "query": "M&M's jedzenie",
+        "score": 3
+      }
+    ]
   }
 }

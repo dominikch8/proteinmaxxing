@@ -2401,9 +2401,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "Galaretka owocowa ingredient photo"
   ],
   "m-m-s": [
-    "M&M's",
-    "M&M's food",
-    "M&M's ingredient photo"
+    "M and M chocolate candy coated dragees",
+    "colorful chocolate lentils pile peanut",
+    "MMs candy chocolates food"
   ],
   "sos-sriracha": [
     "Sos sriracha",

@@ -81,6 +81,7 @@ const FOOD_SUBJECT = {
     'czekolada-mleczna': 'milk chocolate bar broken squares',
     'czekolada-gorzka-80': 'dark 80 percent chocolate bar squares',
     'czekolada-100': '100 percent dark chocolate bar',
+    'm-m-s': 'colorful chocolate coated candy dragees like M and M peanut chocolates, small round red blue yellow green brown candy pieces in pile, chocolate lentils, NOT cake, NOT pancake, NOT cookie, NOT muffin, NOT dessert slice, NOT sponge cake',
     hamburger: 'classic beef hamburger with bun lettuce tomato',
     'big-mac-styl': 'double cheeseburger with sesame bun',
     'whopper-styl': 'flame grilled beef burger',
