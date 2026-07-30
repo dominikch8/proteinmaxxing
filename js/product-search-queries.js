@@ -1609,11 +1609,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "Polish ciastka maslane shortbread",
     "golden butter biscuits plain food"
   ],
-  "rocky-road": [
-    "rocky road",
-    "rocky road food",
-    "rocky road ingredient photo"
-  ],
+
   "pizza-pepperoni": [
     "pizza pepperoni",
     "pizza pepperoni food",
