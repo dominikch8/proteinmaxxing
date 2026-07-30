@@ -190,6 +190,7 @@ const FOOD_SUBJECT = {
     'quesadilla-z-kurczakiem': 'chicken quesadilla: golden toasted flour tortilla folded in half, melted cheese and grilled chicken visible at the cut edge, NOT plain chicken meat alone',
     'falafel-smazony': 'pile of round deep-fried falafel balls, golden-brown crispy chickpea falafel, NOT chicken NOT drumstick NOT meat',
     'pizza-capricciosa': 'classic Pizza Capricciosa with pink cooked ham slices and white button mushrooms on mozzarella tomato sauce, NO salami NO pepperoni',
+    'pizza-kebab': 'round pizza kebab topped with shaved doner kebab meat strips on mozzarella tomato sauce, pizza with kebab meat, NOT a wrap NOT a burrito NOT dürüm',
     'kukurydza-konserwowa': 'open metal can of canned sweet corn with yellow corn kernels in brine, canned corn product',
     'ziemniaki-tluczone': 'creamy mashed potatoes puree in a small white bowl, ziemniaki tłuczone, smooth mashed potato only, NOT whole raw potato',
     'maka-pszenna-typ-500': 'soft mound of fine white wheat flour powder only, raw flour pile, NOT bread, NOT loaf, NOT dough',
