@@ -785,10 +785,6 @@ body.compare-body.is-ready .compare-stage {
     z-index: 10000;
 }
 
-.compare-stage {
-    overflow: visible;
-}
-
 .compare-page.main-content {
     overflow: visible;
 }

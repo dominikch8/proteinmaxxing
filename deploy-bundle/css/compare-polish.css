@@ -15,9 +15,15 @@
 .compare-stage {
     padding: 26px 24px 24px;
     border-radius: 24px;
+    overflow: hidden;
     box-shadow:
         0 1px 0 rgba(255, 255, 255, 0.85) inset,
         0 20px 50px rgba(15, 23, 42, 0.07);
+}
+
+.compare-stage::before,
+.compare-stage::after {
+    border-radius: inherit;
 }
 
 .compare-field {
