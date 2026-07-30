@@ -233,9 +233,9 @@
         return `<li>
             <button type="button" data-slug="${escapeHtml(p.slug)}">
                 <span class="sug-emoji" aria-hidden="true">${p.emoji}</span>
-                <span>
-                    <span>${escapeHtml(p.name)}</span>
-                    <span class="sug-meta">${escapeHtml(productSummary(p))}</span>
+                <span class="sug-copy">
+                    <span class="sug-name">${escapeHtml(p.name)}</span>
+                    <span class="sug-meta">${p.kcal} kcal · ${p.protein} g białka · ${p.fat} g tłuszczu</span>
                 </span>
             </button>
         </li>`;
@@ -519,9 +519,10 @@
     }
 
     function matchupSideHtml(product, side, isLead) {
+        const macro = `${product.kcal} kcal · ${product.protein} g białka · ${product.carbs} g węgli · ${product.fat} g tłuszczu`;
         return `
             <div class="compare-matchup-side compare-matchup-side--${side}${isLead ? ' is-lead' : ''}" data-tilt-side="${side}">
-                ${isLead ? '<span class="compare-matchup-crown" aria-hidden="true">★</span>' : ''}
+                ${isLead ? '<span class="compare-matchup-crown" aria-hidden="true" title="Prowadzi w kategoriach">★</span>' : ''}
                 <span class="compare-matchup-media" aria-hidden="true">
                     <span class="compare-matchup-media-glow"></span>
                     <img class="compare-matchup-img" data-matchup-img="${side}" alt="" width="48" height="48" decoding="async">
@@ -530,6 +531,7 @@
                 <span class="compare-matchup-copy">
                     <span class="compare-matchup-slot">Produkt ${side.toUpperCase()}</span>
                     <span class="compare-matchup-name">${escapeHtml(product.name)}</span>
+                    <span class="compare-matchup-meta">${escapeHtml(macro)}</span>
                 </span>
             </div>`;
     }
@@ -601,10 +603,10 @@
         const pctB = Math.round((winsB / scored) * 100);
         const lead =
             winsA === winsB
-                ? 'Remis w kategoriach punktowanych'
+                ? 'Remis w kategoriach makro'
                 : winsA > winsB
-                  ? `${escapeHtml(a.name)} prowadzi`
-                  : `${escapeHtml(b.name)} prowadzi`;
+                  ? `${escapeHtml(a.name)} wygrywa więcej kategorii`
+                  : `${escapeHtml(b.name)} wygrywa więcej kategorii`;
         const leadSide = winsA === winsB ? 'draw' : winsA > winsB ? 'a' : 'b';
 
         scorelineEl.hidden = false;
@@ -619,7 +621,7 @@
             </div>
             <div class="compare-scoreline-mid">
                 <span class="compare-scoreline-score"><span data-count-mid="a">0</span><span class="compare-scoreline-score-sep">:</span><span data-count-mid="b">0</span></span>
-                <span class="compare-scoreline-caption">${leadSide === 'draw' ? 'remis' : 'prowadzi'}</span>
+                <span class="compare-scoreline-caption">${leadSide === 'draw' ? 'remis kategorii' : 'wygrane kategorie'}</span>
             </div>
             <div class="compare-scoreline-side compare-scoreline-side--b">
                 <span class="compare-scoreline-label">Produkt B</span>
@@ -683,7 +685,7 @@
                 <div class="compare-glass-slot compare-glass-slot--${slot}${isWinner ? ' is-winner' : ''}">
                     <span class="compare-glass-slot-tag">${slot.toUpperCase()}</span>
                     <span class="compare-glass-slot-name">${escapeHtml(productName)}</span>
-                    ${isWinner ? '<span class="compare-glass-slot-win" aria-hidden="true">lead</span>' : ''}
+                    ${isWinner ? '<span class="compare-glass-slot-win" aria-hidden="true">lepsze</span>' : ''}
                 </div>`,
             track: `
                 <div class="compare-glass-track compare-glass-track--${slot}${isWinner ? ' is-winner' : ''}" style="--bar-delay:${delay}ms">
@@ -774,8 +776,8 @@
         return `
             <div class="compare-glass-chart" role="img" aria-label="Wykres składników na 100 g: ${escapeHtml(a.name)} i ${escapeHtml(b.name)}">
                 <div class="compare-glass-chart-head">
-                    <p class="compare-glass-chart-kicker">Arena makro</p>
-                    <p class="compare-glass-chart-title">Pojedynek wartości na 100&nbsp;g</p>
+                    <p class="compare-glass-chart-kicker">Wykres porównawczy</p>
+                    <p class="compare-glass-chart-title">Makroskładniki na 100&nbsp;g</p>
                 </div>
                 <div class="compare-glass-chart-body">
                     ${rows}
@@ -837,10 +839,14 @@
         playDashboardMotion();
     }
 
+    function renderTableHeadCell(product, side) {
+        return `<span class="compare-th-wrap compare-th-wrap--${side}"><span class="compare-th-badge compare-th-badge--${side}">${side.toUpperCase()}</span><span class="compare-th-name">${escapeHtml(product.name)}</span></span>`;
+    }
+
     function renderTable(a, b) {
         if (!tableBody) return;
-        if (thA) thA.textContent = a.name;
-        if (thB) thB.textContent = b.name;
+        if (thA) thA.innerHTML = renderTableHeadCell(a, 'a');
+        if (thB) thB.innerHTML = renderTableHeadCell(b, 'b');
 
         tableBody.innerHTML = COMPARE_METRICS.map((m) => {
             const rawA = metricRaw(a, m.key);
@@ -849,10 +855,11 @@
             const vb = rawB ?? 0;
             const winA = metricWinner(va, vb, m.key, rawA, rawB) === 'a';
             const winB = metricWinner(va, vb, m.key, rawA, rawB) === 'b';
+            const hint = m.hint ? `<span class="compare-row-hint">${escapeHtml(m.hint)}</span>` : '';
             return `<tr${m.neutral ? ' class="compare-table-row--muted"' : ''}>
-                <th scope="row">${escapeHtml(m.labelFull || m.label)}</th>
-                <td class="${winA ? 'cell-winner cell-winner--a' : ''}">${formatMetricLabel(a, m)}</td>
-                <td class="${winB ? 'cell-winner cell-winner--b' : ''}">${formatMetricLabel(b, m)}</td>
+                <th scope="row"><span class="compare-row-label">${escapeHtml(m.labelFull || m.label)}</span>${hint}</th>
+                <td class="${winA ? 'cell-winner cell-winner--a' : ''}">${formatMetricLabel(a, m)}${winA ? '<span class="compare-cell-badge">Lepsze</span>' : ''}</td>
+                <td class="${winB ? 'cell-winner cell-winner--b' : ''}">${formatMetricLabel(b, m)}${winB ? '<span class="compare-cell-badge">Lepsze</span>' : ''}</td>
             </tr>`;
         }).join('');
 
@@ -868,9 +875,25 @@
         );
     }
 
+    function updateSteps() {
+        const steps = document.querySelectorAll('.compare-steps-item');
+        if (!steps.length) return;
+        const ready = Boolean(state.a && state.b);
+        steps.forEach((el, index) => {
+            el.classList.remove('is-active', 'is-done');
+            if (!ready) {
+                if (index === 0) el.classList.add('is-active');
+                return;
+            }
+            el.classList.add('is-done');
+            if (index === 1) el.classList.add('is-active');
+        });
+    }
+
     function renderComparison() {
         const { a, b } = state;
         if (!a || !b) {
+            updateSteps();
             if (emptyEl) emptyEl.hidden = false;
             if (sectionEl) {
                 sectionEl.hidden = true;
@@ -882,6 +905,7 @@
             }
             return;
         }
+        updateSteps();
         if (emptyEl) emptyEl.hidden = true;
         if (sectionEl) {
             const firstShow = sectionEl.hidden;
