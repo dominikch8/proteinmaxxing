@@ -1186,8 +1186,8 @@
         "slug": "czekolada-mleczna",
         "name": "Czekolada mleczna",
         "category": "slodycze",
-        "subject": "chocolate milk",
-        "prompt": "Photorealistic ecommerce food photo: chocolate milk. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "subject": "solid rectangular milk chocolate bar broken squares, solid chocolate, NOT a drink NOT cocoa mug",
+        "prompt": "Photorealistic ecommerce food photo: solid rectangular milk chocolate bar broken squares, solid chocolate, NOT a drink NOT cocoa mug. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "czekolada-gorzka-80",
@@ -1221,8 +1221,8 @@
         "slug": "lody-waniliowe",
         "name": "Lody waniliowe",
         "category": "slodycze",
-        "subject": "ice cream vanilla, candy chocolate dessert",
-        "prompt": "Photorealistic ecommerce food photo: ice cream vanilla, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "subject": "two scoops vanilla ice cream in white bowl, pale cream, NO chocolate sauce NO chocolate chips",
+        "prompt": "Photorealistic ecommerce food photo: two scoops vanilla ice cream in white bowl, pale cream, NO chocolate sauce NO chocolate chips. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "paczek-z-nadzieniem",
@@ -1270,8 +1270,8 @@
         "slug": "krakersy-pelnoziarniste",
         "name": "Krakersy pełnoziarniste",
         "category": "slodycze",
-        "subject": "crackers, candy chocolate dessert",
-        "prompt": "Photorealistic ecommerce food photo: crackers, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "subject": "plain whole grain crackers stack only, NO filling NO cream NO toppings between crackers",
+        "prompt": "Photorealistic ecommerce food photo: plain whole grain crackers stack only, NO filling NO cream NO toppings between crackers. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "popcorn-solony-gotowy",
@@ -2173,8 +2173,8 @@
         "slug": "dzem-truskawkowy",
         "name": "Dżem truskawkowy",
         "category": "slodycze",
-        "subject": "jam strawberry, candy chocolate dessert",
-        "prompt": "Photorealistic ecommerce food photo: jam strawberry, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "subject": "strawberry jam in clear glass jar with blank label, classic jam jar, NO chocolate",
+        "prompt": "Photorealistic ecommerce food photo: strawberry jam in clear glass jar with blank label, classic jam jar, NO chocolate. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "croissant",
@@ -2187,8 +2187,8 @@
         "slug": "sernik-kawalek",
         "name": "Sernik (kawałek)",
         "category": "slodycze",
-        "subject": "cheesecake",
-        "prompt": "Photorealistic ecommerce food photo: cheesecake. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "subject": "triangular wedge slice of cheesecake with creamy white filling, NOT round whole cake",
+        "prompt": "Photorealistic ecommerce food photo: triangular wedge slice of cheesecake with creamy white filling, NOT round whole cake. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "szarlotka-kawalek",
@@ -2208,8 +2208,8 @@
         "slug": "makowiec",
         "name": "Makowiec",
         "category": "slodycze",
-        "subject": "poppy cake, candy chocolate dessert",
-        "prompt": "Photorealistic ecommerce food photo: poppy cake, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "subject": "typical round cross-section slice of Polish makowiec poppy seed roll cake",
+        "prompt": "Photorealistic ecommerce food photo: typical round cross-section slice of Polish makowiec poppy seed roll cake. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "chalwa-sezamowa",
@@ -3319,10 +3319,10 @@
     },
     {
         "slug": "galaretka-owocowa",
-        "name": "Galaretka owocowa",
+        "name": "Galareta owocowa",
         "category": "slodycze",
-        "subject": "Galaretka owocowa, candy chocolate dessert",
-        "prompt": "Photorealistic ecommerce food photo: Galaretka owocowa, candy chocolate dessert. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "subject": "plain translucent red fruit gelatin jelly dessert in bowl, galareta owocowa, NO chocolate coating",
+        "prompt": "Photorealistic ecommerce food photo: plain translucent red fruit gelatin jelly dessert in bowl, galareta owocowa, NO chocolate coating. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "m-m-s",
@@ -3524,8 +3524,8 @@
         "slug": "czekolada-100",
         "name": "Czekolada 100%",
         "category": "slodycze",
-        "subject": "chocolate",
-        "prompt": "Photorealistic ecommerce food photo: chocolate. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "subject": "solid rectangular 100 percent dark chocolate bar tablet, solid chocolate piece, NOT a drink",
+        "prompt": "Photorealistic ecommerce food photo: solid rectangular 100 percent dark chocolate bar tablet, solid chocolate piece, NOT a drink. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "guseppe-szynka-i-pieczarki",

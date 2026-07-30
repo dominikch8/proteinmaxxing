@@ -2392,9 +2392,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "Biszkopty ingredient photo"
   ],
   "galaretka-owocowa": [
-    "Galaretka owocowa",
-    "Galaretka owocowa food",
-    "Galaretka owocowa ingredient photo"
+    "Galareta owocowa",
+    "Galareta owocowa food",
+    "Galareta owocowa ingredient photo"
   ],
   "m-m-s": [
     "M and M chocolate candy coated dragees",
