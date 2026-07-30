@@ -1976,11 +1976,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "Jajecznica na maśle food",
     "Jajecznica na maśle ingredient photo"
   ],
-  "herbatniki-digestive": [
-    "cookies",
-    "cookies food",
-    "cookies ingredient photo"
-  ],
+
   "prince-polo": [
     "Prince Polo",
     "Prince Polo food",
