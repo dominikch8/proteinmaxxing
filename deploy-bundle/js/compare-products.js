@@ -877,21 +877,30 @@
     function renderComparison() {
         const { a, b } = state;
         if (!a || !b) {
-            if (emptyEl) emptyEl.hidden = false;
+            if (emptyEl) {
+                emptyEl.hidden = false;
+                emptyEl.removeAttribute('hidden');
+            }
             if (sectionEl) {
                 sectionEl.hidden = true;
+                sectionEl.setAttribute('hidden', '');
                 sectionEl.classList.remove('is-entering', 'compare-chart-section--mounted');
             }
             if (scorelineEl) {
                 scorelineEl.hidden = true;
+                scorelineEl.setAttribute('hidden', '');
                 scorelineEl.innerHTML = '';
             }
             return;
         }
-        if (emptyEl) emptyEl.hidden = true;
+        if (emptyEl) {
+            emptyEl.hidden = true;
+            emptyEl.setAttribute('hidden', '');
+        }
         if (sectionEl) {
             const firstShow = sectionEl.hidden;
             sectionEl.hidden = false;
+            sectionEl.removeAttribute('hidden');
             sectionEl.classList.remove('is-entering');
             if (firstShow && !reduceMotion()) {
                 void sectionEl.offsetWidth;
