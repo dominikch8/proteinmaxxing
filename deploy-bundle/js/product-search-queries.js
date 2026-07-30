@@ -1605,9 +1605,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "spread chocolate nutella ingredient photo"
   ],
   "ciastka-maslane": [
-    "cookies butter",
-    "cookies butter food",
-    "cookies butter ingredient photo"
+    "plain butter cookies no chocolate",
+    "Polish ciastka maslane shortbread",
+    "golden butter biscuits plain food"
   ],
   "rocky-road": [
     "rocky road",
