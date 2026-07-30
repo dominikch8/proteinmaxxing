@@ -75,20 +75,23 @@
             </div>
 
             <div class="page-hero compare-hero">
-                <p class="compare-kicker">Proteiner · porównywarka makro</p>
+                <p class="compare-kicker">Proteiner · arena makro</p>
                 <div class="compare-hero-title-row">
                     <span class="compare-hero-orb compare-hero-orb--a" aria-hidden="true"></span>
                     <h1>Porównaj produkty</h1>
                     <span class="compare-hero-orb compare-hero-orb--b" aria-hidden="true"></span>
                 </div>
-                <p class="subtitle">Wybierz dwa produkty z bazy i zobacz różnice w kaloriach, białku, węglowodanach i tłuszczu — wszystko przeliczone na 100&nbsp;g.</p>
+                <p class="subtitle">Ustaw dwa produkty w ringu i od razu zobacz różnice w kaloriach, białku, węglowodanach i tłuszczu — wszystko na 100&nbsp;g, z wykresem i tabelą.</p>
+                <div class="compare-hero-duel" aria-hidden="true">
+                    <span class="compare-hero-duel-side compare-hero-duel-side--a">A</span>
+                    <span class="compare-hero-duel-vs">
+                        <span class="compare-hero-duel-ring"></span>
+                        <span class="compare-hero-duel-ring compare-hero-duel-ring--delay"></span>
+                        <span class="compare-hero-duel-core">VS</span>
+                    </span>
+                    <span class="compare-hero-duel-side compare-hero-duel-side--b">B</span>
+                </div>
             </div>
-
-            <ol class="compare-steps" aria-label="Jak korzystać z porównywarki">
-                <li class="compare-steps-item is-active"><span class="compare-steps-num">1</span><span>Wybierz produkt A i B</span></li>
-                <li class="compare-steps-item"><span class="compare-steps-num">2</span><span>Przejrzyj wykres i podsumowanie</span></li>
-                <li class="compare-steps-item"><span class="compare-steps-num">3</span><span>Sprawdź pełną tabelę makro</span></li>
-            </ol>
 
             <div class="compare-stage">
                 <div class="compare-pickers">
@@ -163,10 +166,10 @@
                     <span class="compare-empty-vs">vs</span>
                     <span class="compare-empty-orb compare-empty-orb--b"></span>
                 </div>
-                <p class="compare-empty-title">Wybierz dwa produkty do porównania</p>
-                <p class="compare-empty-text">Wpisz nazwę w polach powyżej albo skorzystaj z gotowych przykładów poniżej. Wynik, wykres i tabela pojawią się automatycznie.</p>
+                <p class="compare-empty-title">Wybierz dwóch zawodników</p>
+                <p class="compare-empty-text">Wpisz nazwę w polach powyżej — arena, wynik kategorii, wykres i tabela pojawią się automatycznie.</p>
                 <div class="compare-quick" id="compareQuick">
-                    <p class="compare-quick-label">Przykładowe porównania</p>
+                    <p class="compare-quick-label">Szybkie pojedynki</p>
                     <div class="compare-quick-list" role="group" aria-label="Przykładowe porównania">
                         <button type="button" class="compare-quick-btn" data-a="piers-z-kurczaka" data-b="twarog-poltlusty"><span>Pierś z kurczaka</span><em>vs</em><span>twaróg</span></button>
                         <button type="button" class="compare-quick-btn" data-a="jajko-kurze-cale" data-b="losos-atlantycki"><span>Jajko</span><em>vs</em><span>łosoś</span></button>
@@ -191,10 +194,6 @@
                 <div class="compare-dashboard" id="compareChart"></div>
 
                 <div class="compare-table-block">
-                    <div class="compare-table-head">
-                        <h2 class="compare-table-title">Pełna tabela makro</h2>
-                        <p class="compare-table-note">Wszystkie składniki na 100&nbsp;g. Lepsza wartość w danej kategorii jest wyróżniona kolorem.</p>
-                    </div>
                     <div class="compare-table-scroll">
                         <table class="compare-table" id="compareTable">
                             <caption class="visually-hidden">Tabela wartości na 100 g</caption>
