@@ -84,6 +84,8 @@ const FOOD_SUBJECT = {
     'm-m-s': 'colorful chocolate coated candy dragees like M and M peanut chocolates, small round red blue yellow green brown candy pieces in pile, chocolate lentils, NOT cake, NOT pancake, NOT cookie, NOT muffin, NOT dessert slice, NOT sponge cake',
     hamburger: 'classic beef hamburger with bun lettuce tomato',
     'burrito-z-kurczakiem': 'chicken burrito wrapped in flour tortilla, large rolled burrito with visible tortilla wrap and chicken filling, Mexican burrito food, NOT raw chicken breast, NOT chicken fillet alone, NOT grilled chicken piece',
+    'ravioli-z-ricotta': 'fresh ravioli square pasta pillows filled with ricotta cheese, stuffed pasta dumplings with visible pasta edges, ravioli with ricotta filling, NOT ricotta cheese block alone, NOT cream cheese tub, NOT white cheese spread',
+    'tortellini-z-miesem': 'fresh tortellini pasta rings filled with meat, small ring-shaped stuffed pasta dumplings in pile, tortellini with meat filling, NOT raw steak, NOT ground meat pile, NOT beef chunk',
     'big-mac-styl': 'double cheeseburger with sesame bun',
     'whopper-styl': 'flame grilled beef burger',
     'hot-dog': 'hot dog sausage in bun with mustard',

@@ -2326,9 +2326,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "Gnocchi ingredient photo"
   ],
   "ravioli-z-ricotta": [
-    "ricotta",
-    "ricotta food",
-    "ricotta ingredient photo"
+    "ricotta ravioli stuffed pasta",
+    "fresh ravioli square pasta pillows",
+    "ravioli z ricotta food"
   ],
   "tortellini-z-miesem": [
     "tortellini meat filled pasta",
