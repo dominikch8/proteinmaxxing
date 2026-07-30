@@ -1630,9 +1630,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "pizza kebab ingredient photo"
   ],
   "bulka-z-parowka": [
-    "roll",
-    "roll food",
-    "roll ingredient photo"
+    "Polish bułka z parówką bakery",
+    "parowka w ciescie baked roll",
+    "supermarket sausage in dough bun"
   ],
   "chrupki-kurze-kfc-styl": [
     "crispy chicken fried chicken",
