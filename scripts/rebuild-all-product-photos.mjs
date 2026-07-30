@@ -194,8 +194,8 @@ const FOOD_SUBJECT = {
     'komosa-ryzowa-quinoa': 'pile of dry uncooked white quinoa seeds, loose tiny round beige grains, NOT bread, NOT cooked mush',
     'kasza-quinoa-gotowana': 'small mound of cooked fluffy quinoa grains with tiny seed rings, cooked kasza only, NOT bread',
     amarantus: 'pile of dry uncooked tiny cream-gold amaranth seeds, loose grain kasza, NOT snack bar, NOT puffed bar, NOT bread',
-    'makaron-udon': 'thick white Japanese udon wheat noodles, long round chewy udon noodle strands dry or fresh, udon pasta, NOT tagliatelle, NOT fettuccine, NOT flat ribbon pasta, NOT spaghetti thin, NOT ramen thin noodles',
-    'makaron-swiderki-suchy': 'dry spiral fusilli rotini pasta corkscrew swiderki shape, short twisted pasta spirals pile uncooked, NOT tagliatelle, NOT flat ribbon pasta, NOT penne tubes, NOT cooked pasta dish',
+    'makaron-udon': 'uncooked dry thick white Japanese udon noodle sticks, fat straight cylindrical wheat noodles about 8 to 12mm thick, bundle of dry udon strands in loose pile, chunky white udon only, NO chopsticks, NO bowl, NO soup, NOT thin somen, NOT thin ramen, NOT spaghetti, NOT tagliatelle',
+    'makaron-swiderki-suchy': 'dry fusilli rotini pasta corkscrew spiral swiderki shape, short tight twisted pasta spirals pile uncooked yellow durum wheat, classic fusilli spirals only, NOT tagliatelle ribbons, NOT strozzapreti twists, NOT penne tubes, NOT cooked pasta dish',
     'makaron-pszenny-suchy': 'dry uncooked wheat pasta pale yellow durum, nest of dry spaghetti or short pasta shapes pile, basic makaron pszenny suchy, NOT penne tubes only, NOT whole grain brown penne, NOT cooked pasta with sauce',
     'makaron-lazanki-suchy': 'Polish lazanki dry pasta small thin flat square noodle flakes, dry lazanki pasta squares pile, NOT lasagna baked dish, NOT lasagna layers with meat sauce, NOT wide lasagna sheets with cheese'
 };
