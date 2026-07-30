@@ -1081,7 +1081,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/baton-np-snickers</loc>
+    <loc>https://proteiner.pl/produkty/snickers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2756,11 +2756,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/nuts</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://proteiner.pl/produkty/pawelek</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -2791,11 +2786,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/picnic</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://proteiner.pl/produkty/toblerone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -2822,11 +2812,6 @@
   </url>
   <url>
     <loc>https://proteiner.pl/produkty/danusia</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://proteiner.pl/produkty/nestle-crunch</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

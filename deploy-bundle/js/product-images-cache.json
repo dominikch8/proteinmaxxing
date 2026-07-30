@@ -162,7 +162,6 @@
   "olej-slonecznikowy": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sunflower_sky_backdrop.jpg/960px-Sunflower_sky_backdrop.jpg",
   "olej-kokosowy": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Cocos_nucifera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-187.jpg/960px-Cocos_nucifera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-187.jpg",
   "margaryna": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Margarine.jpg/960px-Margarine.jpg",
-  "baton-np-snickers": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Snickers-broken.JPG/960px-Snickers-broken.JPG",
   "czekolada-mleczna": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Three_Bars_%281%29.jpg/960px-Three_Bars_%281%29.jpg",
   "czekolada-gorzka-80": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Three_Bars_%281%29.jpg/960px-Three_Bars_%281%29.jpg",
   "ptasie-mleczko": "https://live.staticflickr.com/7233/7193748698_12b00a128f_b.jpg",
@@ -357,15 +356,14 @@
   "3-bit": "https://live.staticflickr.com/6112/6375446871_01223d2ddf_b.jpg",
   "kitkat-chunky": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/KitKat.jpg/960px-KitKat.jpg",
   "bounty-dark": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bounty-Split.jpg/960px-Bounty-Split.jpg",
-  "nestle-crunch": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Nestl%C3%A9_Crunch.jpg/960px-Nestl%C3%A9_Crunch.jpg",
   "princessa": "https://live.staticflickr.com/7043/6902055209_d3b2f9ae77_b.jpg",
   "twix-white": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Twix_white_split_%286902053171%29.jpg/960px-Twix_white_split_%286902053171%29.jpg",
   "snickers-white": "https://live.staticflickr.com/8198/28332059154_d67ef5413f_b.jpg",
   "grzeski": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/2023_Wafel_Grze%C5%9Bki_w_czekoladzie.jpg/960px-2023_Wafel_Grze%C5%9Bki_w_czekoladzie.jpg",
   "lion-white": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Lion-Bar-White-Choc-Split.jpg/960px-Lion-Bar-White-Choc-Split.jpg",
   "kinder-country": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Kinder_Country.jpg",
-  "nuts": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Nuts_chocolate_bar_01.jpg/960px-Nuts_chocolate_bar_01.jpg",
   "knoppers": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/2023_Knoppers_%282%29.jpg/960px-2023_Knoppers_%282%29.jpg",
   "mars": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/2023_Baton_Mars_%281%29.jpg/960px-2023_Baton_Mars_%281%29.jpg",
-  "milky-way": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Milky-Way-Bars-USUK-Whole.jpg/960px-Milky-Way-Bars-USUK-Whole.jpg"
+  "milky-way": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Milky-Way-Bars-USUK-Whole.jpg/960px-Milky-Way-Bars-USUK-Whole.jpg",
+  "snickers": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Snickers-broken.JPG/960px-Snickers-broken.JPG"
 }

@@ -845,7 +845,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "margarine food",
     "margarine ingredient photo"
   ],
-  "baton-np-snickers": [
+  "snickers": [
     "candy bar snickers",
     "candy bar snickers food",
     "candy bar snickers ingredient photo"
