@@ -198,6 +198,7 @@ const FOOD_SUBJECT = {
     'wafel-tortowy': 'plain round golden-beige Polish tort wafer sheet with waffle grid pattern, dry crisp wafel tortowy only, NO chocolate coating NO cream filling',
     croissant: 'classic plain golden butter croissant flaky pastry, NO chocolate NO chocolate chips NO pain au chocolat',
     miod: 'golden amber honey in clear glass honey jar with blank label, pure honey only, NO chocolate bar NO candy NO nougat',
+    zelki: 'pile of colorful translucent fruit gummy candies bears worms rings, classic zelki gummies only, NO chocolate coating NO chocolate bar',
     'kukurydza-konserwowa': 'open metal can of canned sweet corn with yellow corn kernels in brine, canned corn product',
     'ziemniaki-tluczone': 'creamy mashed potatoes puree in a small white bowl, ziemniaki tłuczone, smooth mashed potato only, NOT whole raw potato',
     'maka-pszenna-typ-500': 'soft mound of fine white wheat flour powder only, raw flour pile, NOT bread, NOT loaf, NOT dough',
