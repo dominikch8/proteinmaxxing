@@ -2810,8 +2810,8 @@
         "slug": "quesadilla-z-kurczakiem",
         "name": "Quesadilla z kurczakiem",
         "category": "fastfood",
-        "subject": "chicken",
-        "prompt": "Photorealistic ecommerce food photo: chicken. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+        "subject": "chicken quesadilla: golden toasted flour tortilla folded in half, melted cheese and grilled chicken visible at the cut edge, NOT plain chicken meat alone",
+        "prompt": "Photorealistic ecommerce food photo: chicken quesadilla: golden toasted flour tortilla folded in half, melted cheese and grilled chicken visible at the cut edge, NOT plain chicken meat alone. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
     },
     {
         "slug": "tacos-z-wolowina",

@@ -81,11 +81,7 @@ const FOOD_SUBJECT = {
     'czekolada-mleczna': 'milk chocolate bar broken squares',
     'czekolada-gorzka-80': 'dark 80 percent chocolate bar squares',
     'czekolada-100': '100 percent dark chocolate bar',
-    'm-m-s': 'colorful chocolate coated candy dragees like M and M peanut chocolates, small round red blue yellow green brown candy pieces in pile, chocolate lentils, NOT cake, NOT pancake, NOT cookie, NOT muffin, NOT dessert slice, NOT sponge cake',
     hamburger: 'classic beef hamburger with bun lettuce tomato',
-    'burrito-z-kurczakiem': 'chicken burrito wrapped in flour tortilla, large rolled burrito with visible tortilla wrap and chicken filling, Mexican burrito food, NOT raw chicken breast, NOT chicken fillet alone, NOT grilled chicken piece',
-    'ravioli-z-ricotta': 'fresh ravioli square pasta pillows filled with ricotta cheese, stuffed pasta dumplings with visible pasta edges, ravioli with ricotta filling, NOT ricotta cheese block alone, NOT cream cheese tub, NOT white cheese spread',
-    'tortellini-z-miesem': 'fresh tortellini pasta rings filled with meat, small ring-shaped stuffed pasta dumplings in pile, tortellini with meat filling, NOT raw steak, NOT ground meat pile, NOT beef chunk',
     'big-mac-styl': 'double cheeseburger with sesame bun',
     'whopper-styl': 'flame grilled beef burger',
     'hot-dog': 'hot dog sausage in bun with mustard',
@@ -191,13 +187,17 @@ const FOOD_SUBJECT = {
     'papryka-czerwona': 'ONE whole ripe RED bell pepper, deep glossy red skin, green stem',
     pieczarka: 'ONE fresh white button mushroom Agaricus, pale grayish-white cap, short white stem, classic white pieczarka, NOT brown cremini',
     'tofu-naturalne': 'plain firm white tofu block with a few tofu cubes, tofu only, NO herbs, NO parsley, NO greens',
+    'quesadilla-z-kurczakiem': 'chicken quesadilla: golden toasted flour tortilla folded in half, melted cheese and grilled chicken visible at the cut edge, NOT plain chicken meat alone',
     'kukurydza-konserwowa': 'open metal can of canned sweet corn with yellow corn kernels in brine, canned corn product',
     'ziemniaki-tluczone': 'creamy mashed potatoes puree in a small white bowl, ziemniaki tłuczone, smooth mashed potato only, NOT whole raw potato',
     'maka-pszenna-typ-500': 'soft mound of fine white wheat flour powder only, raw flour pile, NOT bread, NOT loaf, NOT dough',
-    'ryz-z-kurczakiem-box': 'chicken and rice meal in rectangular black plastic takeaway food container with lid open, white rice and diced chicken pieces visible inside the box, meal prep bento box, NOT plain rice bowl without box, NOT raw chicken breast alone',
     'komosa-ryzowa-quinoa': 'pile of dry uncooked white quinoa seeds, loose tiny round beige grains, NOT bread, NOT cooked mush',
     'kasza-quinoa-gotowana': 'small mound of cooked fluffy quinoa grains with tiny seed rings, cooked kasza only, NOT bread',
-    amarantus: 'pile of dry uncooked tiny cream-gold amaranth seeds, loose grain kasza, NOT snack bar, NOT puffed bar, NOT bread'
+    amarantus: 'pile of dry uncooked tiny cream-gold amaranth seeds, loose grain kasza, NOT snack bar, NOT puffed bar, NOT bread',
+    'makaron-udon': 'thick white Japanese udon wheat noodles, long round chewy udon noodle strands dry or fresh, udon pasta, NOT tagliatelle, NOT fettuccine, NOT flat ribbon pasta, NOT spaghetti thin, NOT ramen thin noodles',
+    'makaron-swiderki-suchy': 'dry spiral fusilli rotini pasta corkscrew swiderki shape, short twisted pasta spirals pile uncooked, NOT tagliatelle, NOT flat ribbon pasta, NOT penne tubes, NOT cooked pasta dish',
+    'makaron-pszenny-suchy': 'dry uncooked wheat pasta pale yellow durum, nest of dry spaghetti or short pasta shapes pile, basic makaron pszenny suchy, NOT penne tubes only, NOT whole grain brown penne, NOT cooked pasta with sauce',
+    'makaron-lazanki-suchy': 'Polish lazanki dry pasta small thin flat square noodle flakes, dry lazanki pasta squares pile, NOT lasagna baked dish, NOT lasagna layers with meat sauce, NOT wide lasagna sheets with cheese'
 };
 
 const CATEGORY_SUFFIX = {
