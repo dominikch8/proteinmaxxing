@@ -1595,9 +1595,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "halva sesame ingredient photo"
   ],
   "babka-drozdzowa": [
-    "cake yeast",
-    "cake yeast food",
-    "cake yeast ingredient photo"
+    "Polish babka drożdżowa yeast cake",
+    "babka drozdzowa bundt cake bakery",
+    "yeast cake babka Polish food"
   ],
   "krem-czekoladowy-nutella-styl": [
     "spread chocolate nutella",
