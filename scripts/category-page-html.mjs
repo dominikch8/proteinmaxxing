@@ -14,6 +14,7 @@ import {
     buildThemeInitScript,
     buildConsentHeadScript,
     buildAdSenseHead,
+    buildMediaBoxyHead,
     buildCookieConsentBody,
     buildThemeStylesheets,
     buildThemeBodyScript,
@@ -86,6 +87,7 @@ ${buildThemeInitScript(PREFIX)}
 
 ${buildConsentHeadScript(PREFIX)}
 ${buildAdSenseHead()}
+${buildMediaBoxyHead()}
     <title>${esc(title)}</title>
     <meta name="description" content="${esc(description)}">
     <meta name="robots" content="index, follow">

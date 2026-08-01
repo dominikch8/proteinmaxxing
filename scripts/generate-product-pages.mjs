@@ -23,6 +23,7 @@ import {
     buildThemeInitScript,
     buildConsentHeadScript,
     buildAdSenseHead,
+    buildMediaBoxyHead,
     buildCookieConsentBody,
     buildThemeStylesheets,
     buildThemeBodyScript,
@@ -414,6 +415,7 @@ ${buildThemeInitScript('../')}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ${buildConsentHeadScript('../')}
 ${buildAdSenseHead()}
+${buildMediaBoxyHead()}
     <title>${esc(title)}</title>
     <meta name="description" content="${esc(desc)}">
     <meta name="robots" content="${robotsMeta}">

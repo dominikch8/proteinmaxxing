@@ -5,7 +5,7 @@
 
 const SITE = 'https://proteiner.pl';
 /** Bump when shipping CSS/JS changes (long browser cache + immutable). */
-export const ASSET_V = '20260801f';
+export const ASSET_V = '20260801g';
 
 function asset(prefix, path) {
     return `${prefix}${path}?v=${ASSET_V}`;
@@ -69,6 +69,19 @@ export function buildAdSenseHead() {
     return `    <meta name="google-adsense-account" content="ca-pub-8540801395510703">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8540801395510703"
         crossorigin="anonymous"></script>`;
+}
+
+/** MediaBoxy Plus — sticky footer + modal + manual units. */
+export function buildMediaBoxyHead() {
+    return `    <!-- MediaBoxy PLUS (head) -->
+    <script src="https://cdn.mediaboxy.pl/js/m4plus.js"></script>`;
+}
+
+/** MediaBoxy unit (step 6) — can be repeated. */
+export function buildMediaBoxyUnit() {
+    return `    <!-- MediaBoxy Start | MediaBoxy.pl -->
+    <div class="pm-mediaboxy-slot" data-mediaboxy="P44448-497e74779620" data-types="box,banner,product,motion,links,form,text"></div>
+    <!-- MediaBoxy Stop | MediaBoxy.pl -->`;
 }
 
 /** Baner cookie Proteiner — CSS + JS przed skryptami motywu. */
