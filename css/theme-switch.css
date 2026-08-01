@@ -12,13 +12,14 @@
     view-transition-name: pm-header-theme;
 }
 
-/* Right: Dodaj produkt + Zaloguj (Zaloguj furthest right) */
+/* Right: Dodaj produkt + Zaloguj — vertically centered in header strip */
 .header-utilities--actions {
     position: fixed;
-    top: 6px;
+    top: 0;
     right: 14px;
     left: auto;
     z-index: 200;
+    height: 56px;
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -29,10 +30,11 @@
 /* Legacy id still used as actions cluster */
 #pm-header-utilities {
     position: fixed;
-    top: 6px;
+    top: 0;
     right: 14px;
     left: auto;
     z-index: 200;
+    height: 56px;
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -155,6 +157,7 @@
         bottom: 16px;
         right: 12px;
         left: auto;
+        height: auto;
         gap: 6px;
     }
 
