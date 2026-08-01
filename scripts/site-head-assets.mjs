@@ -74,7 +74,15 @@ export function buildAdSenseHead() {
 /** MediaBoxy Plus — sticky footer + modal + manual units. */
 export function buildMediaBoxyHead() {
     return `    <!-- MediaBoxy PLUS (head) -->
-    <script src="https://cdn.mediaboxy.pl/js/m4plus.js"></script>`;
+    <script src="https://cdn.mediaboxy.pl/js/m4plus.js"></script>
+    <!-- MediaBoxy.pl - Zamykane okienko wideo -->
+    <script>
+    window.a1video = window.a1video || [];
+    window.a1video.push({
+        publisher: "P44448-497e74779620"
+    });
+    </script>
+    <script async src="https://cdn.mediaboxy.pl/js/v4.js"></script>`;
 }
 
 /** MediaBoxy unit (step 6) — can be repeated. */
