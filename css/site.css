@@ -1488,7 +1488,7 @@
         .products-show-more-wrap {
             display: flex;
             justify-content: center;
-            margin: 8px 0 32px;
+            margin: 28px 0 32px;
         }
 
         .products-show-more-wrap[hidden] {
