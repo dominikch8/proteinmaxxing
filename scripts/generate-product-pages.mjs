@@ -24,6 +24,7 @@ import {
     buildConsentHeadScript,
     buildAdSenseHead,
     buildMediaBoxyHead,
+    buildMediaBoxyProductInline,
     buildCookieConsentBody,
     buildThemeStylesheets,
     buildThemeBodyScript,
@@ -461,11 +462,12 @@ ${buildCookieConsentBody('../')}
 
         <article class="product-hero-card" itemscope itemtype="https://schema.org/NutritionInformation">
             <div class="product-layout">
-                <div>
+                <div class="product-media-col">
                     <div class="product-image-wrap">
                         <img src="${esc(imgSrc)}" alt="${esc(p.name)} – białko ${p.protein}g, kalorie ${p.kcal} kcal, węglowodany i tłuszcz na 100g | zdrowe odżywianie" width="640" height="480" loading="lazy" referrerpolicy="no-referrer" decoding="async" onerror="${imgOnError}">
                         <span class="product-emoji-fallback" aria-hidden="true">${p.emoji}</span>
                     </div>
+${buildMediaBoxyProductInline()}
                 </div>
                 <div>
                     <a class="product-category" href="${dietaCategoryHref(p.category)}">${esc(catLabel)}</a>

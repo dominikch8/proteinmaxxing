@@ -5,7 +5,7 @@
 
 const SITE = 'https://proteiner.pl';
 /** Bump when shipping CSS/JS changes (long browser cache + immutable). */
-export const ASSET_V = '20260801i';
+export const ASSET_V = '20260801j';
 
 function asset(prefix, path) {
     return `${prefix}${path}?v=${ASSET_V}`;
@@ -90,6 +90,13 @@ export function buildMediaBoxyUnit() {
     return `    <!-- MediaBoxy Start | MediaBoxy.pl -->
     <div class="pm-mediaboxy-slot" data-mediaboxy="P44448-497e74779620" data-types="box,banner,product,motion,links,form,text"></div>
     <!-- MediaBoxy Stop | MediaBoxy.pl -->`;
+}
+
+/** 300×600 under product image (left column gap). */
+export function buildMediaBoxyProductInline() {
+    return `                    <!-- MediaBoxy Start | product under-image -->
+                    <div class="pm-product-inline-ad" data-mediaboxy="P44448-497e74779620" data-types="banner" data-sizes="4"></div>
+                    <!-- MediaBoxy Stop | product under-image -->`;
 }
 
 /** 300×600 skyscraper rails — left/right of content (desktop only via CSS). */
