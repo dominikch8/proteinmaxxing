@@ -29,7 +29,7 @@ function buildAddLi(classTail, beforeHref, href, afterHref) {
     if (!/\bnav-link--subtle\b/.test(classes)) {
         classes += ' nav-link--subtle';
     }
-    return `<li class="nav-add-product"><a class="${classes}"${beforeHref}href="${href}"${afterHref}>Dodaj produkty</a></li>`;
+    return `<li class=" produkt</li>`;
 }
 
 function patch(html) {

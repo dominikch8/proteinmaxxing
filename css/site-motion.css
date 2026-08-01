@@ -81,9 +81,14 @@
     view-transition-name: pm-header;
 }
 
-/* Right utilities (Dodaj produkty / Jasny / Neon) — same treatment, outside .site-header */
-.header-utilities {
+/* Right utilities (Dodaj produkt / Zaloguj) — same treatment, outside .site-header */
+.header-utilities--actions,
+#pm-header-utilities {
     view-transition-name: pm-header-utilities;
+}
+
+.header-utilities--theme {
+    view-transition-name: pm-header-theme;
 }
 
 ::view-transition-group(pm-header) {
@@ -92,6 +97,11 @@
 }
 
 ::view-transition-group(pm-header-utilities) {
+    animation: none;
+    z-index: 10001;
+}
+
+::view-transition-group(pm-header-theme) {
     animation: none;
     z-index: 10001;
 }
@@ -107,12 +117,14 @@
     opacity: 1;
 }
 
-::view-transition-old(pm-header-utilities) {
+::view-transition-old(pm-header-utilities),
+::view-transition-old(pm-header-theme) {
     animation: none;
     opacity: 0;
 }
 
-::view-transition-new(pm-header-utilities) {
+::view-transition-new(pm-header-utilities),
+::view-transition-new(pm-header-theme) {
     animation: none;
     opacity: 1;
 }

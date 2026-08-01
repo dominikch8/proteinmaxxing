@@ -31,15 +31,69 @@
         return '';
     }
 
-    function ensureHeaderUtilities() {
+    function ensureThemeCluster() {
+        let cluster = document.getElementById('pm-header-theme');
+        if (!cluster) {
+            cluster = document.createElement('div');
+            cluster.id = 'pm-header-theme';
+            cluster.className = 'header-utilities header-utilities--theme';
+            document.body.appendChild(cluster);
+        }
+        return cluster;
+    }
+
+    function ensureActionsCluster() {
         let cluster = document.getElementById('pm-header-utilities');
         if (!cluster) {
             cluster = document.createElement('div');
             cluster.id = 'pm-header-utilities';
-            cluster.className = 'header-utilities';
+            cluster.className = 'header-utilities header-utilities--actions';
             document.body.appendChild(cluster);
+        } else {
+            cluster.classList.add('header-utilities--actions');
         }
         return cluster;
+    }
+
+    function takeAddProductLink(cluster) {
+        let link =
+            document.getElementById('addProductFloating') ||
+            cluster.querySelector('a.nav-add-floating:not(.auth-nav-floating)');
+        const item = document.querySelector('.nav-add-product');
+        const navLink = item?.querySelector('a');
+        const isActive = /dodaj-produkt/.test(window.location.pathname || '');
+
+        if (navLink) {
+            const href = navLink.getAttribute('href') || pathPrefix() + 'dodaj-produkt';
+            if (!link) {
+                link = document.createElement('a');
+                link.id = 'addProductFloating';
+                link.className = 'nav-add-floating';
+                const auth = cluster.querySelector('a.auth-nav-floating');
+                if (auth) cluster.insertBefore(link, auth);
+                else cluster.appendChild(link);
+            }
+            link.href = href;
+            link.textContent = 'Dodaj produkt';
+            link.classList.toggle('active', isActive || navLink.classList.contains('active'));
+            item.remove();
+            return link;
+        }
+
+        if (!link) {
+            link = document.createElement('a');
+            link.id = 'addProductFloating';
+            link.className = 'nav-add-floating';
+            link.href = pathPrefix() + 'dodaj-produkt';
+            link.textContent = 'Dodaj produkt';
+            const auth = cluster.querySelector('a.auth-nav-floating');
+            if (auth) cluster.insertBefore(link, auth);
+            else cluster.appendChild(link);
+        } else {
+            link.textContent = 'Dodaj produkt';
+        }
+        link.classList.toggle('active', isActive);
+        return link;
     }
 
     function takeAuthLink(cluster) {
@@ -56,13 +110,11 @@
                 link = document.createElement('a');
                 link.id = 'authNavFloating';
                 link.className = 'nav-add-floating auth-nav-floating';
-                const addLink = cluster.querySelector('a.nav-add-floating:not(.auth-nav-floating)');
-                if (addLink) cluster.insertBefore(link, addLink);
-                else cluster.insertBefore(link, cluster.firstChild);
             }
             link.href = href;
             if (!link.dataset.authManaged) link.textContent = label;
             link.classList.toggle('active', isActive || navLink.classList.contains('active'));
+            cluster.appendChild(link);
             item.remove();
             return link;
         }
@@ -73,48 +125,9 @@
             link.className = 'nav-add-floating auth-nav-floating';
             link.href = pathPrefix() + 'logowanie';
             link.textContent = 'Zaloguj';
-            const addLink = cluster.querySelector('a.nav-add-floating:not(.auth-nav-floating)');
-            if (addLink) cluster.insertBefore(link, addLink);
-            else cluster.insertBefore(link, cluster.firstChild);
         }
+        cluster.appendChild(link);
         link.classList.toggle('active', isActive);
-        return link;
-    }
-
-    function takeAddProductLink(cluster) {
-        let link = cluster.querySelector('a.nav-add-floating:not(.auth-nav-floating)');
-        const item = document.querySelector('.nav-add-product');
-        const navLink = item?.querySelector('a');
-
-        if (navLink) {
-            const href = navLink.getAttribute('href') || pathPrefix() + 'dodaj-produkt';
-            const isActive = navLink.classList.contains('active') || /dodaj-produkt/.test(window.location.pathname || '');
-            if (!link) {
-                link = document.createElement('a');
-                link.className = 'nav-add-floating';
-                link.textContent = 'Dodaj produkty';
-                const theme = document.getElementById('pm-theme-switch');
-                if (theme) cluster.insertBefore(link, theme);
-                else cluster.appendChild(link);
-            }
-            link.href = href;
-            link.classList.toggle('active', isActive);
-            item.remove();
-            return link;
-        }
-
-        if (!link) {
-            link = document.createElement('a');
-            link.className = 'nav-add-floating';
-            link.href = pathPrefix() + 'dodaj-produkt';
-            link.textContent = 'Dodaj produkty';
-            if (/dodaj-produkt/.test(window.location.pathname || '')) {
-                link.classList.add('active');
-            }
-            const theme = document.getElementById('pm-theme-switch');
-            if (theme) cluster.insertBefore(link, theme);
-            else cluster.appendChild(link);
-        }
         return link;
     }
 
@@ -158,10 +171,11 @@
     }
 
     function mountThemeSwitch() {
-        const cluster = ensureHeaderUtilities();
-        takeAuthLink(cluster);
-        takeAddProductLink(cluster);
-        ensureThemeSwitch(cluster);
+        const themeCluster = ensureThemeCluster();
+        const actions = ensureActionsCluster();
+        ensureThemeSwitch(themeCluster);
+        takeAddProductLink(actions);
+        takeAuthLink(actions);
         applyTheme(getStoredTheme());
     }
 

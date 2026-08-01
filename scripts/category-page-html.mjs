@@ -113,7 +113,7 @@ ${buildCookieConsentBody(PREFIX)}
                 <li><a class="nav-link" href="${PREFIX}">Kalkulator</a></li>
                 <li><a class="nav-link active" href="${PREFIX}dieta" aria-current="page">Dieta</a></li>
                 <li><a class="nav-link" href="${PREFIX}porownaj-produkty">Porównaj produkty</a></li>
-                <li><a class="nav-link" href="${PREFIX}dodaj-produkt">Dodaj produkty</a></li>
+                <li><a class="nav-link" href="${PREFIX}dodaj-produkt">Dodaj produkt</a></li>
                 <li><a class="nav-link" href="${PREFIX}poradnik-zywienia">Poradnik</a></li>
                 <li><a class="nav-link" href="${PREFIX}artykuly">Artykuły</a></li>
                 <li><a class="nav-link" href="${PREFIX}informacje">Informacje</a></li>

@@ -77,13 +77,8 @@
         link.href = prefix + 'logowanie';
         link.textContent = 'Zaloguj';
 
-        const addLink = cluster.querySelector('a.nav-add-floating:not(.auth-nav-floating)');
-        if (addLink) cluster.insertBefore(link, addLink);
-        else {
-            const theme = document.getElementById('pm-theme-switch');
-            if (theme) cluster.insertBefore(link, theme);
-            else cluster.appendChild(link);
-        }
+        // Actions cluster: [Dodaj produkt][Zaloguj] — Zaloguj always furthest right
+        cluster.appendChild(link);
         return link;
     }
 

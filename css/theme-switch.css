@@ -1,17 +1,45 @@
-/* Right-side utility cluster: Zaloguj + Dodaj produkty + Jasny/Neon */
-.header-utilities {
+/* Left: Jasny / Neon */
+.header-utilities--theme {
     position: fixed;
     top: 6px;
-    right: 14px;
+    left: 14px;
+    right: auto;
     z-index: 200;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    /* Stable layer for cross-document view transitions (see site-motion.css) */
+    contain: layout style;
+    view-transition-name: pm-header-theme;
+}
+
+/* Right: Dodaj produkt + Zaloguj (Zaloguj furthest right) */
+.header-utilities--actions {
+    position: fixed;
+    top: 6px;
+    right: 14px;
+    left: auto;
+    z-index: 200;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    contain: layout style;
+    view-transition-name: pm-header-utilities;
+}
+
+/* Legacy id still used as actions cluster */
+#pm-header-utilities {
+    position: fixed;
+    top: 6px;
+    right: 14px;
+    left: auto;
+    z-index: 200;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     contain: layout style;
 }
 
-/* Hide in main nav until parked next to the theme switch */
+/* Hide in main nav until parked in floating clusters */
 .nav-links > .nav-add-product,
 .nav-links > .auth-nav-item,
 .nav-links > #authNavSlot {
@@ -110,10 +138,19 @@
 }
 
 @media (max-width: 520px) {
-    .header-utilities {
+    .header-utilities--theme {
+        top: auto;
+        bottom: 16px;
+        left: 12px;
+        right: auto;
+    }
+
+    .header-utilities--actions,
+    #pm-header-utilities {
         top: auto;
         bottom: 16px;
         right: 12px;
+        left: auto;
         gap: 6px;
     }
 

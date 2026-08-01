@@ -26,7 +26,9 @@
     }
 
     function injectHeaderUtilities() {
-        if (document.getElementById('pm-header-utilities')) return true;
+        if (document.getElementById('pm-header-utilities') && document.getElementById('pm-header-theme')) {
+            return true;
+        }
         if (!document.body) return false;
 
         const prefix = pathPrefix();
@@ -36,38 +38,48 @@
         const lightActive = theme === 'light';
         const darkActive = theme === 'dark';
 
-        const cluster = document.createElement('div');
-        cluster.id = 'pm-header-utilities';
-        cluster.className = 'header-utilities';
-        cluster.innerHTML =
-            '<a id="authNavFloating" class="nav-add-floating auth-nav-floating' +
-            authActive +
-            '" href="' +
-            prefix +
-            'logowanie">Zaloguj</a>' +
-            '<a class="nav-add-floating' +
-            addActive +
-            '" href="' +
-            prefix +
-            'dodaj-produkt">Dodaj produkty</a>' +
-            '<div id="pm-theme-switch" class="theme-switch" role="group" aria-label="Motyw strony">' +
-            '<button type="button" class="theme-switch-btn' +
-            (lightActive ? ' is-active' : '') +
-            '" data-theme-value="light" aria-pressed="' +
-            (lightActive ? 'true' : 'false') +
-            '" title="Jasny motyw">' +
-            '<span aria-hidden="true">☀️</span><span class="theme-switch-text">Jasny</span>' +
-            '</button>' +
-            '<button type="button" class="theme-switch-btn' +
-            (darkActive ? ' is-active' : '') +
-            '" data-theme-value="dark" aria-pressed="' +
-            (darkActive ? 'true' : 'false') +
-            '" title="Ciemny motyw neon">' +
-            '<span aria-hidden="true">🌙</span><span class="theme-switch-text">Neon</span>' +
-            '</button>' +
-            '</div>';
+        if (!document.getElementById('pm-header-theme')) {
+            const themeCluster = document.createElement('div');
+            themeCluster.id = 'pm-header-theme';
+            themeCluster.className = 'header-utilities header-utilities--theme';
+            themeCluster.innerHTML =
+                '<div id="pm-theme-switch" class="theme-switch" role="group" aria-label="Motyw strony">' +
+                '<button type="button" class="theme-switch-btn' +
+                (lightActive ? ' is-active' : '') +
+                '" data-theme-value="light" aria-pressed="' +
+                (lightActive ? 'true' : 'false') +
+                '" title="Jasny motyw">' +
+                '<span aria-hidden="true">☀️</span><span class="theme-switch-text">Jasny</span>' +
+                '</button>' +
+                '<button type="button" class="theme-switch-btn' +
+                (darkActive ? ' is-active' : '') +
+                '" data-theme-value="dark" aria-pressed="' +
+                (darkActive ? 'true' : 'false') +
+                '" title="Ciemny motyw neon">' +
+                '<span aria-hidden="true">🌙</span><span class="theme-switch-text">Neon</span>' +
+                '</button>' +
+                '</div>';
+            document.body.appendChild(themeCluster);
+        }
 
-        document.body.appendChild(cluster);
+        if (!document.getElementById('pm-header-utilities')) {
+            const actions = document.createElement('div');
+            actions.id = 'pm-header-utilities';
+            actions.className = 'header-utilities header-utilities--actions';
+            actions.innerHTML =
+                '<a id="addProductFloating" class="nav-add-floating' +
+                addActive +
+                '" href="' +
+                prefix +
+                'dodaj-produkt">Dodaj produkt</a>' +
+                '<a id="authNavFloating" class="nav-add-floating auth-nav-floating' +
+                authActive +
+                '" href="' +
+                prefix +
+                'logowanie">Zaloguj</a>';
+            document.body.appendChild(actions);
+        }
+
         return true;
     }
 
