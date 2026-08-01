@@ -94,9 +94,9 @@
     pointer-events: none;
     background: linear-gradient(
         135deg,
-        rgba(20, 83, 45, 0.1) 0%,
-        rgba(15, 118, 110, 0.2) 45%,
-        rgba(22, 101, 52, 0.14) 100%
+        rgba(28, 25, 23, 0.1) 0%,
+        rgba(37, 99, 235, 0.2) 45%,
+        rgba(128, 0, 0, 0.14) 100%
     );
     transition: opacity 0.22s ease;
 }
@@ -162,22 +162,22 @@
 }
 
 [data-theme='dark'] .poradnik-hub-tile {
-    background: linear-gradient(145deg, rgba(18, 40, 32, 0.95) 0%, rgba(12, 28, 22, 0.92) 100%);
-    border-color: rgba(52, 211, 153, 0.14);
+    background: linear-gradient(145deg, rgba(26, 34, 56, 0.95) 0%, rgba(18, 24, 42, 0.92) 100%);
+    border-color: rgba(147, 197, 253, 0.14);
 }
 
 [data-theme='dark'] .poradnik-hub-tile::before {
     background: linear-gradient(
         135deg,
-        rgba(16, 185, 129, 0.28) 0%,
-        rgba(45, 212, 191, 0.32) 50%,
-        rgba(5, 150, 105, 0.24) 100%
+        rgba(30, 58, 138, 0.28) 0%,
+        rgba(59, 130, 246, 0.32) 50%,
+        rgba(128, 0, 0, 0.24) 100%
     );
 }
 
 [data-theme='dark'] .poradnik-hub-tile:hover,
 [data-theme='dark'] .poradnik-hub-tile:focus-visible {
-    border-color: rgba(52, 211, 153, 0.45);
+    border-color: rgba(147, 197, 253, 0.45);
 }
 
 [data-theme='dark'] .poradnik-hub-tile:hover .poradnik-hub-tile-title,
