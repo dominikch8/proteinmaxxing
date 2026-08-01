@@ -11,7 +11,7 @@ const rawPath = path.join(root, 'js', 'products-data-raw.js');
 const outPath = path.join(root, 'js', 'products-lite.js');
 
 const LITE_FIELDS = [
-    'name', 'emoji', 'category', 'servingText', 'servingRatio', 'servingGrams',
+    'name', 'emoji', 'category', 'slug', 'servingText', 'servingRatio', 'servingGrams',
     'kcal', 'protein', 'carbs', 'fat', 'satFat', 'unsatFat', 'micros', 'note',
     'pricePer100gProtein', 'servingPricePln', 'proteinInServing'
 ];
