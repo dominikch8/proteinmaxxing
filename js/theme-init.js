@@ -25,7 +25,44 @@
         return '';
     }
 
+    /** Recovery when a broken <li class=" produkt…> swallowed <main> into the nav. */
+    function repairBrokenNavNesting() {
+        const nav = document.querySelector('ul.nav-links');
+        if (!nav) return false;
+        const trapped = nav.querySelector('main.main-content, main');
+        if (!trapped) return false;
+
+        const header = document.querySelector('header.site-header, header');
+        const host = header && header.parentNode;
+        if (!host) return false;
+
+        const brokenLi = trapped.closest('li');
+        if (!brokenLi || !nav.contains(brokenLi)) return false;
+
+        const frag = document.createDocumentFragment();
+        while (brokenLi.firstChild) {
+            frag.appendChild(brokenLi.firstChild);
+        }
+        if (header.nextSibling) host.insertBefore(frag, header.nextSibling);
+        else host.appendChild(frag);
+
+        const fix = document.createElement('li');
+        fix.className = 'nav-add-product';
+        const add = document.createElement('a');
+        add.className = 'nav-link nav-link--subtle';
+        add.href = pathPrefix() + 'dodaj-produkt';
+        add.textContent = 'Dodaj produkt';
+        if (/dodaj-produkt/.test(window.location.pathname || '')) {
+            add.classList.add('active');
+            add.setAttribute('aria-current', 'page');
+        }
+        fix.appendChild(add);
+        brokenLi.replaceWith(fix);
+        return true;
+    }
+
     function injectHeaderUtilities() {
+        if (document.body) repairBrokenNavNesting();
         if (document.getElementById('pm-header-utilities') && document.getElementById('pm-header-theme')) {
             return true;
         }
