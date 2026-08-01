@@ -1,5 +1,5 @@
 /**
- * MediaBoxy Plus + Video Box (head) + jednostka przed stopką.
+ * Normalize MediaBoxy head to a single Plus + Video block.
  * node scripts/patch-mediaboxy.mjs
  */
 import fs from 'fs';
@@ -13,8 +13,10 @@ const SKIP_DIRS = new Set(['node_modules', '.git', '.github', '.cursor', 'domain
 const SKIP_FILES = new Set(['admin-zgloszenia.html']);
 const FOOTER_RE = /<footer class="site-footer">[\s\S]*?<\/footer>/;
 const UNIT_RE = /\s*<!-- MediaBoxy Start \| MediaBoxy\.pl -->[\s\S]*?<!-- MediaBoxy Stop \| MediaBoxy\.pl -->\s*/g;
-const PLUS_RE =
-    /\s*<!-- MediaBoxy PLUS \(head\) -->\s*<script src="https:\/\/cdn\.mediaboxy\.pl\/js\/m4plus\.js"><\/script>(?:\s*<!-- MediaBoxy\.pl - Zamykane okienko wideo -->[\s\S]*?<script async src="https:\/\/cdn\.mediaboxy\.pl\/js\/v4\.js"><\/script>)?/g;
+
+/** Any MediaBoxy head junk between AdSense and <title> / next meta. */
+const HEAD_JUNK_RE =
+    /\s*(?:<!-- MediaBoxy[^>]*-->\s*)?(?:<script>\s*window\.a1video[\s\S]*?<\/script>\s*)?(?:<script[^>]*cdn\.mediaboxy\.pl\/js\/(?:m4plus|v4)\.js[^>]*><\/script>\s*)+/g;
 
 function walkHtml(dir, list = []) {
     for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -35,6 +37,26 @@ function prefixFor(rel) {
     return '';
 }
 
+function stripMediaBoxyHead(html) {
+    // Remove known comment+script clusters repeatedly
+    let out = html;
+    out = out.replace(
+        /\s*<!-- MediaBoxy[^>]*-->\s*<script src="https:\/\/cdn\.mediaboxy\.pl\/js\/m4plus\.js"><\/script>/g,
+        ''
+    );
+    out = out.replace(
+        /\s*<!-- MediaBoxy\.pl - Zamykane okienko wideo -->\s*<script>\s*window\.a1video[\s\S]*?<\/script>\s*<script async src="https:\/\/cdn\.mediaboxy\.pl\/js\/v4\.js"><\/script>/g,
+        ''
+    );
+    out = out.replace(/\s*<script src="https:\/\/cdn\.mediaboxy\.pl\/js\/m4plus\.js"><\/script>/g, '');
+    out = out.replace(/\s*<script async src="https:\/\/cdn\.mediaboxy\.pl\/js\/v4\.js"><\/script>/g, '');
+    out = out.replace(
+        /\s*<script>\s*window\.a1video\s*=\s*window\.a1video\s*\|\|\s*\[\];\s*window\.a1video\.push\(\{\s*publisher:\s*"P44448-497e74779620"\s*\}\);\s*<\/script>/g,
+        ''
+    );
+    return out;
+}
+
 let headN = 0;
 let footN = 0;
 const headSnippet = buildMediaBoxyHead();
@@ -45,18 +67,14 @@ for (const fp of walkHtml(root)) {
     const before = html;
 
     if (/adsbygoogle\.js/.test(html)) {
-        if (PLUS_RE.test(html)) {
-            html = html.replace(PLUS_RE, `\n${headSnippet}`);
+        html = stripMediaBoxyHead(html);
+        const next = html.replace(
+            /(<script async src="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=[^"]+"\s*\r?\n\s*crossorigin="anonymous"><\/script>)/,
+            `$1\n${headSnippet}`
+        );
+        if (next !== html || before.includes('m4plus.js')) {
+            html = next;
             headN += 1;
-        } else if (!html.includes('cdn.mediaboxy.pl/js/v4.js')) {
-            const next = html.replace(
-                /(<script async src="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=[^"]+"\s*\r?\n\s*crossorigin="anonymous"><\/script>)/,
-                `$1\n${headSnippet}`
-            );
-            if (next !== html) {
-                html = next;
-                headN += 1;
-            }
         }
     }
 
@@ -69,4 +87,4 @@ for (const fp of walkHtml(root)) {
     if (html !== before) fs.writeFileSync(fp, html);
 }
 
-console.log(`MediaBoxy head: ${headN} files; footer/unit: ${footN} files.`);
+console.log(`MediaBoxy head normalized: ${headN}; footer/unit: ${footN}`);
