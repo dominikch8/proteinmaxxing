@@ -2567,8 +2567,8 @@
             padding: 0 18px;
             overflow: hidden;
             height: 0;
-            opacity: 0;
-            will-change: height, opacity;
+            opacity: 1;
+            will-change: height;
             border: none;
             background: transparent;
             box-shadow: none;
@@ -2582,24 +2582,33 @@
 
         html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel > * {
             opacity: 0;
-            transform: translateY(10px);
+            transform: translateY(14px);
         }
 
-        html.js-info-tiles .home-info-tile.is-open-animated ~ .home-info-tiles-outlet > .home-info-tile-panel > *,
-        html.js-info-tiles .home-info-tiles-outlet:has(.home-info-tile-panel.is-expanded) > .home-info-tile-panel.is-expanded > * {
-            animation: infoTileContentIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-content-entering > *,
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > * {
+            animation: infoTileContentIn 0.52s cubic-bezier(0.22, 1, 0.36, 1) forwards;
         }
 
-        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(1) { animation-delay: 0.04s; }
-        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(2) { animation-delay: 0.1s; }
-        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(3) { animation-delay: 0.16s; }
-        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(4) { animation-delay: 0.22s; }
-        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(n+5) { animation-delay: 0.28s; }
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-content-entering > *:nth-child(1),
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(1) { animation-delay: 0.1s; }
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-content-entering > *:nth-child(2),
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(2) { animation-delay: 0.16s; }
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-content-entering > *:nth-child(3),
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(3) { animation-delay: 0.22s; }
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-content-entering > *:nth-child(4),
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(4) { animation-delay: 0.28s; }
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-content-entering > *:nth-child(5),
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(5) { animation-delay: 0.34s; }
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-content-entering > *:nth-child(6),
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(6) { animation-delay: 0.4s; }
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-content-entering > *:nth-child(n+7),
+        html.js-info-tiles .home-info-tiles-outlet > .home-info-tile-panel.is-expanded > *:nth-child(n+7) { animation-delay: 0.46s; }
 
         @keyframes infoTileContentIn {
             from {
                 opacity: 0;
-                transform: translateY(12px);
+                transform: translateY(16px);
             }
             to {
                 opacity: 1;

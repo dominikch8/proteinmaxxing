@@ -89,20 +89,26 @@
     function animateOpen(details, panel) {
         details.classList.add('is-animating-open');
         details.classList.remove('is-open-animated');
+        panel.classList.remove('is-expanded', 'is-content-entering');
         details.open = true;
         placePanelInOutlet(details, panel);
 
         const target = measureExpandedHeight(panel);
         panel.style.overflow = 'hidden';
         panel.style.height = '0px';
-        panel.style.opacity = '0';
+        panel.style.opacity = '1';
         panel.style.paddingTop = '0px';
         panel.style.paddingBottom = '0px';
 
+        // Treść wchodzi w trakcie rozwijania, nie dopiero po końcu
+        requestAnimationFrame(() => {
+            panel.classList.add('is-content-entering');
+        });
+
         const anim = panel.animate(
             [
-                { height: '0px', opacity: 0, paddingTop: '0px', paddingBottom: '0px' },
-                { height: target + 'px', opacity: 1, paddingTop: '16px', paddingBottom: '18px' }
+                { height: '0px', paddingTop: '0px', paddingBottom: '0px' },
+                { height: target + 'px', paddingTop: '16px', paddingBottom: '18px' }
             ],
             { duration: DURATION, easing: EASE, fill: 'forwards' }
         );
@@ -110,6 +116,7 @@
         anim.onfinish = () => {
             clearInline(panel);
             panel.classList.add('is-expanded');
+            panel.classList.remove('is-content-entering');
             details.classList.remove('is-animating-open');
             details.classList.add('is-open-animated');
             anim.cancel();
@@ -119,7 +126,7 @@
     function animateClose(details, panel) {
         details.classList.remove('is-open-animated');
         const start = panel.scrollHeight || measureExpandedHeight(panel);
-        panel.classList.remove('is-expanded');
+        panel.classList.remove('is-expanded', 'is-content-entering');
         panel.style.overflow = 'hidden';
         panel.style.height = start + 'px';
         panel.style.opacity = '1';
@@ -136,7 +143,7 @@
 
         anim.onfinish = () => {
             clearInline(panel);
-            panel.classList.remove('is-expanded');
+            panel.classList.remove('is-expanded', 'is-content-entering');
             returnPanelToDetails(details, panel);
             details.open = false;
             anim.cancel();

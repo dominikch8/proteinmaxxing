@@ -19,6 +19,7 @@ const FILES = [
     'js/auth-ui.js',
     'js/site-motion.js',
     'js/cookie-banner.js',
+    'js/info-tiles.js',
 ];
 
 function walk(dir, list = []) {
