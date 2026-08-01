@@ -9,6 +9,7 @@ body {
     color: var(--text-dark);
     line-height: 1.65;
     min-height: 100vh;
+    --product-rail-content: 900px;
 }
 
 .site-header {
@@ -579,7 +580,7 @@ a.product-category:hover {
     justify-content: center;
 }
 
-/* MediaBoxy 300×600 — boczne railie (desktop) */
+/* MediaBoxy 300×600 — boczne railie przy węższej kolumnie produktu (900px) */
 .pm-side-rail {
     display: none;
     position: fixed;
@@ -597,21 +598,23 @@ a.product-category:hover {
 }
 
 .pm-side-rail--left {
-    left: max(4px, calc(50% - (var(--site-content-max, 1180px) / 2) - 316px));
+    left: max(4px, calc(50% - (var(--product-rail-content, 900px) / 2) - 316px));
 }
 
 .pm-side-rail--right {
-    left: calc(50% + (var(--site-content-max, 1180px) / 2) + 16px);
+    left: calc(50% + (var(--product-rail-content, 900px) / 2) + 16px);
 }
 
-@media (min-width: 1536px) {
+/* Węższa treść produktu → miejsce na oba banery wcześniej niż na stronie głównej */
+@media (min-width: 1240px) {
     .pm-side-rail--right {
         display: block;
     }
 }
 
-@media (min-width: 1880px) {
-    .pm-side-rail--left {
+@media (min-width: 1540px) {
+    .pm-side-rail--left,
+    .pm-side-rail--right {
         display: block;
     }
 }
