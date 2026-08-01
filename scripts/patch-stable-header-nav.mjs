@@ -37,10 +37,10 @@ function ensureAuthSlot(html, prefix) {
     const href = `${prefix}logowanie`;
     const slot = `\n                <li id="authNavSlot" class="auth-nav-item"><a class="nav-link auth-nav-link" href="${href}">Zaloguj</a></li>`;
 
-    // Przed „Dodaj produkty”, żeby Zaloguj było po lewej od niego; inaczej przed </ul>
+    // Przed „Dodaj produkt”, żeby Zaloguj było po lewej od niego; inaczej przed </ul>
     if (/href="[^"]*dodaj-produkt"/.test(html)) {
         return html.replace(
-            /(<li[^>]*>\s*<a class="nav-link[^"]*"[^>]*href="[^"]*dodaj-produkt"[^>]*>Dodaj produkty<\/a>\s*<\/li>)/i,
+            /(<li[^>]*>\s*<a class="nav-link[^"]*"[^>]*href="[^"]*dodaj-produkt"[^>]*>Dodaj produkt(?:y)?<\/a>\s*<\/li>)/i,
             `${slot}\n                $1`
         );
     }
