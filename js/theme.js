@@ -24,25 +24,14 @@
         });
     }
 
-    function takeAddProductLink() {
-        let link = document.querySelector('a.nav-add-floating');
-        if (link) return link;
-
-        const item = document.querySelector('.nav-add-product');
-        if (!item) return null;
-        link = item.querySelector('a');
-        if (!link) {
-            item.remove();
-            return null;
-        }
-        link.classList.add('nav-add-floating');
-        item.remove();
-        return link;
+    function pathPrefix() {
+        const path = window.location.pathname || '';
+        if (path.includes('/produkty/kategoria/')) return '../../';
+        if (path.includes('/produkty/')) return '../';
+        return '';
     }
 
-    function mountThemeSwitch() {
-        if (document.getElementById('pm-theme-switch')) return;
-
+    function ensureHeaderUtilities() {
         let cluster = document.getElementById('pm-header-utilities');
         if (!cluster) {
             cluster = document.createElement('div');
@@ -50,40 +39,85 @@
             cluster.className = 'header-utilities';
             document.body.appendChild(cluster);
         }
+        return cluster;
+    }
 
-        const addLink = takeAddProductLink();
-        if (addLink && !cluster.contains(addLink)) {
-            cluster.appendChild(addLink);
+    function takeAddProductLink(cluster) {
+        let link = cluster.querySelector('a.nav-add-floating');
+        const item = document.querySelector('.nav-add-product');
+        const navLink = item?.querySelector('a');
+
+        if (navLink) {
+            const href = navLink.getAttribute('href') || pathPrefix() + 'dodaj-produkt';
+            const isActive = navLink.classList.contains('active') || /dodaj-produkt/.test(window.location.pathname || '');
+            if (!link) {
+                link = document.createElement('a');
+                link.className = 'nav-add-floating';
+                link.textContent = 'Dodaj produkty';
+                cluster.insertBefore(link, cluster.firstChild);
+            }
+            link.href = href;
+            link.classList.toggle('active', isActive);
+            item.remove();
+            return link;
         }
 
-        const wrap = document.createElement('div');
-        wrap.id = 'pm-theme-switch';
-        wrap.className = 'theme-switch';
-        wrap.setAttribute('role', 'group');
-        wrap.setAttribute('aria-label', 'Motyw strony');
+        if (!link) {
+            link = document.createElement('a');
+            link.className = 'nav-add-floating';
+            link.href = pathPrefix() + 'dodaj-produkt';
+            link.textContent = 'Dodaj produkty';
+            if (/dodaj-produkt/.test(window.location.pathname || '')) {
+                link.classList.add('active');
+            }
+            cluster.insertBefore(link, cluster.firstChild);
+        }
+        return link;
+    }
 
-        wrap.innerHTML = `
-            <button type="button" class="theme-switch-btn" data-theme-value="light" aria-pressed="false" title="Jasny motyw">
-                <span aria-hidden="true">☀️</span><span class="theme-switch-text">Jasny</span>
-            </button>
-            <button type="button" class="theme-switch-btn" data-theme-value="dark" aria-pressed="false" title="Ciemny motyw neon">
-                <span aria-hidden="true">🌙</span><span class="theme-switch-text">Neon</span>
-            </button>
-        `;
+    function ensureThemeSwitch(cluster) {
+        let wrap = document.getElementById('pm-theme-switch');
+        if (!wrap) {
+            wrap = document.createElement('div');
+            wrap.id = 'pm-theme-switch';
+            wrap.className = 'theme-switch';
+            wrap.setAttribute('role', 'group');
+            wrap.setAttribute('aria-label', 'Motyw strony');
+            wrap.innerHTML = `
+                <button type="button" class="theme-switch-btn" data-theme-value="light" aria-pressed="false" title="Jasny motyw">
+                    <span aria-hidden="true">☀️</span><span class="theme-switch-text">Jasny</span>
+                </button>
+                <button type="button" class="theme-switch-btn" data-theme-value="dark" aria-pressed="false" title="Ciemny motyw neon">
+                    <span aria-hidden="true">🌙</span><span class="theme-switch-text">Neon</span>
+                </button>
+            `;
+            cluster.appendChild(wrap);
+        } else if (!cluster.contains(wrap)) {
+            cluster.appendChild(wrap);
+        }
+
+        if (wrap.dataset.pmThemeBound === '1') return wrap;
+        wrap.dataset.pmThemeBound = '1';
 
         wrap.addEventListener('click', (e) => {
             const btn = e.target.closest('[data-theme-value]');
             if (!btn) return;
-            const theme = btn.dataset.themeValue === 'dark' ? 'dark' : 'light';
+            const next = btn.dataset.themeValue === 'dark' ? 'dark' : 'light';
             try {
-                localStorage.setItem(STORAGE_KEY, theme);
+                localStorage.setItem(STORAGE_KEY, next);
             } catch (err) {
                 /* ignore */
             }
-            applyTheme(theme);
+            applyTheme(next);
         });
 
-        cluster.appendChild(wrap);
+        return wrap;
+    }
+
+    function mountThemeSwitch() {
+        const cluster = ensureHeaderUtilities();
+        takeAddProductLink(cluster);
+        ensureThemeSwitch(cluster);
         applyTheme(getStoredTheme());
     }
 
@@ -92,7 +126,6 @@
         const links = nav?.querySelector('.nav-links');
         if (!nav || !links) return;
 
-        // Prefer toggle from HTML (no layout insert after paint)
         let btn = nav.querySelector('.nav-toggle');
         if (!btn) {
             btn = document.createElement('button');

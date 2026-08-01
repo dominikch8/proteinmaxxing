@@ -7,6 +7,8 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    /* Stable layer for cross-document view transitions (see site-motion.css) */
+    contain: layout style;
 }
 
 /* Hide in main nav until theme.js parks it next to the theme switch */
