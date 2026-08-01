@@ -73,6 +73,7 @@
     color: inherit;
     cursor: pointer;
     border: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     border-radius: var(--radius-md, 16px);
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.92) 0%, rgba(248, 250, 252, 0.88) 100%);
     box-shadow: var(--shadow-sm);
@@ -118,7 +119,9 @@
 .poradnik-hub-tile:hover,
 .poradnik-hub-tile:focus-visible {
     transform: translateY(-3px);
+    color: inherit;
     border-color: var(--primary);
+    border-bottom-color: var(--primary);
     box-shadow: 0 0 0 1px var(--primary-light), 0 8px 24px var(--primary-glow);
     outline: none;
 }
