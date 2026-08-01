@@ -1,12 +1,8 @@
 /**
  * Wspólna stopka HTML — prefix: '' (root) lub '../' (produkty/).
  */
-import { buildMediaBoxySideRails, buildMediaBoxyUnit } from './site-head-assets.mjs';
-
 export function buildSiteFooter(prefix = '') {
-    return `${buildMediaBoxySideRails()}
-${buildMediaBoxyUnit()}
-    <footer class="site-footer">
+    return `    <footer class="site-footer">
         <p class="site-footer-brand"><strong>Proteiner</strong> — kalkulator dietetyczny i baza produktów</p>
         <nav class="site-footer-nav" aria-label="Nawigacja w stopce">
             <a href="${prefix}informacje">Informacje</a>

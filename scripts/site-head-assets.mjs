@@ -5,7 +5,7 @@
 
 const SITE = 'https://proteiner.pl';
 /** Bump when shipping CSS/JS changes (long browser cache + immutable). */
-export const ASSET_V = '20260801k';
+export const ASSET_V = '20260801l';
 
 function asset(prefix, path) {
     return `${prefix}${path}?v=${ASSET_V}`;
@@ -69,47 +69,6 @@ export function buildAdSenseHead() {
     return `    <meta name="google-adsense-account" content="ca-pub-8540801395510703">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8540801395510703"
         crossorigin="anonymous"></script>`;
-}
-
-/** MediaBoxy Plus — sticky footer + modal + manual units. */
-export function buildMediaBoxyHead() {
-    return `    <!-- MediaBoxy PLUS (head) -->
-    <script src="https://cdn.mediaboxy.pl/js/m4plus.js"></script>
-    <!-- MediaBoxy.pl - Zamykane okienko wideo -->
-    <script>
-    window.a1video = window.a1video || [];
-    window.a1video.push({
-        publisher: "P44448-497e74779620"
-    });
-    </script>
-    <script async src="https://cdn.mediaboxy.pl/js/v4.js"></script>`;
-}
-
-/** MediaBoxy unit (step 6) — can be repeated. */
-export function buildMediaBoxyUnit() {
-    return `    <!-- MediaBoxy Start | MediaBoxy.pl -->
-    <div class="pm-mediaboxy-slot" data-mediaboxy="P44448-497e74779620" data-types="box,banner,product,motion,links,form,text"></div>
-    <!-- MediaBoxy Stop | MediaBoxy.pl -->`;
-}
-
-/** 300×600 under product image (left column gap). */
-export function buildMediaBoxyProductInline() {
-    return `                    <!-- MediaBoxy Start | product under-image -->
-                    <div class="pm-product-inline-ad" data-mediaboxy="P44448-497e74779620" data-types="banner" data-sizes="4"></div>
-                    <!-- MediaBoxy Stop | product under-image -->`;
-}
-
-/** 300×600 skyscraper rails — left/right of content (desktop only via CSS). */
-export function buildMediaBoxySideRails() {
-    const unit =
-        '<div data-mediaboxy="P44448-497e74779620" data-types="banner" data-sizes="4"></div>';
-    return `    <!-- MediaBoxy side rails | 300x600 -->
-    <aside class="pm-side-rail pm-side-rail--left" aria-label="Reklama">
-        ${unit}
-    </aside>
-    <aside class="pm-side-rail pm-side-rail--right" aria-label="Reklama">
-        ${unit}
-    </aside>`;
 }
 
 /** Baner cookie Proteiner — CSS + JS przed skryptami motywu. */

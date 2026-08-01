@@ -1966,55 +1966,6 @@
             .pm-podium-slot .pm-podium-card { min-height: auto !important; }
         }
 
-        .pm-mediaboxy-slot {
-            max-width: var(--site-content-max, 1180px);
-            width: 100%;
-            margin: 28px auto 8px;
-            padding: 0 16px;
-            box-sizing: border-box;
-            min-height: 90px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* MediaBoxy 300×600 — boczne railie (desktop) */
-        .pm-side-rail {
-            display: none;
-            position: fixed;
-            top: max(72px, calc(50% - 300px));
-            z-index: 25;
-            width: 300px;
-            height: 600px;
-            overflow: hidden;
-            pointer-events: auto;
-        }
-
-        .pm-side-rail > div {
-            width: 300px;
-            min-height: 600px;
-        }
-
-        .pm-side-rail--left {
-            left: max(4px, calc(50% - (var(--site-content-max, 1180px) / 2) - 316px));
-        }
-
-        .pm-side-rail--right {
-            left: calc(50% + (var(--site-content-max, 1180px) / 2) + 16px);
-        }
-
-        @media (min-width: 1536px) {
-            .pm-side-rail--right {
-                display: block;
-            }
-        }
-
-        @media (min-width: 1880px) {
-            .pm-side-rail--left {
-                display: block;
-            }
-        }
-
         .site-footer {
             background: linear-gradient(180deg, transparent 0%, rgba(248, 250, 252, 0.72) 28%, rgba(248, 250, 252, 0.96) 100%);
             backdrop-filter: blur(10px);

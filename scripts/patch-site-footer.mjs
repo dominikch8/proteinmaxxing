@@ -10,7 +10,7 @@ import { buildSiteFooter } from './site-footer-html.mjs';
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 const FOOTER_RE = /<footer class="site-footer">[\s\S]*?<\/footer>/;
-const UNIT_RE = /\s*<!-- MediaBoxy Start \| MediaBoxy\.pl -->[\s\S]*?<!-- MediaBoxy Stop \| MediaBoxy\.pl -->\s*/g;
+const UNIT_RE = /\s*<!-- MediaBoxy Start[\s\S]*?<!-- MediaBoxy Stop[\s\S]*?-->\s*/g;
 const SIDE_RAIL_RE =
     /\s*<!-- MediaBoxy side rails[\s\S]*?-->\s*<aside class="pm-side-rail[\s\S]*?<\/aside>\s*<aside class="pm-side-rail[\s\S]*?<\/aside>\s*/g;
 

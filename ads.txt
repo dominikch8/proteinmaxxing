@@ -1,2 +1,1 @@
 google.com, pub-8540801395510703, DIRECT, f08c47fec0942fa0
-mediaboxy.pl, 8993742970364c4efc70b45879eabc30, DIRECT
