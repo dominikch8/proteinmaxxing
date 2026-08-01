@@ -67,7 +67,9 @@
 }
 
 [data-theme='dark'] .nav-add-floating {
-    color: #6b7280;
+    color: #a7f3d0;
+    background: rgba(12, 28, 22, 0.82);
+    border-color: rgba(52, 211, 153, 0.28);
 }
 
 .nav-add-floating:hover {
@@ -76,7 +78,9 @@
 }
 
 [data-theme='dark'] .nav-add-floating:hover {
-    color: #9ca3af;
+    color: #d1fae5;
+    background: rgba(16, 185, 129, 0.14);
+    border-color: rgba(52, 211, 153, 0.42);
 }
 
 .nav-add-floating.active {
@@ -87,9 +91,9 @@
 }
 
 [data-theme='dark'] .nav-add-floating.active {
-    color: #9ca3af;
-    background: rgba(156, 163, 175, 0.1);
-    border-color: rgba(156, 163, 175, 0.22);
+    color: #ecfdf5;
+    background: rgba(16, 185, 129, 0.22);
+    border-color: rgba(52, 211, 153, 0.5);
 }
 
 .theme-switch {
