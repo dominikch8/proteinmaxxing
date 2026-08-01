@@ -13,6 +13,8 @@ const SKIP_DIRS = new Set(['node_modules', '.git', '.github', '.cursor', 'domain
 const SKIP_FILES = new Set(['admin-zgloszenia.html']);
 const FOOTER_RE = /<footer class="site-footer">[\s\S]*?<\/footer>/;
 const UNIT_RE = /\s*<!-- MediaBoxy Start \| MediaBoxy\.pl -->[\s\S]*?<!-- MediaBoxy Stop \| MediaBoxy\.pl -->\s*/g;
+const SIDE_RAIL_RE =
+    /\s*<!-- MediaBoxy side rails[\s\S]*?-->\s*<aside class="pm-side-rail[\s\S]*?<\/aside>\s*<aside class="pm-side-rail[\s\S]*?<\/aside>\s*/g;
 
 /** Any MediaBoxy head junk between AdSense and <title> / next meta. */
 const HEAD_JUNK_RE =
@@ -79,6 +81,7 @@ for (const fp of walkHtml(root)) {
     }
 
     if (FOOTER_RE.test(html)) {
+        html = html.replace(SIDE_RAIL_RE, '\n');
         html = html.replace(UNIT_RE, '\n');
         html = html.replace(FOOTER_RE, buildSiteFooter(prefixFor(rel)));
         footN += 1;
