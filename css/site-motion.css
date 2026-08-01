@@ -334,12 +334,12 @@ html.pm-scrolled .main-content {
 
 /* Selection */
 ::selection {
-    background: rgba(128, 0, 0, 0.16);
+    background: rgba(22, 101, 52, 0.16);
     color: var(--ink);
 }
 
 [data-theme='dark'] ::selection {
-    background: rgba(224, 122, 122, 0.28);
+    background: rgba(110, 231, 183, 0.28);
     color: #fff;
 }
 

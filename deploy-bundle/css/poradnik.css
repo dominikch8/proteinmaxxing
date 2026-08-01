@@ -94,9 +94,9 @@
     pointer-events: none;
     background: linear-gradient(
         135deg,
-        rgba(28, 25, 23, 0.1) 0%,
-        rgba(37, 99, 235, 0.2) 45%,
-        rgba(128, 0, 0, 0.14) 100%
+        rgba(20, 83, 45, 0.1) 0%,
+        rgba(15, 118, 110, 0.2) 45%,
+        rgba(22, 101, 52, 0.14) 100%
     );
     transition: opacity 0.22s ease;
 }
@@ -169,9 +169,9 @@
 [data-theme='dark'] .poradnik-hub-tile::before {
     background: linear-gradient(
         135deg,
-        rgba(30, 58, 138, 0.28) 0%,
-        rgba(59, 130, 246, 0.32) 50%,
-        rgba(128, 0, 0, 0.24) 100%
+        rgba(15, 118, 110, 0.28) 0%,
+        rgba(45, 212, 191, 0.32) 50%,
+        rgba(22, 101, 52, 0.24) 100%
     );
 }
 
@@ -214,9 +214,9 @@
     opacity: 0;
     background: linear-gradient(
         135deg,
-        rgba(28, 25, 23, 0.22) 0%,
-        rgba(37, 99, 235, 0.38) 45%,
-        rgba(128, 0, 0, 0.28) 100%
+        rgba(20, 83, 45, 0.12) 0%,
+        rgba(15, 118, 110, 0.22) 45%,
+        rgba(22, 101, 52, 0.16) 100%
     );
     transition: opacity 0.22s ease;
 }
@@ -258,9 +258,9 @@
 [data-theme='dark'] .poradnik-nutrient-tile::before {
     background: linear-gradient(
         135deg,
-        rgba(30, 58, 138, 0.4) 0%,
-        rgba(59, 130, 246, 0.45) 50%,
-        rgba(128, 0, 0, 0.35) 100%
+        rgba(15, 118, 110, 0.35) 0%,
+        rgba(45, 212, 191, 0.4) 50%,
+        rgba(22, 101, 52, 0.32) 100%
     );
 }
 

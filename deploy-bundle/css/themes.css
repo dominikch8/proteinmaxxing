@@ -1,4 +1,4 @@
-/* Motyw jasny — bordowo-ciemnoniebieski */
+/* Motyw jasny — ciemnozielony / leśny */
 :root {
     /* Maksymalna szerokość kolumny treści */
     --site-content-max: 1180px;
@@ -6,75 +6,75 @@
     --site-rail-min-dual: 1880px;
     --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     --font-display: 'Encode Sans', 'Plus Jakarta Sans', system-ui, sans-serif;
-    --primary: #800000;
-    --primary-dark: #660000;
-    --primary-hover: #991010;
-    --primary-light: #a52a2a;
-    --primary-glow: rgba(128, 0, 0, 0.32);
-    --accent: #1e3a5f;
-    --accent-soft: #2563eb;
-    --accent-hot: #172554;
-    --bg-main: #f5f7fb;
+    --primary: #166534;
+    --primary-dark: #14532d;
+    --primary-hover: #15803d;
+    --primary-light: #16a34a;
+    --primary-glow: rgba(22, 101, 52, 0.3);
+    --accent: #134e4a;
+    --accent-soft: #0f766e;
+    --accent-hot: #115e59;
+    --bg-main: #f4f7f5;
     --bg-gradient:
-        radial-gradient(ellipse 110% 70% at 0% -15%, rgba(30, 58, 138, 0.14), transparent 52%),
-        radial-gradient(ellipse 90% 55% at 100% 5%, rgba(128, 0, 0, 0.11), transparent 48%),
-        radial-gradient(ellipse 70% 45% at 50% 105%, rgba(23, 37, 84, 0.07), transparent 42%),
-        linear-gradient(180deg, #f8faff 0%, #f5f7fb 45%, #f3f5fa 100%);
+        radial-gradient(ellipse 110% 70% at 0% -15%, rgba(15, 118, 110, 0.12), transparent 52%),
+        radial-gradient(ellipse 90% 55% at 100% 5%, rgba(22, 101, 52, 0.1), transparent 48%),
+        radial-gradient(ellipse 70% 45% at 50% 105%, rgba(19, 78, 74, 0.06), transparent 42%),
+        linear-gradient(180deg, #f7fbf8 0%, #f4f7f5 45%, #f1f5f2 100%);
     --surface: #ffffff;
     --surface-elevated: #ffffff;
-    --surface-hover: #f1f5f9;
+    --surface-hover: #f0f5f2;
     --text-dark: #1e293b;
     --text-muted: #57534e;
     --text-light: #78716c;
     --white: #ffffff;
-    --border: #e2e8f0;
-    --border-soft: #eef2f7;
+    --border: #e2e8e4;
+    --border-soft: #eef2ef;
     --danger: #dc2626;
     --danger-bg: #fef2f2;
     --ink: #0f172a;
     --header-bg: #ffffff;
-    --header-border: rgba(226, 232, 240, 0.9);
+    --header-border: rgba(226, 232, 228, 0.9);
     --header-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 8px 28px rgba(15, 23, 42, 0.06);
-    --main-border: rgba(226, 232, 240, 0.85);
+    --main-border: rgba(226, 232, 228, 0.85);
     --main-top-bar: linear-gradient(90deg, var(--accent-soft), var(--accent), var(--primary-light), var(--primary));
-    --main-glow: radial-gradient(circle, rgba(37, 99, 235, 0.14), transparent 70%);
+    --main-glow: radial-gradient(circle, rgba(15, 118, 110, 0.14), transparent 70%);
     --btn-calc-bg: linear-gradient(135deg, var(--accent) 0%, var(--primary-dark) 100%);
     --btn-calc-color: #ffffff;
-    --btn-calc-shadow: 0 10px 28px rgba(30, 58, 138, 0.26), 0 4px 12px var(--primary-glow);
+    --btn-calc-shadow: 0 10px 28px rgba(19, 78, 74, 0.26), 0 4px 12px var(--primary-glow);
     --nav-active-bg: linear-gradient(135deg, var(--accent) 0%, var(--primary-dark) 100%);
     --nav-active-color: #ffffff;
-    --nav-active-shadow: 0 6px 18px rgba(30, 58, 138, 0.24), 0 2px 8px var(--primary-glow);
+    --nav-active-shadow: 0 6px 18px rgba(19, 78, 74, 0.24), 0 2px 8px var(--primary-glow);
     --subnav-full-bg: linear-gradient(
         135deg,
-        rgba(239, 246, 255, 0.96) 0%,
-        rgba(219, 234, 254, 0.94) 32%,
-        rgba(254, 226, 226, 0.92) 68%,
-        rgba(254, 215, 215, 0.9) 100%
+        rgba(240, 253, 250, 0.96) 0%,
+        rgba(204, 251, 241, 0.92) 32%,
+        rgba(220, 252, 231, 0.9) 68%,
+        rgba(187, 247, 208, 0.88) 100%
     );
-    --subnav-full-border: rgba(30, 58, 138, 0.18);
-    --subnav-full-shadow: 0 10px 30px rgba(30, 58, 138, 0.1), 0 4px 14px rgba(128, 0, 0, 0.08);
+    --subnav-full-border: rgba(15, 118, 110, 0.18);
+    --subnav-full-shadow: 0 10px 30px rgba(15, 118, 110, 0.1), 0 4px 14px rgba(22, 101, 52, 0.08);
     --subnav-btn-color: var(--text-muted);
     --subnav-btn-hover-color: var(--ink);
     --subnav-btn-hover-bg: rgba(255, 255, 255, 0.78);
     --subnav-active-bg: linear-gradient(135deg, var(--accent) 0%, var(--primary-dark) 100%);
     --subnav-active-color: #fff;
-    --kcal-badge-bg: linear-gradient(135deg, #eff6ff, #dbeafe);
-    --kcal-badge-color: #1e40af;
-    --kcal-badge-border: #93c5fd;
-    --calc-tile-bg: linear-gradient(145deg, rgba(37, 99, 235, 0.09) 0%, rgba(239, 246, 255, 0.94) 100%);
-    --calc-tile-border: rgba(37, 99, 235, 0.22);
-    --calc-tile-bg-emphasis: linear-gradient(145deg, rgba(37, 99, 235, 0.14) 0%, rgba(219, 234, 254, 0.58) 100%);
-    --calc-tile-border-emphasis: rgba(30, 58, 138, 0.4);
-    --calc-alert-bg: linear-gradient(145deg, rgba(37, 99, 235, 0.1) 0%, rgba(219, 234, 254, 0.52) 100%);
-    --calc-alert-border: #93c5fd;
+    --kcal-badge-bg: linear-gradient(135deg, #ecfdf5, #d1fae5);
+    --kcal-badge-color: #065f46;
+    --kcal-badge-border: #6ee7b7;
+    --calc-tile-bg: linear-gradient(145deg, rgba(15, 118, 110, 0.09) 0%, rgba(240, 253, 250, 0.94) 100%);
+    --calc-tile-border: rgba(15, 118, 110, 0.22);
+    --calc-tile-bg-emphasis: linear-gradient(145deg, rgba(15, 118, 110, 0.14) 0%, rgba(204, 251, 241, 0.58) 100%);
+    --calc-tile-border-emphasis: rgba(19, 78, 74, 0.4);
+    --calc-alert-bg: linear-gradient(145deg, rgba(15, 118, 110, 0.1) 0%, rgba(204, 251, 241, 0.52) 100%);
+    --calc-alert-border: #5eead4;
     --rank-stat-badge-bg: linear-gradient(135deg, #f0fdf9 0%, #ecfdf5 42%, #e0f2fe 100%);
     --rank-stat-badge-color: #0f766e;
     --rank-stat-badge-border: #7dd3c0;
-    --ratio-badge-bg: linear-gradient(135deg, #fff1f2, #ffe4e6);
-    --ratio-badge-border: #fca5a5;
-    --ratio-badge-color: #660000;
-    /* Napisy: delikatny gradient góra→dół, czerwień → granat */
-    --brand-text-gradient: linear-gradient(180deg, #9f2a2a 0%, #7a2e3a 48%, #3d4a66 100%);
+    --ratio-badge-bg: linear-gradient(135deg, #ecfdf5, #dcfce7);
+    --ratio-badge-border: #86efac;
+    --ratio-badge-color: #14532d;
+    /* Napisy: zieleń → głęboki teal */
+    --brand-text-gradient: linear-gradient(180deg, #15803d 0%, #166534 48%, #134e4a 100%);
     --h1-gradient: var(--brand-text-gradient);
     --ranking-title-max: var(--brand-text-gradient);
     --ranking-title-price: var(--brand-text-gradient);
@@ -84,8 +84,8 @@
     --radius-lg: 22px;
     --radius-xl: 28px;
     --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04), 0 2px 6px rgba(15, 23, 42, 0.04);
-    --shadow-md: 0 10px 24px -8px rgba(15, 23, 42, 0.1), 0 4px 12px -4px rgba(30, 58, 138, 0.1);
-    --shadow-lg: 0 28px 56px -20px rgba(15, 23, 42, 0.16), 0 14px 28px -12px rgba(128, 0, 0, 0.08);
+    --shadow-md: 0 10px 24px -8px rgba(15, 23, 42, 0.1), 0 4px 12px -4px rgba(15, 118, 110, 0.1);
+    --shadow-lg: 0 28px 56px -20px rgba(15, 23, 42, 0.16), 0 14px 28px -12px rgba(22, 101, 52, 0.08);
     --shadow-card: 0 2px 8px rgba(15, 23, 42, 0.04), 0 14px 28px rgba(15, 23, 42, 0.05);
     --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
     --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
@@ -95,81 +95,81 @@
     --transition-slow: 0.42s var(--ease-out);
 }
 
-/* Motyw ciemny — bordowo-ciemnoniebieski */
+/* Motyw ciemny — ciemnozielony / leśny */
 [data-theme='dark'] {
-    --primary: #f0a0a0;
-    --primary-dark: #e07a7a;
-    --primary-hover: #ffd4d4;
-    --primary-light: #ffe4e4;
-    --primary-glow: rgba(224, 122, 122, 0.4);
-    --accent: #93c5fd;
-    --accent-soft: #bfdbfe;
-    --accent-hot: #60a5fa;
-    --bg-main: #0a0e1a;
+    --primary: #86efac;
+    --primary-dark: #6ee7b7;
+    --primary-hover: #bbf7d0;
+    --primary-light: #dcfce7;
+    --primary-glow: rgba(110, 231, 183, 0.38);
+    --accent: #5eead4;
+    --accent-soft: #99f6e4;
+    --accent-hot: #2dd4bf;
+    --bg-main: #07120e;
     --bg-gradient:
-        radial-gradient(ellipse 100% 80% at 10% -20%, rgba(37, 99, 235, 0.16), transparent 50%),
-        radial-gradient(ellipse 80% 60% at 95% 10%, rgba(128, 0, 0, 0.18), transparent 45%),
-        radial-gradient(ellipse 60% 50% at 50% 110%, rgba(23, 37, 84, 0.38), transparent 40%),
-        #0a0e1a;
-    --surface: #12182a;
-    --surface-elevated: #1a2238;
-    --surface-hover: #24304a;
+        radial-gradient(ellipse 100% 80% at 10% -20%, rgba(15, 118, 110, 0.16), transparent 50%),
+        radial-gradient(ellipse 80% 60% at 95% 10%, rgba(22, 101, 52, 0.18), transparent 45%),
+        radial-gradient(ellipse 60% 50% at 50% 110%, rgba(19, 78, 74, 0.35), transparent 40%),
+        #07120e;
+    --surface: #0d1a14;
+    --surface-elevated: #13241c;
+    --surface-hover: #1a3228;
     --text-dark: #f8fafc;
     --text-muted: #94a3b8;
     --text-light: #64748b;
-    --border: #334155;
-    --border-soft: #1e293b;
+    --border: #1e3a2f;
+    --border-soft: #13241c;
     --danger: #f87171;
     --danger-bg: rgba(127, 29, 29, 0.35);
     --ink: #f8fafc;
-    --header-bg: #0a0e1a;
-    --header-border: rgba(59, 130, 246, 0.2);
+    --header-bg: #07120e;
+    --header-border: rgba(45, 212, 191, 0.18);
     --header-shadow: 0 10px 36px rgba(0, 0, 0, 0.45);
-    --main-border: rgba(147, 197, 253, 0.16);
+    --main-border: rgba(110, 231, 183, 0.16);
     --main-top-bar: linear-gradient(90deg, var(--accent), var(--accent-soft), var(--primary), var(--primary-dark));
-    --main-glow: radial-gradient(circle, rgba(37, 99, 235, 0.14), transparent 68%);
-    --btn-calc-bg: linear-gradient(135deg, var(--accent-hot) 0%, var(--primary-dark) 55%, #660000 100%);
-    --btn-calc-color: #0a0e1a;
-    --btn-calc-shadow: 0 10px 34px rgba(37, 99, 235, 0.34), 0 4px 16px var(--primary-glow);
+    --main-glow: radial-gradient(circle, rgba(15, 118, 110, 0.14), transparent 68%);
+    --btn-calc-bg: linear-gradient(135deg, var(--accent-hot) 0%, var(--primary-dark) 55%, #14532d 100%);
+    --btn-calc-color: #07120e;
+    --btn-calc-shadow: 0 10px 34px rgba(15, 118, 110, 0.34), 0 4px 16px var(--primary-glow);
     --nav-active-bg: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
-    --nav-active-color: #0a0e1a;
-    --nav-active-shadow: 0 6px 22px rgba(37, 99, 235, 0.3), 0 0 24px var(--primary-glow);
+    --nav-active-color: #07120e;
+    --nav-active-shadow: 0 6px 22px rgba(15, 118, 110, 0.3), 0 0 24px var(--primary-glow);
     --subnav-full-bg: linear-gradient(
         135deg,
-        rgba(30, 58, 138, 0.35) 0%,
-        rgba(23, 37, 84, 0.5) 45%,
-        rgba(128, 0, 0, 0.35) 75%,
-        rgba(10, 14, 26, 0.95) 100%
+        rgba(15, 118, 110, 0.35) 0%,
+        rgba(19, 78, 74, 0.5) 45%,
+        rgba(22, 101, 52, 0.35) 75%,
+        rgba(7, 18, 14, 0.95) 100%
     );
-    --subnav-full-border: rgba(147, 197, 253, 0.28);
-    --subnav-full-shadow: 0 0 36px rgba(37, 99, 235, 0.12), 0 8px 24px rgba(128, 0, 0, 0.15);
+    --subnav-full-border: rgba(110, 231, 183, 0.28);
+    --subnav-full-shadow: 0 0 36px rgba(15, 118, 110, 0.12), 0 8px 24px rgba(22, 101, 52, 0.15);
     --subnav-btn-color: var(--text-muted);
     --subnav-btn-hover-color: var(--accent-soft);
-    --subnav-btn-hover-bg: rgba(37, 99, 235, 0.12);
+    --subnav-btn-hover-bg: rgba(15, 118, 110, 0.12);
     --subnav-active-bg: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
-    --subnav-active-color: #0a0e1a;
-    --kcal-badge-bg: rgba(37, 99, 235, 0.15);
+    --subnav-active-color: #07120e;
+    --kcal-badge-bg: rgba(15, 118, 110, 0.15);
     --kcal-badge-color: var(--accent-soft);
-    --kcal-badge-border: rgba(147, 197, 253, 0.3);
-    --calc-tile-bg: linear-gradient(145deg, rgba(37, 99, 235, 0.18) 0%, rgba(18, 24, 42, 0.55) 100%);
-    --calc-tile-border: rgba(96, 165, 250, 0.28);
-    --calc-tile-bg-emphasis: linear-gradient(145deg, rgba(37, 99, 235, 0.24) 0%, rgba(30, 58, 95, 0.38) 100%);
-    --calc-tile-border-emphasis: rgba(147, 197, 253, 0.4);
-    --calc-alert-bg: linear-gradient(145deg, rgba(37, 99, 235, 0.16) 0%, rgba(30, 58, 95, 0.42) 100%);
-    --calc-alert-border: rgba(147, 197, 253, 0.35);
-    --rank-stat-badge-bg: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(37, 99, 235, 0.14) 100%);
+    --kcal-badge-border: rgba(110, 231, 183, 0.3);
+    --calc-tile-bg: linear-gradient(145deg, rgba(15, 118, 110, 0.18) 0%, rgba(13, 26, 20, 0.55) 100%);
+    --calc-tile-border: rgba(45, 212, 191, 0.28);
+    --calc-tile-bg-emphasis: linear-gradient(145deg, rgba(15, 118, 110, 0.24) 0%, rgba(19, 78, 74, 0.38) 100%);
+    --calc-tile-border-emphasis: rgba(110, 231, 183, 0.4);
+    --calc-alert-bg: linear-gradient(145deg, rgba(15, 118, 110, 0.16) 0%, rgba(19, 78, 74, 0.42) 100%);
+    --calc-alert-border: rgba(110, 231, 183, 0.35);
+    --rank-stat-badge-bg: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(15, 118, 110, 0.14) 100%);
     --rank-stat-badge-color: #6ee7b7;
     --rank-stat-badge-border: rgba(110, 231, 183, 0.38);
-    --ratio-badge-bg: rgba(128, 0, 0, 0.25);
-    --ratio-badge-border: rgba(224, 122, 122, 0.3);
+    --ratio-badge-bg: rgba(22, 101, 52, 0.25);
+    --ratio-badge-border: rgba(110, 231, 183, 0.3);
     --ratio-badge-color: var(--primary-light);
-    --brand-text-gradient: linear-gradient(180deg, #d4a0a0 0%, #c4a8b0 48%, #a8b4c8 100%);
+    --brand-text-gradient: linear-gradient(180deg, #a7f3d0 0%, #6ee7b7 48%, #5eead4 100%);
     --h1-gradient: var(--brand-text-gradient);
     --ranking-title-max: var(--brand-text-gradient);
     --ranking-title-price: var(--brand-text-gradient);
     --logo-gradient: var(--brand-text-gradient);
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
-    --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(59, 130, 246, 0.08);
-    --shadow-lg: 0 28px 60px rgba(0, 0, 0, 0.55), 0 0 40px rgba(128, 0, 0, 0.08);
+    --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(15, 118, 110, 0.08);
+    --shadow-lg: 0 28px 60px rgba(0, 0, 0, 0.55), 0 0 40px rgba(22, 101, 52, 0.08);
     --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
