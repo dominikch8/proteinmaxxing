@@ -62,37 +62,23 @@
         const item = document.querySelector('.nav-add-product');
         const navLink = item?.querySelector('a');
         const isActive = /dodaj-produkt/.test(window.location.pathname || '');
-
-        if (navLink) {
-            const href = navLink.getAttribute('href') || pathPrefix() + 'dodaj-produkt';
-            if (!link) {
-                link = document.createElement('a');
-                link.id = 'addProductFloating';
-                link.className = 'nav-add-floating';
-                const auth = cluster.querySelector('a.auth-nav-floating');
-                if (auth) cluster.insertBefore(link, auth);
-                else cluster.appendChild(link);
-            }
-            link.href = href;
-            link.textContent = 'Dodaj produkt';
-            link.classList.toggle('active', isActive || navLink.classList.contains('active'));
-            item.remove();
-            return link;
-        }
+        const href = (navLink && navLink.getAttribute('href')) || pathPrefix() + 'dodaj-produkt';
 
         if (!link) {
             link = document.createElement('a');
             link.id = 'addProductFloating';
-            link.className = 'nav-add-floating';
-            link.href = pathPrefix() + 'dodaj-produkt';
-            link.textContent = 'Dodaj produkt';
-            const auth = cluster.querySelector('a.auth-nav-floating');
-            if (auth) cluster.insertBefore(link, auth);
-            else cluster.appendChild(link);
-        } else {
-            link.textContent = 'Dodaj produkt';
         }
-        link.classList.toggle('active', isActive);
+        link.id = 'addProductFloating';
+        link.className = 'nav-add-floating';
+        link.href = href;
+        link.textContent = 'Dodaj produkt';
+        link.classList.toggle('active', isActive || !!(navLink && navLink.classList.contains('active')));
+
+        const auth = cluster.querySelector('a.auth-nav-floating');
+        if (auth) cluster.insertBefore(link, auth);
+        else cluster.appendChild(link);
+
+        if (item) item.remove();
         return link;
     }
 
@@ -102,32 +88,23 @@
         const navLink = item?.querySelector('a');
         const path = window.location.pathname || '';
         const isActive = /logowanie|konto|admin-zgloszenia/.test(path);
-
-        if (navLink) {
-            const href = navLink.getAttribute('href') || pathPrefix() + 'logowanie';
-            const label = (navLink.textContent || 'Zaloguj').trim() || 'Zaloguj';
-            if (!link) {
-                link = document.createElement('a');
-                link.id = 'authNavFloating';
-                link.className = 'nav-add-floating auth-nav-floating';
-            }
-            link.href = href;
-            if (!link.dataset.authManaged) link.textContent = label;
-            link.classList.toggle('active', isActive || navLink.classList.contains('active'));
-            cluster.appendChild(link);
-            item.remove();
-            return link;
-        }
+        const href = (navLink && navLink.getAttribute('href')) || pathPrefix() + 'logowanie';
+        const label =
+            (link && link.dataset.authManaged && link.textContent) ||
+            ((navLink && navLink.textContent) || 'Zaloguj').trim() ||
+            'Zaloguj';
 
         if (!link) {
             link = document.createElement('a');
-            link.id = 'authNavFloating';
-            link.className = 'nav-add-floating auth-nav-floating';
-            link.href = pathPrefix() + 'logowanie';
-            link.textContent = 'Zaloguj';
         }
+        link.id = 'authNavFloating';
+        link.className = 'nav-add-floating auth-nav-floating';
+        link.href = href;
+        if (!link.dataset.authManaged) link.textContent = label;
+        link.classList.toggle('active', isActive || !!(navLink && navLink.classList.contains('active')));
         cluster.appendChild(link);
-        link.classList.toggle('active', isActive);
+
+        if (item) item.remove();
         return link;
     }
 
@@ -147,8 +124,8 @@
                     <span aria-hidden="true">🌙</span><span class="theme-switch-text">Neon</span>
                 </button>
             `;
-            cluster.appendChild(wrap);
-        } else if (!cluster.contains(wrap)) {
+        }
+        if (!cluster.contains(wrap)) {
             cluster.appendChild(wrap);
         }
 
