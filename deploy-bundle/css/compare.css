@@ -785,8 +785,16 @@ body.compare-body.is-ready .compare-stage {
     z-index: 10000;
 }
 
+/* Suggestions are portaled to document.body (fixed) — keep overflow hidden
+   so the main top accent bar clips to the rounded card corners. */
 .compare-page.main-content {
-    overflow: visible;
+    overflow: hidden;
+}
+
+.compare-page.main-content::before {
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .compare-picker:focus-within {

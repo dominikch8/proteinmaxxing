@@ -369,6 +369,9 @@
             right: 0;
             height: 4px;
             background: var(--main-top-bar);
+            border-radius: inherit;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
         }
 
         [data-theme='dark'] .main-content::before {
