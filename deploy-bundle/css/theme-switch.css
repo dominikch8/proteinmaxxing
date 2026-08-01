@@ -1,4 +1,4 @@
-/* Right-side utility cluster: Dodaj produkty + Jasny/Neon */
+/* Right-side utility cluster: Zaloguj + Dodaj produkty + Jasny/Neon */
 .header-utilities {
     position: fixed;
     top: 6px;
@@ -11,8 +11,10 @@
     contain: layout style;
 }
 
-/* Hide in main nav until theme.js parks it next to the theme switch */
-.nav-links > .nav-add-product {
+/* Hide in main nav until parked next to the theme switch */
+.nav-links > .nav-add-product,
+.nav-links > .auth-nav-item,
+.nav-links > #authNavSlot {
     display: none !important;
 }
 

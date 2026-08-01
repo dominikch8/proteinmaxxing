@@ -1,6 +1,6 @@
 /**
  * Slot konta w nawigacji (Zaloguj / Konto).
- * Slot powinien już być w HTML (#authNavSlot) — bez doklejania po paint (skok paska).
+ * Preferuje pływający przycisk w #pm-header-utilities (#authNavFloating).
  */
 (function () {
     const CACHE_KEY = 'pmx_auth_nav_v1';
@@ -34,8 +34,11 @@
         });
     }
 
-    function findNavList() {
-        return document.querySelector('.site-header .nav-links');
+    function pathPrefix() {
+        const path = window.location.pathname || '';
+        if (path.includes('/produkty/kategoria/')) return '../../';
+        if (path.includes('/produkty/')) return '../';
+        return '';
     }
 
     function readCache() {
@@ -56,72 +59,80 @@
         }
     }
 
-    function escapeHtml(s) {
-        return String(s)
-            .replace(/&/g, '&amp;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/"/g, '&quot;');
+    function ensureAuthLink(prefix) {
+        let link = document.getElementById('authNavFloating');
+        if (link) return link;
+
+        let cluster = document.getElementById('pm-header-utilities');
+        if (!cluster) {
+            cluster = document.createElement('div');
+            cluster.id = 'pm-header-utilities';
+            cluster.className = 'header-utilities';
+            document.body.appendChild(cluster);
+        }
+
+        link = document.createElement('a');
+        link.id = 'authNavFloating';
+        link.className = 'nav-add-floating auth-nav-floating';
+        link.href = prefix + 'logowanie';
+        link.textContent = 'Zaloguj';
+
+        const addLink = cluster.querySelector('a.nav-add-floating:not(.auth-nav-floating)');
+        if (addLink) cluster.insertBefore(link, addLink);
+        else {
+            const theme = document.getElementById('pm-theme-switch');
+            if (theme) cluster.insertBefore(link, theme);
+            else cluster.appendChild(link);
+        }
+        return link;
     }
 
-    function renderSlot(li, user, prefix) {
-        li.className = 'auth-nav-item';
+    function renderAuthLink(link, user, prefix) {
+        link.dataset.authManaged = '1';
+        link.className = 'nav-add-floating auth-nav-floating';
+        const path = window.location.pathname || '';
+
         if (!user) {
-            li.innerHTML =
-                '<a class="nav-link auth-nav-link" href="' +
-                prefix +
-                'logowanie">Zaloguj</a>';
+            link.href = prefix + 'logowanie';
+            link.textContent = 'Zaloguj';
+            link.removeAttribute('title');
+            link.classList.toggle('active', path.includes('logowanie'));
             return;
         }
+
         const label = user.role === 'admin' ? 'Admin' : 'Konto';
         const name = (user.name || user.email || 'Konto').split(' ')[0];
-        const path = window.location.pathname || '';
         const isActive = path.includes('konto') || path.includes('admin-zgloszenia');
-        li.innerHTML =
-            '<a class="nav-link auth-nav-link' +
-            (isActive ? ' active' : '') +
-            '" href="' +
-            prefix +
-            'konto" title="' +
-            String(user.email || '').replace(/"/g, '&quot;') +
-            '">' +
-            label +
-            (name ? ' · ' + escapeHtml(name) : '') +
-            '</a>';
+        link.href = prefix + 'konto';
+        link.textContent = label + (name ? ' · ' + name : '');
+        link.title = user.email || '';
+        link.classList.toggle('active', isActive);
     }
 
     async function init() {
-        const nav = findNavList();
-        if (!nav) return;
-
-        let li = document.getElementById('authNavSlot');
-        if (!li) {
-            // Fallback tylko gdy HTML nie ma slotu — lepiej w szablonie
-            li = document.createElement('li');
-            li.id = 'authNavSlot';
-            li.className = 'auth-nav-item';
-            nav.appendChild(li);
-        }
-
-        const prefix = scriptPrefix();
+        const prefix = scriptPrefix() || pathPrefix();
+        const link = ensureAuthLink(prefix);
         const cached = readCache();
 
-        // Zawsze widoczny stan startowy (bez visibility:hidden — mniej „mignięcia”)
         if (cached !== undefined) {
-            renderSlot(li, cached, prefix);
-        } else if (!li.querySelector('a')) {
-            renderSlot(li, null, prefix);
+            renderAuthLink(link, cached, prefix);
+        } else if (!link.textContent.trim()) {
+            renderAuthLink(link, null, prefix);
         }
+
+        // Usuń stary slot z paska nawigacji, jeśli jeszcze jest
+        const old = document.getElementById('authNavSlot');
+        if (old) old.remove();
 
         try {
             await ensureApiScript(prefix);
             const data = await window.ProteinerAuth.me();
             const user = data && data.user ? data.user : null;
             writeCache(user);
-            renderSlot(li, user, prefix);
+            renderAuthLink(link, user, prefix);
         } catch {
             if (cached === undefined) {
-                renderSlot(li, null, prefix);
+                renderAuthLink(link, null, prefix);
             }
         }
     }

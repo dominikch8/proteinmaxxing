@@ -32,6 +32,7 @@
         const prefix = pathPrefix();
         const path = window.location.pathname || '';
         const addActive = /dodaj-produkt/.test(path) ? ' active' : '';
+        const authActive = /logowanie|konto|admin-zgloszenia/.test(path) ? ' active' : '';
         const lightActive = theme === 'light';
         const darkActive = theme === 'dark';
 
@@ -39,6 +40,11 @@
         cluster.id = 'pm-header-utilities';
         cluster.className = 'header-utilities';
         cluster.innerHTML =
+            '<a id="authNavFloating" class="nav-add-floating auth-nav-floating' +
+            authActive +
+            '" href="' +
+            prefix +
+            'logowanie">Zaloguj</a>' +
             '<a class="nav-add-floating' +
             addActive +
             '" href="' +

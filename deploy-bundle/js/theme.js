@@ -42,8 +42,47 @@
         return cluster;
     }
 
+    function takeAuthLink(cluster) {
+        let link = document.getElementById('authNavFloating') || cluster.querySelector('a.auth-nav-floating');
+        const item = document.getElementById('authNavSlot') || document.querySelector('.nav-links > .auth-nav-item');
+        const navLink = item?.querySelector('a');
+        const path = window.location.pathname || '';
+        const isActive = /logowanie|konto|admin-zgloszenia/.test(path);
+
+        if (navLink) {
+            const href = navLink.getAttribute('href') || pathPrefix() + 'logowanie';
+            const label = (navLink.textContent || 'Zaloguj').trim() || 'Zaloguj';
+            if (!link) {
+                link = document.createElement('a');
+                link.id = 'authNavFloating';
+                link.className = 'nav-add-floating auth-nav-floating';
+                const addLink = cluster.querySelector('a.nav-add-floating:not(.auth-nav-floating)');
+                if (addLink) cluster.insertBefore(link, addLink);
+                else cluster.insertBefore(link, cluster.firstChild);
+            }
+            link.href = href;
+            if (!link.dataset.authManaged) link.textContent = label;
+            link.classList.toggle('active', isActive || navLink.classList.contains('active'));
+            item.remove();
+            return link;
+        }
+
+        if (!link) {
+            link = document.createElement('a');
+            link.id = 'authNavFloating';
+            link.className = 'nav-add-floating auth-nav-floating';
+            link.href = pathPrefix() + 'logowanie';
+            link.textContent = 'Zaloguj';
+            const addLink = cluster.querySelector('a.nav-add-floating:not(.auth-nav-floating)');
+            if (addLink) cluster.insertBefore(link, addLink);
+            else cluster.insertBefore(link, cluster.firstChild);
+        }
+        link.classList.toggle('active', isActive);
+        return link;
+    }
+
     function takeAddProductLink(cluster) {
-        let link = cluster.querySelector('a.nav-add-floating');
+        let link = cluster.querySelector('a.nav-add-floating:not(.auth-nav-floating)');
         const item = document.querySelector('.nav-add-product');
         const navLink = item?.querySelector('a');
 
@@ -54,7 +93,9 @@
                 link = document.createElement('a');
                 link.className = 'nav-add-floating';
                 link.textContent = 'Dodaj produkty';
-                cluster.insertBefore(link, cluster.firstChild);
+                const theme = document.getElementById('pm-theme-switch');
+                if (theme) cluster.insertBefore(link, theme);
+                else cluster.appendChild(link);
             }
             link.href = href;
             link.classList.toggle('active', isActive);
@@ -70,7 +111,9 @@
             if (/dodaj-produkt/.test(window.location.pathname || '')) {
                 link.classList.add('active');
             }
-            cluster.insertBefore(link, cluster.firstChild);
+            const theme = document.getElementById('pm-theme-switch');
+            if (theme) cluster.insertBefore(link, theme);
+            else cluster.appendChild(link);
         }
         return link;
     }
@@ -116,6 +159,7 @@
 
     function mountThemeSwitch() {
         const cluster = ensureHeaderUtilities();
+        takeAuthLink(cluster);
         takeAddProductLink(cluster);
         ensureThemeSwitch(cluster);
         applyTheme(getStoredTheme());
