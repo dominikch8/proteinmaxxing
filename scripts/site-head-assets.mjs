@@ -4,6 +4,12 @@
  */
 
 const SITE = 'https://proteiner.pl';
+/** Bump when shipping CSS/JS changes (long browser cache + immutable). */
+export const ASSET_V = '20260801c';
+
+function asset(prefix, path) {
+    return `${prefix}${path}?v=${ASSET_V}`;
+}
 
 export function buildFaviconLinks(prefix = '') {
     const p = prefix;
@@ -50,7 +56,7 @@ export function productOgImagePath(slug) {
 
 /** Early theme flash prevention — load immediately after charset. */
 export function buildThemeInitScript(prefix = '') {
-    return `    <script src="${prefix}js/theme-init.js"></script>`;
+    return `    <script src="${asset(prefix, 'js/theme-init.js')}"></script>`;
 }
 
 /** Google Consent Mode v2 — przed AdSense. */
@@ -67,8 +73,8 @@ export function buildAdSenseHead() {
 
 /** Baner cookie Proteiner — CSS + JS przed skryptami motywu. */
 export function buildCookieConsentBody(prefix = '') {
-    return `    <link rel="stylesheet" href="${prefix}css/cookie-consent.css">
-    <script src="${prefix}js/cookie-banner.js"></script>`;
+    return `    <link rel="stylesheet" href="${asset(prefix, 'css/cookie-consent.css')}">
+    <script src="${asset(prefix, 'js/cookie-banner.js')}"></script>`;
 }
 
 /**
@@ -78,17 +84,17 @@ export function buildCookieConsentBody(prefix = '') {
  */
 export function buildThemeStylesheets(prefix = '', opts = {}) {
     const main = opts.productPage ? 'product-page.css' : 'site.css';
-    return `    <link rel="stylesheet" href="${prefix}css/themes.css">
-    <link rel="stylesheet" href="${prefix}css/${main}">
-    <link rel="stylesheet" href="${prefix}css/theme-switch.css">
-    <link rel="stylesheet" href="${prefix}css/site-motion.css">
-    <link rel="stylesheet" href="${prefix}css/brand-text.css">`;
+    return `    <link rel="stylesheet" href="${asset(prefix, 'css/themes.css')}">
+    <link rel="stylesheet" href="${asset(prefix, `css/${main}`)}">
+    <link rel="stylesheet" href="${asset(prefix, 'css/theme-switch.css')}">
+    <link rel="stylesheet" href="${asset(prefix, 'css/site-motion.css')}">
+    <link rel="stylesheet" href="${asset(prefix, 'css/brand-text.css')}">`;
 }
 
 export function buildThemeBodyScript(prefix = '') {
-    return `    <script src="${prefix}js/auth-ui.js"></script>
-    <script src="${prefix}js/theme.js"></script>
-    <script src="${prefix}js/site-motion.js"></script>`;
+    return `    <script src="${asset(prefix, 'js/auth-ui.js')}"></script>
+    <script src="${asset(prefix, 'js/theme.js')}"></script>
+    <script src="${asset(prefix, 'js/site-motion.js')}"></script>`;
 }
 
 export function buildThemeAssets(prefix = '', opts = {}) {
