@@ -59,6 +59,7 @@
 }
 
 .poradnik-hub-tile {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -75,7 +76,33 @@
     border-radius: var(--radius-md, 16px);
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.92) 0%, rgba(248, 250, 252, 0.88) 100%);
     box-shadow: var(--shadow-sm);
-    transition: transform var(--transition, 0.22s ease), box-shadow var(--transition, 0.22s ease), border-color var(--transition, 0.22s ease);
+    overflow: hidden;
+    isolation: isolate;
+    transition:
+        transform var(--transition, 0.22s ease),
+        box-shadow var(--transition, 0.22s ease),
+        border-color var(--transition, 0.22s ease);
+}
+
+.poradnik-hub-tile::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+    background: linear-gradient(
+        135deg,
+        rgba(28, 25, 23, 0.1) 0%,
+        rgba(37, 99, 235, 0.2) 45%,
+        rgba(128, 0, 0, 0.14) 100%
+    );
+    transition: opacity 0.22s ease;
+}
+
+.poradnik-hub-tile > * {
+    position: relative;
+    z-index: 1;
 }
 
 .artykuly-list {
@@ -90,15 +117,26 @@
 
 .poradnik-hub-tile:hover,
 .poradnik-hub-tile:focus-visible {
-    transform: translateY(-2px);
-    border-color: rgba(37, 99, 235, 0.35);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 1px var(--primary-light), 0 8px 24px var(--primary-glow);
     outline: none;
+}
+
+.poradnik-hub-tile:hover::before,
+.poradnik-hub-tile:focus-visible::before {
+    opacity: 1;
 }
 
 .poradnik-hub-tile-emoji {
     font-size: 1.75rem;
     line-height: 1;
+    transition: transform 0.28s cubic-bezier(0.34, 1.2, 0.64, 1);
+}
+
+.poradnik-hub-tile:hover .poradnik-hub-tile-emoji,
+.poradnik-hub-tile:focus-visible .poradnik-hub-tile-emoji {
+    transform: scale(1.08) translateY(-1px);
 }
 
 .poradnik-hub-tile-title {
@@ -106,6 +144,12 @@
     font-size: 1.05rem;
     font-weight: 700;
     color: var(--text-dark);
+    transition: color 0.22s ease;
+}
+
+.poradnik-hub-tile:hover .poradnik-hub-tile-title,
+.poradnik-hub-tile:focus-visible .poradnik-hub-tile-title {
+    color: var(--primary-dark);
 }
 
 .poradnik-hub-tile-desc {
@@ -119,9 +163,23 @@
     border-color: rgba(147, 197, 253, 0.14);
 }
 
+[data-theme='dark'] .poradnik-hub-tile::before {
+    background: linear-gradient(
+        135deg,
+        rgba(30, 58, 138, 0.28) 0%,
+        rgba(59, 130, 246, 0.32) 50%,
+        rgba(128, 0, 0, 0.24) 100%
+    );
+}
+
 [data-theme='dark'] .poradnik-hub-tile:hover,
 [data-theme='dark'] .poradnik-hub-tile:focus-visible {
-    border-color: rgba(147, 197, 253, 0.35);
+    border-color: rgba(147, 197, 253, 0.45);
+}
+
+[data-theme='dark'] .poradnik-hub-tile:hover .poradnik-hub-tile-title,
+[data-theme='dark'] .poradnik-hub-tile:focus-visible .poradnik-hub-tile-title {
+    color: var(--ink);
 }
 
 .poradnik-page .info-tab a.poradnik-nutrient-tile {
