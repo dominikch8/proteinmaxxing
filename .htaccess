@@ -8,6 +8,12 @@ DirectorySlash Off
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Główna zakładka: Dieta (root → /dieta)
+RewriteRule ^$ /dieta [R=301,L]
+
+# Kalkulator BMI (dawna strona główna)
+RewriteRule ^kalkulator-bmi/?$ index.html [L]
+
 # Artykuły dynamiczne: /artykul/slug → artykul.php
 RewriteRule ^artykul/([^/]+)/?$ artykul.php?slug=$1 [L,QSA]
 

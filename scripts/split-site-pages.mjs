@@ -165,8 +165,8 @@ if (document.getElementById('productsGrid')) renderRandomProducts();
 }
 
 const NAV_ITEMS = [
-    { id: 'kalkulator', href: 'index.html', label: 'Kalkulator' },
     { id: 'dieta', href: 'dieta.html', label: 'Dieta' },
+    { id: 'kalkulator', href: 'index.html', label: 'Kalkulator BMI' },
     { id: 'trening', href: 'trening.html', label: 'Trening' },
     { id: 'informacje', href: 'informacje.html', label: 'Informacje' },
     { id: 'o-mnie', href: 'o-mnie.html', label: 'O mnie' },
