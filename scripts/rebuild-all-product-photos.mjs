@@ -156,7 +156,7 @@ const FOOD_SUBJECT = {
     omlet: 'simple plain folded omelette on white plate, yellow egg omelette only, NO toppings, NO cheese pile, NO vegetables',
     'jogurt-owocowy': 'fruit yogurt in small white bowl, soft pink-peach fruit yogurt color, smooth dairy, NO whole fruit chunks dominating, NO chocolate',
     'mleko-bez-laktozy-2': 'clear glass of white lactose-free cow milk, plain white milk only, NO chocolate, NO cereal, NO cookies around',
-    'jajecznica-na-masle': 'classic soft scrambled eggs cooked in butter on a white plate, fluffy yellow scrambled eggs only',
+    'jajecznica-na-masle': 'generous portion of soft fluffy scrambled eggs in butter in a white bowl, classic Polish jajecznica na maśle with soft yellow curds, more eggs filling the bowl, NOT omelette NOT fried eggs',
     'smietana-12': 'liquid pourable sour cream 12 percent in clear drinking glass, white cream filling glass like a drink, flat liquid surface, NOT whipped peaks, NOT stiff cream',
     'mleko-0': 'clear glass of skim white cow milk 0 percent fat, pure white milk only, NO chocolate rim, NO cocoa powder, NO cookies',
     'ser-plesniowy-blue': 'wedge of blue cheese Roquefort style with blue-green mold veins, cheese only, NO fruit, NO honey, NO crackers',
