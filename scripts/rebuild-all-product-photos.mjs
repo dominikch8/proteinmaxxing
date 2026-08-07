@@ -149,7 +149,7 @@ const FOOD_SUBJECT = {
     'mieso-mielone-wolowe': 'raw ground beef',
     awokado: 'Hass avocado half with pit and one whole avocado',
     'jogurt-grecki-naturalny': 'plain Greek yogurt white in bowl no toppings',
-    'jogurt-naturalny': 'plain natural yogurt white in bowl no toppings',
+    'jogurt-naturalny': 'plain natural yogurt in typical plastic supermarket cup with foil lid peeled back, NOT bowl',
     'serek-wiejski': 'Polish cottage cheese serek wiejski in bowl',
     'protein-pudding': 'smooth vanilla protein pudding only in small cup, creamy pudding surface, NO chocolate drizzle, NO toppings, NO spoon clutter',
     'ser-gouda': 'young Dutch Gouda cheese wedge, pale yellow interior, thin yellow wax rind, smooth mild cheese, absolutely NOT smoked, NO dark brown rind, NO orange smoked coating',
