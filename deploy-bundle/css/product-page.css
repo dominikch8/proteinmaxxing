@@ -37,7 +37,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 13px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .logo {
@@ -59,18 +59,6 @@ body {
     flex-shrink: 0;
     display: block;
 }
-
-.nav-back {
-    font-size: 0.88rem;
-    font-weight: 600;
-    color: var(--primary-dark);
-    text-decoration: none;
-    padding: 8px 14px;
-    border-radius: 10px;
-    background: var(--surface-hover);
-}
-
-.nav-back:hover { background: var(--border-soft); }
 
 .product-page {
     max-width: 900px;

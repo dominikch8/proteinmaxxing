@@ -87,9 +87,16 @@ export function buildCookieConsentBody(prefix = '') {
  * @param {{ productPage?: boolean }} [opts]
  */
 export function buildThemeStylesheets(prefix = '', opts = {}) {
-    const main = opts.productPage ? 'product-page.css' : 'site.css';
+    if (opts.productPage) {
+        return `    <link rel="stylesheet" href="${asset(prefix, 'css/themes.css')}">
+    <link rel="stylesheet" href="${asset(prefix, 'css/site.css')}">
+    <link rel="stylesheet" href="${asset(prefix, 'css/product-page.css')}">
+    <link rel="stylesheet" href="${asset(prefix, 'css/theme-switch.css')}">
+    <link rel="stylesheet" href="${asset(prefix, 'css/site-motion.css')}">
+    <link rel="stylesheet" href="${asset(prefix, 'css/brand-text.css')}">`;
+    }
     return `    <link rel="stylesheet" href="${asset(prefix, 'css/themes.css')}">
-    <link rel="stylesheet" href="${asset(prefix, `css/${main}`)}">
+    <link rel="stylesheet" href="${asset(prefix, 'css/site.css')}">
     <link rel="stylesheet" href="${asset(prefix, 'css/theme-switch.css')}">
     <link rel="stylesheet" href="${asset(prefix, 'css/site-motion.css')}">
     <link rel="stylesheet" href="${asset(prefix, 'css/brand-text.css')}">`;

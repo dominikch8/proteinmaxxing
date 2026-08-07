@@ -446,7 +446,19 @@ ${buildCookieConsentBody('../')}
                 ${buildLogoMark('../')}
                 <span>Proteiner</span>
             </a>
-            <a class="nav-back" href="../dieta">← Baza produktów</a>
+            <button type="button" class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="site-nav-links"><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span></button>
+            <ul class="nav-links" id="site-nav-links">
+                <li><a class="nav-link" href="../glowna">Główna</a></li>
+                <li><a class="nav-link active" href="../dieta" aria-current="page">Dieta</a></li>
+                <li><a class="nav-link" href="../kalkulator-bmi">Kalkulator BMI</a></li>
+                <li><a class="nav-link" href="../porownaj-produkty">Porównaj produkty</a></li>
+                <li><a class="nav-link" href="../poradnik-zywienia">Poradnik</a></li>
+                <li><a class="nav-link" href="../artykuly">Artykuły</a></li>
+                <li><a class="nav-link" href="../informacje">Informacje</a></li>
+                <li><a class="nav-link" href="../o-mnie">O mnie</a></li>
+                <li id="authNavSlot" class="auth-nav-item"><a class="nav-link auth-nav-link" href="../logowanie">Zaloguj</a></li>
+                <li class="nav-add-product"><a class="nav-link nav-link--subtle" href="../dodaj-produkt">Dodaj produkt</a></li>
+            </ul>
         </nav>
     </header>
 
