@@ -28,6 +28,7 @@ jobs:
       run: |
         node scripts/build-products-lite.mjs
         node scripts/generate-product-card-images.mjs --only-missing
+        node scripts/build-product-webp.mjs
         node scripts/generate-product-pages.mjs
         node scripts/patch-products-lite.mjs
         node scripts/patch-root-nav-links.mjs
@@ -54,7 +55,7 @@ jobs:
           **/js/products-data-raw.js
           **/api/config.local.php
           **/data/*.sqlite
-          # JPG wystarczą na hostingu; PNG pomijamy (duże).
+          # WebP z alfą (~15 MB) na neon; PNG pomijamy (duże). JPG zostaje jako fallback/OG.
           # Wyjątki tylko z katalogu głównego — NIE z deploy-bundle/
           # (inaczej FTP próbuje upload do nieistniejącego deploy-bundle/ na serwerze → 550).
           **/images/products/*.png

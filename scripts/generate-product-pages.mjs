@@ -381,13 +381,16 @@ function buildPage(p, similar = []) {
     const placeholder = '../images/products/placeholder.svg';
     const hasPng = fs.existsSync(path.join(root, 'images', 'products', `${p.slug}.png`));
     const hasJpg = fs.existsSync(path.join(root, 'images', 'products', `${p.slug}.jpg`));
-    // Prefer JPG: product PNGs are excluded from FTP deploy (see deploy.yml).
-    const imgSrc = hasJpg ? localJpg : localPng;
-    const imgOnError = hasJpg
-        ? `this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};`
-        : hasPng
-          ? `this.onerror=null;this.src='${localJpg}';this.onerror=function(){this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};};`
-          : `this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};`;
+    const hasWebp = fs.existsSync(path.join(root, 'images', 'products', `${p.slug}.webp`));
+    // Prefer WebP (transparency for neon dark mode). PNG excluded from FTP; JPG is opaque fallback/OG.
+    const imgSrc = hasWebp ? localWebp : hasJpg ? localJpg : localPng;
+    const imgOnError = hasWebp
+        ? `this.onerror=null;this.src='${localJpg}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};`
+        : hasJpg
+          ? `this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};`
+          : hasPng
+            ? `this.onerror=null;this.src='${localJpg}';this.onerror=function(){this.onerror=null;this.src='${localWebp}';this.onerror=function(){this.onerror=null;this.src='${placeholder}';};};`
+            : `this.onerror=null;this.src='${placeholder}';`;
 
     const noteBlock = p.note
         ? `<div class="extra-box"><strong>Uwaga:</strong> ${esc(p.note)}</div>`
@@ -396,12 +399,14 @@ function buildPage(p, similar = []) {
     const indexable = productHasRichContent(p, editorialBySlug) || generatedEditorialIsRich(p);
     const robotsMeta = indexable ? 'index, follow' : 'noindex, follow';
 
-    const hasLocalImg = hasPng || hasJpg;
+    const hasLocalImg = hasWebp || hasPng || hasJpg;
     const ogImagePath = hasJpg
         ? `images/products/${p.slug}.jpg`
-        : hasPng
-          ? `images/products/${p.slug}.png`
-          : 'images/og-home.jpg';
+        : hasWebp
+          ? `images/products/${p.slug}.webp`
+          : hasPng
+            ? `images/products/${p.slug}.png`
+            : 'images/og-home.jpg';
     const headAssets = `${buildFaviconLinks('../')}
     <!-- pm:site-head -->
 ${buildSocialImageMeta('../', ogImagePath, { alt: p.name })}`;

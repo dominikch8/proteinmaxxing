@@ -143,7 +143,7 @@ function productImagePaths(slug) {
 
 function getProductImageSrc(slug, imageMap) {
     if (imageMap && imageMap[slug]) return imageMap[slug];
-    return productImagePaths(slug).jpg;
+    return productImagePaths(slug).webp;
 }
 
 /** PLN za 100 g produktu — szacunek z ceny i wagi porcji. */

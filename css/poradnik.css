@@ -869,8 +869,6 @@ a.store-product-card:hover {
 
 [data-theme='dark'] .store-product-card img {
     background: #1e293b;
-    mix-blend-mode: multiply;
-    filter: brightness(1.16) contrast(1.04) saturate(1.08);
 }
 
 .article-media-block {

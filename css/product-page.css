@@ -127,14 +127,9 @@ body {
     isolation: isolate;
 }
 
-/* Neon: białe studio-tło JPG → kolor płyty (jak tło karty), bez przerabiania assetów */
+/* Neon: przezroczyste WebP/PNG na ciemnej płycie — tylko studio-tło znika, produkt zostaje jasny */
 [data-theme='dark'] .product-image-wrap {
     background: #1e293b;
-}
-
-[data-theme='dark'] .product-image-wrap img {
-    mix-blend-mode: multiply;
-    filter: brightness(1.18) contrast(1.05) saturate(1.1);
 }
 
 .product-media-col {

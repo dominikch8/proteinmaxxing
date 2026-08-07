@@ -659,11 +659,6 @@ body.compare-body.is-ready .compare-stage {
     background: #1e293b;
 }
 
-[data-theme='dark'] .compare-chip-img.is-loaded {
-    mix-blend-mode: multiply;
-    filter: brightness(1.16) contrast(1.04) saturate(1.08);
-}
-
 .compare-chip-img {
     width: 82%;
     height: 82%;
@@ -1174,10 +1169,6 @@ body.compare-body.is-ready .compare-stage {
     background: #1e293b;
 }
 
-[data-theme='dark'] .compare-matchup-img.is-loaded {
-    mix-blend-mode: multiply;
-    filter: brightness(1.16) contrast(1.04) saturate(1.08);
-}
 
 .compare-matchup-img {
     width: 78%;
