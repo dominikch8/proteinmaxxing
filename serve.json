@@ -1,8 +1,6 @@
 {
   "cleanUrls": true,
   "redirects": [
-    { "source": "/", "destination": "/dieta" },
-    { "source": "/kalkulator-bmi", "destination": "/index.html" },
     { "source": "/dieta/kategoria/:slug", "destination": "/dieta#produkty/kategoria/:slug" },
     { "source": "/dieta/kategoria/:slug.html", "destination": "/dieta#produkty/kategoria/:slug" }
   ]

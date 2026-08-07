@@ -442,7 +442,7 @@ ${buildThemeStylesheets('../', { productPage: true })}
 ${buildCookieConsentBody('../')}
     <header class="site-header">
         <nav>
-            <a class="logo" href="../dieta">
+            <a class="logo" href="../">
                 ${buildLogoMark('../')}
                 <span>Proteiner</span>
             </a>
@@ -452,7 +452,7 @@ ${buildCookieConsentBody('../')}
 
     <main class="product-page">
         <nav class="breadcrumb" aria-label="Nawigacja">
-            <a href="../dieta">Strona główna</a> ›
+            <a href="../">Strona główna</a> ›
             <a href="../dieta">Dieta</a> ›
             <span>${esc(p.name)}</span>
         </nav>
@@ -548,7 +548,8 @@ for (const p of products) {
 generateCategoryPages(products);
 
 const STATIC_SITEMAP_ENTRIES = [
-    { loc: 'https://proteiner.pl/dieta', changefreq: 'weekly', priority: '1.0' },
+    { loc: 'https://proteiner.pl/', changefreq: 'weekly', priority: '1.0' },
+    { loc: 'https://proteiner.pl/dieta', changefreq: 'weekly', priority: '0.95' },
     { loc: 'https://proteiner.pl/kalkulator-bmi', changefreq: 'weekly', priority: '0.9' },
     { loc: 'https://proteiner.pl/bialko-maxxing', changefreq: 'weekly', priority: '0.85' },
     { loc: 'https://proteiner.pl/cena-bialka', changefreq: 'weekly', priority: '0.85' },

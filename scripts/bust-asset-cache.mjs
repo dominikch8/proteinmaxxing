@@ -14,12 +14,15 @@ const FILES = [
     'css/site-motion.css',
     'css/brand-text.css',
     'css/cookie-consent.css',
+    'css/home.css',
     'js/theme-init.js',
     'js/theme.js',
     'js/auth-ui.js',
     'js/site-motion.js',
     'js/cookie-banner.js',
     'js/info-tiles.js',
+    'js/home.js',
+    'js/home-articles.js',
 ];
 
 function walk(dir, list = []) {

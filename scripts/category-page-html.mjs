@@ -104,12 +104,13 @@ ${buildThemeStylesheets(PREFIX)}
 ${buildCookieConsentBody(PREFIX)}
     <header class="site-header">
         <nav>
-            <a href="${PREFIX}dieta" class="logo">
+            <a href="${PREFIX}" class="logo">
                 ${buildLogoMark(PREFIX)}
                 <span>Proteiner</span>
             </a>
             <button type="button" class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="site-nav-links"><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span></button>
             <ul class="nav-links" id="site-nav-links">
+                <li><a class="nav-link" href="${PREFIX}">Główna</a></li>
                 <li><a class="nav-link active" href="${PREFIX}dieta" aria-current="page">Dieta</a></li>
                 <li><a class="nav-link" href="${PREFIX}kalkulator-bmi">Kalkulator BMI</a></li>
                 <li><a class="nav-link" href="${PREFIX}porownaj-produkty">Porównaj produkty</a></li>
