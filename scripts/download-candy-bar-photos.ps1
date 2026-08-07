@@ -1,6 +1,9 @@
 # Download real candy/protein bar photos -> images/products/{slug}.jpg (+ deploy-bundle)
 $ErrorActionPreference = 'Continue'
-$root = 'C:\Users\daniel\Documents\GitHub\proteinmaxxing'
+$root = Split-Path -Parent $PSScriptRoot
+if (-not (Test-Path (Join-Path $root 'images\products'))) {
+    $root = 'C:\Users\Administrator xD\Desktop\probystronyxd'
+}
 $outDir = Join-Path $root 'images\products'
 $bundleDir = Join-Path $root 'deploy-bundle\images\products'
 New-Item -ItemType Directory -Force -Path $outDir, $bundleDir | Out-Null

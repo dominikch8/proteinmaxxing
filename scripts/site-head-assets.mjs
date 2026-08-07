@@ -5,7 +5,7 @@
 
 const SITE = 'https://proteiner.pl';
 /** Bump when shipping CSS/JS changes (long browser cache + immutable). */
-export const ASSET_V = '20260801l';
+export const ASSET_V = '20260807a';
 
 function asset(prefix, path) {
     return `${prefix}${path}?v=${ASSET_V}`;
@@ -26,14 +26,18 @@ export function buildFaviconLinks(prefix = '') {
  */
 export function buildSocialImageMeta(prefix, imagePath, opts = {}) {
     const { width = 1200, height = 630, alt = 'Proteiner — kalkulator dietetyczny i baza białka' } = opts;
-    const rel = imagePath.startsWith('http') ? imagePath : `${SITE}/${imagePath.replace(/^\//, '')}`;
-    return `    <meta property="og:image" content="${rel}">
+    const rel = imagePath.startsWith('http')
+        ? imagePath
+        : `${SITE}/${imagePath.replace(/^\//, '')}`;
+    const imageUrl = rel.includes('?') ? `${rel}&v=${ASSET_V}` : `${rel}?v=${ASSET_V}`;
+    return `    <meta property="og:site_name" content="Proteiner">
+    <meta property="og:image" content="${imageUrl}">
     <meta property="og:image:width" content="${width}">
     <meta property="og:image:height" content="${height}">
     <meta property="og:image:alt" content="${alt.replace(/"/g, '&quot;')}">
     <meta property="og:locale" content="pl_PL">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="${rel}">`;
+    <meta name="twitter:image" content="${imageUrl}">`;
 }
 
 export function buildFontLinks(prefix = '') {
