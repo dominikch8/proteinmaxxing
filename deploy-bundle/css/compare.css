@@ -652,6 +652,16 @@ body.compare-body.is-ready .compare-stage {
     border: 1px solid var(--border-soft);
     display: grid;
     place-items: center;
+    isolation: isolate;
+}
+
+[data-theme='dark'] .compare-chip-media {
+    background: #1e293b;
+}
+
+[data-theme='dark'] .compare-chip-img.is-loaded {
+    mix-blend-mode: multiply;
+    filter: brightness(1.16) contrast(1.04) saturate(1.08);
 }
 
 .compare-chip-img {
@@ -1157,6 +1167,16 @@ body.compare-body.is-ready .compare-stage {
     display: grid;
     place-items: center;
     box-shadow: var(--shadow-sm);
+    isolation: isolate;
+}
+
+[data-theme='dark'] .compare-matchup-media {
+    background: #1e293b;
+}
+
+[data-theme='dark'] .compare-matchup-img.is-loaded {
+    mix-blend-mode: multiply;
+    filter: brightness(1.16) contrast(1.04) saturate(1.08);
 }
 
 .compare-matchup-img {

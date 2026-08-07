@@ -113,6 +113,17 @@ body {
     overflow: hidden;
     background: var(--surface-hover);
     aspect-ratio: 4 / 3;
+    isolation: isolate;
+}
+
+/* Neon: białe studio-tło JPG → kolor płyty (jak tło karty), bez przerabiania assetów */
+[data-theme='dark'] .product-image-wrap {
+    background: #1e293b;
+}
+
+[data-theme='dark'] .product-image-wrap img {
+    mix-blend-mode: multiply;
+    filter: brightness(1.18) contrast(1.05) saturate(1.1);
 }
 
 .product-media-col {
@@ -154,6 +165,11 @@ body {
     padding: 6px 10px;
     line-height: 1;
     border: 1px solid var(--border-soft);
+}
+
+[data-theme='dark'] .product-emoji-fallback {
+    background: color-mix(in srgb, var(--surface-elevated) 88%, #0a0e1a 12%);
+    border-color: rgba(148, 163, 184, 0.22);
 }
 
 h1 {

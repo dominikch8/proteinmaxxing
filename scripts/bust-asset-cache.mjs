@@ -10,6 +10,8 @@ const FILES = [
     'css/themes.css',
     'css/site.css',
     'css/product-page.css',
+    'css/compare.css',
+    'css/poradnik.css',
     'css/theme-switch.css',
     'css/site-motion.css',
     'css/brand-text.css',
