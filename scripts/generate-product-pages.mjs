@@ -442,7 +442,7 @@ ${buildThemeStylesheets('../', { productPage: true })}
 ${buildCookieConsentBody('../')}
     <header class="site-header">
         <nav>
-            <a class="logo" href="../">
+            <a class="logo" href="../glowna">
                 ${buildLogoMark('../')}
                 <span>Proteiner</span>
             </a>
@@ -452,7 +452,7 @@ ${buildCookieConsentBody('../')}
 
     <main class="product-page">
         <nav class="breadcrumb" aria-label="Nawigacja">
-            <a href="../">Strona główna</a> ›
+            <a href="../glowna">Strona główna</a> ›
             <a href="../dieta">Dieta</a> ›
             <span>${esc(p.name)}</span>
         </nav>
