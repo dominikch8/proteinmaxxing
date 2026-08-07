@@ -176,7 +176,7 @@ const FOOD_SUBJECT = {
     'ser-emmental': 'Swiss Emmental cheese wedge with characteristic large round holes, pale yellow cheese',
     'twarog-wiejski': 'Polish twaróg wiejski country cottage cheese with soft white curds in bowl',
     'ser-wedzony': 'smoked cheese round or block with dark brown smoked outer rind and pale interior, clearly smoked cheese look',
-    'ser-topiony-plastry': 'stack of processed melting cheese slices, individually separated style yellow cheese slices for toast',
+    'ser-topiony-plastry': 'bright yellow-orange processed cheese singles individually wrapped in clear plastic foil, typical Polish ser topiony, NOT natural gouda slices, NOT unwrapped cheese stack',
     'papryka-zielona': 'ONE whole ripe GREEN bell pepper, bright fresh green skin, green stem, green capsicum only, NOT red, NOT yellow',
     'papryka-zolta': 'ONE whole ripe YELLOW bell pepper, bright golden yellow skin, green stem, yellow capsicum only, NOT red',
     'papryka-czerwona': 'ONE whole ripe RED bell pepper, deep glossy red skin, green stem',
