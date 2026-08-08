@@ -319,10 +319,11 @@
 
 .home-path-link {
     display: block;
-    padding: 28px 20px 28px 0;
+    padding: 28px 20px;
     text-decoration: none;
     color: inherit;
     min-height: 160px;
+    text-align: center;
     transition: transform 0.2s ease;
 }
 
