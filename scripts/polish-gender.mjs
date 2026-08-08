@@ -31,6 +31,10 @@ const OVERRIDES = new Map([
     ['lasagne', 'f'], ['penne', 'pl'], ['spaghetti', 'n'], ['risotto', 'n'],
     ['stripsy', 'pl'], ['nuggetsy', 'pl'], ['nuggets', 'pl'],
     ['morele', 'pl'], ['pieczarki', 'pl'],
+    ['nasiona', 'pl'], ['nasiona chia', 'pl'], ['nasiona lniane', 'pl'], ['nasiona słonecznika', 'pl'],
+    ['śmietana', 'f'], ['śmietanka', 'f'], ['mąka', 'f'], ['sos', 'm'], ['krem', 'm'],
+    ['ogórek', 'm'], ['skrzydełka', 'pl'], ['żeberka', 'pl'], ['ciastka', 'pl'], ['białka', 'pl'],
+    ['sałatka', 'f'],
 ]);
 
 const LEADING_ADJ = /^(suszone|gotowane|marynowane|świeże|świeży|pieczone|smażone|smazone|ugotowane|mrożone|krojone|naturalne|naturalny|naturalna|pełno|pełne|suszone|suszona|suszony)$/i;
