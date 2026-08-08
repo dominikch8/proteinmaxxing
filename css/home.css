@@ -37,16 +37,50 @@
     color: var(--home-ink);
 }
 
+.home-hero-media {
+    position: absolute;
+    inset: 0;
+    z-index: -3;
+    pointer-events: none;
+}
+
+.home-hero-media picture,
+.home-hero-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 72% center;
+}
+
+/* Zdjęcie bardziej widoczne po prawej; po lewej rozpływa się w tło pod napisem */
+.home-hero-media::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            105deg,
+            #f8fafc 0%,
+            #f8fafc 28%,
+            rgba(248, 250, 252, 0.92) 42%,
+            rgba(248, 250, 252, 0.55) 58%,
+            rgba(248, 250, 252, 0.18) 78%,
+            rgba(248, 250, 252, 0.06) 100%
+        ),
+        linear-gradient(180deg, rgba(248, 250, 252, 0.2) 0%, transparent 28%, transparent 72%, rgba(246, 241, 239, 0.55) 100%);
+}
+
 .home-hero::before {
     content: '';
     position: absolute;
     inset: 0;
     z-index: -2;
     background:
-        radial-gradient(ellipse 90% 70% at 8% 18%, rgba(128, 0, 0, 0.18), transparent 55%),
-        radial-gradient(ellipse 80% 60% at 92% 12%, rgba(30, 58, 95, 0.22), transparent 50%),
-        radial-gradient(ellipse 70% 50% at 50% 100%, rgba(37, 99, 235, 0.1), transparent 45%),
-        linear-gradient(165deg, #f8fafc 0%, #eef3f9 40%, #f6f1ef 100%);
+        radial-gradient(ellipse 90% 70% at 8% 18%, rgba(128, 0, 0, 0.14), transparent 55%),
+        radial-gradient(ellipse 80% 60% at 92% 12%, rgba(30, 58, 95, 0.12), transparent 50%),
+        radial-gradient(ellipse 70% 50% at 50% 100%, rgba(37, 99, 235, 0.07), transparent 45%);
+    pointer-events: none;
 }
 
 .home-hero::after {
@@ -55,14 +89,16 @@
     inset: 0;
     z-index: -1;
     background-image:
-        linear-gradient(rgba(15, 23, 42, 0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+        linear-gradient(rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
     background-size: 56px 56px;
-    mask-image: radial-gradient(ellipse 75% 70% at 50% 40%, #000 20%, transparent 75%);
+    mask-image: radial-gradient(ellipse 70% 65% at 28% 45%, #000 15%, transparent 70%);
     pointer-events: none;
 }
 
 .home-hero-inner {
+    position: relative;
+    z-index: 1;
     max-width: var(--site-content-max, 1180px);
     width: 100%;
     margin: 0 auto;
@@ -148,16 +184,68 @@
     background: #fff;
 }
 
+[data-theme='dark'] .home-hero-media::after {
+    background:
+        linear-gradient(
+            105deg,
+            #121a2e 0%,
+            #121a2e 28%,
+            rgba(18, 26, 46, 0.94) 42%,
+            rgba(18, 26, 46, 0.62) 58%,
+            rgba(18, 26, 46, 0.28) 78%,
+            rgba(18, 26, 46, 0.12) 100%
+        ),
+        linear-gradient(180deg, rgba(18, 26, 46, 0.35) 0%, transparent 30%, transparent 70%, rgba(21, 32, 54, 0.65) 100%);
+}
+
 [data-theme='dark'] .home-hero::before {
     background:
-        radial-gradient(ellipse 90% 70% at 8% 18%, rgba(128, 0, 0, 0.28), transparent 55%),
-        radial-gradient(ellipse 80% 60% at 92% 12%, rgba(37, 99, 235, 0.22), transparent 50%),
-        linear-gradient(165deg, #121a2e 0%, #1a243c 50%, #152036 100%);
+        radial-gradient(ellipse 90% 70% at 8% 18%, rgba(128, 0, 0, 0.22), transparent 55%),
+        radial-gradient(ellipse 80% 60% at 92% 12%, rgba(37, 99, 235, 0.16), transparent 50%);
 }
 
 [data-theme='dark'] .home-cta--ghost {
     background: rgba(15, 23, 42, 0.65);
     color: #e2e8f0;
+}
+
+@media (max-width: 720px) {
+    .home-hero-media img {
+        object-position: 68% center;
+        opacity: 0.85;
+    }
+
+    .home-hero-media::after {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(248, 250, 252, 0.55) 0%,
+                rgba(248, 250, 252, 0.82) 38%,
+                rgba(248, 250, 252, 0.94) 100%
+            ),
+            linear-gradient(
+                105deg,
+                rgba(248, 250, 252, 0.7) 0%,
+                rgba(248, 250, 252, 0.35) 55%,
+                rgba(248, 250, 252, 0.15) 100%
+            );
+    }
+
+    [data-theme='dark'] .home-hero-media::after {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(18, 26, 46, 0.55) 0%,
+                rgba(18, 26, 46, 0.82) 40%,
+                rgba(18, 26, 46, 0.94) 100%
+            ),
+            linear-gradient(
+                105deg,
+                rgba(18, 26, 46, 0.7) 0%,
+                rgba(18, 26, 46, 0.4) 55%,
+                rgba(18, 26, 46, 0.2) 100%
+            );
+    }
 }
 
 /* —— Article rails —— */
