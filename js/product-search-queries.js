@@ -1705,7 +1705,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "stew beef pasta food",
     "stew beef pasta ingredient photo"
   ],
-  "makaron-z-serem-kraft-styl": [
+  "mac-n-cheese-makaron-z-serem": [
     "pasta cheese",
     "pasta cheese food",
     "pasta cheese ingredient photo"

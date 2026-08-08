@@ -4,3 +4,7 @@ data/*.sqlite
 api/config.local.php
 .DS_Store
 *.log
+
+scripts/models/*.onnx
+tmp-verify/
+

@@ -631,3 +631,151 @@ a.product-category:hover {
     color: var(--text-dark);
     font-weight: 700;
 }
+
+/* —— Witaminy i minerały (track / % RDA) —— */
+.micros-section {
+    margin: 1.75rem 0 0;
+    padding: 1.35rem 1.25rem 1.5rem;
+    border-radius: 18px;
+    background: color-mix(in srgb, var(--surface, #fff) 92%, var(--primary) 8%);
+    border: 1px solid var(--border, #e5e7eb);
+}
+
+.micros-section h2 {
+    font-family: var(--font-display, 'Encode Sans', sans-serif);
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem;
+    color: var(--text-dark);
+}
+
+.micros-lead {
+    margin: 0 0 1.15rem;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--text-muted, #64748b);
+}
+
+.micro-track-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.95rem;
+}
+
+.micro-track-item {
+    display: grid;
+    gap: 0.28rem;
+}
+
+.micro-track-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.75rem;
+}
+
+.micro-track-name {
+    font-weight: 650;
+    font-size: 0.92rem;
+    color: var(--text-dark);
+}
+
+.micro-track-amount {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    white-space: nowrap;
+}
+
+.micro-track-meta {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.micro-track-pct {
+    font-size: 0.78rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.micro-track-pct.is-good { color: #1b7a3d; }
+.micro-track-pct.is-ok { color: var(--accent, #0d9488); }
+.micro-track-pct.is-low { color: var(--text-muted, #64748b); }
+.micro-track-pct.is-high { color: #a33b00; }
+
+.micro-track-bar {
+    position: relative;
+    height: 8px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--border, #e5e7eb) 85%, transparent);
+    overflow: visible;
+}
+
+.micro-track-bar-fill {
+    display: block;
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--primary) 75%, #38bdf8), var(--primary));
+    transition: width 0.35s ease;
+}
+
+.micro-track-bar-fill.is-good {
+    background: linear-gradient(90deg, #34d399, #059669);
+}
+
+.micro-track-bar-fill.is-ok {
+    background: linear-gradient(90deg, #5eead4, var(--accent, #0d9488));
+}
+
+.micro-track-bar-fill.is-low {
+    background: color-mix(in srgb, var(--text-muted, #94a3b8) 70%, var(--primary));
+}
+
+.micro-track-bar-fill.is-high {
+    background: linear-gradient(90deg, #fb923c, #ea580c);
+}
+
+.micro-track-bar-dot {
+    position: absolute;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    margin-left: -7px;
+    margin-top: -7px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2.5px solid var(--primary);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+    pointer-events: none;
+}
+
+.micro-track-pct.is-good + .micro-track-bar .micro-track-bar-dot,
+.micro-track-item:has(.is-good) .micro-track-bar-dot {
+    border-color: #059669;
+}
+
+.micro-track-item:has(.is-high) .micro-track-bar-dot {
+    border-color: #ea580c;
+}
+
+.micro-track-item:has(.is-ok) .micro-track-bar-dot {
+    border-color: var(--accent, #0d9488);
+}
+
+@media (min-width: 720px) {
+    .micro-track-list {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.75rem;
+        row-gap: 1.05rem;
+    }
+}
+
+[data-theme='dark'] .micros-section {
+    background: color-mix(in srgb, var(--surface) 88%, var(--primary) 12%);
+}
+
+[data-theme='dark'] .micro-track-bar-dot {
+    background: var(--surface);
+}
