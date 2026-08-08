@@ -24,7 +24,7 @@ body {
 }
 
 [data-theme='dark'] .site-header {
-    background: #0a0e1a;
+    background: #121a2e;
 }
 
 .site-header nav {
@@ -129,7 +129,7 @@ body {
 
 /* Neon: przezroczyste WebP/PNG na ciemnej płycie — tylko studio-tło znika, produkt zostaje jasny */
 [data-theme='dark'] .product-image-wrap {
-    background: #1e293b;
+    background: #243447;
 }
 
 .product-media-col {
@@ -174,7 +174,7 @@ body {
 }
 
 [data-theme='dark'] .product-emoji-fallback {
-    background: color-mix(in srgb, var(--surface-elevated) 88%, #0a0e1a 12%);
+    background: color-mix(in srgb, var(--surface-elevated) 88%, #121a2e 12%);
     border-color: rgba(148, 163, 184, 0.22);
 }
 

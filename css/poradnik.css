@@ -868,7 +868,7 @@ a.store-product-card:hover {
 }
 
 [data-theme='dark'] .store-product-card img {
-    background: #1e293b;
+    background: #243447;
 }
 
 .article-media-block {
@@ -939,7 +939,7 @@ a.store-product-card:hover {
 }
 
 [data-theme='dark'] .article-media-shot img {
-    background: #1e293b;
+    background: #243447;
 }
 
 .store-featured-product {
@@ -990,5 +990,5 @@ a.store-product-card:hover {
     background: var(--surface);
 }
 [data-theme='dark'] .store-featured-product img {
-    background: #1e293b;
+    background: #243447;
 }

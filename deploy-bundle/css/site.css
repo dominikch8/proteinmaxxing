@@ -53,7 +53,7 @@
             z-index: 100;
             overflow: visible; /* mobile drawer is fixed inside header */
             /* Solid chrome — no backdrop-filter (it flickered under nav on every tab switch) */
-            background: #ffffff;
+            background: #f6f8fc;
             border-bottom: 1px solid var(--header-border);
             box-shadow: var(--header-shadow);
             isolation: isolate;
@@ -61,7 +61,7 @@
         }
 
         [data-theme='dark'] .site-header {
-            background: #0a0e1a;
+            background: #121a2e;
         }
 
         nav {

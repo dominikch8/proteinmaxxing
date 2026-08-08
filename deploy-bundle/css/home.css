@@ -152,7 +152,7 @@
     background:
         radial-gradient(ellipse 90% 70% at 8% 18%, rgba(128, 0, 0, 0.28), transparent 55%),
         radial-gradient(ellipse 80% 60% at 92% 12%, rgba(37, 99, 235, 0.22), transparent 50%),
-        linear-gradient(165deg, #0a0e1a 0%, #111827 50%, #0f172a 100%);
+        linear-gradient(165deg, #121a2e 0%, #1a243c 50%, #152036 100%);
 }
 
 [data-theme='dark'] .home-cta--ghost {
