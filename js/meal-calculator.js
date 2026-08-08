@@ -42,18 +42,6 @@
             if (!raw) return;
             const data = JSON.parse(raw);
             if (Array.isArray(data.items)) mealItems = data.items;
-            if (data.gender) {
-                const g = $('mealGender');
-                if (g) g.value = data.gender;
-            }
-            if (data.dailyKcal) {
-                const el = $('mealDailyKcal');
-                if (el) el.value = data.dailyKcal;
-            }
-            if (data.dailyProtein) {
-                const el = $('mealDailyProtein');
-                if (el) el.value = data.dailyProtein;
-            }
         } catch {
             /* ignore */
         }
@@ -65,9 +53,6 @@
                 STORAGE_KEY,
                 JSON.stringify({
                     items: mealItems,
-                    gender: $('mealGender')?.value || 'male',
-                    dailyKcal: $('mealDailyKcal')?.value || '',
-                    dailyProtein: $('mealDailyProtein')?.value || '',
                 })
             );
         } catch {
@@ -258,33 +243,29 @@
         set('mealTotalSat', `${t.satFat} g`);
         set('mealTotalUnsat', `${t.unsatFat} g`);
 
-        const dailyKcal = Number($('mealDailyKcal')?.value) || 0;
-        const dailyProtein = Number($('mealDailyProtein')?.value) || 0;
-        const kcalPct = dailyKcal > 0 ? Math.round((t.kcal / dailyKcal) * 100) : null;
-        const protPct = dailyProtein > 0 ? Math.round((t.protein / dailyProtein) * 100) : null;
-        set('mealKcalPct', kcalPct != null ? `${kcalPct}% dziennego limitu kcal` : 'Podaj limit kcal poniżej');
-        set('mealProteinPct', protPct != null ? `${protPct}% dziennego białka` : 'Podaj cel białka poniżej');
-
-        const barK = $('mealBarKcal');
-        const barP = $('mealBarProtein');
-        if (barK) barK.style.width = `${Math.min(100, kcalPct || 0)}%`;
-        if (barP) barP.style.width = `${Math.min(100, protPct || 0)}%`;
-
         renderMicroTable(t.micros);
         saveState();
+    }
+
+    function adultRdaTarget(key) {
+        const male = getMealRdaTarget(key, 'male');
+        const female = getMealRdaTarget(key, 'female');
+        if (male == null && female == null) return null;
+        if (male == null) return female;
+        if (female == null) return male;
+        return (male + female) / 2;
     }
 
     function renderMicroTable(microsSum) {
         const tbody = $('mealMicroBody');
         const note = $('mealMicroNote');
         if (!tbody || typeof MEAL_RDA === 'undefined') return;
-        const gender = $('mealGender')?.value === 'female' ? 'female' : 'male';
         const rows = Object.keys(MEAL_RDA)
             .map((key) => {
                 const meta = MEAL_RDA[key];
                 const amount = microsSum[key] || 0;
                 if (amount <= 0) return null;
-                const target = getMealRdaTarget(key, gender);
+                const target = adultRdaTarget(key);
                 const pct = target > 0 ? (amount / target) * 100 : 0;
                 const pctLabel = meta.isMax
                     ? `${fmtNum(pct, 0)}% limitu`
@@ -350,15 +331,6 @@
         $('mealItemsList')?.addEventListener('click', (e) => {
             const btn = e.target.closest('[data-remove]');
             if (btn) removeItem(btn.getAttribute('data-remove'));
-        });
-
-        ['mealGender', 'mealDailyKcal', 'mealDailyProtein'].forEach((id) => {
-            $(id)?.addEventListener('change', renderTotals);
-            $(id)?.addEventListener('input', renderTotals);
-        });
-
-        $('mealFillFromBmi')?.addEventListener('click', () => {
-            window.location.href = 'kalkulator-bmi';
         });
     }
 
