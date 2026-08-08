@@ -32,9 +32,37 @@ import { buildLogoMark } from './site-logo-html.mjs';
 import { buildServingTableHtml } from './serving-table-html.mjs';
 import { CATEGORY_ORDER, CATEGORY_LABELS } from './category-seo.mjs';
 import { buildCategoryPageHtml } from './category-page-html.mjs';
+import {
+    MICRO_KEYS_ORDER,
+    MICRO_META,
+    formatMicroAmount,
+    pctOfRda,
+    pctClass,
+} from './lib/micros-shared.mjs';
+import { buildMicrosForProduct } from './product-micros-engine.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
+
+function writeFileRetry(fp, content, tries = 10) {
+    let last;
+    for (let i = 0; i < tries; i++) {
+        try {
+            const tmp = `${fp}.tmp`;
+            fs.writeFileSync(tmp, content, 'utf8');
+            fs.renameSync(tmp, fp);
+            return;
+        } catch (e) {
+            last = e;
+            const wait = 50 * (i + 1);
+            const end = Date.now() + wait;
+            while (Date.now() < end) {
+                /* spin */
+            }
+        }
+    }
+    throw last;
+}
 
 const editorialBySlug = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'product-editorial.json'), 'utf8')
@@ -246,11 +274,17 @@ function parseMicrosList(micros) {
 }
 
 function getTopMicros(p, count = 3) {
+    const detail = getProductMicrosDetail(p);
+    const fromDetail = MICRO_KEYS_ORDER
+        .filter((k) => detail[k] != null && k !== 'sodium')
+        .map((k) => ({ k, pct: pctOfRda(detail[k], k), label: MICRO_META[k].label.replace(/\s*\([^)]*\)/, '') }))
+        .sort((a, b) => b.pct - a.pct)
+        .map((x) => x.label);
     const parsed = parseMicrosList(p.micros);
     const fallbacks = CATEGORY_MICRO_FALLBACKS[p.category] || ['Potas', 'Magnez', 'Witamina C'];
     const merged = [];
     const seen = new Set();
-    for (const item of [...parsed, ...fallbacks]) {
+    for (const item of [...fromDetail, ...parsed, ...fallbacks]) {
         const key = item.toLowerCase();
         if (seen.has(key)) continue;
         seen.add(key);
@@ -262,6 +296,53 @@ function getTopMicros(p, count = 3) {
 
 function formatMicrosLine(p) {
     return getTopMicros(p, 3).join(', ');
+}
+
+function getProductMicrosDetail(p) {
+    if (p.microsDetail && typeof p.microsDetail === 'object' && Object.keys(p.microsDetail).length) {
+        return p.microsDetail;
+    }
+    return buildMicrosForProduct(p);
+}
+
+function buildMicrosSectionHtml(p) {
+    const detail = getProductMicrosDetail(p);
+    const rows = [];
+    for (const key of MICRO_KEYS_ORDER) {
+        const amount = detail[key];
+        if (amount == null || amount === 0) continue;
+        const meta = MICRO_META[key];
+        if (!meta) continue;
+        const pct = pctOfRda(amount, key);
+        const pctRounded = Math.round(pct * 10) / 10;
+        const barWidth = Math.min(100, Math.max(0, pct));
+        const cls = pctClass(pct, !!meta.isMax);
+        const pctLabel = meta.isMax
+            ? `${pctRounded}% limitu`
+            : `${pctRounded}% RDA`;
+        rows.push(`                        <li class="micro-track-item">
+                            <div class="micro-track-head">
+                                <span class="micro-track-name">${esc(meta.label)}</span>
+                                <span class="micro-track-amount">${esc(formatMicroAmount(amount, meta.unit))}</span>
+                            </div>
+                            <div class="micro-track-meta">
+                                <span class="micro-track-pct ${cls}">${esc(pctLabel)}</span>
+                            </div>
+                            <div class="micro-track-bar" role="img" aria-label="${esc(meta.label)}: ${pctRounded}% dziennego zapotrzebowania">
+                                <span class="micro-track-bar-fill ${cls}" style="width:${barWidth.toFixed(1)}%"></span>
+                                <span class="micro-track-bar-dot" style="left:${barWidth.toFixed(1)}%"></span>
+                            </div>
+                        </li>`);
+    }
+    if (!rows.length) return '';
+    return `
+            <section class="micros-section" aria-labelledby="micros-heading">
+                <h2 id="micros-heading">Witaminy i minerały na 100 g</h2>
+                <p class="micros-lead">Ilość w <strong>100 g</strong> produktu oraz orientacyjny <strong>% dziennego zapotrzebowania (RDA)</strong> dla dorosłej osoby. Żelazo wg normy dla kobiet; sód jako % limitu. Wartości typowe (USDA / tabele żywieniowe / etykiety) — mogą się różnić między markami.</p>
+                <ul class="micro-track-list">
+${rows.join('\n')}
+                </ul>
+            </section>`;
 }
 
 const SIMILAR_LIMIT = 6;
@@ -517,12 +598,13 @@ ${buildCookieConsentBody('../')}
                         <tr><th>Tłuszcz</th><td>${p.fat} g</td></tr>
                         <tr><th>Tłuszcze nasycone</th><td>${p.satFat} g</td></tr>
                         <tr><th>Tłuszcze nienasycone</th><td>${p.unsatFat} g</td></tr>
-                        <tr><th>Witaminy i minerały</th><td>${esc(formatMicrosLine(p))}</td></tr>
+                        <tr><th>Witaminy i minerały (skrót)</th><td>${esc(formatMicrosLine(p))}</td></tr>
                         <tr><th>Współczynnik kcal / 1 g białka</th><td>${p.protein > 0 ? (p.kcal / p.protein).toFixed(1) : '—'}</td></tr>
                         ${buildProductPriceTableRows(p)}
                     </tbody>
                 </table>
             </section>
+${buildMicrosSectionHtml(p)}
         </article>
 
 ${buildProductGuideSection(p)}
@@ -549,10 +631,9 @@ function generateCategoryPages(allProducts) {
     fs.mkdirSync(catDir, { recursive: true });
     for (const slug of CATEGORY_ORDER) {
         const inCategory = allProducts.filter((p) => p.category === slug);
-        fs.writeFileSync(
+        writeFileRetry(
             path.join(catDir, `${slug}.html`),
-            buildCategoryPageHtml(slug, inCategory),
-            'utf8'
+            buildCategoryPageHtml(slug, inCategory)
         );
     }
 }
@@ -565,7 +646,7 @@ let written = 0;
 let indexedCount = 0;
 for (const p of products) {
     const similar = getSimilarProducts(p, products);
-    fs.writeFileSync(path.join(outDir, `${p.slug}.html`), buildPage(p, similar), 'utf8');
+    writeFileRetry(path.join(outDir, `${p.slug}.html`), buildPage(p, similar));
     written++;
     if (productHasRichContent(p, editorialBySlug) || generatedEditorialIsRich(p)) indexedCount++;
 }
@@ -631,10 +712,10 @@ ${categorySitemapUrls.join('\n')}
 ${sitemapUrls.join('\n')}
 </urlset>
 `;
-fs.writeFileSync(path.join(root, 'sitemap.xml'), sitemap, 'utf8');
+writeFileRetry(path.join(root, 'sitemap.xml'), sitemap);
 
 // Stary URL /produkty/index.html — przekierowanie na bazę w zakładce Dieta
-fs.writeFileSync(
+writeFileRetry(
     path.join(root, 'produkty', 'index.html'),
     `<!DOCTYPE html>
 <html lang="pl">
@@ -652,8 +733,7 @@ ${buildThemeInitScript('../')}
     <p>Przekierowanie do <a href="../dieta#produkty">bazy produktów na stronie Dieta</a>…</p>
 ${buildThemeBodyScript('../')}
 </body>
-</html>`,
-    'utf8'
+</html>`
 );
 
 console.log(`Generated ${written} product pages (${indexedCount} indexable, ${written - indexedCount} noindex) + sitemap.xml`);

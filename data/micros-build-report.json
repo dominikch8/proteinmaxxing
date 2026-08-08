@@ -1,0 +1,100 @@
+{
+  "total": 597,
+  "withKeys": 574,
+  "fromOff": 0,
+  "avgKeys": 12.9,
+  "thin": [
+    {
+      "slug": "oliwa-z-oliwek",
+      "keys": 4
+    },
+    {
+      "slug": "olej-rzepakowy",
+      "keys": 4
+    },
+    {
+      "slug": "maslo-ekstra-82",
+      "keys": 4
+    },
+    {
+      "slug": "smalec",
+      "keys": 5
+    },
+    {
+      "slug": "olej-slonecznikowy",
+      "keys": 4
+    },
+    {
+      "slug": "olej-kokosowy",
+      "keys": 4
+    },
+    {
+      "slug": "margaryna",
+      "keys": 5
+    },
+    {
+      "slug": "maslo-klarowane-ghee",
+      "keys": 4
+    },
+    {
+      "slug": "olej-sezamowy",
+      "keys": 4
+    },
+    {
+      "slug": "tluszcz-kaczy",
+      "keys": 4
+    },
+    {
+      "slug": "coca-cola",
+      "keys": 5
+    },
+    {
+      "slug": "coca-cola-zero",
+      "keys": 5
+    },
+    {
+      "slug": "pepsi",
+      "keys": 5
+    },
+    {
+      "slug": "sprite",
+      "keys": 5
+    },
+    {
+      "slug": "mirinda",
+      "keys": 5
+    },
+    {
+      "slug": "lipton-ice-tea-brzoskwinia",
+      "keys": 5
+    },
+    {
+      "slug": "nestea-cytryna",
+      "keys": 7
+    },
+    {
+      "slug": "woda",
+      "keys": 5
+    },
+    {
+      "slug": "kubus-jablkowy",
+      "keys": 7
+    },
+    {
+      "slug": "tymbark-jablko",
+      "keys": 7
+    },
+    {
+      "slug": "herbata-czarna-napar",
+      "keys": 7
+    },
+    {
+      "slug": "kawa-czarna-parzona",
+      "keys": 7
+    },
+    {
+      "slug": "jagermeister",
+      "keys": 7
+    }
+  ]
+}

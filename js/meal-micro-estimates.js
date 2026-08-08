@@ -109,6 +109,14 @@
 
     function estimateMicrosPer100g(product) {
         if (!product) return {};
+        // Preferuj dokładne wartości z bazy (microsDetail), jeśli są
+        if (product.microsDetail && typeof product.microsDetail === 'object') {
+            const keys = Object.keys(product.microsDetail);
+            if (keys.length >= 4) return { ...product.microsDetail };
+        }
+        if (window.PRODUCT_MICROS_DATA && product.slug && window.PRODUCT_MICROS_DATA[product.slug]) {
+            return { ...window.PRODUCT_MICROS_DATA[product.slug] };
+        }
         let profile = { ...(CATEGORY_BASE[product.category] || {}) };
         const name = String(product.name || '');
         for (const rule of RULES) {

@@ -12,7 +12,7 @@ const outPath = path.join(root, 'js', 'products-lite.js');
 
 const LITE_FIELDS = [
     'name', 'emoji', 'category', 'slug', 'servingText', 'servingRatio', 'servingGrams',
-    'kcal', 'protein', 'carbs', 'fat', 'satFat', 'unsatFat', 'micros', 'note',
+    'kcal', 'protein', 'carbs', 'fat', 'satFat', 'unsatFat', 'micros', 'microsDetail', 'note',
     'pricePer100gProtein', 'servingPricePln', 'proteinInServing'
 ];
 
@@ -29,7 +29,9 @@ const lite = db.map((p) => {
     return row;
 });
 
-fs.writeFileSync(outPath, `const productsDatabaseLite = ${JSON.stringify(lite)};\n`, 'utf8');
+const tmp = outPath + '.tmp';
+fs.writeFileSync(tmp, `const productsDatabaseLite = ${JSON.stringify(lite)};\n`, 'utf8');
+fs.renameSync(tmp, outPath);
 
 const rawKb = Math.round(fs.statSync(rawPath).size / 1024);
 const liteKb = Math.round(fs.statSync(outPath).size / 1024);
