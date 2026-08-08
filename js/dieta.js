@@ -1117,10 +1117,22 @@ function buildBazaProductCardHtml(p) {
             populateCategorySelect(document.getElementById('priceCategoryFilter'), { includeTop10: true });
         }
 
+        function updateBazaProductsSubtitle() {
+            const el = document.getElementById('bazaProductsSubtitle');
+            if (!el || typeof productsDatabase === 'undefined' || !Array.isArray(productsDatabase)) return;
+            const label =
+                typeof formatProductCount === 'function'
+                    ? formatProductCount(productsDatabase.length)
+                    : `${productsDatabase.length} produktów`;
+            el.textContent = `${label} z kaloriami, białkiem, węglowodanami, tłuszczami oraz witaminami i minerałami — wyszukaj lub filtruj kategorię`;
+        }
+
         async function bootDietaPage() {
             if (typeof ensureProductsDatabase === 'function') {
                 await ensureProductsDatabase();
             }
+
+            updateBazaProductsSubtitle();
 
         if (document.getElementById('productsGrid')) {
             initDietaCategorySelects();
