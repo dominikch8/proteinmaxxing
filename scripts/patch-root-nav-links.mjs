@@ -24,6 +24,7 @@ const ROOT_PAGES = [
     ['o-mnie.html', 'o-mnie.html'],
     ['bialko-maxxing.html', 'bialko-maxxing.html'],
     ['cena-bialka.html', 'cena-bialka.html'],
+    ['sklepy.html', 'sklepy.html'],
     ['trening.html', 'trening.html'],
     ['deficyt-kaloryczny-praktyka.html', 'deficyt-kaloryczny-praktyka.html'],
     ['planowanie-posilkow.html', 'planowanie-posilkow.html'],

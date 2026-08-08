@@ -570,6 +570,7 @@ const STATIC_SITEMAP_ENTRIES = [
     { loc: 'https://proteiner.pl/kalkulator-bmi', changefreq: 'weekly', priority: '0.9' },
     { loc: 'https://proteiner.pl/bialko-maxxing', changefreq: 'weekly', priority: '0.85' },
     { loc: 'https://proteiner.pl/cena-bialka', changefreq: 'weekly', priority: '0.85' },
+    { loc: 'https://proteiner.pl/sklepy', changefreq: 'weekly', priority: '0.85' },
     { loc: 'https://proteiner.pl/porownaj-produkty', changefreq: 'weekly', priority: '0.85' },
     { loc: 'https://proteiner.pl/poradnik-zywienia', changefreq: 'weekly', priority: '0.9' },
     { loc: 'https://proteiner.pl/artykuly', changefreq: 'weekly', priority: '0.9' },

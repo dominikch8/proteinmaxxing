@@ -1,0 +1,198 @@
+/* Dieta → Sklepy */
+.sklepy-page .page-hero {
+    margin-bottom: 22px;
+}
+
+.sklepy-store-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 22px;
+}
+
+.sklepy-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 0 14px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface-cool, var(--surface-hover));
+    color: var(--text-dark);
+    font-family: var(--font-sans);
+    font-size: 0.92rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.sklepy-chip:hover {
+    transform: translateY(-1px);
+    border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+    box-shadow: var(--shadow-sm);
+}
+
+.sklepy-chip.is-active {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--primary-dark) 100%);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: var(--nav-active-shadow);
+}
+
+[data-theme='dark'] .sklepy-chip.is-active {
+    color: #121a2e;
+}
+
+.sklepy-chip-emoji {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.sklepy-mode-toggle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 18px;
+}
+
+.sklepy-mode-btn {
+    min-height: 42px;
+    padding: 0 16px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-muted);
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.sklepy-mode-btn.is-active {
+    background: color-mix(in srgb, var(--primary) 12%, var(--surface));
+    color: var(--text-dark);
+    border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+}
+
+.sklepy-active-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0 0 16px;
+}
+
+.sklepy-active-title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.sklepy-active-blurb {
+    margin: 4px 0 0;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+}
+
+.sklepy-article-link {
+    font-size: 0.9rem;
+    font-weight: 650;
+    color: var(--primary-dark);
+    text-decoration: none;
+}
+
+.sklepy-article-link:hover {
+    text-decoration: underline;
+}
+
+.sklepy-ranking-heading {
+    margin: 8px 0 14px;
+    font-size: 1.05rem;
+    font-weight: 800;
+}
+
+.sklepy-ranking-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.sklepy-rank-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.sklepy-rank-card:hover {
+    transform: translateY(-1px);
+    border-color: color-mix(in srgb, var(--accent) 28%, var(--border));
+    box-shadow: var(--shadow-md);
+}
+
+.sklepy-rank-pos {
+    min-width: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.sklepy-rank-emoji {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.sklepy-rank-body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.sklepy-rank-name {
+    font-weight: 750;
+    letter-spacing: -0.01em;
+}
+
+.sklepy-rank-stat {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+}
+
+.sklepy-rank-arrow {
+    color: var(--text-light);
+    font-weight: 700;
+}
+
+.sklepy-note {
+    margin-top: 22px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: var(--surface-cool, var(--surface-hover));
+    border: 1px solid var(--border-soft);
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.sklepy-empty {
+    padding: 24px;
+    text-align: center;
+    color: var(--text-muted);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-md);
+}

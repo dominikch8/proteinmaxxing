@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/theme-init.js?v=20260807b"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/consent-head.js"></script>
+<meta name="google-adsense-account" content="ca-pub-8540801395510703">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8540801395510703"
+        crossorigin="anonymous"></script>
+<title>Sklepy: Top 10 białka w Biedronce, Lidlu i innych | Proteiner</title>
+    <meta name="description" content="Wybierz sklep (Biedronka, Lidl, Carrefour, Auchan i inne) i zobacz Top 10 źródeł białka: białko/kalorie albo cena za 100 g białka.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://proteiner.pl/sklepy">
+    <meta property="og:title" content="Sklepy: Top 10 białka w sieciach | Proteiner">
+    <meta property="og:site_name" content="Proteiner">
+    <meta property="og:description" content="Biedronka, Lidl, Delikatesy Centrum, Stokrotka, Kaufland, Carrefour, Auchan, Intermarché — ranking białka pod zakupy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://proteiner.pl/sklepy">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/themes.css?v=20260807b">
+    <link rel="stylesheet" href="css/site.css?v=20260807b">
+    <link rel="stylesheet" href="css/theme-switch.css?v=20260807b">
+    <link rel="stylesheet" href="css/site-motion.css?v=20260807b">
+    <link rel="stylesheet" href="css/brand-text.css?v=20260807b">
+    <link rel="stylesheet" href="css/sklepy.css?v=20260808a">
+</head>
+<body class="sklepy-page">
+<header class="site-header">
+        <nav>
+            <a href="glowna" class="logo">
+                <img class="logo-mark" src="images/favicon.svg" alt="" width="56" height="56" decoding="async">
+                <span>Proteiner</span>
+            </a>
+            <button type="button" class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="site-nav-links"><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span></button>
+            <ul class="nav-links" id="site-nav-links">
+                <li><a class="nav-link" href="glowna">Główna</a></li>
+                <li><a class="nav-link active" href="dieta">Dieta</a></li>
+                <li><a class="nav-link" href="kalkulator-bmi">Kalkulator BMI</a></li>
+                <li><a class="nav-link" href="porownaj-produkty">Porównaj produkty</a></li>
+                <li><a class="nav-link" href="poradnik-zywienia">Poradnik</a></li>
+                <li><a class="nav-link" href="artykuly">Artykuły</a></li>
+                <li><a class="nav-link" href="informacje">Informacje</a></li>
+                <li><a class="nav-link" href="o-mnie">O mnie</a></li>
+                <li id="authNavSlot" class="auth-nav-item"><a class="nav-link auth-nav-link" href="logowanie">Zaloguj</a></li>
+                <li class="nav-add-product"><a class="nav-link nav-link--subtle" href="dodaj-produkt">Dodaj produkt</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="page-container">
+        <main class="main-content">
+            <div class="page-with-subtabs">
+                <nav class="sub-nav sub-nav--full" aria-label="Sekcje bazy produktów">
+                    <a class="btn-sub" href="dieta#produkty">Wszystkie produkty 🍕</a>
+                    <a class="btn-sub" href="bialko-maxxing">Białko maxxing 🔥</a>
+                    <a class="btn-sub" href="cena-bialka">Cena za 100g białka 💰</a>
+                    <a class="btn-sub active" href="sklepy" aria-current="page">Sklepy 🛒</a>
+                </nav>
+
+                <div id="sklepy-tab" class="sub-tab-content active">
+                    <div class="page-hero">
+                        <h1>Sklepy — Top 10 pod zakupy</h1>
+                        <p class="subtitle">Wybierz sieć i zobacz dziesiątkę najlepszych źródeł białka: stosunek białka do kalorii albo cenę za 100&nbsp;g białka.</p>
+                    </div>
+
+                    <div class="sklepy-store-chips" id="sklepyStoreChips" role="group" aria-label="Wybór sklepu"></div>
+
+                    <div class="sklepy-mode-toggle" id="sklepyModeToggle" role="group" aria-label="Rodzaj rankingu">
+                        <button type="button" class="sklepy-mode-btn is-active" data-mode="ratio" aria-pressed="true">Top 10 białko / kalorie 🔥</button>
+                        <button type="button" class="sklepy-mode-btn" data-mode="price" aria-pressed="false">Top 10 cena / białko 💰</button>
+                    </div>
+
+                    <div class="sklepy-active-meta">
+                        <div>
+                            <h2 class="sklepy-active-title" id="sklepyActiveTitle">Biedronka</h2>
+                            <p class="sklepy-active-blurb" id="sklepyActiveBlurb"></p>
+                        </div>
+                        <a class="sklepy-article-link" id="sklepyArticleLink" href="zrodla-bialka-biedronka" hidden>Przewodnik →</a>
+                    </div>
+
+                    <h3 class="sklepy-ranking-heading" id="sklepyRankingHeading">Top 10</h3>
+                    <ol class="sklepy-ranking-list" id="sklepyRankingList"></ol>
+                    <p class="sklepy-empty" id="sklepyEmpty" hidden>Brak produktów z ceną / makro dla tej sieci — spróbuj innego sklepu.</p>
+
+                    <p class="sklepy-note">Asortyment to <strong>orientacyjna lista typowych produktów</strong> z bazy Proteiner (nie aktualny gazetkowy spis z półki). Ceny i dostępność zmieniają się — traktuj ranking jako punkt startowy do listy zakupów.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="site-footer">
+        <p class="site-footer-brand"><strong>Proteiner</strong> — kalkulator dietetyczny i baza produktów</p>
+        <nav class="site-footer-nav" aria-label="Nawigacja w stopce">
+            <a href="informacje">Informacje</a>
+            <span aria-hidden="true">·</span>
+            <a href="o-mnie">O mnie</a>
+            <span aria-hidden="true">·</span>
+            <a href="dieta#produkty">Wszystkie produkty</a>
+            <span aria-hidden="true">·</span>
+            <a href="porownaj-produkty">Porównaj produkty</a>
+            <span aria-hidden="true">·</span>
+            <a href="dodaj-produkt">Dodaj produkt</a>
+            <span aria-hidden="true">·</span>
+            <a href="poradnik-zywienia">Poradnik</a>
+            <span aria-hidden="true">·</span>
+            <a href="artykuly">Artykuły</a>
+        </nav>
+        <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
+    </footer>
+<script src="js/product-utils.js"></script>
+<script src="js/products-lite.js"></script>
+<script src="js/products-data.js"></script>
+<script src="js/products-loader.js"></script>
+<script src="js/store-assortment.js"></script>
+<script src="js/sklepy.js"></script>
+<script src="js/auth-ui.js?v=20260807b"></script>
+<link rel="stylesheet" href="css/cookie-consent.css?v=20260807b">
+<script src="js/cookie-banner.js?v=20260807b"></script>
+<script src="js/theme.js?v=20260807b"></script>
+<script src="js/site-motion.js?v=20260807b"></script>
+</body>
+</html>
