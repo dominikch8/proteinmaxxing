@@ -3,10 +3,9 @@
  */
 (function () {
     const STORAGE_KEY = 'pmx_meal_calc_v1';
-    /** @type {{ id: string, slug: string, name: string, emoji: string, grams: number, mode: 'grams'|'servings', servings: number }[]} */
+    /** @type {{ id: string, slug: string, name: string, emoji: string, grams: number }[]} */
     let mealItems = [];
     let selectedProduct = null;
-    let amountMode = 'grams';
 
     function $(id) {
         return document.getElementById(id);
@@ -23,16 +22,6 @@
     function findProduct(slug) {
         if (typeof productsDatabase === 'undefined') return null;
         return productsDatabase.find((p) => p.slug === slug) || null;
-    }
-
-    function hasServing(p) {
-        return p && p.servingRatio > 0 && p.servingText;
-    }
-
-    function servingGramsOf(p) {
-        if (!hasServing(p)) return null;
-        if (p.servingGrams > 0) return p.servingGrams;
-        return Math.round(p.servingRatio * 100);
     }
 
     function macrosForGrams(p, grams) {
@@ -96,7 +85,6 @@
                 input.value = '';
                 input.focus();
             }
-            updateAmountUi();
             return;
         }
         if (input) input.value = p.name;
@@ -105,41 +93,7 @@
             chip.querySelector('.meal-chip-emoji').textContent = p.emoji || '🍽️';
             chip.querySelector('.meal-chip-name').textContent = p.name;
         }
-        updateAmountUi();
         hideSuggestions();
-    }
-
-    function updateAmountUi() {
-        const p = selectedProduct;
-        const gramsWrap = $('mealGramsWrap');
-        const servingsWrap = $('mealServingsWrap');
-        const servingHint = $('mealServingHint');
-        const modeGrams = $('mealModeGrams');
-        const modeServings = $('mealModeServings');
-        const canServe = hasServing(p);
-
-        if (modeServings) {
-            modeServings.disabled = !canServe;
-            if (!canServe && amountMode === 'servings') {
-                amountMode = 'grams';
-            }
-        }
-        if (modeGrams) modeGrams.classList.toggle('is-active', amountMode === 'grams');
-        if (modeServings) modeServings.classList.toggle('is-active', amountMode === 'servings');
-
-        if (gramsWrap) gramsWrap.hidden = amountMode !== 'grams';
-        if (servingsWrap) servingsWrap.hidden = amountMode !== 'servings' || !canServe;
-
-        if (servingHint) {
-            if (canServe) {
-                const g = servingGramsOf(p);
-                servingHint.textContent = `Porcja: ${p.servingText}${g ? ` ≈ ${g} g` : ''}`;
-                servingHint.hidden = false;
-            } else {
-                servingHint.textContent = 'Ten produkt nie ma zdefiniowanej porcji — podaj gramy.';
-                servingHint.hidden = false;
-            }
-        }
     }
 
     function getSuggestionProducts(query) {
@@ -174,7 +128,7 @@
                 <span class="meal-suggest-emoji">${escapeHtml(p.emoji || '🍽️')}</span>
                 <span class="meal-suggest-text">
                     <span class="meal-suggest-name">${escapeHtml(p.name)}</span>
-                    <span class="meal-suggest-meta">${p.kcal} kcal · B ${p.protein}g / 100 g${hasServing(p) ? ` · ${escapeHtml(p.servingText)}` : ''}</span>
+                    <span class="meal-suggest-meta">${p.kcal} kcal · B ${p.protein}g / 100 g</span>
                 </span>
             </button>`
             )
@@ -183,11 +137,6 @@
     }
 
     function resolveItemGrams(item) {
-        const p = findProduct(item.slug);
-        if (!p) return item.grams || 0;
-        if (item.mode === 'servings' && hasServing(p)) {
-            return (Number(item.servings) || 0) * servingGramsOf(p);
-        }
         return Number(item.grams) || 0;
     }
 
@@ -196,17 +145,7 @@
             $('mealProductSearch')?.focus();
             return;
         }
-        let grams = 0;
-        let servings = 1;
-        let mode = amountMode;
-
-        if (amountMode === 'servings' && hasServing(selectedProduct)) {
-            servings = Math.max(0.25, Number($('mealServingsInput')?.value) || 1);
-            grams = servings * servingGramsOf(selectedProduct);
-        } else {
-            mode = 'grams';
-            grams = Math.max(1, Number($('mealGramsInput')?.value) || 100);
-        }
+        const grams = Math.max(1, Number($('mealGramsInput')?.value) || 100);
 
         mealItems.push({
             id: `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
@@ -214,15 +153,12 @@
             name: selectedProduct.name,
             emoji: selectedProduct.emoji || '🍽️',
             grams,
-            mode,
-            servings,
         });
         saveState();
         renderMealList();
         renderTotals();
         setSelectedProduct(null);
         if ($('mealGramsInput')) $('mealGramsInput').value = '100';
-        if ($('mealServingsInput')) $('mealServingsInput').value = '1';
     }
 
     function removeItem(id) {
@@ -254,10 +190,7 @@
                 const p = findProduct(item.slug);
                 const grams = resolveItemGrams(item);
                 const m = p ? macrosForGrams(p, grams) : { kcal: 0, protein: 0, carbs: 0, fat: 0 };
-                const amountLabel =
-                    item.mode === 'servings' && p && hasServing(p)
-                        ? `${item.servings}× ${p.servingText} (≈ ${Math.round(grams)} g)`
-                        : `${Math.round(grams)} g`;
+                const amountLabel = `${Math.round(grams)} g`;
                 return `<li class="meal-item" data-id="${escapeHtml(item.id)}">
                     <span class="meal-item-emoji">${escapeHtml(item.emoji)}</span>
                     <span class="meal-item-body">
@@ -411,17 +344,6 @@
 
         $('mealChipClear')?.addEventListener('click', () => setSelectedProduct(null));
 
-        $('mealModeGrams')?.addEventListener('click', () => {
-            amountMode = 'grams';
-            updateAmountUi();
-        });
-        $('mealModeServings')?.addEventListener('click', () => {
-            if (selectedProduct && hasServing(selectedProduct)) {
-                amountMode = 'servings';
-                updateAmountUi();
-            }
-        });
-
         $('mealAddBtn')?.addEventListener('click', addCurrentToMeal);
         $('mealClearBtn')?.addEventListener('click', clearMeal);
 
@@ -446,7 +368,6 @@
         }
         loadState();
         bind();
-        updateAmountUi();
         renderMealList();
         renderTotals();
     }

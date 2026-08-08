@@ -10,12 +10,12 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8540801395510703"
         crossorigin="anonymous"></script>
 <title>Kalkulator posiłków — kalorie, makro i mikro | Proteiner</title>
-    <meta name="description" content="Dodaj produkty i porcje (gramy lub kawałki), policz kalorie, białko, węglowodany, tłuszcz oraz orientacyjny % RDA witamin i minerałów.">
+    <meta name="description" content="Dodaj produkty i gramy, policz kalorie, białko, węglowodany, tłuszcz oraz orientacyjny % RDA witamin i minerałów.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://proteiner.pl/kalkulator-posilkow">
     <meta property="og:title" content="Kalkulator posiłków | Proteiner">
     <meta property="og:site_name" content="Proteiner">
-    <meta property="og:description" content="Zlicz posiłek: gramy lub porcje produktów, makro i szacunek mikro vs zapotrzebowanie dzienne.">
+    <meta property="og:description" content="Zlicz posiłek: gramy produktów, makro i szacunek mikro vs zapotrzebowanie dzienne.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://proteiner.pl/kalkulator-posilkow">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/theme-switch.css?v=20260807b">
     <link rel="stylesheet" href="css/site-motion.css?v=20260807b">
     <link rel="stylesheet" href="css/brand-text.css?v=20260807b">
-    <link rel="stylesheet" href="css/meal-calc.css?v=20260809a">
+    <link rel="stylesheet" href="css/meal-calc.css?v=20260809b">
 </head>
 <body>
 <header class="site-header">
@@ -58,7 +58,7 @@
         <main class="main-content meal-page">
             <div class="page-hero">
                 <h1>Kalkulator posiłków</h1>
-                <p class="subtitle">Wybierz produkty z bazy, podaj gramy albo liczbę porcji/kawałków — zobaczysz kalorie, makro i orientacyjny udział witamin oraz minerałów w dziennym zapotrzebowaniu.</p>
+                <p class="subtitle">Wybierz produkty z bazy, podaj ile gramów zjadłeś — zobaczysz kalorie, makro i orientacyjny udział witamin oraz minerałów w dziennym zapotrzebowaniu.</p>
             </div>
 
             <div class="meal-layout">
@@ -76,21 +76,10 @@
                         <div class="meal-suggestions" id="mealSuggestions" hidden role="listbox" aria-label="Podpowiedzi produktów"></div>
                     </div>
 
-                    <div class="meal-amount-modes" role="group" aria-label="Sposób podania ilości">
-                        <button type="button" class="meal-mode-btn is-active" id="mealModeGrams">Gramy</button>
-                        <button type="button" class="meal-mode-btn" id="mealModeServings">Porcje / kawałki</button>
-                    </div>
-
                     <div class="meal-amount-row" id="mealGramsWrap">
                         <label for="mealGramsInput">Ile gramów zjadłeś?</label>
                         <input type="number" id="mealGramsInput" min="1" step="1" value="100" inputmode="decimal">
                     </div>
-
-                    <div class="meal-amount-row" id="mealServingsWrap" hidden>
-                        <label for="mealServingsInput">Ile porcji / kawałków?</label>
-                        <input type="number" id="mealServingsInput" min="0.25" step="0.25" value="1" inputmode="decimal">
-                    </div>
-                    <p class="meal-serving-hint" id="mealServingHint" hidden></p>
 
                     <div class="meal-actions">
                         <button type="button" class="meal-btn meal-btn-primary" id="mealAddBtn">Dodaj produkt</button>
@@ -214,7 +203,7 @@
 <script src="js/products-loader.js"></script>
 <script src="js/meal-rda.js?v=20260809a"></script>
 <script src="js/meal-micro-estimates.js?v=20260809a"></script>
-<script src="js/meal-calculator.js?v=20260809a"></script>
+<script src="js/meal-calculator.js?v=20260809b"></script>
 <script src="js/auth-ui.js?v=20260807b"></script>
 <link rel="stylesheet" href="css/cookie-consent.css?v=20260807b">
 <script src="js/cookie-banner.js?v=20260807b"></script>
