@@ -190,9 +190,12 @@
 }
 
 .sklepy-empty {
-    padding: 24px;
+    padding: 28px 20px;
     text-align: center;
     color: var(--text-muted);
     border: 1px dashed var(--border);
     border-radius: var(--radius-md);
+    background: var(--surface-cool, var(--surface-hover));
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
