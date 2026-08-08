@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -8,13 +8,12 @@
     <meta name="google-adsense-account" content="ca-pub-8540801395510703">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8540801395510703"
         crossorigin="anonymous"></script>
-    <title>Knoppers â€“ biaĹ‚ko, kalorie, wÄ™glowodany, tĹ‚uszcz | Proteiner</title>
-    <meta name="description" content="Knoppers: 8g biaĹ‚ka, 550 kcal, 50g wÄ™glowodanĂłw, 34g tĹ‚uszczu na 100g. Zdrowe odĹĽywianie, proteiny, odchudzanie â€“ makro i mikro na Proteiner.">
+    <title>Knoppers – białko, kalorie, węglowodany, tłuszcz | Proteiner</title>
+    <meta name="description" content="Knoppers: 8g białka, 550 kcal, 50g węglowodanów, 34g tłuszczu na 100g. Zdrowe odżywianie, proteiny, odchudzanie – makro i mikro na Proteiner.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://proteiner.pl/produkty/knoppers">
-    <meta property="og:title" content="Knoppers â€“ biaĹ‚ko, kalorie, wÄ™glowodany, tĹ‚uszcz | Proteiner">
-    <meta property="og:site_name" content="Proteiner">
-    <meta property="og:description" content="Knoppers: 8g biaĹ‚ka, 550 kcal, 50g wÄ™glowodanĂłw, 34g tĹ‚uszczu na 100g. Zdrowe odĹĽywianie, proteiny, odchudzanie â€“ makro i mikro na Proteiner.">
+    <meta property="og:title" content="Knoppers – białko, kalorie, węglowodany, tłuszcz | Proteiner">
+    <meta property="og:description" content="Knoppers: 8g białka, 550 kcal, 50g węglowodanów, 34g tłuszczu na 100g. Zdrowe odżywianie, proteiny, odchudzanie – makro i mikro na Proteiner.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://proteiner.pl/produkty/knoppers">
     <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
@@ -22,18 +21,20 @@
     <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192.png">
     <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
     <!-- pm:site-head -->
-    <meta property="og:image" content="https://proteiner.pl/images/products/knoppers.jpg">
+    <meta property="og:site_name" content="Proteiner">
+    <meta property="og:image" content="https://proteiner.pl/images/products/knoppers.jpg?v=20260807b">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Knoppers">
     <meta property="og:locale" content="pl_PL">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://proteiner.pl/images/products/knoppers.jpg">
+    <meta name="twitter:image" content="https://proteiner.pl/images/products/knoppers.jpg?v=20260807b">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/themes.css?v=20260807b">
+    <link rel="stylesheet" href="../css/site.css?v=20260807b">
     <link rel="stylesheet" href="../css/product-page.css?v=20260807b">
     <link rel="stylesheet" href="../css/theme-switch.css?v=20260807b">
     <link rel="stylesheet" href="../css/site-motion.css?v=20260807b">
@@ -56,51 +57,63 @@
     <script src="../js/cookie-banner.js?v=20260807b"></script>
     <header class="site-header">
         <nav>
-            <a class="logo" href="../">
+            <a class="logo" href="../glowna">
                 <img class="logo-mark" src="../images/favicon.svg" alt="" width="56" height="56" decoding="async">
                 <span>Proteiner</span>
             </a>
-            <a class="nav-back" href="../dieta">â† Baza produktĂłw</a>
+            <button type="button" class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="site-nav-links"><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span></button>
+            <ul class="nav-links" id="site-nav-links">
+                <li><a class="nav-link" href="../glowna">Główna</a></li>
+                <li><a class="nav-link active" href="../dieta" aria-current="page">Dieta</a></li>
+                <li><a class="nav-link" href="../kalkulator-bmi">Kalkulator BMI</a></li>
+                <li><a class="nav-link" href="../porownaj-produkty">Porównaj produkty</a></li>
+                <li><a class="nav-link" href="../poradnik-zywienia">Poradnik</a></li>
+                <li><a class="nav-link" href="../artykuly">Artykuły</a></li>
+                <li><a class="nav-link" href="../informacje">Informacje</a></li>
+                <li><a class="nav-link" href="../o-mnie">O mnie</a></li>
+                <li id="authNavSlot" class="auth-nav-item"><a class="nav-link auth-nav-link" href="../logowanie">Zaloguj</a></li>
+                <li class="nav-add-product"><a class="nav-link nav-link--subtle" href="../dodaj-produkt">Dodaj produkt</a></li>
+            </ul>
         </nav>
     </header>
 
     <main class="product-page">
         <nav class="breadcrumb" aria-label="Nawigacja">
-            <a href="../">Strona gĹ‚Ăłwna</a> â€ş
-            <a href="../dieta">Dieta</a> â€ş
+            <a href="../glowna">Strona główna</a> ›
+            <a href="../dieta">Dieta</a> ›
             <span>Knoppers</span>
         </nav>
 
         <article class="product-hero-card" itemscope itemtype="https://schema.org/NutritionInformation">
             <div class="product-layout">
-                <div>
+                <div class="product-media-col">
                     <div class="product-image-wrap">
-                        <img src="../images/products/knoppers.jpg" alt="Knoppers â€“ biaĹ‚ko 8g, kalorie 550 kcal, wÄ™glowodany i tĹ‚uszcz na 100g | zdrowe odĹĽywianie" width="640" height="480" loading="lazy" referrerpolicy="no-referrer" decoding="async" onerror="this.onerror=null;this.src='../images/products/knoppers.webp';this.onerror=function(){this.onerror=null;this.src='../images/products/placeholder.svg';};">
-                        <span class="product-emoji-fallback" aria-hidden="true">đźŤ«</span>
+                        <img src="../images/products/knoppers.webp" alt="Knoppers – białko 8g, kalorie 550 kcal, węglowodany i tłuszcz na 100g | zdrowe odżywianie" width="640" height="480" loading="lazy" referrerpolicy="no-referrer" decoding="async" onerror="this.onerror=null;this.src='../images/products/knoppers.jpg';this.onerror=function(){this.onerror=null;this.src='../images/products/placeholder.svg';};">
+                        <span class="product-emoji-fallback" aria-hidden="true">🍫</span>
                     </div>
                 </div>
                 <div>
                     <a class="product-category" href="../dieta#produkty/kategoria/batony">Batony</a>
                     <h1 itemprop="name">Knoppers</h1>
-                    <p class="seo-lead" itemprop="description">Knoppers: 8 g biaĹ‚ka, 550 kcal, 50 g wÄ™glowodanĂłw i 34 g tĹ‚uszczu na 100 g. Kategoria: Batony.</p>
+                    <p class="seo-lead" itemprop="description">Knoppers: 8 g białka, 550 kcal, 50 g węglowodanów i 34 g tłuszczu na 100 g. Kategoria: Batony.</p>
                     <div class="macro-highlight">
                         <div class="macro-pill kcal-pill"><span>Kalorie</span><strong itemprop="calories">550 kcal</strong><small>na 100 g</small></div>
-                        <div class="macro-pill"><span>BiaĹ‚ko / proteiny</span><strong itemprop="proteinContent">8 g</strong></div>
-                        <div class="macro-pill"><span>WÄ™glowodany</span><strong itemprop="carbohydrateContent">50 g</strong></div>
-                        <div class="macro-pill"><span>TĹ‚uszcz</span><strong itemprop="fatContent">34 g</strong></div>
-                        <div class="macro-pill product-price-pill"><span>Cena (szac.)</span><strong>~1,80 zĹ‚</strong><small>za 100 g</small></div>
+                        <div class="macro-pill"><span>Białko / proteiny</span><strong itemprop="proteinContent">8 g</strong></div>
+                        <div class="macro-pill"><span>Węglowodany</span><strong itemprop="carbohydrateContent">50 g</strong></div>
+                        <div class="macro-pill"><span>Tłuszcz</span><strong itemprop="fatContent">34 g</strong></div>
+                        <div class="macro-pill product-price-pill"><span>Cena (szac.)</span><strong>~1,80 zł</strong><small>za 100 g</small></div>
                     </div>
-                    <p class="product-price-updated">Ceny zaktualizowano: <strong>maj 2026</strong> (szacunek â€” ceny w popularnych supermarketach)</p>
+                    <p class="product-price-updated">Ceny zaktualizowano: <strong>maj 2026</strong> (szacunek — ceny w popularnych supermarketach)</p>
                     <div class="serving-table-wrap">
                     <p class="serving-table-caption">Porcja: <strong>sztuka (25g)</strong></p>
                     <table class="serving-table">
-                        <caption class="visually-hidden">MakroskĹ‚adniki na porcjÄ™ sztuka (25g)</caption>
+                        <caption class="visually-hidden">Makroskładniki na porcję sztuka (25g)</caption>
                         <tbody>
                             <tr><th>Kalorie</th><td>138 kcal</td></tr>
-                            <tr><th>BiaĹ‚ko</th><td>2 g</td></tr>
-                            <tr><th>WÄ™glowodany</th><td>12.5 g</td></tr>
-                            <tr><th>TĹ‚uszcz</th><td>8.5 g</td></tr>
-                            <tr><th>Cena (szac.)</th><td>~0,45 zĹ‚</td></tr>
+                            <tr><th>Białko</th><td>2 g</td></tr>
+                            <tr><th>Węglowodany</th><td>12.5 g</td></tr>
+                            <tr><th>Tłuszcz</th><td>8.5 g</td></tr>
+                            <tr><th>Cena (szac.)</th><td>~0,45 zł</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -109,90 +122,100 @@
             </div>
 
             <section class="nutrition-section">
-                <h2>SzczegĂłĹ‚owe skĹ‚adniki odĹĽywcze na 100 g</h2>
+                <h2>Szczegółowe składniki odżywcze na 100 g</h2>
                 <table class="nutrition-table">
                     <tbody>
-                        <tr><th>WartoĹ›Ä‡ energetyczna (kalorie)</th><td>550 kcal</td></tr>
-                        <tr><th>BiaĹ‚ko (proteiny)</th><td>8 g</td></tr>
-                        <tr><th>WÄ™glowodany</th><td>50 g</td></tr>
-                        <tr><th>TĹ‚uszcz</th><td>34 g</td></tr>
-                        <tr><th>TĹ‚uszcze nasycone</th><td>18 g</td></tr>
-                        <tr><th>TĹ‚uszcze nienasycone</th><td>16 g</td></tr>
-                        <tr><th>Witaminy i mineraĹ‚y</th><td>Magnez, Ĺ»elazo, WapĹ„</td></tr>
-                        <tr><th>WspĂłĹ‚czynnik kcal / 1 g biaĹ‚ka</th><td>68.8</td></tr>
-                        <tr><th>Cena produktu (szac. za 100 g)</th><td>~1,80 zĹ‚</td></tr><tr><th>Cena za 100 g biaĹ‚ka (szac.)</th><td>~22,50 zĹ‚</td></tr>
+                        <tr><th>Wartość energetyczna (kalorie)</th><td>550 kcal</td></tr>
+                        <tr><th>Białko (proteiny)</th><td>8 g</td></tr>
+                        <tr><th>Węglowodany</th><td>50 g</td></tr>
+                        <tr><th>Tłuszcz</th><td>34 g</td></tr>
+                        <tr><th>Tłuszcze nasycone</th><td>18 g</td></tr>
+                        <tr><th>Tłuszcze nienasycone</th><td>16 g</td></tr>
+                        <tr><th>Witaminy i minerały</th><td>Magnez, Żelazo, Wapń</td></tr>
+                        <tr><th>Współczynnik kcal / 1 g białka</th><td>68.8</td></tr>
+                        <tr><th>Cena produktu (szac. za 100 g)</th><td>~1,80 zł</td></tr><tr><th>Cena za 100 g białka (szac.)</th><td>~22,50 zł</td></tr>
                     </tbody>
                 </table>
             </section>
         </article>
 
         <section class="product-guide">
-            <h2><span class="product-name-inline">Knoppers</span> â€” gÄ™ste kalorycznie</h2>
-            <p><span class="product-name-inline">Knoppers</span> nie jest â€žzakazanyâ€ť â€” po prostu ma gÄ™sty profil energetyczny (550 kcal, 34 g tĹ‚uszczu na 100 g). Na masie <span class="product-name-inline">Knoppers</span> to wygodny wybĂłr; na redukcji wymaga mniejszej porcji lub rzadszego wĹ‚Ä…czenia. ChrupiÄ…cy wafelek z kremem orzechowo-mlecznym.</p>
-            <p>Na masie <span class="product-name-inline">Knoppers</span> bywa dodatkiem do obiadu lub przekÄ…skÄ… po treningu. ZwrĂłÄ‡ uwagÄ™ na tĹ‚uszcz (34 g / 100 g) â€” przy bardzo wysokiej kalorycznoĹ›ci Ĺ‚atwo przejĹ›Ä‡ z â€žnadwyĹĽkiâ€ť w nadmiar tĹ‚uszczu w diecie. Przy â€žocznejâ€ť porcji Ĺ‚atwo przesadziÄ‡ â€” jedna wiÄ™ksza porcja to czÄ™sto +150â€“300 kcal ponad plan.</p>
-            <p>Przy liczeniu <span class="product-name-inline">Knoppersa</span> (sztuka (25g)) wpisz teĹĽ dodatki do posiĹ‚ku â€” Ĺ‚atwo zapomnieÄ‡ o tym, co lÄ…duje obok na talerzu.</p>
-            <p>Makro na etykiecie bywa inne niĹĽ w domowej porcji (np. po dodaniu tĹ‚uszczu do patelni). Tabela na tej stronie odnosi siÄ™ do typowej porcji: sztuka (25g). W rankingu â€žcena za 100 g biaĹ‚kaâ€ť wychodzi ok. 22,50 zĹ‚ â€” warto porĂłwnaÄ‡ z innymi ĹşrĂłdĹ‚ami proteinĂłw w tej samej kategorii.</p>
+            <h2><span class="product-name-inline">Knoppers</span> — gęste kalorycznie</h2>
+            <p><span class="product-name-inline">Knoppers</span> nie jest „zakazany” — po prostu ma gęsty profil energetyczny (550 kcal, 34 g tłuszczu na 100 g). Na masie <span class="product-name-inline">Knoppers</span> to wygodny wybór; na redukcji wymaga mniejszej porcji lub rzadszego włączenia. Chrupiący wafelek z kremem orzechowo-mlecznym.</p>
+            <p>Na masie <span class="product-name-inline">Knoppers</span> bywa dodatkiem do obiadu lub przekąską po treningu. Zwróć uwagę na tłuszcz (34 g / 100 g) — przy bardzo wysokiej kaloryczności łatwo przejść z „nadwyżki” w nadmiar tłuszczu w diecie. Przy „ocznej” porcji łatwo przesadzić — jedna większa porcja to często +150–300 kcal ponad plan.</p>
+            <p>Przy liczeniu <span class="product-name-inline">Knoppersa</span> (sztuka (25g)) wpisz też dodatki do posiłku — łatwo zapomnieć o tym, co ląduje obok na talerzu.</p>
+            <p>Makro na etykiecie bywa inne niż w domowej porcji (np. po dodaniu tłuszczu do patelni). Tabela na tej stronie odnosi się do typowej porcji: sztuka (25g). W rankingu „cena za 100 g białka” wychodzi ok. 22,50 zł — warto porównać z innymi źródłami proteinów w tej samej kategorii.</p>
         </section>
 
         <section class="similar-products" aria-labelledby="similar-products-heading">
             <h2 id="similar-products-heading">Podobne produkty</h2>
-            <p class="similar-products-lead">Inne z kategorii <strong>Batony</strong> o zbliĹĽonym profilu makro:</p>
+            <p class="similar-products-lead">Inne z kategorii <strong>Batony</strong> o zbliżonym profilu makro:</p>
             <ul class="similar-products-list">
                 <li>
                     <a class="similar-product-link" href="kinder-bueno">
-                        <span class="similar-product-emoji" aria-hidden="true">đźŤ«</span>
+                        <span class="similar-product-emoji" aria-hidden="true">🍫</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Kinder Bueno</span>
-                            <span class="similar-product-meta">8.6 g biaĹ‚ka Â· 558 kcal / 100 g</span>
+                            <span class="similar-product-meta">8.6 g białka · 558 kcal / 100 g</span>
                         </span>
                     </a>
                 </li>
                 <li>
                     <a class="similar-product-link" href="snickers-white">
-                        <span class="similar-product-emoji" aria-hidden="true">đźŤ«</span>
+                        <span class="similar-product-emoji" aria-hidden="true">🍫</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Snickers White</span>
-                            <span class="similar-product-meta">8 g biaĹ‚ka Â· 510 kcal / 100 g</span>
+                            <span class="similar-product-meta">8 g białka · 510 kcal / 100 g</span>
                         </span>
                     </a>
                 </li>
                 <li>
                     <a class="similar-product-link" href="duplo">
-                        <span class="similar-product-emoji" aria-hidden="true">đźŤ«</span>
+                        <span class="similar-product-emoji" aria-hidden="true">🍫</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Duplo</span>
-                            <span class="similar-product-meta">6 g biaĹ‚ka Â· 550 kcal / 100 g</span>
+                            <span class="similar-product-meta">6 g białka · 550 kcal / 100 g</span>
                         </span>
                     </a>
                 </li>
                 <li>
                     <a class="similar-product-link" href="snickers">
-                        <span class="similar-product-emoji" aria-hidden="true">đźŤ«</span>
+                        <span class="similar-product-emoji" aria-hidden="true">🍫</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Snickers</span>
-                            <span class="similar-product-meta">8.6 g biaĹ‚ka Â· 488 kcal / 100 g</span>
+                            <span class="similar-product-meta">8.6 g białka · 488 kcal / 100 g</span>
                         </span>
                     </a>
                 </li>
                 <li>
                     <a class="similar-product-link" href="kit-kat">
-                        <span class="similar-product-emoji" aria-hidden="true">đźŤ«</span>
+                        <span class="similar-product-emoji" aria-hidden="true">🍫</span>
                         <span class="similar-product-text">
                             <span class="similar-product-name">Kit Kat</span>
-                            <span class="similar-product-meta">6.5 g biaĹ‚ka Â· 518 kcal / 100 g</span>
+                            <span class="similar-product-meta">6.5 g białka · 518 kcal / 100 g</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="similar-product-link" href="grzeski">
+                        <span class="similar-product-emoji" aria-hidden="true">🍫</span>
+                        <span class="similar-product-text">
+                            <span class="similar-product-name">Grześki</span>
+                            <span class="similar-product-meta">6 g białka · 530 kcal / 100 g</span>
                         </span>
                     </a>
                 </li>
             </ul>
             <p class="similar-products-more">
-                <a href="../dieta#produkty/kategoria/batony">Zobacz caĹ‚Ä… kategoriÄ™ Batony â†’</a>
+                <a href="../dieta#produkty/kategoria/batony">Zobacz całą kategorię Batony →</a>
             </p>
         </section>
 
     <aside class="health-disclaimer health-disclaimer--compact" role="note">
-        <p><strong>Informacja:</strong> Proteiner to narzÄ™dzie edukacyjne, nie porada medyczna. Wyniki kalkulatora i dane w bazie majÄ… charakter orientacyjny. Przed zmianÄ… diety skonsultuj siÄ™ z lekarzem lub dyplomowanym dietetykiem. <a href="../o-mnie">O autorze</a> Â· <a href="../informacje">Polityka</a></p>
+        <p><strong>Informacja:</strong> Proteiner to narzędzie edukacyjne, nie porada medyczna. Wyniki kalkulatora i dane w bazie mają charakter orientacyjny. Przed zmianą diety skonsultuj się z lekarzem lub dyplomowanym dietetykiem. <a href="../o-mnie">O autorze</a> · <a href="../informacje">Polityka</a></p>
     </aside>
     </main>
+
     <footer class="site-footer">
         <p class="site-footer-brand"><strong>Proteiner</strong> — kalkulator dietetyczny i baza produktów</p>
         <nav class="site-footer-nav" aria-label="Nawigacja w stopce">

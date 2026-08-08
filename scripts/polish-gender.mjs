@@ -35,6 +35,9 @@ const OVERRIDES = new Map([
     ['śmietana', 'f'], ['śmietanka', 'f'], ['mąka', 'f'], ['sos', 'm'], ['krem', 'm'],
     ['ogórek', 'm'], ['skrzydełka', 'pl'], ['żeberka', 'pl'], ['ciastka', 'pl'], ['białka', 'pl'],
     ['sałatka', 'f'],
+    ['polędwica', 'f'], ['barszcz', 'm'], ['pasztet', 'm'], ['chleb', 'm'],
+    ['śledź', 'm'], ['makrela', 'f'], ['dynia', 'f'], ['kapusta', 'f'],
+    ['fasola', 'f'], ['olej', 'm'], ['miód', 'm'], ['dżem', 'm'],
 ]);
 
 const LEADING_ADJ = /^(suszone|gotowane|marynowane|świeże|świeży|pieczone|smażone|smazone|ugotowane|mrożone|krojone|naturalne|naturalny|naturalna|pełno|pełne|suszone|suszona|suszony)$/i;
