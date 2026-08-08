@@ -3016,12 +3016,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zywiec-zdroj-niegazowana</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://proteiner.pl/produkty/cisowianka-niegazowana</loc>
+    <loc>https://proteiner.pl/produkty/woda</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

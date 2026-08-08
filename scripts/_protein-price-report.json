@@ -90,6 +90,26 @@
     "formula": "0.8 × 100 / 13 = 6.15"
   },
   {
+    "name": "Ser emmental",
+    "serving": "plastry (30g)",
+    "servingGrams": 30,
+    "servingPricePln": 0.55,
+    "proteinPer100g": 29,
+    "proteinInServing": 8.7,
+    "pricePer100gProtein": 6.32,
+    "formula": "0.55 × 100 / 8.7 = 6.32"
+  },
+  {
+    "name": "Ser provolone",
+    "serving": "plastry (30g)",
+    "servingGrams": 30,
+    "servingPricePln": 0.5,
+    "proteinPer100g": 26,
+    "proteinInServing": 7.8,
+    "pricePer100gProtein": 6.41,
+    "formula": "0.5 × 100 / 7.8 = 6.41"
+  },
+  {
     "name": "Kasza gryczana",
     "serving": "woreczek (100g suchej)",
     "servingGrams": 100,
@@ -100,18 +120,28 @@
     "formula": "0.85 × 100 / 13 = 6.54"
   },
   {
-    "name": "Olimp Matrix Pro",
-    "serving": "sztuka (80g)",
-    "servingGrams": 80,
-    "servingPricePln": 1.35,
-    "proteinPer100g": 25,
-    "proteinInServing": 20,
-    "pricePer100gProtein": 6.75,
-    "formula": "1.35 × 100 / 20 = 6.75"
+    "name": "Ser tylżycki",
+    "serving": "plaster (20g)",
+    "servingGrams": 20,
+    "servingPricePln": 0.35,
+    "proteinPer100g": 26,
+    "proteinInServing": 5.2,
+    "pricePer100gProtein": 6.73,
+    "formula": "0.35 × 100 / 5.2 = 6.73"
   },
   {
     "name": "Go On Protein Bar",
     "serving": "sztuka (50g)",
+    "servingGrams": 50,
+    "servingPricePln": 0.85,
+    "proteinPer100g": 25,
+    "proteinInServing": 12.5,
+    "pricePer100gProtein": 6.8,
+    "formula": "0.85 × 100 / 12.5 = 6.8"
+  },
+  {
+    "name": "Oscypek",
+    "serving": "kawałek (50g)",
     "servingGrams": 50,
     "servingPricePln": 0.85,
     "proteinPer100g": 25,
@@ -180,14 +210,24 @@
     "formula": "0.7 × 100 / 9.6 = 7.29"
   },
   {
-    "name": "Ser emmental",
+    "name": "Ser cheddar",
     "serving": "plastry (30g)",
     "servingGrams": 30,
-    "servingPricePln": 0.65,
-    "proteinPer100g": 29,
-    "proteinInServing": 8.7,
-    "pricePer100gProtein": 7.47,
-    "formula": "0.65 × 100 / 8.7 = 7.47"
+    "servingPricePln": 0.55,
+    "proteinPer100g": 25,
+    "proteinInServing": 7.5,
+    "pricePer100gProtein": 7.33,
+    "formula": "0.55 × 100 / 7.5 = 7.33"
+  },
+  {
+    "name": "Ser wędzony",
+    "serving": "plastry (30g)",
+    "servingGrams": 30,
+    "servingPricePln": 0.5,
+    "proteinPer100g": 22,
+    "proteinInServing": 6.6,
+    "pricePer100gProtein": 7.58,
+    "formula": "0.5 × 100 / 6.6 = 7.58"
   },
   {
     "name": "Rolada wieprzowa",
@@ -198,16 +238,6 @@
     "proteinInServing": 30,
     "pricePer100gProtein": 7.63,
     "formula": "2.29 × 100 / 30 = 7.63"
-  },
-  {
-    "name": "Ser provolone",
-    "serving": "plastry (30g)",
-    "servingGrams": 30,
-    "servingPricePln": 0.6,
-    "proteinPer100g": 26,
-    "proteinInServing": 7.8,
-    "pricePer100gProtein": 7.69,
-    "formula": "0.6 × 100 / 7.8 = 7.69"
   },
   {
     "name": "Tatar wołowy",
@@ -240,16 +270,6 @@
     "formula": "3.0900000000000003 × 100 / 40 = 7.73"
   },
   {
-    "name": "Quest Protein Bar",
-    "serving": "sztuka (60g)",
-    "servingGrams": 60,
-    "servingPricePln": 1,
-    "proteinPer100g": 21,
-    "proteinInServing": 12.6,
-    "pricePer100gProtein": 7.94,
-    "formula": "1 × 100 / 12.6 = 7.94"
-  },
-  {
     "name": "Twaróg chudy",
     "serving": "kostka (200g)",
     "servingGrams": 200,
@@ -258,16 +278,6 @@
     "proteinInServing": 36,
     "pricePer100gProtein": 8.03,
     "formula": "2.89 × 100 / 36 = 8.03"
-  },
-  {
-    "name": "Barebells",
-    "serving": "sztuka (55g)",
-    "servingGrams": 55,
-    "servingPricePln": 0.9,
-    "proteinPer100g": 20,
-    "proteinInServing": 11,
-    "pricePer100gProtein": 8.18,
-    "formula": "0.9 × 100 / 11 = 8.18"
   },
   {
     "name": "Mars Protein",
@@ -288,16 +298,6 @@
     "proteinInServing": 10.2,
     "pricePer100gProtein": 8.33,
     "formula": "0.85 × 100 / 10.2 = 8.33"
-  },
-  {
-    "name": "MyProtein Layered Bar",
-    "serving": "sztuka (60g)",
-    "servingGrams": 60,
-    "servingPricePln": 1,
-    "proteinPer100g": 20,
-    "proteinInServing": 12,
-    "pricePer100gProtein": 8.33,
-    "formula": "1 × 100 / 12 = 8.33"
   },
   {
     "name": "Schabowy (panierowany)",
@@ -340,24 +340,14 @@
     "formula": "2.79 × 100 / 32.4 = 8.61"
   },
   {
-    "name": "Ser cheddar",
-    "serving": "plastry (30g)",
-    "servingGrams": 30,
+    "name": "Ser kozi miękki",
+    "serving": "porcja (40g)",
+    "servingGrams": 40,
     "servingPricePln": 0.65,
-    "proteinPer100g": 25,
-    "proteinInServing": 7.5,
-    "pricePer100gProtein": 8.67,
-    "formula": "0.65 × 100 / 7.5 = 8.67"
-  },
-  {
-    "name": "Ser wędzony",
-    "serving": "plastry (30g)",
-    "servingGrams": 30,
-    "servingPricePln": 0.6,
-    "proteinPer100g": 22,
-    "proteinInServing": 6.6,
-    "pricePer100gProtein": 9.09,
-    "formula": "0.6 × 100 / 6.6 = 9.09"
+    "proteinPer100g": 18,
+    "proteinInServing": 7.2,
+    "pricePer100gProtein": 9.03,
+    "formula": "0.65 × 100 / 7.2 = 9.03"
   },
   {
     "name": "Paluszki słone",
@@ -480,16 +470,6 @@
     "formula": "5.09 × 100 / 46 = 11.07"
   },
   {
-    "name": "Płatki Nesquik",
-    "serving": "miseczka (30g)",
-    "servingGrams": 30,
-    "servingPricePln": 0.29,
-    "proteinPer100g": 8.7,
-    "proteinInServing": 2.61,
-    "pricePer100gProtein": 11.11,
-    "formula": "0.29 × 100 / 2.61 = 11.11"
-  },
-  {
     "name": "Udko z kurczaka (z skórą)",
     "serving": "sztuka (150g)",
     "servingGrams": 150,
@@ -598,16 +578,6 @@
     "proteinInServing": 38.5,
     "pricePer100gProtein": 12.18,
     "formula": "4.69 × 100 / 38.5 = 12.18"
-  },
-  {
-    "name": "Płatki Lion",
-    "serving": "miseczka (30g)",
-    "servingGrams": 30,
-    "servingPricePln": 0.3,
-    "proteinPer100g": 8.1,
-    "proteinInServing": 2.43,
-    "pricePer100gProtein": 12.35,
-    "formula": "0.3 × 100 / 2.43 = 12.35"
   },
   {
     "name": "Granola",
@@ -760,26 +730,6 @@
     "formula": "6.19 × 100 / 45 = 13.76"
   },
   {
-    "name": "Płatki Corn Flakes",
-    "serving": "miseczka (30g)",
-    "servingGrams": 30,
-    "servingPricePln": 0.29,
-    "proteinPer100g": 7,
-    "proteinInServing": 2.1,
-    "pricePer100gProtein": 13.81,
-    "formula": "0.29 × 100 / 2.1 = 13.81"
-  },
-  {
-    "name": "Płatki kukurydziane",
-    "serving": "porcja (30g)",
-    "servingGrams": 30,
-    "servingPricePln": 0.29,
-    "proteinPer100g": 7,
-    "proteinInServing": 2.1,
-    "pricePer100gProtein": 13.81,
-    "formula": "0.29 × 100 / 2.1 = 13.81"
-  },
-  {
     "name": "Skyr naturalny",
     "serving": "kubek (150g)",
     "servingGrams": 150,
@@ -798,6 +748,16 @@
     "proteinInServing": 16.5,
     "pricePer100gProtein": 13.88,
     "formula": "2.29 × 100 / 16.5 = 13.88"
+  },
+  {
+    "name": "Tagliatelle z łososiem",
+    "serving": "porcja (320g)",
+    "servingGrams": 320,
+    "servingPricePln": 4.890000000000001,
+    "proteinPer100g": 11,
+    "proteinInServing": 35.2,
+    "pricePer100gProtein": 13.89,
+    "formula": "4.890000000000001 × 100 / 35.2 = 13.89"
   },
   {
     "name": "Ser twarogowy tłusty",
@@ -880,14 +840,14 @@
     "formula": "0.8 × 100 / 5.4 = 14.81"
   },
   {
-    "name": "Płatki Cookie Crisps",
-    "serving": "miseczka (30g)",
-    "servingGrams": 30,
-    "servingPricePln": 0.3,
-    "proteinPer100g": 6.7,
-    "proteinInServing": 2.01,
-    "pricePer100gProtein": 14.93,
-    "formula": "0.3 × 100 / 2.01 = 14.93"
+    "name": "Guseppe 4 sery",
+    "serving": "1/4 pizzy (170g)",
+    "servingGrams": 170,
+    "servingPricePln": 2.79,
+    "proteinPer100g": 11,
+    "proteinInServing": 18.7,
+    "pricePer100gProtein": 14.92,
+    "formula": "2.79 × 100 / 18.7 = 14.92"
   },
   {
     "name": "Twaróg wiejski",
@@ -980,16 +940,6 @@
     "formula": "3.0900000000000003 × 100 / 20 = 15.45"
   },
   {
-    "name": "Tagliatelle z łososiem",
-    "serving": "porcja (320g)",
-    "servingGrams": 320,
-    "servingPricePln": 5.59,
-    "proteinPer100g": 11,
-    "proteinInServing": 35.2,
-    "pricePer100gProtein": 15.88,
-    "formula": "5.59 × 100 / 35.2 = 15.88"
-  },
-  {
     "name": "Polędwica wieprzowa",
     "serving": "porcja (120g)",
     "servingGrams": 120,
@@ -1038,6 +988,16 @@
     "proteinInServing": 30,
     "pricePer100gProtein": 16.3,
     "formula": "4.890000000000001 × 100 / 30 = 16.3"
+  },
+  {
+    "name": "Ristorante Prosciutto",
+    "serving": "cała pizza (330g)",
+    "servingGrams": 330,
+    "servingPricePln": 5.390000000000001,
+    "proteinPer100g": 10,
+    "proteinInServing": 33,
+    "pricePer100gProtein": 16.33,
+    "formula": "5.390000000000001 × 100 / 33 = 16.33"
   },
   {
     "name": "Bułka wiejska",
@@ -1150,6 +1110,26 @@
     "formula": "0.55 × 100 / 3.2 = 17.19"
   },
   {
+    "name": "Feliciana Speciale",
+    "serving": "cała pizza (335g)",
+    "servingGrams": 335,
+    "servingPricePln": 5.49,
+    "proteinPer100g": 9.5,
+    "proteinInServing": 31.83,
+    "pricePer100gProtein": 17.25,
+    "formula": "5.49 × 100 / 31.83 = 17.25"
+  },
+  {
+    "name": "Feliciana Quattro Formaggi",
+    "serving": "cała pizza (335g)",
+    "servingGrams": 335,
+    "servingPricePln": 5.49,
+    "proteinPer100g": 9.5,
+    "proteinInServing": 31.83,
+    "pricePer100gProtein": 17.25,
+    "formula": "5.49 × 100 / 31.83 = 17.25"
+  },
+  {
     "name": "Omlet",
     "serving": "sztuka (120g)",
     "servingGrams": 120,
@@ -1198,6 +1178,16 @@
     "proteinInServing": 5.4,
     "pricePer100gProtein": 17.59,
     "formula": "0.95 × 100 / 5.4 = 17.59"
+  },
+  {
+    "name": "Feliciana Margherita",
+    "serving": "cała pizza (315g)",
+    "servingGrams": 315,
+    "servingPricePln": 5.19,
+    "proteinPer100g": 9.3,
+    "proteinInServing": 29.3,
+    "pricePer100gProtein": 17.72,
+    "formula": "5.19 × 100 / 29.3 = 17.72"
   },
   {
     "name": "Sandacz",
@@ -1270,6 +1260,16 @@
     "formula": "4.29 × 100 / 24 = 17.88"
   },
   {
+    "name": "Feliciana Prosciutto e Funghi",
+    "serving": "cała pizza (340g)",
+    "servingGrams": 340,
+    "servingPricePln": 5.59,
+    "proteinPer100g": 9.1,
+    "proteinInServing": 30.94,
+    "pricePer100gProtein": 18.07,
+    "formula": "5.59 × 100 / 30.94 = 18.07"
+  },
+  {
     "name": "Salami",
     "serving": "plaster (10g)",
     "servingGrams": 10,
@@ -1290,6 +1290,16 @@
     "formula": "1.15 × 100 / 6.3 = 18.25"
   },
   {
+    "name": "Don Peppe Margherita",
+    "serving": "cała pizza (340g)",
+    "servingGrams": 340,
+    "servingPricePln": 5.59,
+    "proteinPer100g": 9,
+    "proteinInServing": 30.6,
+    "pricePer100gProtein": 18.27,
+    "formula": "5.59 × 100 / 30.6 = 18.27"
+  },
+  {
     "name": "Komosa ryżowa (Quinoa)",
     "serving": "porcja (50g)",
     "servingGrams": 50,
@@ -1298,16 +1308,6 @@
     "proteinInServing": 7.05,
     "pricePer100gProtein": 18.44,
     "formula": "1.3 × 100 / 7.05 = 18.44"
-  },
-  {
-    "name": "Płatki Cini Minis",
-    "serving": "miseczka (30g)",
-    "servingGrams": 30,
-    "servingPricePln": 0.3,
-    "proteinPer100g": 5.4,
-    "proteinInServing": 1.62,
-    "pricePer100gProtein": 18.52,
-    "formula": "0.3 × 100 / 1.62 = 18.52"
   },
   {
     "name": "Ser Gouda",
@@ -1410,6 +1410,36 @@
     "formula": "1.3 × 100 / 6.8 = 19.12"
   },
   {
+    "name": "Lasagne z mięsem",
+    "serving": "kawałek (300g)",
+    "servingGrams": 300,
+    "servingPricePln": 4.59,
+    "proteinPer100g": 8,
+    "proteinInServing": 24,
+    "pricePer100gProtein": 19.13,
+    "formula": "4.59 × 100 / 24 = 19.13"
+  },
+  {
+    "name": "Cannelloni z ricottą",
+    "serving": "porcja (280g)",
+    "servingGrams": 280,
+    "servingPricePln": 4.29,
+    "proteinPer100g": 8,
+    "proteinInServing": 22.4,
+    "pricePer100gProtein": 19.15,
+    "formula": "4.29 × 100 / 22.4 = 19.15"
+  },
+  {
+    "name": "Płatki Nesquik",
+    "serving": "miseczka (30g)",
+    "servingGrams": 30,
+    "servingPricePln": 0.5,
+    "proteinPer100g": 8.7,
+    "proteinInServing": 2.61,
+    "pricePer100gProtein": 19.16,
+    "formula": "0.5 × 100 / 2.61 = 19.16"
+  },
+  {
     "name": "Gulasz wołowy z makaronem",
     "serving": "porcja (350g)",
     "servingGrams": 350,
@@ -1440,6 +1470,16 @@
     "formula": "3.89 × 100 / 20 = 19.45"
   },
   {
+    "name": "Dzik Protein Pizza Capricciosa",
+    "serving": "cała pizza (350g)",
+    "servingGrams": 350,
+    "servingPricePln": 11.89,
+    "proteinPer100g": 17.2,
+    "proteinInServing": 60.2,
+    "pricePer100gProtein": 19.75,
+    "formula": "11.89 × 100 / 60.2 = 19.75"
+  },
+  {
     "name": "Snickers",
     "serving": "sztuka (50g)",
     "servingGrams": 50,
@@ -1450,16 +1490,6 @@
     "formula": "0.85 × 100 / 4.3 = 19.77"
   },
   {
-    "name": "Nuts",
-    "serving": "sztuka (42g)",
-    "servingGrams": 42,
-    "servingPricePln": 0.75,
-    "proteinPer100g": 9,
-    "proteinInServing": 3.78,
-    "pricePer100gProtein": 19.84,
-    "formula": "0.75 × 100 / 3.78 = 19.84"
-  },
-  {
     "name": "Chrupki kurze (KFC styl)",
     "serving": "porcja (150g)",
     "servingGrams": 150,
@@ -1468,6 +1498,16 @@
     "proteinInServing": 28.5,
     "pricePer100gProtein": 19.96,
     "formula": "5.69 × 100 / 28.5 = 19.96"
+  },
+  {
+    "name": "Dzik Protein Pizza Salami",
+    "serving": "cała pizza (320g)",
+    "servingGrams": 320,
+    "servingPricePln": 12.19,
+    "proteinPer100g": 18.8,
+    "proteinInServing": 60.16,
+    "pricePer100gProtein": 20.26,
+    "formula": "12.19 × 100 / 60.16 = 20.26"
   },
   {
     "name": "Chleb gryczany",
@@ -1498,6 +1538,16 @@
     "proteinInServing": 9,
     "pricePer100gProtein": 20.56,
     "formula": "1.85 × 100 / 9 = 20.56"
+  },
+  {
+    "name": "Płatki Lion",
+    "serving": "miseczka (30g)",
+    "servingGrams": 30,
+    "servingPricePln": 0.5,
+    "proteinPer100g": 8.1,
+    "proteinInServing": 2.43,
+    "pricePer100gProtein": 20.58,
+    "formula": "0.5 × 100 / 2.43 = 20.58"
   },
   {
     "name": "Ser żółty",
@@ -1560,16 +1610,6 @@
     "formula": "1 × 100 / 4.65 = 21.51"
   },
   {
-    "name": "Lasagne z mięsem",
-    "serving": "kawałek (300g)",
-    "servingGrams": 300,
-    "servingPricePln": 5.19,
-    "proteinPer100g": 8,
-    "proteinInServing": 24,
-    "pricePer100gProtein": 21.63,
-    "formula": "5.19 × 100 / 24 = 21.63"
-  },
-  {
     "name": "Kinder Bueno",
     "serving": "sztuka (43g)",
     "servingGrams": 43,
@@ -1608,16 +1648,6 @@
     "proteinInServing": 16,
     "pricePer100gProtein": 21.81,
     "formula": "3.49 × 100 / 16 = 21.81"
-  },
-  {
-    "name": "Cannelloni z ricottą",
-    "serving": "porcja (280g)",
-    "servingGrams": 280,
-    "servingPricePln": 4.890000000000001,
-    "proteinPer100g": 8,
-    "proteinInServing": 22.4,
-    "pricePer100gProtein": 21.83,
-    "formula": "4.890000000000001 × 100 / 22.4 = 21.83"
   },
   {
     "name": "Zapiekanka makaronowa (gotowiec)",
@@ -1810,6 +1840,36 @@
     "formula": "5.69 × 100 / 24 = 23.71"
   },
   {
+    "name": "Dzik Protein Pizza BBQ Chicken",
+    "serving": "cała pizza (350g)",
+    "servingGrams": 350,
+    "servingPricePln": 11.89,
+    "proteinPer100g": 14.3,
+    "proteinInServing": 50.05,
+    "pricePer100gProtein": 23.76,
+    "formula": "11.89 × 100 / 50.05 = 23.76"
+  },
+  {
+    "name": "Płatki Corn Flakes",
+    "serving": "miseczka (30g)",
+    "servingGrams": 30,
+    "servingPricePln": 0.5,
+    "proteinPer100g": 7,
+    "proteinInServing": 2.1,
+    "pricePer100gProtein": 23.81,
+    "formula": "0.5 × 100 / 2.1 = 23.81"
+  },
+  {
+    "name": "Płatki kukurydziane",
+    "serving": "porcja (30g)",
+    "servingGrams": 30,
+    "servingPricePln": 0.5,
+    "proteinPer100g": 7,
+    "proteinInServing": 2.1,
+    "pricePer100gProtein": 23.81,
+    "formula": "0.5 × 100 / 2.1 = 23.81"
+  },
+  {
     "name": "Kinder Country",
     "serving": "sztuka (24g)",
     "servingGrams": 24,
@@ -1818,6 +1878,16 @@
     "proteinInServing": 1.68,
     "pricePer100gProtein": 23.81,
     "formula": "0.4 × 100 / 1.68 = 23.81"
+  },
+  {
+    "name": "Płatki Cookie Crisps",
+    "serving": "miseczka (30g)",
+    "servingGrams": 30,
+    "servingPricePln": 0.5,
+    "proteinPer100g": 6.7,
+    "proteinInServing": 2.01,
+    "pricePer100gProtein": 24.88,
+    "formula": "0.5 × 100 / 2.01 = 24.88"
   },
   {
     "name": "Ravioli z ricottą",
@@ -1848,16 +1918,6 @@
     "proteinInServing": 1.2,
     "pricePer100gProtein": 25,
     "formula": "0.3 × 100 / 1.2 = 25"
-  },
-  {
-    "name": "Picnic",
-    "serving": "sztuka (48g)",
-    "servingGrams": 48,
-    "servingPricePln": 0.85,
-    "proteinPer100g": 7,
-    "proteinInServing": 3.36,
-    "pricePer100gProtein": 25.3,
-    "formula": "0.85 × 100 / 3.36 = 25.3"
   },
   {
     "name": "Sardynki w oleju",
@@ -1921,6 +1981,16 @@
   },
   {
     "name": "Gołąbki",
+    "serving": "porcja (250g)",
+    "servingGrams": 250,
+    "servingPricePln": 3.89,
+    "proteinPer100g": 6,
+    "proteinInServing": 15,
+    "pricePer100gProtein": 25.93,
+    "formula": "3.89 × 100 / 15 = 25.93"
+  },
+  {
+    "name": "Makaron chiński (gotowy)",
     "serving": "porcja (250g)",
     "servingGrams": 250,
     "servingPricePln": 3.89,
@@ -2130,16 +2200,6 @@
     "formula": "6.79 × 100 / 24 = 28.29"
   },
   {
-    "name": "Corny Big",
-    "serving": "sztuka (50g)",
-    "servingGrams": 50,
-    "servingPricePln": 0.85,
-    "proteinPer100g": 6,
-    "proteinInServing": 3,
-    "pricePer100gProtein": 28.33,
-    "formula": "0.85 × 100 / 3 = 28.33"
-  },
-  {
     "name": "Kiełbasa krakowska",
     "serving": "plaster (30g)",
     "servingGrams": 30,
@@ -2208,26 +2268,6 @@
     "proteinInServing": 2.4,
     "pricePer100gProtein": 29.17,
     "formula": "0.7 × 100 / 2.4 = 29.17"
-  },
-  {
-    "name": "Nestlé Crunch",
-    "serving": "sztuka (40g)",
-    "servingGrams": 40,
-    "servingPricePln": 0.7,
-    "proteinPer100g": 6,
-    "proteinInServing": 2.4,
-    "pricePer100gProtein": 29.17,
-    "formula": "0.7 × 100 / 2.4 = 29.17"
-  },
-  {
-    "name": "Makaron chiński (gotowy)",
-    "serving": "porcja (250g)",
-    "servingGrams": 250,
-    "servingPricePln": 4.390000000000001,
-    "proteinPer100g": 6,
-    "proteinInServing": 15,
-    "pricePer100gProtein": 29.27,
-    "formula": "4.390000000000001 × 100 / 15 = 29.27"
   },
   {
     "name": "Quesadilla z kurczakiem",
@@ -2300,6 +2340,16 @@
     "formula": "0.65 × 100 / 2.16 = 30.09"
   },
   {
+    "name": "Lasagne warzywna",
+    "serving": "porcja (300g)",
+    "servingGrams": 300,
+    "servingPricePln": 4.59,
+    "proteinPer100g": 5,
+    "proteinInServing": 15,
+    "pricePer100gProtein": 30.6,
+    "formula": "4.59 × 100 / 15 = 30.6"
+  },
+  {
     "name": "Pierogi z kapustą i grzybami",
     "serving": "porcja (280g)",
     "servingGrams": 280,
@@ -2310,14 +2360,14 @@
     "formula": "4.29 × 100 / 14 = 30.64"
   },
   {
-    "name": "Toblerone",
-    "serving": "porcja (35g)",
-    "servingGrams": 35,
-    "servingPricePln": 0.65,
-    "proteinPer100g": 6,
-    "proteinInServing": 2.1,
-    "pricePer100gProtein": 30.95,
-    "formula": "0.65 × 100 / 2.1 = 30.95"
+    "name": "Płatki Cini Minis",
+    "serving": "miseczka (30g)",
+    "servingGrams": 30,
+    "servingPricePln": 0.5,
+    "proteinPer100g": 5.4,
+    "proteinInServing": 1.62,
+    "pricePer100gProtein": 30.86,
+    "formula": "0.5 × 100 / 1.62 = 30.86"
   },
   {
     "name": "Princessa",
@@ -2620,16 +2670,6 @@
     "formula": "1.45 × 100 / 4.2 = 34.52"
   },
   {
-    "name": "Lasagne warzywna",
-    "serving": "porcja (300g)",
-    "servingGrams": 300,
-    "servingPricePln": 5.19,
-    "proteinPer100g": 5,
-    "proteinInServing": 15,
-    "pricePer100gProtein": 34.6,
-    "formula": "5.19 × 100 / 15 = 34.6"
-  },
-  {
     "name": "Chałwa sezamowa",
     "serving": "kromka (30g)",
     "servingGrams": 30,
@@ -2840,6 +2880,26 @@
     "formula": "2.39 × 100 / 6.3 = 37.94"
   },
   {
+    "name": "Wagner Steinofen Salami",
+    "serving": "cała pizza (350g)",
+    "servingGrams": 350,
+    "servingPricePln": 13.290000000000001,
+    "proteinPer100g": 10,
+    "proteinInServing": 35,
+    "pricePer100gProtein": 37.97,
+    "formula": "13.290000000000001 × 100 / 35 = 37.97"
+  },
+  {
+    "name": "Ristorante Salami",
+    "serving": "cała pizza (320g)",
+    "servingGrams": 320,
+    "servingPricePln": 12.19,
+    "proteinPer100g": 10,
+    "proteinInServing": 32,
+    "pricePer100gProtein": 38.09,
+    "formula": "12.19 × 100 / 32 = 38.09"
+  },
+  {
     "name": "Śledź po japońsku",
     "serving": "porcja (100g)",
     "servingGrams": 100,
@@ -2960,6 +3020,16 @@
     "formula": "0.3 × 100 / 0.7 = 42.86"
   },
   {
+    "name": "Guseppe Salami",
+    "serving": "1/2 pizzy (210g)",
+    "servingGrams": 210,
+    "servingPricePln": 7.99,
+    "proteinPer100g": 8.5,
+    "proteinInServing": 17.85,
+    "pricePer100gProtein": 44.76,
+    "formula": "7.99 × 100 / 17.85 = 44.76"
+  },
+  {
     "name": "Pad thai z kurczakiem",
     "serving": "porcja (350g)",
     "servingGrams": 350,
@@ -3018,6 +3088,16 @@
     "proteinInServing": 2.4,
     "pricePer100gProtein": 50,
     "formula": "1.2 × 100 / 2.4 = 50"
+  },
+  {
+    "name": "Ristorante Mozzarella",
+    "serving": "cała pizza (335g)",
+    "servingGrams": 335,
+    "servingPricePln": 16.99,
+    "proteinPer100g": 10,
+    "proteinInServing": 33.5,
+    "pricePer100gProtein": 50.72,
+    "formula": "16.99 × 100 / 33.5 = 50.72"
   },
   {
     "name": "Czekolada gorzka (80%)",
@@ -3080,6 +3160,16 @@
     "formula": "0.4 × 100 / 0.72 = 55.56"
   },
   {
+    "name": "Czosnek granulowany",
+    "serving": "łyżeczka (3 g)",
+    "servingGrams": 3,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 17,
+    "proteinInServing": 0.51,
+    "pricePer100gProtein": 56.86,
+    "formula": "0.29 × 100 / 0.51 = 56.86"
+  },
+  {
     "name": "Makowiec",
     "serving": "kromka (80g)",
     "servingGrams": 80,
@@ -3088,6 +3178,16 @@
     "proteinInServing": 5.6,
     "pricePer100gProtein": 56.96,
     "formula": "3.1900000000000004 × 100 / 5.6 = 56.96"
+  },
+  {
+    "name": "Guseppe Szynka i pieczarki",
+    "serving": "1/2 pizzy (210g)",
+    "servingGrams": 210,
+    "servingPricePln": 9.69,
+    "proteinPer100g": 8.1,
+    "proteinInServing": 17.01,
+    "pricePer100gProtein": 56.97,
+    "formula": "9.69 × 100 / 17.01 = 56.97"
   },
   {
     "name": "Chipsy ziemniaczane",
@@ -3110,16 +3210,6 @@
     "formula": "0.6 × 100 / 1.05 = 57.14"
   },
   {
-    "name": "Herbatniki digestive",
-    "serving": "porcja (3 szt., 33g)",
-    "servingGrams": 33,
-    "servingPricePln": 1.35,
-    "proteinPer100g": 7,
-    "proteinInServing": 2.31,
-    "pricePer100gProtein": 58.44,
-    "formula": "1.35 × 100 / 2.31 = 58.44"
-  },
-  {
     "name": "Sernik (kawałek)",
     "serving": "porcja (120g)",
     "servingGrams": 120,
@@ -3138,6 +3228,16 @@
     "proteinInServing": 7.2,
     "pricePer100gProtein": 63.75,
     "formula": "4.59 × 100 / 7.2 = 63.75"
+  },
+  {
+    "name": "Czekolada Toblerone",
+    "serving": "porcja (35g)",
+    "servingGrams": 35,
+    "servingPricePln": 1.35,
+    "proteinPer100g": 6,
+    "proteinInServing": 2.1,
+    "pricePer100gProtein": 64.29,
+    "formula": "1.35 × 100 / 2.1 = 64.29"
   },
   {
     "name": "Nutella",
@@ -3180,6 +3280,16 @@
     "formula": "3.29 × 100 / 4.8 = 68.54"
   },
   {
+    "name": "Papryka słodka mielona",
+    "serving": "łyżeczka (3 g)",
+    "servingGrams": 3,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 14,
+    "proteinInServing": 0.42,
+    "pricePer100gProtein": 69.05,
+    "formula": "0.29 × 100 / 0.42 = 69.05"
+  },
+  {
     "name": "Krem czekoladowy Milka",
     "serving": "łyżka (15g)",
     "servingGrams": 15,
@@ -3188,6 +3298,36 @@
     "proteinInServing": 0.9,
     "pricePer100gProtein": 72.22,
     "formula": "0.65 × 100 / 0.9 = 72.22"
+  },
+  {
+    "name": "Kminek",
+    "serving": "łyżeczka (2 g)",
+    "servingGrams": 2,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 20,
+    "proteinInServing": 0.4,
+    "pricePer100gProtein": 72.5,
+    "formula": "0.29 × 100 / 0.4 = 72.5"
+  },
+  {
+    "name": "Przyprawa do kurczaka",
+    "serving": "łyżeczka (5 g)",
+    "servingGrams": 5,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 8,
+    "proteinInServing": 0.4,
+    "pricePer100gProtein": 72.5,
+    "formula": "0.29 × 100 / 0.4 = 72.5"
+  },
+  {
+    "name": "Vegeta",
+    "serving": "łyżeczka (5 g)",
+    "servingGrams": 5,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 8,
+    "proteinInServing": 0.4,
+    "pricePer100gProtein": 72.5,
+    "formula": "0.29 × 100 / 0.4 = 72.5"
   },
   {
     "name": "Gofry z bitą śmietaną",
@@ -3238,16 +3378,6 @@
     "proteinInServing": 0.75,
     "pricePer100gProtein": 80,
     "formula": "0.6 × 100 / 0.75 = 80"
-  },
-  {
-    "name": "Rocky Road",
-    "serving": "kostka (25g)",
-    "servingGrams": 25,
-    "servingPricePln": 1,
-    "proteinPer100g": 5,
-    "proteinInServing": 1.25,
-    "pricePer100gProtein": 80,
-    "formula": "1 × 100 / 1.25 = 80"
   },
   {
     "name": "M&M's",
@@ -3368,5 +3498,135 @@
     "proteinInServing": 2.4,
     "pricePer100gProtein": 103.75,
     "formula": "2.49 × 100 / 2.4 = 103.75"
+  },
+  {
+    "name": "Papryka ostra mielona",
+    "serving": "łyżeczka (2 g)",
+    "servingGrams": 2,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 12,
+    "proteinInServing": 0.24,
+    "pricePer100gProtein": 120.83,
+    "formula": "0.29 × 100 / 0.24 = 120.83"
+  },
+  {
+    "name": "Kurkuma",
+    "serving": "łyżeczka (3 g)",
+    "servingGrams": 3,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 8,
+    "proteinInServing": 0.24,
+    "pricePer100gProtein": 120.83,
+    "formula": "0.29 × 100 / 0.24 = 120.83"
+  },
+  {
+    "name": "Bazylia suszona",
+    "serving": "łyżeczka (1 g)",
+    "servingGrams": 1,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 23,
+    "proteinInServing": 0.23,
+    "pricePer100gProtein": 126.09,
+    "formula": "0.29 × 100 / 0.23 = 126.09"
+  },
+  {
+    "name": "Imbir mielony",
+    "serving": "łyżeczka (2 g)",
+    "servingGrams": 2,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 9,
+    "proteinInServing": 0.18,
+    "pricePer100gProtein": 161.11,
+    "formula": "0.29 × 100 / 0.18 = 161.11"
+  },
+  {
+    "name": "Majeranek",
+    "serving": "łyżeczka (1 g)",
+    "servingGrams": 1,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 13,
+    "proteinInServing": 0.13,
+    "pricePer100gProtein": 223.08,
+    "formula": "0.29 × 100 / 0.13 = 223.08"
+  },
+  {
+    "name": "Chili mielone",
+    "serving": "szczypta (1 g)",
+    "servingGrams": 1,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 13,
+    "proteinInServing": 0.13,
+    "pricePer100gProtein": 223.08,
+    "formula": "0.29 × 100 / 0.13 = 223.08"
+  },
+  {
+    "name": "Pieprz czarny mielony",
+    "serving": "szczypta (1 g)",
+    "servingGrams": 1,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 10,
+    "proteinInServing": 0.1,
+    "pricePer100gProtein": 290,
+    "formula": "0.29 × 100 / 0.1 = 290"
+  },
+  {
+    "name": "Oregano",
+    "serving": "łyżeczka (1 g)",
+    "servingGrams": 1,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 9,
+    "proteinInServing": 0.09,
+    "pricePer100gProtein": 322.22,
+    "formula": "0.29 × 100 / 0.09 = 322.22"
+  },
+  {
+    "name": "Zioła prowansalskie",
+    "serving": "łyżeczka (1 g)",
+    "servingGrams": 1,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 9,
+    "proteinInServing": 0.09,
+    "pricePer100gProtein": 322.22,
+    "formula": "0.29 × 100 / 0.09 = 322.22"
+  },
+  {
+    "name": "Tymianek",
+    "serving": "łyżeczka (1 g)",
+    "servingGrams": 1,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 9,
+    "proteinInServing": 0.09,
+    "pricePer100gProtein": 322.22,
+    "formula": "0.29 × 100 / 0.09 = 322.22"
+  },
+  {
+    "name": "Ziele angielskie",
+    "serving": "ziarno (1 g)",
+    "servingGrams": 1,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 6,
+    "proteinInServing": 0.06,
+    "pricePer100gProtein": 483.33,
+    "formula": "0.29 × 100 / 0.06 = 483.33"
+  },
+  {
+    "name": "Liść laurowy",
+    "serving": "liść (0.5 g)",
+    "servingGrams": 0.5,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 8,
+    "proteinInServing": 0.04,
+    "pricePer100gProtein": 725,
+    "formula": "0.29 × 100 / 0.04 = 725"
+  },
+  {
+    "name": "Gałka muszkatołowa",
+    "serving": "szczypta (0.5 g)",
+    "servingGrams": 0.5,
+    "servingPricePln": 0.29,
+    "proteinPer100g": 6,
+    "proteinInServing": 0.03,
+    "pricePer100gProtein": 966.67,
+    "formula": "0.29 × 100 / 0.03 = 966.67"
   }
 ]

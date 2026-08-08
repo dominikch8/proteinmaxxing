@@ -16,6 +16,8 @@ RewriteRule ^produkty/platki-sniadaniowe-cukier/?$ /produkty/platki-corn-flakes 
 
 # Stary slug ziemniaki gotowane → tłuczone
 RewriteRule ^produkty/ziemniaki-gotowane/?$ /produkty/ziemniaki-tluczone [R=301,L]
+RewriteRule ^produkty/zywiec-zdroj-niegazowana/?$ /produkty/woda [R=301,L]
+RewriteRule ^produkty/cisowianka-niegazowana/?$ /produkty/woda [R=301,L]
 # Usunięty produkt Olimp Matrix Pro
 RewriteRule ^produkty/olimp-matrix-pro/?$ /dieta [R=301,L]
 
