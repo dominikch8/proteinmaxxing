@@ -88,7 +88,7 @@ body {
 .breadcrumb a:hover { text-decoration: underline; }
 
 .product-hero-card {
-    background: rgba(255, 255, 255, 0.94);
+    background: var(--surface);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--border);
@@ -97,7 +97,7 @@ body {
 }
 
 [data-theme='dark'] .product-hero-card {
-    background: rgba(30, 41, 59, 0.94);
+    background: var(--surface-elevated);
 }
 
 .product-hero-card::before {
@@ -485,7 +485,7 @@ a.product-category:hover {
 .similar-products {
     margin-top: 28px;
     padding: 24px;
-    background: var(--surface);
+    background: var(--surface-cool);
     border-radius: var(--radius-lg);
     border: 1px solid var(--border);
     box-shadow: var(--shadow-card);

@@ -46,7 +46,7 @@
         radial-gradient(ellipse 90% 70% at 8% 18%, rgba(128, 0, 0, 0.18), transparent 55%),
         radial-gradient(ellipse 80% 60% at 92% 12%, rgba(30, 58, 95, 0.22), transparent 50%),
         radial-gradient(ellipse 70% 50% at 50% 100%, rgba(37, 99, 235, 0.1), transparent 45%),
-        linear-gradient(165deg, #f7f9fc 0%, #eef2f7 42%, #f5f1ef 100%);
+        linear-gradient(165deg, #f8fafc 0%, #eef3f9 40%, #f6f1ef 100%);
 }
 
 .home-hero::after {
@@ -162,9 +162,24 @@
 
 /* —— Article rails —— */
 .home-section {
-    max-width: var(--site-content-max, 1180px);
-    margin: 0 auto;
+    max-width: none;
+    margin: 0;
     padding: clamp(40px, 7vw, 72px) clamp(20px, 4vw, 40px);
+    background: var(--surface-cool);
+    border-block: 1px solid var(--border-soft);
+}
+
+.home-section > .home-section-head,
+.home-section > .home-articles,
+.home-section > .home-picks-grid {
+    max-width: var(--site-content-max, 1180px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-paths + .home-section {
+    background: var(--surface);
+    border-block: 1px solid var(--border-soft);
 }
 
 .home-section-head {
@@ -270,7 +285,8 @@
     position: relative;
     padding: clamp(48px, 8vw, 88px) clamp(20px, 4vw, 40px);
     background:
-        linear-gradient(180deg, transparent, rgba(128, 0, 0, 0.04) 30%, rgba(30, 58, 95, 0.06) 100%);
+        linear-gradient(180deg, var(--surface-warm) 0%, color-mix(in srgb, var(--surface-warm) 70%, var(--surface-muted) 30%) 100%);
+    border-bottom: 1px solid var(--border-soft);
 }
 
 .home-paths-inner {
