@@ -18,6 +18,7 @@ export const CATEGORY_ORDER = [
     'batony',
     'batony-proteinowe',
     'sosy',
+    'napoje',
 ];
 
 export const CATEGORY_LABELS = {
@@ -39,6 +40,7 @@ export const CATEGORY_LABELS = {
     batony: 'Batony',
     'batony-proteinowe': 'Batony proteinowe',
     sosy: 'Sosy',
+    napoje: 'Napoje',
 };
 
 /** Krótkie frazy pod meta description (bez powtarzania nazwy kategorii) */
@@ -61,6 +63,7 @@ export const CATEGORY_META_PHRASE = {
     batony: 'batony czekoladowe — kalorie i makro na 100 g',
     'batony-proteinowe': 'batony proteinowe — białko i kalorie na 100 g',
     sosy: 'sosy i dipy — kalorie na 100 g',
+    napoje: 'cola, woda, kawa, soki, energy — kalorie na 100 ml',
 };
 
 export const CATEGORY_INTRO = {
@@ -100,6 +103,8 @@ export const CATEGORY_INTRO = {
         'Batony proteinowe (Snickers Protein, Mars Protein, Go On…) — więcej białka niż klasyczny baton, ale kalorie bywają podobne. Porównaj makro na 100 g i na sztukę.',
     sosy:
         'Ketchup, majonez, sosy sałatkowe — małe porcje, duży wpływ na kalorie. Sprawdź makra na 100 g w tej kategorii.',
+    napoje:
+        'Cola, woda, kawa, herbata, soki, ice tea i energy drinki popularne w Polsce. Porównaj kalorie i cukier na 100 ml — słodzone napoje szybko zjadają dzienny limit.',
 };
 
 export function formatProductCount(n) {
@@ -201,6 +206,11 @@ export const CATEGORY_TIPS = {
         'Ketchup i majonez szybko podbijają kalorie — makro na 100 g.',
         'Musztarda i sos sojowy są zwykle lżejsze niż kremy.',
         'Sos w restauracji — odmierz łyżką w domu, żeby znać skalę.',
+    ],
+    napoje: [
+        'Słodzona cola czy ice tea w butelce 500 ml to często 100–200+ kcal — licz całą porcję.',
+        'Woda, herbata i kawa bez dodatków prawie nie wliczają się w bilans kcal.',
+        'Energy drinki mają cukier i kofeinę — porównaj z wersją zero i z wodą.',
     ],
 };
 
@@ -384,6 +394,16 @@ export const CATEGORY_FAQ = {
         [
             'Jak liczyć sos do sałatki?',
             'Odmierz łyżkę (ok. 15 g) i przelicz na 100 g z bazy — „na oko” często znaczy 2–3× więcej kalorii.',
+        ],
+    ],
+    napoje: [
+        [
+            'Ile kalorii ma cola?',
+            'Klasyczna Coca-Cola to ok. 42 kcal / 100 ml — puszka 330 ml to ok. 140 kcal. Zero jest blisko 0 kcal.',
+        ],
+        [
+            'Czy soki owocowe są „zdrowe” na redukcji?',
+            'Mają witaminy, ale też sporo cukru naturalnego. Świeży owoc zwykle dłużej sytni przy podobnych węglach.',
         ],
     ],
 };

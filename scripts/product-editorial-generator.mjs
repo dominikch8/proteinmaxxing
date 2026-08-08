@@ -27,6 +27,11 @@ function proteinKcalRatio(p) {
 
 function macroProfile(p) {
     const ratio = proteinKcalRatio(p);
+    if (p.category === 'napoje') {
+        if (p.kcal <= 5) return 'very-low-cal';
+        if (p.carbs >= 5) return 'treat';
+        return 'low-cal';
+    }
     if (p.protein >= 18 && p.kcal <= 160) return 'lean-protein';
     if (p.protein >= 12 && ratio != null && ratio <= 8) return 'protein-dense';
     if (p.protein >= 8 && p.kcal <= 120) return 'protein-light';

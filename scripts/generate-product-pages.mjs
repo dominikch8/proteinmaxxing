@@ -84,7 +84,8 @@ const CATEGORY_IMAGES = {
     batony: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Chocolate_%28blue_background%29.jpg/640px-Chocolate_%28blue_background%29.jpg',
     'batony-proteinowe':
         'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Chocolate_%28blue_background%29.jpg/640px-Chocolate_%28blue_background%29.jpg',
-    sosy: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Ketchup.jpg/640px-Ketchup.jpg'
+    sosy: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Ketchup.jpg/640px-Ketchup.jpg',
+    napoje: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Coca_Cola_can.jpg/640px-Coca_Cola_can.jpg'
 };
 
 const PRODUCT_IMAGE_URLS = {
@@ -214,7 +215,8 @@ const CATEGORY_MICRO_FALLBACKS = {
     slodycze: ['Magnez', 'Żelazo', 'Wapń'],
     batony: ['Magnez', 'Żelazo', 'Wapń'],
     'batony-proteinowe': ['Magnez', 'Żelazo', 'Wapń'],
-    sosy: ['Sód', 'Potas', 'Witamina C']
+    sosy: ['Sód', 'Potas', 'Witamina C'],
+    napoje: ['Sód', 'Potas', 'Witamina C']
 };
 
 const NON_MICRO_KEYWORDS = /^(probiotyk|błonnik|antyoksydant|azotan|allicyn|kapsaicyn|resweratrol|polifenol|komplet aminokwas|fortyfikac|bazylia|naturalny antybiotyk|wysoka zawartość soli)$/i;

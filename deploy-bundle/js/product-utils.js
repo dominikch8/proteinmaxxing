@@ -34,7 +34,8 @@ const CATEGORY_LABELS = {
     slodycze: 'Słodycze i przekąski',
     batony: 'Batony',
     'batony-proteinowe': 'Batony proteinowe',
-    sosy: 'Sosy'
+    sosy: 'Sosy',
+    napoje: 'Napoje'
 };
 
 /** Kolejność opcji w filtrach kategorii. */
@@ -56,7 +57,8 @@ const CATEGORY_ORDER = [
     'slodycze',
     'batony',
     'batony-proteinowe',
-    'sosy'
+    'sosy',
+    'napoje'
 ];
 
 /** Etykiety w selectach na stronie diety (zgodne z dotychczasowym UI). */
@@ -78,7 +80,8 @@ const CATEGORY_SELECT_LABELS_DIETA = {
     slodycze: 'Słodycze i Przekąski',
     batony: 'Batony',
     'batony-proteinowe': 'Batony proteinowe',
-    sosy: 'Sosy'
+    sosy: 'Sosy',
+    napoje: 'Napoje'
 };
 
 /**

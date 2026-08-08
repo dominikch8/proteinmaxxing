@@ -32,7 +32,9 @@ export const CATEGORY_EDITORIAL = {
 
     'batony-proteinowe': `Batony proteinowe mają więcej białka niż klasyczny Snickers czy Mars, ale kalorie bywają zbliżone. Porównaj kilka pozycji w tej kategorii — i nie myl ich z batonami brandingowymi z kategorii Batony.`,
 
-    sosy: `Sosy i dodatki (ketchup, majonez, sos czosnkowy) łatwo umykają w liczeniu makro, a potrafią dodać setki kcal. Porównuj produkty na 100 g i wybieraj lżejsze wersje (musztarda, jogurtowy dip) tam, gdzie to możliwe.`
+    sosy: `Sosy i dodatki (ketchup, majonez, sos czosnkowy) łatwo umykają w liczeniu makro, a potrafią dodać setki kcal. Porównuj produkty na 100 g i wybieraj lżejsze wersje (musztarda, jogurtowy dip) tam, gdzie to możliwe.`,
+
+    napoje: `Napoje słodzone (cola, fanta, ice tea, soki, energy) szybko podbijają węglowodany i kalorie przy małej sytości. Woda, herbata i kawa bez cukru prawie nie wliczają się w bilans. Porównaj kilka pozycji na 100 ml i licz całą butelkę lub puszkę, nie „łyk na oko”.`
 };
 
 export function buildCategoryEditorialHtml(category, prefix = '../') {

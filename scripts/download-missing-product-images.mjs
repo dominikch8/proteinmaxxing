@@ -31,7 +31,8 @@ const CATEGORY_FALLBACK = {
     makarony: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Spaghetti.jpg/800px-Spaghetti.jpg',
     fastfood: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Cheeseburger.jpg/800px-Cheeseburger.jpg',
     slodycze: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Chocolate_%28blue_background%29.jpg/800px-Chocolate_%28blue_background%29.jpg',
-    sosy: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Ketchup.jpg/800px-Ketchup.jpg'
+    sosy: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Ketchup.jpg/800px-Ketchup.jpg',
+    napoje: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Coca_Cola_can.jpg/800px-Coca_Cola_can.jpg'
 };
 
 // poprawka literówki w URL oliwy

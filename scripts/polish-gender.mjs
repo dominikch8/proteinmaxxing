@@ -27,6 +27,8 @@ const OVERRIDES = new Map([
     ['lody', 'pl'], ['żelki', 'pl'], ['chipsy', 'pl'], ['orzeszki', 'pl'],
     ['galaretka', 'f'], ['mus', 'm'], ['tarta', 'f'], ['tort', 'm'],
     ['herbata', 'f'], ['kawa', 'f'], ['woda', 'f'], ['cola', 'f'],
+    ['coca-cola', 'f'], ['coca-cola zero', 'f'], ['pepsi', 'f'], ['sprite', 'm'],
+    ['fanta', 'f'], ['mirinda', 'f'], ['nestea', 'f'], ['lipton', 'm'],
     ['whopper', 'm'], ['bigos', 'm'], ['żurek', 'm'], ['rosół', 'm'],
     ['lasagne', 'f'], ['penne', 'pl'], ['spaghetti', 'n'], ['risotto', 'n'],
     ['stripsy', 'pl'], ['nuggetsy', 'pl'], ['nuggets', 'pl'],

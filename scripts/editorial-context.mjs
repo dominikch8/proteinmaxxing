@@ -75,6 +75,9 @@ export function contextualPracticalAddon(p) {
     if (cat === 'sosy') {
         return 'Łyżka sosu to często 40–80 kcal — odmierz porcję zamiast polewać „do smaku”.';
     }
+    if (cat === 'napoje') {
+        return 'Puszka 330 ml lub butelka 500 ml to pełna porcja — słodzone napoje łatwo „znikają” z limitu węglowodanów.';
+    }
     if (cat === 'tluszcze') {
         return 'Przy smażeniu część tłuszczu zostaje w patelni, ale w bilansie bezpieczniej liczyć pełną odmierzoną porcję.';
     }
@@ -154,6 +157,9 @@ export function contextualMealTip(p) {
     if (cat === 'sosy' || cat === 'tluszcze') {
         return `${name} dodajesz do gotowego dania — odmierz porcję zamiast polewać „do smaku”.`;
     }
+    if (cat === 'napoje') {
+        return `${name} (${serving}) w ciągu dnia — słodzone napoje szybko zjadają limit węglowodanów; woda, herbata i zero lepiej wpisują się w deficyt.`;
+    }
     if (cat === 'slodycze' || cat === 'fastfood') {
         return `${name} (${serving}) planuj w bilansie dnia z góry — reszta posiłków może być lżejsza w węglowodany i tłuszcze.`;
     }
@@ -176,6 +182,7 @@ export function contextualPlateTip(p) {
     if (p.kcal <= 50) return '';
     if (/bazylia|szczypiorek|pietruszka|natka|koperek|mięta|oregano|tymianek|rozmaryn|szpinak/i.test(n)) return '';
     if (cat === 'sosy' || cat === 'tluszcze') return '';
+    if (cat === 'napoje') return '';
     if (/susz|rodzynki|daktyle|figi|żurawina|mars|snickers|baton|czekolad/i.test(n)) return '';
     if (cat === 'slodycze' || cat === 'fastfood') return '';
 
