@@ -11,6 +11,9 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # Artykuły dynamiczne: /artykul/slug → artykul.php
 RewriteRule ^artykul/([^/]+)/?$ artykul.php?slug=$1 [L,QSA]
 
+# Stary URL /glowna → strona główna
+RewriteRule ^glowna/?$ / [R=301,L]
+
 # Usunięty produkt → Corn Flakes
 RewriteRule ^produkty/platki-sniadaniowe-cukier/?$ /produkty/platki-corn-flakes [R=301,L]
 

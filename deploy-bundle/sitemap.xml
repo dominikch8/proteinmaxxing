@@ -16,6 +16,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://proteiner.pl/kalkulator-posilkow</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://proteiner.pl/bialko-maxxing</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -3016,12 +3021,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/zywiec-zdroj-niegazowana</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://proteiner.pl/produkty/cisowianka-niegazowana</loc>
+    <loc>https://proteiner.pl/produkty/woda</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

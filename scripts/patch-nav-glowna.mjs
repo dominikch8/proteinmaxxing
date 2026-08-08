@@ -1,6 +1,5 @@
 /**
- * Insert "Główna" as first nav item; point logos/nav to /glowna
- * (dedicated URL — bypasses browsers that cached old 301 / → /dieta).
+ * Insert "Główna" as first nav item; logo i Główna → / (proteiner.pl).
  * node scripts/patch-nav-glowna.mjs
  */
 import fs from 'fs';
@@ -28,7 +27,7 @@ function prefixFor(rel) {
 }
 
 function homeHref(prefix) {
-    return `${prefix}glowna`;
+    return '/';
 }
 
 function glownaLi(prefix, active) {
@@ -44,25 +43,23 @@ function patch(html, rel) {
     const prefix = prefixFor(rel);
     const isHome =
         rel === 'index.html' ||
-        rel === 'glowna.html' ||
-        rel === 'deploy-bundle/index.html' ||
-        rel === 'deploy-bundle/glowna.html';
+        rel === 'deploy-bundle/index.html';
     const isProduct = (rel.includes('/produkty/') || rel.startsWith('produkty/')) && !rel.includes('/kategoria/');
     const home = homeHref(prefix);
 
-    // Logo → Główna (/glowna)
+    // Logo → /
     if (isProduct) {
-        out = out.replace(/(<a class="logo" href=")[^"]*(")/g, `$1../glowna$2`);
-        out = out.replace(/(<a href=")[^"]*(" class="logo")/g, `$1../glowna$2`);
+        out = out.replace(/(<a class="logo" href=")[^"]*(")/g, `$1/$2`);
+        out = out.replace(/(<a href=")[^"]*(" class="logo")/g, `$1/$2`);
     } else if (prefix === '../../') {
-        out = out.replace(/(<a href=")[^"]*(" class="logo")/g, `$1../../glowna$2`);
-        out = out.replace(/(<a class="logo" href=")[^"]*(")/g, `$1../../glowna$2`);
+        out = out.replace(/(<a href=")[^"]*(" class="logo")/g, `$1/$2`);
+        out = out.replace(/(<a class="logo" href=")[^"]*(")/g, `$1/$2`);
     } else if (prefix === '../') {
-        out = out.replace(/(<a href=")[^"]*(" class="logo")/g, `$1../glowna$2`);
-        out = out.replace(/(<a class="logo" href=")[^"]*(")/g, `$1../glowna$2`);
+        out = out.replace(/(<a href=")[^"]*(" class="logo")/g, `$1/$2`);
+        out = out.replace(/(<a class="logo" href=")[^"]*(")/g, `$1/$2`);
     } else {
-        out = out.replace(/(<a href=")(?:dieta|\/|index\.html|glowna)(" class="logo")/g, `$1${home}$2`);
-        out = out.replace(/(<a class="logo" href=")(?:dieta|\/|index\.html|glowna)(")/g, `$1${home}$2`);
+        out = out.replace(/(<a href=")(?:dieta|\/|index\.html|glowna|\/glowna)(" class="logo")/g, `$1${home}$2`);
+        out = out.replace(/(<a class="logo" href=")(?:dieta|\/|index\.html|glowna|\/glowna)(")/g, `$1${home}$2`);
     }
 
     if (!out.includes('class="nav-links"') && !out.includes("class='nav-links'")) {

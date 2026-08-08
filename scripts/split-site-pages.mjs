@@ -165,7 +165,7 @@ if (document.getElementById('productsGrid')) renderRandomProducts();
 }
 
 const NAV_ITEMS = [
-    { id: 'glowna', href: 'glowna.html', label: 'Główna' },
+    { id: 'home', href: 'index.html', label: 'Główna' },
     { id: 'dieta', href: 'dieta.html', label: 'Dieta' },
     { id: 'kalkulator', href: 'kalkulator-bmi.html', label: 'Kalkulator BMI' },
     { id: 'trening', href: 'trening.html', label: 'Trening' },

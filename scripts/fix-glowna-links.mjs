@@ -1,5 +1,5 @@
 /**
- * Fix Główna nav: use /glowna (bypasses cached 301 / → /dieta).
+ * Fix Główna nav: strona główna = / (proteiner.pl).
  * node scripts/fix-glowna-links.mjs
  */
 import fs from 'fs';
@@ -26,53 +26,45 @@ function prefixFor(rel) {
     return '';
 }
 
-// Build / sync glowna.html from index.html
+// index.html — home pod /
 let home = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 home = home
     .replace(
         /<link rel="canonical" href="https:\/\/proteiner\.pl\/(?:glowna)?">/,
         '<link rel="canonical" href="https://proteiner.pl/">'
     )
-    .replace(
-        /href="\/"(?= aria-current="page">Główna)/g,
-        'href="glowna"'
-    )
-    .replace(/href="\/"(?=>Główna)/g, 'href="glowna"')
-    .replace(/(<a href=")\/(" class="logo")/g, '$1glowna$2')
-    .replace(/(<a class="logo" href=")\/(")/g, '$1glowna$2');
-fs.writeFileSync(path.join(root, 'glowna.html'), home);
+    .replace(/href="glowna"/g, 'href="/"')
+    .replace(/href="\/glowna"/g, 'href="/"')
+    .replace(/(<a href=")\/(" class="logo")/g, '$1/$2')
+    .replace(/(<a class="logo" href=")\/(")/g, '$1/$2');
 fs.writeFileSync(path.join(root, 'index.html'), home);
-console.log('Wrote glowna.html + updated index.html logos/nav');
+
+for (const rel of ['glowna.html', 'deploy-bundle/glowna.html']) {
+    const fp = path.join(root, rel);
+    if (fs.existsSync(fp)) fs.unlinkSync(fp);
+}
+console.log('Updated index.html; removed glowna.html');
 
 let n = 0;
 for (const fp of walk(root)) {
     const rel = path.relative(root, fp).replace(/\\/g, '/');
-    if (rel === 'index.html' || rel === 'glowna.html') continue;
-    if (rel === 'deploy-bundle/index.html' || rel === 'deploy-bundle/glowna.html') continue;
+    if (rel === 'index.html') continue;
 
     let html = fs.readFileSync(fp, 'utf8');
     const before = html;
-    const p = prefixFor(rel);
-    const target = `${p}glowna`;
+    const target = '/';
 
     html = html.replace(
-        /(<a class="nav-link(?: active)?" href=")(?:\/|\.\.\/(?:\.\.\/)?|index\.html)?("(?: aria-current="page")?>Główna<\/a>)/g,
-        `$1${target}$2`
-    );
-    html = html.replace(
-        /(<a class="nav-link(?: active)?" href=")(?:\/|index\.html)("(?: aria-current="page")?>Główna<\/a>)/g,
+        /(<a class="nav-link(?: active)?" href=")(?:\/|\.\.\/(?:\.\.\/)?|index\.html|glowna|\/glowna)?("(?: aria-current="page")?>Główna<\/a>)/g,
         `$1${target}$2`
     );
 
-    // Logos that go to / or dieta → glowna (pages with full nav)
     if (html.includes('nav-links')) {
-        html = html.replace(/(<a href=")(?:\/|dieta|index\.html)(" class="logo")/g, `$1${target}$2`);
-        html = html.replace(/(<a class="logo" href=")(?:\/|dieta|index\.html)(")/g, `$1${target}$2`);
-        html = html.replace(/(<a href=")(?:\.\.\/(?:\.\.\/)?)(" class="logo")/g, `$1${target}$2`);
-        html = html.replace(/(<a class="logo" href=")(?:\.\.\/(?:\.\.\/)?)(")/g, `$1${target}$2`);
-        html = html.replace(/(<a href=")[^"]*glowna(" class="logo")/g, `$1${target}$2`);
-        html = html.replace(/(<a class="logo" href=")[^"]*glowna(")/g, `$1${target}$2`);
+        html = html.replace(/(<a href=")(?:\/|dieta|index\.html|glowna|\/glowna|\.\.\/(?:\.\.\/)?)(" class="logo")/g, `$1${target}$2`);
+        html = html.replace(/(<a class="logo" href=")(?:\/|dieta|index\.html|glowna|\/glowna|\.\.\/(?:\.\.\/)?)(")/g, `$1${target}$2`);
     }
+
+    html = html.replace(/(<a href=")(?:\.\.\/\.\.\/|\.\.\/)?glowna(">Strona główna<\/a>)/g, `$1${target}$2');
 
     if (html !== before) {
         fs.writeFileSync(fp, html);
