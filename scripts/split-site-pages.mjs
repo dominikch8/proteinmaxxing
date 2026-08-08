@@ -194,7 +194,7 @@ function buildNav(activeId) {
 }
 
 const FOOTER = `    <footer class="site-footer">
-        <p><strong>Proteiner</strong> — kalkulator dietetyczny i baza produktów</p>
+        <p><strong>Proteiner</strong> — wszystko o białku</p>
         <p style="margin-top: 8px;">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>`;
 
