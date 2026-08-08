@@ -236,7 +236,9 @@ const CATEGORY_SUFFIX = {
     batony: 'chocolate candy bar snack food',
     'batony-proteinowe': 'protein candy bar high protein snack food',
     'polskie-obiadki': 'Polish traditional food dish',
-    napoje: 'beverage drink bottle or can'
+    napoje: 'beverage drink bottle or can',
+    alkohole: 'alcoholic drink beer wine vodka bottle glass',
+    przyprawy: 'dry spice herbs seasoning powder jar'
 };
 
 const NEGATIVE =

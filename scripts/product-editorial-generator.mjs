@@ -32,6 +32,14 @@ function macroProfile(p) {
         if (p.carbs >= 5) return 'treat';
         return 'low-cal';
     }
+    if (p.category === 'alkohole') {
+        if (p.kcal >= 150) return 'calorie-dense';
+        if (p.carbs >= 4) return 'treat';
+        return 'calorie-dense';
+    }
+    if (p.category === 'przyprawy') {
+        return 'very-low-cal';
+    }
     if (p.protein >= 18 && p.kcal <= 160) return 'lean-protein';
     if (p.protein >= 12 && ratio != null && ratio <= 8) return 'protein-dense';
     if (p.protein >= 8 && p.kcal <= 120) return 'protein-light';

@@ -78,6 +78,12 @@ export function contextualPracticalAddon(p) {
     if (cat === 'napoje') {
         return 'Puszka 330 ml lub butelka 500 ml to pełna porcja — słodzone napoje łatwo „znikają” z limitu węglowodanów.';
     }
+    if (cat === 'alkohole') {
+        return 'Alkohol licz całą porcją (butelka, kieliszek, shot) — „łyk” i przekąski do piwa szybko psują bilans.';
+    }
+    if (cat === 'przyprawy') {
+        return 'Typowa łyżeczka to kilka kcal; uważaj na sól i gotowe mieszanki z wysokim sodem.';
+    }
     if (cat === 'tluszcze') {
         return 'Przy smażeniu część tłuszczu zostaje w patelni, ale w bilansie bezpieczniej liczyć pełną odmierzoną porcję.';
     }
@@ -160,6 +166,12 @@ export function contextualMealTip(p) {
     if (cat === 'napoje') {
         return `${name} (${serving}) w ciągu dnia — słodzone napoje szybko zjadają limit węglowodanów; woda, herbata i zero lepiej wpisują się w deficyt.`;
     }
+    if (cat === 'alkohole') {
+        return `${name} (${serving}) planuj w bilansie z góry — alkohol ma kcal przy małej sytości; przekąski do piwa licz osobno.`;
+    }
+    if (cat === 'przyprawy') {
+        return `${name} dodajesz do gotowego dania — sama porcja rzadko psuje kcal, ale sól i mieszanki podbijają sód.`;
+    }
     if (cat === 'slodycze' || cat === 'fastfood') {
         return `${name} (${serving}) planuj w bilansie dnia z góry — reszta posiłków może być lżejsza w węglowodany i tłuszcze.`;
     }
@@ -182,7 +194,7 @@ export function contextualPlateTip(p) {
     if (p.kcal <= 50) return '';
     if (/bazylia|szczypiorek|pietruszka|natka|koperek|mięta|oregano|tymianek|rozmaryn|szpinak/i.test(n)) return '';
     if (cat === 'sosy' || cat === 'tluszcze') return '';
-    if (cat === 'napoje') return '';
+    if (cat === 'napoje' || cat === 'alkohole' || cat === 'przyprawy') return '';
     if (/susz|rodzynki|daktyle|figi|żurawina|mars|snickers|baton|czekolad/i.test(n)) return '';
     if (cat === 'slodycze' || cat === 'fastfood') return '';
 

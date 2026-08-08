@@ -35,7 +35,9 @@ const CATEGORY_LABELS = {
     batony: 'Batony',
     'batony-proteinowe': 'Batony proteinowe',
     sosy: 'Sosy',
-    napoje: 'Napoje'
+    napoje: 'Napoje',
+    alkohole: 'Alkohole',
+    przyprawy: 'Przyprawy'
 };
 
 /** Kolejność opcji w filtrach kategorii. */
@@ -58,7 +60,9 @@ const CATEGORY_ORDER = [
     'batony',
     'batony-proteinowe',
     'sosy',
-    'napoje'
+    'napoje',
+    'alkohole',
+    'przyprawy'
 ];
 
 /** Etykiety w selectach na stronie diety (zgodne z dotychczasowym UI). */
@@ -81,7 +85,9 @@ const CATEGORY_SELECT_LABELS_DIETA = {
     batony: 'Batony',
     'batony-proteinowe': 'Batony proteinowe',
     sosy: 'Sosy',
-    napoje: 'Napoje'
+    napoje: 'Napoje',
+    alkohole: 'Alkohole',
+    przyprawy: 'Przyprawy'
 };
 
 /**

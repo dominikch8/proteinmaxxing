@@ -34,7 +34,11 @@ export const CATEGORY_EDITORIAL = {
 
     sosy: `Sosy i dodatki (ketchup, majonez, sos czosnkowy) łatwo umykają w liczeniu makro, a potrafią dodać setki kcal. Porównuj produkty na 100 g i wybieraj lżejsze wersje (musztarda, jogurtowy dip) tam, gdzie to możliwe.`,
 
-    napoje: `Napoje słodzone (cola, fanta, ice tea, soki, energy) szybko podbijają węglowodany i kalorie przy małej sytości. Woda, herbata i kawa bez cukru prawie nie wliczają się w bilans. Porównaj kilka pozycji na 100 ml i licz całą butelkę lub puszkę, nie „łyk na oko”.`
+    napoje: `Napoje słodzone (cola, fanta, ice tea, soki, energy) szybko podbijają węglowodany i kalorie przy małej sytości. Woda, herbata i kawa bez cukru prawie nie wliczają się w bilans. Porównaj kilka pozycji na 100 ml i licz całą butelkę lub puszkę, nie „łyk na oko”.`,
+
+    alkohole: `Alkohol to gęste kalorie przy małej sytości — piwo, wódka, wino i likiery łatwo „znikają” z dziennego limitu. Porównaj wartości na 100 ml i licz całą porcję (butelka 500 ml, kieliszek, shot). Piwa smakowe i cydry bywają słodsze niż klasyczny lager.`,
+
+    przyprawy: `Przyprawy same w sobie rzadko psują bilans kcal (porcja to zwykle 1–5 g), ale sól i gotowe mieszanki (Vegeta, przyprawa do kurczaka) mocno podbijają sód. Majeranek, liść laurowy i ziele angielskie to klasyka polskiej kuchni — używaj ich świadomie przy gotowaniu.`
 };
 
 export function buildCategoryEditorialHtml(category, prefix = '../') {

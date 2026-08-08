@@ -12,7 +12,7 @@ import {
     generateProductEditorial,
     generatedEditorialIsRich
 } from './product-editorial-generator.mjs';
-import { polishEditorial } from './polish-gender.mjs';
+import { polishEditorial, polishGenderInText } from './polish-gender.mjs';
 import {
     applyProductNameCases,
     renderEditorialFragment
@@ -85,7 +85,9 @@ const CATEGORY_IMAGES = {
     'batony-proteinowe':
         'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Chocolate_%28blue_background%29.jpg/640px-Chocolate_%28blue_background%29.jpg',
     sosy: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Ketchup.jpg/640px-Ketchup.jpg',
-    napoje: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Coca_Cola_can.jpg/640px-Coca_Cola_can.jpg'
+    napoje: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Coca_Cola_can.jpg/640px-Coca_Cola_can.jpg',
+    alkohole: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Pilsner_Urquell_glass.jpg/640px-Pilsner_Urquell_glass.jpg',
+    przyprawy: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Spices.jpg/640px-Spices.jpg'
 };
 
 const PRODUCT_IMAGE_URLS = {
@@ -216,7 +218,9 @@ const CATEGORY_MICRO_FALLBACKS = {
     batony: ['Magnez', 'Żelazo', 'Wapń'],
     'batony-proteinowe': ['Magnez', 'Żelazo', 'Wapń'],
     sosy: ['Sód', 'Potas', 'Witamina C'],
-    napoje: ['Sód', 'Potas', 'Witamina C']
+    napoje: ['Sód', 'Potas', 'Witamina C'],
+    alkohole: ['Sód', 'Potas'],
+    przyprawy: ['Sód', 'Żelazo', 'Mangan']
 };
 
 const NON_MICRO_KEYWORDS = /^(probiotyk|błonnik|antyoksydant|azotan|allicyn|kapsaicyn|resweratrol|polifenol|komplet aminokwas|fortyfikac|bazylia|naturalny antybiotyk|wysoka zawartość soli)$/i;
@@ -340,7 +344,8 @@ function getProductEditorial(p) {
 
 function renderEditorialParagraph(para, productName) {
     const withCases = applyProductNameCases(para, productName);
-    return withCases
+    const withGender = polishGenderInText(withCases, productName);
+    return withGender
         .split(/(<[^>]+>)/)
         .map((part) => (part.startsWith('<') ? part : renderEditorialFragment(part, esc)))
         .join('');

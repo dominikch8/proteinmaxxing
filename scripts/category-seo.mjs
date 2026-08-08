@@ -19,6 +19,8 @@ export const CATEGORY_ORDER = [
     'batony-proteinowe',
     'sosy',
     'napoje',
+    'alkohole',
+    'przyprawy',
 ];
 
 export const CATEGORY_LABELS = {
@@ -41,6 +43,8 @@ export const CATEGORY_LABELS = {
     'batony-proteinowe': 'Batony proteinowe',
     sosy: 'Sosy',
     napoje: 'Napoje',
+    alkohole: 'Alkohole',
+    przyprawy: 'Przyprawy',
 };
 
 /** Krótkie frazy pod meta description (bez powtarzania nazwy kategorii) */
@@ -64,6 +68,8 @@ export const CATEGORY_META_PHRASE = {
     'batony-proteinowe': 'batony proteinowe — białko i kalorie na 100 g',
     sosy: 'sosy i dipy — kalorie na 100 g',
     napoje: 'cola, woda, kawa, soki, energy — kalorie na 100 ml',
+    alkohole: 'piwo, wódka, wino, likiery — kalorie na 100 ml',
+    przyprawy: 'sól, pieprz, zioła, papryka — kalorie na 100 g',
 };
 
 export const CATEGORY_INTRO = {
@@ -105,6 +111,10 @@ export const CATEGORY_INTRO = {
         'Ketchup, majonez, sosy sałatkowe — małe porcje, duży wpływ na kalorie. Sprawdź makra na 100 g w tej kategorii.',
     napoje:
         'Cola, woda, kawa, herbata, soki, ice tea i energy drinki popularne w Polsce. Porównaj kalorie i cukier na 100 ml — słodzone napoje szybko zjadają dzienny limit.',
+    alkohole:
+        'Piwo, wódka, wino, cydr i likiery popularne w Polsce (Tyskie, Garage, Soplica, Żubrówka…). Porównaj kalorie na 100 ml — alkohol to gęste kcal przy małej sytości.',
+    przyprawy:
+        'Sól, pieprz, majeranek, oregano, papryka i gotowe mieszanki (Vegeta, przyprawa do kurczaka). Same w sobie mają mało kcal w typowej porcji — liczy się sól i smak dań.',
 };
 
 export function formatProductCount(n) {
@@ -211,6 +221,16 @@ export const CATEGORY_TIPS = {
         'Słodzona cola czy ice tea w butelce 500 ml to często 100–200+ kcal — licz całą porcję.',
         'Woda, herbata i kawa bez dodatków prawie nie wliczają się w bilans kcal.',
         'Energy drinki mają cukier i kofeinę — porównaj z wersją zero i z wodą.',
+    ],
+    alkohole: [
+        'Pół litra piwa to często 200+ kcal — wpisz całą butelkę, nie „łyk”.',
+        'Wódka i likiery są gęste kalorycznie przy zerowej sytości — shot też się liczy.',
+        'Piwa smakowe i cydry bywają słodsze niż zwykły lager — sprawdź makro na 100 ml.',
+    ],
+    przyprawy: [
+        'Sama łyżeczka przyprawy ma zwykle kilka kcal — problemem bywa sól i gotowe mieszanki.',
+        'Majeranek, liść laurowy i ziele angielskie to klasyka polskiej kuchni.',
+        'Przyprawa do kurczaka i Vegeta zawierają dużo sodu — czytaj etykietę.',
     ],
 };
 
@@ -404,6 +424,26 @@ export const CATEGORY_FAQ = {
         [
             'Czy soki owocowe są „zdrowe” na redukcji?',
             'Mają witaminy, ale też sporo cukru naturalnego. Świeży owoc zwykle dłużej sytni przy podobnych węglach.',
+        ],
+    ],
+    alkohole: [
+        [
+            'Ile kalorii ma piwo?',
+            'Typowy lager to ok. 40–45 kcal / 100 ml — butelka 500 ml to często ok. 200–230 kcal, plus ewentualne przekąski.',
+        ],
+        [
+            'Czy wódka ma węglowodany?',
+            'Czysta wódka 40% praktycznie nie ma węglowodanów — kalorie pochodzą z alkoholu (ok. 231 kcal / 100 ml).',
+        ],
+    ],
+    przyprawy: [
+        [
+            'Czy przyprawy mają dużo kalorii?',
+            'Na 100 g tak, ale typowa porcja to 1–5 g — kilka kcal. Wyjątkiem są tłuste pasty i słodkie glazury.',
+        ],
+        [
+            'Co z solą na diecie?',
+            'Sól ma 0 kcal, ale nadmiar sodu obciąża organizm. Gotowe mieszanki (Vegeta, przyprawy do mięs) bywają bardzo słone.',
         ],
     ],
 };

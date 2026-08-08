@@ -29,6 +29,8 @@ const OVERRIDES = new Map([
     ['herbata', 'f'], ['kawa', 'f'], ['woda', 'f'], ['cola', 'f'],
     ['coca-cola', 'f'], ['coca-cola zero', 'f'], ['pepsi', 'f'], ['sprite', 'm'],
     ['fanta', 'f'], ['mirinda', 'f'], ['nestea', 'f'], ['lipton', 'm'],
+    ['wódka', 'f'], ['wyborowa', 'f'], ['soplica', 'f'], ['żubrówka', 'f'],
+    ['piwo', 'n'], ['wino', 'n'], ['prosecco', 'n'], ['sól', 'f'], ['papryka', 'f'],
     ['whopper', 'm'], ['bigos', 'm'], ['żurek', 'm'], ['rosół', 'm'],
     ['lasagne', 'f'], ['penne', 'pl'], ['spaghetti', 'n'], ['risotto', 'n'],
     ['stripsy', 'pl'], ['nuggetsy', 'pl'], ['nuggets', 'pl'],
@@ -44,9 +46,18 @@ const OVERRIDES = new Map([
     ['herbatniki', 'pl'], ['krakersy', 'pl'], ['paluszki', 'pl'], ['wafle', 'pl'],
     ['otręby', 'pl'], ['kotlety', 'pl'], ['gołąbki', 'pl'], ['pyzy', 'pl'],
     ['wiśnie', 'pl'], ['czereśnie', 'pl'], ['figi', 'pl'], ['daktyle', 'pl'],
+    // dodatkowe plurale (końcówka -y/-i/-e bywa myląca)
+    ['bataty', 'pl'], ['biszkopty', 'pl'], ['kabanosy', 'pl'], ['korniszony', 'pl'],
+    ['krokiety', 'pl'], ['szparagi', 'pl'], ['zrazy', 'pl'], ['grześki', 'pl'],
+    ['cannelloni', 'pl'], ['gnocchi', 'pl'], ['ravioli', 'pl'], ['tortellini', 'pl'],
+    ['rodzynki', 'pl'], ['mandarynki', 'pl'], ['porzeczki', 'pl'],
+    // nijakie / brandy mylone z liczbą mnogą (np. -nie w „brownie”, -sie w „ptasie”)
+    ['brownie', 'n'], ['brownie czekoladowe', 'n'],
+    ['ptasie mleczko', 'n'], ['mleczko', 'n'],
+    ['smoothie', 'n'], ['guacamole', 'n'], ['minestrone', 'n'],
 ]);
 
-const LEADING_ADJ = /^(suszone|gotowane|marynowane|świeże|świeży|pieczone|smażone|smazone|ugotowane|mrożone|krojone|naturalne|naturalny|naturalna|pełno|pełne|suszone|suszona|suszony)$/i;
+const LEADING_ADJ = /^(suszone|gotowane|marynowane|świeże|świeży|pieczone|smażone|smazone|ugotowane|mrożone|krojone|naturalne|naturalny|naturalna|pełno|pełne|suszone|suszona|suszony|ptasie)$/i;
 
 const FEMININE_SUFFIXES = ['acja', 'acja', 'acja', 'ica', 'nica', 'anka', 'ina', 'yna', 'owa', 'awa', 'ewa'];
 const NEUTER_SUFFIXES = ['ko', 'ło', 'to', 'no', 'um', 'eum'];
@@ -73,25 +84,37 @@ export function detectGender(name) {
 
     const word = head;
 
-    // liczba mnoga
-    if (/[aei]$/i.test(word) && /(ki|y|i|e)$/i.test(word)) {
-        if (/^(płatki|ziemniaki|brokuły|frytki|nuggetsy|stripsy|żelki|lody|chipsy|orzechy|migdały|krewetki|kalmary|maliny|jagody|borówki|truskawki|gruszki|śliwki|pomidory|ogórki|marchewki|parówki|gofry|penne|pistacje|pestki|delicje|kluski|herbatniki|krakersy|paluszki|wafle|otręby|kotlety|gołąbki|pyzy|wiśnie|czereśnie|figi|daktyle|morele|pieczarki|nasiona)$/i.test(word)) {
-            return 'pl';
-        }
-        if (/y$/i.test(word) && word.length > 3) return 'pl';
-        if (/ki$/i.test(word) && !/ek$/i.test(word)) return 'pl';
-        // typowe plurale na -cje/-nie/-e (nie nijakie -e jak „smoothie”)
-        if (/(cje|nie|mie|sie|zie)$/i.test(word)) return 'pl';
+    // ——— liczba mnoga (kolejność ma znaczenie) ———
+    // -ki (płatki, frytki, żelki, grześki)
+    if (/ki$/i.test(word) && word.length > 3) return 'pl';
+    // -y (bataty, kabanosy, orzechy) — wcześniej warunek /[aei]$/ blokował tę ścieżkę
+    if (/y$/i.test(word) && word.length > 3) {
+        if (!/^(curry|jelly|whisky|wasabi)$/i.test(word)) return 'pl';
+    }
+    // -cje (delicje, pistacje)
+    if (/cje$/i.test(word)) return 'pl';
+    // typowe plurale na -gi / -dzi / -li (pierogi, gołąbki via -ki already)
+    if (/(ogi|agi)$/i.test(word) && word.length > 4) return 'pl';
+    // -e tylko dla znanych wzorców pluralnych — NIE „brownie” (-nie), NIE przymiotniki (-sie)
+    if (/(ale|ule|ele|one|iny|yny|awy|owe)$/i.test(word) && word.length > 4) {
+        // „flaki” jest w overrides; „naleśniki” via -ki
+    }
+    // lista znanych plurali na -e / inne
+    if (
+        /^(płatki|ziemniaki|brokuły|frytki|nuggetsy|stripsy|żelki|lody|chipsy|orzechy|migdały|krewetki|kalmary|maliny|jagody|borówki|truskawki|gruszki|śliwki|pomidory|ogórki|marchewki|parówki|gofry|penne|pistacje|pestki|delicje|kluski|herbatniki|krakersy|paluszki|wafle|otręby|kotlety|gołąbki|pyzy|wiśnie|czereśnie|figi|daktyle|morele|pieczarki|nasiona|flaki|grześki|bataty|biszkopty|kabanosy|korniszony|krokiety|szparagi|zrazy|rodzynki|mandarynki|porzeczki|cannelloni|gnocchi|ravioli|tortellini)$/i.test(
+            word
+        )
+    ) {
+        return 'pl';
     }
 
     // żeński: -a (z wyjątkami męskich: mężczyzna, poeta...)
     if (/a$/i.test(word) && !/^(kuba|boga|sota)$/i.test(word)) return 'f';
 
-    // nijaki: -o, -e, -ę
-    if (/[oęe]$/i.test(word) && !/a$/i.test(word)) {
-        if (/o$/i.test(word)) return 'n';
-        if (/e$/i.test(word) && !/a$/i.test(word)) return 'n';
-    }
+    // nijaki: -o, -e, -ę (w tym brownie, smoothie — po wyłączeniu fałszywych plurali)
+    if (/o$/i.test(word)) return 'n';
+    if (/ę$/i.test(word)) return 'n';
+    if (/e$/i.test(word) && !/a$/i.test(word)) return 'n';
 
     for (const suf of FEMININE_SUFFIXES) {
         if (word.endsWith(suf)) return 'f';
@@ -224,6 +247,7 @@ export function wygodnaOpcja(name) {
 
 /**
  * Post-processing tekstu opisu — poprawia typowe błędy zgodności płci i liczby.
+ * Działa też gdy nazwa jest już w <span class="product-name-inline">…</span>.
  * @param {string} text
  * @param {string} productName
  */
@@ -231,67 +255,91 @@ export function polishGenderInText(text, productName) {
     if (!text || !productName) return text;
     const g = detectGender(productName);
     const nameEsc = productName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    // Nazwa naga, marker [[PN|…|PN]], lub span product-name-inline
+    const nameToken = `(?:${nameEsc}|\\[\\[PN\\|${nameEsc}\\|PN\\]\\]|<span class="product-name-inline">${nameEsc}<\\/span>)`;
     let t = text;
 
-    // „X jest gęsty/gęsta/gęste kalorycznie”
-    t = t.replace(new RegExp(`${nameEsc} jest gęsty kalorycznie`, 'g'), jestGęstyKalorycznie(productName));
-    t = t.replace(new RegExp(`${nameEsc} są gęste kalorycznie`, 'g'), jestGęstyKalorycznie(productName));
-    t = t.replace(new RegExp(`${nameEsc} jest gęsty`, 'g'), jestGęstyKalorycznie(productName).replace(' kalorycznie', ''));
+    // \b nie działa po polskich znakach (ą/ę…) — koniec słowa = nie-litera
+    const end = '(?!\\p{L})';
+    const replaceVerb = (sg, pl) => {
+        const form = verb3(productName, sg, pl);
+        const escSg = sg.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const escPl = pl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        t = t.replace(new RegExp(`(${nameToken}) ${escSg}${end}`, 'gu'), `$1 ${form}`);
+        t = t.replace(new RegExp(`(${nameToken}) ${escPl}${end}`, 'gu'), `$1 ${form}`);
+        t = t.replace(
+            new RegExp(
+                `(${nameToken}) (często|najlepiej|po prostu|również|także) ${escSg}${end}`,
+                'gu'
+            ),
+            `$1 $2 ${form}`
+        );
+        t = t.replace(
+            new RegExp(
+                `(${nameToken}) (często|najlepiej|po prostu|również|także) ${escPl}${end}`,
+                'gu'
+            ),
+            `$1 $2 ${form}`
+        );
+    };
 
-    // „X ma / mają …”
-    t = t.replace(new RegExp(`${nameEsc} ma\\b`, 'g'), `${productName} ${maMaja(productName)}`);
-    t = t.replace(new RegExp(`${nameEsc} mają\\b`, 'g'), `${productName} ${maMaja(productName)}`);
+    // „X jest/są gęsty|gęsta|gęste kalorycznie”
+    t = t.replace(
+        new RegExp(`(${nameToken}) (?:jest|są) gęst\\w* kalorycznie`, 'g'),
+        (_, namePart) => {
+            const adj = g === 'f' ? 'gęsta' : g === 'n' || g === 'pl' ? 'gęste' : 'gęsty';
+            return `${namePart} ${jestSa(productName)} ${adj} kalorycznie`;
+        }
+    );
 
-    // „X jest / są …” (tylko gdy zaraz potem nie ma już poprawionej formy)
-    t = t.replace(new RegExp(`${nameEsc} jest\\b`, 'g'), `${productName} ${jestSa(productName)}`);
-    t = t.replace(new RegExp(`${nameEsc} są\\b`, 'g'), `${productName} ${jestSa(productName)}`);
+    replaceVerb('ma', 'mają');
+    replaceVerb('jest', 'są');
+    replaceVerb('bywa', 'bywają');
 
     // „X nie jest / nie są „zakazany””
     t = t.replace(
-        new RegExp(`${nameEsc} nie jest „zakazan[yae]”`, 'g'),
-        `${productName} nie ${jestSa(productName)} „${zakazany(productName)}”`
+        new RegExp(`(${nameToken}) nie jest „zakazan[yae]”`, 'g'),
+        `$1 nie ${jestSa(productName)} „${zakazany(productName)}”`
     );
     t = t.replace(
-        new RegExp(`${nameEsc} nie są „zakazan[yae]”`, 'g'),
-        `${productName} nie ${jestSa(productName)} „${zakazany(productName)}”`
+        new RegExp(`(${nameToken}) nie są „zakazan[yae]”`, 'g'),
+        `$1 nie ${jestSa(productName)} „${zakazany(productName)}”`
     );
 
-    // „X bywa wygodny/wygodna/wygodne” — tylko gdy przymiotnik odnosi się do produktu
+    // „X nie jest/są dietetyczny…” (z cudzysłowem lub bez)
     t = t.replace(
-        new RegExp(`${nameEsc} bywa wygodny(?! wybór)`, 'g'),
-        `${productName} ${verb3(productName, 'bywa', 'bywają')} ${agree('wygodn', g)}`
-    );
-    // „X bywa wygodny wybór” → poprawna konstrukcja
-    t = t.replace(
-        new RegExp(`${nameEsc} bywa wygodny wybór`, 'g'),
-        `${productName} to wygodny wybór`
+        new RegExp(`(${nameToken}) nie (?:jest|są) „dietetyczn\\w*”`, 'g'),
+        `$1 nie ${jestSa(productName)} „${agree('dietetyczn', g)}”`
     );
     t = t.replace(
-        new RegExp(`${nameEsc} bywa wygodna opcja`, 'g'),
-        `${productName} to wygodna opcja`
+        new RegExp(`(${nameToken}) nie (?:jest|są) "dietetyczn\\w*"`, 'g'),
+        `$1 nie ${jestSa(productName)} "${agree('dietetyczn', g)}"`
     );
-
-    // „X może okazać się tańszy lub droższy”
     t = t.replace(
-        new RegExp(`${nameEsc} może okazać się tańszy lub droższy`, 'g'),
-        `${productName} może okazać się ${cheaperPair(productName)}`
+        new RegExp(`(${nameToken}) nie (?:jest|są) dietetyczn\\w*`, 'g'),
+        `$1 nie ${jestSa(productName)} ${agree('dietetyczn', g)}`
     );
 
-    // „X nie jest/nie są dietetyczny…”
+    // „X bywa wygodny…”
     t = t.replace(
-        new RegExp(`${nameEsc} nie jest „dietetyczn\\w*”`, 'g'),
-        `${productName} nie ${jestSa(productName)} „${agree('dietetyczn', g)}”`
+        new RegExp(`(${nameToken}) bywa wygodny(?! wybór)`, 'g'),
+        `$1 ${verb3(productName, 'bywa', 'bywają')} ${agree('wygodn', g)}`
     );
     t = t.replace(
-        new RegExp(`${nameEsc} nie są „dietetyczn\\w*”`, 'g'),
-        `${productName} nie ${jestSa(productName)} „${agree('dietetyczn', g)}”`
+        new RegExp(`(${nameToken}) bywa wygodny wybór`, 'g'),
+        `$1 to wygodny wybór`
     );
     t = t.replace(
-        new RegExp(`${nameEsc} nie jest "dietetyczn\\w*"`, 'g'),
-        `${productName} nie ${jestSa(productName)} "${agree('dietetyczn', g)}"`
+        new RegExp(`(${nameToken}) bywa wygodna opcja`, 'g'),
+        `$1 to wygodna opcja`
     );
 
-    // częste czasowniki 3. os.
+    // „X może/mogą okazać się tańszy…”
+    t = t.replace(
+        new RegExp(`(${nameToken}) (?:może|mogą) okazać się tańsz\\w* lub droższ\\w*`, 'g'),
+        `$1 ${verb3(productName, 'może', 'mogą')} okazać się ${cheaperPair(productName)}`
+    );
+
     const verbPairs = [
         ['wpisuje się', 'wpisują się'],
         ['łączy', 'łączą'],
@@ -306,58 +354,56 @@ export function polishGenderInText(text, productName) {
         ['pokazuje', 'pokazują'],
         ['wymaga', 'wymagają'],
         ['pozwala', 'pozwalają'],
-        ['bywa', 'bywają'],
         ['daje', 'dają'],
         ['może', 'mogą'],
         ['mieści się', 'mieszczą się'],
         ['najlepiej sprawdza się', 'najlepiej sprawdzają się'],
     ];
     for (const [sg, pl] of verbPairs) {
-        const form = verb3(productName, sg, pl);
-        t = t.replace(new RegExp(`${nameEsc} ${sg}\\b`, 'g'), `${productName} ${form}`);
-        t = t.replace(new RegExp(`${nameEsc} ${pl}\\b`, 'g'), `${productName} ${form}`);
+        replaceVerb(sg, pl);
     }
 
-    // „to dobry wybór” przy produkcie żeńskim w poprzednim zdaniu — kontekstowo trudne; napraw „X to dobry …”
     t = t.replace(
-        new RegExp(`${nameEsc} to dobry (\\w+)`, 'g'),
-        (_, noun) => {
+        new RegExp(`(${nameToken}) to dobry (\\w+)`, 'g'),
+        (_, namePart, noun) => {
             const femNouns = ['alternatywa', 'opcja', 'przekąska', 'zmiana', 'baza', 'porcja'];
-            if (femNouns.includes(noun)) return `${productName} to dobra ${noun}`;
-            if (noun === 'źródło') return `${productName} to dobre źródło`;
-            return `${productName} to ${agree('dobr', g)} ${noun}`;
+            if (femNouns.includes(noun)) return `${namePart} to dobra ${noun}`;
+            if (noun === 'źródło') return `${namePart} to dobre źródło`;
+            return `${namePart} to ${agree('dobr', g)} ${noun}`;
         }
     );
 
-    // „dobre białko” przy produkcie żeńskim — OK (białko is neuter). „dobry białko” — fix
     t = t.replace(/\bdobry białko\b/g, 'dobre białko');
 
-    // „jest dobry na” → zgodnie z płcią produktu (po wcześniejszej podmianie jest→są)
     t = t.replace(
-        new RegExp(`${nameEsc} ${jestSa(productName)} dobry na`, 'g'),
-        `${productName} ${jestSa(productName)} ${agree('dobr', g)} na`
+        new RegExp(`(${nameToken}) ${jestSa(productName)} dobry na`, 'g'),
+        `$1 ${jestSa(productName)} ${agree('dobr', g)} na`
     );
     t = t.replace(
-        new RegExp(`${nameEsc} ${jestSa(productName)} dobry do`, 'g'),
-        `${productName} ${jestSa(productName)} ${agree('dobr', g)} do`
-    );
-
-    // „jest popularny w”
-    t = t.replace(
-        new RegExp(`${nameEsc} ${jestSa(productName)} popularny w`, 'g'),
-        `${productName} ${jestSa(productName)} ${agree('popularn', g)} w`
+        new RegExp(`(${nameToken}) ${jestSa(productName)} dobry do`, 'g'),
+        `$1 ${jestSa(productName)} ${agree('dobr', g)} do`
     );
 
-    // „często wybierany”
     t = t.replace(
-        new RegExp(`${nameEsc} często wybieran[yae]`, 'g'),
-        `${productName} często ${wybierany(productName)}`
+        new RegExp(`(${nameToken}) ${jestSa(productName)} popularny w`, 'g'),
+        `$1 ${jestSa(productName)} ${agree('popularn', g)} w`
     );
 
-    // „na redukcji wymaga” — orzeczenie odnoszące się do produktu w poprzednim zdaniu
+    t = t.replace(
+        new RegExp(`(${nameToken}) często wybieran[yae]`, 'g'),
+        `$1 często ${wybierany(productName)}`
+    );
+
     if (g === 'pl') {
-        t = t.replace(/; na redukcji wymaga\b/g, '; na redukcji wymagają');
-        t = t.replace(/\. Na redukcji wymaga\b/g, '. Na redukcji wymagają');
+        t = t.replace(/; na redukcji wymaga(?!\p{L})/gu, '; na redukcji wymagają');
+        t = t.replace(/\. Na redukcji wymaga(?!\p{L})/gu, '. Na redukcji wymagają');
+        t = t.replace(/— po prostu ma(?!\p{L})/gu, '— po prostu mają');
+        t = t.replace(/po prostu ma(?!\p{L})/gu, 'po prostu mają');
+    } else {
+        t = t.replace(/; na redukcji wymagają(?!\p{L})/gu, '; na redukcji wymaga');
+        t = t.replace(/\. Na redukcji wymagają(?!\p{L})/gu, '. Na redukcji wymaga');
+        t = t.replace(/— po prostu mają(?!\p{L})/gu, '— po prostu ma');
+        t = t.replace(/po prostu mają(?!\p{L})/gu, 'po prostu ma');
     }
 
     return t;
