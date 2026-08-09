@@ -217,7 +217,67 @@ const FOOD_SUBJECT = {
     'bulka-z-parowka': 'Polish supermarket bakery bułka z parówką, golden baked soft yeast dough roll with whole frankfurter sausage baked inside, oblong parowka w ciescie pastry from bakery shelf, sausage peeking from ends, simple plain baked snack, NOT American hot dog in split bun, NOT mustard hot dog, NOT sausage sub with sauce and onions, NOT currywurst',
     'babka-drozdzowa': 'Polish babka drożdżowa yeast cake, tall cylindrical bundt shape with vertical fluted ridged sides, golden brown soft sweet yeast cake whole piece, traditional Polish bakery babka drozdzowa with smooth top, NOT bagel ring, NOT donut, NOT chocolate candy bar, NOT wafer caramel bar, NOT chocolate snack baton, NOT protein bar',
     'ciastka-maslane': 'plain golden butter cookies ciastka maslane, small round pale yellow shortbread biscuits pile, simple Polish maślane ciasteczka without chocolate coating, crumbly butter cookies only, NOT chocolate covered cookies, NOT chocolate dipped biscuits, NOT Oreo, NOT chocolate cookies, NOT dark chocolate glaze',
-    'chalwa-sezamowa': 'plain sesame halva chalwa sezamowa block, beige crumbly fibrous sesame candy with visible sesame texture, Polish halva slice without chocolate coating, tan sesame sweet block only, NOT chocolate coated halva, NOT chocolate covered halva, NOT milk chocolate layer, NOT chocolate bar'
+    'chalwa-sezamowa': 'plain sesame halva chalwa sezamowa block, beige crumbly fibrous sesame candy with visible sesame texture, Polish halva slice without chocolate coating, tan sesame sweet block only, NOT chocolate coated halva, NOT chocolate covered halva, NOT milk chocolate layer, NOT chocolate bar',
+
+    'sol-kuchenna': 'small neat mound of fine white table salt crystals only, salt pile on white, NO shaker, NO bowl',
+    'pieprz-czarny-mielony': 'small neat mound of finely ground black pepper powder only, dark gray pepper, NO bowl, NO grinder',
+    'papryka-slodka-mielona': 'small neat mound of bright red-orange sweet paprika powder only, NO bowl',
+    'papryka-ostra-mielona': 'small neat mound of deep red hot paprika chili powder only, NO bowl',
+    majeranek: 'small pile of dried green-gray marjoram herb leaves only',
+    oregano: 'small pile of dried oregano herb leaves only',
+    'bazylia-suszona': 'small pile of dried green basil leaves only',
+    kminek: 'small pile of whole brown caraway seeds only',
+    'lisc-laurowy': 'few dried bay leaves stacked flat, green-brown dried leaves only',
+    'ziele-angielskie': 'small pile of whole dried brown allspice berries only',
+    kurkuma: 'small neat mound of bright yellow-orange turmeric powder only, NO bowl',
+    'cynamon-mielony': 'small neat mound of warm brown ground cinnamon powder only, NO bowl',
+    'czosnek-granulowany': 'small mound of pale beige garlic granules powder only',
+    'ziola-prowansalskie': 'small pile of mixed dried Provencal herbs leaves only',
+    tymianek: 'small pile of dried thyme herb leaves only',
+    'chili-mielone': 'small neat mound of red chili powder only, NO bowl',
+    'imbir-mielony': 'small neat mound of pale beige ground ginger powder only, NO bowl',
+    'galka-muszkatolowa': 'one whole nutmeg and a pinch of grated nutmeg powder beside it',
+    'przyprawa-do-kurczaka': 'small mound of mixed chicken seasoning spice powder with visible herb flecks',
+    vegeta: 'small mound of yellow-beige vegetable seasoning powder with tiny herb bits',
+    'garage-hard-lemon-4-6': 'pale yellow lemon beer in a clear pint glass with light foam, NO can, NO brand logo',
+    'tyskie-gronie': 'golden lager beer in a clear pint glass with white foam head, NO bottle, NO brand logo',
+    'zywiec-jasne-pelne': 'golden lager beer in a clear pint glass with white foam, NO bottle, NO brand logo',
+    'lech-premium': 'golden lager beer in a clear pint glass with white foam, NO bottle, NO brand logo',
+    'okocim-o-k-beer': 'golden lager beer in a clear pint glass with white foam, NO bottle, NO brand logo',
+    'harnas-jasne': 'golden lager beer in a clear pint glass with white foam, NO bottle, NO brand logo',
+    desperados: 'amber tequila-flavored beer in a clear glass with light foam, NO bottle, NO brand logo',
+    'somersby-jablkowy': 'pale golden apple cider in a clear pint glass, NO bottle, NO brand logo',
+    heineken: 'golden lager beer in a clear pint glass with white foam head, NO bottle, NO brand logo',
+    'corona-extra': 'pale lager beer in a clear glass with a thin lime wedge on rim, NO bottle, NO brand logo',
+    'wyborowa-wodka': 'clear vodka spirit in a small clear shot glass, colorless liquid only, NO bottle',
+    'soplica-czysta': 'clear vodka spirit in a small clear shot glass, colorless liquid only, NO bottle',
+    'zubrowka-bison-grass': 'slightly pale vodka in a small shot glass with one blade of bison grass, NO bottle',
+    'soplica-wisniowa': 'deep red cherry liqueur in a small clear shot glass, NO bottle',
+    'krupnik-tradycyjny': 'golden honey vodka in a small clear shot glass, NO bottle',
+    jagermeister: 'very dark brown herbal liqueur in a small clear shot glass, NO bottle',
+    'baileys-original': 'creamy beige Irish cream liqueur in a short clear glass, NO bottle',
+    'wino-czerwone-wytrawne': 'dry red wine in a clear stemmed wine glass, deep ruby liquid, NO bottle',
+    'wino-biale-polslodkie': 'semi-sweet white wine in a clear stemmed wine glass, pale gold liquid, NO bottle',
+    prosecco: 'prosecco sparkling wine in a tall flute glass with fine bubbles, pale gold, NO bottle',
+    'coca-cola': 'classic dark caramel-brown cola soft drink in a clear tumbler with ice cubes and bubbles, NO can, NO bottle, NO brand logo',
+    'coca-cola-zero': 'dark caramel-brown diet cola in a clear tumbler with ice cubes and bubbles, NO can, NO brand logo',
+    pepsi: 'dark caramel-brown cola soft drink in a clear tumbler with ice cubes and bubbles, NO can, NO brand logo',
+    sprite: 'nearly clear pale lemon-lime soda in a tall glass with ice and bubbles, very light tint, NO can, NO brand logo',
+    'fanta-pomaranczowa': 'bright orange soda in a clear glass with ice and bubbles, NO can, NO brand logo',
+    mirinda: 'bright orange soda in a clear glass with ice and bubbles, NO can, NO brand logo',
+    'lipton-ice-tea-brzoskwinia': 'peach iced tea amber liquid in a tall clear glass with ice, NO bottle, NO brand logo',
+    'nestea-cytryna': 'lemon iced tea pale amber liquid in a tall clear glass with ice, NO bottle, NO brand logo',
+    'red-bull': 'pale yellow energy drink in a tall clear glass with ice, NO can, NO brand logo',
+    'tiger-energy-drink': 'pale yellow energy drink in a tall clear glass with ice, NO can, NO brand logo',
+    'black-energy-drink': 'dark energy drink in a tall clear glass with ice, NO can, NO brand logo',
+    'monster-energy': 'pale green-yellow energy drink in a tall clear glass with ice, NO can, NO brand logo',
+    woda: 'stock photo style clear drinking glass filled with completely colorless transparent water, crystal clear see-through liquid like real water NOT blue NOT cyan NOT turquoise NOT opaque, empty looking clear water',
+    'kubus-jablkowy': 'cloudy apple juice in a clear glass, pale yellow-beige, NO carton, NO brand logo',
+    'tymbark-jablko': 'apple juice in a clear glass, golden yellow, NO carton, NO brand logo',
+    'sok-pomaranczowy-100': 'fresh orange juice in a clear glass, bright orange, NO carton',
+    'herbata-czarna-napar': 'black tea in a clear glass cup, amber-brown brew, NO tea bag string clutter',
+    'kawa-czarna-parzona': 'black coffee in a plain white ceramic cup, dark brown coffee only',
+    'oshee-izotoniczny': 'bright colored isotonic sports drink in a clear glass, NO bottle, NO brand logo'
 };
 
 const CATEGORY_SUFFIX = {
@@ -237,9 +297,9 @@ const CATEGORY_SUFFIX = {
     batony: 'chocolate candy bar snack food',
     'batony-proteinowe': 'protein candy bar high protein snack food',
     'polskie-obiadki': 'Polish traditional food dish',
-    napoje: 'beverage drink bottle or can',
-    alkohole: 'alcoholic drink beer wine vodka bottle glass',
-    przyprawy: 'dry spice herbs seasoning powder jar'
+    napoje: 'beverage drink in glass on white background',
+    alkohole: 'alcoholic drink poured in glass on white background',
+    przyprawy: 'dry spice herbs seasoning powder pile on white background'
 };
 
 const NEGATIVE =
@@ -430,7 +490,7 @@ function buildPrompt(subject, refs) {
 
 function pollinationsUrl(prompt, slug, attempt = 0) {
     const seed =
-        (crypto.createHash('md5').update(`dairy-fix-v4-${slug}-${attempt}`).digest().readUInt32BE(0) +
+        (crypto.createHash('md5').update(`spice-drink-v1-${slug}-${attempt}`).digest().readUInt32BE(0) +
             attempt * 9973) %
         2147483646;
     const enc = encodeURIComponent(prompt.slice(0, 480));
@@ -641,6 +701,15 @@ const keepSlugs = new Set(
         .map((s) => s.trim())
         .filter(Boolean)
 );
+const catArgs = process.argv
+    .filter((a) => a.startsWith('--category='))
+    .flatMap((a) =>
+        a
+            .slice(11)
+            .split(',')
+            .map((s) => s.trim())
+            .filter(Boolean)
+    );
 const limitArg = process.argv.find((a) => a.startsWith('--limit='));
 const maxItems = limitArg ? parseInt(limitArg.split('=')[1], 10) : Infinity;
 const delayMs = parseInt(process.argv.find((a) => a.startsWith('--delay='))?.split('=')[1] || '1800', 10);
@@ -651,6 +720,9 @@ let todo = products;
 if (slugArgs.length) {
     const set = new Set(slugArgs);
     todo = products.filter((p) => set.has(p.slug));
+} else if (catArgs.length) {
+    const set = new Set(catArgs);
+    todo = products.filter((p) => set.has(p.category));
 }
 if (keepSlugs.size) todo = todo.filter((p) => !keepSlugs.has(p.slug));
 todo = todo.slice(0, maxItems);

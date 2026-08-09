@@ -1,6 +1,7 @@
 /**
  * Generuje zdjęcia produktów: fotorealistyczne na białym tle (Pollinations).
  * node scripts/fetch-minimal-product-photos.mjs --all
+ * node scripts/fetch-minimal-product-photos.mjs --category=napoje,alkohole,przyprawy
  * node scripts/fetch-minimal-product-photos.mjs --queue
  * node scripts/fetch-minimal-product-photos.mjs --slug=banan --slug=jablko
  */
@@ -16,6 +17,69 @@ const queuePath = path.join(root, 'scripts', 'product-images-regen-queue.json');
 const queriesPath = path.join(root, 'js', 'product-search-queries.js');
 
 const UA = 'Proteiner/1.0 (nutrition education; contact: developeranios@gmail.com)';
+
+/** Angielskie nazwy dla nowych kategorii (lepsze prompty). */
+const CATEGORY_EN = {
+    'sol-kuchenna': 'table salt',
+    'pieprz-czarny-mielony': 'ground black pepper',
+    'papryka-slodka-mielona': 'sweet paprika powder',
+    'papryka-ostra-mielona': 'hot paprika powder',
+    majeranek: 'dried marjoram',
+    oregano: 'dried oregano',
+    'bazylia-suszona': 'dried basil',
+    kminek: 'caraway seeds',
+    'lisc-laurowy': 'bay leaves',
+    'ziele-angielskie': 'allspice berries',
+    kurkuma: 'turmeric powder',
+    'cynamon-mielony': 'ground cinnamon',
+    'czosnek-granulowany': 'garlic granules',
+    'ziola-prowansalskie': 'herbes de Provence',
+    tymianek: 'dried thyme',
+    'chili-mielone': 'chili powder',
+    'imbir-mielony': 'ground ginger',
+    'galka-muszkatolowa': 'nutmeg',
+    'przyprawa-do-kurczaka': 'chicken seasoning blend',
+    vegeta: 'vegetable seasoning powder',
+    'garage-hard-lemon-4-6': 'lemon flavored beer',
+    'tyskie-gronie': 'lager beer',
+    'zywiec-jasne-pelne': 'lager beer',
+    'lech-premium': 'lager beer',
+    'okocim-o-k-beer': 'lager beer',
+    'harnas-jasne': 'lager beer',
+    desperados: 'tequila flavored beer',
+    'somersby-jablkowy': 'apple cider',
+    heineken: 'lager beer',
+    'corona-extra': 'lager beer with lime',
+    'wyborowa-wodka': 'vodka',
+    'soplica-czysta': 'vodka',
+    'zubrowka-bison-grass': 'bison grass vodka',
+    'soplica-wisniowa': 'cherry liqueur',
+    'krupnik-tradycyjny': 'honey vodka',
+    jagermeister: 'herbal liqueur',
+    'baileys-original': 'Irish cream liqueur',
+    'wino-czerwone-wytrawne': 'dry red wine',
+    'wino-biale-polslodkie': 'semi-sweet white wine',
+    prosecco: 'prosecco sparkling wine',
+    'coca-cola': 'cola soft drink',
+    'coca-cola-zero': 'diet cola soft drink',
+    pepsi: 'cola soft drink',
+    sprite: 'lemon lime soda',
+    'fanta-pomaranczowa': 'orange soda',
+    mirinda: 'orange soda',
+    'lipton-ice-tea-brzoskwinia': 'peach iced tea',
+    'nestea-cytryna': 'lemon iced tea',
+    'red-bull': 'energy drink',
+    'tiger-energy-drink': 'energy drink',
+    'black-energy-drink': 'energy drink',
+    'monster-energy': 'energy drink',
+    woda: 'still water',
+    'kubus-jablkowy': 'apple juice',
+    'tymbark-jablko': 'apple juice',
+    'sok-pomaranczowy-100': 'orange juice',
+    'herbata-czarna-napar': 'black tea',
+    'kawa-czarna-parzona': 'black coffee',
+    'oshee-izotoniczny': 'isotonic sports drink'
+};
 
 function slugify(name) {
     return name
@@ -51,7 +115,7 @@ function enrichProducts(raw) {
 }
 
 function seedFromSlug(slug) {
-    const h = crypto.createHash('md5').update(slug).digest();
+    const h = crypto.createHash('md5').update(`${slug}:v3`).digest();
     return h.readUInt32BE(0) % 2147483646;
 }
 
@@ -71,6 +135,61 @@ function buildPrompt(p, englishName) {
         subject = `${en}, protein powder in scoop`;
     } else if (/pizza|burger|kebab|wrap|frytk|nugget|mcchicken|big mac|hot dog/i.test(lower)) {
         subject = `${en}, single serving portion`;
+    } else if (
+        p.category === 'przyprawy' ||
+        /przypraw|pieprz|papryk|oregano|bazyl|kminek|cynamon|kurkum|chili|majeran|tymian|imbir|gałk|galka|czosnek granul|liść laur|lisc laur|ziele angiel|vegeta|sól|sol /i.test(
+            lower
+        )
+    ) {
+        if (/sól|sol |salt/i.test(lower)) subject = `fine table salt crystals in a small clear glass pile`;
+        else if (/pieprz|pepper/i.test(lower)) subject = `ground black pepper powder small mound`;
+        else if (/liść|lisc|bay/i.test(lower)) subject = `dried bay leaves stacked`;
+        else if (/ziele angiel|allspice/i.test(lower)) subject = `whole dried allspice berries`;
+        else if (/gałk|galka|nutmeg/i.test(lower)) subject = `whole nutmeg and grated nutmeg`;
+        else if (/vegeta|seasoning mix|przyprawa do/i.test(lower))
+            subject = `seasoning powder in a small ceramic spoon, spice blend`;
+        else subject = `${en} dried spice or herb, small neat pile or loose leaves`;
+    } else if (
+        p.category === 'alkohole' ||
+        /piwo|wódka|wodka|wino|prosecco|likier|beer|wine|vodka|whisky|jägermeister|jagermeister|baileys|somersby|desperados|heineken|corona/i.test(
+            lower
+        )
+    ) {
+        if (/wino czerw|red wine/i.test(lower)) subject = `red wine in a clear wine glass`;
+        else if (/wino biał|wino bial|white wine/i.test(lower)) subject = `white wine in a clear wine glass`;
+        else if (/prosecco|champagne|sparkling/i.test(lower)) subject = `prosecco sparkling wine in a flute glass`;
+        else if (/baileys|cream liqueur/i.test(lower)) subject = `Irish cream liqueur in a short glass`;
+        else if (/jägermeister|jagermeister|herbal liqueur/i.test(lower))
+            subject = `dark herbal liqueur in a small shot glass`;
+        else if (/wódka|wodka|vodka|soplica|żubrówka|zubrowka|wyborowa|krupnik/i.test(lower))
+            subject = `clear spirit in a small shot glass`;
+        else if (/somersby|cider/i.test(lower)) subject = `apple cider in a pint glass`;
+        else subject = `beer in a clean pint glass with light foam, no brand logo`;
+    } else if (
+        p.category === 'napoje' ||
+        /cola|pepsi|sprite|fanta|mirinda|red bull|monster|tiger|energy|ice tea|nestea|lipton|kubuś|kubus|tymbark|oshee|herbata|kawa|sok |woda/i.test(
+            lower
+        )
+    ) {
+        if (/still water|^woda$|mineral water/i.test(lower) && !/tonic|soda|energy|soft|cola/i.test(lower))
+            subject =
+                'plain colorless transparent still drinking water in a clear tumbler glass, no ice color, no blue tint';
+        else if (/kawa|coffee/i.test(lower)) subject = `black coffee in a white ceramic cup`;
+        else if (/herbata|tea/i.test(lower) && !/ice tea|nestea|lipton/i.test(lower))
+            subject = `black tea in a clear glass cup`;
+        else if (/sok|juice|kubuś|kubus|tymbark|pomarańcz/i.test(lower))
+            subject = `fruit juice in a clear glass`;
+        else if (/ice tea|nestea|lipton/i.test(lower)) subject = `iced tea in a tall clear glass with ice`;
+        else if (/energy|red bull|monster|tiger|black energy|oshee/i.test(lower))
+            subject = `energy drink poured in a tall glass with ice, no brand logo`;
+        else if (/cola|pepsi/i.test(lower))
+            subject =
+                'classic dark brown cola soft drink in a clear glass with ice cubes and bubbles, caramel color, no can, no brand logo';
+        else if (/sprite|lemon lime/i.test(lower))
+            subject = `clear lemon-lime soda in a tall glass with ice and bubbles, pale green tint, no can`;
+        else if (/fanta|mirinda|orange soda/i.test(lower))
+            subject = `bright orange soda in a clear glass with ice and bubbles, no can`;
+        else subject = `${en} beverage in a clear glass`;
     }
     const catHint = {
         warzywa: 'fresh vegetable',
@@ -85,13 +204,16 @@ function buildPrompt(p, englishName) {
         zupy: 'soup',
         fastfood: 'fast food item',
         slodycze: 'sweet snack',
-        'polskie-obiadki': 'Polish home-style dish'
+        'polskie-obiadki': 'Polish home-style dish',
+        przyprawy: 'culinary spice',
+        alkohole: 'drink serving',
+        napoje: 'beverage'
     }[p.category];
     const hint = catHint ? `, ${catHint}` : '';
     return (
-        `Professional e-commerce product photo of ${subject}${hint}, food only, centered on pure white background, ` +
+        `Professional e-commerce product photo of ${subject}${hint}, food or drink only, centered on pure white background, ` +
         `soft subtle shadow, minimalist studio lighting, photorealistic, no text, no people, no hands, no logo, ` +
-        `no watermark, no extra props, no confusing labels`
+        `no watermark, no extra props, no confusing labels, isolated product`
     );
 }
 
@@ -153,17 +275,38 @@ if (fs.existsSync(queriesPath)) {
 }
 
 const slugArgs = process.argv.filter((a) => a.startsWith('--slug=')).map((a) => a.slice(7));
+const catArgs = process.argv
+    .filter((a) => a.startsWith('--category='))
+    .flatMap((a) =>
+        a
+            .slice(11)
+            .split(',')
+            .map((s) => s.trim())
+            .filter(Boolean)
+    );
 const keepArg = process.argv.find((a) => a.startsWith('--keep-slugs='));
-const keepSlugs = new Set((keepArg?.split('=')[1] || '').split(',').map((s) => s.trim()).filter(Boolean));
+const keepSlugs = new Set(
+    (keepArg?.split('=')[1] || '')
+        .split(',')
+        .map((s) => s.trim())
+        .filter(Boolean)
+);
 let todo = allProducts;
 
 if (slugArgs.length) {
     const set = new Set(slugArgs);
     todo = allProducts.filter((p) => set.has(p.slug));
+} else if (catArgs.length) {
+    const set = new Set(catArgs);
+    todo = allProducts.filter((p) => set.has(p.category));
 } else if (process.argv.includes('--from-audit')) {
     const auditPath = path.join(root, 'scripts', 'product-images-to-fix.json');
     if (!fs.existsSync(auditPath)) {
-        console.error('Brak', auditPath, '— uruchom: node scripts/audit-product-image-style.mjs --json > scripts/product-images-to-fix.json');
+        console.error(
+            'Brak',
+            auditPath,
+            '— uruchom: node scripts/audit-product-image-style.mjs --json > scripts/product-images-to-fix.json'
+        );
         process.exit(1);
     }
     const flagged = JSON.parse(fs.readFileSync(auditPath, 'utf8').replace(/^\uFEFF/, ''));
@@ -180,7 +323,7 @@ if (slugArgs.length) {
 } else if (process.argv.includes('--all')) {
     todo = allProducts;
 } else {
-    console.error('Użyj --all, --queue, --from-audit lub --slug=nazwa');
+    console.error('Użyj --all, --category=napoje,alkohole, --queue, --from-audit lub --slug=nazwa');
     process.exit(1);
 }
 
@@ -231,7 +374,7 @@ for (let i = 0; i < todo.length; i++) {
         }
     }
 
-    const english = PRODUCT_SEARCH_QUERIES[p.slug]?.[0];
+    const english = PRODUCT_SEARCH_QUERIES[p.slug]?.[0] || CATEGORY_EN[p.slug];
     const prompt = encodeURIComponent(buildPrompt(p, english));
     const seed = seedFromSlug(p.slug);
     const url = `https://image.pollinations.ai/prompt/${prompt}?width=800&height=600&nologo=true&seed=${seed}`;
