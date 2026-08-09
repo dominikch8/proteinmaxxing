@@ -1,5 +1,11 @@
 window.HOME_ARTICLES = [
   {
+    "slug": "zageszczone-soki-owocowe-a-witaminy",
+    "emoji": "🧃",
+    "title": "Zagęszczone soki owocowe a witaminy",
+    "subtitle": "Ile % witaminy C zostaje po zagęszczeniu i dolaniu wody — NFC vs koncentrat, bez marketingu."
+  },
+  {
     "slug": "deficyt-kaloryczny-praktyka",
     "emoji": "📉",
     "title": "Deficyt kaloryczny w praktyce",

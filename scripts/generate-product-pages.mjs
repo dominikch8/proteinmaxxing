@@ -666,6 +666,7 @@ const STATIC_SITEMAP_ENTRIES = [
     { loc: 'https://proteiner.pl/artykuly', changefreq: 'weekly', priority: '0.9' },
     { loc: 'https://proteiner.pl/deficyt-kaloryczny-praktyka', changefreq: 'monthly', priority: '0.85' },
     { loc: 'https://proteiner.pl/planowanie-posilkow', changefreq: 'monthly', priority: '0.85' },
+    { loc: 'https://proteiner.pl/zageszczone-soki-owocowe-a-witaminy', changefreq: 'monthly', priority: '0.85' },
     { loc: 'https://proteiner.pl/najlepsze-zrodla-bialka-biedronka-lidl-auchan-carrefour', changefreq: 'monthly', priority: '0.85' },
     { loc: 'https://proteiner.pl/zrodla-bialka-biedronka', changefreq: 'monthly', priority: '0.85' },
     { loc: 'https://proteiner.pl/zrodla-bialka-lidl', changefreq: 'monthly', priority: '0.85' },
