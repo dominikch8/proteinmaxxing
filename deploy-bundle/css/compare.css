@@ -648,8 +648,7 @@ body.compare-body.is-ready .compare-stage {
     flex-shrink: 0;
     border-radius: 11px;
     overflow: hidden;
-    background:
-        radial-gradient(ellipse 80% 75% at 50% 45%, #f8fafc 0%, var(--surface-hover) 70%, #d5dee9 100%);
+    background: var(--surface-hover);
     border: 1px solid var(--border-soft);
     display: grid;
     place-items: center;
@@ -657,8 +656,7 @@ body.compare-body.is-ready .compare-stage {
 }
 
 [data-theme='dark'] .compare-chip-media {
-    background:
-        radial-gradient(ellipse 80% 75% at 50% 42%, #2f455c 0%, #243447 60%, #182636 100%);
+    background: #243447;
 }
 
 .compare-chip-img {
@@ -667,11 +665,6 @@ body.compare-body.is-ready .compare-stage {
     object-fit: contain;
     object-position: center;
     display: none;
-    filter: drop-shadow(0 2px 4px rgba(15, 23, 42, 0.18));
-}
-
-[data-theme='dark'] .compare-chip-img {
-    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.45));
 }
 
 .compare-chip-img.is-loaded {
