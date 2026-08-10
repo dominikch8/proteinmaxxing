@@ -1459,7 +1459,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "Kasza quinoa food",
     "Kasza quinoa ingredient photo"
   ],
-  "ryz-arborio-suchy": [
+  "ryz-arborio": [
     "rice arborio",
     "rice arborio food",
     "rice arborio ingredient photo"

@@ -2030,8 +2030,8 @@
     "prompt": "Photorealistic ecommerce food photo: mound of cooked fluffy quinoa grains kasza, NOT bread. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
   },
   {
-    "slug": "ryz-arborio-suchy",
-    "name": "Ryż arborio (suchy)",
+    "slug": "ryz-arborio",
+    "name": "Ryż arborio",
     "category": "zboza",
     "subject": "rice arborio",
     "prompt": "Photorealistic ecommerce food photo: rice arborio. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
