@@ -170,7 +170,7 @@ const FOOD_SUBJECT = {
     'twarog-sernikowy': 'smooth cream cheese style twaróg sernikowy for cheesecake, dense white creamy cheese block or bowl resembling cheesecake filling',
     'ser-twarogowy-tlusty': 'full-fat Polish twaróg quark cheese white block or crumbled in bowl, fresh white cheese',
     'jogurt-kokosowy': 'coconut yogurt in a small white ceramic bowl, white creamy yogurt, NOT inside a coconut shell, NO whole coconut fruit',
-    'serek-homogenizowany-danio': 'small plastic yogurt cup filled with thick creamy homogenized yogurt cheese like Polish Danio, cup packaging dairy dessert, smooth cream top',
+    'serek-danio': 'small plastic yogurt cup filled with thick creamy homogenized yogurt cheese like Polish Danio, cup packaging dairy dessert, smooth cream top',
     'ser-mascarpone': 'mascarpone cheese in a small white bowl, smooth thick Italian cream cheese',
     'mleko-skondensowane-slodzone': 'metal squeeze tube of sweetened condensed milk with thick white milk coming from the nozzle, aluminum tube dairy product, condensed milk tube, NOT a bowl',
     'ser-emmental': 'Swiss Emmental cheese wedge with characteristic large round holes, pale yellow cheese',

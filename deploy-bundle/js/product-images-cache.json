@@ -57,7 +57,6 @@
   "ser-brie": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Brie_01.jpg/960px-Brie_01.jpg",
   "ser-edamski": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Panorama_Edam.JPG/960px-Panorama_Edam.JPG",
   "ser-zolty-plastry": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Chesses_gouda_affinage.JPG/960px-Chesses_gouda_affinage.JPG",
-  "serek-homogenizowany-danio": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cottagecheese200px.jpg/960px-Cottagecheese200px.jpg",
   "budyn-na-mleku": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Custard.jpg/960px-Custard.jpg",
   "smietanka-30": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/01_Mmm..._Apple_Crisp_with_Whipped_Cream.jpg/960px-01_Mmm..._Apple_Crisp_with_Whipped_Cream.jpg",
   "koncentrat-bialka-serwatkowego-wpc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soured_milk_whey.avrs-56.jpg/960px-Soured_milk_whey.avrs-56.jpg",
@@ -333,7 +332,6 @@
   "kluski-slaskie": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Silesian_in_Poland_%28%2Brivers%29.svg/960px-Silesian_in_Poland_%28%2Brivers%29.svg.png",
   "placki-ziemniaczane": "https://live.staticflickr.com/2735/4165311996_4dd4592616_b.jpg",
   "gulasz-wolowy-z-makaronem": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Gulyas080.jpg/960px-Gulyas080.jpg",
-  "makaron-z-serem-kraft-styl": "https://live.staticflickr.com/8493/8296910898_823a0dea96.jpg",
   "rosol-z-makaronem": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg/960px-%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg",
   "pomidorowa-z-ryzem": "https://live.staticflickr.com/1020/1222357676_d240ff36f4_b.jpg",
   "platki-nesquik": "https://live.staticflickr.com/5300/5433168354_999a8e9790_b.jpg",
@@ -365,5 +363,7 @@
   "knoppers": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/2023_Knoppers_%282%29.jpg/960px-2023_Knoppers_%282%29.jpg",
   "mars": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/2023_Baton_Mars_%281%29.jpg/960px-2023_Baton_Mars_%281%29.jpg",
   "milky-way": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Milky-Way-Bars-USUK-Whole.jpg/960px-Milky-Way-Bars-USUK-Whole.jpg",
-  "snickers": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Snickers-broken.JPG/960px-Snickers-broken.JPG"
+  "snickers": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Snickers-broken.JPG/960px-Snickers-broken.JPG",
+  "mac-n-cheese-makaron-z-serem": "https://live.staticflickr.com/8493/8296910898_823a0dea96.jpg",
+  "serek-danio": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cottagecheese200px.jpg/960px-Cottagecheese200px.jpg"
 }

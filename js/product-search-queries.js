@@ -291,7 +291,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "cheese yellow food",
     "cheese yellow ingredient photo"
   ],
-  "serek-homogenizowany-danio": [
+  "serek-danio": [
     "cottage cheese cream cheese",
     "cottage cheese cream cheese food",
     "cottage cheese cream cheese ingredient photo"

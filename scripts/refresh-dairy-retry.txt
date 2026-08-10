@@ -5,7 +5,7 @@ mleko-skondensowane-slodzone
 smietanka-30
 smietana-18
 smietana-12
-serek-homogenizowany-danio
+serek-danio
 ser-wedzony
 ser-mozzarella
 protein-pudding

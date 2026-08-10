@@ -17,7 +17,7 @@ izolat-bialka-wpi
 twarog-sernikowy
 ser-twarogowy-tlusty
 jogurt-kokosowy
-serek-homogenizowany-danio
+serek-danio
 ser-mozzarella
 ricotta
 ser-mascarpone

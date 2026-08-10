@@ -29,6 +29,7 @@ RewriteRule ^produkty/tofu/?$ /produkty/tofu-naturalne [R=301,L]
 RewriteRule ^produkty/fasola-biala/?$ /produkty/fasola-biala-gotowana [R=301,L]
 RewriteRule ^produkty/galareta-owocowa/?$ /produkty/galaretka-owocowa [R=301,L]
 RewriteRule ^produkty/czekolada-toblerone/?$ /produkty/toblerone [R=301,L]
+RewriteRule ^produkty/serek-homogenizowany-danio/?$ /produkty/serek-danio [R=301,L]
 
 # Stare URL-e .html → czyste ścieżki (301)
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
