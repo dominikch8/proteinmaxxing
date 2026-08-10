@@ -1,0 +1,874 @@
+[
+  {
+    "slug": "awokado",
+    "transPct": 68.89,
+    "opaquePct": 31.11,
+    "whiteEdge": 312,
+    "softShadowEdge": 904,
+    "ok": false
+  },
+  {
+    "slug": "barszcz-bialy",
+    "transPct": 59.16979166666667,
+    "opaquePct": 40.83020833333333,
+    "whiteEdge": 910,
+    "softShadowEdge": 110,
+    "ok": false
+  },
+  {
+    "slug": "bialka-jaj",
+    "transPct": 67.28708333333333,
+    "opaquePct": 32.712916666666665,
+    "whiteEdge": 708,
+    "softShadowEdge": 302,
+    "ok": false
+  },
+  {
+    "slug": "black-energy-drink",
+    "transPct": 80.31875,
+    "opaquePct": 19.68125,
+    "whiteEdge": 144,
+    "softShadowEdge": 854,
+    "ok": false
+  },
+  {
+    "slug": "boczek-surowy",
+    "transPct": 56.076875,
+    "opaquePct": 43.923125,
+    "whiteEdge": 453,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "bounty-dark",
+    "transPct": 77.513125,
+    "opaquePct": 22.486875,
+    "whiteEdge": 0,
+    "softShadowEdge": 1017,
+    "ok": false
+  },
+  {
+    "slug": "brukselka-mrozona",
+    "transPct": 61.78145833333333,
+    "opaquePct": 38.21854166666667,
+    "whiteEdge": 413,
+    "softShadowEdge": 146,
+    "ok": false
+  },
+  {
+    "slug": "budyn-na-mleku",
+    "transPct": 64.83770833333334,
+    "opaquePct": 35.16229166666667,
+    "whiteEdge": 509,
+    "softShadowEdge": 125,
+    "ok": false
+  },
+  {
+    "slug": "bulka-wiejska",
+    "transPct": 73.02583333333334,
+    "opaquePct": 26.974166666666665,
+    "whiteEdge": 418,
+    "softShadowEdge": 3,
+    "ok": false
+  },
+  {
+    "slug": "bulka-z-parowka",
+    "transPct": 64.65229166666667,
+    "opaquePct": 35.34770833333334,
+    "whiteEdge": 523,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "burrito-z-kurczakiem",
+    "transPct": 53.282291666666666,
+    "opaquePct": 46.717708333333334,
+    "whiteEdge": 668,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "chalwa-sezamowa",
+    "transPct": 46.815,
+    "opaquePct": 53.185,
+    "whiteEdge": 452,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "curry-kurczak",
+    "transPct": 54.174791666666664,
+    "opaquePct": 45.825208333333336,
+    "whiteEdge": 755,
+    "softShadowEdge": 22,
+    "ok": false
+  },
+  {
+    "slug": "czekolada-100",
+    "transPct": 55.35208333333333,
+    "opaquePct": 44.64791666666667,
+    "whiteEdge": 169,
+    "softShadowEdge": 1099,
+    "ok": false
+  },
+  {
+    "slug": "fasola-biala-gotowana",
+    "transPct": 79.68041666666667,
+    "opaquePct": 20.319583333333334,
+    "whiteEdge": 581,
+    "softShadowEdge": 11,
+    "ok": false
+  },
+  {
+    "slug": "golonka-wieprzowa",
+    "transPct": 71.70875,
+    "opaquePct": 28.29125,
+    "whiteEdge": 567,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "grochowka",
+    "transPct": 61.42,
+    "opaquePct": 38.58,
+    "whiteEdge": 804,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "guacamole",
+    "transPct": 65.65520833333333,
+    "opaquePct": 34.344791666666666,
+    "whiteEdge": 1495,
+    "softShadowEdge": 170,
+    "ok": false
+  },
+  {
+    "slug": "gulasz-wolowy-z-makaronem",
+    "transPct": 65.30645833333334,
+    "opaquePct": 34.69354166666667,
+    "whiteEdge": 632,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "guseppe-szynka-i-pieczarki",
+    "transPct": 53.510625,
+    "opaquePct": 46.489375,
+    "whiteEdge": 456,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "jajecznica-na-masle",
+    "transPct": 52.01479166666667,
+    "opaquePct": 47.98520833333333,
+    "whiteEdge": 628,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "jogurt-kokosowy",
+    "transPct": 55.067083333333336,
+    "opaquePct": 44.932916666666664,
+    "whiteEdge": 676,
+    "softShadowEdge": 582,
+    "ok": false
+  },
+  {
+    "slug": "jogurt-naturalny",
+    "transPct": 78.8975,
+    "opaquePct": 21.1025,
+    "whiteEdge": 1244,
+    "softShadowEdge": 204,
+    "ok": false
+  },
+  {
+    "slug": "kalmary",
+    "transPct": 73.34041666666667,
+    "opaquePct": 26.659583333333334,
+    "whiteEdge": 671,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "kasza-gryczana-z-jajkiem",
+    "transPct": 66.584375,
+    "opaquePct": 33.415625,
+    "whiteEdge": 538,
+    "softShadowEdge": 14,
+    "ok": false
+  },
+  {
+    "slug": "kasza-gryczana",
+    "transPct": 68.40833333333333,
+    "opaquePct": 31.591666666666665,
+    "whiteEdge": 444,
+    "softShadowEdge": 28,
+    "ok": false
+  },
+  {
+    "slug": "kasza-jaglana",
+    "transPct": 63.51291666666667,
+    "opaquePct": 36.48708333333333,
+    "whiteEdge": 421,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "kasza-jeczmienna-peczak",
+    "transPct": 52.950625,
+    "opaquePct": 47.049375,
+    "whiteEdge": 663,
+    "softShadowEdge": 19,
+    "ok": false
+  },
+  {
+    "slug": "kaszanka",
+    "transPct": 58.4,
+    "opaquePct": 41.6,
+    "whiteEdge": 248,
+    "softShadowEdge": 819,
+    "ok": false
+  },
+  {
+    "slug": "kawa-czarna-parzona",
+    "transPct": 74.36604166666666,
+    "opaquePct": 25.633958333333332,
+    "whiteEdge": 694,
+    "softShadowEdge": 30,
+    "ok": false
+  },
+  {
+    "slug": "kebab-na-talerzu",
+    "transPct": 57.27770833333334,
+    "opaquePct": 42.72229166666666,
+    "whiteEdge": 661,
+    "softShadowEdge": 21,
+    "ok": false
+  },
+  {
+    "slug": "kielbasa-krakowska",
+    "transPct": 79.085,
+    "opaquePct": 20.915,
+    "whiteEdge": 0,
+    "softShadowEdge": 802,
+    "ok": false
+  },
+  {
+    "slug": "kielbasa-slaska",
+    "transPct": 75.12375,
+    "opaquePct": 24.87625,
+    "whiteEdge": 0,
+    "softShadowEdge": 805,
+    "ok": false
+  },
+  {
+    "slug": "klopsiki-w-sosie-pomidorowym",
+    "transPct": 58.393541666666664,
+    "opaquePct": 41.606458333333336,
+    "whiteEdge": 2752,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "kluski-slaskie",
+    "transPct": 61.073541666666664,
+    "opaquePct": 38.926458333333336,
+    "whiteEdge": 600,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "kokos-suszony-wiorki",
+    "transPct": 82.87875,
+    "opaquePct": 17.12125,
+    "whiteEdge": 690,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "krupnik",
+    "transPct": 57.79270833333333,
+    "opaquePct": 42.20729166666667,
+    "whiteEdge": 844,
+    "softShadowEdge": 525,
+    "ok": false
+  },
+  {
+    "slug": "lasagne-z-miesem",
+    "transPct": 64.17020833333333,
+    "opaquePct": 35.829791666666665,
+    "whiteEdge": 436,
+    "softShadowEdge": 2,
+    "ok": false
+  },
+  {
+    "slug": "lion-white",
+    "transPct": 72.56854166666666,
+    "opaquePct": 27.43145833333333,
+    "whiteEdge": 526,
+    "softShadowEdge": 241,
+    "ok": false
+  },
+  {
+    "slug": "lukrecja",
+    "transPct": 74.60166666666667,
+    "opaquePct": 25.398333333333333,
+    "whiteEdge": 189,
+    "softShadowEdge": 1130,
+    "ok": false
+  },
+  {
+    "slug": "mac-n-cheese-makaron-z-serem",
+    "transPct": 56.78666666666667,
+    "opaquePct": 43.21333333333333,
+    "whiteEdge": 933,
+    "softShadowEdge": 212,
+    "ok": false
+  },
+  {
+    "slug": "majonez",
+    "transPct": 75.66666666666667,
+    "opaquePct": 24.333333333333332,
+    "whiteEdge": 426,
+    "softShadowEdge": 6,
+    "ok": false
+  },
+  {
+    "slug": "maka-pszenna-typ-500",
+    "transPct": 66.518125,
+    "opaquePct": 33.481875,
+    "whiteEdge": 424,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "makaron-lazanki-suchy",
+    "transPct": 63.173541666666665,
+    "opaquePct": 36.826458333333335,
+    "whiteEdge": 510,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "makaron-swiderki-suchy",
+    "transPct": 68.72333333333333,
+    "opaquePct": 31.276666666666667,
+    "whiteEdge": 521,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "makaron-udon",
+    "transPct": 59.680625,
+    "opaquePct": 40.319375,
+    "whiteEdge": 1568,
+    "softShadowEdge": 424,
+    "ok": false
+  },
+  {
+    "slug": "maslanka",
+    "transPct": 87.38041666666666,
+    "opaquePct": 12.619583333333333,
+    "whiteEdge": 634,
+    "softShadowEdge": 80,
+    "ok": false
+  },
+  {
+    "slug": "maslo-klarowane-ghee",
+    "transPct": 58.821875,
+    "opaquePct": 41.178125,
+    "whiteEdge": 648,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "mizeria",
+    "transPct": 62.889583333333334,
+    "opaquePct": 37.110416666666666,
+    "whiteEdge": 612,
+    "softShadowEdge": 2,
+    "ok": false
+  },
+  {
+    "slug": "mleko-bez-laktozy-2",
+    "transPct": 76.6075,
+    "opaquePct": 23.3925,
+    "whiteEdge": 564,
+    "softShadowEdge": 151,
+    "ok": false
+  },
+  {
+    "slug": "mleko-roslinne-owsiane",
+    "transPct": 80.56729166666666,
+    "opaquePct": 19.432708333333334,
+    "whiteEdge": 470,
+    "softShadowEdge": 78,
+    "ok": false
+  },
+  {
+    "slug": "mleko-roslinne-sojowe",
+    "transPct": 78.2,
+    "opaquePct": 21.8,
+    "whiteEdge": 453,
+    "softShadowEdge": 37,
+    "ok": false
+  },
+  {
+    "slug": "musztarda-kremowa",
+    "transPct": 71.28604166666666,
+    "opaquePct": 28.713958333333334,
+    "whiteEdge": 626,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "nalesniki-z-dzemem",
+    "transPct": 72.33979166666667,
+    "opaquePct": 27.660208333333333,
+    "whiteEdge": 1755,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "olej-slonecznikowy",
+    "transPct": 89.62395833333333,
+    "opaquePct": 10.376041666666667,
+    "whiteEdge": 557,
+    "softShadowEdge": 159,
+    "ok": false
+  },
+  {
+    "slug": "oreo",
+    "transPct": 66.11583333333333,
+    "opaquePct": 33.884166666666665,
+    "whiteEdge": 115,
+    "softShadowEdge": 1189,
+    "ok": false
+  },
+  {
+    "slug": "paczek-z-nadzieniem",
+    "transPct": 61.57395833333333,
+    "opaquePct": 38.42604166666667,
+    "whiteEdge": 641,
+    "softShadowEdge": 59,
+    "ok": false
+  },
+  {
+    "slug": "pad-thai-z-kurczakiem",
+    "transPct": 44.378125,
+    "opaquePct": 55.621875,
+    "whiteEdge": 662,
+    "softShadowEdge": 1,
+    "ok": false
+  },
+  {
+    "slug": "papaja",
+    "transPct": 67.49291666666667,
+    "opaquePct": 32.507083333333334,
+    "whiteEdge": 476,
+    "softShadowEdge": 1,
+    "ok": false
+  },
+  {
+    "slug": "peczak-jeczmienny-gotowany",
+    "transPct": 55.65833333333333,
+    "opaquePct": 44.34166666666667,
+    "whiteEdge": 1057,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "pho-zupa-ryzowa",
+    "transPct": 35.974375,
+    "opaquePct": 64.025625,
+    "whiteEdge": 657,
+    "softShadowEdge": 49,
+    "ok": false
+  },
+  {
+    "slug": "pistacje-prazone-solone",
+    "transPct": 52.264375,
+    "opaquePct": 47.735625,
+    "whiteEdge": 477,
+    "softShadowEdge": 1,
+    "ok": false
+  },
+  {
+    "slug": "porzeczki-czarne",
+    "transPct": 67.9525,
+    "opaquePct": 32.0475,
+    "whiteEdge": 200,
+    "softShadowEdge": 886,
+    "ok": false
+  },
+  {
+    "slug": "protein-pudding",
+    "transPct": 55.05416666666667,
+    "opaquePct": 44.94583333333333,
+    "whiteEdge": 407,
+    "softShadowEdge": 89,
+    "ok": false
+  },
+  {
+    "slug": "ravioli-z-ricotta",
+    "transPct": 56.26291666666667,
+    "opaquePct": 43.73708333333333,
+    "whiteEdge": 461,
+    "softShadowEdge": 504,
+    "ok": false
+  },
+  {
+    "slug": "ricotta",
+    "transPct": 72.42958333333333,
+    "opaquePct": 27.570416666666667,
+    "whiteEdge": 860,
+    "softShadowEdge": 100,
+    "ok": false
+  },
+  {
+    "slug": "rosol-z-makaronem",
+    "transPct": 66.425625,
+    "opaquePct": 33.574375,
+    "whiteEdge": 556,
+    "softShadowEdge": 40,
+    "ok": false
+  },
+  {
+    "slug": "ryba-po-grecku-gotowa",
+    "transPct": 69.753125,
+    "opaquePct": 30.246875,
+    "whiteEdge": 1246,
+    "softShadowEdge": 4,
+    "ok": false
+  },
+  {
+    "slug": "ryz-arborio-suchy",
+    "transPct": 66.67979166666667,
+    "opaquePct": 33.32020833333333,
+    "whiteEdge": 575,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "ryz-basmati-suchy",
+    "transPct": 68.52770833333334,
+    "opaquePct": 31.472291666666667,
+    "whiteEdge": 1069,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "ryz-bialy",
+    "transPct": 76.9825,
+    "opaquePct": 23.0175,
+    "whiteEdge": 839,
+    "softShadowEdge": 5,
+    "ok": false
+  },
+  {
+    "slug": "ryz-dziki-suchy",
+    "transPct": 73.66604166666667,
+    "opaquePct": 26.33395833333333,
+    "whiteEdge": 76,
+    "softShadowEdge": 911,
+    "ok": false
+  },
+  {
+    "slug": "ryz-z-kurczakiem-box",
+    "transPct": 61.451875,
+    "opaquePct": 38.548125,
+    "whiteEdge": 4,
+    "softShadowEdge": 992,
+    "ok": false
+  },
+  {
+    "slug": "ryz-z-warzywami",
+    "transPct": 72.29104166666667,
+    "opaquePct": 27.70895833333333,
+    "whiteEdge": 740,
+    "softShadowEdge": 55,
+    "ok": false
+  },
+  {
+    "slug": "salatka-grecka",
+    "transPct": 75.12875,
+    "opaquePct": 24.87125,
+    "whiteEdge": 483,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "salatka-waldorf",
+    "transPct": 75.30083333333333,
+    "opaquePct": 24.699166666666667,
+    "whiteEdge": 1579,
+    "softShadowEdge": 1,
+    "ok": false
+  },
+  {
+    "slug": "salsa-meksykanska",
+    "transPct": 64.52041666666666,
+    "opaquePct": 35.47958333333333,
+    "whiteEdge": 470,
+    "softShadowEdge": 66,
+    "ok": false
+  },
+  {
+    "slug": "ser-brie",
+    "transPct": 59.467083333333335,
+    "opaquePct": 40.532916666666665,
+    "whiteEdge": 1044,
+    "softShadowEdge": 21,
+    "ok": false
+  },
+  {
+    "slug": "ser-emmental",
+    "transPct": 52.70625,
+    "opaquePct": 47.29375,
+    "whiteEdge": 406,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "ser-feta",
+    "transPct": 75.64291666666666,
+    "opaquePct": 24.357083333333332,
+    "whiteEdge": 1311,
+    "softShadowEdge": 7,
+    "ok": false
+  },
+  {
+    "slug": "ser-kozi-miekki",
+    "transPct": 82.22479166666666,
+    "opaquePct": 17.77520833333333,
+    "whiteEdge": 1289,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "ser-twarogowy-tlusty",
+    "transPct": 71.52416666666667,
+    "opaquePct": 28.475833333333334,
+    "whiteEdge": 616,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "serek-homogenizowany-danio",
+    "transPct": 84.69854166666667,
+    "opaquePct": 15.301458333333333,
+    "whiteEdge": 1466,
+    "softShadowEdge": 356,
+    "ok": false
+  },
+  {
+    "slug": "skyr-naturalny",
+    "transPct": 66.60083333333333,
+    "opaquePct": 33.399166666666666,
+    "whiteEdge": 580,
+    "softShadowEdge": 24,
+    "ok": false
+  },
+  {
+    "slug": "smietana-12",
+    "transPct": 80.27125,
+    "opaquePct": 19.72875,
+    "whiteEdge": 998,
+    "softShadowEdge": 35,
+    "ok": false
+  },
+  {
+    "slug": "smietana-18",
+    "transPct": 81.48354166666667,
+    "opaquePct": 18.516458333333333,
+    "whiteEdge": 854,
+    "softShadowEdge": 14,
+    "ok": false
+  },
+  {
+    "slug": "smietanka-30",
+    "transPct": 83.439375,
+    "opaquePct": 16.560625,
+    "whiteEdge": 846,
+    "softShadowEdge": 83,
+    "ok": false
+  },
+  {
+    "slug": "sos-1000-wysp",
+    "transPct": 70.56020833333334,
+    "opaquePct": 29.439791666666668,
+    "whiteEdge": 1599,
+    "softShadowEdge": 5,
+    "ok": false
+  },
+  {
+    "slug": "sos-holenderski",
+    "transPct": 74.74229166666667,
+    "opaquePct": 25.257708333333333,
+    "whiteEdge": 445,
+    "softShadowEdge": 15,
+    "ok": false
+  },
+  {
+    "slug": "sos-ostry-chilli",
+    "transPct": 64.37354166666667,
+    "opaquePct": 35.62645833333333,
+    "whiteEdge": 881,
+    "softShadowEdge": 11,
+    "ok": false
+  },
+  {
+    "slug": "sos-sojowy",
+    "transPct": 73.913125,
+    "opaquePct": 26.086875,
+    "whiteEdge": 481,
+    "softShadowEdge": 385,
+    "ok": false
+  },
+  {
+    "slug": "sos-sriracha",
+    "transPct": 77.36270833333333,
+    "opaquePct": 22.637291666666666,
+    "whiteEdge": 421,
+    "softShadowEdge": 23,
+    "ok": false
+  },
+  {
+    "slug": "sos-sweet-chilli",
+    "transPct": 69.46645833333334,
+    "opaquePct": 30.533541666666668,
+    "whiteEdge": 602,
+    "softShadowEdge": 7,
+    "ok": false
+  },
+  {
+    "slug": "sos-tatarski",
+    "transPct": 59.006458333333335,
+    "opaquePct": 40.993541666666665,
+    "whiteEdge": 417,
+    "softShadowEdge": 173,
+    "ok": false
+  },
+  {
+    "slug": "sos-tzatziki",
+    "transPct": 69.989375,
+    "opaquePct": 30.010625,
+    "whiteEdge": 411,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "tatar-wolowy",
+    "transPct": 59.778125,
+    "opaquePct": 40.221875,
+    "whiteEdge": 0,
+    "softShadowEdge": 802,
+    "ok": false
+  },
+  {
+    "slug": "twarog-chudy",
+    "transPct": 70.139375,
+    "opaquePct": 29.860625,
+    "whiteEdge": 1171,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "twarog-sernikowy",
+    "transPct": 53.37708333333333,
+    "opaquePct": 46.62291666666667,
+    "whiteEdge": 1589,
+    "softShadowEdge": 6,
+    "ok": false
+  },
+  {
+    "slug": "twarog-wiejski",
+    "transPct": 70.69625,
+    "opaquePct": 29.30375,
+    "whiteEdge": 701,
+    "softShadowEdge": 30,
+    "ok": false
+  },
+  {
+    "slug": "twix-white",
+    "transPct": 47.568333333333335,
+    "opaquePct": 52.431666666666665,
+    "whiteEdge": 5799,
+    "softShadowEdge": 35,
+    "ok": false
+  },
+  {
+    "slug": "wafle-ryzowe-naturalne",
+    "transPct": 72.65541666666667,
+    "opaquePct": 27.344583333333333,
+    "whiteEdge": 441,
+    "softShadowEdge": 0,
+    "ok": false
+  },
+  {
+    "slug": "zupa-chinska-instant",
+    "transPct": 65.62541666666667,
+    "opaquePct": 34.374583333333334,
+    "whiteEdge": 447,
+    "softShadowEdge": 1,
+    "ok": false
+  },
+  {
+    "slug": "zupa-dyniowa",
+    "transPct": 48.285833333333336,
+    "opaquePct": 51.714166666666664,
+    "whiteEdge": 543,
+    "softShadowEdge": 12,
+    "ok": false
+  },
+  {
+    "slug": "zupa-fasolowa",
+    "transPct": 44.282916666666665,
+    "opaquePct": 55.717083333333335,
+    "whiteEdge": 801,
+    "softShadowEdge": 37,
+    "ok": false
+  },
+  {
+    "slug": "zupa-gulaszowa",
+    "transPct": 40.361666666666665,
+    "opaquePct": 59.638333333333335,
+    "whiteEdge": 459,
+    "softShadowEdge": 28,
+    "ok": false
+  },
+  {
+    "slug": "zupa-krem-szpinakowy",
+    "transPct": 63.98,
+    "opaquePct": 36.02,
+    "whiteEdge": 454,
+    "softShadowEdge": 35,
+    "ok": false
+  },
+  {
+    "slug": "zupa-ogorkowa",
+    "transPct": 48.382083333333334,
+    "opaquePct": 51.617916666666666,
+    "whiteEdge": 418,
+    "softShadowEdge": 119,
+    "ok": false
+  },
+  {
+    "slug": "zupa-pieczarkowa",
+    "transPct": 54.631458333333335,
+    "opaquePct": 45.368541666666665,
+    "whiteEdge": 615,
+    "softShadowEdge": 128,
+    "ok": false
+  },
+  {
+    "slug": "zurek",
+    "transPct": 63.636041666666664,
+    "opaquePct": 36.363958333333336,
+    "whiteEdge": 443,
+    "softShadowEdge": 0,
+    "ok": false
+  }
+]
