@@ -124,7 +124,6 @@
   "tortilla-pszenna": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Mexican_tortilla.jpg/960px-Mexican_tortilla.jpg",
   "granola": "https://live.staticflickr.com/152/345532581_a75a2ecb9f_b.jpg",
   "kasza-manna": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg/960px-%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg",
-  "ryz-basmati-suchy": "https://upload.wikimedia.org/wikipedia/commons/0/07/Khyma_and_Basmati_rice.jpg",
   "peczak-jeczmienny-gotowany": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Barley_%28Hordeum_vulgare%29_-_United_States_National_Arboretum_-_24_May_2009.jpg/960px-Barley_%28Hordeum_vulgare%29_-_United_States_National_Arboretum_-_24_May_2009.jpg",
   "chipsy-ziemniaczane": "https://upload.wikimedia.org/wikipedia/commons/8/83/French_Fries.JPG",
   "migdaly": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Almonds_-_in_shell%2C_shell_cracked_open%2C_shelled%2C_blanched.jpg/960px-Almonds_-_in_shell%2C_shell_cracked_open%2C_shelled%2C_blanched.jpg",
@@ -365,5 +364,6 @@
   "milky-way": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Milky-Way-Bars-USUK-Whole.jpg/960px-Milky-Way-Bars-USUK-Whole.jpg",
   "snickers": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Snickers-broken.JPG/960px-Snickers-broken.JPG",
   "mac-n-cheese-makaron-z-serem": "https://live.staticflickr.com/8493/8296910898_823a0dea96.jpg",
-  "serek-danio": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cottagecheese200px.jpg/960px-Cottagecheese200px.jpg"
+  "serek-danio": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cottagecheese200px.jpg/960px-Cottagecheese200px.jpg",
+  "ryz-basmati": "https://upload.wikimedia.org/wikipedia/commons/0/07/Khyma_and_Basmati_rice.jpg"
 }

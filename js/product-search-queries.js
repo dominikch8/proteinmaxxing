@@ -658,7 +658,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "semolina food",
     "semolina ingredient photo"
   ],
-  "ryz-basmati-suchy": [
+  "ryz-basmati": [
     "rice basmati",
     "rice basmati food",
     "rice basmati ingredient photo"
