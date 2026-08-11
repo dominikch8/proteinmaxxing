@@ -862,16 +862,144 @@
             </tr>`;
         }).join('');
 
+        tableBody.insertAdjacentHTML('beforeend', renderMicroExpandBlock(a, b));
+        bindMicroToggle();
+    }
+
+    function getProductMicros(product) {
+        if (typeof window.estimateMicrosPer100g === 'function') {
+            return window.estimateMicrosPer100g(product) || {};
+        }
+        if (product?.microsDetail && typeof product.microsDetail === 'object') {
+            return { ...product.microsDetail };
+        }
+        if (window.PRODUCT_MICROS_DATA && product?.slug && window.PRODUCT_MICROS_DATA[product.slug]) {
+            return { ...window.PRODUCT_MICROS_DATA[product.slug] };
+        }
+        return {};
+    }
+
+    function formatMicroCell(amount, key) {
+        const meta = window.MEAL_RDA?.[key];
+        if (!meta || amount == null || !(amount > 0)) return '—';
+        const decimals = amount < 10 ? 2 : amount < 100 ? 1 : 0;
+        const num = Number(amount).toLocaleString('pl-PL', {
+            maximumFractionDigits: decimals,
+            minimumFractionDigits: 0
+        });
+        const male = typeof window.getMealRdaTarget === 'function' ? window.getMealRdaTarget(key, 'male') : meta.male;
+        const female = typeof window.getMealRdaTarget === 'function' ? window.getMealRdaTarget(key, 'female') : meta.female;
+        const target =
+            male != null && female != null ? (male + female) / 2 : male != null ? male : female;
+        let pctHtml = '';
+        if (target > 0) {
+            const pct = Math.round((amount / target) * 100);
+            const pctLabel = meta.isMax ? `${pct}% lim.` : `${pct}% RDA`;
+            pctHtml = `<span class="compare-micro-pct">${pctLabel}</span>`;
+        }
+        return `<span class="compare-micro-amt">${num}&nbsp;${escapeHtml(meta.unit)}</span>${pctHtml}`;
+    }
+
+    function microWinner(va, vb, key) {
+        const aOk = typeof va === 'number' && va > 0;
+        const bOk = typeof vb === 'number' && vb > 0;
+        if (!aOk && !bOk) return null;
+        if (!aOk) return 'b';
+        if (!bOk) return 'a';
+        if (va === vb) return null;
+        if (key === 'sodium') return va < vb ? 'a' : 'b';
+        return va > vb ? 'a' : 'b';
+    }
+
+    function renderMicroExpandBlock(a, b) {
         const microA = a.micros && a.micros !== '-' ? a.micros : '—';
         const microB = b.micros && b.micros !== '-' ? b.micros : '—';
-        tableBody.insertAdjacentHTML(
-            'beforeend',
-            `<tr>
-                <th scope="row">Witaminy i minerały</th>
+        const microsA = getProductMicros(a);
+        const microsB = getProductMicros(b);
+        const rda = window.MEAL_RDA || {};
+        const keys = Object.keys(rda).filter((k) => (microsA[k] || 0) > 0 || (microsB[k] || 0) > 0);
+
+        const detailRows = keys.length
+            ? keys
+                  .map((key) => {
+                      const meta = rda[key];
+                      const va = microsA[key] || 0;
+                      const vb = microsB[key] || 0;
+                      const win = microWinner(va, vb, key);
+                      return `<tr>
+                        <th scope="row">${escapeHtml(meta.label)}</th>
+                        <td class="${win === 'a' ? 'cell-winner cell-winner--a' : ''}">${formatMicroCell(va, key)}</td>
+                        <td class="${win === 'b' ? 'cell-winner cell-winner--b' : ''}">${formatMicroCell(vb, key)}</td>
+                      </tr>`;
+                  })
+                  .join('')
+            : `<tr><td colspan="3" class="compare-micro-empty">Brak szczegółowych danych mikro dla tych produktów.</td></tr>`;
+
+        return `<tr class="compare-micro-toggle-row">
+                <th scope="row">
+                    <button type="button" class="compare-micro-toggle" id="compareMicroToggle" aria-expanded="false" aria-controls="compareMicroPanel">
+                        <span class="compare-micro-toggle-label">Witaminy i minerały</span>
+                        <span class="compare-micro-toggle-hint">rozwiń</span>
+                        <svg class="compare-micro-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                </th>
                 <td>${escapeHtml(microA)}</td>
                 <td>${escapeHtml(microB)}</td>
-            </tr>`
-        );
+            </tr>
+            <tr class="compare-micro-panel-row" id="compareMicroPanel" hidden>
+                <td colspan="3">
+                    <div class="compare-micro-panel-inner">
+                        <table class="compare-micro-table">
+                            <caption class="visually-hidden">Porównanie witamin i minerałów na 100 g</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Składnik</th>
+                                    <th scope="col">A</th>
+                                    <th scope="col">B</th>
+                                </tr>
+                            </thead>
+                            <tbody>${detailRows}</tbody>
+                        </table>
+                        <p class="compare-micro-note">Wartości na 100&nbsp;g (baza / szacunek). % RDA orientacyjny (średnia mężczyzna/kobieta; żelazo wg normy kobiecej w bazie produktów bywa liczona osobno).</p>
+                    </div>
+                </td>
+            </tr>`;
+    }
+
+    function bindMicroToggle() {
+        const btn = document.getElementById('compareMicroToggle');
+        const panel = document.getElementById('compareMicroPanel');
+        const row = document.querySelector('.compare-micro-toggle-row');
+        if (!btn || !panel) return;
+        const setOpen = (open) => {
+            btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            btn.classList.toggle('is-open', open);
+            row?.classList.toggle('is-open', open);
+            const hint = btn.querySelector('.compare-micro-toggle-hint');
+            if (hint) hint.textContent = open ? 'zwiń' : 'rozwiń';
+            if (open) {
+                panel.hidden = false;
+                panel.removeAttribute('hidden');
+            } else {
+                panel.hidden = true;
+                panel.setAttribute('hidden', '');
+            }
+        };
+        const toggle = () => setOpen(btn.getAttribute('aria-expanded') !== 'true');
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggle();
+        });
+        row?.addEventListener('click', (e) => {
+            if (e.target.closest('a')) return;
+            toggle();
+        });
+        row?.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggle();
+            }
+        });
     }
 
     function renderComparison() {
