@@ -488,86 +488,112 @@
     text-decoration: underline;
 }
 
-/* Lekkie tło posiłku tylko w środkowej karcie (zewnętrzne tło strony bez zmian) */
+/* Hero ze zdjęciem dania — napisy LEŻĄ NA zdjęciu */
 .main-content.meal-page {
-    /* lekko prześwitujące, żeby widać było posiłek pod spodem */
-    background: color-mix(in srgb, var(--surface) 78%, transparent) !important;
-    /* napisy bliżej góry zdjęcia dania */
-    padding-top: clamp(10px, 1.6vw, 16px);
+    background: var(--surface) !important;
+    padding-top: clamp(14px, 2vw, 20px);
 }
 
 [data-theme='dark'] .main-content.meal-page {
     background: linear-gradient(
         165deg,
-        color-mix(in srgb, rgba(30, 41, 59, 0.82) 100%, transparent) 0%,
-        color-mix(in srgb, rgba(15, 23, 42, 0.86) 100%, transparent) 100%
+        rgba(30, 41, 59, 0.96) 0%,
+        rgba(15, 23, 42, 0.98) 100%
     ) !important;
 }
 
-.meal-page-bg {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    pointer-events: none;
-    border-radius: inherit;
+.meal-hero {
+    position: relative;
+    z-index: 2;
+    isolation: isolate;
     overflow: hidden;
+    border-radius: 18px;
+    margin: 0 0 1.35rem;
+    min-height: clamp(200px, 34vw, 280px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.meal-page-bg picture,
-.meal-page-bg img {
+.meal-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.meal-hero-bg picture,
+.meal-hero-bg img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* talerz wyżej w kadrze — pod tytułem */
-    object-position: center 28%;
+    object-position: center 35%;
 }
 
-.meal-page-bg img {
-    opacity: 0.28;
-    filter: saturate(0.92) contrast(0.98);
+.meal-hero-bg img {
+    opacity: 1;
+    filter: saturate(0.95) contrast(1.02) brightness(0.72);
 }
 
-[data-theme='dark'] .meal-page-bg img {
-    opacity: 0.2;
-    filter: saturate(0.75) brightness(0.55) contrast(1.05);
+[data-theme='dark'] .meal-hero-bg img {
+    filter: saturate(0.8) brightness(0.55) contrast(1.06);
 }
 
-/* delikatna zasłona czytelności nad zdjęciem */
-.meal-page-bg::after {
+.meal-hero-bg::after {
     content: '';
     position: absolute;
     inset: 0;
     background: linear-gradient(
         180deg,
-        color-mix(in srgb, var(--surface) 55%, transparent) 0%,
-        color-mix(in srgb, var(--surface) 42%, transparent) 45%,
-        color-mix(in srgb, var(--surface) 58%, transparent) 100%
+        rgba(15, 23, 42, 0.42) 0%,
+        rgba(15, 23, 42, 0.55) 55%,
+        rgba(15, 23, 42, 0.68) 100%
     );
 }
 
-[data-theme='dark'] .meal-page-bg::after {
+html:not([data-theme='dark']) .meal-hero-bg::after {
     background: linear-gradient(
         180deg,
-        rgba(15, 23, 42, 0.55) 0%,
-        rgba(15, 23, 42, 0.4) 50%,
-        rgba(15, 23, 42, 0.58) 100%
+        rgba(255, 255, 255, 0.28) 0%,
+        rgba(243, 245, 250, 0.45) 50%,
+        rgba(243, 245, 250, 0.62) 100%
     );
 }
 
-/* Nie ruszaj warstwy atmosphere (absolute) — tylko treść nad tłem */
-.main-content.meal-page > .page-hero,
+.meal-hero-copy.page-hero {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: clamp(28px, 5vw, 44px) clamp(16px, 4vw, 28px);
+    border-bottom: none;
+    text-align: center;
+    width: 100%;
+}
+
+.meal-hero-copy.page-hero::after {
+    margin-top: 18px;
+}
+
+.meal-hero-copy .subtitle {
+    max-width: 34rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[data-theme='dark'] .meal-hero-copy .subtitle {
+    color: rgba(226, 232, 240, 0.88);
+}
+
 .main-content.meal-page > .meal-layout {
     position: relative;
     z-index: 2;
 }
 
-.main-content.meal-page > .page-hero {
-    margin-bottom: 22px;
-    padding-bottom: 16px;
-    margin-top: 0;
+.meal-page-bg {
+    display: none !important;
 }
 
 .meal-panel {
-    background: color-mix(in srgb, var(--surface) 88%, transparent);
+    background: color-mix(in srgb, var(--surface) 94%, transparent);
 }
