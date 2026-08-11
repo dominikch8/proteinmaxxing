@@ -28,6 +28,11 @@
       "source": "/produkty/pho-zupa-ryzowa",
       "destination": "/produkty/zupa-pho",
       "type": 301
+    },
+    {
+      "source": "/produkty/duplo",
+      "destination": "/produkty/kinder-duplo",
+      "type": 301
     }
   ]
 }

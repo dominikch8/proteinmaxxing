@@ -40,6 +40,7 @@ RewriteRule ^produkty/zapiekanka-makaronowa-gotowiec/?$ /produkty/zapiekanka-mak
 RewriteRule ^produkty/zupa-chinska-instant/?$ /produkty/zupka-chinska [R=301,L]
 RewriteRule ^produkty/ramen-z-bulionem-miska/?$ /produkty/ramen-z-bulionem [R=301,L]
 RewriteRule ^produkty/pho-zupa-ryzowa/?$ /produkty/zupa-pho [R=301,L]
+RewriteRule ^produkty/duplo/?$ /produkty/kinder-duplo [R=301,L]
 
 # Stare URL-e .html → czyste ścieżki (301)
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]

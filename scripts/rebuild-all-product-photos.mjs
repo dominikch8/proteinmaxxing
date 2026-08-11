@@ -50,7 +50,7 @@ const FOOD_SUBJECT = {
     pawelek: 'Pawelek Polish toffee chocolate candy bar unwrapped',
     grzeski: 'Grzeski Polish chocolate wafer candy bar unwrapped',
     knoppers: 'Knoppers hazelnut cream wafer candy bar unwrapped',
-    duplo: 'Duplo Ferrero chocolate wafer candy bar unwrapped',
+    kinder-duplo: 'Kinder Duplo Ferrero chocolate wafer candy bar unwrapped',
     'kinder-maxi-king': 'ONE Kinder Maxi King candy bar unwrapped, single bar NOT multipack',
     'kinder-country': 'Kinder Country milk cereal chocolate candy bar unwrapped',
     toblerone: 'classic unwrapped Toblerone milk chocolate bar with distinctive triangular mountain peaks, solid triangular prism chocolate, NOT retail shelf display',

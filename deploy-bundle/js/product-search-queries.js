@@ -1514,7 +1514,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "honey mustard honey food",
     "honey mustard honey ingredient photo"
   ],
-  "sos-pomidorowy-ketchupowy-styl": [
+  "sos-pomidorowy": [
     "tomato",
     "tomato food",
     "tomato ingredient photo"
