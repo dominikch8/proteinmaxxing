@@ -216,7 +216,7 @@
     "ok": false
   },
   {
-    "slug": "kasza-jeczmienna-peczak",
+    "slug": "kasza-jeczmienna",
     "transPct": 52.950625,
     "opaquePct": 47.049375,
     "whiteEdge": 663,
@@ -472,7 +472,7 @@
     "ok": false
   },
   {
-    "slug": "peczak-jeczmienny-gotowany",
+    "slug": "peczak-jeczmienny",
     "transPct": 55.65833333333333,
     "opaquePct": 44.34166666666667,
     "whiteEdge": 1057,

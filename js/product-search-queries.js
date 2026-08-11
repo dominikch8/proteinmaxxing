@@ -568,7 +568,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "millet food",
     "millet ingredient photo"
   ],
-  "kasza-jeczmienna-peczak": [
+  "kasza-jeczmienna": [
     "barley",
     "barley food",
     "barley ingredient photo"
@@ -598,7 +598,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "spaghetti dry nest pasta",
     "makaron pszenny suchy food"
   ],
-  "bulgur-suchy": [
+  "bulgur": [
     "bulgur",
     "bulgur food",
     "bulgur ingredient photo"
@@ -663,7 +663,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "rice basmati food",
     "rice basmati ingredient photo"
   ],
-  "peczak-jeczmienny-gotowany": [
+  "peczak-jeczmienny": [
     "barley",
     "barley food",
     "barley ingredient photo"
@@ -1394,7 +1394,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "couscous food",
     "couscous ingredient photo"
   ],
-  "ryz-jalowcowy-suchy": [
+  "ryz-jalowcowy": [
     "rice juniper",
     "rice juniper food",
     "rice juniper ingredient photo"
