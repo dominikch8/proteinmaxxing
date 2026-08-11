@@ -284,7 +284,6 @@
   "sos-teriyaki": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Trachurus_declivis.jpg/960px-Trachurus_declivis.jpg",
   "sos-holenderski": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Traditional_Eggs_Benedict.jpg/960px-Traditional_Eggs_Benedict.jpg",
   "sos-musztardowo-miodowy": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Mustard.JPG/960px-Mustard.JPG",
-  "sos-pomidorowy-ketchupowy-styl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Ketchup_20160918_181342_%28cropped%29.jpg/960px-Ketchup_20160918_181342_%28cropped%29.jpg",
   "hummus": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Lebanese_style_hummus.jpg/960px-Lebanese_style_hummus.jpg",
   "sos-tzatziki": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Cacik-1.jpg/960px-Cacik-1.jpg",
   "sos-salatkowy-winegret": "https://live.staticflickr.com/2765/4322931349_bd02679736_b.jpg",
@@ -364,5 +363,6 @@
   "zapiekanka-makaronowa": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/960px-Good_Food_Display_-_NCI_Visuals_Online.jpg",
   "zupka-chinska": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Shoyu_ramen%2C_at_Kasukabe_Station_%282014.05.05%29_1.jpg/960px-Shoyu_ramen%2C_at_Kasukabe_Station_%282014.05.05%29_1.jpg",
   "ramen-z-bulionem": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Broth_hg.jpg/960px-Broth_hg.jpg",
-  "kinder-duplo": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Duplo-Schokoriegel.jpg"
+  "kinder-duplo": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Duplo-Schokoriegel.jpg",
+  "sos-pomidorowy": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Ketchup_20160918_181342_%28cropped%29.jpg/960px-Ketchup_20160918_181342_%28cropped%29.jpg"
 }
