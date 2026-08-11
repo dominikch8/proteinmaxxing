@@ -148,13 +148,14 @@ body {
     pointer-events: none;
     overflow: hidden;
     border-radius: inherit;
+    container-type: size;
 }
 
 .product-image-aura .pia-glow {
     position: absolute;
     left: 50%;
     top: 52%;
-    width: 42%;
+    width: 58%;
     aspect-ratio: 1;
     translate: -50% -50%;
     border-radius: 50%;
@@ -168,7 +169,7 @@ body {
     position: absolute;
     left: 50%;
     top: 52%;
-    width: 18%;
+    width: 16%;
     aspect-ratio: 1;
     translate: -50% -50%;
     border-radius: 50%;
@@ -280,29 +281,30 @@ body {
 @keyframes pia-glow-pulse {
     0%,
     100% {
-        opacity: 0.55;
-        transform: scale(0.92);
+        opacity: 0.5;
+        transform: scale(0.88);
     }
     50% {
-        opacity: 0.95;
-        transform: scale(1.08);
+        opacity: 0.9;
+        transform: scale(1.18);
     }
 }
 
 @keyframes pia-ring-expand {
     0% {
         opacity: 0;
-        transform: scale(0.35);
+        transform: scale(0.3);
     }
-    12% {
+    10% {
         opacity: 0.55;
     }
-    70% {
-        opacity: 0.12;
+    72% {
+        opacity: 0.14;
     }
     100% {
         opacity: 0;
-        transform: scale(3.4);
+        /* ~16% * 5.9 ≈ prawie pełna szerokość kadru */
+        transform: scale(5.9);
     }
 }
 
@@ -311,38 +313,38 @@ body {
         opacity: 0;
         transform: translate(0, 0) scale(0.4);
     }
-    14% {
-        opacity: 0.7;
+    12% {
+        opacity: 0.72;
     }
     100% {
         opacity: 0;
-        transform: translate(var(--pia-x, 40px), var(--pia-y, -70px)) scale(1.15);
+        transform: translate(var(--pia-x, 42cqi), var(--pia-y, -40cqb)) scale(1.15);
     }
 }
 
 .product-image-aura .pia-orb-1 {
-    --pia-x: 72px;
-    --pia-y: -88px;
+    --pia-x: 44cqi;
+    --pia-y: -42cqb;
 }
 .product-image-aura .pia-orb-2 {
-    --pia-x: -78px;
-    --pia-y: -62px;
+    --pia-x: -45cqi;
+    --pia-y: -36cqb;
 }
 .product-image-aura .pia-orb-3 {
-    --pia-x: 58px;
-    --pia-y: 74px;
+    --pia-x: 40cqi;
+    --pia-y: 40cqb;
 }
 .product-image-aura .pia-orb-4 {
-    --pia-x: -90px;
-    --pia-y: 48px;
+    --pia-x: -46cqi;
+    --pia-y: 34cqb;
 }
 .product-image-aura .pia-orb-5 {
-    --pia-x: 18px;
-    --pia-y: -108px;
+    --pia-x: 12cqi;
+    --pia-y: -46cqb;
 }
 .product-image-aura .pia-orb-6 {
-    --pia-x: -42px;
-    --pia-y: 96px;
+    --pia-x: -22cqi;
+    --pia-y: 44cqb;
 }
 
 @keyframes pia-spark-pop {
@@ -350,30 +352,30 @@ body {
         opacity: 0;
         transform: translate(0, 0) scale(0.2);
     }
-    18% {
+    16% {
         opacity: 0.9;
     }
     100% {
         opacity: 0;
-        transform: translate(var(--pia-sx, 50px), var(--pia-sy, -50px)) scale(0.6);
+        transform: translate(var(--pia-sx, 40cqi), var(--pia-sy, -36cqb)) scale(0.6);
     }
 }
 
 .product-image-aura .pia-spark-1 {
-    --pia-sx: 96px;
-    --pia-sy: -28px;
+    --pia-sx: 46cqi;
+    --pia-sy: -18cqb;
 }
 .product-image-aura .pia-spark-2 {
-    --pia-sx: -88px;
-    --pia-sy: -44px;
+    --pia-sx: -45cqi;
+    --pia-sy: -28cqb;
 }
 .product-image-aura .pia-spark-3 {
-    --pia-sx: 64px;
-    --pia-sy: 82px;
+    --pia-sx: 38cqi;
+    --pia-sy: 42cqb;
 }
 .product-image-aura .pia-spark-4 {
-    --pia-sx: -70px;
-    --pia-sy: 70px;
+    --pia-sx: -42cqi;
+    --pia-sy: 38cqb;
 }
 
 [data-theme='dark'] .product-image-aura .pia-glow {

@@ -5,7 +5,7 @@
 
 const SITE = 'https://proteiner.pl';
 /** Bump when shipping CSS/JS changes (long browser cache + immutable). */
-export const ASSET_V = '20260811m';
+export const ASSET_V = '20260811n';
 
 function asset(prefix, path) {
     return `${prefix}${path}?v=${ASSET_V}`;
