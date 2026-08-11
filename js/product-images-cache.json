@@ -183,7 +183,6 @@
   "wrap-z-kurczakiem": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Smoked_chicken_and_avocado_wrap.jpg/960px-Smoked_chicken_and_avocado_wrap.jpg",
   "kebab-na-talerzu": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Lula_kebab_2.jpg/960px-Lula_kebab_2.jpg",
   "kolba-kukurydzy-smazona": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/CornDog.jpg/960px-CornDog.jpg",
-  "zupa-chinska-instant": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Shoyu_ramen%2C_at_Kasukabe_Station_%282014.05.05%29_1.jpg/960px-Shoyu_ramen%2C_at_Kasukabe_Station_%282014.05.05%29_1.jpg",
   "tortilla-z-farszem-gotowa": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Empanada_flor_de_Calabaza.jpg/960px-Empanada_flor_de_Calabaza.jpg",
   "skrzydelka-kfc-style": "https://live.staticflickr.com/8306/8021292874_8367c12008_b.jpg",
   "makaron-pelnoziarnisty-suchy": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg/960px-%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg",
@@ -194,7 +193,6 @@
   "makaron-jajeczny-suchy": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg/960px-%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg",
   "tagliatelle-z-lososiem": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/960px-Sushi_platter.jpg",
   "makaron-z-pesto-i-kurczakiem": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg/960px-%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg",
-  "ramen-z-bulionem-miska": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Broth_hg.jpg/960px-Broth_hg.jpg",
   "cannelloni-z-ricotta": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Alessandria_panorama_landscape_pontemeier_mandrogni_lisondria_tanaro.jpg/960px-Alessandria_panorama_landscape_pontemeier_mandrogni_lisondria_tanaro.jpg",
   "szynka-drobiowa": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Club_sandwich_at_Caf%C3%A9_Picnic.jpg/960px-Club_sandwich_at_Caf%C3%A9_Picnic.jpg",
   "szynka-krucha": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Ham_%284%29.jpg/960px-Ham_%284%29.jpg",
@@ -364,5 +362,7 @@
   "peczak-jeczmienny": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Barley_%28Hordeum_vulgare%29_-_United_States_National_Arboretum_-_24_May_2009.jpg/960px-Barley_%28Hordeum_vulgare%29_-_United_States_National_Arboretum_-_24_May_2009.jpg",
   "ryz-jalowcowy": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Damien_Rice_live_2.jpg",
   "bulgur": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg/960px-Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg",
-  "zapiekanka-makaronowa": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/960px-Good_Food_Display_-_NCI_Visuals_Online.jpg"
+  "zapiekanka-makaronowa": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/960px-Good_Food_Display_-_NCI_Visuals_Online.jpg",
+  "zupka-chinska": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Shoyu_ramen%2C_at_Kasukabe_Station_%282014.05.05%29_1.jpg/960px-Shoyu_ramen%2C_at_Kasukabe_Station_%282014.05.05%29_1.jpg",
+  "ramen-z-bulionem": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Broth_hg.jpg/960px-Broth_hg.jpg"
 }

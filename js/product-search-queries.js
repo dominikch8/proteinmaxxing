@@ -979,7 +979,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "corn fried food",
     "corn fried ingredient photo"
   ],
-  "zupa-chinska-instant": [
+  "zupka-chinska": [
     "soup chinese instant",
     "soup chinese instant food",
     "soup chinese instant ingredient photo"
@@ -1034,7 +1034,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "pasta pesto chicken food",
     "pasta pesto chicken ingredient photo"
   ],
-  "ramen-z-bulionem-miska": [
+  "ramen-z-bulionem": [
     "broth",
     "broth food",
     "broth ingredient photo"
@@ -1831,7 +1831,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "Minestrone food",
     "Minestrone ingredient photo"
   ],
-  "pho-zupa-ryzowa": [
+  "zupa-pho": [
     "Vietnamese pho noodle soup",
     "pho bo rice noodles basil",
     "pho soup bowl food"

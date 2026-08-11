@@ -1,8 +1,33 @@
 {
   "cleanUrls": true,
   "redirects": [
-    { "source": "/glowna", "destination": "/", "permanent": true },
-    { "source": "/dieta/kategoria/:slug", "destination": "/dieta#produkty/kategoria/:slug" },
-    { "source": "/dieta/kategoria/:slug.html", "destination": "/dieta#produkty/kategoria/:slug" }
+    {
+      "source": "/glowna",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/dieta/kategoria/:slug",
+      "destination": "/dieta#produkty/kategoria/:slug"
+    },
+    {
+      "source": "/dieta/kategoria/:slug.html",
+      "destination": "/dieta#produkty/kategoria/:slug"
+    },
+    {
+      "source": "/produkty/zupa-chinska-instant",
+      "destination": "/produkty/zupka-chinska",
+      "type": 301
+    },
+    {
+      "source": "/produkty/ramen-z-bulionem-miska",
+      "destination": "/produkty/ramen-z-bulionem",
+      "type": 301
+    },
+    {
+      "source": "/produkty/pho-zupa-ryzowa",
+      "destination": "/produkty/zupa-pho",
+      "type": 301
+    }
   ]
 }

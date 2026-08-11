@@ -37,6 +37,9 @@ RewriteRule ^produkty/peczak-jeczmienny-gotowany/?$ /produkty/peczak-jeczmienny 
 RewriteRule ^produkty/ryz-jalowcowy-suchy/?$ /produkty/ryz-jalowcowy [R=301,L]
 RewriteRule ^produkty/bulgur-suchy/?$ /produkty/bulgur [R=301,L]
 RewriteRule ^produkty/zapiekanka-makaronowa-gotowiec/?$ /produkty/zapiekanka-makaronowa [R=301,L]
+RewriteRule ^produkty/zupa-chinska-instant/?$ /produkty/zupka-chinska [R=301,L]
+RewriteRule ^produkty/ramen-z-bulionem-miska/?$ /produkty/ramen-z-bulionem [R=301,L]
+RewriteRule ^produkty/pho-zupa-ryzowa/?$ /produkty/zupa-pho [R=301,L]
 
 # Stare URL-e .html → czyste ścieżki (301)
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]

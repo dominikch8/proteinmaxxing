@@ -1358,11 +1358,11 @@
     "prompt": "Photorealistic ecommerce food photo: corn fried, fast food item. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
   },
   {
-    "slug": "zupa-chinska-instant",
-    "name": "Zupa chińska instant",
+    "slug": "zupka-chinska",
+    "name": "Zupka chińska",
     "category": "zupy",
-    "subject": "soup chinese instant",
-    "prompt": "Photorealistic ecommerce food photo: soup chinese instant. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    "subject": "Polish instant Chinese noodle soup zupka chińska in white bowl, wavy noodles amber broth",
+    "prompt": "Photorealistic ecommerce food photo: Polish instant Chinese noodle soup zupka chińska in white bowl, wavy noodles amber broth. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
   },
   {
     "slug": "tortilla-z-farszem-gotowa",
@@ -1435,11 +1435,11 @@
     "prompt": "Photorealistic ecommerce food photo: pasta pesto chicken. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
   },
   {
-    "slug": "ramen-z-bulionem-miska",
-    "name": "Ramen z bulionem (miska)",
+    "slug": "ramen-z-bulionem",
+    "name": "Ramen z bulionem",
     "category": "zupy",
-    "subject": "broth, soup in a bowl",
-    "prompt": "Photorealistic ecommerce food photo: broth, soup in a bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    "subject": "ramen bowl with broth noodles egg nori",
+    "prompt": "Photorealistic ecommerce food photo: ramen bowl with broth noodles egg nori. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
   },
   {
     "slug": "cannelloni-z-ricotta",
@@ -2548,11 +2548,11 @@
     "prompt": "Photorealistic ecommerce food photo: Minestrone, soup in a bowl. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
   },
   {
-    "slug": "pho-zupa-ryzowa",
-    "name": "Pho (zupa ryżowa)",
+    "slug": "zupa-pho",
+    "name": "Zupa pho",
     "category": "zupy",
-    "subject": "soup",
-    "prompt": "Photorealistic ecommerce food photo: soup. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
+    "subject": "Vietnamese pho noodle soup flat rice noodles herbs",
+    "prompt": "Photorealistic ecommerce food photo: Vietnamese pho noodle soup flat rice noodles herbs. Exact edible food product only, single item or small neat portion, centered. Pure solid white background #FFFFFF. Soft subtle shadow. Minimalist studio lighting. No text, no logos, no watermark, no people, no hands, no animals (unless the food itself), no busy props. Sharp realistic detail, correct anatomy, no AI deformities."
   },
   {
     "slug": "whopper-styl",
