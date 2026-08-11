@@ -1941,7 +1941,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://proteiner.pl/produkty/pierogi-ruskie-8-szt</loc>
+    <loc>https://proteiner.pl/produkty/pierogi-ruskie</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -3257,6 +3257,36 @@
   </url>
   <url>
     <loc>https://proteiner.pl/produkty/vegeta</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/wk-dzik-baton-proteinowy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/nick-s-protein-bar</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/fking-protein</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/protein-33</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/protein-50</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://proteiner.pl/produkty/go-on-protein-crisp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
