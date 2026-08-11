@@ -785,6 +785,139 @@
             </div>`;
     }
 
+    const MICRO_ICONS = {
+        vitA: '🥕',
+        vitC: '🍊',
+        vitD: '☀️',
+        vitE: '🫒',
+        vitK: '🥬',
+        b1: 'B₁',
+        b2: 'B₂',
+        b3: 'B₃',
+        b5: 'B₅',
+        b6: 'B₆',
+        b7: 'B₇',
+        b9: 'B₉',
+        b12: 'B₁₂',
+        choline: '🥚',
+        calcium: '🦴',
+        iron: '🧲',
+        magnesium: '⚡',
+        phosphorus: 'P',
+        potassium: '🍌',
+        zinc: '⚙️',
+        selenium: 'Se',
+        copper: 'Cu',
+        manganese: 'Mn',
+        iodine: 'I',
+        sodium: '🧂'
+    };
+
+    function formatMicroBarLabel(amount, key) {
+        const meta = window.MEAL_RDA?.[key];
+        if (!meta || amount == null || !(amount > 0)) return '—';
+        const decimals = amount < 10 ? 2 : amount < 100 ? 1 : 0;
+        const num = Number(amount).toLocaleString('pl-PL', {
+            maximumFractionDigits: decimals,
+            minimumFractionDigits: 0
+        });
+        return `${num} ${meta.unit}`;
+    }
+
+    function microRdaTarget(key) {
+        const meta = window.MEAL_RDA?.[key];
+        if (!meta) return null;
+        const male = typeof window.getMealRdaTarget === 'function' ? window.getMealRdaTarget(key, 'male') : meta.male;
+        const female = typeof window.getMealRdaTarget === 'function' ? window.getMealRdaTarget(key, 'female') : meta.female;
+        if (male != null && female != null) return (male + female) / 2;
+        return male != null ? male : female;
+    }
+
+    function pickMicroKeysForChart(microsA, microsB) {
+        const rda = window.MEAL_RDA || {};
+        const keys = Object.keys(rda).filter((k) => (microsA[k] || 0) > 0 || (microsB[k] || 0) > 0);
+        const score = (k) => {
+            const va = microsA[k] || 0;
+            const vb = microsB[k] || 0;
+            const target = microRdaTarget(k) || Math.max(va, vb, 1);
+            const maxPct = (Math.max(va, vb) / target) * 100;
+            const diffPct = (Math.abs(va - vb) / target) * 100;
+            return maxPct + diffPct * 0.65;
+        };
+        keys.sort((ka, kb) => score(kb) - score(ka));
+        return keys.slice(0, 8);
+    }
+
+    function buildMicroGlassBarsHtml(a, b) {
+        const microsA = getProductMicros(a);
+        const microsB = getProductMicros(b);
+        const keys = pickMicroKeysForChart(microsA, microsB);
+        if (!keys.length) return '';
+
+        let winsA = 0;
+        let winsB = 0;
+        const rows = keys.map((key, rowIndex) => {
+            const meta = window.MEAL_RDA[key];
+            const va = microsA[key] || 0;
+            const vb = microsB[key] || 0;
+            const max = Math.max(va, vb, 0.001);
+            const pctA = va > 0 ? Math.round((va / max) * 100) : 0;
+            const pctB = vb > 0 ? Math.round((vb / max) * 100) : 0;
+            const winner = microWinner(va, vb, key);
+            if (winner === 'a') winsA += 1;
+            if (winner === 'b') winsB += 1;
+            const winA = winner === 'a';
+            const winB = winner === 'b';
+            const labelA = formatMicroBarLabel(va, key);
+            const labelB = formatMicroBarLabel(vb, key);
+            const delta = Math.abs(va - vb);
+            const deltaText =
+                delta > 0.0001 && (va > 0 || vb > 0) ? formatMicroBarLabel(delta, key) : null;
+            const hintText =
+                key === 'sodium'
+                    ? { text: 'mniej = lepiej', kind: 'less' }
+                    : { text: 'więcej = lepiej', kind: 'more' };
+            const icon = MICRO_ICONS[key] || '•';
+            const shortName = meta.label.replace(/\s*\([^)]*\)/g, '');
+
+            return `
+                <article class="compare-glass-row compare-glass-row--micro compare-glass-row--has-hint${winner ? ` compare-glass-row--lead-${winner}` : ''}" style="--row-delay:${(COMPARE_METRICS.length + rowIndex) * 70}ms">
+                    <div class="compare-glass-row-head">
+                        <span class="compare-glass-metric-badge" aria-hidden="true">
+                            <span class="compare-glass-metric-icon compare-glass-metric-icon--micro">${icon}</span>
+                        </span>
+                        <div class="compare-glass-metric-copy">
+                            <span class="compare-glass-metric-name">${escapeHtml(shortName)}</span>
+                            <span class="compare-glass-metric-max">na 100&nbsp;g</span>
+                        </div>
+                        ${
+                            deltaText
+                                ? `<span class="compare-glass-delta" title="Różnica">różnica ${escapeHtml(deltaText)}</span>`
+                                : `<span class="compare-glass-delta compare-glass-delta--neutral">remis</span>`
+                        }
+                    </div>
+                    ${buildGlassBarsGrid(a.name, b.name, pctA, labelA, winA, pctB, labelB, winB, hintText, COMPARE_METRICS.length + rowIndex)}
+                </article>`;
+        }).join('');
+
+        const scoreline =
+            winsA || winsB
+                ? `<p class="compare-glass-chart-score">A prowadzi <strong>${winsA}</strong> · B prowadzi <strong>${winsB}</strong></p>`
+                : '';
+
+        return `
+            <div class="compare-glass-chart compare-glass-chart--micro" role="img" aria-label="Porównanie witamin i minerałów na 100 g: ${escapeHtml(a.name)} i ${escapeHtml(b.name)}">
+                <div class="compare-glass-chart-head">
+                    <p class="compare-glass-chart-kicker">Mikroskładniki</p>
+                    <p class="compare-glass-chart-title">Witaminy i minerały</p>
+                    ${scoreline}
+                </div>
+                <div class="compare-glass-chart-body">
+                    ${rows}
+                </div>
+            </div>`;
+    }
+
     function playDashboardMotion() {
         if (!chartEl) return;
         chartEl.classList.remove('is-animating');
@@ -833,8 +966,9 @@
                 <span class="compare-glass-panel-orb compare-glass-panel-orb--a" aria-hidden="true"></span>
                 <span class="compare-glass-panel-orb compare-glass-panel-orb--b" aria-hidden="true"></span>
                 ${buildGlassBarsHtml(a, b)}
+                ${buildMicroGlassBarsHtml(a, b)}
             </div>
-            <p class="compare-chart-footnote">Wszystkie wartości na 100 g produktu.</p>`;
+            <p class="compare-chart-footnote">Wszystkie wartości na 100 g produktu. Mikro: baza / szacunek, do 8 najważniejszych różnic.</p>`;
 
         playDashboardMotion();
     }

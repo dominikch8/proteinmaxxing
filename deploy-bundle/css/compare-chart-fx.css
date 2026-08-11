@@ -169,6 +169,51 @@
     gap: 16px;
 }
 
+.compare-glass-chart--micro {
+    margin-top: 28px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+[data-theme='dark'] .compare-glass-chart--micro {
+    border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.compare-glass-chart-score {
+    margin: 8px 0 0;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-muted, #64748b);
+}
+
+.compare-glass-chart-score strong {
+    color: var(--text-dark);
+    font-weight: 800;
+}
+
+.compare-glass-chart--micro .compare-glass-row {
+    padding: 12px 14px 11px;
+    border-radius: 16px;
+}
+
+.compare-glass-chart--micro .compare-glass-chart-body {
+    gap: 12px;
+}
+
+.compare-glass-chart--micro .compare-glass-metric-badge {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+}
+
+.compare-glass-metric-icon--micro {
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #f8fafc;
+    filter: none;
+}
+
 
 /* Metric rows as cards */
 
