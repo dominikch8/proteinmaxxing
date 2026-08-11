@@ -17,6 +17,7 @@ const FILES = [
     'css/brand-text.css',
     'css/cookie-consent.css',
     'css/home.css',
+    'css/meal-calc.css',
     'js/theme-init.js',
     'js/theme.js',
     'js/auth-ui.js',

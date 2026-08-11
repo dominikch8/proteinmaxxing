@@ -492,6 +492,8 @@
 .main-content.meal-page {
     /* lekko prześwitujące, żeby widać było posiłek pod spodem */
     background: color-mix(in srgb, var(--surface) 78%, transparent) !important;
+    /* napisy bliżej góry zdjęcia dania */
+    padding-top: clamp(10px, 1.6vw, 16px);
 }
 
 [data-theme='dark'] .main-content.meal-page {
@@ -517,7 +519,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 40%;
+    /* talerz wyżej w kadrze — pod tytułem */
+    object-position: center 28%;
 }
 
 .meal-page-bg img {
@@ -557,6 +560,12 @@
 .main-content.meal-page > .meal-layout {
     position: relative;
     z-index: 2;
+}
+
+.main-content.meal-page > .page-hero {
+    margin-bottom: 22px;
+    padding-bottom: 16px;
+    margin-top: 0;
 }
 
 .meal-panel {
