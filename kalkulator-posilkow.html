@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/theme-switch.css?v=20260811n">
     <link rel="stylesheet" href="css/site-motion.css?v=20260811n">
     <link rel="stylesheet" href="css/brand-text.css?v=20260811n">
-    <link rel="stylesheet" href="css/meal-calc.css?v=20260811p">
+    <link rel="stylesheet" href="css/meal-calc.css?v=20260811q">
     <link rel="preload" as="image" href="images/meal-calc-bg.webp" type="image/webp">
 </head>
 <body>
@@ -57,7 +57,12 @@
     </header>
 <div class="page-container">
         <main class="main-content meal-page">
-            <div class="meal-page-bg" aria-hidden="true"></div>
+            <div class="meal-page-bg" aria-hidden="true">
+                <picture>
+                    <source srcset="images/meal-calc-bg.webp" type="image/webp">
+                    <img src="images/meal-calc-bg.jpg" alt="" width="1920" height="1080" decoding="async" fetchpriority="low">
+                </picture>
+            </div>
             <div class="page-hero">
                 <h1>Kalkulator posiłków</h1>
                 <p class="subtitle">Wybierz produkty z bazy, podaj ile gramów zjadłeś — zobaczysz kalorie, makro i orientacyjny udział witamin oraz minerałów w dziennym zapotrzebowaniu.</p>

@@ -489,33 +489,76 @@
 }
 
 /* Lekkie tło posiłku tylko w środkowej karcie (zewnętrzne tło strony bez zmian) */
+.main-content.meal-page {
+    /* lekko prześwitujące, żeby widać było posiłek pod spodem */
+    background: color-mix(in srgb, var(--surface) 78%, transparent) !important;
+}
+
+[data-theme='dark'] .main-content.meal-page {
+    background: linear-gradient(
+        165deg,
+        color-mix(in srgb, rgba(30, 41, 59, 0.82) 100%, transparent) 0%,
+        color-mix(in srgb, rgba(15, 23, 42, 0.86) 100%, transparent) 100%
+    ) !important;
+}
+
 .meal-page-bg {
     position: absolute;
     inset: 0;
-    z-index: 0;
+    z-index: 1;
     pointer-events: none;
     border-radius: inherit;
-    background-image: image-set(
-        url('../images/meal-calc-bg.webp') type('image/webp'),
-        url('../images/meal-calc-bg.jpg') type('image/jpeg')
-    );
-    background-size: cover;
-    background-position: center 40%;
-    background-repeat: no-repeat;
-    opacity: 0.15;
-    filter: saturate(0.9) contrast(0.96);
+    overflow: hidden;
 }
 
-[data-theme='dark'] .meal-page-bg {
-    opacity: 0.11;
+.meal-page-bg picture,
+.meal-page-bg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+.meal-page-bg img {
+    opacity: 0.28;
+    filter: saturate(0.92) contrast(0.98);
+}
+
+[data-theme='dark'] .meal-page-bg img {
+    opacity: 0.2;
     filter: saturate(0.75) brightness(0.55) contrast(1.05);
 }
 
-.main-content.meal-page > :not(.meal-page-bg) {
+/* delikatna zasłona czytelności nad zdjęciem */
+.meal-page-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--surface) 55%, transparent) 0%,
+        color-mix(in srgb, var(--surface) 42%, transparent) 45%,
+        color-mix(in srgb, var(--surface) 58%, transparent) 100%
+    );
+}
+
+[data-theme='dark'] .meal-page-bg::after {
+    background: linear-gradient(
+        180deg,
+        rgba(15, 23, 42, 0.55) 0%,
+        rgba(15, 23, 42, 0.4) 50%,
+        rgba(15, 23, 42, 0.58) 100%
+    );
+}
+
+/* Nie ruszaj warstwy atmosphere (absolute) — tylko treść nad tłem */
+.main-content.meal-page > .page-hero,
+.main-content.meal-page > .meal-layout {
     position: relative;
     z-index: 2;
 }
 
 .meal-panel {
-    background: color-mix(in srgb, var(--surface) 93%, transparent);
+    background: color-mix(in srgb, var(--surface) 88%, transparent);
 }
