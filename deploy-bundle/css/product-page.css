@@ -140,11 +140,267 @@ body {
     min-width: 0;
 }
 
+/* Aura za wyciętym produktem — kule, obręcze, iskry (widać na przezroczystym tle) */
+.product-image-aura {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+    border-radius: inherit;
+}
+
+.product-image-aura .pia-glow {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    width: 42%;
+    aspect-ratio: 1;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, rgba(37, 99, 235, 0.22) 0%, rgba(128, 0, 0, 0.12) 42%, transparent 70%);
+    filter: blur(2px);
+    animation: pia-glow-pulse 5.5s ease-in-out infinite;
+}
+
+.product-image-aura .pia-ring {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    width: 18%;
+    aspect-ratio: 1;
+    translate: -50% -50%;
+    border-radius: 50%;
+    border: 1.5px solid rgba(37, 99, 235, 0.35);
+    box-shadow:
+        0 0 0 1px rgba(128, 0, 0, 0.08),
+        inset 0 0 12px rgba(37, 99, 235, 0.08);
+    opacity: 0;
+    animation: pia-ring-expand 6.5s ease-out infinite;
+}
+
+.product-image-aura .pia-ring-2 {
+    border-color: rgba(128, 0, 0, 0.28);
+    animation-delay: 2.1s;
+    animation-duration: 7.2s;
+}
+
+.product-image-aura .pia-ring-3 {
+    border-color: rgba(30, 58, 95, 0.3);
+    animation-delay: 4.2s;
+    animation-duration: 6.8s;
+}
+
+.product-image-aura .pia-orb {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 -5px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.75), rgba(37, 99, 235, 0.45) 55%, rgba(37, 99, 235, 0.05) 100%);
+    opacity: 0;
+    animation: pia-orb-drift 7s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+
+.product-image-aura .pia-orb-2 {
+    width: 7px;
+    height: 7px;
+    margin: -3.5px 0 0 -3.5px;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.7), rgba(128, 0, 0, 0.4) 60%, transparent 100%);
+    animation-duration: 8.2s;
+    animation-delay: 0.8s;
+}
+
+.product-image-aura .pia-orb-3 {
+    width: 12px;
+    height: 12px;
+    margin: -6px 0 0 -6px;
+    animation-duration: 9s;
+    animation-delay: 1.6s;
+}
+
+.product-image-aura .pia-orb-4 {
+    width: 6px;
+    height: 6px;
+    margin: -3px 0 0 -3px;
+    background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.8), rgba(30, 58, 95, 0.45) 55%, transparent 100%);
+    animation-duration: 6.4s;
+    animation-delay: 2.4s;
+}
+
+.product-image-aura .pia-orb-5 {
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    animation-duration: 7.6s;
+    animation-delay: 3.2s;
+}
+
+.product-image-aura .pia-orb-6 {
+    width: 5px;
+    height: 5px;
+    margin: -2.5px 0 0 -2.5px;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.85), rgba(165, 42, 42, 0.4) 55%, transparent 100%);
+    animation-duration: 8.8s;
+    animation-delay: 4s;
+}
+
+.product-image-aura .pia-spark {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    width: 3px;
+    height: 3px;
+    margin: -1.5px 0 0 -1.5px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 6px rgba(37, 99, 235, 0.55);
+    opacity: 0;
+    animation: pia-spark-pop 4.8s ease-out infinite;
+}
+
+.product-image-aura .pia-spark-2 {
+    animation-delay: 1.2s;
+    box-shadow: 0 0 6px rgba(128, 0, 0, 0.5);
+}
+
+.product-image-aura .pia-spark-3 {
+    animation-delay: 2.4s;
+}
+
+.product-image-aura .pia-spark-4 {
+    animation-delay: 3.6s;
+    box-shadow: 0 0 5px rgba(30, 58, 95, 0.55);
+}
+
+@keyframes pia-glow-pulse {
+    0%,
+    100% {
+        opacity: 0.55;
+        transform: scale(0.92);
+    }
+    50% {
+        opacity: 0.95;
+        transform: scale(1.08);
+    }
+}
+
+@keyframes pia-ring-expand {
+    0% {
+        opacity: 0;
+        transform: scale(0.35);
+    }
+    12% {
+        opacity: 0.55;
+    }
+    70% {
+        opacity: 0.12;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(3.4);
+    }
+}
+
+@keyframes pia-orb-drift {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0) scale(0.4);
+    }
+    14% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--pia-x, 40px), var(--pia-y, -70px)) scale(1.15);
+    }
+}
+
+.product-image-aura .pia-orb-1 {
+    --pia-x: 72px;
+    --pia-y: -88px;
+}
+.product-image-aura .pia-orb-2 {
+    --pia-x: -78px;
+    --pia-y: -62px;
+}
+.product-image-aura .pia-orb-3 {
+    --pia-x: 58px;
+    --pia-y: 74px;
+}
+.product-image-aura .pia-orb-4 {
+    --pia-x: -90px;
+    --pia-y: 48px;
+}
+.product-image-aura .pia-orb-5 {
+    --pia-x: 18px;
+    --pia-y: -108px;
+}
+.product-image-aura .pia-orb-6 {
+    --pia-x: -42px;
+    --pia-y: 96px;
+}
+
+@keyframes pia-spark-pop {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0) scale(0.2);
+    }
+    18% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--pia-sx, 50px), var(--pia-sy, -50px)) scale(0.6);
+    }
+}
+
+.product-image-aura .pia-spark-1 {
+    --pia-sx: 96px;
+    --pia-sy: -28px;
+}
+.product-image-aura .pia-spark-2 {
+    --pia-sx: -88px;
+    --pia-sy: -44px;
+}
+.product-image-aura .pia-spark-3 {
+    --pia-sx: 64px;
+    --pia-sy: 82px;
+}
+.product-image-aura .pia-spark-4 {
+    --pia-sx: -70px;
+    --pia-sy: 70px;
+}
+
+[data-theme='dark'] .product-image-aura .pia-glow {
+    background:
+        radial-gradient(circle, rgba(96, 165, 250, 0.28) 0%, rgba(248, 113, 113, 0.14) 45%, transparent 72%);
+}
+
+[data-theme='dark'] .product-image-aura .pia-ring {
+    border-color: rgba(96, 165, 250, 0.4);
+    box-shadow:
+        0 0 0 1px rgba(248, 113, 113, 0.1),
+        inset 0 0 14px rgba(96, 165, 250, 0.12);
+}
+
 .product-image-wrap img {
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .product-image-aura {
+        display: none;
+    }
 }
 
 .image-hint {
@@ -163,6 +419,7 @@ body {
 
 .product-emoji-fallback {
     position: absolute;
+    z-index: 2;
     bottom: 12px;
     right: 12px;
     font-size: 2.5rem;

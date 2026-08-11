@@ -567,6 +567,22 @@ ${buildCookieConsentBody('../')}
             <div class="product-layout">
                 <div class="product-media-col">
                     <div class="product-image-wrap">
+                        <div class="product-image-aura" aria-hidden="true">
+                            <span class="pia-glow"></span>
+                            <span class="pia-ring pia-ring-1"></span>
+                            <span class="pia-ring pia-ring-2"></span>
+                            <span class="pia-ring pia-ring-3"></span>
+                            <span class="pia-orb pia-orb-1"></span>
+                            <span class="pia-orb pia-orb-2"></span>
+                            <span class="pia-orb pia-orb-3"></span>
+                            <span class="pia-orb pia-orb-4"></span>
+                            <span class="pia-orb pia-orb-5"></span>
+                            <span class="pia-orb pia-orb-6"></span>
+                            <span class="pia-spark pia-spark-1"></span>
+                            <span class="pia-spark pia-spark-2"></span>
+                            <span class="pia-spark pia-spark-3"></span>
+                            <span class="pia-spark pia-spark-4"></span>
+                        </div>
                         <img src="${esc(imgSrc)}" alt="${esc(p.name)} – białko ${p.protein}g, kalorie ${p.kcal} kcal, węglowodany i tłuszcz na 100g | zdrowe odżywianie" width="640" height="480" loading="lazy" referrerpolicy="no-referrer" decoding="async" onerror="${imgOnError}">
                         <span class="product-emoji-fallback" aria-hidden="true">${p.emoji}</span>
                     </div>

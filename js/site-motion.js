@@ -297,6 +297,36 @@
     // Atmosphere (blur blobs) is GPU-heavy — mount after idle so dieta/rankings don't hitch the header
     afterFirstPaint(() => whenIdle(mountAtmosphere, 1500));
 
+    /** Półprzezroczyste kule/obręcze za wyciętym zdjęciem produktu */
+    function mountProductImageAuras() {
+        const AURA_HTML =
+            '<span class="pia-glow"></span>' +
+            '<span class="pia-ring pia-ring-1"></span>' +
+            '<span class="pia-ring pia-ring-2"></span>' +
+            '<span class="pia-ring pia-ring-3"></span>' +
+            '<span class="pia-orb pia-orb-1"></span>' +
+            '<span class="pia-orb pia-orb-2"></span>' +
+            '<span class="pia-orb pia-orb-3"></span>' +
+            '<span class="pia-orb pia-orb-4"></span>' +
+            '<span class="pia-orb pia-orb-5"></span>' +
+            '<span class="pia-orb pia-orb-6"></span>' +
+            '<span class="pia-spark pia-spark-1"></span>' +
+            '<span class="pia-spark pia-spark-2"></span>' +
+            '<span class="pia-spark pia-spark-3"></span>' +
+            '<span class="pia-spark pia-spark-4"></span>';
+
+        document.querySelectorAll('.product-image-wrap').forEach((wrap) => {
+            if (wrap.querySelector('.product-image-aura')) return;
+            const aura = document.createElement('div');
+            aura.className = 'product-image-aura';
+            aura.setAttribute('aria-hidden', 'true');
+            aura.innerHTML = AURA_HTML;
+            wrap.insertBefore(aura, wrap.firstChild);
+        });
+    }
+
+    afterFirstPaint(mountProductImageAuras);
+
     setTimeout(() => {
         document.querySelectorAll('.page-hero, .main-content, .pm-reveal').forEach((el) => {
             if (getComputedStyle(el).opacity === '0') {
