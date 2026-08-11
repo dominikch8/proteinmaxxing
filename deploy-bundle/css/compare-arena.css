@@ -333,8 +333,9 @@
     width: 56px;
     height: 56px;
     border-radius: 18px;
-    background: linear-gradient(145deg, #fff, #f8fafc);
-    border: 1px solid rgba(15, 23, 42, 0.1);
+    background: linear-gradient(145deg, var(--surface), var(--surface-cool));
+    border: 1px solid var(--border);
+    color: var(--text-dark);
     box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
     z-index: 2;
 }
@@ -342,6 +343,28 @@
 .compare-swap-btn:hover {
     background: linear-gradient(145deg, #fff5f5, #eff6ff);
     box-shadow: 0 10px 24px rgba(30, 58, 138, 0.12);
+}
+
+[data-theme='dark'] .compare-swap-btn {
+    background: linear-gradient(145deg, var(--surface-elevated), var(--surface));
+    border-color: rgba(176, 64, 64, 0.45);
+    color: var(--text-light);
+    box-shadow:
+        0 0 0 1px rgba(176, 64, 64, 0.28),
+        0 0 14px rgba(176, 64, 64, 0.22),
+        0 0 18px rgba(37, 99, 235, 0.18),
+        0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme='dark'] .compare-swap-btn:hover {
+    background: linear-gradient(145deg, var(--surface-hover), var(--surface-elevated));
+    border-color: rgba(96, 165, 250, 0.55);
+    color: var(--primary);
+    box-shadow:
+        0 0 0 1px rgba(96, 165, 250, 0.35),
+        0 0 18px rgba(176, 64, 64, 0.28),
+        0 0 22px rgba(37, 99, 235, 0.28),
+        0 10px 24px rgba(0, 0, 0, 0.4);
 }
 
 
