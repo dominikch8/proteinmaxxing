@@ -335,14 +335,6 @@
       "Jako szybki protein w podróży OK; na co dzień lepszy jest kurczak z piekarnika."
     ]
   },
-  "pierogi-ruskie-8-szt": {
-    "title": "Pierogi ruskie — polski comfort food",
-    "paragraphs": [
-      "Pierogi ruskie (ok. 175 kcal, 6 g białka na 100 g) to ciasto, ziemniaki i twaróg — syte, ale nie wysokobiałkowe. Porcja 8 sztuk (280 g) to ok. 490 kcal i 17 g białka; ze śmietaną i skwarkami kalorie rosną szybko.",
-      "Gotowane na parze są lżejsze niż smażone na maśle. Pierogi z mięsem mają więcej białka — warto rotować nadzienia.",
-      "Na redukcji pierogi mogą być w planie jako obiad, jeśli kontrolujesz porcję i ograniczasz tłuste dodatki."
-    ]
-  },
   "bigos": {
     "title": "Bigos — kapusta i mięso",
     "paragraphs": [
@@ -922,6 +914,14 @@
       "Schab wieprzowy bez kości (ok. 143 kcal, 21 g białka na 100 g) to chude mięso z wieprzowiny — tańsze niż polędwica wołowa przy dobrym białku. Kotlet schabowy w panierce ma osobny, wyższy wpis kaloryczny.",
       "Pieczony w całości z ziołami i surówką to obiad dla kilku osób — waż porcję mięsa po pokrojeniu. Schab długo się piecze — nie przesuszaj.",
       "Białko podobne do kurczaka, smak inny — warto rotować w tygodniu."
+    ]
+  },
+  "pierogi-ruskie": {
+    "title": "Pierogi ruskie — polski comfort food",
+    "paragraphs": [
+      "Pierogi ruskie (ok. 175 kcal, 6 g białka na 100 g) to ciasto, ziemniaki i twaróg — syte, ale nie wysokobiałkowe. Jeden pieróg (35 g) to ok. 61 kcal i 2 g białka; ze śmietaną i skwarkami kalorie rosną szybko.",
+      "Gotowane na parze są lżejsze niż smażone na maśle. Pierogi z mięsem mają więcej białka — warto rotować nadzienia.",
+      "Na redukcji pierogi mogą być w planie jako obiad, jeśli kontrolujesz porcję i ograniczasz tłuste dodatki."
     ]
   }
 }

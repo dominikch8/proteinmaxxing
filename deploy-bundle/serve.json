@@ -33,6 +33,11 @@
       "source": "/produkty/duplo",
       "destination": "/produkty/kinder-duplo",
       "type": 301
+    },
+    {
+      "source": "/produkty/pierogi-ruskie-8-szt",
+      "destination": "/produkty/pierogi-ruskie",
+      "type": 301
     }
   ]
 }

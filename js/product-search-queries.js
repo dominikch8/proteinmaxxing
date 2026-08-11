@@ -1675,7 +1675,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "pasta rigatoni food",
     "pasta rigatoni ingredient photo"
   ],
-  "pierogi-ruskie-8-szt": [
+  "pierogi-ruskie": [
     "pierogi potato cheese",
     "pierogi potato cheese food",
     "pierogi potato cheese ingredient photo"
