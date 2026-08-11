@@ -1044,7 +1044,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "cannoni ricotta food",
     "cannoni ricotta ingredient photo"
   ],
-  "zapiekanka-makaronowa-gotowiec": [
+  "zapiekanka-makaronowa": [
     "baguette sandwich pasta bake",
     "baguette sandwich pasta bake food",
     "baguette sandwich pasta bake ingredient photo"
