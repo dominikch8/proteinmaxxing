@@ -4,11 +4,11 @@
  */
 (function () {
     const CATEGORY_BASE = {
-        mieso: { b3: 5, b6: 0.35, b12: 1.2, phosphorus: 180, zinc: 2.5, iron: 1.4, selenium: 18, potassium: 280 },
-        nabial: { calcium: 120, b2: 0.2, b12: 0.5, phosphorus: 100, potassium: 150, zinc: 0.5 },
-        sery: { calcium: 600, b2: 0.3, b12: 1.2, phosphorus: 450, zinc: 3, sodium: 600, vitA: 250 },
-        warzywa: { vitC: 25, potassium: 280, b9: 40, vitA: 80, vitK: 40, magnesium: 20 },
-        owoce: { vitC: 30, potassium: 200, b9: 20, vitA: 30 },
+        mieso: { b3: 5, b6: 0.35, b12: 1.2, phosphorus: 180, zinc: 2.5, iron: 1.4, selenium: 18, potassium: 280, manganese: 0.03 },
+        nabial: { calcium: 120, b2: 0.2, b12: 0.5, phosphorus: 100, potassium: 150, zinc: 0.5, manganese: 0.02 },
+        sery: { calcium: 600, b2: 0.3, b12: 1.2, phosphorus: 450, zinc: 3, sodium: 600, vitA: 250, manganese: 0.05 },
+        warzywa: { vitC: 25, potassium: 280, b9: 40, vitA: 80, vitK: 40, magnesium: 20, manganese: 0.3 },
+        owoce: { vitC: 30, potassium: 200, b9: 20, vitA: 30, manganese: 0.1 },
         zboza: { b1: 0.25, magnesium: 50, iron: 1.5, phosphorus: 120, manganese: 1.2, b3: 2 },
         'platki-sniadaniowe': { iron: 4, b1: 0.5, b2: 0.5, b3: 5, b9: 100 },
         'polskie-obiadki': { sodium: 400, iron: 1, phosphorus: 100, potassium: 200 },
