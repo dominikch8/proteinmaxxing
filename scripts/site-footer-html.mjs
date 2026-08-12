@@ -7,8 +7,6 @@ export function buildSiteFooter(prefix = '') {
         <nav class="site-footer-nav" aria-label="Nawigacja w stopce">
             <a href="${prefix}informacje">Informacje</a>
             <span aria-hidden="true">·</span>
-            <a href="${prefix}o-mnie">O mnie</a>
-            <span aria-hidden="true">·</span>
             <a href="${prefix}dieta#produkty">Wszystkie produkty</a>
             <span aria-hidden="true">·</span>
             <a href="${prefix}kalkulator-posilkow">Kalkulator posiłków</a>

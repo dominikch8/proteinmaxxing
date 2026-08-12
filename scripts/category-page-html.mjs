@@ -119,7 +119,6 @@ ${buildCookieConsentBody(PREFIX)}
                 <li><a class="nav-link" href="${PREFIX}poradnik-zywienia">Poradnik</a></li>
                 <li><a class="nav-link" href="${PREFIX}artykuly">Artykuły</a></li>
                 <li><a class="nav-link" href="${PREFIX}informacje">Informacje</a></li>
-                <li><a class="nav-link" href="${PREFIX}o-mnie">O mnie</a></li>
                 <li id="authNavSlot" class="auth-nav-item"><a class="nav-link auth-nav-link" href="${PREFIX}logowanie">Zaloguj</a></li>
             </ul>
         </nav>

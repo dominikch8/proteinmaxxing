@@ -101,7 +101,6 @@ function h(string $s): string
                 <li><a class="nav-link" href="/poradnik-zywienia">Poradnik</a></li>
                 <li><a class="nav-link active" href="/artykuly" aria-current="page">Artykuły</a></li>
                 <li><a class="nav-link" href="/informacje">Informacje</a></li>
-                <li><a class="nav-link" href="/o-mnie">O mnie</a></li>
             </ul>
         </nav>
     </header>

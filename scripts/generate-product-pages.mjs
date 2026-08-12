@@ -549,7 +549,6 @@ ${buildCookieConsentBody('../')}
                 <li><a class="nav-link" href="../poradnik-zywienia">Poradnik</a></li>
                 <li><a class="nav-link" href="../artykuly">Artykuły</a></li>
                 <li><a class="nav-link" href="../informacje">Informacje</a></li>
-                <li><a class="nav-link" href="../o-mnie">O mnie</a></li>
                 <li id="authNavSlot" class="auth-nav-item"><a class="nav-link auth-nav-link" href="../logowanie">Zaloguj</a></li>
                 <li class="nav-add-product"><a class="nav-link nav-link--subtle" href="../dodaj-produkt">Dodaj produkt</a></li>
             </ul>
@@ -693,7 +692,6 @@ const STATIC_SITEMAP_ENTRIES = [
     { loc: 'https://proteiner.pl/dodaj-produkt', changefreq: 'monthly', priority: '0.5' },
     { loc: 'https://proteiner.pl/trening', changefreq: 'monthly', priority: '0.8' },
     { loc: 'https://proteiner.pl/informacje', changefreq: 'yearly', priority: '0.4' },
-    { loc: 'https://proteiner.pl/o-mnie', changefreq: 'yearly', priority: '0.4' },
     { loc: 'https://proteiner.pl/skladniki-kalorie', changefreq: 'monthly', priority: '0.8' },
     { loc: 'https://proteiner.pl/skladniki-bialko', changefreq: 'monthly', priority: '0.8' },
     { loc: 'https://proteiner.pl/skladniki-weglowodany', changefreq: 'monthly', priority: '0.8' },

@@ -1,5 +1,35 @@
 [
   {
+    "name": "Protein 50%",
+    "serving": "sztuka (40g)",
+    "servingGrams": 40,
+    "servingPricePln": 0.7,
+    "proteinPer100g": 50,
+    "proteinInServing": 20,
+    "pricePer100gProtein": 3.5,
+    "formula": "0.7 × 100 / 20 = 3.5"
+  },
+  {
+    "name": "F**king Protein",
+    "serving": "sztuka (55g)",
+    "servingGrams": 55,
+    "servingPricePln": 1,
+    "proteinPer100g": 36,
+    "proteinInServing": 19.8,
+    "pricePer100gProtein": 5.05,
+    "formula": "1 × 100 / 19.8 = 5.05"
+  },
+  {
+    "name": "Protein 33%",
+    "serving": "sztuka (50g)",
+    "servingGrams": 50,
+    "servingPricePln": 0.9,
+    "proteinPer100g": 33,
+    "proteinInServing": 16.5,
+    "pricePer100gProtein": 5.45,
+    "formula": "0.9 × 100 / 16.5 = 5.45"
+  },
+  {
     "name": "Makaron pełnoziarnisty (suchy)",
     "serving": "porcja (100g)",
     "servingGrams": 100,
@@ -18,6 +48,16 @@
     "proteinInServing": 14,
     "pricePer100gProtein": 5.71,
     "formula": "0.8 × 100 / 14 = 5.71"
+  },
+  {
+    "name": "Nick's Protein Bar",
+    "serving": "sztuka (50g)",
+    "servingGrams": 50,
+    "servingPricePln": 0.9,
+    "proteinPer100g": 30,
+    "proteinInServing": 15,
+    "pricePer100gProtein": 6,
+    "formula": "0.9 × 100 / 15 = 6"
   },
   {
     "name": "Makaron pszenny (suchy)",
@@ -180,7 +220,7 @@
     "formula": "0.45 × 100 / 6.4 = 7.03"
   },
   {
-    "name": "Kasza jęczmienna (Pęczak)",
+    "name": "Kasza jęczmienna",
     "serving": "woreczek (100g)",
     "servingGrams": 100,
     "servingPricePln": 0.85,
@@ -190,7 +230,7 @@
     "formula": "0.85 × 100 / 12 = 7.08"
   },
   {
-    "name": "Bulgur (suchy)",
+    "name": "Bulgur",
     "serving": "porcja (80g)",
     "servingGrams": 80,
     "servingPricePln": 0.7,
@@ -315,6 +355,16 @@
     "servingGrams": 100,
     "servingPricePln": 0.85,
     "proteinPer100g": 10,
+    "proteinInServing": 10,
+    "pricePer100gProtein": 8.5,
+    "formula": "0.85 × 100 / 10 = 8.5"
+  },
+  {
+    "name": "Go On Protein Crisp",
+    "serving": "sztuka (50g)",
+    "servingGrams": 50,
+    "servingPricePln": 0.85,
+    "proteinPer100g": 20,
     "proteinInServing": 10,
     "pricePer100gProtein": 8.5,
     "formula": "0.85 × 100 / 10 = 8.5"
@@ -510,7 +560,7 @@
     "formula": "3.99 × 100 / 34.5 = 11.57"
   },
   {
-    "name": "Ryż jałowcowy (suchy)",
+    "name": "Ryż jałowcowy",
     "serving": "porcja (80g)",
     "servingGrams": 80,
     "servingPricePln": 0.65,
@@ -530,7 +580,7 @@
     "formula": "0.8 × 100 / 6.7 = 11.94"
   },
   {
-    "name": "Ryż basmati (suchy)",
+    "name": "Ryż basmati",
     "serving": "woreczek (100g)",
     "servingGrams": 100,
     "servingPricePln": 0.8,
@@ -590,7 +640,7 @@
     "formula": "0.75 × 100 / 6 = 12.5"
   },
   {
-    "name": "Ryż arborio (suchy)",
+    "name": "Ryż arborio",
     "serving": "porcja (80g)",
     "servingGrams": 80,
     "servingPricePln": 0.65,
@@ -688,6 +738,16 @@
     "proteinInServing": 7,
     "pricePer100gProtein": 13.57,
     "formula": "0.95 × 100 / 7 = 13.57"
+  },
+  {
+    "name": "WK DZIK baton proteinowy",
+    "serving": "sztuka (73g)",
+    "servingGrams": 73,
+    "servingPricePln": 4.09,
+    "proteinPer100g": 41,
+    "proteinInServing": 29.93,
+    "pricePer100gProtein": 13.67,
+    "formula": "4.09 × 100 / 29.93 = 13.67"
   },
   {
     "name": "Karkówka wieprzowa",
@@ -880,7 +940,7 @@
     "formula": "0.65 × 100 / 4.25 = 15.29"
   },
   {
-    "name": "Zupa chińska instant",
+    "name": "Zupka chińska",
     "serving": "kubek (65g)",
     "servingGrams": 65,
     "servingPricePln": 0.9,
@@ -1650,7 +1710,7 @@
     "formula": "3.49 × 100 / 16 = 21.81"
   },
   {
-    "name": "Zapiekanka makaronowa (gotowiec)",
+    "name": "Zapiekanka makaronowa",
     "serving": "porcja (300g)",
     "servingGrams": 300,
     "servingPricePln": 4.59,
@@ -1950,16 +2010,6 @@
     "formula": "4.59 × 100 / 18 = 25.5"
   },
   {
-    "name": "Pierogi ruskie (8 szt.)",
-    "serving": "porcja (280g)",
-    "servingGrams": 280,
-    "servingPricePln": 4.29,
-    "proteinPer100g": 6,
-    "proteinInServing": 16.8,
-    "pricePer100gProtein": 25.54,
-    "formula": "4.29 × 100 / 16.8 = 25.54"
-  },
-  {
     "name": "Śledź marynowany",
     "serving": "filet (80g)",
     "servingGrams": 80,
@@ -1990,16 +2040,6 @@
     "formula": "3.89 × 100 / 15 = 25.93"
   },
   {
-    "name": "Makaron chiński (gotowy)",
-    "serving": "porcja (250g)",
-    "servingGrams": 250,
-    "servingPricePln": 3.89,
-    "proteinPer100g": 6,
-    "proteinInServing": 15,
-    "pricePer100gProtein": 25.93,
-    "formula": "3.89 × 100 / 15 = 25.93"
-  },
-  {
     "name": "Kit Kat",
     "serving": "sztuka (41.5g)",
     "servingGrams": 41.5,
@@ -2018,6 +2058,16 @@
     "proteinInServing": 30,
     "pricePer100gProtein": 25.97,
     "formula": "7.79 × 100 / 30 = 25.97"
+  },
+  {
+    "name": "Pierogi ruskie",
+    "serving": "1 pieróg (35g)",
+    "servingGrams": 35,
+    "servingPricePln": 0.55,
+    "proteinPer100g": 6,
+    "proteinInServing": 2.1,
+    "pricePer100gProtein": 26.19,
+    "formula": "0.55 × 100 / 2.1 = 26.19"
   },
   {
     "name": "Dorsz świeży",
@@ -2060,7 +2110,7 @@
     "formula": "5.99 × 100 / 22.5 = 26.62"
   },
   {
-    "name": "Ramen z bulionem (miska)",
+    "name": "Ramen z bulionem",
     "serving": "porcja (450g)",
     "servingGrams": 450,
     "servingPricePln": 5.99,
@@ -2250,7 +2300,7 @@
     "formula": "4.49 × 100 / 15.6 = 28.78"
   },
   {
-    "name": "Mąka pszenna (typ 500)",
+    "name": "Mąka pszenna typ 500",
     "serving": "łyżka (10g)",
     "servingGrams": 10,
     "servingPricePln": 0.29,
@@ -2268,6 +2318,16 @@
     "proteinInServing": 2.4,
     "pricePer100gProtein": 29.17,
     "formula": "0.7 × 100 / 2.4 = 29.17"
+  },
+  {
+    "name": "Makaron chiński (gotowy)",
+    "serving": "porcja (250g)",
+    "servingGrams": 250,
+    "servingPricePln": 4.390000000000001,
+    "proteinPer100g": 6,
+    "proteinInServing": 15,
+    "pricePer100gProtein": 29.27,
+    "formula": "4.390000000000001 × 100 / 15 = 29.27"
   },
   {
     "name": "Quesadilla z kurczakiem",
@@ -2540,7 +2600,7 @@
     "formula": "5.49 × 100 / 17 = 32.29"
   },
   {
-    "name": "Duplo",
+    "name": "Kinder Duplo",
     "serving": "sztuka (18g)",
     "servingGrams": 18,
     "servingPricePln": 0.35,
@@ -2750,7 +2810,7 @@
     "formula": "3.89 × 100 / 11 = 35.36"
   },
   {
-    "name": "Serek homogenizowany (Danio)",
+    "name": "Serek Danio",
     "serving": "kubek (100g)",
     "servingGrams": 100,
     "servingPricePln": 1.95,
@@ -3110,7 +3170,7 @@
     "formula": "0.4 × 100 / 0.78 = 51.28"
   },
   {
-    "name": "Makaron z serem (Kraft styl)",
+    "name": "Mac n cheese (makaron z serem)",
     "serving": "porcja (300g)",
     "servingGrams": 300,
     "servingPricePln": 10.790000000000001,
