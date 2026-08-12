@@ -16,6 +16,11 @@
     margin: 0 auto;
 }
 
+/* Dropdown podpowiedzi wychodzi poza kartę — nie przycinaj */
+.main-content.meal-page {
+    overflow: visible;
+}
+
 .meal-layout {
     display: grid;
     gap: 1.5rem;
@@ -31,6 +36,7 @@
 .meal-search-anchor {
     position: relative;
     z-index: 1;
+    overflow: visible;
 }
 
 .meal-search-anchor.is-open {
@@ -40,6 +46,11 @@
 .meal-panel--builder {
     transition: box-shadow 0.4s ease;
     padding-bottom: 1rem;
+    overflow: visible;
+}
+
+.meal-builder-flow,
+.meal-layout {
     overflow: visible;
 }
 
@@ -260,13 +271,19 @@
     z-index: 50;
     left: 1.2rem;
     right: 1.2rem;
-    top: calc(100% + 4px);
-    max-height: min(280px, 50vh);
-    overflow: auto;
+    top: calc(100% + 6px);
+    max-height: min(320px, 55vh);
+    overflow-x: hidden;
+    overflow-y: auto;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+    -webkit-overflow-scrolling: touch;
+}
+
+.meal-suggestions:not([hidden]) {
+    display: block;
 }
 
 .meal-suggest-item {
