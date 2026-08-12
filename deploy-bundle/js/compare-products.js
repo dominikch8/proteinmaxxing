@@ -681,23 +681,9 @@
         const fillW = pct > 0 ? pct : 0;
         const delay = 120 + barIndex * 90;
         const winnerClass = !micro && isWinner ? ' is-winner' : '';
-
-        if (micro) {
-            return {
-                slot: `
-                <div class="compare-glass-slot compare-glass-slot--${slot}">
-                    <span class="compare-glass-slot-tag">${slot.toUpperCase()}</span>
-                    <span class="compare-glass-slot-name">${escapeHtml(productName)}</span>
-                </div>`,
-                track: `
-                <div class="compare-glass-track compare-glass-track--${slot} compare-glass-track--micro-lane" style="--bar-delay:${delay}ms">
-                    <span class="compare-glass-fill-val compare-glass-fill-val--lead">${label}</span>
-                    <div class="compare-glass-track-bar">
-                        <div class="compare-glass-fill compare-glass-fill--${slot}" style="--bar-pct:${fillW}%; --bar-delay:${delay}ms" data-pct="${fillW}"></div>
-                    </div>
-                </div>`
-            };
-        }
+        const microTrackClass = micro ? ' compare-glass-track--micro' : '';
+        const microValClass = micro ? ' compare-glass-fill-val--lead' : '';
+        const safeLabel = micro ? escapeHtml(label) : label;
 
         return {
             slot: `
@@ -706,14 +692,14 @@
                     <span class="compare-glass-slot-name">${escapeHtml(productName)}</span>
                 </div>`,
             track: `
-                <div class="compare-glass-track compare-glass-track--${slot}${winnerClass}" style="--bar-delay:${delay}ms">
+                <div class="compare-glass-track compare-glass-track--${slot}${microTrackClass}${winnerClass}" style="--bar-delay:${delay}ms">
                     <span class="compare-glass-track-grid" aria-hidden="true"></span>
                     <div class="compare-glass-fill compare-glass-fill--${slot}${winnerClass}" style="--bar-pct:${fillW}%; --bar-delay:${delay}ms" data-pct="${fillW}">
                         <span class="compare-glass-fill-sheen" aria-hidden="true"></span>
                         <span class="compare-glass-fill-glow" aria-hidden="true"></span>
                         <span class="compare-glass-fill-tip" aria-hidden="true"></span>
                     </div>
-                    <span class="compare-glass-fill-val">${label}</span>
+                    <span class="compare-glass-fill-val${microValClass}">${safeLabel}</span>
                 </div>`
         };
     }
@@ -952,22 +938,22 @@
         });
         rows.forEach((row) => row.classList.remove('is-visible'));
 
-        if (reduceMotion()) {
-            chartEl.classList.add('is-animating');
-            fills.forEach((el) => el.classList.add('is-run'));
-            rows.forEach((row) => row.classList.add('is-visible'));
-            return;
-        }
-
-        void chartEl.offsetWidth;
-        requestAnimationFrame(() => {
+        const reveal = () => {
             chartEl.classList.add('is-animating');
             rows.forEach((row) => row.classList.add('is-visible'));
             fills.forEach((el) => {
                 el.style.width = '';
                 el.classList.add('is-run');
             });
-        });
+        };
+
+        if (reduceMotion()) {
+            reveal();
+            return;
+        }
+
+        void chartEl.offsetWidth;
+        requestAnimationFrame(reveal);
     }
 
     function renderChart(a, b) {
@@ -1188,10 +1174,22 @@
             }
             sectionEl.classList.add('compare-chart-section--mounted');
         }
-        renderMatchup(a, b);
-        renderScoreline(a, b);
-        renderChart(a, b);
-        renderTable(a, b);
+        try {
+            renderMatchup(a, b);
+            renderScoreline(a, b);
+            renderChart(a, b);
+            renderTable(a, b);
+            requestAnimationFrame(() => {
+                sectionEl?.querySelectorAll('.pm-reveal:not(.pm-revealed)').forEach((el) => {
+                    el.classList.add('pm-revealed');
+                });
+            });
+        } catch (err) {
+            console.error('compare-products: render failed', err);
+            if (chartEl) {
+                chartEl.innerHTML = `<p class="compare-chart-error" role="alert">Nie udało się wyświetlić wykresu. Odśwież stronę.</p>`;
+            }
+        }
     }
 
     function bindSlot(slotKey) {
