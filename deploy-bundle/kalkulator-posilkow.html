@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -9,13 +9,13 @@
 <meta name="google-adsense-account" content="ca-pub-8540801395510703">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8540801395510703"
         crossorigin="anonymous"></script>
-<title>Kalkulator posiĹ‚kĂłw â€” kalorie, makro i mikro | Proteiner</title>
-    <meta name="description" content="Dodaj produkty i gramy, policz kalorie, biaĹ‚ko, wÄ™glowodany, tĹ‚uszcz oraz orientacyjny % RDA witamin i mineraĹ‚Ăłw.">
+<title>Kalkulator posiłków — kalorie, makro i mikro | Proteiner</title>
+    <meta name="description" content="Dodaj produkty i gramy, policz kalorie, białko, węglowodany, tłuszcz oraz orientacyjny % RDA witamin i minerałów.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://proteiner.pl/kalkulator-posilkow">
-    <meta property="og:title" content="Kalkulator posiĹ‚kĂłw | Proteiner">
+    <meta property="og:title" content="Kalkulator posiłków | Proteiner">
     <meta property="og:site_name" content="Proteiner">
-    <meta property="og:description" content="Zlicz posiĹ‚ek: gramy produktĂłw, makro i szacunek mikro vs zapotrzebowanie dzienne.">
+    <meta property="og:description" content="Zlicz posiłek: gramy produktów, makro i szacunek mikro vs zapotrzebowanie dzienne.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://proteiner.pl/kalkulator-posilkow">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="css/brand-text.css?v=20260811s">
     <link rel="stylesheet" href="css/meal-calc.css?v=20260812suggest">
     <style>
-      /* krytyczne: napis MA byÄ‡ na zdjÄ™ciu (nie pod nim) */
+      /* krytyczne: napis MA być na zdjęciu (nie pod nim) */
       .meal-hero {
         position: relative !important;
         display: grid !important;
@@ -88,15 +88,15 @@
                 <img class="logo-mark" src="images/favicon.svg" alt="" width="56" height="56" decoding="async">
                 <span>Proteiner</span>
             </a>
-            <button type="button" class="nav-toggle" aria-label="OtwĂłrz menu" aria-expanded="false" aria-controls="site-nav-links"><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span></button>
+            <button type="button" class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="site-nav-links"><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span><span class="nav-toggle-bar" aria-hidden="true"></span></button>
             <ul class="nav-links" id="site-nav-links">
-                <li><a class="nav-link" href="/">GĹ‚Ăłwna</a></li>
+                <li><a class="nav-link" href="/">Główna</a></li>
                 <li><a class="nav-link" href="dieta">Dieta</a></li>
                 <li><a class="nav-link" href="kalkulator-bmi">Kalkulator BMI</a></li>
-                <li><a class="nav-link active" href="kalkulator-posilkow" aria-current="page">Kalkulator posiĹ‚kĂłw</a></li>
-                <li><a class="nav-link" href="porownaj-produkty">PorĂłwnaj produkty</a></li>
+                <li><a class="nav-link active" href="kalkulator-posilkow" aria-current="page">Kalkulator posiłków</a></li>
+                <li><a class="nav-link" href="porownaj-produkty">Porównaj produkty</a></li>
                 <li><a class="nav-link" href="poradnik-zywienia">Poradnik</a></li>
-                <li><a class="nav-link" href="artykuly">ArtykuĹ‚y</a></li>
+                <li><a class="nav-link" href="artykuly">Artykuły</a></li>
                 <li><a class="nav-link" href="informacje">Informacje</a></li>
                 <li><a class="nav-link" href="o-mnie">O mnie</a></li>
                 <li id="authNavSlot" class="auth-nav-item"><a class="nav-link auth-nav-link" href="logowanie">Zaloguj</a></li>
@@ -108,8 +108,8 @@
         <main class="main-content meal-page">
             <div class="meal-hero">
                 <div class="page-hero meal-hero-copy">
-                    <h1>Kalkulator posiĹ‚kĂłw</h1>
-                    <p class="subtitle">Wybierz produkty z bazy, podaj ile gramĂłw zjadĹ‚eĹ› â€” zobaczysz kalorie, makro i orientacyjny udziaĹ‚ witamin oraz mineraĹ‚Ăłw w dziennym zapotrzebowaniu.</p>
+                    <h1>Kalkulator posiłków</h1>
+                    <p class="subtitle">Wybierz produkty z bazy, podaj ile gramów zjadłeś — zobaczysz kalorie, makro i orientacyjny udział witamin oraz minerałów w dziennym zapotrzebowaniu.</p>
                 </div>
             </div>
 
@@ -117,26 +117,26 @@
                 <div class="meal-builder-flow" id="mealBuilderPanel">
                     <div class="meal-search-anchor" id="mealSearchAnchor">
                         <section class="meal-panel meal-panel--builder" aria-labelledby="mealAddHeading">
-                            <p class="meal-builder-prompt" id="mealBuilderPrompt">Co jadĹ‚eĹ›?</p>
-                            <h2 id="mealAddHeading" class="visually-hidden">Dodaj do posiĹ‚ku</h2>
+                            <p class="meal-builder-prompt" id="mealBuilderPrompt">Co jadłeś?</p>
+                            <h2 id="mealAddHeading" class="visually-hidden">Dodaj do posiłku</h2>
 
                             <div class="meal-search-wrap">
                                 <label class="visually-hidden" for="mealProductSearch">Szukaj produktu</label>
-                                <input type="search" id="mealProductSearch" class="meal-search" placeholder="Szukaj produktuâ€¦ (np. kurczak, jajko, ryĹĽ)" autocomplete="off" spellcheck="false">
+                                <input type="search" id="mealProductSearch" class="meal-search" placeholder="Szukaj produktu… (np. kurczak, jajko, ryż)" autocomplete="off" spellcheck="false">
                             </div>
                         </section>
-                        <div class="meal-suggestions" id="mealSuggestions" hidden role="listbox" aria-label="Podpowiedzi produktĂłw"></div>
+                        <div class="meal-suggestions" id="mealSuggestions" hidden role="listbox" aria-label="Podpowiedzi produktów"></div>
                     </div>
 
                     <div class="meal-selected-chip" id="mealSelectedChip" hidden>
                         <span class="meal-chip-emoji" aria-hidden="true"></span>
                         <span class="meal-chip-name"></span>
-                        <button type="button" class="meal-chip-clear" id="mealChipClear" aria-label="WyczyĹ›Ä‡ wybĂłr">Ă—</button>
+                        <button type="button" class="meal-chip-clear" id="mealChipClear" aria-label="Wyczyść wybór">×</button>
                     </div>
 
                     <div class="meal-step meal-step--grams" id="mealGramsStep" hidden>
                         <div class="meal-amount-row" id="mealGramsWrap">
-                            <label for="mealGramsInput">Ile gramĂłw zjadĹ‚eĹ›?</label>
+                            <label for="mealGramsInput">Ile gramów zjadłeś?</label>
                             <input type="number" id="mealGramsInput" min="1" step="1" value="100" inputmode="decimal">
                         </div>
                     </div>
@@ -150,7 +150,7 @@
                     <div class="meal-step meal-step--list" id="mealListStep" hidden>
                         <ul class="meal-items" id="mealItemsList" aria-live="polite"></ul>
                         <div class="meal-actions meal-actions--secondary">
-                            <button type="button" class="meal-btn meal-btn-ghost" id="mealClearBtn">WyczyĹ›Ä‡ posiĹ‚ek</button>
+                            <button type="button" class="meal-btn meal-btn-ghost" id="mealClearBtn">Wyczyść posiłek</button>
                         </div>
                     </div>
                 </div>
@@ -164,15 +164,15 @@
                             <span class="meal-stat-value" id="mealTotalKcal">0</span>
                         </div>
                         <div class="meal-stat">
-                            <span class="meal-stat-label">BiaĹ‚ko</span>
+                            <span class="meal-stat-label">Białko</span>
                             <span class="meal-stat-value" id="mealTotalProtein">0 g</span>
                         </div>
                         <div class="meal-stat">
-                            <span class="meal-stat-label">WÄ™glowodany</span>
+                            <span class="meal-stat-label">Węglowodany</span>
                             <span class="meal-stat-value" id="mealTotalCarbs">0 g</span>
                         </div>
                         <div class="meal-stat">
-                            <span class="meal-stat-label">TĹ‚uszcz</span>
+                            <span class="meal-stat-label">Tłuszcz</span>
                             <span class="meal-stat-value" id="mealTotalFat">0 g</span>
                         </div>
                         <div class="meal-stat">
@@ -185,24 +185,24 @@
                         </div>
                     </div>
 
-                    <h2 style="margin-top:1.25rem">Witaminy i mineraĹ‚y</h2>
+                    <h2 style="margin-top:1.25rem">Witaminy i minerały</h2>
                     <div class="meal-micro-wrap">
                         <table class="meal-micro-table">
                             <thead>
                                 <tr>
-                                    <th>SkĹ‚adnik</th>
-                                    <th>W posiĹ‚ku</th>
+                                    <th>Składnik</th>
+                                    <th>W posiłku</th>
                                     <th>RDA / limit</th>
                                     <th>% dnia</th>
                                 </tr>
                             </thead>
                             <tbody id="mealMicroBody">
-                                <tr><td colspan="4">Dodaj produkty, ĹĽeby zobaczyÄ‡ szacunek mikroskĹ‚adnikĂłw.</td></tr>
+                                <tr><td colspan="4">Dodaj produkty, żeby zobaczyć szacunek mikroskładników.</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <p class="meal-note" id="mealMicroNote" hidden>
-                        MikroskĹ‚adniki sÄ… <strong>orientacyjne</strong> (z typowych wartoĹ›ci dla podobnych produktĂłw), bo baza Proteiner przechowuje gĹ‚Ăłwnie etykiety mikro, nie miligramy z opakowania. Makro (kcal, B/W/T) liczone jest dokĹ‚adnie z wartoĹ›ci na 100&nbsp;g.
+                        Mikroskładniki są <strong>orientacyjne</strong> (z typowych wartości dla podobnych produktów), bo baza Proteiner przechowuje głównie etykiety mikro, nie miligramy z opakowania. Makro (kcal, B/W/T) liczone jest dokładnie z wartości na 100&nbsp;g.
                     </p>
                 </section>
             </div>
@@ -210,25 +210,25 @@
     </div>
 
             <footer class="site-footer">
-        <p class="site-footer-brand"><strong>Proteiner</strong> â€” wszystko o biaĹ‚ku</p>
+        <p class="site-footer-brand"><strong>Proteiner</strong> — wszystko o białku</p>
         <nav class="site-footer-nav" aria-label="Nawigacja w stopce">
             <a href="informacje">Informacje</a>
-            <span aria-hidden="true">Â·</span>
+            <span aria-hidden="true">·</span>
             <a href="o-mnie">O mnie</a>
-            <span aria-hidden="true">Â·</span>
+            <span aria-hidden="true">·</span>
             <a href="dieta#produkty">Wszystkie produkty</a>
-            <span aria-hidden="true">Â·</span>
-            <a href="kalkulator-posilkow">Kalkulator posiĹ‚kĂłw</a>
-            <span aria-hidden="true">Â·</span>
-            <a href="porownaj-produkty">PorĂłwnaj produkty</a>
-            <span aria-hidden="true">Â·</span>
+            <span aria-hidden="true">·</span>
+            <a href="kalkulator-posilkow">Kalkulator posiłków</a>
+            <span aria-hidden="true">·</span>
+            <a href="porownaj-produkty">Porównaj produkty</a>
+            <span aria-hidden="true">·</span>
             <a href="dodaj-produkt">Dodaj produkt</a>
-            <span aria-hidden="true">Â·</span>
+            <span aria-hidden="true">·</span>
             <a href="poradnik-zywienia">Poradnik</a>
-            <span aria-hidden="true">Â·</span>
-            <a href="artykuly">ArtykuĹ‚y</a>
+            <span aria-hidden="true">·</span>
+            <a href="artykuly">Artykuły</a>
         </nav>
-        <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeĹĽone.</p>
+        <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>
 
 <script src="js/product-utils.js?v=20260808e"></script>
@@ -244,4 +244,3 @@
 <script src="js/site-motion.js?v=20260811s"></script>
 </body>
 </html>
-
