@@ -861,27 +861,23 @@
         const winB = winner === 'b';
         const labelA = formatMicroBarLabel(va, key);
         const labelB = formatMicroBarLabel(vb, key);
-        const hintText =
-            key === 'sodium'
-                ? { text: 'mniej = lepiej', kind: 'less' }
-                : { text: 'więcej = lepiej', kind: 'more' };
         const icon = MICRO_ICONS[key] || '•';
         const shortName = meta.label.replace(/\s*\([^)]*\)/g, '');
 
         return {
             winner,
             html: `
-                <article class="compare-glass-row compare-glass-row--micro compare-glass-row--has-hint${winner ? ` compare-glass-row--lead-${winner}` : ''}" style="--row-delay:${(COMPARE_METRICS.length + rowIndex) * 70}ms">
+                <article class="compare-glass-row compare-glass-row--micro${winner ? ` compare-glass-row--lead-${winner}` : ''}" style="--row-delay:${(COMPARE_METRICS.length + rowIndex) * 70}ms">
                     <div class="compare-glass-row-head">
                         <span class="compare-glass-metric-badge" aria-hidden="true">
                             <span class="compare-glass-metric-icon compare-glass-metric-icon--micro">${icon}</span>
                         </span>
                         <div class="compare-glass-metric-copy">
                             <span class="compare-glass-metric-name">${escapeHtml(shortName)}</span>
-                            <span class="compare-glass-metric-max">skala 0–100% RDA</span>
+                            <span class="compare-glass-metric-max">skala 0–100%</span>
                         </div>
                     </div>
-                    ${buildGlassBarsGrid(a.name, b.name, pctA, labelA, winA, pctB, labelB, winB, hintText, COMPARE_METRICS.length + rowIndex, { micro: true })}
+                    ${buildGlassBarsGrid(a.name, b.name, pctA, labelA, winA, pctB, labelB, winB, null, COMPARE_METRICS.length + rowIndex, { micro: true })}
                 </article>`,
         };
     }
