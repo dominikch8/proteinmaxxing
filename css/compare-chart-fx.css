@@ -349,10 +349,10 @@
 .compare-glass-chart--micro .compare-glass-track--micro,
 .compare-glass-row--micro .compare-glass-track--micro {
     display: grid;
-    grid-template-columns: 3rem minmax(0, 1fr);
-    align-items: center;
-    gap: 4px;
-    height: 16px;
+    grid-template-columns: 3.1rem minmax(0, 1fr);
+    align-items: end;
+    gap: 5px;
+    height: 18px;
     padding: 0;
     border: none;
     background: transparent;
