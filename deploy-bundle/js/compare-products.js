@@ -101,6 +101,8 @@
     const copyLinkBtn = document.getElementById('compareCopyLinkBtn');
     const quickEl = document.getElementById('compareQuick');
 
+    let barRevealObserver = null;
+
     document.body.classList.add('is-ready');
 
     function escapeHtml(s) {
@@ -983,8 +985,64 @@
             </div>`;
     }
 
+    function revealGlassRow(row) {
+        if (!row || row.classList.contains('is-visible')) return;
+        row.style.setProperty('--row-delay', '0ms');
+        row.classList.add('is-visible');
+        row.querySelectorAll('.compare-glass-fill').forEach((fill) => {
+            fill.style.width = '';
+            fill.classList.add('is-run');
+        });
+    }
+
+    function disconnectBarRevealObserver() {
+        if (barRevealObserver) {
+            barRevealObserver.disconnect();
+            barRevealObserver = null;
+        }
+    }
+
+    function setupBarScrollReveal() {
+        if (!chartEl) return;
+        disconnectBarRevealObserver();
+
+        const rows = chartEl.querySelectorAll('.compare-glass-row');
+        const microScoreline = chartEl.querySelector('.compare-micro-scoreline');
+
+        if (reduceMotion()) {
+            rows.forEach(revealGlassRow);
+            if (microScoreline) animateMicroScoreline(chartEl);
+            return;
+        }
+
+        const targets = [...rows];
+        if (microScoreline) targets.push(microScoreline);
+
+        barRevealObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    if (entry.target.classList.contains('compare-glass-row')) {
+                        revealGlassRow(entry.target);
+                    } else if (entry.target.classList.contains('compare-micro-scoreline')) {
+                        animateMicroScoreline(chartEl);
+                    }
+                    barRevealObserver.unobserve(entry.target);
+                });
+            },
+            {
+                root: null,
+                rootMargin: '0px 0px -10% 0px',
+                threshold: 0.12
+            }
+        );
+
+        targets.forEach((el) => barRevealObserver.observe(el));
+    }
+
     function playDashboardMotion() {
         if (!chartEl) return;
+        disconnectBarRevealObserver();
         chartEl.classList.remove('is-animating');
 
         const fills = chartEl.querySelectorAll('.compare-glass-fill');
@@ -999,23 +1057,21 @@
         });
         rows.forEach((row) => row.classList.remove('is-visible'));
 
-        const reveal = () => {
+        const microScoreline = chartEl.querySelector('.compare-micro-scoreline');
+        microScoreline?.classList.remove('is-animating');
+
+        const startTopMotion = () => {
             chartEl.classList.add('is-animating');
-            rows.forEach((row) => row.classList.add('is-visible'));
-            fills.forEach((el) => {
-                el.style.width = '';
-                el.classList.add('is-run');
-            });
-            animateMicroScoreline(chartEl);
+            setupBarScrollReveal();
         };
 
         if (reduceMotion()) {
-            reveal();
+            startTopMotion();
             return;
         }
 
         void chartEl.offsetWidth;
-        requestAnimationFrame(reveal);
+        requestAnimationFrame(startTopMotion);
     }
 
     function renderChart(a, b) {
