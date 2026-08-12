@@ -798,7 +798,7 @@
         {
             id: 'minerals',
             title: 'Minerały',
-            keys: ['magnesium', 'iron', 'calcium', 'potassium', 'zinc'],
+            keys: ['magnesium', 'iron', 'calcium', 'potassium', 'zinc', 'copper', 'phosphorus', 'manganese'],
         },
     ];
 
