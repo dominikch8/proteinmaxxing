@@ -170,13 +170,26 @@
 }
 
 .compare-glass-chart--micro {
-    margin-top: 28px;
-    padding-top: 22px;
+    margin-top: 22px;
+    padding-top: 16px;
     border-top: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 [data-theme='dark'] .compare-glass-chart--micro {
     border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.compare-glass-chart--micro .compare-glass-chart-head {
+    margin-bottom: 10px;
+}
+
+.compare-glass-chart--micro .compare-glass-chart-kicker {
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+}
+
+.compare-glass-chart--micro .compare-glass-chart-title {
+    font-size: clamp(0.95rem, 1.8vw, 1.12rem);
 }
 
 .compare-glass-chart-score {
@@ -186,32 +199,137 @@
     color: var(--text-muted, #64748b);
 }
 
+.compare-glass-chart--micro .compare-glass-chart-score {
+    margin-top: 4px;
+    font-size: 0.72rem;
+}
+
 .compare-glass-chart-score strong {
     color: var(--text-dark);
     font-weight: 800;
 }
 
-.compare-glass-chart--micro .compare-glass-row {
-    padding: 12px 14px 11px;
-    border-radius: 16px;
-}
-
 .compare-glass-chart--micro .compare-glass-chart-body {
-    gap: 12px;
+    gap: 8px;
 }
 
-.compare-glass-chart--micro .compare-glass-metric-badge {
-    width: 36px;
-    height: 36px;
+/* Mikro: wyraźnie mniejsze wiersze i słupki niż makro */
+.compare-glass-chart--micro .compare-glass-row,
+.compare-glass-row--micro {
+    padding: 8px 10px 7px;
     border-radius: 12px;
 }
 
+.compare-glass-chart--micro .compare-glass-row-head,
+.compare-glass-row--micro .compare-glass-row-head {
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.compare-glass-chart--micro .compare-glass-metric-badge,
+.compare-glass-row--micro .compare-glass-metric-badge {
+    width: 28px;
+    height: 28px;
+    border-radius: 9px;
+    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.16);
+}
+
 .compare-glass-metric-icon--micro {
-    font-size: 0.95rem;
+    font-size: 0.72rem;
     font-weight: 800;
     letter-spacing: -0.02em;
     color: #f8fafc;
     filter: none;
+}
+
+.compare-glass-chart--micro .compare-glass-metric-name,
+.compare-glass-row--micro .compare-glass-metric-name {
+    font-size: 0.82rem;
+}
+
+.compare-glass-chart--micro .compare-glass-metric-max,
+.compare-glass-row--micro .compare-glass-metric-max {
+    font-size: 0.62rem;
+}
+
+.compare-glass-chart--micro .compare-glass-delta,
+.compare-glass-row--micro .compare-glass-delta {
+    padding: 4px 8px;
+    font-size: 0.64rem;
+}
+
+.compare-glass-chart--micro .compare-glass-metric-body,
+.compare-glass-row--micro .compare-glass-metric-body {
+    gap: 6px;
+}
+
+.compare-glass-chart--micro .compare-glass-slot,
+.compare-glass-row--micro .compare-glass-slot {
+    gap: 6px;
+    padding: 2px 0;
+}
+
+.compare-glass-chart--micro .compare-glass-slot-tag,
+.compare-glass-row--micro .compare-glass-slot-tag {
+    min-width: 1.5rem;
+    padding: 3px 6px;
+    border-radius: 7px;
+    font-size: 0.68rem;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.12);
+}
+
+.compare-glass-chart--micro .compare-glass-slot-name,
+.compare-glass-row--micro .compare-glass-slot-name {
+    font-size: 0.72rem;
+}
+
+.compare-glass-chart--micro .compare-glass-slot-win,
+.compare-glass-row--micro .compare-glass-slot-win {
+    font-size: 0.52rem;
+    padding: 2px 6px;
+}
+
+.compare-glass-chart--micro .compare-glass-tracks-col,
+.compare-glass-row--micro .compare-glass-tracks-col {
+    gap: 6px;
+}
+
+.compare-glass-chart--micro .compare-glass-hint,
+.compare-glass-row--micro .compare-glass-hint {
+    font-size: 0.58rem !important;
+}
+
+.compare-glass-chart--micro .compare-glass-track,
+.compare-glass-row--micro .compare-glass-track {
+    height: 26px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.compare-glass-chart--micro .compare-glass-fill,
+.compare-glass-row--micro .compare-glass-fill {
+    left: 2px;
+    top: 2px;
+    height: calc(100% - 4px);
+    border-radius: 7px;
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.14);
+}
+
+.compare-glass-chart--micro .compare-glass-fill-val,
+.compare-glass-row--micro .compare-glass-fill-val {
+    left: 8px;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 0.68rem;
+}
+
+.compare-glass-chart--micro .compare-glass-fill--a.is-winner,
+.compare-glass-chart--micro .compare-glass-fill--b.is-winner,
+.compare-glass-row--micro .compare-glass-fill--a.is-winner,
+.compare-glass-row--micro .compare-glass-fill--b.is-winner {
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.22) inset,
+        0 4px 14px rgba(15, 23, 42, 0.14);
 }
 
 
@@ -705,5 +823,21 @@
     .compare-glass-metric-badge {
         width: 38px;
         height: 38px;
+    }
+
+    .compare-glass-chart--micro .compare-glass-track,
+    .compare-glass-row--micro .compare-glass-track {
+        height: 24px;
+    }
+
+    .compare-glass-chart--micro .compare-glass-row,
+    .compare-glass-row--micro {
+        padding: 8px 8px 6px;
+    }
+
+    .compare-glass-chart--micro .compare-glass-metric-badge,
+    .compare-glass-row--micro .compare-glass-metric-badge {
+        width: 26px;
+        height: 26px;
     }
 }
