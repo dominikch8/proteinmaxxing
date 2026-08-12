@@ -769,7 +769,7 @@
                         </div>
                         ${
                             deltaText
-                                ? `<span class="compare-glass-delta${m.neutral ? ' compare-glass-delta--soft' : ''}" title="Różnica">różnica ${escapeHtml(deltaText)}</span>`
+                                ? `<span class="compare-glass-delta${m.neutral ? ' compare-glass-delta--soft' : ''}" title="Różnica">${escapeHtml(deltaText)}</span>`
                                 : `<span class="compare-glass-delta compare-glass-delta--neutral">${m.neutral ? 'kontekst' : 'remis'}</span>`
                         }
                     </div>
