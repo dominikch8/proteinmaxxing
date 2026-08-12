@@ -820,12 +820,18 @@
     function formatMicroBarLabel(amount, key) {
         const meta = window.MEAL_RDA?.[key];
         if (!meta || amount == null || !(amount > 0)) return '—';
-        const decimals = amount < 10 ? 2 : amount < 100 ? 1 : 0;
-        const num = Number(amount).toLocaleString('pl-PL', {
-            maximumFractionDigits: decimals,
-            minimumFractionDigits: 0
-        });
-        return `${num} ${meta.unit}`;
+        const target = microRdaTarget(key);
+        if (!target || target <= 0) return '—';
+        const pct = Math.round((amount / target) * 100);
+        return meta.isMax ? `${pct}% lim.` : `${pct}% RDA`;
+    }
+
+    function formatMicroBarDelta(va, vb, key) {
+        const target = microRdaTarget(key);
+        if (!target || target <= 0) return null;
+        const diff = Math.abs((va / target) * 100 - (vb / target) * 100);
+        if (diff < 0.05) return null;
+        return `${Math.round(diff)} p.p.`;
     }
 
     function microRdaTarget(key) {
@@ -874,9 +880,8 @@
             const winB = winner === 'b';
             const labelA = formatMicroBarLabel(va, key);
             const labelB = formatMicroBarLabel(vb, key);
-            const delta = Math.abs(va - vb);
             const deltaText =
-                delta > 0.0001 && (va > 0 || vb > 0) ? formatMicroBarLabel(delta, key) : null;
+                va > 0 || vb > 0 ? formatMicroBarDelta(va, vb, key) : null;
             const hintText =
                 key === 'sodium'
                     ? { text: 'mniej = lepiej', kind: 'less' }

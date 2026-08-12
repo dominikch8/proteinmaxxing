@@ -352,9 +352,9 @@
 .compare-glass-chart--micro .compare-glass-fill-val--lead,
 .compare-glass-row--micro .compare-glass-fill-val--lead {
     position: static;
-    transform: none;
+    transform: translate(5px, 1px);
     flex: 0 0 auto;
-    min-width: 3.75rem;
+    min-width: 3.1rem;
     padding: 0;
     border-radius: 0;
     font-size: 0.65rem;
@@ -366,6 +366,7 @@
     background: transparent;
     white-space: nowrap;
     text-align: left;
+    align-self: end;
 }
 
 .compare-glass-chart--micro .compare-glass-fill-val--lead::before,
@@ -914,8 +915,9 @@
 
     .compare-glass-chart--micro .compare-glass-fill-val--lead,
     .compare-glass-row--micro .compare-glass-fill-val--lead {
-        min-width: 3.2rem;
+        min-width: 2.8rem;
         font-size: 0.6rem;
+        transform: translate(4px, 1px);
     }
 
     .compare-glass-chart--micro .compare-glass-row,
