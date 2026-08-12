@@ -780,7 +780,7 @@
         {
             id: 'minerals',
             title: 'Minerały',
-            keys: ['magnesium', 'iron', 'calcium', 'potassium', 'zinc', 'copper', 'phosphorus', 'manganese', 'iodine', 'sodium', 'selenium'],
+            keys: ['magnesium', 'iron', 'calcium', 'potassium', 'zinc', 'copper', 'phosphorus', 'manganese', 'iodine', 'sodium', 'selenium', 'chromium'],
         },
     ];
 
@@ -808,7 +808,8 @@
         copper: 'Cu',
         manganese: 'Mn',
         iodine: 'I',
-        sodium: '🧂'
+        sodium: '🧂',
+        chromium: 'Cr',
     };
 
     function microRdaPercentRaw(amount, key) {

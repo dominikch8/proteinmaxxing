@@ -4,12 +4,12 @@
  */
 (function () {
     const CATEGORY_BASE = {
-        mieso: { b3: 5, b6: 0.35, b12: 1.2, phosphorus: 180, zinc: 2.5, iron: 1.4, selenium: 18, potassium: 280, manganese: 0.03 },
+        mieso: { b3: 5, b6: 0.35, b12: 1.2, phosphorus: 180, zinc: 2.5, iron: 1.4, selenium: 18, potassium: 280, manganese: 0.03, chromium: 1 },
         nabial: { calcium: 120, b2: 0.2, b12: 0.5, phosphorus: 100, potassium: 150, zinc: 0.5, manganese: 0.02 },
         sery: { calcium: 600, b2: 0.3, b12: 1.2, phosphorus: 450, zinc: 3, sodium: 600, vitA: 250, manganese: 0.05 },
-        warzywa: { vitC: 25, potassium: 280, b9: 40, vitA: 80, vitK: 40, magnesium: 20, manganese: 0.3 },
+        warzywa: { vitC: 25, potassium: 280, b9: 40, vitA: 80, vitK: 40, magnesium: 20, manganese: 0.3, chromium: 3 },
         owoce: { vitC: 30, potassium: 200, b9: 20, vitA: 30, manganese: 0.1 },
-        zboza: { b1: 0.25, magnesium: 50, iron: 1.5, phosphorus: 120, manganese: 1.2, b3: 2 },
+        zboza: { b1: 0.25, magnesium: 50, iron: 1.5, phosphorus: 120, manganese: 1.2, b3: 2, chromium: 2 },
         'platki-sniadaniowe': { iron: 4, b1: 0.5, b2: 0.5, b3: 5, b9: 100 },
         'polskie-obiadki': { sodium: 400, iron: 1, phosphorus: 100, potassium: 200 },
         zupy: { sodium: 350, potassium: 150, vitA: 40 },
@@ -40,7 +40,7 @@
         { re: /mleko(?! skondens)/i, n: { calcium: 120, b2: 0.18, b12: 0.4, phosphorus: 90, potassium: 150 } },
         { re: /gouda|mozzarella|feta|parmezan|cheddar|emmental|camembert|halloumi|ser /i, n: { calcium: 700, phosphorus: 500, b12: 1.5, zinc: 3.5, vitA: 280, sodium: 650 } },
         { re: /szpinak/i, n: { vitK: 483, vitA: 469, vitC: 28, iron: 2.7, magnesium: 79, b9: 194, potassium: 558 } },
-        { re: /brokuł/i, n: { vitC: 89, vitK: 102, b9: 63, potassium: 316, vitA: 31 } },
+        { re: /brokuł/i, n: { vitC: 89, vitK: 102, b9: 63, potassium: 316, vitA: 31, chromium: 16 } },
         { re: /papryka/i, n: { vitC: 128, vitA: 157, b6: 0.3, potassium: 211 } },
         { re: /marchew/i, n: { vitA: 835, vitK: 13, potassium: 320, vitC: 6 } },
         { re: /pomidor/i, n: { vitC: 14, potassium: 237, vitA: 42, vitK: 8 } },
@@ -88,6 +88,7 @@
         [/selen/i, 'selenium'],
         [/miedź|miedz/i, 'copper'],
         [/mangan/i, 'manganese'],
+        [/chrom/i, 'chromium'],
         [/jod/i, 'iodine'],
         [/sód|sod\b/i, 'sodium'],
     ];
@@ -96,7 +97,7 @@
         vitA: 80, b1: 0.2, b2: 0.2, b3: 3, b5: 0.5, b6: 0.2, b7: 5, b9: 40, b12: 0.5,
         vitC: 20, vitD: 1, vitE: 2, vitK: 30, choline: 50,
         calcium: 50, iron: 1, magnesium: 25, phosphorus: 80, potassium: 150,
-        zinc: 1, selenium: 8, copper: 100, manganese: 0.4, iodine: 10, sodium: 50,
+        zinc: 1, selenium: 8, copper: 100, manganese: 0.4, chromium: 1, iodine: 10, sodium: 50,
     };
 
     function merge(a, b) {

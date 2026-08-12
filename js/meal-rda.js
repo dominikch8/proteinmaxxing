@@ -27,6 +27,7 @@ window.MEAL_RDA = {
     copper: { label: 'Miedź', unit: 'mcg', male: 900, female: 900 },
     manganese: { label: 'Mangan', unit: 'mg', male: 2.3, female: 1.8 },
     iodine: { label: 'Jod', unit: 'mcg', male: 150, female: 150 },
+    chromium: { label: 'Chrom', unit: 'mcg', male: 35, female: 25 },
     sodium: { label: 'Sód', unit: 'mg', male: 2300, female: 2300, isMax: true },
 };
 
