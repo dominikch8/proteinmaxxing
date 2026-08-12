@@ -676,19 +676,39 @@
         return Math.ceil(m * 10) / 10 || 1;
     }
 
-    function buildGlassBarParts(slot, pct, label, isWinner, productName, barIndex) {
+    function buildGlassBarParts(slot, pct, label, isWinner, productName, barIndex, options = {}) {
+        const { micro = false } = options;
         const fillW = pct > 0 ? pct : 0;
         const delay = 120 + barIndex * 90;
+        const winnerClass = !micro && isWinner ? ' is-winner' : '';
+
+        if (micro) {
+            return {
+                slot: `
+                <div class="compare-glass-slot compare-glass-slot--${slot}">
+                    <span class="compare-glass-slot-tag">${slot.toUpperCase()}</span>
+                    <span class="compare-glass-slot-name">${escapeHtml(productName)}</span>
+                </div>`,
+                track: `
+                <div class="compare-glass-track compare-glass-track--${slot} compare-glass-track--micro-lane" style="--bar-delay:${delay}ms">
+                    <span class="compare-glass-fill-val compare-glass-fill-val--lead">${label}</span>
+                    <div class="compare-glass-track-bar">
+                        <div class="compare-glass-fill compare-glass-fill--${slot}" style="--bar-pct:${fillW}%; --bar-delay:${delay}ms" data-pct="${fillW}"></div>
+                    </div>
+                </div>`
+            };
+        }
+
         return {
             slot: `
-                <div class="compare-glass-slot compare-glass-slot--${slot}${isWinner ? ' is-winner' : ''}">
+                <div class="compare-glass-slot compare-glass-slot--${slot}${winnerClass}">
                     <span class="compare-glass-slot-tag">${slot.toUpperCase()}</span>
                     <span class="compare-glass-slot-name">${escapeHtml(productName)}</span>
                 </div>`,
             track: `
-                <div class="compare-glass-track compare-glass-track--${slot}${isWinner ? ' is-winner' : ''}" style="--bar-delay:${delay}ms">
+                <div class="compare-glass-track compare-glass-track--${slot}${winnerClass}" style="--bar-delay:${delay}ms">
                     <span class="compare-glass-track-grid" aria-hidden="true"></span>
-                    <div class="compare-glass-fill compare-glass-fill--${slot}${isWinner ? ' is-winner' : ''}" style="--bar-pct:${fillW}%; --bar-delay:${delay}ms" data-pct="${fillW}">
+                    <div class="compare-glass-fill compare-glass-fill--${slot}${winnerClass}" style="--bar-pct:${fillW}%; --bar-delay:${delay}ms" data-pct="${fillW}">
                         <span class="compare-glass-fill-sheen" aria-hidden="true"></span>
                         <span class="compare-glass-fill-glow" aria-hidden="true"></span>
                         <span class="compare-glass-fill-tip" aria-hidden="true"></span>
@@ -698,9 +718,9 @@
         };
     }
 
-    function buildGlassBarsGrid(aName, bName, pctA, labelA, winA, pctB, labelB, winB, hintText, rowIndex) {
-        const partsA = buildGlassBarParts('a', pctA, labelA, winA, aName, rowIndex * 2);
-        const partsB = buildGlassBarParts('b', pctB, labelB, winB, bName, rowIndex * 2 + 1);
+    function buildGlassBarsGrid(aName, bName, pctA, labelA, winA, pctB, labelB, winB, hintText, rowIndex, options = {}) {
+        const partsA = buildGlassBarParts('a', pctA, labelA, winA, aName, rowIndex * 2, options);
+        const partsB = buildGlassBarParts('b', pctB, labelB, winB, bName, rowIndex * 2 + 1, options);
         const hintEl = hintText
             ? `<p class="compare-glass-hint compare-glass-hint--${hintText.kind}" role="note">${escapeHtml(hintText.text)}</p>`
             : '';
@@ -894,7 +914,7 @@
                                 : `<span class="compare-glass-delta compare-glass-delta--neutral">remis</span>`
                         }
                     </div>
-                    ${buildGlassBarsGrid(a.name, b.name, pctA, labelA, winA, pctB, labelB, winB, hintText, COMPARE_METRICS.length + rowIndex)}
+                    ${buildGlassBarsGrid(a.name, b.name, pctA, labelA, winA, pctB, labelB, winB, hintText, COMPARE_METRICS.length + rowIndex, { micro: true })}
                 </article>`;
         }).join('');
 

@@ -285,8 +285,7 @@
 
 .compare-glass-chart--micro .compare-glass-slot-win,
 .compare-glass-row--micro .compare-glass-slot-win {
-    font-size: 0.52rem;
-    padding: 2px 6px;
+    display: none !important;
 }
 
 .compare-glass-chart--micro .compare-glass-tracks-col,
@@ -341,22 +340,66 @@
     display: none;
 }
 
-.compare-glass-chart--micro .compare-glass-fill-val,
-.compare-glass-row--micro .compare-glass-fill-val {
-    left: 6px;
+.compare-glass-chart--micro .compare-glass-track--micro-lane,
+.compare-glass-row--micro .compare-glass-track--micro-lane {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 18px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    overflow: visible;
+}
+
+.compare-glass-chart--micro .compare-glass-track-bar,
+.compare-glass-row--micro .compare-glass-track-bar {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    height: 5px;
+}
+
+.compare-glass-chart--micro .compare-glass-fill-val--lead,
+.compare-glass-row--micro .compare-glass-fill-val--lead {
+    position: static;
+    transform: none;
+    flex: 0 0 auto;
+    min-width: 3.75rem;
     padding: 0;
     border-radius: 0;
     font-size: 0.65rem;
-    font-weight: 800;
-    color: #fff;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--text-muted, #64748b);
+    text-shadow: none;
     box-shadow: none;
     background: transparent;
+    white-space: nowrap;
+    text-align: left;
 }
 
-.compare-glass-chart--micro .compare-glass-fill-val::before,
-.compare-glass-row--micro .compare-glass-fill-val::before {
+.compare-glass-chart--micro .compare-glass-fill-val--lead::before,
+.compare-glass-row--micro .compare-glass-fill-val--lead::before {
     display: none;
+}
+
+.compare-glass-chart--micro .compare-glass-track--micro-lane .compare-glass-fill,
+.compare-glass-row--micro .compare-glass-track--micro-lane .compare-glass-fill {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5px;
+    min-width: 0;
+    border-radius: 999px;
+    box-shadow: none;
+}
+
+[data-theme='dark'] .compare-glass-chart--micro .compare-glass-fill-val--lead,
+[data-theme='dark'] .compare-glass-row--micro .compare-glass-fill-val--lead {
+    color: #94a3b8;
 }
 
 .compare-glass-chart--micro .compare-glass-fill--a.is-winner,
@@ -871,14 +914,26 @@
         height: 38px;
     }
 
-    .compare-glass-chart--micro .compare-glass-track,
-    .compare-glass-row--micro .compare-glass-track {
+    .compare-glass-chart--micro .compare-glass-track--micro-lane,
+    .compare-glass-row--micro .compare-glass-track--micro-lane {
         height: 16px;
+        gap: 6px;
     }
 
-    .compare-glass-chart--micro .compare-glass-fill,
-    .compare-glass-row--micro .compare-glass-fill {
+    .compare-glass-chart--micro .compare-glass-track-bar,
+    .compare-glass-row--micro .compare-glass-track-bar {
         height: 4px;
+    }
+
+    .compare-glass-chart--micro .compare-glass-track--micro-lane .compare-glass-fill,
+    .compare-glass-row--micro .compare-glass-track--micro-lane .compare-glass-fill {
+        height: 4px;
+    }
+
+    .compare-glass-chart--micro .compare-glass-fill-val--lead,
+    .compare-glass-row--micro .compare-glass-fill-val--lead {
+        min-width: 3.2rem;
+        font-size: 0.6rem;
     }
 
     .compare-glass-chart--micro .compare-glass-row,
