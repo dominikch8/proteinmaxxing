@@ -739,16 +739,6 @@
             const winB = winner === 'b';
             const labelA = formatMetricLabel(a, m);
             const labelB = formatMetricLabel(b, m);
-            const delta =
-                rawA != null && rawB != null && Math.abs(va - vb) > 0.0001
-                    ? Math.abs(va - vb)
-                    : null;
-            const deltaText =
-                delta == null
-                    ? ''
-                    : m.format === 'ratio'
-                      ? `${formatValue(delta, m.decimals)}`
-                      : `${formatValue(delta, m.decimals)} ${m.unit}`;
 
             const hintText = m.hint
                 ? { text: m.hint, kind: hintKindForMetric(m) }
@@ -767,11 +757,6 @@
                             <span class="compare-glass-metric-name">${escapeHtml(m.label)}</span>
                             <span class="compare-glass-metric-max">skala 0–${escapeHtml(formatMetricScaleMax(m, max))}</span>
                         </div>
-                        ${
-                            deltaText
-                                ? `<span class="compare-glass-delta${m.neutral ? ' compare-glass-delta--soft' : ''}" title="Różnica">${escapeHtml(deltaText)}</span>`
-                                : `<span class="compare-glass-delta compare-glass-delta--neutral">${m.neutral ? 'kontekst' : 'remis'}</span>`
-                        }
                     </div>
                     ${buildGlassBarsGrid(a.name, b.name, pctA, labelA, winA, pctB, labelB, winB, hintText, rowIndex)}
                 </article>`;
@@ -836,14 +821,6 @@
         if (!target || target <= 0) return '—';
         const pct = Math.round((amount / target) * 100);
         return meta.isMax ? `${pct}% lim.` : `${pct}% RDA`;
-    }
-
-    function formatMicroBarDelta(va, vb, key) {
-        const target = microRdaTarget(key);
-        if (!target || target <= 0) return null;
-        const diff = Math.abs((va / target) * 100 - (vb / target) * 100);
-        if (diff < 0.05) return null;
-        return `${Math.round(diff)} p.p.`;
     }
 
     function microRdaTarget(key) {
