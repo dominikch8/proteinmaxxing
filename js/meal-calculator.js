@@ -7,6 +7,88 @@
     let mealItems = [];
     let selectedProduct = null;
 
+    function prefersReducedMotion() {
+        return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    }
+
+    function showStep(el, delay = 0) {
+        if (!el) return;
+        const run = () => {
+            el.hidden = false;
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => el.classList.add('is-visible'));
+            });
+        };
+        if (delay > 0 && !prefersReducedMotion()) {
+            window.setTimeout(run, delay);
+        } else {
+            run();
+        }
+    }
+
+    function hideStep(el) {
+        if (!el || el.hidden) return;
+        el.classList.remove('is-visible');
+        window.setTimeout(() => {
+            if (!el.classList.contains('is-visible')) el.hidden = true;
+        }, prefersReducedMotion() ? 0 : 420);
+    }
+
+    function updateWizardUI(options = {}) {
+        const { animateSummary = false, newItemId = null } = options;
+        const hasProduct = !!selectedProduct;
+        const hasMeal = mealItems.length > 0;
+        const gramsStep = $('mealGramsStep');
+        const addStep = $('mealAddStep');
+        const listStep = $('mealListStep');
+        const summaryPanel = $('mealSummaryPanel');
+
+        if (hasProduct) {
+            showStep(gramsStep);
+            showStep(addStep, prefersReducedMotion() ? 0 : 220);
+            window.setTimeout(() => $('mealGramsInput')?.focus(), prefersReducedMotion() ? 0 : 280);
+        } else {
+            hideStep(gramsStep);
+            hideStep(addStep);
+        }
+
+        if (hasMeal) {
+            showStep(listStep);
+            if (summaryPanel) {
+                const firstReveal = summaryPanel.hidden;
+                summaryPanel.hidden = false;
+                summaryPanel.classList.add('is-visible');
+                summaryPanel.querySelectorAll('.meal-stat').forEach((el, i) => {
+                    el.style.setProperty('--stat-i', String(i));
+                });
+                if ((firstReveal || animateSummary) && !prefersReducedMotion()) {
+                    summaryPanel.classList.remove('is-entering');
+                    void summaryPanel.offsetWidth;
+                    summaryPanel.classList.add('is-entering');
+                }
+                if (animateSummary) {
+                    window.setTimeout(() => {
+                        summaryPanel.scrollIntoView({
+                            behavior: prefersReducedMotion() ? 'auto' : 'smooth',
+                            block: 'nearest',
+                        });
+                    }, 420);
+                }
+            }
+        } else {
+            hideStep(listStep);
+            if (summaryPanel) {
+                summaryPanel.classList.remove('is-visible', 'is-entering');
+                summaryPanel.hidden = true;
+            }
+        }
+
+        if (newItemId) {
+            const li = document.querySelector(`.meal-item[data-id="${CSS.escape(newItemId)}"]`);
+            if (li) li.classList.add('is-new');
+        }
+    }
+
     function $(id) {
         return document.getElementById(id);
     }
@@ -70,6 +152,7 @@
                 input.value = '';
                 input.focus();
             }
+            updateWizardUI();
             return;
         }
         if (input) input.value = p.name;
@@ -79,6 +162,7 @@
             chip.querySelector('.meal-chip-name').textContent = p.name;
         }
         hideSuggestions();
+        updateWizardUI();
     }
 
     function getSuggestionProducts(query) {
@@ -131,9 +215,11 @@
             return;
         }
         const grams = Math.max(1, Number($('mealGramsInput')?.value) || 100);
+        const newId = `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
+        const isFirstItem = mealItems.length === 0;
 
         mealItems.push({
-            id: `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+            id: newId,
             slug: selectedProduct.slug,
             name: selectedProduct.name,
             emoji: selectedProduct.emoji || '🍽️',
@@ -144,6 +230,7 @@
         renderTotals();
         setSelectedProduct(null);
         if ($('mealGramsInput')) $('mealGramsInput').value = '100';
+        updateWizardUI({ animateSummary: isFirstItem, newItemId: newId });
     }
 
     function removeItem(id) {
@@ -151,6 +238,7 @@
         saveState();
         renderMealList();
         renderTotals();
+        updateWizardUI();
     }
 
     function clearMeal() {
@@ -158,18 +246,16 @@
         saveState();
         renderMealList();
         renderTotals();
+        updateWizardUI();
     }
 
     function renderMealList() {
         const list = $('mealItemsList');
-        const empty = $('mealEmptyHint');
         if (!list) return;
         if (!mealItems.length) {
             list.innerHTML = '';
-            if (empty) empty.hidden = false;
             return;
         }
-        if (empty) empty.hidden = true;
         list.innerHTML = mealItems
             .map((item) => {
                 const p = findProduct(item.slug);
@@ -328,6 +414,13 @@
         $('mealAddBtn')?.addEventListener('click', addCurrentToMeal);
         $('mealClearBtn')?.addEventListener('click', clearMeal);
 
+        $('mealGramsInput')?.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                addCurrentToMeal();
+            }
+        });
+
         $('mealItemsList')?.addEventListener('click', (e) => {
             const btn = e.target.closest('[data-remove]');
             if (btn) removeItem(btn.getAttribute('data-remove'));
@@ -342,6 +435,7 @@
         bind();
         renderMealList();
         renderTotals();
+        updateWizardUI();
     }
 
     boot().catch((err) => console.error('meal-calculator:', err));

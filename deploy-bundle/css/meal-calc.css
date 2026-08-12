@@ -19,12 +19,146 @@
 .meal-layout {
     display: grid;
     gap: 1.5rem;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.meal-panel--builder {
+    transition: box-shadow 0.4s ease;
+}
+
+.meal-panel--summary {
+    overflow: hidden;
+}
+
+.meal-panel--summary.is-entering {
+    animation: mealSummaryIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.meal-panel--summary.is-entering .meal-stat {
+    animation: mealStatIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: calc(var(--stat-i, 0) * 55ms + 120ms);
+}
+
+.meal-builder-prompt {
+    margin: 0 0 0.85rem;
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 4vw, 1.65rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--text-main);
+    line-height: 1.15;
+}
+
+.meal-step {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition:
+        grid-template-rows 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.4s ease,
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        margin 0.4s ease;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.meal-step > * {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.meal-step.is-visible {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    transform: none;
+    margin-top: 0.75rem;
+}
+
+.meal-step--add.is-visible {
+    margin-top: 0.55rem;
+}
+
+.meal-step--list.is-visible {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.meal-step--list .meal-items {
+    margin-top: 0;
+}
+
+.meal-actions--add {
+    margin: 0;
+}
+
+.meal-actions--secondary {
+    margin-top: 0.65rem;
+}
+
+.meal-item.is-new {
+    animation: mealItemIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes mealSummaryIn {
+    from {
+        opacity: 0;
+        transform: translateY(28px) scale(0.97);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes mealStatIn {
+    from {
+        opacity: 0;
+        transform: translateY(14px) scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes mealItemIn {
+    from {
+        opacity: 0;
+        transform: translateX(-12px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .meal-step,
+    .meal-panel--summary.is-entering,
+    .meal-panel--summary.is-entering .meal-stat,
+    .meal-item.is-new {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    .meal-step:not(.is-visible) {
+        display: none;
+    }
+
+    .meal-step.is-visible {
+        grid-template-rows: 1fr;
+        display: grid;
+    }
 }
 
 @media (min-width: 900px) {
     .meal-layout {
-        grid-template-columns: 1.05fr 0.95fr;
-        align-items: start;
+        max-width: 640px;
     }
 }
 
@@ -322,6 +456,12 @@
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 0.7rem 0.75rem;
+    opacity: 0;
+}
+
+.meal-panel--summary.is-visible .meal-stat,
+.meal-panel--summary:not([hidden]) .meal-stat {
+    opacity: 1;
 }
 
 .meal-stat-label {

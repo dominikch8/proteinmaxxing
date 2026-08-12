@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/theme-switch.css?v=20260811s">
     <link rel="stylesheet" href="css/site-motion.css?v=20260811s">
     <link rel="stylesheet" href="css/brand-text.css?v=20260811s">
-    <link rel="stylesheet" href="css/meal-calc.css?v=20260811t">
+    <link rel="stylesheet" href="css/meal-calc.css?v=20260812wizard">
     <style>
       /* krytyczne: napis MA być na zdjęciu (nie pod nim) */
       .meal-hero {
@@ -113,9 +113,10 @@
                 </div>
             </div>
 
-            <div class="meal-layout">
-                <section class="meal-panel" aria-labelledby="mealAddHeading">
-                    <h2 id="mealAddHeading">Dodaj do posiłku</h2>
+            <div class="meal-layout" id="mealLayout">
+                <section class="meal-panel meal-panel--builder" aria-labelledby="mealAddHeading" id="mealBuilderPanel">
+                    <p class="meal-builder-prompt" id="mealBuilderPrompt">Co jadłeś?</p>
+                    <h2 id="mealAddHeading" class="visually-hidden">Dodaj do posiłku</h2>
 
                     <div class="meal-search-wrap">
                         <label class="visually-hidden" for="mealProductSearch">Szukaj produktu</label>
@@ -128,24 +129,31 @@
                         <div class="meal-suggestions" id="mealSuggestions" hidden role="listbox" aria-label="Podpowiedzi produktów"></div>
                     </div>
 
-                    <div class="meal-amount-row" id="mealGramsWrap">
-                        <label for="mealGramsInput">Ile gramów zjadłeś?</label>
-                        <input type="number" id="mealGramsInput" min="1" step="1" value="100" inputmode="decimal">
+                    <div class="meal-step meal-step--grams" id="mealGramsStep" hidden>
+                        <div class="meal-amount-row" id="mealGramsWrap">
+                            <label for="mealGramsInput">Ile gramów zjadłeś?</label>
+                            <input type="number" id="mealGramsInput" min="1" step="1" value="100" inputmode="decimal">
+                        </div>
                     </div>
 
-                    <div class="meal-actions">
-                        <button type="button" class="meal-btn meal-btn-primary" id="mealAddBtn">Dodaj produkt</button>
-                        <button type="button" class="meal-btn meal-btn-ghost" id="mealClearBtn">Wyczyść posiłek</button>
+                    <div class="meal-step meal-step--add" id="mealAddStep" hidden>
+                        <div class="meal-actions meal-actions--add">
+                            <button type="button" class="meal-btn meal-btn-primary" id="mealAddBtn">Dodaj produkt</button>
+                        </div>
                     </div>
 
-                    <p class="meal-empty" id="mealEmptyHint">Lista posiłku jest pusta — wyszukaj pierwszy produkt.</p>
-                    <ul class="meal-items" id="mealItemsList" aria-live="polite"></ul>
+                    <div class="meal-step meal-step--list" id="mealListStep" hidden>
+                        <ul class="meal-items" id="mealItemsList" aria-live="polite"></ul>
+                        <div class="meal-actions meal-actions--secondary">
+                            <button type="button" class="meal-btn meal-btn-ghost" id="mealClearBtn">Wyczyść posiłek</button>
+                        </div>
+                    </div>
                 </section>
 
-                <section class="meal-panel" aria-labelledby="mealResultHeading">
+                <section class="meal-panel meal-panel--summary" aria-labelledby="mealResultHeading" id="mealSummaryPanel" hidden>
                     <h2 id="mealResultHeading">Podsumowanie</h2>
 
-                    <div class="meal-totals-grid">
+                    <div class="meal-totals-grid" id="mealTotalsGrid">
                         <div class="meal-stat">
                             <span class="meal-stat-label">Kalorie</span>
                             <span class="meal-stat-value" id="mealTotalKcal">0</span>
@@ -223,7 +231,7 @@
 <script src="js/meal-rda.js?v=20260809a"></script>
 <script src="js/product-micros-data.js?v=20260809a"></script>
 <script src="js/meal-micro-estimates.js?v=20260809a"></script>
-<script src="js/meal-calculator.js?v=20260809c"></script>
+<script src="js/meal-calculator.js?v=20260812wizard"></script>
 <script src="js/auth-ui.js?v=20260811s"></script>
 <link rel="stylesheet" href="css/cookie-consent.css?v=20260811s">
 <script src="js/cookie-banner.js?v=20260811s"></script>
