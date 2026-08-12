@@ -1480,9 +1480,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "seeds sunflower hulled ingredient photo"
   ],
   "nasiona-lniane": [
-    "Nasiona lniane",
-    "Nasiona lniane food",
-    "Nasiona lniane ingredient photo"
+    "Siemię lniane (nasiona lnu)",
+    "Siemię lniane food",
+    "Flax seeds ingredient photo"
   ],
   "nasiona-konopi-luskane": [
     "hemp hulled",

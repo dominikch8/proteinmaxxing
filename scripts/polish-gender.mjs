@@ -35,7 +35,7 @@ const OVERRIDES = new Map([
     ['lasagne', 'f'], ['penne', 'pl'], ['spaghetti', 'n'], ['risotto', 'n'],
     ['stripsy', 'pl'], ['nuggetsy', 'pl'], ['nuggets', 'pl'],
     ['morele', 'pl'], ['pieczarki', 'pl'],
-    ['nasiona', 'pl'], ['nasiona chia', 'pl'], ['nasiona lniane', 'pl'], ['nasiona słonecznika', 'pl'],
+    ['nasiona', 'pl'], ['nasiona chia', 'pl'], ['siemię lniane (nasiona lnu)', 'n'], ['nasiona słonecznika', 'pl'],
     ['śmietana', 'f'], ['śmietanka', 'f'], ['mąka', 'f'], ['sos', 'm'], ['krem', 'm'],
     ['ogórek', 'm'], ['skrzydełka', 'pl'], ['żeberka', 'pl'], ['ciastka', 'pl'], ['białka', 'pl'],
     ['sałatka', 'f'],

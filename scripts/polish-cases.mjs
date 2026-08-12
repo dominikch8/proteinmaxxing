@@ -139,7 +139,7 @@ const WORD_CASES = new Map([
 /** Pełne nazwy produktów z ręczną odmianą (gdy heurystyka nie daje rady). */
 const PHRASE_CASES = new Map([
     ['nasiona chia', { gen: 'nasion chia', acc: 'nasiona chia', inst: 'nasionami chia', loc: 'nasionach chia' }],
-    ['nasiona lniane', { gen: 'nasion lnianych', acc: 'nasiona lniane', inst: 'nasionami lnianymi', loc: 'nasionach lnianych' }],
+    ['siemię lniane (nasiona lnu)', { gen: 'siemienia lnianego (nasion lnu)', acc: 'siemię lniane (nasiona lnu)', inst: 'siemieniem lnianym (nasionami lnu)', loc: 'siemieniu lnianym (nasionach lnu)' }],
     ['nasiona słonecznika', { gen: 'nasion słonecznika', acc: 'nasiona słonecznika', inst: 'nasionami słonecznika', loc: 'nasionach słonecznika' }],
     ['mięso mielone wołowe', { gen: 'mięsa mielonego wołowego', acc: 'mięso mielone wołowe', inst: 'mięsem mielonym wołowym', loc: 'mięsie mielonym wołowym' }],
     ['kotlety mielone drobiowe', { gen: 'kotletów mielonych drobiowych', acc: 'kotlety mielone drobiowe', inst: 'kotletami mielonymi drobiowymi', loc: 'kotletach mielonych drobiowych' }],
