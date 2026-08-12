@@ -789,6 +789,26 @@
             </div>`;
     }
 
+    const MICRO_COMPARE_KEYS = [
+        'magnesium',
+        'iron',
+        'calcium',
+        'potassium',
+        'zinc',
+        'vitA',
+        'vitC',
+        'vitD',
+        'vitE',
+        'vitK',
+        'b1',
+        'b2',
+        'b3',
+        'b5',
+        'b7',
+        'b9',
+        'b12',
+    ];
+
     const MICRO_ICONS = {
         vitA: '🥕',
         vitC: '🍊',
@@ -803,7 +823,6 @@
         b7: 'B₇',
         b9: 'B₉',
         b12: 'B₁₂',
-        choline: '🥚',
         calcium: '🦴',
         iron: '🧲',
         magnesium: '⚡',
@@ -843,25 +862,15 @@
         return male != null ? male : female;
     }
 
-    function pickMicroKeysForChart(microsA, microsB) {
+    function pickMicroKeysForChart() {
         const rda = window.MEAL_RDA || {};
-        const keys = Object.keys(rda).filter((k) => (microsA[k] || 0) > 0 || (microsB[k] || 0) > 0);
-        const score = (k) => {
-            const va = microsA[k] || 0;
-            const vb = microsB[k] || 0;
-            const target = microRdaTarget(k) || Math.max(va, vb, 1);
-            const maxPct = (Math.max(va, vb) / target) * 100;
-            const diffPct = (Math.abs(va - vb) / target) * 100;
-            return maxPct + diffPct * 0.65;
-        };
-        keys.sort((ka, kb) => score(kb) - score(ka));
-        return keys.slice(0, 8);
+        return MICRO_COMPARE_KEYS.filter((k) => rda[k]);
     }
 
     function buildMicroGlassBarsHtml(a, b) {
         const microsA = getProductMicros(a);
         const microsB = getProductMicros(b);
-        const keys = pickMicroKeysForChart(microsA, microsB);
+        const keys = pickMicroKeysForChart();
         if (!keys.length) return '';
 
         let winsA = 0;
@@ -977,7 +986,7 @@
                 ${buildGlassBarsHtml(a, b)}
                 ${buildMicroGlassBarsHtml(a, b)}
             </div>
-            <p class="compare-chart-footnote">Wszystkie wartości na 100 g produktu. Mikro: baza / szacunek, do 8 najważniejszych różnic.</p>`;
+            <p class="compare-chart-footnote">Wszystkie wartości na 100 g produktu. Mikro: % RDA orientacyjny (średnia m/k), na 100 g.</p>`;
 
         playDashboardMotion();
     }
