@@ -656,7 +656,7 @@
             const winner = metricWinner(va, vb, m.key, rawA, rawB);
 
             return `
-                <div class="compare-kpi-card${m.key === 'unsatSatRatio' ? ' compare-kpi-card--unsat-sat' : ''}${m.neutral ? ' compare-kpi-card--muted' : ''}">
+                <div class="compare-kpi-card${m.key === 'unsatSatRatio' ? ' compare-kpi-card--unsat-sat' : ''}">
                     <span class="compare-kpi-icon" aria-hidden="true">${m.icon}</span>
                     <span class="compare-kpi-name">${escapeHtml(m.label)}</span>
                     <div class="compare-kpi-row">
@@ -910,7 +910,7 @@
                         </div>
                         ${
                             deltaText
-                                ? `<span class="compare-glass-delta" title="Różnica">różnica ${escapeHtml(deltaText)}</span>`
+                                ? `<span class="compare-glass-delta" title="Różnica">${escapeHtml(deltaText)}</span>`
                                 : `<span class="compare-glass-delta compare-glass-delta--neutral">remis</span>`
                         }
                     </div>
