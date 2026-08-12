@@ -789,24 +789,17 @@
             </div>`;
     }
 
-    const MICRO_COMPARE_KEYS = [
-        'magnesium',
-        'iron',
-        'calcium',
-        'potassium',
-        'zinc',
-        'vitA',
-        'vitC',
-        'vitD',
-        'vitE',
-        'vitK',
-        'b1',
-        'b2',
-        'b3',
-        'b5',
-        'b7',
-        'b9',
-        'b12',
+    const MICRO_COMPARE_GROUPS = [
+        {
+            id: 'vitamins',
+            title: 'Witaminy',
+            keys: ['vitA', 'vitC', 'vitD', 'vitE', 'vitK', 'b1', 'b2', 'b3', 'b5', 'b7', 'b9', 'b12'],
+        },
+        {
+            id: 'minerals',
+            title: 'Minerały',
+            keys: ['magnesium', 'iron', 'calcium', 'potassium', 'zinc'],
+        },
     ];
 
     const MICRO_ICONS = {
@@ -862,43 +855,39 @@
         return male != null ? male : female;
     }
 
-    function pickMicroKeysForChart() {
+    function pickMicroGroupsForChart() {
         const rda = window.MEAL_RDA || {};
-        return MICRO_COMPARE_KEYS.filter((k) => rda[k]);
+        return MICRO_COMPARE_GROUPS.map((group) => ({
+            ...group,
+            keys: group.keys.filter((k) => rda[k]),
+        })).filter((group) => group.keys.length);
     }
 
-    function buildMicroGlassBarsHtml(a, b) {
-        const microsA = getProductMicros(a);
-        const microsB = getProductMicros(b);
-        const keys = pickMicroKeysForChart();
-        if (!keys.length) return '';
+    function buildMicroRowHtml(a, b, key, rowIndex, microsA, microsB) {
+        const meta = window.MEAL_RDA[key];
+        if (!meta) return { html: '', winner: null };
 
-        let winsA = 0;
-        let winsB = 0;
-        const rows = keys.map((key, rowIndex) => {
-            const meta = window.MEAL_RDA[key];
-            const va = microsA[key] || 0;
-            const vb = microsB[key] || 0;
-            const max = Math.max(va, vb, 0.001);
-            const pctA = va > 0 ? Math.round((va / max) * 100) : 0;
-            const pctB = vb > 0 ? Math.round((vb / max) * 100) : 0;
-            const winner = microWinner(va, vb, key);
-            if (winner === 'a') winsA += 1;
-            if (winner === 'b') winsB += 1;
-            const winA = winner === 'a';
-            const winB = winner === 'b';
-            const labelA = formatMicroBarLabel(va, key);
-            const labelB = formatMicroBarLabel(vb, key);
-            const deltaText =
-                va > 0 || vb > 0 ? formatMicroBarDelta(va, vb, key) : null;
-            const hintText =
-                key === 'sodium'
-                    ? { text: 'mniej = lepiej', kind: 'less' }
-                    : { text: 'więcej = lepiej', kind: 'more' };
-            const icon = MICRO_ICONS[key] || '•';
-            const shortName = meta.label.replace(/\s*\([^)]*\)/g, '');
+        const va = microsA[key] || 0;
+        const vb = microsB[key] || 0;
+        const max = Math.max(va, vb, 0.001);
+        const pctA = va > 0 ? Math.round((va / max) * 100) : 0;
+        const pctB = vb > 0 ? Math.round((vb / max) * 100) : 0;
+        const winner = microWinner(va, vb, key);
+        const winA = winner === 'a';
+        const winB = winner === 'b';
+        const labelA = formatMicroBarLabel(va, key);
+        const labelB = formatMicroBarLabel(vb, key);
+        const deltaText = va > 0 || vb > 0 ? formatMicroBarDelta(va, vb, key) : null;
+        const hintText =
+            key === 'sodium'
+                ? { text: 'mniej = lepiej', kind: 'less' }
+                : { text: 'więcej = lepiej', kind: 'more' };
+        const icon = MICRO_ICONS[key] || '•';
+        const shortName = meta.label.replace(/\s*\([^)]*\)/g, '');
 
-            return `
+        return {
+            winner,
+            html: `
                 <article class="compare-glass-row compare-glass-row--micro compare-glass-row--has-hint${winner ? ` compare-glass-row--lead-${winner}` : ''}" style="--row-delay:${(COMPARE_METRICS.length + rowIndex) * 70}ms">
                     <div class="compare-glass-row-head">
                         <span class="compare-glass-metric-badge" aria-hidden="true">
@@ -915,8 +904,40 @@
                         }
                     </div>
                     ${buildGlassBarsGrid(a.name, b.name, pctA, labelA, winA, pctB, labelB, winB, hintText, COMPARE_METRICS.length + rowIndex, { micro: true })}
-                </article>`;
-        }).join('');
+                </article>`,
+        };
+    }
+
+    function buildMicroGlassBarsHtml(a, b) {
+        const microsA = getProductMicros(a);
+        const microsB = getProductMicros(b);
+        const groups = pickMicroGroupsForChart();
+        if (!groups.length) return '';
+
+        let winsA = 0;
+        let winsB = 0;
+        let rowIndex = 0;
+        const groupsHtml = groups
+            .map((group) => {
+                const rows = group.keys
+                    .map((key) => {
+                        const built = buildMicroRowHtml(a, b, key, rowIndex, microsA, microsB);
+                        rowIndex += 1;
+                        if (built.winner === 'a') winsA += 1;
+                        if (built.winner === 'b') winsB += 1;
+                        return built.html;
+                    })
+                    .join('');
+
+                return `
+                <section class="compare-micro-group compare-micro-group--${escapeHtml(group.id)}" aria-labelledby="compareMicro${escapeHtml(group.id)}">
+                    <h3 class="compare-micro-group-title" id="compareMicro${escapeHtml(group.id)}">${escapeHtml(group.title)}</h3>
+                    <div class="compare-micro-group-rows">
+                        ${rows}
+                    </div>
+                </section>`;
+            })
+            .join('');
 
         const scoreline =
             winsA || winsB
@@ -930,8 +951,8 @@
                     <p class="compare-glass-chart-title">Witaminy i minerały</p>
                     ${scoreline}
                 </div>
-                <div class="compare-glass-chart-body">
-                    ${rows}
+                <div class="compare-glass-chart-body compare-glass-chart-body--split">
+                    ${groupsHtml}
                 </div>
             </div>`;
     }
