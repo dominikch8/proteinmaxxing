@@ -97,9 +97,6 @@
     const chartEl = document.getElementById('compareChart');
     const matchupEl = document.getElementById('compareMatchup');
     const scorelineEl = document.getElementById('compareScoreline');
-    const tableBody = document.getElementById('compareTableBody');
-    const thA = document.getElementById('compareThA');
-    const thB = document.getElementById('compareThB');
     const swapBtn = document.getElementById('compareSwapBtn');
     const copyLinkBtn = document.getElementById('compareCopyLinkBtn');
     const quickEl = document.getElementById('compareQuick');
@@ -873,11 +870,6 @@
                             <span class="compare-glass-metric-name">${escapeHtml(shortName)}</span>
                             <span class="compare-glass-metric-max">na 100&nbsp;g</span>
                         </div>
-                        ${
-                            deltaText
-                                ? `<span class="compare-glass-delta" title="Różnica">${escapeHtml(deltaText)}</span>`
-                                : `<span class="compare-glass-delta compare-glass-delta--neutral">remis</span>`
-                        }
                     </div>
                     ${buildGlassBarsGrid(a.name, b.name, pctA, labelA, winA, pctB, labelB, winB, hintText, COMPARE_METRICS.length + rowIndex, { micro: true })}
                 </article>`,
@@ -988,30 +980,6 @@
         playDashboardMotion();
     }
 
-    function renderTableHeadCell(product, side) {
-        return `<span class="compare-th-wrap compare-th-wrap--${side}"><span class="compare-th-badge compare-th-badge--${side}">${side.toUpperCase()}</span><span class="compare-th-name">${escapeHtml(product.name)}</span></span>`;
-    }
-
-    function renderTable(a, b) {
-        if (!tableBody) return;
-        if (thA) thA.innerHTML = renderTableHeadCell(a, 'a');
-        if (thB) thB.innerHTML = renderTableHeadCell(b, 'b');
-
-        tableBody.innerHTML = COMPARE_METRICS.map((m) => {
-            const rawA = metricRaw(a, m.key);
-            const rawB = metricRaw(b, m.key);
-            const va = rawA ?? 0;
-            const vb = rawB ?? 0;
-            const winA = metricWinner(va, vb, m.key, rawA, rawB) === 'a';
-            const winB = metricWinner(va, vb, m.key, rawA, rawB) === 'b';
-            return `<tr${m.neutral ? ' class="compare-table-row--muted"' : ''}>
-                <th scope="row">${escapeHtml(m.labelFull || m.label)}</th>
-                <td class="${winA ? 'cell-winner cell-winner--a' : ''}">${formatMetricLabel(a, m)}</td>
-                <td class="${winB ? 'cell-winner cell-winner--b' : ''}">${formatMetricLabel(b, m)}</td>
-            </tr>`;
-        }).join('');
-    }
-
     function getProductMicros(product) {
         if (typeof window.estimateMicrosPer100g === 'function') {
             return window.estimateMicrosPer100g(product) || {};
@@ -1074,7 +1042,6 @@
             renderMatchup(a, b);
             renderScoreline(a, b);
             renderChart(a, b);
-            renderTable(a, b);
             requestAnimationFrame(() => {
                 sectionEl?.querySelectorAll('.pm-reveal:not(.pm-revealed)').forEach((el) => {
                     el.classList.add('pm-revealed');

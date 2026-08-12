@@ -125,7 +125,6 @@
         '.product-page .macro-pill',
         '.compare-glass-panel',
         '.compare-matchup',
-        '.compare-table-block',
         '.section-title',
         '.result-box',
         '.add-product-section',
