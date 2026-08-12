@@ -175,6 +175,8 @@
 
     function hideSuggestions() {
         const box = $('mealSuggestions');
+        const anchor = $('mealSearchAnchor');
+        if (anchor) anchor.classList.remove('is-open');
         if (box) {
             box.hidden = true;
             box.innerHTML = '';
@@ -183,12 +185,14 @@
 
     function renderSuggestions(query) {
         const box = $('mealSuggestions');
+        const anchor = $('mealSearchAnchor');
         if (!box) return;
         const items = getSuggestionProducts(query);
         if (!items.length) {
             box.hidden = true;
             box.innerHTML = '<p class="meal-suggest-empty">Brak wyników</p>';
             box.hidden = false;
+            anchor?.classList.add('is-open');
             return;
         }
         box.innerHTML = items
@@ -203,6 +207,7 @@
             )
             .join('');
         box.hidden = false;
+        anchor?.classList.add('is-open');
     }
 
     function resolveItemGrams(item) {
@@ -406,7 +411,7 @@
         });
 
         document.addEventListener('click', (e) => {
-            if (!e.target.closest('.meal-search-wrap')) hideSuggestions();
+            if (!e.target.closest('.meal-search-anchor')) hideSuggestions();
         });
 
         $('mealChipClear')?.addEventListener('click', () => setSelectedProduct(null));

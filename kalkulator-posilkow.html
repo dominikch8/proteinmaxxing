@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/theme-switch.css?v=20260811s">
     <link rel="stylesheet" href="css/site-motion.css?v=20260811s">
     <link rel="stylesheet" href="css/brand-text.css?v=20260811s">
-    <link rel="stylesheet" href="css/meal-calc.css?v=20260812panel">
+    <link rel="stylesheet" href="css/meal-calc.css?v=20260812suggest">
     <style>
       /* krytyczne: napis MA być na zdjęciu (nie pod nim) */
       .meal-hero {
@@ -115,16 +115,18 @@
 
             <div class="meal-layout" id="mealLayout">
                 <div class="meal-builder-flow" id="mealBuilderPanel">
-                    <section class="meal-panel meal-panel--builder" aria-labelledby="mealAddHeading">
-                        <p class="meal-builder-prompt" id="mealBuilderPrompt">Co jadłeś?</p>
-                        <h2 id="mealAddHeading" class="visually-hidden">Dodaj do posiłku</h2>
+                    <div class="meal-search-anchor" id="mealSearchAnchor">
+                        <section class="meal-panel meal-panel--builder" aria-labelledby="mealAddHeading">
+                            <p class="meal-builder-prompt" id="mealBuilderPrompt">Co jadłeś?</p>
+                            <h2 id="mealAddHeading" class="visually-hidden">Dodaj do posiłku</h2>
 
-                        <div class="meal-search-wrap">
-                            <label class="visually-hidden" for="mealProductSearch">Szukaj produktu</label>
-                            <input type="search" id="mealProductSearch" class="meal-search" placeholder="Szukaj produktu… (np. kurczak, jajko, ryż)" autocomplete="off" spellcheck="false">
-                            <div class="meal-suggestions" id="mealSuggestions" hidden role="listbox" aria-label="Podpowiedzi produktów"></div>
-                        </div>
-                    </section>
+                            <div class="meal-search-wrap">
+                                <label class="visually-hidden" for="mealProductSearch">Szukaj produktu</label>
+                                <input type="search" id="mealProductSearch" class="meal-search" placeholder="Szukaj produktu… (np. kurczak, jajko, ryż)" autocomplete="off" spellcheck="false">
+                            </div>
+                        </section>
+                        <div class="meal-suggestions" id="mealSuggestions" hidden role="listbox" aria-label="Podpowiedzi produktów"></div>
+                    </div>
 
                     <div class="meal-selected-chip" id="mealSelectedChip" hidden>
                         <span class="meal-chip-emoji" aria-hidden="true"></span>
@@ -234,7 +236,7 @@
 <script src="js/meal-rda.js?v=20260809a"></script>
 <script src="js/product-micros-data.js?v=20260809a"></script>
 <script src="js/meal-micro-estimates.js?v=20260809a"></script>
-<script src="js/meal-calculator.js?v=20260812wizard"></script>
+<script src="js/meal-calculator.js?v=20260812suggest"></script>
 <script src="js/auth-ui.js?v=20260811s"></script>
 <link rel="stylesheet" href="css/cookie-consent.css?v=20260811s">
 <script src="js/cookie-banner.js?v=20260811s"></script>

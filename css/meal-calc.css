@@ -28,9 +28,19 @@
     gap: 0.75rem;
 }
 
+.meal-search-anchor {
+    position: relative;
+    z-index: 1;
+}
+
+.meal-search-anchor.is-open {
+    z-index: 40;
+}
+
 .meal-panel--builder {
     transition: box-shadow 0.4s ease;
     padding-bottom: 1rem;
+    overflow: visible;
 }
 
 .meal-panel--builder .meal-search-wrap {
@@ -247,16 +257,16 @@
 
 .meal-suggestions {
     position: absolute;
-    z-index: 20;
-    left: 0;
-    right: 0;
+    z-index: 50;
+    left: 1.2rem;
+    right: 1.2rem;
     top: calc(100% + 4px);
-    max-height: 280px;
+    max-height: min(280px, 50vh);
     overflow: auto;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
 }
 
 .meal-suggest-item {
