@@ -883,6 +883,60 @@
         };
     }
 
+    function animateMicroScoreline(root) {
+        const el = root?.querySelector('.compare-micro-scoreline');
+        if (!el) return;
+        const winsA = Number(el.dataset.winsA || 0);
+        const winsB = Number(el.dataset.winsB || 0);
+        el.classList.remove('is-animating');
+        animateCount(el.querySelector('.compare-micro-scoreline-side--a .compare-micro-scoreline-value'), winsA);
+        animateCount(el.querySelector('.compare-micro-scoreline-side--b .compare-micro-scoreline-value'), winsB);
+        animateCount(el.querySelector('[data-count-mid="a"]'), winsA, 650);
+        animateCount(el.querySelector('[data-count-mid="b"]'), winsB, 650);
+        if (reduceMotion()) {
+            el.classList.add('is-animating');
+            return;
+        }
+        requestAnimationFrame(() => el.classList.add('is-animating'));
+    }
+
+    function buildMicroScorelineHtml(a, b, winsA, winsB) {
+        if (!winsA && !winsB) return '';
+        const total = winsA + winsB;
+        const pctA = total > 0 ? Math.round((winsA / total) * 100) : 0;
+        const pctB = total > 0 ? Math.round((winsB / total) * 100) : 0;
+        const leadSide = winsA === winsB ? 'draw' : winsA > winsB ? 'a' : 'b';
+        const leadLabel = leadSide === 'draw' ? 'remis' : 'prowadzi';
+        const ariaLabel =
+            leadSide === 'draw'
+                ? `Remis w mikroskładnikach: ${a.name} ${winsA}, ${b.name} ${winsB}`
+                : `${leadSide === 'a' ? a.name : b.name} prowadzi w mikroskładnikach ${Math.max(winsA, winsB)} do ${Math.min(winsA, winsB)}`;
+
+        return `
+            <div class="compare-micro-scoreline compare-micro-scoreline--lead-${leadSide}" data-wins-a="${winsA}" data-wins-b="${winsB}" aria-label="${escapeHtml(ariaLabel)}">
+                <div class="compare-micro-scoreline-side compare-micro-scoreline-side--a">
+                    <span class="compare-micro-scoreline-name">${escapeHtml(a.name)}</span>
+                    <span class="compare-micro-scoreline-value" data-count="${winsA}">0</span>
+                </div>
+                <div class="compare-micro-scoreline-mid">
+                    <span class="compare-micro-scoreline-score"><span data-count-mid="a">0</span><span class="compare-micro-scoreline-score-sep">:</span><span data-count-mid="b">0</span></span>
+                    <span class="compare-micro-scoreline-caption">${leadLabel}</span>
+                </div>
+                <div class="compare-micro-scoreline-side compare-micro-scoreline-side--b">
+                    <span class="compare-micro-scoreline-name">${escapeHtml(b.name)}</span>
+                    <span class="compare-micro-scoreline-value" data-count="${winsB}">0</span>
+                </div>
+                <div class="compare-micro-scoreline-tracks" aria-hidden="true">
+                    <div class="compare-micro-scoreline-track">
+                        <span class="compare-micro-scoreline-fill--a" style="--score-pct:${pctA}%; --score-delay:40ms"></span>
+                    </div>
+                    <div class="compare-micro-scoreline-track">
+                        <span class="compare-micro-scoreline-fill--b" style="--score-pct:${pctB}%; --score-delay:120ms"></span>
+                    </div>
+                </div>
+            </div>`;
+    }
+
     function buildMicroGlassBarsHtml(a, b) {
         const microsA = getProductMicros(a);
         const microsB = getProductMicros(b);
@@ -914,10 +968,7 @@
             })
             .join('');
 
-        const scoreline =
-            winsA || winsB
-                ? `<p class="compare-glass-chart-score">A prowadzi <strong>${winsA}</strong> · B prowadzi <strong>${winsB}</strong></p>`
-                : '';
+        const scoreline = buildMicroScorelineHtml(a, b, winsA, winsB);
 
         return `
             <div class="compare-glass-chart compare-glass-chart--micro" role="img" aria-label="Porównanie witamin i minerałów na 100 g: ${escapeHtml(a.name)} i ${escapeHtml(b.name)}">
@@ -955,6 +1006,7 @@
                 el.style.width = '';
                 el.classList.add('is-run');
             });
+            animateMicroScoreline(chartEl);
         };
 
         if (reduceMotion()) {
