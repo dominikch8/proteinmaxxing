@@ -522,7 +522,6 @@
         const macro = `${product.kcal} kcal · ${product.protein} g białka · ${product.fat} g tłuszczu`;
         return `
             <div class="compare-matchup-side compare-matchup-side--${side}${isLead ? ' is-lead' : ''}" data-tilt-side="${side}">
-                ${isLead ? '<span class="compare-matchup-crown" aria-hidden="true">★</span>' : ''}
                 <span class="compare-matchup-media" aria-hidden="true">
                     <span class="compare-matchup-media-glow"></span>
                     <img class="compare-matchup-img" data-matchup-img="${side}" alt="" width="48" height="48" decoding="async">
@@ -685,7 +684,6 @@
                 <div class="compare-glass-slot compare-glass-slot--${slot}${isWinner ? ' is-winner' : ''}">
                     <span class="compare-glass-slot-tag">${slot.toUpperCase()}</span>
                     <span class="compare-glass-slot-name">${escapeHtml(productName)}</span>
-                    ${isWinner ? '<span class="compare-glass-slot-win" aria-hidden="true">★ lepsze</span>' : ''}
                 </div>`,
             track: `
                 <div class="compare-glass-track compare-glass-track--${slot}${isWinner ? ' is-winner' : ''}" style="--bar-delay:${delay}ms">
