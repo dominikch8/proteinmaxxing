@@ -811,13 +811,24 @@
         sodium: '🧂'
     };
 
+    function microRdaPercentRaw(amount, key) {
+        const target = microRdaTarget(key);
+        if (!target || target <= 0 || amount == null || !(amount > 0)) return null;
+        return (amount / target) * 100;
+    }
+
+    function microBarFillPercent(amount, key) {
+        const pct = microRdaPercentRaw(amount, key);
+        if (pct == null) return 0;
+        return Math.min(100, Math.round(pct));
+    }
+
     function formatMicroBarLabel(amount, key) {
         const meta = window.MEAL_RDA?.[key];
-        if (!meta || amount == null || !(amount > 0)) return '—';
-        const target = microRdaTarget(key);
-        if (!target || target <= 0) return '—';
-        const pct = Math.round((amount / target) * 100);
-        return meta.isMax ? `${pct}% lim.` : `${pct}% RDA`;
+        const pct = microRdaPercentRaw(amount, key);
+        if (!meta || pct == null) return '—';
+        const rounded = Math.round(pct);
+        return meta.isMax ? `${rounded}% lim.` : `${rounded}% RDA`;
     }
 
     function microRdaTarget(key) {
@@ -843,9 +854,8 @@
 
         const va = microsA[key] || 0;
         const vb = microsB[key] || 0;
-        const max = Math.max(va, vb, 0.001);
-        const pctA = va > 0 ? Math.round((va / max) * 100) : 0;
-        const pctB = vb > 0 ? Math.round((vb / max) * 100) : 0;
+        const pctA = microBarFillPercent(va, key);
+        const pctB = microBarFillPercent(vb, key);
         const winner = microWinner(va, vb, key);
         const winA = winner === 'a';
         const winB = winner === 'b';
@@ -868,7 +878,7 @@
                         </span>
                         <div class="compare-glass-metric-copy">
                             <span class="compare-glass-metric-name">${escapeHtml(shortName)}</span>
-                            <span class="compare-glass-metric-max">na 100&nbsp;g</span>
+                            <span class="compare-glass-metric-max">skala 0–100% RDA</span>
                         </div>
                     </div>
                     ${buildGlassBarsGrid(a.name, b.name, pctA, labelA, winA, pctB, labelB, winB, hintText, COMPARE_METRICS.length + rowIndex, { micro: true })}
