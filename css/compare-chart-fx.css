@@ -301,35 +301,81 @@
 
 .compare-glass-chart--micro .compare-glass-track,
 .compare-glass-row--micro .compare-glass-track {
-    height: 26px;
-    border-radius: 10px;
-    padding: 2px;
+    height: 18px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    overflow: visible;
+}
+
+.compare-glass-chart--micro .compare-glass-track.is-winner,
+.compare-glass-row--micro .compare-glass-track.is-winner {
+    border: none;
+    box-shadow: none;
+}
+
+.compare-glass-chart--micro .compare-glass-track-grid,
+.compare-glass-row--micro .compare-glass-track-grid {
+    display: none !important;
 }
 
 .compare-glass-chart--micro .compare-glass-fill,
 .compare-glass-row--micro .compare-glass-fill {
-    left: 2px;
-    top: 2px;
-    height: calc(100% - 4px);
-    border-radius: 7px;
-    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.14);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5px;
+    min-width: 0;
+    border-radius: 999px;
+    box-shadow: none;
+}
+
+.compare-glass-chart--micro .compare-glass-fill-sheen,
+.compare-glass-row--micro .compare-glass-fill-sheen,
+.compare-glass-chart--micro .compare-glass-fill-glow,
+.compare-glass-row--micro .compare-glass-fill-glow,
+.compare-glass-chart--micro .compare-glass-fill-tip,
+.compare-glass-row--micro .compare-glass-fill-tip {
+    display: none;
 }
 
 .compare-glass-chart--micro .compare-glass-fill-val,
 .compare-glass-row--micro .compare-glass-fill-val {
-    left: 8px;
-    padding: 2px 6px;
-    border-radius: 6px;
-    font-size: 0.68rem;
+    left: 6px;
+    padding: 0;
+    border-radius: 0;
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+    box-shadow: none;
+    background: transparent;
+}
+
+.compare-glass-chart--micro .compare-glass-fill-val::before,
+.compare-glass-row--micro .compare-glass-fill-val::before {
+    display: none;
 }
 
 .compare-glass-chart--micro .compare-glass-fill--a.is-winner,
 .compare-glass-chart--micro .compare-glass-fill--b.is-winner,
 .compare-glass-row--micro .compare-glass-fill--a.is-winner,
 .compare-glass-row--micro .compare-glass-fill--b.is-winner {
-    box-shadow:
-        0 0 0 1px rgba(255, 255, 255, 0.22) inset,
-        0 4px 14px rgba(15, 23, 42, 0.14);
+    box-shadow: 0 0 10px rgba(220, 38, 38, 0.35);
+}
+
+.compare-glass-chart--micro .compare-glass-fill--b.is-winner,
+.compare-glass-row--micro .compare-glass-fill--b.is-winner {
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.38);
+}
+
+[data-theme='dark'] .compare-glass-chart--micro .compare-glass-track,
+[data-theme='dark'] .compare-glass-row--micro .compare-glass-track {
+    background: transparent;
+    border: none;
+    box-shadow: none;
 }
 
 
@@ -827,7 +873,12 @@
 
     .compare-glass-chart--micro .compare-glass-track,
     .compare-glass-row--micro .compare-glass-track {
-        height: 24px;
+        height: 16px;
+    }
+
+    .compare-glass-chart--micro .compare-glass-fill,
+    .compare-glass-row--micro .compare-glass-fill {
+        height: 4px;
     }
 
     .compare-glass-chart--micro .compare-glass-row,
