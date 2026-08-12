@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/theme-switch.css?v=20260811s">
     <link rel="stylesheet" href="css/site-motion.css?v=20260811s">
     <link rel="stylesheet" href="css/brand-text.css?v=20260811s">
-    <link rel="stylesheet" href="css/meal-calc.css?v=20260812wizard">
+    <link rel="stylesheet" href="css/meal-calc.css?v=20260812panel">
     <style>
       /* krytyczne: napis MA być na zdjęciu (nie pod nim) */
       .meal-hero {
@@ -114,19 +114,22 @@
             </div>
 
             <div class="meal-layout" id="mealLayout">
-                <section class="meal-panel meal-panel--builder" aria-labelledby="mealAddHeading" id="mealBuilderPanel">
-                    <p class="meal-builder-prompt" id="mealBuilderPrompt">Co jadłeś?</p>
-                    <h2 id="mealAddHeading" class="visually-hidden">Dodaj do posiłku</h2>
+                <div class="meal-builder-flow" id="mealBuilderPanel">
+                    <section class="meal-panel meal-panel--builder" aria-labelledby="mealAddHeading">
+                        <p class="meal-builder-prompt" id="mealBuilderPrompt">Co jadłeś?</p>
+                        <h2 id="mealAddHeading" class="visually-hidden">Dodaj do posiłku</h2>
 
-                    <div class="meal-search-wrap">
-                        <label class="visually-hidden" for="mealProductSearch">Szukaj produktu</label>
-                        <input type="search" id="mealProductSearch" class="meal-search" placeholder="Szukaj produktu… (np. kurczak, jajko, ryż)" autocomplete="off" spellcheck="false">
-                        <div class="meal-selected-chip" id="mealSelectedChip" hidden>
-                            <span class="meal-chip-emoji" aria-hidden="true"></span>
-                            <span class="meal-chip-name"></span>
-                            <button type="button" class="meal-chip-clear" id="mealChipClear" aria-label="Wyczyść wybór">×</button>
+                        <div class="meal-search-wrap">
+                            <label class="visually-hidden" for="mealProductSearch">Szukaj produktu</label>
+                            <input type="search" id="mealProductSearch" class="meal-search" placeholder="Szukaj produktu… (np. kurczak, jajko, ryż)" autocomplete="off" spellcheck="false">
+                            <div class="meal-suggestions" id="mealSuggestions" hidden role="listbox" aria-label="Podpowiedzi produktów"></div>
                         </div>
-                        <div class="meal-suggestions" id="mealSuggestions" hidden role="listbox" aria-label="Podpowiedzi produktów"></div>
+                    </section>
+
+                    <div class="meal-selected-chip" id="mealSelectedChip" hidden>
+                        <span class="meal-chip-emoji" aria-hidden="true"></span>
+                        <span class="meal-chip-name"></span>
+                        <button type="button" class="meal-chip-clear" id="mealChipClear" aria-label="Wyczyść wybór">×</button>
                     </div>
 
                     <div class="meal-step meal-step--grams" id="mealGramsStep" hidden>
@@ -148,7 +151,7 @@
                             <button type="button" class="meal-btn meal-btn-ghost" id="mealClearBtn">Wyczyść posiłek</button>
                         </div>
                     </div>
-                </section>
+                </div>
 
                 <section class="meal-panel meal-panel--summary" aria-labelledby="mealResultHeading" id="mealSummaryPanel" hidden>
                     <h2 id="mealResultHeading">Podsumowanie</h2>
