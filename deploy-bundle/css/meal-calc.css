@@ -282,6 +282,17 @@
     -webkit-overflow-scrolling: touch;
 }
 
+/* Lista przenoszona do body (fixed) — nie przycinają jej karty / stopka */
+.meal-suggestions.meal-suggestions--portal,
+.meal-suggestions--portal {
+    position: fixed;
+    left: auto;
+    right: auto;
+    top: auto;
+    z-index: 10000;
+    margin: 0;
+}
+
 .meal-suggestions:not([hidden]) {
     display: block;
 }

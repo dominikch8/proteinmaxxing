@@ -180,7 +180,48 @@
         if (box) {
             box.hidden = true;
             box.innerHTML = '';
+            box.classList.remove('meal-suggestions--portal');
+            box.style.top = '';
+            box.style.left = '';
+            box.style.width = '';
+            box.style.maxHeight = '';
+            box.style.position = '';
+            box.style.zIndex = '';
+            box.style.right = '';
+            if (anchor && box.parentElement !== anchor) {
+                anchor.appendChild(box);
+            }
         }
+    }
+
+    function layoutMealSuggestions() {
+        const box = $('mealSuggestions');
+        const search = $('mealProductSearch');
+        if (!box || !search || box.hidden) return;
+
+        const wrap = search.closest('.meal-search-wrap') || search;
+        const rect = wrap.getBoundingClientRect();
+        const gap = 6;
+        const bottomPad = 16;
+        const top = rect.bottom + gap;
+        const maxHeight = Math.max(180, window.innerHeight - top - bottomPad);
+
+        if (box.parentElement !== document.body) {
+            document.body.appendChild(box);
+        }
+
+        box.classList.add('meal-suggestions--portal');
+        box.style.position = 'fixed';
+        box.style.zIndex = '10000';
+        box.style.top = `${top}px`;
+        box.style.left = `${Math.max(8, rect.left)}px`;
+        box.style.width = `${Math.min(rect.width, window.innerWidth - 16)}px`;
+        box.style.maxHeight = `${maxHeight}px`;
+        box.style.right = 'auto';
+    }
+
+    function scheduleLayoutMealSuggestions() {
+        window.requestAnimationFrame(layoutMealSuggestions);
     }
 
     function renderSuggestions(query) {
@@ -189,10 +230,10 @@
         if (!box) return;
         const items = getSuggestionProducts(query);
         if (!items.length) {
-            box.hidden = true;
             box.innerHTML = '<p class="meal-suggest-empty">Brak wyników</p>';
             box.hidden = false;
             anchor?.classList.add('is-open');
+            scheduleLayoutMealSuggestions();
             return;
         }
         box.innerHTML = items
@@ -208,6 +249,7 @@
             .join('');
         box.hidden = false;
         anchor?.classList.add('is-open');
+        scheduleLayoutMealSuggestions();
     }
 
     function resolveItemGrams(item) {
@@ -403,6 +445,11 @@
             });
         }
 
+        $('mealSuggestions')?.addEventListener('mousedown', (e) => {
+            // Nie gub focusu pola przy kliknięciu w listę
+            e.preventDefault();
+        });
+
         $('mealSuggestions')?.addEventListener('click', (e) => {
             const btn = e.target.closest('[data-slug]');
             if (!btn) return;
@@ -411,8 +458,12 @@
         });
 
         document.addEventListener('click', (e) => {
-            if (!e.target.closest('.meal-search-anchor')) hideSuggestions();
+            if (e.target.closest('.meal-search-anchor') || e.target.closest('.meal-suggestions')) return;
+            hideSuggestions();
         });
+
+        window.addEventListener('resize', scheduleLayoutMealSuggestions, { passive: true });
+        window.addEventListener('scroll', scheduleLayoutMealSuggestions, { passive: true, capture: true });
 
         $('mealChipClear')?.addEventListener('click', () => setSelectedProduct(null));
 
