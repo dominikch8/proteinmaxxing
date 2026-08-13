@@ -687,7 +687,7 @@
 
 .meal-stat--kcal { --stat-accent: #dc2626; }
 .meal-stat--protein { --stat-accent: #2563eb; }
-.meal-stat--density { --stat-accent: #7c3aed; }
+.meal-stat--density { --stat-accent: #be185d; }
 .meal-stat--carbs { --stat-accent: #d97706; }
 .meal-stat--fat { --stat-accent: #059669; }
 .meal-stat--sat { --stat-accent: #b45309; }
@@ -702,7 +702,7 @@
 }
 
 .meal-stat--density .meal-stat-value {
-    color: color-mix(in srgb, var(--text-main) 88%, #7c3aed);
+    color: color-mix(in srgb, var(--text-main) 88%, #be185d);
 }
 
 .meal-panel--summary.is-visible .meal-stat,
