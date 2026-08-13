@@ -216,6 +216,7 @@
             box.style.left = '';
             box.style.width = '';
             box.style.maxHeight = '';
+            box.style.overflow = '';
             box.style.position = '';
             box.style.zIndex = '';
             box.style.right = '';
@@ -233,9 +234,7 @@
         const wrap = search.closest('.meal-search-wrap') || search;
         const rect = wrap.getBoundingClientRect();
         const gap = 6;
-        const bottomPad = 16;
         const top = rect.bottom + gap;
-        const maxHeight = Math.max(180, window.innerHeight - top - bottomPad);
 
         if (box.parentElement !== document.body) {
             document.body.appendChild(box);
@@ -247,7 +246,8 @@
         box.style.top = `${top}px`;
         box.style.left = `${Math.max(8, rect.left)}px`;
         box.style.width = `${Math.min(rect.width, window.innerWidth - 16)}px`;
-        box.style.maxHeight = `${maxHeight}px`;
+        box.style.maxHeight = 'none';
+        box.style.overflow = 'visible';
         box.style.right = 'auto';
     }
 

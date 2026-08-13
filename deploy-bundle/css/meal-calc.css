@@ -385,14 +385,11 @@
     left: 1.2rem;
     right: 1.2rem;
     top: calc(100% + 6px);
-    max-height: min(320px, 55vh);
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: visible;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
-    -webkit-overflow-scrolling: touch;
 }
 
 /* Lista przenoszona do body (fixed) — nie przycinają jej karty / stopka */
@@ -404,6 +401,8 @@
     top: auto;
     z-index: 10000;
     margin: 0;
+    max-height: none;
+    overflow: visible;
 }
 
 .meal-suggestions:not([hidden]) {
