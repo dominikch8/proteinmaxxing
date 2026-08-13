@@ -426,6 +426,18 @@
         return (male + female) / 2;
     }
 
+    function pctHeatHue(pct, inverted = false) {
+        const t = Math.max(0, Math.min(100, Number(pct) || 0)) / 100;
+        const x = inverted ? 1 - t : t;
+        // 0% → czerwony (0°), 50% → żółty (55°), 100% → zielony (130°)
+        return Math.round(x * 130);
+    }
+
+    function pctHeatStyle(pct, inverted = false) {
+        const hue = pctHeatHue(pct, inverted);
+        return `--pct:${Math.max(0, Math.min(100, pct))};--pct-hue:${hue};`;
+    }
+
     function renderMicroTable(microsSum) {
         const tbody = $('mealMicroBody');
         const note = $('mealMicroNote');
@@ -440,22 +452,20 @@
                 const pctLabel = meta.isMax
                     ? `${fmtNum(pct, 0)}% limitu`
                     : `${fmtNum(pct, 0)}% RDA`;
-                const pctClass = meta.isMax
+                const inverted = !!meta.isMax;
+                const pctClass = inverted
                     ? pct >= 100
                         ? 'is-high'
-                        : 'is-ok'
-                    : pct >= 100
-                      ? 'is-good'
-                      : pct >= 30
-                        ? 'is-ok'
-                        : 'is-low';
+                        : 'is-scale'
+                    : 'is-scale';
+                const barW = Math.min(100, pct);
                 return `<tr>
                     <td><strong>${escapeHtml(meta.label)}</strong></td>
                     <td>${fmtNum(amount, amount < 10 ? 2 : 1)} ${escapeHtml(meta.unit)}</td>
                     <td>${fmtNum(target, target < 10 ? 1 : 0)} ${escapeHtml(meta.unit)}</td>
-                    <td class="meal-pct-cell">
+                    <td class="meal-pct-cell" style="${pctHeatStyle(pct, inverted)}">
                         <span class="meal-pct ${pctClass}">${pctLabel}</span>
-                        <span class="meal-pct-bar" aria-hidden="true"><span style="width:${Math.min(100, pct)}%"></span></span>
+                        <span class="meal-pct-bar" aria-hidden="true"><span style="width:${barW}%"></span></span>
                     </td>
                 </tr>`;
             })

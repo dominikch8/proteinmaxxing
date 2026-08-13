@@ -10,7 +10,9 @@ jobs:
   web-deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    # Jeśli padnie na FTP z "530 Login incorrect" — zaktualizuj sekrety
+    # FTP_SERVER / FTP_USERNAME / FTP_PASSWORD w GitHub → Settings → Secrets.
+    timeout-minutes: 60
     steps:
     - name: Pobranie kodu
       uses: actions/checkout@v4
