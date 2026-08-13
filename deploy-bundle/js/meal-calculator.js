@@ -416,7 +416,8 @@
                     <td><strong>${escapeHtml(meta.label)}</strong></td>
                     <td>${fmtNum(amount, amount < 10 ? 2 : 1)} ${escapeHtml(meta.unit)}</td>
                     <td>${fmtNum(target, target < 10 ? 1 : 0)} ${escapeHtml(meta.unit)}</td>
-                    <td><span class="meal-pct ${pctClass}">${pctLabel}</span>
+                    <td class="meal-pct-cell">
+                        <span class="meal-pct ${pctClass}">${pctLabel}</span>
                         <span class="meal-pct-bar" aria-hidden="true"><span style="width:${Math.min(100, pct)}%"></span></span>
                     </td>
                 </tr>`;

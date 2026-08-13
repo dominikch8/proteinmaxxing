@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/theme-switch.css?v=20260812productgap">
     <link rel="stylesheet" href="css/site-motion.css?v=20260812productgap">
     <link rel="stylesheet" href="css/brand-text.css?v=20260812productgap">
-    <link rel="stylesheet" href="css/meal-calc.css?v=20260814suggestportal">
+    <link rel="stylesheet" href="css/meal-calc.css?v=20260814summaryfancy">
     <style>
       /* krytyczne: napis MA być na zdjęciu (nie pod nim) */
       .meal-hero {
@@ -155,54 +155,64 @@
                 </div>
 
                 <section class="meal-panel meal-panel--summary" aria-labelledby="mealResultHeading" id="mealSummaryPanel" hidden>
-                    <h2 id="mealResultHeading">Podsumowanie</h2>
+                    <div class="meal-summary-head">
+                        <p class="meal-summary-kicker">Twój posiłek</p>
+                        <h2 id="mealResultHeading">Podsumowanie</h2>
+                        <p class="meal-summary-lead">Makro na cały posiłek oraz orientacyjny udział witamin i minerałów w dziennym zapotrzebowaniu.</p>
+                    </div>
 
                     <div class="meal-totals-grid" id="mealTotalsGrid">
-                        <div class="meal-stat">
+                        <div class="meal-stat meal-stat--kcal" style="--stat-i:0">
                             <span class="meal-stat-label">Kalorie</span>
                             <span class="meal-stat-value" id="mealTotalKcal">0</span>
+                            <span class="meal-stat-unit">kcal</span>
                         </div>
-                        <div class="meal-stat">
+                        <div class="meal-stat meal-stat--protein" style="--stat-i:1">
                             <span class="meal-stat-label">Białko</span>
                             <span class="meal-stat-value" id="mealTotalProtein">0 g</span>
                         </div>
-                        <div class="meal-stat">
+                        <div class="meal-stat meal-stat--carbs" style="--stat-i:2">
                             <span class="meal-stat-label">Węglowodany</span>
                             <span class="meal-stat-value" id="mealTotalCarbs">0 g</span>
                         </div>
-                        <div class="meal-stat">
+                        <div class="meal-stat meal-stat--fat" style="--stat-i:3">
                             <span class="meal-stat-label">Tłuszcz</span>
                             <span class="meal-stat-value" id="mealTotalFat">0 g</span>
                         </div>
-                        <div class="meal-stat">
+                        <div class="meal-stat meal-stat--sat" style="--stat-i:4">
                             <span class="meal-stat-label">Nasycone</span>
                             <span class="meal-stat-value" id="mealTotalSat">0 g</span>
                         </div>
-                        <div class="meal-stat">
+                        <div class="meal-stat meal-stat--unsat" style="--stat-i:5">
                             <span class="meal-stat-label">Nienasycone</span>
                             <span class="meal-stat-value" id="mealTotalUnsat">0 g</span>
                         </div>
                     </div>
 
-                    <h2 style="margin-top:1.25rem">Witaminy i minerały</h2>
-                    <div class="meal-micro-wrap">
-                        <table class="meal-micro-table">
-                            <thead>
-                                <tr>
-                                    <th>Składnik</th>
-                                    <th>W posiłku</th>
-                                    <th>RDA / limit</th>
-                                    <th>% dnia</th>
-                                </tr>
-                            </thead>
-                            <tbody id="mealMicroBody">
-                                <tr><td colspan="4">Dodaj produkty, żeby zobaczyć szacunek mikroskładników.</td></tr>
-                            </tbody>
-                        </table>
+                    <div class="meal-micro-block">
+                        <div class="meal-micro-head">
+                            <p class="meal-summary-kicker">Mikroskładniki</p>
+                            <h2 id="mealMicroHeading">Witaminy i minerały</h2>
+                        </div>
+                        <div class="meal-micro-wrap">
+                            <table class="meal-micro-table">
+                                <thead>
+                                    <tr>
+                                        <th>Składnik</th>
+                                        <th>W posiłku</th>
+                                        <th>RDA / limit</th>
+                                        <th>% dnia</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="mealMicroBody">
+                                    <tr><td colspan="4">Dodaj produkty, żeby zobaczyć szacunek mikroskładników.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="meal-note" id="mealMicroNote" hidden>
+                            Mikroskładniki są <strong>orientacyjne</strong> (z typowych wartości dla podobnych produktów), bo baza Proteiner przechowuje głównie etykiety mikro, nie miligramy z opakowania. Makro (kcal, B/W/T) liczone jest dokładnie z wartości na 100&nbsp;g.
+                        </p>
                     </div>
-                    <p class="meal-note" id="mealMicroNote" hidden>
-                        Mikroskładniki są <strong>orientacyjne</strong> (z typowych wartości dla podobnych produktów), bo baza Proteiner przechowuje głównie etykiety mikro, nie miligramy z opakowania. Makro (kcal, B/W/T) liczone jest dokładnie z wartości na 100&nbsp;g.
-                    </p>
                 </section>
             </div>
         </main>
@@ -233,7 +243,7 @@
 <script src="js/meal-rda.js?v=20260809a"></script>
 <script src="js/product-micros-data.js?v=20260809a"></script>
 <script src="js/meal-micro-estimates.js?v=20260809a"></script>
-<script src="js/meal-calculator.js?v=20260814suggestportal"></script>
+<script src="js/meal-calculator.js?v=20260814summaryfancy"></script>
 <script src="js/auth-ui.js?v=20260812productgap"></script>
 <link rel="stylesheet" href="css/cookie-consent.css?v=20260812productgap">
 <script src="js/cookie-banner.js?v=20260812productgap"></script>

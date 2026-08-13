@@ -59,7 +59,29 @@
 }
 
 .meal-panel--summary {
+    position: relative;
     overflow: hidden;
+    isolation: isolate;
+    padding: 1.25rem 1.2rem 1.4rem;
+    background:
+        linear-gradient(165deg, color-mix(in srgb, var(--surface-elevated, var(--surface)) 92%, #fff) 0%, var(--surface) 100%);
+    border: 1px solid color-mix(in srgb, var(--border) 85%, transparent);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.meal-panel--summary::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    height: 3px;
+    background: var(--main-top-bar);
+    opacity: 0.95;
+}
+
+[data-theme='dark'] .meal-panel--summary {
+    background:
+        linear-gradient(165deg, rgba(36, 48, 72, 0.95) 0%, rgba(22, 31, 48, 0.98) 100%);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.28);
 }
 
 .meal-panel--summary.is-entering {
@@ -69,6 +91,38 @@
 .meal-panel--summary.is-entering .meal-stat {
     animation: mealStatIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
     animation-delay: calc(var(--stat-i, 0) * 55ms + 120ms);
+}
+
+.meal-summary-head {
+    margin-bottom: 1rem;
+}
+
+.meal-summary-kicker {
+    margin: 0 0 0.28rem;
+    font-family: var(--font-display);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.meal-panel--summary h2 {
+    margin: 0;
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+    letter-spacing: -0.03em;
+}
+
+.meal-summary-lead {
+    margin: 0.4rem 0 0;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: var(--text-muted);
+    max-width: 36rem;
 }
 
 .meal-builder-prompt {
@@ -497,23 +551,86 @@
 .meal-totals-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.55rem;
-    margin-bottom: 1rem;
+    gap: 0.65rem;
+    margin-bottom: 0.35rem;
 }
 
 @media (min-width: 520px) {
     .meal-totals-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+
+    .meal-stat--kcal {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: auto auto;
+        align-items: end;
+        column-gap: 0.75rem;
+        padding: 1rem 1.1rem;
+    }
+
+    .meal-stat--kcal .meal-stat-label {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        margin: 0;
+    }
+
+    .meal-stat--kcal .meal-stat-value {
+        grid-column: 1 / 2;
+        grid-row: 2;
+        font-size: clamp(1.7rem, 4vw, 2.05rem);
+        line-height: 1;
+    }
+
+    .meal-stat--kcal .meal-stat-unit {
+        grid-column: 2 / 3;
+        grid-row: 2;
+        align-self: end;
+        margin-bottom: 0.18rem;
+    }
 }
 
 .meal-stat {
-    background: var(--bg-main);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 0.7rem 0.75rem;
+    position: relative;
+    background:
+        linear-gradient(160deg, color-mix(in srgb, var(--bg-main) 88%, #fff), var(--bg-main));
+    border: 1px solid color-mix(in srgb, var(--border) 90%, transparent);
+    border-radius: 14px;
+    padding: 0.85rem 0.9rem 0.8rem;
     opacity: 0;
+    overflow: hidden;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
+
+.meal-stat::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    bottom: 0.7rem;
+    width: 3px;
+    border-radius: 999px;
+    background: var(--stat-accent, var(--primary));
+}
+
+[data-theme='dark'] .meal-stat {
+    background: linear-gradient(160deg, rgba(30, 41, 59, 0.72), rgba(15, 23, 42, 0.55));
+    border-color: rgba(148, 163, 184, 0.14);
+}
+
+.meal-stat:hover {
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--stat-accent, var(--primary)) 35%, var(--border));
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.1);
+}
+
+.meal-stat--kcal { --stat-accent: #dc2626; }
+.meal-stat--protein { --stat-accent: #2563eb; }
+.meal-stat--carbs { --stat-accent: #d97706; }
+.meal-stat--fat { --stat-accent: #059669; }
+.meal-stat--sat { --stat-accent: #b45309; }
+.meal-stat--unsat { --stat-accent: #0d9488; }
 
 .meal-panel--summary.is-visible .meal-stat,
 .meal-panel--summary:not([hidden]) .meal-stat {
@@ -522,17 +639,49 @@
 
 .meal-stat-label {
     display: block;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     color: var(--text-muted);
-    font-weight: 600;
-    margin-bottom: 0.2rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0 0 0.35rem 0.35rem;
 }
 
 .meal-stat-value {
+    display: block;
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: clamp(1.2rem, 2.8vw, 1.4rem);
     font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.03em;
     color: var(--text-main);
+    margin-left: 0.35rem;
+    line-height: 1.1;
+}
+
+.meal-stat-unit {
+    display: inline-block;
+    margin-left: 0.35rem;
+    margin-top: 0.2rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.meal-micro-block {
+    margin-top: 1.35rem;
+    padding-top: 1.15rem;
+    border-top: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+}
+
+.meal-micro-head {
+    margin-bottom: 0.85rem;
+}
+
+.meal-micro-head h2 {
+    margin: 0;
 }
 
 .meal-goals {
@@ -605,6 +754,14 @@
 
 .meal-micro-wrap {
     overflow-x: auto;
+    border-radius: 14px;
+    border: 1px solid color-mix(in srgb, var(--border) 85%, transparent);
+    background: color-mix(in srgb, var(--bg-main) 70%, transparent);
+}
+
+[data-theme='dark'] .meal-micro-wrap {
+    background: rgba(15, 23, 42, 0.35);
+    border-color: rgba(148, 163, 184, 0.14);
 }
 
 .meal-micro-table {
@@ -616,29 +773,66 @@
 .meal-micro-table th,
 .meal-micro-table td {
     text-align: left;
-    padding: 0.55rem 0.45rem;
-    border-bottom: 1px solid var(--border);
-    vertical-align: top;
+    padding: 0.72rem 0.7rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--border) 75%, transparent);
+    vertical-align: middle;
+}
+
+.meal-micro-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.meal-micro-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.meal-micro-table tbody tr:hover {
+    background: color-mix(in srgb, var(--primary) 6%, transparent);
 }
 
 .meal-micro-table th {
-    font-size: 0.75rem;
+    font-size: 0.68rem;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.08em;
     color: var(--text-muted);
+    background: color-mix(in srgb, var(--surface-muted, var(--bg-main)) 55%, transparent);
+    position: sticky;
+    top: 0;
+}
+
+.meal-micro-table td:nth-child(2),
+.meal-micro-table td:nth-child(3),
+.meal-micro-table th:nth-child(2),
+.meal-micro-table th:nth-child(3) {
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.meal-micro-table td:first-child strong {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.meal-pct-cell {
+    min-width: 7.5rem;
 }
 
 .meal-pct {
-    font-weight: 700;
-    font-size: 0.85rem;
+    display: inline-block;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 0.82rem;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
 }
 
 .meal-pct.is-good {
-    color: #1b7a3d;
+    color: #16a34a;
 }
 
 .meal-pct.is-ok {
-    color: var(--accent);
+    color: var(--accent-hot, var(--accent));
 }
 
 .meal-pct.is-low {
@@ -646,29 +840,64 @@
 }
 
 .meal-pct.is-high {
-    color: #a33b00;
+    color: #ea580c;
+}
+
+[data-theme='dark'] .meal-pct.is-good {
+    color: #4ade80;
+}
+
+[data-theme='dark'] .meal-pct.is-ok {
+    color: #93c5fd;
+}
+
+[data-theme='dark'] .meal-pct.is-high {
+    color: #fb923c;
 }
 
 .meal-pct-bar {
     display: block;
-    height: 5px;
-    margin-top: 0.25rem;
+    height: 7px;
+    margin-top: 0.4rem;
     border-radius: 999px;
-    background: color-mix(in srgb, var(--border) 80%, transparent);
+    background: color-mix(in srgb, var(--border) 70%, transparent);
     overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.08);
 }
 
 .meal-pct-bar > span {
     display: block;
     height: 100%;
-    background: var(--primary);
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--primary-dark), var(--primary), color-mix(in srgb, var(--primary) 55%, var(--accent)));
+    box-shadow: 0 0 10px color-mix(in srgb, var(--primary) 35%, transparent);
+    transition: width 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.meal-pct-cell:has(.is-good) .meal-pct-bar > span {
+    background: linear-gradient(90deg, #15803d, #22c55e);
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.28);
+}
+
+.meal-pct-cell:has(.is-high) .meal-pct-bar > span {
+    background: linear-gradient(90deg, #c2410c, #fb923c);
+    box-shadow: 0 0 10px rgba(251, 146, 60, 0.28);
+}
+
+.meal-pct-cell:has(.is-ok) .meal-pct-bar > span {
+    background: linear-gradient(90deg, #1d4ed8, #60a5fa);
+    box-shadow: 0 0 10px rgba(96, 165, 250, 0.25);
 }
 
 .meal-note {
-    margin: 0.75rem 0 0;
+    margin: 0.85rem 0 0;
     font-size: 0.8rem;
     color: var(--text-muted);
-    line-height: 1.45;
+    line-height: 1.5;
+    padding: 0.75rem 0.85rem;
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--accent) 6%, transparent);
+    border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
 }
 
 .meal-link-btn {
