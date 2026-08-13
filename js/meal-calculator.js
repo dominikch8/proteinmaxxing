@@ -35,7 +35,7 @@
     }
 
     function updateWizardUI(options = {}) {
-        const { animateSummary = false, newItemId = null } = options;
+        const { animateSummary = false, newItemId = null, bumpSummary = false } = options;
         const hasProduct = !!selectedProduct;
         const hasMeal = mealItems.length > 0;
         const gramsStep = $('mealGramsStep');
@@ -62,31 +62,62 @@
                     el.style.setProperty('--stat-i', String(i));
                 });
                 if ((firstReveal || animateSummary) && !prefersReducedMotion()) {
-                    summaryPanel.classList.remove('is-entering');
+                    summaryPanel.classList.remove('is-entering', 'is-bumping');
                     void summaryPanel.offsetWidth;
                     summaryPanel.classList.add('is-entering');
+                    playMicroRowReveal(summaryPanel);
+                } else if (bumpSummary && !prefersReducedMotion()) {
+                    summaryPanel.classList.remove('is-bumping');
+                    void summaryPanel.offsetWidth;
+                    summaryPanel.classList.add('is-bumping');
+                    playMicroRowReveal(summaryPanel);
+                    window.setTimeout(() => summaryPanel.classList.remove('is-bumping'), 700);
                 }
-                if (animateSummary) {
+                if (animateSummary || bumpSummary) {
                     window.setTimeout(() => {
                         summaryPanel.scrollIntoView({
                             behavior: prefersReducedMotion() ? 'auto' : 'smooth',
                             block: 'nearest',
                         });
-                    }, 420);
+                    }, animateSummary ? 420 : 80);
                 }
             }
         } else {
             hideStep(listStep);
             if (summaryPanel) {
-                summaryPanel.classList.remove('is-visible', 'is-entering');
+                summaryPanel.classList.remove('is-visible', 'is-entering', 'is-bumping');
                 summaryPanel.hidden = true;
             }
         }
 
         if (newItemId) {
             const li = document.querySelector(`.meal-item[data-id="${CSS.escape(newItemId)}"]`);
-            if (li) li.classList.add('is-new');
+            if (li) {
+                li.classList.remove('is-new');
+                void li.offsetWidth;
+                li.classList.add('is-new');
+            }
         }
+    }
+
+    function playMicroRowReveal(root) {
+        const rows = root?.querySelectorAll('.meal-micro-table tbody tr');
+        if (!rows?.length) return;
+        rows.forEach((row, i) => {
+            row.classList.remove('is-row-in');
+            row.style.setProperty('--row-i', String(i));
+            void row.offsetWidth;
+            row.classList.add('is-row-in');
+        });
+        root.querySelectorAll('.meal-pct-bar > span').forEach((fill) => {
+            const w = fill.style.width;
+            fill.style.width = '0%';
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    fill.style.width = w;
+                });
+            });
+        });
     }
 
     function $(id) {
@@ -277,7 +308,11 @@
         renderTotals();
         setSelectedProduct(null);
         if ($('mealGramsInput')) $('mealGramsInput').value = '100';
-        updateWizardUI({ animateSummary: isFirstItem, newItemId: newId });
+        updateWizardUI({
+            animateSummary: isFirstItem,
+            bumpSummary: !isFirstItem,
+            newItemId: newId,
+        });
     }
 
     function removeItem(id) {
@@ -369,8 +404,10 @@
             const el = $(id);
             if (el) el.textContent = val;
         };
+        const proteinPer100Kcal = t.kcal > 0 ? (t.protein / t.kcal) * 100 : 0;
         set('mealTotalKcal', `${t.kcal}`);
         set('mealTotalProtein', `${t.protein} g`);
+        set('mealTotalProteinPerKcal', fmtNum(proteinPer100Kcal, 1));
         set('mealTotalCarbs', `${t.carbs} g`);
         set('mealTotalFat', `${t.fat} g`);
         set('mealTotalSat', `${t.satFat} g`);

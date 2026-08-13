@@ -85,12 +85,34 @@
 }
 
 .meal-panel--summary.is-entering {
-    animation: mealSummaryIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation: mealSummaryIn 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .meal-panel--summary.is-entering .meal-stat {
+    animation: mealStatIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: calc(var(--stat-i, 0) * 60ms + 140ms);
+}
+
+.meal-panel--summary.is-entering .meal-summary-head,
+.meal-panel--summary.is-entering .meal-micro-block {
     animation: mealStatIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
-    animation-delay: calc(var(--stat-i, 0) * 55ms + 120ms);
+}
+
+.meal-panel--summary.is-entering .meal-summary-head {
+    animation-delay: 40ms;
+}
+
+.meal-panel--summary.is-entering .meal-micro-block {
+    animation-delay: 360ms;
+}
+
+.meal-panel--summary.is-bumping {
+    animation: mealSummaryBump 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.meal-panel--summary.is-bumping .meal-stat {
+    animation: mealStatIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: calc(var(--stat-i, 0) * 35ms);
 }
 
 .meal-summary-head {
@@ -188,24 +210,63 @@
 }
 
 .meal-item.is-new {
-    animation: mealItemIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation: mealItemIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 @keyframes mealSummaryIn {
     from {
         opacity: 0;
-        transform: translateY(28px) scale(0.97);
+        transform: translateY(36px) scale(0.96);
+        filter: blur(6px);
     }
     to {
         opacity: 1;
         transform: none;
+        filter: none;
     }
+}
+
+@keyframes mealSummaryBump {
+    0% { transform: scale(1); }
+    35% { transform: scale(1.015); box-shadow: 0 22px 52px rgba(15, 23, 42, 0.16); }
+    100% { transform: scale(1); }
 }
 
 @keyframes mealStatIn {
     from {
         opacity: 0;
-        transform: translateY(14px) scale(0.96);
+        transform: translateY(18px) scale(0.94);
+        filter: blur(4px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+        filter: none;
+    }
+}
+
+@keyframes mealItemIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-18px) scale(0.97);
+        box-shadow: 0 0 0 rgba(128, 0, 0, 0);
+    }
+    55% {
+        opacity: 1;
+        transform: translateX(0) scale(1.01);
+        box-shadow: 0 0 0 1px color-mix(in srgb, var(--primary) 35%, transparent), 0 12px 28px rgba(128, 0, 0, 0.14);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+@keyframes mealMicroRowIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
     }
     to {
         opacity: 1;
@@ -213,26 +274,24 @@
     }
 }
 
-@keyframes mealItemIn {
-    from {
-        opacity: 0;
-        transform: translateX(-12px);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
+@keyframes mealKcalGlow {
+    0%, 100% { box-shadow: 0 0 0 1px color-mix(in srgb, #f87171 45%, transparent), 0 0 14px rgba(220, 38, 38, 0.28); }
+    50% { box-shadow: 0 0 0 1px color-mix(in srgb, #fca5a5 65%, transparent), 0 0 22px rgba(248, 113, 113, 0.45); }
 }
 
 @media (prefers-reduced-motion: reduce) {
     .meal-step,
     .meal-panel--summary.is-entering,
     .meal-panel--summary.is-entering .meal-stat,
-    .meal-item.is-new {
+    .meal-panel--summary.is-bumping,
+    .meal-item.is-new,
+    .meal-micro-table tbody tr.is-row-in,
+    .meal-stat-unit--kcal {
         animation: none !important;
         transition: none !important;
         transform: none !important;
         opacity: 1 !important;
+        filter: none !important;
     }
 
     .meal-step:not(.is-visible) {
@@ -508,6 +567,7 @@
     border-radius: 12px;
     border: 1px solid var(--border);
     background: var(--bg-main);
+    transition: border-color 0.25s ease, transform 0.25s ease;
 }
 
 .meal-item-emoji {
@@ -563,7 +623,7 @@
     .meal-stat--kcal {
         grid-column: 1 / -1;
         display: grid;
-        grid-template-columns: auto 1fr auto;
+        grid-template-columns: auto auto 1fr;
         grid-template-rows: auto auto;
         align-items: end;
         column-gap: 0.75rem;
@@ -571,7 +631,7 @@
     }
 
     .meal-stat--kcal .meal-stat-label {
-        grid-column: 1 / 2;
+        grid-column: 1 / 3;
         grid-row: 1;
         margin: 0;
     }
@@ -587,7 +647,7 @@
         grid-column: 2 / 3;
         grid-row: 2;
         align-self: end;
-        margin-bottom: 0.18rem;
+        margin: 0 0 0.12rem;
     }
 }
 
@@ -627,10 +687,23 @@
 
 .meal-stat--kcal { --stat-accent: #dc2626; }
 .meal-stat--protein { --stat-accent: #2563eb; }
+.meal-stat--density { --stat-accent: #7c3aed; }
 .meal-stat--carbs { --stat-accent: #d97706; }
 .meal-stat--fat { --stat-accent: #059669; }
 .meal-stat--sat { --stat-accent: #b45309; }
 .meal-stat--unsat { --stat-accent: #0d9488; }
+
+.meal-stat--kcal .meal-stat-value {
+    text-shadow: 0 0 24px rgba(220, 38, 38, 0.28);
+}
+
+[data-theme='dark'] .meal-stat--kcal .meal-stat-value {
+    text-shadow: 0 0 28px rgba(248, 113, 113, 0.35);
+}
+
+.meal-stat--density .meal-stat-value {
+    color: color-mix(in srgb, var(--text-main) 88%, #7c3aed);
+}
 
 .meal-panel--summary.is-visible .meal-stat,
 .meal-panel--summary:not([hidden]) .meal-stat {
@@ -668,6 +741,31 @@
     color: var(--text-muted);
     letter-spacing: 0.04em;
     text-transform: uppercase;
+}
+
+.meal-stat-unit--kcal {
+    margin-left: 0.35rem;
+    margin-top: 0.15rem;
+    padding: 0.28rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: #fecaca;
+    background: linear-gradient(135deg, rgba(127, 29, 29, 0.92), rgba(185, 28, 28, 0.85));
+    border: 1px solid rgba(248, 113, 113, 0.45);
+    animation: mealKcalGlow 2.4s ease-in-out infinite;
+}
+
+[data-theme='dark'] .meal-stat-unit--kcal {
+    color: #ffe4e6;
+    background: linear-gradient(135deg, rgba(127, 29, 29, 0.75), rgba(220, 38, 38, 0.55));
+}
+
+html:not([data-theme='dark']) .meal-stat-unit--kcal {
+    color: #7f1d1d;
+    background: linear-gradient(135deg, #fee2e2, #fecaca);
+    border-color: rgba(220, 38, 38, 0.35);
 }
 
 .meal-micro-block {
@@ -784,6 +882,12 @@
 
 .meal-micro-table tbody tr {
     transition: background 0.2s ease;
+    opacity: 1;
+}
+
+.meal-micro-table tbody tr.is-row-in {
+    animation: mealMicroRowIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: calc(var(--row-i, 0) * 40ms);
 }
 
 .meal-micro-table tbody tr:hover {

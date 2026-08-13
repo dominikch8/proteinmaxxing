@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/theme-switch.css?v=20260812productgap">
     <link rel="stylesheet" href="css/site-motion.css?v=20260812productgap">
     <link rel="stylesheet" href="css/brand-text.css?v=20260812productgap">
-    <link rel="stylesheet" href="css/meal-calc.css?v=20260814summaryfancy">
+    <link rel="stylesheet" href="css/meal-calc.css?v=20260814mealfx">
     <style>
       /* krytyczne: napis MA być na zdjęciu (nie pod nim) */
       .meal-hero {
@@ -165,25 +165,30 @@
                         <div class="meal-stat meal-stat--kcal" style="--stat-i:0">
                             <span class="meal-stat-label">Kalorie</span>
                             <span class="meal-stat-value" id="mealTotalKcal">0</span>
-                            <span class="meal-stat-unit">kcal</span>
+                            <span class="meal-stat-unit meal-stat-unit--kcal">kcal</span>
                         </div>
                         <div class="meal-stat meal-stat--protein" style="--stat-i:1">
                             <span class="meal-stat-label">Białko</span>
                             <span class="meal-stat-value" id="mealTotalProtein">0 g</span>
                         </div>
-                        <div class="meal-stat meal-stat--carbs" style="--stat-i:2">
+                        <div class="meal-stat meal-stat--density" style="--stat-i:2">
+                            <span class="meal-stat-label">Białko / kcal</span>
+                            <span class="meal-stat-value" id="mealTotalProteinPerKcal">0</span>
+                            <span class="meal-stat-unit">g / 100 kcal</span>
+                        </div>
+                        <div class="meal-stat meal-stat--carbs" style="--stat-i:3">
                             <span class="meal-stat-label">Węglowodany</span>
                             <span class="meal-stat-value" id="mealTotalCarbs">0 g</span>
                         </div>
-                        <div class="meal-stat meal-stat--fat" style="--stat-i:3">
+                        <div class="meal-stat meal-stat--fat" style="--stat-i:4">
                             <span class="meal-stat-label">Tłuszcz</span>
                             <span class="meal-stat-value" id="mealTotalFat">0 g</span>
                         </div>
-                        <div class="meal-stat meal-stat--sat" style="--stat-i:4">
+                        <div class="meal-stat meal-stat--sat" style="--stat-i:5">
                             <span class="meal-stat-label">Nasycone</span>
                             <span class="meal-stat-value" id="mealTotalSat">0 g</span>
                         </div>
-                        <div class="meal-stat meal-stat--unsat" style="--stat-i:5">
+                        <div class="meal-stat meal-stat--unsat" style="--stat-i:6">
                             <span class="meal-stat-label">Nienasycone</span>
                             <span class="meal-stat-value" id="mealTotalUnsat">0 g</span>
                         </div>
@@ -243,7 +248,7 @@
 <script src="js/meal-rda.js?v=20260809a"></script>
 <script src="js/product-micros-data.js?v=20260809a"></script>
 <script src="js/meal-micro-estimates.js?v=20260809a"></script>
-<script src="js/meal-calculator.js?v=20260814summaryfancy"></script>
+<script src="js/meal-calculator.js?v=20260814mealfx"></script>
 <script src="js/auth-ui.js?v=20260812productgap"></script>
 <link rel="stylesheet" href="css/cookie-consent.css?v=20260812productgap">
 <script src="js/cookie-banner.js?v=20260812productgap"></script>
