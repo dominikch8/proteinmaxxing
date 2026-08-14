@@ -419,6 +419,7 @@ body.compare-body.is-ready .compare-stage {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.55;
+    font-weight: var(--font-weight-copy, 600);
 }
 
 

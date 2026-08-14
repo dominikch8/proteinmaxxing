@@ -340,7 +340,7 @@
     z-index: 1;
     margin: 0 0 12px;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: var(--font-weight-copy, 600);
     line-height: 1.65;
     color: var(--text-dark);
 }
@@ -355,7 +355,7 @@
     margin: 8px 0 14px;
     padding-left: 1.2em;
     font-size: 0.94rem;
-    font-weight: 500;
+    font-weight: var(--font-weight-copy, 600);
     line-height: 1.6;
     color: var(--text-dark);
 }
@@ -403,7 +403,7 @@
     min-width: 320px;
     border-collapse: collapse;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: var(--font-weight-copy, 600);
     line-height: 1.45;
     background: rgba(255, 255, 255, 0.72);
     border-radius: var(--radius-md);
@@ -608,7 +608,7 @@
 .poradnik-fun-fact-text {
     margin: 0;
     font-size: 0.96rem;
-    font-weight: 400;
+    font-weight: var(--font-weight-copy, 600);
     line-height: 1.7;
     color: var(--text-dark);
 }

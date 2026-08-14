@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: var(--font-weight-copy, 600);
     background: var(--bg-gradient);
     background-attachment: fixed;
     color: var(--text-dark);
@@ -841,6 +842,7 @@ a.product-category:hover {
     border-left: 4px solid var(--accent);
     border-radius: 8px;
     font-size: 0.9rem;
+    font-weight: var(--font-weight-copy, 600);
     color: var(--text-dark);
 }
 

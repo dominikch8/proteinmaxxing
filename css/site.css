@@ -10,6 +10,7 @@
 
         body {
             font-family: var(--font-sans, 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif);
+            font-weight: var(--font-weight-copy, 600);
             background: var(--bg-gradient);
             background-attachment: fixed;
             color: var(--text-dark);
@@ -18,6 +19,24 @@
             -moz-osx-font-smoothing: grayscale;
             text-rendering: optimizeLegibility;
             min-height: 100vh;
+        }
+
+        /* Opisy / leady / akapity — ta sama grubość co hero kalkulatora */
+        p,
+        li,
+        .subtitle,
+        .seo-block p,
+        .product-guide p,
+        .product-guide li,
+        .extra-box,
+        .legal-fine-print,
+        .health-disclaimer,
+        .info-warning,
+        .site-footer,
+        .form-hint,
+        .empty-state,
+        label {
+            font-weight: var(--font-weight-copy, 600);
         }
 
         body::before {
@@ -460,6 +479,7 @@
             color: var(--text-muted);
             margin-bottom: 0;
             font-size: 1.05rem;
+            font-weight: var(--font-weight-copy, 600);
             max-width: 580px;
             margin-left: auto;
             margin-right: auto;
@@ -2079,6 +2099,7 @@
             margin-bottom: 14px;
             color: var(--text-dark);
             font-size: 0.96rem;
+            font-weight: var(--font-weight-copy, 600);
             line-height: 1.7;
         }
 
@@ -2086,6 +2107,7 @@
             margin: 10px 0 16px 22px;
             color: var(--text-dark);
             font-size: 0.96rem;
+            font-weight: var(--font-weight-copy, 600);
         }
 
         .info-tab ul li { margin-bottom: 10px; line-height: 1.6; }
@@ -2233,7 +2255,7 @@
         .health-disclaimer a,
         .info-warning a {
             color: var(--text-muted);
-            font-weight: 400;
+            font-weight: var(--font-weight-copy, 600);
             text-decoration: underline;
             text-underline-offset: 2px;
         }

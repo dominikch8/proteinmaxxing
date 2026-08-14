@@ -6,6 +6,7 @@
     --site-rail-min-dual: 1880px;
     --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     --font-display: 'Encode Sans', 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-weight-copy: 600;
     --primary: #800000;
     --primary-dark: #660000;
     --primary-hover: #991010;
