@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/theme-switch.css?v=20260812productgap">
     <link rel="stylesheet" href="css/site-motion.css?v=20260812productgap">
     <link rel="stylesheet" href="css/brand-text.css?v=20260812productgap">
-    <link rel="stylesheet" href="css/meal-calc.css?v=20260814heroLight">
+    <link rel="stylesheet" href="css/meal-calc.css?v=20260815heroBold">
     <style>
       /* krytyczne: napis MA być na zdjęciu (nie pod nim) */
       .meal-hero {
@@ -70,9 +70,9 @@
       html:not([data-theme='dark']) .meal-hero::before {
         background: linear-gradient(
           180deg,
-          rgba(255, 255, 255, 0.42) 0%,
-          rgba(255, 252, 248, 0.55) 48%,
-          rgba(248, 250, 252, 0.68) 100%
+          rgba(255, 255, 255, 0.62) 0%,
+          rgba(255, 252, 248, 0.72) 48%,
+          rgba(248, 250, 252, 0.82) 100%
         );
       }
       html:not([data-theme='dark']) .meal-hero-copy h1 {
@@ -80,9 +80,17 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-weight: 900;
       }
       html:not([data-theme='dark']) .meal-hero-copy .subtitle {
         color: #334155;
+        font-weight: 600;
+      }
+      .meal-hero-copy h1 {
+        font-weight: 900;
+      }
+      .meal-hero-copy .subtitle {
+        font-weight: 600;
       }
       .meal-hero-copy.page-hero {
         position: relative !important;
