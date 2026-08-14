@@ -518,6 +518,11 @@
     align-self: center;
 }
 
+.compare-glass-chart--micro .compare-glass-track--micro .compare-glass-fill.is-run,
+.compare-glass-row--micro .compare-glass-track--micro .compare-glass-fill.is-run {
+    width: var(--bar-pct, 0%);
+}
+
 .compare-glass-chart--micro .compare-glass-track--micro .compare-glass-fill-sheen,
 .compare-glass-row--micro .compare-glass-track--micro .compare-glass-fill-sheen,
 .compare-glass-chart--micro .compare-glass-track--micro .compare-glass-fill-glow,

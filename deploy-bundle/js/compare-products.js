@@ -991,11 +991,13 @@
         row.style.setProperty('--row-delay', '0ms');
         row.classList.add('is-visible');
         row.querySelectorAll('.compare-glass-fill').forEach((fill, i) => {
+            const pct = fill.dataset.pct || '0';
             fill.style.setProperty('--bar-delay', `${i * 70}ms`);
-            fill.style.width = '';
-            /* Force reflow so width transition starts from 0% when becoming is-run. */
+            fill.style.setProperty('--bar-pct', `${pct}%`);
+            fill.style.width = '0%';
             void fill.offsetWidth;
             fill.classList.add('is-run');
+            fill.style.width = '';
         });
     }
 
