@@ -1095,13 +1095,28 @@ html:not([data-theme='dark']) .meal-stat-unit--kcal {
     );
 }
 
+html:not([data-theme='dark']) .meal-hero {
+    background-color: #f8fafc;
+}
+
 html:not([data-theme='dark']) .meal-hero::before {
     background: linear-gradient(
         180deg,
-        rgba(15, 23, 42, 0.48) 0%,
-        rgba(15, 23, 42, 0.6) 55%,
-        rgba(15, 23, 42, 0.74) 100%
+        rgba(255, 255, 255, 0.42) 0%,
+        rgba(255, 252, 248, 0.55) 48%,
+        rgba(248, 250, 252, 0.68) 100%
     );
+}
+
+html:not([data-theme='dark']) .meal-hero-copy h1 {
+    background: linear-gradient(180deg, #6e1616 0%, #4a1c28 48%, #1e293b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+html:not([data-theme='dark']) .meal-hero-copy .subtitle {
+    color: #334155;
 }
 
 .meal-hero-copy.page-hero {
