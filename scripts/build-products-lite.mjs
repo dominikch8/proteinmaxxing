@@ -13,7 +13,7 @@ const outPath = path.join(root, 'js', 'products-lite.js');
 const LITE_FIELDS = [
     'name', 'emoji', 'category', 'slug', 'servingText', 'servingRatio', 'servingGrams',
     'kcal', 'protein', 'carbs', 'fat', 'satFat', 'unsatFat', 'micros', 'microsDetail', 'note',
-    'pricePer100gProtein', 'servingPricePln', 'proteinInServing'
+    'pricePer100gProtein', 'pricePer100g', 'servingPricePln', 'proteinInServing'
 ];
 
 const rawFile = fs.readFileSync(rawPath, 'utf8');

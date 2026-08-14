@@ -155,9 +155,12 @@ function getProductImageSrc(slug, imageMap) {
     return productImagePaths(slug).webp;
 }
 
-/** PLN za 100 g produktu — szacunek z ceny i wagi porcji. */
+/** PLN za 100 g produktu — z półki (zł/kg ÷ 10) albo z ceny porcji. */
 function foodPricePer100g(p) {
     if (!p) return null;
+    if (p.pricePer100g != null && p.pricePer100g >= 0) {
+        return Math.round(p.pricePer100g * 100) / 100;
+    }
     const grams = p.servingGrams > 0 ? p.servingGrams : p.servingRatio > 0 ? p.servingRatio * 100 : 0;
     if (grams > 0 && p.servingPricePln != null && p.servingPricePln >= 0) {
         return Math.round((p.servingPricePln / grams) * 10000) / 100;

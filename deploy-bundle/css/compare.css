@@ -1598,6 +1598,8 @@ body.compare-body.is-ready .compare-stage {
 }
 
 [data-theme='dark'] .compare-kpi-card {
+    background: linear-gradient(160deg, rgba(30, 41, 59, 0.75), rgba(15, 23, 42, 0.7));
+    border-color: rgba(148, 163, 184, 0.14);
     box-shadow: none;
 }
 
@@ -1632,8 +1634,8 @@ body.compare-body.is-ready .compare-stage {
 }
 
 [data-theme='dark'] .compare-kpi-card--muted {
-    background: rgba(30, 41, 59, 0.4);
-    border-color: rgba(148, 163, 184, 0.08);
+    background: linear-gradient(160deg, rgba(30, 41, 59, 0.5), rgba(15, 23, 42, 0.45));
+    border-color: rgba(148, 163, 184, 0.1);
 }
 
 .compare-kpi-icon {

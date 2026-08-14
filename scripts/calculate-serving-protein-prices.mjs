@@ -22,13 +22,24 @@ const products = Function(
 )();
 
 function roundShelfPrice(pln) {
-    if (pln < 0.5) return Math.max(0.29, Math.round(pln * 20) / 20);
+    if (pln < 0.08) return Math.max(0.03, Math.round(pln * 100) / 100);
+    if (pln < 0.5) return Math.round(pln * 20) / 20;
     if (pln < 2) return Math.round(pln * 20) / 20;
     if (pln < 15) return Math.round(pln * 10) / 10 - 0.01;
     return Math.floor(pln) + 0.99;
 }
 
+function roundPricePer100g(pln) {
+    if (pln < 0.2) return Math.round(pln * 100) / 100;
+    if (pln < 2) return Math.round(pln * 100) / 100;
+    return Math.round(pln * 100) / 100;
+}
+
 function pricePerKgFromRetail(p) {
+    const pkg = (retail.standardPackages || []).find((x) => x.nameMatch === p.name);
+    if (pkg && pkg.netGrams && pkg.pricePln) {
+        return Math.round((pkg.pricePln / pkg.netGrams) * 100000) / 100;
+    }
     const n = p.name.toLowerCase();
     for (const row of retail.patterns) {
         const re = new RegExp(row.re, 'i');
@@ -55,12 +66,12 @@ function packMultiplier(p, st, grams, pricePerKg) {
     if (/izolat|wpi|wpc|koncentrat.*białka/i.test(n) && st.includes('miarka')) return 1;
     if (/jajko kurze/.test(n) && st.includes('sztuka')) return 1;
     if (/mleko/.test(n) && st.includes('szklanka')) return 1;
-    if (st.includes('puszka') && grams >= 80) {
+    if (st.includes('puszka') && grams >= 80 && /tuńczyk|sardyn|szprot|konserw|ciecierzyc|fasola|kukurydza|pomidor/i.test(n)) {
         return Math.max(1, 5.5 / (pricePerKg * (grams / 1000) || 1));
     }
     if (st.includes('kostka') && grams >= 150) return 1.04;
     if (st.includes('plaster') || st.includes('kromka')) return 1.08;
-    if (st.includes('łyżka') || st.includes('łyżeczka')) return 1.1;
+    if ((st.includes('łyżka') || st.includes('łyżeczka')) && pricePerKg >= 20) return 1.08;
     if (st.includes('garść') && grams <= 40 && pricePerKg >= 25) return 1;
     if (st.includes('garść') && grams <= 40) return 1.05;
     if (p.category === 'fastfood') return 1.18;
@@ -90,7 +101,7 @@ function servingPricePln(p, pricePerKg) {
     const linear = pricePerKg * (grams / 1000);
     let price = linear * packMultiplier(p, st, grams, pricePerKg);
 
-    if (st.includes('puszka') && grams >= 80) {
+    if (st.includes('puszka') && grams >= 80 && /tuńczyk|sardyn|szprot|konserw/i.test(p.name)) {
         price = Math.max(price, 5.29 + (grams - 80) * 0.012);
     }
     if (st.includes('tabliczka') && grams >= 80) price = Math.max(price, 5.49);
@@ -119,6 +130,7 @@ for (const p of products) {
     p.servingGrams = servingGrams;
     p.servingPricePln = servingPrice;
     p.proteinInServing = proteinInServing;
+    p.pricePer100g = roundPricePer100g(pricePerKg / 10);
     p.pricePer100gProtein = proteinPriceFromServing(servingPrice, p.protein, p.servingRatio);
 
     if (p.protein < MIN_PROTEIN) {
@@ -127,7 +139,6 @@ for (const p of products) {
     }
 
     delete p.pricePerKgRetail;
-    delete p.pricePer100g;
 }
 
 fs.writeFileSync(rawPath, `const productsDatabaseRaw = ${JSON.stringify(products)};\n`, 'utf8');

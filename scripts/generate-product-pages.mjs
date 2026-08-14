@@ -182,6 +182,9 @@ function formatPlnPrice(value) {
 }
 
 function estimateFoodPricePer100g(p) {
+    if (p.pricePer100g != null && p.pricePer100g >= 0) {
+        return Math.round(p.pricePer100g * 100) / 100;
+    }
     const grams = p.servingGrams > 0 ? p.servingGrams : p.servingRatio > 0 ? p.servingRatio * 100 : 0;
     if (grams > 0 && p.servingPricePln != null && p.servingPricePln >= 0) {
         return Math.round((p.servingPricePln / grams) * 10000) / 100;
