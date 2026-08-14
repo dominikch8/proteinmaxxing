@@ -250,7 +250,7 @@
     }
 
     .compare-glass-fill,
-    .compare-dashboard.is-animating .compare-glass-fill {
+    .compare-glass-fill.is-run {
         width: var(--bar-pct, var(--bar-inline, 0%)) !important;
         transition: none !important;
     }
@@ -1963,7 +1963,7 @@ body.compare-body.is-ready .compare-stage {
     z-index: 1;
 }
 
-.compare-dashboard.is-animating .compare-glass-fill {
+.compare-glass-fill.is-run {
     width: var(--bar-pct, 0%);
     transition-delay: var(--bar-delay, 0ms);
 }

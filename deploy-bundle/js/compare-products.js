@@ -678,7 +678,8 @@
     function buildGlassBarParts(slot, pct, label, isWinner, productName, barIndex, options = {}) {
         const { micro = false } = options;
         const fillW = pct > 0 ? pct : 0;
-        const delay = 120 + barIndex * 90;
+        /* Krótki stagger A→B w wierszu; pełna animacja startuje dopiero przy is-run (scroll). */
+        const delay = slot === 'a' ? 0 : 70;
         const winnerClass = !micro && isWinner ? ' is-winner' : '';
         const microTrackClass = micro ? ' compare-glass-track--micro' : '';
         const microValClass = micro ? ' compare-glass-fill-val--lead' : '';
@@ -870,7 +871,7 @@
         return {
             winner,
             html: `
-                <article class="compare-glass-row compare-glass-row--micro${winner ? ` compare-glass-row--lead-${winner}` : ''}" style="--row-delay:${(COMPARE_METRICS.length + rowIndex) * 70}ms">
+                <article class="compare-glass-row compare-glass-row--micro${winner ? ` compare-glass-row--lead-${winner}` : ''}" style="--row-delay:0ms">
                     <div class="compare-glass-row-head">
                         <span class="compare-glass-metric-badge" aria-hidden="true">
                             <span class="compare-glass-metric-icon compare-glass-metric-icon--micro">${icon}</span>
@@ -989,8 +990,11 @@
         if (!row || row.classList.contains('is-visible')) return;
         row.style.setProperty('--row-delay', '0ms');
         row.classList.add('is-visible');
-        row.querySelectorAll('.compare-glass-fill').forEach((fill) => {
+        row.querySelectorAll('.compare-glass-fill').forEach((fill, i) => {
+            fill.style.setProperty('--bar-delay', `${i * 70}ms`);
             fill.style.width = '';
+            /* Force reflow so width transition starts from 0% when becoming is-run. */
+            void fill.offsetWidth;
             fill.classList.add('is-run');
         });
     }
@@ -1032,8 +1036,8 @@
             },
             {
                 root: null,
-                rootMargin: '0px 0px -10% 0px',
-                threshold: 0.12
+                rootMargin: '0px 0px -6% 0px',
+                threshold: 0.08
             }
         );
 
