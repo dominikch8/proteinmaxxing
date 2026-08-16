@@ -1,0 +1,3618 @@
+[
+  {
+    "slug": "kasza-jaglana-ugotowana",
+    "name": "Kasza jaglana (ugotowana)",
+    "category": "zboza",
+    "jpgSz": 27556,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb",
+    "name": "Chleb",
+    "category": "polskie-obiadki",
+    "jpgSz": 24383,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "herbata-parzona-lipton",
+    "name": "Herbata (parzona) - Lipton",
+    "category": "napoje",
+    "jpgSz": 24352,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "przyprawa-kmin-rzymski-mielony",
+    "name": "Przyprawa kmin rzymski (mielony)",
+    "category": "przyprawy",
+    "jpgSz": 28758,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "papryka-proszek",
+    "name": "Papryka (proszek)",
+    "category": "warzywa",
+    "jpgSz": 26426,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ryz-brazowy-ugotowany",
+    "name": "Ryż brązowy (ugotowany)",
+    "category": "zboza",
+    "jpgSz": 27180,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ocet-balsamiczny",
+    "name": "Ocet balsamiczny",
+    "category": "polskie-obiadki",
+    "jpgSz": 26150,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "musztarda",
+    "name": "Musztarda",
+    "category": "sosy",
+    "jpgSz": 23197,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "serek-wiejski-lekki-piatnica",
+    "name": "Serek wiejski lekki - Piątnica",
+    "category": "nabial",
+    "jpgSz": 26110,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kawa-z-mlekiem-2-lyzki-mleka-3-2",
+    "name": "Kawa z mlekiem (2 łyżki mleka 3.2%)",
+    "category": "napoje",
+    "jpgSz": 28388,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-mozzarella-light",
+    "name": "Ser Mozzarella light",
+    "category": "sery",
+    "jpgSz": 24960,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "sliwki-suszone",
+    "name": "Śliwki suszone",
+    "category": "owoce",
+    "jpgSz": 24376,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jajko-kurze",
+    "name": "Jajko kurze",
+    "category": "nabial",
+    "jpgSz": 22415,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-pszenno-zytni",
+    "name": "Chleb pszenno-żytni",
+    "category": "zboza",
+    "jpgSz": 26491,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "koncentrat-pomidorowy",
+    "name": "Koncentrat pomidorowy",
+    "category": "sosy",
+    "jpgSz": 26152,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "herbata-zielona-parzona",
+    "name": "Herbata zielona (parzona)",
+    "category": "napoje",
+    "jpgSz": 24897,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "twarog-chudy-mlekopol",
+    "name": "Twaróg chudy - Mlekopol",
+    "category": "nabial",
+    "jpgSz": 26089,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "makaron-pelnoziarnisty-ugotowany",
+    "name": "Makaron pełnoziarnisty (ugotowany)",
+    "category": "makarony",
+    "jpgSz": 29776,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kefir-naturalny-2-tluszczu",
+    "name": "Kefir naturalny 2% tłuszczu",
+    "category": "nabial",
+    "jpgSz": 25899,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ogorek-konserwowy",
+    "name": "Ogórek konserwowy",
+    "category": "warzywa",
+    "jpgSz": 25868,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "pieczarki-swieze",
+    "name": "Pieczarki świeże",
+    "category": "warzywa",
+    "jpgSz": 25216,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mleko-3-2-tluszczu",
+    "name": "Mleko 3,2% tłuszczu",
+    "category": "nabial",
+    "jpgSz": 24695,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kielki-rzodkiewki",
+    "name": "Kiełki rzodkiewki",
+    "category": "warzywa",
+    "jpgSz": 25311,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ocet-jablkowy",
+    "name": "Ocet jabłkowy",
+    "category": "owoce",
+    "jpgSz": 23308,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "morele-suszone",
+    "name": "Morele suszone",
+    "category": "owoce",
+    "jpgSz": 24573,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ryz-brazowy-nieugotowany",
+    "name": "Ryż brązowy (nieugotowany)",
+    "category": "zboza",
+    "jpgSz": 27733,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "wiorki-kokosowe",
+    "name": "Wiórki kokosowe",
+    "category": "polskie-obiadki",
+    "jpgSz": 26805,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "cukier-brazowy",
+    "name": "Cukier brązowy",
+    "category": "zboza",
+    "jpgSz": 25207,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "curry-potrawa",
+    "name": "Curry (potrawa)",
+    "category": "przyprawy",
+    "jpgSz": 23578,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kawa-rozpuszczona",
+    "name": "Kawa (rozpuszczona)",
+    "category": "napoje",
+    "jpgSz": 24186,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "przyprawa-curry",
+    "name": "Przyprawa Curry",
+    "category": "przyprawy",
+    "jpgSz": 24763,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "papryka-slodka-proszek",
+    "name": "Papryka słodka (proszek)",
+    "category": "warzywa",
+    "jpgSz": 28519,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "proszek-do-pieczenia",
+    "name": "Proszek do pieczenia",
+    "category": "warzywa",
+    "jpgSz": 25701,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "platki-owsiane-gorskie",
+    "name": "Płatki owsiane górskie",
+    "category": "platki-sniadaniowe",
+    "jpgSz": 28356,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "poledwica-sopocka-morliny",
+    "name": "Polędwica sopocka - Morliny",
+    "category": "mieso",
+    "jpgSz": 27890,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "rozmaryn-suszony",
+    "name": "Rozmaryn suszony",
+    "category": "zboza",
+    "jpgSz": 25526,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kawa-espresso",
+    "name": "Kawa Espresso",
+    "category": "napoje",
+    "jpgSz": 22839,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kasza-gryczana-ugotowana",
+    "name": "Kasza gryczana (ugotowana)",
+    "category": "zboza",
+    "jpgSz": 28432,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-razowy-oskroba",
+    "name": "Chleb razowy - Oskroba",
+    "category": "zboza",
+    "jpgSz": 26241,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "papryka-chili-proszek",
+    "name": "Papryka chili (proszek)",
+    "category": "warzywa",
+    "jpgSz": 28028,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "szynka",
+    "name": "Szynka",
+    "category": "mieso",
+    "jpgSz": 22347,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-pszenny",
+    "name": "Chleb pszenny",
+    "category": "zboza",
+    "jpgSz": 25374,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "salata-mix",
+    "name": "Sałata mix",
+    "category": "warzywa",
+    "jpgSz": 23896,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "winogrona-zielone",
+    "name": "Winogrona zielone",
+    "category": "alkohole",
+    "jpgSz": 23971,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "indyk-piers-bez-skory",
+    "name": "Indyk (pierś bez skóry)",
+    "category": "mieso",
+    "jpgSz": 26134,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ocet-winny",
+    "name": "Ocet winny",
+    "category": "warzywa",
+    "jpgSz": 23416,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "lisc-laurowy-suszony",
+    "name": "Liść laurowy suszony",
+    "category": "zboza",
+    "jpgSz": 26083,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "wedlina-z-piersi-indyka",
+    "name": "Wędlina z piersi indyka",
+    "category": "mieso",
+    "jpgSz": 25852,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ryz-bialy-ugotowany",
+    "name": "Ryż biały (ugotowany)",
+    "category": "zboza",
+    "jpgSz": 26101,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "pieczarka-swieza",
+    "name": "Pieczarka świeża",
+    "category": "warzywa",
+    "jpgSz": 25072,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "brokuly-gotowane-bez-soli",
+    "name": "Brokuły (gotowane bez soli)",
+    "category": "warzywa",
+    "jpgSz": 27975,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-mozzarella-light-galbani",
+    "name": "Ser Mozzarella light - Galbani",
+    "category": "sery",
+    "jpgSz": 26949,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kielki-lucerny",
+    "name": "Kiełki lucerny",
+    "category": "warzywa",
+    "jpgSz": 23883,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "szynka-z-indyka-coop",
+    "name": "Szynka z indyka - Coop",
+    "category": "mieso",
+    "jpgSz": 25630,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "fasola-czerwona-konserwa-red-kidney",
+    "name": "Fasola czerwona (konserwa) - Red Kidney",
+    "category": "warzywa",
+    "jpgSz": 31535,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "szynka-wieprzowa-z-tluszczem-gotowana",
+    "name": "Szynka wieprzowa z tłuszczem, gotowana",
+    "category": "mieso",
+    "jpgSz": 31451,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "szynka-z-piersi-kurczaka-delikatna",
+    "name": "Szynka z piersi kurczaka (delikatna)",
+    "category": "mieso",
+    "jpgSz": 29211,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kawa-latte",
+    "name": "Kawa Latte",
+    "category": "napoje",
+    "jpgSz": 22109,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jajko-ugotowane-na-miekko",
+    "name": "Jajko ugotowane na miękko",
+    "category": "nabial",
+    "jpgSz": 25793,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "papryka-ostra-proszek",
+    "name": "Papryka ostra (proszek)",
+    "category": "warzywa",
+    "jpgSz": 28455,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "szpinak-baby-surowy",
+    "name": "Szpinak BABY surowy",
+    "category": "warzywa",
+    "jpgSz": 26452,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "galka-muszkatolowa-mielona",
+    "name": "Gałka muszkatołowa (mielona)",
+    "category": "przyprawy",
+    "jpgSz": 28163,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "seler-natka",
+    "name": "Seler (natka)",
+    "category": "warzywa",
+    "jpgSz": 24215,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kardamon",
+    "name": "Kardamon",
+    "category": "zboza",
+    "jpgSz": 23596,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ananas",
+    "name": "Ananas",
+    "category": "owoce",
+    "jpgSz": 22226,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mleko-2-tluszczu-mlekovita",
+    "name": "Mleko 2% tłuszczu - Mlekovita",
+    "category": "nabial",
+    "jpgSz": 26511,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ryz-parboiled-dlugoziarnisty-nieugotowany-biedronka",
+    "name": "Ryż parboiled długoziarnisty (nieugotowany) - Biedronka",
+    "category": "zboza",
+    "jpgSz": 32292,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "surowka-coleslaw",
+    "name": "Surówka Colesław",
+    "category": "warzywa",
+    "jpgSz": 25614,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jajko-kurze-gotowane",
+    "name": "Jajko kurze gotowane",
+    "category": "nabial",
+    "jpgSz": 24820,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "makaron-pelnoziarnisty-piora-nieugotowany",
+    "name": "Makaron pełnoziarnisty Pióra (nieugotowany)",
+    "category": "makarony",
+    "jpgSz": 31992,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "pomidory-w-puszce",
+    "name": "Pomidory w puszce",
+    "category": "warzywa",
+    "jpgSz": 25334,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-feta-light-apetina-arla",
+    "name": "Ser Feta light Apetina - Arla",
+    "category": "sery",
+    "jpgSz": 26983,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jajecznica",
+    "name": "Jajecznica",
+    "category": "nabial",
+    "jpgSz": 22085,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "serek-homogenizowany-naturalny-pilos",
+    "name": "Serek homogenizowany naturalny - Pilos",
+    "category": "nabial",
+    "jpgSz": 28941,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "fasolka-szparagowa-zolta",
+    "name": "Fasolka szparagowa (żółta)",
+    "category": "warzywa",
+    "jpgSz": 27609,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mleko-1-5",
+    "name": "Mleko 1,5%",
+    "category": "nabial",
+    "jpgSz": 22420,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "dymka-cebula",
+    "name": "Dymka cebula",
+    "category": "warzywa",
+    "jpgSz": 24566,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "rozmaryn-suszony-proszek",
+    "name": "Rozmaryn suszony (proszek)",
+    "category": "slodycze",
+    "jpgSz": 29227,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jajko-gotowane",
+    "name": "Jajko gotowane",
+    "category": "nabial",
+    "jpgSz": 23707,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kefir-naturalny-gesty-1-5-tluszczu-tola",
+    "name": "Kefir naturalny gęsty 1,5% tłuszczu - Tola",
+    "category": "nabial",
+    "jpgSz": 29528,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bazylia-liscie",
+    "name": "Bazylia - liście",
+    "category": "przyprawy",
+    "jpgSz": 23532,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-ricotta-czesciowo-odtluszczony",
+    "name": "Ser Ricotta (częściowo odtłuszczony)",
+    "category": "sery",
+    "jpgSz": 30213,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-razowy-100-zytni",
+    "name": "Chleb razowy 100% żytni",
+    "category": "zboza",
+    "jpgSz": 27440,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bulka-tarta",
+    "name": "Bułka tarta",
+    "category": "zboza",
+    "jpgSz": 24732,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "platki-owsiane-blyskawiczne",
+    "name": "Płatki owsiane błyskawiczne",
+    "category": "platki-sniadaniowe",
+    "jpgSz": 29999,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "tunczyk-w-sosie-wlasnym-calvo",
+    "name": "Tuńczyk w sosie własnym - Calvo",
+    "category": "mieso",
+    "jpgSz": 28542,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "piwo-jasne-pelne",
+    "name": "Piwo jasne pełne",
+    "category": "alkohole",
+    "jpgSz": 23876,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kolendra-swieza",
+    "name": "Kolendra świeża",
+    "category": "warzywa",
+    "jpgSz": 25008,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "marchew-gotowana",
+    "name": "Marchew (gotowana)",
+    "category": "warzywa",
+    "jpgSz": 26455,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "serek-wiejski-light",
+    "name": "Serek wiejski light",
+    "category": "nabial",
+    "jpgSz": 23606,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mieszanka-studencka-z-migdalami",
+    "name": "Mieszanka studencka z migdałami",
+    "category": "orzechy",
+    "jpgSz": 31484,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jogurt-grecki",
+    "name": "Jogurt grecki",
+    "category": "nabial",
+    "jpgSz": 23365,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "platki-zytnie",
+    "name": "Płatki żytnie",
+    "category": "platki-sniadaniowe",
+    "jpgSz": 26161,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "otreby-owsiane",
+    "name": "Otręby owsiane",
+    "category": "zboza",
+    "jpgSz": 25553,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "dorsz",
+    "name": "Dorsz",
+    "category": "mieso",
+    "jpgSz": 22595,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "serek-smietankowy-almette",
+    "name": "Serek śmietankowy - Almette",
+    "category": "nabial",
+    "jpgSz": 26888,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-salatkowo-kanapkowy-poltlusty-favita",
+    "name": "Ser sałatkowo - kanapkowy półtłusty - Favita",
+    "category": "sery",
+    "jpgSz": 32077,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bulka",
+    "name": "Bułka",
+    "category": "polskie-obiadki",
+    "jpgSz": 23847,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "musli-owocowe-sante",
+    "name": "Musli owocowe - Sante",
+    "category": "platki-sniadaniowe",
+    "jpgSz": 27654,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-zytni-100",
+    "name": "Chleb żytni 100%",
+    "category": "zboza",
+    "jpgSz": 25110,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "fasola-biala-konserwa",
+    "name": "Fasola biała (konserwa)",
+    "category": "warzywa",
+    "jpgSz": 27462,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kawa-zbozowa-inka",
+    "name": "Kawa zbożowa - Inka",
+    "category": "napoje",
+    "jpgSz": 24880,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kolendra-nasiona",
+    "name": "Kolendra nasiona",
+    "category": "orzechy",
+    "jpgSz": 27560,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "platki-migdalowe",
+    "name": "Płatki migdałowe",
+    "category": "orzechy",
+    "jpgSz": 27850,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "borowka-amerykanska",
+    "name": "Borówka amerykańska",
+    "category": "owoce",
+    "jpgSz": 24446,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "piers-z-kurczaka-bez-skory-pieczona",
+    "name": "Pierś z kurczaka bez skóry pieczona",
+    "category": "mieso",
+    "jpgSz": 28799,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ogorek-zielony",
+    "name": "Ogórek zielony",
+    "category": "warzywa",
+    "jpgSz": 24694,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "margaryna-extra-z-maslem-delma",
+    "name": "Margaryna extra z masłem - Delma",
+    "category": "tluszcze",
+    "jpgSz": 29967,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "poledwica-lososiowa-biedronka",
+    "name": "Polędwica łososiowa - Biedronka",
+    "category": "mieso",
+    "jpgSz": 28914,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kurczak-udo-bez-skory-i-kosci",
+    "name": "Kurczak (udo bez skóry i kości)",
+    "category": "mieso",
+    "jpgSz": 27402,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mieso-mielone-drobiowe-kurczak-indyk",
+    "name": "Mięso mielone drobiowe (kurczak, indyk)",
+    "category": "mieso",
+    "jpgSz": 29847,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "serek-wiejski-piatnica",
+    "name": "Serek wiejski - Piątnica",
+    "category": "nabial",
+    "jpgSz": 24916,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-orkiszowy-bez-polepszaczy-i-konserwantow-sppic-krakow",
+    "name": "Chleb orkiszowy bez polepszaczy i konserwantów - SPPIC Kraków",
+    "category": "zboza",
+    "jpgSz": 35707,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "salata-rzymska",
+    "name": "Sałata rzymska",
+    "category": "warzywa",
+    "jpgSz": 24669,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kurczak-piers-duszona",
+    "name": "Kurczak (pierś duszona)",
+    "category": "mieso",
+    "jpgSz": 25718,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kasza-kuskus",
+    "name": "Kasza kuskus",
+    "category": "zboza",
+    "jpgSz": 25027,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ogorki-kiszone",
+    "name": "Ogórki kiszone",
+    "category": "warzywa",
+    "jpgSz": 24659,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "czekolada-gorzka-70-85-zawartosci-kakao",
+    "name": "Czekolada gorzka (70- 85% zawartości kakao)",
+    "category": "slodycze",
+    "jpgSz": 34833,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kasza-jeczmienna-ugotowana",
+    "name": "Kasza jęczmienna (ugotowana)",
+    "category": "zboza",
+    "jpgSz": 29215,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jajko-sadzone",
+    "name": "Jajko sadzone",
+    "category": "nabial",
+    "jpgSz": 23641,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "tortilla-pelnoziarnista",
+    "name": "Tortilla pełnoziarnista",
+    "category": "zboza",
+    "jpgSz": 27196,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ciecierzyca-surowa",
+    "name": "Ciecierzyca surowa",
+    "category": "warzywa",
+    "jpgSz": 26155,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-zolty-edam-rycki",
+    "name": "Ser żółty Edam Rycki",
+    "category": "sery",
+    "jpgSz": 25781,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "rosol-z-kury-z-makaronem",
+    "name": "Rosół z kury z makaronem",
+    "category": "zupy",
+    "jpgSz": 28645,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mleko-bez-laktozy-1-5",
+    "name": "Mleko bez laktozy 1.5%",
+    "category": "nabial",
+    "jpgSz": 24867,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "danone-activia-naturalna-do-picia",
+    "name": "Danone Activia Naturalna do picia",
+    "category": "warzywa",
+    "jpgSz": 29500,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "fasola-czerwona-konserwa",
+    "name": "Fasola czerwona (konserwa)",
+    "category": "warzywa",
+    "jpgSz": 27722,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mleko-0-tluszczu",
+    "name": "Mleko 0% tłuszczu",
+    "category": "nabial",
+    "jpgSz": 24024,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "tymianek-swiezy",
+    "name": "Tymianek świeży",
+    "category": "przyprawy",
+    "jpgSz": 24024,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "sliwka",
+    "name": "Śliwka",
+    "category": "owoce",
+    "jpgSz": 22106,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jajo-kurze-bialko",
+    "name": "Jajo kurze (białko)",
+    "category": "nabial",
+    "jpgSz": 23905,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-razowy-ze-slonecznikiem-biedronka",
+    "name": "Chleb razowy ze słonecznikiem - Biedronka",
+    "category": "zboza",
+    "jpgSz": 32100,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maka-kukurydziana",
+    "name": "Mąka kukurydziana",
+    "category": "zboza",
+    "jpgSz": 26332,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "gozdziki",
+    "name": "Goździki",
+    "category": "polskie-obiadki",
+    "jpgSz": 24856,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "sok-pomaranczowy",
+    "name": "Sok pomarańczowy",
+    "category": "napoje",
+    "jpgSz": 23851,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-wieloziarnisty",
+    "name": "Chleb wieloziarnisty",
+    "category": "zboza",
+    "jpgSz": 26109,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "makaron-pelnoziarnisty-nieugotowany",
+    "name": "Makaron pełnoziarnisty (nieugotowany)",
+    "category": "makarony",
+    "jpgSz": 30332,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "olej-slonecznikowy-kujawski",
+    "name": "Olej słonecznikowy kujawski",
+    "category": "tluszcze",
+    "jpgSz": 28497,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "wodka",
+    "name": "Wódka",
+    "category": "alkohole",
+    "jpgSz": 21680,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kasza-gryczana-prazona",
+    "name": "Kasza gryczana prażona",
+    "category": "zboza",
+    "jpgSz": 27624,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kotlet-schabowy-panierowany",
+    "name": "Kotlet Schabowy Panierowany",
+    "category": "polskie-obiadki",
+    "jpgSz": 30158,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "cykoria",
+    "name": "Cykoria",
+    "category": "warzywa",
+    "jpgSz": 22845,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "nasiona-chia-szalwia-hiszpanska-suszone",
+    "name": "Nasiona Chia - szałwia hiszpańska (suszone)",
+    "category": "orzechy",
+    "jpgSz": 34332,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "majeranek-suszony",
+    "name": "Majeranek suszony",
+    "category": "przyprawy",
+    "jpgSz": 25050,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-tostowy-pelnoziarnisty-kaufland",
+    "name": "Chleb tostowy pełnoziarnisty - Kaufland",
+    "category": "zboza",
+    "jpgSz": 31761,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maslanka-1-5",
+    "name": "Maślanka 1,5%",
+    "category": "nabial",
+    "jpgSz": 23514,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bulka-wieloziarnista-lidl",
+    "name": "Bułka wieloziarnista - Lidl",
+    "category": "zboza",
+    "jpgSz": 26596,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jogurt-naturalny-piatnica",
+    "name": "Jogurt naturalny - Piątnica",
+    "category": "nabial",
+    "jpgSz": 25673,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "imbir-korzen",
+    "name": "Imbir (korzeń)",
+    "category": "polskie-obiadki",
+    "jpgSz": 25609,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maslo-orzechowe-z-orzeszkow-ziemnych",
+    "name": "Masło orzechowe z orzeszków ziemnych",
+    "category": "tluszcze",
+    "jpgSz": 31595,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "twarog-poltlusty-delikate",
+    "name": "Twaróg półtłusty - Delikate",
+    "category": "nabial",
+    "jpgSz": 26074,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kalafior-ugotowany",
+    "name": "Kalafior (ugotowany)",
+    "category": "warzywa",
+    "jpgSz": 26140,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "musli-tropikalne-axa",
+    "name": "Musli tropikalne - Axa",
+    "category": "platki-sniadaniowe",
+    "jpgSz": 27341,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "tunczyk-w-wodzie-konserwowany",
+    "name": "Tunczyk w wodzie (konserwowany)",
+    "category": "mieso",
+    "jpgSz": 28791,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jogurt-naturalny-gesty-bakoma",
+    "name": "Jogurt naturalny gęsty - Bakoma",
+    "category": "nabial",
+    "jpgSz": 27556,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maka-zytnia",
+    "name": "Mąka żytnia",
+    "category": "zboza",
+    "jpgSz": 24998,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-baltonowski",
+    "name": "Chleb baltonowski",
+    "category": "zboza",
+    "jpgSz": 25955,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ciecierzyca-konserwowa",
+    "name": "Ciecierzyca (konserwowa)",
+    "category": "warzywa",
+    "jpgSz": 27823,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "wafle-ryzowe",
+    "name": "Wafle ryżowe",
+    "category": "zboza",
+    "jpgSz": 23514,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ryz-basmati-ugotowany",
+    "name": "Ryż Basmati (ugotowany)",
+    "category": "zboza",
+    "jpgSz": 26479,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bulka-razowa",
+    "name": "Bułka razowa",
+    "category": "zboza",
+    "jpgSz": 24440,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kotlet-mielony-smazony",
+    "name": "Kotlet mielony (smażony)",
+    "category": "polskie-obiadki",
+    "jpgSz": 29466,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "pesto-zielone-sottile-gusto",
+    "name": "Pesto zielone - Sottile Gusto",
+    "category": "mrozone-pizze",
+    "jpgSz": 28949,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "siemie-lniane",
+    "name": "Siemię lniane",
+    "category": "orzechy",
+    "jpgSz": 27006,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "serek-wiejski-lekki",
+    "name": "Serek wiejski lekki",
+    "category": "nabial",
+    "jpgSz": 23540,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "sok-marchwiowy-jednodniowy",
+    "name": "Sok marchwiowy jednodniowy",
+    "category": "napoje",
+    "jpgSz": 26732,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "makaron-pelnoziarnisty-spaghetti-nieugotowany-lubella",
+    "name": "Makaron pełnoziarnisty Spaghetti (nieugotowany) - Lubella",
+    "category": "makarony",
+    "jpgSz": 33488,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mieta-liscie",
+    "name": "Mięta - liście",
+    "category": "warzywa",
+    "jpgSz": 24308,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mix-salat",
+    "name": "Mix Sałat",
+    "category": "warzywa",
+    "jpgSz": 23516,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maka-ziemniaczana",
+    "name": "Mąka ziemniaczana",
+    "category": "zboza",
+    "jpgSz": 26228,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maslo-pozostale",
+    "name": "Masło (pozostałe)",
+    "category": "tluszcze",
+    "jpgSz": 26703,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "nasiona-siemienia-lnianego",
+    "name": "Nasiona siemienia lnianego",
+    "category": "orzechy",
+    "jpgSz": 29640,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "platki-kukurydziane-corn-flakes-nestle",
+    "name": "Płatki kukurydziane Corn Flakes - Nestle",
+    "category": "platki-sniadaniowe",
+    "jpgSz": 32217,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kawa-rozpuszczalna-z-mlekiem-i-cukrem",
+    "name": "Kawa rozpuszczalna z mlekiem i cukrem",
+    "category": "napoje",
+    "jpgSz": 28816,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "piwo",
+    "name": "Piwo",
+    "category": "alkohole",
+    "jpgSz": 21219,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "cebula-smazona",
+    "name": "Cebula (smażona)",
+    "category": "warzywa",
+    "jpgSz": 25830,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mleko-kokosowe",
+    "name": "Mleko kokosowe",
+    "category": "nabial",
+    "jpgSz": 23759,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ziemniaki-mlode-gotowane",
+    "name": "Ziemniaki młode (gotowane)",
+    "category": "warzywa",
+    "jpgSz": 28138,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "schab-pieczony",
+    "name": "Schab (pieczony)",
+    "category": "mieso",
+    "jpgSz": 25350,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "warzywa-na-patelnie-z-przyprawa-orientalna-hortex",
+    "name": "Warzywa na patelnię z przyprawą orientalną - Hortex",
+    "category": "przyprawy",
+    "jpgSz": 32592,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jogurt-naturalny-biedronka",
+    "name": "Jogurt naturalny - Biedronka",
+    "category": "nabial",
+    "jpgSz": 26147,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kawa-rozpuszczlana-50-ml-mleka",
+    "name": "Kawa rozpuszczlana + 50 ml mleka",
+    "category": "napoje",
+    "jpgSz": 27099,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "brokuly-gotowane",
+    "name": "Brokuły gotowane",
+    "category": "warzywa",
+    "jpgSz": 25805,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "twarozek-domowy-grani-naturalny-piatnica",
+    "name": "Twarożek Domowy Grani naturalny - Piątnica",
+    "category": "nabial",
+    "jpgSz": 29555,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kakao-16-tluszczu-proszek",
+    "name": "Kakao 16% tłuszczu (proszek)",
+    "category": "slodycze",
+    "jpgSz": 29676,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "twarog-naturalny-chudy-pilos",
+    "name": "Twaróg naturalny chudy - Pilos",
+    "category": "nabial",
+    "jpgSz": 26059,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "szynka-z-piersi-kurczaka",
+    "name": "Szynka z piersi kurczaka",
+    "category": "mieso",
+    "jpgSz": 26190,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-plesniowy-bleu-lazur",
+    "name": "Ser pleśniowy Bleu - Lazur",
+    "category": "sery",
+    "jpgSz": 26596,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "makaron-pelnoziarnisty-penne-lubella-nieugotowany",
+    "name": "Makaron pełnoziarnisty Penne - Lubella (nieugotowany)",
+    "category": "makarony",
+    "jpgSz": 34101,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "migdaly-platki",
+    "name": "Migdały płatki",
+    "category": "orzechy",
+    "jpgSz": 27030,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "sernik",
+    "name": "Sernik",
+    "category": "slodycze",
+    "jpgSz": 24625,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-bialy-poltlusty",
+    "name": "Ser biały półtłusty",
+    "category": "sery",
+    "jpgSz": 24926,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ziemniaki-gotowane-tluczone",
+    "name": "Ziemniaki gotowane tłuczone",
+    "category": "warzywa",
+    "jpgSz": 28115,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "serek-homogenizowany",
+    "name": "Serek homogenizowany",
+    "category": "nabial",
+    "jpgSz": 24610,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "rosol-drobiowy",
+    "name": "Rosół drobiowy",
+    "category": "zupy",
+    "jpgSz": 26275,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "wino-biale-wytrawne",
+    "name": "Wino białe wytrawne",
+    "category": "alkohole",
+    "jpgSz": 23791,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jablko-gala",
+    "name": "Jabłko Gala",
+    "category": "owoce",
+    "jpgSz": 23021,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kukurydza-slodka-konserwowa-nasza-spizarnia",
+    "name": "Kukurydza słodka (konserwowa) - Nasza Spiżarnia",
+    "category": "warzywa",
+    "jpgSz": 33011,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jogurt-naturalny-activia-danone",
+    "name": "Jogurt naturalny Activia - Danone",
+    "category": "nabial",
+    "jpgSz": 27683,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-mozzarella-w-zalewie-sottile-gusto",
+    "name": "Ser Mozzarella w zalewie - Sottile Gusto",
+    "category": "mrozone-pizze",
+    "jpgSz": 31071,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "wafel-ryzowy-naturalny",
+    "name": "Wafel ryżowy naturalny",
+    "category": "slodycze",
+    "jpgSz": 26083,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maslanka-0-5-tluszczu",
+    "name": "Maślanka 0,5% tłuszczu",
+    "category": "nabial",
+    "jpgSz": 25260,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jajo-kurze-zoltko",
+    "name": "Jajo kurze (żółtko)",
+    "category": "nabial",
+    "jpgSz": 24931,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "soczewica-czerwona",
+    "name": "Soczewica czerwona",
+    "category": "warzywa",
+    "jpgSz": 26493,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ryz-bialy-nieugotowany",
+    "name": "Ryż biały (nieugotowany)",
+    "category": "zboza",
+    "jpgSz": 27357,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-slonecznikowy",
+    "name": "Chleb słonecznikowy",
+    "category": "zboza",
+    "jpgSz": 26302,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kawa-z-mlekiem-2-lyzki-mleka-0",
+    "name": "Kawa z mlekiem (2 łyżki mleka 0%)",
+    "category": "napoje",
+    "jpgSz": 27558,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "oliwa-tesco",
+    "name": "Oliwa - Tesco",
+    "category": "tluszcze",
+    "jpgSz": 24653,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "przyprawa-do-kuchni-wloskiej-kamis",
+    "name": "Przyprawa do kuchni włoskiej - Kamis",
+    "category": "przyprawy",
+    "jpgSz": 29059,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "len-mielony",
+    "name": "Len mielony",
+    "category": "mieso",
+    "jpgSz": 23668,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-edamski-swiatowid",
+    "name": "Ser Edamski - Światowid",
+    "category": "sery",
+    "jpgSz": 26859,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "herbata-czerwona-parzona",
+    "name": "Herbata czerwona (parzona)",
+    "category": "napoje",
+    "jpgSz": 24379,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "pomidory-koktajlowe",
+    "name": "Pomidory koktajlowe",
+    "category": "warzywa",
+    "jpgSz": 25791,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mleko-laciate-2-mlekpol",
+    "name": "Mleko Łaciate 2% - Mlekpol",
+    "category": "nabial",
+    "jpgSz": 26468,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jagody",
+    "name": "Jagody",
+    "category": "owoce",
+    "jpgSz": 22416,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "siemie-lniane-sante",
+    "name": "Siemię lniane - Sante",
+    "category": "orzechy",
+    "jpgSz": 28025,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maka-pszenna-pelnoziarnista",
+    "name": "Mąka pszenna pełnoziarnista",
+    "category": "zboza",
+    "jpgSz": 29052,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "burak-gotowany",
+    "name": "Burak gotowany",
+    "category": "warzywa",
+    "jpgSz": 24816,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-zytni-na-zakwasie",
+    "name": "Chleb żytni na zakwasie",
+    "category": "zboza",
+    "jpgSz": 27372,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "makaron-jajeczny-ugotowany",
+    "name": "Makaron jajeczny (ugotowany)",
+    "category": "makarony",
+    "jpgSz": 27467,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "pomidory-suszone-w-oleju",
+    "name": "Pomidory suszone w oleju",
+    "category": "warzywa",
+    "jpgSz": 27923,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kotlet-z-piersi-kurczaka-w-panierce-smazony",
+    "name": "Kotlet z piersi kurczaka (w panierce smażony)",
+    "category": "polskie-obiadki",
+    "jpgSz": 32310,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "smietana-18-tluszczu",
+    "name": "Śmietana 18% tłuszczu",
+    "category": "nabial",
+    "jpgSz": 25647,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maslo-klarowane",
+    "name": "Masło klarowane",
+    "category": "tluszcze",
+    "jpgSz": 25746,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "przyprawa-ziele-angielskie",
+    "name": "Przyprawa ziele angielskie",
+    "category": "przyprawy",
+    "jpgSz": 27328,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bulka-fitness-lidl",
+    "name": "Bułka fitness - Lidl",
+    "category": "zboza",
+    "jpgSz": 25822,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mieszanka-warzywna-chinska-mrozna-kraina",
+    "name": "Mieszanka warzywna chińska - Mroźna Kraina",
+    "category": "warzywa",
+    "jpgSz": 31300,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-ementaler-pelnotlusty",
+    "name": "Ser Ementaler pełnotłusty",
+    "category": "sery",
+    "jpgSz": 27794,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "szynka-parmenska-carpaccio",
+    "name": "Szynka parmeńska Carpaccio",
+    "category": "mieso",
+    "jpgSz": 28247,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "szynka-z-indyka",
+    "name": "Szynka z indyka",
+    "category": "mieso",
+    "jpgSz": 24025,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kielbasa-krakowska-sucha",
+    "name": "Kiełbasa krakowska sucha",
+    "category": "mieso",
+    "jpgSz": 27995,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "filet-z-kurczaka",
+    "name": "Filet z kurczaka",
+    "category": "mieso",
+    "jpgSz": 23512,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kakao-proszek",
+    "name": "Kakao (proszek)",
+    "category": "slodycze",
+    "jpgSz": 27167,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kefir-naturalny-krasnystaw",
+    "name": "Kefir naturalny - Krasnystaw",
+    "category": "nabial",
+    "jpgSz": 25763,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "sok-pomidorowy",
+    "name": "Sok pomidorowy",
+    "category": "napoje",
+    "jpgSz": 23667,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "delma-z-maslem",
+    "name": "Delma z masłem",
+    "category": "polskie-obiadki",
+    "jpgSz": 26242,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "nalesniki-z-maki-pszennej",
+    "name": "Naleśniki z mąki pszennej",
+    "category": "polskie-obiadki",
+    "jpgSz": 28590,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "margaryna-rama-classic",
+    "name": "Margaryna Rama Classic",
+    "category": "tluszcze",
+    "jpgSz": 27713,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "truskawki-mrozone",
+    "name": "Truskawki (mrożone)",
+    "category": "owoce",
+    "jpgSz": 24731,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jablko-jonagold",
+    "name": "Jabłko Jonagold",
+    "category": "owoce",
+    "jpgSz": 24145,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "szynka-delikatna-lagodnie-wedzona-kraina-wedlin-biedronka",
+    "name": "Szynka Delikatna łagodnie wędzona Kraina Wędlin - Biedronka",
+    "category": "mieso",
+    "jpgSz": 33992,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "pesto-zielone-tesco",
+    "name": "Pesto zielone - Tesco",
+    "category": "sosy",
+    "jpgSz": 24740,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "platki-owsiane-gotowane-owsianka-na-wodzie",
+    "name": "Płatki owsiane gotowane (owsianka na wodzie)",
+    "category": "platki-sniadaniowe",
+    "jpgSz": 32975,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "piers-z-kurczaka-ugotowana",
+    "name": "Pierś z kurczaka ugotowana",
+    "category": "mieso",
+    "jpgSz": 26610,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-pszenno-zytni-z-ziarnami",
+    "name": "Chleb pszenno-żytni z ziarnami",
+    "category": "zboza",
+    "jpgSz": 28401,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "margaryna-benecol",
+    "name": "Margaryna Benecol",
+    "category": "tluszcze",
+    "jpgSz": 26153,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ciasto-jablkowe-szarlotka",
+    "name": "Ciasto jabłkowe (szarlotka)",
+    "category": "slodycze",
+    "jpgSz": 29598,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "pieczarki-duszone",
+    "name": "Pieczarki duszone",
+    "category": "warzywa",
+    "jpgSz": 25398,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "twarog-chudy-biedronka",
+    "name": "Twaróg chudy - Biedronka",
+    "category": "nabial",
+    "jpgSz": 25899,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "tunczyk-kawalki-w-oleju-amerigo",
+    "name": "Tuńczyk kawałki w oleju - Amerigo",
+    "category": "mieso",
+    "jpgSz": 27864,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "salatka-jarzynowa-z-majonezem",
+    "name": "Sałatka jarzynowa (z majonezem)",
+    "category": "sosy",
+    "jpgSz": 29024,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maka-pszenna-typ-550",
+    "name": "Mąka pszenna typ 550",
+    "category": "zboza",
+    "jpgSz": 26859,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "makaron-pelnoziarnisty-cale-ziarno-nieugotowany",
+    "name": "Makaron Pełnoziarnisty całe ziarno (nieugotowany)",
+    "category": "makarony",
+    "jpgSz": 33534,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "fasola-szparagowa-zielona-gotowana",
+    "name": "Fasola szparagowa zielona gotowana",
+    "category": "warzywa",
+    "jpgSz": 30336,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kurczak-pieczone-udko",
+    "name": "Kurczak pieczone udko",
+    "category": "mieso",
+    "jpgSz": 25619,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "groszek-konserwowy-aldi",
+    "name": "Groszek konserwowy - Aldi",
+    "category": "warzywa",
+    "jpgSz": 27676,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-7-zboz-biedronka",
+    "name": "Chleb 7 zbóż - Biedronka",
+    "category": "zboza",
+    "jpgSz": 27453,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "serek-wiejski-naturalny-lekki-bieluch",
+    "name": "Serek wiejski naturalny lekki - Bieluch",
+    "category": "nabial",
+    "jpgSz": 28533,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "warzywa-na-patelnie-z-przyprawa-wloska-hortex",
+    "name": "Warzywa na patelnię z przyprawą włoską - Hortex",
+    "category": "przyprawy",
+    "jpgSz": 31857,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "fasola-czerwona-konserwowa-pudliszki",
+    "name": "Fasola czerwona (konserwowa) - Pudliszki",
+    "category": "warzywa",
+    "jpgSz": 31509,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "sok-100-pomarancza-z-miazszem",
+    "name": "Sok 100% pomarańcza z miąższem",
+    "category": "napoje",
+    "jpgSz": 27769,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maslo-oselkowe-ekstra-mleczna-dolina",
+    "name": "Masło osełkowe ekstra - Mleczna Dolina",
+    "category": "tluszcze",
+    "jpgSz": 31309,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "filet-z-kurczaka-smazony-bez-panierki",
+    "name": "Filet z kurczaka smażony bez panierki",
+    "category": "mieso",
+    "jpgSz": 29974,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "borowka",
+    "name": "Borówka",
+    "category": "owoce",
+    "jpgSz": 22434,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "filet-z-kurczaka-gotowany",
+    "name": "Filet z kurczaka gotowany",
+    "category": "mieso",
+    "jpgSz": 25999,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "pieczywo-chrupkie-7-ziaren-sonko",
+    "name": "Pieczywo chrupkie 7 ziaren - Sonko",
+    "category": "zboza",
+    "jpgSz": 29643,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-pelnoziarnisty",
+    "name": "Chleb pełnoziarnisty",
+    "category": "zboza",
+    "jpgSz": 26770,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kawa-parzona-z-cukrem",
+    "name": "Kawa parzona z cukrem",
+    "category": "napoje",
+    "jpgSz": 24522,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kukurydza-konserwowa-nasza-spizarnia-biedronka",
+    "name": "Kukurydza konserwowa Nasza Spiżarnia Biedronka",
+    "category": "warzywa",
+    "jpgSz": 32939,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "sol",
+    "name": "Sól",
+    "category": "warzywa",
+    "jpgSz": 21013,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maka-pszenna",
+    "name": "Mąka pszenna",
+    "category": "zboza",
+    "jpgSz": 24881,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "losos-swiezy",
+    "name": "Łosoś świeży",
+    "category": "mieso",
+    "jpgSz": 24547,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "grejpfrut-czerwony",
+    "name": "Grejpfrut czerwony",
+    "category": "warzywa",
+    "jpgSz": 25919,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "serek-topiony",
+    "name": "Serek topiony",
+    "category": "nabial",
+    "jpgSz": 23636,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "losos-filet",
+    "name": "Łosoś filet",
+    "category": "mieso",
+    "jpgSz": 24396,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "indyk-mieso-mielone",
+    "name": "Indyk (mięso mielone)",
+    "category": "mieso",
+    "jpgSz": 25855,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-gouda-serenada",
+    "name": "Ser Gouda Serenada",
+    "category": "sery",
+    "jpgSz": 26274,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mleko-2-pilos",
+    "name": "Mleko 2% - Pilos",
+    "category": "nabial",
+    "jpgSz": 22959,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ogorek-malosolny",
+    "name": "Ogórek małosolny",
+    "category": "warzywa",
+    "jpgSz": 25411,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mleko-prawdziwe-1-5-biedronka",
+    "name": "Mleko prawdziwe 1,5% - Biedronka",
+    "category": "nabial",
+    "jpgSz": 27407,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "schab-surowy",
+    "name": "Schab (surowy)",
+    "category": "mieso",
+    "jpgSz": 25089,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "sok-jablkowy",
+    "name": "Sok jabłkowy",
+    "category": "napoje",
+    "jpgSz": 23203,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "schab-pieczony-kraina-wedlin-biedronka",
+    "name": "Schab Pieczony Kraina Wędlin - Biedronka",
+    "category": "mieso",
+    "jpgSz": 30892,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "dynia",
+    "name": "Dynia",
+    "category": "warzywa",
+    "jpgSz": 22553,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ziemniaki-gotowane-puree",
+    "name": "Ziemniaki gotowane - puree",
+    "category": "warzywa",
+    "jpgSz": 27583,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kasza-jeczmienna-peczak-ugotowana",
+    "name": "Kasza jęczmienna pęczak (ugotowana)",
+    "category": "zboza",
+    "jpgSz": 30605,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "zupa-pomidorowa-z-ryzem",
+    "name": "Zupa pomidorowa z ryżem",
+    "category": "zupy",
+    "jpgSz": 25862,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "piers-z-kurczaka-wedzona",
+    "name": "Pierś z kurczaka wędzona",
+    "category": "mieso",
+    "jpgSz": 26058,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kasza-kuskus-ugotowana",
+    "name": "Kasza kuskus (ugotowana)",
+    "category": "zboza",
+    "jpgSz": 27798,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "pieczywo-chrupkie-lekkie-razowe-sonko",
+    "name": "Pieczywo chrupkie lekkie razowe - Sonko",
+    "category": "zboza",
+    "jpgSz": 31424,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "pieczarki-smazone",
+    "name": "Pieczarki smażone",
+    "category": "warzywa",
+    "jpgSz": 26478,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "przyprawa-galka-muszkatolowa",
+    "name": "Przyprawa gałka muszkatołowa",
+    "category": "przyprawy",
+    "jpgSz": 28433,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "przyprawa-czaber",
+    "name": "Przyprawa Cząber",
+    "category": "przyprawy",
+    "jpgSz": 25220,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "dzem-truskawkowy-spizarnia-natury",
+    "name": "Dżem truskawkowy - Spiżarnia Natury",
+    "category": "owoce",
+    "jpgSz": 29394,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maslo-roslinne",
+    "name": "Masło roślinne",
+    "category": "tluszcze",
+    "jpgSz": 25388,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ryz-ugotowany",
+    "name": "Ryż (ugotowany)",
+    "category": "zboza",
+    "jpgSz": 24133,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "wafle-ryzowe-naturalne-kupiec",
+    "name": "Wafle ryżowe naturalne - Kupiec",
+    "category": "zboza",
+    "jpgSz": 28006,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "sos-sojowy-ciemny-tao-tao",
+    "name": "Sos sojowy ciemny - Tao Tao",
+    "category": "sosy",
+    "jpgSz": 26734,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jogurt",
+    "name": "Jogurt",
+    "category": "nabial",
+    "jpgSz": 21824,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "buraki-tarte",
+    "name": "Buraki tarte",
+    "category": "warzywa",
+    "jpgSz": 24092,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-bialy-chudy",
+    "name": "Ser biały chudy",
+    "category": "sery",
+    "jpgSz": 24381,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bagietka-pelnoziarnista",
+    "name": "Bagietka pełnoziarnista",
+    "category": "zboza",
+    "jpgSz": 27159,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "fasola-czarna-ziarno-suche",
+    "name": "Fasola czarna (ziarno suche)",
+    "category": "warzywa",
+    "jpgSz": 28206,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "czekolada-gorzka-e-wedel",
+    "name": "Czekolada gorzka - E. Wedel",
+    "category": "slodycze",
+    "jpgSz": 29102,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bulka-fitness",
+    "name": "Bułka fitness",
+    "category": "zboza",
+    "jpgSz": 25004,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "zupa-pomidorowa-z-makaronem",
+    "name": "Zupa pomidorowa z makaronem",
+    "category": "zupy",
+    "jpgSz": 30694,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "dzem-truskawkowy-niskoslodzony-rapsodia",
+    "name": "Dżem truskawkowy niskosłodzony - Rapsodia",
+    "category": "owoce",
+    "jpgSz": 31421,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kawa-rozpuszczalna-nescafe-classic-nestle",
+    "name": "Kawa rozpuszczalna Nescafe Classic - Nestle",
+    "category": "napoje",
+    "jpgSz": 30669,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "twarog-klinek-0-tluszczu-biedronka",
+    "name": "Twaróg Klinek 0% tłuszczu - Biedronka",
+    "category": "nabial",
+    "jpgSz": 29165,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kawa-rozpuszczalna-creme-sensazione-nescafe",
+    "name": "Kawa rozpuszczalna Creme Sensazione - Nescafe",
+    "category": "napoje",
+    "jpgSz": 31175,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "fasola-czerwona-konserwowa-nasza-spizarnia",
+    "name": "Fasola czerwona konserwowa - Nasza Spiżarnia",
+    "category": "warzywa",
+    "jpgSz": 32869,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kukurydza-ugotowana-bez-soli",
+    "name": "Kukurydza ugotowana (bez soli)",
+    "category": "warzywa",
+    "jpgSz": 28432,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "szynka-z-kurczaka",
+    "name": "Szynka z kurczaka",
+    "category": "mieso",
+    "jpgSz": 24126,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mleko-0-5-mleczna-dolina-biedronka",
+    "name": "Mleko 0,5% Mleczna Dolina - Biedronka",
+    "category": "nabial",
+    "jpgSz": 28994,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "swiezy-sok-jablkowy",
+    "name": "Świeży sok jabłkowy",
+    "category": "napoje",
+    "jpgSz": 24758,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "szynka-konserwowa-kraina-wedlin",
+    "name": "Szynka konserwowa - Kraina Wędlin",
+    "category": "mieso",
+    "jpgSz": 29326,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "makaron-jajeczny-nitki-ugotowany",
+    "name": "Makaron jajeczny Nitki (ugotowany)",
+    "category": "makarony",
+    "jpgSz": 28590,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "udko-z-kurczaka-bez-skory-gotowane",
+    "name": "Udko z kurczaka bez skóry (gotowane)",
+    "category": "mieso",
+    "jpgSz": 29243,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maslo-ekstra-80",
+    "name": "Masło Ekstra 80 %",
+    "category": "tluszcze",
+    "jpgSz": 25631,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "makaron-spaghetti-ugotowany",
+    "name": "Makaron Spaghetti (ugotowany)",
+    "category": "makarony",
+    "jpgSz": 27960,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-cale-ziarno-biedronka",
+    "name": "Chleb Całe Ziarno - Biedronka",
+    "category": "zboza",
+    "jpgSz": 28360,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "orzeszki-ziemne-prazone-bez-soli",
+    "name": "Orzeszki ziemne prażone bez soli",
+    "category": "polskie-obiadki",
+    "jpgSz": 31003,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "makaron-razowy-ugotowany",
+    "name": "Makaron razowy (ugotowany)",
+    "category": "makarony",
+    "jpgSz": 27153,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-mozarella-lidl",
+    "name": "Ser Mozarella - Lidl",
+    "category": "sery",
+    "jpgSz": 24858,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "lubczyk-liscie",
+    "name": "Lubczyk - liście",
+    "category": "warzywa",
+    "jpgSz": 24451,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kawa-czarna-mielona-do-zaparzenia",
+    "name": "Kawa czarna mielona (do zaparzenia)",
+    "category": "napoje",
+    "jpgSz": 27037,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-blue-z-niebieska-plesnia",
+    "name": "Ser Blue z niebieską pleśnią",
+    "category": "sery",
+    "jpgSz": 27348,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kapary",
+    "name": "Kapary",
+    "category": "warzywa",
+    "jpgSz": 23430,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "przyprawa-papryka-slodka",
+    "name": "Przyprawa papryka słodka",
+    "category": "przyprawy",
+    "jpgSz": 27236,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mleko-sojowe",
+    "name": "Mleko sojowe",
+    "category": "nabial",
+    "jpgSz": 23009,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "oliwa-z-oliwek-monini",
+    "name": "Oliwa z oliwek - Monini",
+    "category": "tluszcze",
+    "jpgSz": 26691,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "szynka-babuni-sokolow",
+    "name": "Szynka Babuni - Sokołów",
+    "category": "mieso",
+    "jpgSz": 26770,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "przyprawa-cebula-suszona",
+    "name": "Przyprawa cebula suszona",
+    "category": "przyprawy",
+    "jpgSz": 26596,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "poledwica-wieprzowa-wedzona",
+    "name": "Polędwica wieprzowa (wędzona)",
+    "category": "mieso",
+    "jpgSz": 28378,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-zolty-liliput-serovit",
+    "name": "Ser żółty Liliput - Serovit",
+    "category": "sery",
+    "jpgSz": 26856,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bulka-z-ziarnami",
+    "name": "Bułka z ziarnami",
+    "category": "zboza",
+    "jpgSz": 25608,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jogurt-smakowy-7-zboz-bakoma",
+    "name": "Jogurt smakowy 7 zbóż - Bakoma",
+    "category": "nabial",
+    "jpgSz": 27817,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "tunczyk-w-oleju-lidl",
+    "name": "Tuńczyk w oleju - Lidl",
+    "category": "mieso",
+    "jpgSz": 25795,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jablko-gold",
+    "name": "Jabłko gold",
+    "category": "owoce",
+    "jpgSz": 23471,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-zloty-lan-oskroba",
+    "name": "Chleb Złoty Łan - Oskroba",
+    "category": "zboza",
+    "jpgSz": 28005,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "dzem-niskoslodzony",
+    "name": "Dżem niskosłodzony",
+    "category": "polskie-obiadki",
+    "jpgSz": 27525,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-domowy-z-ziarnami-schulstad",
+    "name": "Chleb Domowy z ziarnami - Schulstad",
+    "category": "zboza",
+    "jpgSz": 30454,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "serek-wiejski-biedronka",
+    "name": "Serek wiejski - Biedronka",
+    "category": "nabial",
+    "jpgSz": 25440,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bulka-bagietka",
+    "name": "Bułka - Bagietka",
+    "category": "zboza",
+    "jpgSz": 25788,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "golabki-z-ryzem-i-miesem",
+    "name": "Gołąbki z ryżem i mięsem",
+    "category": "polskie-obiadki",
+    "jpgSz": 26509,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kurkuma-proszek",
+    "name": "Kurkuma (proszek)",
+    "category": "przyprawy",
+    "jpgSz": 24616,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bulka-z-dynia-lidl",
+    "name": "Bułka z dynią - Lidl",
+    "category": "zboza",
+    "jpgSz": 24943,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bulka-ciabatta",
+    "name": "Bułka ciabatta",
+    "category": "zboza",
+    "jpgSz": 25440,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ziemniaki-pieczone-z-sola",
+    "name": "Ziemniaki pieczone (z solą)",
+    "category": "warzywa",
+    "jpgSz": 27467,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "olej-rzepakowy-kujawski",
+    "name": "Olej rzepakowy - Kujawski",
+    "category": "tluszcze",
+    "jpgSz": 28083,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kielbasa-podwawelska",
+    "name": "Kiełbasa podwawelska",
+    "category": "mieso",
+    "jpgSz": 27114,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "gulasz-wieprzowy",
+    "name": "Gulasz wieprzowy",
+    "category": "polskie-obiadki",
+    "jpgSz": 27143,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jogurt-naturalny-z-wapniem-tola",
+    "name": "Jogurt naturalny z wapniem - Tola",
+    "category": "nabial",
+    "jpgSz": 26975,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kawa-parzona-z-mlekiem",
+    "name": "Kawa parzona z mlekiem",
+    "category": "napoje",
+    "jpgSz": 24347,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "komosa-ryzowa-quinoa-nieugotowana",
+    "name": "Komosa ryżowa - Quinoa (nieugotowana)",
+    "category": "zboza",
+    "jpgSz": 30494,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ogorki-konserwowe-dawtona",
+    "name": "Ogórki konserwowe - Dawtona",
+    "category": "warzywa",
+    "jpgSz": 27944,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "botwina",
+    "name": "Botwina",
+    "category": "warzywa",
+    "jpgSz": 23373,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "fasola-szparagowa-zolta",
+    "name": "Fasola szparagowa żółta",
+    "category": "warzywa",
+    "jpgSz": 26923,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "margaryna-flora",
+    "name": "Margaryna Flora",
+    "category": "tluszcze",
+    "jpgSz": 25574,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "cwikla-z-chrzanem-buraki",
+    "name": "Ćwikła z chrzanem (buraki)",
+    "category": "warzywa",
+    "jpgSz": 27323,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mieszanka-mix-salat-fit-easy",
+    "name": "Mieszanka mix Sałat - Fit & Easy",
+    "category": "warzywa",
+    "jpgSz": 28342,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "oliwki-czarne",
+    "name": "Oliwki czarne",
+    "category": "warzywa",
+    "jpgSz": 24612,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "serek-z-ziolami-almette",
+    "name": "Serek z ziołami - Almette",
+    "category": "nabial",
+    "jpgSz": 26260,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kielki-brokula",
+    "name": "Kiełki brokuła",
+    "category": "warzywa",
+    "jpgSz": 24284,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "drozdzowka",
+    "name": "Drożdżówka",
+    "category": "slodycze",
+    "jpgSz": 25113,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ogorki-konserwowe-kanapkowe-nasza-spizarnia",
+    "name": "Ogórki konserwowe kanapkowe - Nasza Spiżarnia",
+    "category": "warzywa",
+    "jpgSz": 33255,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jajko-sadzone-na-oleju",
+    "name": "Jajko sadzone na oleju",
+    "category": "nabial",
+    "jpgSz": 24639,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ogorek-konserwowy-nasza-spizarnia",
+    "name": "Ogórek konserwowy - Nasza Spiżarnia",
+    "category": "warzywa",
+    "jpgSz": 30417,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "cebula-dymka-ze-szczypiorem",
+    "name": "Cebula dymka ze szczypiorem",
+    "category": "warzywa",
+    "jpgSz": 28363,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mleko-3-2-tluszczu-mleczna-dolina-biedronka",
+    "name": "Mleko 3,2% tłuszczu Mleczna Dolina - Biedronka",
+    "category": "nabial",
+    "jpgSz": 31156,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "krem-czekoladowy-nutella",
+    "name": "Krem czekoladowy Nutella",
+    "category": "slodycze",
+    "jpgSz": 29067,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-zolty-pozostale",
+    "name": "Ser żółty (pozostałe)",
+    "category": "sery",
+    "jpgSz": 26198,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "makaron-z-pszenicy-durum-ugotowany",
+    "name": "Makaron z pszenicy durum (ugotowany)",
+    "category": "alkohole",
+    "jpgSz": 30415,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "grejfrut-pomelo",
+    "name": "Grejfrut Pomelo",
+    "category": "warzywa",
+    "jpgSz": 25067,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "pieczywo-chrupkie-zytnie-tovago",
+    "name": "Pieczywo chrupkie żytnie - Tovago",
+    "category": "zboza",
+    "jpgSz": 29446,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "tunczyk-w-oliwie-z-oliwek",
+    "name": "Tuńczyk w oliwie z oliwek",
+    "category": "mieso",
+    "jpgSz": 26797,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "twarog",
+    "name": "Twaróg",
+    "category": "nabial",
+    "jpgSz": 21404,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "parowki-berlinki-classic-morliny",
+    "name": "Parówki Berlinki Classic - Morliny",
+    "category": "mieso",
+    "jpgSz": 29319,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jogurt-naturalny-typu-greckiego-o-obnizonej-zawartosci-tluszczu-tolonis",
+    "name": "Jogurt naturalny typu greckiego o obniżonej zawartości tłuszczu - Tolonis",
+    "category": "nabial",
+    "jpgSz": 35474,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jogurt-naturalny-grecki",
+    "name": "Jogurt naturalny grecki",
+    "category": "nabial",
+    "jpgSz": 25512,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jogurt-naturalny-typu-greckiego-0-piatnica",
+    "name": "Jogurt naturalny typu greckiego 0% - Piątnica",
+    "category": "nabial",
+    "jpgSz": 30490,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kakao-proszek-decomorreno",
+    "name": "Kakao (proszek) - Decomorreno",
+    "category": "polskie-obiadki",
+    "jpgSz": 30685,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "tost-pszenny",
+    "name": "Tost pszenny",
+    "category": "polskie-obiadki",
+    "jpgSz": 25588,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ketchup-lagodny-pudliszki",
+    "name": "Ketchup łagodny - Pudliszki",
+    "category": "sosy",
+    "jpgSz": 26891,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-kolodziej-polish-village-bread",
+    "name": "Chleb Kołodziej - Polish Village Bread",
+    "category": "zboza",
+    "jpgSz": 31184,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "szynka-klasyczna-sokolowska",
+    "name": "Szynka Klasyczna Sokołowska",
+    "category": "mieso",
+    "jpgSz": 27857,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "wolowina-udziec",
+    "name": "Wołowina (udziec)",
+    "category": "mieso",
+    "jpgSz": 25020,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "karkowka-wieprzowa-z-grilla",
+    "name": "Karkówka wieprzowa z grilla",
+    "category": "mieso",
+    "jpgSz": 27760,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-chrupki-zytni-delikatesowy-wasa",
+    "name": "Chleb chrupki żytni delikatesowy - Wasa",
+    "category": "zboza",
+    "jpgSz": 30879,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maslo-polskie-mlekovita",
+    "name": "Masło Polskie - Mlekovita",
+    "category": "tluszcze",
+    "jpgSz": 27671,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "twarog-wiejski-chudy-mlekovita",
+    "name": "Twaróg wiejski chudy - Mlekovita",
+    "category": "nabial",
+    "jpgSz": 27685,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "morele",
+    "name": "Morele",
+    "category": "owoce",
+    "jpgSz": 22166,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "herbatniki",
+    "name": "Herbatniki",
+    "category": "slodycze",
+    "jpgSz": 25038,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "cukinia-gotowana",
+    "name": "Cukinia gotowana",
+    "category": "warzywa",
+    "jpgSz": 25257,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "mieso-mielone-wolowe-sokolow",
+    "name": "Mięso mielone wołowe - Sokołów",
+    "category": "mieso",
+    "jpgSz": 28903,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "rodzynki-sultanskie-bakallino-biedronka",
+    "name": "Rodzynki sułtańskie Bakallino - Biedronka",
+    "category": "owoce",
+    "jpgSz": 30773,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "frytki-z-frytownicy",
+    "name": "Frytki z frytownicy",
+    "category": "fastfood",
+    "jpgSz": 25602,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "powidla-sliwkowe",
+    "name": "Powidła śliwkowe",
+    "category": "owoce",
+    "jpgSz": 24458,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "warzywa-na-patelnie",
+    "name": "Warzywa na patelnię",
+    "category": "warzywa",
+    "jpgSz": 26029,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "rosol-domowy",
+    "name": "Rosół domowy",
+    "category": "zupy",
+    "jpgSz": 26592,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "miod-wielokwiatowy",
+    "name": "Miód wielokwiatowy",
+    "category": "slodycze",
+    "jpgSz": 27206,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "pasztet-z-drobiu",
+    "name": "Pasztet z drobiu",
+    "category": "mieso",
+    "jpgSz": 25401,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "soczewica-ugotowana-bez-soli",
+    "name": "Soczewica (ugotowana bez soli)",
+    "category": "warzywa",
+    "jpgSz": 28924,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bulka-orkiszowa",
+    "name": "Bułka orkiszowa",
+    "category": "zboza",
+    "jpgSz": 24842,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "melon-zolty",
+    "name": "Melon żółty",
+    "category": "owoce",
+    "jpgSz": 23039,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-zytni-ze-slonecznikiem-na-naturalnym-zakwasie-biedronka",
+    "name": "Chleb żytni ze słonecznikiem na naturalnym zakwasie - Biedronka",
+    "category": "zboza",
+    "jpgSz": 34898,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "szynka-wieprzowa-wedzona",
+    "name": "Szynka wieprzowa wędzona",
+    "category": "mieso",
+    "jpgSz": 27208,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "przyprawa-wanilia-laska",
+    "name": "Przyprawa wanilia laska",
+    "category": "przyprawy",
+    "jpgSz": 26133,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "maggi-przyprawa-do-zup",
+    "name": "Maggi (przyprawa do zup)",
+    "category": "przyprawy",
+    "jpgSz": 25911,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "poledwica-z-indyka-w-plastrach-morliny",
+    "name": "Polędwica z indyka w plastrach - Morliny",
+    "category": "mieso",
+    "jpgSz": 29290,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "fasola-biala-gotowana-bez-soli",
+    "name": "Fasola biała gotowana (bez soli)",
+    "category": "warzywa",
+    "jpgSz": 29629,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "grzyb-podgrzybek",
+    "name": "Grzyb Podgrzybek",
+    "category": "warzywa",
+    "jpgSz": 25697,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "udo-z-kurczaka-bez-skory-pieczone",
+    "name": "Udo z kurczaka bez skóry (pieczone)",
+    "category": "mieso",
+    "jpgSz": 29414,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "wolowina-poledwica-surowa",
+    "name": "Wołowina (polędwica) surowa",
+    "category": "mieso",
+    "jpgSz": 28477,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "groszek-mrozony-ugotowany-bez-soli",
+    "name": "Groszek mrożony (ugotowany bez soli)",
+    "category": "warzywa",
+    "jpgSz": 31005,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "olej-z-pestek-winogron",
+    "name": "Olej z pestek winogron",
+    "category": "alkohole",
+    "jpgSz": 24605,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-pszenno-zytni-wiejski",
+    "name": "Chleb pszenno żytni wiejski",
+    "category": "zboza",
+    "jpgSz": 28074,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "zupa-krupnik",
+    "name": "Zupa krupnik",
+    "category": "zupy",
+    "jpgSz": 25964,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jogurt-naturalny-lagodny-1-5-bakoma",
+    "name": "Jogurt naturalny łagodny 1,5% - Bakoma",
+    "category": "nabial",
+    "jpgSz": 29342,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kawa-blonnik-inka",
+    "name": "Kawa Błonnik - Inka",
+    "category": "napoje",
+    "jpgSz": 24454,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "grahamka-lidl",
+    "name": "Grahamka Lidl",
+    "category": "polskie-obiadki",
+    "jpgSz": 26296,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "sos-winegret-ocet-i-olej",
+    "name": "Sos winegret (ocet i olej)",
+    "category": "sosy",
+    "jpgSz": 26889,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-salami",
+    "name": "Ser Salami",
+    "category": "sery",
+    "jpgSz": 24031,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "tunczyk-w-sosie-wlasnym-konserwa",
+    "name": "Tuńczyk w sosie własnym (konserwa)",
+    "category": "mieso",
+    "jpgSz": 29800,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "pepsi-cola",
+    "name": "Pepsi Cola",
+    "category": "napoje",
+    "jpgSz": 21895,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "musli",
+    "name": "Musli",
+    "category": "platki-sniadaniowe",
+    "jpgSz": 24387,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-zolty-wedzony-krolewski-sierpc",
+    "name": "Ser żółty wędzony Królewski - Sierpc",
+    "category": "sery",
+    "jpgSz": 29827,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ryz-basmati-nieugotowany",
+    "name": "Ryż Basmati (nieugotowany)",
+    "category": "zboza",
+    "jpgSz": 27282,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bajgiel-pelnoziarnisty",
+    "name": "Bajgiel pełnoziarnisty",
+    "category": "polskie-obiadki",
+    "jpgSz": 28345,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kasza-jeczmienna-melvit",
+    "name": "Kasza jęczmienna - Melvit",
+    "category": "zboza",
+    "jpgSz": 27605,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kefir-naturalny-0-pilos",
+    "name": "Kefir naturalny 0% - Pilos",
+    "category": "nabial",
+    "jpgSz": 24912,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bulka-razowa-z-ziarnami-slonecznika",
+    "name": "Bułka razowa z ziarnami słonecznika",
+    "category": "zboza",
+    "jpgSz": 29582,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "groszek-zielony-konserwa",
+    "name": "Groszek zielony (konserwa)",
+    "category": "warzywa",
+    "jpgSz": 28258,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "czekolada",
+    "name": "Czekolada",
+    "category": "slodycze",
+    "jpgSz": 25772,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jogurt-naturalny-tola",
+    "name": "Jogurt naturalny - Tola",
+    "category": "nabial",
+    "jpgSz": 24817,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "szynka-babci-wedzona-biedronka",
+    "name": "Szynka babci wędzona Biedronka",
+    "category": "mieso",
+    "jpgSz": 28206,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "jablko-gotowane-bez-skorki",
+    "name": "Jabłko gotowane (bez skórki)",
+    "category": "owoce",
+    "jpgSz": 27534,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ziemniaki-pieczone",
+    "name": "Ziemniaki pieczone",
+    "category": "warzywa",
+    "jpgSz": 25646,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "sliwki-wegierki",
+    "name": "Śliwki węgierki",
+    "category": "owoce",
+    "jpgSz": 23628,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "cukierek-michalek",
+    "name": "Cukierek Michałek",
+    "category": "slodycze",
+    "jpgSz": 27328,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chipsy-kukurydziane",
+    "name": "Chipsy kukurydziane",
+    "category": "slodycze",
+    "jpgSz": 27870,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "spaghetti-z-miesem-i-sosem-pomidorowym",
+    "name": "Spaghetti z mięsem i sosem pomidorowym",
+    "category": "makarony",
+    "jpgSz": 30447,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "schab-wedzony",
+    "name": "Schab (wędzony)",
+    "category": "mieso",
+    "jpgSz": 25171,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "grapefruit-czerwony-owoc",
+    "name": "Grapefruit czerwony (owoc)",
+    "category": "warzywa",
+    "jpgSz": 27838,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "ser-feta-favita-poltlusty-mlekovita",
+    "name": "Ser Feta Favita półtłusty - Mlekovita",
+    "category": "sery",
+    "jpgSz": 29673,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "tunczyk-w-sosie-wlasnym-amerigo",
+    "name": "Tuńczyk w sosie własnym - Amerigo",
+    "category": "mieso",
+    "jpgSz": 28980,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "kielbasa-szynkowa",
+    "name": "Kiełbasa szynkowa",
+    "category": "mieso",
+    "jpgSz": 25528,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "chleb-wiejski",
+    "name": "Chleb wiejski",
+    "category": "zboza",
+    "jpgSz": 24644,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "bulka-pszenno-zytnia",
+    "name": "Bułka pszenno-żytnia",
+    "category": "zboza",
+    "jpgSz": 26997,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "grahamka-biedronka",
+    "name": "grahamka biedronka",
+    "category": "polskie-obiadki",
+    "jpgSz": 27298,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "platki-bran-flakes-z-otrab-pszennych-sante",
+    "name": "Płatki Bran Flakes z otrąb pszennych - Sante",
+    "category": "platki-sniadaniowe",
+    "jpgSz": 32833,
+    "pngSz": 0,
+    "webpSz": 0
+  },
+  {
+    "slug": "omlet-dwujajeczny",
+    "name": "Omlet dwujajeczny",
+    "category": "nabial",
+    "jpgSz": 24347,
+    "pngSz": 0,
+    "webpSz": 0
+  }
+]

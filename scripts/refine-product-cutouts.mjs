@@ -446,7 +446,7 @@ function chromaKeyCutout(data, width, height, key = [0, 177, 64], thr = 72) {
     return data;
 }
 
-async function cutoutBuffer(inputBuf, options = {}) {
+export async function cutoutBuffer(inputBuf, options = {}) {
     const { refineOnly = false, method = 'auto' } = options;
     const meta = await sharp(inputBuf).metadata();
     const letter = { r: 176, g: 182, b: 190, alpha: 1 };
@@ -769,7 +769,10 @@ async function main() {
     }
 }
 
-main().catch((e) => {
-    console.error(e);
-    process.exit(1);
-});
+const isDirectRun = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isDirectRun) {
+    main().catch((e) => {
+        console.error(e);
+        process.exit(1);
+    });
+}

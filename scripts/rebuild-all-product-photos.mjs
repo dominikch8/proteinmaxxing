@@ -17,7 +17,8 @@ import path from 'path';
 import crypto from 'crypto';
 import os from 'os';
 import { fileURLToPath, pathToFileURL } from 'url';
-import { removeEdgeBackground, defringeLightHalos } from './remove-edge-background.mjs';
+import { removeEdgeBackground } from './remove-edge-background.mjs';
+import { cutoutBuffer } from './refine-product-cutouts.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
@@ -50,7 +51,7 @@ const FOOD_SUBJECT = {
     pawelek: 'Pawelek Polish toffee chocolate candy bar unwrapped',
     grzeski: 'Grzeski Polish chocolate wafer candy bar unwrapped',
     knoppers: 'Knoppers hazelnut cream wafer candy bar unwrapped',
-    kinder-duplo: 'Kinder Duplo Ferrero chocolate wafer candy bar unwrapped',
+    'kinder-duplo': 'Kinder Duplo Ferrero chocolate wafer candy bar unwrapped',
     'kinder-maxi-king': 'ONE Kinder Maxi King candy bar unwrapped, single bar NOT multipack',
     'kinder-country': 'Kinder Country milk cereal chocolate candy bar unwrapped',
     toblerone: 'classic unwrapped Toblerone milk chocolate bar with distinctive triangular mountain peaks, solid triangular prism chocolate, NOT retail shelf display',
@@ -221,6 +222,12 @@ const FOOD_SUBJECT = {
 
     'sol-kuchenna': 'small neat mound of fine white table salt crystals only, salt pile on white, NO shaker, NO bowl',
     'pieprz-czarny-mielony': 'small neat mound of finely ground black pepper powder only, dark gray pepper, NO bowl, NO grinder',
+    'pieprz-czarny': 'small neat pile of whole black peppercorns only, round dark pepper berries, NO powder, NO grinder, NO bowl',
+    'pieprz-kolorowy': 'small neat pile of mixed color peppercorns black pink green white, whole berries only, NO bowl',
+    whisky: 'amber whisky whiskey poured in short tumbler glass, keep whole glass visible, edible drink only, NO bottle brand, NO animal',
+    bulion: 'clear golden chicken bouillon broth soup in white bowl, keep whole bowl visible, edible soup only, NOT lion animal',
+    'bulion-warzywny': 'clear light vegetable bouillon broth in white bowl, keep whole bowl visible, edible soup only, NOT lion animal',
+    'bulion-z-kostki-rosolowej': 'clear golden broth from bouillon cube in white bowl, keep whole bowl visible, edible soup only, NOT lion animal',
     'papryka-slodka-mielona': 'small neat mound of bright red-orange sweet paprika powder only, NO bowl',
     'papryka-ostra-mielona': 'small neat mound of deep red hot paprika chili powder only, NO bowl',
     majeranek: 'small pile of dried green-gray marjoram herb leaves only',
@@ -281,29 +288,31 @@ const FOOD_SUBJECT = {
 };
 
 const CATEGORY_SUFFIX = {
-    mieso: 'raw meat or fish food product',
-    nabial: 'dairy food product',
-    warzywa: 'fresh vegetable',
-    owoce: 'fresh fruit',
-    zboza: 'grain cereal or bakery food',
-    'platki-sniadaniowe': 'breakfast cereal flakes granola bowl food',
-    orzechy: 'nuts or seeds food',
-    sosy: 'sauce or condiment food',
-    tluszcze: 'cooking oil or fat food',
-    makarony: 'pasta food dish',
-    zupy: 'soup in bowl food',
-    fastfood: 'fast food item',
-    slodycze: 'candy chocolate dessert food',
-    batony: 'chocolate candy bar snack food',
-    'batony-proteinowe': 'protein candy bar high protein snack food',
-    'polskie-obiadki': 'Polish traditional food dish',
-    napoje: 'beverage drink in glass on white background',
-    alkohole: 'alcoholic drink poured in glass on white background',
-    przyprawy: 'dry spice herbs seasoning powder pile on white background'
+    mieso: 'raw meat or fish edible food product only',
+    nabial: 'dairy edible food product only',
+    sery: 'cheese edible food product only',
+    warzywa: 'fresh vegetable edible food only',
+    owoce: 'fresh fruit edible food only',
+    zboza: 'grain cereal bread bakery edible food only',
+    'platki-sniadaniowe': 'breakfast cereal flakes in bowl edible food only',
+    orzechy: 'nuts or seeds edible food only',
+    sosy: 'sauce or condiment edible food only',
+    tluszcze: 'cooking oil butter fat edible food only',
+    makarony: 'pasta edible food only',
+    zupy: 'soup in white bowl edible food only, keep whole bowl visible',
+    fastfood: 'fast food meal edible food only',
+    slodycze: 'candy chocolate dessert edible food only',
+    batony: 'chocolate candy bar snack edible food only, NOT animal',
+    'batony-proteinowe': 'protein candy bar edible snack food only',
+    'polskie-obiadki': 'Polish traditional cooked food dish in plate or bowl, keep dishware fully visible',
+    'mrozone-pizze': 'whole round frozen style pizza edible food only',
+    napoje: 'beverage drink in clear glass, keep whole glass visible, NO bottle brand',
+    alkohole: 'alcoholic drink poured in glass, keep whole glass visible, NO bottle brand',
+    przyprawy: 'small neat mound of dry spice seasoning powder or herbs centered with lots of empty white space around, edible food only, NO animal, NOT full-bleed texture'
 };
 
 const NEGATIVE =
-    'no people, no hands, no animals, no wildlife, no lion animal, no planet Mars, no text, no watermark, no logo, no barcode, no brand name readable, no plate clutter, no busy props, no gray background, no black background, no gradient background, no AI artifacts, no deformed anatomy';
+    'no people, no hands, no animals, no wildlife, no lion animal, no tiger animal, no monster creature, no planet Mars, no astronomy, no text, no watermark, no logo, no barcode, no brand name readable, no plate clutter, no busy props, no gray background, no black background, no gradient background, no AI artifacts, no deformed anatomy, do not crop away bowl plate glass dishware, keep entire food with its vessel fully in frame';
 
 function slugify(name) {
     return name
@@ -344,19 +353,108 @@ function sleep(ms) {
 
 function foodSubject(p, queries) {
     if (FOOD_SUBJECT[p.slug]) return FOOD_SUBJECT[p.slug];
-    let base = (queries[0] || p.name.replace(/\([^)]*\)/g, '').trim())
+
+    const name = String(p.name || '').replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim();
+    const n = name.toLowerCase();
+    const cat = p.category;
+
+    // False friends / brand names that AI may misread as animals, planets, etc.
+    if (/\blion\b/i.test(n) && /płatki|cereal|corn|choc|baton|wafer|white/i.test(n + ' ' + cat)) {
+        return 'Nestle Lion chocolate caramel cereal candy bar or Lion breakfast cereal flakes food product, edible snack only, NOT a lion animal, NOT wildlife';
+    }
+    if (/^lion$|\blion\b/i.test(n) && (cat === 'batony' || cat === 'slodycze' || cat === 'platki-sniadaniowe')) {
+        return 'Lion Nestle chocolate caramel cereal candy bar unwrapped, edible chocolate bar only, NOT a lion animal';
+    }
+    if (/\btiger\b/i.test(n) && /energy|napój|drink/i.test(n + ' ' + cat)) {
+        return 'pale yellow energy drink in a tall clear glass with ice, energy beverage only, NOT a tiger animal';
+    }
+    if (/\bmonster\b/i.test(n) && /energy|napój|drink/i.test(n + ' ' + cat)) {
+        return 'pale green-yellow energy drink in a tall clear glass with ice, energy beverage only, NOT a monster creature';
+    }
+    if (/\bmars\b/i.test(n) && (cat === 'batony' || cat === 'batony-proteinowe' || cat === 'slodycze' || /protein|baton|choc/i.test(n))) {
+        return 'Mars chocolate caramel nougat candy bar unwrapped, edible chocolate bar only, NOT planet Mars';
+    }
+    if (/whisky|whiskey/i.test(n)) {
+        return 'amber whisky spirit in a short clear rocks glass, alcoholic drink only, keep whole glass visible, NO bottle, NO brand';
+    }
+    if (/wódka|wodka|vodka/i.test(n)) {
+        return 'clear vodka spirit in a small clear shot glass, colorless liquid only, keep whole glass visible, NO bottle';
+    }
+    if (/bulion/i.test(n)) {
+        return 'clear golden vegetable or chicken broth stock in a white soup bowl, liquid broth food only, keep whole bowl visible';
+    }
+    if (/szynka/i.test(n)) {
+        return `sliced cooked Polish ham cold cuts ${name}, pink ham slices edible deli meat only`;
+    }
+    if (/twaróg|twarog|serek wiejski|cottage/i.test(n)) {
+        return `Polish fresh white quark cottage cheese ${name} in a small white bowl, dairy food only, keep bowl fully visible`;
+    }
+    if (/jogurt|skyr|kefir|maślanka/i.test(n)) {
+        return `Polish ${name} dairy product in a small white bowl or cup, creamy edible dairy only, keep vessel fully visible`;
+    }
+    if (/mleko/i.test(n) && cat === 'nabial') {
+        return `glass of white cow milk ${name}, plain milk drink only, keep whole glass visible`;
+    }
+    if (/chleb|bułka|graham|tost/i.test(n)) {
+        return `Polish bakery bread product ${name}, edible bread loaf or roll only`;
+    }
+    if (/pizza/i.test(n)) {
+        return `whole round pizza ${name}, edible pizza food only, keep entire pizza visible`;
+    }
+    if (/zupa|rosół|barszcz|żurek|krem /i.test(n) || cat === 'zupy') {
+        return `${name} Polish soup in a white bowl, edible soup only, keep entire bowl and soup visible, do not crop the bowl`;
+    }
+    if (cat === 'przyprawy') {
+        return `small neat mound of ${name} dry spice or seasoning, edible spice powder or dried herbs only, NO bowl required, NO animal`;
+    }
+    if (cat === 'napoje' || cat === 'alkohole') {
+        return `${name} poured in a clear drinking glass, beverage only, keep whole glass visible, NO bottle, NO brand logo, NOT an animal`;
+    }
+    if (cat === 'orzechy') {
+        return `${name} edible nuts or seeds pile food only`;
+    }
+    if (cat === 'owoce') {
+        return `fresh ${name} fruit, edible fruit only, realistic produce photo`;
+    }
+    if (cat === 'warzywa') {
+        return `fresh ${name} vegetable, edible vegetable only, realistic produce photo`;
+    }
+    if (cat === 'mieso') {
+        return `${name} edible meat or fish food product only, raw or cooked as typical for this product`;
+    }
+    if (cat === 'sery') {
+        return `${name} cheese food product, edible cheese only`;
+    }
+    if (cat === 'tluszcze') {
+        return `${name} cooking fat or oil edible food product only`;
+    }
+    if (cat === 'makarony') {
+        return `${name} pasta food product edible only`;
+    }
+    if (cat === 'zboza' || cat === 'platki-sniadaniowe') {
+        return `${name} grain cereal bakery breakfast food edible only, NOT an animal`;
+    }
+    if (cat === 'slodycze' || cat === 'batony' || cat === 'batony-proteinowe') {
+        return `${name} edible candy chocolate dessert snack food only, NOT an animal, NOT a planet`;
+    }
+    if (cat === 'polskie-obiadki' || cat === 'fastfood') {
+        return `${name} cooked food dish, edible meal only, keep plate or bowl fully visible`;
+    }
+
+    let base = (queries[0] || name)
         .replace(/\s+food$/i, '')
         .replace(/\s+ingredient photo$/i, '')
         .trim();
-    if (/^(lion|mars|bounty|turkey)$/i.test(base)) {
-        if (/lion/i.test(base)) return 'Lion chocolate candy bar Nestle';
-        if (/mars/i.test(base)) return 'Mars chocolate candy bar';
-        if (/bounty/i.test(base)) return 'Bounty chocolate candy bar';
-        if (/turkey/i.test(base)) return 'turkey breast meat food';
+    if (/^(lion|mars|bounty|turkey|tiger|monster)$/i.test(base)) {
+        if (/lion/i.test(base)) return 'Lion chocolate candy bar Nestle edible snack, NOT a lion animal';
+        if (/mars/i.test(base)) return 'Mars chocolate candy bar edible snack, NOT planet Mars';
+        if (/bounty/i.test(base)) return 'Bounty chocolate candy bar edible snack';
+        if (/turkey/i.test(base)) return 'turkey breast meat edible food';
+        if (/tiger|monster/i.test(base)) return 'energy drink in clear glass beverage only, NOT an animal';
     }
-    const suffix = CATEGORY_SUFFIX[p.category] || 'food product';
+    const suffix = CATEGORY_SUFFIX[p.category] || 'edible food product only';
     if (/\b(food|fruit|meat|cheese|candy|chocolate|soup|sauce|oil|nut|pasta|rice|egg|milk)\b/i.test(base)) {
-        return base;
+        return `${base}, edible food only`;
     }
     return `${base} ${suffix}`;
 }
@@ -478,23 +576,24 @@ function buildPrompt(subject, refs) {
         .map((r) => r.title.replace(/\.[a-z0-9]+$/i, '').replace(/[_-]+/g, ' '))
         .filter(Boolean)
         .join('; ');
-    const lookLike = clues ? ` Look exactly like real edible food (reference names: ${clues.slice(0, 140)}).` : '';
+    const lookLike = clues ? ` Look exactly like real edible food (reference names: ${clues.slice(0, 120)}).` : '';
     return (
         `Ultra realistic minimalist ecommerce catalog food photo: ${subject}.` +
         lookLike +
-        ` Single product only, centered, soft natural shadow.` +
-        ` Pure solid white background #FFFFFF, no gray, no black, no textured backdrop.` +
+        ` Single product only, centered, soft natural contact shadow under the product.` +
+        ` Large empty pure solid white background #FFFFFF margins on all sides, product fills at most 55% of frame.` +
+        ` Studio product shot on seamless white paper, no gray, no black, no textured backdrop, no full-bleed closeup.` +
         ` Photorealistic, sharp focus, correct anatomy, ${NEGATIVE}`
     );
 }
 
 function pollinationsUrl(prompt, slug, attempt = 0) {
     const seed =
-        (crypto.createHash('md5').update(`spice-drink-v1-${slug}-${attempt}`).digest().readUInt32BE(0) +
+        (crypto.createHash('md5').update(`food-cutout-v2-${slug}-${attempt}`).digest().readUInt32BE(0) +
             attempt * 9973) %
         2147483646;
-    const enc = encodeURIComponent(prompt.slice(0, 480));
-    return `https://image.pollinations.ai/prompt/${enc}?width=800&height=600&nologo=true&enhance=true&model=flux&seed=${seed}`;
+    const enc = encodeURIComponent(prompt.slice(0, 500));
+    return `https://image.pollinations.ai/prompt/${enc}?width=800&height=600&nologo=true&model=flux&seed=${seed}`;
 }
 
 async function cornersAreWhite(sharp, buf) {
@@ -520,8 +619,30 @@ async function cornersAreWhite(sharp, buf) {
     return white >= 5;
 }
 
-/** Edge flood-fill + soft threshold → przezroczyste PNG */
+/** Adaptive cutout: czyste białe tło → edge flood; szare studio → studioFlood (chroni białe miski) */
 async function toTransparentPng(sharp, inputBuf) {
+    const probe = await sharp(inputBuf)
+        .resize(80, 60, { fit: 'fill' })
+        .raw()
+        .toBuffer({ resolveWithObject: true });
+    const pd = probe.data;
+    const pch = probe.info.channels;
+    const sample = (x, y) => {
+        const i = (y * probe.info.width + x) * pch;
+        return (pd[i] + pd[i + 1] + pd[i + 2]) / 3;
+    };
+    const cornerLum =
+        (sample(1, 1) +
+            sample(probe.info.width - 2, 1) +
+            sample(1, probe.info.height - 2) +
+            sample(probe.info.width - 2, probe.info.height - 2)) /
+        4;
+
+    if (cornerLum < 245) {
+        const out = await cutoutBuffer(inputBuf, { method: 'studio' });
+        return out.png;
+    }
+
     const resized = await sharp(inputBuf)
         .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255, alpha: 1 } })
         .ensureAlpha()
@@ -529,22 +650,14 @@ async function toTransparentPng(sharp, inputBuf) {
         .toBuffer({ resolveWithObject: true });
 
     let data = removeEdgeBackground(resized.data, resized.info.width, resized.info.height, 4, {
-        lumMin: 236,
-        satMax: 32
+        lumMin: 248,
+        satMax: 18
     });
-    data = defringeLightHalos(data, 4);
-
-    // dodatkowe wybielenie prawie białych
     for (let i = 0; i < data.length; i += 4) {
-        if (data[i + 3] === 0) continue;
-        const r = data[i];
-        const g = data[i + 1];
-        const b = data[i + 2];
-        if (r >= 250 && g >= 250 && b >= 250) data[i + 3] = 0;
-        else if (r > 242 && g > 242 && b > 242) {
-            const whiteness = (r + g + b) / 3;
-            data[i + 3] = Math.max(0, Math.min(255, Math.round((255 - whiteness) * 10)));
-        }
+        const a = data[i + 3];
+        if (a === 0 || a >= 250) continue;
+        const lum = (data[i] + data[i + 1] + data[i + 2]) / 3;
+        if (a < 160 && lum > 246) data[i + 3] = 0;
     }
 
     return sharp(data, {
@@ -558,71 +671,110 @@ async function saveProductImages(sharp, generatedBuf, slug) {
     const pngBuf = await toTransparentPng(sharp, generatedBuf);
     const pngPath = path.join(outDir, `${slug}.png`);
     const jpgPath = path.join(outDir, `${slug}.jpg`);
+    const webpPath = path.join(outDir, `${slug}.webp`);
     const tmpPng = path.join(os.tmpdir(), `proteiner-${crypto.randomBytes(6).toString('hex')}.png`);
     const tmpJpg = path.join(os.tmpdir(), `proteiner-${crypto.randomBytes(6).toString('hex')}.jpg`);
+    const tmpWebp = path.join(os.tmpdir(), `proteiner-${crypto.randomBytes(6).toString('hex')}.webp`);
 
     try {
         fs.writeFileSync(tmpPng, pngBuf);
         fs.copyFileSync(tmpPng, pngPath);
 
-        await sharp(pngBuf)
+        const jpgBuf = await sharp(pngBuf)
             .flatten({ background: { r: 255, g: 255, b: 255 } })
             .jpeg({ quality: 90, mozjpeg: true })
-            .toFile(tmpJpg);
+            .toBuffer();
+        fs.writeFileSync(tmpJpg, jpgBuf);
         fs.copyFileSync(tmpJpg, jpgPath);
+
+        const webpBuf = await sharp(pngBuf)
+            .webp({ quality: 82, alphaQuality: 90, effort: 4 })
+            .toBuffer();
+        fs.writeFileSync(tmpWebp, webpBuf);
+        fs.copyFileSync(tmpWebp, webpPath);
     } finally {
-        try {
-            fs.unlinkSync(tmpPng);
-        } catch {
-            /* ignore */
-        }
-        try {
-            fs.unlinkSync(tmpJpg);
-        } catch {
-            /* ignore */
+        for (const p of [tmpPng, tmpJpg, tmpWebp]) {
+            try {
+                fs.unlinkSync(p);
+            } catch {
+                /* ignore */
+            }
         }
     }
 }
 
 async function fetchBuffer(url) {
-    let lastErr;
+    let lastErr = new Error('fetch failed');
     for (let attempt = 0; attempt < 5; attempt++) {
         try {
             const res = await fetch(url, {
-                headers: { 'User-Agent': UA },
+                headers: { 'User-Agent': UA, Accept: 'image/*,*/*' },
                 signal: AbortSignal.timeout(120000),
                 redirect: 'follow'
             });
             if (res.status === 429) {
-                await sleep(1500 * (attempt + 1) ** 2);
+                lastErr = new Error('HTTP 429 rate limit');
+                await sleep(8000 * (attempt + 1) ** 2);
                 continue;
             }
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             const buf = Buffer.from(await res.arrayBuffer());
             if (buf.length < 3000) throw new Error('za mały plik');
+            const magic = buf.slice(0, 4).toString('hex');
+            const isJpeg = magic.startsWith('ffd8');
+            const isPng = magic === '89504e47';
+            const isWebp = buf.slice(0, 4).toString('ascii') === 'RIFF';
+            if (!isJpeg && !isPng && !isWebp) throw new Error(`nie obraz (${magic})`);
             return buf;
         } catch (e) {
-            lastErr = e;
+            lastErr = e instanceof Error ? e : new Error(String(e));
             await sleep(700 * (attempt + 1));
         }
     }
     throw lastErr;
 }
 
+async function normalizeOnWhite(sharp, buf) {
+    const decoded = sharp(buf, { failOn: 'truncated', limitInputPixels: 40_000_000 });
+    const meta = await decoded.metadata();
+    if ((meta.width || 0) > 4000 || (meta.height || 0) > 4000) {
+        throw new Error(`za duże wymiary ${meta.width}x${meta.height}`);
+    }
+    return decoded
+        .rotate()
+        .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255, alpha: 1 } })
+        .flatten({ background: { r: 255, g: 255, b: 255 } })
+        .jpeg({ quality: 90, mozjpeg: true })
+        .toBuffer();
+}
+
+async function generateAi(sharp, subject, refs, slug) {
+    const prompt = buildPrompt(subject, refs);
+    let best = null;
+    let lastErr;
+    for (let attempt = 0; attempt < 2; attempt++) {
+        const url = pollinationsUrl(prompt, slug, attempt);
+        try {
+            const candidate = await normalizeOnWhite(sharp, await fetchBuffer(url));
+            if (await cornersAreWhite(sharp, candidate)) return candidate;
+            best = candidate;
+        } catch (e) {
+            lastErr = e instanceof Error ? e : new Error(String(e));
+            await sleep(1500 * (attempt + 1));
+        }
+        await sleep(600);
+    }
+    if (best) return best;
+    throw lastErr || new Error('AI generate failed');
+}
+
 async function tryRealPhoto(sharp, refs) {
     for (const ref of refs.slice(0, 4)) {
         try {
-            const buf = await fetchBuffer(ref.url);
-            // wymuś białe marginesy contain, potem sprawdź czy tło da się wyciąć
-            const onWhite = await sharp(buf)
-                .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255 } })
-                .jpeg({ quality: 92 })
-                .toBuffer();
-            // akceptuj jeśli narożniki białe LUB oryginał ma dość jasne tło
+            const onWhite = await normalizeOnWhite(sharp, await fetchBuffer(ref.url));
             if (await cornersAreWhite(sharp, onWhite)) {
                 return { buf: onWhite, via: `photo:${ref.source}` };
             }
-            // nawet bez idealnych narożników — jeśli score wysoki i white-background w query
             if (ref.score >= 6 && /white|isolated/i.test(ref.query || '')) {
                 return { buf: onWhite, via: `photo-soft:${ref.source}` };
             }
@@ -631,37 +783,6 @@ async function tryRealPhoto(sharp, refs) {
         }
     }
     return null;
-}
-
-async function generateAi(sharp, subject, refs, slug) {
-    const prompt = buildPrompt(subject, refs);
-    let buf = null;
-    for (let attempt = 0; attempt < 5; attempt++) {
-        const url = pollinationsUrl(prompt, slug, attempt);
-        const candidate = await fetchBuffer(url);
-        if (await cornersAreWhite(sharp, candidate)) {
-            buf = candidate;
-            break;
-        }
-        // spróbuj wymusić białe tło przez contain
-        const forced = await sharp(candidate)
-            .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255 } })
-            .jpeg({ quality: 90 })
-            .toBuffer();
-        if (await cornersAreWhite(sharp, forced)) {
-            buf = forced;
-            break;
-        }
-        await sleep(350);
-    }
-    if (!buf) {
-        const url = pollinationsUrl(prompt + ' white seamless background only', slug, 11);
-        buf = await sharp(await fetchBuffer(url))
-            .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255 } })
-            .jpeg({ quality: 90 })
-            .toBuffer();
-    }
-    return buf;
 }
 
 // --- main ---
@@ -715,6 +836,7 @@ const maxItems = limitArg ? parseInt(limitArg.split('=')[1], 10) : Infinity;
 const delayMs = parseInt(process.argv.find((a) => a.startsWith('--delay='))?.split('=')[1] || '1800', 10);
 const skipResearch = process.argv.includes('--skip-research');
 const forceAi = process.argv.includes('--force-ai');
+const skipExisting = process.argv.includes('--skip-existing');
 
 let todo = products;
 if (slugArgs.length) {
@@ -725,6 +847,15 @@ if (slugArgs.length) {
     todo = products.filter((p) => set.has(p.category));
 }
 if (keepSlugs.size) todo = todo.filter((p) => !keepSlugs.has(p.slug));
+if (skipExisting) {
+    todo = todo.filter((p) => {
+        try {
+            return fs.statSync(path.join(outDir, `${p.slug}.png`)).size < 20000;
+        } catch {
+            return true;
+        }
+    });
+}
 todo = todo.slice(0, maxItems);
 
 console.log(`Research + realistyczne zdjęcia (PNG alpha): ${todo.length}`);
@@ -772,7 +903,8 @@ for (let i = 0; i < todo.length; i++) {
         console.log(`✓ ${via}`);
         ok++;
     } catch (e) {
-        console.log(`✗ ${e.message}`);
+        const msg = e instanceof Error ? e.message : String(e || 'unknown error');
+        console.log(`✗ ${msg}`);
         fail++;
         failed.push(p.slug);
     }
