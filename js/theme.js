@@ -1,11 +1,16 @@
 (function () {
     const STORAGE_KEY = 'pm-theme';
+    const MIGRATED_KEY = 'pm-theme-neon-default';
 
     function getStoredTheme() {
         try {
-            return localStorage.getItem(STORAGE_KEY) === 'dark' ? 'dark' : 'light';
+            if (!localStorage.getItem(MIGRATED_KEY)) {
+                localStorage.setItem(MIGRATED_KEY, '1');
+                localStorage.removeItem(STORAGE_KEY);
+            }
+            return localStorage.getItem(STORAGE_KEY) === 'light' ? 'light' : 'dark';
         } catch (e) {
-            return 'light';
+            return 'dark';
         }
     }
 
