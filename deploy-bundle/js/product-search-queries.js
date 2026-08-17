@@ -4120,11 +4120,7 @@ export const PRODUCT_SEARCH_QUERIES = {
     "butter food",
     "butter ingredient photo"
   ],
-  "nasiona-siemienia-lnianego": [
-    "Nasiona siemienia lnianego",
-    "Nasiona siemienia lnianego food",
-    "Nasiona siemienia lnianego ingredient photo"
-  ],
+
   "platki-kukurydziane-corn-flakes-nestle": [
     "flakes",
     "flakes food",
