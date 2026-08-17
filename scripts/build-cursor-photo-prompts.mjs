@@ -37,7 +37,9 @@ const SPECIAL = {
     bulion: 'clear golden broth in white bowl, whole bowl visible, NOT lion animal',
     wodka: 'clear vodka in shot glass, whole glass visible',
     pepsi: 'dark cola soda in clear glass with ice, whole glass visible',
-    cynamon: 'ground cinnamon powder mound with optional sticks'
+    'maka-pszenna-typ-550': 'small white bowl filled with fine pale wheat flour powder only, raw baking flour, NOT bread NOT loaf',
+    'maka-pszenna': 'small white bowl filled with fine white wheat flour powder only, raw baking flour, NOT bread NOT loaf',
+    sol: 'neat pile of white table salt crystals only, salt, NOT a vegetable'
 };
 
 function promptFor(p) {
@@ -52,8 +54,8 @@ function promptFor(p) {
         description:
             `Photorealistic minimalist ecommerce food photo: ${subject}. ` +
             `Exact edible food or drink only, single neat portion, centered. ` +
-            `Pure solid white background #FFFFFF, soft contact shadow, empty white margins. ` +
-            `Keep entire product and vessel (bowl/glass/plate/jar) fully visible if present. ` +
+            `Pure solid white background #FFFFFF, NO shadow, NO drop shadow, NO contact shadow, NO reflection, empty white margins. ` +
+            `Keep entire product and vessel (bowl/glass/plate/jar) fully visible if present. Only the food and its vessel, nothing else. ` +
             `No people, no hands, no animals, no text, no logos, no watermark, sharp realistic detail.`
     };
 }

@@ -5,7 +5,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { removeEdgeBackground } from './remove-edge-background.mjs';
+import { removeEdgeBackground, removeConnectedShadows } from './remove-edge-background.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
@@ -43,6 +43,7 @@ async function toTransparentPng(inputBuf) {
     const lumMin = cornerLum >= 245 ? 248 : cornerLum >= 220 ? 232 : 210;
     const satMax = cornerLum >= 245 ? 18 : 28;
     let data = removeEdgeBackground(raw, w, h, 4, { lumMin, satMax });
+    data = removeConnectedShadows(data, w, h, 4);
     for (let i = 0; i < data.length; i += 4) {
         const a = data[i + 3];
         if (a === 0 || a >= 250) continue;
