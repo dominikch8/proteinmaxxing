@@ -4,7 +4,7 @@
  */
 .brand-gradient-text,
 .info-tab h2,
-.info-tab a,
+.info-tab a:not(.poradnik-hub-tile),
 .random-products-heading span,
 .nutrition-section h2,
 .product-guide h2,
@@ -61,8 +61,8 @@ a.product-category:hover,
 [data-theme='dark'] .poradnik-product-mini-value,
 [data-theme='dark'] .poradnik-intake-table tbody th,
 [data-theme='dark'] .product-card-cta,
-[data-theme='dark'] .info-tab a,
-[data-theme='dark'] .info-tab a:hover,
+[data-theme='dark'] .info-tab a:not(.poradnik-hub-tile),
+[data-theme='dark'] .info-tab a:not(.poradnik-hub-tile):hover,
 [data-theme='dark'] .nav-links button:hover:not(.active),
 [data-theme='dark'] .nav-links a.nav-link:hover:not(.active),
 [data-theme='dark'] .btn-sub:hover:not(.active),
@@ -76,7 +76,7 @@ a.product-category:hover,
 }
 
 /* Linki: zachowaj podkreślenie przez border (text-decoration znika przy clip) */
-.info-tab a,
+.info-tab a:not(.poradnik-hub-tile),
 .poradnik-practical-box a,
 .breadcrumb a,
 .category-breadcrumb a,

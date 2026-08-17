@@ -134,6 +134,12 @@
 .poradnik-hub-tile-emoji {
     font-size: 1.75rem;
     line-height: 1;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: initial !important;
+    color: inherit;
+    filter: none;
     transition: transform 0.28s cubic-bezier(0.34, 1.2, 0.64, 1);
 }
 
@@ -146,19 +152,31 @@
     font-family: 'Encode Sans', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.05rem;
     font-weight: 700;
-    color: var(--text-dark);
-    transition: color 0.22s ease;
+    background-image: var(--brand-text-gradient);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    transition: color 0.22s ease, -webkit-text-fill-color 0.22s ease;
 }
 
 .poradnik-hub-tile:hover .poradnik-hub-tile-title,
 .poradnik-hub-tile:focus-visible .poradnik-hub-tile-title {
+    background-image: none;
+    -webkit-text-fill-color: var(--primary-dark);
     color: var(--primary-dark);
 }
 
 .poradnik-hub-tile-desc {
     font-size: 0.88rem;
     line-height: 1.55;
-    color: var(--text-muted);
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: var(--text-muted) !important;
+    color: var(--text-muted) !important;
 }
 
 [data-theme='dark'] .poradnik-hub-tile {
@@ -182,7 +200,9 @@
 
 [data-theme='dark'] .poradnik-hub-tile:hover .poradnik-hub-tile-title,
 [data-theme='dark'] .poradnik-hub-tile:focus-visible .poradnik-hub-tile-title {
-    color: var(--ink);
+    background-image: none;
+    -webkit-text-fill-color: var(--accent-soft);
+    color: var(--accent-soft);
 }
 
 .poradnik-page .info-tab a.poradnik-nutrient-tile {
