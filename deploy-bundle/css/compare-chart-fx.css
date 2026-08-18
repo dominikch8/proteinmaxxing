@@ -482,10 +482,10 @@
 .compare-glass-chart--micro .compare-glass-track--micro,
 .compare-glass-row--micro .compare-glass-track--micro {
     display: grid;
-    grid-template-columns: 3.15rem minmax(0, 1fr);
+    grid-template-columns: 4.5rem minmax(0, 1fr);
     grid-template-rows: 1fr;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     height: 16px;
     padding: 0;
     border: none;
@@ -498,7 +498,7 @@
 .compare-glass-row--micro .compare-glass-track--micro .compare-glass-fill-val--lead {
     grid-column: 1;
     grid-row: 1;
-    justify-self: stretch;
+    justify-self: end;
     align-self: center;
 }
 
@@ -509,7 +509,7 @@
     position: relative !important;
     left: auto !important;
     top: auto !important;
-    transform: translateY(-7px) !important;
+    transform: translateY(-9px) !important;
     height: 8px;
     min-width: 0;
     width: 0%;
@@ -542,21 +542,22 @@
     top: auto !important;
     transform: none;
     flex: 0 0 auto;
-    width: 100%;
+    width: max-content;
+    max-width: 100%;
     min-width: 0;
-    padding: 0 2px 0 0;
+    padding: 0;
     border-radius: 0;
     font-family: var(--font-display, 'Encode Sans', sans-serif);
     font-size: 0.64rem;
     font-weight: 800;
     font-variant-numeric: tabular-nums;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     text-shadow: none;
     box-shadow: none;
     background: transparent;
     white-space: nowrap;
-    text-align: right;
+    text-align: right !important;
     align-self: center;
     line-height: 1;
 }
@@ -1129,7 +1130,7 @@
     .compare-glass-row--micro .compare-glass-track--micro .compare-glass-fill {
         height: 7px;
         margin-top: 0;
-        transform: translateY(-6px) !important;
+        transform: translateY(-8px) !important;
     }
 
     .compare-glass-chart--micro .compare-glass-fill-val--lead,
