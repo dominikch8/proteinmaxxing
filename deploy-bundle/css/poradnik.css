@@ -355,6 +355,20 @@
     color: var(--primary-dark);
 }
 
+.poradnik-practical-box h3 {
+    position: relative;
+    z-index: 1;
+    margin: 18px 0 10px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--text-dark);
+}
+
+.poradnik-practical-box h3:first-child {
+    margin-top: 0;
+}
+
 .poradnik-practical-box p {
     position: relative;
     z-index: 1;
@@ -510,9 +524,9 @@
     background:
         linear-gradient(
             145deg,
-            rgba(18, 20, 12, 0.85) 0%,
-            rgba(37, 99, 235, 0.55) 50%,
-            rgba(102, 0, 0, 0.45) 100%
+            rgba(8, 11, 20, 0.97) 0%,
+            rgba(12, 16, 28, 0.96) 48%,
+            rgba(16, 12, 24, 0.97) 100%
         )
         padding-box,
         linear-gradient(
@@ -526,41 +540,58 @@
         )
         border-box;
     box-shadow:
-        0 0 0 1px rgba(59, 130, 246, 0.1),
-        0 1px 0 rgba(255, 255, 255, 0.06) inset,
-        0 12px 32px rgba(0, 0, 0, 0.35);
+        0 0 0 1px rgba(148, 163, 184, 0.12),
+        0 1px 0 rgba(255, 255, 255, 0.05) inset,
+        0 12px 32px rgba(0, 0, 0, 0.45);
 }
 
 [data-theme='dark'] .poradnik-practical-box::before {
     box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.08),
-        inset 0 1px 10px rgba(255, 255, 255, 0.04);
+        inset 0 0 0 1px rgba(255, 255, 255, 0.06),
+        inset 0 1px 10px rgba(0, 0, 0, 0.25);
 }
 
 [data-theme='dark'] .poradnik-practical-box::after {
     background: linear-gradient(
         160deg,
-        rgba(255, 255, 255, 0.08) 0%,
-        transparent 40%,
+        rgba(0, 0, 0, 0.18) 0%,
+        transparent 45%,
         transparent 100%
     );
 }
 
-[data-theme='dark'] .poradnik-practical-box h2 {
-    color: var(--primary-light);
+[data-theme='dark'] .poradnik-practical-box h2,
+[data-theme='dark'] .poradnik-practical-box h3,
+[data-theme='dark'] .poradnik-practical-box h4,
+[data-theme='dark'] .poradnik-practical-box .poradnik-intake-intro {
+    background-image: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: #ffffff !important;
+    color: #ffffff !important;
 }
 
 [data-theme='dark'] .poradnik-practical-box p,
-[data-theme='dark'] .poradnik-practical-box ul {
-    color: var(--text-dark);
+[data-theme='dark'] .poradnik-practical-box ul,
+[data-theme='dark'] .poradnik-practical-box li,
+[data-theme='dark'] .poradnik-practical-box strong {
+    color: #f8fafc;
 }
 
-[data-theme='dark'] .poradnik-practical-box a {
-    color: var(--primary-light);
+[data-theme='dark'] .poradnik-practical-box a,
+[data-theme='dark'] .poradnik-practical-box a:hover {
+    background-image: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: #e2e8f0 !important;
+    color: #e2e8f0 !important;
+    border-bottom-color: rgba(226, 232, 240, 0.45);
 }
 
-[data-theme='dark'] .poradnik-practical-box .poradnik-intake-intro {
-    color: var(--primary-light);
+[data-theme='dark'] .poradnik-practical-box li::marker {
+    background-image: none !important;
+    -webkit-text-fill-color: #cbd5e1 !important;
+    color: #cbd5e1 !important;
 }
 
 [data-theme='dark'] .poradnik-intake-table {
