@@ -110,13 +110,7 @@
             row.classList.add('is-row-in');
         });
         root.querySelectorAll('.meal-pct-bar > span').forEach((fill) => {
-            const w = fill.style.width;
-            fill.style.width = '0%';
-            requestAnimationFrame(() => {
-                requestAnimationFrame(() => {
-                    fill.style.width = w;
-                });
-            });
+            fill.style.width = '';
         });
     }
 
@@ -426,16 +420,9 @@
         return (male + female) / 2;
     }
 
-    function pctHeatHue(pct, inverted = false) {
-        const t = Math.max(0, Math.min(100, Number(pct) || 0)) / 100;
-        const x = inverted ? 1 - t : t;
-        // 0% → czerwony (0°), 50% → żółty (55°), 100% → zielony (130°)
-        return Math.round(x * 130);
-    }
-
-    function pctHeatStyle(pct, inverted = false) {
-        const hue = pctHeatHue(pct, inverted);
-        return `--pct:${Math.max(0, Math.min(100, pct))};--pct-hue:${hue};`;
+    function pctBarStyle(pct) {
+        const capped = Math.max(0, Math.min(100, Number(pct) || 0));
+        return `--pct:${capped};`;
     }
 
     function renderMicroTable(microsSum) {
@@ -458,14 +445,13 @@
                         ? 'is-high'
                         : 'is-scale'
                     : 'is-scale';
-                const barW = Math.min(100, pct);
                 return `<tr>
                     <td><strong>${escapeHtml(meta.label)}</strong></td>
                     <td>${fmtNum(amount, amount < 10 ? 2 : 1)} ${escapeHtml(meta.unit)}</td>
                     <td>${fmtNum(target, target < 10 ? 1 : 0)} ${escapeHtml(meta.unit)}</td>
-                    <td class="meal-pct-cell" style="${pctHeatStyle(pct, inverted)}">
+                    <td class="meal-pct-cell" style="${pctBarStyle(pct)}">
                         <span class="meal-pct ${pctClass}">${pctLabel}</span>
-                        <span class="meal-pct-bar" aria-hidden="true"><span style="width:${barW}%"></span></span>
+                        <span class="meal-pct-bar" aria-hidden="true"><span></span></span>
                     </td>
                 </tr>`;
             })
