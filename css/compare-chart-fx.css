@@ -513,10 +513,10 @@
     height: 8px;
     min-width: 0;
     width: 0%;
-    border-radius: 999px;
+    border-radius: 0 999px 999px 0;
     box-shadow: none;
     align-self: center;
-    margin-top: -3px;
+    margin-top: -6px;
 }
 
 .compare-glass-chart--micro .compare-glass-track--micro .compare-glass-fill.is-run,
@@ -1128,7 +1128,7 @@
     .compare-glass-chart--micro .compare-glass-track--micro .compare-glass-fill,
     .compare-glass-row--micro .compare-glass-track--micro .compare-glass-fill {
         height: 7px;
-        margin-top: -2px;
+        margin-top: -4px;
     }
 
     .compare-glass-chart--micro .compare-glass-fill-val--lead,
