@@ -344,19 +344,18 @@
 
 .compare-glass-chart--micro .compare-glass-chart-body--split {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px 18px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px 10px;
     align-items: start;
 }
 
-.compare-micro-group {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    min-width: 0;
+.compare-micro-group,
+.compare-micro-group-rows {
+    display: contents;
 }
 
 .compare-micro-group-title {
+    grid-column: 1 / -1;
     margin: 0 0 2px;
     padding: 0 2px;
     font-family: var(--font-display, 'Encode Sans', sans-serif);
@@ -372,13 +371,10 @@
 }
 
 .compare-micro-group--minerals .compare-micro-group-title {
+    margin-top: 6px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(148, 163, 184, 0.18);
     color: color-mix(in srgb, #3b82f6 72%, #94a3b8);
-}
-
-.compare-micro-group-rows {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
 }
 
 /* Mikro: wyraźnie mniejsze wiersze i słupki niż makro */
@@ -482,7 +478,7 @@
 .compare-glass-chart--micro .compare-glass-track--micro,
 .compare-glass-row--micro .compare-glass-track--micro {
     display: grid;
-    grid-template-columns: 4.5rem minmax(0, 1fr);
+    grid-template-columns: 3.6rem minmax(0, 1fr);
     grid-template-rows: 1fr;
     align-items: center;
     gap: 8px;
@@ -1086,17 +1082,21 @@
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
+    .compare-glass-chart--micro .compare-glass-chart-body--split {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+}
+
+@media (max-width: 560px) {
     .compare-glass-chart--micro .compare-glass-chart-body--split {
         grid-template-columns: 1fr;
-        gap: 14px;
+        gap: 8px;
     }
+}
 
-    .compare-micro-group--minerals {
-        padding-top: 4px;
-        border-top: 1px solid rgba(148, 163, 184, 0.18);
-    }
-
+@media (max-width: 720px) {
     .compare-glass-panel--arena {
         padding: 18px 14px 16px;
         border-radius: 22px;
