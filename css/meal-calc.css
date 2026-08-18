@@ -932,7 +932,9 @@ html:not([data-theme='dark']) .meal-stat-unit--kcal {
     --pct: 0;
     --pct-from: #7d8ea3;
     --pct-bright: #12c75a;
-    --pct-color: color-mix(in srgb, var(--pct-from) calc(100% - var(--pct) * 1%), var(--pct-bright));
+    --pct-text-from: #16a34a;
+    --pct-text-to: #86efac;
+    --pct-color: color-mix(in srgb, var(--pct-text-from) calc(100% - var(--pct) * 1%), var(--pct-text-to));
     --pct-color-soft: color-mix(in srgb, var(--pct-color) 40%, #fff);
 }
 
@@ -958,6 +960,8 @@ html:not([data-theme='dark']) .meal-stat-unit--kcal {
 [data-theme='dark'] .meal-pct-cell {
     --pct-from: #8b9cb4;
     --pct-bright: #2aff78;
+    --pct-text-from: #4ade80;
+    --pct-text-to: #bbf7d0;
     --pct-color-soft: color-mix(in srgb, var(--pct-bright) 55%, #fff);
 }
 
