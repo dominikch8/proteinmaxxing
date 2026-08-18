@@ -852,9 +852,18 @@ html:not([data-theme='dark']) .meal-stat-unit--kcal {
 
 .meal-micro-wrap {
     overflow-x: auto;
+    overflow-y: hidden;
     border-radius: 14px;
     border: 1px solid color-mix(in srgb, var(--border) 85%, transparent);
     background: color-mix(in srgb, var(--bg-main) 70%, transparent);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.meal-micro-wrap::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 [data-theme='dark'] .meal-micro-wrap {
