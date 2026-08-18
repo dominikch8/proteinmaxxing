@@ -427,10 +427,69 @@
 }
 
 .compare-glass-chart--micro .compare-glass-metric-body,
-.compare-glass-row--micro .compare-glass-metric-body {
-    grid-template-columns: minmax(42px, 24%) 1fr;
-    column-gap: 5px;
-    gap: 4px;
+.compare-glass-row--micro .compare-glass-metric-body,
+.compare-glass-metric-body--micro {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    gap: 5px;
+    column-gap: 0;
+}
+
+.compare-micro-line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+}
+
+.compare-micro-line .compare-glass-slot {
+    flex: 0 0 auto;
+    gap: 0;
+    padding: 0;
+}
+
+.compare-glass-chart--micro .compare-glass-track--micro,
+.compare-glass-row--micro .compare-glass-track--micro {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 6px;
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 16px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    overflow: visible;
+}
+
+.compare-glass-chart--micro .compare-glass-track--micro .compare-glass-fill-val--lead,
+.compare-glass-row--micro .compare-glass-track--micro .compare-glass-fill-val--lead {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    align-self: center;
+}
+
+.compare-glass-chart--micro .compare-glass-track--micro .compare-glass-fill,
+.compare-glass-row--micro .compare-glass-track--micro .compare-glass-fill {
+    grid-column: 2;
+    grid-row: 1;
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    height: 8px;
+    min-width: 0;
+    width: 0%;
+    border-radius: 0 999px 999px 0;
+    box-shadow: none;
+    align-self: center;
+    justify-self: start;
+    margin-top: 0;
 }
 
 .compare-glass-chart--micro .compare-glass-slot,
@@ -475,47 +534,6 @@
     box-shadow: none;
 }
 
-.compare-glass-chart--micro .compare-glass-track--micro,
-.compare-glass-row--micro .compare-glass-track--micro {
-    display: grid;
-    grid-template-columns: 3.6rem minmax(0, 1fr);
-    grid-template-rows: 1fr;
-    align-items: center;
-    gap: 8px;
-    height: 16px;
-    padding: 0;
-    border: none;
-    background: transparent;
-    box-shadow: none;
-    overflow: visible;
-}
-
-.compare-glass-chart--micro .compare-glass-track--micro .compare-glass-fill-val--lead,
-.compare-glass-row--micro .compare-glass-track--micro .compare-glass-fill-val--lead {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: end;
-    align-self: center;
-}
-}
-
-.compare-glass-chart--micro .compare-glass-track--micro .compare-glass-fill,
-.compare-glass-row--micro .compare-glass-track--micro .compare-glass-fill {
-    grid-column: 2;
-    grid-row: 1;
-    position: relative !important;
-    left: auto !important;
-    top: auto !important;
-    transform: translateY(-9px) !important;
-    height: 8px;
-    min-width: 0;
-    width: 0%;
-    border-radius: 0 999px 999px 0;
-    box-shadow: none;
-    align-self: center;
-    margin-top: 0;
-}
-
 .compare-glass-chart--micro .compare-glass-track--micro .compare-glass-fill.is-run,
 .compare-glass-row--micro .compare-glass-track--micro .compare-glass-fill.is-run {
     width: var(--bar-pct, 0%);
@@ -537,7 +555,7 @@
     position: static !important;
     left: auto !important;
     top: auto !important;
-    transform: translateY(-5px);
+    transform: none !important;
     flex: 0 0 auto;
     width: max-content;
     max-width: 100%;
@@ -554,7 +572,7 @@
     box-shadow: none;
     background: transparent;
     white-space: nowrap;
-    text-align: right !important;
+    text-align: left !important;
     align-self: center;
     line-height: 1;
 }
@@ -1131,13 +1149,13 @@
     .compare-glass-row--micro .compare-glass-track--micro .compare-glass-fill {
         height: 7px;
         margin-top: 0;
-        transform: translateY(-8px) !important;
+        transform: none !important;
     }
 
     .compare-glass-chart--micro .compare-glass-fill-val--lead,
     .compare-glass-row--micro .compare-glass-fill-val--lead {
         font-size: 0.58rem;
-        transform: translateY(-4px);
+        transform: none !important;
     }
 
     .compare-glass-chart--micro .compare-glass-row,

@@ -711,6 +711,20 @@
             ? `<p class="compare-glass-hint compare-glass-hint--${hintText.kind}" role="note">${escapeHtml(hintText.text)}</p>`
             : '';
 
+        if (options.micro) {
+            return `
+            <div class="compare-glass-metric-body compare-glass-metric-body--micro">
+                <div class="compare-micro-line compare-micro-line--a">
+                    ${partsA.slot}
+                    ${partsA.track}
+                </div>
+                <div class="compare-micro-line compare-micro-line--b">
+                    ${partsB.slot}
+                    ${partsB.track}
+                </div>
+            </div>`;
+        }
+
         return `
             <div class="compare-glass-metric-body">
                 <div class="compare-glass-labels-col">
