@@ -685,14 +685,27 @@
         const microValClass = micro ? ' compare-glass-fill-val--lead' : '';
         const safeLabel = micro ? escapeHtml(label) : label;
 
-        return {
-            slot: `
+        const slotHtml = `
                 <div class="compare-glass-slot compare-glass-slot--${slot}${winnerClass}">
                     <span class="compare-glass-slot-tag">${slot.toUpperCase()}</span>
                     <span class="compare-glass-slot-name">${escapeHtml(productName)}</span>
+                </div>`;
+
+        if (micro) {
+            return {
+                slot: slotHtml,
+                label: `<span class="compare-micro-pct compare-micro-pct--${slot}">${safeLabel}</span>`,
+                track: `
+                <div class="compare-glass-track compare-glass-track--${slot}${microTrackClass}" style="--bar-delay:${delay}ms">
+                    <div class="compare-glass-fill compare-glass-fill--${slot}" style="--bar-pct:${fillW}%; --bar-delay:${delay}ms" data-pct="${fillW}"></div>
                 </div>`,
+            };
+        }
+
+        return {
+            slot: slotHtml,
             track: `
-                <div class="compare-glass-track compare-glass-track--${slot}${microTrackClass}${winnerClass}" style="--bar-delay:${delay}ms">
+                <div class="compare-glass-track compare-glass-track--${slot}${winnerClass}" style="--bar-delay:${delay}ms">
                     <span class="compare-glass-track-grid" aria-hidden="true"></span>
                     <div class="compare-glass-fill compare-glass-fill--${slot}${winnerClass}" style="--bar-pct:${fillW}%; --bar-delay:${delay}ms" data-pct="${fillW}">
                         <span class="compare-glass-fill-sheen" aria-hidden="true"></span>
@@ -716,10 +729,12 @@
             <div class="compare-glass-metric-body compare-glass-metric-body--micro">
                 <div class="compare-micro-line compare-micro-line--a">
                     ${partsA.slot}
+                    ${partsA.label}
                     ${partsA.track}
                 </div>
                 <div class="compare-micro-line compare-micro-line--b">
                     ${partsB.slot}
+                    ${partsB.label}
                     ${partsB.track}
                 </div>
             </div>`;
