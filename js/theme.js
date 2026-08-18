@@ -221,9 +221,137 @@
         });
     }
 
+    function optionLabel(opt) {
+        return ((opt && opt.textContent) || '').trim();
+    }
+
+    function enhanceSelect(select) {
+        if (!select || select.dataset.pmEnhanced === '1') return;
+        if (select.multiple || Number(select.getAttribute('size') || 0) > 1) return;
+        select.dataset.pmEnhanced = '1';
+
+        const wrap = document.createElement('div');
+        wrap.className = 'pm-select';
+        select.parentNode.insertBefore(wrap, select);
+        wrap.appendChild(select);
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'pm-select-btn';
+        btn.setAttribute('aria-haspopup', 'listbox');
+        btn.setAttribute('aria-expanded', 'false');
+        const aria = select.getAttribute('aria-label');
+        if (aria) btn.setAttribute('aria-label', aria);
+
+        const panel = document.createElement('div');
+        panel.className = 'pm-select-panel';
+        panel.setAttribute('role', 'listbox');
+        panel.hidden = true;
+        wrap.appendChild(btn);
+        document.body.appendChild(panel);
+
+        function currentLabel() {
+            return optionLabel(select.selectedOptions[0] || select.options[0]);
+        }
+
+        function syncPanel() {
+            panel.innerHTML = '';
+            [...select.options].forEach((opt, i) => {
+                const item = document.createElement('button');
+                item.type = 'button';
+                item.className = 'pm-select-option' + (opt.selected ? ' is-selected' : '');
+                item.setAttribute('role', 'option');
+                item.setAttribute('aria-selected', opt.selected ? 'true' : 'false');
+                item.textContent = optionLabel(opt);
+                item.addEventListener('click', () => {
+                    select.selectedIndex = i;
+                    select.dispatchEvent(new Event('change', { bubbles: true }));
+                    btn.textContent = optionLabel(opt);
+                    closePanel();
+                });
+                panel.appendChild(item);
+            });
+            btn.textContent = currentLabel();
+        }
+
+        function placePanel() {
+            const r = wrap.getBoundingClientRect();
+            panel.style.position = 'fixed';
+            panel.style.left = Math.max(8, r.left) + 'px';
+            panel.style.width = Math.max(r.width, 200) + 'px';
+            panel.style.zIndex = '500';
+            const spaceBelow = window.innerHeight - r.bottom;
+            if (spaceBelow < 240 && r.top > spaceBelow) {
+                panel.style.top = 'auto';
+                panel.style.bottom = window.innerHeight - r.top + 6 + 'px';
+            } else {
+                panel.style.bottom = 'auto';
+                panel.style.top = r.bottom + 6 + 'px';
+            }
+        }
+
+        function closePanel() {
+            panel.hidden = true;
+            btn.setAttribute('aria-expanded', 'false');
+            wrap.classList.remove('is-open');
+        }
+
+        function openPanel() {
+            syncPanel();
+            panel.hidden = false;
+            btn.setAttribute('aria-expanded', 'true');
+            wrap.classList.add('is-open');
+            placePanel();
+            const selected = panel.querySelector('.is-selected');
+            if (selected) selected.scrollIntoView({ block: 'nearest' });
+        }
+
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (panel.hidden) openPanel();
+            else closePanel();
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!wrap.contains(e.target) && !panel.contains(e.target)) closePanel();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closePanel();
+        });
+        window.addEventListener(
+            'resize',
+            () => {
+                if (!panel.hidden) placePanel();
+            },
+            { passive: true }
+        );
+        window.addEventListener(
+            'scroll',
+            () => {
+                if (!panel.hidden) closePanel();
+            },
+            true
+        );
+
+        select.addEventListener('change', () => {
+            btn.textContent = currentLabel();
+        });
+        new MutationObserver(() => {
+            btn.textContent = currentLabel();
+            if (!panel.hidden) syncPanel();
+        }).observe(select, { childList: true, subtree: true });
+
+        btn.textContent = currentLabel();
+    }
+
+    function enhanceAllSelects() {
+        document.querySelectorAll('select').forEach(enhanceSelect);
+    }
+
     function initUi() {
         mountThemeSwitch();
         mountMobileNav();
+        enhanceAllSelects();
     }
 
     if (document.readyState === 'loading') {
