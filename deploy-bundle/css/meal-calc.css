@@ -921,10 +921,10 @@ html:not([data-theme='dark']) .meal-stat-unit--kcal {
 .meal-pct-cell {
     min-width: 7.5rem;
     --pct: 0;
-    --pct-pale: #c8e6c9;
-    --pct-bright: #4ade80;
+    --pct-pale: #b6ebc0;
+    --pct-bright: #12c75a;
     --pct-color: color-mix(in srgb, var(--pct-pale) calc(100% - var(--pct) * 1%), var(--pct-bright));
-    --pct-color-soft: color-mix(in srgb, var(--pct-color) 55%, #fff);
+    --pct-color-soft: color-mix(in srgb, var(--pct-color) 40%, #fff);
 }
 
 .meal-pct {
@@ -947,9 +947,9 @@ html:not([data-theme='dark']) .meal-stat-unit--kcal {
 }
 
 [data-theme='dark'] .meal-pct-cell {
-    --pct-pale: #9dcea0;
-    --pct-bright: #7dff9a;
-    --pct-color-soft: color-mix(in srgb, var(--pct-color) 40%, #fff);
+    --pct-pale: #86e89a;
+    --pct-bright: #2aff78;
+    --pct-color-soft: color-mix(in srgb, var(--pct-bright) 55%, #fff);
 }
 
 [data-theme='dark'] .meal-pct.is-high {
@@ -975,10 +975,12 @@ html:not([data-theme='dark']) .meal-stat-unit--kcal {
     background: linear-gradient(
         90deg,
         var(--pct-pale) 0%,
-        var(--pct-color) 55%,
+        color-mix(in srgb, var(--pct-pale) 28%, var(--pct-bright)) 42%,
         var(--pct-bright) 100%
     );
-    box-shadow: 0 0 10px color-mix(in srgb, var(--pct-color) 38%, transparent);
+    box-shadow:
+        0 0 14px color-mix(in srgb, var(--pct-bright) 55%, transparent),
+        0 0 6px color-mix(in srgb, var(--pct-pale) 40%, transparent);
     transform-origin: left center;
     transition:
         width 0.55s cubic-bezier(0.22, 1, 0.36, 1),
