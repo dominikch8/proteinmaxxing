@@ -643,6 +643,7 @@
             max-height: min(320px, 50vh);
             overflow-x: hidden;
             overflow-y: auto;
+            overscroll-behavior: contain;
             padding: 6px;
             border: 1px solid var(--border);
             border-radius: var(--radius-md);

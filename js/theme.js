@@ -296,21 +296,42 @@
             wrap.classList.remove('is-open');
         }
 
+        function revealSelected() {
+            const selected = panel.querySelector('.is-selected');
+            if (!selected) return;
+            const offset = selected.offsetTop - (panel.clientHeight - selected.offsetHeight) / 2;
+            panel.scrollTop = Math.max(0, offset);
+        }
+
         function openPanel() {
             syncPanel();
             panel.hidden = false;
             btn.setAttribute('aria-expanded', 'true');
             wrap.classList.add('is-open');
             placePanel();
-            const selected = panel.querySelector('.is-selected');
-            if (selected) selected.scrollIntoView({ block: 'nearest' });
+            revealSelected();
         }
 
         btn.addEventListener('click', (e) => {
+            e.preventDefault();
             e.stopPropagation();
             if (panel.hidden) openPanel();
             else closePanel();
         });
+
+        panel.addEventListener('mousedown', (e) => e.stopPropagation());
+        panel.addEventListener('click', (e) => e.stopPropagation());
+        panel.addEventListener(
+            'wheel',
+            (e) => {
+                const atTop = panel.scrollTop <= 0 && e.deltaY < 0;
+                const atBottom =
+                    panel.scrollTop + panel.clientHeight >= panel.scrollHeight - 1 && e.deltaY > 0;
+                if (atTop || atBottom) e.preventDefault();
+                e.stopPropagation();
+            },
+            { passive: false }
+        );
 
         document.addEventListener('click', (e) => {
             if (!wrap.contains(e.target) && !panel.contains(e.target)) closePanel();
@@ -327,8 +348,10 @@
         );
         window.addEventListener(
             'scroll',
-            () => {
-                if (!panel.hidden) closePanel();
+            (e) => {
+                if (panel.hidden) return;
+                if (e.target === panel || panel.contains(e.target)) return;
+                placePanel();
             },
             true
         );
