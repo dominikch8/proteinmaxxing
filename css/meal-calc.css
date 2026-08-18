@@ -930,9 +930,9 @@ html:not([data-theme='dark']) .meal-stat-unit--kcal {
 .meal-pct-cell {
     min-width: 7.5rem;
     --pct: 0;
-    --pct-pale: #b6ebc0;
+    --pct-from: #7d8ea3;
     --pct-bright: #12c75a;
-    --pct-color: color-mix(in srgb, var(--pct-pale) calc(100% - var(--pct) * 1%), var(--pct-bright));
+    --pct-color: var(--pct-bright);
     --pct-color-soft: color-mix(in srgb, var(--pct-color) 40%, #fff);
 }
 
@@ -956,8 +956,9 @@ html:not([data-theme='dark']) .meal-stat-unit--kcal {
 }
 
 [data-theme='dark'] .meal-pct-cell {
-    --pct-pale: #86e89a;
+    --pct-from: #6e829c;
     --pct-bright: #2aff78;
+    --pct-color: #7dffa3;
     --pct-color-soft: color-mix(in srgb, var(--pct-bright) 55%, #fff);
 }
 
@@ -987,13 +988,13 @@ html:not([data-theme='dark']) .meal-stat-unit--kcal {
     border-radius: inherit;
     background: linear-gradient(
         90deg,
-        var(--pct-pale) 0%,
-        color-mix(in srgb, var(--pct-pale) 28%, var(--pct-bright)) 42%,
+        var(--pct-from) 0%,
+        color-mix(in srgb, var(--pct-from) 40%, var(--pct-bright)) 48%,
         var(--pct-bright) 100%
     );
     box-shadow:
-        0 0 14px color-mix(in srgb, var(--pct-bright) 55%, transparent),
-        0 0 6px color-mix(in srgb, var(--pct-pale) 40%, transparent);
+        0 0 14px color-mix(in srgb, var(--pct-bright) 50%, transparent),
+        0 0 6px color-mix(in srgb, var(--pct-from) 35%, transparent);
     transform-origin: left center;
     transition:
         width 0.55s cubic-bezier(0.22, 1, 0.36, 1),
