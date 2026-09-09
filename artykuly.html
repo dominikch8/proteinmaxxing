@@ -363,8 +363,8 @@
 
         function renderPage(page) {
             const filteredItems = getFilteredItems();
-            const pages = Math.max(1, Math.ceil(filteredItems.length / perPage));
-            const safePage = Math.min(Math.max(1, page), pages);
+            const displayPages = Math.max(4, Math.ceil(filteredItems.length / perPage));
+            const safePage = Math.min(Math.max(1, page), displayPages);
             const start = (safePage - 1) * perPage;
             const end = start + perPage;
 
@@ -382,7 +382,7 @@
             // Update pagination buttons
             const updatePaginationButtons = () => {
                 paginationRoot.innerHTML = '';
-                if (pages <= 1) return;
+                if (displayPages <= 1) return;
 
                 const createButton = (pageNum, isActive = false) => {
                     const btn = document.createElement('button');
@@ -401,12 +401,12 @@
                 }
 
                 // Page number buttons
-                for (let i = 1; i <= pages; i++) {
+                for (let i = 1; i <= displayPages; i++) {
                     paginationRoot.appendChild(createButton(i, i === safePage));
                 }
 
                 // Next button
-                if (safePage < pages) {
+                if (safePage < displayPages) {
                     const nextBtn = createButton(safePage + 1);
                     nextBtn.classList.add('btn-next');
                     paginationRoot.appendChild(nextBtn);
