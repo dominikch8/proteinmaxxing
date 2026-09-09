@@ -70,8 +70,8 @@ jobs:
         sleep 20
         for url in \
          "https://proteiner.pl/" \
-         "https://proteiner.pl/dieta.html" \
-         "https://proteiner.pl/porownaj-produkty.html" \
+         "https://proteiner.pl/dieta#produkty" \
+         "https://proteiner.pl/porownaj-produkty" \
          "https://proteiner.pl/js/products-lite.js" 
         do
           CODE=$(curl -s -o /dev/null -w "%{http_code}" "$url" || true)
