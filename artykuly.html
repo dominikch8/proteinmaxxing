@@ -58,6 +58,11 @@
                 <div class="page-hero">
                     <h1>Artykuły</h1>
                     <p class="subtitle">Praktyczne przewodniki pod kalkulator, bazę produktów i codzienne decyzje żywieniowe</p>
+                    <div class="articles-top-controls" style="position:relative;">
+                        <div id="articlesPagination" style="position:absolute;right:0;top:0;">
+                            <!-- pagination control inserted by JS -->
+                        </div>
+                    </div>
                 </div>
 
                 <div class="poradnik-hub-grid artykuly-list" id="artykulyList" role="list">
@@ -479,9 +484,71 @@
                 frag.appendChild(link);
             });
             list.appendChild(frag);
+            if (window.applyArticlesPagination) window.applyArticlesPagination();
         })
         .catch(function () {});
 })();
 </script>
+    <script>
+    // Client-side pagination for artykuly list: show 16 items per page and add page selector top-right
+    window.applyArticlesPagination = function () {
+        const list = document.getElementById('artykulyList');
+        if (!list) return;
+        const items = Array.from(list.querySelectorAll('.poradnik-hub-tile'));
+        const perPage = 16;
+        const total = items.length;
+        const pages = Math.max(1, Math.ceil(total / perPage));
+        const paginationRoot = document.getElementById('articlesPagination');
+        if (!paginationRoot) return;
+
+        function renderPage(page) {
+            const start = (page - 1) * perPage;
+            const end = start + perPage;
+            items.forEach((it, idx) => {
+                it.style.display = idx >= start && idx < end ? '' : 'none';
+            });
+            const sel = paginationRoot.querySelector('select');
+            if (sel) sel.value = page;
+            try { history.replaceState(null, '', '?page=' + page); } catch (e) {}
+        }
+
+        paginationRoot.innerHTML = '';
+        if (pages <= 1) return;
+        const prev = document.createElement('button');
+        prev.className = 'btn btn-ghost';
+        prev.textContent = '◀';
+        prev.style.marginRight = '8px';
+        const next = document.createElement('button');
+        next.className = 'btn btn-ghost';
+        next.textContent = '▶';
+        next.style.marginLeft = '8px';
+
+        const sel = document.createElement('select');
+        sel.setAttribute('aria-label', 'Wybierz stronę artykułów');
+        for (let i = 1; i <= pages; i++) {
+            const opt = document.createElement('option');
+            opt.value = i;
+            opt.textContent = `Strona ${i}`;
+            sel.appendChild(opt);
+        }
+
+        const params = new URLSearchParams(location.search);
+        let current = parseInt(params.get('page')) || 1;
+        if (current < 1) current = 1;
+        if (current > pages) current = pages;
+
+        prev.addEventListener('click', () => { if (current > 1) { current--; renderPage(current); } });
+        next.addEventListener('click', () => { if (current < pages) { current++; renderPage(current); } });
+        sel.addEventListener('change', (e) => { current = parseInt(e.target.value); renderPage(current); });
+
+        paginationRoot.appendChild(prev);
+        paginationRoot.appendChild(sel);
+        paginationRoot.appendChild(next);
+
+        renderPage(current);
+    };
+
+    document.addEventListener('DOMContentLoaded', () => { window.applyArticlesPagination && window.applyArticlesPagination(); });
+    </script>
 </body>
 </html>
