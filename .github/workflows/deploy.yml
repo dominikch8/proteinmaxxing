@@ -69,15 +69,15 @@ jobs:
       run: |
         sleep 20
         for url in \
-          "https://proteiner.pl/index.html" \
-          "https://proteiner.pl/dieta.html" \
-          "https://proteiner.pl/porownaj-produkty.html" \
-          "https://proteiner.pl/js/products-lite.js"; do
+         "https://proteiner.pl/" \
+         "https://proteiner.pl/dieta.html" \
+         "https://proteiner.pl/porownaj-produkty.html" \
+         "https://proteiner.pl/js/products-lite.js" 
+        do
           CODE=$(curl -s -o /dev/null -w "%{http_code}" "$url" || true)
-          echo "HTTP $CODE → $url"
           if [ "$CODE" != "200" ]; then
-            echo "::error::Weryfikacja nie powiodła się dla $url (HTTP $CODE)"
-            exit 1
+             echo "::error::Weryfikacja nie powiodła się dla $url (HTTP $CODE)"
+             exit 1
           fi
         done
 
