@@ -58,7 +58,11 @@
                 <div class="page-hero">
                     <h1>Artykuły</h1>
                     <p class="subtitle">Praktyczne przewodniki pod kalkulator, bazę produktów i codzienne decyzje żywieniowe</p>
-                    <div class="articles-top-controls">
+                    <div class="articles-toolbar">
+                        <label class="articles-search" aria-label="Szukaj artykułu">
+                            <span class="articles-search__icon" aria-hidden="true">⌕</span>
+                            <input id="articlesSearch" type="search" placeholder="Szukaj artykułu..." autocomplete="off" />
+                        </label>
                         <div id="articlesPagination" aria-live="polite">
                             <!-- pagination control inserted by JS -->
                         </div>
@@ -119,313 +123,12 @@
                     <a class="poradnik-hub-tile" href="zrodla-bialka-carrefour" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🛒</span>
                         <span class="poradnik-hub-tile-title">Źródła białka w Carrefour</span>
-                        <span class="poradnik-hub-tile-desc">Sensation/Classic, porównanie marek, łosoś i lady na wagę.</span>
+                        <span class="poradnik-hub-tile-desc">Classic/Sensation, porównanie marek, łosoś i lady na wagę.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="ile-bialka-na-dzien" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🥩</span>
-                        <span class="poradnik-hub-tile-title">Ile białka jeść dziennie?</span>
-                        <span class="poradnik-hub-tile-desc">Gramy na kg masy ciała przy redukcji, masie i utrzymaniu — z kalkulatorem Proteiner.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="nadwyzka-kalorii-na-mase" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">📈</span>
-                        <span class="poradnik-hub-tile-title">Nadwyżka kaloryczna na masę</span>
-                        <span class="poradnik-hub-tile-desc">Ile dodać kcal, jak nie „zajadać” tłuszczu i gdzie wstawić białko przy budowie sylwetki.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="tdee-i-bmr-wyjasnienie" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧮</span>
-                        <span class="poradnik-hub-tile-title">TDEE i BMR — co oznaczają?</span>
-                        <span class="poradnik-hub-tile-desc">Prosto: podstawowa przemiana materii, aktywność i dlaczego kalkulator to punkt startu, nie wyrok.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="bmi-jak-czytac-wynik" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚖️</span>
-                        <span class="poradnik-hub-tile-title">BMI — jak czytać wynik?</span>
-                        <span class="poradnik-hub-tile-desc">Co mówi wskaźnik masy ciała, czego nie mówi (mięśnie!) i kiedy warto iść dalej niż sama liczba.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="weglowodany-wokol-treningu" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍚</span>
-                        <span class="poradnik-hub-tile-title">Węglowodany przed i po treningu</span>
-                        <span class="poradnik-hub-tile-desc">Kiedy warto jeść więcej węgli, a kiedy „timing” jest mniej ważny niż cały dzień makro.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="ile-tluszczu-w-diecie" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🥑</span>
-                        <span class="poradnik-hub-tile-title">Ile tłuszczu w diecie?</span>
-                        <span class="poradnik-hub-tile-desc">Orientacyjny udział kcal z tłuszczu, tłuszcze nasycone vs nienasycone i typowe pułapki (oleje, orzechy).</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="przekaski-wysokobialkowe" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧀</span>
-                        <span class="poradnik-hub-tile-title">Przekąski wysokobobiałkowe</span>
-                        <span class="poradnik-hub-tile-desc">Co jeść między posiłkami, żeby domknąć białko bez zjadania deficytu — z polskich półek.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="wegetarianskie-zrodla-bialka" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🌱</span>
-                        <span class="poradnik-hub-tile-title">Wegetariańskie źródła białka</span>
-                        <span class="poradnik-hub-tile-desc">Tofu, nabiał, rośliny strączkowe i jak składać pełne posiłki bez mięsa — z bazą Proteiner.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="meal-prep-bialko-budzet" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧊</span>
-                        <span class="poradnik-hub-tile-title">Meal prep: białko na budżet</span>
-                        <span class="poradnik-hub-tile-desc">Jak tanio ugotować na 3–4 dni: pierś, twaróg, kasze i lista zakupów pod makro.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="mity-o-bialku" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🔍</span>
-                        <span class="poradnik-hub-tile-title">Mity o białku</span>
-                        <span class="poradnik-hub-tile-desc">„Niszczy nerki”, „wchłania się tylko 30 g”, „sam baton wystarczy” — co warto odhaczyć.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="jak-porownywac-produkty" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚔️</span>
-                        <span class="poradnik-hub-tile-title">Jak porównywać produkty?</span>
-                        <span class="poradnik-hub-tile-desc">Na co patrzeć w porównywarce Proteiner: białko, kcal, cena białka i tłuszcze — krok po kroku.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="ekstremalnie-szybkie-odchudzanie-bez-farmazonow" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🔥</span>
-                        <span class="poradnik-hub-tile-title">Ekstremalnie szybkie odchudzanie bez zbędnych farmazonów</span>
-                        <span class="poradnik-hub-tile-desc">Konkrety, które działają: sytość, agresywny deficyt, triki objętościowe, Ozempic bez strony i metody z ekstremy — na własną odpowiedzialność.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="sila-na-redukcji-dlaczego-nie-tylko-cardio" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏋️</span>
-                        <span class="poradnik-hub-tile-title">Siła na redukcji — dlaczego samo cardio to marnowanie czasu</span>
-                        <span class="poradnik-hub-tile-desc">Trening siłowy chroni mięśnie i tempo przemiany materii. Cardio bez siłowni gubi jedno i drugie.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="progresja-obciazenia-bez-pierdolenia" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">📈</span>
-                        <span class="poradnik-hub-tile-title">Progresja obciążenia bez pierdolenia — jak dokładać ciężar i powtórzenia</span>
-                        <span class="poradnik-hub-tile-desc">Konkretne zasady kiedy dodać kilogram, kiedy powtórzenie, a kiedy po prostu odpuścić tydzień.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="volume-eating-jak-jesc-duzo-i-chudnac" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🥗</span>
-                        <span class="poradnik-hub-tile-title">Volume eating — jak jeść dużo i mimo to chudnąć</span>
-                        <span class="poradnik-hub-tile-desc">Produkty z polskiego marketu, które dają objętość i sytość przy minimalnej liczbie kalorii.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="plateau-wagi-co-robic-gdy-stoi" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚖️</span>
-                        <span class="poradnik-hub-tile-title">Plateau wagi — co robić, gdy waga stoi mimo diety</span>
-                        <span class="poradnik-hub-tile-desc">Checklista: woda, sól, sen, niedoszacowane kalorie i NEAT, zanim zaczniesz obwiniać metabolizm.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="alkohol-a-odchudzanie" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍺</span>
-                        <span class="poradnik-hub-tile-title">Alkohol a odchudzanie — ile realnie kosztuje wieczór z piwem</span>
-                        <span class="poradnik-hub-tile-desc">Kalorie, hormony, ryzyko wieczornego objadania się i konkretne zasady, jeśli pijesz i chcesz jednocześnie chudnąć.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="sen-stres-i-waga" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">😴</span>
-                        <span class="poradnik-hub-tile-title">Sen, stres i waga — czemu zarywanie nocy sabotuje dietę</span>
-                        <span class="poradnik-hub-tile-desc">Kortyzol, głód o 23:00 i dlaczego 5 godzin snu potrafi zniszczyć tydzień deficytu bardziej niż jedna pizza.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="kreatyna-kofeina-bialko-co-warto" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">💊</span>
-                        <span class="poradnik-hub-tile-title">Kreatyna, kofeina, białko — co naprawdę działa, a co to hype</span>
-                        <span class="poradnik-hub-tile-desc">Trzy suplementy z realnymi dowodami naukowymi i długa lista tych, na które wydajesz pieniądze bez efektu.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="cut-agresywny-vs-umiarkowany" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚖️</span>
-                        <span class="poradnik-hub-tile-title">Cut agresywny vs umiarkowany — który wybrać i kiedy</span>
-                        <span class="poradnik-hub-tile-desc">Tempo, ryzyko utraty mięśni i adherence — porównanie dwóch strategii redukcji na liczbach, nie na opiniach z forum.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="budowanie-miesni-minimalny-plan" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏋️</span>
-                        <span class="poradnik-hub-tile-title">Minimalny skuteczny plan na budowanie mięśni (3–4 dni)</span>
-                        <span class="poradnik-hub-tile-desc">Ile serii realnie potrzeba, dlaczego więcej nie znaczy lepiej i konkretny plan oparty na ćwiczeniach wielostawowych.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="neat-kroki-wiecej-niz-silownia" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🚶</span>
-                        <span class="poradnik-hub-tile-title">NEAT i kroki — czemu biją dodatkowe cardio na siłowni</span>
-                        <span class="poradnik-hub-tile-desc">8–12 tysięcy kroków dziennie potrafi zrobić więcej dla wagi niż kolejne 30 minut na orbitreku.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="ile-serii-i-powtorzen-na-mase" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏋️</span>
-                        <span class="poradnik-hub-tile-title">Ile serii i powtórzeń na masę?</span>
-                        <span class="poradnik-hub-tile-desc">Konkretne zakresy pod hipertrofię i siłę — plus ile jest już bezsensowną objętością.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="refeed-i-diet-break" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍽️</span>
-                        <span class="poradnik-hub-tile-title">Refeed i diet break — kiedy i na jak długo?</span>
-                        <span class="poradnik-hub-tile-desc">Podniesienie kalorii bez wymówki do obżarstwa: glikogen, głowa i realny czas trwania.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="tracking-kalorii-bez-obsesji" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚖️</span>
-                        <span class="poradnik-hub-tile-title">Tracking kalorii bez obsesji</span>
-                        <span class="poradnik-hub-tile-desc">Waż jedzenie dwa tygodnie, potem szacuj — i co liczyć już do końca życia.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="utrata-miesni-na-redukcji" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">💪</span>
-                        <span class="poradnik-hub-tile-title">Jak nie tracić mięśni na redukcji?</span>
-                        <span class="poradnik-hub-tile-desc">Białko, ciężary, wielkość deficytu i sen — cztery rzeczy, które realnie chronią mięśnie.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="przedtreningowka-czy-wystarczy-kawa" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">☕</span>
-                        <span class="poradnik-hub-tile-title">Przedtreningówka czy wystarczy kawa?</span>
-                        <span class="poradnik-hub-tile-desc">Marketing suplementów PWO kontra kawa i węglowodany — co realnie daje efekt.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="cheat-meal-czy-rekompensata" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍕</span>
-                        <span class="poradnik-hub-tile-title">Cheat meal czy rekompensata kaloryczna?</span>
-                        <span class="poradnik-hub-tile-desc">Dlaczego „dzień oszustwa” bez limitu rozwala tydzień deficytu i jak zjeść pizza bez resetowania efektów.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="dlaczego-waga-skacze-o-2kg" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">📊</span>
-                        <span class="poradnik-hub-tile-title">Dlaczego waga skacze o 1–2 kg z dnia na dzień</span>
-                        <span class="poradnik-hub-tile-desc">Sól, węgle, trening, cykl, alkohol — co realnie zmienia odczyt, a co jest tłuszczem.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="bialko-przed-snem-czy-warto" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🌙</span>
-                        <span class="poradnik-hub-tile-title">Białko przed snem — czy warto?</span>
-                        <span class="poradnik-hub-tile-desc">Kazeina, twaróg na noc i mit „nie jedz po 18”. Co mówi praktyka przy masie i redukcji.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="kobiety-redukcja-bez-bzdury" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">♀️</span>
-                        <span class="poradnik-hub-tile-title">Redukcja u kobiet — bez bzdury i bez infantylizowania</span>
-                        <span class="poradnik-hub-tile-desc">Cykl, retencja wody, deficyt, siła. Te same prawa fizyki, inne wahania odczytów — konkretnie.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="bulk-brudny-vs-czysty" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍔</span>
-                        <span class="poradnik-hub-tile-title">Bulk brudny vs czysty — co się opłaca</span>
-                        <span class="poradnik-hub-tile-desc">+500 kcal z śmieci vs mała nadwyżka. Ile tłuszczu dokładasz do mięśni i jak długo potem tniesz.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-bialko-i-kofeina" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">☕</span>
-                        <span class="poradnik-hub-tile-title">Białko i kofeina</span>
-                        <span class="poradnik-hub-tile-desc">Czy kofeina i białko działają lepiej razem, czy to tylko kolejny trend w suplementacji.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-bialko-na-mase" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">💪</span>
-                        <span class="poradnik-hub-tile-title">Białko na masę</span>
-                        <span class="poradnik-hub-tile-desc">Jak ustawić białko przy budowie masy mięśniowej i jak nie przesadzić z dodatkami.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-bialko-na-redukcji" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">📉</span>
-                        <span class="poradnik-hub-tile-title">Białko na redukcji</span>
-                        <span class="poradnik-hub-tile-desc">Dlaczego białko chroni mięśnie i co robić, gdy spada apetyt i energia.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-bialko-po-treningu" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏋️</span>
-                        <span class="poradnik-hub-tile-title">Białko po treningu</span>
-                        <span class="poradnik-hub-tile-desc">Kiedy i ile białka jeść po wysiłku, by poprawić regenerację i wzrost mięśni.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-bialko-przed-treningiem" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚡</span>
-                        <span class="poradnik-hub-tile-title">Białko przed treningiem</span>
-                        <span class="poradnik-hub-tile-desc">Czy przed treningiem warto jeść białko i jak zbudować sensowny posiłek.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-bialko-roslinne-vs-zwierzece" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🌿</span>
-                        <span class="poradnik-hub-tile-title">Białko roślinne vs zwierzęce</span>
-                        <span class="poradnik-hub-tile-desc">Które źródło jest lepsze i jak zbilansować dietę bez ograniczeń.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-bialko-synteza" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧬</span>
-                        <span class="poradnik-hub-tile-title">Białko i synteza mięśni</span>
-                        <span class="poradnik-hub-tile-desc">Jak białko wspiera regenerację, masaż, odpoczynek i wzrost tkanki mięśniowej.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-cheat-meal" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍔</span>
-                        <span class="poradnik-hub-tile-title">Cheat meal — kiedy i po co</span>
-                        <span class="poradnik-hub-tile-desc">Jak planować dzień „na przekąskę”, żeby nie rozbić własnego deficytu.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-hydratacja-dla-sportowcow" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">💧</span>
-                        <span class="poradnik-hub-tile-title">Hydratacja dla sportowców</span>
-                        <span class="poradnik-hub-tile-desc">Ile wody i elektrolitów naprawdę potrzebujesz, by trenować bez spadków energii.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-ile-bialka-na-dzien" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🥩</span>
-                        <span class="poradnik-hub-tile-title">Ile białka na dzień</span>
-                        <span class="poradnik-hub-tile-desc">Dzienna dawka białka przy redukcji, masie i aktywności fizycznej.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-ile-serii-i-powtorzen" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🔁</span>
-                        <span class="poradnik-hub-tile-title">Ile serii i powtórzeń</span>
-                        <span class="poradnik-hub-tile-desc">Od czego zależy dobór serii i powtórzeń w treningu siłowym i masowym.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-kardio-vs-sila" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏃</span>
-                        <span class="poradnik-hub-tile-title">Kardio vs trening siłowy</span>
-                        <span class="poradnik-hub-tile-desc">Co lepiej działa na redukcję, a co lepiej chroni mięśnie i formę.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-kreatyna-i-bialko" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧪</span>
-                        <span class="poradnik-hub-tile-title">Kreatyna i białko</span>
-                        <span class="poradnik-hub-tile-desc">Czy warto łączyć suplementację kreatyną z codziennym białkiem i treningiem.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-makroskladniki" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">📊</span>
-                        <span class="poradnik-hub-tile-title">Makroskładniki w praktyce</span>
-                        <span class="poradnik-hub-tile-desc">Jak rozkładać białko, węglowodany i tłuszcze w diecie, by było skutecznie.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-meal-prep" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍱</span>
-                        <span class="poradnik-hub-tile-title">Meal prep</span>
-                        <span class="poradnik-hub-tile-desc">Plan posiłków na kilka dni bez chaosu i niepotrzebnej rezygnacji z diety.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-mikroskladniki" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧩</span>
-                        <span class="poradnik-hub-tile-title">Mikroelementy dla sportowców</span>
-                        <span class="poradnik-hub-tile-desc">Jakie witaminy i minerały najczęściej pomijamy i kiedy warto je uzupełniać.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-mity-o-bialku-2" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧠</span>
-                        <span class="poradnik-hub-tile-title">Mity o białku — część 2</span>
-                        <span class="poradnik-hub-tile-desc">Kolejna porcja popularnych nieporozumień o diecie i białku, które warto rozwiać.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-nawyki-i-motywacja" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🎯</span>
-                        <span class="poradnik-hub-tile-title">Nawyki i motywacja</span>
-                        <span class="poradnik-hub-tile-desc">Jak budować trwałe zwyczaje odżywiania i treningu bez ciągłego „przełamywania siebie”.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-odzywianie-dla-kobiet" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">♀️</span>
-                        <span class="poradnik-hub-tile-title">Odżywianie dla kobiet trenujących</span>
-                        <span class="poradnik-hub-tile-desc">Jak dopasować dietę do kobiet aktywnych, z uwzględnieniem hormonów i redukcji.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-odzywianie-na-mase" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">📈</span>
-                        <span class="poradnik-hub-tile-title">Odżywianie na masę</span>
-                        <span class="poradnik-hub-tile-desc">Plan żywieniowy i zasady, które pomagają sprawnie budować masę mięśniową.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-odzywianie-na-redukcje" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🔥</span>
-                        <span class="poradnik-hub-tile-title">Odżywianie na redukcję</span>
-                        <span class="poradnik-hub-tile-desc">Jak zbudować dietę z deficytem i nie rezygnować z jakości treningu i energii.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-porownanie-produktow-bialkowych" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧮</span>
-                        <span class="poradnik-hub-tile-title">Porównanie produktów białkowych</span>
-                        <span class="poradnik-hub-tile-desc">Co jest najlepsze: twaróg, jaja, nabiał, batony i suplementy w ujęciu ceny i jakości.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-posilek-po-treningu" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍽️</span>
-                        <span class="poradnik-hub-tile-title">Posiłek po treningu</span>
-                        <span class="poradnik-hub-tile-desc">Jak zbudować najskuteczniejszy posiłek regeneracyjny po wysiłku.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-posilek-przed-treningiem" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏃</span>
-                        <span class="poradnik-hub-tile-title">Posiłek przed treningiem</span>
-                        <span class="poradnik-hub-tile-desc">Czy warto jeść węglowodany, białko i tłuszcz przed treningiem i kiedy.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-progresja-obciazen" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">📈</span>
-                        <span class="poradnik-hub-tile-title">Progresja obciążeń</span>
-                        <span class="poradnik-hub-tile-desc">Jak bezpiecznie zwiększać ciężar i objętość treningu, by nie utknąć w miejscu.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-regeneracja-i-sen" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🌙</span>
-                        <span class="poradnik-hub-tile-title">Regeneracja i sen</span>
-                        <span class="poradnik-hub-tile-desc">Dlaczego sen wpływa na siłę, białko i redukcję, nawet jeśli jedzenie jest w porządku.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-suple-bialkowe" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🥤</span>
-                        <span class="poradnik-hub-tile-title">Suplementy białkowe</span>
-                        <span class="poradnik-hub-tile-desc">Czym różnią się WPC, WPI, izolaty i czy warto je kupować.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-trening-na-mase" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏋️</span>
-                        <span class="poradnik-hub-tile-title">Trening na masę</span>
-                        <span class="poradnik-hub-tile-desc">Jak wygląda skuteczny trening na masę i co naprawdę daje wzrost mięśni.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="art-trening-na-sile" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏆</span>
-                        <span class="poradnik-hub-tile-title">Trening na siłę</span>
-                        <span class="poradnik-hub-tile-desc">Jak budować moc i siłę bez chaosu między seriami i ćwiczeniami.</span>
-                    </a>
+                </div>
+
+                <div id="articlesEmptyState" class="articles-empty" hidden>
+                    Brak artykułów pasujących do wyszukiwania.
                 </div>
 
                 <div class="info-callout">
@@ -474,12 +177,54 @@
         opacity: 0.9;
     }
 
-    .articles-top-controls {
+    .articles-toolbar {
         width: 100%;
         margin-top: 14px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
+        gap: 12px;
+    }
+
+    .articles-search {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex: 1 1 240px;
+        max-width: 420px;
+        padding: 0 12px;
+        min-height: 42px;
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.02);
+    }
+
+    .articles-search__icon {
+        font-size: 1.1rem;
+        opacity: 0.8;
+    }
+
+    .articles-search input {
+        width: 100%;
+        border: 0;
+        background: transparent;
+        font: inherit;
+        color: inherit;
+        outline: none;
+        padding: 10px 0;
+    }
+
+    .articles-search input::placeholder {
+        color: rgba(148, 163, 184, 0.9);
+    }
+
+    .articles-empty {
+        margin-top: 16px;
+        padding: 16px 18px;
+        border: 1px dashed rgba(148, 163, 184, 0.35);
+        border-radius: 12px;
+        color: var(--text-muted);
+        background: rgba(255, 255, 255, 0.02);
     }
 
     #articlesPagination {
@@ -540,10 +285,14 @@
     }
 
     @media (max-width: 767px) {
-        .articles-top-controls {
-            justify-content: center;
-            margin-top: 18px;
-            margin-bottom: 6px;
+        .articles-toolbar {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .articles-search {
+            max-width: none;
+            width: 100%;
         }
 
         #articlesPagination {
@@ -594,59 +343,34 @@
 })();
 </script>
     <script>
-    // Client-side pagination for artykuly list: show 16 items per page and page number buttons
+    // Client-side pagination for artykuly list with live search filtering
     window.applyArticlesPagination = function () {
         const list = document.getElementById('artykulyList');
         if (!list) return;
         const items = Array.from(list.querySelectorAll('.poradnik-hub-tile'));
         const perPage = 16;
-        const pages = Math.max(1, Math.ceil(items.length / perPage));
         const paginationRoot = document.getElementById('articlesPagination');
-        if (!paginationRoot) return;
+        const searchInput = document.getElementById('articlesSearch');
+        const emptyState = document.getElementById('articlesEmptyState');
+        if (!paginationRoot || !searchInput) return;
+
+        function getFilteredItems() {
+            const query = searchInput.value.trim().toLowerCase();
+            if (!query) return items;
+            return items.filter(item => {
+                const text = (item.textContent || '').toLowerCase();
+                return text.includes(query);
+            });
+        }
 
         function renderPage(page) {
-            const start = (page - 1) * perPage;
+            const filteredItems = getFilteredItems();
+            const pages = Math.max(1, Math.ceil(filteredItems.length / perPage));
+            const safePage = Math.min(Math.max(1, page), pages);
+            const start = (safePage - 1) * perPage;
             const end = start + perPage;
 
-            items.forEach((it, idx) => {
-                it.style.display = idx >= start && idx < end ? '' : 'none';
-            });
+            items.forEach((it) => { it.style.display = 'none'; });
+            filteredItems.slice(start, end).forEach((it) => { it.style.display = ''; });
 
-            Array.from(paginationRoot.querySelectorAll('.page-number-btn')).forEach((btn) => {
-                const isActive = Number(btn.dataset.page) === page;
-                btn.classList.toggle('is-active', isActive);
-                btn.setAttribute('aria-current', isActive ? 'page' : 'false');
-            });
-
-            try { history.replaceState(null, '', '?page=' + page); } catch (e) {}
-        }
-
-        paginationRoot.innerHTML = '';
-        if (pages <= 1) return;
-
-        const params = new URLSearchParams(location.search);
-        let current = parseInt(params.get('page')) || 1;
-        if (current < 1) current = 1;
-        if (current > pages) current = pages;
-
-        for (let i = 1; i <= pages; i++) {
-            const button = document.createElement('button');
-            button.type = 'button';
-            button.className = 'btn page-number-btn';
-            button.dataset.page = String(i);
-            button.textContent = String(i);
-            button.setAttribute('aria-label', `Przejdź do strony ${i}`);
-            button.addEventListener('click', () => {
-                current = i;
-                renderPage(current);
-            });
-            paginationRoot.appendChild(button);
-        }
-
-        renderPage(current);
-    };
-
-    document.addEventListener('DOMContentLoaded', () => { window.applyArticlesPagination && window.applyArticlesPagination(); });
-    </script>
-</body>
-</html>
+            if
