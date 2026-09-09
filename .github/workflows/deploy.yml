@@ -98,5 +98,7 @@ jobs:
         local-dir: ./domains/proteinmaxxing/
         server-dir: /public_html/proteinmaxxing.pl/
         exclude: |
-          **/.git/**
-          .git/**
+             **/.git/**
+             .git/**
+              **/node_modules/**
+              node_modules/**
