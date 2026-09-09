@@ -58,8 +58,8 @@
                 <div class="page-hero">
                     <h1>Artykuły</h1>
                     <p class="subtitle">Praktyczne przewodniki pod kalkulator, bazę produktów i codzienne decyzje żywieniowe</p>
-                    <div class="articles-top-controls" style="position:relative;">
-                        <div id="articlesPagination" style="position:absolute;right:0;top:0;">
+                    <div class="articles-top-controls">
+                        <div id="articlesPagination" aria-live="polite">
                             <!-- pagination control inserted by JS -->
                         </div>
                     </div>
@@ -458,6 +458,60 @@
     <script src="js/cookie-banner.js?v=20260815copyBold"></script>
 <script src="js/theme.js?v=20260815copyBold"></script>
 <script src="js/site-motion.js?v=20260815copyBold"></script>
+<style>
+    .articles-top-controls {
+        width: 100%;
+        margin-top: 12px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #articlesPagination {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    #articlesPagination .btn {
+        min-width: 42px;
+        min-height: 36px;
+        padding: 0 12px;
+        border-radius: 10px;
+    }
+
+    #articlesPagination select {
+        min-width: 144px;
+        max-width: 100%;
+        padding: 8px 12px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.04);
+        color: inherit;
+        font: inherit;
+    }
+
+    @media (max-width: 767px) {
+        .articles-top-controls {
+            justify-content: center;
+            margin-top: 18px;
+            margin-bottom: 6px;
+        }
+
+        #articlesPagination {
+            width: 100%;
+            justify-content: center;
+        }
+
+        #articlesPagination select {
+            min-width: 0;
+            width: min(100%, 180px);
+            flex: 1 1 100%;
+        }
+    }
+</style>
 <script>
 (function () {
     const list = document.getElementById('artykulyList');
@@ -517,11 +571,11 @@
         const prev = document.createElement('button');
         prev.className = 'btn btn-ghost';
         prev.textContent = '◀';
-        prev.style.marginRight = '8px';
+        prev.style.marginRight = '0';
         const next = document.createElement('button');
         next.className = 'btn btn-ghost';
         next.textContent = '▶';
-        next.style.marginLeft = '8px';
+        next.style.marginLeft = '0';
 
         const sel = document.createElement('select');
         sel.setAttribute('aria-label', 'Wybierz stronę artykułów');
