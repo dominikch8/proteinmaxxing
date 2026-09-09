@@ -97,3 +97,6 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./domains/proteinmaxxing/
         server-dir: /public_html/proteinmaxxing.pl/
+        exclude: |
+          **/.git/**
+          .git/**
