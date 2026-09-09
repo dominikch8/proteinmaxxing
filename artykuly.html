@@ -178,20 +178,18 @@
     }
 
     .articles-toolbar {
+        position: relative;
         width: 100%;
         margin-top: 14px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 12px;
+        min-height: 44px;
     }
 
     .articles-search {
         display: flex;
         align-items: center;
         gap: 8px;
-        flex: 1 1 240px;
-        max-width: 420px;
+        width: min(100%, 760px);
+        margin: 0 auto;
         padding: 0 12px;
         min-height: 42px;
         border: 1px solid rgba(148, 163, 184, 0.2);
@@ -218,16 +216,11 @@
         color: rgba(148, 163, 184, 0.9);
     }
 
-    .articles-empty {
-        margin-top: 16px;
-        padding: 16px 18px;
-        border: 1px dashed rgba(148, 163, 184, 0.35);
-        border-radius: 12px;
-        color: var(--text-muted);
-        background: rgba(255, 255, 255, 0.02);
-    }
-
     #articlesPagination {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -286,16 +279,21 @@
 
     @media (max-width: 767px) {
         .articles-toolbar {
+            min-height: auto;
+            display: flex;
             flex-direction: column;
             align-items: stretch;
+            gap: 12px;
         }
 
         .articles-search {
-            max-width: none;
             width: 100%;
+            max-width: none;
         }
 
         #articlesPagination {
+            position: static;
+            transform: none;
             width: 100%;
             justify-content: center;
         }
@@ -373,4 +371,59 @@
             items.forEach((it) => { it.style.display = 'none'; });
             filteredItems.slice(start, end).forEach((it) => { it.style.display = ''; });
 
-            if
+            if (filteredItems.length === 0) {
+                emptyState.hidden = false;
+                paginationRoot.hidden = true;
+            } else {
+                emptyState.hidden = true;
+                paginationRoot.hidden = false;
+            }
+
+            // Update pagination buttons
+            const updatePaginationButtons = () => {
+                paginationRoot.innerHTML = '';
+                if (pages <= 1) return;
+
+                const createButton = (pageNum, isActive = false) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'btn' + (isActive ? ' is-active' : '');
+                    btn.type = 'button';
+                    btn.textContent = pageNum;
+                    btn.onclick = () => renderPage(pageNum);
+                    return btn;
+                };
+
+                // Previous button
+                if (safePage > 1) {
+                    const prevBtn = createButton(safePage - 1);
+                    prevBtn.classList.add('btn-prev');
+                    paginationRoot.appendChild(prevBtn);
+                }
+
+                // Page number buttons
+                for (let i = 1; i <= pages; i++) {
+                    paginationRoot.appendChild(createButton(i, i === safePage));
+                }
+
+                // Next button
+                if (safePage < pages) {
+                    const nextBtn = createButton(safePage + 1);
+                    nextBtn.classList.add('btn-next');
+                    paginationRoot.appendChild(nextBtn);
+                }
+            };
+
+            updatePaginationButtons();
+        }
+
+        // Initial render
+        renderPage(1);
+
+        // Search input handler
+        searchInput.addEventListener('input', () => {
+            renderPage(1);
+        });
+    };
+</script>
+</body>
+</html>
