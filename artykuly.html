@@ -473,24 +473,49 @@
         justify-content: flex-end;
         gap: 8px;
         flex-wrap: wrap;
+        padding: 6px 8px;
+        border-radius: 999px;
+        background: rgba(17, 20, 31, 0.42);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
 
     #articlesPagination .btn {
         min-width: 42px;
         min-height: 36px;
         padding: 0 12px;
-        border-radius: 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.04);
+        color: inherit;
+        transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    }
+
+    #articlesPagination .btn:hover,
+    #articlesPagination .btn:focus-visible {
+        transform: translateY(-1px);
+        border-color: rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.08);
     }
 
     #articlesPagination select {
         min-width: 144px;
         max-width: 100%;
         padding: 8px 12px;
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
         background: rgba(255, 255, 255, 0.04);
         color: inherit;
         font: inherit;
+        appearance: none;
+        -webkit-appearance: none;
+        background-image: linear-gradient(45deg, transparent 50%, rgba(255,255,255,0.8) 50%), linear-gradient(135deg, rgba(255,255,255,0.8) 50%, transparent 50%);
+        background-position: calc(100% - 18px) calc(50% - 2px), calc(100% - 12px) calc(50% - 2px);
+        background-size: 6px 6px, 6px 6px;
+        background-repeat: no-repeat;
+        padding-right: 32px;
     }
 
     @media (max-width: 767px) {
@@ -503,6 +528,8 @@
         #articlesPagination {
             width: 100%;
             justify-content: center;
+            border-radius: 18px;
+            padding: 8px 10px;
         }
 
         #articlesPagination select {
