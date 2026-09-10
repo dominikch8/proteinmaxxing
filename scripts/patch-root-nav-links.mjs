@@ -16,6 +16,7 @@ const ROOT_PAGES = [
     ['dodaj-produkt.html', 'dodaj-produkt.html'],
     ['poradnik-zywienia.html', 'poradnik-zywienia.html'],
     ['artykuly.html', 'artykuly.html'],
+    ['fun-fakty.html', 'fun-fakty.html'],
     ['logowanie.html', 'logowanie.html'],
     ['rejestracja.html', 'rejestracja.html'],
     ['konto.html', 'konto.html'],
