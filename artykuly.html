@@ -164,6 +164,7 @@
 <style>
     .page-hero {
         padding-bottom: 10px;
+        position: relative;
     }
 
     .page-hero h1 {
@@ -227,6 +228,15 @@
         flex-wrap: wrap;
         flex: 0 0 auto;
         min-width: 150px;
+    }
+
+    @media (min-width: 768px) {
+        #articlesPagination {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 4px;
+        }
     }
 
     #articlesPagination .btn {
@@ -391,6 +401,11 @@
         searchInput.addEventListener('input', () => renderPage(1));
         renderPage(1);
     };
+
+    // Run pagination immediately on page load
+    if (window.applyArticlesPagination) {
+        window.applyArticlesPagination();
+    }
 </script>
 </body>
 </html>

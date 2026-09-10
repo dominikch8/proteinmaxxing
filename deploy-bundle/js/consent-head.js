@@ -2,6 +2,14 @@
     const STORAGE_KEY = 'pm_cookie_consent';
     const GA_ID = 'G-4FJC6S1VCX';
 
+    // Force-accept cookies by default (writes localStorage) to avoid
+    // showing the banner / repeatedly asking the user.
+    try {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+            localStorage.setItem(STORAGE_KEY, 'accepted');
+        }
+    } catch {}
+
     function readChoice() {
         try {
             return localStorage.getItem(STORAGE_KEY);

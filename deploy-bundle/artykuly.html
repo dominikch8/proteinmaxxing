@@ -58,9 +58,23 @@
                 <div class="page-hero">
                     <h1>Artykuły</h1>
                     <p class="subtitle">Praktyczne przewodniki pod kalkulator, bazę produktów i codzienne decyzje żywieniowe</p>
+                    <div class="articles-toolbar">
+                        <label class="articles-search" aria-label="Szukaj artykułu">
+                            <span class="articles-search__icon" aria-hidden="true">⌕</span>
+                            <input id="articlesSearch" type="search" placeholder="Szukaj artykułu..." autocomplete="off" />
+                        </label>
+                        <div id="articlesPagination" aria-live="polite">
+                            <!-- pagination control inserted by JS -->
+                        </div>
+                    </div>
                 </div>
 
                 <div class="poradnik-hub-grid artykuly-list" id="artykulyList" role="list">
+                    <a class="poradnik-hub-tile" href="lala" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">📝</span>
+                        <span class="poradnik-hub-tile-title">Lala</span>
+                        <span class="poradnik-hub-tile-desc">To jest artykuł lala - przykładowy artykuł o tematyce diety i zdrowia.</span>
+                    </a>
                     <a class="poradnik-hub-tile" href="zageszczone-soki-owocowe-a-witaminy" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧃</span>
                         <span class="poradnik-hub-tile-title">Zagęszczone soki owocowe a witaminy</span>
@@ -109,168 +123,12 @@
                     <a class="poradnik-hub-tile" href="zrodla-bialka-carrefour" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🛒</span>
                         <span class="poradnik-hub-tile-title">Źródła białka w Carrefour</span>
-                        <span class="poradnik-hub-tile-desc">Sensation/Classic, porównanie marek, łosoś i lady na wagę.</span>
+                        <span class="poradnik-hub-tile-desc">Classic/Sensation, porównanie marek, łosoś i lady na wagę.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="ile-bialka-na-dzien" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🥩</span>
-                        <span class="poradnik-hub-tile-title">Ile białka jeść dziennie?</span>
-                        <span class="poradnik-hub-tile-desc">Gramy na kg masy ciała przy redukcji, masie i utrzymaniu — z kalkulatorem Proteiner.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="nadwyzka-kalorii-na-mase" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">📈</span>
-                        <span class="poradnik-hub-tile-title">Nadwyżka kaloryczna na masę</span>
-                        <span class="poradnik-hub-tile-desc">Ile dodać kcal, jak nie „zajadać” tłuszczu i gdzie wstawić białko przy budowie sylwetki.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="tdee-i-bmr-wyjasnienie" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧮</span>
-                        <span class="poradnik-hub-tile-title">TDEE i BMR — co oznaczają?</span>
-                        <span class="poradnik-hub-tile-desc">Prosto: podstawowa przemiana materii, aktywność i dlaczego kalkulator to punkt startu, nie wyrok.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="bmi-jak-czytac-wynik" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚖️</span>
-                        <span class="poradnik-hub-tile-title">BMI — jak czytać wynik?</span>
-                        <span class="poradnik-hub-tile-desc">Co mówi wskaźnik masy ciała, czego nie mówi (mięśnie!) i kiedy warto iść dalej niż sama liczba.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="weglowodany-wokol-treningu" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍚</span>
-                        <span class="poradnik-hub-tile-title">Węglowodany przed i po treningu</span>
-                        <span class="poradnik-hub-tile-desc">Kiedy warto jeść więcej węgli, a kiedy „timing” jest mniej ważny niż cały dzień makro.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="ile-tluszczu-w-diecie" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🥑</span>
-                        <span class="poradnik-hub-tile-title">Ile tłuszczu w diecie?</span>
-                        <span class="poradnik-hub-tile-desc">Orientacyjny udział kcal z tłuszczu, tłuszcze nasycone vs nienasycone i typowe pułapki (oleje, orzechy).</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="przekaski-wysokobialkowe" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧀</span>
-                        <span class="poradnik-hub-tile-title">Przekąski wysokobiałkowe</span>
-                        <span class="poradnik-hub-tile-desc">Co jeść między posiłkami, żeby domknąć białko bez zjadania deficytu — z polskich półek.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="wegetarianskie-zrodla-bialka" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🌱</span>
-                        <span class="poradnik-hub-tile-title">Wegetariańskie źródła białka</span>
-                        <span class="poradnik-hub-tile-desc">Tofu, nabiał, rośliny strączkowe i jak składać pełne posiłki bez mięsa — z bazą Proteiner.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="meal-prep-bialko-budzet" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧊</span>
-                        <span class="poradnik-hub-tile-title">Meal prep: białko na budżet</span>
-                        <span class="poradnik-hub-tile-desc">Jak tanio ugotować na 3–4 dni: pierś, twaróg, kasze i lista zakupów pod makro.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="mity-o-bialku" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🔍</span>
-                        <span class="poradnik-hub-tile-title">Mity o białku</span>
-                        <span class="poradnik-hub-tile-desc">„Niszczy nerki”, „wchłania się tylko 30 g”, „sam baton wystarczy” — co warto odhaczyć.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="jak-porownywac-produkty" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚔️</span>
-                        <span class="poradnik-hub-tile-title">Jak porównywać produkty?</span>
-                        <span class="poradnik-hub-tile-desc">Na co patrzeć w porównywarce Proteiner: białko, kcal, cena białka i tłuszcze — krok po kroku.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="ekstremalnie-szybkie-odchudzanie-bez-farmazonow" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🔥</span>
-                        <span class="poradnik-hub-tile-title">Ekstremalnie szybkie odchudzanie bez zbędnych farmazonów</span>
-                        <span class="poradnik-hub-tile-desc">Konkrety, które działają: sytość, agresywny deficyt, triki objętościowe, Ozempic bez strony i metody z ekstremy — na własną odpowiedzialność.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="sila-na-redukcji-dlaczego-nie-tylko-cardio" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏋️</span>
-                        <span class="poradnik-hub-tile-title">Siła na redukcji — dlaczego samo cardio to marnowanie czasu</span>
-                        <span class="poradnik-hub-tile-desc">Trening siłowy chroni mięśnie i tempo przemiany materii. Cardio bez siłowni gubi jedno i drugie.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="progresja-obciazenia-bez-pierdolenia" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">📈</span>
-                        <span class="poradnik-hub-tile-title">Progresja obciążenia bez pierdolenia — jak dokładać ciężar i powtórzenia</span>
-                        <span class="poradnik-hub-tile-desc">Konkretne zasady kiedy dodać kilogram, kiedy powtórzenie, a kiedy po prostu odpuścić tydzień.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="volume-eating-jak-jesc-duzo-i-chudnac" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🥗</span>
-                        <span class="poradnik-hub-tile-title">Volume eating — jak jeść dużo i mimo to chudnąć</span>
-                        <span class="poradnik-hub-tile-desc">Produkty z polskiego marketu, które dają objętość i sytość przy minimalnej liczbie kalorii.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="plateau-wagi-co-robic-gdy-stoi" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚖️</span>
-                        <span class="poradnik-hub-tile-title">Plateau wagi — co robić, gdy waga stoi mimo diety</span>
-                        <span class="poradnik-hub-tile-desc">Checklista: woda, sól, sen, niedoszacowane kalorie i NEAT, zanim zaczniesz obwiniać metabolizm.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="alkohol-a-odchudzanie" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍺</span>
-                        <span class="poradnik-hub-tile-title">Alkohol a odchudzanie — ile realnie kosztuje wieczór z piwem</span>
-                        <span class="poradnik-hub-tile-desc">Kalorie, hormony, ryzyko wieczornego objadania się i konkretne zasady, jeśli pijesz i chcesz jednocześnie chudnąć.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="sen-stres-i-waga" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">😴</span>
-                        <span class="poradnik-hub-tile-title">Sen, stres i waga — czemu zarywanie nocy sabotuje dietę</span>
-                        <span class="poradnik-hub-tile-desc">Kortyzol, głód o 23:00 i dlaczego 5 godzin snu potrafi zniszczyć tydzień deficytu bardziej niż jedna pizza.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="kreatyna-kofeina-bialko-co-warto" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">💊</span>
-                        <span class="poradnik-hub-tile-title">Kreatyna, kofeina, białko — co naprawdę działa, a co to hype</span>
-                        <span class="poradnik-hub-tile-desc">Trzy suplementy z realnymi dowodami naukowymi i długa lista tych, na które wydajesz pieniądze bez efektu.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="cut-agresywny-vs-umiarkowany" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚖️</span>
-                        <span class="poradnik-hub-tile-title">Cut agresywny vs umiarkowany — który wybrać i kiedy</span>
-                        <span class="poradnik-hub-tile-desc">Tempo, ryzyko utraty mięśni i adherence — porównanie dwóch strategii redukcji na liczbach, nie na opiniach z forum.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="budowanie-miesni-minimalny-plan" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏋️</span>
-                        <span class="poradnik-hub-tile-title">Minimalny skuteczny plan na budowanie mięśni (3–4 dni)</span>
-                        <span class="poradnik-hub-tile-desc">Ile serii realnie potrzeba, dlaczego więcej nie znaczy lepiej i konkretny plan oparty na ćwiczeniach wielostawowych.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="neat-kroki-wiecej-niz-silownia" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🚶</span>
-                        <span class="poradnik-hub-tile-title">NEAT i kroki — czemu biją dodatkowe cardio na siłowni</span>
-                        <span class="poradnik-hub-tile-desc">8–12 tysięcy kroków dziennie potrafi zrobić więcej dla wagi niż kolejne 30 minut na orbitreku.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="ile-serii-i-powtorzen-na-mase" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏋️</span>
-                        <span class="poradnik-hub-tile-title">Ile serii i powtórzeń na masę?</span>
-                        <span class="poradnik-hub-tile-desc">Konkretne zakresy pod hipertrofię i siłę — plus ile jest już bezsensowną objętością.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="refeed-i-diet-break" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍽️</span>
-                        <span class="poradnik-hub-tile-title">Refeed i diet break — kiedy i na jak długo?</span>
-                        <span class="poradnik-hub-tile-desc">Podniesienie kalorii bez wymówki do obżarstwa: glikogen, głowa i realny czas trwania.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="tracking-kalorii-bez-obsesji" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚖️</span>
-                        <span class="poradnik-hub-tile-title">Tracking kalorii bez obsesji</span>
-                        <span class="poradnik-hub-tile-desc">Waż jedzenie dwa tygodnie, potem szacuj — i co liczyć już do końca życia.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="utrata-miesni-na-redukcji" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">💪</span>
-                        <span class="poradnik-hub-tile-title">Jak nie tracić mięśni na redukcji?</span>
-                        <span class="poradnik-hub-tile-desc">Białko, ciężary, wielkość deficytu i sen — cztery rzeczy, które realnie chronią mięśnie.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="przedtreningowka-czy-wystarczy-kawa" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">☕</span>
-                        <span class="poradnik-hub-tile-title">Przedtreningówka czy wystarczy kawa?</span>
-                        <span class="poradnik-hub-tile-desc">Marketing suplementów PWO kontra kawa i węglowodany — co realnie daje efekt.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="cheat-meal-czy-rekompensata" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍕</span>
-                        <span class="poradnik-hub-tile-title">Cheat meal czy rekompensata kaloryczna?</span>
-                        <span class="poradnik-hub-tile-desc">Dlaczego „dzień oszustwa” bez limitu rozwala tydzień deficytu i jak zjeść pizza bez resetowania efektów.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="dlaczego-waga-skacze-o-2kg" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">📊</span>
-                        <span class="poradnik-hub-tile-title">Dlaczego waga skacze o 1–2 kg z dnia na dzień</span>
-                        <span class="poradnik-hub-tile-desc">Sól, węgle, trening, cykl, alkohol — co realnie zmienia odczyt, a co jest tłuszczem.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="bialko-przed-snem-czy-warto" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🌙</span>
-                        <span class="poradnik-hub-tile-title">Białko przed snem — czy warto?</span>
-                        <span class="poradnik-hub-tile-desc">Kazeina, twaróg na noc i mit „nie jedz po 18”. Co mówi praktyka przy masie i redukcji.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="kobiety-redukcja-bez-bzdury" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">♀️</span>
-                        <span class="poradnik-hub-tile-title">Redukcja u kobiet — bez bzdury i bez infantylizowania</span>
-                        <span class="poradnik-hub-tile-desc">Cykl, retencja wody, deficyt, siła. Te same prawa fizyki, inne wahania odczytów — konkretnie.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="bulk-brudny-vs-czysty" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍔</span>
-                        <span class="poradnik-hub-tile-title">Bulk brudny vs czysty — co się opłaca</span>
-                        <span class="poradnik-hub-tile-desc">+500 kcal z śmieci vs mała nadwyżka. Ile tłuszczu dokładasz do mięśni i jak długo potem tniesz.</span>
-                    </a>
+                </div>
+
+                <div id="articlesEmptyState" class="articles-empty" hidden>
+                    Brak artykułów pasujących do wyszukiwania.
                 </div>
 
                 <div class="info-callout">
@@ -303,6 +161,164 @@
     <script src="js/cookie-banner.js?v=20260815copyBold"></script>
 <script src="js/theme.js?v=20260815copyBold"></script>
 <script src="js/site-motion.js?v=20260815copyBold"></script>
+<style>
+    .page-hero {
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+    .page-hero h1 {
+        margin-bottom: 8px;
+        letter-spacing: -0.04em;
+    }
+
+    .page-hero .subtitle {
+        max-width: 760px;
+        margin-bottom: 0;
+        opacity: 0.9;
+    }
+
+    .articles-toolbar {
+        width: 100%;
+        margin-top: 14px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .articles-search {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex: 1 1 auto;
+        max-width: 760px;
+        padding: 0 12px;
+        min-height: 42px;
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.02);
+    }
+
+    .articles-search__icon {
+        font-size: 1.1rem;
+        opacity: 0.8;
+    }
+
+    .articles-search input {
+        width: 100%;
+        border: 0;
+        background: transparent;
+        font: inherit;
+        color: inherit;
+        outline: none;
+        padding: 10px 0;
+    }
+
+    .articles-search input::placeholder {
+        color: rgba(148, 163, 184, 0.9);
+    }
+
+    #articlesPagination {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+        flex-wrap: wrap;
+        flex: 0 0 auto;
+        min-width: 150px;
+    }
+
+    @media (min-width: 768px) {
+        #articlesPagination {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 4px;
+        }
+    }
+
+    #articlesPagination .btn {
+        min-width: 38px;
+        min-height: 34px;
+        padding: 0 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        background: transparent;
+        color: inherit;
+        transition: all 0.18s ease;
+    }
+
+    #articlesPagination .btn:hover,
+    #articlesPagination .btn:focus-visible {
+        border-color: rgba(148, 163, 184, 0.35);
+        background: rgba(255, 255, 255, 0.04);
+    }
+
+    #articlesPagination .btn.is-active {
+        background: var(--primary, #e11d48);
+        border-color: var(--primary, #e11d48);
+        color: #fff;
+        box-shadow: 0 8px 18px rgba(225, 29, 72, 0.22);
+    }
+
+    .artykuly-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    .poradnik-hub-tile {
+        min-height: 168px;
+        padding: 20px 18px 18px;
+        border-radius: 20px;
+        border: 1px solid rgba(148, 163, 184, 0.22);
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.96) 0%, rgba(248, 250, 252, 0.9) 100%);
+        box-shadow: 0 16px 35px rgba(15, 23, 42, 0.06);
+    }
+
+    .poradnik-hub-tile-title {
+        font-size: 1.08rem;
+        line-height: 1.3;
+    }
+
+    .poradnik-hub-tile-desc {
+        font-size: 0.9rem;
+        line-height: 1.55;
+    }
+
+    @media (max-width: 767px) {
+        .articles-toolbar {
+            min-height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 12px;
+        }
+
+        .articles-search {
+            width: 100%;
+            max-width: none;
+        }
+
+        #articlesPagination {
+            width: 100%;
+            justify-content: center;
+            min-width: 0;
+        }
+
+        .artykuly-list {
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .poradnik-hub-tile {
+            min-height: 150px;
+            padding: 16px 14px 14px;
+        }
+    }
+</style>
 <script>
 (function () {
     const list = document.getElementById('artykulyList');
@@ -329,9 +345,67 @@
                 frag.appendChild(link);
             });
             list.appendChild(frag);
+            if (window.applyArticlesPagination) window.applyArticlesPagination();
         })
         .catch(function () {});
 })();
+</script>
+    <script>
+    // Client-side pagination for artykuly list with live search filtering
+    window.applyArticlesPagination = function () {
+        const list = document.getElementById('artykulyList');
+        if (!list) return;
+        const items = Array.from(list.querySelectorAll('.poradnik-hub-tile'));
+        const perPage = 16;
+        const paginationRoot = document.getElementById('articlesPagination');
+        const searchInput = document.getElementById('articlesSearch');
+        const emptyState = document.getElementById('articlesEmptyState');
+        if (!paginationRoot || !searchInput) return;
+
+        function getFilteredItems() {
+            const query = searchInput.value.trim().toLowerCase();
+            if (!query) return items;
+            return items.filter(item => {
+                const text = (item.textContent || '').toLowerCase();
+                return text.includes(query);
+            });
+        }
+
+        function renderPage(page) {
+            const filteredItems = getFilteredItems();
+            const totalPages = Math.max(1, Math.ceil(filteredItems.length / perPage));
+            const safePage = Math.min(Math.max(1, page), totalPages);
+            const start = (safePage - 1) * perPage;
+            const end = start + perPage;
+
+            items.forEach((it) => { it.style.display = 'none'; });
+            filteredItems.slice(start, end).forEach((it) => { it.style.display = ''; });
+
+            if (emptyState) {
+                emptyState.hidden = filteredItems.length > 0;
+            }
+
+            paginationRoot.innerHTML = '';
+
+            for (let i = 1; i <= totalPages; i++) {
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.className = 'btn' + (i === safePage ? ' is-active' : '');
+                button.textContent = String(i);
+                button.setAttribute('aria-label', `Przejdź do strony ${i}`);
+                button.addEventListener('click', () => renderPage(i));
+                paginationRoot.appendChild(button);
+            }
+        }
+
+        searchInput.addEventListener('input', () => renderPage(1));
+        renderPage(1);
+    };
+
+    // Run pagination immediately on page load
+    if (window.applyArticlesPagination) {
+        window.applyArticlesPagination();
+    }
 </script>
 </body>
 </html>
