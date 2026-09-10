@@ -15,8 +15,51 @@ const batches = [
     'hardcore-articles-batch1.json',
     'hardcore-articles-batch2.json',
     'hardcore-articles-batch3.json',
-    'hardcore-articles-batch4.json'
+    'hardcore-articles-batch4.json',
+    'hardcore-articles-leki.json',
+    'hardcore-articles-tematyczne.json'
 ];
+
+// Mapa kategorii dla istniejących artykułów (slug -> kategoria)
+const CATEGORY_MAP = {
+    'zageszczone-soki-owocowe-a-witaminy': 'odzywianie',
+    'deficyt-kaloryczny-praktyka': 'odchudzanie',
+    'planowanie-posilkow': 'odzywianie',
+    'produkty-bialkowe-czy-oplacalne': 'bialko',
+    'mleko-bialkowe-a-kalorie': 'bialko',
+    'najlepsze-zrodla-bialka-biedronka-lidl-auchan-carrefour': 'bialko',
+    'zrodla-bialka-biedronka': 'bialko',
+    'zrodla-bialka-lidl': 'bialko',
+    'zrodla-bialka-auchan': 'bialko',
+    'zrodla-bialka-carrefour': 'bialko',
+    'ile-bialka-na-dzien': 'bialko',
+    'wegetarianskie-zrodla-bialka': 'bialko',
+    'ekstremalnie-szybkie-odchudzanie-bez-farmazonow': 'odchudzanie',
+    'sila-na-redukcji-dlaczego-nie-tylko-cardio': 'cwiczenia',
+    'progresja-obciazenia-bez-pierdolenia': 'cwiczenia',
+    'volume-eating-jak-jesc-duzo-i-chudnac': 'odchudzanie',
+    'plateau-wagi-co-robic-gdy-stoi': 'odchudzanie',
+    'alkohol-a-odchudzanie': 'odchudzanie',
+    'sen-stres-i-waga': 'odchudzanie',
+    'kreatyna-kofeina-bialko-co-warto': 'bialko',
+    'cut-agresywny-vs-umiarkowany': 'odchudzanie',
+    'budowanie-miesni-minimalny-plan': 'cwiczenia',
+    'neat-kroki-wiecej-niz-silownia': 'cwiczenia',
+    'ile-serii-i-powtorzen-na-mase': 'cwiczenia',
+    'refeed-i-diet-break': 'odchudzanie',
+    'tracking-kalorii-bez-obsesji': 'odchudzanie',
+    'utrata-miesni-na-redukcji': 'cwiczenia',
+    'przedtreningowka-czy-wystarczy-kawa': 'cwiczenia',
+    'cheat-meal-czy-rekompensata': 'odchudzanie',
+    'dlaczego-waga-skacze-o-2kg': 'odchudzanie',
+    'bialko-przed-snem-czy-warto': 'bialko',
+    'kobiety-redukcja-bez-bzdury': 'odchudzanie',
+    'bulk-brudny-vs-czysty': 'odchudzanie'
+};
+
+function categoryOf(a) {
+    return a.category || CATEGORY_MAP[a.slug] || 'inne';
+}
 
 function loadArticles() {
     const all = [];
@@ -74,11 +117,30 @@ function renderArticle(a, template) {
 }
 
 function tileHtml(a) {
-    return `                    <a class="poradnik-hub-tile" href="${a.slug}" role="listitem">
+    return `                    <a class="poradnik-hub-tile" data-category="${categoryOf(a)}" href="${a.slug}" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">${a.emoji || '📝'}</span>
                         <span class="poradnik-hub-tile-title">${a.title}</span>
                         <span class="poradnik-hub-tile-desc">${a.subtitle}</span>
                     </a>`;
+}
+
+// Usuwa testowy kafelek "Lala" i pilnuje, żeby każdy kafelek miał data-category
+function ensureTiles(artykulyPath, articles) {
+    let html = fs.readFileSync(artykulyPath, 'utf8');
+    const before = html;
+
+    // usuń testowy kafelek lala
+    html = html.replace(/\s*<a class="poradnik-hub-tile" href="lala" role="listitem">[\s\S]*?<\/a>/, '');
+
+    // pilnuj data-category na wszystkich kafelkach
+    for (const a of articles) {
+        const cat = categoryOf(a);
+        // kafelek z href slug bez data-category
+        const re = new RegExp(`<a class="poradnik-hub-tile" (?!data-category)(href="${a.slug}")`, 'g');
+        html = html.replace(re, `<a class="poradnik-hub-tile" data-category="${cat}" $1`);
+    }
+
+    if (html !== before) fs.writeFileSync(artykulyPath, html);
 }
 
 function upsertHub(artykulyPath, articles) {
@@ -93,6 +155,7 @@ function upsertHub(artykulyPath, articles) {
         );
     }
     fs.writeFileSync(artykulyPath, html);
+    ensureTiles(artykulyPath, articles);
 }
 
 function upsertHome(homePath, articles) {

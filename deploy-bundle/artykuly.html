@@ -67,173 +67,337 @@
                             <!-- pagination control inserted by JS -->
                         </div>
                     </div>
+                    <nav class="articles-categories" id="articlesCategories" aria-label="Kategorie artykułów">
+                        <button type="button" class="articles-cat-btn is-active" data-cat="all">Wszystkie</button>
+                        <button type="button" class="articles-cat-btn" data-cat="bialko">Białko</button>
+                        <button type="button" class="articles-cat-btn" data-cat="odzywianie">Odżywianie</button>
+                        <button type="button" class="articles-cat-btn" data-cat="odchudzanie">Odchudzanie</button>
+                        <button type="button" class="articles-cat-btn" data-cat="cwiczenia">Ćwiczenia</button>
+                        <button type="button" class="articles-cat-btn" data-cat="leki">Leki psychiatryczne</button>
+                    </nav>
                 </div>
 
                 <div class="poradnik-hub-grid artykuly-list" id="artykulyList" role="list">
-                    <a class="poradnik-hub-tile" href="lala" role="listitem">
-                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">📝</span>
-                        <span class="poradnik-hub-tile-title">Lala</span>
-                        <span class="poradnik-hub-tile-desc">To jest artykuł lala - przykładowy artykuł o tematyce diety i zdrowia.</span>
-                    </a>
-                    <a class="poradnik-hub-tile" href="zageszczone-soki-owocowe-a-witaminy" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="odzywianie" href="zageszczone-soki-owocowe-a-witaminy" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧃</span>
                         <span class="poradnik-hub-tile-title">Zagęszczone soki owocowe a witaminy</span>
                         <span class="poradnik-hub-tile-desc">Ile % witaminy C i innych składników zostaje po zagęszczeniu, magazynowaniu i dolaniu wody — NFC vs koncentrat.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="deficyt-kaloryczny-praktyka" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="odchudzanie" href="deficyt-kaloryczny-praktyka" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">📉</span>
                         <span class="poradnik-hub-tile-title">Deficyt kaloryczny w praktyce</span>
                         <span class="poradnik-hub-tile-desc">Ile kcal odjąć, jak rozłożyć białko, typowe błędy i przykładowy dzień z polskich produktów.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="planowanie-posilkow" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="odzywianie" href="planowanie-posilkow" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🗓️</span>
                         <span class="poradnik-hub-tile-title">Planowanie posiłków na tydzień</span>
                         <span class="poradnik-hub-tile-desc">Meal prep, lista zakupów i szablony obiadów — mniej chaosu, więcej kontroli nad makro.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="produkty-bialkowe-czy-oplacalne" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="bialko" href="produkty-bialkowe-czy-oplacalne" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏷️</span>
                         <span class="poradnik-hub-tile-title">Produkty „białkowe” — czy się opłacają?</span>
                         <span class="poradnik-hub-tile-desc">Batony, puddingi, skyr i WPC vs twaróg i kurczak — cena za 100 g białka bez marketingu.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="mleko-bialkowe-a-kalorie" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="bialko" href="mleko-bialkowe-a-kalorie" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🥛</span>
                         <span class="poradnik-hub-tile-title">Mleko 0% vs 3,2% — białko i kalorie</span>
                         <span class="poradnik-hub-tile-desc">Odtłuszczone i mleko białkowe vs pełne: ta sama ilość białka, nawet ~300 kcal mniej na litr.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="najlepsze-zrodla-bialka-biedronka-lidl-auchan-carrefour" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="bialko" href="najlepsze-zrodla-bialka-biedronka-lidl-auchan-carrefour" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🗺️</span>
                         <span class="poradnik-hub-tile-title">Przegląd 4 sieci</span>
                         <span class="poradnik-hub-tile-desc">Krótki hub: którą sieć wybrać i linki do osobnych przewodników zakupowych.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="zrodla-bialka-biedronka" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="bialko" href="zrodla-bialka-biedronka" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🛒</span>
                         <span class="poradnik-hub-tile-title">Źródła białka w Biedronce</span>
                         <span class="poradnik-hub-tile-desc">Go Active, Delikate, pierś, jaja, tuńczyk — z siatką zdjęć produktów.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="zrodla-bialka-lidl" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="bialko" href="zrodla-bialka-lidl" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🛒</span>
                         <span class="poradnik-hub-tile-title">Źródła białka w Lidlu</span>
                         <span class="poradnik-hub-tile-desc">Pilos, Nixe, Crane — skyr, puddingi i chłodnia proteinowa.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="zrodla-bialka-auchan" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="bialko" href="zrodla-bialka-auchan" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🛒</span>
                         <span class="poradnik-hub-tile-title">Źródła białka w Auchan</span>
                         <span class="poradnik-hub-tile-desc">Hipermarket pod meal prep: duże paczki, lady, indyk i ryby.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="zrodla-bialka-carrefour" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="bialko" href="zrodla-bialka-carrefour" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🛒</span>
                         <span class="poradnik-hub-tile-title">Źródła białka w Carrefour</span>
                         <span class="poradnik-hub-tile-desc">Classic/Sensation, porównanie marek, łosoś i lady na wagę.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="ekstremalnie-szybkie-odchudzanie-bez-farmazonow" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="odchudzanie" href="ekstremalnie-szybkie-odchudzanie-bez-farmazonow" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🔥</span>
                         <span class="poradnik-hub-tile-title">Ekstremalnie szybkie odchudzanie bez zbędnych farmazonów</span>
                         <span class="poradnik-hub-tile-desc">Konkrety, które działają: sytość, agresywny deficyt, triki objętościowe, Ozempic bez strony i metody z ekstremy — na własną odpowiedzialność.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="sila-na-redukcji-dlaczego-nie-tylko-cardio" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="cwiczenia" href="sila-na-redukcji-dlaczego-nie-tylko-cardio" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏋️</span>
                         <span class="poradnik-hub-tile-title">Siła na redukcji — dlaczego samo cardio to marnowanie czasu</span>
                         <span class="poradnik-hub-tile-desc">Trening siłowy chroni mięśnie i tempo przemiany materii. Cardio bez siłowni gubi jedno i drugie.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="progresja-obciazenia-bez-pierdolenia" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="cwiczenia" href="progresja-obciazenia-bez-pierdolenia" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">📈</span>
                         <span class="poradnik-hub-tile-title">Progresja obciążenia bez pierdolenia — jak dokładać ciężar i powtórzenia</span>
                         <span class="poradnik-hub-tile-desc">Konkretne zasady kiedy dodać kilogram, kiedy powtórzenie, a kiedy po prostu odpuścić tydzień.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="volume-eating-jak-jesc-duzo-i-chudnac" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="odchudzanie" href="volume-eating-jak-jesc-duzo-i-chudnac" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🥗</span>
                         <span class="poradnik-hub-tile-title">Volume eating — jak jeść dużo i mimo to chudnąć</span>
                         <span class="poradnik-hub-tile-desc">Produkty z polskiego marketu, które dają objętość i sytość przy minimalnej liczbie kalorii.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="plateau-wagi-co-robic-gdy-stoi" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="odchudzanie" href="plateau-wagi-co-robic-gdy-stoi" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚖️</span>
                         <span class="poradnik-hub-tile-title">Plateau wagi — co robić, gdy waga stoi mimo diety</span>
                         <span class="poradnik-hub-tile-desc">Checklista: woda, sól, sen, niedoszacowane kalorie i NEAT, zanim zaczniesz obwiniać metabolizm.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="alkohol-a-odchudzanie" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="odchudzanie" href="alkohol-a-odchudzanie" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍺</span>
                         <span class="poradnik-hub-tile-title">Alkohol a odchudzanie — ile realnie kosztuje wieczór z piwem</span>
                         <span class="poradnik-hub-tile-desc">Kalorie, hormony, ryzyko wieczornego objadania się i konkretne zasady, jeśli pijesz i chcesz jednocześnie chudnąć.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="sen-stres-i-waga" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="odchudzanie" href="sen-stres-i-waga" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">😴</span>
                         <span class="poradnik-hub-tile-title">Sen, stres i waga — czemu zarywanie nocy sabotuje dietę</span>
                         <span class="poradnik-hub-tile-desc">Kortyzol, głód o 23:00 i dlaczego 5 godzin snu potrafi zniszczyć tydzień deficytu bardziej niż jedna pizza.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="kreatyna-kofeina-bialko-co-warto" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="bialko" href="kreatyna-kofeina-bialko-co-warto" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">💊</span>
                         <span class="poradnik-hub-tile-title">Kreatyna, kofeina, białko — co naprawdę działa, a co to hype</span>
                         <span class="poradnik-hub-tile-desc">Trzy suplementy z realnymi dowodami naukowymi i długa lista tych, na które wydajesz pieniądze bez efektu.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="cut-agresywny-vs-umiarkowany" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="odchudzanie" href="cut-agresywny-vs-umiarkowany" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚖️</span>
                         <span class="poradnik-hub-tile-title">Cut agresywny vs umiarkowany — który wybrać i kiedy</span>
                         <span class="poradnik-hub-tile-desc">Tempo, ryzyko utraty mięśni i adherence — porównanie dwóch strategii redukcji na liczbach, nie na opiniach z forum.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="budowanie-miesni-minimalny-plan" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="cwiczenia" href="budowanie-miesni-minimalny-plan" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏋️</span>
                         <span class="poradnik-hub-tile-title">Minimalny skuteczny plan na budowanie mięśni (3–4 dni)</span>
                         <span class="poradnik-hub-tile-desc">Ile serii realnie potrzeba, dlaczego więcej nie znaczy lepiej i konkretny plan oparty na ćwiczeniach wielostawowych.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="neat-kroki-wiecej-niz-silownia" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="cwiczenia" href="neat-kroki-wiecej-niz-silownia" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🚶</span>
                         <span class="poradnik-hub-tile-title">NEAT i kroki — czemu biją dodatkowe cardio na siłowni</span>
                         <span class="poradnik-hub-tile-desc">8–12 tysięcy kroków dziennie potrafi zrobić więcej dla wagi niż kolejne 30 minut na orbitreku.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="ile-serii-i-powtorzen-na-mase" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="cwiczenia" href="ile-serii-i-powtorzen-na-mase" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏋️</span>
                         <span class="poradnik-hub-tile-title">Ile serii i powtórzeń na masę?</span>
                         <span class="poradnik-hub-tile-desc">Konkretne zakresy pod hipertrofię i siłę — plus ile jest już bezsensowną objętością.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="refeed-i-diet-break" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="odchudzanie" href="refeed-i-diet-break" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍽️</span>
                         <span class="poradnik-hub-tile-title">Refeed i diet break — kiedy i na jak długo?</span>
                         <span class="poradnik-hub-tile-desc">Podniesienie kalorii bez wymówki do obżarstwa: glikogen, głowa i realny czas trwania.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="tracking-kalorii-bez-obsesji" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="odchudzanie" href="tracking-kalorii-bez-obsesji" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚖️</span>
                         <span class="poradnik-hub-tile-title">Tracking kalorii bez obsesji</span>
                         <span class="poradnik-hub-tile-desc">Waż jedzenie dwa tygodnie, potem szacuj — i co liczyć już do końca życia.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="utrata-miesni-na-redukcji" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="cwiczenia" href="utrata-miesni-na-redukcji" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">💪</span>
                         <span class="poradnik-hub-tile-title">Jak nie tracić mięśni na redukcji?</span>
                         <span class="poradnik-hub-tile-desc">Białko, ciężary, wielkość deficytu i sen — cztery rzeczy, które realnie chronią mięśnie.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="przedtreningowka-czy-wystarczy-kawa" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="cwiczenia" href="przedtreningowka-czy-wystarczy-kawa" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">☕</span>
                         <span class="poradnik-hub-tile-title">Przedtreningówka czy wystarczy kawa?</span>
                         <span class="poradnik-hub-tile-desc">Marketing suplementów PWO kontra kawa i węglowodany — co realnie daje efekt.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="cheat-meal-czy-rekompensata" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="odchudzanie" href="cheat-meal-czy-rekompensata" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍕</span>
                         <span class="poradnik-hub-tile-title">Cheat meal czy rekompensata kaloryczna?</span>
                         <span class="poradnik-hub-tile-desc">Dlaczego „dzień oszustwa” bez limitu rozwala tydzień deficytu i jak zjeść pizza bez resetowania efektów.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="dlaczego-waga-skacze-o-2kg" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="odchudzanie" href="dlaczego-waga-skacze-o-2kg" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">📊</span>
                         <span class="poradnik-hub-tile-title">Dlaczego waga skacze o 1–2 kg z dnia na dzień</span>
                         <span class="poradnik-hub-tile-desc">Sól, węgle, trening, cykl, alkohol — co realnie zmienia odczyt, a co jest tłuszczem.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="bialko-przed-snem-czy-warto" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="bialko" href="bialko-przed-snem-czy-warto" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🌙</span>
                         <span class="poradnik-hub-tile-title">Białko przed snem — czy warto?</span>
                         <span class="poradnik-hub-tile-desc">Kazeina, twaróg na noc i mit „nie jedz po 18”. Co mówi praktyka przy masie i redukcji.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="kobiety-redukcja-bez-bzdury" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="odchudzanie" href="kobiety-redukcja-bez-bzdury" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">♀️</span>
                         <span class="poradnik-hub-tile-title">Redukcja u kobiet — bez bzdury i bez infantylizowania</span>
                         <span class="poradnik-hub-tile-desc">Cykl, retencja wody, deficyt, siła. Te same prawa fizyki, inne wahania odczytów — konkretnie.</span>
                     </a>
-                    <a class="poradnik-hub-tile" href="bulk-brudny-vs-czysty" role="listitem">
+                    <a class="poradnik-hub-tile" data-category="odchudzanie" href="bulk-brudny-vs-czysty" role="listitem">
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍔</span>
                         <span class="poradnik-hub-tile-title">Bulk brudny vs czysty — co się opłaca</span>
                         <span class="poradnik-hub-tile-desc">+500 kcal z śmieci vs mała nadwyżka. Ile tłuszczu dokładasz do mięśni i jak długo potem tniesz.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="sertralina-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">💊</span>
+                        <span class="poradnik-hub-tile-title">Sertralina przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">Najczęstszy antydepresant z grupy SSRI. Czy utrudnia utratę wagi?</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="escitalopram-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🌅</span>
+                        <span class="poradnik-hub-tile-title">Escitalopram przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">SSRI o łagodnym profilu apetytu. Dlaczego rzadko psuje redukcję?</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="fluoksetyna-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🦋</span>
+                        <span class="poradnik-hub-tile-title">Fluoksetyna przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">SSRI, który najczęściej zmniejsza apetyt. Co z tym zrobić na redukcji?</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="citalopram-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🌊</span>
+                        <span class="poradnik-hub-tile-title">Citalopram przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">Starszy SSRI. Czy wpływa na wagę i apetyt? Co warto wiedzieć przed dietą.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="paroksetyna-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚖️</span>
+                        <span class="poradnik-hub-tile-title">Paroksetyna przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">SSRI, który częściej niż inne dodaje kilogramy. Jak to ograć?</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="wenlafaksyna-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⛰️</span>
+                        <span class="poradnik-hub-tile-title">Wenlafaksyna przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">SNRI na depresję i lęk. Często zmniejsza apetyt — jak to wykorzystać.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="duloksetyna-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧘</span>
+                        <span class="poradnik-hub-tile-title">Duloksetyna przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">SNRI stosowany też w bólu przewlekłym. Wpływ na apetyt i wagę.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="mirtazapina-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">😴</span>
+                        <span class="poradnik-hub-tile-title">Mirtazapina przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">Lek, który realnie zwiększa apetyt. Jak nie przytyć na mirtazapinie?</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="bupropion-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚡</span>
+                        <span class="poradnik-hub-tile-title">Bupropion przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">Lek, który bywa "sprzymierzeńcem" redukcji — mniejszy apetyt, więcej energii.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="kwetiapina-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🌙</span>
+                        <span class="poradnik-hub-tile-title">Kwetiapina przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">Neuroleptyk, który realnie zwiększa apetyt. Jak kontrolować wagę na kwetiapinie?</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="olanzapina-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍽️</span>
+                        <span class="poradnik-hub-tile-title">Olanzapina przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">Lek o największym potencjale tycia. Jak nie przytyć na olanzapinie?</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="rysperydon-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🎯</span>
+                        <span class="poradnik-hub-tile-title">Rysperydon przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">Neuroleptyk o umiarkowanym wpływie na wagę. Jak zbilansować dietę?</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="aripiprazol-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧩</span>
+                        <span class="poradnik-hub-tile-title">Aripiprazol przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">Neuroleptyk o neutralnym profilu wagowym. Dobra wiadomość dla redukcji.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="lamotrygina-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">📐</span>
+                        <span class="poradnik-hub-tile-title">Lamotrygina przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">Stabilizator nastroju o neutralnym wpływie na wagę. Idealny do redukcji?</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="lit-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧂</span>
+                        <span class="poradnik-hub-tile-title">Lit przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">Stabilizator nastroju, który potrafi dodać kilogramy. Jak to kontrolować?</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="metylofenidat-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⚡</span>
+                        <span class="poradnik-hub-tile-title">Metylofenidat przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">Lek na ADHD, który tłumi apetyt. Jak nie wpaść w głodówkę?</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="atomoksetyna-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🧠</span>
+                        <span class="poradnik-hub-tile-title">Atomoksetyna przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">Niestymulujący lek na ADHD. Wpływ na apetyt i wagę.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="hydroksyzyna-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">😌</span>
+                        <span class="poradnik-hub-tile-title">Hydroksyzyna przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">Lek uspokajający/na alergię. Czy wpływa na wagę?</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="diazepam-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🛋️</span>
+                        <span class="poradnik-hub-tile-title">Diazepam przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">Benzodiazepina — wpływ na apetyt, sen i wagę. Co warto wiedzieć.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="leki" href="klonazepam-przy-odchudzaniu" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🌫️</span>
+                        <span class="poradnik-hub-tile-title">Klonazepam przy odchudzaniu</span>
+                        <span class="poradnik-hub-tile-desc">Benzodiazepina o długim działaniu. Wpływ na wagę i praktyczne zasady.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="bialko" href="bialko-po-treningu-ile-faktycznie" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🥩</span>
+                        <span class="poradnik-hub-tile-title">Białko po treningu — ile faktycznie potrzebujesz</span>
+                        <span class="poradnik-hub-tile-desc">Czy "okno anaboliczne" istnieje? Ile białka po treningu ma sens.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="bialko" href="bialko-na-mase-ile-dokladnie" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏗️</span>
+                        <span class="poradnik-hub-tile-title">Białko na masę — ile dokładnie</span>
+                        <span class="poradnik-hub-tile-desc">Budowanie mięśni a białko: ile gramów na kg, kiedy więcej nie pomaga.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="bialko" href="bialko-roslinne-vs-zwierzece" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🌱</span>
+                        <span class="poradnik-hub-tile-title">Białko roślinne vs zwierzęce — co wybrać</span>
+                        <span class="poradnik-hub-tile-desc">Czy roślinne białko jest gorsze? Jak kompletować aminokwasy bez mięsa.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="odzywianie" href="jablko-na-diecie-mit-czy-fakty" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍎</span>
+                        <span class="poradnik-hub-tile-title">Jabłko na diecie — mit czy faktycznie działa?</span>
+                        <span class="poradnik-hub-tile-desc">Owoce a odchudzanie: ile cukru, ile sytości, co wybierać.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="odzywianie" href="jedzenie-w-nocy-czy-mozna" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🥘</span>
+                        <span class="poradnik-hub-tile-title">Czy można jeść w nocy?</span>
+                        <span class="poradnik-hub-tile-desc">Mit "nie jedz po 18" — co na to nauka i praktyka sportowca.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="odchudzanie" href="dlaczego-waga-stoi-pomimo-diety" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🚫</span>
+                        <span class="poradnik-hub-tile-title">Dlaczego waga stoi, mimo że jesteś w deficycie?</span>
+                        <span class="poradnik-hub-tile-desc">Woda, zaparcia, nowy trening — zanim zmienisz dietę, sprawdź te 5 rzeczy.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="odchudzanie" href="spacerowanie-a-skuteczne-odchudzanie" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🚶</span>
+                        <span class="poradnik-hub-tile-title">Czy spacery wystarczą, żeby schudnąć?</span>
+                        <span class="poradnik-hub-tile-desc">NEAT, kroki i codzienny ruch — ile realnie dają na redukcji.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="odchudzanie" href="co-zamiast-slodyczy-strategia" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🍫</span>
+                        <span class="poradnik-hub-tile-title">Co zamiast słodyczy — konkretna strategia na "coś słodkiego"</span>
+                        <span class="poradnik-hub-tile-desc">Jak zaspokoić ochotę na słodkie, nie walcząc z nią 24/7.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="cwiczenia" href="ile-treningow-tygodniowo-wystarczy" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏋️</span>
+                        <span class="poradnik-hub-tile-title">Ile treningów tygodniowo wystarczy?</span>
+                        <span class="poradnik-hub-tile-desc">2, 3 czy 5 treningów? Co realnie buduje formę przy ograniczonym czasie.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="cwiczenia" href="trening-rano-czy-wieczorem" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">⏰</span>
+                        <span class="poradnik-hub-tile-title">Trening rano czy wieczorem — czy pora ma znaczenie?</span>
+                        <span class="poradnik-hub-tile-desc">Wydolność, siła, sen i głód — co naprawdę zmienia pora treningu.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="cwiczenia" href="kardio-vs-sila-na-redukcji-2" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">🏃</span>
+                        <span class="poradnik-hub-tile-title">Cardio czy siła na redukcji — kolejność i proporcje</span>
+                        <span class="poradnik-hub-tile-desc">Co robić najpierw na treningu, ile cardio nie zjada mięśni.</span>
+                    </a>
+<a class="poradnik-hub-tile" data-category="odzywianie" href="od-czego-zaczac-odchudzanie" role="listitem">
+                        <span class="poradnik-hub-tile-emoji" aria-hidden="true">📉</span>
+                        <span class="poradnik-hub-tile-title">Od czego zacząć odchudzanie — kalorie czy jakość?</span>
+                        <span class="poradnik-hub-tile-desc">Co ma pierwszeństwo na starcie redukcji: liczyć czy jeść czysto?</span>
                     </a>
                 </div>
 
                 <div id="articlesEmptyState" class="articles-empty" hidden>
                     Brak artykułów pasujących do wyszukiwania.
+
                 </div>
 
                 <div class="info-callout">
@@ -417,6 +581,46 @@
             padding: 16px 14px 14px;
         }
     }
+
+    .articles-categories {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 16px;
+    }
+
+    .articles-cat-btn {
+        padding: 7px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(148, 163, 184, 0.25);
+        background: transparent;
+        color: inherit;
+        font: inherit;
+        font-size: 0.88rem;
+        cursor: pointer;
+        transition: all 0.18s ease;
+    }
+
+    .articles-cat-btn:hover,
+    .articles-cat-btn:focus-visible {
+        border-color: rgba(148, 163, 184, 0.45);
+        background: rgba(255, 255, 255, 0.04);
+    }
+
+    .articles-cat-btn.is-active {
+        background: var(--primary, #e11d48);
+        border-color: var(--primary, #e11d48);
+        color: #fff;
+        box-shadow: 0 8px 18px rgba(225, 29, 72, 0.22);
+    }
+
+    @media (max-width: 767px) {
+        .articles-categories {
+            justify-content: flex-start;
+        }
+    }
 </style>
 <script>
 (function () {
@@ -448,9 +652,8 @@
         })
         .catch(function () {});
 })();
-</script>
-    <script>
-    // Client-side pagination for artykuly list with live search filtering
+</script>    <script>
+    // Client-side pagination + category filter + live search for artykuly list
     window.applyArticlesPagination = function () {
         const list = document.getElementById('artykulyList');
         if (!list) return;
@@ -460,11 +663,14 @@
         const searchInput = document.getElementById('articlesSearch');
         const emptyState = document.getElementById('articlesEmptyState');
         if (!paginationRoot || !searchInput) return;
+        let activeCategory = 'all';
 
         function getFilteredItems() {
             const query = searchInput.value.trim().toLowerCase();
-            if (!query) return items;
             return items.filter(item => {
+                const cat = item.getAttribute('data-category') || 'inne';
+                if (activeCategory !== 'all' && cat !== activeCategory) return false;
+                if (!query) return true;
                 const text = (item.textContent || '').toLowerCase();
                 return text.includes(query);
             });
@@ -498,6 +704,18 @@
         }
 
         searchInput.addEventListener('input', () => renderPage(1));
+
+        const catBar = document.getElementById('articlesCategories');
+        if (catBar) {
+            catBar.querySelectorAll('.articles-cat-btn').forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    activeCategory = btn.getAttribute('data-cat') || 'all';
+                    catBar.querySelectorAll('.articles-cat-btn').forEach((b) => b.classList.toggle('is-active', b === btn));
+                    renderPage(1);
+                });
+            });
+        }
+
         renderPage(1);
     };
 

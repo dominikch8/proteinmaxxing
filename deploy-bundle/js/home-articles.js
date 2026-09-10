@@ -250,5 +250,197 @@ window.HOME_ARTICLES = [
     "emoji": "🍔",
     "title": "Bulk brudny vs czysty — co się opłaca",
     "subtitle": "+500 kcal z śmieci vs mała nadwyżka. Ile tłuszczu dokładasz do mięśni i jak długo potem tniesz."
+  },
+  {
+    "slug": "sertralina-przy-odchudzaniu",
+    "emoji": "💊",
+    "title": "Sertralina przy odchudzaniu",
+    "subtitle": "Najczęstszy antydepresant z grupy SSRI. Czy utrudnia utratę wagi?"
+  },
+  {
+    "slug": "escitalopram-przy-odchudzaniu",
+    "emoji": "🌅",
+    "title": "Escitalopram przy odchudzaniu",
+    "subtitle": "SSRI o łagodnym profilu apetytu. Dlaczego rzadko psuje redukcję?"
+  },
+  {
+    "slug": "fluoksetyna-przy-odchudzaniu",
+    "emoji": "🦋",
+    "title": "Fluoksetyna przy odchudzaniu",
+    "subtitle": "SSRI, który najczęściej zmniejsza apetyt. Co z tym zrobić na redukcji?"
+  },
+  {
+    "slug": "citalopram-przy-odchudzaniu",
+    "emoji": "🌊",
+    "title": "Citalopram przy odchudzaniu",
+    "subtitle": "Starszy SSRI. Czy wpływa na wagę i apetyt? Co warto wiedzieć przed dietą."
+  },
+  {
+    "slug": "paroksetyna-przy-odchudzaniu",
+    "emoji": "⚖️",
+    "title": "Paroksetyna przy odchudzaniu",
+    "subtitle": "SSRI, który częściej niż inne dodaje kilogramy. Jak to ograć?"
+  },
+  {
+    "slug": "wenlafaksyna-przy-odchudzaniu",
+    "emoji": "⛰️",
+    "title": "Wenlafaksyna przy odchudzaniu",
+    "subtitle": "SNRI na depresję i lęk. Często zmniejsza apetyt — jak to wykorzystać."
+  },
+  {
+    "slug": "duloksetyna-przy-odchudzaniu",
+    "emoji": "🧘",
+    "title": "Duloksetyna przy odchudzaniu",
+    "subtitle": "SNRI stosowany też w bólu przewlekłym. Wpływ na apetyt i wagę."
+  },
+  {
+    "slug": "mirtazapina-przy-odchudzaniu",
+    "emoji": "😴",
+    "title": "Mirtazapina przy odchudzaniu",
+    "subtitle": "Lek, który realnie zwiększa apetyt. Jak nie przytyć na mirtazapinie?"
+  },
+  {
+    "slug": "bupropion-przy-odchudzaniu",
+    "emoji": "⚡",
+    "title": "Bupropion przy odchudzaniu",
+    "subtitle": "Lek, który bywa \"sprzymierzeńcem\" redukcji — mniejszy apetyt, więcej energii."
+  },
+  {
+    "slug": "kwetiapina-przy-odchudzaniu",
+    "emoji": "🌙",
+    "title": "Kwetiapina przy odchudzaniu",
+    "subtitle": "Neuroleptyk, który realnie zwiększa apetyt. Jak kontrolować wagę na kwetiapinie?"
+  },
+  {
+    "slug": "olanzapina-przy-odchudzaniu",
+    "emoji": "🍽️",
+    "title": "Olanzapina przy odchudzaniu",
+    "subtitle": "Lek o największym potencjale tycia. Jak nie przytyć na olanzapinie?"
+  },
+  {
+    "slug": "rysperydon-przy-odchudzaniu",
+    "emoji": "🎯",
+    "title": "Rysperydon przy odchudzaniu",
+    "subtitle": "Neuroleptyk o umiarkowanym wpływie na wagę. Jak zbilansować dietę?"
+  },
+  {
+    "slug": "aripiprazol-przy-odchudzaniu",
+    "emoji": "🧩",
+    "title": "Aripiprazol przy odchudzaniu",
+    "subtitle": "Neuroleptyk o neutralnym profilu wagowym. Dobra wiadomość dla redukcji."
+  },
+  {
+    "slug": "lamotrygina-przy-odchudzaniu",
+    "emoji": "📐",
+    "title": "Lamotrygina przy odchudzaniu",
+    "subtitle": "Stabilizator nastroju o neutralnym wpływie na wagę. Idealny do redukcji?"
+  },
+  {
+    "slug": "lit-przy-odchudzaniu",
+    "emoji": "🧂",
+    "title": "Lit przy odchudzaniu",
+    "subtitle": "Stabilizator nastroju, który potrafi dodać kilogramy. Jak to kontrolować?"
+  },
+  {
+    "slug": "metylofenidat-przy-odchudzaniu",
+    "emoji": "⚡",
+    "title": "Metylofenidat przy odchudzaniu",
+    "subtitle": "Lek na ADHD, który tłumi apetyt. Jak nie wpaść w głodówkę?"
+  },
+  {
+    "slug": "atomoksetyna-przy-odchudzaniu",
+    "emoji": "🧠",
+    "title": "Atomoksetyna przy odchudzaniu",
+    "subtitle": "Niestymulujący lek na ADHD. Wpływ na apetyt i wagę."
+  },
+  {
+    "slug": "hydroksyzyna-przy-odchudzaniu",
+    "emoji": "😌",
+    "title": "Hydroksyzyna przy odchudzaniu",
+    "subtitle": "Lek uspokajający/na alergię. Czy wpływa na wagę?"
+  },
+  {
+    "slug": "diazepam-przy-odchudzaniu",
+    "emoji": "🛋️",
+    "title": "Diazepam przy odchudzaniu",
+    "subtitle": "Benzodiazepina — wpływ na apetyt, sen i wagę. Co warto wiedzieć."
+  },
+  {
+    "slug": "klonazepam-przy-odchudzaniu",
+    "emoji": "🌫️",
+    "title": "Klonazepam przy odchudzaniu",
+    "subtitle": "Benzodiazepina o długim działaniu. Wpływ na wagę i praktyczne zasady."
+  },
+  {
+    "slug": "bialko-po-treningu-ile-faktycznie",
+    "emoji": "🥩",
+    "title": "Białko po treningu — ile faktycznie potrzebujesz",
+    "subtitle": "Czy \"okno anaboliczne\" istnieje? Ile białka po treningu ma sens."
+  },
+  {
+    "slug": "bialko-na-mase-ile-dokladnie",
+    "emoji": "🏗️",
+    "title": "Białko na masę — ile dokładnie",
+    "subtitle": "Budowanie mięśni a białko: ile gramów na kg, kiedy więcej nie pomaga."
+  },
+  {
+    "slug": "bialko-roslinne-vs-zwierzece",
+    "emoji": "🌱",
+    "title": "Białko roślinne vs zwierzęce — co wybrać",
+    "subtitle": "Czy roślinne białko jest gorsze? Jak kompletować aminokwasy bez mięsa."
+  },
+  {
+    "slug": "jablko-na-diecie-mit-czy-fakty",
+    "emoji": "🍎",
+    "title": "Jabłko na diecie — mit czy faktycznie działa?",
+    "subtitle": "Owoce a odchudzanie: ile cukru, ile sytości, co wybierać."
+  },
+  {
+    "slug": "jedzenie-w-nocy-czy-mozna",
+    "emoji": "🥘",
+    "title": "Czy można jeść w nocy?",
+    "subtitle": "Mit \"nie jedz po 18\" — co na to nauka i praktyka sportowca."
+  },
+  {
+    "slug": "dlaczego-waga-stoi-pomimo-diety",
+    "emoji": "🚫",
+    "title": "Dlaczego waga stoi, mimo że jesteś w deficycie?",
+    "subtitle": "Woda, zaparcia, nowy trening — zanim zmienisz dietę, sprawdź te 5 rzeczy."
+  },
+  {
+    "slug": "spacerowanie-a-skuteczne-odchudzanie",
+    "emoji": "🚶",
+    "title": "Czy spacery wystarczą, żeby schudnąć?",
+    "subtitle": "NEAT, kroki i codzienny ruch — ile realnie dają na redukcji."
+  },
+  {
+    "slug": "co-zamiast-slodyczy-strategia",
+    "emoji": "🍫",
+    "title": "Co zamiast słodyczy — konkretna strategia na \"coś słodkiego\"",
+    "subtitle": "Jak zaspokoić ochotę na słodkie, nie walcząc z nią 24/7."
+  },
+  {
+    "slug": "ile-treningow-tygodniowo-wystarczy",
+    "emoji": "🏋️",
+    "title": "Ile treningów tygodniowo wystarczy?",
+    "subtitle": "2, 3 czy 5 treningów? Co realnie buduje formę przy ograniczonym czasie."
+  },
+  {
+    "slug": "trening-rano-czy-wieczorem",
+    "emoji": "⏰",
+    "title": "Trening rano czy wieczorem — czy pora ma znaczenie?",
+    "subtitle": "Wydolność, siła, sen i głód — co naprawdę zmienia pora treningu."
+  },
+  {
+    "slug": "kardio-vs-sila-na-redukcji-2",
+    "emoji": "🏃",
+    "title": "Cardio czy siła na redukcji — kolejność i proporcje",
+    "subtitle": "Co robić najpierw na treningu, ile cardio nie zjada mięśni."
+  },
+  {
+    "slug": "od-czego-zaczac-odchudzanie",
+    "emoji": "📉",
+    "title": "Od czego zacząć odchudzanie — kalorie czy jakość?",
+    "subtitle": "Co ma pierwszeństwo na starcie redukcji: liczyć czy jeść czysto?"
   }
 ];
