@@ -36,6 +36,10 @@ function roundPricePer100g(pln) {
 }
 
 function pricePerKgFromRetail(p) {
+    // Cena zweryfikowana per produkt (scripts/new-products-200.json → pricePerKgRetail)
+    if (typeof p.pricePerKgRetail === 'number' && p.pricePerKgRetail > 0) {
+        return Math.round(p.pricePerKgRetail * 100) / 100;
+    }
     const pkg = (retail.standardPackages || []).find((x) => x.nameMatch === p.name);
     if (pkg && pkg.netGrams && pkg.pricePln) {
         return Math.round((pkg.pricePln / pkg.netGrams) * 100000) / 100;
@@ -137,8 +141,6 @@ for (const p of products) {
         p.pricePer100gProtein = null;
         skippedLowProtein++;
     }
-
-    delete p.pricePerKgRetail;
 }
 
 fs.writeFileSync(rawPath, `const productsDatabaseRaw = ${JSON.stringify(products)};\n`, 'utf8');
