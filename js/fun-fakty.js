@@ -1,5 +1,5 @@
 (function () {
-    let FUN_FACTS = [
+    let BUILTIN_FACTS = [
         { emoji: '🥩', tag: 'Białko', text: 'Ludzkie ciało składa się z około 20% białka — to drugi najczęstszy składnik po wodzie.' },
         { emoji: '🧬', tag: 'Białko', text: 'Genom człowieka koduje ponad 20 000 różnych białek, z których każde pełni inną funkcję.' },
         { emoji: '🥚', tag: 'Białko', text: 'Białko jaja kurzego ma wskaźnik PDCAAS 1,0 — uznawany za wzorzec jakości białka w diecie.' },
@@ -130,33 +130,50 @@
         { emoji: '🧬', tag: 'Ciało', text: 'Insulina to hormon magazynujący — po posiłku węglowodanowym pomaga transportować glukozę do mięśni i wątroby.' }
     ];
 
-    const STORAGE_KEY = 'funfactBag_v2';
+    // Master pool (all categories) + active, category-filtered pool.
+    let FULL_FACTS = BUILTIN_FACTS;
+    let FUN_FACTS = BUILTIN_FACTS;
+    let activeCat = 'all';
+    const ALL_CAT = 'all';
+
+    const STORAGE_KEY = 'funfactBag_v3';
+    const CAT_KEY = 'funfactCat_v1';
     const textEl = document.getElementById('funfactText');
     const emojiEl = document.getElementById('funfactEmoji');
     const tagEl = document.getElementById('funfactTag');
     const cardEl = document.getElementById('funfactTile');
     const btnEl = document.getElementById('funfactBtn');
     const copyBtnEl = document.getElementById('funfactCopyBtn');
-    const counterEl = document.getElementById('funfactCounter');
     const progressEl = document.getElementById('funfactProgress');
+    const counterEl = document.getElementById('funfactCounter');
+    const catsEl = document.getElementById('funfactCats');
 
     if (!textEl || !btnEl) return;
 
-    function loadBag() {
+    function readStored() {
         try {
             const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
-            if (Array.isArray(raw)) {
-                return raw.filter(function (i) {
-                    return Number.isInteger(i) && i >= 0 && i < FUN_FACTS.length;
-                });
-            }
+            if (raw && typeof raw === 'object' && !Array.isArray(raw)) return raw;
+        } catch (e) { /* ignore */ }
+        return null;
+    }
+
+    function readStoredCat() {
+        try {
+            return localStorage.getItem(CAT_KEY);
         } catch (e) { /* ignore */ }
         return null;
     }
 
     function saveBag(bag) {
         try {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(bag));
+            localStorage.setItem(STORAGE_KEY, JSON.stringify({ cat: activeCat, bag: bag }));
+        } catch (e) { /* ignore */ }
+    }
+
+    function saveCat(cat) {
+        try {
+            localStorage.setItem(CAT_KEY, cat);
         } catch (e) { /* ignore */ }
     }
 
@@ -171,22 +188,48 @@
         return copy;
     }
 
-    let bag = loadBag();
-    if (!bag || !bag.length) {
-        bag = shuffle(FUN_FACTS.map(function (_, i) { return i; }));
-    }
-
+    let bag = [];
     let seen = 0;
     let currentFact = null;
     let rolling = false;
 
+    function categoriesOf(pool) {
+        const usedTags = {};
+        const out = [];
+        pool.forEach(function (f) {
+            if (f && f.tag && !usedTags[f.tag]) {
+                usedTags[f.tag] = true;
+                out.push(f.tag);
+            }
+        });
+        return out;
+    }
+
+    function renderCats() {
+        if (!catsEl) return;
+        const items = [{ cat: ALL_CAT, label: 'Wszystkie' }].concat(
+            categoriesOf(FULL_FACTS).map(function (c) { return { cat: c, label: c }; })
+        );
+        catsEl.textContent = '';
+        items.forEach(function (item) {
+            const chip = document.createElement('button');
+            chip.type = 'button';
+            chip.className = 'funfact-cat' + (item.cat === activeCat ? ' is-active' : '');
+            chip.setAttribute('data-cat', item.cat);
+            chip.setAttribute('aria-pressed', item.cat === activeCat ? 'true' : 'false');
+            chip.textContent = item.label;
+            chip.addEventListener('click', function () { selectCat(item.cat); });
+            catsEl.appendChild(chip);
+        });
+    }
+
     function updateMeta() {
-        const remaining = bag.length;
         const total = FUN_FACTS.length;
-        const pct = Math.min(100, Math.round((seen / total) * 100));
+        const pct = total ? Math.min(100, Math.round((seen / total) * 100)) : 0;
         if (progressEl) progressEl.style.width = pct + '%';
         if (counterEl) {
-            counterEl.textContent = 'Wylosowano: ' + seen + ' · w puli: ' + remaining + ' z ' + total;
+            const catLabel = activeCat === ALL_CAT ? 'wszystkie kategorie' : activeCat;
+            counterEl.textContent = 'Kategoria: ' + catLabel + ' · wylosowano ' + seen + ' z ' + total;
         }
     }
 
@@ -255,7 +298,6 @@
         bag = shuffle(FUN_FACTS.map(function (_, i) { return i; }));
         seen = 0;
         currentFact = null;
-        if (counterEl) counterEl.textContent = '';
         if (progressEl) progressEl.style.width = '0%';
         updateMeta();
         if (!keepBag) {

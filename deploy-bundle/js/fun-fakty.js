@@ -137,7 +137,6 @@
     const cardEl = document.getElementById('funfactTile');
     const btnEl = document.getElementById('funfactBtn');
     const copyBtnEl = document.getElementById('funfactCopyBtn');
-    const counterEl = document.getElementById('funfactCounter');
     const progressEl = document.getElementById('funfactProgress');
 
     if (!textEl || !btnEl) return;
@@ -181,13 +180,9 @@
     let rolling = false;
 
     function updateMeta() {
-        const remaining = bag.length;
         const total = FUN_FACTS.length;
         const pct = Math.min(100, Math.round((seen / total) * 100));
         if (progressEl) progressEl.style.width = pct + '%';
-        if (counterEl) {
-            counterEl.textContent = 'Wylosowano: ' + seen + ' · w puli: ' + remaining + ' z ' + total;
-        }
     }
 
     function applyFact(fact) {
@@ -255,7 +250,6 @@
         bag = shuffle(FUN_FACTS.map(function (_, i) { return i; }));
         seen = 0;
         currentFact = null;
-        if (counterEl) counterEl.textContent = '';
         if (progressEl) progressEl.style.width = '0%';
         updateMeta();
         if (!keepBag) {
