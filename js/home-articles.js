@@ -442,5 +442,65 @@ window.HOME_ARTICLES = [
     "emoji": "📉",
     "title": "Od czego zacząć odchudzanie — kalorie czy jakość?",
     "subtitle": "Co ma pierwszeństwo na starcie redukcji: liczyć czy jeść czysto?"
+  },
+  {
+    "slug": "jak-czytac-etykiety-produktow-spozywczych",
+    "emoji": "🧾",
+    "title": "Jak czytać etykiety produktów spożywczych",
+    "subtitle": "Per 100 g vs porcja, ukryty cukier i chwyty marketingowe — jak szybko ocenić produkt."
+  },
+  {
+    "slug": "ile-posilkow-dziennie-ma-znaczenie",
+    "emoji": "🍽️",
+    "title": "Ile posiłków dziennie — czy liczba ma znaczenie?",
+    "subtitle": "3 duże czy 6 małych? Co naprawdę wpływa na metabolizm, sytość i apetyt."
+  },
+  {
+    "slug": "jaja-w-diecie-sportowca",
+    "emoji": "🥚",
+    "title": "Jaja w diecie sportowca — ile i czy cholesterol szkodzi?",
+    "subtitle": "Najtańsze pełnowartościowe białko: ile jaj dziennie i co z żółtkiem."
+  },
+  {
+    "slug": "ryby-i-kwasy-omega-3",
+    "emoji": "🐟",
+    "title": "Ryby i kwasy omega-3 — ile jeść i po co",
+    "subtitle": "Które ryby mają najwięcej omega-3 i kiedy suplementacja ma sens."
+  },
+  {
+    "slug": "odzywki-bialkowe-a-trawienie-laktoza",
+    "emoji": "🥛",
+    "title": "Odżywki białkowe a trawienie — WPC, WPI i laktoza",
+    "subtitle": "Wzdęcia po odżywce? Różnica między koncentratem, izolatem i co z laktozą."
+  },
+  {
+    "slug": "jedzenie-na-miescie-na-diecie",
+    "emoji": "🍔",
+    "title": "Jedzenie na mieście na diecie — jak zamawiać mądrze",
+    "subtitle": "Restauracje i fast food bez sabotowania deficytu — konkretne wybory."
+  },
+  {
+    "slug": "cukier-czy-slodziki-co-wybrac",
+    "emoji": "🍬",
+    "title": "Cukier czy słodziki — co wybrać?",
+    "subtitle": "Aspartam, erytrytol, ksylitol i stewia — bezpieczeństwo, apetyt i deficyt."
+  },
+  {
+    "slug": "przerwa-miedzy-seria-ile-odpoczywac",
+    "emoji": "⏱️",
+    "title": "Przerwa między serią — ile odpoczywać?",
+    "subtitle": "60 sekund czy 3 minuty? Wpływ odpoczynku na hipertrofię i siłę."
+  },
+  {
+    "slug": "trening-na-czczo-czy-warto",
+    "emoji": "🌅",
+    "title": "Trening na czczo — czy warto na redukcji?",
+    "subtitle": "Czy ćwiczenie przed jedzeniem spala więcej tłuszczu i czy kosztuje mięśnie."
+  },
+  {
+    "slug": "mikrobiom-jelitowy-a-odchudzanie",
+    "emoji": "🦠",
+    "title": "Mikrobiom i jelita a odchudzanie",
+    "subtitle": "Co bakterie jelitowe naprawdę zmieniają w wadze i apetycie."
   }
 ];
