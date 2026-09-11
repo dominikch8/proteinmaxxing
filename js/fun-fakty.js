@@ -146,6 +146,7 @@
     const copyBtnEl = document.getElementById('funfactCopyBtn');
     const progressEl = document.getElementById('funfactProgress');
     const catsEl = document.getElementById('funfactCats');
+    const counterEl = document.getElementById('funfactCounter');
 
     if (!textEl || !btnEl) return;
 
@@ -206,26 +207,57 @@
 
     function renderCats() {
         if (!catsEl) return;
-        const items = [{ cat: ALL_CAT, label: 'Wszystkie' }].concat(
-            categoriesOf(FULL_FACTS).map(function (c) { return { cat: c, label: c }; })
-        );
         catsEl.textContent = '';
-        items.forEach(function (item) {
+
+        // Featured "Wszystkie" chip — sits on its own row above the rest.
+        const allChip = document.createElement('button');
+        allChip.type = 'button';
+        allChip.className = 'funfact-cat funfact-cat--all' + (activeCat === ALL_CAT ? ' is-active' : '');
+        allChip.setAttribute('data-cat', ALL_CAT);
+        allChip.setAttribute('aria-pressed', activeCat === ALL_CAT ? 'true' : 'false');
+
+        const star = document.createElement('span');
+        star.className = 'funfact-cat-star';
+        star.setAttribute('aria-hidden', 'true');
+        star.textContent = '✦';
+
+        const allLabel = document.createElement('span');
+        allLabel.textContent = 'Wszystkie';
+
+        const allCount = document.createElement('span');
+        allCount.className = 'funfact-cat-count';
+        allCount.textContent = String(FULL_FACTS.length);
+
+        allChip.appendChild(star);
+        allChip.appendChild(allLabel);
+        allChip.appendChild(allCount);
+        allChip.addEventListener('click', function () { selectCat(ALL_CAT); });
+        catsEl.appendChild(allChip);
+
+        // Remaining categories wrap below the featured chip.
+        const rest = document.createElement('div');
+        rest.className = 'funfact-cats-rest';
+        categoriesOf(FULL_FACTS).forEach(function (cat) {
             const chip = document.createElement('button');
             chip.type = 'button';
-            chip.className = 'funfact-cat' + (item.cat === activeCat ? ' is-active' : '');
-            chip.setAttribute('data-cat', item.cat);
-            chip.setAttribute('aria-pressed', item.cat === activeCat ? 'true' : 'false');
-            chip.textContent = item.label;
-            chip.addEventListener('click', function () { selectCat(item.cat); });
-            catsEl.appendChild(chip);
+            chip.className = 'funfact-cat' + (cat === activeCat ? ' is-active' : '');
+            chip.setAttribute('data-cat', cat);
+            chip.setAttribute('aria-pressed', cat === activeCat ? 'true' : 'false');
+            chip.textContent = cat;
+            chip.addEventListener('click', function () { selectCat(cat); });
+            rest.appendChild(chip);
         });
+        catsEl.appendChild(rest);
     }
 
     function updateMeta() {
         const total = FUN_FACTS.length;
         const pct = total ? Math.min(100, Math.round((seen / total) * 100)) : 0;
         if (progressEl) progressEl.style.width = pct + '%';
+        if (counterEl) {
+            const catLabel = activeCat === ALL_CAT ? 'wszystkie kategorie' : activeCat;
+            counterEl.textContent = 'Kategoria: ' + catLabel + ' · wylosowano ' + seen + ' z ' + total;
+        }
     }
 
     function applyFact(fact) {

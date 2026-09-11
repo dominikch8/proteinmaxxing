@@ -342,23 +342,45 @@
     box-shadow: 0 14px 36px rgba(37, 99, 235, 0.42), 0 0 32px var(--primary-glow);
 }
 
+/* Secondary action ("Kopiuj fakt") — deliberately tiny and low-key.
+   It must never compete with the main roll button, so it gets a smaller
+   pill shape, muted colour and no shadow until hovered/focused. */
 .funfact-btn--ghost {
+    padding: 5px 12px;
+    gap: 6px;
+    border-radius: 999px;
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1.4;
     border: 1px solid var(--border);
-    color: var(--text-dark);
-    background: var(--surface);
+    color: var(--text-muted);
+    background: transparent;
+    box-shadow: none;
+    opacity: 0.7;
 }
 
 [data-theme='dark'] .funfact-btn--ghost {
-    border-color: rgba(147, 197, 253, 0.28);
-    color: var(--accent-soft);
-    background: rgba(26, 35, 56, 0.7);
+    border-color: rgba(147, 197, 253, 0.2);
+    color: var(--text-muted);
+    background: transparent;
 }
 
 .funfact-btn--ghost:hover,
 .funfact-btn--ghost:focus-visible {
-    transform: translateY(-1px);
+    transform: none;
+    opacity: 1;
     border-color: var(--accent-soft);
+    color: var(--accent);
     background: var(--surface-hover);
+    box-shadow: none;
+}
+
+[data-theme='dark'] .funfact-btn--ghost:hover,
+[data-theme='dark'] .funfact-btn--ghost:focus-visible {
+    border-color: rgba(147, 197, 253, 0.5);
+    color: var(--accent-soft);
+    background: rgba(26, 35, 56, 0.6);
 }
 
 .funfact-btn-icon {
@@ -398,6 +420,14 @@
 }
 
 .funfact-cats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+}
+
+.funfact-cats-rest {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -453,6 +483,90 @@
     box-shadow: 0 0 20px rgba(37, 99, 235, 0.35);
 }
 
+/* Featured "Wszystkie" chip — own row, more prominent. */
+.funfact-cat--all {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 26px;
+    font-size: 0.98rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+    border: 1px solid rgba(37, 99, 235, 0.4);
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(128, 0, 0, 0.08));
+    box-shadow: 0 8px 22px rgba(37, 99, 235, 0.16);
+}
+
+.funfact-cat--all:hover {
+    color: var(--accent);
+    border-color: rgba(37, 99, 235, 0.62);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 26px rgba(37, 99, 235, 0.22);
+}
+
+.funfact-cat--all.is-active {
+    color: #fff;
+    border-color: transparent;
+    background: linear-gradient(135deg, var(--accent-soft), var(--primary));
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.34);
+}
+
+.funfact-cat-star {
+    font-size: 0.9em;
+    line-height: 1;
+    opacity: 0.85;
+}
+
+.funfact-cat-count {
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    background: rgba(37, 99, 235, 0.14);
+    color: inherit;
+}
+
+.funfact-cat--all.is-active .funfact-cat-count {
+    background: rgba(255, 255, 255, 0.24);
+}
+
+[data-theme='dark'] .funfact-cat--all {
+    color: var(--accent-soft);
+    border-color: rgba(147, 197, 253, 0.4);
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(128, 0, 0, 0.18));
+    box-shadow: 0 0 22px rgba(37, 99, 235, 0.2);
+}
+
+[data-theme='dark'] .funfact-cat--all:hover {
+    color: var(--accent-soft);
+    border-color: rgba(147, 197, 253, 0.62);
+}
+
+[data-theme='dark'] .funfact-cat--all.is-active {
+    color: #0b1020;
+    background: linear-gradient(135deg, var(--accent-hot), var(--accent-soft));
+    box-shadow: 0 0 26px rgba(37, 99, 235, 0.42);
+}
+
+[data-theme='dark'] .funfact-cat--all .funfact-cat-count {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.funfact-counter {
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--text-muted);
+}
+
+[data-theme='dark'] .funfact-counter {
+    color: var(--text-muted);
+}
+
+
 .fun-fakty-page .info-callout {
     margin-top: 32px;
 }
@@ -473,6 +587,12 @@
 
     .funfact-btn {
         width: 100%;
+    }
+
+    /* Keep the tiny secondary action small even when the primary button goes full-width. */
+    .funfact-btn--ghost {
+        width: auto;
+        padding: 5px 12px;
     }
 
     .funfact-controls {
