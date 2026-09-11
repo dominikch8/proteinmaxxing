@@ -1,9 +1,6 @@
 node_modules/
-_pmedge/
-_pmchrome/
-_tmp-chrome/
-_pmtest_*.html
-_pm-make-test.mjs
+/_pm*
+/_tmp-*
 data/users.sqlite
 data/*.sqlite
 api/config.local.php
