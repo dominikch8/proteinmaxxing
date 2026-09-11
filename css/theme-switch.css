@@ -48,6 +48,15 @@
     display: none !important;
 }
 
+/* "Informacje" is parked into the floating actions cluster next to Dodaj produkt / Zaloguj */
+.nav-links a[href$="informacje"] {
+    display: none !important;
+}
+
+.nav-links > li:has(> a[href$="informacje"]) {
+    display: none !important;
+}
+
 .nav-add-floating {
     display: inline-flex;
     align-items: center;

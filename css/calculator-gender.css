@@ -1,0 +1,227 @@
+/* =============================================================================
+   Proteiner — różowy akcent strony „Kalkulator BMI” dla płci „Kobieta”.
+
+   Gdy użytkownik zaznaczy opcję „Kobieta” (radio name="gender" value="female"),
+   cała podstrona kalkulatora przechodzi na różową paletę: zaznaczony przycisk
+   płci oraz wszystkie elementy „podświetlane” akcentem (nagłówki sekcji, wartość
+   BMI, woda, karty makro, przycisk, odznaki, linki, podkreślenia w nawigacji).
+
+   Rozwiązanie oparte o selektor :has() — bez JavaScriptu. Gdy :has() nie jest
+   wspierane, strona działa jak dotychczas (bordowo-niebieska).
+   ============================================================================= */
+
+/* ------------------------------- Motyw jasny ------------------------------- */
+:root:has(input[name='gender'][value='female']:checked) {
+    --primary: #db2777;
+    --primary-dark: #9d174d;
+    --primary-hover: #ec4899;
+    --primary-light: #f472b6;
+    --primary-glow: rgba(219, 39, 119, 0.3);
+
+    --accent: #be185d;
+    --accent-soft: #ec4899;
+    --accent-hot: #831843;
+
+    --main-top-bar: linear-gradient(90deg, #ec4899, #be185d, #f472b6, #db2777);
+    --main-glow: radial-gradient(circle, rgba(236, 72, 153, 0.16), transparent 70%);
+
+    --btn-calc-bg: linear-gradient(135deg, #be185d 0%, #9d174d 100%);
+    --btn-calc-color: #ffffff;
+    --btn-calc-shadow: 0 10px 28px rgba(219, 39, 119, 0.28), 0 4px 12px rgba(219, 39, 119, 0.3);
+
+    --nav-active-bg: linear-gradient(135deg, #be185d 0%, #9d174d 100%);
+    --nav-active-color: #ffffff;
+    --nav-active-shadow: 0 6px 18px rgba(219, 39, 119, 0.26), 0 2px 8px rgba(219, 39, 119, 0.3);
+
+    --subnav-full-bg: linear-gradient(
+        135deg,
+        rgba(253, 242, 248, 0.96) 0%,
+        rgba(252, 231, 243, 0.94) 32%,
+        rgba(251, 207, 232, 0.92) 68%,
+        rgba(249, 168, 212, 0.9) 100%
+    );
+    --subnav-full-border: rgba(219, 39, 119, 0.2);
+    --subnav-full-shadow: 0 10px 30px rgba(219, 39, 119, 0.12), 0 4px 14px rgba(190, 24, 93, 0.1);
+    --subnav-btn-hover-color: var(--ink);
+    --subnav-btn-hover-bg: rgba(255, 255, 255, 0.78);
+    --subnav-active-bg: linear-gradient(135deg, #be185d 0%, #9d174d 100%);
+    --subnav-active-color: #ffffff;
+
+    --kcal-badge-bg: linear-gradient(135deg, #fdf2f8, #fce7f3);
+    --kcal-badge-color: #9d174d;
+    --kcal-badge-border: #f9a8d4;
+
+    --calc-tile-bg: linear-gradient(145deg, rgba(219, 39, 119, 0.09) 0%, rgba(253, 242, 248, 0.94) 100%);
+    --calc-tile-border: rgba(219, 39, 119, 0.22);
+    --calc-tile-bg-emphasis: linear-gradient(145deg, rgba(219, 39, 119, 0.14) 0%, rgba(252, 231, 243, 0.58) 100%);
+    --calc-tile-border-emphasis: rgba(190, 24, 93, 0.4);
+    --calc-alert-bg: linear-gradient(145deg, rgba(219, 39, 119, 0.1) 0%, rgba(252, 231, 243, 0.52) 100%);
+    --calc-alert-border: #f9a8d4;
+
+    --ratio-badge-bg: linear-gradient(135deg, #fdf2f8, #fce7f3);
+    --ratio-badge-border: #f9a8d4;
+    --ratio-badge-color: #9d174d;
+}
+
+/* ------------------------------- Motyw ciemny ------------------------------ */
+:root[data-theme='dark']:has(input[name='gender'][value='female']:checked) {
+    --primary: #f9a8d4;
+    --primary-dark: #f472b6;
+    --primary-hover: #fbcfe8;
+    --primary-light: #fce7f3;
+    --primary-glow: rgba(244, 114, 182, 0.4);
+
+    --accent: #f9a8d4;
+    --accent-soft: #fbcfe8;
+    --accent-hot: #f472b6;
+
+    --main-top-bar: linear-gradient(90deg, #f9a8d4, #fbcfe8, #f472b6, #db2777);
+    --main-glow: radial-gradient(circle, rgba(236, 72, 153, 0.18), transparent 68%);
+
+    --btn-calc-bg: linear-gradient(135deg, #f472b6 0%, #db2777 55%, #9d174d 100%);
+    --btn-calc-color: #121a2e;
+    --btn-calc-shadow: 0 10px 34px rgba(236, 72, 153, 0.34), 0 4px 16px rgba(244, 114, 182, 0.4);
+
+    --nav-active-bg: linear-gradient(135deg, #f9a8d4 0%, #f472b6 100%);
+    --nav-active-color: #121a2e;
+    --nav-active-shadow: 0 6px 22px rgba(236, 72, 153, 0.3), 0 0 24px rgba(244, 114, 182, 0.4);
+
+    --subnav-full-bg: linear-gradient(
+        135deg,
+        rgba(131, 24, 67, 0.35) 0%,
+        rgba(157, 23, 77, 0.5) 45%,
+        rgba(190, 24, 93, 0.35) 75%,
+        rgba(18, 26, 46, 0.95) 100%
+    );
+    --subnav-full-border: rgba(249, 168, 212, 0.28);
+    --subnav-full-shadow: 0 0 36px rgba(236, 72, 153, 0.14), 0 8px 24px rgba(190, 24, 93, 0.18);
+    --subnav-btn-hover-color: #f9a8d4;
+    --subnav-btn-hover-bg: rgba(236, 72, 153, 0.12);
+    --subnav-active-bg: linear-gradient(135deg, #f9a8d4 0%, #f472b6 100%);
+    --subnav-active-color: #121a2e;
+
+    --kcal-badge-bg: rgba(236, 72, 153, 0.15);
+    --kcal-badge-color: #f9a8d4;
+    --kcal-badge-border: rgba(249, 168, 212, 0.3);
+
+    --calc-tile-bg: linear-gradient(145deg, rgba(236, 72, 153, 0.18) 0%, rgba(18, 24, 42, 0.55) 100%);
+    --calc-tile-border: rgba(249, 168, 212, 0.28);
+    --calc-tile-bg-emphasis: linear-gradient(145deg, rgba(236, 72, 153, 0.24) 0%, rgba(131, 24, 67, 0.38) 100%);
+    --calc-tile-border-emphasis: rgba(249, 168, 212, 0.4);
+    --calc-alert-bg: linear-gradient(145deg, rgba(236, 72, 153, 0.16) 0%, rgba(131, 24, 67, 0.42) 100%);
+    --calc-alert-border: rgba(249, 168, 212, 0.35);
+
+    --rank-stat-badge-bg: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(236, 72, 153, 0.14) 100%);
+    --ratio-badge-bg: rgba(190, 24, 93, 0.25);
+    --ratio-badge-border: rgba(249, 168, 212, 0.3);
+    --ratio-badge-color: #f9a8d4;
+}
+/* =============================================================================
+   Nadpisania pojedynczych elementów ze sztywno wpisanymi kolorami motywu.
+   ============================================================================= */
+
+/* Zaznaczona opcja płci — różowa obwódka i tło (jasny motyw) */
+:root:has(input[name='gender'][value='female']:checked) .radio-label:has(input:checked) {
+    border-color: #db2777;
+    background: linear-gradient(145deg, #fdf2f8, #fce7f3);
+    box-shadow: inset 0 0 0 1px rgba(219, 39, 119, 0.16);
+}
+
+:root:has(input[name='gender'][value='female']:checked) .radio-label:focus-within {
+    border-color: #db2777;
+    box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.18);
+}
+
+/* Zaznaczona opcja płci (ciemny motyw) */
+:root[data-theme='dark']:has(input[name='gender'][value='female']:checked) .radio-label:has(input:checked) {
+    border-color: #f472b6;
+    background: rgba(236, 72, 153, 0.14);
+    box-shadow: inset 0 0 0 1px rgba(244, 114, 182, 0.28);
+}
+
+:root[data-theme='dark']:has(input[name='gender'][value='female']:checked) .radio-label:focus-within {
+    border-color: #f472b6;
+    box-shadow: 0 0 0 3px rgba(244, 114, 182, 0.28);
+}
+
+/* Pola tekstowe i listy rozwijane — różowa obwódka przy fokusie */
+:root:has(input[name='gender'][value='female']:checked) input:not([type='radio']):not([type='checkbox']):focus,
+:root:has(input[name='gender'][value='female']:checked) select:focus {
+    border-color: #db2777;
+    box-shadow: 0 0 0 4px rgba(219, 39, 119, 0.16), 0 8px 20px rgba(15, 23, 42, 0.04);
+}
+
+:root[data-theme='dark']:has(input[name='gender'][value='female']:checked) input:not([type='radio']):not([type='checkbox']):focus,
+:root[data-theme='dark']:has(input[name='gender'][value='female']:checked) select:focus {
+    border-color: #f472b6;
+    box-shadow: 0 0 0 4px rgba(244, 114, 182, 0.22);
+}
+
+/* Rozwijane listy (pm-select) */
+:root:has(input[name='gender'][value='female']:checked) .pm-select.is-open .pm-select-btn,
+:root:has(input[name='gender'][value='female']:checked) .pm-select-btn:focus-visible {
+    border-color: #db2777;
+    box-shadow: 0 0 0 4px rgba(219, 39, 119, 0.16);
+}
+
+:root:has(input[name='gender'][value='female']:checked) .pm-select-option.is-selected {
+    background: rgba(219, 39, 119, 0.16);
+}
+
+:root[data-theme='dark']:has(input[name='gender'][value='female']:checked) .pm-select.is-open .pm-select-btn,
+:root[data-theme='dark']:has(input[name='gender'][value='female']:checked) .pm-select-btn:focus-visible {
+    border-color: #f472b6;
+    box-shadow: 0 0 0 4px rgba(244, 114, 182, 0.22);
+}
+
+:root[data-theme='dark']:has(input[name='gender'][value='female']:checked) .pm-select-option.is-selected {
+    background: rgba(244, 114, 182, 0.32);
+}
+
+/* Kropki (sekcje „Kalorie • Białko • …”) */
+:root:has(input[name='gender'][value='female']:checked) .calc-features-sep {
+    box-shadow: 0 0 0 2px rgba(219, 39, 119, 0.14);
+}
+
+/* Nagłówki sekcji — różowa poświata paska */
+:root:has(input[name='gender'][value='female']:checked) .section-title::before {
+    box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.1);
+}
+
+/* Przycisk „Oblicz” — różowa poświata przy najechaniu */
+:root:has(input[name='gender'][value='female']:checked) .btn-calc:hover {
+    box-shadow: 0 14px 34px rgba(190, 24, 93, 0.3), 0 6px 16px rgba(219, 39, 119, 0.3);
+}
+
+/* Pasek skali BMI — różowy gradient */
+:root:has(input[name='gender'][value='female']:checked) .bmi-bar {
+    background: linear-gradient(to right, #831843, #be185d, #ec4899, #f472b6);
+}
+
+/* Odznaka liczby witamin/minerałów */
+:root:has(input[name='gender'][value='female']:checked) .micro-collapse-badge {
+    background: rgba(219, 39, 119, 0.12);
+}
+
+/* Podświetlenie wiersza w tabeli wyników */
+:root:has(input[name='gender'][value='female']:checked) .result-box tbody tr:hover td {
+    background: rgba(219, 39, 119, 0.06);
+}
+
+/* Kafelki sugerowanych produktów */
+:root:has(input[name='gender'][value='female']:checked) a.shop-item:hover {
+    border-color: rgba(219, 39, 119, 0.35);
+}
+
+:root[data-theme='dark']:has(input[name='gender'][value='female']:checked) a.shop-item:hover {
+    border-color: rgba(244, 114, 182, 0.4);
+}
+
+/* Podkreślenia linków w nawigacji (hover / aktywne) */
+:root:has(input[name='gender'][value='female']:checked) .nav-links button:hover:not(.active)::before,
+:root:has(input[name='gender'][value='female']:checked) .nav-links a.nav-link:hover:not(.active)::before,
+:root:has(input[name='gender'][value='female']:checked) .nav-links button:active:not(.active)::before,
+:root:has(input[name='gender'][value='female']:checked) .nav-links a.nav-link:active:not(.active)::before {
+    background: rgba(219, 39, 119, 0.12);
+}
+

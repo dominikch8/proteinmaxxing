@@ -63,7 +63,7 @@
     function takeAddProductLink(cluster) {
         let link =
             document.getElementById('addProductFloating') ||
-            cluster.querySelector('a.nav-add-floating:not(.auth-nav-floating)');
+            cluster.querySelector('a.nav-add-floating:not(.auth-nav-floating):not(.nav-info-floating)');
         const item = document.querySelector('.nav-add-product');
         const navLink = item?.querySelector('a');
         const isActive = /dodaj-produkt/.test(window.location.pathname || '');
@@ -108,6 +108,40 @@
         if (!link.dataset.authManaged) link.textContent = label;
         link.classList.toggle('active', isActive || !!(navLink && navLink.classList.contains('active')));
         cluster.appendChild(link);
+
+        if (item) item.remove();
+        return link;
+    }
+
+    function takeInfoLink(cluster) {
+        const navLinks = document.querySelector('.nav-links');
+        const sourceLink = navLinks ? navLinks.querySelector('a[href$="informacje"]') : null;
+        const item = sourceLink ? sourceLink.closest('li') : null;
+        let link =
+            document.getElementById('infoFloating') || cluster.querySelector('a.nav-info-floating');
+
+        // Only park it when the page actually has an "Informacje" nav entry (or it is already parked).
+        if (!item && !link) return null;
+
+        const isActive =
+            /(^|\/)informacje(\.html)?\/?$/.test(window.location.pathname || '') ||
+            !!(sourceLink && sourceLink.classList.contains('active'));
+        const href =
+            (sourceLink && sourceLink.getAttribute('href')) ||
+            (link && link.getAttribute('href')) ||
+            pathPrefix() + 'informacje';
+
+        if (!link) {
+            link = document.createElement('a');
+        }
+        link.id = 'infoFloating';
+        link.className = 'nav-add-floating nav-info-floating';
+        link.href = href;
+        link.textContent = 'Informacje';
+        link.classList.toggle('active', isActive);
+
+        // Keep it as the leftmost action pill, right next to "Dodaj produkt" and "Zaloguj".
+        cluster.insertBefore(link, cluster.firstChild);
 
         if (item) item.remove();
         return link;
@@ -158,6 +192,7 @@
         ensureThemeSwitch(themeCluster);
         takeAddProductLink(actions);
         takeAuthLink(actions);
+        takeInfoLink(actions);
         applyTheme(getStoredTheme());
     }
 
