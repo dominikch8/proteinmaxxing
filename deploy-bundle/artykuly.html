@@ -506,14 +506,20 @@
         display: block;
     }
 
-    .articles-search input {
+    .articles-search input,
+    .articles-search input:not([type='radio']):not([type='checkbox']),
+    .articles-search input:not([type='radio']):not([type='checkbox']):hover,
+    .articles-search input:not([type='radio']):not([type='checkbox']):focus {
         width: 100%;
         border: 0;
+        border-radius: 0;
         background: transparent;
+        box-shadow: none;
         font: inherit;
         font-size: 1rem;
         color: inherit;
         outline: none;
+        transform: none;
         padding: 14px 0;
     }
 
