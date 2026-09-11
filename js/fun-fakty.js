@@ -265,7 +265,7 @@
         roll();
     }
 
-    // Try to load the full 500-fact pool; fall back to built-in facts.
+    // Try to load the full 1000-fact pool; fall back to built-in facts.
     if (window.fetch) {
         fetch('fun-facts-new.json', { cache: 'no-store' })
             .then(function (r) {

@@ -1,5 +1,5 @@
 (function () {
-    const FUN_FACTS = [
+    let FUN_FACTS = [
         { emoji: '🥩', tag: 'Białko', text: 'Ludzkie ciało składa się z około 20% białka — to drugi najczęstszy składnik po wodzie.' },
         { emoji: '🧬', tag: 'Białko', text: 'Genom człowieka koduje ponad 20 000 różnych białek, z których każde pełni inną funkcję.' },
         { emoji: '🥚', tag: 'Białko', text: 'Białko jaja kurzego ma wskaźnik PDCAAS 1,0 — uznawany za wzorzec jakości białka w diecie.' },
@@ -249,5 +249,40 @@
         });
     }
 
-    roll();
+    function activateFacts(list, keepBag) {
+        FUN_FACTS = Array.isArray(list) && list.length ? list : FUN_FACTS;
+        // Rebuild the bag against the active pool.
+        bag = shuffle(FUN_FACTS.map(function (_, i) { return i; }));
+        seen = 0;
+        currentFact = null;
+        if (counterEl) counterEl.textContent = '';
+        if (progressEl) progressEl.style.width = '0%';
+        updateMeta();
+        if (!keepBag) {
+            textEl.textContent = 'Ładuję pierwszy fun fact...';
+            emojiEl.textContent = '🎲';
+        }
+        roll();
+    }
+
+    // Try to load the full 1000-fact pool; fall back to built-in facts.
+    if (window.fetch) {
+        fetch('fun-facts-new.json', { cache: 'no-store' })
+            .then(function (r) {
+                if (!r.ok) throw new Error('http ' + r.status);
+                return r.json();
+            })
+            .then(function (data) {
+                if (Array.isArray(data) && data.length) {
+                    activateFacts(data, false);
+                } else {
+                    activateFacts(FUN_FACTS, true);
+                }
+            })
+            .catch(function () {
+                activateFacts(FUN_FACTS, true);
+            });
+    } else {
+        activateFacts(FUN_FACTS, true);
+    }
 })();
