@@ -145,7 +145,6 @@
     const btnEl = document.getElementById('funfactBtn');
     const copyBtnEl = document.getElementById('funfactCopyBtn');
     const progressEl = document.getElementById('funfactProgress');
-    const counterEl = document.getElementById('funfactCounter');
     const catsEl = document.getElementById('funfactCats');
 
     if (!textEl || !btnEl) return;
@@ -227,10 +226,6 @@
         const total = FUN_FACTS.length;
         const pct = total ? Math.min(100, Math.round((seen / total) * 100)) : 0;
         if (progressEl) progressEl.style.width = pct + '%';
-        if (counterEl) {
-            const catLabel = activeCat === ALL_CAT ? 'wszystkie kategorie' : activeCat;
-            counterEl.textContent = 'Kategoria: ' + catLabel + ' · wylosowano ' + seen + ' z ' + total;
-        }
     }
 
     function applyFact(fact) {
@@ -292,19 +287,43 @@
         });
     }
 
-    function activateFacts(list, keepBag) {
-        FUN_FACTS = Array.isArray(list) && list.length ? list : FUN_FACTS;
-        // Rebuild the bag against the active pool.
-        bag = shuffle(FUN_FACTS.map(function (_, i) { return i; }));
+    function setPool(cat, restoredBag) {
+        const valid = cat === ALL_CAT || categoriesOf(FULL_FACTS).indexOf(cat) !== -1;
+        activeCat = valid ? cat : ALL_CAT;
+        FUN_FACTS = activeCat === ALL_CAT ? FULL_FACTS : FULL_FACTS.filter(function (f) {
+            return f.tag === activeCat;
+        });
+        if (!FUN_FACTS.length) {
+            FUN_FACTS = FULL_FACTS;
+            activeCat = ALL_CAT;
+        }
+
+        let restored = null;
+        if (Array.isArray(restoredBag)) {
+            restored = restoredBag.filter(function (i) {
+                return Number.isInteger(i) && i >= 0 && i < FUN_FACTS.length;
+            });
+        }
+        bag = restored && restored.length ? restored : shuffle(FUN_FACTS.map(function (_, i) { return i; }));
+
         seen = 0;
         currentFact = null;
+        saveCat(activeCat);
         if (progressEl) progressEl.style.width = '0%';
+        renderCats();
         updateMeta();
-        if (!keepBag) {
-            textEl.textContent = 'Ładuję pierwszy fun fact...';
-            emojiEl.textContent = '🎲';
-        }
         roll();
+    }
+
+    function selectCat(cat) {
+        if (rolling || cat === activeCat) return;
+        setPool(cat, null);
+    }
+
+    function boot() {
+        const stored = readStored();
+        const initialCat = (stored && stored.cat) || readStoredCat() || ALL_CAT;
+        setPool(initialCat, stored ? stored.bag : null);
     }
 
     // Try to load the full 1000-fact pool; fall back to built-in facts.
@@ -315,16 +334,13 @@
                 return r.json();
             })
             .then(function (data) {
-                if (Array.isArray(data) && data.length) {
-                    activateFacts(data, false);
-                } else {
-                    activateFacts(FUN_FACTS, true);
-                }
+                if (Array.isArray(data) && data.length) FULL_FACTS = data;
+                boot();
             })
             .catch(function () {
-                activateFacts(FUN_FACTS, true);
+                boot();
             });
     } else {
-        activateFacts(FUN_FACTS, true);
+        boot();
     }
 })();

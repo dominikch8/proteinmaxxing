@@ -1,5 +1,5 @@
 (function () {
-    let FUN_FACTS = [
+    let BUILTIN_FACTS = [
         { emoji: '🥩', tag: 'Białko', text: 'Ludzkie ciało składa się z około 20% białka — to drugi najczęstszy składnik po wodzie.' },
         { emoji: '🧬', tag: 'Białko', text: 'Genom człowieka koduje ponad 20 000 różnych białek, z których każde pełni inną funkcję.' },
         { emoji: '🥚', tag: 'Białko', text: 'Białko jaja kurzego ma wskaźnik PDCAAS 1,0 — uznawany za wzorzec jakości białka w diecie.' },
@@ -130,7 +130,14 @@
         { emoji: '🧬', tag: 'Ciało', text: 'Insulina to hormon magazynujący — po posiłku węglowodanowym pomaga transportować glukozę do mięśni i wątroby.' }
     ];
 
-    const STORAGE_KEY = 'funfactBag_v2';
+    // Master pool (all categories) + active, category-filtered pool.
+    let FULL_FACTS = BUILTIN_FACTS;
+    let FUN_FACTS = BUILTIN_FACTS;
+    let activeCat = 'all';
+    const ALL_CAT = 'all';
+
+    const STORAGE_KEY = 'funfactBag_v3';
+    const CAT_KEY = 'funfactCat_v1';
     const textEl = document.getElementById('funfactText');
     const emojiEl = document.getElementById('funfactEmoji');
     const tagEl = document.getElementById('funfactTag');
@@ -138,24 +145,34 @@
     const btnEl = document.getElementById('funfactBtn');
     const copyBtnEl = document.getElementById('funfactCopyBtn');
     const progressEl = document.getElementById('funfactProgress');
+    const catsEl = document.getElementById('funfactCats');
 
     if (!textEl || !btnEl) return;
 
-    function loadBag() {
+    function readStored() {
         try {
             const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
-            if (Array.isArray(raw)) {
-                return raw.filter(function (i) {
-                    return Number.isInteger(i) && i >= 0 && i < FUN_FACTS.length;
-                });
-            }
+            if (raw && typeof raw === 'object' && !Array.isArray(raw)) return raw;
+        } catch (e) { /* ignore */ }
+        return null;
+    }
+
+    function readStoredCat() {
+        try {
+            return localStorage.getItem(CAT_KEY);
         } catch (e) { /* ignore */ }
         return null;
     }
 
     function saveBag(bag) {
         try {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(bag));
+            localStorage.setItem(STORAGE_KEY, JSON.stringify({ cat: activeCat, bag: bag }));
+        } catch (e) { /* ignore */ }
+    }
+
+    function saveCat(cat) {
+        try {
+            localStorage.setItem(CAT_KEY, cat);
         } catch (e) { /* ignore */ }
     }
 
@@ -170,18 +187,44 @@
         return copy;
     }
 
-    let bag = loadBag();
-    if (!bag || !bag.length) {
-        bag = shuffle(FUN_FACTS.map(function (_, i) { return i; }));
-    }
-
+    let bag = [];
     let seen = 0;
     let currentFact = null;
     let rolling = false;
 
+    function categoriesOf(pool) {
+        const usedTags = {};
+        const out = [];
+        pool.forEach(function (f) {
+            if (f && f.tag && !usedTags[f.tag]) {
+                usedTags[f.tag] = true;
+                out.push(f.tag);
+            }
+        });
+        return out;
+    }
+
+    function renderCats() {
+        if (!catsEl) return;
+        const items = [{ cat: ALL_CAT, label: 'Wszystkie' }].concat(
+            categoriesOf(FULL_FACTS).map(function (c) { return { cat: c, label: c }; })
+        );
+        catsEl.textContent = '';
+        items.forEach(function (item) {
+            const chip = document.createElement('button');
+            chip.type = 'button';
+            chip.className = 'funfact-cat' + (item.cat === activeCat ? ' is-active' : '');
+            chip.setAttribute('data-cat', item.cat);
+            chip.setAttribute('aria-pressed', item.cat === activeCat ? 'true' : 'false');
+            chip.textContent = item.label;
+            chip.addEventListener('click', function () { selectCat(item.cat); });
+            catsEl.appendChild(chip);
+        });
+    }
+
     function updateMeta() {
         const total = FUN_FACTS.length;
-        const pct = Math.min(100, Math.round((seen / total) * 100));
+        const pct = total ? Math.min(100, Math.round((seen / total) * 100)) : 0;
         if (progressEl) progressEl.style.width = pct + '%';
     }
 
@@ -244,19 +287,43 @@
         });
     }
 
-    function activateFacts(list, keepBag) {
-        FUN_FACTS = Array.isArray(list) && list.length ? list : FUN_FACTS;
-        // Rebuild the bag against the active pool.
-        bag = shuffle(FUN_FACTS.map(function (_, i) { return i; }));
+    function setPool(cat, restoredBag) {
+        const valid = cat === ALL_CAT || categoriesOf(FULL_FACTS).indexOf(cat) !== -1;
+        activeCat = valid ? cat : ALL_CAT;
+        FUN_FACTS = activeCat === ALL_CAT ? FULL_FACTS : FULL_FACTS.filter(function (f) {
+            return f.tag === activeCat;
+        });
+        if (!FUN_FACTS.length) {
+            FUN_FACTS = FULL_FACTS;
+            activeCat = ALL_CAT;
+        }
+
+        let restored = null;
+        if (Array.isArray(restoredBag)) {
+            restored = restoredBag.filter(function (i) {
+                return Number.isInteger(i) && i >= 0 && i < FUN_FACTS.length;
+            });
+        }
+        bag = restored && restored.length ? restored : shuffle(FUN_FACTS.map(function (_, i) { return i; }));
+
         seen = 0;
         currentFact = null;
+        saveCat(activeCat);
         if (progressEl) progressEl.style.width = '0%';
+        renderCats();
         updateMeta();
-        if (!keepBag) {
-            textEl.textContent = 'Ładuję pierwszy fun fact...';
-            emojiEl.textContent = '🎲';
-        }
         roll();
+    }
+
+    function selectCat(cat) {
+        if (rolling || cat === activeCat) return;
+        setPool(cat, null);
+    }
+
+    function boot() {
+        const stored = readStored();
+        const initialCat = (stored && stored.cat) || readStoredCat() || ALL_CAT;
+        setPool(initialCat, stored ? stored.bag : null);
     }
 
     // Try to load the full 1000-fact pool; fall back to built-in facts.
@@ -267,16 +334,13 @@
                 return r.json();
             })
             .then(function (data) {
-                if (Array.isArray(data) && data.length) {
-                    activateFacts(data, false);
-                } else {
-                    activateFacts(FUN_FACTS, true);
-                }
+                if (Array.isArray(data) && data.length) FULL_FACTS = data;
+                boot();
             })
             .catch(function () {
-                activateFacts(FUN_FACTS, true);
+                boot();
             });
     } else {
-        activateFacts(FUN_FACTS, true);
+        boot();
     }
 })();

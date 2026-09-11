@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="css/site-motion.css?v=20260911navinfo">
 <link rel="stylesheet" href="css/brand-text.css?v=20260911navinfo">
 <link rel="stylesheet" href="css/poradnik.css?v=20260911navinfo">
-<link rel="stylesheet" href="css/fun-fakty.css?v=20260911funmeta">
+<link rel="stylesheet" href="css/fun-fakty.css?v=20260911funmeta2">
 </head>
 <body class="poradnik-page fun-fakty-page">
 <header class="site-header">
@@ -46,6 +46,10 @@
 <span class="fun-fakty-badge" aria-hidden="true">✨ 1000 ciekawostek</span>
 <h1>Fun fakty</h1>
 </div>
+<div class="funfact-cats-wrap">
+<span class="funfact-cats-label" id="funfactCatsLabel">Wybierz kategorię</span>
+<div class="funfact-cats" id="funfactCats" role="group" aria-labelledby="funfactCatsLabel" aria-label="Kategorie fun faktów"></div>
+</div>
 <div class="funfact-stage">
 <div class="funfact-card" id="funfactTile">
 <div class="funfact-card-glow" aria-hidden="true"></div>
@@ -65,14 +69,6 @@
 </button>
 <button type="button" class="funfact-btn funfact-btn--ghost" id="funfactCopyBtn">Kopiuj fakt</button>
 </div>
-<div class="funfact-chips" aria-hidden="true">
-<span class="funfact-chip">Białko</span>
-<span class="funfact-chip">Odchudzanie</span>
-<span class="funfact-chip">Odżywianie</span>
-<span class="funfact-chip">Trening</span>
-<span class="funfact-chip">Suplementy</span>
-<span class="funfact-chip">Rekordy</span>
-</div>
 </div>
 <div class="info-callout"><strong>Chcesz więcej?</strong> Przejrzyj <a href="artykuly">artykuły</a> albo <a href="poradnik-zywienia">poradnik</a>.</div>
 <div class="info-warning">Fun fakty mają charakter edukacyjny i rozrywkowy — nie zastępują porady dietetyka ani lekarza.</div>
@@ -91,6 +87,6 @@
 <script src="js/cookie-banner.js?v=20260911navinfo"></script>
 <script src="js/theme.js?v=20260911navinfo"></script>
 <script src="js/site-motion.js?v=20260911navinfo"></script>
-<script src="js/fun-fakty.js?v=20260911funmeta"></script>
+<script src="js/fun-fakty.js?v=20260911funmeta2"></script>
 </body>
 </html>
