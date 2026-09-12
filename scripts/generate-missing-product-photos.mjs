@@ -14,6 +14,7 @@ import path from 'path';
 import crypto from 'crypto';
 import { fileURLToPath, pathToFileURL } from 'url';
 import { removeEdgeBackground, defringeLightHalos } from './remove-edge-background.mjs';
+import { cutoutBuffer } from './refine-product-cutouts.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
@@ -185,6 +186,8 @@ const limitArg = process.argv.find((a) => a.startsWith('--limit='));
 const limit = limitArg ? Number(limitArg.split('=')[1]) : Infinity;
 const delayMs = parseInt(process.argv.find((a) => a.startsWith('--delay='))?.split('=')[1] || '400', 10);
 const force = process.argv.includes('--force');
+const cutoutArg = process.argv.find((a) => a.startsWith('--cutout='));
+const cutoutMethod = cutoutArg ? cutoutArg.split('=')[1] : 'u2net';
 
 function hasFiles(slug) {
     return fs.existsSync(path.join(outDir, `${slug}.jpg`)) && fs.existsSync(path.join(outDir, `${slug}.webp`));
@@ -202,24 +205,42 @@ if (limit !== Infinity) todo = todo.slice(0, limit);
 console.log(`Produktów: ${products.length} | do wygenerowania: ${todo.length} | formaty: ${[...formats].join(',')}`);
 if (!todo.length) process.exit(0);
 
-async function writeSet(slug, pngBuffer) {
-    if (formats.has('png')) fs.writeFileSync(path.join(outDir, `${slug}.png`), pngBuffer);
-    const jpg = await sharp(pngBuffer)
-        .flatten({ background: { r: 255, g: 255, b: 255 } })
-        .jpeg({ quality: 88, mozjpeg: true })
-        .toBuffer();
-    fs.writeFileSync(path.join(outDir, `${slug}.jpg`), jpg);
-    const webp = await sharp(pngBuffer)
-        .ensureAlpha()
-        .webp({ quality: 80, alphaQuality: 85, effort: 4 })
-        .toBuffer();
-    fs.writeFileSync(path.join(outDir, `${slug}.webp`), webp);
+async function writeSet(slug, cut) {
+    if (formats.has('png')) fs.writeFileSync(path.join(outDir, `${slug}.png`), cut.png);
+    fs.writeFileSync(path.join(outDir, `${slug}.jpg`), cut.jpg);
+    fs.writeFileSync(path.join(outDir, `${slug}.webp`), cut.webp);
 
     if (fs.existsSync(bundleDir)) {
-        if (formats.has('png')) fs.writeFileSync(path.join(bundleDir, `${slug}.png`), pngBuffer);
-        fs.writeFileSync(path.join(bundleDir, `${slug}.jpg`), jpg);
-        fs.writeFileSync(path.join(bundleDir, `${slug}.webp`), webp);
+        if (formats.has('png')) fs.writeFileSync(path.join(bundleDir, `${slug}.png`), cut.png);
+        fs.writeFileSync(path.join(bundleDir, `${slug}.jpg`), cut.jpg);
+        fs.writeFileSync(path.join(bundleDir, `${slug}.webp`), cut.webp);
     }
+}
+
+/** Udział pikseli przezroczystych w PNG (0..1) — walidacja jakości cutoutu. */
+async function transparentRatio(pngBuffer) {
+    const { data } = await sharp(pngBuffer).resize(100, 75).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+    let t = 0;
+    const total = data.length / 4;
+    for (let i = 0; i < data.length; i += 4) if (data[i + 3] < 16) t++;
+    return t / total;
+}
+
+async function makeCutout(buf) {
+    // Podstawowa metoda: U2Net (najlepsze wycięcie). Fallback: biały flood-fill.
+    const main = await cutoutBuffer(buf, { refineOnly: false, method: cutoutMethod });
+    const ratio = await transparentRatio(main.png);
+    // 100% pusty obraz albo tło całkowicie nieusunięte → spróbuj flood-fill
+    if (ratio > 0.985 || ratio < 0.01) {
+        try {
+            const fb = await cutoutBuffer(buf, { refineOnly: false, method: 'studio' });
+            const r2 = await transparentRatio(fb.png);
+            if (r2 <= 0.985 && r2 >= 0.01) return { ...fb, ratio: r2, method: 'studio' };
+        } catch {
+            /* ignore */
+        }
+    }
+    return { ...main, ratio, method: cutoutMethod };
 }
 
 let ok = 0;
@@ -246,9 +267,9 @@ for (let i = 0; i < todo.length; i++) {
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             const buf = Buffer.from(await res.arrayBuffer());
             if (buf.length < 5000) throw new Error('za mały plik');
-            const png = await toCutoutPng(sharp, buf);
-            await writeSet(p.slug, png);
-            console.log(attempt ? `OK (retry ${attempt})` : 'OK');
+            const cut = await makeCutout(buf);
+            await writeSet(p.slug, cut);
+            console.log(attempt ? `OK (retry ${attempt}, ${cut.method}, transp ${(cut.ratio * 100).toFixed(0)}%)` : `OK (${cut.method}, transp ${(cut.ratio * 100).toFixed(0)}%)`);
             ok++;
             lastErr = null;
             break;
