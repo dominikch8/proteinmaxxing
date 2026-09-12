@@ -4,6 +4,9 @@ node_modules/
 /_*-probe.mjs
 /_*probe*.html
 /_run_inspect.ps1
+/_*.mjs
+/_*.ps1
+/_*.json
 data/users.sqlite
 data/*.sqlite
 api/config.local.php
