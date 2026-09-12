@@ -458,7 +458,7 @@
    centred on the page, extending symmetrically past the narrow card. */
 @media (min-width: 768px) {
     .funfact-cats-wrap {
-        width: min(940px, 96vw);
+        width: min(940px, 94vw);
         max-width: none;
         margin-left: 50%;
         transform: translateX(-50%);
