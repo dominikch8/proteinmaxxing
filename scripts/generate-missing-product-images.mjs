@@ -56,6 +56,88 @@ const catArgs = (argVal('category') || '')
     .filter(Boolean);
 const limit = argVal('limit') ? Number(argVal('limit')) : Infinity;
 const model = argVal('model') || 'flux';
+/* ── FOOD_SUBJECT (nadpisania promptów) z rebuild-all-product-photos.mjs ─ */
+let FOOD_SUBJECT = {};
+try {
+    const src = fs.readFileSync(path.join(__dirname, 'rebuild-all-product-photos.mjs'), 'utf8');
+    const m = src.match(/const FOOD_SUBJECT = \{([\s\S]*?)\n\};/);
+    if (m) FOOD_SUBJECT = Function(`"use strict";return {${m[1]}}`)();
+} catch {
+    /* opcjonalne */
+}
+
+/* ── Słownik PL → EN (subject promptu) ─────────────────────────────────── */
+const DICT = {
+    'szynka wieprzowa': 'cooked pork ham',
+    'szynka z kurczaka': 'sliced chicken ham',
+    'szynka konserwowa': 'canned pork ham',
+    poledwica: 'pork loin cold cut',
+    kielbasa: 'Polish sausage',
+    parowki: 'Polish frankfurter sausages',
+    pasztet: 'meat pate',
+    boczek: 'pork bacon belly',
+    kaszanka: 'Polish blood sausage kashanka',
+    skrzydelka: 'chicken wings',
+    serce: 'poultry heart',
+    zoladek: 'pork stomach',
+    flaki: 'Polish beef tripe stew',
+    serca: 'pork hearts',
+    nerki: 'pork kidneys',
+    'mieso mielone': 'ground minced meat',
+    schabowe: 'pork loin cutlet',
+    lopatka: 'pork shoulder',
+    kotlet: 'pork cutlet schnitzel',
+    klopsiki: 'meatballs',
+    morszczuk: 'hake fish fillet',
+    pstrag: 'trout fish',
+    karp: 'carp fish',
+    okon: 'perch fish fillet',
+    pangasius: 'pangasius catfish fillet',
+    miruna: 'blue whiting fish fillet',
+    sardynki: 'sardines in tomato sauce',
+    szprotki: 'smoked sprats',
+    losos: 'salmon',
+    tunczyk: 'tuna steak',
+    krewetki: 'shrimp prawns',
+    osmiornica: 'octopus',
+    malze: 'mussels',
+    ostrygi: 'oysters',
+    kawior: 'black caviar',
+    sledz: 'herring fish',
+    'ryba po grecku': 'Polish fish in tomato vegetable sauce',
+    mleko: 'milk',
+    maslanka: 'buttermilk',
+    kefir: 'kefir',
+    jogurt: 'yogurt',
+    skyr: 'skyr yogurt',
+    serek: 'cream cheese spread',
+    twarog: 'cottage cheese',
+    smietana: 'sour cream',
+    kakao: 'cocoa drink',
+    'napoj proteinowy': 'protein shake drink',
+    'bialko serwatkowe': 'whey protein shake',
+    jajko: 'egg',
+    jajecznica: 'scrambled eggs',
+    omlet: 'omelette',
+    'jaja sadzone': 'fried eggs',
+    majonez: 'mayonnaise',
+    ser: 'cheese',
+    gouda: 'gouda cheese',
+    mazdamer: 'maasdam cheese',
+    tylzycki: 'tylzycki cheese',
+    szwajcarski: 'swiss cheese',
+    mozzarella: 'mozzarella cheese',
+    feta: 'feta cheese',
+    balkanski: 'balkan white cheese',
+    kozi: 'goat cheese',
+    owczy: 'sheep cheese',
+    oscypek: 'Polish oscypek smoked cheese',
+    topiony: 'processed cheese',
+    smazony: 'fried cheese',
+    golka: 'cooked ham hock',
+    gorgonzola: 'gorgonzola blue cheese',
+};
+
 const delayMs = argVal('delay') !== null ? Number(argVal('delay')) : 5500;
 const force = hasFlag('--force');
 const pilot = hasFlag('--pilot');
