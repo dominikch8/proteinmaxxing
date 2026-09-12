@@ -1,54 +1,9 @@
 {
   "total": 2315,
-  "withKeys": 2053,
+  "withKeys": 2066,
   "fromOff": 0,
-  "avgKeys": 13.4,
+  "avgKeys": 13.5,
   "thin": [
-    {
-      "slug": "kabanosy",
-      "keys": 7,
-      "source": "off"
-    },
-    {
-      "slug": "mortadela",
-      "keys": 7,
-      "source": "off"
-    },
-    {
-      "slug": "skyr-naturalny",
-      "keys": 5,
-      "source": "off"
-    },
-    {
-      "slug": "ser-camembert",
-      "keys": 6,
-      "source": "off"
-    },
-    {
-      "slug": "jogurt-grecki-naturalny",
-      "keys": 4,
-      "source": "off"
-    },
-    {
-      "slug": "jogurt-pitny",
-      "keys": 7,
-      "source": "off"
-    },
-    {
-      "slug": "gruszka",
-      "keys": 3,
-      "source": "off"
-    },
-    {
-      "slug": "mango",
-      "keys": 7,
-      "source": "off"
-    },
-    {
-      "slug": "sos-czosnkowy",
-      "keys": 6,
-      "source": "off"
-    },
     {
       "slug": "oliwa-z-oliwek",
       "keys": 2,
@@ -56,8 +11,8 @@
     },
     {
       "slug": "olej-rzepakowy",
-      "keys": 1,
-      "source": "off"
+      "keys": 2,
+      "source": "lean"
     },
     {
       "slug": "maslo-ekstra-82",
@@ -66,7 +21,7 @@
     },
     {
       "slug": "smalec",
-      "keys": 2,
+      "keys": 5,
       "source": "off"
     },
     {
@@ -76,26 +31,6 @@
     },
     {
       "slug": "margaryna",
-      "keys": 3,
-      "source": "off"
-    },
-    {
-      "slug": "snickers",
-      "keys": 4,
-      "source": "off"
-    },
-    {
-      "slug": "raffaello",
-      "keys": 4,
-      "source": "off"
-    },
-    {
-      "slug": "nutella",
-      "keys": 2,
-      "source": "off"
-    },
-    {
-      "slug": "brzoskwinia",
       "keys": 5,
       "source": "off"
     },
@@ -1316,10 +1251,10 @@
     }
   ],
   "sources": {
-    "curated": 644,
+    "curated": 667,
     "estimate": 1535,
-    "off": 53,
-    "lean": 55,
+    "off": 29,
+    "lean": 56,
     "none": 28
   }
 }
