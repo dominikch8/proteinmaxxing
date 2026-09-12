@@ -812,7 +812,7 @@
 
             paginationRoot.innerHTML = '';
 
-            function buildPageNumbers(current, total) {
+            function buildPageNumbers(total) {
                 // Show every page number from 1 up to the last page (x).
                 const pages = [];
                 for (let i = 1; i <= total; i++) {
@@ -821,16 +821,7 @@
                 return pages;
             }
 
-            let previousPage = 0;
-            buildPageNumbers(safePage, totalPages).forEach((pageNumber) => {
-                if (pageNumber - previousPage > 1) {
-                    const gap = document.createElement('span');
-                    gap.className = 'articles-pagination-ellipsis';
-                    gap.setAttribute('aria-hidden', 'true');
-                    gap.textContent = '…';
-                    paginationRoot.appendChild(gap);
-                }
-
+            buildPageNumbers(totalPages).forEach((pageNumber) => {
                 const button = document.createElement('button');
                 button.type = 'button';
                 button.className = 'btn' + (pageNumber === safePage ? ' is-active' : '');
