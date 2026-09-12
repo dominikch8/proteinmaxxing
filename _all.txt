@@ -1,0 +1,1343 @@
+### mieso (200)
+1	 	Udko z kurczaka (z skórą)
+1	 	Ćwiartka kurczaka
+1	 	Udko z kurczaka bez skóry (gotowane)
+1.2	R	Słonina
+1.3	 	Skrzydełka kurze
+1.3	 	Wątróbka drobiowa
+1.4	R	Żołądki drobiowe
+1.5	R	Golonka pieczona
+1.5	R	Śledź świeży
+1.5	R	Golonka surowa
+1.8	R	Serce wołowe
+1.8	R	Smalec wieprzowy
+1.8	R	Panga
+1.8	R	Sardynka świeża
+1.9	 	Pierś z kurczaka
+1.9	 	Mintaj
+1.9	 	Wątróbka wołowa
+1.9	 	Pierś z kurczaka bez skóry pieczona
+1.9	 	Pierś z kurczaka ugotowana
+1.9	 	Pierś z kurczaka wędzona
+1.9	R	Łopatka wieprzowa
+2	 	Kurczak mielony
+2	R	Mortadela z pistacjami
+2	R	Ozór wieprzowy
+2	R	Kiełbasa biała surowa
+2.2	R	Boczek wędzony
+2.2	R	Paluszki krabowe
+2.2	R	Żeberka wędzone
+2.2	R	Szynka konserwowa wieprzowa
+2.2	R	Tilapia
+2.2	R	Makrela świeża
+2.5	 	Wieprzowina (schab bez kości)
+2.5	 	Boczek surowy
+2.5	 	Indyk mielony
+2.5	 	Mortadela
+2.5	 	Pasztet podwawelski
+2.5	 	Kaszanka
+2.5	 	Pasztetowa
+2.5	 	Salceson
+2.5	 	Pasztet rzymski
+2.5	 	Pasztet z drobiu
+2.5	R	Kaczka (udo)
+2.5	R	Schab pieczony w ziołach
+2.5	R	Mięso mielone mieszane
+2.5	R	Serdelki
+2.5	R	Małże gotowane
+2.67	 	Tuńczyk kawałki w oleju - Amerigo
+2.7	 	Pierś z indyka
+2.7	 	Ryba po grecku (gotowa)
+2.8	 	Kiełbasa śląska
+2.8	 	Kiełbasa krakowska
+2.8	 	Kiełbasa parówkowa
+2.8	 	Kiełbasa biała
+2.8	 	Kiełbasa myśliwska
+2.8	 	Kiełbasa krakowska sucha
+2.8	R	Parówki z indyka
+2.8	R	Pstrąg tęczowy
+2.9	 	Karkówka wieprzowa
+2.9	 	Nuggetsy z kurczaka
+2.9	 	Ozór wołowy
+2.9	 	Stripsy z kurczaka
+2.9	 	Karkówka pieczona
+2.9	 	Kurczak (pierś bez skóry)
+2.9	 	Szynka
+2.9	 	Indyk (pierś bez skóry)
+2.9	 	Wędlina z piersi indyka
+2.9	 	Szynka z indyka - Coop
+2.9	 	Szynka z piersi kurczaka (delikatna)
+2.9	 	Kurczak (udo bez skóry i kości)
+2.9	 	Mięso mielone drobiowe (kurczak, indyk)
+2.9	 	Schab (pieczony)
+2.9	 	Szynka z piersi kurczaka
+2.9	 	Szynka z indyka
+2.9	 	Filet z kurczaka
+2.9	 	Szynka Delikatna łagodnie wędzona Kraina Wędlin - Biedronka
+2.9	 	Łosoś świeży
+2.9	 	Łosoś filet
+2.9	 	Indyk (mięso mielone)
+2.9	 	Schab Pieczony Kraina Wędlin - Biedronka
+2.9	 	Szynka z kurczaka
+2.9	 	Szynka konserwowa - Kraina Wędlin
+2.9	 	Szynka Babuni - Sokołów
+2.9	 	Kiełbasa podwawelska
+2.9	 	Tuńczyk w oliwie z oliwek
+2.9	 	Szynka Klasyczna Sokołowska
+2.9	 	Wołowina (udziec)
+2.9	 	Karkówka wieprzowa z grilla
+2.9	 	Polędwica z indyka w plastrach - Morliny
+2.9	 	Udo z kurczaka bez skóry (pieczone)
+2.9	 	Szynka babci wędzona Biedronka
+2.9	 	Kiełbasa szynkowa
+2.9	R	Karkówka marynowana
+2.96	 	Kurczak (pierś duszona)
+2.96	 	Tunczyk w wodzie (konserwowany)
+2.96	 	Len mielony
+2.96	 	Kurczak pieczone udko
+2.96	 	Filet z kurczaka smażony bez panierki
+2.96	 	Filet z kurczaka gotowany
+2.96	 	Schab (surowy)
+2.96	 	Schab (wędzony)
+3	 	Parówki wieprzowe
+3	 	Polędwica wieprzowa
+3	 	Polędwica wieprzowa (wędzona)
+3	 	Parówki Berlinki Classic - Morliny
+3	R	Mostek wołowy
+3	R	Żeberka wołowe
+3	R	Sielawa wędzona
+3	R	Polędwiczki z indyka
+3	R	Pasztet warzywny
+3	R	Kiełbaski śniadaniowe
+3.3	 	Karp smażony
+3.3	 	Śledź marynowany
+3.3	 	Makrela wędzona
+3.3	 	Sandacz
+3.3	 	Kaczka (filet)
+3.3	 	Sardynki w oleju
+3.3	 	Śledź w oleju
+3.3	 	Flądra
+3.3	 	Halibut
+3.3	 	Szprotki w oleju
+3.3	 	Śledź po japońsku
+3.5	 	Pstrąg
+3.5	R	Królik (udziec)
+3.5	R	Królik (tuszka)
+3.5	R	Metka łososiowa
+3.5	R	Kiełbasa jałowcowa
+3.5	R	Salami z papryką
+3.5	R	Gulasz wołowy
+3.5	R	Dorada
+3.7	 	Szynka wieprzowa (wędlina)
+3.7	 	Szynka drobiowa
+3.7	 	Szynka krucha
+3.7	 	Królik
+3.7	 	Szynka gotowana
+3.7	 	Szynka wieprzowa z tłuszczem, gotowana
+3.7	 	Szynka wieprzowa wędzona
+3.8	R	Polędwiczki wieprzowe
+4	 	Dorsz świeży
+4	 	Mięso mielone wołowe
+4	 	Dorsz
+4	 	Mięso mielone wołowe - Sokołów
+4	R	Gęś (pierś)
+4	R	Kaczka pieczona (mięso bez skóry)
+4	R	Kiełbasa salami węgierska
+4	R	Kabanosy drobiowe
+4	R	Sola
+4	R	Udziec wołowy
+4.3	 	Baleron
+4.3	 	Polędwica sopocka
+4.3	 	Polędwica łososiowa
+4.3	 	Polędwica sopocka - Morliny
+4.3	 	Polędwica łososiowa - Biedronka
+4.5	 	Salami
+4.5	R	Przepiórka
+4.5	R	Cielęcina (sznycel)
+4.5	R	Jagnięcina (udziec)
+4.5	R	Chorizo
+4.5	R	Kiełbasa chorizo
+4.5	R	Krewetki tygrysie
+4.5	R	Gęś (mięso)
+4.9	 	Kabanosy
+5	 	Tuńczyk (w wodzie)
+5	 	Tuńczyk w oleju
+5	 	Krewetki gotowane
+5	 	Kalmary
+5	 	Tuńczyk w sosie własnym
+5	 	Krewetki smażone
+5	 	Tuńczyk w sosie własnym - Calvo
+5	 	Tuńczyk w oleju - Lidl
+5	 	Tuńczyk w sosie własnym (konserwa)
+5	 	Tuńczyk w sosie własnym - Amerigo
+5.5	 	Cielęcina
+5.5	R	Cielęcina (pieczeń)
+5.5	R	Rozbratel wołowy
+5.5	R	Szynka wieprzowa dojrzewająca
+6	R	Jagnięcina (comber)
+6	R	Gęś pieczona (mięso bez skóry)
+6	R	Ryba maślana wędzona
+6	R	Krewetki koktajlowe
+6.5	 	Pstrąg wędzony
+6.5	 	Biftek wołowy
+6.5	 	Antrykot wołowy
+6.5	R	Rostbef pieczony
+6.5	R	Stek z antrykotu
+6.5	R	Rostbef wołowy
+7	 	Łosoś atlantycki
+7	 	Jagnięcina
+7	R	Ośmiornica gotowana
+8	R	Tatar z łososia
+9	 	Polędwica z łosia
+9	 	Łosoś wędzony
+9	R	Szynka serrano
+9	R	Węgorz w oleju
+9	R	Łosoś dziki
+9.99	 	Wołowina (polędwica)
+9.99	 	Wołowina (polędwica) surowa
+12	 	Szynka parmeńska
+12	 	Szynka parmeńska Carpaccio
+12	R	Halibut wędzony
+18	R	Homar gotowany
+
+### nabial (136)
+0.33	 	Mleko 0%
+0.33	 	Mleko 0% tłuszczu
+0.34	 	Mleko 2%
+0.34	 	Mleko bez laktozy 2%
+0.34	 	Mleko 2% tłuszczu
+0.34	 	Mleko 2% tłuszczu - Mlekovita
+0.34	 	Mleko bez laktozy 1.5%
+0.34	 	Mleko 2% - Pilos
+0.35	 	Mleko 3,2%
+0.35	 	Mleko 3,2% tłuszczu
+0.35	 	Mleko 3,2% tłuszczu Mleczna Dolina - Biedronka
+0.36	R	Mleko 3,8% tłuszczu
+0.55	 	Mleko roślinne sojowe
+0.6	 	Mleko roślinne owsiane
+0.6	R	Mleko A2 3,5%
+0.7	R	Napój ryżowy
+0.7	R	Kefir owocowy
+0.7	R	Maślanka ziołowa
+0.75	 	Kefir
+0.75	 	Maślanka
+0.75	 	Kefir naturalny 2% tłuszczu
+0.75	 	Kefir naturalny gęsty 1,5% tłuszczu - Tola
+0.75	 	Maślanka 1,5%
+0.75	 	Maślanka 0,5% tłuszczu
+0.75	 	Kefir naturalny - Krasnystaw
+0.75	 	Kefir naturalny 0% - Pilos
+0.8	R	Mleko A2
+0.8	R	Napój owsiany barista
+0.8	R	Mleko migdałowe (niesłodzone)
+0.85	 	Jogurt pitny
+0.85	 	Jogurt owocowy
+0.85	 	Jogurt kokosowy
+0.85	R	Mleko kozie
+0.9	R	Mleko ryżowe
+1	 	Jogurt naturalny
+1	 	Jogurt naturalny 2% tłuszczu
+1	 	Jogurt naturalny 0% tłuszczu
+1	 	Jogurt naturalny - Piątnica
+1	 	Jogurt naturalny gęsty - Bakoma
+1	 	Jogurt naturalny - Biedronka
+1	 	Jogurt naturalny Activia - Danone
+1	 	Jogurt naturalny z wapniem - Tola
+1	 	Jogurt naturalny typu greckiego o obniżonej zawartości tłuszczu - Tolonis
+1	 	Jogurt naturalny grecki
+1	 	Jogurt naturalny typu greckiego 0% - Piątnica
+1	 	Jogurt naturalny łagodny 1,5% - Bakoma
+1	 	Jogurt naturalny - Tola
+1	R	Jogurt sojowy naturalny
+1.2	 	Śmietana 18%
+1.2	 	Śmietana 12%
+1.2	 	Śmietana 12% tłuszczu
+1.2	 	Śmietana 18% tłuszczu
+1.2	R	Serek homogenizowany waniliowy
+1.2	R	Jogurt typu greckiego 5%
+1.2	R	Śmietana 36%
+1.38	 	Mleko kokosowe
+1.38	 	Mleko sojowe
+1.38	 	Jogurt smakowy 7 zbóż - Bakoma
+1.4	R	Mleko owcze
+1.4	R	Śmietana 22%
+1.4	R	Skyr pitny
+1.4	R	Twarożek ziarnisty
+1.4	R	Mleko zagęszczone niesłodzone
+1.45	 	Jogurt grecki naturalny
+1.45	 	Jogurt grecki light
+1.45	 	Jogurt grecki
+1.5	 	Jajo kurze (całe)
+1.5	 	Jajko ugotowane na twardo
+1.5	 	Mleko 0,5% tłuszczu
+1.5	 	Mleko 1,5% tłuszczu
+1.5	 	Jajko ugotowane na miękko
+1.5	 	Serek homogenizowany naturalny - Pilos
+1.5	 	Mleko 1,5%
+1.5	 	Jajko gotowane
+1.5	 	Serek śmietankowy - Almette
+1.5	 	Jajko sadzone
+1.5	 	Jajo kurze (białko)
+1.5	 	Twarożek Domowy Grani naturalny - Piątnica
+1.5	 	Twaróg naturalny chudy - Pilos
+1.5	 	Serek homogenizowany
+1.5	 	Jajo kurze (żółtko)
+1.5	 	Mleko Łaciate 2% - Mlekpol
+1.5	 	Serek topiony
+1.5	 	Mleko prawdziwe 1,5% - Biedronka
+1.5	 	Jogurt
+1.5	 	Twaróg Klinek 0% tłuszczu - Biedronka
+1.5	 	Mleko 0,5% Mleczna Dolina - Biedronka
+1.5	 	Serek z ziołami - Almette
+1.5	 	Jajko sadzone na oleju
+1.5	 	Twaróg
+1.5	R	Śmietanka do kawy 10%
+1.5	R	Omlet białkowy
+1.6	 	Śmietanka 30%
+1.6	R	Twaróg śmietankowy
+1.6	R	Jogurt skyr waniliowy
+1.6	R	Skyr truskawkowy
+1.6	R	Jogurt grecki 2%
+1.65	 	Skyr naturalny
+1.7	 	Twaróg chudy
+1.7	 	Serek wiejski
+1.7	 	Serek Danio
+1.7	 	Budyń na mleku
+1.7	 	Protein pudding
+1.7	 	Ser cottage
+1.7	 	Serek wiejski lekki - Piątnica
+1.7	 	Twaróg chudy - Mlekopol
+1.7	 	Serek wiejski light
+1.7	 	Serek wiejski - Piątnica
+1.7	 	Serek wiejski lekki
+1.7	 	Twaróg chudy - Biedronka
+1.7	 	Serek wiejski naturalny lekki - Bieluch
+1.7	 	Serek wiejski - Biedronka
+1.8	 	Twaróg półtłusty
+1.8	 	Ser twarogowy tłusty
+1.8	 	Twaróg wiejski
+1.8	 	Twaróg sernikowy
+1.8	 	Twaróg półtłusty - Delikate
+1.8	 	Twaróg wiejski chudy - Mlekovita
+1.8	R	Śmietana kremówka 36%
+1.8	R	Jogurt naturalny wysokobiałkowy
+1.8	R	Jogurt grecki 10%
+1.9	 	Mleko skondensowane słodzone
+1.9	 	Omlet
+1.9	 	Jajecznica na maśle
+1.9	 	Jajecznica
+1.9	 	Omlet dwujajeczny
+2	R	Napój proteinowy UHT
+2.16	 	Jajko kurze (całe)
+2.16	 	Jajko kurze
+2.16	 	Jajko kurze gotowane
+2.2	R	Skyr waniliowy
+2.2	R	Żółtko jajka
+2.3	 	Białka jaj
+6	R	Jajko przepiórcze
+10.7	 	Koncentrat białka serwatkowego (WPC)
+20	 	Izolat Białka (WPI)
+
+### sery (67)
+2.9	 	Ser Gouda
+2.9	 	Ser Edamski
+2.9	 	Ser żółty
+2.9	 	Ser topiony plastry
+2.9	 	Ser cheddar
+2.9	 	Ser emmental
+2.9	 	Ser provolone
+2.9	 	Ser wędzony
+2.9	 	Ser tylżycki
+2.9	 	Ser żółty Edam Rycki
+2.9	 	Ser Edamski - Światowid
+2.9	 	Ser Gouda Serenada
+2.9	 	Ser żółty Liliput - Serovit
+2.9	 	Ser żółty (pozostałe)
+2.9	 	Ser żółty wędzony Królewski - Sierpc
+3	R	Serek kremowy do smarowania
+3	R	Ser Favita
+3.2	R	Ser Wiejski
+3.3	 	Ser Mozzarella
+3.3	 	Ser Mozzarella light
+3.3	 	Ser Mozzarella light - Galbani
+3.3	 	Ser sałatkowo - kanapkowy półtłusty - Favita
+3.3	 	Ser biały półtłusty
+3.3	 	Ser Mozarella - Lidl
+3.3	R	Ser Podlaski
+3.37	 	Ser biały chudy
+3.37	 	Ser Salami
+3.5	R	Ser Radamer
+3.5	R	Ser Lazur
+3.5	R	Ser kremowy kanapkowy
+3.57	 	Ser Ementaler pełnotłusty
+3.7	 	Ricotta
+3.7	 	Ser Feta
+3.7	 	Ser mascarpone
+3.7	 	Ser Feta light Apetina - Arla
+3.7	 	Ser Ricotta (częściowo odtłuszczony)
+3.7	 	Ser Feta Favita półtłusty - Mlekovita
+3.8	R	Ser Morski
+3.8	R	Mozzarella light
+3.8	R	Ser Kurpiowski
+3.9	 	Ser Camembert
+3.9	 	Ser Brie
+4	R	Ser Maasdam
+4	R	Ser Warmiński
+4	R	Ser Bryndza
+4.3	 	Ser halloumi
+4.5	R	Ser Rokpol
+4.5	R	Ser bundz
+5	R	Ser Emmentaler
+5	R	Ser topiony Hochland
+5.5	 	Oscypek
+5.5	 	Ser kozi miękki
+5.5	R	Ser Gorgonzola
+5.5	R	Ser Koryciński
+5.5	R	Ser Mozzarella di bufala
+6.5	R	Ser Raclette
+6.66	 	Ser pleśniowy (blue)
+6.7	 	Ser pleśniowy Bleu - Lazur
+6.7	 	Ser Blue z niebieską pleśnią
+7.5	 	Ser Parmezan
+7.5	R	Ser Gruyère
+8	R	Ser Roquefort
+8	R	Ser Grana Padano
+8	R	Ser Burrata
+8.5	R	Ser Manchego
+9	R	Ser Pecorino
+9.5	R	Ser Pecorino Romano
+
+### warzywa (174)
+0.3	 	Ziemniaki
+0.3	 	Ziemniaki tłuczone
+0.3	 	Ziemniaki gotowane
+0.3	 	Ziemniaki młode (gotowane)
+0.3	 	Ziemniaki gotowane tłuczone
+0.3	 	Ziemniaki gotowane - puree
+0.3	 	Ziemniaki pieczone (z solą)
+0.3	 	Ziemniaki pieczone
+0.35	 	Cebula
+0.35	 	Cebula (czerwona)
+0.35	 	Dymka cebula
+0.35	 	Cebula (smażona)
+0.35	 	Cebula dymka ze szczypiorem
+0.4	 	Marchew
+0.4	 	Surówka z marchewki
+0.4	 	Marchew (gotowana)
+0.45	 	Kapusta biała
+0.45	 	Kapusta kiszona
+0.45	 	Kapusta pekińska
+0.45	 	Kapusta czerwona
+0.45	 	Kapusta włoska
+0.5	R	Rzodkiew
+0.55	 	Burak
+0.55	 	Por
+0.55	 	Seler naciowy
+0.55	 	Seler korzeniowy
+0.55	 	Pietruszka korzeń
+0.55	 	Seler (korzeń)
+0.55	 	Seler (natka)
+0.55	 	Burak gotowany
+0.55	 	Buraki tarte
+0.55	 	Ćwikła z chrzanem (buraki)
+0.6	 	Grejpfrut czerwony
+0.6	 	Grejfrut Pomelo
+0.6	R	Rzepa
+0.64	 	Pomidor koktajlowy
+0.64	 	Kukurydza (konserwa)
+0.64	 	Oliwki zielone
+0.64	 	Proszek do pieczenia
+0.64	 	Pomidory w puszce
+0.64	 	Kolendra świeża
+0.64	 	Ogórki kiszone
+0.64	 	Cykoria
+0.64	 	Pomidory koktajlowe
+0.64	 	Mieszanka warzywna chińska - Mroźna Kraina
+0.64	 	Kapary
+0.64	 	Ogórki konserwowe - Dawtona
+0.64	 	Botwina
+0.64	 	Oliwki czarne
+0.64	 	Ogórki konserwowe kanapkowe - Nasza Spiżarnia
+0.64	 	Warzywa na patelnię
+0.64	 	Grapefruit czerwony (owoc)
+0.7	 	Rzodkiewka
+0.7	 	Pietruszka liście
+0.7	 	Koperek
+0.7	 	Papryka (proszek)
+0.7	 	Kiełki rzodkiewki
+0.7	 	Ocet winny
+0.7	 	Kiełki lucerny
+0.7	 	Fasola czerwona (konserwa) - Red Kidney
+0.7	 	Danone Activia Naturalna do picia
+0.7	 	Fasola czerwona (konserwa)
+0.7	 	Mięta - liście
+0.7	 	Kukurydza słodka (konserwowa) - Nasza Spiżarnia
+0.7	 	Fasola czerwona (konserwowa) - Pudliszki
+0.7	 	Sól
+0.7	 	Fasola czarna (ziarno suche)
+0.7	 	Fasola czerwona konserwowa - Nasza Spiżarnia
+0.7	 	Kukurydza ugotowana (bez soli)
+0.7	 	Lubczyk - liście
+0.7	 	Grzyb Podgrzybek
+0.7	R	Kukurydza w kolbie
+0.8	 	Ogórek
+0.8	 	Bakłażan
+0.8	 	Cukinia
+0.8	 	Dynia (miąższ)
+0.8	 	Kiszony ogórek
+0.8	 	Bataty
+0.8	 	Kalarepa
+0.8	 	Korniszony
+0.8	 	Ogórek kiszony
+0.8	 	Ogórek konserwowy
+0.8	 	Ogórek zielony
+0.8	 	Ogórek małosolny
+0.8	 	Dynia
+0.8	 	Ogórek konserwowy - Nasza Spiżarnia
+0.8	 	Cukinia gotowana
+0.8	R	Dynia hokkaido
+0.8	R	Pietruszka korzeniowa
+0.8	R	Soczewica brązowa gotowana
+0.9	 	Pomidor
+0.9	 	Brokuły
+0.9	 	Kalafior
+0.9	 	Ciecierzyca (gotowana)
+0.9	 	Soczewica czerwona (gotowana)
+0.9	 	Fasola biała
+0.9	 	Brukselka
+0.9	 	Brukselka mrożona
+0.9	 	Brokuły (gotowane bez soli)
+0.9	 	Fasola biała (konserwa)
+0.9	 	Ciecierzyca surowa
+0.9	 	Kalafior (ugotowany)
+0.9	 	Ciecierzyca (konserwowa)
+0.9	 	Brokuły gotowane
+0.9	 	Soczewica czerwona
+0.9	 	Kiełki brokuła
+0.9	 	Soczewica (ugotowana bez soli)
+0.9	 	Fasola biała gotowana (bez soli)
+0.9	R	Fasola czerwona gotowana
+0.9	R	Szpinak mrożony
+1	 	Fasolka szparagowa
+1	 	Groszek zielony
+1	 	Kukurydza konserwowa
+1	 	Bób (młody)
+1	 	Fasolka szparagowa (żółta)
+1	 	Groszek konserwowy - Aldi
+1	 	Kukurydza konserwowa Nasza Spiżarnia Biedronka
+1	 	Groszek mrożony (ugotowany bez soli)
+1	 	Groszek zielony (konserwa)
+1.2	 	Pieczarka
+1.2	 	Pieczarki marynowane
+1.2	 	Pieczarki świeże
+1.2	 	Pieczarka świeża
+1.2	 	Pieczarki duszone
+1.2	 	Pieczarki smażone
+1.2	R	Boczniaki
+1.2	R	Koper włoski (fenkuł)
+1.2	R	Bób gotowany
+1.2	R	Topinambur
+1.3	 	Surówka z białej kapusty
+1.3	 	Mizeria
+1.3	 	Surówka Colesław
+1.4	 	Papryka czerwona
+1.4	 	Papryka żółta
+1.4	 	Papryka zielona
+1.4	 	Papryka
+1.4	R	Bób (gotowany)
+1.5	 	Szpinak świeży
+1.5	 	Jarmuż
+1.5	 	Szpinak BABY surowy
+1.5	R	Pieczarka portobello
+1.5	R	Fenkuł (koper włoski)
+1.5	R	Fasola mung (gotowana)
+1.6	R	Endywia
+1.7	 	Sałata masłowa
+1.7	 	Rukola
+1.7	 	Mix sałat (torebka)
+1.7	 	Roszponka
+1.7	 	Sałata
+1.7	 	Sałata lodowa
+1.7	 	Sałata mix
+1.7	 	Sałata rzymska
+1.7	 	Mix Sałat
+1.7	 	Mieszanka mix Sałat - Fit & Easy
+1.9	 	Czosnek
+1.9	 	Karczoch
+2.2	 	Tofu
+2.4	 	Pomidorki koktajlowe
+2.5	 	Szparagi zielone
+2.5	 	Fasola szparagowa zielona gotowana
+2.5	 	Fasola szparagowa żółta
+2.5	R	Szparagi
+3	 	Chrzan
+3	 	Imbir świeży
+3	 	Szczypiorek
+3	 	Bazylia świeża
+3.5	R	Karczochy
+4.1	 	Pomidory suszone w oleju
+4.11	 	Pomidory suszone
+4.5	R	Grzyby shiitake
+20	 	Papryka chili
+20	 	Papryka słodka (proszek)
+20	 	Papryka chili (proszek)
+20	 	Papryka ostra (proszek)
+
+### owoce (80)
+0.4	 	Arbuz
+0.4	 	Melon
+0.4	 	Melon żółty
+0.45	 	Jabłko
+0.45	 	Ocet jabłkowy
+0.45	 	Jabłko Gala
+0.45	 	Jabłko Jonagold
+0.45	 	Jabłko gold
+0.45	 	Jabłko gotowane (bez skórki)
+0.55	 	Porzeczki czarne
+0.55	 	Porzeczki czerwone
+0.6	 	Banan
+0.6	 	Pomarańcza
+0.6	 	Mandarynki
+0.6	 	Pomelo
+0.6	 	Grejpfrut
+0.6	 	Mandarynka
+0.65	 	Gruszka
+0.83	 	Morele
+0.9	 	Brzoskwinia
+0.9	 	Nektarynka
+0.9	 	Morela
+0.9	 	Pigwa
+0.9	 	Cytryna
+0.9	 	Limonka
+0.9	 	Morele suszone
+1	 	Winogrona
+1	 	Kiwi
+1.2	R	Brzoskwinie
+1.3	 	Śliwki
+1.3	 	Wiśnie
+1.3	 	Czereśnie
+1.3	 	Śliwki suszone
+1.3	 	Śliwka
+1.3	 	Powidła śliwkowe
+1.3	 	Śliwki węgierki
+1.4	R	Nektarynki
+1.5	 	Truskawki
+1.5	 	Granat
+1.5	 	Ananas świeży
+1.5	 	Mango
+1.5	 	Figi świeże
+1.5	 	Kokos świeży
+1.5	 	Marakuja
+1.5	 	Papaja
+1.5	 	Ananas
+1.5	 	Truskawki (mrożone)
+1.5	 	Dżem truskawkowy - Spiżarnia Natury
+1.5	 	Dżem truskawkowy niskosłodzony - Rapsodia
+1.6	R	Porzeczka czerwona
+1.8	R	Porzeczka czarna
+1.8	R	Persymona (kaki)
+2	R	Agrest
+2.2	R	Aronia
+2.2	R	Kaki (persymona)
+2.5	 	Maliny
+2.5	 	Borówki
+2.5	 	Awokado
+2.5	 	Jagody (borówki leśne)
+2.5	 	Borówka amerykańska
+2.5	 	Jagody
+2.5	 	Borówka
+2.5	R	Żurawina świeża
+2.5	R	Liczi
+2.5	R	Daktyle
+2.75	 	Rodzynki
+2.8	 	Daktyle suszone
+2.8	 	Figi suszone
+2.8	 	Suszone morele
+2.8	 	Rodzynki sułtańskie Bakallino - Biedronka
+3	R	Jeżyny
+3	R	Chipsy bananowe
+3	R	Karambola
+3	R	Bez czarny (owoce)
+3	R	Banan suszony
+4	R	Jagody leśne
+4	R	Pitaja (smoczy owoc)
+4	R	Guawa
+6.49	 	Żurawina suszona
+9	R	Jagody goji
+
+### platki-sniadaniowe (22)
+0.7	 	Płatki owsiane
+0.7	 	Płatki owsiane górskie
+0.7	 	Płatki owsiane błyskawiczne
+0.7	 	Płatki owsiane gotowane (owsianka na wodzie)
+1.4	R	Płatki jaglane
+1.5	 	Granola
+1.5	 	Płatki musli bez cukru
+1.5	 	Musli owocowe - Sante
+1.5	 	Musli tropikalne - Axa
+1.5	 	Musli
+1.5	 	Płatki Bran Flakes z otrąb pszennych - Sante
+1.59	 	Płatki żytnie
+1.8	R	Musli z owocami suszonymi
+1.9	 	Płatki Nesquik
+1.9	 	Płatki Lion
+1.9	 	Płatki Cini Minis
+1.9	 	Płatki Cookie Crisps
+1.9	 	Płatki Corn Flakes
+1.9	 	Płatki kukurydziane
+1.9	 	Płatki kukurydziane Corn Flakes - Nestle
+2	R	Owsianka instant
+2.5	R	Granola z orzechami
+
+### zboza (124)
+0.28	 	Mąka pszenna typ 500
+0.28	 	Mąka pszenna pełnoziarnista
+0.28	 	Mąka pszenna typ 550
+0.28	 	Mąka pszenna
+0.7	 	Otręby pszenne
+0.7	 	Otręby owsiane
+0.75	 	Kasza gryczana
+0.75	 	Kasza jaglana
+0.75	 	Kasza jęczmienna
+0.75	 	Kuskus
+0.75	 	Bulgur
+0.75	 	Kasza manna
+0.75	 	Pęczak jęczmienny
+0.75	 	Kasza bulgur (sucha)
+0.75	 	Kasza kuskus (gotowana)
+0.75	 	Kasza jaglana (ugotowana)
+0.75	 	Kasza gryczana (ugotowana)
+0.75	 	Kasza kuskus
+0.75	 	Kasza jęczmienna (ugotowana)
+0.75	 	Kasza gryczana prażona
+0.75	 	Kasza jęczmienna pęczak (ugotowana)
+0.75	 	Kasza kuskus (ugotowana)
+0.75	 	Kasza jęczmienna - Melvit
+0.8	 	Ryż biały
+0.8	 	Ryż brązowy (suchy)
+0.8	 	Ryż basmati
+0.8	 	Ryż jałowcowy
+0.8	 	Ryż dziki (suchy)
+0.8	 	Ryż arborio
+0.8	 	Ryż do sushi
+0.8	 	Ryż brązowy (ugotowany)
+0.8	 	Ryż brązowy (nieugotowany)
+0.8	 	Ryż biały (ugotowany)
+0.8	 	Ryż Basmati (ugotowany)
+0.8	 	Ryż biały (nieugotowany)
+0.8	 	Ryż Basmati (nieugotowany)
+0.8	R	Polenta (kaszka kukurydziana)
+0.83	 	Cukier brązowy
+0.85	 	Chleb graham
+0.85	 	Ksylitol cukier brzozowy
+0.85	 	Chleb pszenno-żytni
+0.85	 	Rozmaryn suszony
+0.85	 	Chleb razowy - Oskroba
+0.85	 	Kardamon
+0.85	 	Ryż parboiled długoziarnisty (nieugotowany) - Biedronka
+0.85	 	Chleb razowy 100% żytni
+0.85	 	Bułka tarta
+0.85	 	Tortilla pełnoziarnista
+0.85	 	Chleb razowy ze słonecznikiem - Biedronka
+0.85	 	Mąka kukurydziana
+0.85	 	Chleb wieloziarnisty
+0.85	 	Bułka wieloziarnista - Lidl
+0.85	 	Mąka żytnia
+0.85	 	Chleb baltonowski
+0.85	 	Bułka razowa
+0.85	 	Mąka ziemniaczana
+0.85	 	Chleb słonecznikowy
+0.85	 	Bułka fitness - Lidl
+0.85	 	Chleb pszenno-żytni z ziarnami
+0.85	 	Chleb 7 zbóż - Biedronka
+0.85	 	Pieczywo chrupkie 7 ziaren - Sonko
+0.85	 	Chleb pełnoziarnisty
+0.85	 	Pieczywo chrupkie lekkie razowe - Sonko
+0.85	 	Ryż (ugotowany)
+0.85	 	Bagietka pełnoziarnista
+0.85	 	Bułka fitness
+0.85	 	Chleb Całe Ziarno - Biedronka
+0.85	 	Bułka z ziarnami
+0.85	 	Chleb Złoty Łan - Oskroba
+0.85	 	Chleb Domowy z ziarnami - Schulstad
+0.85	 	Bułka - Bagietka
+0.85	 	Bułka z dynią - Lidl
+0.85	 	Bułka ciabatta
+0.85	 	Pieczywo chrupkie żytnie - Tovago
+0.85	 	Chleb Kołodziej - Polish Village Bread
+0.85	 	Chleb chrupki żytni delikatesowy - Wasa
+0.85	 	Bułka orkiszowa
+0.85	 	Chleb pszenno żytni wiejski
+0.85	 	Bułka razowa z ziarnami słonecznika
+0.85	 	Chleb wiejski
+0.85	 	Bułka pszenno-żytnia
+0.9	 	Chleb żytni pełnoziarnisty
+0.9	 	Chleb pszenny razowy
+0.9	 	Pumpernikiel
+0.9	 	Chleb orkiszowy
+0.9	 	Chleb gryczany
+0.9	 	Chleb żytni razowy
+0.9	 	Chleb żytni
+0.9	 	Chleb pszenny
+0.9	 	Chleb żytni 100%
+0.9	 	Chleb orkiszowy bez polepszaczy i konserwantów - SPPIC Kraków
+0.9	 	Chleb żytni na zakwasie
+0.9	 	Chleb żytni ze słonecznikiem na naturalnym zakwasie - Biedronka
+0.9	R	Ryż jaśminowy (suchy)
+1	 	Chleb tostowy
+1	 	Chleb tostowy pełnoziarnisty - Kaufland
+1	R	Mąka ryżowa
+1	R	Chleb razowy na zakwasie
+1	R	Otręby żytnie
+1.2	R	Ryż arborio (suchy)
+1.2	R	Kasza orkiszowa
+1.2	R	Mąka owsiana
+1.3	 	Tortilla pszenna
+1.4	R	Płatki orkiszowe
+1.5	 	Baguette
+1.5	 	Bułka grahamka
+1.5	 	Bułka pszenna
+1.5	 	Precel
+1.5	 	Bułka kajzerka
+1.5	 	Bułka wiejska
+1.6	R	Ryż czarny (suchy)
+1.8	R	Chleb bezglutenowy
+1.8	R	Ryż czerwony (suchy)
+2.3	 	Komosa ryżowa (Quinoa)
+2.3	 	Amarantus
+2.3	 	Kasza quinoa (gotowana)
+2.3	 	Wafle ryżowe naturalne
+2.3	 	Wafle ryżowe
+2.3	 	Wafle ryżowe naturalne - Kupiec
+2.3	 	Komosa ryżowa - Quinoa (nieugotowana)
+2.5	 	Krakersy solone
+2.5	 	Paluszki słone
+2.5	 	Chipsy nachos
+20	 	Liść laurowy suszony
+
+### makarony (30)
+0.7	 	Makaron pszenny (suchy)
+0.7	 	Makaron pełnoziarnisty (suchy)
+0.7	 	Makaron jajeczny (suchy)
+0.7	 	Makaron ryżowy (suchy)
+0.7	 	Makaron świderki (suchy)
+0.7	 	Makaron penne (suchy)
+0.7	 	Makaron spaghetti (suchy)
+0.7	 	Makaron łazanki (suchy)
+0.7	 	Makaron fusilli (suchy)
+0.7	 	Makaron rigatoni (suchy)
+0.7	 	Makaron pełnoziarnisty (ugotowany)
+0.7	 	Makaron pełnoziarnisty Pióra (nieugotowany)
+0.7	 	Makaron pełnoziarnisty (nieugotowany)
+0.7	 	Makaron pełnoziarnisty Spaghetti (nieugotowany) - Lubella
+0.7	 	Makaron pełnoziarnisty Penne - Lubella (nieugotowany)
+0.7	 	Makaron jajeczny (ugotowany)
+0.7	 	Makaron Pełnoziarnisty całe ziarno (nieugotowany)
+0.7	 	Makaron jajeczny Nitki (ugotowany)
+0.75	 	Makaron Spaghetti (ugotowany)
+0.75	 	Makaron razowy (ugotowany)
+0.75	 	Spaghetti z mięsem i sosem pomidorowym
+0.9	R	Makaron razowy (suchy)
+1.2	 	Gnocchi
+1.7	 	Makaron udon
+1.7	 	Makaron chiński (gotowy)
+1.8	R	Makaron orkiszowy (suchy)
+2.3	 	Ravioli z ricottą
+2.3	 	Tortellini z mięsem
+3.2	R	Makaron soba
+4	R	Makaron soczewicowy (suchy)
+
+### slodycze (54)
+0.45	 	Ciasto jabłkowe (szarlotka)
+1.5	 	Dżem truskawkowy
+2.5	 	Krakersy pełnoziarniste
+2.5	 	Popcorn (solony, gotowy)
+3.3	 	Sernik (kawałek)
+3.3	 	Szarlotka (kawałek)
+3.3	 	Piernik
+3.3	 	Makowiec
+3.3	 	Babka drożdżowa
+3.3	 	Ciastka maślane
+3.3	 	Cheesecake
+3.3	 	Tiramisu
+3.3	 	Brownie czekoladowe
+3.3	 	Biszkopty
+3.3	 	Galareta owocowa
+3.3	 	Sernik
+3.7	 	Czekolada mleczna
+3.7	 	Czekolada gorzka (80%)
+3.7	 	Ptasie Mleczko
+3.7	 	Raffaello
+3.7	 	Lody waniliowe
+3.7	 	Pączek z nadzieniem
+3.7	 	Herbatniki maślane
+3.7	 	Wafel czekoladowy
+3.7	 	Żelki
+3.7	 	Lukrecja
+3.7	 	Nutella
+3.7	 	Croissant
+3.7	 	Chałwa sezamowa
+3.7	 	Krem czekoladowy (Nutella styl)
+3.7	 	Oreo
+3.7	 	Lody Magnum Classic
+3.7	 	Donut z lukrem
+3.7	 	Delicje
+3.7	 	Krem czekoladowy Milka
+3.7	 	Wafel tortowy
+3.7	 	Czekolada 100%
+3.7	 	Czekolada gorzka (70- 85% zawartości kakao)
+3.7	 	Wafel ryżowy naturalny
+3.7	 	Czekolada gorzka - E. Wedel
+3.7	 	Krem czekoladowy Nutella
+3.7	 	Herbatniki
+3.7	 	Czekolada
+3.95	 	Miód pszczeli
+3.95	 	Miód wielokwiatowy
+4	 	Chipsy ziemniaczane
+4.3	 	M&M's
+4.3	 	Rozmaryn suszony (proszek)
+4.3	 	Kakao 16% tłuszczu (proszek)
+4.3	 	Drożdżówka
+4.56	 	Kakao (proszek)
+4.56	 	Cukierek Michałek
+4.56	 	Chipsy kukurydziane
+4.75	 	Miód
+
+### orzechy (30)
+2.5	 	Kokos suszony (wiórki)
+2.9	 	Masło orzechowe
+2.9	 	Pestki dyni
+2.9	 	Nasiona słonecznika
+2.9	 	Nasiona chia
+2.9	 	Pestki słonecznika łuskane
+2.9	 	Siemię lniane (nasiona lnu)
+2.9	 	Nasiona konopi (łuskane)
+2.9	 	Nasiona Chia - szałwia hiszpańska (suszone)
+2.9	 	Siemię lniane
+2.9	 	Siemię lniane - Sante
+4	R	Kasztany jadalne
+4.5	 	Orzechy włoskie
+4.5	 	Orzechy laskowe
+4.5	 	Orzechy ziemne
+4.5	 	Orzechy laskowe prażone
+4.9	 	Kolendra nasiona
+5	 	Tahini (pasta sezamowa)
+5.49	 	Słonecznik ziarno
+5.5	 	Migdały
+5.5	 	Mieszanka studencka z migdałami
+5.5	 	Płatki migdałowe
+5.5	 	Migdały płatki
+5.6	 	Orzechy nerkowca
+5.6	 	Orzechy nerkowca prażone
+8	 	Orzechy pistacjowe
+8	 	Pistacje prażone solone
+9	 	Orzechy brazylijskie
+9	 	Orzechy pekan
+9	 	Orzechy makadamia
+
+### sosy (38)
+1.5	 	Ketchup
+1.5	 	Majonez
+1.5	 	Musztarda kremowa
+1.5	 	Musztarda delikatesowa
+1.5	 	Musztarda
+1.5	 	Sałatka jarzynowa (z majonezem)
+1.5	 	Ketchup łagodny - Pudliszki
+1.56	 	Przecier pomidorowy
+1.7	 	Sos czosnkowy
+1.7	 	Sos tatarski
+1.7	 	Sos sojowy
+1.7	 	Sos barbecue
+1.7	 	Sos ostry (chilli)
+1.7	 	Sos ranch
+1.7	 	Sos słodko-kwaśny
+1.7	 	Sos 1000 wysp
+1.7	 	Sos worcestershire
+1.7	 	Sos teriyaki
+1.7	 	Sos holenderski
+1.7	 	Sos musztardowo-miodowy
+1.7	 	Sos pomidorowy
+1.7	 	Sos sałatkowy winegret
+1.7	 	Sos sriracha
+1.7	 	Sos sweet chilli
+1.7	 	Sos curry (pasta)
+1.7	 	Koncentrat pomidorowy
+1.7	 	Sos sojowy ciemny - Tao Tao
+1.7	 	Sos winegret (ocet i olej)
+1.8	 	Pesto zielone - Tesco
+2	R	Sos BBQ
+2	R	Sos miodowo-musztardowy
+2.3	 	Hummus
+2.3	 	Sos tzatziki
+2.3	 	Guacamole
+2.3	 	Salsa meksykańska
+2.4	R	Sos hoisin
+2.6	R	Sos gochujang
+4	 	Sos pesto (zielone)
+
+### tluszcze (33)
+0.8	 	Olej rzepakowy
+0.8	 	Olej słonecznikowy
+0.8	 	Olej słonecznikowy kujawski
+0.8	 	Olej rzepakowy - Kujawski
+1.5	 	Smalec
+1.5	 	Margaryna
+1.5	 	Tłuszcz kaczy
+1.5	 	Margaryna extra z masłem - Delma
+1.5	 	Margaryna Rama Classic
+1.5	 	Margaryna Benecol
+1.5	 	Margaryna Flora
+2.37	 	Masło śmietankowe
+2.37	 	Masło (pozostałe)
+2.37	 	Masło osełkowe ekstra - Mleczna Dolina
+2.37	 	Masło roślinne
+2.37	 	Masło Polskie - Mlekovita
+2.58	 	Masło 83%
+2.58	 	Oliwa - Tesco
+2.9	 	Masło orzechowe z orzeszków ziemnych
+3	 	Olej kokosowy
+3	 	Olej lniany
+3	 	Olej sezamowy
+3.3	 	Oliwa z oliwek
+3.3	 	Oliwa z oliwek - Monini
+4	 	Masło ekstra 82%
+4	 	Masło klarowane (ghee)
+4	 	Masło ekstra
+4	 	Masło klarowane
+4	 	Masło Ekstra 80 %
+5	R	Smalec gęsi
+6	R	Olej z awokado
+8	R	Olej z pestek dyni
+10	R	Olej z orzechów włoskich
+
+### batony (24)
+4.3	 	Snickers
+4.3	 	Kinder Bueno
+4.3	 	Mars
+4.3	 	Twix
+4.3	 	Bounty
+4.3	 	Kit Kat
+4.3	 	Prince Polo
+4.3	 	Lion
+4.3	 	Milky Way
+4.3	 	3 Bit
+4.3	 	Pawełek
+4.3	 	Grześki
+4.3	 	Knoppers
+4.3	 	Kinder Duplo
+4.3	 	Kinder Maxi King
+4.3	 	Kinder Country
+4.3	 	Czekolada Toblerone
+4.3	 	Princessa
+4.3	 	KitKat Chunky
+4.3	 	Snickers White
+4.3	 	Bounty Dark
+4.3	 	Danusia
+4.3	 	Twix White
+4.3	 	Lion White
+
+### batony-proteinowe (10)
+6.9	 	Baton proteinowy
+6.9	 	Mars Protein
+6.9	 	Snickers Protein
+6.9	 	Go On Protein Bar
+6.9	 	WK DZIK baton proteinowy
+6.9	 	Nick's Protein Bar
+6.9	 	F**king Protein
+6.9	 	Baton Protein 33%
+6.9	 	Baton Protein 50%
+6.9	 	Go On Protein Crisp
+
+### fastfood (36)
+1.7	 	Bułka z parówką
+2.9	 	Frytki
+2.9	 	Frytki z serem (loaded)
+2.9	 	Gofry z bitą śmietaną
+2.9	 	Falafel smażony
+2.9	 	Sushi maki z łososiem
+2.9	 	McFlurry Oreo
+2.9	 	Frytki z frytownicy
+3.9	 	Pizza Margherita
+3.9	 	Pizza Pepperoni
+3.9	 	Pizza Hawajska
+3.9	 	Pizza kebab
+3.9	 	Pizza quattro formaggi
+3.9	 	Pizza capricciosa
+4.3	 	Kebab w cieście
+4.3	 	Wrap z kurczakiem
+4.3	 	Kebab na talerzu
+4.3	 	Kolba kukurydzy smażona
+4.3	 	Tortilla z farszem (gotowa)
+4.3	 	Ryż z kurczakiem (box)
+4.3	 	Burrito z kurczakiem
+4.3	 	Pad thai z kurczakiem
+4.3	 	Curry kurczak
+4.3	 	Shawarma w picie
+4.3	 	Quesadilla z kurczakiem
+4.3	 	Tacos z wołowiną
+4.5	 	Hot Dog
+4.5	 	Hamburger
+4.5	 	Cheeseburger
+4.5	 	Big Mac (styl)
+4.5	 	McChicken / kurczak w panierce
+4.5	 	Skrzydełka KFC-style
+4.5	 	Chrupki kurze (KFC styl)
+4.5	 	Whopper (styl)
+4.5	 	Filet-O-Fish (styl)
+4.5	 	Cheeseburger podwójny
+
+### zupy (39)
+0.9	 	Krem brokułowy
+0.9	 	Zupa kalafiorowa
+1.2	 	Rosół z makaronem
+1.2	 	Pomidorowa z ryżem
+1.2	 	Zupa jarzynowa
+1.2	 	Zupa pomidorowa
+1.2	 	Zupa pieczarkowa
+1.2	 	Zupa ogórkowa
+1.2	 	Barszcz czerwony
+1.2	 	Żurek
+1.2	 	Kapuśniak
+1.2	 	Grochówka
+1.2	 	Flaki
+1.2	 	Krupnik
+1.2	 	Zupa fasolowa
+1.2	 	Barszcz biały
+1.2	 	Zupa szczawiowa
+1.2	 	Zupa cebulowa
+1.2	 	Minestrone
+1.2	 	Zupa pho
+1.2	 	Zupa dyniowa
+1.2	 	Zupa grzybowa
+1.2	 	Zupa z soczewicy
+1.2	 	Zupa pomidorowa kremowa
+1.2	 	Zupa tom yum
+1.2	 	Rosół z kury z makaronem
+1.2	 	Rosół drobiowy
+1.2	 	Zupa pomidorowa z ryżem
+1.2	 	Zupa pomidorowa z makaronem
+1.2	 	Rosół domowy
+1.2	 	Zupa krupnik
+1.5	 	Zupa krem szpinakowy
+1.9	 	Zupa gulaszowa
+2.3	 	Zupka chińska
+2.3	 	Ramen instant (zupka)
+4.3	 	Ramen z bulionem
+4.3	 	Bulion warzywny
+4.3	 	Bulion
+4.3	 	Bulion z kostki rosołowej
+
+### polskie-obiadki (69)
+0.75	 	Kasza gryczana z jajkiem
+1.3	 	Sałatka grecka
+1.3	 	Sałatka jarzynowa
+1.3	 	Sałatka Waldorf
+1.3	 	Sałatka z makaronem
+1.75	 	Ocet balsamiczny
+1.75	 	Imbir (korzeń)
+1.75	 	Delma z masłem
+1.75	 	Dżem niskosłodzony
+1.9	 	Golonka wieprzowa
+1.9	 	Żeberka wieprzowe
+1.9	 	Kotlet mielony (wieprzowo-wołowy)
+1.9	 	Naleśniki z dżemem
+1.9	 	Pierogi ruskie
+1.9	 	Pierogi z mięsem
+1.9	 	Kopytka
+1.9	 	Kluski śląskie
+1.9	 	Placki ziemniaczane
+1.9	 	Gulasz wołowy z makaronem
+1.9	 	Pierogi z kapustą i grzybami
+1.9	 	Gołąbki
+1.9	 	Bigos
+1.9	 	Pyzy z mięsem
+1.9	 	Naleśniki z twarogiem
+1.9	 	Krokiety z mięsem
+1.9	 	Pierogi leniwe
+1.9	 	Risotto z grzybami
+1.9	 	Kotlet de volaille
+1.9	 	Zrazy zawijane
+1.9	 	Klopsiki w sosie pomidorowym
+1.9	 	Kotlety mielone drobiowe
+1.9	 	Tatar wołowy
+1.9	 	Kotlet z piersi indyka
+1.9	 	Naleśniki z serem
+1.9	 	Chleb
+1.9	 	Bułka
+1.9	 	Goździki
+1.9	 	Kotlet mielony (smażony)
+1.9	 	Kotlet z piersi kurczaka (w panierce smażony)
+1.9	 	Naleśniki z mąki pszennej
+1.9	 	Gołąbki z ryżem i mięsem
+1.9	 	Gulasz wieprzowy
+1.9	 	Kakao (proszek) - Decomorreno
+1.9	 	Tost pszenny
+1.9	 	Grahamka Lidl
+1.9	 	Bajgiel pełnoziarnisty
+1.9	 	grahamka biedronka
+2.13	 	Wiórki kokosowe
+2.13	 	Orzeszki ziemne prażone bez soli
+2.3	 	Sznycel po wiedeńsku
+2.3	 	Rolada wieprzowa
+2.3	 	Ryba w panierce
+2.3	 	Placki po węgiersku
+2.3	 	Ryż z warzywami
+2.5	 	Schabowy (panierowany)
+2.5	 	Kotlet Schabowy Panierowany
+2.9	 	Spaghetti Bolognese
+2.9	 	Lasagne z mięsem
+2.9	 	Tagliatelle z łososiem
+2.9	 	Makaron z pesto i kurczakiem
+2.9	 	Cannelloni z ricottą
+2.9	 	Zapiekanka makaronowa
+2.9	 	Mac n cheese (makaron z serem)
+2.9	 	Zapiekanka
+2.9	 	Lasagne warzywna
+3.3	 	Sałatka Cezar z kurczakiem
+3.3	 	Sałatka z tuńczykiem
+3.71	 	Spaghetti Carbonara
+3.71	 	Penne z kurczakiem i brokułami
+
+### mrozone-pizze (17)
+1.2	 	Guseppe Szynka i pieczarki
+2.5	 	Guseppe 4 sery
+2.5	 	Guseppe Salami
+2.5	 	Feliciana Margherita
+2.5	 	Feliciana Speciale
+2.5	 	Feliciana Prosciutto e Funghi
+2.5	 	Feliciana Quattro Formaggi
+2.5	 	Don Peppe Margherita
+3.3	 	Ser Mozzarella w zalewie - Sottile Gusto
+3.5	 	Dzik Protein Pizza Salami
+3.5	 	Dzik Protein Pizza Capricciosa
+3.5	 	Dzik Protein Pizza BBQ Chicken
+4.3	 	Ristorante Salami
+4.3	 	Ristorante Prosciutto
+4.3	 	Ristorante Mozzarella
+4.3	 	Wagner Steinofen Salami
+4.56	 	Pesto zielone - Sottile Gusto
+
+### napoje (48)
+0.08	 	Herbata czarna (napar)
+0.08	 	Kawa czarna (parzona)
+0.08	 	Kawa czarna mielona (do zaparzenia)
+0.1	 	Woda
+0.45	 	Kubuś jabłkowy
+0.45	 	Tymbark jabłko
+0.45	 	Sok jabłkowy
+0.45	 	Świeży sok jabłkowy
+0.6	 	Sok pomarańczowy 100%
+0.6	 	Oshee izotoniczny
+0.6	 	Sok z cytryny
+0.6	 	Kawa parzona bez cukru
+0.6	 	Kawa z mlekiem (2 łyżki mleka 2%)
+0.6	 	Herbata (parzona)
+0.6	 	Kawa rozpuszczalna (bez cukru)
+0.6	 	Herbata (parzona) - Lipton
+0.6	 	Kawa z mlekiem (2 łyżki mleka 3.2%)
+0.6	 	Herbata zielona (parzona)
+0.6	 	Kawa (rozpuszczona)
+0.6	 	Kawa Espresso
+0.6	 	Kawa Latte
+0.6	 	Sok pomarańczowy
+0.6	 	Sok marchwiowy jednodniowy
+0.6	 	Kawa rozpuszczalna z mlekiem i cukrem
+0.6	 	Kawa rozpuszczlana + 50 ml mleka
+0.6	 	Kawa z mlekiem (2 łyżki mleka 0%)
+0.6	 	Herbata czerwona (parzona)
+0.6	 	Sok pomidorowy
+0.6	 	Sok 100% pomarańcza z miąższem
+0.6	 	Kawa parzona z cukrem
+0.6	 	Kawa parzona z mlekiem
+0.6	 	Kawa Błonnik - Inka
+0.65	 	Kawa zbożowa - Inka
+0.65	 	Kawa rozpuszczalna Nescafe Classic - Nestle
+0.65	 	Kawa rozpuszczalna Creme Sensazione - Nescafe
+0.9	 	Lipton Ice Tea brzoskwinia
+0.9	 	Nestea cytryna
+1.15	 	Coca-Cola
+1.15	 	Coca-Cola Zero
+1.15	 	Pepsi
+1.15	 	Sprite
+1.15	 	Fanta pomarańczowa
+1.15	 	Mirinda
+1.15	 	Pepsi Cola
+2.4	 	Red Bull
+2.4	 	Tiger Energy Drink
+2.4	 	Black Energy Drink
+2.4	 	Monster Energy
+
+### alkohole (28)
+0.45	 	Somersby jabłkowy
+0.9	 	Tyskie Gronie
+0.9	 	Żywiec jasne pełne
+0.9	 	Lech Premium
+0.9	 	Okocim O.K. Beer
+0.9	 	Harnaś jasne
+0.9	 	Heineken
+0.9	 	Corona Extra
+1	 	Winogrona zielone
+1.19	 	Piwo jasne pełne
+1.19	 	Piwo
+1.3	 	Garage Hard Lemon 4,6%
+1.3	 	Desperados
+1.3	 	Soplica wiśniowa
+1.3	 	Wódka
+1.3	 	Whisky
+1.3	 	Makaron z pszenicy durum (ugotowany)
+1.46	 	Olej z pestek winogron
+1.9	 	Wino czerwone wytrawne
+1.9	 	Wino białe półsłodkie
+1.9	 	Prosecco
+1.9	 	Wino białe wytrawne
+8.5	 	Wyborowa wódka
+8.5	 	Soplica czysta
+8.5	 	Żubrówka Bison Grass
+8.5	 	Krupnik tradycyjny
+8.5	 	Jägermeister
+8.5	 	Baileys Original
+
+### przyprawy (43)
+0.35	 	Przyprawa cebula suszona
+1.3	 	Sól kuchenna
+1.3	 	Przyprawa do kurczaka
+1.3	 	Vegeta
+1.9	 	Czosnek granulowany
+8.28	 	Warzywa na patelnię z przyprawą orientalną - Hortex
+8.28	 	Warzywa na patelnię z przyprawą włoską - Hortex
+8.28	 	Przyprawa wanilia laska
+8.28	 	Maggi (przyprawa do zup)
+9	 	Bazylia - otarta
+9	 	Przyprawa kmin rzymski (mielony)
+9	 	Curry (potrawa)
+9	 	Przyprawa Curry
+9	 	Bazylia - liście
+9	 	Przyprawa do kuchni włoskiej - Kamis
+9	 	Przyprawa Cząber
+20	 	Pieprz czarny mielony
+20	 	Papryka słodka mielona
+20	 	Papryka ostra mielona
+20	 	Majeranek
+20	 	Oregano
+20	 	Bazylia suszona
+20	 	Kminek
+20	 	Liść laurowy
+20	 	Ziele angielskie
+20	 	Kurkuma
+20	 	Cynamon mielony
+20	 	Zioła prowansalskie
+20	 	Tymianek
+20	 	Chili mielone
+20	 	Imbir mielony
+20	 	Gałka muszkatołowa
+20	 	Pieprz czarny
+20	 	Cynamon
+20	 	Tymianek - otarty
+20	 	Gałka muszkatołowa (mielona)
+20	 	Pieprz kolorowy
+20	 	Tymianek świeży
+20	 	Majeranek suszony
+20	 	Przyprawa ziele angielskie
+20	 	Przyprawa gałka muszkatołowa
+20	 	Przyprawa papryka słodka
+20	 	Kurkuma (proszek)

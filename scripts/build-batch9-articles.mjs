@@ -269,11 +269,236 @@ defs.push({
     uwaga: 'Nie myl deload z wymówką. To zaplanowana część programu, nie „dziś odpuszczam”. Po deloadie wróć do normalnych ciężarów.',
     coDalej: 'Zobacz <a href="overtraining-przetrenowanie-objawy">przetrenowanie</a> i <a href="regeneracja-szybka-co-dziala">regenerację</a>.'
 });
-//_A6_
-//_A7_
-//_A8_
-//_A9_
-//_A10_
+defs.push({
+    slug: 'overtraining-przetrenowanie-objawy',
+    emoji: '🔋',
+    title: 'Przetrenowanie — objawy i co zrobić',
+    subtitle: 'Jak odróżnić zwykłe zmęczenie od zespołu przetrenowania i jak z niego wyjść.',
+    meta: 'Przetrenowanie: objawy, przyczyny i ile odpoczynku potrzeba, by wrócić do formy.',
+    crumb: 'Przetrenowanie',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="deload-kiedy-i-jak">deload</a> · <a href="regeneracja-szybka-co-dziala">regeneracja</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Zespół przetrenowania to coś więcej niż „dziś mi się nie chce” — to przewlekłe zmęczenie fizyczne i psychiczne mimo treningu.',
+    sections: [
+        { h2: 'Objawy', p: 'Spadek siły, zły sen, drażliwość, brak motywacji, częstsze infekcje, bóle mięśni. Ciało nie nadąża z regeneracją.' },
+        { h2: 'Przyczyny', p: 'Za dużo objętości i intensywności przy zbyt małej ilości snu, kalorii i dni lekkich. Trening stał się stresem, nie bodźcem.' },
+        { h2: 'Co robić', p: 'Zredukuj objętość o połowę albo zrób pełny tydzień lekkich dni, popraw sen i jedzenie. W skrajnych przypadkach odpoczynek jest jedynym lekiem.' }
+    ],
+    bullets: [
+        '<strong>Znaki:</strong> spadek siły, zły sen, brak chęci.',
+        '<strong>Lek:</strong> mniej treningu, więcej snu i kcal.',
+        '<strong>Zapobiegaj:</strong> planuj deloady i dni lekkie.',
+    ],
+    uwaga: 'Prawdziwy zespół przetrenowania rozwija się tygodniami. Jeśli objawy nie mijają po 1–2 tygodniach odpoczynku, skonsultuj się z lekarzem.',
+    coDalej: 'Zobacz <a href="deload-kiedy-i-jak">deload</a> i <a href="regeneracja-szybka-co-dziala">regenerację</a>.'
+});
+defs.push({
+    slug: 'zakres-ruch-rom-pelny',
+    emoji: '📏',
+    title: 'Zakres ruchu — pełny czy skrócony?',
+    subtitle: 'Czy półprzysiady i „pliki” budują mięśnie, czy pełen zakres ruchu to podstawa.',
+    meta: 'Zakres ruchu (ROM): czy pełen zakres buduje więcej mięśni i siły niż skrócony.',
+    crumb: 'Zakres ruchu',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="tempo-treningu-tut">tempo</a> · <a href="przysiad-technika-bezpiecznie">przysiad</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Pełny zakres ruchu (ROM) zwykle stymuluje więcej mięśni niż półruchy — zwłaszcza w rozciągniętej pozycji mięśnia.',
+    sections: [
+        { h2: 'Pełny ROM', p: 'Dłuższa droga = większe napięcie w rozciągniętym mięśniu, co sprzyja hipertrofii. Przysiad do pełnego zakresu buduje więcej niż „pliki”.' },
+        { h2: 'Skrócony ROM', p: 'Ma sens w konkretnych celach (część ruchu, blokady), ale jako baza wypada gorzej. Ciężar „na pół” często myli siłę z egotrolem.' },
+        { h2: 'Praktyka', p: 'Wybieraj tak głęboki zakres, na jaki pozwala mobilność bez bólu. Pełny ROM przy niższym ciężarze bije półzakres przy większym.' }
+    ],
+    bullets: [
+        '<strong>Pełny ROM:</strong> więcej bodźca na wzrost.',
+        '<strong>Rozciągnięta pozycja:</strong> szczególnie cenna.',
+        '<strong>Bez bólu:</strong> zakres do granicy mobilności.',
+    ],
+    uwaga: 'Nie myl pełnego zakresu z wymuszaniem głębokości, której twoje stawy nie znoszą. Granica to bezbolesna mobilność, nie ego.',
+    coDalej: 'Zobacz <a href="tempo-treningu-tut">tempo treningu</a> i <a href="przysiad-technika-bezpiecznie">przysiad</a>.'
+});
+defs.push({
+    slug: 'tempo-treningu-tut',
+    emoji: '⏱️',
+    title: 'Tempo ćwiczeń (TUT) — czy wolniej znaczy lepiej',
+    subtitle: 'Time under tension i dlaczego super wolne tempo nie buduje więcej mięśni.',
+    meta: 'Tempo ćwiczeń i TUT: czy wolne powtórzenia budują więcej mięśni niż normalne.',
+    crumb: 'Tempo ćwiczeń (TUT)',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="zakres-ruch-rom-pelny">zakres ruchu</a> · <a href="superserie-i-drop-sety">superserie</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Czas pod napięciem (TUT) ma znaczenie, ale ekstremalnie wolne tempo nie buduje więcej mięśni — a często je ogranicza, bo musisz użyć mniejszego ciężaru.',
+    sections: [
+        { h2: 'Co to TUT', p: 'Łączny czas, w którym mięsień pracuje w serii. Zwykłe tempo 2–3 s w fazie ekscentrycznej to w większości wystarczające «napięcie».' },
+        { h2: 'Wolne = lepsze?', p: 'Nie. Klucz to zbliżanie się do porażki, a nie sekundy. Bardzo wolne tempo zmusza do odjęcia ciężaru, co obniża stymulację.' },
+        { h2: 'Praktyka', p: 'Kontroluj fazę opuszczania (2–3 s), a w górę ruszaj dynamicznie. Umiarkowane tempo + odpowiedni ciężar to najlepszy przepis.' }
+    ],
+    bullets: [
+        '<strong>Ekscentryka:</strong> 2–3 s kontroli.',
+        '<strong>Koncentryka:</strong> dynamicznie, ale pewnie.',
+        '<strong>Ważniejsze:</strong> ciężar i bliskość porażki.',
+    ],
+    uwaga: 'Super wolne tempo bywa używane, gdy chcesz odciążyć staw lub lepiej poczuć mięsień — ale jako baza treningu to kiepski wybór.',
+    coDalej: 'Zobacz <a href="zakres-ruch-rom-pelny">zakres ruchu</a> i <a href="rir-czy-trening-do-upadku">RIR</a>.'
+});
+defs.push({
+    slug: 'superserie-i-drop-sety',
+    emoji: '♻️',
+    title: 'Superserie i drop sety — oszczędność czasu',
+    subtitle: 'Techniki przyspieszające trening: jak je stosować bez rozwalenia progresji.',
+    meta: 'Superserie i drop sety: co to, jak działa i kiedy je stosować.',
+    crumb: 'Superserie i drop sety',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="tempo-treningu-tut">tempo</a> · <a href="ile-serii-na-grupe-tygodniowo">ile serii</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Superserie i drop sety skracają trening i pozwalają dobić zmęczenie w krótkim czasie — ale to przyprawa, nie danie główne.',
+    sections: [
+        { h2: 'Superserie', p: 'Dwa ćwiczenia pod rząd bez przerwy. Wersja na przeciwne mięśnie (klatka + plecy) oszczędza czas i nie obniża jakości jak na te same.' },
+        { h2: 'Drop sety', p: 'Po serii do zbliżenia do porażki natychmiast zmniejszasz ciężar i robisz kolejne. Dobrze „domykają” objętość na końcu treningu.' },
+        { h2: 'Kiedy', p: 'Gdy masz mało czasu lub chcesz dodać intensywności na koniec. Nie rób z nich całego planu — bazą zostają normalne serie z progresją.' }
+    ],
+    bullets: [
+        '<strong>Superserie:</strong> przeciwne grupy, bez przerwy.',
+        '<strong>Drop set:</strong> na koniec, po porażce.',
+        '<strong>Baza:</strong> normalne serie z progresją.',
+    ],
+    uwaga: 'Techniki przyspieszające podnoszą zmęczenie — nadużywane skracają regenrację i obniżają ciężary w seriach głównych. Umiar.',
+    coDalej: 'Zobacz <a href="tempo-treningu-tut">tempo</a> i <a href="ile-serii-na-grupe-tygodniowo">objętość</a>.'
+});
+defs.push({
+    slug: 'hiit-krotkie-i-intensywne',
+    emoji: '⚡',
+    title: 'HIIT — krótko i intensywnie',
+    subtitle: 'Protokół interwałowy na 15–20 minut, który poprawi kondycję bez godzin cardio.',
+    meta: 'HIIT: protokół interwałowy, ile trwa i jak go robić bezpiecznie.',
+    crumb: 'HIIT',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="cardio-liss-vs-hiit">LISS vs HIIT</a> · <a href="epoc-trening-a-spalanie-po">EPOC</a> · <a href="artykuly">artykuły</a>',
+    lead: 'HIIT to naprzemienne krótkie sprinty i odpoczynek. W 15–20 minut da ci tyle pracy serca, co dłuższa sesja spokojnego cardio.',
+    sections: [
+        { h2: 'Protokół', p: 'Np. 20 s maksymalnego wysiłku / 40 s truchtu, 6–8 powtórzeń. Albo 30/30. Dostosuj stosunek pracy do przerwy do swojej formy.' },
+        { h2: 'Dla kogo', p: 'Dla zdrowych, chcących poprawić kondycję szybko. Wymaga intensywności bliskiej maksimum — inaczej to zwykłe cardio.' },
+        { h2: 'Częstotliwość', p: '1–2× w tygodniu. Za częsty HIIT podkrada regenerację z treningu siłowego i zwiększa ryzyko przeciążenia.' }
+    ],
+    bullets: [
+        '<strong>Protokół:</strong> np. 20 s pracy / 40 s przerwy.',
+        '<strong>6–8 interwałów:</strong> po rozgrzewce.',
+        '<strong>1–2×/tydz:</strong> nie więcej.',
+    ],
+    uwaga: 'HIIT „na czczo” albo przy chorobie serca to zły pomysł. Rozgrzej się dobrze i nie wrzucaj maksa, jeśli wracasz po przerwie.',
+    coDalej: 'Zobacz <a href="cardio-liss-vs-hiit">LISS vs HIIT</a> i <a href="epoc-trening-a-spalanie-po">EPOC</a>.'
+});
+defs.push({
+    slug: 'bol-plecow-trening-silowy',
+    emoji: '🩹',
+    title: 'Ból pleców a trening siłowy',
+    subtitle: 'Czy przy bólu krzyża ćwiczyć, czy leżeć — co mówi współczesna nauka o bólu.',
+    meta: 'Ból pleców a trening siłowy: czy ćwiczenia pomagają i jak wracać do formy.',
+    crumb: 'Ból pleców a trening',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="martwy-ciag-technika">martwy ciąg</a> · <a href="mobilnosc-vs-rozciaganie">mobilność</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Przy nieswoistym bólu krzyża najlepszym „lekiem” jest stopniowy ruch i wzmacnianie, a nie tygodnie leżenia w łóżku.',
+    sections: [
+        { h2: 'Ruch zamiast bezruchu', p: 'Większość bólów pleców jest „nieswoista” — nie groźna. Delikatny ruch, spacery i stopniowe obciążanie realnie zmniejszają ból.' },
+        { h2: 'Trening siłowy', p: 'Wzmocnienie rdzenia, pośladków i pleców (wiosłowania, martwy ciąg w dobranej dawce) chroni przed nawrotami. Strach przed ruchem jest gorszy niż sam ruch.' },
+        { h2: 'Jak wracać', p: 'Zacznij od lekkich, bezbolesnych wariantów i stopniowo dokładaj. Jeśli ból promieniuje do nogi albo nie mija — idź do fizjoterapeuty lub lekarza.' }
+    ],
+    bullets: [
+        '<strong>Ruch:</strong> spacer i lekki trening.',
+        '<strong>Wzmacniaj:</strong> rdzeń, pośladki, plecy.',
+        '<strong>Stopniowo:</strong> bezbolesne obciążenie.',
+    ],
+    uwaga: 'Ból promieniujący do nogi, drętwienie lub utrata siły to czerwone flagi — nie „przeklekuj”, tylko zgłoś się do specjalisty.',
+    coDalej: 'Zobacz <a href="martwy-ciag-technika">technikę martwego ciągu</a> i <a href="mobilnosc-vs-rozciaganie">mobilność</a>.'
+});
+defs.push({
+    slug: 'przysiad-a-bol-kolan',
+    emoji: '🦵',
+    title: 'Przysiad a ból kolan — co robić',
+    subtitle: 'Czy kucanie niszczy kolana i jak trenować nogi, gdy przednie kolano boli.',
+    meta: 'Przysiad a ból kolan: przyczyny, jak dostosować technikę i kiedy zejść z obciążenia.',
+    crumb: 'Przysiad a kolana',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="przysiad-technika-bezpiecznie">technika przysiadu</a> · <a href="mobilnosc-vs-rozciaganie">mobilność</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Przysiad sam w sobie nie „niszczy” kolan. Ból z przodu kolana najczęściej bierze się z przeciążenia, słabej kontroli lub skoku objętości.',
+    sections: [
+        { h2: 'Skąd ból', p: 'Zbyt szybki wzrost ciężaru, zła mechanika (kolana uciekające do środka), słabe biodra i pośladki. Rzadko to „uszkodzenie”, częściej przeciążenie.' },
+        { h2: 'Dostosuj technikę', p: 'Pilnuj kolan w linii stóp, obniż głębokość do bezbolesnej, wzmacniaj pośladki i łydki. Często pomaga lekko szersza postawa.' },
+        { h2: 'Kiedy przestać', p: 'Ostry, strzelający ból, obrzęk lub niestabilność to sygnał do przerwy i wizyty u fizjoterapeuty — nie „dokręcania” kolana bandażem.' }
+    ],
+    bullets: [
+        '<strong>Najczęściej:</strong> przeciążenie, nie uszkodzenie.',
+        '<strong>Popraw:</strong> kolana w linii, mniej ciężaru.',
+        '<strong>Czerwone flagi:</strong> obrzęk, ostry ból.',
+    ],
+    uwaga: 'Bezbolesny, stały trening z rozsądną progresją jest dla kolan zwykle dobroczynny. Unikanie ruchu ze strachu bywa gorsze.',
+    coDalej: 'Zobacz <a href="przysiad-technika-bezpiecznie">technikę przysiadu</a> i <a href="mobilnosc-vs-rozciaganie">mobilność</a>.'
+});
+defs.push({
+    slug: 'sila-chwytu-grip',
+    emoji: '🤲',
+    title: 'Siła chwytu — grip i zdrowie',
+    subtitle: 'Dlaczego mocny uścisk to więcej niż martwy ciąg — i jak go trenować.',
+    meta: 'Siła chwytu: dlaczego jest ważna dla zdrowia i jak ją trenować.',
+    crumb: 'Siła chwytu',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="martwy-ciag-technika">martwy ciąg</a> · <a href="podciaganie-na-drazku-plan">podciąganie</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Siła chwytu koreluje z ogólnym zdrowiem i sprawnością w starszym wieku — a przy okazji jest limiterem w martwym ciągu i podciąganiach.',
+    sections: [
+        { h2: 'Dlaczego ważna', p: 'Badania wiążą słabszy chwyt z wyższym ryzykiem niesprawności i chorób z wiekiem. To prosty wskaźnik ogólnej siły i rezerw.' },
+        { h2: 'Jak ją budować', p: 'Ciężkie wiosłowania i martwy ciąg bez pasków, zwisy na drążku, przenoszenie ciężkich rzeczy (farmer carry). Najlepiej naturalnym ruchem.' },
+        { h2: 'Paski czy nie', p: 'Pasków używaj tylko, gdy chwyt limituje serię grzbietu. Na co dzień trenuj bez nich, żeby nie zostawić dłoni w tyle.' }
+    ],
+    bullets: [
+        '<strong>Naturalnie:</strong> zwisy, noszenie ciężarów.',
+        '<strong>Bez pasków:</strong> głównie bez wspomagania.',
+        '<strong>Regularnie:</strong> chwyt rośnie powoli.',
+    ],
+    uwaga: 'Nie rób z chwytu obsesji — to dodatek do siły ogólnej. Jeśli stale wymaga pasków, to znak, że warto chwyt wręcz wzmacniać osobno.',
+    coDalej: 'Zobacz <a href="martwy-ciag-technika">martwy ciąg</a> i <a href="podciaganie-na-drazku-plan">podciąganie</a>.'
+});
+defs.push({
+    slug: 'mobilnosc-vs-rozciaganie',
+    emoji: '🤸',
+    title: 'Mobilność — różnica od rozciągania',
+    subtitle: 'Zakres ruchu, kontrola i stabilność: czym jest mobilność i jak ją poprawiać.',
+    meta: 'Mobilność vs rozciąganie: czym się różnią i jak poprawić zakres ruchu w stawach.',
+    crumb: 'Mobilność vs rozciąganie',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="stretching-silny-czy-bez">stretching</a> · <a href="zakres-ruch-rom-pelny">zakres ruchu</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Elastyczność to długość mięśnia, a mobilność to zdolność do aktywnej pracy w pełnym zakresie — z kontrolą i siłą.',
+    sections: [
+        { h2: 'Różnica', p: 'Możesz być „gibki” (statycznie długa) i mieć kiepską mobilność, bo nie panujesz nad zakresem. Mobilność = elastyczność + siła + kontrola.' },
+        { h2: 'Dlaczego ważna', p: 'Wpływa na głębokość przysiadu, technikę martwego ciągu i ryzyko przeciążeń. Bez mobilności „gibkość” nie przekłada się na trening.' },
+        { h2: 'Jak poprawiać', p: 'Dynamiczna praca w pełnym zakresie, kontrolowane głębokie pozycje (np. asian squat), ćwiczenia stawów. Sam statyczny stretching nie wystarczy.' }
+    ],
+    bullets: [
+        '<strong>Mobilność:</strong> zakres + kontrola + siła.',
+        '<strong>Praca:</strong> dynamiczna, w pełnym zakresie.',
+        '<strong>Najlepsze:</strong> głębokie pozycje i powtórzenia.',
+    ],
+    uwaga: 'Nie musisz być „elastyczny jak przyrząd gimnastyczny” — wystarczy mobilność do własnych ćwiczeń. Celuj w funkcję, nie w szpagat.',
+    coDalej: 'Zobacz <a href="stretching-silny-czy-bez">stretching</a> i <a href="zakres-ruch-rom-pelny">zakres ruchu</a>.'
+});
+defs.push({
+    slug: 'jak-mierzyc-postep-bez-wagi',
+    emoji: '📐',
+    title: 'Jak mierzyć postęp bez wagi',
+    subtitle: 'Wymiary, zdjęcia i siła — lepsze wskaźniki niż liczba na wadze.',
+    meta: 'Mierzenie postępu bez wagi: wymiary, zdjęcia i wskaźniki siłowe.',
+    crumb: 'Postęp bez wagi',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="dlaczego-waga-skacze-o-2kg">waga skacze</a> · <a href="dlaczego-waga-stoi-pomimo-diety">waga stoi</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Waga potrafi kłamać — woda, mięśnie i glikogen ją zaburzają. Lepsze wskaźniki to wymiary, zdjęcia i rosnąca siła.',
+    sections: [
+        { h2: 'Wymiary i zdjęcia', p: 'Centymetr w talii i biodrach oraz zdjęcia (ta sama pora, światło, poza) pokazują kompozycję ciała lepiej niż waga.' },
+        { h2: 'Siła', p: 'Rosnące obciążenia i powtórzenia to obiektywny znak postępu. Jeśli ciężar idzie w górę, idziesz w dobrą stronę, nawet gdy waga stoi.' },
+        { h2: 'Jak robić', p: 'Mierz się raz w tygodniu, rano, po toalecie. Waga to tylko jeden punkt danych — patrz na trend tygodni, nie na pojedynczy skok.' }
+    ],
+    bullets: [
+        '<strong>Wymiary:</strong> talia, biodra, raz w tygodniu.',
+        '<strong>Zdjęcia:</strong> stałe warunki.',
+        '<strong>Siła:</strong> ciężary i powtórzenia w górę.',
+    ],
+    uwaga: 'Jedna metryka nigdy nie opisze postępu. Dopiero combo waga + wymiary + siła + zdjęcia daje rzetelny obraz, co naprawdę się zmienia.',
+    coDalej: 'Zobacz <a href="dlaczego-waga-skacze-o-2kg">czemu waga skacze</a> i <a href="dlaczego-waga-stoi-pomimo-diety">czemu waga stoi</a>.'
+});
 
 const articles = defs.map(buildArticle);
 const out = path.join(__dirname, 'hardcore-articles-batch9.json');
