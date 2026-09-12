@@ -102,9 +102,9 @@ const CATEGORY_BASE = {
         sodium: 5, b2: 0.03, b9: 5,
     },
     przyprawy: {
-        sodium: 200, manganese: 2, iron: 8, calcium: 200, copper: 400,
-        magnesium: 100, potassium: 500, zinc: 2, selenium: 5,
-        vitK: 50, vitA: 100, vitC: 10,
+        // Szablon celowo minimalny: ziół/przypraw nie da się uśrednić (bardzo
+        // różnią się składem). Produkty źle skategoryzowane (soda, sól, drożdże,
+        // cukier) nie dostaną już wymyślonych witamin — obsługują je PURE_LEAN.
     },
 };
 
