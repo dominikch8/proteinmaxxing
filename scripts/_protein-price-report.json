@@ -840,16 +840,6 @@
     "formula": "0.7 × 100 / 7.44 = 9.41"
   },
   {
-    "name": "Jajo kurze (żółtko)",
-    "serving": "sztuka (50g)",
-    "servingGrams": 50,
-    "servingPricePln": 0.75,
-    "proteinPer100g": 15.9,
-    "proteinInServing": 7.95,
-    "pricePer100gProtein": 9.43,
-    "formula": "0.75 × 100 / 7.95 = 9.43"
-  },
-  {
     "name": "Pestki dyni",
     "serving": "garść (30g)",
     "servingGrams": 30,
@@ -1280,16 +1270,6 @@
     "formula": "0.75 × 100 / 6.8 = 11.03"
   },
   {
-    "name": "Jajko sadzone",
-    "serving": "sztuka (50g)",
-    "servingGrams": 50,
-    "servingPricePln": 0.75,
-    "proteinPer100g": 13.6,
-    "proteinInServing": 6.8,
-    "pricePer100gProtein": 11.03,
-    "formula": "0.75 × 100 / 6.8 = 11.03"
-  },
-  {
     "name": "Ryż parboiled długoziarnisty (nieugotowany) - Biedronka",
     "serving": "porcja (80g)",
     "servingGrams": 80,
@@ -1550,36 +1530,6 @@
     "formula": "3.39 × 100 / 28.5 = 11.89"
   },
   {
-    "name": "Jajo kurze (całe)",
-    "serving": "sztuka (50g)",
-    "servingGrams": 50,
-    "servingPricePln": 0.75,
-    "proteinPer100g": 12.6,
-    "proteinInServing": 6.3,
-    "pricePer100gProtein": 11.9,
-    "formula": "0.75 × 100 / 6.3 = 11.9"
-  },
-  {
-    "name": "Jajko ugotowane na twardo",
-    "serving": "sztuka (50g)",
-    "servingGrams": 50,
-    "servingPricePln": 0.75,
-    "proteinPer100g": 12.6,
-    "proteinInServing": 6.3,
-    "pricePer100gProtein": 11.9,
-    "formula": "0.75 × 100 / 6.3 = 11.9"
-  },
-  {
-    "name": "Jajko gotowane",
-    "serving": "sztuka (50g)",
-    "servingGrams": 50,
-    "servingPricePln": 0.75,
-    "proteinPer100g": 12.6,
-    "proteinInServing": 6.3,
-    "pricePer100gProtein": 11.9,
-    "formula": "0.75 × 100 / 6.3 = 11.9"
-  },
-  {
     "name": "Ryż biały",
     "serving": "woreczek (100g)",
     "servingGrams": 100,
@@ -1788,16 +1738,6 @@
     "proteinInServing": 5.6,
     "pricePer100gProtein": 12.5,
     "formula": "0.7 × 100 / 5.6 = 12.5"
-  },
-  {
-    "name": "Jajko ugotowane na miękko",
-    "serving": "sztuka (50g)",
-    "servingGrams": 50,
-    "servingPricePln": 0.75,
-    "proteinPer100g": 12,
-    "proteinInServing": 6,
-    "pricePer100gProtein": 12.5,
-    "formula": "0.75 × 100 / 6 = 12.5"
   },
   {
     "name": "Fasola czerwona (konserwa)",
@@ -2180,16 +2120,6 @@
     "formula": "3.5900000000000003 × 100 / 26.16 = 13.72"
   },
   {
-    "name": "Jajo kurze (białko)",
-    "serving": "sztuka (50g)",
-    "servingGrams": 50,
-    "servingPricePln": 0.75,
-    "proteinPer100g": 10.9,
-    "proteinInServing": 5.45,
-    "pricePer100gProtein": 13.76,
-    "formula": "0.75 × 100 / 5.45 = 13.76"
-  },
-  {
     "name": "Zupa pomidorowa z makaronem",
     "serving": "porcja (300g)",
     "servingGrams": 300,
@@ -2208,6 +2138,16 @@
     "proteinInServing": 18,
     "pricePer100gProtein": 13.83,
     "formula": "2.49 × 100 / 18 = 13.83"
+  },
+  {
+    "name": "Jajo kurze (żółtko)",
+    "serving": "sztuka (50g)",
+    "servingGrams": 50,
+    "servingPricePln": 1.1,
+    "proteinPer100g": 15.9,
+    "proteinInServing": 7.95,
+    "pricePer100gProtein": 13.84,
+    "formula": "1.1 × 100 / 7.95 = 13.84"
   },
   {
     "name": "Serek homogenizowany naturalny - Pilos",
@@ -2570,16 +2510,6 @@
     "formula": "0.75 × 100 / 5 = 15"
   },
   {
-    "name": "Jajko sadzone na oleju",
-    "serving": "sztuka (50g)",
-    "servingGrams": 50,
-    "servingPricePln": 0.75,
-    "proteinPer100g": 10,
-    "proteinInServing": 5,
-    "pricePer100gProtein": 15,
-    "formula": "0.75 × 100 / 5 = 15"
-  },
-  {
     "name": "Łosoś filet",
     "serving": "porcja (120g)",
     "servingGrams": 120,
@@ -2838,6 +2768,16 @@
     "proteinInServing": 4.72,
     "pricePer100gProtein": 15.89,
     "formula": "0.75 × 100 / 4.72 = 15.89"
+  },
+  {
+    "name": "Jajko sadzone",
+    "serving": "sztuka (50g)",
+    "servingGrams": 50,
+    "servingPricePln": 1.1,
+    "proteinPer100g": 13.6,
+    "proteinInServing": 6.8,
+    "pricePer100gProtein": 16.18,
+    "formula": "1.1 × 100 / 6.8 = 16.18"
   },
   {
     "name": "Polędwica wieprzowa (wędzona)",
@@ -3310,7 +3250,37 @@
     "formula": "3.49 × 100 / 20 = 17.45"
   },
   {
+    "name": "Jajo kurze (całe)",
+    "serving": "sztuka (50g)",
+    "servingGrams": 50,
+    "servingPricePln": 1.1,
+    "proteinPer100g": 12.6,
+    "proteinInServing": 6.3,
+    "pricePer100gProtein": 17.46,
+    "formula": "1.1 × 100 / 6.3 = 17.46"
+  },
+  {
+    "name": "Jajko ugotowane na twardo",
+    "serving": "sztuka (50g)",
+    "servingGrams": 50,
+    "servingPricePln": 1.1,
+    "proteinPer100g": 12.6,
+    "proteinInServing": 6.3,
+    "pricePer100gProtein": 17.46,
+    "formula": "1.1 × 100 / 6.3 = 17.46"
+  },
+  {
     "name": "Jajko kurze gotowane",
+    "serving": "sztuka (50g)",
+    "servingGrams": 50,
+    "servingPricePln": 1.1,
+    "proteinPer100g": 12.6,
+    "proteinInServing": 6.3,
+    "pricePer100gProtein": 17.46,
+    "formula": "1.1 × 100 / 6.3 = 17.46"
+  },
+  {
+    "name": "Jajko gotowane",
     "serving": "sztuka (50g)",
     "servingGrams": 50,
     "servingPricePln": 1.1,
@@ -3648,6 +3618,16 @@
     "proteinInServing": 25.2,
     "pricePer100gProtein": 18.21,
     "formula": "4.59 × 100 / 25.2 = 18.21"
+  },
+  {
+    "name": "Jajko ugotowane na miękko",
+    "serving": "sztuka (50g)",
+    "servingGrams": 50,
+    "servingPricePln": 1.1,
+    "proteinPer100g": 12,
+    "proteinInServing": 6,
+    "pricePer100gProtein": 18.33,
+    "formula": "1.1 × 100 / 6 = 18.33"
   },
   {
     "name": "Musli owocowe - Sante",
@@ -4080,6 +4060,16 @@
     "formula": "7.19 × 100 / 36 = 19.97"
   },
   {
+    "name": "Jajo kurze (białko)",
+    "serving": "sztuka (50g)",
+    "servingGrams": 50,
+    "servingPricePln": 1.1,
+    "proteinPer100g": 10.9,
+    "proteinInServing": 5.45,
+    "pricePer100gProtein": 20.18,
+    "formula": "1.1 × 100 / 5.45 = 20.18"
+  },
+  {
     "name": "Groszek mrożony (ugotowany bez soli)",
     "serving": "porcja (100g)",
     "servingGrams": 100,
@@ -4088,6 +4078,16 @@
     "proteinInServing": 5.2,
     "pricePer100gProtein": 20.19,
     "formula": "1.05 × 100 / 5.2 = 20.19"
+  },
+  {
+    "name": "Jogurt",
+    "serving": "porcja (150g)",
+    "servingGrams": 150,
+    "servingPricePln": 1.55,
+    "proteinPer100g": 5.1,
+    "proteinInServing": 7.65,
+    "pricePer100gProtein": 20.26,
+    "formula": "1.55 × 100 / 7.65 = 20.26"
   },
   {
     "name": "Ser topiony plastry",
@@ -4508,6 +4508,16 @@
     "proteinInServing": 16.8,
     "pricePer100gProtein": 21.96,
     "formula": "3.6900000000000004 × 100 / 16.8 = 21.96"
+  },
+  {
+    "name": "Jajko sadzone na oleju",
+    "serving": "sztuka (50g)",
+    "servingGrams": 50,
+    "servingPricePln": 1.1,
+    "proteinPer100g": 10,
+    "proteinInServing": 5,
+    "pricePer100gProtein": 22,
+    "formula": "1.1 × 100 / 5 = 22"
   },
   {
     "name": "Kiełbaski śniadaniowe",
@@ -5708,16 +5718,6 @@
     "proteinInServing": 2.01,
     "pricePer100gProtein": 29.85,
     "formula": "0.6 × 100 / 2.01 = 29.85"
-  },
-  {
-    "name": "Jogurt",
-    "serving": "porcja (150g)",
-    "servingGrams": 150,
-    "servingPricePln": 2.29,
-    "proteinPer100g": 5.1,
-    "proteinInServing": 7.65,
-    "pricePer100gProtein": 29.93,
-    "formula": "2.29 × 100 / 7.65 = 29.93"
   },
   {
     "name": "Orzechy włoskie",
