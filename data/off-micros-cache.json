@@ -223,5 +223,34 @@
     "manganese": 0.3,
     "sodium": 40
   },
-  "granat": {}
+  "granat": {},
+  "ananas-swiezy": {},
+  "mango": {},
+  "zurawina-suszona": {},
+  "rodzynki": {},
+  "platki-owsiane": {
+    "calcium": 68,
+    "iron": 4,
+    "potassium": 460
+  },
+  "ryz-bialy": {},
+  "kasza-gryczana": {},
+  "kasza-jaglana": {},
+  "kasza-jeczmienna": {
+    "magnesium": 64,
+    "zinc": 1.6,
+    "sodium": 4
+  },
+  "kuskus": {},
+  "komosa-ryzowa-quinoa": {},
+  "amarantus": {},
+  "ryz-brazowy-suchy": {},
+  "makaron-pszenny-suchy": {},
+  "bulgur": {
+    "vitD": 2.08333333333333,
+    "calcium": 50,
+    "iron": 0.8333333333333329,
+    "potassium": 250,
+    "sodium": 250
+  }
 }

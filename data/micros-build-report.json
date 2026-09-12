@@ -1,7 +1,7 @@
 {
   "total": 2315,
   "withKeys": 2065,
-  "fromOff": 22,
+  "fromOff": 16,
   "avgKeys": 13.5,
   "thin": [
     {
@@ -21,8 +21,8 @@
     },
     {
       "slug": "smalec",
-      "keys": 5,
-      "source": "off"
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "olej-kokosowy",
@@ -31,8 +31,8 @@
     },
     {
       "slug": "margaryna",
-      "keys": 5,
-      "source": "off"
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "maslo-klarowane-ghee",
@@ -1257,8 +1257,8 @@
   ],
   "sources": {
     "curated": 667,
-    "estimate": 1533,
-    "off": 30,
+    "estimate": 1556,
+    "off": 7,
     "lean": 61,
     "none": 24
   }
