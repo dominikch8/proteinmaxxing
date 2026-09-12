@@ -437,7 +437,8 @@
 .funfact-cats-rest {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
+    justify-content: safe center;
     align-items: center;
     gap: 7px;
     width: 100%;
@@ -627,6 +628,17 @@
 
     .funfact-controls {
         flex-direction: column;
+    }
+
+    /* Single-line category strip: keep it on one line and let it scroll
+       horizontally instead of wrapping onto a second row. */
+    .funfact-cats-wrap {
+        margin-top: 20px;
+        margin-bottom: 24px;
+    }
+
+    .funfact-cats {
+        gap: 12px;
     }
 }
 
