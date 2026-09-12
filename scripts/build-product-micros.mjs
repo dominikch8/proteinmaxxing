@@ -229,6 +229,7 @@ async function main() {
         p.microsDetail = Object.keys(micros).length ? micros : {};
         p.microsSource = source;
         p.micros = microsToLabelString(micros);
+        report.sources[source] = (report.sources[source] || 0) + 1;
 
         const kc = Object.keys(micros).length;
         keySum += kc;
