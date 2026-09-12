@@ -34,3 +34,18 @@ console.log('Makra poza tolerancją:', macroIssues.length);
 macroIssues.forEach((m) => console.log('  ' + m));
 console.log('Bez ceny:', noPrice.join(' | ') || 'brak');
 console.log('Bez porcji:', noServing.join(' | ') || 'brak');
+
+fs.writeFileSync(
+    'C:/Users/Administrator xD/.cline/data/workspaces/chat/_val-report.txt',
+    [
+        `SUMA: ${arr.length}`,
+        `Kategorie: ${JSON.stringify(byCat)}`,
+        `Duplikaty w pliku: ${dupIn.length} ${dupIn.join(' | ')}`,
+        `Duplikaty z bazą: ${dupDb.length} ${dupDb.join(' | ')}`,
+        `Makra poza tolerancją: ${macroIssues.length}`,
+        ...macroIssues.map((m) => '  ' + m),
+        `Bez ceny: ${noPrice.join(' | ') || 'brak'}`,
+        `Bez porcji: ${noServing.join(' | ') || 'brak'}`,
+    ].join('\n'),
+    'utf8'
+);
