@@ -305,7 +305,7 @@ function getProductMicrosDetail(p) {
     if (p.microsDetail && typeof p.microsDetail === 'object' && Object.keys(p.microsDetail).length) {
         return p.microsDetail;
     }
-    return buildMicrosForProduct(p);
+    return {};
 }
 
 function buildMicrosSectionHtml(p) {
