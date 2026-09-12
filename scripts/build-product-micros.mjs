@@ -175,7 +175,7 @@ async function main() {
     }
 
     const bySlug = {};
-    const report = { total: products.length, withKeys: 0, fromOff: 0, avgKeys: 0, thin: [] };
+    const report = { total: products.length, withKeys: 0, fromOff: 0, avgKeys: 0, thin: [], sources: {} };
     let keySum = 0;
     let fetched = 0;
 
