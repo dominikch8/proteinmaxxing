@@ -178,5 +178,50 @@
     "vitA": 300,
     "vitC": 24,
     "sodium": 16
-  }
+  },
+  "truskawki": {},
+  "maliny": {},
+  "sliwki": {
+    "vitA": 154,
+    "potassium": 804,
+    "copper": 420,
+    "sodium": 12
+  },
+  "wisnie": {},
+  "gruszka": {},
+  "czeresnie": {},
+  "borowki": {},
+  "winogrona": {},
+  "awokado": {},
+  "kiwi": {
+    "vitC": 261,
+    "calcium": 28,
+    "potassium": 510,
+    "sodium": 4
+  },
+  "pomarancza": {},
+  "mandarynki": {},
+  "arbuz": {},
+  "melon": {
+    "vitA": 45,
+    "vitC": 40.5,
+    "vitE": 0.165,
+    "vitK": 1.35,
+    "b1": 0.045000000000000005,
+    "b2": 0.030000000000000002,
+    "b5": 0.13999999999999999,
+    "b6": 0.1,
+    "b9": 22,
+    "calcium": 11.5,
+    "iron": 0.265,
+    "magnesium": 12,
+    "phosphorus": 10.5,
+    "potassium": 157,
+    "zinc": 0.115,
+    "selenium": 0.25,
+    "copper": 70,
+    "manganese": 0.3,
+    "sodium": 40
+  },
+  "granat": {}
 }
