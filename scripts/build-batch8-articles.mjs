@@ -269,11 +269,236 @@ defs.push({
     uwaga: 'Ciągły trening do upadku podnosi ryzyko drobnych urazów i wydłuża regenerację, bez wyraźnie lepszych efektów. Umiar się opłaca.',
     coDalej: 'Zobacz <a href="podwojna-progresja-system">podwójną progresję</a> i <a href="ile-serii-na-grupe-tygodniowo">ile serii</a>.'
 });
-//_A6_
-//_A7_
-//_A8_
-//_A9_
-//_A10_
+defs.push({
+    slug: 'ile-serii-na-grupe-tygodniowo',
+    emoji: '🔢',
+    title: 'Ile serii na grupę mięśniową tygodniowo',
+    subtitle: 'Optymalna objętość treningowa: ile serii buduje mięśnie, a ile to już przesada.',
+    meta: 'Ile serii na grupę tygodniowo: optymalna objętość dla hipertrofii i regeneracji.',
+    crumb: 'Ile serii na grupę',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="czestotliwosc-treningu-nauka">częstotliwość</a> · <a href="rir-czy-trening-do-upadku">RIR</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Istnieje „słodki punkt” objętości tygodniowej: zbyt mało nie daje bodźca, zbyt dużo przytłacza regenerację.',
+    sections: [
+        { h2: 'Ile serii', p: 'Dla większości sprawdza się 10–20 serii na grupę tygodniowo. Poniżej 10 słabo stymuluje, powyżej 20 ryzyko przetrenowania rośnie bez lepszych efektów.' },
+        { h2: 'Jak liczyć', p: 'Liczysz serie robocze (bez rozgrzewkowych) na daną grupę w tygodniu. Np. klatka: 3 serie wyciskania × 2 dni = 6, plus rozpiętki — sumujesz.' },
+        { h2: 'Dopasuj do siebie', p: 'Początkujący zbudują mięśnie przy niższej objętości, zaawansowani potrzebują jej więcej. Zwiększaj stopniowo, obserwując regenerację i postęp.' }
+    ],
+    bullets: [
+        '<strong>Optimum:</strong> 10–20 serii/grupę/tydzień.',
+        '<strong>Początkujący:</strong> dolna granica wystarczy.',
+        '<strong>Stopniowo:</strong> nie skacz z 6 na 24 serii.',
+    ],
+    uwaga: 'Objętość to nie wszystko — kilka „złych” serii to gorsza inwestycja niż mniej, ale jakościowych, blisko porażki.',
+    coDalej: 'Zobacz <a href="czestotliwosc-treningu-nauka">częstotliwość treningu</a> i <a href="overtraining-przetrenowanie-objawy">przetrenowanie</a>.'
+});
+defs.push({
+    slug: 'czestotliwosc-treningu-nauka',
+    emoji: '📅',
+    title: 'Częstotliwość treningu — co mówi nauka',
+    subtitle: 'Ile razy w tygodniu trenować mięsień, by rósł najszybciej.',
+    meta: 'Częstotliwość treningu: ile razy w tygodniu trenować grupę mięśniową dla hipertrofii.',
+    crumb: 'Częstotliwość treningu',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="ile-serii-na-grupe-tygodniowo">ile serii</a> · <a href="full-body-vs-split">full body vs split</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Przy tej samej objętości częstszy trening danego mięśnia (2× vs 1×/tydzień) daje zwykle lekko lepsze efekty — ale to nie zero-jedynkowa różnica.',
+    sections: [
+        { h2: '2× czy 1×', p: 'Trening mięśnia 2× w tygodniu częściej wygrywa z 1×, choć różnica bywa niewielka. Klucz to rozłożyć objętość na więcej bodźców.' },
+        { h2: 'Dlaczego', p: 'Częstsze, mniejsze bodźce dłużej utrzymują syntezę białek mięśniowych na podwyższonym poziomie w skali tygodnia.' },
+        { h2: 'Praktyka', p: 'Nie musisz trenować codziennie. Wystarczy góra/dół albo full body 3×/tydzień — każdy mięsień dostaje wtedy 2–3 bodźce tygodniowo.' }
+    ],
+    bullets: [
+        '<strong>Cel:</strong> 2 bodźce na mięsień/tydzień.',
+        '<strong>Układ:</strong> full body lub góra/dół.',
+        '<strong>Objętość:</strong> rozłóż, nie kumuluj.',
+    ],
+    uwaga: 'Częstotliwość bez objętości nic nie da — najpierw upewnij się, że robisz 10–20 serii na grupę, dopiero potem rozkładaj częściej.',
+    coDalej: 'Zobacz <a href="ile-serii-na-grupe-tygodniowo">ile serii</a> i <a href="full-body-vs-split">full body vs split</a>.'
+});
+defs.push({
+    slug: 'rozgrzewka-czym-i-jak',
+    emoji: '🔧',
+    title: 'Rozgrzewka — jak naprawdę działa',
+    subtitle: 'Czy długie rozciąganie przed treningiem pomaga, czy to strata czasu.',
+    meta: 'Rozgrzewka przed treningiem: co robić, czego unikać i ile ma trwać.',
+    crumb: 'Rozgrzewka',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="pierwszy-trening-silowy-plan">plan treningu</a> · <a href="stretching-silny-czy-bez">stretching</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Rozgrzewka ma podnieść temperaturę ciała i przygotować stawy oraz układ nerwowy — nie musi trwać pół godziny ani składać się ze statycznego rozciągania.',
+    sections: [
+        { h2: 'Co robić', p: '5–10 minut lekkiego ruchu (rower, marsz), potem serie rozgrzewkowe tego ćwiczenia ze stopniowo rosnącym ciężarem. To najlepiej przygotowuje do ciężkiej pracy.' },
+        { h2: 'Czego nie robić', p: 'Długie statyczne rozciąganie przed treningiem może chwilowo obniżyć siłę. Rozciąganie statyczne zostaw na koniec sesji.' },
+        { h2: 'Ile czasu', p: 'Dla większości 10–15 minut w zupełności wystarczy. Ważniejsza jest jakość serii rozgrzewkowych niż długość „rozruchu”.' }
+    ],
+    bullets: [
+        '<strong>Start:</strong> 5–10 min lekkiego cardio.',
+        '<strong>Potem:</strong> serie zbliżeniowe danego ruchu.',
+        '<strong>Statyczny stretching:</strong> na koniec.',
+    ],
+    uwaga: 'W chłodne dni i przy porannych treningach rozgrzewka powinna być dłuższa — zimne mięśnie i ścięgna są bardziej podatne na urazy.',
+    coDalej: 'Zobacz <a href="stretching-silny-czy-bez">stretching a siła</a> i <a href="pierwszy-trening-silowy-plan">plan treningu</a>.'
+});
+defs.push({
+    slug: 'stretching-silny-czy-bez',
+    emoji: '🤸',
+    title: 'Stretching a siła — kiedy pomaga, kiedy szkodzi',
+    subtitle: 'Statyczne rozciąganie przed treningiem a wyniki siłowe — co mówią badania.',
+    meta: 'Stretching a siła: czy rozciąganie przed treningiem osłabia i kiedy je robić.',
+    crumb: 'Stretching a siła',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="rozgrzewka-czym-i-jak">rozgrzewka</a> · <a href="mobilnosc-vs-rozciaganie">mobilność</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Długie statyczne rozciąganie tuż przed wysiłkiem siłowym może chwilowo obniżyć siłę. To nie znaczy, że stretching jest zły — trzeba tylko wiedzieć, kiedy go robić.',
+    sections: [
+        { h2: 'Przed treningiem', p: 'Unikaj długiego (30 s+) statycznego rozciągania danego mięśnia. Zamiast tego dynamiczne rozgrzanie i serie zbliżeniowe.' },
+        { h2: 'Po treningu', p: 'Statyczne rozciąganie po sesji poprawia zakres ruchu i nie koliduje z siłą. To jego najlepszy moment.' },
+        { h2: 'Osobno', p: 'Jeśli zależy ci na gibkości, rób stretching jako osobną sesję lub w dni nietreningowe — pełny efekt bez wpływu na siłę.' }
+    ],
+    bullets: [
+        '<strong>Przed:</strong> dynamicznie, nie statycznie.',
+        '<strong>Po:</strong> statycznie, na koniec.',
+        '<strong>Gibkość:</strong> osobne sesje na luzie.',
+    ],
+    uwaga: 'Efekt osłabienia jest krótki i nie dotyczy każdego równo — ale po co ryzykować? Przenieś statyczny stretching na koniec treningu.',
+    coDalej: 'Zobacz <a href="mobilnosc-vs-rozciaganie">mobilność vs rozciąganie</a> i <a href="rozgrzewka-czym-i-jak">rozgrzewkę</a>.'
+});
+defs.push({
+    slug: 'zakwasy-doms-czym-sa',
+    emoji: '🔥',
+    title: 'Zakwasy (DOMS) — dlaczego bolą mięśnie',
+    subtitle: 'Skąd się biorą zakwasy, czy znaczą dobrą robotę i jak je łagodzić.',
+    meta: 'Zakwasy i DOMS: dlaczego mięśnie bolą po treningu i czy to oznacza wzrost.',
+    crumb: 'Zakwasy (DOMS)',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="regeneracja-szybka-co-dziala">regeneracja</a> · <a href="mobilnosc-vs-rozciaganie">mobilność</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Zakwasy (DOMS) to opóźniony ból mięśni po wysiłku — efekt mikrouszkodzeń i stanu zapalnego, nie „kwasu mlekowego”.',
+    sections: [
+        { h2: 'Skąd się biorą', p: 'Pojawiają się po 24–72 h, głównie po ekscentrycznych fazach ruchu (opuszczanie ciężaru). To nie kwas mlekowy — ten znika po kilkudziesięciu minutach.' },
+        { h2: 'Czy znaczą wzrost', p: 'Nie. Możesz rosnąć bez zakwasów i mieć zakwasy bez wzrostu. To sygnał nowego bodźca, nie miara postępu.' },
+        { h2: 'Jak łagodzić', p: 'Lekki ruch, spacer, masaż i sen pomagają. Całkowite unikanie ich nie da nic — zakwasy z czasem po prostu słabną.' }
+    ],
+    bullets: [
+        '<strong>Pora:</strong> 24–72 h po treningu.',
+        '<strong>Wzrost:</strong> zakwasy ≠ postęp.',
+        '<strong>Łagodzenie:</strong> ruch, sen, masaż.',
+    ],
+    uwaga: 'Ból ostry, strzelający lub jednostronny to nie zakwasy — to sygnał możliwego urazu i powód, by przerwać i skonsultować z fizjoterapeutą.',
+    coDalej: 'Zobacz <a href="regeneracja-szybka-co-dziala">szybszą regenerację</a> i <a href="mobilnosc-vs-rozciaganie">mobilność</a>.'
+});
+defs.push({
+    slug: 'regeneracja-szybka-co-dziala',
+    emoji: '♻️',
+    title: 'Szybsza regeneracja — co naprawdę działa',
+    subtitle: 'Sen, jedzenie, masaż, lód — co przyspiesza powrót do formy, a co to mit.',
+    meta: 'Regeneracja po treningu: co działa (sen, białko), a co nie (lód, magiczne rollery).',
+    crumb: 'Regeneracja',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="sen-a-hormon-wzrostu">sen</a> · <a href="zakwasy-doms-czym-sa">zakwasy</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Regeneracja to głównie sen i jedzenie. Większość „przyspieszaczy” daje efekt placebo albo działa dopiero wtedy, gdy fundamentu brakuje.',
+    sections: [
+        { h2: 'Co działa', p: 'Sen 7–9 h, wystarczająca ilość białka i kalorii, zarządzanie stresem. To codzienne nawyki decydują o tempie regeneracji.' },
+        { h2: 'Co jest przereklamowane', p: 'Lód, zimne kąpiele i rollery bywają przyjemne, ale dowody na szybszą regenerację są słabe. Mogą nawet spowalniać adaptację przy nadużywaniu.' },
+        { h2: 'Praktyka', p: 'Dni lżejsze, spacer i normalna aktywność biją „leżenie i rollowanie”. Trzymaj proste: śpij, jedz białko, nie dokładaj stresu.' }
+    ],
+    bullets: [
+        '<strong>Sen:</strong> 7–9 h to podstawa.',
+        '<strong>Białko:</strong> domknij dzienny cel.',
+        '<strong>Ruch:</strong> lekki spacer zamiast bezruchu.',
+    ],
+    uwaga: 'Jeśli ciągle czujesz się rozbity, najpierw sprawdź sen i kalorie — a dopiero potem inwestuj w gadżety regeneracyjne.',
+    coDalej: 'Zobacz <a href="sen-a-hormon-wzrostu">sen a regeneracja</a> i <a href="zakwasy-doms-czym-sa">zakwasy</a>.'
+});
+defs.push({
+    slug: 'sen-a-hormon-wzrostu',
+    emoji: '🛌',
+    title: 'Sen a hormony i siła',
+    subtitle: 'Dlaczego niedospanie podcina siłę, hormony i regenerację mięśni.',
+    meta: 'Sen a trening: wpływ niedospania na siłę, hormony i budowanie mięśni.',
+    crumb: 'Sen a hormony',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="regeneracja-szybka-co-dziala">regeneracja</a> · <a href="magnez-i-sen-skurcze">magnez i sen</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Większość regeneracji i część hormonów anabolicznych działa najmocniej w nocy. Krótki sen to bezpośredni cios w trening.',
+    sections: [
+        { h2: 'Hormony', p: 'Testosteron i hormon wzrostu są wydzielane głównie w głębokim śnie. Chroniczne niedospanie obniża testosteron i podnosi kortyzol.' },
+        { h2: 'Siła i mięśnie', p: 'Niewyspanie pogarsza siłę, koordynację i tempo syntezy białek. Mniej snu = wolniejszy postęp mimo tej samej diety i treningów.' },
+        { h2: 'Praktyka', p: 'Celuj w 7–9 h. Stałe godziny snu, ciemny pokój i ograniczenie ekranów przed snem działają lepiej niż suplement „na sen”.' }
+    ],
+    bullets: [
+        '<strong>Cel:</strong> 7–9 h snu.',
+        '<strong>Stałość:</strong> regularne godziny.',
+        '<strong>Przed snem:</strong> mniej ekranu i kofeiny.',
+    ],
+    uwaga: 'Jedna zarwana noc to nie tragedia — ale chronicznie 5–6 h snu tydzień w tydzień realnie ograniczy twoje efekty, niezależnie od dania.',
+    coDalej: 'Zobacz <a href="regeneracja-szybka-co-dziala">regenerację</a> i <a href="magnez-i-sen-skurcze">magnez a sen</a>.'
+});
+defs.push({
+    slug: 'cardio-liss-vs-hiit',
+    emoji: '🏃',
+    title: 'LISS vs HIIT — co wybrać',
+    subtitle: 'Spokojne cardio czy interwały — co lepsze dla serca, spalania i regeneracji.',
+    meta: 'LISS vs HIIT: różnice, wpływ na spalanie i kiedy które wybrać.',
+    crumb: 'LISS vs HIIT',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="epoc-trening-a-spalanie-po">EPOC</a> · <a href="hiit-krotkie-i-intensywne">HIIT</a> · <a href="artykuly">artykuły</a>',
+    lead: 'LISS (stałe, spokojne cardio) i HIIT (krótkie interwały) spalają kalorie inaczej, ale oba działają. Wybór zależy od czasu i regeneracji.',
+    sections: [
+        { h2: 'LISS', p: 'Dłuższe, umiarkowane wysiłki (spacer, rower). Mniejsze obciążenie, łatwe do odbudowy, świetne na codzień i przy treningu siłowym.' },
+        { h2: 'HIIT', p: 'Krótkie, intensywne serie. Więcej kalorii na minutę i wyższy EPOC, ale mocniej obciąża i wymaga regeneracji.' },
+        { h2: 'Co wybrać', p: 'Fundament to codzienne kroki (LISS-style). HIIT dodawaj 1–2×/tydzień dla kondycji, jeśli regeneracja na to pozwala.' }
+    ],
+    bullets: [
+        '<strong>Codziennie:</strong> lekkie kroki i spacer.',
+        '<strong>1–2×/tydz:</strong> HIIT dla kondycji.',
+        '<strong>Nadmiar HIIT:</strong> podkrada regenerację.',
+    ],
+    uwaga: 'HIIT „spala więcej tłuszczu” głównie w reklamach — najważniejsza jest suma spalonych kalorii i to, co zrobisz w skali tygodnia.',
+    coDalej: 'Zobacz <a href="hiit-krotkie-i-intensywne">protokół HIIT</a> i <a href="epoc-trening-a-spalanie-po">EPOC</a>.'
+});
+defs.push({
+    slug: 'strefa-tetna-a-spalanie-tluszczu',
+    emoji: '📉',
+    title: 'Strefa tętna a spalanie tłuszczu — mit',
+    subtitle: 'Czy „strefa spalania tłuszczu” faktycznie spala tłuszcz, czy to marketing pulso.' ,
+    meta: 'Strefa tętna a spalanie tłuszczu: ile w tym prawdy i co naprawdę liczy się przy cardio.',
+    crumb: 'Strefa tętna',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="cardio-liss-vs-hiit">LISS vs HIIT</a> · <a href="cardio-na-czczo-czy-spala-wiecej">cardio na czczo</a> · <a href="artykuly">artykuły</a>',
+    lead: '„Strefa spalania tłuszczu” istnieje, ale mylne jest myślenie, że trening w niej spala najwięcej tłuszczu w ogóle.',
+    sections: [
+        { h2: 'O co chodzi', p: 'Przy niskiej intensywności organizm proporcjonalnie więcej energii bierze z tłuszczu. Ale to procent, nie absolutna ilość — a liczą się spalone kalorie.' },
+        { h2: 'Gdzie jest myłka', p: 'Wyższa intensywność spala więcej kalorii ogółem, nawet jeśli procent z tłuszczu jest mniejszy. Bilans dnia wygrywa z „strefą”.' },
+        { h2: 'Praktyka', p: 'Nie gon za pulsometrem. Rób cardio, które pasuje do twojego planu i regeneracji — tłuszcz spalisz deficytem, nie magiczną strefą.' }
+    ],
+    bullets: [
+        '<strong>Liczy się:</strong> suma spalonych kalorii.',
+        '<strong>Strefa:</strong> to kwestia proporcji, nie cudu.',
+        '<strong>Deficyt:</strong> to on spala tłuszcz.',
+    ],
+    uwaga: 'Pulsometry bywają niedokładne, a „strefy” uśrednione. Mniej energii w obsługę gadżetów, więcej w konsekwentne ruszanie się.',
+    coDalej: 'Zobacz <a href="cardio-na-czczo-czy-spala-wiecej">cardio na czczo</a> i <a href="cardio-liss-vs-hiit">LISS vs HIIT</a>.'
+});
+defs.push({
+    slug: 'cardio-na-czczo-czy-spala-wiecej',
+    emoji: '🌅',
+    title: 'Cardio na czczo — czy spala więcej tłuszczu?',
+    subtitle: 'Trening przed śniadaniem a spalanie tłuszczu — co naprawdę mówią badania.',
+    meta: 'Cardio na czczo: czy spala więcej tłuszczu i czy warto trenować przed śniadaniem.',
+    crumb: 'Cardio na czczo',
+    category: 'cwiczenia',
+    relatedHtml: '<a href="strefa-tetna-a-spalanie-tluszczu">strefa tętna</a> · <a href="cardio-liss-vs-hiit">LISS vs HIIT</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Cardio na czczo spala chwilowo nieco więcej tłuszczu, ale w skali dnia bilans jest taki sam jak po posiłku. To kwestia preferencji.',
+    sections: [
+        { h2: 'Mechanizm', p: 'Bez jedzenia organizm sięga po tłuszcz jako paliwo. Efekt „dodatkowego” spalania tłuszczu istnieje, ale jest mały i częściowo równoważony później.' },
+        { h2: 'Co mówią dane', p: 'Długoterminowo cardio na czczo vs po posiłku daje podobną utratę tłuszczu przy tym samym deficycie. Cudotwórstwa tu nie ma.' },
+        { h2: 'Czy robić', p: 'Jeśli lubisz i dobrze się czujesz — rób. Jeśli po treningu na czczo brakuje ci siły, jedz przed. Konsekwencja wygrywa z timingiem.' }
+    ],
+    bullets: [
+        '<strong>Różnica:</strong> mała, bilans dnia się zgadza.',
+        '<strong>Wybierz:</strong> co lepiej ci pasuje.',
+        '<strong>Ważne:</strong> deficyt, nie pora.',
+    ],
+    uwaga: 'Trening siłowy na czczo może obniżyć jakość wysiłku. Cardio ok, ale ciężka siłownia zwykle lepiej po lekkim posiłku.',
+    coDalej: 'Zobacz <a href="strefa-tetna-a-spalanie-tluszczu">mit strefy tętna</a> i <a href="bilans-energetyczny-co-to">o bilansie energetycznym</a>.'
+});
 
 const articles = defs.map(buildArticle);
 const out = path.join(__dirname, 'hardcore-articles-batch8.json');
