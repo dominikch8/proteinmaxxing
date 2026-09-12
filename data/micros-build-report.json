@@ -1,7 +1,7 @@
 {
   "total": 2315,
   "withKeys": 2065,
-  "fromOff": 0,
+  "fromOff": 22,
   "avgKeys": 13.5,
   "thin": [
     {
@@ -1257,8 +1257,8 @@
   ],
   "sources": {
     "curated": 667,
-    "estimate": 1534,
-    "off": 29,
+    "estimate": 1533,
+    "off": 30,
     "lean": 61,
     "none": 24
   }
