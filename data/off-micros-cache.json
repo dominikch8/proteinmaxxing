@@ -128,5 +128,30 @@
     "calcium": 120,
     "sodium": 32
   },
-  "budyn-na-mleku": {}
+  "budyn-na-mleku": {},
+  "smietanka-30": {},
+  "koncentrat-bialka-serwatkowego-wpc": {},
+  "ziemniaki": {
+    "vitD": 3.3000000000000003,
+    "b1": 1,
+    "b2": 1.4,
+    "b3": 15,
+    "b5": 5.7,
+    "b6": 1.2,
+    "calcium": 502,
+    "iron": 12,
+    "sodium": 88
+  },
+  "pomidor": {},
+  "ogorek": {},
+  "cebula": {},
+  "marchew": {},
+  "kapusta-biala": {},
+  "papryka-czerwona": {},
+  "burak": {},
+  "czosnek": {},
+  "salata-maslowa": {},
+  "szpinak-swiezy": {},
+  "brokuly": {},
+  "kalafior": {}
 }
