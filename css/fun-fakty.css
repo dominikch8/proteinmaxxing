@@ -436,16 +436,39 @@
 
 .funfact-cats-rest {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap: 8px;
+    align-items: center;
+    gap: 7px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 2px 0;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.funfact-cats-rest::-webkit-scrollbar {
+    display: none;
+}
+
+/* Give the category strip a bit more room on desktop so every category
+   (except the featured "Wszystkie") fits on a single line. The strip is
+   centred on the page, extending symmetrically past the narrow card. */
+@media (min-width: 768px) {
+    .funfact-cats-wrap {
+        width: min(940px, 96vw);
+        max-width: none;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .funfact-cat {
-    padding: 8px 16px;
+    padding: 8px 13px;
     border-radius: 999px;
     font: inherit;
-    font-size: 0.84rem;
+    font-size: 0.82rem;
     font-weight: 600;
     line-height: 1;
     cursor: pointer;
