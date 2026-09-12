@@ -1,0 +1,76 @@
+0.85	zboza	Chleb graham
+9	przyprawy	Bazylia - otarta
+9	przyprawy	Przyprawa kmin rzymski (mielony)
+0.85	zboza	Chleb pszenno-żytni
+0.83	zboza	Cukier brązowy
+0.85	zboza	Chleb razowy - Oskroba
+0.85	zboza	Ryż parboiled długoziarnisty (nieugotowany) - Biedronka
+1.5	nabial	Serek homogenizowany naturalny - Pilos
+9	przyprawy	Bazylia - liście
+0.85	zboza	Chleb razowy 100% żytni
+0.85	zboza	Bułka tarta
+1.59	platki-sniadaniowe	Płatki żytnie
+0.65	napoje	Kawa zbożowa - Inka
+0.85	zboza	Tortilla pełnoziarnista
+0.85	zboza	Chleb razowy ze słonecznikiem - Biedronka
+0.85	zboza	Mąka kukurydziana
+0.85	zboza	Chleb wieloziarnisty
+0.85	zboza	Bułka wieloziarnista - Lidl
+0.85	zboza	Mąka żytnia
+0.85	zboza	Chleb baltonowski
+0.85	zboza	Bułka razowa
+4.56	mrozone-pizze	Pesto zielone - Sottile Gusto
+0.6	napoje	Sok marchwiowy jednodniowy
+0.85	zboza	Mąka ziemniaczana
+1.38	nabial	Mleko kokosowe
+1.5	nabial	Serek homogenizowany
+0.85	zboza	Chleb słonecznikowy
+9	przyprawy	Przyprawa do kuchni włoskiej - Kamis
+0.85	zboza	Bułka fitness - Lidl
+0.64	warzywa	Mieszanka warzywna chińska - Mroźna Kraina
+3.57	sery	Ser Ementaler pełnotłusty
+4.56	slodycze	Kakao (proszek)
+0.6	napoje	Sok pomidorowy
+1.75	polskie-obiadki	Delma z masłem
+1.8	sosy	Pesto zielone - Tesco
+0.85	zboza	Chleb pszenno-żytni z ziarnami
+2.67	mieso	Tuńczyk kawałki w oleju - Amerigo
+0.85	zboza	Chleb 7 zbóż - Biedronka
+0.85	zboza	Pieczywo chrupkie 7 ziaren - Sonko
+0.85	zboza	Chleb pełnoziarnisty
+1.5	nabial	Serek topiony
+0.85	zboza	Pieczywo chrupkie lekkie razowe - Sonko
+9	przyprawy	Przyprawa Cząber
+0.85	zboza	Ryż (ugotowany)
+0.85	zboza	Bagietka pełnoziarnista
+0.85	zboza	Bułka fitness
+0.65	napoje	Kawa rozpuszczalna Nescafe Classic - Nestle
+0.65	napoje	Kawa rozpuszczalna Creme Sensazione - Nescafe
+0.75	makarony	Makaron Spaghetti (ugotowany)
+0.85	zboza	Chleb Całe Ziarno - Biedronka
+0.75	makarony	Makaron razowy (ugotowany)
+3.3	sery	Ser Mozarella - Lidl
+0.7	warzywa	Lubczyk - liście
+0.85	zboza	Bułka z ziarnami
+0.85	zboza	Chleb Złoty Łan - Oskroba
+1.75	polskie-obiadki	Dżem niskosłodzony
+0.85	zboza	Chleb Domowy z ziarnami - Schulstad
+0.85	zboza	Bułka - Bagietka
+0.85	zboza	Bułka z dynią - Lidl
+0.85	zboza	Bułka ciabatta
+2.9	mieso	Kiełbasa podwawelska
+0.64	warzywa	Ogórki konserwowe - Dawtona
+0.64	warzywa	Ogórki konserwowe kanapkowe - Nasza Spiżarnia
+0.85	zboza	Pieczywo chrupkie żytnie - Tovago
+0.85	zboza	Chleb Kołodziej - Polish Village Bread
+0.85	zboza	Chleb chrupki żytni delikatesowy - Wasa
+0.85	zboza	Bułka orkiszowa
+8.28	przyprawy	Maggi (przyprawa do zup)
+0.85	zboza	Chleb pszenno żytni wiejski
+1.2	zupy	Zupa krupnik
+0.85	zboza	Bułka razowa z ziarnami słonecznika
+4.56	slodycze	Cukierek Michałek
+2.9	mieso	Kiełbasa szynkowa
+0.85	zboza	Chleb wiejski
+0.85	zboza	Bułka pszenno-żytnia
+1.5	platki-sniadaniowe	Płatki Bran Flakes z otrąb pszennych - Sante
