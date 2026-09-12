@@ -1,0 +1,22 @@
+{
+  "note": "Precyzyjne, ręcznie zweryfikowane szacunki cen detalicznych w Polsce (zł/kg, ceny regularne dyskontów 2026). Nadpisują wzorce/kategorie. pricePer100g = pricePerKg / 10.",
+  "updated": "2026-09",
+  "pricePerKg": {
+    "Mleko 0,5% tłuszczu": 3.4,
+    "Mleko 1,5% tłuszczu": 3.4,
+    "Mleko 1,5%": 3.4,
+    "Mleko Łaciate 2% - Mlekpol": 3.5,
+    "Mleko prawdziwe 1,5% - Biedronka": 3.4,
+    "Mleko 0,5% Mleczna Dolina - Biedronka": 3.4,
+    "Mleko sojowe": 6.0,
+    "Jajo kurze (całe)": 21.6,
+    "Jajko ugotowane na twardo": 21.6,
+    "Jajko ugotowane na miękko": 21.6,
+    "Jajko gotowane": 21.6,
+    "Jajko sadzone": 21.6,
+    "Jajo kurze (białko)": 21.6,
+    "Jajo kurze (żółtko)": 21.6,
+    "Jajko sadzone na oleju": 21.6,
+    "Jogurt": 9.99
+  }
+}
