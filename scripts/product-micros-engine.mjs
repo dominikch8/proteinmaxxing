@@ -244,3 +244,29 @@ export function buildMicrosForProduct(product, override = null) {
 }
 
 export { CATEGORY_BASE, NAME_RULES };
+
+function matchFirstRule(rules, name) {
+    for (const rule of rules) {
+        if (rule.re.test(name)) return rule.n;
+    }
+    return null;
+}
+
+/**
+ * Inteligentne budowanie profilu mikroskładników z oznaczeniem źródła.
+ * Priorytet: curated (pełny, realny profil) > PURE_LEAN (substancje czyste)
+ * > silnik NAME_RULES+CATEGORY_BASE (gruba estymacja).
+ * Zwraca { micros, source } — source: 'curated' | 'lean' | 'estimate'.
+ */
+export function buildMicrosSmart(product) {
+    const name = String(product.name || '');
+    const curated = matchFirstRule(CURATED_FOODS, name);
+    if (curated) {
+        return { micros: cleanMicros({ ...curated }), source: 'curated' };
+    }
+    const lean = matchFirstRule(PURE_LEAN, name);
+    if (lean) {
+        return { micros: cleanMicros({ ...lean }), source: 'lean' };
+    }
+    return { micros: buildMicrosForProduct(product, product.microsDetailOverride || null), source: 'estimate' };
+}
