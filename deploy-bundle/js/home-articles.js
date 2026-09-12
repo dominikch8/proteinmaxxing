@@ -502,5 +502,605 @@ window.HOME_ARTICLES = [
     "emoji": "🦠",
     "title": "Mikrobiom i jelita a odchudzanie",
     "subtitle": "Co bakterie jelitowe naprawdę zmieniają w wadze i apetycie."
+  },
+  {
+    "slug": "wpc-vs-wpi-vs-hydrolizat",
+    "emoji": "🥛",
+    "title": "WPC vs WPI vs hydrolizat — które wybrać",
+    "subtitle": "Czym różnią się odżywki serwatkowe i czy przepłacanie za hydrolizat ma sens."
+  },
+  {
+    "slug": "leucyna-prog-anaboliczny",
+    "emoji": "🧬",
+    "title": "Leucyna i próg anaboliczny — ile białka na porcję",
+    "subtitle": "Dlaczego 20–40 g białka w posiłku „włącza” syntezę mięśni i jaką rolę gra leucyna."
+  },
+  {
+    "slug": "bialko-a-nerki-co-mowia-badania",
+    "emoji": "🫘",
+    "title": "Białko a nerki — co naprawdę mówią badania",
+    "subtitle": "Czy wysokobiałkowa dieta „niszczy nerki” u zdrowych? Sprawdzamy dane."
+  },
+  {
+    "slug": "bialko-a-kosci-i-wapn",
+    "emoji": "🦴",
+    "title": "Białko a kości — czy wypłukuje wapń?",
+    "subtitle": "Czy dużo białka odwapnia kości, czy wręcz przeciwnie — wspiera gęstość mineralną."
+  },
+  {
+    "slug": "kolagen-czy-liczy-sie-do-bialka",
+    "emoji": "✨",
+    "title": "Kolagen — czy liczy się do dziennego białka?",
+    "subtitle": "Dlaczego kolagen ma słaby profil aminokwasowy i czemu nie zastąpi pełnowartościowego białka."
+  },
+  {
+    "slug": "bialko-a-starzenie-sarkopenia",
+    "emoji": "👴",
+    "title": "Białko po 50. — jak chronić mięśnie",
+    "subtitle": "Sarkopenia, oporność anaboliczna i dlaczego z wiekiem potrzeba więcej białka na porcję."
+  },
+  {
+    "slug": "bialko-a-odpornosc",
+    "emoji": "🛡️",
+    "title": "Białko a odporność",
+    "subtitle": "Jak niedobór białka osłabia układ odpornościowy i ile trzeba, żeby go wspierać."
+  },
+  {
+    "slug": "bialko-a-skora-wlosy-paznokcie",
+    "emoji": "💇",
+    "title": "Białko a skóra, włosy i paznokcie",
+    "subtitle": "Ile prawdy jest w tym, że białko i keratyna poprawiają włosy — i co realnie działa."
+  },
+  {
+    "slug": "bialko-roslinne-kompletne-aminokwasy",
+    "emoji": "🌱",
+    "title": "Białko roślinne — jak skompletować aminokwasy",
+    "subtitle": "Pełnowartościowe białko bez mięsa: łączenie źródeł i ile go realnie potrzebujesz."
+  },
+  {
+    "slug": "soja-tofu-tempeh-seitan-przeglad",
+    "emoji": "🍜",
+    "title": "Tofu, tempeh, seitan — ile białka i jak używać",
+    "subtitle": "Trzy roślinne zamienniki mięsa — zawartość białka, wady i szybkie pomysły."
+  },
+  {
+    "slug": "owady-jako-bialko-ciekawostka",
+    "emoji": "🦗",
+    "title": "Owady jako białko — fakty i liczby",
+    "subtitle": "Świerszcze i mączniki: ile białka, jak wypadają ekologicznie i czy są bezpieczne."
+  },
+  {
+    "slug": "bialko-a-cukrzyca-insulina",
+    "emoji": "🩸",
+    "title": "Białko a cukrzyca i insulina",
+    "subtitle": "Jak białko wpływa na glukozę i insulinę oraz dlaczego pomaga przy insulinooporności."
+  },
+  {
+    "slug": "bialko-serwatkowe-a-tradzik-i-laktoza",
+    "emoji": "🧖",
+    "title": "Białko serwatkowe a trądzik i laktoza",
+    "subtitle": "Dlaczego po odżywce czasem wyskakują pryszcze i co z nietolerancją laktozy."
+  },
+  {
+    "slug": "ile-bialka-wchlaniamy-z-jednego-posilku",
+    "emoji": "🤔",
+    "title": "Ile białka wchłaniamy z jednego posiłku?",
+    "subtitle": "Mit „tylko 30 g na raz” pod lupą — ile naprawdę wykorzystuje organizm."
+  },
+  {
+    "slug": "bialko-nocne-mps-podczas-snu",
+    "emoji": "🌙",
+    "title": "Białko przed snem — nocna synteza mięśni",
+    "subtitle": "Czy kazeina albo twaróg na noc realnie pomaga regenerować mięśnie."
+  },
+  {
+    "slug": "bialko-dla-biegaczy-i-kolarzy",
+    "emoji": "🚴",
+    "title": "Białko dla biegaczy i kolarzy",
+    "subtitle": "Ile białka potrzebują sportowcy wytrzymałościowi i dlaczego nie tylko węglowodany."
+  },
+  {
+    "slug": "kurczak-vs-wolowina-vs-wieprzowina",
+    "emoji": "🍖",
+    "title": "Kurczak, wołowina, wieprzowina — porównanie",
+    "subtitle": "Białko, kalorie i mikroelementy trzech podstaw dietetycznych mięs."
+  },
+  {
+    "slug": "jajka-ile-bialka-i-cholesterol",
+    "emoji": "🥚",
+    "title": "Jajka — ile białka, a co z cholesterolem",
+    "subtitle": "Czy cholesterol w jajkach szkodzi, i dlaczego jajko to wzorcowe białko."
+  },
+  {
+    "slug": "ryby-i-owoce-morza-jako-zrodlo-bialka",
+    "emoji": "🐟",
+    "title": "Ryby i owoce morza — białko i omega-3",
+    "subtitle": "Ile białka w łososiu, tuńczyku i krewetkach oraz dlaczego jeść ryby dwa razy w tygodniu."
+  },
+  {
+    "slug": "budzetowe-zrodla-bialka-taniej-niz-odzywka",
+    "emoji": "💰",
+    "title": "Budżetowe źródła białka — taniej niż odżywka",
+    "subtitle": "Twaróg, jaja i strączki: jak domknąć białko za mniej niż suplement."
+  },
+  {
+    "slug": "blonnik-ile-i-po-co",
+    "emoji": "🌾",
+    "title": "Błonnik — ile jeść i jak to zrobić",
+    "subtitle": "Rozpuszczalny vs nierozpuszczalny, zalecane dawki i źródła, które realnie domkniesz."
+  },
+  {
+    "slug": "tluszcze-nasycone-a-zdrowie",
+    "emoji": "🧈",
+    "title": "Tłuszcze nasycone a zdrowie — co mówi nauka",
+    "subtitle": "Czy masło naprawdę zapycha tętnice i ile tłuszczów nasyconych jest bezpieczne."
+  },
+  {
+    "slug": "omega-3-dha-epa-ile",
+    "emoji": "🐟",
+    "title": "Omega-3 (EPA i DHA) — ile potrzebujesz",
+    "subtitle": "Dlaczego ALA z oleju lnianego nie wystarczy i skąd brać EPA i DHA."
+  },
+  {
+    "slug": "weglowodany-proste-vs-zlozone",
+    "emoji": "🍞",
+    "title": "Węglowodany proste vs złożone",
+    "subtitle": "Czym się różnią, czy proste są „złe” i jak wybierać te, które dają energię."
+  },
+  {
+    "slug": "indeks-glikemiczny-czy-ma-znaczenie",
+    "emoji": "📊",
+    "title": "Indeks glikemiczny — czy ma znaczenie?",
+    "subtitle": "IG vs ładunek glikemiczny i dlaczego sam indeks bywa mylący."
+  },
+  {
+    "slug": "slodziki-sa-bezpieczne",
+    "emoji": "🧃",
+    "title": "Słodziki — bezpieczeństwo i wpływ na apetyt",
+    "subtitle": "Aspartam, stewia, sukraloza: co mówią regulacje i czy „zero kalorii” pomaga chudnąć."
+  },
+  {
+    "slug": "ile-wody-pic-dziennie",
+    "emoji": "💧",
+    "title": "Ile wody pić dziennie — bez magii",
+    "subtitle": "Od „3 litrów” do koloru moczu: ile płynów realnie potrzebujesz."
+  },
+  {
+    "slug": "elektrolity-co-i-kiedy",
+    "emoji": "⚡",
+    "title": "Elektrolity — co, kiedy i ile",
+    "subtitle": "Sód, potas, magnez: kiedy naprawdę je uzupełniać, a kiedy napoje izotoniczne to marketing."
+  },
+  {
+    "slug": "kawa-a-zdrowie-ile-bezpiecznie",
+    "emoji": "☕",
+    "title": "Kawa a zdrowie — ile jest bezpieczne",
+    "subtitle": "Kofeina, korzyści i górna granica, której lepiej nie przekraczać."
+  },
+  {
+    "slug": "przyprawy-i-sol-w-diecie",
+    "emoji": "🧂",
+    "title": "Sól i przyprawy — ile soli to za dużo",
+    "subtitle": "Sód, nadciśnienie i jak smakować jedzenie bez dosalania."
+  },
+  {
+    "slug": "witamina-d-ile-i-kiedy",
+    "emoji": "☀️",
+    "title": "Witamina D — ile i kiedy suplementować",
+    "subtitle": "Niedobory w Polsce, realne dawki i dlaczego samo słońce zwykle nie wystarcza."
+  },
+  {
+    "slug": "magnez-i-sen-skurcze",
+    "emoji": "😴",
+    "title": "Magnez — sen, skurcze i wydolność",
+    "subtitle": "Czy magnez naprawdę pomaga spać i na skurcze — i jaka forma się wchłania."
+  },
+  {
+    "slug": "cynk-a-regeneracja",
+    "emoji": "🧪",
+    "title": "Cynk — regeneracja i odporność",
+    "subtitle": "Ile cynku potrzebujesz, gdzie go szukać i kiedy niedobór sabotuje trening."
+  },
+  {
+    "slug": "zelazo-niedobor-u-kobiet",
+    "emoji": "🩸",
+    "title": "Żelazo — niedobór u trenujących kobiet",
+    "subtitle": "Dlaczego kobiety i biegacze tracą żelazo oraz jak je skutecznie uzupełniać."
+  },
+  {
+    "slug": "witaminy-z-jedzenia-czy-tabletek",
+    "emoji": "💊",
+    "title": "Witaminy — z jedzenia czy tabletek?",
+    "subtitle": "Kiedy suplementacja ma sens, a kiedy to „drogi mocz”."
+  },
+  {
+    "slug": "probiotyki-i-prebiotyki",
+    "emoji": "🦠",
+    "title": "Probiotyki i prebiotyki — co działa",
+    "subtitle": "Mikrobiota, konkretne szczepy i dlaczego błonnik bije większość „jelitowych” supli."
+  },
+  {
+    "slug": "oliwa-vs-maslo-vs-olej",
+    "emoji": "🫒",
+    "title": "Oliwa vs masło vs olej kokosowy",
+    "subtitle": "Który tłuszcz do smażenia, a który na zimno — i co naprawdę ma znaczenie."
+  },
+  {
+    "slug": "fruktoza-i-owoce-mit",
+    "emoji": "🍎",
+    "title": "Fruktoza i owoce — mit o tuczeniu",
+    "subtitle": "Dlaczego owoce nie „tuczą” jak napoje z fruktozą i jaka jest różnica."
+  },
+  {
+    "slug": "produkty-light-czy-warto",
+    "emoji": "🏷️",
+    "title": "Produkty light — czy warto",
+    "subtitle": "Od tłuszczu „0%” po „fit” batoniki: kiedy light faktycznie ma mniej kalorii."
+  },
+  {
+    "slug": "bio-vs-konwencjonalne-czy-warto-preplacac",
+    "emoji": "🥬",
+    "title": "Bio vs konwencjonalne — czy warto przepłacać",
+    "subtitle": "Pestycydy, wartości odżywcze i kiedy produkty eko mają sens."
+  },
+  {
+    "slug": "czym-jest-metabolizm-i-rmr",
+    "emoji": "🔥",
+    "title": "Czym jest metabolizm — i co go spala",
+    "subtitle": "BMR, RMR, TEF, NEAT — składowe przemiany materii w prostym rozkładzie."
+  },
+  {
+    "slug": "metabolizm-zwalnia-z-wiekiem",
+    "emoji": "📉",
+    "title": "Czy metabolizm zwalnia z wiekiem?",
+    "subtitle": "Ile naprawdę spowalnia przemiana materii — i co z tym ma masa mięśni."
+  },
+  {
+    "slug": "miesnie-a-spalanie-w-spoczynku",
+    "emoji": "💪",
+    "title": "Mięśnie a spalanie w spoczynku",
+    "subtitle": "Ile realnie kcal spala kilogram mięśni i dlaczego siłownia to nie „maszynka do spalania”."
+  },
+  {
+    "slug": "epoc-trening-a-spalanie-po",
+    "emoji": "🌡️",
+    "title": "EPOC — spalanie po treningu — fakty",
+    "subtitle": "Ile kalorii naprawdę „palisz po wysiłku” i czy afterburn to mit."
+  },
+  {
+    "slug": "termogeneza-odzywiania-tef",
+    "emoji": "🍽️",
+    "title": "Termogeneza odżywiania (TEF)",
+    "subtitle": "Ile energii kosztuje cię trawienie i dlaczego białko „spala” najwięcej."
+  },
+  {
+    "slug": "brunatny-tluszcz-co-to",
+    "emoji": "🟤",
+    "title": "Brązowy tłuszcz — czym jest i czy go aktywujesz",
+    "subtitle": "Tkanka brunatna spala kalorie na ciepło — ile można z niej „wycisnąć”."
+  },
+  {
+    "slug": "tarczyca-a-waga-co-warto-wiedziec",
+    "emoji": "🦋",
+    "title": "Tarczyca a waga — co warto wiedzieć",
+    "subtitle": "Niedoczynność, hormon TSH i ile realnie tarczyca wpływa na wagę."
+  },
+  {
+    "slug": "kortyzol-a-metabolizm",
+    "emoji": "😰",
+    "title": "Kortyzol a metabolizm",
+    "subtitle": "Czy stres i kortyzol naprawdę „blokują spalanie” i powodują tycie na brzuchu."
+  },
+  {
+    "slug": "insulina-a-magazynowanie-tluszczu",
+    "emoji": "📦",
+    "title": "Insulina i magazynowanie tłuszczu",
+    "subtitle": "Czy insulina „tuczy”, i dlaczego model węglowodanowo-insulinowy jest uproszczeniem."
+  },
+  {
+    "slug": "dieta-wysokobialkowa-a-redukcja-dowody",
+    "emoji": "🥇",
+    "title": "Dieta wysokobiałkowa a redukcja — dowody",
+    "subtitle": "Dlaczego podbijenie białka pomaga chudnąć i chronić mięśnie — co mówią metaanalizy."
+  },
+  {
+    "slug": "gestosc-energetyczna-jedzenia",
+    "emoji": "🥗",
+    "title": "Gęstość energetyczna — jeść więcej, ważyć mniej",
+    "subtitle": "Jak dobierać jedzenie o niskiej gęstości kalorycznej, by jeść duże porcje i chudnąć."
+  },
+  {
+    "slug": "plynne-kalorie-napoje-a-waga",
+    "emoji": "🥤",
+    "title": "Płynne kalorie — napoje a waga",
+    "subtitle": "Dlaczego soki, słodkie napoje i kalorie w płynie tak łatwo rozbijają dietę."
+  },
+  {
+    "slug": "glod-wieczorny-strategie",
+    "emoji": "🌙",
+    "title": "Wieczorny głód — jak sobie z nim radzić",
+    "subtitle": "Dlaczego wieczorem ciągnie na przekąski i jak ułożyć dzień, żeby nie kończyć go w szafce."
+  },
+  {
+    "slug": "leptyna-i-glod-po-redukcji",
+    "emoji": "⚖️",
+    "title": "Leptyna i głód po redukcji",
+    "subtitle": "Dlaczego po schudnięciu jesteś głodniejszy i jak hormony bronią utraconej wagi."
+  },
+  {
+    "slug": "set-point-czy-organizm-broni-wagi",
+    "emoji": "🎯",
+    "title": "Set point — czy organizm broni wagi?",
+    "subtitle": "Teoria „punktu nastawczego” i ile w niej prawdy, a ile wymówki."
+  },
+  {
+    "slug": "efekt-jojo-jak-go-uniknac",
+    "emoji": "🪀",
+    "title": "Efekt jo-jo — jak go uniknąć",
+    "subtitle": "Dlaczego diety „na chwilę” kończą się powrotem wagi i jak schudnąć na stałe."
+  },
+  {
+    "slug": "dieta-80-20-elastycznosc",
+    "emoji": "🍕",
+    "title": "Dieta 80/20 — elastyczność bez wpadek",
+    "subtitle": "Czy „80% czysto, 20% luzu” działa i jak liczyć te 20% na poważnie."
+  },
+  {
+    "slug": "schudnac-bez-liczenia-kalorii",
+    "emoji": "🧠",
+    "title": "Jak schudnąć bez liczenia kalorii",
+    "subtitle": "Proste nawyki, które obniżą kaloryczność diety bez ważenia i aplikacji."
+  },
+  {
+    "slug": "odstawienie-cukru-plan",
+    "emoji": "🍬",
+    "title": "Jak odstawić cukier — plan krok po kroku",
+    "subtitle": "Dlaczego cukier bywa „uzależniający” i jak z nim wygrać na stałe, bez rzucania wszystkiego."
+  },
+  {
+    "slug": "metabolizm-przyspieszyc-fakty",
+    "emoji": "🚀",
+    "title": "Czy można przyspieszyć metabolizm?",
+    "subtitle": "Co realnie podnosi przemianę materii, a co to tylko spalacze-tłuszczu marketing."
+  },
+  {
+    "slug": "jak-zaczac-silownie-od-zera",
+    "emoji": "🏋️",
+    "title": "Jak zacząć siłownię od zera",
+    "subtitle": "Pierwsze dni na siłowni bez chaosu: plan, sprzęt i czego się nie bać."
+  },
+  {
+    "slug": "pierwszy-trening-silowy-plan",
+    "emoji": "📋",
+    "title": "Pierwszy trening siłowy — prosty plan",
+    "subtitle": "Konkretny zestaw ćwiczeń na całe ciało, który zrobisz w 45 minut."
+  },
+  {
+    "slug": "cwiczenia-zlozone-vs-izolowane",
+    "emoji": "🔗",
+    "title": "Ćwiczenia złożone vs izolowane",
+    "subtitle": "Martwy ciąg czy wznosy hantli — co buduje więcej mięśni i kiedy co wybrać."
+  },
+  {
+    "slug": "przysiad-technika-bezpiecznie",
+    "emoji": "🦵",
+    "title": "Przysiad — technika i bezpieczeństwo",
+    "subtitle": "Głębokość, kolana, plecy — jak kucać bezpiecznie i efektywnie."
+  },
+  {
+    "slug": "martwy-ciag-technika",
+    "emoji": "🏋️",
+    "title": "Martwy ciąg — technika bez urazu",
+    "subtitle": "Hinge w biodrze, neutralny kręgosłup i najczęstsze błędy, które bolą w krzyżu."
+  },
+  {
+    "slug": "wyciskanie-na-lawce-technika",
+    "emoji": "🛋️",
+    "title": "Wyciskanie na ławce — technika",
+    "subtitle": "Ustawienie łopatek, chwyt i łuk — jak wyciskać mocno i bez bólu barków."
+  },
+  {
+    "slug": "podciaganie-na-drazku-plan",
+    "emoji": "🧗",
+    "title": "Podciąganie na drążku — plan od zera",
+    "subtitle": "Progresja od wiszenia na drążku do pełnych podciągnięć — bez ani jednego powtórzenia."
+  },
+  {
+    "slug": "full-body-vs-split",
+    "emoji": "🗂️",
+    "title": "Full body vs split — co wybrać",
+    "subtitle": "Trening całego ciała czy dzielony na partie — co daje szybciej efekty."
+  },
+  {
+    "slug": "podwojna-progresja-system",
+    "emoji": "📈",
+    "title": "Podwójna progresja — system dodawania ciężaru",
+    "subtitle": "Kiedy dołożyć kilogramy, a kiedy powtórzenia — prosty algorytm postępu."
+  },
+  {
+    "slug": "rir-czy-trening-do-upadku",
+    "emoji": "🎚️",
+    "title": "RIR — trenować do upadku czy nie",
+    "subtitle": "Reps in Reserve: ile powtórzeń „w zapasie” zostawiać, by rosnąć bez wypalenia."
+  },
+  {
+    "slug": "ile-serii-na-grupe-tygodniowo",
+    "emoji": "🔢",
+    "title": "Ile serii na grupę mięśniową tygodniowo",
+    "subtitle": "Optymalna objętość treningowa: ile serii buduje mięśnie, a ile to już przesada."
+  },
+  {
+    "slug": "czestotliwosc-treningu-nauka",
+    "emoji": "📅",
+    "title": "Częstotliwość treningu — co mówi nauka",
+    "subtitle": "Ile razy w tygodniu trenować mięsień, by rósł najszybciej."
+  },
+  {
+    "slug": "rozgrzewka-czym-i-jak",
+    "emoji": "🔧",
+    "title": "Rozgrzewka — jak naprawdę działa",
+    "subtitle": "Czy długie rozciąganie przed treningiem pomaga, czy to strata czasu."
+  },
+  {
+    "slug": "stretching-silny-czy-bez",
+    "emoji": "🤸",
+    "title": "Stretching a siła — kiedy pomaga, kiedy szkodzi",
+    "subtitle": "Statyczne rozciąganie przed treningiem a wyniki siłowe — co mówią badania."
+  },
+  {
+    "slug": "zakwasy-doms-czym-sa",
+    "emoji": "🔥",
+    "title": "Zakwasy (DOMS) — dlaczego bolą mięśnie",
+    "subtitle": "Skąd się biorą zakwasy, czy znaczą dobrą robotę i jak je łagodzić."
+  },
+  {
+    "slug": "regeneracja-szybka-co-dziala",
+    "emoji": "♻️",
+    "title": "Szybsza regeneracja — co naprawdę działa",
+    "subtitle": "Sen, jedzenie, masaż, lód — co przyspiesza powrót do formy, a co to mit."
+  },
+  {
+    "slug": "sen-a-hormon-wzrostu",
+    "emoji": "🛌",
+    "title": "Sen a hormony i siła",
+    "subtitle": "Dlaczego niedospanie podcina siłę, hormony i regenerację mięśni."
+  },
+  {
+    "slug": "cardio-liss-vs-hiit",
+    "emoji": "🏃",
+    "title": "LISS vs HIIT — co wybrać",
+    "subtitle": "Spokojne cardio czy interwały — co lepsze dla serca, spalania i regeneracji."
+  },
+  {
+    "slug": "strefa-tetna-a-spalanie-tluszczu",
+    "emoji": "📉",
+    "title": "Strefa tętna a spalanie tłuszczu — mit",
+    "subtitle": "Czy „strefa spalania tłuszczu” faktycznie spala tłuszcz, czy to marketing pulso."
+  },
+  {
+    "slug": "cardio-na-czczo-czy-spala-wiecej",
+    "emoji": "🌅",
+    "title": "Cardio na czczo — czy spala więcej tłuszczu?",
+    "subtitle": "Trening przed śniadaniem a spalanie tłuszczu — co naprawdę mówią badania."
+  },
+  {
+    "slug": "kreatyna-co-robi-i-jak-brac",
+    "emoji": "🧬",
+    "title": "Kreatyna — co robi i jak ją brać",
+    "subtitle": "Najlepiej zbadany suplement sportowy: dawki, ładowanie i na co naprawdę działa."
+  },
+  {
+    "slug": "kofeina-dawka-i-timing",
+    "emoji": "☕",
+    "title": "Kofeina przed treningiem — dawka i timing",
+    "subtitle": "Ile kofeiny działa ergogenicznie i kiedy ją brać, by wzmocnić trening."
+  },
+  {
+    "slug": "beta-alanina-mrowienie",
+    "emoji": "🐜",
+    "title": "Beta-alanina — mrowienie i wydolność",
+    "subtitle": "Co robi, czemu szczypie skórę i czy warto ją dodawać."
+  },
+  {
+    "slug": "bcAA-i-eaa-naprawde-potrzebne",
+    "emoji": "🧪",
+    "title": "BCAA i EAA — naprawdę potrzebne?",
+    "subtitle": "Czy aminokwasy rozgałęzione mają sens, gdy jesz wystarczająco białka."
+  },
+  {
+    "slug": "cytrulina-i-pompa-miesniowa",
+    "emoji": "💥",
+    "title": "Cytrulina — pompa i wydolność",
+    "subtitle": "Czy pre-workouty z cytruliną faktycznie poprawiają trening i pompę mięśniową."
+  },
+  {
+    "slug": "kurcze-miesni-co-pomaga",
+    "emoji": "⚡",
+    "title": "Skurcze mięśni — co naprawdę pomaga",
+    "subtitle": "Magnez, sól, nawodnienie — co ma sens przy skurczach, a co to mit."
+  },
+  {
+    "slug": "trening-silowy-kobiet-mit",
+    "emoji": "👩‍🦱",
+    "title": "Kobiety i ciężary — mit o „męskich rękach”",
+    "subtitle": "Dlaczego trening siłowy nie zrobi z ciebie „twardziela” i jak kobiety budują sylwetkę."
+  },
+  {
+    "slug": "kalistenika-trening-z-masa-ciala",
+    "emoji": "🤸‍♂️",
+    "title": "Kalistenika — trening z własnym ciężarem",
+    "subtitle": "Pompki, dipsy, przysiady — jak budować siłę i mięśnie bez żadnego sprzętu."
+  },
+  {
+    "slug": "trening-w-domu-bez-sprzetu-plan",
+    "emoji": "🏠",
+    "title": "Trening w domu — plan bez sprzętu",
+    "subtitle": "Pełnowartościowy obwód na całe ciało, który zrobisz w salonie w 20–30 minut."
+  },
+  {
+    "slug": "deload-kiedy-i-jak",
+    "emoji": "🛑",
+    "title": "Deload — kiedy i jak zrobić tydzień lżej",
+    "subtitle": "Planowe odciążenie treningu: po co, kiedy i ile razy w roku."
+  },
+  {
+    "slug": "overtraining-przetrenowanie-objawy",
+    "emoji": "🔋",
+    "title": "Przetrenowanie — objawy i co zrobić",
+    "subtitle": "Jak odróżnić zwykłe zmęczenie od zespołu przetrenowania i jak z niego wyjść."
+  },
+  {
+    "slug": "zakres-ruch-rom-pelny",
+    "emoji": "📏",
+    "title": "Zakres ruchu — pełny czy skrócony?",
+    "subtitle": "Czy półprzysiady i „pliki” budują mięśnie, czy pełen zakres ruchu to podstawa."
+  },
+  {
+    "slug": "tempo-treningu-tut",
+    "emoji": "⏱️",
+    "title": "Tempo ćwiczeń (TUT) — czy wolniej znaczy lepiej",
+    "subtitle": "Time under tension i dlaczego super wolne tempo nie buduje więcej mięśni."
+  },
+  {
+    "slug": "superserie-i-drop-sety",
+    "emoji": "♻️",
+    "title": "Superserie i drop sety — oszczędność czasu",
+    "subtitle": "Techniki przyspieszające trening: jak je stosować bez rozwalenia progresji."
+  },
+  {
+    "slug": "hiit-krotkie-i-intensywne",
+    "emoji": "⚡",
+    "title": "HIIT — krótko i intensywnie",
+    "subtitle": "Protokół interwałowy na 15–20 minut, który poprawi kondycję bez godzin cardio."
+  },
+  {
+    "slug": "bol-plecow-trening-silowy",
+    "emoji": "🩹",
+    "title": "Ból pleców a trening siłowy",
+    "subtitle": "Czy przy bólu krzyża ćwiczyć, czy leżeć — co mówi współczesna nauka o bólu."
+  },
+  {
+    "slug": "przysiad-a-bol-kolan",
+    "emoji": "🦵",
+    "title": "Przysiad a ból kolan — co robić",
+    "subtitle": "Czy kucanie niszczy kolana i jak trenować nogi, gdy przednie kolano boli."
+  },
+  {
+    "slug": "sila-chwytu-grip",
+    "emoji": "🤲",
+    "title": "Siła chwytu — grip i zdrowie",
+    "subtitle": "Dlaczego mocny uścisk to więcej niż martwy ciąg — i jak go trenować."
+  },
+  {
+    "slug": "mobilnosc-vs-rozciaganie",
+    "emoji": "🤸",
+    "title": "Mobilność — różnica od rozciągania",
+    "subtitle": "Zakres ruchu, kontrola i stabilność: czym jest mobilność i jak ją poprawiać."
+  },
+  {
+    "slug": "jak-mierzyc-postep-bez-wagi",
+    "emoji": "📐",
+    "title": "Jak mierzyć postęp bez wagi",
+    "subtitle": "Wymiary, zdjęcia i siła — lepsze wskaźniki niż liczba na wadze."
   }
 ];

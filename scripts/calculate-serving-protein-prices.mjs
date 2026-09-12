@@ -38,6 +38,10 @@ function roundPricePer100g(pln) {
 }
 
 function pricePerKgFromRetail(p) {
+    // Precyzyjne nadpisanie ręczne (szacunek polskiego rynku)
+    if (typeof overrides[p.name] === 'number' && overrides[p.name] > 0) {
+        return Math.round(overrides[p.name] * 100) / 100;
+    }
     // Cena zweryfikowana per produkt (scripts/new-products-200.json → pricePerKgRetail)
     if (typeof p.pricePerKgRetail === 'number' && p.pricePerKgRetail > 0) {
         return Math.round(p.pricePerKgRetail * 100) / 100;
