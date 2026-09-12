@@ -3,6 +3,7 @@
  * Źródła: USDA FoodData Central (typowe wartości), tabele IŻŻ/literatura, OFF (przy fetcherze).
  */
 import { cleanMicros } from './lib/micros-shared.mjs';
+import { PURE_LEAN, CURATED_FOODS } from './product-micros-curated.mjs';
 
 const CATEGORY_BASE = {
     mieso: {
