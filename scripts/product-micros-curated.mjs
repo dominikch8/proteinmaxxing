@@ -55,5 +55,27 @@ export const CURATED_FOODS = [
     { re: /skyr/, n: { vitA: 10, b2: 0.16, b12: 0.4, calcium: 150, phosphorus: 130, potassium: 150, zinc: 0.5, selenium: 8, magnesium: 10, sodium: 60 } },
     { re: /jogurt grecki|jogurt naturalny|jogurt/, n: { vitA: 30, b2: 0.14, b5: 0.39, b12: 0.5, choline: 15, calcium: 121, iron: 0.05, magnesium: 12, phosphorus: 95, potassium: 155, zinc: 0.6, selenium: 3, sodium: 46 } },
     { re: /kefir|maślanka/, n: { vitA: 30, b2: 0.14, b5: 0.39, b12: 0.5, calcium: 120, iron: 0.05, magnesium: 12, phosphorus: 95, potassium: 150, zinc: 0.6, selenium: 3, sodium: 48 } },
+
+    // Zboża / strączki / orzechy / nasiona
+    { re: /ryż biały/, n: { b1: 0.07, b2: 0.05, b3: 1.6, b5: 1, b6: 0.16, b9: 8, calcium: 28, iron: 0.8, magnesium: 12, phosphorus: 43, potassium: 35, zinc: 1.1, selenium: 15, copper: 110, manganese: 1.1, sodium: 1 } },
+    { re: /ryż brązowy/, n: { b1: 0.4, b2: 0.09, b3: 5, b5: 1.5, b6: 0.5, b9: 20, calcium: 33, iron: 1.5, magnesium: 143, phosphorus: 333, potassium: 223, zinc: 2, selenium: 20, copper: 180, manganese: 3.7, sodium: 2 } },
+    { re: /płatki owsiane|owsiane|owsianka/, n: { b1: 0.76, b2: 0.14, b3: 0.96, b5: 1.3, b6: 0.12, b9: 56, choline: 32, calcium: 54, iron: 4.7, magnesium: 177, phosphorus: 523, potassium: 429, zinc: 4, selenium: 34, copper: 400, manganese: 4.9, sodium: 2 } },
+    { re: /chleb razowy|chleb pełnoziarnisty|chleb żytni|chleb graham/, n: { b1: 0.36, b2: 0.2, b3: 3.5, b5: 0.5, b6: 0.2, b9: 30, calcium: 70, iron: 2.5, magnesium: 60, phosphorus: 180, potassium: 200, zinc: 1.7, selenium: 30, copper: 200, manganese: 1.8, sodium: 400 } },
+    { re: /chleb|bułka|bagietka|tortilla/, n: { b1: 0.3, b2: 0.15, b3: 2.5, b5: 0.4, b6: 0.1, b9: 30, calcium: 50, iron: 1.5, magnesium: 25, phosphorus: 100, potassium: 100, zinc: 0.9, selenium: 20, copper: 120, manganese: 0.8, sodium: 400 } },
+    { re: /mąka pszenna/, n: { b1: 0.12, b2: 0.04, b3: 1.2, b6: 0.04, b9: 30, calcium: 15, iron: 1.2, magnesium: 22, phosphorus: 108, potassium: 107, zinc: 0.7, selenium: 15, copper: 140, manganese: 0.7, sodium: 2 } },
+    { re: /kasza gryczana|gryczana/, n: { b1: 0.1, b2: 0.42, b3: 7, b5: 1.2, b6: 0.21, b9: 30, choline: 20, calcium: 18, iron: 2.2, magnesium: 231, phosphorus: 347, potassium: 460, zinc: 2.4, selenium: 8, copper: 640, manganese: 1.3, sodium: 1 } },
+    { re: /kasza jaglana|jaglana/, n: { b1: 0.42, b2: 0.29, b3: 4.7, b5: 1.2, b6: 0.38, b9: 85, calcium: 8, iron: 3, magnesium: 114, phosphorus: 285, potassium: 195, zinc: 1.7, selenium: 3, copper: 750, manganese: 1.6, sodium: 5 } },
+    { re: /makaron/, n: { b1: 0.2, b2: 0.05, b3: 1.5, b5: 0.5, b6: 0.1, b9: 25, calcium: 21, iron: 1.5, magnesium: 30, phosphorus: 120, potassium: 180, zinc: 0.8, selenium: 20, copper: 100, manganese: 0.5, sodium: 5 } },
+    { re: /soczewica/, n: { b1: 0.5, b2: 0.21, b3: 2.6, b5: 2.1, b6: 0.54, b9: 479, choline: 96, calcium: 35, iron: 3.3, magnesium: 47, phosphorus: 281, potassium: 677, zinc: 1.3, selenium: 6, copper: 250, manganese: 1.4, sodium: 2 } },
+    { re: /ciecierzyca/, n: { b1: 0.48, b2: 0.2, b3: 1.5, b5: 1.6, b6: 0.54, b9: 172, choline: 99, calcium: 57, iron: 4.3, magnesium: 79, phosphorus: 252, potassium: 718, zinc: 2.8, selenium: 4, copper: 660, manganese: 21, sodium: 24 } },
+    { re: /fasola/, n: { b1: 0.2, b2: 0.06, b3: 0.5, b5: 0.2, b6: 0.13, b9: 130, calcium: 70, iron: 2.5, magnesium: 50, phosphorus: 140, potassium: 400, zinc: 1.5, selenium: 3, copper: 200, manganese: 0.3, sodium: 1 } },
+    { re: /orzechy włoskie/, n: { vitE: 0.7, vitK: 2.7, b1: 0.34, b2: 0.15, b3: 1.1, b5: 0.57, b6: 0.54, b9: 98, choline: 39, calcium: 98, iron: 2.9, magnesium: 158, phosphorus: 346, potassium: 441, zinc: 3.1, selenium: 5, copper: 1600, manganese: 3.4, sodium: 2 } },
+    { re: /migdały/, n: { vitE: 26, vitK: 2, b1: 0.2, b2: 1.1, b3: 3.6, b5: 0.5, b6: 0.14, b9: 44, choline: 52, calcium: 269, iron: 3.7, magnesium: 268, phosphorus: 481, potassium: 733, zinc: 3.1, selenium: 4, copper: 1000, manganese: 2.1, sodium: 1 } },
+    { re: /orzechy ziemne|arachid/, n: { vitE: 8, vitK: 0, b1: 0.64, b2: 0.14, b3: 12, b5: 1.7, b6: 0.35, b9: 240, choline: 52, calcium: 92, iron: 4.6, magnesium: 168, phosphorus: 376, potassium: 705, zinc: 3.3, selenium: 7, copper: 1100, manganese: 1.9, sodium: 18 } },
+    { re: /nerkowca|nasiona słonecznika|słonecznik|pestki słonecznika/, n: { vitE: 35, vitK: 0, b1: 1.5, b2: 0.36, b3: 8.3, b5: 1.1, b6: 1.3, b9: 227, choline: 55, calcium: 78, iron: 5.3, magnesium: 325, phosphorus: 660, potassium: 645, zinc: 5, selenium: 53, copper: 1800, manganese: 1.9, sodium: 9 } },
+    { re: /pestki dyni/, n: { vitE: 2, vitK: 7, b1: 0.27, b2: 0.15, b3: 1, b5: 0.7, b6: 0.14, b9: 58, choline: 63, calcium: 46, iron: 3.3, magnesium: 262, phosphorus: 1000, potassium: 809, zinc: 8, selenium: 9, copper: 1300, manganese: 4.5, sodium: 7 } },
+    { re: /nasiona chia|chia/, n: { vitE: 0.5, b1: 0.62, b2: 0.17, b3: 8.8, b6: 0.12, b9: 49, calcium: 631, iron: 7.7, magnesium: 335, phosphorus: 860, potassium: 407, zinc: 4.6, selenium: 55, copper: 924, manganese: 2.7, sodium: 16 } },
+    { re: /siemię lniane|len mielony/, n: { b1: 1.6, b2: 0.16, b3: 3, b5: 1, b6: 0.47, b9: 87, choline: 79, calcium: 255, iron: 5.7, magnesium: 392, phosphorus: 642, potassium: 813, zinc: 4.3, selenium: 25, copper: 1200, manganese: 2.5, sodium: 30 } },
 ];
+
 
