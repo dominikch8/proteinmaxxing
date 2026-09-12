@@ -1,712 +1,914 @@
 {
   "total": 2315,
-  "withKeys": 2139,
+  "withKeys": 2135,
   "fromOff": 0,
-  "avgKeys": 12.8,
+  "avgKeys": 13.2,
   "thin": [
     {
+      "slug": "kabanosy",
+      "keys": 7,
+      "source": "off"
+    },
+    {
+      "slug": "mortadela",
+      "keys": 7,
+      "source": "off"
+    },
+    {
+      "slug": "ser-camembert",
+      "keys": 6,
+      "source": "off"
+    },
+    {
+      "slug": "mleko-2",
+      "keys": 7,
+      "source": "off"
+    },
+    {
+      "slug": "mleko-3-2",
+      "keys": 7,
+      "source": "off"
+    },
+    {
+      "slug": "jogurt-grecki-naturalny",
+      "keys": 6,
+      "source": "off"
+    },
+    {
+      "slug": "gruszka",
+      "keys": 3,
+      "source": "off"
+    },
+    {
+      "slug": "melon",
+      "keys": 7,
+      "source": "off"
+    },
+    {
+      "slug": "mango",
+      "keys": 7,
+      "source": "off"
+    },
+    {
+      "slug": "sos-czosnkowy",
+      "keys": 6,
+      "source": "off"
+    },
+    {
       "slug": "oliwa-z-oliwek",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "olej-rzepakowy",
-      "keys": 4
+      "keys": 3,
+      "source": "off"
     },
     {
       "slug": "maslo-ekstra-82",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "smalec",
-      "keys": 5
-    },
-    {
-      "slug": "olej-slonecznikowy",
-      "keys": 4
+      "keys": 2,
+      "source": "off"
     },
     {
       "slug": "olej-kokosowy",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "margaryna",
-      "keys": 5
+      "keys": 3,
+      "source": "off"
+    },
+    {
+      "slug": "snickers",
+      "keys": 4,
+      "source": "off"
+    },
+    {
+      "slug": "raffaello",
+      "keys": 4,
+      "source": "off"
+    },
+    {
+      "slug": "nutella",
+      "keys": 2,
+      "source": "off"
+    },
+    {
+      "slug": "brzoskwinia",
+      "keys": 5,
+      "source": "off"
     },
     {
       "slug": "maslo-klarowane-ghee",
-      "keys": 4
+      "keys": 2,
+      "source": "lean"
     },
     {
       "slug": "olej-sezamowy",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "tluszcz-kaczy",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "coca-cola",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "coca-cola-zero",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "pepsi",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "sprite",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "mirinda",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "lipton-ice-tea-brzoskwinia",
-      "keys": 5
-    },
-    {
-      "slug": "nestea-cytryna",
-      "keys": 7
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "woda",
-      "keys": 5
-    },
-    {
-      "slug": "kubus-jablkowy",
-      "keys": 7
-    },
-    {
-      "slug": "tymbark-jablko",
-      "keys": 7
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "herbata-czarna-napar",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "kawa-czarna-parzona",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "jagermeister",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "sok-z-cytryny",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "maslo-ekstra",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "kawa-parzona-bez-cukru",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-z-mlekiem-2-lyzki-mleka-2",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
+    },
+    {
+      "slug": "ksylitol-cukier-brzozowy",
+      "keys": 5,
+      "source": "lean"
     },
     {
       "slug": "maslo-smietankowe",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "herbata-parzona",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-rozpuszczalna-bez-cukru",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "maslo-83",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "herbata-parzona-lipton",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-z-mlekiem-2-lyzki-mleka-3-2",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "herbata-zielona-parzona",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-rozpuszczona",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-espresso",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-latte",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-zbozowa-inka",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "margaryna-extra-z-maslem-delma",
-      "keys": 4
-    },
-    {
-      "slug": "olej-slonecznikowy-kujawski",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "sok-marchwiowy-jednodniowy",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "maslo-pozostale",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "kawa-rozpuszczalna-z-mlekiem-i-cukrem",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-rozpuszczlana-50-ml-mleka",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-z-mlekiem-2-lyzki-mleka-0",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "oliwa-tesco",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "herbata-czerwona-parzona",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "maslo-klarowane",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "margaryna-rama-classic",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "margaryna-benecol",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "maslo-oselkowe-ekstra-mleczna-dolina",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "kawa-parzona-z-cukrem",
-      "keys": 5
-    },
-    {
-      "slug": "sok-jablkowy",
-      "keys": 7
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "maslo-roslinne",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "kawa-rozpuszczalna-nescafe-classic-nestle",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-rozpuszczalna-creme-sensazione-nescafe",
-      "keys": 5
-    },
-    {
-      "slug": "swiezy-sok-jablkowy",
-      "keys": 7
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "maslo-ekstra-80",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "kawa-czarna-mielona-do-zaparzenia",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "whisky",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "oliwa-z-oliwek-monini",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "olej-rzepakowy-kujawski",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "kawa-parzona-z-mlekiem",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "margaryna-flora",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "makaron-z-pszenicy-durum-ugotowany",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "maslo-polskie-mlekovita",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "kawa-blonnik-inka",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
+    },
+    {
+      "slug": "sos-winegret-ocet-i-olej",
+      "keys": 4,
+      "source": "lean"
     },
     {
       "slug": "pepsi-cola",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "olej-z-orzechow-wloskich",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "olej-z-pestek-dyni",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "smalec-gesi",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "oliwa-z-oliwek-extra-virgin",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "margaryna-do-smarowania",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "margaryna-do-pieczenia",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "tluszcz-roslinny-planta",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "woda-gazowana",
-      "keys": 5
-    },
-    {
-      "slug": "woda-smakowa-cytryna",
-      "keys": 7
-    },
-    {
-      "slug": "sok-jablkowy-100",
-      "keys": 7
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "sok-wieloowocowy",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "sok-marchwiowy",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "sok-z-czarnej-porzeczki",
-      "keys": 5
-    },
-    {
-      "slug": "sok-grejpfrutowy",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "nektar-brzoskwiniowy",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "napoj-cytrynowy-sprite",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "lemonada-domowa",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "ice-tea-cytrynowa",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "ice-tea-brzoskwiniowa",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "napoj-energetyczny",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "napoj-energetyczny-zero",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "napoj-izotoniczny",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "woda-kokosowa",
-      "keys": 5
-    },
-    {
-      "slug": "mleko-owsiane",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "mleko-kokosowe-napoj",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kakao-napoj",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-czarna",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "cappuccino",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "latte",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "herbata-czarna",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "herbata-zielona",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "herbata-z-cytryna-i-miodem",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "napoj-owocowy-nektar-wisniowy",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kompot-wieloowocowy",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "koktajl-proteinowy-gotowy",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "szampan",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "rum",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "gin",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "tequila",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "brandy",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "likier-kawowy",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "likier-owocowy",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "nalewka-domowa",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "likier-adwokat",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "koktajl-mojito",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "koktajl-pina-colada",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "koktajl-margarita",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "koktajl-cuba-libre",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "grzane-wino",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "pepsi-max",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "7up",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "schweppes-tonic",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "dr-pepper",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "mountain-dew",
-      "keys": 5
-    },
-    {
-      "slug": "tymbark-jablko-mieta",
-      "keys": 7
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "tymbark-kaktus",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kombucha",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kombucha-imbirowa",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "yerba-mate-napar",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "matcha-latte",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-mrozona-iced-latte",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kakao-mrozone",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
+    },
+    {
+      "slug": "oshee-woda-witaminowa",
+      "keys": 4,
+      "source": "lean"
     },
     {
       "slug": "boba-tea-mleczna",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kustosz",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "perla",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "zubr",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "tatra",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "lomza-niepasteryzowana",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "gin-z-tonikiem-drink",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "aperol-spritz",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "wisniowka",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "grzaniec",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "mleko-konopne",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "mleko-grochowe",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-rozpuszczalna-instant",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-mielona-parzona",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-z-mlekiem-biala",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-mocha",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-flat-white",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kawa-americano",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "herbata-owocowa",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "herbata-z-hibiskusem",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "herbata-mietowa",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "herbata-rumiankowa",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "czekolada-do-picia-goraca",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kakao-z-piankami",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "napoj-waniliowy-shake",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "shake-czekoladowy",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "maslo-czosnkowe",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "maslo-ziolowe",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "smalec-z-jablkiem-i-cebula",
-      "keys": 6
+      "keys": 6,
+      "source": "estimate"
     },
     {
       "slug": "olej-rydzowy",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "olej-konopny",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "kompot-z-suszu-bozonarodzeniowy",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "miod-pitny-trojniak",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "miod-pitny-dwojniak",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "sliwowica",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "okowita-gorzala",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "nalewka-z-pigwy",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "nalewka-z-aronii",
-      "keys": 7
+      "keys": 7,
+      "source": "estimate"
     },
     {
       "slug": "smoothie-z-burakiem",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "sok-z-brzozy",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "napoj-aloesowy",
-      "keys": 5
-    },
-    {
-      "slug": "kefir-wodny-jogurt-kokosowy",
-      "keys": 7
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "kompot-rabarbarowy",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "lemoniada-lawendowa",
-      "keys": 5
+      "keys": 5,
+      "source": "estimate"
     },
     {
       "slug": "maslo-oselkowe-z-oselki",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     },
     {
       "slug": "tluszcz-z-gesi-smalec-gesi",
-      "keys": 4
+      "keys": 4,
+      "source": "estimate"
     }
-  ]
+  ],
+  "sources": {
+    "estimate": 2066,
+    "curated": 192,
+    "off": 53,
+    "lean": 4
+  }
 }
