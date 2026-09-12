@@ -440,7 +440,7 @@
     justify-content: flex-start;
     justify-content: safe center;
     align-items: center;
-    gap: 7px;
+    gap: 6px;
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
@@ -458,7 +458,7 @@
    centred on the page, extending symmetrically past the narrow card. */
 @media (min-width: 768px) {
     .funfact-cats-wrap {
-        width: min(940px, 94vw);
+        width: min(900px, 92vw);
         max-width: none;
         margin-left: 50%;
         transform: translateX(-50%);
@@ -466,10 +466,10 @@
 }
 
 .funfact-cat {
-    padding: 8px 13px;
+    padding: 7px 11px;
     border-radius: 999px;
     font: inherit;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     font-weight: 600;
     line-height: 1;
     cursor: pointer;
