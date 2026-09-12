@@ -284,9 +284,15 @@ async function predictMask(rgbRaw, width, height) {
     })
         .resize(width, height, { fit: 'fill' })
         .raw()
-        .toBuffer();
+        .toBuffer({ resolveWithObject: true });
 
-    return maskFull;
+    // UWAGA: sharp po resize zwraca 3 kanały (interleaved), mimo wejścia 1-kanałowego.
+    // Musimy wyłuskać pojedynczy kanał, inaczej maska jest zdesynchronizowana i obiekt znika.
+    const mCh = maskFull.info.channels;
+    if (mCh === 1) return maskFull.data;
+    const single = Buffer.alloc(width * height);
+    for (let i = 0; i < width * height; i++) single[i] = maskFull.data[i * mCh];
+    return single;
 }
 
 /** Usuwa tło studio (białe/szare) po kolorze z narożników + odległości RGB. */
