@@ -337,7 +337,13 @@ function buildMicrosSectionHtml(p) {
                             </div>
                         </li>`);
     }
-    if (!rows.length) return '';
+    if (!rows.length) {
+        return `
+            <section class="micros-section" aria-labelledby="micros-heading">
+                <h2 id="micros-heading">Witaminy i minerały na 100 g</h2>
+                <p class="micros-lead">Brak zweryfikowanych danych o składzie mikroskładników dla tego produktu. Zamiast podawać przybliżone wartości posiłkujemy się rzetelnymi danymi (USDA / Open Food Facts) — tutaj ich jeszcze nie ma.</p>
+            </section>`;
+    }
     return `
             <section class="micros-section" aria-labelledby="micros-heading">
                 <h2 id="micros-heading">Witaminy i minerały na 100 g</h2>
