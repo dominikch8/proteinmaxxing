@@ -140,3 +140,109 @@ function haveExt(slug, ext) {
 function isComplete(slug) {
     return haveExt(slug, 'webp') && haveExt(slug, 'jpg') && haveExt(slug, 'png');
 }
+
+async function fetchPollinations(p, attempt) {
+    const prompt = encodeURIComponent(buildPrompt(p));
+    const seed = seedFromSlug(p.slug) + attempt * 1013;
+    const url = `https://image.pollinations.ai/prompt/${prompt}?width=800&height=600&nologo=true&model=flux&seed=${seed}`;
+    const res = await fetch(url, {
+        headers: { 'User-Agent': UA, Referer: 'https://proteiner.pl/' },
+        signal: AbortSignal.timeout(180000)
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const buf = Buffer.from(await res.arrayBuffer());
+    if (buf.length < 3000) throw new Error(`plik za mały (${buf.length}b)`);
+    return buf;
+}
+
+function writeOutputs(slug, out) {
+    fs.writeFileSync(path.join(outDir, `${slug}.png`), out.png);
+    fs.writeFileSync(path.join(outDir, `${slug}.jpg`), out.jpg);
+    fs.writeFileSync(path.join(outDir, `${slug}.webp`), out.webp);
+    if (fs.existsSync(path.dirname(bundleDir))) {
+        fs.mkdirSync(bundleDir, { recursive: true });
+        fs.writeFileSync(path.join(bundleDir, `${slug}.png`), out.png);
+        fs.writeFileSync(path.join(bundleDir, `${slug}.jpg`), out.jpg);
+        fs.writeFileSync(path.join(bundleDir, `${slug}.webp`), out.webp);
+    }
+}
+
+async function processOne(p) {
+    let lastErr = null;
+    for (let attempt = 0; attempt < 3; attempt++) {
+        if (attempt > 0) await sleep(2500 * attempt);
+        try {
+            const buf = await fetchPollinations(p, attempt);
+            const out = await cutoutBuffer(buf, { method: 'auto' });
+            writeOutputs(p.slug, out);
+            return { ok: true };
+        } catch (e) {
+            lastErr = e;
+        }
+    }
+    return { ok: false, error: lastErr ? lastErr.message : 'unknown' };
+}
+
+let todo = allProducts;
+if (onlySlugs.length) {
+    const set = new Set(onlySlugs);
+    todo = allProducts.filter((p) => set.has(p.slug));
+} else if (!force) {
+    todo = allProducts.filter((p) => !isComplete(p.slug));
+}
+if (limit !== Infinity) todo = todo.slice(0, limit);
+
+if (report) {
+    const byCat = {};
+    for (const p of todo) byCat[p.category] = (byCat[p.category] || 0) + 1;
+    console.log(`Produkty: ${allProducts.length}, brakujące (niekompletne): ${todo.length}`);
+    console.log('Wg kategorii:');
+    Object.entries(byCat)
+        .sort((a, b) => b[1] - a[1])
+        .forEach(([c, n]) => console.log(`  ${c}: ${n}`));
+    console.log('\nPrzykłady:');
+    todo.slice(0, 20).forEach((p) => console.log(`  ${p.slug}\t${p.name}\t${p.category}`));
+    process.exit(0);
+}
+
+if (!todo.length) {
+    console.log('Wszystkie produkty mają komplet zdjęć. Nic do zrobienia.');
+    process.exit(0);
+}
+
+fs.mkdirSync(outDir, { recursive: true });
+console.log(`Do wygenerowania: ${todo.length} zdjęć (concurrency=${concurrency}, model=flux)`);
+
+let ok = 0;
+let fail = 0;
+const failed = [];
+const started = Date.now();
+let cursor = 0;
+
+async function worker(id) {
+    while (cursor < todo.length) {
+        const p = todo[cursor++];
+        const idx = cursor;
+        const t0 = Date.now();
+        const res = await processOne(p);
+        if (res.ok) {
+            ok++;
+            console.log(`[${idx}/${todo.length}] ✓ ${p.slug} (${((Date.now() - t0) / 1000).toFixed(1)}s)`);
+        } else {
+            fail++;
+            failed.push({ slug: p.slug, error: res.error });
+            console.log(`[${idx}/${todo.length}] ✗ ${p.slug} — ${res.error}`);
+        }
+        if (delayMs) await sleep(delayMs);
+    }
+}
+
+await Promise.all(Array.from({ length: Math.min(concurrency, todo.length) }, (_, i) => worker(i)));
+
+if (failed.length) {
+    fs.writeFileSync(path.join(root, 'scripts', 'product-photos-failed.json'), JSON.stringify(failed, null, 2));
+}
+console.log(
+    `\nGotowe: ok=${ok}, fail=${fail}, czas=${((Date.now() - started) / 1000).toFixed(0)}s → ${outDir}`
+);
+
