@@ -97,7 +97,14 @@ export const CURATED_FOODS = [
     { re: /cebula|czosnek/, n: { vitC: 8, vitK: 0.4, b1: 0.05, b2: 0.03, b3: 0.1, b5: 0.12, b6: 0.12, b9: 19, calcium: 23, iron: 0.2, magnesium: 10, phosphorus: 29, potassium: 146, zinc: 0.17, selenium: 0.5, copper: 40, manganese: 0.13, sodium: 4 } },
     { re: /awokado/, n: { vitA: 7, vitC: 10, vitE: 2.07, vitK: 21, b1: 0.07, b2: 0.13, b3: 1.7, b5: 1.4, b6: 0.26, b9: 81, choline: 14, calcium: 12, iron: 0.55, magnesium: 29, phosphorus: 52, potassium: 485, zinc: 0.64, selenium: 0.4, copper: 190, manganese: 0.14, sodium: 7 } },
     { re: /masło orzechowe/, n: { vitE: 9, vitK: 0.5, b1: 0.1, b2: 0.1, b3: 13, b5: 1.1, b6: 0.55, b9: 87, calcium: 49, iron: 1.9, magnesium: 168, phosphorus: 335, potassium: 558, zinc: 2.5, selenium: 4, copper: 420, manganese: 1.6, sodium: 400 } },
+
+    // Napoje / słodycze / inne
+    { re: /kakao|czekolada gorzka|czekolada 100|czekolada 85/, n: { vitA: 0, vitE: 0.4, vitK: 2, b1: 0.08, b2: 0.24, b3: 2.2, b5: 0.7, b6: 0.07, b9: 24, calcium: 73, iron: 11.9, magnesium: 228, phosphorus: 308, potassium: 715, zinc: 3.3, selenium: 2.5, copper: 1800, manganese: 1.7, sodium: 20 } },
+    { re: /czekolada mleczna|milka|prince polo|toblerone/, n: { vitA: 30, vitE: 0.5, vitK: 5, b1: 0.09, b2: 0.3, b3: 0.9, b5: 0.6, b6: 0.07, b9: 10, calcium: 190, iron: 2.3, magnesium: 60, phosphorus: 205, potassium: 370, zinc: 2.1, selenium: 4, copper: 500, manganese: 0.5, sodium: 70 } },
+    { re: /miód/, n: { vitC: 0.5, b2: 0.04, b3: 0.1, b5: 0.07, b6: 0.02, b9: 2, calcium: 6, iron: 0.4, magnesium: 2, phosphorus: 4, potassium: 52, zinc: 0.22, selenium: 0.8, copper: 40, manganese: 0.08, sodium: 4 } },
+    { re: /tofu/, n: { vitA: 0, vitC: 0, vitE: 0.1, vitK: 2, b1: 0.08, b2: 0.05, b3: 0.4, b5: 0.2, b6: 0.09, b9: 15, calcium: 350, iron: 5.4, magnesium: 30, phosphorus: 97, potassium: 121, zinc: 0.8, selenium: 9, copper: 190, manganese: 0.6, sodium: 7 } },
 ];
+
 
 
 
