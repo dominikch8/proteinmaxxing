@@ -118,8 +118,9 @@ function mapOffNutriments(n) {
         }
         if (raw == null) continue;
         const baseGrams = toGrams(raw, unit);
-        if (baseGrams == null || baseGrams < 0) continue;
+        if (baseGrams == null || baseGrams <= 0) continue;
         const value = MICRO_UNIT[key] === 'µg' ? baseGrams * 1e6 : baseGrams * 1000;
+        if (!(value > 0)) continue;
         out[key] = value;
     }
     // Wit. A: OFF bywa w IU — przybliżenie IU → µg RAE (÷3.33)
