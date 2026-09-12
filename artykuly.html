@@ -509,6 +509,7 @@
         grid-template-columns: 1fr auto 1fr;
         align-items: center;
         column-gap: 16px;
+        row-gap: 14px;
     }
 
     .articles-search {
@@ -587,11 +588,12 @@
     #articlesPagination {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         gap: 8px;
         flex-wrap: wrap;
-        grid-column: 3;
-        justify-self: start;
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 100%;
         min-width: 0;
     }
 
