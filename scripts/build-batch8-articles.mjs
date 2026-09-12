@@ -497,7 +497,7 @@ defs.push({
         '<strong>Ważne:</strong> deficyt, nie pora.',
     ],
     uwaga: 'Trening siłowy na czczo może obniżyć jakość wysiłku. Cardio ok, ale ciężka siłownia zwykle lepiej po lekkim posiłku.',
-    coDalej: 'Zobacz <a href="strefa-tetna-a-spalanie-tluszczu">mit strefy tętna</a> i <a href="bilans-energetyczny-co-to">o bilansie energetycznym</a>.'
+    coDalej: 'Zobacz <a href="strefa-tetna-a-spalanie-tluszczu">mit strefy tętna</a> i <a href="czym-jest-metabolizm-i-rmr">o metabolizmie</a>.'
 });
 
 const articles = defs.map(buildArticle);
