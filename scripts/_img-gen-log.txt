@@ -1,1 +1,3 @@
 [2026-09-12T09:17:19.377Z] Start: model=flux delay=5500ms pilot=true | do wygenerowania: 3 (baza: 2315)
+[2026-09-12T09:21:06.144Z] Postęp: 3/3 (OK=3 FAIL=0, 3.8 min)
+[2026-09-12T09:21:06.145Z] Gotowe: 3 OK, 0 błędów, 3.8 min → C:\Users\Administrator xD\Desktop\probystronyxd\scripts\_imgpreview
