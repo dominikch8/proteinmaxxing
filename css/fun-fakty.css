@@ -367,6 +367,16 @@
     background: rgba(26, 35, 56, 0.6);
 }
 
+/* Park the tiny "Kopiuj fakt" action in the card's top-right corner so it
+   never shifts the main "Losuj kolejny" button, which stays dead-centre
+   under the fact. */
+.funfact-copy-corner {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 3;
+}
+
 .funfact-btn-icon {
     font-size: 1.1rem;
     line-height: 1;
