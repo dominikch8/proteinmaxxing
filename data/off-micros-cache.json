@@ -652,5 +652,25 @@
     "manganese": 0,
     "sodium": 983
   },
-  "ser-brie": {}
+  "ser-brie": {},
+  "ser-edamski": {},
+  "budyn-na-mleku": {},
+  "smietanka-30": {},
+  "koncentrat-bialka-serwatkowego-wpc": {},
+  "pomidor": {},
+  "ogorek": {},
+  "cebula": {},
+  "marchew": {
+    "vitA": 400,
+    "vitC": 6,
+    "vitE": 0.9,
+    "sodium": 32
+  },
+  "kapusta-biala": {},
+  "papryka-czerwona": {},
+  "burak": {},
+  "czosnek": {},
+  "salata-maslowa": {},
+  "szpinak-swiezy": {},
+  "brokuly": {}
 }
