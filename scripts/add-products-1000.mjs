@@ -23,8 +23,9 @@ const CAT = new Set([
 ]);
 
 // [name, emoji, category, servingText, servingRatio, protein, carbs, fat, satFat, extra?]
-const NEW = [];
+const NEW = [
 /*__DATA__*/
+];
 
 function slugify(name) {
     return String(name)
