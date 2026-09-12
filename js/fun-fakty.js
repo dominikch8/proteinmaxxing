@@ -371,6 +371,7 @@
     }
 
     function boot() {
+        indexFacts();
         const stored = readStored();
         const initialCat = (stored && stored.cat) || readStoredCat() || ALL_CAT;
         setPool(initialCat, stored ? stored.bag : null);
