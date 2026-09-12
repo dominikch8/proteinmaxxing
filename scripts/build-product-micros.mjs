@@ -210,7 +210,7 @@ async function main() {
         }
 
         const micros = mergePreferHigherConfidence(
-            buildMicrosForProduct(p),
+            buildMicrosForProduct(p, p.microsDetailOverride || null),
             off
         );
         // Zapewnij pełniejszy profil: dopełnij zerami tylko sensownie — nie;
