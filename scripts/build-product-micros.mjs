@@ -216,11 +216,22 @@ async function main() {
             micros = cleanMicros(p.microsDetailOverride);
             source = 'override';
         } else if (off && Object.keys(off).length >= 3) {
-            // Realne dane z internetu (OFF) mają pierwszeństwo; uzupełnij braki inteligentną estymacją.
-            const merged = { ...smart.micros };
-            for (const [k, v] of Object.entries(off)) merged[k] = v;
-            micros = cleanMicros(merged);
-            source = 'off';
+            const offClean = cleanMicros(off);
+            if (smart.source === 'curated' || smart.source === 'lean') {
+                // Profil zweryfikowany wygrywa z (nieraz błędnym) OFF; OFF tylko uzupełnia braki.
+                const merged = { ...smart.micros };
+                for (const [k, v] of Object.entries(offClean)) {
+                    if (merged[k] == null) merged[k] = v;
+                }
+                micros = cleanMicros(merged);
+                source = smart.source;
+            } else {
+                // Szacunek jest gruby — realne dane z internetu mają pierwszeństwo.
+                const merged = { ...smart.micros };
+                for (const [k, v] of Object.entries(offClean)) merged[k] = v;
+                micros = cleanMicros(merged);
+                source = 'off';
+            }
         } else {
             micros = smart.micros || {};
             source = Object.keys(micros).length ? smart.source : 'none';
