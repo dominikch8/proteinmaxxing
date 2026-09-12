@@ -1,6 +1,6 @@
 {
   "total": 2315,
-  "withKeys": 2066,
+  "withKeys": 2065,
   "fromOff": 0,
   "avgKeys": 13.5,
   "thin": [
@@ -445,6 +445,11 @@
       "source": "lean"
     },
     {
+      "slug": "sol",
+      "keys": 2,
+      "source": "lean"
+    },
+    {
       "slug": "przyprawa-galka-muszkatolowa",
       "keys": 6,
       "source": "estimate"
@@ -621,13 +626,13 @@
     },
     {
       "slug": "sol-morska",
-      "keys": 0,
-      "source": "none"
+      "keys": 2,
+      "source": "lean"
     },
     {
       "slug": "sol-himalajska",
-      "keys": 0,
-      "source": "none"
+      "keys": 2,
+      "source": "lean"
     },
     {
       "slug": "kurkuma-mielona",
@@ -1036,13 +1041,13 @@
     },
     {
       "slug": "sol-czosnkowa",
-      "keys": 0,
-      "source": "none"
+      "keys": 2,
+      "source": "lean"
     },
     {
       "slug": "sol-ziolowa",
-      "keys": 0,
-      "source": "none"
+      "keys": 2,
+      "source": "lean"
     },
     {
       "slug": "vegeta-lunch",
@@ -1252,9 +1257,9 @@
   ],
   "sources": {
     "curated": 667,
-    "estimate": 1535,
+    "estimate": 1534,
     "off": 29,
-    "lean": 56,
-    "none": 28
+    "lean": 61,
+    "none": 24
   }
 }
