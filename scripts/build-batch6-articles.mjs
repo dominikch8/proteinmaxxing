@@ -269,11 +269,236 @@ defs.push({
     uwaga: 'Sól jest potrzebna — całkowite jej unikanie to przesada. Po prostu pilnuj, by nie była podstawą smaku każdej potrawy.',
     coDalej: 'Zobacz <a href="elektrolity-co-i-kiedy">rolę sodu w treningu</a> i <a href="tluszcze-nasycone-a-zdrowie">tłuszcze a zdrowie</a>.'
 });
-//_A6_
-//_A7_
-//_A8_
-//_A9_
-//_A10_
+defs.push({
+    slug: 'witamina-d-ile-i-kiedy',
+    emoji: '☀️',
+    title: 'Witamina D — ile i kiedy suplementować',
+    subtitle: 'Niedobory w Polsce, realne dawki i dlaczego samo słońce zwykle nie wystarcza.',
+    meta: 'Witamina D: dawki, niedobory w Polsce i kiedy suplementacja ma sens.',
+    crumb: 'Witamina D',
+    category: 'odzywianie',
+    relatedHtml: '<a href="magnez-i-sen-skurcze">magnez</a> · <a href="witaminy-z-jedzenia-czy-tabletek">witaminy</a> · <a href="artykuly">artykuły</a>',
+    lead: 'W Polsce większość ludzi ma niski poziom witaminy D, zwłaszcza jesienią i zimą, gdy słońca brakuje.',
+    sections: [
+        { h2: 'Po co jest', p: 'Reguluje wapń i fosfor, wspiera kości, mięśnie i odporność. Niedobór łączy się ze słabszym układem kostnym i częstszymi infekcjami.' },
+        { h2: 'Ile brać', p: 'Dla dorosłych typowa suplementacja profilaktyczna to 800–2000 IU dziennie w okresie jesienno-zimowym. Wyższe dawki tylko po zbadaniu poziomu.' },
+        { h2: 'Skąd brać', p: 'Tłuste ryby, jaja, wzbogacane produkty. Synteza skórna działa tylko przy odpowiednim kącie słońca — w Polsce od października do kwietnia bywa niewystarczająca.' }
+    ],
+    bullets: [
+        '<strong>Dawka:</strong> 800–2000 IU/dzień.',
+        '<strong>Okres:</strong> jesień–zima.',
+        '<strong>Zbadaj:</strong> poziom 25(OH)D przed wysokimi dawkami.',
+    ],
+    uwaga: 'Witamina D jest rozpuszczalna w tłuszczach — przedawkowanie możliwe przy bardzo wysokich dawkach. Trzymaj się zaleceń, nie „im więcej tym lepiej”.',
+    coDalej: 'Zobacz <a href="magnez-i-sen-skurcze">magnez</a> i <a href="witaminy-z-jedzenia-czy-tabletek">witaminy z diety vs tabletek</a>.'
+});
+defs.push({
+    slug: 'magnez-i-sen-skurcze',
+    emoji: '😴',
+    title: 'Magnez — sen, skurcze i wydolność',
+    subtitle: 'Czy magnez naprawdę pomaga spać i na skurcze — i jaka forma się wchłania.',
+    meta: 'Magnez: rola we śnie i skurczach, najlepsze formy i ile dziennie.',
+    crumb: 'Magnez',
+    category: 'odzywianie',
+    relatedHtml: '<a href="kurcze-miesni-co-pomaga">skurcze</a> · <a href="sen-a-hormon-wzrostu">sen</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Magnez bierze udział w setkach reakcji, w tym w pracy mięśni i układu nerwowego. Często jest niedoborowy w typowej diecie.',
+    sections: [
+        { h2: 'Sen i skurcze', p: 'Dowody na „magnez na sen” są umiarkowane, ale przy niedoborze suplementacja bywa odczuwalna. Skurcze mięśni mają wiele przyczyn, nie tylko magnez.' },
+        { h2: 'Formy', p: 'Cytrynian i bisglycynian wchłaniają się lepiej niż tlenek magnezu. Bisglycynian bywa łagodniejszy dla żołądka i mniej przeczyszcza.' },
+        { h2: 'Źródła i dawki', p: 'Orzechy, kasza gryczana, kakao, rośliny strączkowe, woda mineralna. Zalecane ok. 300–400 mg dziennie dla dorosłych.' }
+    ],
+    bullets: [
+        '<strong>Forma:</strong> cytrynian lub bisglycynian.',
+        '<strong>Dawka:</strong> 300–400 mg/dzień.',
+        '<strong>Źródła:</strong> kasza, orzechy, kakao.',
+    ],
+    uwaga: 'Magnez nie naprawi snu, którego rujnują kofeina czy ekran przed snem. Najpierw higiena snu, potem suplementy.',
+    coDalej: 'Zobacz <a href="kurcze-miesni-co-pomaga">co na skurcze mięśni</a> i <a href="sen-a-hormon-wzrostu">sen a regeneracja</a>.'
+});
+defs.push({
+    slug: 'cynk-a-regeneracja',
+    emoji: '🧪',
+    title: 'Cynk — regeneracja i odporność',
+    subtitle: 'Ile cynku potrzebujesz, gdzie go szukać i kiedy niedobór sabotuje trening.',
+    meta: 'Cynk: rola w regeneracji i odporności, źródła i ile dziennie.',
+    crumb: 'Cynk',
+    category: 'odzywianie',
+    relatedHtml: '<a href="zelazo-niedobor-u-kobiet">żelazo</a> · <a href="bialko-a-odpornosc">białko a odporność</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Cynk wspiera syntezę białek, gojenie i odporność — u intensywnie trenujących niedobór potrafi spowolnić regenerację.',
+    sections: [
+        { h2: 'Rola', p: 'Cynk jest kofaktorem setek enzymów, uczestniczy w syntezie białek i podziałach komórek. Bez niego naprawa mikrouszkodzeń po treningu idzie wolniej.' },
+        { h2: 'Źródła', p: 'Wołowina, owoce morza (ostrygi), nasiona dyni, rośliny strączkowe. U wegan wchłanianie jest gorsze przez fityniany — może potrzeba więcej.' },
+        { h2: 'Ile', p: 'Zalecane ok. 8–11 mg dziennie. Suplementacja ma sens przy potwierdzonym niedoborze, a nie „na zapas” — nadmiar zaburza wchłanianie miedzi.' }
+    ],
+    bullets: [
+        '<strong>Dawka:</strong> 8–11 mg/dzień.',
+        '<strong>Źródła:</strong> mięso, ostrygi, pestki dyni.',
+        '<strong>Uwaga:</strong> nadmiar szkodzi miedzi.',
+    ],
+    uwaga: 'Długie dawki cynku (powyżej kilkudziesięciu mg) mogą powodować niedobór miedzi i objawy neurologiczne. Nie przekraczaj bez powodu.',
+    coDalej: 'Zobacz <a href="zelazo-niedobor-u-kobiet">żelazo u kobiet</a> i <a href="bialko-a-odpornosc">białko a odporność</a>.'
+});
+defs.push({
+    slug: 'zelazo-niedobor-u-kobiet',
+    emoji: '🩸',
+    title: 'Żelazo — niedobór u trenujących kobiet',
+    subtitle: 'Dlaczego kobiety i biegacze tracą żelazo oraz jak je skutecznie uzupełniać.',
+    meta: 'Niedobór żelaza: objawy, przyczyny u kobiet i sportowców oraz najlepsze źródła.',
+    crumb: 'Żelazo u kobiet',
+    category: 'odzywianie',
+    relatedHtml: '<a href="cynk-a-regeneracja">cynk</a> · <a href="witaminy-z-jedzenia-czy-tabletek">witaminy</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Żelazo to częsty niedobór u kobiet i biegaczy — daje zmęczenie, słabszą wydolność i zimne dłonie, łatwe do pomylenia z „brakiem motywacji”.',
+    sections: [
+        { h2: 'Dlaczego brakuje', p: 'Miesiączka, dieta uboga w mięso i mikrokrwawienia z wysiłku wytrzymałościowego. Hemowe żelazo z mięsa wchłania się wielokrotnie lepiej niż roślinne.' },
+        { h2: 'Objawy', p: 'Chroniczne zmęczenie, bladość, zadyszka, słabsze wyniki. To realny problem wydolnościowy, nie wymówka — warto zbadać ferrytynę.' },
+        { h2: 'Jak uzupełniać', p: 'Mięso, wątróbka, strączki + witamina C (poprawia wchłanianie). Unikaj kawy i herbaty tuż przy posiłku, bo garbniki blokują żelazo.' }
+    ],
+    bullets: [
+        '<strong>Zbadaj:</strong> ferrytyna i morfologia.',
+        '<strong>Heme:</strong> mięso, wątróbka wchłaniają się najlepiej.',
+        '<strong>Witamina C:</strong> łącz z posiłkiem.',
+    ],
+    uwaga: 'Suplementacja żelaza „na ślepo” może być szkodliwa — nadmiar żelaza jest toksyczny. Najpierw badanie, potem dawka.',
+    coDalej: 'Zobacz <a href="cynk-a-regeneracja">cynk</a> i <a href="witaminy-z-jedzenia-czy-tabletek">suplementację w praktyce</a>.'
+});
+defs.push({
+    slug: 'witaminy-z-jedzenia-czy-tabletek',
+    emoji: '💊',
+    title: 'Witaminy — z jedzenia czy tabletek?',
+    subtitle: 'Kiedy suplementacja ma sens, a kiedy to „drogi mocz”.',
+    meta: 'Witaminy z diety vs tabletek: kiedy suplementować i kto naprawdę tego potrzebuje.',
+    crumb: 'Witaminy — dieta vs tabletki',
+    category: 'odzywianie',
+    relatedHtml: '<a href="witamina-d-ile-i-kiedy">witamina D</a> · <a href="zelazo-niedobor-u-kobiet">żelazo</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Dla dobrze odżywionej osoby multiwitamina to zwykle „drogi mocz”. Suplementacja ma sens tylko w konkretnych lukach.',
+    sections: [
+        { h2: 'Jedzenie wygrywa', p: 'Produkty dostarczają witaminy z błonnikiem, fitozwiązkami i w formach łatwo przyswajalnych. Suplement nie zastąpi złej diety — to dodatek, nie fundament.' },
+        { h2: 'Kiedy tableta', p: 'Uzasadnione wyjątki: witamina D (zimą), B12 u wegan, kwas foliowy w ciąży, żelazo przy niedoborze, omega-3 bez ryb.' },
+        { h2: 'Ryzyko nadmiaru', p: 'Witaminy rozpuszczalne w tłuszczach (A, D, E, K) kumulują się — można je przedawkować. Wodne nadmiar zwykle wydalasz, ale mega-dawki też bywają szkodliwe.' }
+    ],
+    bullets: [
+        '<strong>Najpierw:</strong> dieta.',
+        '<strong>Celuj:</strong> D, B12 (weganie), omega-3.',
+        '<strong>Unikaj:</strong> bezmyślnych multi w mega-dawkach.',
+    ],
+    uwaga: '„Więcej witamin = więcej zdrowia” nie działa — nadmiar antyoksydantów w suplementach czasem nawet szkodzi. Mierz, zanim dolejesz.',
+    coDalej: 'Zobacz <a href="witamina-d-ile-i-kiedy">witaminę D</a> i <a href="zelazo-niedobor-u-kobiet">żelazo</a>.'
+});
+defs.push({
+    slug: 'probiotyki-i-prebiotyki',
+    emoji: '🦠',
+    title: 'Probiotyki i prebiotyki — co działa',
+    subtitle: 'Mikrobiota, konkretne szczepy i dlaczego błonnik bije większość „jelitowych” supli.',
+    meta: 'Probiotyki i prebiotyki: czym są, które działają i jak wspierać mikrobiotę dietą.',
+    crumb: 'Probiotyki i prebiotyki',
+    category: 'odzywianie',
+    relatedHtml: '<a href="blonnik-ile-i-po-co">błonnik</a> · <a href="mikrobiom-jelitowy-a-odchudzanie">mikrobiom a waga</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Probiotyki to żywe szczepy bakterii, prebiotyki — ich pożywienie. Największy efekt daje to, czym karmisz mikrobiotę każdego dnia.',
+    sections: [
+        { h2: 'Probiotyki', p: 'Działają szczepo-zależnie — jeden pomaga przy biegunce po antybiotyku, inny przy IBS. Sprawdzane szczepy to m.in. Lactobacillus rhamnosus GG i Saccharomyces boulardii.' },
+        { h2: 'Prebiotyki', p: 'To głównie rozpuszczalny błonnik (inulina, FOS), który karmi dobre bakterie. Naturalnie w cebuli, czosnku, porze, bananach, owsie.' },
+        { h2: 'Co realnie działa', p: 'Zróżnicowana, roślinnie bogata dieta z dużą ilością błonnika to najsilniejszy „probiotyk”. Suplement ma sens punktowo, nie jako codzienny nawyk.' }
+    ],
+    bullets: [
+        '<strong>Dieta:</strong> 30+ różnych roślin tygodniowo.',
+        '<strong>Błonnik:</strong> 25–35 g dziennie.',
+        '<strong>Probiotyk:</strong> celuj w konkretny problem.',
+    ],
+    uwaga: 'Probiotyki to żywe organizmy — po otwarciu tracą moc. I nie pomogą, jeśli jednocześnie jesz zero błonnika i dużo ultraprzetworzonego jedzenia.',
+    coDalej: 'Zobacz <a href="blonnik-ile-i-po-co">ile błonnika</a> i <a href="mikrobiom-jelitowy-a-odchudzanie">mikrobiom a odchudzanie</a>.'
+});
+defs.push({
+    slug: 'oliwa-vs-maslo-vs-olej',
+    emoji: '🫒',
+    title: 'Oliwa vs masło vs olej kokosowy',
+    subtitle: 'Który tłuszcz do smażenia, a który na zimno — i co naprawdę ma znaczenie.',
+    meta: 'Oliwa, masło i olej kokosowy: skład, stabilność termiczna i do czego je używać.',
+    crumb: 'Oliwa vs masło vs kokos',
+    category: 'odzywianie',
+    relatedHtml: '<a href="tluszcze-nasycone-a-zdrowie">tłuszcze nasycone</a> · <a href="omega-3-dha-epa-ile">omega-3</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Różnica między tłuszczami to głównie profil kwasów: jednonienasycone (oliwa), nasycone (masło, kokos) i wielonienasycone (oleje roślinne).',
+    sections: [
+        { h2: 'Oliwa z oliwek', p: 'Głównie kwas oleinowy (jednonienasycony), polifenole. Świetna na zimno i do krótkiego smażenia. Podstawa diety śródziemnomorskiej.' },
+        { h2: 'Masło i olej kokosowy', p: 'Bogate w nasycone kwasy. Smakowo super, ale przy wysokim LDL lepiej nie robić z nich bazy. Kokos to niemal czysty nasycony.' },
+        { h2: 'Do smażenia', p: 'Najstabilniejsze termicznie są tłuszcze o małej ilości wiązań wielonienasyconych — rafinowana oliwa i olej ryżowy znoszą temperatury dobrze. Olej lniany tylko na zimno.' }
+    ],
+    bullets: [
+        '<strong>Na zimno:</strong> oliwa extra virgin, olej lniany.',
+        '<strong>Do smażenia:</strong> rafinowana oliwa, olej rzepakowy.',
+        '<strong>Umiar:</strong> masło i kokos jako dodatek smakowy.',
+    ],
+    uwaga: 'Olej lniany bogaty w ALA utlenia się przy temperaturze — nigdy nie smaż na nim. Trzymaj go w lodówce i w ciemnej butelce.',
+    coDalej: 'Zobacz <a href="tluszcze-nasycone-a-zdrowie">tłuszcze nasycone a zdrowie</a> i <a href="omega-3-dha-epa-ile">omega-3</a>.'
+});
+defs.push({
+    slug: 'fruktoza-i-owoce-mit',
+    emoji: '🍎',
+    title: 'Fruktoza i owoce — mit o tuczeniu',
+    subtitle: 'Dlaczego owoce nie „tuczą” jak napoje z fruktozą i jaka jest różnica.',
+    meta: 'Fruktoza a owoce: dlaczego owoc to nie to samo co syrop i czy owoce przeszkadzają schudnąć.',
+    crumb: 'Fruktoza i owoce',
+    category: 'odzywianie',
+    relatedHtml: '<a href="weglowodany-proste-vs-zlozone">proste vs złożone</a> · <a href="indeks-glikemiczny-czy-ma-znaczenie">IG</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Fruktoza w syropie i napojach to coś innego niż fruktoza w jabłku — owoc ma błonnik, wodę i niską gęstość energetyczną.',
+    sections: [
+        { h2: 'Problem z fruktozą', p: 'W dużych dawkach (słodzone napoje) fruktoza obciąża wątrobę i sprzyja odkładaniu tłuszczu trzewnego. Stąd zła sława całego cukru owocowego.' },
+        { h2: 'Owoce to nie syrop', p: 'Jabłko czy jagody mają błonnik spowalniający wchłanianie i dużo wody. Trudno „przejeść” kalorii z owoców — sycą mocno przy małej porcji.' },
+        { h2: 'Owoce na redukcji', p: 'Owoce nie blokują odchudzania. Licz je do kalorii jak wszystko, ale nie wycinaj — dostarczają witamin, potasu i przeciwutleniaczy.' }
+    ],
+    bullets: [
+        '<strong>Całe owoce:</strong> OK, nawet na redukcji.',
+        '<strong>Unikaj:</strong> soków i napojów fruktozowych.',
+        '<strong>Porcja:</strong> 2–3 owoce dziennie to norma.',
+    ],
+    uwaga: 'Soki owocowe to inna historia — bez błonnika to szybki cukier. Owoce jedz w całości, a soki traktuj jak słodycze.',
+    coDalej: 'Zobacz <a href="weglowodany-proste-vs-zlozone">proste vs złożone węglowodany</a> i <a href="indeks-glikemiczny-czy-ma-znaczenie">indeks glikemiczny</a>.'
+});
+defs.push({
+    slug: 'produkty-light-czy-warto',
+    emoji: '🏷️',
+    title: 'Produkty light — czy warto',
+    subtitle: 'Od tłuszczu „0%” po „fit” batoniki: kiedy light faktycznie ma mniej kalorii.',
+    meta: 'Produkty light: czy są dietetyczne, na co patrzeć na etykiecie i kiedy się opłacają.',
+    crumb: 'Produkty light',
+    category: 'odzywianie',
+    relatedHtml: '<a href="slodziki-sa-bezpieczne">słodziki</a> · <a href="produkty-bialkowe-czy-oplacalne">produkty protein</a> · <a href="artykuly">artykuły</a>',
+    lead: '„Light”, „fit” i „0%” to słowa marketingowe — produkt light może mieć mniej tłuszczu, ale nierzadko więcej cukru albo tyle samo kalorii.',
+    sections: [
+        { h2: 'Co znaczy light', p: 'Zazwyczaj obniżoną o konkretny % zawartość tłuszczu lub cukru w porównaniu do „zwykłej” wersji. Nie zawsze oznacza mniej kalorii.' },
+        { h2: 'Pułapka cukru', p: 'Produkty „0% tłuszczu” bywają dosładzane, żeby nadal smakowały. Yogurt 0% z cukrem potrafi mieć więcej kalorii z węglowodanów.' },
+        { h2: 'Kiedy się opłaca', p: 'Sens mają zamiany typu: ser twarogowy chudy zamiast tłustego, napoje zero zamiast słodzonych. Zawsze porównuj tabelę wartości odżywczych.' }
+    ],
+    bullets: [
+        '<strong>Porównuj:</strong> kcal na 100 g, nie napis „fit”.',
+        '<strong>Sprawdzaj:</strong> czy mniej tłuszczu = więcej cukru.',
+        '<strong>Dobre zamiany:</strong> chudy nabiał, napoje zero.',
+    ],
+    uwaga: '„Bez tłuszczu” nie znaczy „bezkaloryczne”. Często lepiej zjeść mniejszą porcję pełnej wersji niż dużą light.',
+    coDalej: 'Zobacz <a href="slodziki-sa-bezpieczne">słodziki</a> i <a href="produkty-bialkowe-czy-oplacalne">czy produkty protein się opłacają</a>.'
+});
+defs.push({
+    slug: 'bio-vs-konwencjonalne-czy-warto-preplacac',
+    emoji: '🥬',
+    title: 'Bio vs konwencjonalne — czy warto przepłacać',
+    subtitle: 'Pestycydy, wartości odżywcze i kiedy produkty eko mają sens.',
+    meta: 'Żywność BIO vs konwencjonalna: pestycydy, wartości odżywcze i co realnie się opłaca.',
+    crumb: 'Bio vs konwencjonalne',
+    category: 'odzywianie',
+    relatedHtml: '<a href="witaminy-z-jedzenia-czy-tabletek">witaminy</a> · <a href="produkty-light-czy-warto">etykiety</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Produkty bio mają mniej pozostałości pestycydów, ale różnice w witaminach są niewielkie. Dla zdrowia ważniejsze jest, co jesz, niż certyfikat.',
+    sections: [
+        { h2: 'Pestycydy', p: 'Żywność ekologiczna konsekwentnie wychodzi z niższymi pozostałościami pestycydów. Dla dzieci i kobiet w ciąży może to mieć znaczenie.' },
+        { h2: 'Wartości odżywcze', p: 'Różnice w mikroelementach między bio a konwencjonalnym są małe i niespójne. Jakość diety jako całości bije sam certyfikat.' },
+        { h2: 'Co wybierać', p: 'Jeśli budżet ograniczony, najpierw zadbaj o podstawy: więcej warzyw i owoców (nawet konwencjonalnych), mniej przetworzonego. Bio dopiero potem.' }
+    ],
+    bullets: [
+        '<strong>Bio:</strong> mniej pestycydów.',
+        '<strong>Mikro:</strong> różnice niewielkie.',
+        '<strong>Ważniejsze:</strong> ilość warzyw i owoców.',
+    ],
+    uwaga: '„Bio ciastko” to nadal ciastko — certyfikat nie neutralizuje cukru i tłuszczu. Liczy się całość, nie etykieta.',
+    coDalej: 'Zobacz <a href="witaminy-z-jedzenia-czy-tabletek">witamina z jedzenia</a> i <a href="produkty-light-czy-warto">jak czytać produkty „fit”</a>.'
+});
 
 const articles = defs.map(buildArticle);
 const out = path.join(__dirname, 'hardcore-articles-batch6.json');
