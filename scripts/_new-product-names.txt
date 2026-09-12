@@ -1,0 +1,1013 @@
+szynka-wieprzowa-gotowana	mieso	Szynka wieprzowa gotowana
+poledwica-z-kurczaka	mieso	Polędwica z kurczaka
+szynka-konserwowa	mieso	Szynka konserwowa
+kielbasa-zywiecka	mieso	Kiełbasa żywiecka
+kielbasa-torunska	mieso	Kiełbasa toruńska
+parowki-z-szynki	mieso	Parówki z szynki
+parowki-drobiowe	mieso	Parówki drobiowe
+pasztet-wieprzowy	mieso	Pasztet wieprzowy
+pasztet-drobiowy	mieso	Pasztet drobiowy
+pasztet-z-dziczyzny	mieso	Pasztet z dziczyzny
+boczek-wedzony-parzony	mieso	Boczek wędzony parzony
+boczek-pieczony	mieso	Boczek pieczony
+kaszanka-z-watrobka	mieso	Kaszanka z wątróbką
+szynka-z-kurczaka-plastry	mieso	Szynka z kurczaka (plastry)
+chrupiace-skrzydelka-z-kurczaka	mieso	Chrupiące skrzydełka z kurczaka
+skrzydelka-z-kurczaka	mieso	Skrzydełka z kurczaka
+serce-drobiowe	mieso	Serce drobiowe
+zoladek-wieprzowy	mieso	Żołądek wieprzowy
+flaki-wolowe	mieso	Flaki wołowe
+serca-wieprzowe	mieso	Serca wieprzowe
+nerki-wieprzowe	mieso	Nerki wieprzowe
+mieso-mielone-wieprzowo-wolowe	mieso	Mięso mielone wieprzowo-wołowe
+mieso-mielone-z-indyka	mieso	Mięso mielone z indyka
+mieso-drobiowe-mielone	mieso	Mięso drobiowe mielone
+pieczen-rzymska	mieso	Pieczeń rzymska
+schabowe-mieso-stek	mieso	Schabowe mięso (stek)
+lopatka-wieprzowa-pieczona	mieso	Łopatka wieprzowa pieczona
+kotlet-wieprzowy-schabowy	mieso	Kotlet wieprzowy (schabowy)
+kotlet-z-karkowki	mieso	Kotlet z karkówki
+szynka-wieprzowa-udziec	mieso	Szynka wieprzowa (udziec)
+klopsiki-wieprzowe	mieso	Klopsiki wieprzowe
+morszczuk	mieso	Morszczuk
+pstrag-lososiowy	mieso	Pstrąg łososiowy
+karp	mieso	Karp
+okon	mieso	Okoń
+pangasius	mieso	Pangasius
+miruna	mieso	Miruna
+sardynki-w-pomidorach	mieso	Sardynki w pomidorach
+szprotki-wedzone	mieso	Szprotki wędzone
+losos-wedzony-na-zimno	mieso	Łosoś wędzony na zimno
+tunczyk-swiezy-stek	mieso	Tuńczyk świeży (stek)
+krewetki-obrane	mieso	Krewetki (obrane)
+krewetki-krolewskie	mieso	Krewetki królewskie
+osmiornica	mieso	Ośmiornica
+malze-mule	mieso	Małże (mule)
+malze-zielone	mieso	Małże zielone
+ostrygi	mieso	Ostrygi
+kawior	mieso	Kawior
+sledz-w-smietanie	mieso	Śledź w śmietanie
+ryba-po-grecku	mieso	Ryba po grecku
+mleko-0-5	nabial	Mleko 0,5%
+mleko-bez-laktozy	nabial	Mleko bez laktozy
+maslanka-naturalna	nabial	Maślanka naturalna
+maslanka-owocowa	nabial	Maślanka owocowa
+kefir-naturalny	nabial	Kefir naturalny
+jogurt-naturalny-0	nabial	Jogurt naturalny 0%
+jogurt-grecki-0	nabial	Jogurt grecki 0%
+skyr-owocowy	nabial	Skyr owocowy
+jogurt-pitny-bialkowy	nabial	Jogurt pitny białkowy
+serek-homogenizowany-naturalny	nabial	Serek homogenizowany naturalny
+serek-homogenizowany-truskawkowy	nabial	Serek homogenizowany truskawkowy
+serek-kanapkowy-naturalny	nabial	Serek kanapkowy naturalny
+serek-kanapkowy-ze-szczypiorkiem	nabial	Serek kanapkowy ze szczypiorkiem
+serek-typu-philadelphia	nabial	Serek typu philadelphia
+jogurt-wiejski-naturalny	nabial	Jogurt wiejski naturalny
+mleko-skondensowane-nieslodzone	nabial	Mleko skondensowane niesłodzone
+mleko-smakowe-czekoladowe	nabial	Mleko smakowe czekoladowe
+mleko-smakowe-waniliowe	nabial	Mleko smakowe waniliowe
+kakao-na-mleku-gotowe	nabial	Kakao na mleku (gotowe)
+napoj-proteinowy-mleczny	nabial	Napój proteinowy (mleczny)
+bialko-serwatkowe-shake-mleko	nabial	Białko serwatkowe shake (mleko)
+smietana-ukwaszona-12	nabial	Śmietana ukwaszona 12%
+jogurt-z-miodem-i-orzechami	nabial	Jogurt z miodem i orzechami
+jogurt-bakoma-7-zboz	nabial	Jogurt Bakoma 7 zbóż
+jogurt-typu-greckiego-piatnica	nabial	Jogurt typu greckiego Piątnica
+skyr-naturalny-piatnica	nabial	Skyr naturalny Piątnica
+jogurt-activia-naturalny	nabial	Jogurt Activia naturalny
+jogurt-activia-owocowy	nabial	Jogurt Activia owocowy
+actimel-naturalny	nabial	Actimel naturalny
+actimel-truskawkowy	nabial	Actimel truskawkowy
+kefir-bieluch	nabial	Kefir Bieluch
+kefir-z-lomzy	nabial	Kefir z Łomży
+maslanka-laciata	nabial	Maślanka Łaciata
+jogobella-truskawkowa	nabial	Jogobella truskawkowa
+jogobella-brzoskwiniowa	nabial	Jogobella brzoskwiniowa
+danio-waniliowy	nabial	Danio waniliowy
+danio-czekoladowy	nabial	Danio czekoladowy
+deser-monte	nabial	Deser Monte
+deser-monte-czekoladowy	nabial	Deser Monte czekoladowy
+krem-kaszkowy-waniliowy-kogel-mogel	nabial	Krem kaszkowy waniliowy (Kogel Mogel)
+serek-fromage-kremowy	nabial	Serek Fromage kremowy
+serek-ostrowia-twarogowy	nabial	Serek Ostrowia twarogowy
+twarog-grani-ze-szczypiorkiem	nabial	Twaróg grani ze szczypiorkiem
+twarog-sernikowy-smietankowy	nabial	Twaróg sernikowy śmietankowy
+jajko-kacze	nabial	Jajko kacze
+jajecznica-z-2-jaj	nabial	Jajecznica z 2 jaj
+omlet-z-jajek	nabial	Omlet z jajek
+jaja-sadzone	nabial	Jaja sadzone
+majonez-z-jajek-domowy	nabial	Majonez z jajek (domowy)
+napoj-mleczny-kakaowy-mleczna-kanapka	nabial	Napój mleczny kakaowy (mleczna kanapka)
+maslanka-czekoladowa	nabial	Maślanka czekoladowa
+ser-gouda-dojrzewajaca	sery	Ser gouda dojrzewająca
+ser-mazdamer	sery	Ser mazdamer
+ser-tylzycki-2	sery	Ser tyłżycki
+ser-szwajcarski	sery	Ser szwajcarski
+ser-mozzarella-lekka	sery	Ser mozzarella lekka
+ser-mozzarella-buffalo	sery	Ser mozzarella buffalo
+ser-feta-lekki	sery	Ser feta lekki
+ser-balkanski	sery	Ser bałkański
+ser-kozi-kostka	sery	Ser kozi (kostka)
+ser-owczy-kostka	sery	Ser owczy (kostka)
+ser-oscypek	sery	Ser oscypek
+ser-wedzony-ser-zolty-wedzony	sery	Ser wędzony (ser żółty wędzony)
+ser-topiony-smietankowy	sery	Ser topiony śmietankowy
+ser-topiony-z-papryka	sery	Ser topiony z papryką
+ser-smazony-smazak	sery	Ser smażony (smazak)
+ser-golka	sery	Ser gołka
+ser-twarogowy-wedzony	sery	Ser twarogowy wędzony
+ser-zolty-w-plastrach-light	sery	Ser żółty w plastrach (light)
+ser-z-niebieska-plesnia-gorgonzola	sery	Ser z niebieską pleśnią (gorgonzola)
+ser-ementaler	sery	Ser ementaler
+ser-parmezan-tarty	sery	Ser parmezan tarty
+szpinak-baby	warzywa	Szpinak baby
+miks-salat-z-roszponka	warzywa	Miks sałat z roszponką
+korniszon	warzywa	Korniszon
+papryka-konserwowa	warzywa	Papryka konserwowa
+papryka-marynowana	warzywa	Papryka marynowana
+cebulka-perlowa-marynowana	warzywa	Cebulka perłowa marynowana
+buraki-kiszone	warzywa	Buraki kiszone
+kapusta-kiszona-z-jablkiem	warzywa	Kapusta kiszona z jabłkiem
+brukiew	warzywa	Brukiew
+patison	warzywa	Patison
+kabaczek	warzywa	Kabaczek
+edamame-straczki	warzywa	Edamame (strączki)
+soja-gotowana	warzywa	Soja gotowana
+kurki	warzywa	Kurki
+borowik-prawdziwek	warzywa	Borowik (prawdziwek)
+podgrzybek	warzywa	Podgrzybek
+maslak	warzywa	Maślak
+kania-sowa	warzywa	Kania (sowa)
+pieczarki-portobello	warzywa	Pieczarki portobello
+grzyby-marynowane	warzywa	Grzyby marynowane
+szpinak-mrozony-kulka	warzywa	Szpinak mrożony (kulka)
+brokuly-mrozone	warzywa	Brokuły mrożone
+kalafior-mrozony	warzywa	Kalafior mrożony
+groszek-mrozony	warzywa	Groszek mrożony
+kukurydza-mrozona	warzywa	Kukurydza mrożona
+warzywa-mrozone-mix-7-warzyw	warzywa	Warzywa mrożone mix (7 warzyw)
+surowka-z-burakow	warzywa	Surówka z buraków
+kiszone-pomidory	warzywa	Kiszone pomidory
+czosnek-niedzwiedzi-liscie	warzywa	Czosnek niedźwiedzi (liście)
+szczaw	warzywa	Szczaw
+botwinka	warzywa	Botwinka
+nac-pietruszki	warzywa	Nać pietruszki
+porek-por	warzywa	Porek (por)
+poziomki	owoce	Poziomki
+porzeczka-biala	owoce	Porzeczka biała
+borowka-bagienna	owoce	Borówka bagienna
+figa-swieza	owoce	Figa świeża
+gujawa	owoce	Gujawa
+kokos-swiezy-miazsz	owoce	Kokos świeży (miąższ)
+mleczko-kokosowe	owoce	Mleczko kokosowe
+sliwki-suszone-bez-pestek	owoce	Śliwki suszone (bez pestek)
+mango-suszone	owoce	Mango suszone
+ananas-suszony	owoce	Ananas suszony
+jablko-suszone-chipsy	owoce	Jabłko suszone (chipsy)
+zurawina-mrozona	owoce	Żurawina mrożona
+maliny-mrozone	owoce	Maliny mrożone
+jagody-mrozone	owoce	Jagody mrożone
+sliwka-wegierka	owoce	Śliwka węgierka
+melon-kantalupa	owoce	Melon kantalupa
+melon-miodowy	owoce	Melon miodowy
+sok-z-granata-naturalny	owoce	Sok z granata (naturalny)
+mus-jablkowy-nieslodzony	owoce	Mus jabłkowy niesłodzony
+kompot-z-jablek	owoce	Kompot z jabłek
+kompot-z-truskawek	owoce	Kompot z truskawek
+lody-sorbetowe-malinowe	owoce	Lody sorbetowe malinowe
+maka-pszenna-tortowa	zboza	Mąka pszenna tortowa
+maka-pszenna-chlebowa	zboza	Mąka pszenna chlebowa
+maka-zytnia-razowa	zboza	Mąka żytnia razowa
+maka-gryczana	zboza	Mąka gryczana
+maka-orkiszowa	zboza	Mąka orkiszowa
+maka-kokosowa	zboza	Mąka kokosowa
+maka-migdalowa	zboza	Mąka migdałowa
+skrobia-ziemniaczana	zboza	Skrobia ziemniaczana
+kasza-gryczana-biala	zboza	Kasza gryczana biała
+kasza-jeczmienna-perlowa	zboza	Kasza jęczmienna perłowa
+kasza-jeczmienna-peczak	zboza	Kasza jęczmienna pęczak
+kasza-kukurydziana-polenta	zboza	Kasza kukurydziana (polenta)
+kasza-owsiana	zboza	Kasza owsiana
+ryz-bialy-dlugoziarnisty	zboza	Ryż biały długoziarnisty
+ryz-brazowy	zboza	Ryż brązowy
+ryz-jasminowy	zboza	Ryż jaśminowy
+ryz-dziki	zboza	Ryż dziki
+ryz-parboiled	zboza	Ryż parboiled
+platki-jeczmienne	zboza	Płatki jęczmienne
+zarodki-pszenne	zboza	Zarodki pszenne
+sezam-nasiona	zboza	Sezam (nasiona)
+mak-nasiona	zboza	Mak (nasiona)
+czarnuszka-nasiona	zboza	Czarnuszka (nasiona)
+amarantus-nasiona	zboza	Amarantus (nasiona)
+tapioka-perly	zboza	Tapioka (perły)
+makaron-pszenny	makarony	Makaron pszenny
+makaron-pelnoziarnisty	makarony	Makaron pełnoziarnisty
+makaron-ryzowy	makarony	Makaron ryżowy
+makaron-gryczany-soba	makarony	Makaron gryczany (soba)
+makaron-kukurydziany	makarony	Makaron kukurydziany
+makaron-sojowy	makarony	Makaron sojowy
+makaron-lniany	makarony	Makaron lniany
+makaron-jajeczny-nitki	makarony	Makaron jajeczny (nitki)
+platki-kukurydziane-corn-flakes	platki-sniadaniowe	Płatki kukurydziane (corn flakes)
+platki-czekoladowe-chocapic	platki-sniadaniowe	Płatki czekoladowe (Chocapic)
+czekoladowe-kuleczki-nesquik	platki-sniadaniowe	Czekoladowe kuleczki (Nesquik)
+platki-miodowe	platki-sniadaniowe	Płatki miodowe
+musli-owocowe	platki-sniadaniowe	Musli owocowe
+musli-czekoladowe	platki-sniadaniowe	Musli czekoladowe
+musli-orzechowe	platki-sniadaniowe	Musli orzechowe
+musli-crunchy	platki-sniadaniowe	Musli crunchy
+granola-naturalna	platki-sniadaniowe	Granola naturalna
+granola-czekoladowa	platki-sniadaniowe	Granola czekoladowa
+platki-z-otrebami-fitness	platki-sniadaniowe	Płatki z otrębami (fitness)
+cheerios	platki-sniadaniowe	Cheerios
+platki-cynamonowe	platki-sniadaniowe	Płatki cynamonowe
+owsianka-blyskawiczna-saszetka	platki-sniadaniowe	Owsianka błyskawiczna saszetka
+owsianka-instant-owocowa	platki-sniadaniowe	Owsianka instant owocowa
+owsianka-nocna-overnight-oats	platki-sniadaniowe	Owsianka nocna (overnight oats)
+platki-orkiszowe-z-owocami	platki-sniadaniowe	Płatki orkiszowe z owocami
+platki-gryczane-z-bakaliami	platki-sniadaniowe	Płatki gryczane z bakaliami
+musli-bez-cukru-blonnik	platki-sniadaniowe	Musli bez cukru (błonnik)
+platki-proteinowe-wysokobialkowe	platki-sniadaniowe	Płatki proteinowe (wysokobiałkowe)
+rosol-z-kury	zupy	Rosół z kury
+zupa-kapusniak	zupy	Zupa kapuśniak
+zupa-koperkowa	zupy	Zupa koperkowa
+zupa-krem-z-brokulow	zupy	Zupa krem z brokułów
+zupa-krem-z-pora	zupy	Zupa krem z pora
+zupa-krem-z-marchewki	zupy	Zupa krem z marchewki
+zupa-krem-z-dyni	zupy	Zupa krem z dyni
+zupa-krem-z-pomidorow	zupy	Zupa krem z pomidorów
+zupa-krem-z-pietruszki	zupy	Zupa krem z pietruszki
+zupa-minestrone	zupy	Zupa minestrone
+barszcz-ukrainski	zupy	Barszcz ukraiński
+chlodnik-litewski	zupy	Chłodnik litewski
+zupa-rybna	zupy	Zupa rybna
+zupa-mleczna-z-kluskami	zupy	Zupa mleczna z kluskami
+zupa-ogonowa	zupy	Zupa ogonowa
+zupa-neapolitanska	zupy	Zupa neapolitańska
+zupa-zurek-z-jajkiem	zupy	Zupa żurek z jajkiem
+zupa-grzybowa-z-lazankami	zupy	Zupa grzybowa z łazankami
+zupa-cebulowa-zapiekana	zupy	Zupa cebulowa zapiekana
+zupa-krem-z-kalafiora	zupy	Zupa krem z kalafiora
+zupa-krem-z-cukinii	zupy	Zupa krem z cukinii
+zupa-jarzynowa-rosol-warzywny	zupy	Zupa jarzynowa (rosół warzywny)
+zupa-krem-z-selera	zupy	Zupa krem z selera
+zupa-gulaszowa-z-miesem	zupy	Zupa gulaszowa z mięsem
+zupa-krem-z-batatow	zupy	Zupa krem z batatów
+zupa-pho-wolowa	zupy	Zupa pho wołowa
+zupa-ramen	zupy	Zupa ramen
+zupa-miso	zupy	Zupa miso
+zupa-kwasna-tajska	zupy	Zupa kwaśna (tajska)
+chlodnik-z-ogorkow	zupy	Chłodnik z ogórków
+maslo-migdalowe	orzechy	Masło migdałowe
+maslo-z-nerkowcow	orzechy	Masło z nerkowców
+mieszanka-studencka	orzechy	Mieszanka studencka
+orzeszki-ziemne-solone	orzechy	Orzeszki ziemne solone
+orzeszki-ziemne-prazone	orzechy	Orzeszki ziemne prażone
+orzechy-w-czekoladzie	orzechy	Orzechy w czekoladzie
+pistacje-solone	orzechy	Pistacje solone
+krem-orzechowo-kakaowy	orzechy	Krem orzechowo-kakaowy
+krem-z-orzechow-laskowych	orzechy	Krem z orzechów laskowych
+oliwa-z-oliwek-extra-virgin	tluszcze	Oliwa z oliwek extra virgin
+margaryna-do-smarowania	tluszcze	Margaryna do smarowania
+margaryna-do-pieczenia	tluszcze	Margaryna do pieczenia
+tluszcz-roslinny-planta	tluszcze	Tłuszcz roślinny (planta)
+ketchup-pikantny	sosy	Ketchup pikantny
+ketchup-bez-cukru	sosy	Ketchup bez cukru
+majonez-light	sosy	Majonez light
+majonez-weganski	sosy	Majonez wegański
+musztarda-sarepska	sosy	Musztarda sarepska
+musztarda-dijon	sosy	Musztarda dijon
+musztarda-miodowa	sosy	Musztarda miodowa
+sos-tabasco	sosy	Sos tabasco
+pesto-bazyliowe	sosy	Pesto bazyliowe
+pesto-czerwone	sosy	Pesto czerwone
+salsa-pomidorowa	sosy	Salsa pomidorowa
+winegret	sosy	Winegret
+sos-curry-w-proszku	sosy	Sos curry (w proszku)
+sos-smietanowy	sosy	Sos śmietanowy
+sos-grzybowy	sosy	Sos grzybowy
+sos-pieczarkowy	sosy	Sos pieczarkowy
+sos-bolonski	sosy	Sos boloński
+sos-pomidorowy-passata	sosy	Sos pomidorowy (passata)
+sos-pesto-z-rukoli	sosy	Sos pesto z rukoli
+sos-winegret-musztardowy	sosy	Sos winegret musztardowy
+sos-cebulowy	sosy	Sos cebulowy
+sos-jablkowy-mus-z-cynamonem	sosy	Sos jabłkowy (mus z cynamonem)
+curry-przyprawa-w-proszku	przyprawy	Curry (przyprawa w proszku)
+garam-masala	przyprawy	Garam masala
+oregano-suszone	przyprawy	Oregano suszone
+kmin-rzymski	przyprawy	Kmin rzymski
+kminek-nasiona	przyprawy	Kminek (nasiona)
+kolendra-mielona	przyprawy	Kolendra mielona
+pieprz-cayenne	przyprawy	Pieprz cayenne
+sol-morska	przyprawy	Sól morska
+sol-himalajska	przyprawy	Sól himalajska
+cebula-suszona	przyprawy	Cebula suszona
+kurkuma-mielona	przyprawy	Kurkuma mielona
+przyprawa-do-ryb	przyprawy	Przyprawa do ryb
+przyprawa-do-grilla	przyprawy	Przyprawa do grilla
+przyprawa-gyros-kebab	przyprawy	Przyprawa gyros-kebab
+cukier-waniliowy	przyprawy	Cukier waniliowy
+wanilia-laska	przyprawy	Wanilia (laska)
+cynamon-laska	przyprawy	Cynamon (laska)
+ziele-angielskie-kuleczki	przyprawy	Ziele angielskie (kuleczki)
+anyz-gwiazdkowy	przyprawy	Anyż gwiazdkowy
+przyprawa-do-piernika	przyprawy	Przyprawa do piernika
+ziola-prowansalskie-mix	przyprawy	Zioła prowansalskie (mix)
+liofilizowana-natka-pietruszki	przyprawy	Liofilizowana natka pietruszki
+woda-gazowana	napoje	Woda gazowana
+woda-smakowa-cytryna	napoje	Woda smakowa (cytryna)
+sok-jablkowy-100	napoje	Sok jabłkowy 100%
+sok-wieloowocowy	napoje	Sok wieloowocowy
+sok-marchwiowy	napoje	Sok marchwiowy
+sok-z-czarnej-porzeczki	napoje	Sok z czarnej porzeczki
+sok-grejpfrutowy	napoje	Sok grejpfrutowy
+nektar-brzoskwiniowy	napoje	Nektar brzoskwiniowy
+napoj-musujacy-pomaranczowy-fanta	napoje	Napój musujący pomarańczowy (Fanta)
+napoj-cytrynowy-sprite	napoje	Napój cytrynowy (Sprite)
+lemonada-domowa	napoje	Lemonada domowa
+ice-tea-cytrynowa	napoje	Ice tea cytrynowa
+ice-tea-brzoskwiniowa	napoje	Ice tea brzoskwiniowa
+napoj-energetyczny	napoje	Napój energetyczny
+napoj-energetyczny-zero	napoje	Napój energetyczny zero
+napoj-izotoniczny	napoje	Napój izotoniczny
+woda-kokosowa	napoje	Woda kokosowa
+mleko-owsiane	napoje	Mleko owsiane
+mleko-migdalowe	napoje	Mleko migdałowe
+mleko-kokosowe-napoj	napoje	Mleko kokosowe (napój)
+kakao-napoj	napoje	Kakao (napój)
+kawa-czarna	napoje	Kawa czarna
+cappuccino	napoje	Cappuccino
+latte	napoje	Latte
+herbata-czarna	napoje	Herbata czarna
+herbata-zielona	napoje	Herbata zielona
+herbata-z-cytryna-i-miodem	napoje	Herbata z cytryną i miodem
+napoj-owocowy-nektar-wisniowy	napoje	Napój owocowy (nektar) wiśniowy
+kompot-wieloowocowy	napoje	Kompot wieloowocowy
+smoothie-bananowe	napoje	Smoothie bananowe
+smoothie-truskawkowe	napoje	Smoothie truskawkowe
+smoothie-zielony-szpinak	napoje	Smoothie zielony (szpinak)
+koktajl-proteinowy-gotowy	napoje	Koktajl proteinowy (gotowy)
+piwo-jasne-lager	alkohole	Piwo jasne (lager)
+piwo-ciemne-porter	alkohole	Piwo ciemne (porter)
+piwo-rzemieslnicze-ipa	alkohole	Piwo rzemieślnicze IPA
+piwo-pszeniczne	alkohole	Piwo pszeniczne
+piwo-bezalkoholowe	alkohole	Piwo bezalkoholowe
+wino-rozowe	alkohole	Wino różowe
+szampan	alkohole	Szampan
+cydr-jablkowy	alkohole	Cydr jabłkowy
+wodka-czysta	alkohole	Wódka czysta
+wodka-smakowa-cytrynowa	alkohole	Wódka smakowa (cytrynowa)
+rum	alkohole	Rum
+gin	alkohole	Gin
+tequila	alkohole	Tequila
+brandy	alkohole	Brandy
+likier-kawowy	alkohole	Likier kawowy
+likier-owocowy	alkohole	Likier owocowy
+nalewka-domowa	alkohole	Nalewka domowa
+likier-adwokat	alkohole	Likier adwokat
+piwo-miodowe	alkohole	Piwo miodowe
+koktajl-mojito	alkohole	Koktajl Mojito
+koktajl-pina-colada	alkohole	Koktajl Pina Colada
+koktajl-margarita	alkohole	Koktajl Margarita
+koktajl-cuba-libre	alkohole	Koktajl Cuba Libre
+grzane-wino	alkohole	Grzane wino
+piwo-radler-cytrynowe	alkohole	Piwo radler (cytrynowe)
+czekolada-biala	slodycze	Czekolada biała
+czekolada-z-orzechami	slodycze	Czekolada z orzechami
+czekolada-nadziewana	slodycze	Czekolada nadziewana
+wafel-w-czekoladzie-prince-polo	slodycze	Wafel w czekoladzie (Prince Polo)
+baton-grzesiek	slodycze	Baton Grzesiek
+goralki	slodycze	Góralki
+sernik-z-brzoskwiniami	slodycze	Sernik z brzoskwiniami
+paczek-z-lukrem	slodycze	Pączek z lukrem
+paczek-z-marmolada	slodycze	Pączek z marmoladą
+drozdzowka-z-serem	slodycze	Drożdżówka z serem
+drozdzowka-z-makiem	slodycze	Drożdżówka z makiem
+croissant-maslany	slodycze	Croissant maślany
+bezy	slodycze	Bezy
+makaroniki	slodycze	Makaroniki
+krowki	slodycze	Krówki
+sezamki	slodycze	Sezamki
+pierniki-staropolskie	slodycze	Pierniki (staropolskie)
+pierniki-w-czekoladzie	slodycze	Pierniki w czekoladzie
+ciastka-owsiane	slodycze	Ciastka owsiane
+jezyki	slodycze	Jeżyki
+markizy-biszkopt-z-dzemem	slodycze	Markizy (biszkopt z dżemem)
+jaffa-cakes-delicje	slodycze	Jaffa cakes (Delicje)
+krakersy-slone	slodycze	Krakersy słone
+precle	slodycze	Precle
+popcorn-slony	slodycze	Popcorn słony
+popcorn-maslany	slodycze	Popcorn maślany
+popcorn-karmelowy	slodycze	Popcorn karmelowy
+prazynki	slodycze	Prażynki
+paluszki	slodycze	Paluszki
+lody-czekoladowe	slodycze	Lody czekoladowe
+lody-smietankowe-rozek	slodycze	Lody śmietankowe (rożek)
+dzem-wisniowy	slodycze	Dżem wiśniowy
+dzem-morelowy	slodycze	Dżem morelowy
+marmolada-wieloowocowa	slodycze	Marmolada wieloowocowa
+miod-lipowy	slodycze	Miód lipowy
+miod-spadziowy	slodycze	Miód spadziowy
+miod-gryczany	slodycze	Miód gryczany
+cukier-bialy	slodycze	Cukier biały
+cukier-trzcinowy	slodycze	Cukier trzcinowy
+syrop-klonowy	slodycze	Syrop klonowy
+syrop-z-agawy	slodycze	Syrop z agawy
+kitkat	batony	KitKat
+kinder-schoko-bons	batony	Kinder Schoko Bons
+michalki	batony	Michałki
+ambasador	batony	Ambasador
+rocky-baton	batony	Rocky (baton)
+baton-musli-owocowy	batony	Baton musli owocowy
+baton-kokosowy	batony	Baton kokosowy
+drazetki-czekoladowe	batony	Drażetki czekoladowe
+landrynki	batony	Landrynki
+irysy	batony	Irysy
+zelki-owocowe	batony	Żelki owocowe
+baton-proteinowy-czekoladowy	batony-proteinowe	Baton proteinowy czekoladowy
+baton-proteinowy-orzechowy	batony-proteinowe	Baton proteinowy orzechowy
+baton-proteinowy-waniliowy	batony-proteinowe	Baton proteinowy waniliowy
+baton-proteinowy-z-karmelem	batony-proteinowe	Baton proteinowy z karmelem
+baton-proteinowy-truskawkowy	batony-proteinowe	Baton proteinowy truskawkowy
+baton-proteinowy-owsiany	batony-proteinowe	Baton proteinowy owsiany
+baton-proteinowy-wafelek	batony-proteinowe	Baton proteinowy wafelek
+pierogi-ze-szpinakiem	polskie-obiadki	Pierogi ze szpinakiem
+pierogi-z-serem-na-slodko	polskie-obiadki	Pierogi z serem na słodko
+kluski-leniwe	polskie-obiadki	Kluski leniwe
+nalesniki-ze-szpinakiem	polskie-obiadki	Naleśniki ze szpinakiem
+krokiety-z-kapusta	polskie-obiadki	Krokiety z kapustą
+golabki-w-sosie-pomidorowym	polskie-obiadki	Gołąbki w sosie pomidorowym
+lazanki-z-kapusta-i-boczkiem	polskie-obiadki	Łazanki z kapustą i boczkiem
+knedle-ze-sliwkami	polskie-obiadki	Knedle ze śliwkami
+lasagne	polskie-obiadki	Lasagne
+penne-z-kurczakiem-i-szpinakiem	polskie-obiadki	Penne z kurczakiem i szpinakiem
+leczo	polskie-obiadki	Leczo
+risotto-z-kurczakiem	polskie-obiadki	Risotto z kurczakiem
+kaszotto-gryczane	polskie-obiadki	Kaszotto gryczane
+zapiekanka-makaronowa-z-miesem	polskie-obiadki	Zapiekanka makaronowa z mięsem
+makaron-z-serem-i-brokulami	polskie-obiadki	Makaron z serem i brokułami
+kotlet-mielony	polskie-obiadki	Kotlet mielony
+kotlet-drobiowy	polskie-obiadki	Kotlet drobiowy
+burgery-z-kaszy-jaglanej-warzywne	polskie-obiadki	Burgery z kaszy jaglanej (warzywne)
+kotlety-z-ciecierzycy-falafel	polskie-obiadki	Kotlety z ciecierzycy (falafel)
+warzywna-zapiekanka-z-cukinia	polskie-obiadki	Warzywna zapiekanka z cukinią
+karkowka-duszona	polskie-obiadki	Karkówka duszona
+schab-duszony-w-sosie	polskie-obiadki	Schab duszony w sosie
+kurczak-w-sosie-smietanowym	polskie-obiadki	Kurczak w sosie śmietanowym
+pizza-margherita-mrozona	mrozone-pizze	Pizza margherita (mrożona)
+pizza-pepperoni-mrozona	mrozone-pizze	Pizza pepperoni (mrożona)
+pizza-hawajska-mrozona	mrozone-pizze	Pizza hawajska (mrożona)
+pizza-capricciosa-mrozona	mrozone-pizze	Pizza capricciosa (mrożona)
+pizza-quattro-formaggi-mrozona	mrozone-pizze	Pizza quattro formaggi (mrożona)
+pizza-funghi-mrozona	mrozone-pizze	Pizza funghi (mrożona)
+pizza-salami-mrozona	mrozone-pizze	Pizza salami (mrożona)
+pizza-wegetarianska-mrozona	mrozone-pizze	Pizza wegetariańska (mrożona)
+pizza-z-szynka-i-serem-mrozona	mrozone-pizze	Pizza z szynką i serem (mrożona)
+pizza-cienkie-ciasto-ristorante	mrozone-pizze	Pizza cienkie ciasto (Ristorante)
+calzone-z-szynka-mrozone	mrozone-pizze	Calzone z szynką (mrożone)
+pizza-z-kurczakiem-mrozona	mrozone-pizze	Pizza z kurczakiem (mrożona)
+hamburger-z-serem	fastfood	Hamburger z serem
+chickenburger	fastfood	Chickenburger
+frytki-z-batatow	fastfood	Frytki z batatów
+kebab-w-bulce	fastfood	Kebab w bułce
+tacos-z-miesem	fastfood	Tacos z mięsem
+kanapka-club	fastfood	Kanapka club
+fish-and-chips	fastfood	Fish and chips
+nachos-z-serem	fastfood	Nachos z serem
+wrap-z-kurczakiem-i-warzywami	fastfood	Wrap z kurczakiem i warzywami
+pita-gyros	fastfood	Pita gyros
+burger-podwojny-z-serem	fastfood	Burger podwójny z serem
+nuggetsy-z-kurczaka-5-szt	fastfood	Nuggetsy z kurczaka (5 szt)
+zapiekanka-z-pieczarkami-i-serem	fastfood	Zapiekanka z pieczarkami i serem
+pepsi-max	napoje	Pepsi Max
+7up	napoje	7Up
+schweppes-tonic	napoje	Schweppes tonic
+dr-pepper	napoje	Dr Pepper
+mountain-dew	napoje	Mountain Dew
+tymbark-jablko-mieta	napoje	Tymbark jabłko-mięta
+tymbark-jablko-malina	napoje	Tymbark jabłko-malina
+tymbark-kaktus	napoje	Tymbark kaktus
+kubus-marchew-banan-jablko	napoje	Kubuś (marchew-banan-jabłko)
+kubus-play-truskawka	napoje	Kubuś play (truskawka)
+sok-cappy-pomaranczowy	napoje	Sok Cappy pomarańczowy
+kombucha	napoje	Kombucha
+kombucha-imbirowa	napoje	Kombucha imbirowa
+yerba-mate-napar	napoje	Yerba mate (napar)
+matcha-latte	napoje	Matcha latte
+kawa-mrozona-iced-latte	napoje	Kawa mrożona (iced latte)
+kakao-mrozone	napoje	Kakao mrożone
+oshee-izotonik	napoje	Oshee izotonik
+oshee-woda-witaminowa	napoje	Oshee woda witaminowa
+boba-tea-mleczna	napoje	Boba tea (mleczna)
+napoj-kakaowo-bananowy	napoje	Napój kakaowo-bananowy
+somersby-cidr	alkohole	Somersby (cidr)
+harnas	alkohole	Harnaś
+kustosz	alkohole	Kustosz
+perla	alkohole	Perła
+zubr	alkohole	Żubr
+tatra	alkohole	Tatra
+lomza-niepasteryzowana	alkohole	Łomża niepasteryzowana
+gin-z-tonikiem-drink	alkohole	Gin z tonikiem (drink)
+aperol-spritz	alkohole	Aperol Spritz
+wisniowka	alkohole	Wiśniówka
+grzaniec	alkohole	Grzaniec
+winiary-majonez-dekoracyjny	sosy	Winiary majonez dekoracyjny
+winiary-sos-pieczeniowy-jasny	sosy	Winiary sos pieczeniowy jasny
+winiary-sos-grzybowy	sosy	Winiary sos grzybowy
+winiary-budyn-waniliowy	slodycze	Winiary budyń waniliowy
+knorr-rosol-drobiowy-kostka	przyprawy	Knorr rosół drobiowy (kostka)
+knorr-fix-bolognese	przyprawy	Knorr fix bolognese
+knorr-salatka-gyros	przyprawy	Knorr sałatka gyros
+pudliszki-ketchup-lagodny	sosy	Pudliszki ketchup łagodny
+pudliszki-koncentrat-pomidorowy-30	sosy	Pudliszki koncentrat pomidorowy 30%
+dawtona-pasata-pomidorowa	sosy	Dawtona pasata pomidorowa
+dawtona-przecier-pomidorowy	sosy	Dawtona przecier pomidorowy
+lowicz-dzem-truskawkowy-100	slodycze	Łowicz dżem truskawkowy 100%
+lowicz-dzem-wisniowy-niskoslodzony	slodycze	Łowicz dżem wiśniowy niskosłodzony
+lowicz-powidla-sliwkowe	slodycze	Łowicz powidła śliwkowe
+kotlin-majonez-salatkowy	sosy	Kotlin majonez sałatkowy
+kotlin-keczup-pikantny	sosy	Kotlin keczup pikantny
+roleski-ketchup	sosy	Roleski ketchup
+roleski-przecier-pomidorowy	sosy	Roleski przecier pomidorowy
+winiary-czekoladowy-budyn-proszek	przyprawy	Winiary czekoladowy budyń (proszek)
+winiary-kisiel-truskawkowy	slodycze	Winiary kisiel truskawkowy
+winiary-kisiel-zurawinowy	slodycze	Winiary kisiel żurawinowy
+galaretka-truskawkowa	slodycze	Galaretka truskawkowa
+galaretka-cytrynowa	slodycze	Galaretka cytrynowa
+fix-do-zupy-pomidorowej-knorr	przyprawy	Fix do zupy pomidorowej (Knorr)
+rosol-z-kury-fix	przyprawy	Rosół z kury (fix)
+przyprawa-uniwersalna-jarzynka	przyprawy	Przyprawa uniwersalna (jarzynka)
+sol-czosnkowa	przyprawy	Sól czosnkowa
+sol-ziolowa	przyprawy	Sól ziołowa
+vegeta-lunch	przyprawy	Vegeta lunch
+maggi-plynne-przyprawa	przyprawy	Maggi płynne (przyprawa)
+sos-tabasco-habanero	sosy	Sos tabasco habanero
+sos-chimichurri	sosy	Sos chimichurri
+sos-pesto-z-suszonych-pomidorow	sosy	Sos pesto z suszonych pomidorów
+sos-ksandor-dip-jogurtowy	sosy	Sos ksandor (dip jogurtowy)
+wedel-czekolada-deserowa	slodycze	Wedel czekolada deserowa
+wedel-torcik-kokosowy	slodycze	Wedel torcik kokosowy
+wedel-ptasie-mleczko-waniliowe	slodycze	Wedel ptasie mleczko waniliowe
+wedel-czekoladki-truflowe	slodycze	Wedel czekoladki truflowe
+goplana-czekolada-gorzka	slodycze	Goplana czekolada gorzka
+goplana-czekolada-mleczna-z-orzechami	slodycze	Goplana czekolada mleczna z orzechami
+wawel-czekolada-mleczna	slodycze	Wawel czekolada mleczna
+terravita-herbatniki-maslane	slodycze	Terravita herbatniki maślane
+terravita-paluszki-slone	slodycze	Terravita paluszki słone
+jutrzenka-jezyki-duze	slodycze	Jutrzenka jeżyki duże
+jutrzenka-baletki	slodycze	Jutrzenka baletki
+tago-bebe	slodycze	Tago bebe
+tago-zonki	slodycze	Tago zonki
+san-draze-korsarze	slodycze	San draże korsarze
+mieszko-czekoladki-nadziewane	slodycze	Mieszko czekoladki nadziewane
+colian-sliwka-w-czekoladzie	slodycze	Colian śliwka w czekoladzie
+lays-paprykowe	slodycze	Lays paprykowe
+lays-solone	slodycze	Lays solone
+lays-zielona-cebulka	slodycze	Lays zielona cebulka
+lays-o-smaku-sera	slodycze	Lays o smaku sera
+star-chipsy-paprykowe	slodycze	Star chipsy paprykowe
+pringles-original	slodycze	Pringles original
+pringles-sour-cream	slodycze	Pringles sour cream
+krupki-kukurydziane	slodycze	Krupki kukurydziane
+chipsy-tortilla-nachos	slodycze	Chipsy tortilla (nachos)
+orzeszki-w-ciescie	slodycze	Orzeszki w cieście
+keks-bakaliowy	slodycze	Keks bakaliowy
+babka-wielkanocna	slodycze	Babka wielkanocna
+sernik-wiedenski	slodycze	Sernik wiedeński
+szarlotka-z-kruszonka	slodycze	Szarlotka z kruszonką
+kremowka	slodycze	Kremówka
+napoleonka	slodycze	Napoleonka
+rogal-marcinski	slodycze	Rogal marciński
+ciasteczka-z-masa-kakaowa-oreo	slodycze	Ciasteczka z masą kakaową (oreo)
+baton-kex	batony	Baton Kex
+baton-prince-polo-xxl	batony	Baton Prince Polo XXL
+baton-wedel-karma	batony	Baton Wedel karma
+cukierki-pudrowe-z-ziolami	slodycze	Cukierki pudrowe (z ziołami)
+mleko-laciate-3-2	nabial	Mleko Łaciate 3,2%
+mleko-mlekovita-2	nabial	Mleko Mlekovita 2%
+mleko-bez-laktozy-laciate	nabial	Mleko bez laktozy Łaciate
+jogurt-naturalny-laciate	nabial	Jogurt naturalny Łaciate
+jogurt-grecki-piatnica	nabial	Jogurt grecki Piątnica
+skyr-piatnica-truskawkowy	nabial	Skyr Piątnica truskawkowy
+skyr-piatnica-jagodowy	nabial	Skyr Piątnica jagodowy
+ser-krajanka-mlekovita	sery	Ser krajanka Mlekovita
+ser-zolty-laciate	sery	Ser żółty Łaciate
+ser-gouda-mlekovita	sery	Ser Gouda Mlekovita
+ser-salami-mlekovita	sery	Ser salami Mlekovita
+ser-z-ziolami-krajanka	sery	Ser z ziołami (krajanka)
+ser-w-plastrach-hochland	sery	Ser w plastrach Hochland
+serek-hochland-kanapkowy	nabial	Serek Hochland kanapkowy
+serek-almette-ziolowy	nabial	Serek Almette ziołowy
+serek-almette-naturalny	nabial	Serek Almette naturalny
+ser-philadelphia	nabial	Ser Philadelphia
+serek-bieluch-waniliowy	nabial	Serek Bieluch waniliowy
+serek-bieluch-czekoladowy	nabial	Serek Bieluch czekoladowy
+twarog-wedzony-kostka	sery	Twaróg wędzony (kostka)
+ser-kamembert-z-lidla-naturalny	sery	Ser kamembert z Lidla (naturalny)
+ser-lazur-z-niebieska-plesnia	sery	Ser lazur (z niebieską pleśnią)
+ser-wedzony-oscypkowy-markowy	sery	Ser wędzony oscypkowy (markowy)
+ser-salatkowo-kanapkowy-jogurtowy	nabial	Ser sałatkowo-kanapkowy jogurtowy
+twarozek-ze-szczypiorkiem-i-rzodkiewka	nabial	Twarożek ze szczypiorkiem i rzodkiewką
+twarog-smietankowy-do-sernika	nabial	Twaróg śmietankowy do sernika
+mleko-w-proszku	nabial	Mleko w proszku
+mleko-w-proszku-odtluszczone	nabial	Mleko w proszku odtłuszczone
+serwatka-w-proszku-wpc	nabial	Serwatka w proszku (WPC)
+serwatka-owocowa-napoj	nabial	Serwatka owocowa (napój)
+jogurt-pitny-truskawkowy-brand	nabial	Jogurt pitny truskawkowy (brand)
+jogurt-pitny-brzoskwiniowy-brand	nabial	Jogurt pitny brzoskwiniowy (brand)
+kefir-smakowy-waniliowy	nabial	Kefir smakowy waniliowy
+kefir-smakowy-truskawkowy	nabial	Kefir smakowy truskawkowy
+maslanka-truskawkowa	nabial	Maślanka truskawkowa
+jogurt-typu-islandzkiego-naturalny	nabial	Jogurt typu islandzkiego naturalny
+ser-topiony-z-szynka	sery	Ser topiony z szynką
+ser-topiony-ze-szczypiorkiem	sery	Ser topiony ze szczypiorkiem
+ser-kremowy-do-smarowania-bez-laktozy	nabial	Ser kremowy do smarowania (bez laktozy)
+pad-thai-z-krewetkami	polskie-obiadki	Pad thai z krewetkami
+kurczak-curry-indyjskie	polskie-obiadki	Kurczak curry (indyjskie)
+butter-chicken	polskie-obiadki	Butter chicken
+tikka-masala-z-ryzem	polskie-obiadki	Tikka masala z ryżem
+chilli-con-carne	polskie-obiadki	Chilli con carne
+paella-z-owocami-morza	polskie-obiadki	Paella z owocami morza
+moussaka	polskie-obiadki	Moussaka
+ratatouille	polskie-obiadki	Ratatouille
+salatka-caprese	polskie-obiadki	Sałatka caprese
+poke-bowl-z-lososiem	polskie-obiadki	Poke bowl z łososiem
+buddha-bowl	polskie-obiadki	Buddha bowl
+bibimbap	polskie-obiadki	Bibimbap
+onigiri-z-tunczykiem	polskie-obiadki	Onigiri z tuńczykiem
+sushi-nigiri-z-lososiem-6-szt	polskie-obiadki	Sushi nigiri z łososiem (6 szt)
+sushi-maki-z-ogorkiem-8-szt	polskie-obiadki	Sushi maki z ogórkiem (8 szt)
+sushi-california-8-szt	polskie-obiadki	Sushi california (8 szt)
+salatka-z-burakow-i-kozim-serem	polskie-obiadki	Sałatka z buraków i kozim serem
+tortilla-z-warzywami-wegetarianska	polskie-obiadki	Tortilla z warzywami (wegetariańska)
+zapiekanka-z-makaronu-i-szpinaku	polskie-obiadki	Zapiekanka z makaronu i szpinaku
+pulpety-w-sosie-pomidorowym-z-ryzem	polskie-obiadki	Pulpety w sosie pomidorowym z ryżem
+udko-pieczone-z-ziemniakami	polskie-obiadki	Udko pieczone z ziemniakami
+zeberka-w-sosie-bbq	polskie-obiadki	Żeberka w sosie bbq
+kaczka-pieczona-z-jablkami	polskie-obiadki	Kaczka pieczona z jabłkami
+kiszka-ziemniaczana	polskie-obiadki	Kiszka ziemniaczana
+babka-ziemniaczana	polskie-obiadki	Babka ziemniaczana
+kartacze	polskie-obiadki	Kartacze
+cepeliny	polskie-obiadki	Cepeliny
+knedliczki	polskie-obiadki	Knedliczki
+gulasz-wegierski-bogracz	polskie-obiadki	Gulasz węgierski (bogracz)
+leczo-z-kielbasa	polskie-obiadki	Leczo z kiełbasą
+nalesniki-z-miesem-markowe	polskie-obiadki	Naleśniki z mięsem (markowe)
+makaron-z-dynia-i-szalwia	polskie-obiadki	Makaron z dynią i szałwią
+gnocchi-z-sosem-pomidorowym	polskie-obiadki	Gnocchi z sosem pomidorowym
+ravioli-z-serem	polskie-obiadki	Ravioli z serem
+tortellini-z-kurczakiem	polskie-obiadki	Tortellini z kurczakiem
+szaszlyk-z-kurczaka-z-warzywami	polskie-obiadki	Szaszłyk z kurczaka z warzywami
+burger-bowl-z-wolowina	fastfood	Burger bowl z wołowiną
+kurczak-crispy-w-panierce	fastfood	Kurczak crispy w panierce
+skrzydelka-bbq-10-szt	fastfood	Skrzydełka bbq (10 szt)
+kanapka-z-pulled-pork	fastfood	Kanapka z pulled pork
+bagietka-z-mozzarella-i-pomidorem	fastfood	Bagietka z mozzarellą i pomidorem
+burgery-warzywne-veggie	fastfood	Burgery warzywne (veggie)
+sokolow-kielbasa-slaska	mieso	Sokołów kiełbasa śląska
+sokolow-szynka-wiejska	mieso	Sokołów szynka wiejska
+sokolow-parowki-slaskie	mieso	Sokołów parówki śląskie
+morliny-szynka-z-indyka	mieso	Morliny szynka z indyka
+morliny-mielonka	mieso	Morliny mielonka
+kraina-wedlin-szynka-sopocka	mieso	Kraina Wędlin szynka sopocka
+kraina-wedlin-poledwica-sopocka	mieso	Kraina Wędlin polędwica sopocka
+olewnik-kielbasa-wiejska	mieso	Olewnik kiełbasa wiejska
+konserwa-turystyczna	mieso	Konserwa turystyczna
+konserwa-gulaszowa	mieso	Konserwa gulaszowa
+pasztet-sokolow	mieso	Pasztet Sokołów
+parowki-z-kurczaka-markowe	mieso	Parówki z kurczaka (markowe)
+szynka-staropolska	mieso	Szynka staropolska
+szynka-z-szynkowara	mieso	Szynka z szynkowara
+wedzona-piers-z-kurczaka	mieso	Wędzona pierś z kurczaka
+wedzone-udko-z-kurczaka	mieso	Wędzone udko z kurczaka
+gulasz-wieprzowy-konserwa	mieso	Gulasz wieprzowy (konserwa)
+mieso-na-kebab-mrozone	mieso	Mięso na kebab (mrożone)
+kurczak-mielony-markowy	mieso	Kurczak mielony (markowy)
+losos-norweski-filet-mrozony	mieso	Łosoś norweski filet (mrożony)
+losos-wedzony-na-cieplo	mieso	Łosoś wędzony na ciepło
+dorsz-wedzony	mieso	Dorsz wędzony
+filet-sledziowy-a-la-matias	mieso	Filet śledziowy a´la matias
+sledz-w-sosie-musztardowym	mieso	Śledź w sosie musztardowym
+sledz-w-zalewie-octowej	mieso	Śledź w zalewie octowej
+tunczyk-w-sosie-pomidorowym	mieso	Tuńczyk w sosie pomidorowym
+tunczyk-wedzony-paluszki	mieso	Tuńczyk wędzony (paluszki)
+losos-pacyficzny	mieso	Łosoś pacyficzny
+sola-mrozona	mieso	Sola mrożona
+kalmary-panierowane-krazki	mieso	Kalmary panierowane (krążki)
+mule-w-sosie-czosnkowym	mieso	Mule w sosie czosnkowym
+ikra-lososiowa-kawior-czerwony	mieso	Ikra łososiowa (kawior czerwony)
+surimi-paluszki-krabowe	mieso	Surimi (paluszki krabowe)
+krewetki-mrozone-koktajlowe	mieso	Krewetki mrożone (koktajlowe)
+paluszki-rybne-mrozone	mieso	Paluszki rybne (mrożone)
+kotlet-rybny-mrozony	mieso	Kotlet rybny (mrożony)
+groszek-konserwowy	warzywa	Groszek konserwowy
+fasola-czerwona-konserwowa	warzywa	Fasola czerwona konserwowa
+fasola-biala-konserwowa	warzywa	Fasola biała konserwowa
+ciecierzyca-konserwowa-2	warzywa	Ciecierzyca konserwowa
+bob-konserwowy	warzywa	Bób konserwowy
+soczewica-konserwowa	warzywa	Soczewica konserwowa
+pomidory-krojone-puszka	warzywa	Pomidory krojone (puszka)
+ogorki-konserwowe	warzywa	Ogórki konserwowe
+papryka-konserwowa-sloik	warzywa	Papryka konserwowa (słoik)
+buraki-tarte-sloik	warzywa	Buraki tarte (słoik)
+buraki-cwiklowe-sloik	warzywa	Buraki ćwikłowe (słoik)
+kapusta-kiszona-sloik	warzywa	Kapusta kiszona (słoik)
+mieszanka-chinska-mrozona	warzywa	Mieszanka chińska (mrożona)
+mieszanka-zupowa-mrozona	warzywa	Mieszanka zupowa (mrożona)
+ratatouille-mrozone	warzywa	Ratatouille mrożone
+brokuly-z-kalafiorem-mrozone	warzywa	Brokuły z kalafiorem (mrożone)
+fasolka-szparagowa-mrozona	warzywa	Fasolka szparagowa mrożona
+szpinak-w-smietanie-mrozony	warzywa	Szpinak w śmietanie (mrożony)
+owoce-lesne-mix-mrozone	owoce	Owoce leśne mix (mrożone)
+mango-mrozone	owoce	Mango mrożone
+wisnie-mrozone	owoce	Wiśnie mrożone
+brzoskwinie-w-syropie	owoce	Brzoskwinie w syropie
+ananas-w-syropie	owoce	Ananas w syropie
+zupka-chinska-kluski	zupy	Zupka chińska (kluski)
+zupka-chinska-ryzowa	zupy	Zupka chińska (ryżowa)
+rosol-instant-kubek	zupy	Rosół instant (kubek)
+zurek-instant	zupy	Żurek instant
+barszcz-czerwony-instant	zupy	Barszcz czerwony instant
+zupa-pomidorowa-instant	zupy	Zupa pomidorowa instant
+grochowka-instant	zupy	Grochówka instant
+zupa-grzybowa-instant	zupy	Zupa grzybowa instant
+zupa-krem-brokulowy-karton	zupy	Zupa krem brokułowy (karton)
+zupa-pomidorowa-karton	zupy	Zupa pomidorowa (karton)
+zurek-zytni-karton	zupy	Żurek żytni (karton)
+barszcz-bialy-karton	zupy	Barszcz biały (karton)
+tofu-wedzone	warzywa	Tofu wędzone
+tofu-naturalne-2	warzywa	Tofu naturalne
+tempeh	warzywa	Tempeh
+seitan	warzywa	Seitan
+parowki-sojowe	warzywa	Parówki sojowe
+kotlety-sojowe	warzywa	Kotlety sojowe
+burger-sojowy-weganski	fastfood	Burger sojowy (wegański)
+jogurt-sojowy	nabial	Jogurt sojowy
+ser-weganski-plastry	sery	Ser wegański (plastry)
+pasztet-roslinny-weganski	sosy	Pasztet roślinny (wegański)
+mleko-konopne	napoje	Mleko konopne
+mleko-z-nerkowcow	napoje	Mleko z nerkowców
+mleko-grochowe	napoje	Mleko grochowe
+pasta-z-awokado-paste	sosy	Pasta z awokado (pastę)
+hummus-buraczany	sosy	Hummus buraczany
+hummus-paprykowy	sosy	Hummus paprykowy
+pancakes-nalesniki-amerykanskie	slodycze	Pancakes (naleśniki amerykańskie)
+gofry	slodycze	Gofry
+tost-francuski	slodycze	Tost francuski
+jajko-na-miekko	nabial	Jajko na miękko
+jajko-na-twardo	nabial	Jajko na twardo
+owsianka-z-bananem-i-orzechami	platki-sniadaniowe	Owsianka z bananem i orzechami
+owsianka-z-jagodami	platki-sniadaniowe	Owsianka z jagodami
+kaszka-manna-na-mleku	platki-sniadaniowe	Kaszka manna na mleku
+kaszka-kukurydziana-na-mleku	platki-sniadaniowe	Kaszka kukurydziana na mleku
+kaszka-ryzowa-na-mleku	platki-sniadaniowe	Kaszka ryżowa na mleku
+obwarzanek	slodycze	Obwarzanek
+precel-maslany	slodycze	Precel maślany
+burek-z-miesem	fastfood	Burek z mięsem
+empanada	fastfood	Empanada
+samosa	fastfood	Samosa
+spring-rolls-sajgonki	fastfood	Spring rolls (sajgonki)
+spring-rolls-z-krewetkami	fastfood	Spring rolls z krewetkami
+kanapka-z-lososiem	fastfood	Kanapka z łososiem
+kanapka-z-szynka-i-serem	fastfood	Kanapka z szynką i serem
+kanapka-z-pasta-jajeczna	fastfood	Kanapka z pastą jajeczną
+kawa-rozpuszczalna-instant	napoje	Kawa rozpuszczalna (instant)
+kawa-mielona-parzona	napoje	Kawa mielona (parzona)
+kawa-z-mlekiem-biala	napoje	Kawa z mlekiem (biała)
+kawa-mocha	napoje	Kawa mocha
+kawa-flat-white	napoje	Kawa flat white
+kawa-americano	napoje	Kawa americano
+herbata-owocowa	napoje	Herbata owocowa
+herbata-z-malin	napoje	Herbata z malin
+herbata-z-hibiskusem	napoje	Herbata z hibiskusem
+herbata-mietowa	napoje	Herbata miętowa
+herbata-rumiankowa	napoje	Herbata rumiankowa
+czekolada-do-picia-goraca	napoje	Czekolada do picia (gorąca)
+kakao-z-piankami	napoje	Kakao z piankami
+napoj-waniliowy-shake	napoje	Napój waniliowy (shake)
+shake-czekoladowy	napoje	Shake czekoladowy
+shake-truskawkowy	napoje	Shake truskawkowy
+milkshake-bananowy	napoje	Milkshake bananowy
+tiramisu-deser	slodycze	Tiramisu (deser)
+panna-cotta	slodycze	Panna cotta
+creme-brulee	slodycze	Crème brûlée
+mus-czekoladowy	slodycze	Mus czekoladowy
+suflet-czekoladowy	slodycze	Suflet czekoladowy
+kisiel-owocowy	slodycze	Kisiel owocowy
+galaretka-z-owocami	slodycze	Galaretka z owocami
+zupa-owocowa-z-makaronem	zupy	Zupa owocowa z makaronem
+deser-sojowy-waniliowy	nabial	Deser sojowy waniliowy
+pudding-ryzowy	slodycze	Pudding ryżowy
+kluski-z-makiem-na-slodko	slodycze	Kluski z makiem na słodko
+ryz-na-mleku-z-jablkiem	slodycze	Ryż na mleku (z jabłkiem)
+sernik-na-zimno	slodycze	Sernik na zimno
+karpatka	slodycze	Karpatka
+bajaderka	slodycze	Bajaderka
+ptysie-z-kremem	slodycze	Ptysie z kremem
+eklery	slodycze	Eklery
+ciasto-marchewkowe	slodycze	Ciasto marchewkowe
+brownie	slodycze	Brownie
+blondie	slodycze	Blondie
+maslo-czosnkowe	tluszcze	Masło czosnkowe
+maslo-ziolowe	tluszcze	Masło ziołowe
+smalec-z-jablkiem-i-cebula	tluszcze	Smalec z jabłkiem i cebulą
+olej-rydzowy	tluszcze	Olej rydzowy
+olej-konopny	tluszcze	Olej konopny
+salsa-verde	sosy	Salsa verde
+sos-blue-cheese	sosy	Sos blue cheese
+sos-balsamiczny-krem	sosy	Sos balsamiczny (krem)
+sos-curry-indyjski	sosy	Sos curry (indyjski)
+sos-satay-orzechowy	sosy	Sos satay (orzechowy)
+sos-jogurtowy-czosnkowy-brand	sosy	Sos jogurtowy czosnkowy (brand)
+jogurt-pitny-wisniowy	nabial	Jogurt pitny wiśniowy
+jogurt-pitny-mangowy	nabial	Jogurt pitny mangowy
+jogurt-naturalny-z-probiotykiem	nabial	Jogurt naturalny z probiotykiem
+serek-grani-ze-szczypiorkiem	nabial	Serek grani ze szczypiorkiem
+serek-grani-naturalny	nabial	Serek grani naturalny
+smietana-kokosowa	nabial	Śmietana kokosowa
+maslo-orzechowe-crunchy	orzechy	Masło orzechowe crunchy
+maslo-orzechowe-bez-cukru	orzechy	Masło orzechowe bez cukru
+krem-czekoladowo-orzechowy-brand	orzechy	Krem czekoladowo-orzechowy (brand)
+migdaly-prazone	orzechy	Migdały prażone
+migdaly-w-czekoladzie	orzechy	Migdały w czekoladzie
+slonecznik-prazony-luskany	orzechy	Słonecznik prażony (łuskany)
+orzechy-w-karmelu	orzechy	Orzechy w karmelu
+mieszanka-orzechow-i-zurawiny	orzechy	Mieszanka orzechów i żurawiny
+wafel-ryzowy-czekoladowy	slodycze	Wafel ryżowy czekoladowy
+wafel-ryzowy-jogurtowy	slodycze	Wafel ryżowy jogurtowy
+chleb-chrupki-wasa	zboza	Chleb chrupki (wasa)
+wafle-kukurydziane	zboza	Wafle kukurydziane
+pieczywo-chrupkie-wieloziarniste	zboza	Pieczywo chrupkie wieloziarniste
+podplomyk	zboza	Podpłomyk
+lawasz	zboza	Lawasz
+pita-chlebek	zboza	Pita (chlebek)
+obwarzanek-krakowski	zboza	Obwarzanek krakowski
+rogal-swietomarcinski	slodycze	Rogal świętomarciński
+ser-korycinski-swojski	sery	Ser koryciński swojski
+chleb-pradnicki	zboza	Chleb prądnicki
+oscypek-wedzony	sery	Oscypek wędzony
+bryndza-podhalanska	sery	Bryndza podhalańska
+kielbasa-lisiecka	mieso	Kiełbasa lisiecka
+sliwka-suszona-wedzona	owoce	Śliwka suszona (wędzona)
+kabanosy-ze-strusia	mieso	Kabanosy ze strusia
+wedlina-z-dzika	mieso	Wędlina z dzika
+szynka-z-dzika	mieso	Szynka z dzika
+kielbasa-z-jelenia	mieso	Kiełbasa z jelenia
+boczek-z-dzika-wedzony	mieso	Boczek z dzika wędzony
+pstrag-ojcowski-wedzony	mieso	Pstrąg ojcowski (wędzony)
+miod-wrzosowy	slodycze	Miód wrzosowy
+miod-akacjowy	slodycze	Miód akacjowy
+miod-manuka	slodycze	Miód manuka
+kapusta-kiszona-swojska-z-beczki	warzywa	Kapusta kiszona swojska (z beczki)
+ogorek-kiszony-swojski	warzywa	Ogórek kiszony swojski
+bigos-z-kielbasa-gotowy	polskie-obiadki	Bigos z kiełbasą (gotowy)
+golabki-z-kasza	polskie-obiadki	Gołąbki z kaszą
+karkowka-z-grilla-goralska	polskie-obiadki	Karkówka z grilla (góralska)
+oscypek-z-grilla-z-zurawina	polskie-obiadki	Oscypek z grilla z żurawiną
+nalesniki-po-wegiersku	polskie-obiadki	Naleśniki po węgiersku
+pierogi-z-jagodami	polskie-obiadki	Pierogi z jagodami
+pierogi-z-truskawkami	polskie-obiadki	Pierogi z truskawkami
+pierogi-leniwe-z-twarogu	polskie-obiadki	Pierogi leniwe z twarogu
+kisiel-zurawinowy	slodycze	Kisiel żurawinowy
+kompot-z-suszu-bozonarodzeniowy	napoje	Kompot z suszu (bożonarodzeniowy)
+grzane-piwo-z-miodem	alkohole	Grzane piwo z miodem
+miod-pitny-trojniak	alkohole	Miód pitny (trójniak)
+miod-pitny-dwojniak	alkohole	Miód pitny (dwójniak)
+sliwowica	alkohole	Śliwowica
+okowita-gorzala	alkohole	Okowita (gorzała)
+nalewka-z-pigwy	alkohole	Nalewka z pigwy
+nalewka-z-aronii	alkohole	Nalewka z aronii
+ramen-z-krewetkami	zupy	Ramen z krewetkami
+ramen-wegetarianski	zupy	Ramen wegetariański
+chinski-ryz-smazony-z-jajkiem	polskie-obiadki	Chiński ryż smażony z jajkiem
+nalesnik-z-owocami	slodycze	Naleśnik z owocami
+curry-warzywne-z-ciecierzyca	polskie-obiadki	Curry warzywne z ciecierzycą
+salatka-z-kurczakiem-i-ryzem	polskie-obiadki	Sałatka z kurczakiem i ryżem
+makaron-z-pesto	polskie-obiadki	Makaron z pesto
+makaron-aglio-e-olio	polskie-obiadki	Makaron aglio e olio
+pizza-domowa-z-patelni	polskie-obiadki	Pizza domowa z patelni
+zapiekanka-ziemniaczana-z-miesem	polskie-obiadki	Zapiekanka ziemniaczana z mięsem
+krem-z-soczewicy	zupy	Krem z soczewicy
+zupa-z-soczewicy-z-warzywami	zupy	Zupa z soczewicy z warzywami
+zupa-kalafiorowa-krem	zupy	Zupa kalafiorowa (krem)
+zupa-marchewkowa-z-imbirem	zupy	Zupa marchewkowa z imbirem
+zupa-brokulowa-z-serem	zupy	Zupa brokułowa z serem
+zupa-dyniowa-z-curry	zupy	Zupa dyniowa z curry
+zupa-krem-z-batatow-i-marchewki	zupy	Zupa krem z batatów i marchewki
+zupa-krem-z-zielonego-groszku	zupy	Zupa krem z zielonego groszku
+zupa-krem-z-cukinii-i-brokulow	zupy	Zupa krem z cukinii i brokułów
+zupa-selerowa-krem	zupy	Zupa selerowa (krem)
+saltimbocca	polskie-obiadki	Saltimbocca
+kopytka-z-sosem-grzybowym	polskie-obiadki	Kopytka z sosem grzybowym
+placki-ziemniaczane-z-gulaszem	polskie-obiadki	Placki ziemniaczane z gulaszem
+kasza-gryczana-z-gulaszem	polskie-obiadki	Kasza gryczana z gulaszem
+makaron-z-twarogiem-i-cynamonem	polskie-obiadki	Makaron z twarogiem i cynamonem
+kluski-z-makiem-makaron-z-makiem	slodycze	Kluski z makiem (makaron z makiem)
+zapiekanka-z-ziemniakow-i-sera	slodycze	Zapiekanka z ziemniaków i sera
+grillowane-warzywa-z-feta	polskie-obiadki	Grillowane warzywa z fetą
+salatka-bawarska-z-kabanosem	polskie-obiadki	Sałatka bawarska z kabanosem
+ryba-w-ciescie-z-frytkami	fastfood	Ryba w cieście z frytkami
+kurczak-w-ciescie-piwnym	fastfood	Kurczak w cieście piwnym
+smithy-frytki-belgijskie-podwojne	fastfood	Smithy (frytki belgijskie podwójne)
+smazona-mozzarella-w-panierce	fastfood	Smażona mozzarella w panierce
+serowe-patyczki-mozzarella	fastfood	Serowe patyczki mozzarella
+krazki-cebulowe	fastfood	Krążki cebulowe
+wrap-z-lososiem	fastfood	Wrap z łososiem
+wrap-z-halloumi	fastfood	Wrap z halloumi
+burger-z-kurczakiem-curry	fastfood	Burger z kurczakiem curry
+burger-z-wolowina-i-bekonem	fastfood	Burger z wołowiną i bekonem
+burger-cheeseburger-z-cebula	fastfood	Burger cheeseburger z cebulą
+frytki-belgijskie-grube	fastfood	Frytki belgijskie (grube)
+nuggetsy-z-ryby	fastfood	Nuggetsy z ryby
+kanapka-z-kurczakiem-i-warzywami	fastfood	Kanapka z kurczakiem i warzywami
+kanapka-z-serem-i-pomidorem	fastfood	Kanapka z serem i pomidorem
+kanapka-z-mozzarella-i-rukola	fastfood	Kanapka z mozzarellą i rukolą
+panini-z-szynka-i-serem	fastfood	Panini z szynką i serem
+croque-monsieur	fastfood	Croque monsieur
+grilled-cheese-zapiekana-kanapka	fastfood	Grilled cheese (zapiekana kanapka)
+tost-z-kurczakiem	fastfood	Tost z kurczakiem
+salatka-szefa	polskie-obiadki	Sałatka szefa
+salatka-z-jajkiem-i-awokado	polskie-obiadki	Sałatka z jajkiem i awokado
+salatka-z-kozim-serem	polskie-obiadki	Sałatka z kozim serem
+salatka-owocowa-mix	owoce	Sałatka owocowa (mix)
+koktajl-owocowy-mix-banan-jagoda	napoje	Koktajl owocowy (mix banan-jagoda)
+smoothie-z-awokado-i-szpinakiem	napoje	Smoothie z awokado i szpinakiem
+smoothie-z-mango-i-marakuja	napoje	Smoothie z mango i marakują
+smoothie-z-burakiem	napoje	Smoothie z burakiem
+sok-z-brzozy	napoje	Sok z brzozy
+napoj-aloesowy	napoje	Napój aloesowy
+kefir-wodny-jogurt-kokosowy	napoje	Kefir wodny (jogurt kokosowy)
+kompot-rabarbarowy	napoje	Kompot rabarbarowy
+lemoniada-lawendowa	napoje	Lemoniada lawendowa
+gruszka-w-syropie	owoce	Gruszka w syropie
+morele-w-syropie	owoce	Morele w syropie
+wisnie-w-syropie-koktajlowe	owoce	Wiśnie w syropie (koktajlowe)
+sliwki-w-czekoladzie-markowe	slodycze	Śliwki w czekoladzie (markowe)
+maliny-w-czekoladzie	slodycze	Maliny w czekoladzie
+truskawki-w-czekoladzie	slodycze	Truskawki w czekoladzie
+baton-pralinowy	batony	Baton pralinowy
+czekoladka-z-nadzieniem-mietowym	batony	Czekoladka z nadzieniem miętowym
+czekoladka-z-nadzieniem-pomaranczowym	batony	Czekoladka z nadzieniem pomarańczowym
+draze-czekoladowe-z-arachidami	batony	Draże czekoladowe z arachidami
+cukierki-czekoladowo-karmelowe	batony	Cukierki czekoladowo-karmelowe
+bakaliowa-mieszanka-sniadaniowa	orzechy	Bakaliowa mieszanka śniadaniowa
+orzechy-ziemne-w-miodzie	orzechy	Orzechy ziemne w miodzie
+orzechy-nerkowca-pieczone	orzechy	Orzechy nerkowca pieczone
+orzechy-wloskie-siekane	orzechy	Orzechy włoskie siekane
+maslo-z-orzechow-laskowych	orzechy	Masło z orzechów laskowych
+tahini-markowe	orzechy	Tahini (markowe)
+dip-z-awokado-i-cytryna	sosy	Dip z awokado i cytryną
+dip-koperkowo-ziolowy	sosy	Dip koperkowo-ziołowy
+dip-pomidorowo-czosnkowy	sosy	Dip pomidorowo-czosnkowy
+pasta-jajeczna	sosy	Pasta jajeczna
+pasta-z-makreli	sosy	Pasta z makreli
+pasta-z-lososia	sosy	Pasta z łososia
+pasta-kanapkowa-warzywna	sosy	Pasta kanapkowa warzywna
+sos-pieczarkowy-markowy	sosy	Sos pieczarkowy (markowy)
+sos-paprykowy	sosy	Sos paprykowy
+ogorek-kiszony-markowy	warzywa	Ogórek kiszony (markowy)
+salatka-z-kukurydzy-i-papryki	warzywa	Sałatka z kukurydzy i papryki
+cebula-karmelizowana-dzem	sosy	Cebula karmelizowana (dżem)
+konfitura-wisniowa	slodycze	Konfitura wiśniowa
+konfitura-brzoskwiniowa	slodycze	Konfitura brzoskwiniowa
+marmolada-pigwowa	slodycze	Marmolada pigwowa
+krem-czekoladowy-do-smarowania	slodycze	Krem czekoladowy (do smarowania)
+krem-smietankowy-do-smarowania	slodycze	Krem śmietankowy (do smarowania)
+pasta-migdalowa-marcepan	slodycze	Pasta migdałowa (marcepan)
+jogurt-z-chia-i-owocami	nabial	Jogurt z chia i owocami
+serek-wiejski-z-warzywami	nabial	Serek wiejski z warzywami
+twarog-z-rzodkiewka	nabial	Twaróg z rzodkiewką
+kefir-z-dodatkiem-owsa	nabial	Kefir z dodatkiem owsa
+maslanka-z-czosnkiem-dip	nabial	Maślanka z czosnkiem (dip)
+ser-halloumi-grillowany	sery	Ser halloumi grillowany
+ser-mozzarella-do-pizzy-tarta	sery	Ser mozzarella do pizzy (tarta)
+ser-parmezan-do-posypania	sery	Ser parmezan do posypania
+ser-zolty-w-plastrach-markowy	sery	Ser żółty w plastrach (markowy)
+ser-do-zapiekania-tarty	sery	Ser do zapiekania (tarty)
+ser-stadler	sery	Ser stadler
+ser-mazdamer-w-plastrach	sery	Ser mazdamer w plastrach
+ser-ementaler-w-plastrach	sery	Ser ementaler w plastrach
+ser-edamski-w-plastrach	sery	Ser edamski w plastrach
+ser-camembert-zapiekany	sery	Ser camembert zapiekany
+ser-plesniowy-bavaria-blue	sery	Ser pleśniowy bavaria blue
+serek-topiony-bavaria	sery	Serek topiony bavaria
+ser-z-papryka-krajanka	sery	Ser z papryką (krajanka)
+ser-z-szynka-krajanka	sery	Ser z szynką (krajanka)
+ser-z-czosnkiem-niedzwiedzim	sery	Ser z czosnkiem niedźwiedzim
+ser-kozi-miekki-kostka	sery	Ser kozi miękki (kostka)
+ser-plesniowy-z-ziolami	sery	Ser pleśniowy z ziołami
+maslo-oselkowe-z-oselki	tluszcze	Masło osełkowe (z osełki)
+tluszcz-z-gesi-smalec-gesi	tluszcze	Tłuszcz z gęsi (smalec gęsi)
+cukier-wanilinowy	przyprawy	Cukier wanilinowy
+drozdze-piekarskie-swieze	przyprawy	Drożdże piekarskie (świeże)
+drozdze-suche	przyprawy	Drożdże suche
+soda-oczyszczona	przyprawy	Soda oczyszczona
+cukier-puder	slodycze	Cukier puder
+galaretka-brzoskwiniowa	slodycze	Galaretka brzoskwiniowa
+kisiel-czekoladowy-budyn	slodycze	Kisiel czekoladowy (budyń)
+sernik-na-zimno-z-owocami	slodycze	Sernik na zimno z owocami
+szarlotka-na-cieplo	slodycze	Szarlotka na ciepło
+nalesniki-z-nutella	slodycze	Naleśniki z nutellą
+nalesniki-z-owocami-i-bita-smietana	slodycze	Naleśniki z owocami i bitą śmietaną
+gofry-z-owocami	slodycze	Gofry z owocami
