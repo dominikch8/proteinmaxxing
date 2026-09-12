@@ -83,6 +83,7 @@ const CATEGORY_EN = {
     fastfood: 'fast food item, edible food only',
     slodycze: 'sweet candy or chocolate dessert, edible food only',
     batony: 'chocolate candy bar, edible food only',
+    'batony-proteinowe': 'protein bar, edible food only',
     'polskie-obiadki': 'Polish home-style cooked dish on a plate, edible food only',
     przyprawy: 'dry culinary spice or dried herbs, small neat pile, edible food only',
     alkohole: 'alcoholic drink served in a clear glass, whole glass visible',
