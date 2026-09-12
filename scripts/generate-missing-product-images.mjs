@@ -56,6 +56,12 @@ const catArgs = (argVal('category') || '')
     .filter(Boolean);
 const limit = argVal('limit') ? Number(argVal('limit')) : Infinity;
 const model = argVal('model') || 'flux';
+const delayMs = argVal('delay') !== null ? Number(argVal('delay')) : 5500;
+const force = hasFlag('--force');
+const pilot = hasFlag('--pilot');
+const wantWebp = !hasFlag('--no-webp');
+const OUT_DIR = pilot ? previewDir : productsDir;
+
 /* ── FOOD_SUBJECT (nadpisania promptów) z rebuild-all-product-photos.mjs ─ */
 let FOOD_SUBJECT = {};
 try {
