@@ -1278,8 +1278,7 @@ const NEW = [
     ['Szarlotka na ciepło', '🍎', 'slodycze', 'kawałek (100g)', 1, 3, 40, 10, 4, 'Szarlotka na ciepło.'],
     ['Naleśniki z nutellą', '🥞', 'slodycze', 'sztuka (120g)', 1.2, 5, 40, 12, 5, 'Naleśniki z kremem czekoladowym.'],
     ['Naleśniki z owocami i bitą śmietaną', '🥞', 'slodycze', 'sztuka (150g)', 1.5, 5, 30, 12, 6, 'Naleśniki z owocami.'],
-    ['Gofry z owocami', '🧇', 'slodycze', 'sztuka (150g)', 1.5, 5, 40, 10, 4, 'Gofry z owocami.'],
-/*__DATA__*/
+    ['Gofry z owocami', '🧇', 'slodycze', 'sztuka (150g)', 1.5, 5, 40, 10, 4, 'Gofry z owocami.']
 ];
 
 function slugify(name) {
