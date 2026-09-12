@@ -5,7 +5,8 @@
     "start": "serve . -l 8080",
     "dev": "serve . -l 8080",
     "pack:hosting": "node scripts/pack-for-hosting.mjs",
-    "build:deploy": "node scripts/build-deploy.mjs"
+    "build:deploy": "node scripts/build-deploy.mjs",
+    "git:auto": "node scripts/auto-commit-push.mjs"
   },
   "dependencies": {
     "onnxruntime-node": "^1.27.0",
