@@ -247,11 +247,27 @@
     max-width: 580px;
     margin-top: 20px;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.funfact-progress-no {
+    flex: 0 0 auto;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    font-variant-numeric: tabular-nums;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+[data-theme='dark'] .funfact-progress-no {
+    color: var(--accent-soft);
 }
 
 .funfact-progress {
+    flex: 1 1 auto;
     height: 6px;
     border-radius: 999px;
     background: var(--surface-muted);

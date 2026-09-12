@@ -145,6 +145,7 @@
     const btnEl = document.getElementById('funfactBtn');
     const copyBtnEl = document.getElementById('funfactCopyBtn');
     const progressEl = document.getElementById('funfactProgress');
+    const noEl = document.getElementById('funfactNo');
     const catsEl = document.getElementById('funfactCats');
     const counterEl = document.getElementById('funfactCounter');
 
@@ -275,6 +276,7 @@
             const track = progressEl.parentElement;
             if (track) track.setAttribute('aria-valuenow', String(Math.round(pct)));
         }
+        if (noEl) noEl.textContent = '#' + no + ' / ' + total;
     }
 
     function applyFact(fact) {
