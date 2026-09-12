@@ -62,15 +62,13 @@ for (const f of fs.readdirSync(scriptsDir).filter((x) => /^_np-b\d+\.json$/.test
     }
 }
 
-// 4) _batch2.mjs — linie JSON
-{
-    const fp = path.join(scriptsDir, '_batch2.mjs');
-    if (fs.existsSync(fp)) {
-        for (const line of fs.readFileSync(fp, 'utf8').split(/\r?\n/)) {
-            const t = line.trim().replace(/,$/, '');
-            if (!t.startsWith('{"name"')) continue;
-            try { add(JSON.parse(t), '_batch2.mjs'); } catch { /* ignore */ }
-        }
+// 4) _batch*.mjs — linie JSON
+for (const f of fs.readdirSync(scriptsDir).filter((x) => /^_batch\d+\.mjs$/.test(x)).sort()) {
+    const fp = path.join(scriptsDir, f);
+    for (const line of fs.readFileSync(fp, 'utf8').split(/\r?\n/)) {
+        const t = line.trim().replace(/,$/, '');
+        if (!t.startsWith('{"name"')) continue;
+        try { add(JSON.parse(t), f); } catch { /* ignore */ }
     }
 }
 
