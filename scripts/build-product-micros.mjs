@@ -209,21 +209,31 @@ async function main() {
             if (off && !Object.keys(off).length) off = null;
         }
 
-        const micros = mergePreferHigherConfidence(
-            buildMicrosForProduct(p, p.microsDetailOverride || null),
-            off
-        );
-        // Zapewnij pełniejszy profil: dopełnij zerami tylko sensownie — nie;
-        // zamiast tego: minimum 8 kluczowych składników z kategorii jeśli brak
-        const filled = ensureMinimumCoverage(p, micros);
-        bySlug[slug] = filled;
-        p.microsDetail = filled;
-        p.micros = microsToLabelString(filled);
+        const smart = buildMicrosSmart(p);
+        let micros;
+        let source;
+        if (p.microsDetailOverride && Object.keys(p.microsDetailOverride).length) {
+            micros = cleanMicros(p.microsDetailOverride);
+            source = 'override';
+        } else if (off && Object.keys(off).length >= 3) {
+            // Realne dane z internetu (OFF) mają pierwszeństwo; uzupełnij braki inteligentną estymacją.
+            const merged = { ...smart.micros };
+            for (const [k, v] of Object.entries(off)) merged[k] = v;
+            micros = cleanMicros(merged);
+            source = 'off';
+        } else {
+            micros = smart.micros || {};
+            source = Object.keys(micros).length ? smart.source : 'none';
+        }
+        bySlug[slug] = micros;
+        p.microsDetail = Object.keys(micros).length ? micros : {};
+        p.microsSource = source;
+        p.micros = microsToLabelString(micros);
 
-        const kc = Object.keys(filled).length;
+        const kc = Object.keys(micros).length;
         keySum += kc;
         if (kc >= 8) report.withKeys++;
-        else report.thin.push({ slug, keys: kc });
+        else report.thin.push({ slug, keys: kc, source });
     }
 
     report.avgKeys = Math.round((keySum / products.length) * 10) / 10;
