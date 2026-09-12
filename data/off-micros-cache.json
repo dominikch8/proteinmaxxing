@@ -93,5 +93,40 @@
   "bialka-jaj": {},
   "izolat-bialka-wpi": {},
   "ser-gouda": {},
-  "ser-camembert": {}
+  "ser-camembert": {},
+  "ser-mozzarella": {},
+  "ser-parmezan": {},
+  "mleko-2": {
+    "calcium": 105,
+    "potassium": 155,
+    "sodium": 39
+  },
+  "mleko-3-2": {
+    "calcium": 105,
+    "potassium": 155,
+    "sodium": 39
+  },
+  "jogurt-grecki-naturalny": {},
+  "jogurt-pitny": {},
+  "maslanka": {},
+  "twarog-poltlusty": {},
+  "ricotta": {
+    "b1": 0.0210526315789474,
+    "b2": 0.0842105263157895,
+    "b6": 0.147368421052632,
+    "b12": 0.06315789473684211,
+    "calcium": 80,
+    "potassium": 256.842105263158,
+    "sodium": 1080
+  },
+  "ser-feta": {},
+  "ser-brie": {},
+  "ser-edamski": {},
+  "ser-zolty-plastry": {},
+  "serek-danio": {
+    "vitD": 0.75,
+    "calcium": 120,
+    "sodium": 32
+  },
+  "budyn-na-mleku": {}
 }
