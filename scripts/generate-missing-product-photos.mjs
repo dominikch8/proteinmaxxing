@@ -106,3 +106,72 @@ function seedFromSlug(slug) {
 function sleep(ms) {
     return new Promise((r) => setTimeout(r, ms));
 }
+
+/** Białe tło → przezroczysty PNG (cut-out, styl reszty bazy). */
+async function toCutoutPng(sharp, inputBuf) {
+    const resized = await sharp(inputBuf)
+        .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255, alpha: 1 } })
+        .ensureAlpha()
+        .raw()
+        .toBuffer({ resolveWithObject: true });
+    let data = removeEdgeBackground(resized.data, resized.info.width, resized.info.height, 4, {
+        lumMin: 236,
+        satMax: 32
+    });
+    data = defringeLightHalos(data, 4);
+    for (let i = 0; i < data.length; i += 4) {
+        if (data[i + 3] === 0) continue;
+        const r = data[i];
+        const g = data[i + 1];
+        const b = data[i + 2];
+        if (r >= 250 && g >= 250 && b >= 250) data[i + 3] = 0;
+        else if (r > 242 && g > 242 && b > 242) {
+            const whiteness = (r + g + b) / 3;
+            data[i + 3] = Math.max(0, Math.min(255, Math.round((255 - whiteness) * 10)));
+        }
+    }
+    return sharp(data, {
+        raw: { width: resized.info.width, height: resized.info.height, channels: 4 }
+    })
+        .png({ compressionLevel: 9, palette: true, quality: 90 })
+        .toBuffer();
+}
+
+function slugify(name) {
+    return String(name)
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/ą/g, 'a').replace(/ć/g, 'c').replace(/ę/g, 'e').replace(/ł/g, 'l')
+        .replace(/ń/g, 'n').replace(/ó/g, 'o').replace(/ś/g, 's').replace(/ź/g, 'z').replace(/ż/g, 'z')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+}
+
+function enrichProducts(list) {
+    const seen = {};
+    return list.map((p) => {
+        let base = p.slug && String(p.slug).trim() ? String(p.slug).trim() : slugify(p.name);
+        let slug = base;
+        let n = 2;
+        while (seen[slug]) {
+            slug = `${base}-${p.category || 'x'}`;
+            if (seen[slug]) slug = `${base}-${n++}`;
+        }
+        seen[slug] = true;
+        return { slug, name: p.name, category: p.category };
+    });
+}
+
+const raw = JSON.parse(
+    fs.readFileSync(path.join(root, 'js', 'products-data-raw.js'), 'utf8').match(/productsDatabaseRaw = (\[[\s\S]*\]);/)[1]
+);
+const products = enrichProducts(raw);
+const sharp = (await import('sharp')).default;
+fs.mkdirSync(outDir, { recursive: true });
+
+let PRODUCT_SEARCH_QUERIES = {};
+if (fs.existsSync(queriesPath)) {
+    const mod = await import(pathToFileURL(queriesPath).href);
+    PRODUCT_SEARCH_QUERIES = mod.PRODUCT_SEARCH_QUERIES || {};
+}
