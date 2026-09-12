@@ -1096,11 +1096,16 @@
         align-items: center;
         justify-content: flex-end;
         gap: 8px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         grid-column: 3;
         justify-self: end;
         width: auto;
-        min-width: 0;
+        min-width: max-content;
+        white-space: nowrap;
+    }
+
+    #articlesPagination > * {
+        flex: 0 0 auto;
     }
 
     #articlesPagination .articles-pagination-ellipsis {
