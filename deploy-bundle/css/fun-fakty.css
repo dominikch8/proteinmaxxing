@@ -5,7 +5,14 @@
 
 .fun-fakty-page .page-hero {
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Keep the underline squiggle close to the title so the gap to the
+   category picker below stays even (no double spacing). */
+.fun-fakty-page .page-hero::after {
+    margin-top: 16px;
 }
 
 .fun-fakty-badge {
@@ -404,11 +411,11 @@
     z-index: 1;
     width: 100%;
     max-width: 620px;
-    margin: 0 0 26px;
+    margin: 24px auto 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
 .funfact-cats-label {
@@ -429,16 +436,40 @@
 
 .funfact-cats-rest {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    justify-content: safe center;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 2px 0;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.funfact-cats-rest::-webkit-scrollbar {
+    display: none;
+}
+
+/* Give the category strip a bit more room on desktop so every category
+   (except the featured "Wszystkie") fits on a single line. The strip is
+   centred on the page, extending symmetrically past the narrow card. */
+@media (min-width: 768px) {
+    .funfact-cats-wrap {
+        width: min(900px, 92vw);
+        max-width: none;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .funfact-cat {
-    padding: 8px 16px;
+    padding: 7px 11px;
     border-radius: 999px;
     font: inherit;
-    font-size: 0.84rem;
+    font-size: 0.8rem;
     font-weight: 600;
     line-height: 1;
     cursor: pointer;
@@ -597,6 +628,17 @@
 
     .funfact-controls {
         flex-direction: column;
+    }
+
+    /* Single-line category strip: keep it on one line and let it scroll
+       horizontally instead of wrapping onto a second row. */
+    .funfact-cats-wrap {
+        margin-top: 20px;
+        margin-bottom: 24px;
+    }
+
+    .funfact-cats {
+        gap: 12px;
     }
 }
 
