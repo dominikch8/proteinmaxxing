@@ -11,7 +11,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { buildMicrosForProduct } from './product-micros-engine.mjs';
+import { buildMicrosForProduct, buildMicrosSmart } from './product-micros-engine.mjs';
 import {
     MICRO_KEYS_ORDER,
     microsToLabelString,
