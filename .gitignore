@@ -12,6 +12,5 @@ api/config.local.php
 
 scripts/models/*.onnx
 tmp-verify/
-scripts/auto-commit-push.log
 
 
