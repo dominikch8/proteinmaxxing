@@ -89,7 +89,7 @@ const normalized = incoming.map((p) => ({
     fat: p.fat,
     satFat: p.satFat,
     unsatFat: p.unsatFat,
-    micros: p.micros,
+    microsDetailOverride: p.micros,
     extra: p.extra,
     ...(p.pricePerKg ? { pricePerKgRetail: p.pricePerKg } : {}),
 }));
