@@ -202,6 +202,15 @@ if (slugArgs.length) {
 }
 if (limit !== Infinity) todo = todo.slice(0, limit);
 
+// Równoległość: --shard=K/N przetwarza co N-ty produkt (indeks % N === K).
+const shardArg = process.argv.find((a) => a.startsWith('--shard='));
+if (shardArg) {
+    const [k, n] = shardArg.split('=')[1].split('/').map(Number);
+    if (Number.isFinite(k) && Number.isFinite(n) && n > 0) {
+        todo = todo.filter((_, i) => i % n === (k % n));
+    }
+}
+
 console.log(`Produktów: ${products.length} | do wygenerowania: ${todo.length} | formaty: ${[...formats].join(',')}`);
 if (!todo.length) process.exit(0);
 
