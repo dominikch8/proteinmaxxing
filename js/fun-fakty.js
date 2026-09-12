@@ -313,6 +313,7 @@
             }
             seen++;
             updateMeta();
+            updateProgress(fact);
             rolling = false;
             btnEl.disabled = false;
             btnEl.classList.remove('is-spinning');
