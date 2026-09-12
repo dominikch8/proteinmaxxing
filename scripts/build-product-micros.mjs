@@ -260,13 +260,6 @@ async function main() {
     console.log('Done.', report);
 }
 
-/** Uzupełnij typowe minerały jeśli profil jest zbyt ubogi. */
-function ensureMinimumCoverage(product, micros) {
-    const base = buildMicrosForProduct(product);
-    const out = { ...base, ...micros };
-    return cleanMicros(out);
-}
-
 main().catch((e) => {
     console.error(e);
     process.exit(1);
