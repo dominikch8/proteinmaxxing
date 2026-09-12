@@ -1088,13 +1088,25 @@
     #articlesPagination {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         gap: 8px;
         flex-wrap: wrap;
-        grid-column: 1 / -1;
-        justify-self: center;
-        width: 100%;
+        grid-column: 3;
+        justify-self: end;
+        width: auto;
         min-width: 0;
+    }
+
+    #articlesPagination .articles-pagination-ellipsis {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 40px;
+        min-height: 40px;
+        color: var(--text-muted, rgba(148, 163, 184, 0.9));
+        font-weight: 700;
+        user-select: none;
+        pointer-events: none;
     }
 
     #articlesPagination .btn {
