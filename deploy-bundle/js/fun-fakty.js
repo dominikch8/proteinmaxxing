@@ -250,13 +250,30 @@
         catsEl.appendChild(rest);
     }
 
+    // Every fact gets a stable number based on its position in the FULL pool
+    // (all facts, regardless of the active category): #1 … #total.
+    function indexFacts() {
+        FULL_FACTS.forEach(function (f, i) { f.no = i + 1; });
+    }
+
     function updateMeta() {
-        const total = FUN_FACTS.length;
-        const pct = total ? Math.min(100, Math.round((seen / total) * 100)) : 0;
-        if (progressEl) progressEl.style.width = pct + '%';
         if (counterEl) {
             const catLabel = activeCat === ALL_CAT ? 'wszystkie kategorie' : activeCat;
-            counterEl.textContent = 'Kategoria: ' + catLabel + ' · wylosowano ' + seen + ' z ' + total;
+            counterEl.textContent = 'Kategoria: ' + catLabel + ' · wylosowano ' + seen + ' z ' + FUN_FACTS.length;
+        }
+    }
+
+    // The progress bar reflects the rolled fact's own number against the total
+    // number of ALL facts: fact #42 of 1000 fills the bar to 4.2%.
+    // A higher number therefore yields a fuller bar.
+    function updateProgress(fact) {
+        const total = FULL_FACTS.length;
+        const no = fact && Number.isFinite(fact.no) ? fact.no : 0;
+        const pct = total ? Math.min(100, Math.max(0, (no / total) * 100)) : 0;
+        if (progressEl) {
+            progressEl.style.width = pct + '%';
+            const track = progressEl.parentElement;
+            if (track) track.setAttribute('aria-valuenow', String(Math.round(pct)));
         }
     }
 
@@ -296,6 +313,7 @@
             }
             seen++;
             updateMeta();
+            updateProgress(fact);
             rolling = false;
             btnEl.disabled = false;
             btnEl.classList.remove('is-spinning');
@@ -353,6 +371,7 @@
     }
 
     function boot() {
+        indexFacts();
         const stored = readStored();
         const initialCat = (stored && stored.cat) || readStoredCat() || ALL_CAT;
         setPool(initialCat, stored ? stored.bag : null);

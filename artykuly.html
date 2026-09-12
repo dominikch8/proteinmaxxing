@@ -813,11 +813,12 @@
             paginationRoot.innerHTML = '';
 
             function buildPageNumbers(current, total) {
-                const wanted = new Set([1, total]);
-                for (let i = current - 2; i <= current + 2; i++) {
-                    if (i >= 1 && i <= total) wanted.add(i);
+                // Show every page number from 1 up to the last page (x).
+                const pages = [];
+                for (let i = 1; i <= total; i++) {
+                    pages.push(i);
                 }
-                return Array.from(wanted).sort((a, b) => a - b);
+                return pages;
             }
 
             let previousPage = 0;
