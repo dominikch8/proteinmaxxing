@@ -269,11 +269,236 @@ defs.push({
     uwaga: 'Seitan to czysty gluten — przy celiakii lub nadwrażliwości odpada. Tofu i tempeh są bezglutenowe.',
     coDalej: 'Zobacz <a href="wegetarianskie-zrodla-bialka">pełną listę roślinnego białka</a> i policz porcje w <a href="kalkulator-posilkow">kalkulatorze posiłków</a>.'
 });
-//_A6_
-//_A7_
-//_A8_
-//_A9_
-//_A10_
+defs.push({
+    slug: 'owady-jako-bialko-ciekawostka',
+    emoji: '🦗',
+    title: 'Owady jako białko — fakty i liczby',
+    subtitle: 'Świerszcze i mączniki: ile białka, jak wypadają ekologicznie i czy są bezpieczne.',
+    meta: 'Owady jadalne jako białko: zawartość, aminokwasy, ekologia i bezpieczeństwo spożycia.',
+    crumb: 'Owady jako białko',
+    category: 'bialko',
+    relatedHtml: '<a href="budzetowe-zrodla-bialka-taniej-niz-odzywka">tanie białko</a> · <a href="artykuly">artykuły</a> · <a href="poradnik-zywienia">poradnik</a>',
+    lead: 'Owady to jedno z najbardziej białkowych „produktów” na kilogram suchej masy — i ekologicznie tani sposób na proteiny.',
+    sections: [
+        { h2: 'Ile białka', p: 'Mącznik i świerszcze mają ok. 50–70 g białka na 100 g suchej masy. Profil aminokwasowy jest zaskakująco dobry, porównywalny z mięsem.' },
+        { h2: 'Ekologia', p: 'Hodowla owadów zużywa wielokrotnie mniej wody i paszy niż bydło i emituje mniej gazów cieplarnianych. Dlatego FAO traktuje je jako przyszłościowe źródło białka.' },
+        { h2: 'Bezpieczeństwo', p: 'W UE owady są zatwierdzone jako nowa żywność (m.in. mącznik, świerszcz). Osoby z alergią na skorupiaki mogą reagować krzyżowo.' }
+    ],
+    bullets: [
+        '<strong>Białko:</strong> 50–70 g/100 g suchej masy.',
+        '<strong>Ekologia:</strong> niższy ślad wodny i węglowy.',
+        '<strong>Alergia:</strong> ostrożnie przy alergii na krewetki.',
+    ],
+    uwaga: 'Mąka ze świerszczy bywa droga i nie jest konieczna — to ciekawostka i alternatywa, nie niezbędnik. Tańsze zostają twaróg i jaja.',
+    coDalej: 'Sprawdź <a href="budzetowe-zrodla-bialka-taniej-niz-odzywka">najtańsze źródła</a> i <a href="cena-bialka">koszt za 100 g proteinów</a>.'
+});
+defs.push({
+    slug: 'bialko-a-cukrzyca-insulina',
+    emoji: '🩸',
+    title: 'Białko a cukrzyca i insulina',
+    subtitle: 'Jak białko wpływa na glukozę i insulinę oraz dlaczego pomaga przy insulinooporności.',
+    meta: 'Białko a cukrzyca: wpływ na glukozę, insulinę i dlaczego dieta wysokobiałkowa wspiera kontrolę.',
+    crumb: 'Białko a cukrzyca',
+    category: 'bialko',
+    relatedHtml: '<a href="ile-bialka-na-dzien">ile białka</a> · <a href="indeks-glikemiczny-czy-ma-znaczenie">indeks glikemiczny</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Białko podnosi insulinę słabiej niż węglowodany i spowalnia wchłanianie glukozy — dlatego pomaga stabilizować cukier po posiłku.',
+    sections: [
+        { h2: 'Białko a glukoza', p: 'Część aminokwasów stymuluje insulinę, ale przy tym glukagon równoważy poziom cukru. Efekt: mniejsze skoki glukozy po łącznym posiłku.' },
+        { h2: 'Rola sytości', p: 'Białko jest najbardziej sycącym makroskładnikiem, co pomaga jeść mniej i rytmiczniej — kluczowe przy insulinooporności i cukrzycy typu 2.' },
+        { h2: 'Praktyka', p: 'Rozkładaj białko na posiłki i łącz z błonnikiem oraz tłuszczem. Pomaga to też zdrowym uniknąć poposiłkowej senności i głodu.' }
+    ],
+    bullets: [
+        '<strong>Stabilizacja:</strong> białko w każdym posiłku.',
+        '<strong>Łącz:</strong> z warzywami i pełnym ziarnem.',
+        '<strong>Regularnie:</strong> 3–5 posiłków, bez podjadania.',
+    ],
+    uwaga: 'Przy zaawansowanej cukrzycy i chorobach nerek ilość białka ustala lekarz lub dietetyk kliniczny.',
+    coDalej: 'Czytaj o <a href="insulina-a-magazynowanie-tluszczu">insulinie i tłuszczu</a> oraz <a href="indeks-glikemiczny-czy-ma-znaczenie">indeksie glikemicznym</a>.'
+});
+defs.push({
+    slug: 'bialko-serwatkowe-a-tradzik-i-laktoza',
+    emoji: '🧖',
+    title: 'Białko serwatkowe a trądzik i laktoza',
+    subtitle: 'Dlaczego po odżywce czasem wyskakują pryszcze i co z nietolerancją laktozy.',
+    meta: 'Serwatka a trądzik i laktoza: mechanizm, kto jest narażony i czym zastąpić odżywkę.',
+    crumb: 'Serwatka a trądzik',
+    category: 'bialko',
+    relatedHtml: '<a href="wpc-vs-wpi-vs-hydrolizat">WPC vs WPI</a> · <a href="suplementacja-bialka-czy-wpc-wpi-potrzebne">suplementacja</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Serwatka może zaostrzać trądzik u części osób, a laktoza w koncentracie — drażnić przy nietolerancji. Są proste zamiany.',
+    sections: [
+        { h2: 'Trądzik i serwatka', p: 'Serwatka podwyższa insulinę i IGF-1, co u predysponowanych nasila produkcję sebum. Jeśli po odżywce widzisz gorszą cerę, to częste połączenie.' },
+        { h2: 'Laktoza', p: 'WPC zawiera laktozę — przy nietolerancji daje wzdęcia i dyskomfort. Izolat (WPI) ma jej śladowe ilości, więc bywa lepszy.' },
+        { h2: 'Zamiany', p: 'Testuj kolejno: izolat, białko roślinne (groch/ryż) albo zrezygnuj z odżywki na rzecz twarogu, skyr i jaj. Efekt treningowy będzie ten sam.' }
+    ],
+    bullets: [
+        '<strong>Trądzik po odżywce:</strong> spróbuj WPI lub roślinne.',
+        '<strong>Wzdęcia:</strong> sprawdź izolat bez laktozy.',
+        '<strong>Bez odżywki:</strong> twaróg i jaja działają tak samo.',
+    ],
+    uwaga: 'Trądzik ma wiele przyczyn (hormony, stres, kosmetyki). Jeśli zmiana odżywki nie pomaga, idź do dermatologa.',
+    coDalej: 'Zobacz <a href="wpc-vs-wpi-vs-hydrolizat">różnice WPC/WPI/hydrolizat</a> i <a href="suplementacja-bialka-czy-wpc-wpi-potrzebne">czy odżywka jest ci potrzebna</a>.'
+});
+defs.push({
+    slug: 'ile-bialka-wchlaniamy-z-jednego-posilku',
+    emoji: '🤔',
+    title: 'Ile białka wchłaniamy z jednego posiłku?',
+    subtitle: 'Mit „tylko 30 g na raz” pod lupą — ile naprawdę wykorzystuje organizm.',
+    meta: 'Ile białka wchłonie się z jednego posiłku: mit 30 g, tempo trawienia i praktyka dla trenujących.',
+    crumb: 'Ile białka z posiłku',
+    category: 'bialko',
+    relatedHtml: '<a href="leucyna-prog-anaboliczny">próg anaboliczny</a> · <a href="mity-o-bialku">mity</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Legenda o „maksymalnie 30 g białka na posiłek” to uproszczenie. Organizm wykorzysta też większe porcje — wolniej i częściowo na inne cele.',
+    sections: [
+        { h2: 'Skąd 30 g', p: 'Wynika z badań, że synteza mięśni osiąga szczyt przy 20–40 g białka na posiłek. Więcej nie podbija budowy mięśni, ale nadal jest wchłaniane.' },
+        { h2: 'Co z nadmiarem', p: 'Nadwyżka nie „znika”. Organizm spala ją jako energię, zużywa na inne tkanki lub chwilowo magazynuje. Nie oznacza to, że białko się marnuje.' },
+        { h2: 'Praktyka', p: 'Optymalnie dla mięśni: 3–5 porcji po 20–40 g. Ale jeden większy posiłek (np. stek na 60 g) nie jest stratą — tylko mniej optymalnym rozkładem.' }
+    ],
+    bullets: [
+        '<strong>Na mięśnie:</strong> 20–40 g/porcję to optimum.',
+        '<strong>Więcej:</strong> nie szkodzi, nie przyspiesza.',
+        '<strong>Rozkład:</strong> 3–5 porcji wygrywa.',
+    ],
+    uwaga: 'Osoby na 1–2 posiłkach dziennie (IF) też budują mięśnie, jeśli tygodniowa suma białka i kalorie się zgadzają — rozkład to optymalizacja, nie warunek.',
+    coDalej: 'Czytaj <a href="leucyna-prog-anaboliczny">o progu anabolicznym</a> i <a href="mity-o-bialku">obalonych mitach</a>.'
+});
+defs.push({
+    slug: 'bialko-nocne-mps-podczas-snu',
+    emoji: '🌙',
+    title: 'Białko przed snem — nocna synteza mięśni',
+    subtitle: 'Czy kazeina albo twaróg na noc realnie pomaga regenerować mięśnie.',
+    meta: 'Białko przed snem: kazeina, twaróg i synteza białek podczas snu — co mówią badania.',
+    crumb: 'Białko przed snem',
+    category: 'bialko',
+    relatedHtml: '<a href="leucyna-prog-anaboliczny">leucyna</a> · <a href="ile-bialka-na-dzien">ile białka</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Według <a href="https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8" target="_blank" rel="noopener">ISSN</a> 30–40 g białka przed snem podnosi nocną syntezę białek mięśniowych — zwłaszcza po wieczornym treningu.',
+    sections: [
+        { h2: 'Dlaczego działa', p: 'W nocy organizm jest w naturalnym „poście”. Porcja z kazeiną lub twarogiem uwalnia aminokwasy powoli, karmiąc mięśnie przez kilka godzin.' },
+        { h2: 'Kazeina czy twaróg', p: 'Kazeina trawi się wolno, ale chudy twaróg robi to samo i jest tańszy. 150–250 g twarogu dostarcza 20–30 g białka i działa porównywalnie.' },
+        { h2: 'Kiedy ma sens', p: 'Największa korzyść, gdy trenujesz wieczorem i masz wąskie okno do snu. Przy dobrze rozłożonym białku w ciągu dnia to opcjonalny bonus.' }
+    ],
+    bullets: [
+        '<strong>Porcja:</strong> 30–40 g białka przed snem.',
+        '<strong>Źródło:</strong> chudy twaróg lub kazeina.',
+        '<strong>Warto:</strong> zwłaszcza przy wieczornych treningach.',
+    ],
+    uwaga: 'Dodatkowa porcja przed snem to dodatkowe kalorie — na mocnym deficycie wlicz ją do budżetu, nie dokładaj „na wierzch”.',
+    coDalej: 'Policz <a href="ile-bialka-na-dzien">dzienne białko</a> i porównaj <a href="cena-bialka">koszt twarogu vs kazeiny</a>.'
+});
+defs.push({
+    slug: 'bialko-dla-biegaczy-i-kolarzy',
+    emoji: '🚴',
+    title: 'Białko dla biegaczy i kolarzy',
+    subtitle: 'Ile białka potrzebują sportowcy wytrzymałościowi i dlaczego nie tylko węglowodany.',
+    meta: 'Białko w sportach wytrzymałościowych: dawki, regeneracja i ochrona mięśni u biegaczy.',
+    crumb: 'Białko dla wytrzymałych',
+    category: 'bialko',
+    relatedHtml: '<a href="ile-bialka-na-dzien">ile białka</a> · <a href="weglowodany-proste-vs-zlozone">węglowodany</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Wytrzymałościowcy często zaniżają białko, skupiając się na węglowodanach. Tymczasem to białko naprawia włókna mięśniowe niszczone kilometrami.',
+    sections: [
+        { h2: 'Ile jeść', p: 'Dla biegaczy i kolarzy sprawdza się ok. 1,4–1,8 g/kg, a przy wysokiej objętości i redukcji — bliżej 1,8–2,0 g/kg.' },
+        { h2: 'Nie tylko węgle', p: 'Białko wspiera naprawę mięśni po długich wybieganiach i pomaga utrzymać masę przy dużej ilości cardio. Chroni też odporność w intensywnych blokach.' },
+        { h2: 'Timing', p: '30–40 g po treningu przyspiesza regenerację. Połącz z węglowodanami (ryż z kurczakiem), żeby uzupełnić glikogen i zbudować mięśnie.' }
+    ],
+    bullets: [
+        '<strong>Dawka:</strong> 1,4–2,0 g/kg.',
+        '<strong>Po treningu:</strong> białko + węglowodany.',
+        '<strong>Regularnie:</strong> nie tylko w dzień startu.',
+    ],
+    uwaga: 'Kalorie z białka nie mogą wypierać węglowodanów przy dużym kilometrażu — węgle to główne paliwo. Chodzi o dodanie białka, nie zastąpienie.',
+    coDalej: 'Sprawdź <a href="weglowodany-proste-vs-zlozone">proste vs złożone węglowodany</a> i <a href="elektrolity-co-i-kiedy">elektrolity</a>.'
+});
+defs.push({
+    slug: 'kurczak-vs-wolowina-vs-wieprzowina',
+    emoji: '🍖',
+    title: 'Kurczak, wołowina, wieprzowina — porównanie',
+    subtitle: 'Białko, kalorie i mikroelementy trzech podstaw dietetycznych mięs.',
+    meta: 'Kurczak, wołowina i wieprzowina: porównanie białka, kalorii, żelaza i kwasów tłuszczowych.',
+    crumb: 'Kurczak vs wołowina vs wieprzowina',
+    category: 'bialko',
+    relatedHtml: '<a href="ryby-i-owoce-morza-jako-zrodlo-bialka">ryby</a> · <a href="ile-bialka-na-dzien">ile białka</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Trzy podstawowe mięsa różnią się nie tyle ilością białka, co kaloriami, żelazem i rodzajem tłuszczu.',
+    sections: [
+        { h2: 'Pierś z kurczaka', p: 'Ok. 21–23 g białka na 100 g i zaledwie ~120 kcal. Chuda, uniwersalna, idealna na redukcji. Udko ma więcej tłuszczu i smaku.' },
+        { h2: 'Wołowina', p: '20–26 g białka i więcej kcal (chuda ~130–150). Bogata w żelazo hemowe i witaminę B12. Wybieraj chude kawałki, ograniczaj przetworzoną.' },
+        { h2: 'Wieprzowina', p: 'Schab i polędwica są chude (ok. 21 g białka), ale boczek i karkówka — tłuste. Często tańsza, trzeba patrzeć na partie.' }
+    ],
+    bullets: [
+        '<strong>Redukcja:</strong> pierś, chuda wołowina, polędwica.',
+        '<strong>Żelazo:</strong> wołowina wygrywa.',
+        '<strong>Rotacja:</strong> różne mięsa = różne mikro.',
+    ],
+    uwaga: 'Przetworzone mięso (kabanosy, parówki, boczek) wiąże się z gorszymi wynikami zdrowotnymi — trzymaj je jako rzadki dodatek.',
+    coDalej: 'Zobacz <a href="ryby-i-owoce-morza-jako-zrodlo-bialka">ryby jako białko</a> i <a href="jajka-ile-bialka-i-cholesterol">porównanie z jajkami</a>.'
+});
+defs.push({
+    slug: 'jajka-ile-bialka-i-cholesterol',
+    emoji: '🥚',
+    title: 'Jajka — ile białka, a co z cholesterolem',
+    subtitle: 'Czy cholesterol w jajkach szkodzi, i dlaczego jajko to wzorcowe białko.',
+    meta: 'Jajka: zawartość białka, cholesterol z diety i dlaczego jajko to złoty standard aminokwasów.',
+    crumb: 'Jajka i cholesterol',
+    category: 'bialko',
+    relatedHtml: '<a href="kurczak-vs-wolowina-vs-wieprzowina">mięsa</a> · <a href="ile-bialka-na-dzien">ile białka</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Jajko zawiera ~6 g białka o niemal idealnym profilu aminokwasowym. A strach przed cholesterolem z jajek okazał się przesadzony.',
+    sections: [
+        { h2: 'Białko i PDCAAS', p: 'Białko jaja to jeden z najwyżej ocenianych wzorców (PDCAAS = 1,0). Idealna proporcja aminokwasów egzogennych — stąd bywa punktem odniesienia.' },
+        { h2: 'Cholesterol z diety', p: 'U większości ludzi cholesterol z jedzenia ma mniejszy wpływ na krew niż tłuszcze nasycone i trans. Jajka nie podnoszą ryzyka sercowego tak, jak sądzono.' },
+        { h2: 'Ile jeść', p: '2–3 jajka dziennie są bezpieczne dla zdrowych. Przy problemach z lipidami warto porozmawiać z lekarzem i pilnować całości diety.' }
+    ],
+    bullets: [
+        '<strong>Białko:</strong> 6 g na duże jajko.',
+        '<strong>Profil:</strong> wzorcowy dla aminokwasów.',
+        '<strong>Bezpiecznie:</strong> 2–3 dziennie u zdrowych.',
+    ],
+    uwaga: 'Osoby z cukrzycą lub zaburzeniami lipidowymi powinny podejść do liczby jajek indywidualnie — z lekarzem, nie z internetu.',
+    coDalej: 'Porównaj <a href="kurczak-vs-wolowina-vs-wieprzowina">mięsa</a> i sprawdź <a href="cena-bialka">koszt jajek za 100 g białka</a>.'
+});
+defs.push({
+    slug: 'ryby-i-owoce-morza-jako-zrodlo-bialka',
+    emoji: '🐟',
+    title: 'Ryby i owoce morza — białko i omega-3',
+    subtitle: 'Ile białka w łososiu, tuńczyku i krewetkach oraz dlaczego jeść ryby dwa razy w tygodniu.',
+    meta: 'Ryby i owoce morza: białko, omega-3, rtęć i ile ryb jeść tygodniowo.',
+    crumb: 'Ryby i owoce morza',
+    category: 'bialko',
+    relatedHtml: '<a href="kurczak-vs-wolowina-vs-wieprzowina">mięsa</a> · <a href="omega-3-dha-epa-ile">omega-3</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Ryby i owoce morza to nie tylko białko, ale też EPA i DHA — kwasy omega-3, których w polskiej diecie zwykle brakuje.',
+    sections: [
+        { h2: 'Ile białka', p: 'Łosoś ~20 g/100 g, tuńczyk ~25 g, krewetki ~20–24 g przy bardzo niskiej kaloryczności. Ryby to chude, pełnowartościowe białko.' },
+        { h2: 'Omega-3', p: 'Tłuste ryby (łosoś, makrela, śledź) dostarczają EPA i DHA, które wspierają serce, mózg i stan zapalny. Zalecenie to min. 2 porcje ryb tygodniowo.' },
+        { h2: 'Na co uważać', p: 'Duże drapieżniki (miecznik, rekin) kumulują rtęć — ograniczaj. Tuńczyk z puszki jedz z umiarem, a łososia i makrelę częściej.' }
+    ],
+    bullets: [
+        '<strong>Cel:</strong> min. 2 porcje tłustych ryb/tydzień.',
+        '<strong>Białko:</strong> 20–25 g/100 g u większości.',
+        '<strong>Rtęć:</strong> unikaj miecznika i rekina.',
+    ],
+    uwaga: 'Krewetki i skorupiaki to częsty alergen. Omega-3 możesz brać z suplementu, ale ryby dają przy okazji selen i witaminę D.',
+    coDalej: 'Czytaj <a href="omega-3-dha-epa-ile">ile omega-3 potrzebujesz</a> i porównaj <a href="zrodla-bialka-auchan">ryby w Auchan</a>.'
+});
+defs.push({
+    slug: 'budzetowe-zrodla-bialka-taniej-niz-odzywka',
+    emoji: '💰',
+    title: 'Budżetowe źródła białka — taniej niż odżywka',
+    subtitle: 'Twaróg, jaja i strączki: jak domknąć białko za mniej niż suplement.',
+    meta: 'Tanie źródła białka: twaróg, jaja, strączki i wątróbka — cena za 100 g białka bez odżywki.',
+    crumb: 'Budżetowe źródła białka',
+    category: 'bialko',
+    relatedHtml: '<a href="cena-bialka">cena białka</a> · <a href="produkty-bialkowe-czy-oplacalne">czy się opłacają</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Odżywka jest wygodna, ale w przeliczeniu na 100 g białka często przegrywa z prostymi produktami spożywczymi.',
+    sections: [
+        { h2: 'Twaróg i jaja', p: 'Chudy twaróg i jaja to zwykle najtańsze pełnowartościowe białko w sklepach. Są syte, tanie i uniwersalne — ciężko o lepszy stosunek ceny do grama.' },
+        { h2: 'Strączki', p: 'Ciecierzyca, fasola i soczewica są tanie, choć białko mają mniej skoncentrowane i nieco słabiej przyswajalne. Świetne jako baza tanich posiłków.' },
+        { h2: 'Wątróbka i podroby', p: 'Bardzo tanie i bogate w białko, żelazo i B12. Polaryzują smakowo, ale dla budżetowych diet to konkretne wzmocnienie.' }
+    ],
+    bullets: [
+        '<strong>Najtaniej:</strong> twaróg, jaja, śledź.',
+        '<strong>Roślinnie:</strong> soczewica, ciecierzyca.',
+        '<strong>Odżywka:</strong> jako wygoda, nie ratunek.',
+    ],
+    uwaga: 'Tanie nie znaczy zawsze chude — pilnuj kalorii w tłustych serach i mięsach. Licz białko na 100 g i 100 kcal, nie „na paczkę”.',
+    coDalej: 'Policz <a href="cena-bialka">koszt za 100 g białka</a> i <a href="produkty-bialkowe-czy-oplacalne">czy produkty „protein” się opłacają</a>.'
+});
 
 const articles = defs.map(buildArticle);
 const out = path.join(__dirname, 'hardcore-articles-batch5.json');
