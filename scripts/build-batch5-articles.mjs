@@ -39,11 +39,16 @@ function buildArticle(a) {
 
 const defs = [];
 
-//_SLOT1_
-//_SLOT2_
-//_SLOT3_
-//_SLOT4_
-//_SLOT5_
+//_A1_
+//_A2_
+//_A3_
+//_A4_
+//_A5_
+//_A6_
+//_A7_
+//_A8_
+//_A9_
+//_A10_
 
 const articles = defs.map(buildArticle);
 const out = path.join(__dirname, 'hardcore-articles-batch5.json');
