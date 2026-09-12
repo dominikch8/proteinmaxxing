@@ -14,6 +14,8 @@ const rawPath = path.join(root, 'js', 'products-data-raw.js');
 const retailPath = path.join(__dirname, 'retail-prices-pl.json');
 
 const retail = JSON.parse(fs.readFileSync(retailPath, 'utf8'));
+const overridePath = path.join(__dirname, 'price-overrides.json');
+const overrides = JSON.parse(fs.readFileSync(overridePath, 'utf8')).pricePerKg || {};
 const MIN_PROTEIN = retail.minProteinPer100g ?? 5;
 
 const src = fs.readFileSync(rawPath, 'utf8');
