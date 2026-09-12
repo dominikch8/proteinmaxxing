@@ -144,14 +144,6 @@ const DICT = {
     gorgonzola: 'gorgonzola blue cheese',
 };
 
-const delayMs = argVal('delay') !== null ? Number(argVal('delay')) : 5500;
-const force = hasFlag('--force');
-const pilot = hasFlag('--pilot');
-const wantWebp = !hasFlag('--no-webp');
-const OUT_DIR = pilot ? previewDir : productsDir;
-    gorgonzola: 'gorgonzola blue cheese',
-};
-
 /* ── Wskazówki kategorii (angielskie) ──────────────────────────────────── */
 const CAT_HINT = {
     warzywa: 'fresh vegetable',
