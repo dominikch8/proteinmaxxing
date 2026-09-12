@@ -143,3 +143,97 @@ const force = hasFlag('--force');
 const pilot = hasFlag('--pilot');
 const wantWebp = !hasFlag('--no-webp');
 const OUT_DIR = pilot ? previewDir : productsDir;
+    gorgonzola: 'gorgonzola blue cheese',
+};
+
+/* ── Wskazówki kategorii (angielskie) ──────────────────────────────────── */
+const CAT_HINT = {
+    warzywa: 'fresh vegetable',
+    owoce: 'fresh fruit',
+    nabial: 'dairy product',
+    sery: 'cheese product',
+    mieso: 'meat or fish food product',
+    zboza: 'grain bakery cereal product',
+    'platki-sniadaniowe': 'breakfast cereal',
+    makarony: 'pasta dish',
+    zupy: 'soup in white bowl',
+    orzechy: 'nuts or seeds',
+    tluszcze: 'cooking fat or oil',
+    sosy: 'sauce condiment',
+    przyprawy: 'dry spice seasoning',
+    napoje: 'beverage drink in glass',
+    alkohole: 'alcoholic drink in glass',
+    slodycze: 'sweet snack dessert',
+    batony: 'chocolate candy bar',
+    'batony-proteinowe': 'protein bar',
+    'polskie-obiadki': 'Polish cooked dish on plate',
+    'mrozone-pizze': 'whole round pizza',
+    fastfood: 'fast food item',
+};
+
+/* ── Narzędzia tekstowe ────────────────────────────────────────────────── */
+function deaccent(s) {
+    return String(s)
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/ł/g, 'l');
+}
+
+/** Zamienia polską nazwę na w miarę sensowny angielski subject. */
+function englishSubject(name) {
+    const raw = name.replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim();
+    const lower = deaccent(raw);
+    const parts = [];
+    const used = new Set();
+    const keys = Object.keys(DICT).sort((a, b) => b.length - a.length);
+    for (const key of keys) {
+        if (lower.includes(key)) {
+            parts.push(DICT[key]);
+            used.add(key);
+        }
+    }
+    if (!parts.length) return raw;
+    let rest = lower;
+    for (const key of used) rest = rest.split(key).join(' ');
+    const extra = rest
+        .split(/[\s,/-]+/)
+        .filter((w) => w.length > 2)
+        .slice(0, 4)
+        .join(' ')
+        .trim();
+    return extra ? `${parts.join(' ')} (${extra})` : parts.join(' ');
+}
+
+function buildPrompt(p) {
+    const override = FOOD_SUBJECT[p.slug];
+    const subject = override || englishSubject(p.name);
+    const hint = override ? '' : `, ${CAT_HINT[p.category] || 'food product'}`;
+    return (
+        `Photorealistic minimalist e-commerce food photo of ${subject}${hint}. ` +
+        `Exact edible food or drink product only, single neat portion, centered. ` +
+        `Pure solid white background #FFFFFF, no shadow, no drop shadow, no reflection, empty white margins. ` +
+        `If a bowl, glass, plate or jar is shown keep the whole vessel fully visible. ` +
+        `No text, no labels, no logos, no watermark, no people, no hands, no animals, no busy props. ` +
+        `Sharp realistic detail, correct anatomy, no AI deformities.`
+    );
+}
+
+function seedFromSlug(slug) {
+    return crypto.createHash('md5').update(`proteiner-v1-${slug}`).digest().readUInt32BE(0) % 2147483646;
+}
+
+function sleep(ms) {
+    return new Promise((r) => setTimeout(r, ms));
+}
+
+function log(msg) {
+    const line = `[${new Date().toISOString()}] ${msg}`;
+    console.log(line);
+    try {
+        fs.appendFileSync(logPath, line + '\n');
+    } catch {
+        /* ignore */
+    }
+}
+
