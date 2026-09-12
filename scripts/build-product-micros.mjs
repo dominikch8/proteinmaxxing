@@ -94,13 +94,13 @@ const OFF_FIELD = {
 
 function toGrams(value, unit) {
     if (value == null) return null;
-    if (!unit) return value;
+    if (!unit) return null; // brak jednostki — bezpieczniej pominąć niż zgadywać skalę
     const u = String(unit).toLowerCase().trim();
     if (u === 'g') return value;
     if (u === 'mg') return value / 1000;
     if (u === 'µg' || u === 'ug' || u === 'mcg') return value / 1e6;
     if (u === 'iu') return value; // IU — obsłużone osobno dla wit A poniżej
-    return value;
+    return null;
 }
 
 function mapOffNutriments(n) {
