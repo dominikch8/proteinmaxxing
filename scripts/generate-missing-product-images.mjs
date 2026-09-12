@@ -222,6 +222,84 @@ function buildPrompt(p) {
 function seedFromSlug(slug) {
     return crypto.createHash('md5').update(`proteiner-v1-${slug}`).digest().readUInt32BE(0) % 2147483646;
 }
+/* ── Pobieranie z Pollinations (z backoffem na 429) ────────────────────── */
+async function fetchPollinations(prompt, slug) {
+    const enc = encodeURIComponent(prompt.slice(0, 700));
+    const seed = seedFromSlug(slug);
+    const url = `https://image.pollinations.ai/prompt/${enc}?width=800&height=600&nologo=true&model=${model}&seed=${seed}`;
+    let lastErr;
+    for (let attempt = 0; attempt < 5; attempt++) {
+        if (attempt > 0) await sleep(4000 * attempt);
+        try {
+            const res = await fetch(url, {
+                headers: { 'User-Agent': UA, Referer: REFERER },
+                signal: AbortSignal.timeout(120000),
+                redirect: 'follow',
+            });
+            if (res.status === 429) throw new Error('HTTP 429 (rate limit)');
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const buf = Buffer.from(await res.arrayBuffer());
+            if (buf.length < 4000) throw new Error('plik za mały');
+            return buf;
+        } catch (e) {
+            lastErr = e;
+        }
+    }
+    throw lastErr;
+}
+
+/* ── Wycięcie tła + zapis PNG/JPG/WebP ─────────────────────────────────── */
+async function toCutoutPng(sharp, inputBuf) {
+    const resized = await sharp(inputBuf)
+        .resize(800, 600, { fit: 'contain', background: { r: 255, g: 255, b: 255, alpha: 1 } })
+        .ensureAlpha()
+        .raw()
+        .toBuffer({ resolveWithObject: true });
+    let data = removeEdgeBackground(resized.data, resized.info.width, resized.info.height, 4, {
+        lumMin: 236,
+        satMax: 32,
+    });
+    data = defringeLightHalos(data, 4);
+    for (let i = 0; i < data.length; i += 4) {
+        if (data[i + 3] === 0) continue;
+        const r = data[i];
+        const g = data[i + 1];
+        const b = data[i + 2];
+        if (r >= 250 && g >= 250 && b >= 250) data[i + 3] = 0;
+        else if (r > 242 && g > 242 && b > 242) {
+            const whiteness = (r + g + b) / 3;
+            data[i + 3] = Math.max(0, Math.min(255, Math.round((255 - whiteness) * 10)));
+        }
+    }
+    return sharp(data, {
+        raw: { width: resized.info.width, height: resized.info.height, channels: 4 },
+    })
+        .png({ compressionLevel: 9 })
+        .toBuffer();
+}
+
+async function writeProduct(sharp, slug, inputBuf) {
+    const png = await toCutoutPng(sharp, inputBuf);
+    const jpg = await sharp(png)
+        .flatten({ background: { r: 255, g: 255, b: 255 } })
+        .jpeg({ quality: 90, mozjpeg: true })
+        .toBuffer();
+    const webp = wantWebp
+        ? await sharp(png).webp({ quality: 82, alphaQuality: 90, effort: 4 }).toBuffer()
+        : null;
+
+    const targets = pilot
+        ? [previewDir]
+        : [productsDir, ...(fs.existsSync(path.dirname(bundleDir)) ? [bundleDir] : [])];
+
+    for (const dir of targets) {
+        fs.mkdirSync(dir, { recursive: true });
+        fs.writeFileSync(path.join(dir, `${slug}.png`), png);
+        fs.writeFileSync(path.join(dir, `${slug}.jpg`), jpg);
+        if (webp) fs.writeFileSync(path.join(dir, `${slug}.webp`), webp);
+    }
+}
+
 
 function sleep(ms) {
     return new Promise((r) => setTimeout(r, ms));
