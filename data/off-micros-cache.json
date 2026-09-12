@@ -153,5 +153,30 @@
   "salata-maslowa": {},
   "szpinak-swiezy": {},
   "brokuly": {},
-  "kalafior": {}
+  "kalafior": {},
+  "baklazan": {},
+  "cukinia": {},
+  "dynia-miazsz": {},
+  "fasolka-szparagowa": {},
+  "groszek-zielony": {},
+  "kukurydza-konserwowa": {},
+  "rzodkiewka": {},
+  "rukola": {},
+  "jarmuz": {
+    "vitA": 781,
+    "vitC": 66,
+    "vitK": 18,
+    "calcium": 253,
+    "sodium": 44
+  },
+  "pieczarka": {},
+  "ciecierzyca-gotowana": {},
+  "soczewica-czerwona-gotowana": {},
+  "fasola-biala-gotowana": {},
+  "jablko": {},
+  "banan": {
+    "vitA": 300,
+    "vitC": 24,
+    "sodium": 16
+  }
 }
