@@ -269,11 +269,236 @@ defs.push({
     uwaga: 'Samo białko nie „spala tłuszczu” bez deficytu. To wzmocnienie, nie zastępstwo ujemnego bilansu kalorii.',
     coDalej: 'Policz <a href="ile-bialka-na-dzien">ile białka jeść</a> i zobacz <a href="termogeneza-odzywiania-tef">dlaczego białko spala więcej</a>.'
 });
-//_A6_
-//_A7_
-//_A8_
-//_A9_
-//_A10_
+defs.push({
+    slug: 'gestosc-energetyczna-jedzenia',
+    emoji: '🥗',
+    title: 'Gęstość energetyczna — jeść więcej, ważyć mniej',
+    subtitle: 'Jak dobierać jedzenie o niskiej gęstości kalorycznej, by jeść duże porcje i chudnąć.',
+    meta: 'Gęstość energetyczna jedzenia: jak jeść duże porcje na małej liczbie kalorii.',
+    crumb: 'Gęstość energetyczna',
+    category: 'odchudzanie',
+    relatedHtml: '<a href="volume-eating-jak-jesc-duzo-i-chudnac">volume eating</a> · <a href="blonnik-ile-i-po-co">błonnik</a> · <a href="artykuly">artykuły</a>',
+    lead: 'To samo 300 kcal może ważyć 80 g czekolady albo ponad kilogram warzyw. Wybór jedzenia o niskiej gęstości energetycznej to najprostszy sposób na sytość w deficycie.',
+    sections: [
+        { h2: 'Co to jest', p: 'Gęstość energetyczna to kcal na gram jedzenia. Woda i błonnik rozrzedzają kalorie — dlatego warzywa, owoce i zupy są „lekkie”, a tłuszcz i cukier gęste.' },
+        { h2: 'Dlaczego działa', p: 'Ludzie jedzą zwykle podobną wagę jedzenia dziennie. Jeśli ta waga ma mniej kalorii, jesz tyle samo objętościowo, a chudniesz bez głodu.' },
+        { h2: 'Jak to robić', p: 'Zaczynaj posiłek od warzyw, dodawaj zup i sałatek, wybieraj chudsze białka, a tłuszcze i cukier traktuj jako dodatek, nie bazę talerza.' }
+    ],
+    bullets: [
+        '<strong>Warzywa:</strong> połowa talerza.',
+        '<strong>Zupy i sałatki:</strong> na start posiłku.',
+        '<strong>Chude białko:</strong> syci przy niskiej gęstości.',
+    ],
+    uwaga: 'Niska gęstość nie znaczy zero kalorii — orzechy i awokado są gęste, ale zdrowe. Chodzi o proporcje, nie o eliminację tłuszczu w ogóle.',
+    coDalej: 'Zobacz <a href="volume-eating-jak-jesc-duzo-i-chudnac">volume eating</a> i <a href="blonnik-ile-i-po-co">ile błonnika</a>.'
+});
+defs.push({
+    slug: 'plynne-kalorie-napoje-a-waga',
+    emoji: '🥤',
+    title: 'Płynne kalorie — napoje a waga',
+    subtitle: 'Dlaczego soki, słodkie napoje i kalorie w płynie tak łatwo rozbijają dietę.',
+    meta: 'Płynne kalorie: dlaczego napoje słodzone sabotażują odchudzanie i jak je ograniczać.',
+    crumb: 'Płynne kalorie',
+    category: 'odchudzanie',
+    relatedHtml: '<a href="fruktoza-i-owoce-mit">fruktoza</a> · <a href="slodziki-sa-bezpieczne">słodziki</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Kalorie w płynie nie sycą tak jak jedzenie — organizm ledwo je rejestruje, a ty pijesz setki kcal „przy okazji”.',
+    sections: [
+        { h2: 'Brak sytości', p: 'Płyny przechodzą przez żołądek szybko i nie dają uczucia najedzenia. Wypicie 150 kcal soku nie zmniejszy tego, ile zjesz potem.' },
+        { h2: 'Gdzie się chowają', p: 'Soki, słodkie napoje, kawa z syropem, smoothie, alkohol, a nawet „zdrowe” shotsy. W pół litra coli to ponad 200 kcal.' },
+        { h2: 'Zamiana', p: 'Woda, herbata, napoje zero, kawa bez cukru. Smoothie traktuj jak posiłek, nie napój — i licz go do kalorii.' }
+    ],
+    bullets: [
+        '<strong>Zamień:</strong> słodkie na wodę i napoje zero.',
+        '<strong>Smoothie:</strong> to posiłek, policz go.',
+        '<strong>Alkohol:</strong> też kalorie, nie ignoruj.',
+    ],
+    uwaga: 'Białko w płynie (np. shake) syci bardziej niż sok, ale nadal mniej niż stały posiłek. Płyny nie są złe — są łatwe do „przegapienia”.',
+    coDalej: 'Zobacz <a href="fruktoza-i-owoce-mit">fruktozę i owoce</a> i <a href="slodziki-sa-bezpieczne">napojowe słodziki</a>.'
+});
+defs.push({
+    slug: 'glod-wieczorny-strategie',
+    emoji: '🌙',
+    title: 'Wieczorny głód — jak sobie z nim radzić',
+    subtitle: 'Dlaczego wieczorem ciągnie na przekąski i jak ułożyć dzień, żeby nie kończyć go w szafce.',
+    meta: 'Wieczorny głód: przyczyny i strategie, żeby nie kończyć dnia podjadaniem.',
+    crumb: 'Wieczorny głód',
+    category: 'odchudzanie',
+    relatedHtml: '<a href="jedzenie-w-nocy-czy-mozna">jedzenie w nocy</a> · <a href="dieta-wysokobialkowa-a-redukcja-dowody">sytość białka</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Wieczorne podjadanie to zwykle skutek zbyt małego jedzenia w dzień i nudy — a nie braku „silnej woli”.',
+    sections: [
+        { h2: 'Skąd się bierze', p: 'Za mało białka i błonnika w dzień, pomijanie śniadania, stres lub zwykły nawyk „coś do serialu”. Głód fizyczny i nawyk to dwie różne rzeczy.' },
+        { h2: 'Ułóż dzień', p: 'Solidne śniadanie i białko w każdym posiłku stabilizują apetyt. Kolację zostaw sycącą (białko + warzywa), zamiast robić ją skromną.' },
+        { h2: 'Na koniec dnia', p: 'Zaplanuj niskokaloryczną „ostatnią przekąskę”: skyr, twaróg, warzywa z dipem. Jeśli masz plan, nie sięgasz po cokolwiek.' }
+    ],
+    bullets: [
+        '<strong>Białko:</strong> w każdym posiłku dnia.',
+        '<strong>Kolacja:</strong> sycąca, nie „najmniejsza”.',
+        '<strong>Plan:</strong> przygotuj niskokaloryczną przekąskę.',
+    ],
+    uwaga: 'Jeśli głód wieczorem jest silny i fizyczny, nie walcz z nim — zjedz zaplanowaną, lekką przekąskę. Deficyt budujesz całą dobą, nie jedną kolacją.',
+    coDalej: 'Zobacz <a href="jedzenie-w-nocy-czy-mozna">czy można jeść w nocy</a> i <a href="dieta-wysokobialkowa-a-redukcja-dowody">sytość białka</a>.'
+});
+defs.push({
+    slug: 'leptyna-i-glod-po-redukcji',
+    emoji: '⚖️',
+    title: 'Leptyna i głód po redukcji',
+    subtitle: 'Dlaczego po schudnięciu jesteś głodniejszy i jak hormony bronią utraconej wagi.',
+    meta: 'Leptyna i głód po redukcji: jak hormony zwiększają apetyt po schudnięciu.',
+    crumb: 'Leptyna i głód po redukcji',
+    category: 'odchudzanie',
+    relatedHtml: '<a href="set-point-czy-organizm-broni-wagi">set point</a> · <a href="efekt-jojo-jak-go-uniknac">jo-jo</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Po utracie wagi organizm podnosi głód i obniża sytość — m.in. spada leptyna. To biologiczny odruch, nie porażka charakteru.',
+    sections: [
+        { h2: 'Co robi leptyna', p: 'Leptyna to hormon sytości wydzielany przez tkankę tłuszczową. Gdy tłuszczu ubywa, leptyny jest mniej, więc mózg częściej dostaje sygnał „jedz”.' },
+        { h2: 'Głodniejszy po redukcji', p: 'Badania pokazują, że po schudnięciu apetyt realnie rośnie, a wydatek spada. Organizm „chce” wrócić do poprzedniej masy.' },
+        { h2: 'Jak to przetrwać', p: 'Wychodzenie z diety powoli, dyf. odwrotna dieta, dużo białka i błonnika oraz sen łagodzą efekt. Unikaj gwałtownego powrotu do starych nawyków.' }
+    ],
+    bullets: [
+        '<strong>Leptyna:</strong> spada razem z tłuszczem.',
+        '<strong>Po redukcji:</strong> apetyt rośnie — to normalne.',
+        '<strong>Wyjdź powoli:</strong> stopniowo zwiększaj kalorie.',
+    ],
+    uwaga: '„Odwrotna dieta” i wolny powrót kalorii to nie czary — po prostu dają organizmowi czas na przestawienie sygnałów głodu.',
+    coDalej: 'Zobacz <a href="set-point-czy-organizm-broni-wagi">teorię set point</a> i <a href="efekt-jojo-jak-go-uniknac">jak uniknąć jo-jo</a>.'
+});
+defs.push({
+    slug: 'set-point-czy-organizm-broni-wagi',
+    emoji: '🎯',
+    title: 'Set point — czy organizm broni wagi?',
+    subtitle: 'Teoria „punktu nastawczego” i ile w niej prawdy, a ile wymówki.',
+    meta: 'Teoria set point: czy organizm broni ustalonej wagi i co to znaczy dla odchudzania.',
+    crumb: 'Set point',
+    category: 'odchudzanie',
+    relatedHtml: '<a href="leptyna-i-glod-po-redukcji">leptyna</a> · <a href="efekt-jojo-jak-go-uniknac">jo-jo</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Według teorii set point organizm „celuje” w pewną wagę i broni jej głodem oraz spadkiem metabolizmu. Część prawdy w tym jest, ale to nie wyrok.',
+    sections: [
+        { h2: 'Na czym polega', p: 'Organizm ma mechanizmy utrzymujące wagę: gdy chudniesz, rośnie głód, a wydatek spada. Stąd wrażenie, że ciało „walczy”, by wrócić.' },
+        { h2: 'Czy to stałe', p: 'Set point bywa „przesuwalny” — powolne, trwałe zmiany nawyków potrafią go przestawić. Gwałtowne diety cud raczej go utrwalają.' },
+        { h2: 'Co robić', p: 'Traktuj to jako powód do cierpliwości, nie do rezygnacji. Wolniejsza redukcja i utrzymanie przez miesiące realnie obniżają „broniony” poziom.' }
+    ],
+    bullets: [
+        '<strong>Set point:</strong> elastyczny, nie stały.',
+        '<strong>Powoli:</strong> stopniowe zmiany go przesuwają.',
+        '<strong>Cierpliwość:</strong> utrzymanie > szybka redukcja.',
+    ],
+    uwaga: 'Set point to nie „genetyczne fatum”. Wymówka „mam taki set point” rzadziej dotyczy biologii, a częściej nawyków i kalorii.',
+    coDalej: 'Zobacz <a href="leptyna-i-glod-po-redukcji">leptynę i głód</a> i <a href="efekt-jojo-jak-go-uniknac">jak uniknąć jo-jo</a>.'
+});
+defs.push({
+    slug: 'efekt-jojo-jak-go-uniknac',
+    emoji: '🪀',
+    title: 'Efekt jo-jo — jak go uniknąć',
+    subtitle: 'Dlaczego diety „na chwilę” kończą się powrotem wagi i jak schudnąć na stałe.',
+    meta: 'Efekt jo-jo: dlaczego się pojawia i jak schudnąć, żeby nie wrócić do poprzedniej wagi.',
+    crumb: 'Efekt jo-jo',
+    category: 'odchudzanie',
+    relatedHtml: '<a href="set-point-czy-organizm-broni-wagi">set point</a> · <a href="leptyna-i-glod-po-redukcji">głód po redukcji</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Jo-jo to powrót wagi po restrykcyjnej diecie. Wynika z połączenia głodu, spadku wydatku i powrotu do starych nawyków.',
+    sections: [
+        { h2: 'Dlaczego się pojawia', p: 'Ekstremalny deficyt i brak planu na „po” sprawiają, że po diecie wracasz do dawnych porcji — a organizm jeszcze wolniej spala. Stąd szybki odbity skok.' },
+        { h2: 'Czego unikać', p: 'Diet cud, bardzo niskich kalorii, wycinania całych grup. To nie uczą cię jeść na stałe — tylko przetrwać kilka tygodni.' },
+        { h2: 'Jak schudnąć na stałe', p: 'Umiarkowany deficyt, dużo białka, trening siłowy i stopniowe wyjście z diety. Waga ma być skutkiem nawyków, nie tymczasowego „wyścigu”.' }
+    ],
+    bullets: [
+        '<strong>Deficyt:</strong> umiarkowany, 300–500 kcal.',
+        '<strong>Siłownia:</strong> utrzymuje mięśnie i spalanie.',
+        '<strong>Plan „po”:</strong> utrzymanie, nie powrót.',
+    ],
+    uwaga: 'Szybkie wahania wagi tuż po diecie to często woda i glikogen, nie tłuszcz — nie panikuj przy pierwszym skoku, patrz na trend tygodniowy.',
+    coDalej: 'Zobacz <a href="leptyna-i-glod-po-redukcji">głód po redukcji</a> i <a href="set-point-czy-organizm-broni-wagi">set point</a>.'
+});
+defs.push({
+    slug: 'dieta-80-20-elastycznosc',
+    emoji: '🍕',
+    title: 'Dieta 80/20 — elastyczność bez wpadek',
+    subtitle: 'Czy „80% czysto, 20% luzu” działa i jak liczyć te 20% na poważnie.',
+    meta: 'Dieta 80/20: jak pogodzić zdrowe jedzenie z luzem i nie rozbić deficytu.',
+    crumb: 'Dieta 80/20',
+    category: 'odchudzanie',
+    relatedHtml: '<a href="schudnac-bez-liczenia-kalorii">bez liczenia</a> · <a href="efekt-jojo-jak-go-uniknac">jo-jo</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Zasada 80/20 pozwala jeść elastycznie — 80% kalorii z pożywnego jedzenia, 20% „na luz”. Problem w tym, że 20% łatwo niedoszacować.',
+    sections: [
+        { h2: 'Na czym polega', p: 'Nie chodzi o 80% objętości, a o kalorie lub dni. W praktyce: trzymasz bazę (białko, warzywa, pełne ziarno), a resztę przeznaczasz na przyjemności.' },
+        { h2: 'Dlaczego działa', p: 'Elastyczność zmniejsza ryzyko „wszystko albo nic”, przez które dieta pada po jednej czekoladzie. Duży wybór = łatwiej wytrwać.' },
+        { h2: 'Pułapka 20%', p: '20% dziennego budżetu to np. 400 kcal przy 2000 kcal. To mniej niż „duża pizza na wyrywki”. Warto choć z grubsza je pilnować.' }
+    ],
+    bullets: [
+        '<strong>Baza:</strong> 80% pożywnego jedzenia.',
+        '<strong>Luz:</strong> 20% kalorii, nie objętości.',
+        '<strong>Elastycznie:</strong> bez zasady „wszystko albo nic”.',
+    ],
+    uwaga: '80/20 to nie licencja na codzienny fast food. Jeśli 20% wymyka się spod kontroli, licz kalorie z „luźnej” puli konkretnie.',
+    coDalej: 'Zobacz <a href="schudnac-bez-liczenia-kalorii">jak chudnąć bez liczenia</a> i <a href="efekt-jojo-jak-go-uniknac">jak uniknąć jo-jo</a>.'
+});
+defs.push({
+    slug: 'schudnac-bez-liczenia-kalorii',
+    emoji: '🧠',
+    title: 'Jak schudnąć bez liczenia kalorii',
+    subtitle: 'Proste nawyki, które obniżą kaloryczność diety bez ważenia i aplikacji.',
+    meta: 'Schudnąć bez liczenia kalorii: sprawdzone nawyki, talerz i sygnały sytości.',
+    crumb: 'Chudnięcie bez liczenia',
+    category: 'odchudzanie',
+    relatedHtml: '<a href="dieta-80-20-elastycznosc">dieta 80/20</a> · <a href="gestosc-energetyczna-jedzenia">gęstość energetyczna</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Nie musisz ważyć jedzenia, by schudnąć — wystarczy zestaw nawyków, który naturalnie obniża liczbę zjadanych kalorii.',
+    sections: [
+        { h2: 'Metoda talerza', p: 'Połowa talerza warzywa, ćwierć białko, ćwierć węglowodany. Automatycznie kontroluje proporcje bez liczenia.' },
+        { h2: 'Gęstość i sytość', p: 'Wybieraj mniej kaloryczne gęstością produkty (warzywa, chude białko) i pilnuj porcji tłustych i słodkich. Sytość przy mniejszej kaloryczności.' },
+        { h2: 'Nawyki', p: 'Regularne posiłki, wolne jedzenie, bez napojów kalorycznych i podjadania z opakowania. Większość „diety” to właśnie te proste zasady.' }
+    ],
+    bullets: [
+        '<strong>Talerz:</strong> ½ warzyw, ¼ białka, ¼ węgli.',
+        '<strong>Pij:</strong> wodę i napoje bez kalorii.',
+        '<strong>Jedz:</strong> bez ekranu, wolno.',
+    ],
+    uwaga: 'Jeśli waga stoi 3 tygodnie, a ty „na pewno” jesz mało — jednak zmierz kilka dni. Bez liczenia łatwo o błąd, który blokuje efekt.',
+    coDalej: 'Zobacz <a href="gestosc-energetyczna-jedzenia">gęstość energetyczną</a> i <a href="dieta-80-20-elastycznosc">dietę 80/20</a>.'
+});
+defs.push({
+    slug: 'odstawienie-cukru-plan',
+    emoji: '🍬',
+    title: 'Jak odstawić cukier — plan krok po kroku',
+    subtitle: 'Dlaczego cukier bywa „uzależniający” i jak z nim wygrać na stałe, bez rzucania wszystkiego.',
+    meta: 'Odstawienie cukru: plan krok po kroku, żeby ograniczyć słodycze bez załamania.',
+    crumb: 'Odstawienie cukru',
+    category: 'odchudzanie',
+    relatedHtml: '<a href="slodziki-sa-bezpieczne">słodziki</a> · <a href="fruktoza-i-owoce-mit">owoce</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Cukier silnie angażuje układ nagrody, więc organizm się go „domaga”. Najskuteczniej wychodzi się stopniowo, nie zrywem.',
+    sections: [
+        { h2: 'Dlaczego ciągnie', p: 'Cukier daje szybki zastrzyk glukozy i dopaminy. Po skokach cukru pojawia się spadek i głód — stąd błędne koło. To nie brak silnej woli.' },
+        { h2: 'Zacznij od napojów', p: 'Słodzone napoje to najłatwiejszy i największy zysk. Zamiana na wodę i napoje zero potrafi zdjąć setki kcal dziennie.' },
+        { h2: 'Stopniowe redukcje', p: 'Ograniczaj porcje, nie rzucaj z dnia na dzień. Zamieniaj na owoce, gorzką czekoladę, jogurt naturalny z owocami. Pilnuj snu — niewyspanie podbija ochotę na cukier.' }
+    ],
+    bullets: [
+        '<strong>Najpierw:</strong> słodzone napoje.',
+        '<strong>Zamiany:</strong> owoce, gorzka czekolada.',
+        '<strong>Sen:</strong> niewyspanie = ochota na cukier.',
+    ],
+    uwaga: 'Całkowity „detoks” od węglowodanów jest zbędny — organizm potrzebuje glukozy. Celem jest ograniczenie dodanego cukru, nie owoców i kasz.',
+    coDalej: 'Zobacz <a href="slodziki-sa-bezpieczne">czy słodziki pomogą</a> i <a href="fruktoza-i-owoce-mit">owoce a fruktoza</a>.'
+});
+defs.push({
+    slug: 'metabolizm-przyspieszyc-fakty',
+    emoji: '🚀',
+    title: 'Czy można przyspieszyć metabolizm?',
+    subtitle: 'Co realnie podnosi przemianę materii, a co to tylko spalacze-tłuszczu marketing.',
+    meta: 'Przyspieszanie metabolizmu: co działa (ruch, mięśnie, białko), a co to marketing.',
+    crumb: 'Przyspieszenie metabolizmu',
+    category: 'odchudzanie',
+    relatedHtml: '<a href="czym-jest-metabolizm-i-rmr">metabolizm</a> · <a href="termogeneza-odzywiania-tef">TEF</a> · <a href="artykuly">artykuły</a>',
+    lead: 'Nie ma magicznego „przycisku” na metabolizm, ale są realne dźwignie: więcej ruchu, mięśni i białka. A spalacze tłuszczu zwykle to placebo.',
+    sections: [
+        { h2: 'Co działa', p: 'Więcej NEAT-u (kroki, stanie), trening siłowy podtrzymujący mięśnie i wysokobiałkowa dieta (TEF). To razem realnie podnosi dzienny wydatek.' },
+        { h2: 'Co nie działa', p: 'Większość „spalaczy” (L-karnityna, zielona kawa, tabletki na termogenezę) ma efekt znikomy lub żaden. Kofeina daje skromny, krótki impuls.' },
+        { h2: 'Ile to daje', p: 'Suma tych zmian to zwykle kilkaset kcal dziennie — zasięg, który faktycznie przekłada się na wagę. Więcej da się zrobić ruchem niż suplementem.' }
+    ],
+    bullets: [
+        '<strong>Kroki:</strong> 8–10 tys. dziennie.',
+        '<strong>Mięśnie:</strong> trening siłowy 2–3×/tydz.',
+        '<strong>Białko:</strong> wyższe TEF i sytość.',
+    ],
+    uwaga: 'Jeśli chcesz „przyspieszyć” metabolizm przez kofeinę — efekt jest niewielki i czasowy. Fundament to deficyt i ruch, nie suplementy.',
+    coDalej: 'Zobacz <a href="czym-jest-metabolizm-i-rmr">składowe metabolizmu</a> i <a href="termogeneza-odzywiania-tef">TEF</a>.'
+});
 
 const articles = defs.map(buildArticle);
 const out = path.join(__dirname, 'hardcore-articles-batch7.json');

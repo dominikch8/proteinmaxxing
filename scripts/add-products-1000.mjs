@@ -571,8 +571,8 @@ function slugify(name) {
 function r1(n) { return Math.round(n * 10) / 10; }
 
 function build(row) {
-    const [name, emoji, category, servingText, servingRatio, protein, carbs, fat, satFat, extra] = row;
-    const kcal = Math.round(protein * 4 + carbs * 4 + fat * 9);
+    const [name, emoji, category, servingText, servingRatio, protein, carbs, fat, satFat, extra, kcalOverride] = row;
+    const kcal = Number.isFinite(kcalOverride) ? kcalOverride : Math.round(protein * 4 + carbs * 4 + fat * 9);
     const sat = r1(satFat);
     const unsat = r1(Math.max(0, fat - satFat));
     const o = {
