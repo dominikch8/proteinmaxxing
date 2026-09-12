@@ -28,6 +28,7 @@ export const PURE_LEAN = [
     { re: /olej lniany/, n: { vitE: 0.5, vitK: 10 } },
     { re: /masło klarowane|ghee/, n: { vitA: 840, vitE: 2.8 } },
     { re: /sól kuchenna/, n: { sodium: 38758, iodine: 2000 } },
+    { re: /drożdże/, n: { b1: 0.9, b2: 1.5, b3: 12, b5: 4, b6: 0.4, b9: 700, calcium: 50, iron: 4, magnesium: 40, phosphorus: 250, potassium: 600, zinc: 8, selenium: 10, copper: 400, sodium: 50 } },
     { re: /ocet/, n: { sodium: 5, potassium: 15, calcium: 6, magnesium: 4 } },
 ];
 
