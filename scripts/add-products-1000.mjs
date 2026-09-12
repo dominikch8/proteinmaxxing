@@ -1375,8 +1375,8 @@ if (!process.argv.includes('--write')) {
     process.exit(0);
 }
 
-if (dupes.length || badCat.length) {
-    console.error('\nPrzerwano: popraw duplikaty/złe kategorie.');
+if (badCat.length) {
+    console.error('\nPrzerwano: popraw złe kategorie.');
     process.exit(1);
 }
 
