@@ -5,7 +5,14 @@
 
 .fun-fakty-page .page-hero {
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Keep the underline squiggle close to the title so the gap to the
+   category picker below stays even (no double spacing). */
+.fun-fakty-page .page-hero::after {
+    margin-top: 16px;
 }
 
 .fun-fakty-badge {
@@ -404,11 +411,11 @@
     z-index: 1;
     width: 100%;
     max-width: 620px;
-    margin: 0 0 26px;
+    margin: 24px auto 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
 .funfact-cats-label {
