@@ -175,3 +175,97 @@ if (fs.existsSync(queriesPath)) {
     const mod = await import(pathToFileURL(queriesPath).href);
     PRODUCT_SEARCH_QUERIES = mod.PRODUCT_SEARCH_QUERIES || {};
 }
+
+const formatsArg = process.argv.find((a) => a.startsWith('--formats='));
+const formats = new Set(
+    (formatsArg ? formatsArg.split('=')[1] : 'jpg,webp,png').split(',').map((s) => s.trim()).filter(Boolean)
+);
+const slugArgs = process.argv.filter((a) => a.startsWith('--slug=')).map((a) => a.slice(7));
+const limitArg = process.argv.find((a) => a.startsWith('--limit='));
+const limit = limitArg ? Number(limitArg.split('=')[1]) : Infinity;
+const delayMs = parseInt(process.argv.find((a) => a.startsWith('--delay='))?.split('=')[1] || '400', 10);
+const force = process.argv.includes('--force');
+
+function hasFiles(slug) {
+    return fs.existsSync(path.join(outDir, `${slug}.jpg`)) && fs.existsSync(path.join(outDir, `${slug}.webp`));
+}
+
+let todo = products;
+if (slugArgs.length) {
+    const set = new Set(slugArgs);
+    todo = products.filter((p) => set.has(p.slug));
+} else if (!force) {
+    todo = products.filter((p) => !hasFiles(p.slug));
+}
+if (limit !== Infinity) todo = todo.slice(0, limit);
+
+console.log(`Produktów: ${products.length} | do wygenerowania: ${todo.length} | formaty: ${[...formats].join(',')}`);
+if (!todo.length) process.exit(0);
+
+async function writeSet(slug, pngBuffer) {
+    if (formats.has('png')) fs.writeFileSync(path.join(outDir, `${slug}.png`), pngBuffer);
+    const jpg = await sharp(pngBuffer)
+        .flatten({ background: { r: 255, g: 255, b: 255 } })
+        .jpeg({ quality: 88, mozjpeg: true })
+        .toBuffer();
+    fs.writeFileSync(path.join(outDir, `${slug}.jpg`), jpg);
+    const webp = await sharp(pngBuffer)
+        .ensureAlpha()
+        .webp({ quality: 80, alphaQuality: 85, effort: 4 })
+        .toBuffer();
+    fs.writeFileSync(path.join(outDir, `${slug}.webp`), webp);
+
+    if (fs.existsSync(bundleDir)) {
+        if (formats.has('png')) fs.writeFileSync(path.join(bundleDir, `${slug}.png`), pngBuffer);
+        fs.writeFileSync(path.join(bundleDir, `${slug}.jpg`), jpg);
+        fs.writeFileSync(path.join(bundleDir, `${slug}.webp`), webp);
+    }
+}
+
+let ok = 0;
+let fail = 0;
+const failed = [];
+
+for (let i = 0; i < todo.length; i++) {
+    const p = todo[i];
+    const english = PRODUCT_SEARCH_QUERIES[p.slug]?.[0];
+    const prompt = encodeURIComponent(buildPrompt(p, english));
+    const seed = seedFromSlug(p.slug);
+    const url = `https://image.pollinations.ai/prompt/${prompt}?width=800&height=600&nologo=true&model=flux&seed=${seed}`;
+
+    process.stdout.write(`[${i + 1}/${todo.length}] ${p.slug} … `);
+    let lastErr = null;
+    for (let attempt = 0; attempt < 4; attempt++) {
+        if (attempt > 0) await sleep(3000 * attempt);
+        try {
+            const res = await fetch(url, {
+                headers: { 'User-Agent': UA, Referer: 'https://proteiner.pl/' },
+                signal: AbortSignal.timeout(120000)
+            });
+            if (res.status === 429) throw new Error('HTTP 429');
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const buf = Buffer.from(await res.arrayBuffer());
+            if (buf.length < 5000) throw new Error('za mały plik');
+            const png = await toCutoutPng(sharp, buf);
+            await writeSet(p.slug, png);
+            console.log(attempt ? `OK (retry ${attempt})` : 'OK');
+            ok++;
+            lastErr = null;
+            break;
+        } catch (e) {
+            lastErr = e;
+        }
+    }
+    if (lastErr) {
+        console.log(`FAIL (${lastErr.message})`);
+        fail++;
+        failed.push({ slug: p.slug, error: lastErr.message });
+    }
+    if (i < todo.length - 1) await sleep(delayMs);
+}
+
+console.log(`\nGotowe: ${ok} OK, ${fail} błędów → ${outDir}`);
+if (failed.length) {
+    fs.writeFileSync(path.join(root, 'scripts', 'generate-missing-photos-failed.json'), JSON.stringify(failed, null, 2));
+    console.log('Zapisano scripts/generate-missing-photos-failed.json');
+}
