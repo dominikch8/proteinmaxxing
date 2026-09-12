@@ -315,3 +315,74 @@ function log(msg) {
     }
 }
 
+/* ── Główna pętla ──────────────────────────────────────────────────────── */
+const raw = JSON.parse(
+    fs.readFileSync(path.join(root, 'js', 'products-data-raw.js'), 'utf8').match(
+        /productsDatabaseRaw = (\[[\s\S]*\]);/
+    )[1]
+);
+const products = raw.map((p) => ({
+    ...p,
+    slug: p.slug && String(p.slug).trim() ? String(p.slug).trim() : slugify(p.name),
+}));
+
+const sharp = (await import('sharp')).default;
+if (pilot) fs.mkdirSync(previewDir, { recursive: true });
+
+const existsAnywhere = (slug) =>
+    fs.existsSync(path.join(productsDir, `${slug}.jpg`)) ||
+    fs.existsSync(path.join(productsDir, `${slug}.png`));
+
+let todo = products;
+
+if (slugArgs.length) {
+    const set = new Set(slugArgs);
+    todo = products.filter((p) => set.has(p.slug));
+} else if (catArgs.length) {
+    const set = new Set(catArgs);
+    todo = products.filter((p) => set.has(p.category));
+} else {
+    todo = products.filter((p) => !existsAnywhere(p.slug));
+}
+
+if (!force) todo = todo.filter((p) => !existsAnywhere(p.slug));
+todo = todo.slice(0, limit);
+
+log(
+    `Start: model=${model} delay=${delayMs}ms pilot=${pilot} | do wygenerowania: ${todo.length} ` +
+        `(baza: ${products.length})`
+);
+
+let ok = 0;
+let fail = 0;
+const failed = [];
+const started = Date.now();
+
+for (let i = 0; i < todo.length; i++) {
+    const p = todo[i];
+    const prompt = buildPrompt(p);
+    process.stdout.write(`[${i + 1}/${todo.length}] ${p.slug} … `);
+    try {
+        const buf = await fetchPollinations(prompt, p.slug);
+        await writeProduct(sharp, p.slug, buf);
+        ok++;
+        console.log('OK');
+    } catch (e) {
+        fail++;
+        failed.push(`${p.slug}\t${e.message}`);
+        console.log(`FAIL (${e.message})`);
+    }
+    if ((i + 1) % 25 === 0 || i === todo.length - 1) {
+        const mins = ((Date.now() - started) / 60000).toFixed(1);
+        log(`Postęp: ${i + 1}/${todo.length} (OK=${ok} FAIL=${fail}, ${mins} min)`);
+    }
+    if (i < todo.length - 1) await sleep(delayMs);
+}
+
+log(`Gotowe: ${ok} OK, ${fail} błędów, ${((Date.now() - started) / 60000).toFixed(1)} min → ${OUT_DIR}`);
+if (failed.length) {
+    const p = path.join(__dirname, '_img-gen-failed.txt');
+    fs.writeFileSync(p, failed.join('\n'));
+    log(`Zapisano listę błędów: ${path.relative(root, p)}`);
+}
+
