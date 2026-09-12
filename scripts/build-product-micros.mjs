@@ -56,58 +56,75 @@ function loadProducts() {
     return { raw, start, end, products };
 }
 
-/** Mapowanie nutriments OFF → nasze klucze (wartości na 100 g). */
+/** Mapowanie nutriments OFF → nasze klucze (wartości na 100 g, z konwersją jednostek). */
+const MICRO_UNIT = {
+    vitA: 'µg', vitC: 'mg', vitD: 'µg', vitE: 'mg', vitK: 'µg',
+    b1: 'mg', b2: 'mg', b3: 'mg', b5: 'mg', b6: 'mg', b9: 'µg', b12: 'µg',
+    choline: 'mg', calcium: 'mg', iron: 'mg', magnesium: 'mg', phosphorus: 'mg',
+    potassium: 'mg', zinc: 'mg', selenium: 'µg', copper: 'µg', manganese: 'mg',
+    iodine: 'µg', sodium: 'mg',
+};
+
+const OFF_FIELD = {
+    vitA: ['vitamin-a', 'vitamin-a_100g'],
+    vitC: ['vitamin-c', 'vitamin-c_100g'],
+    vitD: ['vitamin-d', 'vitamin-d_100g'],
+    vitE: ['vitamin-e', 'vitamin-e_100g'],
+    vitK: ['vitamin-k', 'vitamin-k_100g'],
+    b1: ['vitamin-b1', 'vitamin-b1_100g'],
+    b2: ['vitamin-b2', 'vitamin-b2_100g'],
+    b3: ['vitamin-pp', 'vitamin-pp_100g', 'vitamin-b3', 'vitamin-b3_100g'],
+    b5: ['pantothenic-acid', 'pantothenic-acid_100g'],
+    b6: ['vitamin-b6', 'vitamin-b6_100g'],
+    b9: ['vitamin-b9', 'vitamin-b9_100g', 'folates', 'folates_100g'],
+    b12: ['vitamin-b12', 'vitamin-b12_100g'],
+    choline: ['choline', 'choline_100g'],
+    calcium: ['calcium', 'calcium_100g'],
+    iron: ['iron', 'iron_100g'],
+    magnesium: ['magnesium', 'magnesium_100g'],
+    phosphorus: ['phosphorus', 'phosphorus_100g'],
+    potassium: ['potassium', 'potassium_100g'],
+    zinc: ['zinc', 'zinc_100g'],
+    selenium: ['selenium', 'selenium_100g'],
+    copper: ['copper', 'copper_100g'],
+    manganese: ['manganese', 'manganese_100g'],
+    iodine: ['iodine', 'iodine_100g'],
+    sodium: ['sodium', 'sodium_100g'],
+};
+
+function toGrams(value, unit) {
+    if (value == null) return null;
+    if (!unit) return value;
+    const u = String(unit).toLowerCase().trim();
+    if (u === 'g') return value;
+    if (u === 'mg') return value / 1000;
+    if (u === 'µg' || u === 'ug' || u === 'mcg') return value / 1e6;
+    if (u === 'iu') return value; // IU — obsłużone osobno dla wit A poniżej
+    return value;
+}
+
 function mapOffNutriments(n) {
     if (!n || typeof n !== 'object') return null;
-    const get = (...keys) => {
-        for (const k of keys) {
-            const v = n[k];
-            if (typeof v === 'number' && !Number.isNaN(v) && v >= 0) return v;
+    const out = {};
+    for (const [key, fields] of Object.entries(OFF_FIELD)) {
+        let raw = null;
+        let unit = null;
+        for (const f of fields) {
+            if (typeof n[f] === 'number' && !Number.isNaN(n[f])) {
+                raw = n[f];
+                unit = n[f + '_unit'] || n[f.replace(/_100g$/, '') + '_unit'] || null;
+                break;
+            }
         }
-        return null;
-    };
-
-    // Wit. A: OFF często w µg lub IU; preferuj _100g w µg
-    let vitA = get('vitamin-a_100g', 'vitamin-a');
-    if (vitA != null && vitA > 5000) vitA = vitA / 3.33; // przybliżenie IU→µg RAE
-
-    const out = {
-        vitA,
-        vitC: get('vitamin-c_100g', 'vitamin-c'),
-        vitD: get('vitamin-d_100g', 'vitamin-d'),
-        vitE: get('vitamin-e_100g', 'vitamin-e'),
-        vitK: get('vitamin-k_100g', 'vitamin-k'),
-        b1: get('vitamin-b1_100g', 'vitamin-b1'),
-        b2: get('vitamin-b2_100g', 'vitamin-b2'),
-        b3: get('vitamin-pp_100g', 'vitamin-pp', 'vitamin-b3_100g'),
-        b5: get('pantothenic-acid_100g', 'pantothenic-acid'),
-        b6: get('vitamin-b6_100g', 'vitamin-b6'),
-        b9: get('vitamin-b9_100g', 'vitamin-b9', 'folates_100g'),
-        b12: get('vitamin-b12_100g', 'vitamin-b12'),
-        calcium: get('calcium_100g', 'calcium'),
-        iron: get('iron_100g', 'iron'),
-        magnesium: get('magnesium_100g', 'magnesium'),
-        phosphorus: get('phosphorus_100g', 'phosphorus'),
-        potassium: get('potassium_100g', 'potassium'),
-        zinc: get('zinc_100g', 'zinc'),
-        selenium: get('selenium_100g', 'selenium'),
-        copper: get('copper_100g', 'copper'),
-        manganese: get('manganese_100g', 'manganese'),
-        iodine: get('iodine_100g', 'iodine'),
-        sodium: get('sodium_100g', 'sodium'),
-    };
-
-    // Miedź w OFF często w mg → µg
-    if (out.copper != null && out.copper < 50) out.copper = out.copper * 1000;
-    // Selen czasem w mg
-    if (out.selenium != null && out.selenium < 1) out.selenium = out.selenium * 1000;
-
-    const cleaned = {};
-    for (const [k, v] of Object.entries(out)) {
-        if (v == null) continue;
-        cleaned[k] = v;
+        if (raw == null) continue;
+        const baseGrams = toGrams(raw, unit);
+        if (baseGrams == null || baseGrams < 0) continue;
+        const value = MICRO_UNIT[key] === 'µg' ? baseGrams * 1e6 : baseGrams * 1000;
+        out[key] = value;
     }
-    return Object.keys(cleaned).length ? cleaned : null;
+    // Wit. A: OFF bywa w IU — przybliżenie IU → µg RAE (÷3.33)
+    if (out.vitA != null && out.vitA > 5000) out.vitA = out.vitA / 3.33;
+    return Object.keys(out).length ? out : null;
 }
 
 async function fetchOffForName(name) {
