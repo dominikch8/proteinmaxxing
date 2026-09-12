@@ -247,7 +247,8 @@ export { CATEGORY_BASE, NAME_RULES };
 
 function matchFirstRule(rules, name) {
     for (const rule of rules) {
-        if (rule.re.test(name)) return rule.n;
+        const re = rule.re.flags.includes('i') ? rule.re : new RegExp(rule.re.source, rule.re.flags + 'i');
+        if (re.test(name)) return rule.n;
     }
     return null;
 }
