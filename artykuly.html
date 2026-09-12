@@ -812,15 +812,38 @@
 
             paginationRoot.innerHTML = '';
 
-            for (let i = 1; i <= totalPages; i++) {
+            function buildPageNumbers(current, total) {
+                const wanted = new Set([1, total]);
+                for (let i = current - 2; i <= current + 2; i++) {
+                    if (i >= 1 && i <= total) wanted.add(i);
+                }
+                return Array.from(wanted).sort((a, b) => a - b);
+            }
+
+            let previousPage = 0;
+            buildPageNumbers(safePage, totalPages).forEach((pageNumber) => {
+                if (pageNumber - previousPage > 1) {
+                    const gap = document.createElement('span');
+                    gap.className = 'articles-pagination-ellipsis';
+                    gap.setAttribute('aria-hidden', 'true');
+                    gap.textContent = '…';
+                    paginationRoot.appendChild(gap);
+                }
+
                 const button = document.createElement('button');
                 button.type = 'button';
-                button.className = 'btn' + (i === safePage ? ' is-active' : '');
-                button.textContent = String(i);
-                button.setAttribute('aria-label', `Przejdź do strony ${i}`);
-                button.addEventListener('click', () => renderPage(i));
+                button.className = 'btn' + (pageNumber === safePage ? ' is-active' : '');
+                button.textContent = String(pageNumber);
+                button.setAttribute('aria-label', `Przejdź do strony ${pageNumber}`);
+                if (pageNumber === safePage) {
+                    button.setAttribute('aria-current', 'page');
+                    button.title = `Strona ${safePage} z ${totalPages}`;
+                }
+                button.addEventListener('click', () => renderPage(pageNumber));
                 paginationRoot.appendChild(button);
-            }
+
+                previousPage = pageNumber;
+            });
         }
 
         searchInput.addEventListener('input', () => renderPage(1));
