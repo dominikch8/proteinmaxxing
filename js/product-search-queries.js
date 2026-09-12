@@ -4120,7 +4120,6 @@ export const PRODUCT_SEARCH_QUERIES = {
     "butter food",
     "butter ingredient photo"
   ],
-
   "platki-kukurydziane-corn-flakes-nestle": [
     "flakes",
     "flakes food",
@@ -5530,5 +5529,6070 @@ export const PRODUCT_SEARCH_QUERIES = {
     "Omlet dwujajeczny",
     "Omlet dwujajeczny food",
     "Omlet dwujajeczny ingredient photo"
+  ],
+  "kaczka-udo": [
+    "duck",
+    "duck food",
+    "duck ingredient photo"
+  ],
+  "ges-piers": [
+    "breast",
+    "breast food",
+    "breast ingredient photo"
+  ],
+  "przepiorka": [
+    "Przepiórka",
+    "Przepiórka food",
+    "Przepiórka ingredient photo"
+  ],
+  "krolik-udziec": [
+    "rabbit",
+    "rabbit food",
+    "rabbit ingredient photo"
+  ],
+  "jagniecina-comber": [
+    "lamb",
+    "lamb food",
+    "lamb ingredient photo"
+  ],
+  "cielecina-sznycel": [
+    "veal",
+    "veal food",
+    "veal ingredient photo"
+  ],
+  "rostbef-pieczony": [
+    "Rostbef pieczony",
+    "Rostbef pieczony food",
+    "Rostbef pieczony ingredient photo"
+  ],
+  "mostek-wolowy": [
+    "beef",
+    "beef food",
+    "beef ingredient photo"
+  ],
+  "brzoskwinie": [
+    "Brzoskwinie",
+    "Brzoskwinie food",
+    "Brzoskwinie ingredient photo"
+  ],
+  "nektarynki": [
+    "Nektarynki",
+    "Nektarynki food",
+    "Nektarynki ingredient photo"
+  ],
+  "jezyny": [
+    "Jeżyny",
+    "Jeżyny food",
+    "Jeżyny ingredient photo"
+  ],
+  "porzeczka-czarna": [
+    "Porzeczka czarna",
+    "Porzeczka czarna food",
+    "Porzeczka czarna ingredient photo"
+  ],
+  "porzeczka-czerwona": [
+    "red",
+    "red food",
+    "red ingredient photo"
+  ],
+  "agrest": [
+    "Agrest",
+    "Agrest food",
+    "Agrest ingredient photo"
+  ],
+  "zurawina-swieza": [
+    "cranberry",
+    "cranberry food",
+    "cranberry ingredient photo"
+  ],
+  "jagody-lesne": [
+    "berry wild",
+    "berry wild food",
+    "berry wild ingredient photo"
+  ],
+  "aronia": [
+    "Aronia",
+    "Aronia food",
+    "Aronia ingredient photo"
+  ],
+  "chipsy-bananowe": [
+    "potato chips",
+    "potato chips food",
+    "potato chips ingredient photo"
+  ],
+  "kaki-persymona": [
+    "Kaki",
+    "Kaki food",
+    "Kaki ingredient photo"
+  ],
+  "ryz-jasminowy-suchy": [
+    "rice",
+    "rice food",
+    "rice ingredient photo"
+  ],
+  "ryz-arborio-suchy": [
+    "rice arborio",
+    "rice arborio food",
+    "rice arborio ingredient photo"
+  ],
+  "kasza-orkiszowa": [
+    "Kasza orkiszowa",
+    "Kasza orkiszowa food",
+    "Kasza orkiszowa ingredient photo"
+  ],
+  "polenta-kaszka-kukurydziana": [
+    "Polenta",
+    "Polenta food",
+    "Polenta ingredient photo"
+  ],
+  "maka-owsiana": [
+    "flour",
+    "flour food",
+    "flour ingredient photo"
+  ],
+  "maka-ryzowa": [
+    "flour",
+    "flour food",
+    "flour ingredient photo"
+  ],
+  "platki-orkiszowe": [
+    "flakes",
+    "flakes food",
+    "flakes ingredient photo"
+  ],
+  "chleb-razowy-na-zakwasie": [
+    "bread wholegrain",
+    "bread wholegrain food",
+    "bread wholegrain ingredient photo"
+  ],
+  "liczi": [
+    "Liczi",
+    "Liczi food",
+    "Liczi ingredient photo"
+  ],
+  "pitaja-smoczy-owoc": [
+    "Pitaja",
+    "Pitaja food",
+    "Pitaja ingredient photo"
+  ],
+  "karambola": [
+    "Karambola",
+    "Karambola food",
+    "Karambola ingredient photo"
+  ],
+  "guawa": [
+    "Guawa",
+    "Guawa food",
+    "Guawa ingredient photo"
+  ],
+  "bez-czarny-owoce": [
+    "Bez czarny",
+    "Bez czarny food",
+    "Bez czarny ingredient photo"
+  ],
+  "ryz-czarny-suchy": [
+    "rice",
+    "rice food",
+    "rice ingredient photo"
+  ],
+  "otreby-zytnie": [
+    "Otręby żytnie",
+    "Otręby żytnie food",
+    "Otręby żytnie ingredient photo"
+  ],
+  "chleb-bezglutenowy": [
+    "bread",
+    "bread food",
+    "bread ingredient photo"
+  ],
+  "boczniaki": [
+    "Boczniaki",
+    "Boczniaki food",
+    "Boczniaki ingredient photo"
+  ],
+  "pieczarka-portobello": [
+    "mushroom",
+    "mushroom food",
+    "mushroom ingredient photo"
+  ],
+  "endywia": [
+    "Endywia",
+    "Endywia food",
+    "Endywia ingredient photo"
+  ],
+  "rzodkiew": [
+    "Rzodkiew",
+    "Rzodkiew food",
+    "Rzodkiew ingredient photo"
+  ],
+  "musli-z-owocami-suszonymi": [
+    "muesli",
+    "muesli food",
+    "muesli ingredient photo"
+  ],
+  "granola-z-orzechami": [
+    "granola",
+    "granola food",
+    "granola ingredient photo"
+  ],
+  "owsianka-instant": [
+    "instant",
+    "instant food",
+    "instant ingredient photo"
+  ],
+  "platki-jaglane": [
+    "flakes",
+    "flakes food",
+    "flakes ingredient photo"
+  ],
+  "ges-pieczona-mieso-bez-skory": [
+    "Gęś pieczona",
+    "Gęś pieczona food",
+    "Gęś pieczona ingredient photo"
+  ],
+  "kaczka-pieczona-mieso-bez-skory": [
+    "duck",
+    "duck food",
+    "duck ingredient photo"
+  ],
+  "jagniecina-udziec": [
+    "lamb",
+    "lamb food",
+    "lamb ingredient photo"
+  ],
+  "krolik-tuszka": [
+    "rabbit",
+    "rabbit food",
+    "rabbit ingredient photo"
+  ],
+  "cielecina-pieczen": [
+    "veal",
+    "veal food",
+    "veal ingredient photo"
+  ],
+  "rozbratel-wolowy": [
+    "beef",
+    "beef food",
+    "beef ingredient photo"
+  ],
+  "zeberka-wolowe": [
+    "pork ribs",
+    "pork ribs food",
+    "pork ribs ingredient photo"
+  ],
+  "lopatka-wieprzowa": [
+    "pork",
+    "pork food",
+    "pork ingredient photo"
+  ],
+  "boczek-wedzony": [
+    "bacon",
+    "bacon food",
+    "bacon ingredient photo"
+  ],
+  "szynka-serrano": [
+    "ham",
+    "ham food",
+    "ham ingredient photo"
+  ],
+  "chorizo": [
+    "Chorizo",
+    "Chorizo food",
+    "Chorizo ingredient photo"
+  ],
+  "kielbasa-salami-wegierska": [
+    "sausage salami",
+    "sausage salami food",
+    "sausage salami ingredient photo"
+  ],
+  "metka-lososiowa": [
+    "Metka łososiowa",
+    "Metka łososiowa food",
+    "Metka łososiowa ingredient photo"
+  ],
+  "tatar-z-lososia": [
+    "Tatar z łososia",
+    "Tatar z łososia food",
+    "Tatar z łososia ingredient photo"
+  ],
+  "sielawa-wedzona": [
+    "smoked",
+    "smoked food",
+    "smoked ingredient photo"
+  ],
+  "ryba-maslana-wedzona": [
+    "fish smoked",
+    "fish smoked food",
+    "fish smoked ingredient photo"
+  ],
+  "wegorz-w-oleju": [
+    "oil",
+    "oil food",
+    "oil ingredient photo"
+  ],
+  "krewetki-koktajlowe": [
+    "shrimp",
+    "shrimp food",
+    "shrimp ingredient photo"
+  ],
+  "paluszki-krabowe": [
+    "Paluszki krabowe",
+    "Paluszki krabowe food",
+    "Paluszki krabowe ingredient photo"
+  ],
+  "mleko-3-8-tluszczu": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "mleko-kozie": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "mleko-owcze": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "napoj-ryzowy": [
+    "Napój ryżowy",
+    "Napój ryżowy food",
+    "Napój ryżowy ingredient photo"
+  ],
+  "smietana-22": [
+    "cream",
+    "cream food",
+    "cream ingredient photo"
+  ],
+  "twarog-smietankowy": [
+    "cottage cheese",
+    "cottage cheese food",
+    "cottage cheese ingredient photo"
+  ],
+  "skyr-waniliowy": [
+    "skyr",
+    "skyr food",
+    "skyr ingredient photo"
+  ],
+  "kefir-owocowy": [
+    "kefir fruit",
+    "kefir fruit food",
+    "kefir fruit ingredient photo"
+  ],
+  "ser-maasdam": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-gorgonzola": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-roquefort": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-manchego": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-pecorino-romano": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-grana-padano": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-raclette": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-emmentaler": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-gruyere": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-burrata": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-korycinski": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-rokpol": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-warminski": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-morski": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "mozzarella-light": [
+    "mozzarella",
+    "mozzarella food",
+    "mozzarella ingredient photo"
+  ],
+  "ser-topiony-hochland": [
+    "cheese processed",
+    "cheese processed food",
+    "cheese processed ingredient photo"
+  ],
+  "bob-gotowany": [
+    "fava beans",
+    "fava beans food",
+    "fava beans ingredient photo"
+  ],
+  "szparagi": [
+    "asparagus",
+    "asparagus food",
+    "asparagus ingredient photo"
+  ],
+  "karczochy": [
+    "Karczochy",
+    "Karczochy food",
+    "Karczochy ingredient photo"
+  ],
+  "rzepa": [
+    "Rzepa",
+    "Rzepa food",
+    "Rzepa ingredient photo"
+  ],
+  "dynia-hokkaido": [
+    "pumpkin",
+    "pumpkin food",
+    "pumpkin ingredient photo"
+  ],
+  "fenkul-koper-wloski": [
+    "Fenkuł",
+    "Fenkuł food",
+    "Fenkuł ingredient photo"
+  ],
+  "grzyby-shiitake": [
+    "Grzyby shiitake",
+    "Grzyby shiitake food",
+    "Grzyby shiitake ingredient photo"
+  ],
+  "poledwiczki-z-indyka": [
+    "turkey",
+    "turkey food",
+    "turkey ingredient photo"
+  ],
+  "schab-pieczony-w-ziolach": [
+    "pork loin",
+    "pork loin food",
+    "pork loin ingredient photo"
+  ],
+  "karkowka-marynowana": [
+    "pork neck",
+    "pork neck food",
+    "pork neck ingredient photo"
+  ],
+  "zeberka-wedzone": [
+    "pork ribs",
+    "pork ribs food",
+    "pork ribs ingredient photo"
+  ],
+  "golonka-pieczona": [
+    "ham hock",
+    "ham hock food",
+    "ham hock ingredient photo"
+  ],
+  "kielbasa-jalowcowa": [
+    "sausage",
+    "sausage food",
+    "sausage ingredient photo"
+  ],
+  "kielbasa-chorizo": [
+    "sausage",
+    "sausage food",
+    "sausage ingredient photo"
+  ],
+  "kabanosy-drobiowe": [
+    "sausage",
+    "sausage food",
+    "sausage ingredient photo"
+  ],
+  "salami-z-papryka": [
+    "salami bell pepper",
+    "salami bell pepper food",
+    "salami bell pepper ingredient photo"
+  ],
+  "mortadela-z-pistacjami": [
+    "mortadella",
+    "mortadella food",
+    "mortadella ingredient photo"
+  ],
+  "pasztet-warzywny": [
+    "pate",
+    "pate food",
+    "pate ingredient photo"
+  ],
+  "szynka-konserwowa-wieprzowa": [
+    "ham pork",
+    "ham pork food",
+    "ham pork ingredient photo"
+  ],
+  "szynka-wieprzowa-dojrzewajaca": [
+    "ham pork",
+    "ham pork food",
+    "ham pork ingredient photo"
+  ],
+  "stek-z-antrykotu": [
+    "Stek z antrykotu",
+    "Stek z antrykotu food",
+    "Stek z antrykotu ingredient photo"
+  ],
+  "gulasz-wolowy": [
+    "stew beef",
+    "stew beef food",
+    "stew beef ingredient photo"
+  ],
+  "mieso-mielone-mieszane": [
+    "Mięso mielone mieszane",
+    "Mięso mielone mieszane food",
+    "Mięso mielone mieszane ingredient photo"
+  ],
+  "zoladki-drobiowe": [
+    "Żołądki drobiowe",
+    "Żołądki drobiowe food",
+    "Żołądki drobiowe ingredient photo"
+  ],
+  "serce-wolowe": [
+    "Serce wołowe",
+    "Serce wołowe food",
+    "Serce wołowe ingredient photo"
+  ],
+  "ozor-wieprzowy": [
+    "tongue",
+    "tongue food",
+    "tongue ingredient photo"
+  ],
+  "parowki-z-indyka": [
+    "sausages turkey",
+    "sausages turkey food",
+    "sausages turkey ingredient photo"
+  ],
+  "serdelki": [
+    "Serdelki",
+    "Serdelki food",
+    "Serdelki ingredient photo"
+  ],
+  "kielbaski-sniadaniowe": [
+    "cereal",
+    "cereal food",
+    "cereal ingredient photo"
+  ],
+  "kielbasa-biala-surowa": [
+    "sausage white",
+    "sausage white food",
+    "sausage white ingredient photo"
+  ],
+  "smalec-wieprzowy": [
+    "lard",
+    "lard food",
+    "lard ingredient photo"
+  ],
+  "tilapia": [
+    "Tilapia",
+    "Tilapia food",
+    "Tilapia ingredient photo"
+  ],
+  "panga": [
+    "Panga",
+    "Panga food",
+    "Panga ingredient photo"
+  ],
+  "rostbef-wolowy": [
+    "beef",
+    "beef food",
+    "beef ingredient photo"
+  ],
+  "jogurt-skyr-waniliowy": [
+    "yogurt skyr",
+    "yogurt skyr food",
+    "yogurt skyr ingredient photo"
+  ],
+  "skyr-pitny": [
+    "skyr drinkable",
+    "skyr drinkable food",
+    "skyr drinkable ingredient photo"
+  ],
+  "maslanka-ziolowa": [
+    "Maślanka ziołowa",
+    "Maślanka ziołowa food",
+    "Maślanka ziołowa ingredient photo"
+  ],
+  "smietana-kremowka-36": [
+    "cream",
+    "cream food",
+    "cream ingredient photo"
+  ],
+  "mleko-a2": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "mleko-ryzowe": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "napoj-owsiany-barista": [
+    "Napój owsiany barista",
+    "Napój owsiany barista food",
+    "Napój owsiany barista ingredient photo"
+  ],
+  "jogurt-sojowy-naturalny": [
+    "yogurt soy sauce plain",
+    "yogurt soy sauce plain food",
+    "yogurt soy sauce plain ingredient photo"
+  ],
+  "jogurt-naturalny-wysokobialkowy": [
+    "yogurt plain",
+    "yogurt plain food",
+    "yogurt plain ingredient photo"
+  ],
+  "serek-homogenizowany-waniliowy": [
+    "cottage cheese cream cheese",
+    "cottage cheese cream cheese food",
+    "cottage cheese cream cheese ingredient photo"
+  ],
+  "twarozek-ziarnisty": [
+    "Twarożek ziarnisty",
+    "Twarożek ziarnisty food",
+    "Twarożek ziarnisty ingredient photo"
+  ],
+  "jogurt-typu-greckiego-5": [
+    "yogurt",
+    "yogurt food",
+    "yogurt ingredient photo"
+  ],
+  "smietanka-do-kawy-10": [
+    "whipping cream",
+    "whipping cream food",
+    "whipping cream ingredient photo"
+  ],
+  "ser-pecorino": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "serek-kremowy-do-smarowania": [
+    "cottage cheese",
+    "cottage cheese food",
+    "cottage cheese ingredient photo"
+  ],
+  "ser-mozzarella-di-bufala": [
+    "cheese mozzarella",
+    "cheese mozzarella food",
+    "cheese mozzarella ingredient photo"
+  ],
+  "ser-radamer": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-podlaski": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-wiejski": [
+    "cheese cottage cheese",
+    "cheese cottage cheese food",
+    "cheese cottage cheese ingredient photo"
+  ],
+  "ser-bryndza": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-kurpiowski": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-favita": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "pietruszka-korzeniowa": [
+    "parsnip",
+    "parsnip food",
+    "parsnip ingredient photo"
+  ],
+  "koper-wloski-fenkul": [
+    "Koper włoski",
+    "Koper włoski food",
+    "Koper włoski ingredient photo"
+  ],
+  "fasola-czerwona-gotowana": [
+    "beans red",
+    "beans red food",
+    "beans red ingredient photo"
+  ],
+  "soczewica-brazowa-gotowana": [
+    "lentils",
+    "lentils food",
+    "lentils ingredient photo"
+  ],
+  "bob-gotowany-warzywa": [
+    "fava beans",
+    "fava beans food",
+    "fava beans ingredient photo"
+  ],
+  "kukurydza-w-kolbie": [
+    "corn",
+    "corn food",
+    "corn ingredient photo"
+  ],
+  "szpinak-mrozony": [
+    "spinach",
+    "spinach food",
+    "spinach ingredient photo"
+  ],
+  "persymona-kaki": [
+    "Persymona",
+    "Persymona food",
+    "Persymona ingredient photo"
+  ],
+  "banan-suszony": [
+    "banana dried",
+    "banana dried food",
+    "banana dried ingredient photo"
+  ],
+  "jagody-goji": [
+    "berry",
+    "berry food",
+    "berry ingredient photo"
+  ],
+  "krewetki-tygrysie": [
+    "shrimp",
+    "shrimp food",
+    "shrimp ingredient photo"
+  ],
+  "malze-gotowane": [
+    "Małże gotowane",
+    "Małże gotowane food",
+    "Małże gotowane ingredient photo"
+  ],
+  "osmiornica-gotowana": [
+    "Ośmiornica gotowana",
+    "Ośmiornica gotowana food",
+    "Ośmiornica gotowana ingredient photo"
+  ],
+  "homar-gotowany": [
+    "Homar gotowany",
+    "Homar gotowany food",
+    "Homar gotowany ingredient photo"
+  ],
+  "dorada": [
+    "Dorada",
+    "Dorada food",
+    "Dorada ingredient photo"
+  ],
+  "sola": [
+    "Sola",
+    "Sola food",
+    "Sola ingredient photo"
+  ],
+  "halibut-wedzony": [
+    "halibut",
+    "halibut food",
+    "halibut ingredient photo"
+  ],
+  "losos-dziki": [
+    "salmon wild",
+    "salmon wild food",
+    "salmon wild ingredient photo"
+  ],
+  "makrela-swieza": [
+    "mackerel",
+    "mackerel food",
+    "mackerel ingredient photo"
+  ],
+  "sledz-swiezy": [
+    "herring",
+    "herring food",
+    "herring ingredient photo"
+  ],
+  "sardynka-swieza": [
+    "Sardynka świeża",
+    "Sardynka świeża food",
+    "Sardynka świeża ingredient photo"
+  ],
+  "pstrag-teczowy": [
+    "trout",
+    "trout food",
+    "trout ingredient photo"
+  ],
+  "udziec-wolowy": [
+    "beef",
+    "beef food",
+    "beef ingredient photo"
+  ],
+  "poledwiczki-wieprzowe": [
+    "pork",
+    "pork food",
+    "pork ingredient photo"
+  ],
+  "slonina": [
+    "Słonina",
+    "Słonina food",
+    "Słonina ingredient photo"
+  ],
+  "golonka-surowa": [
+    "ham hock",
+    "ham hock food",
+    "ham hock ingredient photo"
+  ],
+  "ges-mieso": [
+    "Gęś",
+    "Gęś food",
+    "Gęś ingredient photo"
+  ],
+  "skyr-truskawkowy": [
+    "skyr strawberry",
+    "skyr strawberry food",
+    "skyr strawberry ingredient photo"
+  ],
+  "jogurt-grecki-10": [
+    "yogurt greek",
+    "yogurt greek food",
+    "yogurt greek ingredient photo"
+  ],
+  "jogurt-grecki-2": [
+    "yogurt greek",
+    "yogurt greek food",
+    "yogurt greek ingredient photo"
+  ],
+  "smietana-36": [
+    "cream",
+    "cream food",
+    "cream ingredient photo"
+  ],
+  "mleko-a2-3-5": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "mleko-zageszczone-nieslodzone": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "jajko-przepiorcze": [
+    "egg",
+    "egg food",
+    "egg ingredient photo"
+  ],
+  "zoltko-jajka": [
+    "Żółtko jajka",
+    "Żółtko jajka food",
+    "Żółtko jajka ingredient photo"
+  ],
+  "omlet-bialkowy": [
+    "Omlet białkowy",
+    "Omlet białkowy food",
+    "Omlet białkowy ingredient photo"
+  ],
+  "napoj-proteinowy-uht": [
+    "protein bar",
+    "protein bar food",
+    "protein bar ingredient photo"
+  ],
+  "mleko-migdalowe-nieslodzone": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "ser-lazur": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-bundz": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-kremowy-kanapkowy": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "topinambur": [
+    "Topinambur",
+    "Topinambur food",
+    "Topinambur ingredient photo"
+  ],
+  "fasola-mung-gotowana": [
+    "beans",
+    "beans food",
+    "beans ingredient photo"
+  ],
+  "sos-bbq": [
+    "Sos BBQ",
+    "Sos BBQ food",
+    "Sos BBQ ingredient photo"
+  ],
+  "kasztany-jadalne": [
+    "Kasztany jadalne",
+    "Kasztany jadalne food",
+    "Kasztany jadalne ingredient photo"
+  ],
+  "daktyle": [
+    "date",
+    "date food",
+    "date ingredient photo"
+  ],
+  "olej-z-awokado": [
+    "oil avocado",
+    "oil avocado food",
+    "oil avocado ingredient photo"
+  ],
+  "makaron-razowy-suchy": [
+    "pasta wholegrain",
+    "pasta wholegrain food",
+    "pasta wholegrain ingredient photo"
+  ],
+  "ryz-czerwony-suchy": [
+    "rice",
+    "rice food",
+    "rice ingredient photo"
+  ],
+  "sos-gochujang": [
+    "Sos gochujang",
+    "Sos gochujang food",
+    "Sos gochujang ingredient photo"
+  ],
+  "sos-hoisin": [
+    "Sos hoisin",
+    "Sos hoisin food",
+    "Sos hoisin ingredient photo"
+  ],
+  "sos-miodowo-musztardowy": [
+    "Sos miodowo-musztardowy",
+    "Sos miodowo-musztardowy food",
+    "Sos miodowo-musztardowy ingredient photo"
+  ],
+  "olej-z-orzechow-wloskich": [
+    "oil",
+    "oil food",
+    "oil ingredient photo"
+  ],
+  "olej-z-pestek-dyni": [
+    "oil pumpkin",
+    "oil pumpkin food",
+    "oil pumpkin ingredient photo"
+  ],
+  "smalec-gesi": [
+    "lard",
+    "lard food",
+    "lard ingredient photo"
+  ],
+  "makaron-soba": [
+    "pasta",
+    "pasta food",
+    "pasta ingredient photo"
+  ],
+  "makaron-orkiszowy-suchy": [
+    "pasta",
+    "pasta food",
+    "pasta ingredient photo"
+  ],
+  "makaron-soczewicowy-suchy": [
+    "pasta",
+    "pasta food",
+    "pasta ingredient photo"
+  ],
+  "szynka-wieprzowa-gotowana": [
+    "ham pork",
+    "ham pork food",
+    "ham pork ingredient photo"
+  ],
+  "poledwica-z-kurczaka": [
+    "tenderloin chicken",
+    "tenderloin chicken food",
+    "tenderloin chicken ingredient photo"
+  ],
+  "szynka-konserwowa": [
+    "ham",
+    "ham food",
+    "ham ingredient photo"
+  ],
+  "kielbasa-zywiecka": [
+    "sausage",
+    "sausage food",
+    "sausage ingredient photo"
+  ],
+  "kielbasa-torunska": [
+    "sausage",
+    "sausage food",
+    "sausage ingredient photo"
+  ],
+  "parowki-z-szynki": [
+    "sausages",
+    "sausages food",
+    "sausages ingredient photo"
+  ],
+  "parowki-drobiowe": [
+    "sausages",
+    "sausages food",
+    "sausages ingredient photo"
+  ],
+  "pasztet-wieprzowy": [
+    "pate",
+    "pate food",
+    "pate ingredient photo"
+  ],
+  "pasztet-drobiowy": [
+    "pate",
+    "pate food",
+    "pate ingredient photo"
+  ],
+  "pasztet-z-dziczyzny": [
+    "pate",
+    "pate food",
+    "pate ingredient photo"
+  ],
+  "boczek-wedzony-parzony": [
+    "bacon",
+    "bacon food",
+    "bacon ingredient photo"
+  ],
+  "boczek-pieczony": [
+    "bacon",
+    "bacon food",
+    "bacon ingredient photo"
+  ],
+  "kaszanka-z-watrobka": [
+    "liver",
+    "liver food",
+    "liver ingredient photo"
+  ],
+  "szynka-z-kurczaka-plastry": [
+    "ham chicken",
+    "ham chicken food",
+    "ham chicken ingredient photo"
+  ],
+  "chrupiace-skrzydelka-z-kurczaka": [
+    "chicken wings chicken",
+    "chicken wings chicken food",
+    "chicken wings chicken ingredient photo"
+  ],
+  "skrzydelka-z-kurczaka": [
+    "chicken wings chicken",
+    "chicken wings chicken food",
+    "chicken wings chicken ingredient photo"
+  ],
+  "serce-drobiowe": [
+    "Serce drobiowe",
+    "Serce drobiowe food",
+    "Serce drobiowe ingredient photo"
+  ],
+  "zoladek-wieprzowy": [
+    "Żołądek wieprzowy",
+    "Żołądek wieprzowy food",
+    "Żołądek wieprzowy ingredient photo"
+  ],
+  "flaki-wolowe": [
+    "Flaki wołowe",
+    "Flaki wołowe food",
+    "Flaki wołowe ingredient photo"
+  ],
+  "serca-wieprzowe": [
+    "pork",
+    "pork food",
+    "pork ingredient photo"
+  ],
+  "nerki-wieprzowe": [
+    "pork",
+    "pork food",
+    "pork ingredient photo"
+  ],
+  "mieso-mielone-wieprzowo-wolowe": [
+    "Mięso mielone wieprzowo-wołowe",
+    "Mięso mielone wieprzowo-wołowe food",
+    "Mięso mielone wieprzowo-wołowe ingredient photo"
+  ],
+  "mieso-mielone-z-indyka": [
+    "turkey",
+    "turkey food",
+    "turkey ingredient photo"
+  ],
+  "mieso-drobiowe-mielone": [
+    "Mięso drobiowe mielone",
+    "Mięso drobiowe mielone food",
+    "Mięso drobiowe mielone ingredient photo"
+  ],
+  "pieczen-rzymska": [
+    "Pieczeń rzymska",
+    "Pieczeń rzymska food",
+    "Pieczeń rzymska ingredient photo"
+  ],
+  "schabowe-mieso-stek": [
+    "Schabowe mięso",
+    "Schabowe mięso food",
+    "Schabowe mięso ingredient photo"
+  ],
+  "lopatka-wieprzowa-pieczona": [
+    "pork",
+    "pork food",
+    "pork ingredient photo"
+  ],
+  "kotlet-wieprzowy-schabowy": [
+    "cutlet pork cutlet",
+    "cutlet pork cutlet food",
+    "cutlet pork cutlet ingredient photo"
+  ],
+  "kotlet-z-karkowki": [
+    "cutlet",
+    "cutlet food",
+    "cutlet ingredient photo"
+  ],
+  "szynka-wieprzowa-udziec": [
+    "ham pork",
+    "ham pork food",
+    "ham pork ingredient photo"
+  ],
+  "klopsiki-wieprzowe": [
+    "pork",
+    "pork food",
+    "pork ingredient photo"
+  ],
+  "morszczuk": [
+    "Morszczuk",
+    "Morszczuk food",
+    "Morszczuk ingredient photo"
+  ],
+  "pstrag-lososiowy": [
+    "trout",
+    "trout food",
+    "trout ingredient photo"
+  ],
+  "karp": [
+    "carp",
+    "carp food",
+    "carp ingredient photo"
+  ],
+  "okon": [
+    "Okoń",
+    "Okoń food",
+    "Okoń ingredient photo"
+  ],
+  "pangasius": [
+    "Pangasius",
+    "Pangasius food",
+    "Pangasius ingredient photo"
+  ],
+  "miruna": [
+    "Miruna",
+    "Miruna food",
+    "Miruna ingredient photo"
+  ],
+  "sardynki-w-pomidorach": [
+    "sardines",
+    "sardines food",
+    "sardines ingredient photo"
+  ],
+  "szprotki-wedzone": [
+    "Szprotki wędzone",
+    "Szprotki wędzone food",
+    "Szprotki wędzone ingredient photo"
+  ],
+  "losos-wedzony-na-zimno": [
+    "salmon",
+    "salmon food",
+    "salmon ingredient photo"
+  ],
+  "tunczyk-swiezy-stek": [
+    "tuna",
+    "tuna food",
+    "tuna ingredient photo"
+  ],
+  "krewetki-obrane": [
+    "shrimp",
+    "shrimp food",
+    "shrimp ingredient photo"
+  ],
+  "krewetki-krolewskie": [
+    "shrimp",
+    "shrimp food",
+    "shrimp ingredient photo"
+  ],
+  "osmiornica": [
+    "Ośmiornica",
+    "Ośmiornica food",
+    "Ośmiornica ingredient photo"
+  ],
+  "malze-mule": [
+    "Małże",
+    "Małże food",
+    "Małże ingredient photo"
+  ],
+  "malze-zielone": [
+    "green",
+    "green food",
+    "green ingredient photo"
+  ],
+  "ostrygi": [
+    "Ostrygi",
+    "Ostrygi food",
+    "Ostrygi ingredient photo"
+  ],
+  "kawior": [
+    "Kawior",
+    "Kawior food",
+    "Kawior ingredient photo"
+  ],
+  "sledz-w-smietanie": [
+    "herring",
+    "herring food",
+    "herring ingredient photo"
+  ],
+  "ryba-po-grecku": [
+    "fish greek style",
+    "fish greek style food",
+    "fish greek style ingredient photo"
+  ],
+  "mleko-0-5": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "mleko-bez-laktozy": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "maslanka-naturalna": [
+    "Maślanka naturalna",
+    "Maślanka naturalna food",
+    "Maślanka naturalna ingredient photo"
+  ],
+  "maslanka-owocowa": [
+    "Maślanka owocowa",
+    "Maślanka owocowa food",
+    "Maślanka owocowa ingredient photo"
+  ],
+  "kefir-naturalny": [
+    "kefir plain",
+    "kefir plain food",
+    "kefir plain ingredient photo"
+  ],
+  "jogurt-naturalny-0": [
+    "yogurt plain",
+    "yogurt plain food",
+    "yogurt plain ingredient photo"
+  ],
+  "jogurt-grecki-0": [
+    "yogurt greek",
+    "yogurt greek food",
+    "yogurt greek ingredient photo"
+  ],
+  "skyr-owocowy": [
+    "skyr fruit",
+    "skyr fruit food",
+    "skyr fruit ingredient photo"
+  ],
+  "jogurt-pitny-bialkowy": [
+    "yogurt drinkable",
+    "yogurt drinkable food",
+    "yogurt drinkable ingredient photo"
+  ],
+  "serek-homogenizowany-naturalny": [
+    "cottage cheese cream cheese plain",
+    "cottage cheese cream cheese plain food",
+    "cottage cheese cream cheese plain ingredient photo"
+  ],
+  "serek-homogenizowany-truskawkowy": [
+    "cottage cheese cream cheese strawberry",
+    "cottage cheese cream cheese strawberry food",
+    "cottage cheese cream cheese strawberry ingredient photo"
+  ],
+  "serek-kanapkowy-naturalny": [
+    "cottage cheese plain",
+    "cottage cheese plain food",
+    "cottage cheese plain ingredient photo"
+  ],
+  "serek-kanapkowy-ze-szczypiorkiem": [
+    "cottage cheese",
+    "cottage cheese food",
+    "cottage cheese ingredient photo"
+  ],
+  "serek-typu-philadelphia": [
+    "cottage cheese",
+    "cottage cheese food",
+    "cottage cheese ingredient photo"
+  ],
+  "jogurt-wiejski-naturalny": [
+    "yogurt cottage cheese plain",
+    "yogurt cottage cheese plain food",
+    "yogurt cottage cheese plain ingredient photo"
+  ],
+  "mleko-skondensowane-nieslodzone": [
+    "milk condensed",
+    "milk condensed food",
+    "milk condensed ingredient photo"
+  ],
+  "mleko-smakowe-czekoladowe": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "mleko-smakowe-waniliowe": [
+    "milk vanilla",
+    "milk vanilla food",
+    "milk vanilla ingredient photo"
+  ],
+  "kakao-na-mleku-gotowe": [
+    "Kakao na mleku",
+    "Kakao na mleku food",
+    "Kakao na mleku ingredient photo"
+  ],
+  "napoj-proteinowy-mleczny": [
+    "protein bar",
+    "protein bar food",
+    "protein bar ingredient photo"
+  ],
+  "bialko-serwatkowe-shake-mleko": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "smietana-ukwaszona-12": [
+    "cream",
+    "cream food",
+    "cream ingredient photo"
+  ],
+  "jogurt-z-miodem-i-orzechami": [
+    "yogurt",
+    "yogurt food",
+    "yogurt ingredient photo"
+  ],
+  "jogurt-bakoma-7-zboz": [
+    "yogurt",
+    "yogurt food",
+    "yogurt ingredient photo"
+  ],
+  "jogurt-typu-greckiego-piatnica": [
+    "yogurt",
+    "yogurt food",
+    "yogurt ingredient photo"
+  ],
+  "skyr-naturalny-piatnica": [
+    "skyr plain",
+    "skyr plain food",
+    "skyr plain ingredient photo"
+  ],
+  "jogurt-activia-naturalny": [
+    "yogurt plain",
+    "yogurt plain food",
+    "yogurt plain ingredient photo"
+  ],
+  "jogurt-activia-owocowy": [
+    "yogurt fruit",
+    "yogurt fruit food",
+    "yogurt fruit ingredient photo"
+  ],
+  "actimel-naturalny": [
+    "plain",
+    "plain food",
+    "plain ingredient photo"
+  ],
+  "actimel-truskawkowy": [
+    "strawberry",
+    "strawberry food",
+    "strawberry ingredient photo"
+  ],
+  "kefir-bieluch": [
+    "kefir",
+    "kefir food",
+    "kefir ingredient photo"
+  ],
+  "kefir-z-lomzy": [
+    "kefir",
+    "kefir food",
+    "kefir ingredient photo"
+  ],
+  "maslanka-laciata": [
+    "Maślanka Łaciata",
+    "Maślanka Łaciata food",
+    "Maślanka Łaciata ingredient photo"
+  ],
+  "jogobella-truskawkowa": [
+    "Jogobella truskawkowa",
+    "Jogobella truskawkowa food",
+    "Jogobella truskawkowa ingredient photo"
+  ],
+  "jogobella-brzoskwiniowa": [
+    "Jogobella brzoskwiniowa",
+    "Jogobella brzoskwiniowa food",
+    "Jogobella brzoskwiniowa ingredient photo"
+  ],
+  "danio-waniliowy": [
+    "Danio waniliowy",
+    "Danio waniliowy food",
+    "Danio waniliowy ingredient photo"
+  ],
+  "danio-czekoladowy": [
+    "chocolate",
+    "chocolate food",
+    "chocolate ingredient photo"
+  ],
+  "deser-monte": [
+    "Deser Monte",
+    "Deser Monte food",
+    "Deser Monte ingredient photo"
+  ],
+  "deser-monte-czekoladowy": [
+    "chocolate",
+    "chocolate food",
+    "chocolate ingredient photo"
+  ],
+  "krem-kaszkowy-waniliowy-kogel-mogel": [
+    "spread",
+    "spread food",
+    "spread ingredient photo"
+  ],
+  "serek-fromage-kremowy": [
+    "cottage cheese",
+    "cottage cheese food",
+    "cottage cheese ingredient photo"
+  ],
+  "serek-ostrowia-twarogowy": [
+    "cottage cheese curd",
+    "cottage cheese curd food",
+    "cottage cheese curd ingredient photo"
+  ],
+  "twarog-grani-ze-szczypiorkiem": [
+    "cottage cheese",
+    "cottage cheese food",
+    "cottage cheese ingredient photo"
+  ],
+  "twarog-sernikowy-smietankowy": [
+    "cottage cheese",
+    "cottage cheese food",
+    "cottage cheese ingredient photo"
+  ],
+  "jajko-kacze": [
+    "egg",
+    "egg food",
+    "egg ingredient photo"
+  ],
+  "jajecznica-z-2-jaj": [
+    "egg",
+    "egg food",
+    "egg ingredient photo"
+  ],
+  "omlet-z-jajek": [
+    "Omlet z jajek",
+    "Omlet z jajek food",
+    "Omlet z jajek ingredient photo"
+  ],
+  "jaja-sadzone": [
+    "Jaja sadzone",
+    "Jaja sadzone food",
+    "Jaja sadzone ingredient photo"
+  ],
+  "majonez-z-jajek-domowy": [
+    "mayonnaise",
+    "mayonnaise food",
+    "mayonnaise ingredient photo"
+  ],
+  "napoj-mleczny-kakaowy-mleczna-kanapka": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "maslanka-czekoladowa": [
+    "Maślanka czekoladowa",
+    "Maślanka czekoladowa food",
+    "Maślanka czekoladowa ingredient photo"
+  ],
+  "ser-gouda-dojrzewajaca": [
+    "cheese gouda",
+    "cheese gouda food",
+    "cheese gouda ingredient photo"
+  ],
+  "ser-mazdamer": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-tylzycki-sery": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-szwajcarski": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-mozzarella-lekka": [
+    "cheese mozzarella",
+    "cheese mozzarella food",
+    "cheese mozzarella ingredient photo"
+  ],
+  "ser-mozzarella-buffalo": [
+    "cheese mozzarella",
+    "cheese mozzarella food",
+    "cheese mozzarella ingredient photo"
+  ],
+  "ser-feta-lekki": [
+    "cheese feta",
+    "cheese feta food",
+    "cheese feta ingredient photo"
+  ],
+  "ser-balkanski": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-kozi-kostka": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-owczy-kostka": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-oscypek": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-wedzony-ser-zolty-wedzony": [
+    "cheese yellow",
+    "cheese yellow food",
+    "cheese yellow ingredient photo"
+  ],
+  "ser-topiony-smietankowy": [
+    "cheese processed",
+    "cheese processed food",
+    "cheese processed ingredient photo"
+  ],
+  "ser-topiony-z-papryka": [
+    "cheese processed bell pepper",
+    "cheese processed bell pepper food",
+    "cheese processed bell pepper ingredient photo"
+  ],
+  "ser-smazony-smazak": [
+    "cheese fried",
+    "cheese fried food",
+    "cheese fried ingredient photo"
+  ],
+  "ser-golka": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-twarogowy-wedzony": [
+    "cheese curd",
+    "cheese curd food",
+    "cheese curd ingredient photo"
+  ],
+  "ser-zolty-w-plastrach-light": [
+    "cheese yellow",
+    "cheese yellow food",
+    "cheese yellow ingredient photo"
+  ],
+  "ser-z-niebieska-plesnia-gorgonzola": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-ementaler": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-parmezan-tarty": [
+    "cheese parmesan",
+    "cheese parmesan food",
+    "cheese parmesan ingredient photo"
+  ],
+  "szpinak-baby": [
+    "spinach",
+    "spinach food",
+    "spinach ingredient photo"
+  ],
+  "miks-salat-z-roszponka": [
+    "salad",
+    "salad food",
+    "salad ingredient photo"
+  ],
+  "korniszon": [
+    "Korniszon",
+    "Korniszon food",
+    "Korniszon ingredient photo"
+  ],
+  "papryka-konserwowa": [
+    "bell pepper",
+    "bell pepper food",
+    "bell pepper ingredient photo"
+  ],
+  "papryka-marynowana": [
+    "bell pepper",
+    "bell pepper food",
+    "bell pepper ingredient photo"
+  ],
+  "cebulka-perlowa-marynowana": [
+    "Cebulka perłowa marynowana",
+    "Cebulka perłowa marynowana food",
+    "Cebulka perłowa marynowana ingredient photo"
+  ],
+  "buraki-kiszone": [
+    "Buraki kiszone",
+    "Buraki kiszone food",
+    "Buraki kiszone ingredient photo"
+  ],
+  "kapusta-kiszona-z-jablkiem": [
+    "cabbage sauerkraut",
+    "cabbage sauerkraut food",
+    "cabbage sauerkraut ingredient photo"
+  ],
+  "brukiew": [
+    "Brukiew",
+    "Brukiew food",
+    "Brukiew ingredient photo"
+  ],
+  "patison": [
+    "Patison",
+    "Patison food",
+    "Patison ingredient photo"
+  ],
+  "kabaczek": [
+    "Kabaczek",
+    "Kabaczek food",
+    "Kabaczek ingredient photo"
+  ],
+  "edamame-straczki": [
+    "Edamame",
+    "Edamame food",
+    "Edamame ingredient photo"
+  ],
+  "soja-gotowana": [
+    "Soja gotowana",
+    "Soja gotowana food",
+    "Soja gotowana ingredient photo"
+  ],
+  "kurki": [
+    "Kurki",
+    "Kurki food",
+    "Kurki ingredient photo"
+  ],
+  "borowik-prawdziwek": [
+    "Borowik",
+    "Borowik food",
+    "Borowik ingredient photo"
+  ],
+  "podgrzybek": [
+    "Podgrzybek",
+    "Podgrzybek food",
+    "Podgrzybek ingredient photo"
+  ],
+  "maslak": [
+    "Maślak",
+    "Maślak food",
+    "Maślak ingredient photo"
+  ],
+  "kania-sowa": [
+    "Kania",
+    "Kania food",
+    "Kania ingredient photo"
+  ],
+  "pieczarki-portobello": [
+    "Pieczarki portobello",
+    "Pieczarki portobello food",
+    "Pieczarki portobello ingredient photo"
+  ],
+  "grzyby-marynowane": [
+    "Grzyby marynowane",
+    "Grzyby marynowane food",
+    "Grzyby marynowane ingredient photo"
+  ],
+  "szpinak-mrozony-kulka": [
+    "spinach",
+    "spinach food",
+    "spinach ingredient photo"
+  ],
+  "brokuly-mrozone": [
+    "broccoli",
+    "broccoli food",
+    "broccoli ingredient photo"
+  ],
+  "kalafior-mrozony": [
+    "cauliflower",
+    "cauliflower food",
+    "cauliflower ingredient photo"
+  ],
+  "groszek-mrozony": [
+    "peas",
+    "peas food",
+    "peas ingredient photo"
+  ],
+  "kukurydza-mrozona": [
+    "corn frozen",
+    "corn frozen food",
+    "corn frozen ingredient photo"
+  ],
+  "warzywa-mrozone-mix-7-warzyw": [
+    "mixed",
+    "mixed food",
+    "mixed ingredient photo"
+  ],
+  "surowka-z-burakow": [
+    "Surówka z buraków",
+    "Surówka z buraków food",
+    "Surówka z buraków ingredient photo"
+  ],
+  "kiszone-pomidory": [
+    "tomato",
+    "tomato food",
+    "tomato ingredient photo"
+  ],
+  "czosnek-niedzwiedzi-liscie": [
+    "garlic",
+    "garlic food",
+    "garlic ingredient photo"
+  ],
+  "szczaw": [
+    "Szczaw",
+    "Szczaw food",
+    "Szczaw ingredient photo"
+  ],
+  "botwinka": [
+    "Botwinka",
+    "Botwinka food",
+    "Botwinka ingredient photo"
+  ],
+  "nac-pietruszki": [
+    "Nać pietruszki",
+    "Nać pietruszki food",
+    "Nać pietruszki ingredient photo"
+  ],
+  "porek-por": [
+    "leek",
+    "leek food",
+    "leek ingredient photo"
+  ],
+  "poziomki": [
+    "Poziomki",
+    "Poziomki food",
+    "Poziomki ingredient photo"
+  ],
+  "porzeczka-biala": [
+    "white",
+    "white food",
+    "white ingredient photo"
+  ],
+  "borowka-bagienna": [
+    "Borówka bagienna",
+    "Borówka bagienna food",
+    "Borówka bagienna ingredient photo"
+  ],
+  "figa-swieza": [
+    "Figa świeża",
+    "Figa świeża food",
+    "Figa świeża ingredient photo"
+  ],
+  "gujawa": [
+    "Gujawa",
+    "Gujawa food",
+    "Gujawa ingredient photo"
+  ],
+  "kokos-swiezy-miazsz": [
+    "coconut pumpkin",
+    "coconut pumpkin food",
+    "coconut pumpkin ingredient photo"
+  ],
+  "mleczko-kokosowe": [
+    "marshmallow",
+    "marshmallow food",
+    "marshmallow ingredient photo"
+  ],
+  "sliwki-suszone-bez-pestek": [
+    "plum sun dried",
+    "plum sun dried food",
+    "plum sun dried ingredient photo"
+  ],
+  "mango-suszone": [
+    "mango sun dried",
+    "mango sun dried food",
+    "mango sun dried ingredient photo"
+  ],
+  "ananas-suszony": [
+    "pineapple dried",
+    "pineapple dried food",
+    "pineapple dried ingredient photo"
+  ],
+  "jablko-suszone-chipsy": [
+    "apple sun dried potato chips",
+    "apple sun dried potato chips food",
+    "apple sun dried potato chips ingredient photo"
+  ],
+  "zurawina-mrozona": [
+    "cranberry frozen",
+    "cranberry frozen food",
+    "cranberry frozen ingredient photo"
+  ],
+  "maliny-mrozone": [
+    "raspberry",
+    "raspberry food",
+    "raspberry ingredient photo"
+  ],
+  "jagody-mrozone": [
+    "berry",
+    "berry food",
+    "berry ingredient photo"
+  ],
+  "sliwka-wegierka": [
+    "Śliwka węgierka",
+    "Śliwka węgierka food",
+    "Śliwka węgierka ingredient photo"
+  ],
+  "melon-kantalupa": [
+    "melon",
+    "melon food",
+    "melon ingredient photo"
+  ],
+  "melon-miodowy": [
+    "melon honey",
+    "melon honey food",
+    "melon honey ingredient photo"
+  ],
+  "sok-z-granata-naturalny": [
+    "plain",
+    "plain food",
+    "plain ingredient photo"
+  ],
+  "mus-jablkowy-nieslodzony": [
+    "Mus jabłkowy niesłodzony",
+    "Mus jabłkowy niesłodzony food",
+    "Mus jabłkowy niesłodzony ingredient photo"
+  ],
+  "kompot-z-jablek": [
+    "Kompot z jabłek",
+    "Kompot z jabłek food",
+    "Kompot z jabłek ingredient photo"
+  ],
+  "kompot-z-truskawek": [
+    "Kompot z truskawek",
+    "Kompot z truskawek food",
+    "Kompot z truskawek ingredient photo"
+  ],
+  "lody-sorbetowe-malinowe": [
+    "ice cream",
+    "ice cream food",
+    "ice cream ingredient photo"
+  ],
+  "maka-pszenna-tortowa": [
+    "flour wheat",
+    "flour wheat food",
+    "flour wheat ingredient photo"
+  ],
+  "maka-pszenna-chlebowa": [
+    "flour wheat",
+    "flour wheat food",
+    "flour wheat ingredient photo"
+  ],
+  "maka-zytnia-razowa": [
+    "flour",
+    "flour food",
+    "flour ingredient photo"
+  ],
+  "maka-gryczana": [
+    "flour buckwheat",
+    "flour buckwheat food",
+    "flour buckwheat ingredient photo"
+  ],
+  "maka-orkiszowa": [
+    "flour",
+    "flour food",
+    "flour ingredient photo"
+  ],
+  "maka-kokosowa": [
+    "flour",
+    "flour food",
+    "flour ingredient photo"
+  ],
+  "maka-migdalowa": [
+    "flour",
+    "flour food",
+    "flour ingredient photo"
+  ],
+  "skrobia-ziemniaczana": [
+    "Skrobia ziemniaczana",
+    "Skrobia ziemniaczana food",
+    "Skrobia ziemniaczana ingredient photo"
+  ],
+  "kasza-gryczana-biala": [
+    "buckwheat white",
+    "buckwheat white food",
+    "buckwheat white ingredient photo"
+  ],
+  "kasza-jeczmienna-perlowa": [
+    "barley",
+    "barley food",
+    "barley ingredient photo"
+  ],
+  "kasza-jeczmienna-peczak": [
+    "barley",
+    "barley food",
+    "barley ingredient photo"
+  ],
+  "kasza-kukurydziana-polenta": [
+    "Kasza kukurydziana",
+    "Kasza kukurydziana food",
+    "Kasza kukurydziana ingredient photo"
+  ],
+  "kasza-owsiana": [
+    "Kasza owsiana",
+    "Kasza owsiana food",
+    "Kasza owsiana ingredient photo"
+  ],
+  "ryz-bialy-dlugoziarnisty": [
+    "rice white",
+    "rice white food",
+    "rice white ingredient photo"
+  ],
+  "ryz-brazowy": [
+    "rice brown",
+    "rice brown food",
+    "rice brown ingredient photo"
+  ],
+  "ryz-jasminowy": [
+    "rice",
+    "rice food",
+    "rice ingredient photo"
+  ],
+  "ryz-dziki": [
+    "rice wild",
+    "rice wild food",
+    "rice wild ingredient photo"
+  ],
+  "ryz-parboiled": [
+    "rice",
+    "rice food",
+    "rice ingredient photo"
+  ],
+  "platki-jeczmienne": [
+    "flakes",
+    "flakes food",
+    "flakes ingredient photo"
+  ],
+  "zarodki-pszenne": [
+    "Zarodki pszenne",
+    "Zarodki pszenne food",
+    "Zarodki pszenne ingredient photo"
+  ],
+  "sezam-nasiona": [
+    "Sezam",
+    "Sezam food",
+    "Sezam ingredient photo"
+  ],
+  "mak-nasiona": [
+    "Mak",
+    "Mak food",
+    "Mak ingredient photo"
+  ],
+  "czarnuszka-nasiona": [
+    "Czarnuszka",
+    "Czarnuszka food",
+    "Czarnuszka ingredient photo"
+  ],
+  "amarantus-nasiona": [
+    "amaranth",
+    "amaranth food",
+    "amaranth ingredient photo"
+  ],
+  "tapioka-perly": [
+    "Tapioka",
+    "Tapioka food",
+    "Tapioka ingredient photo"
+  ],
+  "makaron-pszenny": [
+    "pasta wheat",
+    "pasta wheat food",
+    "pasta wheat ingredient photo"
+  ],
+  "makaron-pelnoziarnisty": [
+    "pasta whole wheat",
+    "pasta whole wheat food",
+    "pasta whole wheat ingredient photo"
+  ],
+  "makaron-ryzowy": [
+    "pasta",
+    "pasta food",
+    "pasta ingredient photo"
+  ],
+  "makaron-gryczany-soba": [
+    "pasta",
+    "pasta food",
+    "pasta ingredient photo"
+  ],
+  "makaron-kukurydziany": [
+    "pasta",
+    "pasta food",
+    "pasta ingredient photo"
+  ],
+  "makaron-sojowy": [
+    "pasta soy sauce",
+    "pasta soy sauce food",
+    "pasta soy sauce ingredient photo"
+  ],
+  "makaron-lniany": [
+    "pasta flaxseed",
+    "pasta flaxseed food",
+    "pasta flaxseed ingredient photo"
+  ],
+  "makaron-jajeczny-nitki": [
+    "pasta egg",
+    "pasta egg food",
+    "pasta egg ingredient photo"
+  ],
+  "platki-kukurydziane-corn-flakes": [
+    "flakes",
+    "flakes food",
+    "flakes ingredient photo"
+  ],
+  "platki-czekoladowe-chocapic": [
+    "flakes",
+    "flakes food",
+    "flakes ingredient photo"
+  ],
+  "czekoladowe-kuleczki-nesquik": [
+    "Czekoladowe kuleczki",
+    "Czekoladowe kuleczki food",
+    "Czekoladowe kuleczki ingredient photo"
+  ],
+  "platki-miodowe": [
+    "flakes",
+    "flakes food",
+    "flakes ingredient photo"
+  ],
+  "musli-owocowe": [
+    "muesli",
+    "muesli food",
+    "muesli ingredient photo"
+  ],
+  "musli-czekoladowe": [
+    "muesli",
+    "muesli food",
+    "muesli ingredient photo"
+  ],
+  "musli-orzechowe": [
+    "muesli peanut butter",
+    "muesli peanut butter food",
+    "muesli peanut butter ingredient photo"
+  ],
+  "musli-crunchy": [
+    "muesli",
+    "muesli food",
+    "muesli ingredient photo"
+  ],
+  "granola-naturalna": [
+    "granola",
+    "granola food",
+    "granola ingredient photo"
+  ],
+  "granola-czekoladowa": [
+    "granola",
+    "granola food",
+    "granola ingredient photo"
+  ],
+  "platki-z-otrebami-fitness": [
+    "flakes",
+    "flakes food",
+    "flakes ingredient photo"
+  ],
+  "cheerios": [
+    "Cheerios",
+    "Cheerios food",
+    "Cheerios ingredient photo"
+  ],
+  "platki-cynamonowe": [
+    "flakes",
+    "flakes food",
+    "flakes ingredient photo"
+  ],
+  "owsianka-blyskawiczna-saszetka": [
+    "Owsianka błyskawiczna saszetka",
+    "Owsianka błyskawiczna saszetka food",
+    "Owsianka błyskawiczna saszetka ingredient photo"
+  ],
+  "owsianka-instant-owocowa": [
+    "instant",
+    "instant food",
+    "instant ingredient photo"
+  ],
+  "owsianka-nocna-overnight-oats": [
+    "Owsianka nocna",
+    "Owsianka nocna food",
+    "Owsianka nocna ingredient photo"
+  ],
+  "platki-orkiszowe-z-owocami": [
+    "flakes",
+    "flakes food",
+    "flakes ingredient photo"
+  ],
+  "platki-gryczane-z-bakaliami": [
+    "flakes",
+    "flakes food",
+    "flakes ingredient photo"
+  ],
+  "musli-bez-cukru-blonnik": [
+    "muesli sugar",
+    "muesli sugar food",
+    "muesli sugar ingredient photo"
+  ],
+  "platki-proteinowe-wysokobialkowe": [
+    "flakes",
+    "flakes food",
+    "flakes ingredient photo"
+  ],
+  "rosol-z-kury": [
+    "broth",
+    "broth food",
+    "broth ingredient photo"
+  ],
+  "zupa-kapusniak": [
+    "soup",
+    "soup food",
+    "soup ingredient photo"
+  ],
+  "zupa-koperkowa": [
+    "soup",
+    "soup food",
+    "soup ingredient photo"
+  ],
+  "zupa-krem-z-brokulow": [
+    "soup spread",
+    "soup spread food",
+    "soup spread ingredient photo"
+  ],
+  "zupa-krem-z-pora": [
+    "soup spread",
+    "soup spread food",
+    "soup spread ingredient photo"
+  ],
+  "zupa-krem-z-marchewki": [
+    "soup spread",
+    "soup spread food",
+    "soup spread ingredient photo"
+  ],
+  "zupa-krem-z-dyni": [
+    "soup spread pumpkin",
+    "soup spread pumpkin food",
+    "soup spread pumpkin ingredient photo"
+  ],
+  "zupa-krem-z-pomidorow": [
+    "soup spread",
+    "soup spread food",
+    "soup spread ingredient photo"
+  ],
+  "zupa-krem-z-pietruszki": [
+    "soup spread",
+    "soup spread food",
+    "soup spread ingredient photo"
+  ],
+  "zupa-minestrone": [
+    "soup",
+    "soup food",
+    "soup ingredient photo"
+  ],
+  "barszcz-ukrainski": [
+    "Barszcz ukraiński",
+    "Barszcz ukraiński food",
+    "Barszcz ukraiński ingredient photo"
+  ],
+  "chlodnik-litewski": [
+    "Chłodnik litewski",
+    "Chłodnik litewski food",
+    "Chłodnik litewski ingredient photo"
+  ],
+  "zupa-rybna": [
+    "soup",
+    "soup food",
+    "soup ingredient photo"
+  ],
+  "zupa-mleczna-z-kluskami": [
+    "soup milk",
+    "soup milk food",
+    "soup milk ingredient photo"
+  ],
+  "zupa-ogonowa": [
+    "soup",
+    "soup food",
+    "soup ingredient photo"
+  ],
+  "zupa-neapolitanska": [
+    "soup",
+    "soup food",
+    "soup ingredient photo"
+  ],
+  "zupa-zurek-z-jajkiem": [
+    "soup",
+    "soup food",
+    "soup ingredient photo"
+  ],
+  "zupa-grzybowa-z-lazankami": [
+    "soup",
+    "soup food",
+    "soup ingredient photo"
+  ],
+  "zupa-cebulowa-zapiekana": [
+    "soup",
+    "soup food",
+    "soup ingredient photo"
+  ],
+  "zupa-krem-z-kalafiora": [
+    "soup spread",
+    "soup spread food",
+    "soup spread ingredient photo"
+  ],
+  "zupa-krem-z-cukinii": [
+    "soup spread",
+    "soup spread food",
+    "soup spread ingredient photo"
+  ],
+  "zupa-jarzynowa-rosol-warzywny": [
+    "soup broth",
+    "soup broth food",
+    "soup broth ingredient photo"
+  ],
+  "zupa-krem-z-selera": [
+    "soup spread",
+    "soup spread food",
+    "soup spread ingredient photo"
+  ],
+  "zupa-gulaszowa-z-miesem": [
+    "soup meat",
+    "soup meat food",
+    "soup meat ingredient photo"
+  ],
+  "zupa-krem-z-batatow": [
+    "soup spread",
+    "soup spread food",
+    "soup spread ingredient photo"
+  ],
+  "zupa-pho-wolowa": [
+    "soup beef",
+    "soup beef food",
+    "soup beef ingredient photo"
+  ],
+  "zupa-ramen": [
+    "soup",
+    "soup food",
+    "soup ingredient photo"
+  ],
+  "zupa-miso": [
+    "soup",
+    "soup food",
+    "soup ingredient photo"
+  ],
+  "zupa-kwasna-tajska": [
+    "soup",
+    "soup food",
+    "soup ingredient photo"
+  ],
+  "chlodnik-z-ogorkow": [
+    "Chłodnik z ogórków",
+    "Chłodnik z ogórków food",
+    "Chłodnik z ogórków ingredient photo"
+  ],
+  "maslo-migdalowe": [
+    "butter",
+    "butter food",
+    "butter ingredient photo"
+  ],
+  "maslo-z-nerkowcow": [
+    "butter",
+    "butter food",
+    "butter ingredient photo"
+  ],
+  "mieszanka-studencka": [
+    "Mieszanka studencka",
+    "Mieszanka studencka food",
+    "Mieszanka studencka ingredient photo"
+  ],
+  "orzeszki-ziemne-solone": [
+    "peanut",
+    "peanut food",
+    "peanut ingredient photo"
+  ],
+  "orzeszki-ziemne-prazone": [
+    "peanut roasted",
+    "peanut roasted food",
+    "peanut roasted ingredient photo"
+  ],
+  "orzechy-w-czekoladzie": [
+    "nuts",
+    "nuts food",
+    "nuts ingredient photo"
+  ],
+  "pistacje-solone": [
+    "Pistacje solone",
+    "Pistacje solone food",
+    "Pistacje solone ingredient photo"
+  ],
+  "krem-orzechowo-kakaowy": [
+    "spread",
+    "spread food",
+    "spread ingredient photo"
+  ],
+  "krem-z-orzechow-laskowych": [
+    "spread",
+    "spread food",
+    "spread ingredient photo"
+  ],
+  "oliwa-z-oliwek-extra-virgin": [
+    "olive",
+    "olive food",
+    "olive ingredient photo"
+  ],
+  "margaryna-do-smarowania": [
+    "margarine",
+    "margarine food",
+    "margarine ingredient photo"
+  ],
+  "margaryna-do-pieczenia": [
+    "margarine",
+    "margarine food",
+    "margarine ingredient photo"
+  ],
+  "tluszcz-roslinny-planta": [
+    "fat",
+    "fat food",
+    "fat ingredient photo"
+  ],
+  "ketchup-pikantny": [
+    "ketchup",
+    "ketchup food",
+    "ketchup ingredient photo"
+  ],
+  "ketchup-bez-cukru": [
+    "ketchup sugar",
+    "ketchup sugar food",
+    "ketchup sugar ingredient photo"
+  ],
+  "majonez-light": [
+    "mayonnaise",
+    "mayonnaise food",
+    "mayonnaise ingredient photo"
+  ],
+  "majonez-weganski": [
+    "mayonnaise",
+    "mayonnaise food",
+    "mayonnaise ingredient photo"
+  ],
+  "musztarda-sarepska": [
+    "mustard",
+    "mustard food",
+    "mustard ingredient photo"
+  ],
+  "musztarda-dijon": [
+    "mustard",
+    "mustard food",
+    "mustard ingredient photo"
+  ],
+  "musztarda-miodowa": [
+    "mustard",
+    "mustard food",
+    "mustard ingredient photo"
+  ],
+  "sos-tabasco": [
+    "Sos tabasco",
+    "Sos tabasco food",
+    "Sos tabasco ingredient photo"
+  ],
+  "pesto-bazyliowe": [
+    "pesto",
+    "pesto food",
+    "pesto ingredient photo"
+  ],
+  "pesto-czerwone": [
+    "pesto red",
+    "pesto red food",
+    "pesto red ingredient photo"
+  ],
+  "salsa-pomidorowa": [
+    "tomato",
+    "tomato food",
+    "tomato ingredient photo"
+  ],
+  "winegret": [
+    "vinaigrette",
+    "vinaigrette food",
+    "vinaigrette ingredient photo"
+  ],
+  "sos-curry-w-proszku": [
+    "Sos curry",
+    "Sos curry food",
+    "Sos curry ingredient photo"
+  ],
+  "sos-smietanowy": [
+    "Sos śmietanowy",
+    "Sos śmietanowy food",
+    "Sos śmietanowy ingredient photo"
+  ],
+  "sos-grzybowy": [
+    "Sos grzybowy",
+    "Sos grzybowy food",
+    "Sos grzybowy ingredient photo"
+  ],
+  "sos-pieczarkowy": [
+    "Sos pieczarkowy",
+    "Sos pieczarkowy food",
+    "Sos pieczarkowy ingredient photo"
+  ],
+  "sos-bolonski": [
+    "Sos boloński",
+    "Sos boloński food",
+    "Sos boloński ingredient photo"
+  ],
+  "sos-pomidorowy-passata": [
+    "Sos pomidorowy",
+    "Sos pomidorowy food",
+    "Sos pomidorowy ingredient photo"
+  ],
+  "sos-pesto-z-rukoli": [
+    "pesto",
+    "pesto food",
+    "pesto ingredient photo"
+  ],
+  "sos-winegret-musztardowy": [
+    "vinaigrette",
+    "vinaigrette food",
+    "vinaigrette ingredient photo"
+  ],
+  "sos-cebulowy": [
+    "Sos cebulowy",
+    "Sos cebulowy food",
+    "Sos cebulowy ingredient photo"
+  ],
+  "sos-jablkowy-mus-z-cynamonem": [
+    "Sos jabłkowy",
+    "Sos jabłkowy food",
+    "Sos jabłkowy ingredient photo"
+  ],
+  "curry-przyprawa-w-proszku": [
+    "Curry",
+    "Curry food",
+    "Curry ingredient photo"
+  ],
+  "garam-masala": [
+    "Garam masala",
+    "Garam masala food",
+    "Garam masala ingredient photo"
+  ],
+  "oregano-suszone": [
+    "sun dried",
+    "sun dried food",
+    "sun dried ingredient photo"
+  ],
+  "kmin-rzymski": [
+    "Kmin rzymski",
+    "Kmin rzymski food",
+    "Kmin rzymski ingredient photo"
+  ],
+  "kminek-nasiona": [
+    "Kminek",
+    "Kminek food",
+    "Kminek ingredient photo"
+  ],
+  "kolendra-mielona": [
+    "Kolendra mielona",
+    "Kolendra mielona food",
+    "Kolendra mielona ingredient photo"
+  ],
+  "pieprz-cayenne": [
+    "Pieprz cayenne",
+    "Pieprz cayenne food",
+    "Pieprz cayenne ingredient photo"
+  ],
+  "sol-morska": [
+    "Sól morska",
+    "Sól morska food",
+    "Sól morska ingredient photo"
+  ],
+  "sol-himalajska": [
+    "Sól himalajska",
+    "Sól himalajska food",
+    "Sól himalajska ingredient photo"
+  ],
+  "cebula-suszona": [
+    "onion dried",
+    "onion dried food",
+    "onion dried ingredient photo"
+  ],
+  "kurkuma-mielona": [
+    "Kurkuma mielona",
+    "Kurkuma mielona food",
+    "Kurkuma mielona ingredient photo"
+  ],
+  "przyprawa-do-ryb": [
+    "Przyprawa do ryb",
+    "Przyprawa do ryb food",
+    "Przyprawa do ryb ingredient photo"
+  ],
+  "przyprawa-do-grilla": [
+    "Przyprawa do grilla",
+    "Przyprawa do grilla food",
+    "Przyprawa do grilla ingredient photo"
+  ],
+  "przyprawa-gyros-kebab": [
+    "kebab",
+    "kebab food",
+    "kebab ingredient photo"
+  ],
+  "cukier-waniliowy": [
+    "sugar",
+    "sugar food",
+    "sugar ingredient photo"
+  ],
+  "wanilia-laska": [
+    "Wanilia",
+    "Wanilia food",
+    "Wanilia ingredient photo"
+  ],
+  "cynamon-laska": [
+    "Cynamon",
+    "Cynamon food",
+    "Cynamon ingredient photo"
+  ],
+  "ziele-angielskie-kuleczki": [
+    "Ziele angielskie",
+    "Ziele angielskie food",
+    "Ziele angielskie ingredient photo"
+  ],
+  "anyz-gwiazdkowy": [
+    "Anyż gwiazdkowy",
+    "Anyż gwiazdkowy food",
+    "Anyż gwiazdkowy ingredient photo"
+  ],
+  "przyprawa-do-piernika": [
+    "Przyprawa do piernika",
+    "Przyprawa do piernika food",
+    "Przyprawa do piernika ingredient photo"
+  ],
+  "ziola-prowansalskie-mix": [
+    "mixed",
+    "mixed food",
+    "mixed ingredient photo"
+  ],
+  "liofilizowana-natka-pietruszki": [
+    "Liofilizowana natka pietruszki",
+    "Liofilizowana natka pietruszki food",
+    "Liofilizowana natka pietruszki ingredient photo"
+  ],
+  "woda-gazowana": [
+    "Woda gazowana",
+    "Woda gazowana food",
+    "Woda gazowana ingredient photo"
+  ],
+  "woda-smakowa-cytryna": [
+    "Woda smakowa",
+    "Woda smakowa food",
+    "Woda smakowa ingredient photo"
+  ],
+  "sok-jablkowy-100": [
+    "Sok jabłkowy 100%",
+    "Sok jabłkowy 100% food",
+    "Sok jabłkowy 100% ingredient photo"
+  ],
+  "sok-wieloowocowy": [
+    "Sok wieloowocowy",
+    "Sok wieloowocowy food",
+    "Sok wieloowocowy ingredient photo"
+  ],
+  "sok-marchwiowy": [
+    "Sok marchwiowy",
+    "Sok marchwiowy food",
+    "Sok marchwiowy ingredient photo"
+  ],
+  "sok-z-czarnej-porzeczki": [
+    "currant",
+    "currant food",
+    "currant ingredient photo"
+  ],
+  "sok-grejpfrutowy": [
+    "Sok grejpfrutowy",
+    "Sok grejpfrutowy food",
+    "Sok grejpfrutowy ingredient photo"
+  ],
+  "nektar-brzoskwiniowy": [
+    "Nektar brzoskwiniowy",
+    "Nektar brzoskwiniowy food",
+    "Nektar brzoskwiniowy ingredient photo"
+  ],
+  "napoj-musujacy-pomaranczowy-fanta": [
+    "Napój musujący pomarańczowy",
+    "Napój musujący pomarańczowy food",
+    "Napój musujący pomarańczowy ingredient photo"
+  ],
+  "napoj-cytrynowy-sprite": [
+    "Napój cytrynowy",
+    "Napój cytrynowy food",
+    "Napój cytrynowy ingredient photo"
+  ],
+  "lemonada-domowa": [
+    "Lemonada domowa",
+    "Lemonada domowa food",
+    "Lemonada domowa ingredient photo"
+  ],
+  "ice-tea-cytrynowa": [
+    "Ice tea cytrynowa",
+    "Ice tea cytrynowa food",
+    "Ice tea cytrynowa ingredient photo"
+  ],
+  "ice-tea-brzoskwiniowa": [
+    "Ice tea brzoskwiniowa",
+    "Ice tea brzoskwiniowa food",
+    "Ice tea brzoskwiniowa ingredient photo"
+  ],
+  "napoj-energetyczny": [
+    "Napój energetyczny",
+    "Napój energetyczny food",
+    "Napój energetyczny ingredient photo"
+  ],
+  "napoj-energetyczny-zero": [
+    "Napój energetyczny zero",
+    "Napój energetyczny zero food",
+    "Napój energetyczny zero ingredient photo"
+  ],
+  "napoj-izotoniczny": [
+    "Napój izotoniczny",
+    "Napój izotoniczny food",
+    "Napój izotoniczny ingredient photo"
+  ],
+  "woda-kokosowa": [
+    "Woda kokosowa",
+    "Woda kokosowa food",
+    "Woda kokosowa ingredient photo"
+  ],
+  "mleko-owsiane": [
+    "milk oat",
+    "milk oat food",
+    "milk oat ingredient photo"
+  ],
+  "mleko-migdalowe": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "mleko-kokosowe-napoj": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "kakao-napoj": [
+    "Kakao",
+    "Kakao food",
+    "Kakao ingredient photo"
+  ],
+  "kawa-czarna": [
+    "Kawa czarna",
+    "Kawa czarna food",
+    "Kawa czarna ingredient photo"
+  ],
+  "cappuccino": [
+    "Cappuccino",
+    "Cappuccino food",
+    "Cappuccino ingredient photo"
+  ],
+  "latte": [
+    "Latte",
+    "Latte food",
+    "Latte ingredient photo"
+  ],
+  "herbata-czarna": [
+    "Herbata czarna",
+    "Herbata czarna food",
+    "Herbata czarna ingredient photo"
+  ],
+  "herbata-zielona": [
+    "Herbata zielona",
+    "Herbata zielona food",
+    "Herbata zielona ingredient photo"
+  ],
+  "herbata-z-cytryna-i-miodem": [
+    "Herbata z cytryną i miodem",
+    "Herbata z cytryną i miodem food",
+    "Herbata z cytryną i miodem ingredient photo"
+  ],
+  "napoj-owocowy-nektar-wisniowy": [
+    "fruit",
+    "fruit food",
+    "fruit ingredient photo"
+  ],
+  "kompot-wieloowocowy": [
+    "Kompot wieloowocowy",
+    "Kompot wieloowocowy food",
+    "Kompot wieloowocowy ingredient photo"
+  ],
+  "smoothie-bananowe": [
+    "Smoothie bananowe",
+    "Smoothie bananowe food",
+    "Smoothie bananowe ingredient photo"
+  ],
+  "smoothie-truskawkowe": [
+    "Smoothie truskawkowe",
+    "Smoothie truskawkowe food",
+    "Smoothie truskawkowe ingredient photo"
+  ],
+  "smoothie-zielony-szpinak": [
+    "green spinach",
+    "green spinach food",
+    "green spinach ingredient photo"
+  ],
+  "koktajl-proteinowy-gotowy": [
+    "protein bar ready",
+    "protein bar ready food",
+    "protein bar ready ingredient photo"
+  ],
+  "piwo-jasne-lager": [
+    "Piwo jasne",
+    "Piwo jasne food",
+    "Piwo jasne ingredient photo"
+  ],
+  "piwo-ciemne-porter": [
+    "Piwo ciemne",
+    "Piwo ciemne food",
+    "Piwo ciemne ingredient photo"
+  ],
+  "piwo-rzemieslnicze-ipa": [
+    "Piwo rzemieślnicze IPA",
+    "Piwo rzemieślnicze IPA food",
+    "Piwo rzemieślnicze IPA ingredient photo"
+  ],
+  "piwo-pszeniczne": [
+    "Piwo pszeniczne",
+    "Piwo pszeniczne food",
+    "Piwo pszeniczne ingredient photo"
+  ],
+  "piwo-bezalkoholowe": [
+    "Piwo bezalkoholowe",
+    "Piwo bezalkoholowe food",
+    "Piwo bezalkoholowe ingredient photo"
+  ],
+  "wino-rozowe": [
+    "Wino różowe",
+    "Wino różowe food",
+    "Wino różowe ingredient photo"
+  ],
+  "szampan": [
+    "Szampan",
+    "Szampan food",
+    "Szampan ingredient photo"
+  ],
+  "cydr-jablkowy": [
+    "Cydr jabłkowy",
+    "Cydr jabłkowy food",
+    "Cydr jabłkowy ingredient photo"
+  ],
+  "wodka-czysta": [
+    "Wódka czysta",
+    "Wódka czysta food",
+    "Wódka czysta ingredient photo"
+  ],
+  "wodka-smakowa-cytrynowa": [
+    "Wódka smakowa",
+    "Wódka smakowa food",
+    "Wódka smakowa ingredient photo"
+  ],
+  "rum": [
+    "Rum",
+    "Rum food",
+    "Rum ingredient photo"
+  ],
+  "gin": [
+    "Gin",
+    "Gin food",
+    "Gin ingredient photo"
+  ],
+  "tequila": [
+    "Tequila",
+    "Tequila food",
+    "Tequila ingredient photo"
+  ],
+  "brandy": [
+    "Brandy",
+    "Brandy food",
+    "Brandy ingredient photo"
+  ],
+  "likier-kawowy": [
+    "Likier kawowy",
+    "Likier kawowy food",
+    "Likier kawowy ingredient photo"
+  ],
+  "likier-owocowy": [
+    "fruit",
+    "fruit food",
+    "fruit ingredient photo"
+  ],
+  "nalewka-domowa": [
+    "Nalewka domowa",
+    "Nalewka domowa food",
+    "Nalewka domowa ingredient photo"
+  ],
+  "likier-adwokat": [
+    "Likier adwokat",
+    "Likier adwokat food",
+    "Likier adwokat ingredient photo"
+  ],
+  "piwo-miodowe": [
+    "Piwo miodowe",
+    "Piwo miodowe food",
+    "Piwo miodowe ingredient photo"
+  ],
+  "koktajl-mojito": [
+    "Koktajl Mojito",
+    "Koktajl Mojito food",
+    "Koktajl Mojito ingredient photo"
+  ],
+  "koktajl-pina-colada": [
+    "Koktajl Pina Colada",
+    "Koktajl Pina Colada food",
+    "Koktajl Pina Colada ingredient photo"
+  ],
+  "koktajl-margarita": [
+    "Koktajl Margarita",
+    "Koktajl Margarita food",
+    "Koktajl Margarita ingredient photo"
+  ],
+  "koktajl-cuba-libre": [
+    "Koktajl Cuba Libre",
+    "Koktajl Cuba Libre food",
+    "Koktajl Cuba Libre ingredient photo"
+  ],
+  "grzane-wino": [
+    "Grzane wino",
+    "Grzane wino food",
+    "Grzane wino ingredient photo"
+  ],
+  "piwo-radler-cytrynowe": [
+    "Piwo radler",
+    "Piwo radler food",
+    "Piwo radler ingredient photo"
+  ],
+  "czekolada-biala": [
+    "chocolate white",
+    "chocolate white food",
+    "chocolate white ingredient photo"
+  ],
+  "czekolada-z-orzechami": [
+    "chocolate",
+    "chocolate food",
+    "chocolate ingredient photo"
+  ],
+  "czekolada-nadziewana": [
+    "chocolate",
+    "chocolate food",
+    "chocolate ingredient photo"
+  ],
+  "wafel-w-czekoladzie-prince-polo": [
+    "wafer",
+    "wafer food",
+    "wafer ingredient photo"
+  ],
+  "baton-grzesiek": [
+    "candy bar",
+    "candy bar food",
+    "candy bar ingredient photo"
+  ],
+  "goralki": [
+    "Góralki",
+    "Góralki food",
+    "Góralki ingredient photo"
+  ],
+  "sernik-z-brzoskwiniami": [
+    "cheesecake",
+    "cheesecake food",
+    "cheesecake ingredient photo"
+  ],
+  "paczek-z-lukrem": [
+    "donut",
+    "donut food",
+    "donut ingredient photo"
+  ],
+  "paczek-z-marmolada": [
+    "donut",
+    "donut food",
+    "donut ingredient photo"
+  ],
+  "drozdzowka-z-serem": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "drozdzowka-z-makiem": [
+    "Drożdżówka z makiem",
+    "Drożdżówka z makiem food",
+    "Drożdżówka z makiem ingredient photo"
+  ],
+  "croissant-maslany": [
+    "croissant",
+    "croissant food",
+    "croissant ingredient photo"
+  ],
+  "bezy": [
+    "Bezy",
+    "Bezy food",
+    "Bezy ingredient photo"
+  ],
+  "makaroniki": [
+    "Makaroniki",
+    "Makaroniki food",
+    "Makaroniki ingredient photo"
+  ],
+  "krowki": [
+    "Krówki",
+    "Krówki food",
+    "Krówki ingredient photo"
+  ],
+  "sezamki": [
+    "Sezamki",
+    "Sezamki food",
+    "Sezamki ingredient photo"
+  ],
+  "pierniki-staropolskie": [
+    "Pierniki",
+    "Pierniki food",
+    "Pierniki ingredient photo"
+  ],
+  "pierniki-w-czekoladzie": [
+    "Pierniki w czekoladzie",
+    "Pierniki w czekoladzie food",
+    "Pierniki w czekoladzie ingredient photo"
+  ],
+  "ciastka-owsiane": [
+    "cookies oat",
+    "cookies oat food",
+    "cookies oat ingredient photo"
+  ],
+  "jezyki": [
+    "Jeżyki",
+    "Jeżyki food",
+    "Jeżyki ingredient photo"
+  ],
+  "markizy-biszkopt-z-dzemem": [
+    "Markizy",
+    "Markizy food",
+    "Markizy ingredient photo"
+  ],
+  "jaffa-cakes-delicje": [
+    "Jaffa cakes",
+    "Jaffa cakes food",
+    "Jaffa cakes ingredient photo"
+  ],
+  "krakersy-slone": [
+    "crackers",
+    "crackers food",
+    "crackers ingredient photo"
+  ],
+  "precle": [
+    "Precle",
+    "Precle food",
+    "Precle ingredient photo"
+  ],
+  "popcorn-slony": [
+    "popcorn",
+    "popcorn food",
+    "popcorn ingredient photo"
+  ],
+  "popcorn-maslany": [
+    "popcorn",
+    "popcorn food",
+    "popcorn ingredient photo"
+  ],
+  "popcorn-karmelowy": [
+    "popcorn",
+    "popcorn food",
+    "popcorn ingredient photo"
+  ],
+  "prazynki": [
+    "Prażynki",
+    "Prażynki food",
+    "Prażynki ingredient photo"
+  ],
+  "paluszki": [
+    "Paluszki",
+    "Paluszki food",
+    "Paluszki ingredient photo"
+  ],
+  "lody-czekoladowe": [
+    "ice cream",
+    "ice cream food",
+    "ice cream ingredient photo"
+  ],
+  "lody-smietankowe-rozek": [
+    "ice cream",
+    "ice cream food",
+    "ice cream ingredient photo"
+  ],
+  "dzem-wisniowy": [
+    "jam",
+    "jam food",
+    "jam ingredient photo"
+  ],
+  "dzem-morelowy": [
+    "jam",
+    "jam food",
+    "jam ingredient photo"
+  ],
+  "marmolada-wieloowocowa": [
+    "Marmolada wieloowocowa",
+    "Marmolada wieloowocowa food",
+    "Marmolada wieloowocowa ingredient photo"
+  ],
+  "miod-lipowy": [
+    "honey",
+    "honey food",
+    "honey ingredient photo"
+  ],
+  "miod-spadziowy": [
+    "honey",
+    "honey food",
+    "honey ingredient photo"
+  ],
+  "miod-gryczany": [
+    "honey",
+    "honey food",
+    "honey ingredient photo"
+  ],
+  "cukier-bialy": [
+    "sugar white",
+    "sugar white food",
+    "sugar white ingredient photo"
+  ],
+  "cukier-trzcinowy": [
+    "sugar",
+    "sugar food",
+    "sugar ingredient photo"
+  ],
+  "syrop-klonowy": [
+    "Syrop klonowy",
+    "Syrop klonowy food",
+    "Syrop klonowy ingredient photo"
+  ],
+  "syrop-z-agawy": [
+    "Syrop z agawy",
+    "Syrop z agawy food",
+    "Syrop z agawy ingredient photo"
+  ],
+  "kitkat": [
+    "KitKat",
+    "KitKat food",
+    "KitKat ingredient photo"
+  ],
+  "kinder-schoko-bons": [
+    "Kinder Schoko Bons",
+    "Kinder Schoko Bons food",
+    "Kinder Schoko Bons ingredient photo"
+  ],
+  "michalki": [
+    "Michałki",
+    "Michałki food",
+    "Michałki ingredient photo"
+  ],
+  "ambasador": [
+    "Ambasador",
+    "Ambasador food",
+    "Ambasador ingredient photo"
+  ],
+  "rocky-baton": [
+    "rocky candy bar",
+    "rocky candy bar food",
+    "rocky candy bar ingredient photo"
+  ],
+  "baton-musli-owocowy": [
+    "candy bar muesli fruit",
+    "candy bar muesli fruit food",
+    "candy bar muesli fruit ingredient photo"
+  ],
+  "baton-kokosowy": [
+    "candy bar coconut",
+    "candy bar coconut food",
+    "candy bar coconut ingredient photo"
+  ],
+  "drazetki-czekoladowe": [
+    "Drażetki czekoladowe",
+    "Drażetki czekoladowe food",
+    "Drażetki czekoladowe ingredient photo"
+  ],
+  "landrynki": [
+    "Landrynki",
+    "Landrynki food",
+    "Landrynki ingredient photo"
+  ],
+  "irysy": [
+    "Irysy",
+    "Irysy food",
+    "Irysy ingredient photo"
+  ],
+  "zelki-owocowe": [
+    "gummy",
+    "gummy food",
+    "gummy ingredient photo"
+  ],
+  "baton-proteinowy-czekoladowy": [
+    "candy bar protein bar chocolate",
+    "candy bar protein bar chocolate food",
+    "candy bar protein bar chocolate ingredient photo"
+  ],
+  "baton-proteinowy-orzechowy": [
+    "candy bar protein bar",
+    "candy bar protein bar food",
+    "candy bar protein bar ingredient photo"
+  ],
+  "baton-proteinowy-waniliowy": [
+    "candy bar protein bar",
+    "candy bar protein bar food",
+    "candy bar protein bar ingredient photo"
+  ],
+  "baton-proteinowy-z-karmelem": [
+    "candy bar protein bar",
+    "candy bar protein bar food",
+    "candy bar protein bar ingredient photo"
+  ],
+  "baton-proteinowy-truskawkowy": [
+    "candy bar protein bar strawberry",
+    "candy bar protein bar strawberry food",
+    "candy bar protein bar strawberry ingredient photo"
+  ],
+  "baton-proteinowy-owsiany": [
+    "candy bar protein bar",
+    "candy bar protein bar food",
+    "candy bar protein bar ingredient photo"
+  ],
+  "baton-proteinowy-wafelek": [
+    "candy bar protein bar",
+    "candy bar protein bar food",
+    "candy bar protein bar ingredient photo"
+  ],
+  "pierogi-ze-szpinakiem": [
+    "pierogi",
+    "pierogi food",
+    "pierogi ingredient photo"
+  ],
+  "pierogi-z-serem-na-slodko": [
+    "pierogi cheese sweet",
+    "pierogi cheese sweet food",
+    "pierogi cheese sweet ingredient photo"
+  ],
+  "kluski-leniwe": [
+    "Kluski leniwe",
+    "Kluski leniwe food",
+    "Kluski leniwe ingredient photo"
+  ],
+  "nalesniki-ze-szpinakiem": [
+    "Naleśniki ze szpinakiem",
+    "Naleśniki ze szpinakiem food",
+    "Naleśniki ze szpinakiem ingredient photo"
+  ],
+  "krokiety-z-kapusta": [
+    "cabbage",
+    "cabbage food",
+    "cabbage ingredient photo"
+  ],
+  "golabki-w-sosie-pomidorowym": [
+    "sauce",
+    "sauce food",
+    "sauce ingredient photo"
+  ],
+  "lazanki-z-kapusta-i-boczkiem": [
+    "lasagna cabbage",
+    "lasagna cabbage food",
+    "lasagna cabbage ingredient photo"
+  ],
+  "knedle-ze-sliwkami": [
+    "Knedle ze śliwkami",
+    "Knedle ze śliwkami food",
+    "Knedle ze śliwkami ingredient photo"
+  ],
+  "lasagne": [
+    "lasagne",
+    "lasagne food",
+    "lasagne ingredient photo"
+  ],
+  "penne-z-kurczakiem-i-szpinakiem": [
+    "penne chicken",
+    "penne chicken food",
+    "penne chicken ingredient photo"
+  ],
+  "leczo": [
+    "Leczo",
+    "Leczo food",
+    "Leczo ingredient photo"
+  ],
+  "risotto-z-kurczakiem": [
+    "chicken",
+    "chicken food",
+    "chicken ingredient photo"
+  ],
+  "kaszotto-gryczane": [
+    "Kaszotto gryczane",
+    "Kaszotto gryczane food",
+    "Kaszotto gryczane ingredient photo"
+  ],
+  "zapiekanka-makaronowa-z-miesem": [
+    "baguette sandwich pasta bake meat",
+    "baguette sandwich pasta bake meat food",
+    "baguette sandwich pasta bake meat ingredient photo"
+  ],
+  "makaron-z-serem-i-brokulami": [
+    "pasta cheese broccoli",
+    "pasta cheese broccoli food",
+    "pasta cheese broccoli ingredient photo"
+  ],
+  "kotlet-mielony": [
+    "cutlet ground",
+    "cutlet ground food",
+    "cutlet ground ingredient photo"
+  ],
+  "kotlet-drobiowy": [
+    "cutlet",
+    "cutlet food",
+    "cutlet ingredient photo"
+  ],
+  "burgery-z-kaszy-jaglanej-warzywne": [
+    "Burgery z kaszy jaglanej",
+    "Burgery z kaszy jaglanej food",
+    "Burgery z kaszy jaglanej ingredient photo"
+  ],
+  "kotlety-z-ciecierzycy-falafel": [
+    "Kotlety z ciecierzycy",
+    "Kotlety z ciecierzycy food",
+    "Kotlety z ciecierzycy ingredient photo"
+  ],
+  "warzywna-zapiekanka-z-cukinia": [
+    "baguette sandwich zucchini",
+    "baguette sandwich zucchini food",
+    "baguette sandwich zucchini ingredient photo"
+  ],
+  "karkowka-duszona": [
+    "pork neck",
+    "pork neck food",
+    "pork neck ingredient photo"
+  ],
+  "schab-duszony-w-sosie": [
+    "pork loin sauce",
+    "pork loin sauce food",
+    "pork loin sauce ingredient photo"
+  ],
+  "kurczak-w-sosie-smietanowym": [
+    "chicken sauce",
+    "chicken sauce food",
+    "chicken sauce ingredient photo"
+  ],
+  "pizza-margherita-mrozona": [
+    "pizza margherita frozen",
+    "pizza margherita frozen food",
+    "pizza margherita frozen ingredient photo"
+  ],
+  "pizza-pepperoni-mrozona": [
+    "pizza pepperoni frozen",
+    "pizza pepperoni frozen food",
+    "pizza pepperoni frozen ingredient photo"
+  ],
+  "pizza-hawajska-mrozona": [
+    "pizza hawaiian frozen",
+    "pizza hawaiian frozen food",
+    "pizza hawaiian frozen ingredient photo"
+  ],
+  "pizza-capricciosa-mrozona": [
+    "pizza frozen",
+    "pizza frozen food",
+    "pizza frozen ingredient photo"
+  ],
+  "pizza-quattro-formaggi-mrozona": [
+    "pizza frozen",
+    "pizza frozen food",
+    "pizza frozen ingredient photo"
+  ],
+  "pizza-funghi-mrozona": [
+    "pizza frozen",
+    "pizza frozen food",
+    "pizza frozen ingredient photo"
+  ],
+  "pizza-salami-mrozona": [
+    "pizza salami frozen",
+    "pizza salami frozen food",
+    "pizza salami frozen ingredient photo"
+  ],
+  "pizza-wegetarianska-mrozona": [
+    "pizza frozen",
+    "pizza frozen food",
+    "pizza frozen ingredient photo"
+  ],
+  "pizza-z-szynka-i-serem-mrozona": [
+    "pizza ham cheese frozen",
+    "pizza ham cheese frozen food",
+    "pizza ham cheese frozen ingredient photo"
+  ],
+  "pizza-cienkie-ciasto-ristorante": [
+    "pizza",
+    "pizza food",
+    "pizza ingredient photo"
+  ],
+  "calzone-z-szynka-mrozone": [
+    "ham",
+    "ham food",
+    "ham ingredient photo"
+  ],
+  "pizza-z-kurczakiem-mrozona": [
+    "pizza chicken frozen",
+    "pizza chicken frozen food",
+    "pizza chicken frozen ingredient photo"
+  ],
+  "hamburger-z-serem": [
+    "hamburger cheese",
+    "hamburger cheese food",
+    "hamburger cheese ingredient photo"
+  ],
+  "chickenburger": [
+    "Chickenburger",
+    "Chickenburger food",
+    "Chickenburger ingredient photo"
+  ],
+  "frytki-z-batatow": [
+    "french fries",
+    "french fries food",
+    "french fries ingredient photo"
+  ],
+  "kebab-w-bulce": [
+    "kebab",
+    "kebab food",
+    "kebab ingredient photo"
+  ],
+  "tacos-z-miesem": [
+    "meat",
+    "meat food",
+    "meat ingredient photo"
+  ],
+  "kanapka-club": [
+    "Kanapka club",
+    "Kanapka club food",
+    "Kanapka club ingredient photo"
+  ],
+  "fish-and-chips": [
+    "Fish and chips",
+    "Fish and chips food",
+    "Fish and chips ingredient photo"
+  ],
+  "nachos-z-serem": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "wrap-z-kurczakiem-i-warzywami": [
+    "wrap chicken",
+    "wrap chicken food",
+    "wrap chicken ingredient photo"
+  ],
+  "pita-gyros": [
+    "Pita gyros",
+    "Pita gyros food",
+    "Pita gyros ingredient photo"
+  ],
+  "burger-podwojny-z-serem": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "nuggetsy-z-kurczaka-5-szt": [
+    "chicken nuggets chicken",
+    "chicken nuggets chicken food",
+    "chicken nuggets chicken ingredient photo"
+  ],
+  "zapiekanka-z-pieczarkami-i-serem": [
+    "baguette sandwich cheese",
+    "baguette sandwich cheese food",
+    "baguette sandwich cheese ingredient photo"
+  ],
+  "pepsi-max": [
+    "Pepsi Max",
+    "Pepsi Max food",
+    "Pepsi Max ingredient photo"
+  ],
+  "7up": [
+    "7Up",
+    "7Up food",
+    "7Up ingredient photo"
+  ],
+  "schweppes-tonic": [
+    "Schweppes tonic",
+    "Schweppes tonic food",
+    "Schweppes tonic ingredient photo"
+  ],
+  "dr-pepper": [
+    "Dr Pepper",
+    "Dr Pepper food",
+    "Dr Pepper ingredient photo"
+  ],
+  "mountain-dew": [
+    "Mountain Dew",
+    "Mountain Dew food",
+    "Mountain Dew ingredient photo"
+  ],
+  "tymbark-jablko-mieta": [
+    "apple",
+    "apple food",
+    "apple ingredient photo"
+  ],
+  "tymbark-jablko-malina": [
+    "apple",
+    "apple food",
+    "apple ingredient photo"
+  ],
+  "tymbark-kaktus": [
+    "Tymbark kaktus",
+    "Tymbark kaktus food",
+    "Tymbark kaktus ingredient photo"
+  ],
+  "kubus-marchew-banan-jablko": [
+    "carrot banana apple",
+    "carrot banana apple food",
+    "carrot banana apple ingredient photo"
+  ],
+  "kubus-play-truskawka": [
+    "Kubuś play",
+    "Kubuś play food",
+    "Kubuś play ingredient photo"
+  ],
+  "sok-cappy-pomaranczowy": [
+    "Sok Cappy pomarańczowy",
+    "Sok Cappy pomarańczowy food",
+    "Sok Cappy pomarańczowy ingredient photo"
+  ],
+  "kombucha": [
+    "Kombucha",
+    "Kombucha food",
+    "Kombucha ingredient photo"
+  ],
+  "kombucha-imbirowa": [
+    "Kombucha imbirowa",
+    "Kombucha imbirowa food",
+    "Kombucha imbirowa ingredient photo"
+  ],
+  "yerba-mate-napar": [
+    "Yerba mate",
+    "Yerba mate food",
+    "Yerba mate ingredient photo"
+  ],
+  "matcha-latte": [
+    "Matcha latte",
+    "Matcha latte food",
+    "Matcha latte ingredient photo"
+  ],
+  "kawa-mrozona-iced-latte": [
+    "frozen",
+    "frozen food",
+    "frozen ingredient photo"
+  ],
+  "kakao-mrozone": [
+    "Kakao mrożone",
+    "Kakao mrożone food",
+    "Kakao mrożone ingredient photo"
+  ],
+  "oshee-izotonik": [
+    "Oshee izotonik",
+    "Oshee izotonik food",
+    "Oshee izotonik ingredient photo"
+  ],
+  "oshee-woda-witaminowa": [
+    "Oshee woda witaminowa",
+    "Oshee woda witaminowa food",
+    "Oshee woda witaminowa ingredient photo"
+  ],
+  "boba-tea-mleczna": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "napoj-kakaowo-bananowy": [
+    "Napój kakaowo-bananowy",
+    "Napój kakaowo-bananowy food",
+    "Napój kakaowo-bananowy ingredient photo"
+  ],
+  "somersby-cidr": [
+    "Somersby",
+    "Somersby food",
+    "Somersby ingredient photo"
+  ],
+  "harnas": [
+    "Harnaś",
+    "Harnaś food",
+    "Harnaś ingredient photo"
+  ],
+  "kustosz": [
+    "Kustosz",
+    "Kustosz food",
+    "Kustosz ingredient photo"
+  ],
+  "perla": [
+    "Perła",
+    "Perła food",
+    "Perła ingredient photo"
+  ],
+  "zubr": [
+    "Żubr",
+    "Żubr food",
+    "Żubr ingredient photo"
+  ],
+  "tatra": [
+    "Tatra",
+    "Tatra food",
+    "Tatra ingredient photo"
+  ],
+  "lomza-niepasteryzowana": [
+    "Łomża niepasteryzowana",
+    "Łomża niepasteryzowana food",
+    "Łomża niepasteryzowana ingredient photo"
+  ],
+  "gin-z-tonikiem-drink": [
+    "Gin z tonikiem",
+    "Gin z tonikiem food",
+    "Gin z tonikiem ingredient photo"
+  ],
+  "aperol-spritz": [
+    "Aperol Spritz",
+    "Aperol Spritz food",
+    "Aperol Spritz ingredient photo"
+  ],
+  "wisniowka": [
+    "Wiśniówka",
+    "Wiśniówka food",
+    "Wiśniówka ingredient photo"
+  ],
+  "grzaniec": [
+    "Grzaniec",
+    "Grzaniec food",
+    "Grzaniec ingredient photo"
+  ],
+  "winiary-majonez-dekoracyjny": [
+    "mayonnaise",
+    "mayonnaise food",
+    "mayonnaise ingredient photo"
+  ],
+  "winiary-sos-pieczeniowy-jasny": [
+    "Winiary sos pieczeniowy jasny",
+    "Winiary sos pieczeniowy jasny food",
+    "Winiary sos pieczeniowy jasny ingredient photo"
+  ],
+  "winiary-sos-grzybowy": [
+    "Winiary sos grzybowy",
+    "Winiary sos grzybowy food",
+    "Winiary sos grzybowy ingredient photo"
+  ],
+  "winiary-budyn-waniliowy": [
+    "custard",
+    "custard food",
+    "custard ingredient photo"
+  ],
+  "knorr-rosol-drobiowy-kostka": [
+    "broth",
+    "broth food",
+    "broth ingredient photo"
+  ],
+  "knorr-fix-bolognese": [
+    "bolognese",
+    "bolognese food",
+    "bolognese ingredient photo"
+  ],
+  "knorr-salatka-gyros": [
+    "salad",
+    "salad food",
+    "salad ingredient photo"
+  ],
+  "pudliszki-ketchup-lagodny": [
+    "ketchup",
+    "ketchup food",
+    "ketchup ingredient photo"
+  ],
+  "pudliszki-koncentrat-pomidorowy-30": [
+    "concentrate",
+    "concentrate food",
+    "concentrate ingredient photo"
+  ],
+  "dawtona-pasata-pomidorowa": [
+    "tomato",
+    "tomato food",
+    "tomato ingredient photo"
+  ],
+  "dawtona-przecier-pomidorowy": [
+    "Dawtona przecier pomidorowy",
+    "Dawtona przecier pomidorowy food",
+    "Dawtona przecier pomidorowy ingredient photo"
+  ],
+  "lowicz-dzem-truskawkowy-100": [
+    "jam strawberry",
+    "jam strawberry food",
+    "jam strawberry ingredient photo"
+  ],
+  "lowicz-dzem-wisniowy-niskoslodzony": [
+    "jam",
+    "jam food",
+    "jam ingredient photo"
+  ],
+  "lowicz-powidla-sliwkowe": [
+    "Łowicz powidła śliwkowe",
+    "Łowicz powidła śliwkowe food",
+    "Łowicz powidła śliwkowe ingredient photo"
+  ],
+  "kotlin-majonez-salatkowy": [
+    "mayonnaise salad",
+    "mayonnaise salad food",
+    "mayonnaise salad ingredient photo"
+  ],
+  "kotlin-keczup-pikantny": [
+    "Kotlin keczup pikantny",
+    "Kotlin keczup pikantny food",
+    "Kotlin keczup pikantny ingredient photo"
+  ],
+  "roleski-ketchup": [
+    "ketchup",
+    "ketchup food",
+    "ketchup ingredient photo"
+  ],
+  "roleski-przecier-pomidorowy": [
+    "Roleski przecier pomidorowy",
+    "Roleski przecier pomidorowy food",
+    "Roleski przecier pomidorowy ingredient photo"
+  ],
+  "winiary-czekoladowy-budyn-proszek": [
+    "chocolate custard",
+    "chocolate custard food",
+    "chocolate custard ingredient photo"
+  ],
+  "winiary-kisiel-truskawkowy": [
+    "strawberry",
+    "strawberry food",
+    "strawberry ingredient photo"
+  ],
+  "winiary-kisiel-zurawinowy": [
+    "Winiary kisiel żurawinowy",
+    "Winiary kisiel żurawinowy food",
+    "Winiary kisiel żurawinowy ingredient photo"
+  ],
+  "galaretka-truskawkowa": [
+    "Galaretka truskawkowa",
+    "Galaretka truskawkowa food",
+    "Galaretka truskawkowa ingredient photo"
+  ],
+  "galaretka-cytrynowa": [
+    "Galaretka cytrynowa",
+    "Galaretka cytrynowa food",
+    "Galaretka cytrynowa ingredient photo"
+  ],
+  "fix-do-zupy-pomidorowej-knorr": [
+    "Fix do zupy pomidorowej",
+    "Fix do zupy pomidorowej food",
+    "Fix do zupy pomidorowej ingredient photo"
+  ],
+  "rosol-z-kury-fix": [
+    "broth",
+    "broth food",
+    "broth ingredient photo"
+  ],
+  "przyprawa-uniwersalna-jarzynka": [
+    "Przyprawa uniwersalna",
+    "Przyprawa uniwersalna food",
+    "Przyprawa uniwersalna ingredient photo"
+  ],
+  "sol-czosnkowa": [
+    "Sól czosnkowa",
+    "Sól czosnkowa food",
+    "Sól czosnkowa ingredient photo"
+  ],
+  "sol-ziolowa": [
+    "Sól ziołowa",
+    "Sól ziołowa food",
+    "Sól ziołowa ingredient photo"
+  ],
+  "vegeta-lunch": [
+    "Vegeta lunch",
+    "Vegeta lunch food",
+    "Vegeta lunch ingredient photo"
+  ],
+  "maggi-plynne-przyprawa": [
+    "Maggi płynne",
+    "Maggi płynne food",
+    "Maggi płynne ingredient photo"
+  ],
+  "sos-tabasco-habanero": [
+    "Sos tabasco habanero",
+    "Sos tabasco habanero food",
+    "Sos tabasco habanero ingredient photo"
+  ],
+  "sos-chimichurri": [
+    "Sos chimichurri",
+    "Sos chimichurri food",
+    "Sos chimichurri ingredient photo"
+  ],
+  "sos-pesto-z-suszonych-pomidorow": [
+    "pesto",
+    "pesto food",
+    "pesto ingredient photo"
+  ],
+  "sos-ksandor-dip-jogurtowy": [
+    "Sos ksandor",
+    "Sos ksandor food",
+    "Sos ksandor ingredient photo"
+  ],
+  "wedel-czekolada-deserowa": [
+    "chocolate",
+    "chocolate food",
+    "chocolate ingredient photo"
+  ],
+  "wedel-torcik-kokosowy": [
+    "coconut",
+    "coconut food",
+    "coconut ingredient photo"
+  ],
+  "wedel-ptasie-mleczko-waniliowe": [
+    "marshmallow vanilla",
+    "marshmallow vanilla food",
+    "marshmallow vanilla ingredient photo"
+  ],
+  "wedel-czekoladki-truflowe": [
+    "Wedel czekoladki truflowe",
+    "Wedel czekoladki truflowe food",
+    "Wedel czekoladki truflowe ingredient photo"
+  ],
+  "goplana-czekolada-gorzka": [
+    "chocolate dark",
+    "chocolate dark food",
+    "chocolate dark ingredient photo"
+  ],
+  "goplana-czekolada-mleczna-z-orzechami": [
+    "chocolate milk",
+    "chocolate milk food",
+    "chocolate milk ingredient photo"
+  ],
+  "wawel-czekolada-mleczna": [
+    "chocolate milk",
+    "chocolate milk food",
+    "chocolate milk ingredient photo"
+  ],
+  "terravita-herbatniki-maslane": [
+    "cookies butter",
+    "cookies butter food",
+    "cookies butter ingredient photo"
+  ],
+  "terravita-paluszki-slone": [
+    "Terravita paluszki słone",
+    "Terravita paluszki słone food",
+    "Terravita paluszki słone ingredient photo"
+  ],
+  "jutrzenka-jezyki-duze": [
+    "Jutrzenka jeżyki duże",
+    "Jutrzenka jeżyki duże food",
+    "Jutrzenka jeżyki duże ingredient photo"
+  ],
+  "jutrzenka-baletki": [
+    "Jutrzenka baletki",
+    "Jutrzenka baletki food",
+    "Jutrzenka baletki ingredient photo"
+  ],
+  "tago-bebe": [
+    "Tago bebe",
+    "Tago bebe food",
+    "Tago bebe ingredient photo"
+  ],
+  "tago-zonki": [
+    "Tago zonki",
+    "Tago zonki food",
+    "Tago zonki ingredient photo"
+  ],
+  "san-draze-korsarze": [
+    "San draże korsarze",
+    "San draże korsarze food",
+    "San draże korsarze ingredient photo"
+  ],
+  "mieszko-czekoladki-nadziewane": [
+    "Mieszko czekoladki nadziewane",
+    "Mieszko czekoladki nadziewane food",
+    "Mieszko czekoladki nadziewane ingredient photo"
+  ],
+  "colian-sliwka-w-czekoladzie": [
+    "Colian śliwka w czekoladzie",
+    "Colian śliwka w czekoladzie food",
+    "Colian śliwka w czekoladzie ingredient photo"
+  ],
+  "lays-paprykowe": [
+    "Lays paprykowe",
+    "Lays paprykowe food",
+    "Lays paprykowe ingredient photo"
+  ],
+  "lays-solone": [
+    "Lays solone",
+    "Lays solone food",
+    "Lays solone ingredient photo"
+  ],
+  "lays-zielona-cebulka": [
+    "Lays zielona cebulka",
+    "Lays zielona cebulka food",
+    "Lays zielona cebulka ingredient photo"
+  ],
+  "lays-o-smaku-sera": [
+    "Lays o smaku sera",
+    "Lays o smaku sera food",
+    "Lays o smaku sera ingredient photo"
+  ],
+  "star-chipsy-paprykowe": [
+    "potato chips",
+    "potato chips food",
+    "potato chips ingredient photo"
+  ],
+  "pringles-original": [
+    "Pringles original",
+    "Pringles original food",
+    "Pringles original ingredient photo"
+  ],
+  "pringles-sour-cream": [
+    "Pringles sour cream",
+    "Pringles sour cream food",
+    "Pringles sour cream ingredient photo"
+  ],
+  "krupki-kukurydziane": [
+    "Krupki kukurydziane",
+    "Krupki kukurydziane food",
+    "Krupki kukurydziane ingredient photo"
+  ],
+  "chipsy-tortilla-nachos": [
+    "potato chips tortilla",
+    "potato chips tortilla food",
+    "potato chips tortilla ingredient photo"
+  ],
+  "orzeszki-w-ciescie": [
+    "wrap",
+    "wrap food",
+    "wrap ingredient photo"
+  ],
+  "keks-bakaliowy": [
+    "Keks bakaliowy",
+    "Keks bakaliowy food",
+    "Keks bakaliowy ingredient photo"
+  ],
+  "babka-wielkanocna": [
+    "cake",
+    "cake food",
+    "cake ingredient photo"
+  ],
+  "sernik-wiedenski": [
+    "cheesecake",
+    "cheesecake food",
+    "cheesecake ingredient photo"
+  ],
+  "szarlotka-z-kruszonka": [
+    "apple pie",
+    "apple pie food",
+    "apple pie ingredient photo"
+  ],
+  "kremowka": [
+    "Kremówka",
+    "Kremówka food",
+    "Kremówka ingredient photo"
+  ],
+  "napoleonka": [
+    "Napoleonka",
+    "Napoleonka food",
+    "Napoleonka ingredient photo"
+  ],
+  "rogal-marcinski": [
+    "Rogal marciński",
+    "Rogal marciński food",
+    "Rogal marciński ingredient photo"
+  ],
+  "ciasteczka-z-masa-kakaowa-oreo": [
+    "Ciasteczka z masą kakaową",
+    "Ciasteczka z masą kakaową food",
+    "Ciasteczka z masą kakaową ingredient photo"
+  ],
+  "baton-kex": [
+    "candy bar",
+    "candy bar food",
+    "candy bar ingredient photo"
+  ],
+  "baton-prince-polo-xxl": [
+    "candy bar",
+    "candy bar food",
+    "candy bar ingredient photo"
+  ],
+  "baton-wedel-karma": [
+    "candy bar",
+    "candy bar food",
+    "candy bar ingredient photo"
+  ],
+  "cukierki-pudrowe-z-ziolami": [
+    "Cukierki pudrowe",
+    "Cukierki pudrowe food",
+    "Cukierki pudrowe ingredient photo"
+  ],
+  "mleko-laciate-3-2": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "mleko-mlekovita-2": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "mleko-bez-laktozy-laciate": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "jogurt-naturalny-laciate": [
+    "yogurt plain",
+    "yogurt plain food",
+    "yogurt plain ingredient photo"
+  ],
+  "jogurt-grecki-piatnica": [
+    "yogurt greek",
+    "yogurt greek food",
+    "yogurt greek ingredient photo"
+  ],
+  "skyr-piatnica-truskawkowy": [
+    "skyr strawberry",
+    "skyr strawberry food",
+    "skyr strawberry ingredient photo"
+  ],
+  "skyr-piatnica-jagodowy": [
+    "skyr",
+    "skyr food",
+    "skyr ingredient photo"
+  ],
+  "ser-krajanka-mlekovita": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-zolty-laciate": [
+    "cheese yellow",
+    "cheese yellow food",
+    "cheese yellow ingredient photo"
+  ],
+  "ser-gouda-mlekovita": [
+    "cheese gouda",
+    "cheese gouda food",
+    "cheese gouda ingredient photo"
+  ],
+  "ser-salami-mlekovita": [
+    "cheese salami",
+    "cheese salami food",
+    "cheese salami ingredient photo"
+  ],
+  "ser-z-ziolami-krajanka": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-w-plastrach-hochland": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "serek-hochland-kanapkowy": [
+    "cottage cheese",
+    "cottage cheese food",
+    "cottage cheese ingredient photo"
+  ],
+  "serek-almette-ziolowy": [
+    "cottage cheese",
+    "cottage cheese food",
+    "cottage cheese ingredient photo"
+  ],
+  "serek-almette-naturalny": [
+    "cottage cheese plain",
+    "cottage cheese plain food",
+    "cottage cheese plain ingredient photo"
+  ],
+  "ser-philadelphia": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "serek-bieluch-waniliowy": [
+    "cottage cheese",
+    "cottage cheese food",
+    "cottage cheese ingredient photo"
+  ],
+  "serek-bieluch-czekoladowy": [
+    "cottage cheese chocolate",
+    "cottage cheese chocolate food",
+    "cottage cheese chocolate ingredient photo"
+  ],
+  "twarog-wedzony-kostka": [
+    "cottage cheese",
+    "cottage cheese food",
+    "cottage cheese ingredient photo"
+  ],
+  "ser-kamembert-z-lidla-naturalny": [
+    "cheese plain",
+    "cheese plain food",
+    "cheese plain ingredient photo"
+  ],
+  "ser-lazur-z-niebieska-plesnia": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-wedzony-oscypkowy-markowy": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-salatkowo-kanapkowy-jogurtowy": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "twarozek-ze-szczypiorkiem-i-rzodkiewka": [
+    "radish",
+    "radish food",
+    "radish ingredient photo"
+  ],
+  "twarog-smietankowy-do-sernika": [
+    "cottage cheese",
+    "cottage cheese food",
+    "cottage cheese ingredient photo"
+  ],
+  "mleko-w-proszku": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "mleko-w-proszku-odtluszczone": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "serwatka-w-proszku-wpc": [
+    "whey protein",
+    "whey protein food",
+    "whey protein ingredient photo"
+  ],
+  "serwatka-owocowa-napoj": [
+    "Serwatka owocowa",
+    "Serwatka owocowa food",
+    "Serwatka owocowa ingredient photo"
+  ],
+  "jogurt-pitny-truskawkowy-brand": [
+    "yogurt drinkable strawberry",
+    "yogurt drinkable strawberry food",
+    "yogurt drinkable strawberry ingredient photo"
+  ],
+  "jogurt-pitny-brzoskwiniowy-brand": [
+    "yogurt drinkable",
+    "yogurt drinkable food",
+    "yogurt drinkable ingredient photo"
+  ],
+  "kefir-smakowy-waniliowy": [
+    "kefir",
+    "kefir food",
+    "kefir ingredient photo"
+  ],
+  "kefir-smakowy-truskawkowy": [
+    "kefir strawberry",
+    "kefir strawberry food",
+    "kefir strawberry ingredient photo"
+  ],
+  "maslanka-truskawkowa": [
+    "Maślanka truskawkowa",
+    "Maślanka truskawkowa food",
+    "Maślanka truskawkowa ingredient photo"
+  ],
+  "jogurt-typu-islandzkiego-naturalny": [
+    "yogurt plain",
+    "yogurt plain food",
+    "yogurt plain ingredient photo"
+  ],
+  "ser-topiony-z-szynka": [
+    "cheese processed ham",
+    "cheese processed ham food",
+    "cheese processed ham ingredient photo"
+  ],
+  "ser-topiony-ze-szczypiorkiem": [
+    "cheese processed",
+    "cheese processed food",
+    "cheese processed ingredient photo"
+  ],
+  "ser-kremowy-do-smarowania-bez-laktozy": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "pad-thai-z-krewetkami": [
+    "Pad thai z krewetkami",
+    "Pad thai z krewetkami food",
+    "Pad thai z krewetkami ingredient photo"
+  ],
+  "kurczak-curry-indyjskie": [
+    "chicken",
+    "chicken food",
+    "chicken ingredient photo"
+  ],
+  "butter-chicken": [
+    "Butter chicken",
+    "Butter chicken food",
+    "Butter chicken ingredient photo"
+  ],
+  "tikka-masala-z-ryzem": [
+    "rice",
+    "rice food",
+    "rice ingredient photo"
+  ],
+  "chilli-con-carne": [
+    "chili",
+    "chili food",
+    "chili ingredient photo"
+  ],
+  "paella-z-owocami-morza": [
+    "Paella z owocami morza",
+    "Paella z owocami morza food",
+    "Paella z owocami morza ingredient photo"
+  ],
+  "moussaka": [
+    "Moussaka",
+    "Moussaka food",
+    "Moussaka ingredient photo"
+  ],
+  "ratatouille": [
+    "Ratatouille",
+    "Ratatouille food",
+    "Ratatouille ingredient photo"
+  ],
+  "salatka-caprese": [
+    "salad",
+    "salad food",
+    "salad ingredient photo"
+  ],
+  "poke-bowl-z-lososiem": [
+    "salmon",
+    "salmon food",
+    "salmon ingredient photo"
+  ],
+  "buddha-bowl": [
+    "Buddha bowl",
+    "Buddha bowl food",
+    "Buddha bowl ingredient photo"
+  ],
+  "bibimbap": [
+    "Bibimbap",
+    "Bibimbap food",
+    "Bibimbap ingredient photo"
+  ],
+  "onigiri-z-tunczykiem": [
+    "Onigiri z tuńczykiem",
+    "Onigiri z tuńczykiem food",
+    "Onigiri z tuńczykiem ingredient photo"
+  ],
+  "sushi-nigiri-z-lososiem-6-szt": [
+    "salmon",
+    "salmon food",
+    "salmon ingredient photo"
+  ],
+  "sushi-maki-z-ogorkiem-8-szt": [
+    "Sushi maki z ogórkiem",
+    "Sushi maki z ogórkiem food",
+    "Sushi maki z ogórkiem ingredient photo"
+  ],
+  "sushi-california-8-szt": [
+    "Sushi california",
+    "Sushi california food",
+    "Sushi california ingredient photo"
+  ],
+  "salatka-z-burakow-i-kozim-serem": [
+    "salad cheese",
+    "salad cheese food",
+    "salad cheese ingredient photo"
+  ],
+  "tortilla-z-warzywami-wegetarianska": [
+    "tortilla",
+    "tortilla food",
+    "tortilla ingredient photo"
+  ],
+  "zapiekanka-z-makaronu-i-szpinaku": [
+    "baguette sandwich",
+    "baguette sandwich food",
+    "baguette sandwich ingredient photo"
+  ],
+  "pulpety-w-sosie-pomidorowym-z-ryzem": [
+    "sauce rice",
+    "sauce rice food",
+    "sauce rice ingredient photo"
+  ],
+  "udko-pieczone-z-ziemniakami": [
+    "chicken leg",
+    "chicken leg food",
+    "chicken leg ingredient photo"
+  ],
+  "zeberka-w-sosie-bbq": [
+    "pork ribs sauce",
+    "pork ribs sauce food",
+    "pork ribs sauce ingredient photo"
+  ],
+  "kaczka-pieczona-z-jablkami": [
+    "duck",
+    "duck food",
+    "duck ingredient photo"
+  ],
+  "kiszka-ziemniaczana": [
+    "Kiszka ziemniaczana",
+    "Kiszka ziemniaczana food",
+    "Kiszka ziemniaczana ingredient photo"
+  ],
+  "babka-ziemniaczana": [
+    "cake",
+    "cake food",
+    "cake ingredient photo"
+  ],
+  "kartacze": [
+    "Kartacze",
+    "Kartacze food",
+    "Kartacze ingredient photo"
+  ],
+  "cepeliny": [
+    "Cepeliny",
+    "Cepeliny food",
+    "Cepeliny ingredient photo"
+  ],
+  "knedliczki": [
+    "Knedliczki",
+    "Knedliczki food",
+    "Knedliczki ingredient photo"
+  ],
+  "gulasz-wegierski-bogracz": [
+    "stew",
+    "stew food",
+    "stew ingredient photo"
+  ],
+  "leczo-z-kielbasa": [
+    "sausage",
+    "sausage food",
+    "sausage ingredient photo"
+  ],
+  "nalesniki-z-miesem-markowe": [
+    "meat",
+    "meat food",
+    "meat ingredient photo"
+  ],
+  "makaron-z-dynia-i-szalwia": [
+    "pasta pumpkin",
+    "pasta pumpkin food",
+    "pasta pumpkin ingredient photo"
+  ],
+  "gnocchi-z-sosem-pomidorowym": [
+    "Gnocchi z sosem pomidorowym",
+    "Gnocchi z sosem pomidorowym food",
+    "Gnocchi z sosem pomidorowym ingredient photo"
+  ],
+  "ravioli-z-serem": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "tortellini-z-kurczakiem": [
+    "chicken",
+    "chicken food",
+    "chicken ingredient photo"
+  ],
+  "szaszlyk-z-kurczaka-z-warzywami": [
+    "chicken",
+    "chicken food",
+    "chicken ingredient photo"
+  ],
+  "burger-bowl-z-wolowina": [
+    "beef",
+    "beef food",
+    "beef ingredient photo"
+  ],
+  "kurczak-crispy-w-panierce": [
+    "chicken breaded",
+    "chicken breaded food",
+    "chicken breaded ingredient photo"
+  ],
+  "skrzydelka-bbq-10-szt": [
+    "chicken wings",
+    "chicken wings food",
+    "chicken wings ingredient photo"
+  ],
+  "kanapka-z-pulled-pork": [
+    "Kanapka z pulled pork",
+    "Kanapka z pulled pork food",
+    "Kanapka z pulled pork ingredient photo"
+  ],
+  "bagietka-z-mozzarella-i-pomidorem": [
+    "mozzarella",
+    "mozzarella food",
+    "mozzarella ingredient photo"
+  ],
+  "burgery-warzywne-veggie": [
+    "Burgery warzywne",
+    "Burgery warzywne food",
+    "Burgery warzywne ingredient photo"
+  ],
+  "sokolow-kielbasa-slaska": [
+    "sausage",
+    "sausage food",
+    "sausage ingredient photo"
+  ],
+  "sokolow-szynka-wiejska": [
+    "ham",
+    "ham food",
+    "ham ingredient photo"
+  ],
+  "sokolow-parowki-slaskie": [
+    "sausages silesian",
+    "sausages silesian food",
+    "sausages silesian ingredient photo"
+  ],
+  "morliny-szynka-z-indyka": [
+    "ham turkey",
+    "ham turkey food",
+    "ham turkey ingredient photo"
+  ],
+  "morliny-mielonka": [
+    "Morliny mielonka",
+    "Morliny mielonka food",
+    "Morliny mielonka ingredient photo"
+  ],
+  "kraina-wedlin-szynka-sopocka": [
+    "ham",
+    "ham food",
+    "ham ingredient photo"
+  ],
+  "kraina-wedlin-poledwica-sopocka": [
+    "tenderloin ham",
+    "tenderloin ham food",
+    "tenderloin ham ingredient photo"
+  ],
+  "olewnik-kielbasa-wiejska": [
+    "sausage",
+    "sausage food",
+    "sausage ingredient photo"
+  ],
+  "konserwa-turystyczna": [
+    "Konserwa turystyczna",
+    "Konserwa turystyczna food",
+    "Konserwa turystyczna ingredient photo"
+  ],
+  "konserwa-gulaszowa": [
+    "Konserwa gulaszowa",
+    "Konserwa gulaszowa food",
+    "Konserwa gulaszowa ingredient photo"
+  ],
+  "pasztet-sokolow": [
+    "pate",
+    "pate food",
+    "pate ingredient photo"
+  ],
+  "parowki-z-kurczaka-markowe": [
+    "sausages chicken",
+    "sausages chicken food",
+    "sausages chicken ingredient photo"
+  ],
+  "szynka-staropolska": [
+    "ham",
+    "ham food",
+    "ham ingredient photo"
+  ],
+  "szynka-z-szynkowara": [
+    "ham",
+    "ham food",
+    "ham ingredient photo"
+  ],
+  "wedzona-piers-z-kurczaka": [
+    "smoked chicken breast",
+    "smoked chicken breast food",
+    "smoked chicken breast ingredient photo"
+  ],
+  "wedzone-udko-z-kurczaka": [
+    "chicken leg chicken",
+    "chicken leg chicken food",
+    "chicken leg chicken ingredient photo"
+  ],
+  "gulasz-wieprzowy-konserwa": [
+    "stew",
+    "stew food",
+    "stew ingredient photo"
+  ],
+  "mieso-na-kebab-mrozone": [
+    "kebab",
+    "kebab food",
+    "kebab ingredient photo"
+  ],
+  "kurczak-mielony-markowy": [
+    "chicken ground",
+    "chicken ground food",
+    "chicken ground ingredient photo"
+  ],
+  "losos-norweski-filet-mrozony": [
+    "salmon fillet",
+    "salmon fillet food",
+    "salmon fillet ingredient photo"
+  ],
+  "losos-wedzony-na-cieplo": [
+    "salmon",
+    "salmon food",
+    "salmon ingredient photo"
+  ],
+  "dorsz-wedzony": [
+    "cod",
+    "cod food",
+    "cod ingredient photo"
+  ],
+  "filet-sledziowy-a-la-matias": [
+    "fillet",
+    "fillet food",
+    "fillet ingredient photo"
+  ],
+  "sledz-w-sosie-musztardowym": [
+    "herring sauce",
+    "herring sauce food",
+    "herring sauce ingredient photo"
+  ],
+  "sledz-w-zalewie-octowej": [
+    "herring",
+    "herring food",
+    "herring ingredient photo"
+  ],
+  "tunczyk-w-sosie-pomidorowym": [
+    "tuna sauce",
+    "tuna sauce food",
+    "tuna sauce ingredient photo"
+  ],
+  "tunczyk-wedzony-paluszki": [
+    "tuna",
+    "tuna food",
+    "tuna ingredient photo"
+  ],
+  "losos-pacyficzny": [
+    "salmon",
+    "salmon food",
+    "salmon ingredient photo"
+  ],
+  "sola-mrozona": [
+    "frozen",
+    "frozen food",
+    "frozen ingredient photo"
+  ],
+  "kalmary-panierowane-krazki": [
+    "squid",
+    "squid food",
+    "squid ingredient photo"
+  ],
+  "mule-w-sosie-czosnkowym": [
+    "sauce",
+    "sauce food",
+    "sauce ingredient photo"
+  ],
+  "ikra-lososiowa-kawior-czerwony": [
+    "Ikra łososiowa",
+    "Ikra łososiowa food",
+    "Ikra łososiowa ingredient photo"
+  ],
+  "surimi-paluszki-krabowe": [
+    "Surimi",
+    "Surimi food",
+    "Surimi ingredient photo"
+  ],
+  "krewetki-mrozone-koktajlowe": [
+    "shrimp",
+    "shrimp food",
+    "shrimp ingredient photo"
+  ],
+  "paluszki-rybne-mrozone": [
+    "Paluszki rybne",
+    "Paluszki rybne food",
+    "Paluszki rybne ingredient photo"
+  ],
+  "kotlet-rybny-mrozony": [
+    "cutlet",
+    "cutlet food",
+    "cutlet ingredient photo"
+  ],
+  "groszek-konserwowy": [
+    "peas",
+    "peas food",
+    "peas ingredient photo"
+  ],
+  "fasola-czerwona-konserwowa": [
+    "beans red",
+    "beans red food",
+    "beans red ingredient photo"
+  ],
+  "fasola-biala-konserwowa": [
+    "beans white",
+    "beans white food",
+    "beans white ingredient photo"
+  ],
+  "ciecierzyca-konserwowa-warzywa": [
+    "chickpeas",
+    "chickpeas food",
+    "chickpeas ingredient photo"
+  ],
+  "bob-konserwowy": [
+    "fava beans",
+    "fava beans food",
+    "fava beans ingredient photo"
+  ],
+  "soczewica-konserwowa": [
+    "lentils",
+    "lentils food",
+    "lentils ingredient photo"
+  ],
+  "pomidory-krojone-puszka": [
+    "tomato",
+    "tomato food",
+    "tomato ingredient photo"
+  ],
+  "ogorki-konserwowe": [
+    "Ogórki konserwowe",
+    "Ogórki konserwowe food",
+    "Ogórki konserwowe ingredient photo"
+  ],
+  "papryka-konserwowa-sloik": [
+    "bell pepper",
+    "bell pepper food",
+    "bell pepper ingredient photo"
+  ],
+  "buraki-tarte-sloik": [
+    "Buraki tarte",
+    "Buraki tarte food",
+    "Buraki tarte ingredient photo"
+  ],
+  "buraki-cwiklowe-sloik": [
+    "Buraki ćwikłowe",
+    "Buraki ćwikłowe food",
+    "Buraki ćwikłowe ingredient photo"
+  ],
+  "kapusta-kiszona-sloik": [
+    "cabbage sauerkraut",
+    "cabbage sauerkraut food",
+    "cabbage sauerkraut ingredient photo"
+  ],
+  "mieszanka-chinska-mrozona": [
+    "chinese frozen",
+    "chinese frozen food",
+    "chinese frozen ingredient photo"
+  ],
+  "mieszanka-zupowa-mrozona": [
+    "frozen",
+    "frozen food",
+    "frozen ingredient photo"
+  ],
+  "ratatouille-mrozone": [
+    "Ratatouille mrożone",
+    "Ratatouille mrożone food",
+    "Ratatouille mrożone ingredient photo"
+  ],
+  "brokuly-z-kalafiorem-mrozone": [
+    "broccoli",
+    "broccoli food",
+    "broccoli ingredient photo"
+  ],
+  "fasolka-szparagowa-mrozona": [
+    "green beans frozen",
+    "green beans frozen food",
+    "green beans frozen ingredient photo"
+  ],
+  "szpinak-w-smietanie-mrozony": [
+    "spinach",
+    "spinach food",
+    "spinach ingredient photo"
+  ],
+  "owoce-lesne-mix-mrozone": [
+    "wild mixed",
+    "wild mixed food",
+    "wild mixed ingredient photo"
+  ],
+  "mango-mrozone": [
+    "mango",
+    "mango food",
+    "mango ingredient photo"
+  ],
+  "wisnie-mrozone": [
+    "cherry",
+    "cherry food",
+    "cherry ingredient photo"
+  ],
+  "brzoskwinie-w-syropie": [
+    "Brzoskwinie w syropie",
+    "Brzoskwinie w syropie food",
+    "Brzoskwinie w syropie ingredient photo"
+  ],
+  "ananas-w-syropie": [
+    "pineapple",
+    "pineapple food",
+    "pineapple ingredient photo"
+  ],
+  "zupka-chinska-kluski": [
+    "instant noodles chinese",
+    "instant noodles chinese food",
+    "instant noodles chinese ingredient photo"
+  ],
+  "zupka-chinska-ryzowa": [
+    "instant noodles chinese",
+    "instant noodles chinese food",
+    "instant noodles chinese ingredient photo"
+  ],
+  "rosol-instant-kubek": [
+    "broth instant",
+    "broth instant food",
+    "broth instant ingredient photo"
+  ],
+  "zurek-instant": [
+    "instant",
+    "instant food",
+    "instant ingredient photo"
+  ],
+  "barszcz-czerwony-instant": [
+    "instant",
+    "instant food",
+    "instant ingredient photo"
+  ],
+  "zupa-pomidorowa-instant": [
+    "soup tomato instant",
+    "soup tomato instant food",
+    "soup tomato instant ingredient photo"
+  ],
+  "grochowka-instant": [
+    "instant",
+    "instant food",
+    "instant ingredient photo"
+  ],
+  "zupa-grzybowa-instant": [
+    "soup instant",
+    "soup instant food",
+    "soup instant ingredient photo"
+  ],
+  "zupa-krem-brokulowy-karton": [
+    "soup spread",
+    "soup spread food",
+    "soup spread ingredient photo"
+  ],
+  "zupa-pomidorowa-karton": [
+    "soup tomato",
+    "soup tomato food",
+    "soup tomato ingredient photo"
+  ],
+  "zurek-zytni-karton": [
+    "rye",
+    "rye food",
+    "rye ingredient photo"
+  ],
+  "barszcz-bialy-karton": [
+    "white",
+    "white food",
+    "white ingredient photo"
+  ],
+  "tofu-wedzone": [
+    "Tofu wędzone",
+    "Tofu wędzone food",
+    "Tofu wędzone ingredient photo"
+  ],
+  "tofu-naturalne": [
+    "Tofu naturalne",
+    "Tofu naturalne food",
+    "Tofu naturalne ingredient photo"
+  ],
+  "tempeh": [
+    "Tempeh",
+    "Tempeh food",
+    "Tempeh ingredient photo"
+  ],
+  "seitan": [
+    "Seitan",
+    "Seitan food",
+    "Seitan ingredient photo"
+  ],
+  "parowki-sojowe": [
+    "sausages soy",
+    "sausages soy food",
+    "sausages soy ingredient photo"
+  ],
+  "kotlety-sojowe": [
+    "soy",
+    "soy food",
+    "soy ingredient photo"
+  ],
+  "burger-sojowy-weganski": [
+    "soy sauce",
+    "soy sauce food",
+    "soy sauce ingredient photo"
+  ],
+  "jogurt-sojowy": [
+    "yogurt soy sauce",
+    "yogurt soy sauce food",
+    "yogurt soy sauce ingredient photo"
+  ],
+  "ser-weganski-plastry": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "pasztet-roslinny-weganski": [
+    "pate",
+    "pate food",
+    "pate ingredient photo"
+  ],
+  "mleko-konopne": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "mleko-z-nerkowcow": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "mleko-grochowe": [
+    "milk",
+    "milk food",
+    "milk ingredient photo"
+  ],
+  "pasta-z-awokado-paste": [
+    "avocado",
+    "avocado food",
+    "avocado ingredient photo"
+  ],
+  "hummus-buraczany": [
+    "hummus",
+    "hummus food",
+    "hummus ingredient photo"
+  ],
+  "hummus-paprykowy": [
+    "hummus",
+    "hummus food",
+    "hummus ingredient photo"
+  ],
+  "pancakes-nalesniki-amerykanskie": [
+    "Pancakes",
+    "Pancakes food",
+    "Pancakes ingredient photo"
+  ],
+  "gofry": [
+    "waffles",
+    "waffles food",
+    "waffles ingredient photo"
+  ],
+  "tost-francuski": [
+    "Tost francuski",
+    "Tost francuski food",
+    "Tost francuski ingredient photo"
+  ],
+  "jajko-na-miekko": [
+    "egg",
+    "egg food",
+    "egg ingredient photo"
+  ],
+  "jajko-na-twardo": [
+    "egg",
+    "egg food",
+    "egg ingredient photo"
+  ],
+  "owsianka-z-bananem-i-orzechami": [
+    "Owsianka z bananem i orzechami",
+    "Owsianka z bananem i orzechami food",
+    "Owsianka z bananem i orzechami ingredient photo"
+  ],
+  "owsianka-z-jagodami": [
+    "Owsianka z jagodami",
+    "Owsianka z jagodami food",
+    "Owsianka z jagodami ingredient photo"
+  ],
+  "kaszka-manna-na-mleku": [
+    "semolina",
+    "semolina food",
+    "semolina ingredient photo"
+  ],
+  "kaszka-kukurydziana-na-mleku": [
+    "Kaszka kukurydziana na mleku",
+    "Kaszka kukurydziana na mleku food",
+    "Kaszka kukurydziana na mleku ingredient photo"
+  ],
+  "kaszka-ryzowa-na-mleku": [
+    "Kaszka ryżowa na mleku",
+    "Kaszka ryżowa na mleku food",
+    "Kaszka ryżowa na mleku ingredient photo"
+  ],
+  "obwarzanek": [
+    "Obwarzanek",
+    "Obwarzanek food",
+    "Obwarzanek ingredient photo"
+  ],
+  "precel-maslany": [
+    "pretzel",
+    "pretzel food",
+    "pretzel ingredient photo"
+  ],
+  "burek-z-miesem": [
+    "meat",
+    "meat food",
+    "meat ingredient photo"
+  ],
+  "empanada": [
+    "Empanada",
+    "Empanada food",
+    "Empanada ingredient photo"
+  ],
+  "samosa": [
+    "Samosa",
+    "Samosa food",
+    "Samosa ingredient photo"
+  ],
+  "spring-rolls-sajgonki": [
+    "Spring rolls",
+    "Spring rolls food",
+    "Spring rolls ingredient photo"
+  ],
+  "spring-rolls-z-krewetkami": [
+    "Spring rolls z krewetkami",
+    "Spring rolls z krewetkami food",
+    "Spring rolls z krewetkami ingredient photo"
+  ],
+  "kanapka-z-lososiem": [
+    "salmon",
+    "salmon food",
+    "salmon ingredient photo"
+  ],
+  "kanapka-z-szynka-i-serem": [
+    "ham cheese",
+    "ham cheese food",
+    "ham cheese ingredient photo"
+  ],
+  "kanapka-z-pasta-jajeczna": [
+    "Kanapka z pastą jajeczną",
+    "Kanapka z pastą jajeczną food",
+    "Kanapka z pastą jajeczną ingredient photo"
+  ],
+  "kawa-rozpuszczalna-instant": [
+    "instant",
+    "instant food",
+    "instant ingredient photo"
+  ],
+  "kawa-mielona-parzona": [
+    "Kawa mielona",
+    "Kawa mielona food",
+    "Kawa mielona ingredient photo"
+  ],
+  "kawa-z-mlekiem-biala": [
+    "white",
+    "white food",
+    "white ingredient photo"
+  ],
+  "kawa-mocha": [
+    "Kawa mocha",
+    "Kawa mocha food",
+    "Kawa mocha ingredient photo"
+  ],
+  "kawa-flat-white": [
+    "Kawa flat white",
+    "Kawa flat white food",
+    "Kawa flat white ingredient photo"
+  ],
+  "kawa-americano": [
+    "Kawa americano",
+    "Kawa americano food",
+    "Kawa americano ingredient photo"
+  ],
+  "herbata-owocowa": [
+    "Herbata owocowa",
+    "Herbata owocowa food",
+    "Herbata owocowa ingredient photo"
+  ],
+  "herbata-z-malin": [
+    "Herbata z malin",
+    "Herbata z malin food",
+    "Herbata z malin ingredient photo"
+  ],
+  "herbata-z-hibiskusem": [
+    "Herbata z hibiskusem",
+    "Herbata z hibiskusem food",
+    "Herbata z hibiskusem ingredient photo"
+  ],
+  "herbata-mietowa": [
+    "Herbata miętowa",
+    "Herbata miętowa food",
+    "Herbata miętowa ingredient photo"
+  ],
+  "herbata-rumiankowa": [
+    "Herbata rumiankowa",
+    "Herbata rumiankowa food",
+    "Herbata rumiankowa ingredient photo"
+  ],
+  "czekolada-do-picia-goraca": [
+    "chocolate",
+    "chocolate food",
+    "chocolate ingredient photo"
+  ],
+  "kakao-z-piankami": [
+    "Kakao z piankami",
+    "Kakao z piankami food",
+    "Kakao z piankami ingredient photo"
+  ],
+  "napoj-waniliowy-shake": [
+    "Napój waniliowy",
+    "Napój waniliowy food",
+    "Napój waniliowy ingredient photo"
+  ],
+  "shake-czekoladowy": [
+    "chocolate",
+    "chocolate food",
+    "chocolate ingredient photo"
+  ],
+  "shake-truskawkowy": [
+    "strawberry",
+    "strawberry food",
+    "strawberry ingredient photo"
+  ],
+  "milkshake-bananowy": [
+    "Milkshake bananowy",
+    "Milkshake bananowy food",
+    "Milkshake bananowy ingredient photo"
+  ],
+  "tiramisu-deser": [
+    "Tiramisu",
+    "Tiramisu food",
+    "Tiramisu ingredient photo"
+  ],
+  "panna-cotta": [
+    "Panna cotta",
+    "Panna cotta food",
+    "Panna cotta ingredient photo"
+  ],
+  "creme-brulee": [
+    "Crème brûlée",
+    "Crème brûlée food",
+    "Crème brûlée ingredient photo"
+  ],
+  "mus-czekoladowy": [
+    "chocolate",
+    "chocolate food",
+    "chocolate ingredient photo"
+  ],
+  "suflet-czekoladowy": [
+    "chocolate",
+    "chocolate food",
+    "chocolate ingredient photo"
+  ],
+  "kisiel-owocowy": [
+    "fruit",
+    "fruit food",
+    "fruit ingredient photo"
+  ],
+  "galaretka-z-owocami": [
+    "Galaretka z owocami",
+    "Galaretka z owocami food",
+    "Galaretka z owocami ingredient photo"
+  ],
+  "zupa-owocowa-z-makaronem": [
+    "soup pasta",
+    "soup pasta food",
+    "soup pasta ingredient photo"
+  ],
+  "deser-sojowy-waniliowy": [
+    "soy sauce",
+    "soy sauce food",
+    "soy sauce ingredient photo"
+  ],
+  "pudding-ryzowy": [
+    "pudding",
+    "pudding food",
+    "pudding ingredient photo"
+  ],
+  "kluski-z-makiem-na-slodko": [
+    "sweet",
+    "sweet food",
+    "sweet ingredient photo"
+  ],
+  "ryz-na-mleku-z-jablkiem": [
+    "rice",
+    "rice food",
+    "rice ingredient photo"
+  ],
+  "sernik-na-zimno": [
+    "cheesecake",
+    "cheesecake food",
+    "cheesecake ingredient photo"
+  ],
+  "karpatka": [
+    "Karpatka",
+    "Karpatka food",
+    "Karpatka ingredient photo"
+  ],
+  "bajaderka": [
+    "Bajaderka",
+    "Bajaderka food",
+    "Bajaderka ingredient photo"
+  ],
+  "ptysie-z-kremem": [
+    "Ptysie z kremem",
+    "Ptysie z kremem food",
+    "Ptysie z kremem ingredient photo"
+  ],
+  "eklery": [
+    "Eklery",
+    "Eklery food",
+    "Eklery ingredient photo"
+  ],
+  "ciasto-marchewkowe": [
+    "Ciasto marchewkowe",
+    "Ciasto marchewkowe food",
+    "Ciasto marchewkowe ingredient photo"
+  ],
+  "brownie": [
+    "Brownie",
+    "Brownie food",
+    "Brownie ingredient photo"
+  ],
+  "blondie": [
+    "Blondie",
+    "Blondie food",
+    "Blondie ingredient photo"
+  ],
+  "maslo-czosnkowe": [
+    "butter",
+    "butter food",
+    "butter ingredient photo"
+  ],
+  "maslo-ziolowe": [
+    "butter",
+    "butter food",
+    "butter ingredient photo"
+  ],
+  "smalec-z-jablkiem-i-cebula": [
+    "lard onion",
+    "lard onion food",
+    "lard onion ingredient photo"
+  ],
+  "olej-rydzowy": [
+    "oil",
+    "oil food",
+    "oil ingredient photo"
+  ],
+  "olej-konopny": [
+    "oil",
+    "oil food",
+    "oil ingredient photo"
+  ],
+  "salsa-verde": [
+    "Salsa verde",
+    "Salsa verde food",
+    "Salsa verde ingredient photo"
+  ],
+  "sos-blue-cheese": [
+    "Sos blue cheese",
+    "Sos blue cheese food",
+    "Sos blue cheese ingredient photo"
+  ],
+  "sos-balsamiczny-krem": [
+    "spread",
+    "spread food",
+    "spread ingredient photo"
+  ],
+  "sos-curry-indyjski": [
+    "Sos curry",
+    "Sos curry food",
+    "Sos curry ingredient photo"
+  ],
+  "sos-satay-orzechowy": [
+    "Sos satay",
+    "Sos satay food",
+    "Sos satay ingredient photo"
+  ],
+  "sos-jogurtowy-czosnkowy-brand": [
+    "garlic sauce",
+    "garlic sauce food",
+    "garlic sauce ingredient photo"
+  ],
+  "jogurt-pitny-wisniowy": [
+    "yogurt drinkable",
+    "yogurt drinkable food",
+    "yogurt drinkable ingredient photo"
+  ],
+  "jogurt-pitny-mangowy": [
+    "yogurt drinkable",
+    "yogurt drinkable food",
+    "yogurt drinkable ingredient photo"
+  ],
+  "jogurt-naturalny-z-probiotykiem": [
+    "yogurt plain",
+    "yogurt plain food",
+    "yogurt plain ingredient photo"
+  ],
+  "serek-grani-ze-szczypiorkiem": [
+    "cottage cheese",
+    "cottage cheese food",
+    "cottage cheese ingredient photo"
+  ],
+  "serek-grani-naturalny": [
+    "cottage cheese plain",
+    "cottage cheese plain food",
+    "cottage cheese plain ingredient photo"
+  ],
+  "smietana-kokosowa": [
+    "cream",
+    "cream food",
+    "cream ingredient photo"
+  ],
+  "maslo-orzechowe-crunchy": [
+    "butter peanut butter",
+    "butter peanut butter food",
+    "butter peanut butter ingredient photo"
+  ],
+  "maslo-orzechowe-bez-cukru": [
+    "butter peanut butter sugar",
+    "butter peanut butter sugar food",
+    "butter peanut butter sugar ingredient photo"
+  ],
+  "krem-czekoladowo-orzechowy-brand": [
+    "spread",
+    "spread food",
+    "spread ingredient photo"
+  ],
+  "migdaly-prazone": [
+    "almond roasted",
+    "almond roasted food",
+    "almond roasted ingredient photo"
+  ],
+  "migdaly-w-czekoladzie": [
+    "almond",
+    "almond food",
+    "almond ingredient photo"
+  ],
+  "slonecznik-prazony-luskany": [
+    "Słonecznik prażony",
+    "Słonecznik prażony food",
+    "Słonecznik prażony ingredient photo"
+  ],
+  "orzechy-w-karmelu": [
+    "nuts",
+    "nuts food",
+    "nuts ingredient photo"
+  ],
+  "mieszanka-orzechow-i-zurawiny": [
+    "Mieszanka orzechów i żurawiny",
+    "Mieszanka orzechów i żurawiny food",
+    "Mieszanka orzechów i żurawiny ingredient photo"
+  ],
+  "wafel-ryzowy-czekoladowy": [
+    "wafer chocolate",
+    "wafer chocolate food",
+    "wafer chocolate ingredient photo"
+  ],
+  "wafel-ryzowy-jogurtowy": [
+    "wafer",
+    "wafer food",
+    "wafer ingredient photo"
+  ],
+  "chleb-chrupki-wasa": [
+    "bread crispy",
+    "bread crispy food",
+    "bread crispy ingredient photo"
+  ],
+  "wafle-kukurydziane": [
+    "Wafle kukurydziane",
+    "Wafle kukurydziane food",
+    "Wafle kukurydziane ingredient photo"
+  ],
+  "pieczywo-chrupkie-wieloziarniste": [
+    "Pieczywo chrupkie wieloziarniste",
+    "Pieczywo chrupkie wieloziarniste food",
+    "Pieczywo chrupkie wieloziarniste ingredient photo"
+  ],
+  "podplomyk": [
+    "Podpłomyk",
+    "Podpłomyk food",
+    "Podpłomyk ingredient photo"
+  ],
+  "lawasz": [
+    "Lawasz",
+    "Lawasz food",
+    "Lawasz ingredient photo"
+  ],
+  "pita-chlebek": [
+    "Pita",
+    "Pita food",
+    "Pita ingredient photo"
+  ],
+  "obwarzanek-krakowski": [
+    "Obwarzanek krakowski",
+    "Obwarzanek krakowski food",
+    "Obwarzanek krakowski ingredient photo"
+  ],
+  "rogal-swietomarcinski": [
+    "Rogal świętomarciński",
+    "Rogal świętomarciński food",
+    "Rogal świętomarciński ingredient photo"
+  ],
+  "ser-korycinski-swojski": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "chleb-pradnicki": [
+    "bread",
+    "bread food",
+    "bread ingredient photo"
+  ],
+  "oscypek-wedzony": [
+    "Oscypek wędzony",
+    "Oscypek wędzony food",
+    "Oscypek wędzony ingredient photo"
+  ],
+  "bryndza-podhalanska": [
+    "Bryndza podhalańska",
+    "Bryndza podhalańska food",
+    "Bryndza podhalańska ingredient photo"
+  ],
+  "kielbasa-lisiecka": [
+    "sausage",
+    "sausage food",
+    "sausage ingredient photo"
+  ],
+  "sliwka-suszona-wedzona": [
+    "dried smoked",
+    "dried smoked food",
+    "dried smoked ingredient photo"
+  ],
+  "kabanosy-ze-strusia": [
+    "sausage",
+    "sausage food",
+    "sausage ingredient photo"
+  ],
+  "wedlina-z-dzika": [
+    "Wędlina z dzika",
+    "Wędlina z dzika food",
+    "Wędlina z dzika ingredient photo"
+  ],
+  "szynka-z-dzika": [
+    "ham",
+    "ham food",
+    "ham ingredient photo"
+  ],
+  "kielbasa-z-jelenia": [
+    "sausage",
+    "sausage food",
+    "sausage ingredient photo"
+  ],
+  "boczek-z-dzika-wedzony": [
+    "bacon",
+    "bacon food",
+    "bacon ingredient photo"
+  ],
+  "pstrag-ojcowski-wedzony": [
+    "trout",
+    "trout food",
+    "trout ingredient photo"
+  ],
+  "miod-wrzosowy": [
+    "honey",
+    "honey food",
+    "honey ingredient photo"
+  ],
+  "miod-akacjowy": [
+    "honey",
+    "honey food",
+    "honey ingredient photo"
+  ],
+  "miod-manuka": [
+    "honey",
+    "honey food",
+    "honey ingredient photo"
+  ],
+  "kapusta-kiszona-swojska-z-beczki": [
+    "cabbage sauerkraut",
+    "cabbage sauerkraut food",
+    "cabbage sauerkraut ingredient photo"
+  ],
+  "ogorek-kiszony-swojski": [
+    "cucumber pickled",
+    "cucumber pickled food",
+    "cucumber pickled ingredient photo"
+  ],
+  "bigos-z-kielbasa-gotowy": [
+    "sausage ready",
+    "sausage ready food",
+    "sausage ready ingredient photo"
+  ],
+  "golabki-z-kasza": [
+    "Gołąbki z kaszą",
+    "Gołąbki z kaszą food",
+    "Gołąbki z kaszą ingredient photo"
+  ],
+  "karkowka-z-grilla-goralska": [
+    "pork neck",
+    "pork neck food",
+    "pork neck ingredient photo"
+  ],
+  "oscypek-z-grilla-z-zurawina": [
+    "cranberry",
+    "cranberry food",
+    "cranberry ingredient photo"
+  ],
+  "nalesniki-po-wegiersku": [
+    "Naleśniki po węgiersku",
+    "Naleśniki po węgiersku food",
+    "Naleśniki po węgiersku ingredient photo"
+  ],
+  "pierogi-z-jagodami": [
+    "pierogi",
+    "pierogi food",
+    "pierogi ingredient photo"
+  ],
+  "pierogi-z-truskawkami": [
+    "pierogi",
+    "pierogi food",
+    "pierogi ingredient photo"
+  ],
+  "pierogi-leniwe-z-twarogu": [
+    "pierogi",
+    "pierogi food",
+    "pierogi ingredient photo"
+  ],
+  "kisiel-zurawinowy": [
+    "Kisiel żurawinowy",
+    "Kisiel żurawinowy food",
+    "Kisiel żurawinowy ingredient photo"
+  ],
+  "kompot-z-suszu-bozonarodzeniowy": [
+    "Kompot z suszu",
+    "Kompot z suszu food",
+    "Kompot z suszu ingredient photo"
+  ],
+  "grzane-piwo-z-miodem": [
+    "Grzane piwo z miodem",
+    "Grzane piwo z miodem food",
+    "Grzane piwo z miodem ingredient photo"
+  ],
+  "miod-pitny-trojniak": [
+    "honey drinkable",
+    "honey drinkable food",
+    "honey drinkable ingredient photo"
+  ],
+  "miod-pitny-dwojniak": [
+    "honey drinkable",
+    "honey drinkable food",
+    "honey drinkable ingredient photo"
+  ],
+  "sliwowica": [
+    "Śliwowica",
+    "Śliwowica food",
+    "Śliwowica ingredient photo"
+  ],
+  "okowita-gorzala": [
+    "Okowita",
+    "Okowita food",
+    "Okowita ingredient photo"
+  ],
+  "nalewka-z-pigwy": [
+    "Nalewka z pigwy",
+    "Nalewka z pigwy food",
+    "Nalewka z pigwy ingredient photo"
+  ],
+  "nalewka-z-aronii": [
+    "Nalewka z aronii",
+    "Nalewka z aronii food",
+    "Nalewka z aronii ingredient photo"
+  ],
+  "ramen-z-krewetkami": [
+    "Ramen z krewetkami",
+    "Ramen z krewetkami food",
+    "Ramen z krewetkami ingredient photo"
+  ],
+  "ramen-wegetarianski": [
+    "Ramen wegetariański",
+    "Ramen wegetariański food",
+    "Ramen wegetariański ingredient photo"
+  ],
+  "chinski-ryz-smazony-z-jajkiem": [
+    "rice fried",
+    "rice fried food",
+    "rice fried ingredient photo"
+  ],
+  "nalesnik-z-owocami": [
+    "pancake",
+    "pancake food",
+    "pancake ingredient photo"
+  ],
+  "curry-warzywne-z-ciecierzyca": [
+    "chickpeas",
+    "chickpeas food",
+    "chickpeas ingredient photo"
+  ],
+  "salatka-z-kurczakiem-i-ryzem": [
+    "salad chicken rice",
+    "salad chicken rice food",
+    "salad chicken rice ingredient photo"
+  ],
+  "makaron-z-pesto": [
+    "pasta pesto",
+    "pasta pesto food",
+    "pasta pesto ingredient photo"
+  ],
+  "makaron-aglio-e-olio": [
+    "pasta",
+    "pasta food",
+    "pasta ingredient photo"
+  ],
+  "pizza-domowa-z-patelni": [
+    "pizza",
+    "pizza food",
+    "pizza ingredient photo"
+  ],
+  "zapiekanka-ziemniaczana-z-miesem": [
+    "baguette sandwich meat",
+    "baguette sandwich meat food",
+    "baguette sandwich meat ingredient photo"
+  ],
+  "krem-z-soczewicy": [
+    "spread",
+    "spread food",
+    "spread ingredient photo"
+  ],
+  "zupa-z-soczewicy-z-warzywami": [
+    "soup",
+    "soup food",
+    "soup ingredient photo"
+  ],
+  "zupa-kalafiorowa-krem": [
+    "soup spread",
+    "soup spread food",
+    "soup spread ingredient photo"
+  ],
+  "zupa-marchewkowa-z-imbirem": [
+    "soup",
+    "soup food",
+    "soup ingredient photo"
+  ],
+  "zupa-brokulowa-z-serem": [
+    "soup cheese",
+    "soup cheese food",
+    "soup cheese ingredient photo"
+  ],
+  "zupa-dyniowa-z-curry": [
+    "soup",
+    "soup food",
+    "soup ingredient photo"
+  ],
+  "zupa-krem-z-batatow-i-marchewki": [
+    "soup spread",
+    "soup spread food",
+    "soup spread ingredient photo"
+  ],
+  "zupa-krem-z-zielonego-groszku": [
+    "soup spread",
+    "soup spread food",
+    "soup spread ingredient photo"
+  ],
+  "zupa-krem-z-cukinii-i-brokulow": [
+    "soup spread",
+    "soup spread food",
+    "soup spread ingredient photo"
+  ],
+  "zupa-selerowa-krem": [
+    "soup spread",
+    "soup spread food",
+    "soup spread ingredient photo"
+  ],
+  "saltimbocca": [
+    "Saltimbocca",
+    "Saltimbocca food",
+    "Saltimbocca ingredient photo"
+  ],
+  "kopytka-z-sosem-grzybowym": [
+    "potato dumplings",
+    "potato dumplings food",
+    "potato dumplings ingredient photo"
+  ],
+  "placki-ziemniaczane-z-gulaszem": [
+    "pancakes potato",
+    "pancakes potato food",
+    "pancakes potato ingredient photo"
+  ],
+  "kasza-gryczana-z-gulaszem": [
+    "buckwheat",
+    "buckwheat food",
+    "buckwheat ingredient photo"
+  ],
+  "makaron-z-twarogiem-i-cynamonem": [
+    "pasta",
+    "pasta food",
+    "pasta ingredient photo"
+  ],
+  "kluski-z-makiem-makaron-z-makiem": [
+    "pasta",
+    "pasta food",
+    "pasta ingredient photo"
+  ],
+  "zapiekanka-z-ziemniakow-i-sera": [
+    "baguette sandwich",
+    "baguette sandwich food",
+    "baguette sandwich ingredient photo"
+  ],
+  "grillowane-warzywa-z-feta": [
+    "feta",
+    "feta food",
+    "feta ingredient photo"
+  ],
+  "salatka-bawarska-z-kabanosem": [
+    "salad",
+    "salad food",
+    "salad ingredient photo"
+  ],
+  "ryba-w-ciescie-z-frytkami": [
+    "fish wrap",
+    "fish wrap food",
+    "fish wrap ingredient photo"
+  ],
+  "kurczak-w-ciescie-piwnym": [
+    "chicken wrap",
+    "chicken wrap food",
+    "chicken wrap ingredient photo"
+  ],
+  "smithy-frytki-belgijskie-podwojne": [
+    "french fries",
+    "french fries food",
+    "french fries ingredient photo"
+  ],
+  "smazona-mozzarella-w-panierce": [
+    "fried mozzarella breaded",
+    "fried mozzarella breaded food",
+    "fried mozzarella breaded ingredient photo"
+  ],
+  "serowe-patyczki-mozzarella": [
+    "mozzarella",
+    "mozzarella food",
+    "mozzarella ingredient photo"
+  ],
+  "krazki-cebulowe": [
+    "Krążki cebulowe",
+    "Krążki cebulowe food",
+    "Krążki cebulowe ingredient photo"
+  ],
+  "wrap-z-lososiem": [
+    "wrap salmon",
+    "wrap salmon food",
+    "wrap salmon ingredient photo"
+  ],
+  "wrap-z-halloumi": [
+    "wrap halloumi",
+    "wrap halloumi food",
+    "wrap halloumi ingredient photo"
+  ],
+  "burger-z-kurczakiem-curry": [
+    "chicken",
+    "chicken food",
+    "chicken ingredient photo"
+  ],
+  "burger-z-wolowina-i-bekonem": [
+    "beef",
+    "beef food",
+    "beef ingredient photo"
+  ],
+  "burger-cheeseburger-z-cebula": [
+    "cheeseburger onion",
+    "cheeseburger onion food",
+    "cheeseburger onion ingredient photo"
+  ],
+  "frytki-belgijskie-grube": [
+    "french fries",
+    "french fries food",
+    "french fries ingredient photo"
+  ],
+  "nuggetsy-z-ryby": [
+    "chicken nuggets",
+    "chicken nuggets food",
+    "chicken nuggets ingredient photo"
+  ],
+  "kanapka-z-kurczakiem-i-warzywami": [
+    "chicken",
+    "chicken food",
+    "chicken ingredient photo"
+  ],
+  "kanapka-z-serem-i-pomidorem": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "kanapka-z-mozzarella-i-rukola": [
+    "mozzarella arugula",
+    "mozzarella arugula food",
+    "mozzarella arugula ingredient photo"
+  ],
+  "panini-z-szynka-i-serem": [
+    "ham cheese",
+    "ham cheese food",
+    "ham cheese ingredient photo"
+  ],
+  "croque-monsieur": [
+    "Croque monsieur",
+    "Croque monsieur food",
+    "Croque monsieur ingredient photo"
+  ],
+  "grilled-cheese-zapiekana-kanapka": [
+    "Grilled cheese",
+    "Grilled cheese food",
+    "Grilled cheese ingredient photo"
+  ],
+  "tost-z-kurczakiem": [
+    "chicken",
+    "chicken food",
+    "chicken ingredient photo"
+  ],
+  "salatka-szefa": [
+    "salad",
+    "salad food",
+    "salad ingredient photo"
+  ],
+  "salatka-z-jajkiem-i-awokado": [
+    "salad avocado",
+    "salad avocado food",
+    "salad avocado ingredient photo"
+  ],
+  "salatka-z-kozim-serem": [
+    "salad cheese",
+    "salad cheese food",
+    "salad cheese ingredient photo"
+  ],
+  "salatka-owocowa-mix": [
+    "salad mixed",
+    "salad mixed food",
+    "salad mixed ingredient photo"
+  ],
+  "koktajl-owocowy-mix-banan-jagoda": [
+    "fruit mixed banana",
+    "fruit mixed banana food",
+    "fruit mixed banana ingredient photo"
+  ],
+  "smoothie-z-awokado-i-szpinakiem": [
+    "avocado",
+    "avocado food",
+    "avocado ingredient photo"
+  ],
+  "smoothie-z-mango-i-marakuja": [
+    "mango passion fruit",
+    "mango passion fruit food",
+    "mango passion fruit ingredient photo"
+  ],
+  "smoothie-z-burakiem": [
+    "Smoothie z burakiem",
+    "Smoothie z burakiem food",
+    "Smoothie z burakiem ingredient photo"
+  ],
+  "sok-z-brzozy": [
+    "Sok z brzozy",
+    "Sok z brzozy food",
+    "Sok z brzozy ingredient photo"
+  ],
+  "napoj-aloesowy": [
+    "Napój aloesowy",
+    "Napój aloesowy food",
+    "Napój aloesowy ingredient photo"
+  ],
+  "kefir-wodny-jogurt-kokosowy": [
+    "kefir yogurt coconut",
+    "kefir yogurt coconut food",
+    "kefir yogurt coconut ingredient photo"
+  ],
+  "kompot-rabarbarowy": [
+    "Kompot rabarbarowy",
+    "Kompot rabarbarowy food",
+    "Kompot rabarbarowy ingredient photo"
+  ],
+  "lemoniada-lawendowa": [
+    "Lemoniada lawendowa",
+    "Lemoniada lawendowa food",
+    "Lemoniada lawendowa ingredient photo"
+  ],
+  "gruszka-w-syropie": [
+    "pear",
+    "pear food",
+    "pear ingredient photo"
+  ],
+  "morele-w-syropie": [
+    "Morele w syropie",
+    "Morele w syropie food",
+    "Morele w syropie ingredient photo"
+  ],
+  "wisnie-w-syropie-koktajlowe": [
+    "cherry",
+    "cherry food",
+    "cherry ingredient photo"
+  ],
+  "sliwki-w-czekoladzie-markowe": [
+    "plum",
+    "plum food",
+    "plum ingredient photo"
+  ],
+  "maliny-w-czekoladzie": [
+    "raspberry",
+    "raspberry food",
+    "raspberry ingredient photo"
+  ],
+  "truskawki-w-czekoladzie": [
+    "strawberry",
+    "strawberry food",
+    "strawberry ingredient photo"
+  ],
+  "baton-pralinowy": [
+    "candy bar",
+    "candy bar food",
+    "candy bar ingredient photo"
+  ],
+  "czekoladka-z-nadzieniem-mietowym": [
+    "filled",
+    "filled food",
+    "filled ingredient photo"
+  ],
+  "czekoladka-z-nadzieniem-pomaranczowym": [
+    "filled",
+    "filled food",
+    "filled ingredient photo"
+  ],
+  "draze-czekoladowe-z-arachidami": [
+    "Draże czekoladowe z arachidami",
+    "Draże czekoladowe z arachidami food",
+    "Draże czekoladowe z arachidami ingredient photo"
+  ],
+  "cukierki-czekoladowo-karmelowe": [
+    "Cukierki czekoladowo-karmelowe",
+    "Cukierki czekoladowo-karmelowe food",
+    "Cukierki czekoladowo-karmelowe ingredient photo"
+  ],
+  "bakaliowa-mieszanka-sniadaniowa": [
+    "Bakaliowa mieszanka śniadaniowa",
+    "Bakaliowa mieszanka śniadaniowa food",
+    "Bakaliowa mieszanka śniadaniowa ingredient photo"
+  ],
+  "orzechy-ziemne-w-miodzie": [
+    "nuts peanut",
+    "nuts peanut food",
+    "nuts peanut ingredient photo"
+  ],
+  "orzechy-nerkowca-pieczone": [
+    "nuts cashew",
+    "nuts cashew food",
+    "nuts cashew ingredient photo"
+  ],
+  "orzechy-wloskie-siekane": [
+    "nuts walnut",
+    "nuts walnut food",
+    "nuts walnut ingredient photo"
+  ],
+  "maslo-z-orzechow-laskowych": [
+    "butter",
+    "butter food",
+    "butter ingredient photo"
+  ],
+  "tahini-markowe": [
+    "tahini",
+    "tahini food",
+    "tahini ingredient photo"
+  ],
+  "dip-z-awokado-i-cytryna": [
+    "avocado",
+    "avocado food",
+    "avocado ingredient photo"
+  ],
+  "dip-koperkowo-ziolowy": [
+    "Dip koperkowo-ziołowy",
+    "Dip koperkowo-ziołowy food",
+    "Dip koperkowo-ziołowy ingredient photo"
+  ],
+  "dip-pomidorowo-czosnkowy": [
+    "garlic sauce",
+    "garlic sauce food",
+    "garlic sauce ingredient photo"
+  ],
+  "pasta-jajeczna": [
+    "Pasta jajeczna",
+    "Pasta jajeczna food",
+    "Pasta jajeczna ingredient photo"
+  ],
+  "pasta-z-makreli": [
+    "Pasta z makreli",
+    "Pasta z makreli food",
+    "Pasta z makreli ingredient photo"
+  ],
+  "pasta-z-lososia": [
+    "Pasta z łososia",
+    "Pasta z łososia food",
+    "Pasta z łososia ingredient photo"
+  ],
+  "pasta-kanapkowa-warzywna": [
+    "Pasta kanapkowa warzywna",
+    "Pasta kanapkowa warzywna food",
+    "Pasta kanapkowa warzywna ingredient photo"
+  ],
+  "sos-pieczarkowy-markowy": [
+    "Sos pieczarkowy",
+    "Sos pieczarkowy food",
+    "Sos pieczarkowy ingredient photo"
+  ],
+  "sos-paprykowy": [
+    "Sos paprykowy",
+    "Sos paprykowy food",
+    "Sos paprykowy ingredient photo"
+  ],
+  "ogorek-kiszony-markowy": [
+    "cucumber pickled",
+    "cucumber pickled food",
+    "cucumber pickled ingredient photo"
+  ],
+  "salatka-z-kukurydzy-i-papryki": [
+    "salad corn",
+    "salad corn food",
+    "salad corn ingredient photo"
+  ],
+  "cebula-karmelizowana-dzem": [
+    "onion jam",
+    "onion jam food",
+    "onion jam ingredient photo"
+  ],
+  "konfitura-wisniowa": [
+    "Konfitura wiśniowa",
+    "Konfitura wiśniowa food",
+    "Konfitura wiśniowa ingredient photo"
+  ],
+  "konfitura-brzoskwiniowa": [
+    "Konfitura brzoskwiniowa",
+    "Konfitura brzoskwiniowa food",
+    "Konfitura brzoskwiniowa ingredient photo"
+  ],
+  "marmolada-pigwowa": [
+    "Marmolada pigwowa",
+    "Marmolada pigwowa food",
+    "Marmolada pigwowa ingredient photo"
+  ],
+  "krem-czekoladowy-do-smarowania": [
+    "spread chocolate",
+    "spread chocolate food",
+    "spread chocolate ingredient photo"
+  ],
+  "krem-smietankowy-do-smarowania": [
+    "spread",
+    "spread food",
+    "spread ingredient photo"
+  ],
+  "pasta-migdalowa-marcepan": [
+    "Pasta migdałowa",
+    "Pasta migdałowa food",
+    "Pasta migdałowa ingredient photo"
+  ],
+  "jogurt-z-chia-i-owocami": [
+    "yogurt chia",
+    "yogurt chia food",
+    "yogurt chia ingredient photo"
+  ],
+  "serek-wiejski-z-warzywami": [
+    "cottage cheese",
+    "cottage cheese food",
+    "cottage cheese ingredient photo"
+  ],
+  "twarog-z-rzodkiewka": [
+    "cottage cheese radish",
+    "cottage cheese radish food",
+    "cottage cheese radish ingredient photo"
+  ],
+  "kefir-z-dodatkiem-owsa": [
+    "kefir",
+    "kefir food",
+    "kefir ingredient photo"
+  ],
+  "maslanka-z-czosnkiem-dip": [
+    "Maślanka z czosnkiem",
+    "Maślanka z czosnkiem food",
+    "Maślanka z czosnkiem ingredient photo"
+  ],
+  "ser-halloumi-grillowany": [
+    "cheese halloumi",
+    "cheese halloumi food",
+    "cheese halloumi ingredient photo"
+  ],
+  "ser-mozzarella-do-pizzy-tarta": [
+    "cheese mozzarella",
+    "cheese mozzarella food",
+    "cheese mozzarella ingredient photo"
+  ],
+  "ser-parmezan-do-posypania": [
+    "cheese parmesan",
+    "cheese parmesan food",
+    "cheese parmesan ingredient photo"
+  ],
+  "ser-zolty-w-plastrach-markowy": [
+    "cheese yellow",
+    "cheese yellow food",
+    "cheese yellow ingredient photo"
+  ],
+  "ser-do-zapiekania-tarty": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-stadler": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-mazdamer-w-plastrach": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-ementaler-w-plastrach": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-edamski-w-plastrach": [
+    "cheese edam",
+    "cheese edam food",
+    "cheese edam ingredient photo"
+  ],
+  "ser-camembert-zapiekany": [
+    "cheese camembert",
+    "cheese camembert food",
+    "cheese camembert ingredient photo"
+  ],
+  "ser-plesniowy-bavaria-blue": [
+    "cheese blue cheese",
+    "cheese blue cheese food",
+    "cheese blue cheese ingredient photo"
+  ],
+  "serek-topiony-bavaria": [
+    "cottage cheese processed",
+    "cottage cheese processed food",
+    "cottage cheese processed ingredient photo"
+  ],
+  "ser-z-papryka-krajanka": [
+    "cheese bell pepper",
+    "cheese bell pepper food",
+    "cheese bell pepper ingredient photo"
+  ],
+  "ser-z-szynka-krajanka": [
+    "cheese ham",
+    "cheese ham food",
+    "cheese ham ingredient photo"
+  ],
+  "ser-z-czosnkiem-niedzwiedzim": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-kozi-miekki-kostka": [
+    "cheese",
+    "cheese food",
+    "cheese ingredient photo"
+  ],
+  "ser-plesniowy-z-ziolami": [
+    "cheese blue cheese",
+    "cheese blue cheese food",
+    "cheese blue cheese ingredient photo"
+  ],
+  "maslo-oselkowe-z-oselki": [
+    "butter",
+    "butter food",
+    "butter ingredient photo"
+  ],
+  "tluszcz-z-gesi-smalec-gesi": [
+    "fat lard",
+    "fat lard food",
+    "fat lard ingredient photo"
+  ],
+  "cukier-wanilinowy": [
+    "sugar",
+    "sugar food",
+    "sugar ingredient photo"
+  ],
+  "drozdze-piekarskie-swieze": [
+    "Drożdże piekarskie",
+    "Drożdże piekarskie food",
+    "Drożdże piekarskie ingredient photo"
+  ],
+  "drozdze-suche": [
+    "Drożdże suche",
+    "Drożdże suche food",
+    "Drożdże suche ingredient photo"
+  ],
+  "soda-oczyszczona": [
+    "Soda oczyszczona",
+    "Soda oczyszczona food",
+    "Soda oczyszczona ingredient photo"
+  ],
+  "cukier-puder": [
+    "sugar",
+    "sugar food",
+    "sugar ingredient photo"
+  ],
+  "galaretka-brzoskwiniowa": [
+    "Galaretka brzoskwiniowa",
+    "Galaretka brzoskwiniowa food",
+    "Galaretka brzoskwiniowa ingredient photo"
+  ],
+  "kisiel-czekoladowy-budyn": [
+    "chocolate custard",
+    "chocolate custard food",
+    "chocolate custard ingredient photo"
+  ],
+  "sernik-na-zimno-z-owocami": [
+    "cheesecake",
+    "cheesecake food",
+    "cheesecake ingredient photo"
+  ],
+  "szarlotka-na-cieplo": [
+    "apple pie",
+    "apple pie food",
+    "apple pie ingredient photo"
+  ],
+  "nalesniki-z-nutella": [
+    "nutella",
+    "nutella food",
+    "nutella ingredient photo"
+  ],
+  "nalesniki-z-owocami-i-bita-smietana": [
+    "whipped cream",
+    "whipped cream food",
+    "whipped cream ingredient photo"
+  ],
+  "gofry-z-owocami": [
+    "waffles",
+    "waffles food",
+    "waffles ingredient photo"
   ]
 };
