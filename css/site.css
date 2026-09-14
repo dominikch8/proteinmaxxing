@@ -125,6 +125,8 @@
 
         .nav-links {
             display: flex;
+            flex: 0 1 auto;
+            min-width: 0; /* pozwól skurczyć się i wewnętrznie przewijać zamiast wypadać/nachodzić na sąsiednie pozycje */
             flex-wrap: nowrap;
             align-items: center;
             gap: 4px;
@@ -301,7 +303,9 @@
 
         body.nav-menu-open { overflow: hidden; }
 
-        @media (max-width: 960px) {
+        /* Menu-hamburger włącza się szerzej (nie tylko telefon), bo na laptopach
+           i tabletach pasek z pływającymi klastrami zaczyna nachodzić na siebie. */
+        @media (max-width: 1400px) {
             .page-container { margin-top: 24px; }
             .site-header { min-height: 56px; }
             .site-header nav {

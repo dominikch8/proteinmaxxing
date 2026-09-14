@@ -184,3 +184,45 @@
         font-size: 1rem;
     }
 }
+/* Kompaktowe ekrany (telefon / tablet / mniejsze laptopy): klastry lądują na dole,
+   żeby nie nachodziły na hamburger, logo ani koniec paska nawigacji. */
+@media (max-width: 1400px) {
+    .header-utilities--theme {
+        top: auto;
+        bottom: 16px;
+        left: 12px;
+        right: auto;
+    }
+
+    .header-utilities--actions,
+    #pm-header-utilities {
+        top: auto;
+        bottom: 16px;
+        right: 12px;
+        left: auto;
+        height: auto;
+        gap: 6px;
+    }
+}
+
+/* Wąskie desktopy, gdzie wyśrodkowany pasek (1180px) plus prawy klaster
+   nie mieszczą się na górze przy jednej linii — klastry na dole. */
+@media (min-width: 1401px) and (max-width: 1680px) {
+    .header-utilities--theme {
+        top: auto;
+        bottom: 16px;
+        left: 12px;
+        right: auto;
+    }
+
+    .header-utilities--actions,
+    #pm-header-utilities {
+        top: auto;
+        bottom: 16px;
+        right: 12px;
+        left: auto;
+        height: auto;
+        gap: 6px;
+    }
+}
+
