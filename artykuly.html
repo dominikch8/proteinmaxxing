@@ -68,7 +68,7 @@
                             <!-- pagination control inserted by JS -->
                         </div>
                     </div>
-                    <nav class="articles-categories" id="articlesCategories" aria-label="Kategorie artykułów">
+                    <div class="articles-categories" id="articlesCategories" role="group" aria-label="Kategorie artykułów">
                         <button type="button" class="articles-cat-btn articles-cat-btn--all is-active" data-cat="all">
                             <span class="articles-cat-star" aria-hidden="true">✦</span>
                             <span>Wszystkie</span>
@@ -81,7 +81,7 @@
                             <button type="button" class="articles-cat-btn" data-cat="cwiczenia">Ćwiczenia</button>
                             <button type="button" class="articles-cat-btn" data-cat="leki">Leki psychiatryczne</button>
                         </div>
-                    </nav>
+                    </div>
                 </div>
 
                 <div class="poradnik-hub-grid artykuly-list" id="artykulyList" role="list">
@@ -1214,12 +1214,20 @@
         }
     }
 
+    /* UWAGA: css/site.css zawiera globalną regułę `nav { height: 56px; overflow: hidden }`
+       pisaną pod nagłówek. Kontener kategorii celowo NIE jest <nav>, a i tak zerujemy te
+       właściwości, żeby żadna reguła nie obcinała drugiego wiersza (reszty kategorii). */
     .articles-categories {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
         margin-top: 16px;
+        height: auto;
+        min-height: 0;
+        max-width: none;
+        padding: 0;
+        overflow: visible;
     }
 
     .articles-cats-rest {
