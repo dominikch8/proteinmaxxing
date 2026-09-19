@@ -104,6 +104,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./domains/proteinmaxxing/
         server-dir: /public_html/proteinmaxxing.pl/
+        timeout: 60000
         exclude: |
              **/.git/**
              .git/**
