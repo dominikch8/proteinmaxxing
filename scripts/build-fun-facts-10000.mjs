@@ -174,29 +174,30 @@ function familyProteinPer100(p, i) {
     const cmp = Math.abs(diff) < 0.5
         ? 'mniej więcej tyle, ile ma pierś z kurczaka'
         : diff > 0
-            ? 'o ' + pl(diff, 1) + ' g więcej niż pierś z kurczaka'
-            : 'o ' + pl(Math.abs(diff), 1) + ' g mniej niż pierś z kurczaka';
+            ? 'o ' + pl(diff, 1) + ' g więcej niż w piersi z kurczaka'
+            : 'o ' + pl(Math.abs(diff), 1) + ' g mniej niż w piersi z kurczaka';
     const phrase = i % 3;
-    if (phrase === 0) push('Białko', p.emoji, p.name + ' ma ' + pl(pr, 1) + ' g białka na 100 g — ' + cmp + '.');
+    if (phrase === 0) push('Białko', p.emoji, 'W 100 g produktu ' + Q(p.name) + ' jest ' + pl(pr, 1) + ' g białka — ' + cmp + '.');
     else if (phrase === 1) push('Białko', p.emoji, 'W 100 g produktu ' + Q(p.name) + ' znajdziesz ' + pl(pr, 1) + ' g białka.');
-    else push('Białko', p.emoji, p.name + ': ' + pl(pr, 1) + ' g białka w 100 g produktu — ' + cmp + '.');
+    else push('Białko', p.emoji, 'Produkt ' + Q(p.name) + ' ma ' + pl(pr, 1) + ' g białka na 100 g — ' + cmp + '.');
 }
 
 /** F2 — gęstość białka, czyli gramy na 100 kcal (tag: Odchudzanie). */
 function familyDensity(p, i) {
+    if (!solid(p)) return;
     const d = density(p);
     if (!(d > 0)) return;
     const phrase = i % 3;
-    if (phrase === 0) push('Odchudzanie', p.emoji, p.name + ' daje ' + pl(d, 1) + ' g białka na każde 100 kcal — ' + densityVerdict(d) + '.');
+    if (phrase === 0) push('Odchudzanie', p.emoji, 'Produkt ' + Q(p.name) + ' daje ' + pl(d, 1) + ' g białka na każde 100 kcal — ' + densityVerdict(d) + '.');
     else if (phrase === 1) push('Odchudzanie', p.emoji, 'Za 100 kcal z produktu ' + Q(p.name) + ' dostajesz ' + pl(d, 1) + ' g białka — ' + densityVerdict(d) + '.');
     else push('Odchudzanie', p.emoji, 'Stosunek białka do kalorii w produkcie ' + Q(p.name) + ' to ' + pl(d, 1) + ' g na 100 kcal.');
 }
 
 /** F3 — ile kalorii kosztuje 30 g białka (tag: Odchudzanie). */
 function familyKcalFor30g(p, i) {
+    if (!solid(p)) return;
     const pr = Number(p.protein);
     const kcal = Number(p.kcal);
-    if (!(pr > 0) || !(kcal > 0)) return;
     const grams = (30 / pr) * 100;
     const cost = (grams / 100) * kcal;
     const phrase = i % 3;
