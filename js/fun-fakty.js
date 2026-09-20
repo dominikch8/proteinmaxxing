@@ -278,7 +278,7 @@
     // number of ALL facts: fact #42 of 1000 fills the bar to 4.2%.
     // A higher number therefore yields a fuller bar.
     function updateProgress(fact) {
-        const total = FULL_FACTS.length;
+        const total = TOTAL || FULL_FACTS.length;
         const no = fact && Number.isFinite(fact.no) ? fact.no : 0;
         const pct = total ? Math.min(100, Math.max(0, (no / total) * 100)) : 0;
         if (progressEl) {
