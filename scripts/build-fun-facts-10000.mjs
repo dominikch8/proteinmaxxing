@@ -209,9 +209,10 @@ function familyKcalFor30g(p, i) {
 /** F4 — ile białka w jednej porcji (tag: Trening). */
 function familyServing(p, i) {
     const pis = Number(p.proteinInServing);
-    if (!(pis > 0) || !p.servingText) return;
+    if (!(pis >= 5) || !p.servingText) return;
     const pct = Math.round((pis / DAILY_PROTEIN) * 100);
-    const phrase = i % 3;
+    // „po treningu” tylko przy sensownej porcji — 1 g białka nie buduje mięśni.
+    const phrase = pis >= 10 ? i % 3 : (i % 2) * 2;
     if (phrase === 0) push('Trening', p.emoji, 'Jedna porcja produktu ' + Q(p.name) + ' (' + p.servingText + ') dostarcza ' + pl(pis, 1) + ' g białka — ' + pct + '% dziennego celu ' + DAILY_PROTEIN + ' g.');
     else if (phrase === 1) push('Trening', p.emoji, 'Porcja ' + p.servingText + ' produktu ' + Q(p.name) + ' to ' + pl(pis, 1) + ' g białka po treningu.');
     else push('Trening', p.emoji, 'Cała porcja produktu ' + Q(p.name) + ' (' + p.servingText + ') to ' + pl(pis, 1) + ' g białka.');
@@ -219,9 +220,9 @@ function familyServing(p, i) {
 
 /** F5 — jaki udział energii daje białko (tag: Odżywianie). */
 function familyProteinShare(p, i) {
+    if (!solid(p)) return;
     const pr = Number(p.protein);
     const kcal = Number(p.kcal);
-    if (!(pr > 0) || !(kcal > 0)) return;
     const share = ((pr * 4) / kcal) * 100;
     if (share > 100) return;
     const word = share >= 50 ? 'aż' : 'tylko';
@@ -233,13 +234,14 @@ function familyProteinShare(p, i) {
 
 /** F6 — ile kosztuje białko z danego produktu (tag: Odżywianie). */
 function familyPrice(p, i) {
+    if (!(Number(p.protein) >= MIN_PROTEIN)) return;
     const per = perGramPrice(p);
     if (!(per > 0)) return;
     const per30 = per * 30;
     const phrase = i % 3;
     if (phrase === 0) push('Odżywianie', p.emoji, 'Białko z produktu ' + Q(p.name) + ' kosztuje ' + pl(per30, 2) + ' zł za 30 g (' + pl(per, 2) + ' zł za gram).');
     else if (phrase === 1) push('Odżywianie', p.emoji, 'Za 30 g białka z produktu ' + Q(p.name) + ' zapłacisz około ' + pl(per30, 2) + ' zł.');
-    else push('Odżywianie', p.emoji, p.name + ' to ' + pl(per, 2) + ' zł za każdy gram białka — ' + priceVerdict(per) + '.');
+    else push('Odżywianie', p.emoji, 'Produkt ' + Q(p.name) + ' to ' + pl(per, 2) + ' zł za każdy gram białka — ' + priceVerdict(per) + '.');
 }
 
 for (let i = 0; i < products.length; i++) {
