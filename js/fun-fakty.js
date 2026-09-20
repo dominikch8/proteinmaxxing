@@ -335,6 +335,8 @@
             seen++;
             updateMeta();
             updateProgress(fact);
+            // W trybie „Wszystkie” każdy obrót dociąga kolejną porcję bazy.
+            if (activeCat === ALL_CAT) loadNextTag();
             rolling = false;
             btnEl.disabled = false;
             btnEl.classList.remove('is-spinning');
