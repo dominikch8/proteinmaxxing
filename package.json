@@ -6,6 +6,7 @@
     "dev": "serve . -l 8080",
     "pack:hosting": "node scripts/pack-for-hosting.mjs",
     "build:deploy": "node scripts/build-deploy.mjs",
+    "build:funfacts": "node scripts/build-fun-facts-10000.mjs",
     "git:auto": "node scripts/auto-commit-push.mjs"
   },
   "dependencies": {
