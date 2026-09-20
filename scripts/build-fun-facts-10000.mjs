@@ -321,12 +321,12 @@ for (const [cat, list] of byCategory) {
 
 /* ------------------------------------------------------------ statystyki bazy */
 
-const withKcal = products.filter((p) => p.kcal > 0 && p.protein > 0);
+const withKcal = products.filter(solid);
 const totalProducts = products.length;
 
 const maxProtein = products.slice().sort((a, b) => b.protein - a.protein)[0];
 const maxDensity = withKcal.slice().sort((a, b) => density(b) - density(a))[0];
-const pricedAll = products.map((p) => ({ p: p, per: perGramPrice(p) })).filter((x) => x.per > 0).sort((a, b) => a.per - b.per);
+const pricedAll = products.filter((p) => Number(p.protein) >= MIN_PROTEIN).map((p) => ({ p: p, per: perGramPrice(p) })).filter((x) => x.per > 0).sort((a, b) => a.per - b.per);
 
 push('Rekordy', '🥇', 'W całej bazie Proteiner (' + pl(totalProducts) + ' produktów) najwięcej białka na 100 g ma ' + maxProtein.name + ' — ' + pl(maxProtein.protein, 1) + ' g.');
 push('Rekordy', '🥇', 'Najlepsza gęstość białka w całej bazie: ' + maxDensity.name + ' — ' + pl(density(maxDensity), 1) + ' g białka na każde 100 kcal.');
