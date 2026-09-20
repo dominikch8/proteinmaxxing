@@ -103,7 +103,7 @@ function buildBazaProductCardHtml(p) {
                 pool = pool.filter((p) => p.category === cat);
             }
             if (query) {
-                pool = pool.filter((p) => p.name.toLowerCase().includes(query));
+                pool = pool.filter((p) => foldPolish(p.name).includes(foldPolish(query)));
             }
             return { pool, cat, query };
         }
@@ -944,7 +944,7 @@ function buildBazaProductCardHtml(p) {
 
             let filtered = cat === 'all' ? [...productsDatabase] : productsDatabase.filter(p => p.category === cat);
             if (query) {
-                filtered = filtered.filter(p => p.name.toLowerCase().includes(query));
+                filtered = filtered.filter(p => foldPolish(p.name).includes(foldPolish(query)));
             }
 
             filtered.forEach(p => {
@@ -1033,7 +1033,7 @@ function buildBazaProductCardHtml(p) {
                 ? [...productsDatabase]
                 : productsDatabase.filter(p => p.category === cat);
             if (query) {
-                filtered = filtered.filter(p => p.name.toLowerCase().includes(query));
+                filtered = filtered.filter(p => foldPolish(p.name).includes(foldPolish(query)));
             }
 
             filtered.forEach(p => {

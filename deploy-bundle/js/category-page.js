@@ -73,7 +73,7 @@ function getFilteredSorted() {
     const sortKey = document.getElementById('categorySort')?.value || 'name-asc';
     let list = pool;
     if (query) {
-        list = list.filter((p) => p.name.toLowerCase().includes(query));
+        list = list.filter((p) => foldPolish(p.name).includes(foldPolish(query)));
     }
     return sortPool(list, sortKey);
 }

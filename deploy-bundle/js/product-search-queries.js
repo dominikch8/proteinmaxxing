@@ -287,9 +287,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "cheese edam ingredient photo"
   ],
   "ser-zolty": [
-    "cheese yellow",
-    "cheese yellow food",
-    "cheese yellow ingredient photo"
+    "yellow cheese slices",
+    "yellow cheese slices food",
+    "yellow cheese slices ingredient photo"
   ],
   "serek-danio": [
     "cottage cheese",
@@ -439,9 +439,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "lentils red ingredient photo"
   ],
   "fasola-biala": [
-    "beans white",
-    "beans white food",
-    "beans white ingredient photo"
+    "white beans in bowl",
+    "white beans in bowl food",
+    "white beans in bowl ingredient photo"
   ],
   "jablko": [
     "apple",
@@ -1481,9 +1481,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "seeds sunflower hulled ingredient photo"
   ],
   "siemie-lniane-nasiona-lnu": [
-    "Siemię lniane",
-    "Siemię lniane food",
-    "Siemię lniane ingredient photo"
+    "flax seeds pile",
+    "flax seeds pile food",
+    "flax seeds pile ingredient photo"
   ],
   "nasiona-konopi-luskane": [
     "hemp hulled",
@@ -1876,9 +1876,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "Kit Kat chocolate bar ingredient photo"
   ],
   "tofu": [
-    "Tofu",
-    "Tofu food",
-    "Tofu ingredient photo"
+    "tofu block on white plate",
+    "tofu block on white plate food",
+    "tofu block on white plate ingredient photo"
   ],
   "falafel-smazony": [
     "fried",
@@ -2386,9 +2386,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "Biszkopty ingredient photo"
   ],
   "galareta-owocowa": [
-    "Galareta owocowa",
-    "Galareta owocowa food",
-    "Galareta owocowa ingredient photo"
+    "fruit jelly dessert on plate",
+    "fruit jelly dessert on plate food",
+    "fruit jelly dessert on plate ingredient photo"
   ],
   "m-m-s": [
     "M&M's",
@@ -2566,9 +2566,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "Kinder Country ingredient photo"
   ],
   "czekolada-toblerone": [
-    "chocolate",
-    "chocolate food",
-    "chocolate ingredient photo"
+    "triangular honey almond chocolate bar",
+    "triangular honey almond chocolate bar food",
+    "triangular honey almond chocolate bar ingredient photo"
   ],
   "princessa": [
     "Princessa",
@@ -3016,9 +3016,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "protein ingredient photo"
   ],
   "f-king-protein": [
-    "protein",
-    "protein food",
-    "protein ingredient photo"
+    "chocolate protein bar",
+    "chocolate protein bar food",
+    "chocolate protein bar ingredient photo"
   ],
   "baton-protein-33": [
     "candy bar protein",
@@ -7046,9 +7046,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "cheese ingredient photo"
   ],
   "ser-tylzycki-sery": [
-    "cheese",
-    "cheese food",
-    "cheese ingredient photo"
+    "tilsit yellow cheese wedge",
+    "tilsit yellow cheese wedge food",
+    "tilsit yellow cheese wedge ingredient photo"
   ],
   "ser-szwajcarski": [
     "cheese",
@@ -10061,9 +10061,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "beans white ingredient photo"
   ],
   "ciecierzyca-konserwowa-warzywa": [
-    "chickpeas",
-    "chickpeas food",
-    "chickpeas ingredient photo"
+    "canned chickpeas in brine",
+    "canned chickpeas in brine food",
+    "canned chickpeas in brine ingredient photo"
   ],
   "bob-konserwowy": [
     "fava beans",
@@ -11594,5 +11594,90 @@ export const PRODUCT_SEARCH_QUERIES = {
     "waffles",
     "waffles food",
     "waffles ingredient photo"
+  ],
+  "batat-pieczony": [
+    "roasted sweet potato on white plate",
+    "roasted sweet potato on white plate food",
+    "roasted sweet potato on white plate ingredient photo"
+  ],
+  "bialko-jaj-w-proszku": [
+    "egg white protein powder in scoop",
+    "egg white protein powder in scoop food",
+    "egg white protein powder in scoop ingredient photo"
+  ],
+  "jogurt-balkanski-5": [
+    "balkan yogurt in white bowl",
+    "balkan yogurt in white bowl food",
+    "balkan yogurt in white bowl ingredient photo"
+  ],
+  "karkowka-wedzona": [
+    "smoked pork neck slices",
+    "smoked pork neck slices food",
+    "smoked pork neck slices ingredient photo"
+  ],
+  "kasza-peczak-gotowany": [
+    "cooked pearl barley in white bowl",
+    "cooked pearl barley in white bowl food",
+    "cooked pearl barley in white bowl ingredient photo"
+  ],
+  "kielbasa-podlaska": [
+    "polish sausage kielbasa",
+    "polish sausage kielbasa food",
+    "polish sausage kielbasa ingredient photo"
+  ],
+  "kukurydza-slodka-w-puszce": [
+    "canned sweet corn kernels",
+    "canned sweet corn kernels food",
+    "canned sweet corn kernels ingredient photo"
+  ],
+  "mietus": [
+    "raw cod fish fillet",
+    "raw cod fish fillet food",
+    "raw cod fish fillet ingredient photo"
+  ],
+  "mleko-1": [
+    "glass of low fat milk",
+    "glass of low fat milk food",
+    "glass of low fat milk ingredient photo"
+  ],
+  "owoce-lesne-mrozone": [
+    "frozen forest berries mix",
+    "frozen forest berries mix food",
+    "frozen forest berries mix ingredient photo"
+  ],
+  "poledwica-z-dzika": [
+    "raw venison sirloin meat",
+    "raw venison sirloin meat food",
+    "raw venison sirloin meat ingredient photo"
+  ],
+  "ryz-do-risotto": [
+    "uncooked arborio white rice grains in small white bowl",
+    "uncooked arborio white rice grains in small white bowl food",
+    "uncooked arborio white rice grains in small white bowl ingredient photo"
+  ],
+  "ser-kashkaval": [
+    "kashkaval yellow cheese",
+    "kashkaval yellow cheese food",
+    "kashkaval yellow cheese ingredient photo"
+  ],
+  "ser-limburger": [
+    "limburger cheese wedge",
+    "limburger cheese wedge food",
+    "limburger cheese wedge ingredient photo"
+  ],
+  "sok-wisniowy": [
+    "dark red cherry juice in clear glass",
+    "dark red cherry juice in clear glass food",
+    "dark red cherry juice in clear glass ingredient photo"
+  ],
+  "surowka-z-kiszonej-kapusty": [
+    "sauerkraut salad in white bowl",
+    "sauerkraut salad in white bowl food",
+    "sauerkraut salad in white bowl ingredient photo"
+  ],
+  "watroba-wieprzowa": [
+    "raw pork liver",
+    "raw pork liver food",
+    "raw pork liver ingredient photo"
   ]
 };
