@@ -279,7 +279,7 @@
     function updateMeta() {
         if (counterEl) {
             const catLabel = activeCat === ALL_CAT ? 'wszystkie kategorie' : activeCat;
-            counterEl.textContent = 'Kategoria: ' + catLabel + ' · wylosowano ' + seen + ' z ' + (TOTAL || FUN_FACTS.length);
+            counterEl.textContent = 'Kategoria: ' + catLabel + ' · wylosowano ' + seen + ' z ' + poolTotal();
         }
     }
 
