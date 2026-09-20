@@ -406,7 +406,7 @@
     let TOTAL = 0;
     let pooledLen = 0;
     /** Ile kategorii wciągamy od razu w trybie „Wszystkie” (reszta przy losowaniu). */
-    const PRELOAD_TAGS = 4;
+    const PRELOAD_TAGS = 3;
     let preloadIdx = 0;
     const loadedTags = {};
     const pendingTags = {};
