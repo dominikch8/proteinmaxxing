@@ -1,0 +1,7077 @@
+[
+  {
+    "name": "Szynka wieprzowa gotowana",
+    "slug": "szynka-wieprzowa-gotowana",
+    "category": "mieso"
+  },
+  {
+    "name": "Szynka z indyka",
+    "slug": "szynka-z-indyka",
+    "category": "mieso"
+  },
+  {
+    "name": "Polędwica sopocka",
+    "slug": "poledwica-sopocka",
+    "category": "mieso"
+  },
+  {
+    "name": "Polędwica z kurczaka",
+    "slug": "poledwica-z-kurczaka",
+    "category": "mieso"
+  },
+  {
+    "name": "Szynka konserwowa",
+    "slug": "szynka-konserwowa",
+    "category": "mieso"
+  },
+  {
+    "name": "Kiełbasa szynkowa",
+    "slug": "kielbasa-szynkowa",
+    "category": "mieso"
+  },
+  {
+    "name": "Kiełbasa śląska",
+    "slug": "kielbasa-slaska",
+    "category": "mieso"
+  },
+  {
+    "name": "Kiełbasa żywiecka",
+    "slug": "kielbasa-zywiecka",
+    "category": "mieso"
+  },
+  {
+    "name": "Kiełbasa krakowska sucha",
+    "slug": "kielbasa-krakowska-sucha",
+    "category": "mieso"
+  },
+  {
+    "name": "Kiełbasa toruńska",
+    "slug": "kielbasa-torunska",
+    "category": "mieso"
+  },
+  {
+    "name": "Kiełbasa jałowcowa",
+    "slug": "kielbasa-jalowcowa",
+    "category": "mieso"
+  },
+  {
+    "name": "Kiełbasa myśliwska",
+    "slug": "kielbasa-mysliwska",
+    "category": "mieso"
+  },
+  {
+    "name": "Kiełbasa biała surowa",
+    "slug": "kielbasa-biala-surowa",
+    "category": "mieso"
+  },
+  {
+    "name": "Parówki wieprzowe",
+    "slug": "parowki-wieprzowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Parówki z szynki",
+    "slug": "parowki-z-szynki",
+    "category": "mieso"
+  },
+  {
+    "name": "Parówki drobiowe",
+    "slug": "parowki-drobiowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Kabanosy",
+    "slug": "kabanosy",
+    "category": "mieso"
+  },
+  {
+    "name": "Kabanosy drobiowe",
+    "slug": "kabanosy-drobiowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Mortadela",
+    "slug": "mortadela",
+    "category": "mieso"
+  },
+  {
+    "name": "Pasztet wieprzowy",
+    "slug": "pasztet-wieprzowy",
+    "category": "mieso"
+  },
+  {
+    "name": "Pasztet drobiowy",
+    "slug": "pasztet-drobiowy",
+    "category": "mieso"
+  },
+  {
+    "name": "Pasztet z dziczyzny",
+    "slug": "pasztet-z-dziczyzny",
+    "category": "mieso"
+  },
+  {
+    "name": "Baleron",
+    "slug": "baleron",
+    "category": "mieso"
+  },
+  {
+    "name": "Boczek wędzony parzony",
+    "slug": "boczek-wedzony-parzony",
+    "category": "mieso"
+  },
+  {
+    "name": "Boczek pieczony",
+    "slug": "boczek-pieczony",
+    "category": "mieso"
+  },
+  {
+    "name": "Kaszanka",
+    "slug": "kaszanka",
+    "category": "mieso"
+  },
+  {
+    "name": "Kaszanka z wątróbką",
+    "slug": "kaszanka-z-watrobka",
+    "category": "mieso"
+  },
+  {
+    "name": "Salceson",
+    "slug": "salceson",
+    "category": "mieso"
+  },
+  {
+    "name": "Szynka z kurczaka (plastry)",
+    "slug": "szynka-z-kurczaka-plastry",
+    "category": "mieso"
+  },
+  {
+    "name": "Szynka drobiowa",
+    "slug": "szynka-drobiowa",
+    "category": "mieso"
+  },
+  {
+    "name": "Chrupiące skrzydełka z kurczaka",
+    "slug": "chrupiace-skrzydelka-z-kurczaka",
+    "category": "mieso"
+  },
+  {
+    "name": "Skrzydełka z kurczaka",
+    "slug": "skrzydelka-z-kurczaka",
+    "category": "mieso"
+  },
+  {
+    "name": "Serce drobiowe",
+    "slug": "serce-drobiowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Żołądek wieprzowy",
+    "slug": "zoladek-wieprzowy",
+    "category": "mieso"
+  },
+  {
+    "name": "Flaki wołowe",
+    "slug": "flaki-wolowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Serca wieprzowe",
+    "slug": "serca-wieprzowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Nerki wieprzowe",
+    "slug": "nerki-wieprzowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Mięso mielone wieprzowo-wołowe",
+    "slug": "mieso-mielone-wieprzowo-wolowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Mięso mielone z indyka",
+    "slug": "mieso-mielone-z-indyka",
+    "category": "mieso"
+  },
+  {
+    "name": "Mięso drobiowe mielone",
+    "slug": "mieso-drobiowe-mielone",
+    "category": "mieso"
+  },
+  {
+    "name": "Karkówka wieprzowa",
+    "slug": "karkowka-wieprzowa",
+    "category": "mieso"
+  },
+  {
+    "name": "Pieczeń rzymska",
+    "slug": "pieczen-rzymska",
+    "category": "mieso"
+  },
+  {
+    "name": "Schabowe mięso (stek)",
+    "slug": "schabowe-mieso-stek",
+    "category": "mieso"
+  },
+  {
+    "name": "Golonka wieprzowa",
+    "slug": "golonka-wieprzowa",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Łopatka wieprzowa pieczona",
+    "slug": "lopatka-wieprzowa-pieczona",
+    "category": "mieso"
+  },
+  {
+    "name": "Kotlet wieprzowy (schabowy)",
+    "slug": "kotlet-wieprzowy-schabowy",
+    "category": "mieso"
+  },
+  {
+    "name": "Kotlet z karkówki",
+    "slug": "kotlet-z-karkowki",
+    "category": "mieso"
+  },
+  {
+    "name": "Szynka wieprzowa (udziec)",
+    "slug": "szynka-wieprzowa-udziec",
+    "category": "mieso"
+  },
+  {
+    "name": "Klopsiki wieprzowe",
+    "slug": "klopsiki-wieprzowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Mintaj",
+    "slug": "mintaj",
+    "category": "mieso"
+  },
+  {
+    "name": "Morszczuk",
+    "slug": "morszczuk",
+    "category": "mieso"
+  },
+  {
+    "name": "Sola",
+    "slug": "sola",
+    "category": "mieso"
+  },
+  {
+    "name": "Flądra",
+    "slug": "fladra",
+    "category": "mieso"
+  },
+  {
+    "name": "Pstrąg tęczowy",
+    "slug": "pstrag-teczowy",
+    "category": "mieso"
+  },
+  {
+    "name": "Pstrąg łososiowy",
+    "slug": "pstrag-lososiowy",
+    "category": "mieso"
+  },
+  {
+    "name": "Karp",
+    "slug": "karp",
+    "category": "mieso"
+  },
+  {
+    "name": "Sandacz",
+    "slug": "sandacz",
+    "category": "mieso"
+  },
+  {
+    "name": "Okoń",
+    "slug": "okon",
+    "category": "mieso"
+  },
+  {
+    "name": "Halibut",
+    "slug": "halibut",
+    "category": "mieso"
+  },
+  {
+    "name": "Pangasius",
+    "slug": "pangasius",
+    "category": "mieso"
+  },
+  {
+    "name": "Miruna",
+    "slug": "miruna",
+    "category": "mieso"
+  },
+  {
+    "name": "Sardynki w oleju",
+    "slug": "sardynki-w-oleju",
+    "category": "mieso"
+  },
+  {
+    "name": "Sardynki w pomidorach",
+    "slug": "sardynki-w-pomidorach",
+    "category": "mieso"
+  },
+  {
+    "name": "Szprotki wędzone",
+    "slug": "szprotki-wedzone",
+    "category": "mieso"
+  },
+  {
+    "name": "Makrela wędzona",
+    "slug": "makrela-wedzona",
+    "category": "mieso"
+  },
+  {
+    "name": "Łosoś wędzony na zimno",
+    "slug": "losos-wedzony-na-zimno",
+    "category": "mieso"
+  },
+  {
+    "name": "Tuńczyk świeży (stek)",
+    "slug": "tunczyk-swiezy-stek",
+    "category": "mieso"
+  },
+  {
+    "name": "Krewetki (obrane)",
+    "slug": "krewetki-obrane",
+    "category": "mieso"
+  },
+  {
+    "name": "Krewetki królewskie",
+    "slug": "krewetki-krolewskie",
+    "category": "mieso"
+  },
+  {
+    "name": "Kalmary",
+    "slug": "kalmary",
+    "category": "mieso"
+  },
+  {
+    "name": "Ośmiornica",
+    "slug": "osmiornica",
+    "category": "mieso"
+  },
+  {
+    "name": "Małże (mule)",
+    "slug": "malze-mule",
+    "category": "mieso"
+  },
+  {
+    "name": "Małże zielone",
+    "slug": "malze-zielone",
+    "category": "mieso"
+  },
+  {
+    "name": "Ostrygi",
+    "slug": "ostrygi",
+    "category": "mieso"
+  },
+  {
+    "name": "Kawior",
+    "slug": "kawior",
+    "category": "mieso"
+  },
+  {
+    "name": "Śledź w śmietanie",
+    "slug": "sledz-w-smietanie",
+    "category": "mieso"
+  },
+  {
+    "name": "Ryba po grecku",
+    "slug": "ryba-po-grecku",
+    "category": "mieso"
+  },
+  {
+    "name": "Mleko 0,5%",
+    "slug": "mleko-0-5",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko 1,5%",
+    "slug": "mleko-1-5",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko 2%",
+    "slug": "mleko-2",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko 3,2%",
+    "slug": "mleko-3-2",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko bez laktozy",
+    "slug": "mleko-bez-laktozy",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko kozie",
+    "slug": "mleko-kozie",
+    "category": "nabial"
+  },
+  {
+    "name": "Maślanka naturalna",
+    "slug": "maslanka-naturalna",
+    "category": "nabial"
+  },
+  {
+    "name": "Maślanka owocowa",
+    "slug": "maslanka-owocowa",
+    "category": "nabial"
+  },
+  {
+    "name": "Kefir naturalny",
+    "slug": "kefir-naturalny",
+    "category": "nabial"
+  },
+  {
+    "name": "Kefir owocowy",
+    "slug": "kefir-owocowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt naturalny",
+    "slug": "jogurt-naturalny",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt naturalny 0%",
+    "slug": "jogurt-naturalny-0",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt grecki",
+    "slug": "jogurt-grecki",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt grecki 0%",
+    "slug": "jogurt-grecki-0",
+    "category": "nabial"
+  },
+  {
+    "name": "Skyr naturalny",
+    "slug": "skyr-naturalny",
+    "category": "nabial"
+  },
+  {
+    "name": "Skyr waniliowy",
+    "slug": "skyr-waniliowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Skyr owocowy",
+    "slug": "skyr-owocowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt owocowy",
+    "slug": "jogurt-owocowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt pitny",
+    "slug": "jogurt-pitny",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt pitny białkowy",
+    "slug": "jogurt-pitny-bialkowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek wiejski",
+    "slug": "serek-wiejski",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek wiejski lekki",
+    "slug": "serek-wiejski-lekki",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek homogenizowany naturalny",
+    "slug": "serek-homogenizowany-naturalny",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek homogenizowany waniliowy",
+    "slug": "serek-homogenizowany-waniliowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek homogenizowany truskawkowy",
+    "slug": "serek-homogenizowany-truskawkowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek kanapkowy naturalny",
+    "slug": "serek-kanapkowy-naturalny",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek kanapkowy ze szczypiorkiem",
+    "slug": "serek-kanapkowy-ze-szczypiorkiem",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek typu philadelphia",
+    "slug": "serek-typu-philadelphia",
+    "category": "nabial"
+  },
+  {
+    "name": "Ricotta",
+    "slug": "ricotta",
+    "category": "sery"
+  },
+  {
+    "name": "Jogurt wiejski naturalny",
+    "slug": "jogurt-wiejski-naturalny",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko skondensowane słodzone",
+    "slug": "mleko-skondensowane-slodzone",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko skondensowane niesłodzone",
+    "slug": "mleko-skondensowane-nieslodzone",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko smakowe czekoladowe",
+    "slug": "mleko-smakowe-czekoladowe",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko smakowe waniliowe",
+    "slug": "mleko-smakowe-waniliowe",
+    "category": "nabial"
+  },
+  {
+    "name": "Kakao na mleku (gotowe)",
+    "slug": "kakao-na-mleku-gotowe",
+    "category": "nabial"
+  },
+  {
+    "name": "Napój proteinowy (mleczny)",
+    "slug": "napoj-proteinowy-mleczny",
+    "category": "nabial"
+  },
+  {
+    "name": "Białko serwatkowe shake (mleko)",
+    "slug": "bialko-serwatkowe-shake-mleko",
+    "category": "nabial"
+  },
+  {
+    "name": "Śmietana ukwaszona 12%",
+    "slug": "smietana-ukwaszona-12",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt z miodem i orzechami",
+    "slug": "jogurt-z-miodem-i-orzechami",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt Bakoma 7 zbóż",
+    "slug": "jogurt-bakoma-7-zboz",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt typu greckiego Piątnica",
+    "slug": "jogurt-typu-greckiego-piatnica",
+    "category": "nabial"
+  },
+  {
+    "name": "Skyr naturalny Piątnica",
+    "slug": "skyr-naturalny-piatnica",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt Activia naturalny",
+    "slug": "jogurt-activia-naturalny",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt Activia owocowy",
+    "slug": "jogurt-activia-owocowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Actimel naturalny",
+    "slug": "actimel-naturalny",
+    "category": "nabial"
+  },
+  {
+    "name": "Actimel truskawkowy",
+    "slug": "actimel-truskawkowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Kefir Bieluch",
+    "slug": "kefir-bieluch",
+    "category": "nabial"
+  },
+  {
+    "name": "Kefir z Łomży",
+    "slug": "kefir-z-lomzy",
+    "category": "nabial"
+  },
+  {
+    "name": "Maślanka Łaciata",
+    "slug": "maslanka-laciata",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogobella truskawkowa",
+    "slug": "jogobella-truskawkowa",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogobella brzoskwiniowa",
+    "slug": "jogobella-brzoskwiniowa",
+    "category": "nabial"
+  },
+  {
+    "name": "Danio waniliowy",
+    "slug": "danio-waniliowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Danio czekoladowy",
+    "slug": "danio-czekoladowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Deser Monte",
+    "slug": "deser-monte",
+    "category": "nabial"
+  },
+  {
+    "name": "Deser Monte czekoladowy",
+    "slug": "deser-monte-czekoladowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Krem kaszkowy waniliowy (Kogel Mogel)",
+    "slug": "krem-kaszkowy-waniliowy-kogel-mogel",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek Fromage kremowy",
+    "slug": "serek-fromage-kremowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek Ostrowia twarogowy",
+    "slug": "serek-ostrowia-twarogowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Twaróg grani ze szczypiorkiem",
+    "slug": "twarog-grani-ze-szczypiorkiem",
+    "category": "nabial"
+  },
+  {
+    "name": "Twaróg sernikowy śmietankowy",
+    "slug": "twarog-sernikowy-smietankowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Jajko kurze",
+    "slug": "jajko-kurze",
+    "category": "nabial"
+  },
+  {
+    "name": "Jajko przepiórcze",
+    "slug": "jajko-przepiorcze",
+    "category": "nabial"
+  },
+  {
+    "name": "Jajko kacze",
+    "slug": "jajko-kacze",
+    "category": "nabial"
+  },
+  {
+    "name": "Jajecznica z 2 jaj",
+    "slug": "jajecznica-z-2-jaj",
+    "category": "nabial"
+  },
+  {
+    "name": "Omlet z jajek",
+    "slug": "omlet-z-jajek",
+    "category": "nabial"
+  },
+  {
+    "name": "Jaja sadzone",
+    "slug": "jaja-sadzone",
+    "category": "nabial"
+  },
+  {
+    "name": "Majonez z jajek (domowy)",
+    "slug": "majonez-z-jajek-domowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Napój mleczny kakaowy (mleczna kanapka)",
+    "slug": "napoj-mleczny-kakaowy-mleczna-kanapka",
+    "category": "nabial"
+  },
+  {
+    "name": "Maślanka czekoladowa",
+    "slug": "maslanka-czekoladowa",
+    "category": "nabial"
+  },
+  {
+    "name": "Ser Gouda",
+    "slug": "ser-gouda",
+    "category": "sery"
+  },
+  {
+    "name": "Ser gouda dojrzewająca",
+    "slug": "ser-gouda-dojrzewajaca",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Edamski",
+    "slug": "ser-edamski",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Podlaski",
+    "slug": "ser-podlaski",
+    "category": "sery"
+  },
+  {
+    "name": "Ser mazdamer",
+    "slug": "ser-mazdamer",
+    "category": "sery"
+  },
+  {
+    "name": "Ser tyłżycki",
+    "slug": "ser-tylzycki-2",
+    "category": "sery"
+  },
+  {
+    "name": "Ser szwajcarski",
+    "slug": "ser-szwajcarski",
+    "category": "sery"
+  },
+  {
+    "name": "Ser cheddar",
+    "slug": "ser-cheddar",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Mozzarella",
+    "slug": "ser-mozzarella",
+    "category": "sery"
+  },
+  {
+    "name": "Ser mozzarella lekka",
+    "slug": "ser-mozzarella-lekka",
+    "category": "sery"
+  },
+  {
+    "name": "Ser mozzarella buffalo",
+    "slug": "ser-mozzarella-buffalo",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Parmezan",
+    "slug": "ser-parmezan",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Grana Padano",
+    "slug": "ser-grana-padano",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Camembert",
+    "slug": "ser-camembert",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Brie",
+    "slug": "ser-brie",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Feta",
+    "slug": "ser-feta",
+    "category": "sery"
+  },
+  {
+    "name": "Ser feta lekki",
+    "slug": "ser-feta-lekki",
+    "category": "sery"
+  },
+  {
+    "name": "Ser bałkański",
+    "slug": "ser-balkanski",
+    "category": "sery"
+  },
+  {
+    "name": "Ser kozi (kostka)",
+    "slug": "ser-kozi-kostka",
+    "category": "sery"
+  },
+  {
+    "name": "Ser owczy (kostka)",
+    "slug": "ser-owczy-kostka",
+    "category": "sery"
+  },
+  {
+    "name": "Ser halloumi",
+    "slug": "ser-halloumi",
+    "category": "sery"
+  },
+  {
+    "name": "Ser oscypek",
+    "slug": "ser-oscypek",
+    "category": "sery"
+  },
+  {
+    "name": "Ser wędzony (ser żółty wędzony)",
+    "slug": "ser-wedzony-ser-zolty-wedzony",
+    "category": "sery"
+  },
+  {
+    "name": "Ser topiony śmietankowy",
+    "slug": "ser-topiony-smietankowy",
+    "category": "sery"
+  },
+  {
+    "name": "Ser topiony z papryką",
+    "slug": "ser-topiony-z-papryka",
+    "category": "sery"
+  },
+  {
+    "name": "Ser smażony (smazak)",
+    "slug": "ser-smazony-smazak",
+    "category": "sery"
+  },
+  {
+    "name": "Ser mascarpone",
+    "slug": "ser-mascarpone",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Koryciński",
+    "slug": "ser-korycinski",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Bryndza",
+    "slug": "ser-bryndza",
+    "category": "sery"
+  },
+  {
+    "name": "Ser bundz",
+    "slug": "ser-bundz",
+    "category": "sery"
+  },
+  {
+    "name": "Ser gołka",
+    "slug": "ser-golka",
+    "category": "sery"
+  },
+  {
+    "name": "Ser twarogowy wędzony",
+    "slug": "ser-twarogowy-wedzony",
+    "category": "sery"
+  },
+  {
+    "name": "Ser żółty w plastrach (light)",
+    "slug": "ser-zolty-w-plastrach-light",
+    "category": "sery"
+  },
+  {
+    "name": "Ser z niebieską pleśnią (gorgonzola)",
+    "slug": "ser-z-niebieska-plesnia-gorgonzola",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Roquefort",
+    "slug": "ser-roquefort",
+    "category": "sery"
+  },
+  {
+    "name": "Ser ementaler",
+    "slug": "ser-ementaler",
+    "category": "sery"
+  },
+  {
+    "name": "Ser parmezan tarty",
+    "slug": "ser-parmezan-tarty",
+    "category": "sery"
+  },
+  {
+    "name": "Sałata lodowa",
+    "slug": "salata-lodowa",
+    "category": "warzywa"
+  },
+  {
+    "name": "Rukola",
+    "slug": "rukola",
+    "category": "warzywa"
+  },
+  {
+    "name": "Szpinak baby",
+    "slug": "szpinak-baby",
+    "category": "warzywa"
+  },
+  {
+    "name": "Jarmuż",
+    "slug": "jarmuz",
+    "category": "warzywa"
+  },
+  {
+    "name": "Miks sałat z roszponką",
+    "slug": "miks-salat-z-roszponka",
+    "category": "warzywa"
+  },
+  {
+    "name": "Roszponka",
+    "slug": "roszponka",
+    "category": "warzywa"
+  },
+  {
+    "name": "Endywia",
+    "slug": "endywia",
+    "category": "warzywa"
+  },
+  {
+    "name": "Ogórek kiszony",
+    "slug": "ogorek-kiszony",
+    "category": "warzywa"
+  },
+  {
+    "name": "Ogórek małosolny",
+    "slug": "ogorek-malosolny",
+    "category": "warzywa"
+  },
+  {
+    "name": "Korniszon",
+    "slug": "korniszon",
+    "category": "warzywa"
+  },
+  {
+    "name": "Papryka konserwowa",
+    "slug": "papryka-konserwowa",
+    "category": "warzywa"
+  },
+  {
+    "name": "Papryka marynowana",
+    "slug": "papryka-marynowana",
+    "category": "warzywa"
+  },
+  {
+    "name": "Cebulka perłowa marynowana",
+    "slug": "cebulka-perlowa-marynowana",
+    "category": "warzywa"
+  },
+  {
+    "name": "Buraki kiszone",
+    "slug": "buraki-kiszone",
+    "category": "warzywa"
+  },
+  {
+    "name": "Kapusta kiszona",
+    "slug": "kapusta-kiszona",
+    "category": "warzywa"
+  },
+  {
+    "name": "Kapusta kiszona z jabłkiem",
+    "slug": "kapusta-kiszona-z-jablkiem",
+    "category": "warzywa"
+  },
+  {
+    "name": "Kalarepa",
+    "slug": "kalarepa",
+    "category": "warzywa"
+  },
+  {
+    "name": "Fenkuł (koper włoski)",
+    "slug": "fenkul-koper-wloski",
+    "category": "warzywa"
+  },
+  {
+    "name": "Rzepa",
+    "slug": "rzepa",
+    "category": "warzywa"
+  },
+  {
+    "name": "Brukiew",
+    "slug": "brukiew",
+    "category": "warzywa"
+  },
+  {
+    "name": "Patison",
+    "slug": "patison",
+    "category": "warzywa"
+  },
+  {
+    "name": "Kabaczek",
+    "slug": "kabaczek",
+    "category": "warzywa"
+  },
+  {
+    "name": "Edamame (strączki)",
+    "slug": "edamame-straczki",
+    "category": "warzywa"
+  },
+  {
+    "name": "Soja gotowana",
+    "slug": "soja-gotowana",
+    "category": "warzywa"
+  },
+  {
+    "name": "Kurki",
+    "slug": "kurki",
+    "category": "warzywa"
+  },
+  {
+    "name": "Borowik (prawdziwek)",
+    "slug": "borowik-prawdziwek",
+    "category": "warzywa"
+  },
+  {
+    "name": "Podgrzybek",
+    "slug": "podgrzybek",
+    "category": "warzywa"
+  },
+  {
+    "name": "Maślak",
+    "slug": "maslak",
+    "category": "warzywa"
+  },
+  {
+    "name": "Kania (sowa)",
+    "slug": "kania-sowa",
+    "category": "warzywa"
+  },
+  {
+    "name": "Pieczarki portobello",
+    "slug": "pieczarki-portobello",
+    "category": "warzywa"
+  },
+  {
+    "name": "Grzyby shiitake",
+    "slug": "grzyby-shiitake",
+    "category": "warzywa"
+  },
+  {
+    "name": "Grzyby marynowane",
+    "slug": "grzyby-marynowane",
+    "category": "warzywa"
+  },
+  {
+    "name": "Szpinak mrożony (kulka)",
+    "slug": "szpinak-mrozony-kulka",
+    "category": "warzywa"
+  },
+  {
+    "name": "Brokuły mrożone",
+    "slug": "brokuly-mrozone",
+    "category": "warzywa"
+  },
+  {
+    "name": "Kalafior mrożony",
+    "slug": "kalafior-mrozony",
+    "category": "warzywa"
+  },
+  {
+    "name": "Groszek mrożony",
+    "slug": "groszek-mrozony",
+    "category": "warzywa"
+  },
+  {
+    "name": "Kukurydza mrożona",
+    "slug": "kukurydza-mrozona",
+    "category": "warzywa"
+  },
+  {
+    "name": "Warzywa mrożone mix (7 warzyw)",
+    "slug": "warzywa-mrozone-mix-7-warzyw",
+    "category": "warzywa"
+  },
+  {
+    "name": "Sałatka jarzynowa",
+    "slug": "salatka-jarzynowa",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Surówka z białej kapusty",
+    "slug": "surowka-z-bialej-kapusty",
+    "category": "warzywa"
+  },
+  {
+    "name": "Surówka z marchewki",
+    "slug": "surowka-z-marchewki",
+    "category": "warzywa"
+  },
+  {
+    "name": "Surówka z buraków",
+    "slug": "surowka-z-burakow",
+    "category": "warzywa"
+  },
+  {
+    "name": "Kiszone pomidory",
+    "slug": "kiszone-pomidory",
+    "category": "warzywa"
+  },
+  {
+    "name": "Czosnek niedźwiedzi (liście)",
+    "slug": "czosnek-niedzwiedzi-liscie",
+    "category": "warzywa"
+  },
+  {
+    "name": "Szczaw",
+    "slug": "szczaw",
+    "category": "warzywa"
+  },
+  {
+    "name": "Botwinka",
+    "slug": "botwinka",
+    "category": "warzywa"
+  },
+  {
+    "name": "Nać pietruszki",
+    "slug": "nac-pietruszki",
+    "category": "warzywa"
+  },
+  {
+    "name": "Koperek",
+    "slug": "koperek",
+    "category": "warzywa"
+  },
+  {
+    "name": "Szczypiorek",
+    "slug": "szczypiorek",
+    "category": "warzywa"
+  },
+  {
+    "name": "Porek (por)",
+    "slug": "porek-por",
+    "category": "warzywa"
+  },
+  {
+    "name": "Maliny",
+    "slug": "maliny",
+    "category": "owoce"
+  },
+  {
+    "name": "Jeżyny",
+    "slug": "jezyny",
+    "category": "owoce"
+  },
+  {
+    "name": "Jagody leśne",
+    "slug": "jagody-lesne",
+    "category": "owoce"
+  },
+  {
+    "name": "Poziomki",
+    "slug": "poziomki",
+    "category": "owoce"
+  },
+  {
+    "name": "Porzeczka czarna",
+    "slug": "porzeczka-czarna",
+    "category": "owoce"
+  },
+  {
+    "name": "Porzeczka czerwona",
+    "slug": "porzeczka-czerwona",
+    "category": "owoce"
+  },
+  {
+    "name": "Porzeczka biała",
+    "slug": "porzeczka-biala",
+    "category": "owoce"
+  },
+  {
+    "name": "Borówka bagienna",
+    "slug": "borowka-bagienna",
+    "category": "owoce"
+  },
+  {
+    "name": "Kiwi",
+    "slug": "kiwi",
+    "category": "owoce"
+  },
+  {
+    "name": "Mango",
+    "slug": "mango",
+    "category": "owoce"
+  },
+  {
+    "name": "Papaja",
+    "slug": "papaja",
+    "category": "owoce"
+  },
+  {
+    "name": "Granat",
+    "slug": "granat",
+    "category": "owoce"
+  },
+  {
+    "name": "Figa świeża",
+    "slug": "figa-swieza",
+    "category": "owoce"
+  },
+  {
+    "name": "Liczi",
+    "slug": "liczi",
+    "category": "owoce"
+  },
+  {
+    "name": "Pitaja (smoczy owoc)",
+    "slug": "pitaja-smoczy-owoc",
+    "category": "owoce"
+  },
+  {
+    "name": "Gujawa",
+    "slug": "gujawa",
+    "category": "owoce"
+  },
+  {
+    "name": "Karambola",
+    "slug": "karambola",
+    "category": "owoce"
+  },
+  {
+    "name": "Kokos świeży (miąższ)",
+    "slug": "kokos-swiezy-miazsz",
+    "category": "owoce"
+  },
+  {
+    "name": "Mleczko kokosowe",
+    "slug": "mleczko-kokosowe",
+    "category": "owoce"
+  },
+  {
+    "name": "Figi suszone",
+    "slug": "figi-suszone",
+    "category": "owoce"
+  },
+  {
+    "name": "Morele suszone",
+    "slug": "morele-suszone",
+    "category": "owoce"
+  },
+  {
+    "name": "Daktyle suszone",
+    "slug": "daktyle-suszone",
+    "category": "owoce"
+  },
+  {
+    "name": "Rodzynki",
+    "slug": "rodzynki",
+    "category": "owoce"
+  },
+  {
+    "name": "Śliwki suszone (bez pestek)",
+    "slug": "sliwki-suszone-bez-pestek",
+    "category": "owoce"
+  },
+  {
+    "name": "Mango suszone",
+    "slug": "mango-suszone",
+    "category": "owoce"
+  },
+  {
+    "name": "Ananas suszony",
+    "slug": "ananas-suszony",
+    "category": "owoce"
+  },
+  {
+    "name": "Jabłko suszone (chipsy)",
+    "slug": "jablko-suszone-chipsy",
+    "category": "owoce"
+  },
+  {
+    "name": "Banan suszony",
+    "slug": "banan-suszony",
+    "category": "owoce"
+  },
+  {
+    "name": "Żurawina mrożona",
+    "slug": "zurawina-mrozona",
+    "category": "owoce"
+  },
+  {
+    "name": "Maliny mrożone",
+    "slug": "maliny-mrozone",
+    "category": "owoce"
+  },
+  {
+    "name": "Jagody mrożone",
+    "slug": "jagody-mrozone",
+    "category": "owoce"
+  },
+  {
+    "name": "Gruszka",
+    "slug": "gruszka",
+    "category": "owoce"
+  },
+  {
+    "name": "Jabłko",
+    "slug": "jablko",
+    "category": "owoce"
+  },
+  {
+    "name": "Śliwka węgierka",
+    "slug": "sliwka-wegierka",
+    "category": "owoce"
+  },
+  {
+    "name": "Nektarynka",
+    "slug": "nektarynka",
+    "category": "owoce"
+  },
+  {
+    "name": "Mandarynka",
+    "slug": "mandarynka",
+    "category": "owoce"
+  },
+  {
+    "name": "Pomarańcza",
+    "slug": "pomarancza",
+    "category": "owoce"
+  },
+  {
+    "name": "Grejpfrut czerwony",
+    "slug": "grejpfrut-czerwony",
+    "category": "warzywa"
+  },
+  {
+    "name": "Limonka",
+    "slug": "limonka",
+    "category": "owoce"
+  },
+  {
+    "name": "Melon kantalupa",
+    "slug": "melon-kantalupa",
+    "category": "owoce"
+  },
+  {
+    "name": "Melon miodowy",
+    "slug": "melon-miodowy",
+    "category": "owoce"
+  },
+  {
+    "name": "Oliwki zielone",
+    "slug": "oliwki-zielone",
+    "category": "warzywa"
+  },
+  {
+    "name": "Oliwki czarne",
+    "slug": "oliwki-czarne",
+    "category": "warzywa"
+  },
+  {
+    "name": "Sok z granata (naturalny)",
+    "slug": "sok-z-granata-naturalny",
+    "category": "owoce"
+  },
+  {
+    "name": "Mus jabłkowy niesłodzony",
+    "slug": "mus-jablkowy-nieslodzony",
+    "category": "owoce"
+  },
+  {
+    "name": "Kompot z jabłek",
+    "slug": "kompot-z-jablek",
+    "category": "owoce"
+  },
+  {
+    "name": "Kompot z truskawek",
+    "slug": "kompot-z-truskawek",
+    "category": "owoce"
+  },
+  {
+    "name": "Lody sorbetowe malinowe",
+    "slug": "lody-sorbetowe-malinowe",
+    "category": "owoce"
+  },
+  {
+    "name": "Mąka pszenna tortowa",
+    "slug": "maka-pszenna-tortowa",
+    "category": "zboza"
+  },
+  {
+    "name": "Mąka pszenna chlebowa",
+    "slug": "maka-pszenna-chlebowa",
+    "category": "zboza"
+  },
+  {
+    "name": "Mąka pszenna pełnoziarnista",
+    "slug": "maka-pszenna-pelnoziarnista",
+    "category": "zboza"
+  },
+  {
+    "name": "Mąka żytnia",
+    "slug": "maka-zytnia",
+    "category": "zboza"
+  },
+  {
+    "name": "Mąka żytnia razowa",
+    "slug": "maka-zytnia-razowa",
+    "category": "zboza"
+  },
+  {
+    "name": "Mąka kukurydziana",
+    "slug": "maka-kukurydziana",
+    "category": "zboza"
+  },
+  {
+    "name": "Mąka gryczana",
+    "slug": "maka-gryczana",
+    "category": "zboza"
+  },
+  {
+    "name": "Mąka orkiszowa",
+    "slug": "maka-orkiszowa",
+    "category": "zboza"
+  },
+  {
+    "name": "Mąka owsiana",
+    "slug": "maka-owsiana",
+    "category": "zboza"
+  },
+  {
+    "name": "Mąka kokosowa",
+    "slug": "maka-kokosowa",
+    "category": "zboza"
+  },
+  {
+    "name": "Mąka migdałowa",
+    "slug": "maka-migdalowa",
+    "category": "zboza"
+  },
+  {
+    "name": "Skrobia ziemniaczana",
+    "slug": "skrobia-ziemniaczana",
+    "category": "zboza"
+  },
+  {
+    "name": "Mąka ziemniaczana",
+    "slug": "maka-ziemniaczana",
+    "category": "zboza"
+  },
+  {
+    "name": "Kasza gryczana prażona",
+    "slug": "kasza-gryczana-prazona",
+    "category": "zboza"
+  },
+  {
+    "name": "Kasza gryczana biała",
+    "slug": "kasza-gryczana-biala",
+    "category": "zboza"
+  },
+  {
+    "name": "Kasza jaglana",
+    "slug": "kasza-jaglana",
+    "category": "zboza"
+  },
+  {
+    "name": "Kasza jęczmienna perłowa",
+    "slug": "kasza-jeczmienna-perlowa",
+    "category": "zboza"
+  },
+  {
+    "name": "Kasza jęczmienna pęczak",
+    "slug": "kasza-jeczmienna-peczak",
+    "category": "zboza"
+  },
+  {
+    "name": "Kasza kukurydziana (polenta)",
+    "slug": "kasza-kukurydziana-polenta",
+    "category": "zboza"
+  },
+  {
+    "name": "Kasza manna",
+    "slug": "kasza-manna",
+    "category": "zboza"
+  },
+  {
+    "name": "Kasza owsiana",
+    "slug": "kasza-owsiana",
+    "category": "zboza"
+  },
+  {
+    "name": "Komosa ryżowa (Quinoa)",
+    "slug": "komosa-ryzowa-quinoa",
+    "category": "zboza"
+  },
+  {
+    "name": "Ryż biały długoziarnisty",
+    "slug": "ryz-bialy-dlugoziarnisty",
+    "category": "zboza"
+  },
+  {
+    "name": "Ryż brązowy",
+    "slug": "ryz-brazowy",
+    "category": "zboza"
+  },
+  {
+    "name": "Ryż jaśminowy",
+    "slug": "ryz-jasminowy",
+    "category": "zboza"
+  },
+  {
+    "name": "Ryż basmati",
+    "slug": "ryz-basmati",
+    "category": "zboza"
+  },
+  {
+    "name": "Ryż dziki",
+    "slug": "ryz-dziki",
+    "category": "zboza"
+  },
+  {
+    "name": "Ryż do sushi",
+    "slug": "ryz-do-sushi",
+    "category": "zboza"
+  },
+  {
+    "name": "Ryż parboiled",
+    "slug": "ryz-parboiled",
+    "category": "zboza"
+  },
+  {
+    "name": "Płatki owsiane górskie",
+    "slug": "platki-owsiane-gorskie",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Płatki owsiane błyskawiczne",
+    "slug": "platki-owsiane-blyskawiczne",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Otręby owsiane",
+    "slug": "otreby-owsiane",
+    "category": "zboza"
+  },
+  {
+    "name": "Otręby pszenne",
+    "slug": "otreby-pszenne",
+    "category": "zboza"
+  },
+  {
+    "name": "Płatki jęczmienne",
+    "slug": "platki-jeczmienne",
+    "category": "zboza"
+  },
+  {
+    "name": "Płatki żytnie",
+    "slug": "platki-zytnie",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Płatki orkiszowe",
+    "slug": "platki-orkiszowe",
+    "category": "zboza"
+  },
+  {
+    "name": "Płatki jaglane",
+    "slug": "platki-jaglane",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Zarodki pszenne",
+    "slug": "zarodki-pszenne",
+    "category": "zboza"
+  },
+  {
+    "name": "Siemię lniane",
+    "slug": "siemie-lniane",
+    "category": "orzechy"
+  },
+  {
+    "name": "Nasiona chia",
+    "slug": "nasiona-chia",
+    "category": "orzechy"
+  },
+  {
+    "name": "Nasiona słonecznika",
+    "slug": "nasiona-slonecznika",
+    "category": "orzechy"
+  },
+  {
+    "name": "Pestki dyni",
+    "slug": "pestki-dyni",
+    "category": "orzechy"
+  },
+  {
+    "name": "Sezam (nasiona)",
+    "slug": "sezam-nasiona",
+    "category": "zboza"
+  },
+  {
+    "name": "Mak (nasiona)",
+    "slug": "mak-nasiona",
+    "category": "zboza"
+  },
+  {
+    "name": "Czarnuszka (nasiona)",
+    "slug": "czarnuszka-nasiona",
+    "category": "zboza"
+  },
+  {
+    "name": "Amarantus (nasiona)",
+    "slug": "amarantus-nasiona",
+    "category": "zboza"
+  },
+  {
+    "name": "Tapioka (perły)",
+    "slug": "tapioka-perly",
+    "category": "zboza"
+  },
+  {
+    "name": "Kuskus",
+    "slug": "kuskus",
+    "category": "zboza"
+  },
+  {
+    "name": "Makaron pszenny",
+    "slug": "makaron-pszenny",
+    "category": "makarony"
+  },
+  {
+    "name": "Makaron pełnoziarnisty",
+    "slug": "makaron-pelnoziarnisty",
+    "category": "makarony"
+  },
+  {
+    "name": "Makaron ryżowy",
+    "slug": "makaron-ryzowy",
+    "category": "makarony"
+  },
+  {
+    "name": "Makaron gryczany (soba)",
+    "slug": "makaron-gryczany-soba",
+    "category": "makarony"
+  },
+  {
+    "name": "Makaron kukurydziany",
+    "slug": "makaron-kukurydziany",
+    "category": "makarony"
+  },
+  {
+    "name": "Makaron sojowy",
+    "slug": "makaron-sojowy",
+    "category": "makarony"
+  },
+  {
+    "name": "Makaron lniany",
+    "slug": "makaron-lniany",
+    "category": "makarony"
+  },
+  {
+    "name": "Makaron jajeczny (nitki)",
+    "slug": "makaron-jajeczny-nitki",
+    "category": "makarony"
+  },
+  {
+    "name": "Płatki kukurydziane (corn flakes)",
+    "slug": "platki-kukurydziane-corn-flakes",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Płatki czekoladowe (Chocapic)",
+    "slug": "platki-czekoladowe-chocapic",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Czekoladowe kuleczki (Nesquik)",
+    "slug": "czekoladowe-kuleczki-nesquik",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Płatki miodowe",
+    "slug": "platki-miodowe",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Musli owocowe",
+    "slug": "musli-owocowe",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Musli czekoladowe",
+    "slug": "musli-czekoladowe",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Musli orzechowe",
+    "slug": "musli-orzechowe",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Musli crunchy",
+    "slug": "musli-crunchy",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Granola naturalna",
+    "slug": "granola-naturalna",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Granola czekoladowa",
+    "slug": "granola-czekoladowa",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Płatki z otrębami (fitness)",
+    "slug": "platki-z-otrebami-fitness",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Cheerios",
+    "slug": "cheerios",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Płatki cynamonowe",
+    "slug": "platki-cynamonowe",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Owsianka błyskawiczna saszetka",
+    "slug": "owsianka-blyskawiczna-saszetka",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Owsianka instant owocowa",
+    "slug": "owsianka-instant-owocowa",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Owsianka nocna (overnight oats)",
+    "slug": "owsianka-nocna-overnight-oats",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Płatki orkiszowe z owocami",
+    "slug": "platki-orkiszowe-z-owocami",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Płatki gryczane z bakaliami",
+    "slug": "platki-gryczane-z-bakaliami",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Musli bez cukru (błonnik)",
+    "slug": "musli-bez-cukru-blonnik",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Płatki proteinowe (wysokobiałkowe)",
+    "slug": "platki-proteinowe-wysokobialkowe",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Rosół z makaronem",
+    "slug": "rosol-z-makaronem",
+    "category": "zupy"
+  },
+  {
+    "name": "Rosół z kury",
+    "slug": "rosol-z-kury",
+    "category": "zupy"
+  },
+  {
+    "name": "Grochówka",
+    "slug": "grochowka",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa kapuśniak",
+    "slug": "zupa-kapusniak",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa koperkowa",
+    "slug": "zupa-koperkowa",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa krem z brokułów",
+    "slug": "zupa-krem-z-brokulow",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa krem z pora",
+    "slug": "zupa-krem-z-pora",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa krem z marchewki",
+    "slug": "zupa-krem-z-marchewki",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa krem z dyni",
+    "slug": "zupa-krem-z-dyni",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa krem z pomidorów",
+    "slug": "zupa-krem-z-pomidorow",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa krem z pietruszki",
+    "slug": "zupa-krem-z-pietruszki",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa minestrone",
+    "slug": "zupa-minestrone",
+    "category": "zupy"
+  },
+  {
+    "name": "Barszcz ukraiński",
+    "slug": "barszcz-ukrainski",
+    "category": "zupy"
+  },
+  {
+    "name": "Chłodnik litewski",
+    "slug": "chlodnik-litewski",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa rybna",
+    "slug": "zupa-rybna",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa mleczna z kluskami",
+    "slug": "zupa-mleczna-z-kluskami",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa ogonowa",
+    "slug": "zupa-ogonowa",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa neapolitańska",
+    "slug": "zupa-neapolitanska",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa żurek z jajkiem",
+    "slug": "zupa-zurek-z-jajkiem",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa grzybowa z łazankami",
+    "slug": "zupa-grzybowa-z-lazankami",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa cebulowa zapiekana",
+    "slug": "zupa-cebulowa-zapiekana",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa krem z kalafiora",
+    "slug": "zupa-krem-z-kalafiora",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa krem z cukinii",
+    "slug": "zupa-krem-z-cukinii",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa jarzynowa (rosół warzywny)",
+    "slug": "zupa-jarzynowa-rosol-warzywny",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa krem z selera",
+    "slug": "zupa-krem-z-selera",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa gulaszowa z mięsem",
+    "slug": "zupa-gulaszowa-z-miesem",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa krem z batatów",
+    "slug": "zupa-krem-z-batatow",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa pho wołowa",
+    "slug": "zupa-pho-wolowa",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa ramen",
+    "slug": "zupa-ramen",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa miso",
+    "slug": "zupa-miso",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa kwaśna (tajska)",
+    "slug": "zupa-kwasna-tajska",
+    "category": "zupy"
+  },
+  {
+    "name": "Chłodnik z ogórków",
+    "slug": "chlodnik-z-ogorkow",
+    "category": "zupy"
+  },
+  {
+    "name": "Orzechy włoskie",
+    "slug": "orzechy-wloskie",
+    "category": "orzechy"
+  },
+  {
+    "name": "Orzechy laskowe",
+    "slug": "orzechy-laskowe",
+    "category": "orzechy"
+  },
+  {
+    "name": "Orzechy nerkowca",
+    "slug": "orzechy-nerkowca",
+    "category": "orzechy"
+  },
+  {
+    "name": "Orzechy brazylijskie",
+    "slug": "orzechy-brazylijskie",
+    "category": "orzechy"
+  },
+  {
+    "name": "Orzechy pekan",
+    "slug": "orzechy-pekan",
+    "category": "orzechy"
+  },
+  {
+    "name": "Orzechy makadamia",
+    "slug": "orzechy-makadamia",
+    "category": "orzechy"
+  },
+  {
+    "name": "Orzechy pistacjowe",
+    "slug": "orzechy-pistacjowe",
+    "category": "orzechy"
+  },
+  {
+    "name": "Masło orzechowe",
+    "slug": "maslo-orzechowe",
+    "category": "orzechy"
+  },
+  {
+    "name": "Masło migdałowe",
+    "slug": "maslo-migdalowe",
+    "category": "orzechy"
+  },
+  {
+    "name": "Masło z nerkowców",
+    "slug": "maslo-z-nerkowcow",
+    "category": "orzechy"
+  },
+  {
+    "name": "Mieszanka studencka",
+    "slug": "mieszanka-studencka",
+    "category": "orzechy"
+  },
+  {
+    "name": "Orzeszki ziemne solone",
+    "slug": "orzeszki-ziemne-solone",
+    "category": "orzechy"
+  },
+  {
+    "name": "Orzeszki ziemne prażone",
+    "slug": "orzeszki-ziemne-prazone",
+    "category": "orzechy"
+  },
+  {
+    "name": "Orzechy w czekoladzie",
+    "slug": "orzechy-w-czekoladzie",
+    "category": "orzechy"
+  },
+  {
+    "name": "Pistacje solone",
+    "slug": "pistacje-solone",
+    "category": "orzechy"
+  },
+  {
+    "name": "Krem orzechowo-kakaowy",
+    "slug": "krem-orzechowo-kakaowy",
+    "category": "orzechy"
+  },
+  {
+    "name": "Krem z orzechów laskowych",
+    "slug": "krem-z-orzechow-laskowych",
+    "category": "orzechy"
+  },
+  {
+    "name": "Oliwa z oliwek extra virgin",
+    "slug": "oliwa-z-oliwek-extra-virgin",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Olej rzepakowy",
+    "slug": "olej-rzepakowy",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Olej słonecznikowy",
+    "slug": "olej-slonecznikowy",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Olej kokosowy",
+    "slug": "olej-kokosowy",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Olej lniany",
+    "slug": "olej-lniany",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Olej z awokado",
+    "slug": "olej-z-awokado",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Olej sezamowy",
+    "slug": "olej-sezamowy",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Olej z pestek dyni",
+    "slug": "olej-z-pestek-dyni",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Masło klarowane (ghee)",
+    "slug": "maslo-klarowane-ghee",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Masło ekstra",
+    "slug": "maslo-ekstra",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Margaryna do smarowania",
+    "slug": "margaryna-do-smarowania",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Margaryna do pieczenia",
+    "slug": "margaryna-do-pieczenia",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Tłuszcz roślinny (planta)",
+    "slug": "tluszcz-roslinny-planta",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Ketchup",
+    "slug": "ketchup",
+    "category": "sosy"
+  },
+  {
+    "name": "Ketchup pikantny",
+    "slug": "ketchup-pikantny",
+    "category": "sosy"
+  },
+  {
+    "name": "Ketchup bez cukru",
+    "slug": "ketchup-bez-cukru",
+    "category": "sosy"
+  },
+  {
+    "name": "Majonez",
+    "slug": "majonez",
+    "category": "sosy"
+  },
+  {
+    "name": "Majonez light",
+    "slug": "majonez-light",
+    "category": "sosy"
+  },
+  {
+    "name": "Majonez wegański",
+    "slug": "majonez-weganski",
+    "category": "sosy"
+  },
+  {
+    "name": "Musztarda sarepska",
+    "slug": "musztarda-sarepska",
+    "category": "sosy"
+  },
+  {
+    "name": "Musztarda delikatesowa",
+    "slug": "musztarda-delikatesowa",
+    "category": "sosy"
+  },
+  {
+    "name": "Musztarda dijon",
+    "slug": "musztarda-dijon",
+    "category": "sosy"
+  },
+  {
+    "name": "Musztarda miodowa",
+    "slug": "musztarda-miodowa",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos czosnkowy",
+    "slug": "sos-czosnkowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos BBQ",
+    "slug": "sos-bbq",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos słodko-kwaśny",
+    "slug": "sos-slodko-kwasny",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos teriyaki",
+    "slug": "sos-teriyaki",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos sojowy",
+    "slug": "sos-sojowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos worcestershire",
+    "slug": "sos-worcestershire",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos sriracha",
+    "slug": "sos-sriracha",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos tabasco",
+    "slug": "sos-tabasco",
+    "category": "sosy"
+  },
+  {
+    "name": "Pesto bazyliowe",
+    "slug": "pesto-bazyliowe",
+    "category": "sosy"
+  },
+  {
+    "name": "Pesto czerwone",
+    "slug": "pesto-czerwone",
+    "category": "sosy"
+  },
+  {
+    "name": "Hummus",
+    "slug": "hummus",
+    "category": "sosy"
+  },
+  {
+    "name": "Salsa pomidorowa",
+    "slug": "salsa-pomidorowa",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos tzatziki",
+    "slug": "sos-tzatziki",
+    "category": "sosy"
+  },
+  {
+    "name": "Winegret",
+    "slug": "winegret",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos curry (w proszku)",
+    "slug": "sos-curry-w-proszku",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos śmietanowy",
+    "slug": "sos-smietanowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos grzybowy",
+    "slug": "sos-grzybowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos pieczarkowy",
+    "slug": "sos-pieczarkowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos boloński",
+    "slug": "sos-bolonski",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos pomidorowy (passata)",
+    "slug": "sos-pomidorowy-passata",
+    "category": "sosy"
+  },
+  {
+    "name": "Koncentrat pomidorowy",
+    "slug": "koncentrat-pomidorowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos pesto z rukoli",
+    "slug": "sos-pesto-z-rukoli",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos holenderski",
+    "slug": "sos-holenderski",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos tatarski",
+    "slug": "sos-tatarski",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos winegret musztardowy",
+    "slug": "sos-winegret-musztardowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos cebulowy",
+    "slug": "sos-cebulowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos jabłkowy (mus z cynamonem)",
+    "slug": "sos-jablkowy-mus-z-cynamonem",
+    "category": "sosy"
+  },
+  {
+    "name": "Curry (przyprawa w proszku)",
+    "slug": "curry-przyprawa-w-proszku",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Garam masala",
+    "slug": "garam-masala",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Oregano suszone",
+    "slug": "oregano-suszone",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Majeranek suszony",
+    "slug": "majeranek-suszony",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Rozmaryn suszony",
+    "slug": "rozmaryn-suszony",
+    "category": "zboza"
+  },
+  {
+    "name": "Kmin rzymski",
+    "slug": "kmin-rzymski",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Kminek (nasiona)",
+    "slug": "kminek-nasiona",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Kolendra mielona",
+    "slug": "kolendra-mielona",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Gałka muszkatołowa",
+    "slug": "galka-muszkatolowa",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Liść laurowy",
+    "slug": "lisc-laurowy",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Pieprz czarny mielony",
+    "slug": "pieprz-czarny-mielony",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Pieprz cayenne",
+    "slug": "pieprz-cayenne",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Sól morska",
+    "slug": "sol-morska",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Sól himalajska",
+    "slug": "sol-himalajska",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Papryka słodka mielona",
+    "slug": "papryka-slodka-mielona",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Papryka ostra mielona",
+    "slug": "papryka-ostra-mielona",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Czosnek granulowany",
+    "slug": "czosnek-granulowany",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Cebula suszona",
+    "slug": "cebula-suszona",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Imbir mielony",
+    "slug": "imbir-mielony",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Kurkuma mielona",
+    "slug": "kurkuma-mielona",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Przyprawa do kurczaka",
+    "slug": "przyprawa-do-kurczaka",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Przyprawa do ryb",
+    "slug": "przyprawa-do-ryb",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Przyprawa do grilla",
+    "slug": "przyprawa-do-grilla",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Przyprawa gyros-kebab",
+    "slug": "przyprawa-gyros-kebab",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Cukier waniliowy",
+    "slug": "cukier-waniliowy",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Wanilia (laska)",
+    "slug": "wanilia-laska",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Cynamon (laska)",
+    "slug": "cynamon-laska",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Goździki",
+    "slug": "gozdziki",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Ziele angielskie (kuleczki)",
+    "slug": "ziele-angielskie-kuleczki",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Anyż gwiazdkowy",
+    "slug": "anyz-gwiazdkowy",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Przyprawa do piernika",
+    "slug": "przyprawa-do-piernika",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Zioła prowansalskie (mix)",
+    "slug": "ziola-prowansalskie-mix",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Liofilizowana natka pietruszki",
+    "slug": "liofilizowana-natka-pietruszki",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Woda gazowana",
+    "slug": "woda-gazowana",
+    "category": "napoje"
+  },
+  {
+    "name": "Woda smakowa (cytryna)",
+    "slug": "woda-smakowa-cytryna",
+    "category": "napoje"
+  },
+  {
+    "name": "Sok pomarańczowy 100%",
+    "slug": "sok-pomaranczowy-100",
+    "category": "napoje"
+  },
+  {
+    "name": "Sok jabłkowy 100%",
+    "slug": "sok-jablkowy-100",
+    "category": "napoje"
+  },
+  {
+    "name": "Sok wieloowocowy",
+    "slug": "sok-wieloowocowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Sok pomidorowy",
+    "slug": "sok-pomidorowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Sok marchwiowy",
+    "slug": "sok-marchwiowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Sok z czarnej porzeczki",
+    "slug": "sok-z-czarnej-porzeczki",
+    "category": "napoje"
+  },
+  {
+    "name": "Sok grejpfrutowy",
+    "slug": "sok-grejpfrutowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Nektar brzoskwiniowy",
+    "slug": "nektar-brzoskwiniowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Napój musujący pomarańczowy (Fanta)",
+    "slug": "napoj-musujacy-pomaranczowy-fanta",
+    "category": "napoje"
+  },
+  {
+    "name": "Napój cytrynowy (Sprite)",
+    "slug": "napoj-cytrynowy-sprite",
+    "category": "napoje"
+  },
+  {
+    "name": "Lemonada domowa",
+    "slug": "lemonada-domowa",
+    "category": "napoje"
+  },
+  {
+    "name": "Ice tea cytrynowa",
+    "slug": "ice-tea-cytrynowa",
+    "category": "napoje"
+  },
+  {
+    "name": "Ice tea brzoskwiniowa",
+    "slug": "ice-tea-brzoskwiniowa",
+    "category": "napoje"
+  },
+  {
+    "name": "Napój energetyczny",
+    "slug": "napoj-energetyczny",
+    "category": "napoje"
+  },
+  {
+    "name": "Napój energetyczny zero",
+    "slug": "napoj-energetyczny-zero",
+    "category": "napoje"
+  },
+  {
+    "name": "Napój izotoniczny",
+    "slug": "napoj-izotoniczny",
+    "category": "napoje"
+  },
+  {
+    "name": "Woda kokosowa",
+    "slug": "woda-kokosowa",
+    "category": "napoje"
+  },
+  {
+    "name": "Mleko owsiane",
+    "slug": "mleko-owsiane",
+    "category": "napoje"
+  },
+  {
+    "name": "Mleko migdałowe",
+    "slug": "mleko-migdalowe",
+    "category": "napoje"
+  },
+  {
+    "name": "Mleko sojowe",
+    "slug": "mleko-sojowe",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko kokosowe (napój)",
+    "slug": "mleko-kokosowe-napoj",
+    "category": "napoje"
+  },
+  {
+    "name": "Mleko ryżowe",
+    "slug": "mleko-ryzowe",
+    "category": "nabial"
+  },
+  {
+    "name": "Kakao (napój)",
+    "slug": "kakao-napoj",
+    "category": "napoje"
+  },
+  {
+    "name": "Kawa czarna",
+    "slug": "kawa-czarna",
+    "category": "napoje"
+  },
+  {
+    "name": "Kawa Espresso",
+    "slug": "kawa-espresso",
+    "category": "napoje"
+  },
+  {
+    "name": "Cappuccino",
+    "slug": "cappuccino",
+    "category": "napoje"
+  },
+  {
+    "name": "Latte",
+    "slug": "latte",
+    "category": "napoje"
+  },
+  {
+    "name": "Herbata czarna",
+    "slug": "herbata-czarna",
+    "category": "napoje"
+  },
+  {
+    "name": "Herbata zielona",
+    "slug": "herbata-zielona",
+    "category": "napoje"
+  },
+  {
+    "name": "Herbata z cytryną i miodem",
+    "slug": "herbata-z-cytryna-i-miodem",
+    "category": "napoje"
+  },
+  {
+    "name": "Napój owocowy (nektar) wiśniowy",
+    "slug": "napoj-owocowy-nektar-wisniowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Kompot wieloowocowy",
+    "slug": "kompot-wieloowocowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Smoothie bananowe",
+    "slug": "smoothie-bananowe",
+    "category": "napoje"
+  },
+  {
+    "name": "Smoothie truskawkowe",
+    "slug": "smoothie-truskawkowe",
+    "category": "napoje"
+  },
+  {
+    "name": "Smoothie zielony (szpinak)",
+    "slug": "smoothie-zielony-szpinak",
+    "category": "napoje"
+  },
+  {
+    "name": "Koktajl proteinowy (gotowy)",
+    "slug": "koktajl-proteinowy-gotowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Piwo jasne (lager)",
+    "slug": "piwo-jasne-lager",
+    "category": "alkohole"
+  },
+  {
+    "name": "Piwo jasne pełne",
+    "slug": "piwo-jasne-pelne",
+    "category": "alkohole"
+  },
+  {
+    "name": "Piwo ciemne (porter)",
+    "slug": "piwo-ciemne-porter",
+    "category": "alkohole"
+  },
+  {
+    "name": "Piwo rzemieślnicze IPA",
+    "slug": "piwo-rzemieslnicze-ipa",
+    "category": "alkohole"
+  },
+  {
+    "name": "Piwo pszeniczne",
+    "slug": "piwo-pszeniczne",
+    "category": "alkohole"
+  },
+  {
+    "name": "Piwo bezalkoholowe",
+    "slug": "piwo-bezalkoholowe",
+    "category": "alkohole"
+  },
+  {
+    "name": "Wino czerwone wytrawne",
+    "slug": "wino-czerwone-wytrawne",
+    "category": "alkohole"
+  },
+  {
+    "name": "Wino białe wytrawne",
+    "slug": "wino-biale-wytrawne",
+    "category": "alkohole"
+  },
+  {
+    "name": "Wino różowe",
+    "slug": "wino-rozowe",
+    "category": "alkohole"
+  },
+  {
+    "name": "Szampan",
+    "slug": "szampan",
+    "category": "alkohole"
+  },
+  {
+    "name": "Prosecco",
+    "slug": "prosecco",
+    "category": "alkohole"
+  },
+  {
+    "name": "Cydr jabłkowy",
+    "slug": "cydr-jablkowy",
+    "category": "alkohole"
+  },
+  {
+    "name": "Wódka czysta",
+    "slug": "wodka-czysta",
+    "category": "alkohole"
+  },
+  {
+    "name": "Wódka smakowa (cytrynowa)",
+    "slug": "wodka-smakowa-cytrynowa",
+    "category": "alkohole"
+  },
+  {
+    "name": "Whisky",
+    "slug": "whisky",
+    "category": "alkohole"
+  },
+  {
+    "name": "Rum",
+    "slug": "rum",
+    "category": "alkohole"
+  },
+  {
+    "name": "Gin",
+    "slug": "gin",
+    "category": "alkohole"
+  },
+  {
+    "name": "Tequila",
+    "slug": "tequila",
+    "category": "alkohole"
+  },
+  {
+    "name": "Brandy",
+    "slug": "brandy",
+    "category": "alkohole"
+  },
+  {
+    "name": "Likier kawowy",
+    "slug": "likier-kawowy",
+    "category": "alkohole"
+  },
+  {
+    "name": "Likier owocowy",
+    "slug": "likier-owocowy",
+    "category": "alkohole"
+  },
+  {
+    "name": "Nalewka domowa",
+    "slug": "nalewka-domowa",
+    "category": "alkohole"
+  },
+  {
+    "name": "Likier adwokat",
+    "slug": "likier-adwokat",
+    "category": "alkohole"
+  },
+  {
+    "name": "Piwo miodowe",
+    "slug": "piwo-miodowe",
+    "category": "alkohole"
+  },
+  {
+    "name": "Koktajl Mojito",
+    "slug": "koktajl-mojito",
+    "category": "alkohole"
+  },
+  {
+    "name": "Koktajl Pina Colada",
+    "slug": "koktajl-pina-colada",
+    "category": "alkohole"
+  },
+  {
+    "name": "Koktajl Margarita",
+    "slug": "koktajl-margarita",
+    "category": "alkohole"
+  },
+  {
+    "name": "Koktajl Cuba Libre",
+    "slug": "koktajl-cuba-libre",
+    "category": "alkohole"
+  },
+  {
+    "name": "Grzane wino",
+    "slug": "grzane-wino",
+    "category": "alkohole"
+  },
+  {
+    "name": "Piwo radler (cytrynowe)",
+    "slug": "piwo-radler-cytrynowe",
+    "category": "alkohole"
+  },
+  {
+    "name": "Czekolada mleczna",
+    "slug": "czekolada-mleczna",
+    "category": "slodycze"
+  },
+  {
+    "name": "Czekolada biała",
+    "slug": "czekolada-biala",
+    "category": "slodycze"
+  },
+  {
+    "name": "Czekolada z orzechami",
+    "slug": "czekolada-z-orzechami",
+    "category": "slodycze"
+  },
+  {
+    "name": "Czekolada nadziewana",
+    "slug": "czekolada-nadziewana",
+    "category": "slodycze"
+  },
+  {
+    "name": "Wafel w czekoladzie (Prince Polo)",
+    "slug": "wafel-w-czekoladzie-prince-polo",
+    "category": "slodycze"
+  },
+  {
+    "name": "Baton Grzesiek",
+    "slug": "baton-grzesiek",
+    "category": "slodycze"
+  },
+  {
+    "name": "Góralki",
+    "slug": "goralki",
+    "category": "slodycze"
+  },
+  {
+    "name": "Knoppers",
+    "slug": "knoppers",
+    "category": "batony"
+  },
+  {
+    "name": "Sernik (kawałek)",
+    "slug": "sernik-kawalek",
+    "category": "slodycze"
+  },
+  {
+    "name": "Sernik z brzoskwiniami",
+    "slug": "sernik-z-brzoskwiniami",
+    "category": "slodycze"
+  },
+  {
+    "name": "Pączek z lukrem",
+    "slug": "paczek-z-lukrem",
+    "category": "slodycze"
+  },
+  {
+    "name": "Pączek z marmoladą",
+    "slug": "paczek-z-marmolada",
+    "category": "slodycze"
+  },
+  {
+    "name": "Drożdżówka z serem",
+    "slug": "drozdzowka-z-serem",
+    "category": "slodycze"
+  },
+  {
+    "name": "Drożdżówka z makiem",
+    "slug": "drozdzowka-z-makiem",
+    "category": "slodycze"
+  },
+  {
+    "name": "Croissant maślany",
+    "slug": "croissant-maslany",
+    "category": "slodycze"
+  },
+  {
+    "name": "Bezy",
+    "slug": "bezy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Makaroniki",
+    "slug": "makaroniki",
+    "category": "slodycze"
+  },
+  {
+    "name": "Krówki",
+    "slug": "krowki",
+    "category": "slodycze"
+  },
+  {
+    "name": "Sezamki",
+    "slug": "sezamki",
+    "category": "slodycze"
+  },
+  {
+    "name": "Pierniki (staropolskie)",
+    "slug": "pierniki-staropolskie",
+    "category": "slodycze"
+  },
+  {
+    "name": "Pierniki w czekoladzie",
+    "slug": "pierniki-w-czekoladzie",
+    "category": "slodycze"
+  },
+  {
+    "name": "Herbatniki",
+    "slug": "herbatniki",
+    "category": "slodycze"
+  },
+  {
+    "name": "Ciastka owsiane",
+    "slug": "ciastka-owsiane",
+    "category": "slodycze"
+  },
+  {
+    "name": "Jeżyki",
+    "slug": "jezyki",
+    "category": "slodycze"
+  },
+  {
+    "name": "Markizy (biszkopt z dżemem)",
+    "slug": "markizy-biszkopt-z-dzemem",
+    "category": "slodycze"
+  },
+  {
+    "name": "Jaffa cakes (Delicje)",
+    "slug": "jaffa-cakes-delicje",
+    "category": "slodycze"
+  },
+  {
+    "name": "Krakersy słone",
+    "slug": "krakersy-slone",
+    "category": "slodycze"
+  },
+  {
+    "name": "Precle",
+    "slug": "precle",
+    "category": "slodycze"
+  },
+  {
+    "name": "Popcorn słony",
+    "slug": "popcorn-slony",
+    "category": "slodycze"
+  },
+  {
+    "name": "Popcorn maślany",
+    "slug": "popcorn-maslany",
+    "category": "slodycze"
+  },
+  {
+    "name": "Popcorn karmelowy",
+    "slug": "popcorn-karmelowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Prażynki",
+    "slug": "prazynki",
+    "category": "slodycze"
+  },
+  {
+    "name": "Paluszki",
+    "slug": "paluszki",
+    "category": "slodycze"
+  },
+  {
+    "name": "Lody waniliowe",
+    "slug": "lody-waniliowe",
+    "category": "slodycze"
+  },
+  {
+    "name": "Lody czekoladowe",
+    "slug": "lody-czekoladowe",
+    "category": "slodycze"
+  },
+  {
+    "name": "Lody śmietankowe (rożek)",
+    "slug": "lody-smietankowe-rozek",
+    "category": "slodycze"
+  },
+  {
+    "name": "Dżem truskawkowy",
+    "slug": "dzem-truskawkowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Dżem wiśniowy",
+    "slug": "dzem-wisniowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Dżem morelowy",
+    "slug": "dzem-morelowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Marmolada wieloowocowa",
+    "slug": "marmolada-wieloowocowa",
+    "category": "slodycze"
+  },
+  {
+    "name": "Miód wielokwiatowy",
+    "slug": "miod-wielokwiatowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Miód lipowy",
+    "slug": "miod-lipowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Miód spadziowy",
+    "slug": "miod-spadziowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Miód gryczany",
+    "slug": "miod-gryczany",
+    "category": "slodycze"
+  },
+  {
+    "name": "Cukier biały",
+    "slug": "cukier-bialy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Cukier trzcinowy",
+    "slug": "cukier-trzcinowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Syrop klonowy",
+    "slug": "syrop-klonowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Syrop z agawy",
+    "slug": "syrop-z-agawy",
+    "category": "slodycze"
+  },
+  {
+    "name": "KitKat",
+    "slug": "kitkat",
+    "category": "batony"
+  },
+  {
+    "name": "Lion",
+    "slug": "lion",
+    "category": "batony"
+  },
+  {
+    "name": "Milky Way",
+    "slug": "milky-way",
+    "category": "batony"
+  },
+  {
+    "name": "Raffaello",
+    "slug": "raffaello",
+    "category": "slodycze"
+  },
+  {
+    "name": "Kinder Bueno",
+    "slug": "kinder-bueno",
+    "category": "batony"
+  },
+  {
+    "name": "Kinder Country",
+    "slug": "kinder-country",
+    "category": "batony"
+  },
+  {
+    "name": "Kinder Schoko Bons",
+    "slug": "kinder-schoko-bons",
+    "category": "batony"
+  },
+  {
+    "name": "Michałki",
+    "slug": "michalki",
+    "category": "batony"
+  },
+  {
+    "name": "Ambasador",
+    "slug": "ambasador",
+    "category": "batony"
+  },
+  {
+    "name": "Pawełek",
+    "slug": "pawelek",
+    "category": "batony"
+  },
+  {
+    "name": "Ptasie Mleczko",
+    "slug": "ptasie-mleczko",
+    "category": "slodycze"
+  },
+  {
+    "name": "Rocky (baton)",
+    "slug": "rocky-baton",
+    "category": "batony"
+  },
+  {
+    "name": "Baton musli owocowy",
+    "slug": "baton-musli-owocowy",
+    "category": "batony"
+  },
+  {
+    "name": "Baton kokosowy",
+    "slug": "baton-kokosowy",
+    "category": "batony"
+  },
+  {
+    "name": "Drażetki czekoladowe",
+    "slug": "drazetki-czekoladowe",
+    "category": "batony"
+  },
+  {
+    "name": "Landrynki",
+    "slug": "landrynki",
+    "category": "batony"
+  },
+  {
+    "name": "Irysy",
+    "slug": "irysy",
+    "category": "batony"
+  },
+  {
+    "name": "Żelki owocowe",
+    "slug": "zelki-owocowe",
+    "category": "batony"
+  },
+  {
+    "name": "Baton proteinowy czekoladowy",
+    "slug": "baton-proteinowy-czekoladowy",
+    "category": "batony-proteinowe"
+  },
+  {
+    "name": "Baton proteinowy orzechowy",
+    "slug": "baton-proteinowy-orzechowy",
+    "category": "batony-proteinowe"
+  },
+  {
+    "name": "Baton proteinowy waniliowy",
+    "slug": "baton-proteinowy-waniliowy",
+    "category": "batony-proteinowe"
+  },
+  {
+    "name": "Baton proteinowy z karmelem",
+    "slug": "baton-proteinowy-z-karmelem",
+    "category": "batony-proteinowe"
+  },
+  {
+    "name": "Baton proteinowy truskawkowy",
+    "slug": "baton-proteinowy-truskawkowy",
+    "category": "batony-proteinowe"
+  },
+  {
+    "name": "Baton proteinowy owsiany",
+    "slug": "baton-proteinowy-owsiany",
+    "category": "batony-proteinowe"
+  },
+  {
+    "name": "Baton proteinowy wafelek",
+    "slug": "baton-proteinowy-wafelek",
+    "category": "batony-proteinowe"
+  },
+  {
+    "name": "Pierogi ruskie",
+    "slug": "pierogi-ruskie",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Pierogi z mięsem",
+    "slug": "pierogi-z-miesem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Pierogi z kapustą i grzybami",
+    "slug": "pierogi-z-kapusta-i-grzybami",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Pierogi ze szpinakiem",
+    "slug": "pierogi-ze-szpinakiem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Pierogi z serem na słodko",
+    "slug": "pierogi-z-serem-na-slodko",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kopytka",
+    "slug": "kopytka",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kluski śląskie",
+    "slug": "kluski-slaskie",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kluski leniwe",
+    "slug": "kluski-leniwe",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Naleśniki z serem",
+    "slug": "nalesniki-z-serem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Naleśniki z dżemem",
+    "slug": "nalesniki-z-dzemem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Naleśniki ze szpinakiem",
+    "slug": "nalesniki-ze-szpinakiem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Krokiety z kapustą",
+    "slug": "krokiety-z-kapusta",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Gołąbki w sosie pomidorowym",
+    "slug": "golabki-w-sosie-pomidorowym",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Placki ziemniaczane",
+    "slug": "placki-ziemniaczane",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Pyzy z mięsem",
+    "slug": "pyzy-z-miesem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Łazanki z kapustą i boczkiem",
+    "slug": "lazanki-z-kapusta-i-boczkiem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Knedle ze śliwkami",
+    "slug": "knedle-ze-sliwkami",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Lasagne",
+    "slug": "lasagne",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Spaghetti Bolognese",
+    "slug": "spaghetti-bolognese",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Penne z kurczakiem i szpinakiem",
+    "slug": "penne-z-kurczakiem-i-szpinakiem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Gulasz wołowy",
+    "slug": "gulasz-wolowy",
+    "category": "mieso"
+  },
+  {
+    "name": "Leczo",
+    "slug": "leczo",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Risotto z grzybami",
+    "slug": "risotto-z-grzybami",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Risotto z kurczakiem",
+    "slug": "risotto-z-kurczakiem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kaszotto gryczane",
+    "slug": "kaszotto-gryczane",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Zapiekanka makaronowa z mięsem",
+    "slug": "zapiekanka-makaronowa-z-miesem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Makaron z serem i brokułami",
+    "slug": "makaron-z-serem-i-brokulami",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kotlet mielony",
+    "slug": "kotlet-mielony",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kotlet drobiowy",
+    "slug": "kotlet-drobiowy",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Burgery z kaszy jaglanej (warzywne)",
+    "slug": "burgery-z-kaszy-jaglanej-warzywne",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kotlety z ciecierzycy (falafel)",
+    "slug": "kotlety-z-ciecierzycy-falafel",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Warzywna zapiekanka z cukinią",
+    "slug": "warzywna-zapiekanka-z-cukinia",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Karkówka duszona",
+    "slug": "karkowka-duszona",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Schab duszony w sosie",
+    "slug": "schab-duszony-w-sosie",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kurczak w sosie śmietanowym",
+    "slug": "kurczak-w-sosie-smietanowym",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Pizza margherita (mrożona)",
+    "slug": "pizza-margherita-mrozona",
+    "category": "mrozone-pizze"
+  },
+  {
+    "name": "Pizza pepperoni (mrożona)",
+    "slug": "pizza-pepperoni-mrozona",
+    "category": "mrozone-pizze"
+  },
+  {
+    "name": "Pizza hawajska (mrożona)",
+    "slug": "pizza-hawajska-mrozona",
+    "category": "mrozone-pizze"
+  },
+  {
+    "name": "Pizza capricciosa (mrożona)",
+    "slug": "pizza-capricciosa-mrozona",
+    "category": "mrozone-pizze"
+  },
+  {
+    "name": "Pizza quattro formaggi (mrożona)",
+    "slug": "pizza-quattro-formaggi-mrozona",
+    "category": "mrozone-pizze"
+  },
+  {
+    "name": "Pizza funghi (mrożona)",
+    "slug": "pizza-funghi-mrozona",
+    "category": "mrozone-pizze"
+  },
+  {
+    "name": "Pizza salami (mrożona)",
+    "slug": "pizza-salami-mrozona",
+    "category": "mrozone-pizze"
+  },
+  {
+    "name": "Pizza wegetariańska (mrożona)",
+    "slug": "pizza-wegetarianska-mrozona",
+    "category": "mrozone-pizze"
+  },
+  {
+    "name": "Pizza z szynką i serem (mrożona)",
+    "slug": "pizza-z-szynka-i-serem-mrozona",
+    "category": "mrozone-pizze"
+  },
+  {
+    "name": "Pizza cienkie ciasto (Ristorante)",
+    "slug": "pizza-cienkie-ciasto-ristorante",
+    "category": "mrozone-pizze"
+  },
+  {
+    "name": "Calzone z szynką (mrożone)",
+    "slug": "calzone-z-szynka-mrozone",
+    "category": "mrozone-pizze"
+  },
+  {
+    "name": "Pizza z kurczakiem (mrożona)",
+    "slug": "pizza-z-kurczakiem-mrozona",
+    "category": "mrozone-pizze"
+  },
+  {
+    "name": "Hamburger",
+    "slug": "hamburger",
+    "category": "fastfood"
+  },
+  {
+    "name": "Hamburger z serem",
+    "slug": "hamburger-z-serem",
+    "category": "fastfood"
+  },
+  {
+    "name": "Chickenburger",
+    "slug": "chickenburger",
+    "category": "fastfood"
+  },
+  {
+    "name": "Frytki",
+    "slug": "frytki",
+    "category": "fastfood"
+  },
+  {
+    "name": "Frytki z batatów",
+    "slug": "frytki-z-batatow",
+    "category": "fastfood"
+  },
+  {
+    "name": "Hot Dog",
+    "slug": "hot-dog",
+    "category": "fastfood"
+  },
+  {
+    "name": "Kebab w bułce",
+    "slug": "kebab-w-bulce",
+    "category": "fastfood"
+  },
+  {
+    "name": "Quesadilla z kurczakiem",
+    "slug": "quesadilla-z-kurczakiem",
+    "category": "fastfood"
+  },
+  {
+    "name": "Tacos z mięsem",
+    "slug": "tacos-z-miesem",
+    "category": "fastfood"
+  },
+  {
+    "name": "Kanapka club",
+    "slug": "kanapka-club",
+    "category": "fastfood"
+  },
+  {
+    "name": "Fish and chips",
+    "slug": "fish-and-chips",
+    "category": "fastfood"
+  },
+  {
+    "name": "Nachos z serem",
+    "slug": "nachos-z-serem",
+    "category": "fastfood"
+  },
+  {
+    "name": "Wrap z kurczakiem i warzywami",
+    "slug": "wrap-z-kurczakiem-i-warzywami",
+    "category": "fastfood"
+  },
+  {
+    "name": "Pita gyros",
+    "slug": "pita-gyros",
+    "category": "fastfood"
+  },
+  {
+    "name": "Burger podwójny z serem",
+    "slug": "burger-podwojny-z-serem",
+    "category": "fastfood"
+  },
+  {
+    "name": "Nuggetsy z kurczaka (5 szt)",
+    "slug": "nuggetsy-z-kurczaka-5-szt",
+    "category": "fastfood"
+  },
+  {
+    "name": "Stripsy z kurczaka",
+    "slug": "stripsy-z-kurczaka",
+    "category": "mieso"
+  },
+  {
+    "name": "Zapiekanka z pieczarkami i serem",
+    "slug": "zapiekanka-z-pieczarkami-i-serem",
+    "category": "fastfood"
+  },
+  {
+    "name": "Pepsi",
+    "slug": "pepsi",
+    "category": "napoje"
+  },
+  {
+    "name": "Pepsi Max",
+    "slug": "pepsi-max",
+    "category": "napoje"
+  },
+  {
+    "name": "Mirinda",
+    "slug": "mirinda",
+    "category": "napoje"
+  },
+  {
+    "name": "7Up",
+    "slug": "7up",
+    "category": "napoje"
+  },
+  {
+    "name": "Schweppes tonic",
+    "slug": "schweppes-tonic",
+    "category": "napoje"
+  },
+  {
+    "name": "Dr Pepper",
+    "slug": "dr-pepper",
+    "category": "napoje"
+  },
+  {
+    "name": "Mountain Dew",
+    "slug": "mountain-dew",
+    "category": "napoje"
+  },
+  {
+    "name": "Tymbark jabłko-mięta",
+    "slug": "tymbark-jablko-mieta",
+    "category": "napoje"
+  },
+  {
+    "name": "Tymbark jabłko-malina",
+    "slug": "tymbark-jablko-malina",
+    "category": "napoje"
+  },
+  {
+    "name": "Tymbark kaktus",
+    "slug": "tymbark-kaktus",
+    "category": "napoje"
+  },
+  {
+    "name": "Kubuś (marchew-banan-jabłko)",
+    "slug": "kubus-marchew-banan-jablko",
+    "category": "napoje"
+  },
+  {
+    "name": "Kubuś play (truskawka)",
+    "slug": "kubus-play-truskawka",
+    "category": "napoje"
+  },
+  {
+    "name": "Sok Cappy pomarańczowy",
+    "slug": "sok-cappy-pomaranczowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Kombucha",
+    "slug": "kombucha",
+    "category": "napoje"
+  },
+  {
+    "name": "Kombucha imbirowa",
+    "slug": "kombucha-imbirowa",
+    "category": "napoje"
+  },
+  {
+    "name": "Yerba mate (napar)",
+    "slug": "yerba-mate-napar",
+    "category": "napoje"
+  },
+  {
+    "name": "Matcha latte",
+    "slug": "matcha-latte",
+    "category": "napoje"
+  },
+  {
+    "name": "Kawa mrożona (iced latte)",
+    "slug": "kawa-mrozona-iced-latte",
+    "category": "napoje"
+  },
+  {
+    "name": "Kakao mrożone",
+    "slug": "kakao-mrozone",
+    "category": "napoje"
+  },
+  {
+    "name": "Red Bull",
+    "slug": "red-bull",
+    "category": "napoje"
+  },
+  {
+    "name": "Monster Energy",
+    "slug": "monster-energy",
+    "category": "napoje"
+  },
+  {
+    "name": "Oshee izotonik",
+    "slug": "oshee-izotonik",
+    "category": "napoje"
+  },
+  {
+    "name": "Oshee woda witaminowa",
+    "slug": "oshee-woda-witaminowa",
+    "category": "napoje"
+  },
+  {
+    "name": "Boba tea (mleczna)",
+    "slug": "boba-tea-mleczna",
+    "category": "napoje"
+  },
+  {
+    "name": "Napój kakaowo-bananowy",
+    "slug": "napoj-kakaowo-bananowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Somersby (cidr)",
+    "slug": "somersby-cidr",
+    "category": "alkohole"
+  },
+  {
+    "name": "Desperados",
+    "slug": "desperados",
+    "category": "alkohole"
+  },
+  {
+    "name": "Harnaś",
+    "slug": "harnas",
+    "category": "alkohole"
+  },
+  {
+    "name": "Kustosz",
+    "slug": "kustosz",
+    "category": "alkohole"
+  },
+  {
+    "name": "Perła",
+    "slug": "perla",
+    "category": "alkohole"
+  },
+  {
+    "name": "Lech Premium",
+    "slug": "lech-premium",
+    "category": "alkohole"
+  },
+  {
+    "name": "Żubr",
+    "slug": "zubr",
+    "category": "alkohole"
+  },
+  {
+    "name": "Tatra",
+    "slug": "tatra",
+    "category": "alkohole"
+  },
+  {
+    "name": "Łomża niepasteryzowana",
+    "slug": "lomza-niepasteryzowana",
+    "category": "alkohole"
+  },
+  {
+    "name": "Gin z tonikiem (drink)",
+    "slug": "gin-z-tonikiem-drink",
+    "category": "alkohole"
+  },
+  {
+    "name": "Aperol Spritz",
+    "slug": "aperol-spritz",
+    "category": "alkohole"
+  },
+  {
+    "name": "Wiśniówka",
+    "slug": "wisniowka",
+    "category": "alkohole"
+  },
+  {
+    "name": "Grzaniec",
+    "slug": "grzaniec",
+    "category": "alkohole"
+  },
+  {
+    "name": "Winiary majonez dekoracyjny",
+    "slug": "winiary-majonez-dekoracyjny",
+    "category": "sosy"
+  },
+  {
+    "name": "Winiary sos pieczeniowy jasny",
+    "slug": "winiary-sos-pieczeniowy-jasny",
+    "category": "sosy"
+  },
+  {
+    "name": "Winiary sos grzybowy",
+    "slug": "winiary-sos-grzybowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Winiary budyń waniliowy",
+    "slug": "winiary-budyn-waniliowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Knorr rosół drobiowy (kostka)",
+    "slug": "knorr-rosol-drobiowy-kostka",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Knorr fix bolognese",
+    "slug": "knorr-fix-bolognese",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Knorr sałatka gyros",
+    "slug": "knorr-salatka-gyros",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Pudliszki ketchup łagodny",
+    "slug": "pudliszki-ketchup-lagodny",
+    "category": "sosy"
+  },
+  {
+    "name": "Pudliszki koncentrat pomidorowy 30%",
+    "slug": "pudliszki-koncentrat-pomidorowy-30",
+    "category": "sosy"
+  },
+  {
+    "name": "Dawtona pasata pomidorowa",
+    "slug": "dawtona-pasata-pomidorowa",
+    "category": "sosy"
+  },
+  {
+    "name": "Dawtona przecier pomidorowy",
+    "slug": "dawtona-przecier-pomidorowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Łowicz dżem truskawkowy 100%",
+    "slug": "lowicz-dzem-truskawkowy-100",
+    "category": "slodycze"
+  },
+  {
+    "name": "Łowicz dżem wiśniowy niskosłodzony",
+    "slug": "lowicz-dzem-wisniowy-niskoslodzony",
+    "category": "slodycze"
+  },
+  {
+    "name": "Łowicz powidła śliwkowe",
+    "slug": "lowicz-powidla-sliwkowe",
+    "category": "slodycze"
+  },
+  {
+    "name": "Kotlin majonez sałatkowy",
+    "slug": "kotlin-majonez-salatkowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Kotlin keczup pikantny",
+    "slug": "kotlin-keczup-pikantny",
+    "category": "sosy"
+  },
+  {
+    "name": "Roleski ketchup",
+    "slug": "roleski-ketchup",
+    "category": "sosy"
+  },
+  {
+    "name": "Roleski przecier pomidorowy",
+    "slug": "roleski-przecier-pomidorowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Winiary czekoladowy budyń (proszek)",
+    "slug": "winiary-czekoladowy-budyn-proszek",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Winiary kisiel truskawkowy",
+    "slug": "winiary-kisiel-truskawkowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Winiary kisiel żurawinowy",
+    "slug": "winiary-kisiel-zurawinowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Galaretka truskawkowa",
+    "slug": "galaretka-truskawkowa",
+    "category": "slodycze"
+  },
+  {
+    "name": "Galaretka cytrynowa",
+    "slug": "galaretka-cytrynowa",
+    "category": "slodycze"
+  },
+  {
+    "name": "Fix do zupy pomidorowej (Knorr)",
+    "slug": "fix-do-zupy-pomidorowej-knorr",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Rosół z kury (fix)",
+    "slug": "rosol-z-kury-fix",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Przyprawa uniwersalna (jarzynka)",
+    "slug": "przyprawa-uniwersalna-jarzynka",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Sól czosnkowa",
+    "slug": "sol-czosnkowa",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Sól ziołowa",
+    "slug": "sol-ziolowa",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Vegeta lunch",
+    "slug": "vegeta-lunch",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Maggi płynne (przyprawa)",
+    "slug": "maggi-plynne-przyprawa",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Sos tabasco habanero",
+    "slug": "sos-tabasco-habanero",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos chimichurri",
+    "slug": "sos-chimichurri",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos pesto z suszonych pomidorów",
+    "slug": "sos-pesto-z-suszonych-pomidorow",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos ksandor (dip jogurtowy)",
+    "slug": "sos-ksandor-dip-jogurtowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos musztardowo-miodowy",
+    "slug": "sos-musztardowo-miodowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Wedel czekolada deserowa",
+    "slug": "wedel-czekolada-deserowa",
+    "category": "slodycze"
+  },
+  {
+    "name": "Wedel torcik kokosowy",
+    "slug": "wedel-torcik-kokosowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Wedel ptasie mleczko waniliowe",
+    "slug": "wedel-ptasie-mleczko-waniliowe",
+    "category": "slodycze"
+  },
+  {
+    "name": "Wedel czekoladki truflowe",
+    "slug": "wedel-czekoladki-truflowe",
+    "category": "slodycze"
+  },
+  {
+    "name": "Goplana czekolada gorzka",
+    "slug": "goplana-czekolada-gorzka",
+    "category": "slodycze"
+  },
+  {
+    "name": "Goplana czekolada mleczna z orzechami",
+    "slug": "goplana-czekolada-mleczna-z-orzechami",
+    "category": "slodycze"
+  },
+  {
+    "name": "Wawel czekolada mleczna",
+    "slug": "wawel-czekolada-mleczna",
+    "category": "slodycze"
+  },
+  {
+    "name": "Terravita herbatniki maślane",
+    "slug": "terravita-herbatniki-maslane",
+    "category": "slodycze"
+  },
+  {
+    "name": "Terravita paluszki słone",
+    "slug": "terravita-paluszki-slone",
+    "category": "slodycze"
+  },
+  {
+    "name": "Jutrzenka jeżyki duże",
+    "slug": "jutrzenka-jezyki-duze",
+    "category": "slodycze"
+  },
+  {
+    "name": "Jutrzenka baletki",
+    "slug": "jutrzenka-baletki",
+    "category": "slodycze"
+  },
+  {
+    "name": "Tago bebe",
+    "slug": "tago-bebe",
+    "category": "slodycze"
+  },
+  {
+    "name": "Tago zonki",
+    "slug": "tago-zonki",
+    "category": "slodycze"
+  },
+  {
+    "name": "San draże korsarze",
+    "slug": "san-draze-korsarze",
+    "category": "slodycze"
+  },
+  {
+    "name": "Mieszko czekoladki nadziewane",
+    "slug": "mieszko-czekoladki-nadziewane",
+    "category": "slodycze"
+  },
+  {
+    "name": "Colian śliwka w czekoladzie",
+    "slug": "colian-sliwka-w-czekoladzie",
+    "category": "slodycze"
+  },
+  {
+    "name": "Lays paprykowe",
+    "slug": "lays-paprykowe",
+    "category": "slodycze"
+  },
+  {
+    "name": "Lays solone",
+    "slug": "lays-solone",
+    "category": "slodycze"
+  },
+  {
+    "name": "Lays zielona cebulka",
+    "slug": "lays-zielona-cebulka",
+    "category": "slodycze"
+  },
+  {
+    "name": "Lays o smaku sera",
+    "slug": "lays-o-smaku-sera",
+    "category": "slodycze"
+  },
+  {
+    "name": "Star chipsy paprykowe",
+    "slug": "star-chipsy-paprykowe",
+    "category": "slodycze"
+  },
+  {
+    "name": "Pringles original",
+    "slug": "pringles-original",
+    "category": "slodycze"
+  },
+  {
+    "name": "Pringles sour cream",
+    "slug": "pringles-sour-cream",
+    "category": "slodycze"
+  },
+  {
+    "name": "Krupki kukurydziane",
+    "slug": "krupki-kukurydziane",
+    "category": "slodycze"
+  },
+  {
+    "name": "Chipsy tortilla (nachos)",
+    "slug": "chipsy-tortilla-nachos",
+    "category": "slodycze"
+  },
+  {
+    "name": "Orzeszki w cieście",
+    "slug": "orzeszki-w-ciescie",
+    "category": "slodycze"
+  },
+  {
+    "name": "Keks bakaliowy",
+    "slug": "keks-bakaliowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Babka wielkanocna",
+    "slug": "babka-wielkanocna",
+    "category": "slodycze"
+  },
+  {
+    "name": "Makowiec",
+    "slug": "makowiec",
+    "category": "slodycze"
+  },
+  {
+    "name": "Sernik wiedeński",
+    "slug": "sernik-wiedenski",
+    "category": "slodycze"
+  },
+  {
+    "name": "Szarlotka z kruszonką",
+    "slug": "szarlotka-z-kruszonka",
+    "category": "slodycze"
+  },
+  {
+    "name": "Kremówka",
+    "slug": "kremowka",
+    "category": "slodycze"
+  },
+  {
+    "name": "Napoleonka",
+    "slug": "napoleonka",
+    "category": "slodycze"
+  },
+  {
+    "name": "Rogal marciński",
+    "slug": "rogal-marcinski",
+    "category": "slodycze"
+  },
+  {
+    "name": "Ciasteczka z masą kakaową (oreo)",
+    "slug": "ciasteczka-z-masa-kakaowa-oreo",
+    "category": "slodycze"
+  },
+  {
+    "name": "Baton Kex",
+    "slug": "baton-kex",
+    "category": "batony"
+  },
+  {
+    "name": "Baton Prince Polo XXL",
+    "slug": "baton-prince-polo-xxl",
+    "category": "batony"
+  },
+  {
+    "name": "Baton Wedel karma",
+    "slug": "baton-wedel-karma",
+    "category": "batony"
+  },
+  {
+    "name": "Cukierki pudrowe (z ziołami)",
+    "slug": "cukierki-pudrowe-z-ziolami",
+    "category": "slodycze"
+  },
+  {
+    "name": "Mleko Łaciate 3,2%",
+    "slug": "mleko-laciate-3-2",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko Mlekovita 2%",
+    "slug": "mleko-mlekovita-2",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko bez laktozy Łaciate",
+    "slug": "mleko-bez-laktozy-laciate",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt naturalny Łaciate",
+    "slug": "jogurt-naturalny-laciate",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt grecki Piątnica",
+    "slug": "jogurt-grecki-piatnica",
+    "category": "nabial"
+  },
+  {
+    "name": "Skyr Piątnica truskawkowy",
+    "slug": "skyr-piatnica-truskawkowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Skyr Piątnica jagodowy",
+    "slug": "skyr-piatnica-jagodowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Ser krajanka Mlekovita",
+    "slug": "ser-krajanka-mlekovita",
+    "category": "sery"
+  },
+  {
+    "name": "Ser żółty Łaciate",
+    "slug": "ser-zolty-laciate",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Gouda Mlekovita",
+    "slug": "ser-gouda-mlekovita",
+    "category": "sery"
+  },
+  {
+    "name": "Ser salami Mlekovita",
+    "slug": "ser-salami-mlekovita",
+    "category": "sery"
+  },
+  {
+    "name": "Ser z ziołami (krajanka)",
+    "slug": "ser-z-ziolami-krajanka",
+    "category": "sery"
+  },
+  {
+    "name": "Ser w plastrach Hochland",
+    "slug": "ser-w-plastrach-hochland",
+    "category": "sery"
+  },
+  {
+    "name": "Serek Hochland kanapkowy",
+    "slug": "serek-hochland-kanapkowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek Almette ziołowy",
+    "slug": "serek-almette-ziolowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek Almette naturalny",
+    "slug": "serek-almette-naturalny",
+    "category": "nabial"
+  },
+  {
+    "name": "Ser Philadelphia",
+    "slug": "ser-philadelphia",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek Bieluch waniliowy",
+    "slug": "serek-bieluch-waniliowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek Bieluch czekoladowy",
+    "slug": "serek-bieluch-czekoladowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Twaróg wędzony (kostka)",
+    "slug": "twarog-wedzony-kostka",
+    "category": "sery"
+  },
+  {
+    "name": "Ser kamembert z Lidla (naturalny)",
+    "slug": "ser-kamembert-z-lidla-naturalny",
+    "category": "sery"
+  },
+  {
+    "name": "Ser lazur (z niebieską pleśnią)",
+    "slug": "ser-lazur-z-niebieska-plesnia",
+    "category": "sery"
+  },
+  {
+    "name": "Ser wędzony oscypkowy (markowy)",
+    "slug": "ser-wedzony-oscypkowy-markowy",
+    "category": "sery"
+  },
+  {
+    "name": "Ser sałatkowo-kanapkowy jogurtowy",
+    "slug": "ser-salatkowo-kanapkowy-jogurtowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Twarożek ze szczypiorkiem i rzodkiewką",
+    "slug": "twarozek-ze-szczypiorkiem-i-rzodkiewka",
+    "category": "nabial"
+  },
+  {
+    "name": "Twaróg śmietankowy do sernika",
+    "slug": "twarog-smietankowy-do-sernika",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko w proszku",
+    "slug": "mleko-w-proszku",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko w proszku odtłuszczone",
+    "slug": "mleko-w-proszku-odtluszczone",
+    "category": "nabial"
+  },
+  {
+    "name": "Serwatka w proszku (WPC)",
+    "slug": "serwatka-w-proszku-wpc",
+    "category": "nabial"
+  },
+  {
+    "name": "Serwatka owocowa (napój)",
+    "slug": "serwatka-owocowa-napoj",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt pitny truskawkowy (brand)",
+    "slug": "jogurt-pitny-truskawkowy-brand",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt pitny brzoskwiniowy (brand)",
+    "slug": "jogurt-pitny-brzoskwiniowy-brand",
+    "category": "nabial"
+  },
+  {
+    "name": "Kefir smakowy waniliowy",
+    "slug": "kefir-smakowy-waniliowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Kefir smakowy truskawkowy",
+    "slug": "kefir-smakowy-truskawkowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Maślanka truskawkowa",
+    "slug": "maslanka-truskawkowa",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt typu islandzkiego naturalny",
+    "slug": "jogurt-typu-islandzkiego-naturalny",
+    "category": "nabial"
+  },
+  {
+    "name": "Ser topiony z szynką",
+    "slug": "ser-topiony-z-szynka",
+    "category": "sery"
+  },
+  {
+    "name": "Ser topiony ze szczypiorkiem",
+    "slug": "ser-topiony-ze-szczypiorkiem",
+    "category": "sery"
+  },
+  {
+    "name": "Ser kremowy do smarowania (bez laktozy)",
+    "slug": "ser-kremowy-do-smarowania-bez-laktozy",
+    "category": "nabial"
+  },
+  {
+    "name": "Pad thai z krewetkami",
+    "slug": "pad-thai-z-krewetkami",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kurczak curry (indyjskie)",
+    "slug": "kurczak-curry-indyjskie",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Butter chicken",
+    "slug": "butter-chicken",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Tikka masala z ryżem",
+    "slug": "tikka-masala-z-ryzem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Chilli con carne",
+    "slug": "chilli-con-carne",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Paella z owocami morza",
+    "slug": "paella-z-owocami-morza",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Moussaka",
+    "slug": "moussaka",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Ratatouille",
+    "slug": "ratatouille",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Sałatka Cezar z kurczakiem",
+    "slug": "salatka-cezar-z-kurczakiem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Sałatka grecka",
+    "slug": "salatka-grecka",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Sałatka caprese",
+    "slug": "salatka-caprese",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Poke bowl z łososiem",
+    "slug": "poke-bowl-z-lososiem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Buddha bowl",
+    "slug": "buddha-bowl",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Bibimbap",
+    "slug": "bibimbap",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Onigiri z tuńczykiem",
+    "slug": "onigiri-z-tunczykiem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Sushi nigiri z łososiem (6 szt)",
+    "slug": "sushi-nigiri-z-lososiem-6-szt",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Sushi maki z ogórkiem (8 szt)",
+    "slug": "sushi-maki-z-ogorkiem-8-szt",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Sushi california (8 szt)",
+    "slug": "sushi-california-8-szt",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Sałatka z buraków i kozim serem",
+    "slug": "salatka-z-burakow-i-kozim-serem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Tortilla z warzywami (wegetariańska)",
+    "slug": "tortilla-z-warzywami-wegetarianska",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Zapiekanka z makaronu i szpinaku",
+    "slug": "zapiekanka-z-makaronu-i-szpinaku",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Pulpety w sosie pomidorowym z ryżem",
+    "slug": "pulpety-w-sosie-pomidorowym-z-ryzem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Udko pieczone z ziemniakami",
+    "slug": "udko-pieczone-z-ziemniakami",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Żeberka w sosie bbq",
+    "slug": "zeberka-w-sosie-bbq",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kaczka pieczona z jabłkami",
+    "slug": "kaczka-pieczona-z-jablkami",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kiszka ziemniaczana",
+    "slug": "kiszka-ziemniaczana",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Babka ziemniaczana",
+    "slug": "babka-ziemniaczana",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kartacze",
+    "slug": "kartacze",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Cepeliny",
+    "slug": "cepeliny",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Knedliczki",
+    "slug": "knedliczki",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Gulasz węgierski (bogracz)",
+    "slug": "gulasz-wegierski-bogracz",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Leczo z kiełbasą",
+    "slug": "leczo-z-kielbasa",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Naleśniki z mięsem (markowe)",
+    "slug": "nalesniki-z-miesem-markowe",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Makaron z dynią i szałwią",
+    "slug": "makaron-z-dynia-i-szalwia",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Gnocchi z sosem pomidorowym",
+    "slug": "gnocchi-z-sosem-pomidorowym",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Ravioli z serem",
+    "slug": "ravioli-z-serem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Tortellini z kurczakiem",
+    "slug": "tortellini-z-kurczakiem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Szaszłyk z kurczaka z warzywami",
+    "slug": "szaszlyk-z-kurczaka-z-warzywami",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Burger bowl z wołowiną",
+    "slug": "burger-bowl-z-wolowina",
+    "category": "fastfood"
+  },
+  {
+    "name": "Kebab na talerzu",
+    "slug": "kebab-na-talerzu",
+    "category": "fastfood"
+  },
+  {
+    "name": "Kurczak crispy w panierce",
+    "slug": "kurczak-crispy-w-panierce",
+    "category": "fastfood"
+  },
+  {
+    "name": "Skrzydełka bbq (10 szt)",
+    "slug": "skrzydelka-bbq-10-szt",
+    "category": "fastfood"
+  },
+  {
+    "name": "Kanapka z pulled pork",
+    "slug": "kanapka-z-pulled-pork",
+    "category": "fastfood"
+  },
+  {
+    "name": "Bagietka z mozzarellą i pomidorem",
+    "slug": "bagietka-z-mozzarella-i-pomidorem",
+    "category": "fastfood"
+  },
+  {
+    "name": "Burgery warzywne (veggie)",
+    "slug": "burgery-warzywne-veggie",
+    "category": "fastfood"
+  },
+  {
+    "name": "Sokołów kiełbasa śląska",
+    "slug": "sokolow-kielbasa-slaska",
+    "category": "mieso"
+  },
+  {
+    "name": "Sokołów szynka wiejska",
+    "slug": "sokolow-szynka-wiejska",
+    "category": "mieso"
+  },
+  {
+    "name": "Sokołów parówki śląskie",
+    "slug": "sokolow-parowki-slaskie",
+    "category": "mieso"
+  },
+  {
+    "name": "Morliny szynka z indyka",
+    "slug": "morliny-szynka-z-indyka",
+    "category": "mieso"
+  },
+  {
+    "name": "Morliny mielonka",
+    "slug": "morliny-mielonka",
+    "category": "mieso"
+  },
+  {
+    "name": "Kraina Wędlin szynka sopocka",
+    "slug": "kraina-wedlin-szynka-sopocka",
+    "category": "mieso"
+  },
+  {
+    "name": "Kraina Wędlin polędwica sopocka",
+    "slug": "kraina-wedlin-poledwica-sopocka",
+    "category": "mieso"
+  },
+  {
+    "name": "Olewnik kiełbasa wiejska",
+    "slug": "olewnik-kielbasa-wiejska",
+    "category": "mieso"
+  },
+  {
+    "name": "Konserwa turystyczna",
+    "slug": "konserwa-turystyczna",
+    "category": "mieso"
+  },
+  {
+    "name": "Konserwa gulaszowa",
+    "slug": "konserwa-gulaszowa",
+    "category": "mieso"
+  },
+  {
+    "name": "Pasztet Sokołów",
+    "slug": "pasztet-sokolow",
+    "category": "mieso"
+  },
+  {
+    "name": "Parówki z kurczaka (markowe)",
+    "slug": "parowki-z-kurczaka-markowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Szynka staropolska",
+    "slug": "szynka-staropolska",
+    "category": "mieso"
+  },
+  {
+    "name": "Szynka z szynkowara",
+    "slug": "szynka-z-szynkowara",
+    "category": "mieso"
+  },
+  {
+    "name": "Wędzona pierś z kurczaka",
+    "slug": "wedzona-piers-z-kurczaka",
+    "category": "mieso"
+  },
+  {
+    "name": "Wędzone udko z kurczaka",
+    "slug": "wedzone-udko-z-kurczaka",
+    "category": "mieso"
+  },
+  {
+    "name": "Gulasz wieprzowy (konserwa)",
+    "slug": "gulasz-wieprzowy-konserwa",
+    "category": "mieso"
+  },
+  {
+    "name": "Mięso na kebab (mrożone)",
+    "slug": "mieso-na-kebab-mrozone",
+    "category": "mieso"
+  },
+  {
+    "name": "Kurczak mielony (markowy)",
+    "slug": "kurczak-mielony-markowy",
+    "category": "mieso"
+  },
+  {
+    "name": "Łosoś norweski filet (mrożony)",
+    "slug": "losos-norweski-filet-mrozony",
+    "category": "mieso"
+  },
+  {
+    "name": "Łosoś wędzony na ciepło",
+    "slug": "losos-wedzony-na-cieplo",
+    "category": "mieso"
+  },
+  {
+    "name": "Pstrąg wędzony",
+    "slug": "pstrag-wedzony",
+    "category": "mieso"
+  },
+  {
+    "name": "Dorsz wędzony",
+    "slug": "dorsz-wedzony",
+    "category": "mieso"
+  },
+  {
+    "name": "Filet śledziowy a´la matias",
+    "slug": "filet-sledziowy-a-la-matias",
+    "category": "mieso"
+  },
+  {
+    "name": "Śledź w sosie musztardowym",
+    "slug": "sledz-w-sosie-musztardowym",
+    "category": "mieso"
+  },
+  {
+    "name": "Śledź w zalewie octowej",
+    "slug": "sledz-w-zalewie-octowej",
+    "category": "mieso"
+  },
+  {
+    "name": "Tuńczyk w sosie pomidorowym",
+    "slug": "tunczyk-w-sosie-pomidorowym",
+    "category": "mieso"
+  },
+  {
+    "name": "Tuńczyk wędzony (paluszki)",
+    "slug": "tunczyk-wedzony-paluszki",
+    "category": "mieso"
+  },
+  {
+    "name": "Łosoś pacyficzny",
+    "slug": "losos-pacyficzny",
+    "category": "mieso"
+  },
+  {
+    "name": "Sola mrożona",
+    "slug": "sola-mrozona",
+    "category": "mieso"
+  },
+  {
+    "name": "Kalmary panierowane (krążki)",
+    "slug": "kalmary-panierowane-krazki",
+    "category": "mieso"
+  },
+  {
+    "name": "Mule w sosie czosnkowym",
+    "slug": "mule-w-sosie-czosnkowym",
+    "category": "mieso"
+  },
+  {
+    "name": "Ikra łososiowa (kawior czerwony)",
+    "slug": "ikra-lososiowa-kawior-czerwony",
+    "category": "mieso"
+  },
+  {
+    "name": "Surimi (paluszki krabowe)",
+    "slug": "surimi-paluszki-krabowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Krewetki mrożone (koktajlowe)",
+    "slug": "krewetki-mrozone-koktajlowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Paluszki rybne (mrożone)",
+    "slug": "paluszki-rybne-mrozone",
+    "category": "mieso"
+  },
+  {
+    "name": "Kotlet rybny (mrożony)",
+    "slug": "kotlet-rybny-mrozony",
+    "category": "mieso"
+  },
+  {
+    "name": "Kukurydza konserwowa",
+    "slug": "kukurydza-konserwowa",
+    "category": "warzywa"
+  },
+  {
+    "name": "Groszek konserwowy",
+    "slug": "groszek-konserwowy",
+    "category": "warzywa"
+  },
+  {
+    "name": "Fasola czerwona konserwowa",
+    "slug": "fasola-czerwona-konserwowa",
+    "category": "warzywa"
+  },
+  {
+    "name": "Fasola biała konserwowa",
+    "slug": "fasola-biala-konserwowa",
+    "category": "warzywa"
+  },
+  {
+    "name": "Ciecierzyca konserwowa",
+    "slug": "ciecierzyca-konserwowa-2",
+    "category": "warzywa"
+  },
+  {
+    "name": "Bób konserwowy",
+    "slug": "bob-konserwowy",
+    "category": "warzywa"
+  },
+  {
+    "name": "Soczewica konserwowa",
+    "slug": "soczewica-konserwowa",
+    "category": "warzywa"
+  },
+  {
+    "name": "Pomidory krojone (puszka)",
+    "slug": "pomidory-krojone-puszka",
+    "category": "warzywa"
+  },
+  {
+    "name": "Pomidory suszone w oleju",
+    "slug": "pomidory-suszone-w-oleju",
+    "category": "warzywa"
+  },
+  {
+    "name": "Ogórki konserwowe",
+    "slug": "ogorki-konserwowe",
+    "category": "warzywa"
+  },
+  {
+    "name": "Papryka konserwowa (słoik)",
+    "slug": "papryka-konserwowa-sloik",
+    "category": "warzywa"
+  },
+  {
+    "name": "Buraki tarte (słoik)",
+    "slug": "buraki-tarte-sloik",
+    "category": "warzywa"
+  },
+  {
+    "name": "Buraki ćwikłowe (słoik)",
+    "slug": "buraki-cwiklowe-sloik",
+    "category": "warzywa"
+  },
+  {
+    "name": "Kapusta kiszona (słoik)",
+    "slug": "kapusta-kiszona-sloik",
+    "category": "warzywa"
+  },
+  {
+    "name": "Mieszanka chińska (mrożona)",
+    "slug": "mieszanka-chinska-mrozona",
+    "category": "warzywa"
+  },
+  {
+    "name": "Mieszanka zupowa (mrożona)",
+    "slug": "mieszanka-zupowa-mrozona",
+    "category": "warzywa"
+  },
+  {
+    "name": "Ratatouille mrożone",
+    "slug": "ratatouille-mrozone",
+    "category": "warzywa"
+  },
+  {
+    "name": "Brokuły z kalafiorem (mrożone)",
+    "slug": "brokuly-z-kalafiorem-mrozone",
+    "category": "warzywa"
+  },
+  {
+    "name": "Fasolka szparagowa mrożona",
+    "slug": "fasolka-szparagowa-mrozona",
+    "category": "warzywa"
+  },
+  {
+    "name": "Szpinak w śmietanie (mrożony)",
+    "slug": "szpinak-w-smietanie-mrozony",
+    "category": "warzywa"
+  },
+  {
+    "name": "Owoce leśne mix (mrożone)",
+    "slug": "owoce-lesne-mix-mrozone",
+    "category": "owoce"
+  },
+  {
+    "name": "Mango mrożone",
+    "slug": "mango-mrozone",
+    "category": "owoce"
+  },
+  {
+    "name": "Wiśnie mrożone",
+    "slug": "wisnie-mrozone",
+    "category": "owoce"
+  },
+  {
+    "name": "Brzoskwinie w syropie",
+    "slug": "brzoskwinie-w-syropie",
+    "category": "owoce"
+  },
+  {
+    "name": "Ananas w syropie",
+    "slug": "ananas-w-syropie",
+    "category": "owoce"
+  },
+  {
+    "name": "Zupka chińska (kluski)",
+    "slug": "zupka-chinska-kluski",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupka chińska (ryżowa)",
+    "slug": "zupka-chinska-ryzowa",
+    "category": "zupy"
+  },
+  {
+    "name": "Rosół instant (kubek)",
+    "slug": "rosol-instant-kubek",
+    "category": "zupy"
+  },
+  {
+    "name": "Żurek instant",
+    "slug": "zurek-instant",
+    "category": "zupy"
+  },
+  {
+    "name": "Barszcz czerwony instant",
+    "slug": "barszcz-czerwony-instant",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa pomidorowa instant",
+    "slug": "zupa-pomidorowa-instant",
+    "category": "zupy"
+  },
+  {
+    "name": "Grochówka instant",
+    "slug": "grochowka-instant",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa grzybowa instant",
+    "slug": "zupa-grzybowa-instant",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa krem brokułowy (karton)",
+    "slug": "zupa-krem-brokulowy-karton",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa pomidorowa (karton)",
+    "slug": "zupa-pomidorowa-karton",
+    "category": "zupy"
+  },
+  {
+    "name": "Żurek żytni (karton)",
+    "slug": "zurek-zytni-karton",
+    "category": "zupy"
+  },
+  {
+    "name": "Barszcz biały (karton)",
+    "slug": "barszcz-bialy-karton",
+    "category": "zupy"
+  },
+  {
+    "name": "Tofu wędzone",
+    "slug": "tofu-wedzone",
+    "category": "warzywa"
+  },
+  {
+    "name": "Tofu naturalne",
+    "slug": "tofu-naturalne-2",
+    "category": "warzywa"
+  },
+  {
+    "name": "Tempeh",
+    "slug": "tempeh",
+    "category": "warzywa"
+  },
+  {
+    "name": "Seitan",
+    "slug": "seitan",
+    "category": "warzywa"
+  },
+  {
+    "name": "Parówki sojowe",
+    "slug": "parowki-sojowe",
+    "category": "warzywa"
+  },
+  {
+    "name": "Kotlety sojowe",
+    "slug": "kotlety-sojowe",
+    "category": "warzywa"
+  },
+  {
+    "name": "Burger sojowy (wegański)",
+    "slug": "burger-sojowy-weganski",
+    "category": "fastfood"
+  },
+  {
+    "name": "Jogurt sojowy",
+    "slug": "jogurt-sojowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Ser wegański (plastry)",
+    "slug": "ser-weganski-plastry",
+    "category": "sery"
+  },
+  {
+    "name": "Pasztet roślinny (wegański)",
+    "slug": "pasztet-roslinny-weganski",
+    "category": "sosy"
+  },
+  {
+    "name": "Mleko konopne",
+    "slug": "mleko-konopne",
+    "category": "napoje"
+  },
+  {
+    "name": "Mleko z nerkowców",
+    "slug": "mleko-z-nerkowcow",
+    "category": "napoje"
+  },
+  {
+    "name": "Mleko grochowe",
+    "slug": "mleko-grochowe",
+    "category": "napoje"
+  },
+  {
+    "name": "Guacamole",
+    "slug": "guacamole",
+    "category": "sosy"
+  },
+  {
+    "name": "Pasta z awokado (pastę)",
+    "slug": "pasta-z-awokado-paste",
+    "category": "sosy"
+  },
+  {
+    "name": "Hummus buraczany",
+    "slug": "hummus-buraczany",
+    "category": "sosy"
+  },
+  {
+    "name": "Hummus paprykowy",
+    "slug": "hummus-paprykowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Pancakes (naleśniki amerykańskie)",
+    "slug": "pancakes-nalesniki-amerykanskie",
+    "category": "slodycze"
+  },
+  {
+    "name": "Gofry",
+    "slug": "gofry",
+    "category": "slodycze"
+  },
+  {
+    "name": "Gofry z bitą śmietaną",
+    "slug": "gofry-z-bita-smietana",
+    "category": "fastfood"
+  },
+  {
+    "name": "Tost francuski",
+    "slug": "tost-francuski",
+    "category": "slodycze"
+  },
+  {
+    "name": "Jajko na miękko",
+    "slug": "jajko-na-miekko",
+    "category": "nabial"
+  },
+  {
+    "name": "Jajko na twardo",
+    "slug": "jajko-na-twardo",
+    "category": "nabial"
+  },
+  {
+    "name": "Owsianka z bananem i orzechami",
+    "slug": "owsianka-z-bananem-i-orzechami",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Owsianka z jagodami",
+    "slug": "owsianka-z-jagodami",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Kaszka manna na mleku",
+    "slug": "kaszka-manna-na-mleku",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Kaszka kukurydziana na mleku",
+    "slug": "kaszka-kukurydziana-na-mleku",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Kaszka ryżowa na mleku",
+    "slug": "kaszka-ryzowa-na-mleku",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Obwarzanek",
+    "slug": "obwarzanek",
+    "category": "slodycze"
+  },
+  {
+    "name": "Precel maślany",
+    "slug": "precel-maslany",
+    "category": "slodycze"
+  },
+  {
+    "name": "Burek z mięsem",
+    "slug": "burek-z-miesem",
+    "category": "fastfood"
+  },
+  {
+    "name": "Empanada",
+    "slug": "empanada",
+    "category": "fastfood"
+  },
+  {
+    "name": "Samosa",
+    "slug": "samosa",
+    "category": "fastfood"
+  },
+  {
+    "name": "Spring rolls (sajgonki)",
+    "slug": "spring-rolls-sajgonki",
+    "category": "fastfood"
+  },
+  {
+    "name": "Spring rolls z krewetkami",
+    "slug": "spring-rolls-z-krewetkami",
+    "category": "fastfood"
+  },
+  {
+    "name": "Kanapka z łososiem",
+    "slug": "kanapka-z-lososiem",
+    "category": "fastfood"
+  },
+  {
+    "name": "Kanapka z szynką i serem",
+    "slug": "kanapka-z-szynka-i-serem",
+    "category": "fastfood"
+  },
+  {
+    "name": "Kanapka z pastą jajeczną",
+    "slug": "kanapka-z-pasta-jajeczna",
+    "category": "fastfood"
+  },
+  {
+    "name": "Kawa rozpuszczalna (instant)",
+    "slug": "kawa-rozpuszczalna-instant",
+    "category": "napoje"
+  },
+  {
+    "name": "Kawa mielona (parzona)",
+    "slug": "kawa-mielona-parzona",
+    "category": "napoje"
+  },
+  {
+    "name": "Kawa z mlekiem (biała)",
+    "slug": "kawa-z-mlekiem-biala",
+    "category": "napoje"
+  },
+  {
+    "name": "Kawa mocha",
+    "slug": "kawa-mocha",
+    "category": "napoje"
+  },
+  {
+    "name": "Kawa flat white",
+    "slug": "kawa-flat-white",
+    "category": "napoje"
+  },
+  {
+    "name": "Kawa americano",
+    "slug": "kawa-americano",
+    "category": "napoje"
+  },
+  {
+    "name": "Herbata owocowa",
+    "slug": "herbata-owocowa",
+    "category": "napoje"
+  },
+  {
+    "name": "Herbata z malin",
+    "slug": "herbata-z-malin",
+    "category": "napoje"
+  },
+  {
+    "name": "Herbata z hibiskusem",
+    "slug": "herbata-z-hibiskusem",
+    "category": "napoje"
+  },
+  {
+    "name": "Herbata miętowa",
+    "slug": "herbata-mietowa",
+    "category": "napoje"
+  },
+  {
+    "name": "Herbata rumiankowa",
+    "slug": "herbata-rumiankowa",
+    "category": "napoje"
+  },
+  {
+    "name": "Czekolada do picia (gorąca)",
+    "slug": "czekolada-do-picia-goraca",
+    "category": "napoje"
+  },
+  {
+    "name": "Kakao z piankami",
+    "slug": "kakao-z-piankami",
+    "category": "napoje"
+  },
+  {
+    "name": "Napój waniliowy (shake)",
+    "slug": "napoj-waniliowy-shake",
+    "category": "napoje"
+  },
+  {
+    "name": "Shake czekoladowy",
+    "slug": "shake-czekoladowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Shake truskawkowy",
+    "slug": "shake-truskawkowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Milkshake bananowy",
+    "slug": "milkshake-bananowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Tiramisu (deser)",
+    "slug": "tiramisu-deser",
+    "category": "slodycze"
+  },
+  {
+    "name": "Panna cotta",
+    "slug": "panna-cotta",
+    "category": "slodycze"
+  },
+  {
+    "name": "Crème brûlée",
+    "slug": "creme-brulee",
+    "category": "slodycze"
+  },
+  {
+    "name": "Mus czekoladowy",
+    "slug": "mus-czekoladowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Suflet czekoladowy",
+    "slug": "suflet-czekoladowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Kisiel owocowy",
+    "slug": "kisiel-owocowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Galaretka z owocami",
+    "slug": "galaretka-z-owocami",
+    "category": "slodycze"
+  },
+  {
+    "name": "Zupa owocowa z makaronem",
+    "slug": "zupa-owocowa-z-makaronem",
+    "category": "zupy"
+  },
+  {
+    "name": "Deser sojowy waniliowy",
+    "slug": "deser-sojowy-waniliowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Pudding ryżowy",
+    "slug": "pudding-ryzowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Kluski z makiem na słodko",
+    "slug": "kluski-z-makiem-na-slodko",
+    "category": "slodycze"
+  },
+  {
+    "name": "Ryż na mleku (z jabłkiem)",
+    "slug": "ryz-na-mleku-z-jablkiem",
+    "category": "slodycze"
+  },
+  {
+    "name": "Sernik na zimno",
+    "slug": "sernik-na-zimno",
+    "category": "slodycze"
+  },
+  {
+    "name": "Karpatka",
+    "slug": "karpatka",
+    "category": "slodycze"
+  },
+  {
+    "name": "Bajaderka",
+    "slug": "bajaderka",
+    "category": "slodycze"
+  },
+  {
+    "name": "Ptysie z kremem",
+    "slug": "ptysie-z-kremem",
+    "category": "slodycze"
+  },
+  {
+    "name": "Eklery",
+    "slug": "eklery",
+    "category": "slodycze"
+  },
+  {
+    "name": "Ciasto marchewkowe",
+    "slug": "ciasto-marchewkowe",
+    "category": "slodycze"
+  },
+  {
+    "name": "Brownie",
+    "slug": "brownie",
+    "category": "slodycze"
+  },
+  {
+    "name": "Blondie",
+    "slug": "blondie",
+    "category": "slodycze"
+  },
+  {
+    "name": "Masło czosnkowe",
+    "slug": "maslo-czosnkowe",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Masło ziołowe",
+    "slug": "maslo-ziolowe",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Smalec wieprzowy",
+    "slug": "smalec-wieprzowy",
+    "category": "mieso"
+  },
+  {
+    "name": "Smalec z jabłkiem i cebulą",
+    "slug": "smalec-z-jablkiem-i-cebula",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Olej rydzowy",
+    "slug": "olej-rydzowy",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Olej konopny",
+    "slug": "olej-konopny",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Olej z orzechów włoskich",
+    "slug": "olej-z-orzechow-wloskich",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Olej z pestek winogron",
+    "slug": "olej-z-pestek-winogron",
+    "category": "alkohole"
+  },
+  {
+    "name": "Salsa verde",
+    "slug": "salsa-verde",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos ranch",
+    "slug": "sos-ranch",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos blue cheese",
+    "slug": "sos-blue-cheese",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos balsamiczny (krem)",
+    "slug": "sos-balsamiczny-krem",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos curry (indyjski)",
+    "slug": "sos-curry-indyjski",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos satay (orzechowy)",
+    "slug": "sos-satay-orzechowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos jogurtowy czosnkowy (brand)",
+    "slug": "sos-jogurtowy-czosnkowy-brand",
+    "category": "sosy"
+  },
+  {
+    "name": "Jogurt pitny wiśniowy",
+    "slug": "jogurt-pitny-wisniowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt pitny mangowy",
+    "slug": "jogurt-pitny-mangowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt naturalny z probiotykiem",
+    "slug": "jogurt-naturalny-z-probiotykiem",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek grani ze szczypiorkiem",
+    "slug": "serek-grani-ze-szczypiorkiem",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek grani naturalny",
+    "slug": "serek-grani-naturalny",
+    "category": "nabial"
+  },
+  {
+    "name": "Śmietana kokosowa",
+    "slug": "smietana-kokosowa",
+    "category": "nabial"
+  },
+  {
+    "name": "Masło orzechowe crunchy",
+    "slug": "maslo-orzechowe-crunchy",
+    "category": "orzechy"
+  },
+  {
+    "name": "Masło orzechowe bez cukru",
+    "slug": "maslo-orzechowe-bez-cukru",
+    "category": "orzechy"
+  },
+  {
+    "name": "Krem czekoladowo-orzechowy (brand)",
+    "slug": "krem-czekoladowo-orzechowy-brand",
+    "category": "orzechy"
+  },
+  {
+    "name": "Migdały prażone",
+    "slug": "migdaly-prazone",
+    "category": "orzechy"
+  },
+  {
+    "name": "Migdały w czekoladzie",
+    "slug": "migdaly-w-czekoladzie",
+    "category": "orzechy"
+  },
+  {
+    "name": "Słonecznik prażony (łuskany)",
+    "slug": "slonecznik-prazony-luskany",
+    "category": "orzechy"
+  },
+  {
+    "name": "Pistacje prażone solone",
+    "slug": "pistacje-prazone-solone",
+    "category": "orzechy"
+  },
+  {
+    "name": "Orzechy w karmelu",
+    "slug": "orzechy-w-karmelu",
+    "category": "orzechy"
+  },
+  {
+    "name": "Mieszanka orzechów i żurawiny",
+    "slug": "mieszanka-orzechow-i-zurawiny",
+    "category": "orzechy"
+  },
+  {
+    "name": "Wafel ryżowy czekoladowy",
+    "slug": "wafel-ryzowy-czekoladowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Wafel ryżowy jogurtowy",
+    "slug": "wafel-ryzowy-jogurtowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Chleb chrupki (wasa)",
+    "slug": "chleb-chrupki-wasa",
+    "category": "zboza"
+  },
+  {
+    "name": "Wafle kukurydziane",
+    "slug": "wafle-kukurydziane",
+    "category": "zboza"
+  },
+  {
+    "name": "Pieczywo chrupkie wieloziarniste",
+    "slug": "pieczywo-chrupkie-wieloziarniste",
+    "category": "zboza"
+  },
+  {
+    "name": "Podpłomyk",
+    "slug": "podplomyk",
+    "category": "zboza"
+  },
+  {
+    "name": "Lawasz",
+    "slug": "lawasz",
+    "category": "zboza"
+  },
+  {
+    "name": "Pita (chlebek)",
+    "slug": "pita-chlebek",
+    "category": "zboza"
+  },
+  {
+    "name": "Obwarzanek krakowski",
+    "slug": "obwarzanek-krakowski",
+    "category": "zboza"
+  },
+  {
+    "name": "Rogal świętomarciński",
+    "slug": "rogal-swietomarcinski",
+    "category": "slodycze"
+  },
+  {
+    "name": "Ser koryciński swojski",
+    "slug": "ser-korycinski-swojski",
+    "category": "sery"
+  },
+  {
+    "name": "Chleb prądnicki",
+    "slug": "chleb-pradnicki",
+    "category": "zboza"
+  },
+  {
+    "name": "Oscypek wędzony",
+    "slug": "oscypek-wedzony",
+    "category": "sery"
+  },
+  {
+    "name": "Bryndza podhalańska",
+    "slug": "bryndza-podhalanska",
+    "category": "sery"
+  },
+  {
+    "name": "Kiełbasa lisiecka",
+    "slug": "kielbasa-lisiecka",
+    "category": "mieso"
+  },
+  {
+    "name": "Śliwka suszona (wędzona)",
+    "slug": "sliwka-suszona-wedzona",
+    "category": "owoce"
+  },
+  {
+    "name": "Kabanosy ze strusia",
+    "slug": "kabanosy-ze-strusia",
+    "category": "mieso"
+  },
+  {
+    "name": "Wędlina z dzika",
+    "slug": "wedlina-z-dzika",
+    "category": "mieso"
+  },
+  {
+    "name": "Szynka z dzika",
+    "slug": "szynka-z-dzika",
+    "category": "mieso"
+  },
+  {
+    "name": "Kiełbasa z jelenia",
+    "slug": "kielbasa-z-jelenia",
+    "category": "mieso"
+  },
+  {
+    "name": "Boczek z dzika wędzony",
+    "slug": "boczek-z-dzika-wedzony",
+    "category": "mieso"
+  },
+  {
+    "name": "Pstrąg ojcowski (wędzony)",
+    "slug": "pstrag-ojcowski-wedzony",
+    "category": "mieso"
+  },
+  {
+    "name": "Miód wrzosowy",
+    "slug": "miod-wrzosowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Miód akacjowy",
+    "slug": "miod-akacjowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Miód manuka",
+    "slug": "miod-manuka",
+    "category": "slodycze"
+  },
+  {
+    "name": "Kapusta kiszona swojska (z beczki)",
+    "slug": "kapusta-kiszona-swojska-z-beczki",
+    "category": "warzywa"
+  },
+  {
+    "name": "Ogórek kiszony swojski",
+    "slug": "ogorek-kiszony-swojski",
+    "category": "warzywa"
+  },
+  {
+    "name": "Bigos z kiełbasą (gotowy)",
+    "slug": "bigos-z-kielbasa-gotowy",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Gołąbki z kaszą",
+    "slug": "golabki-z-kasza",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Karkówka z grilla (góralska)",
+    "slug": "karkowka-z-grilla-goralska",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Oscypek z grilla z żurawiną",
+    "slug": "oscypek-z-grilla-z-zurawina",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Placki po węgiersku",
+    "slug": "placki-po-wegiersku",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Naleśniki po węgiersku",
+    "slug": "nalesniki-po-wegiersku",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Pierogi z jagodami",
+    "slug": "pierogi-z-jagodami",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Pierogi z truskawkami",
+    "slug": "pierogi-z-truskawkami",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Pierogi leniwe z twarogu",
+    "slug": "pierogi-leniwe-z-twarogu",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kisiel żurawinowy",
+    "slug": "kisiel-zurawinowy",
+    "category": "slodycze"
+  },
+  {
+    "name": "Kompot z suszu (bożonarodzeniowy)",
+    "slug": "kompot-z-suszu-bozonarodzeniowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Grzane piwo z miodem",
+    "slug": "grzane-piwo-z-miodem",
+    "category": "alkohole"
+  },
+  {
+    "name": "Miód pitny (trójniak)",
+    "slug": "miod-pitny-trojniak",
+    "category": "alkohole"
+  },
+  {
+    "name": "Miód pitny (dwójniak)",
+    "slug": "miod-pitny-dwojniak",
+    "category": "alkohole"
+  },
+  {
+    "name": "Śliwowica",
+    "slug": "sliwowica",
+    "category": "alkohole"
+  },
+  {
+    "name": "Okowita (gorzała)",
+    "slug": "okowita-gorzala",
+    "category": "alkohole"
+  },
+  {
+    "name": "Nalewka z pigwy",
+    "slug": "nalewka-z-pigwy",
+    "category": "alkohole"
+  },
+  {
+    "name": "Nalewka z aronii",
+    "slug": "nalewka-z-aronii",
+    "category": "alkohole"
+  },
+  {
+    "name": "Ramen z krewetkami",
+    "slug": "ramen-z-krewetkami",
+    "category": "zupy"
+  },
+  {
+    "name": "Ramen wegetariański",
+    "slug": "ramen-wegetarianski",
+    "category": "zupy"
+  },
+  {
+    "name": "Chiński ryż smażony z jajkiem",
+    "slug": "chinski-ryz-smazony-z-jajkiem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Naleśnik z owocami",
+    "slug": "nalesnik-z-owocami",
+    "category": "slodycze"
+  },
+  {
+    "name": "Curry warzywne z ciecierzycą",
+    "slug": "curry-warzywne-z-ciecierzyca",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Sałatka z tuńczykiem",
+    "slug": "salatka-z-tunczykiem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Sałatka z kurczakiem i ryżem",
+    "slug": "salatka-z-kurczakiem-i-ryzem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Makaron z pesto",
+    "slug": "makaron-z-pesto",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Makaron aglio e olio",
+    "slug": "makaron-aglio-e-olio",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Lasagne warzywna",
+    "slug": "lasagne-warzywna",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Pizza domowa z patelni",
+    "slug": "pizza-domowa-z-patelni",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Zapiekanka ziemniaczana z mięsem",
+    "slug": "zapiekanka-ziemniaczana-z-miesem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Krem z soczewicy",
+    "slug": "krem-z-soczewicy",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa z soczewicy z warzywami",
+    "slug": "zupa-z-soczewicy-z-warzywami",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa kalafiorowa (krem)",
+    "slug": "zupa-kalafiorowa-krem",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa marchewkowa z imbirem",
+    "slug": "zupa-marchewkowa-z-imbirem",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa brokułowa z serem",
+    "slug": "zupa-brokulowa-z-serem",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa dyniowa z curry",
+    "slug": "zupa-dyniowa-z-curry",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa krem z batatów i marchewki",
+    "slug": "zupa-krem-z-batatow-i-marchewki",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa krem z zielonego groszku",
+    "slug": "zupa-krem-z-zielonego-groszku",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa krem z cukinii i brokułów",
+    "slug": "zupa-krem-z-cukinii-i-brokulow",
+    "category": "zupy"
+  },
+  {
+    "name": "Zupa selerowa (krem)",
+    "slug": "zupa-selerowa-krem",
+    "category": "zupy"
+  },
+  {
+    "name": "Saltimbocca",
+    "slug": "saltimbocca",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kopytka z sosem grzybowym",
+    "slug": "kopytka-z-sosem-grzybowym",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Placki ziemniaczane z gulaszem",
+    "slug": "placki-ziemniaczane-z-gulaszem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kasza gryczana z gulaszem",
+    "slug": "kasza-gryczana-z-gulaszem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Makaron z twarogiem i cynamonem",
+    "slug": "makaron-z-twarogiem-i-cynamonem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Kluski z makiem (makaron z makiem)",
+    "slug": "kluski-z-makiem-makaron-z-makiem",
+    "category": "slodycze"
+  },
+  {
+    "name": "Zapiekanka z ziemniaków i sera",
+    "slug": "zapiekanka-z-ziemniakow-i-sera",
+    "category": "slodycze"
+  },
+  {
+    "name": "Grillowane warzywa z fetą",
+    "slug": "grillowane-warzywa-z-feta",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Sałatka bawarska z kabanosem",
+    "slug": "salatka-bawarska-z-kabanosem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Ryba w cieście z frytkami",
+    "slug": "ryba-w-ciescie-z-frytkami",
+    "category": "fastfood"
+  },
+  {
+    "name": "Kurczak w cieście piwnym",
+    "slug": "kurczak-w-ciescie-piwnym",
+    "category": "fastfood"
+  },
+  {
+    "name": "Smithy (frytki belgijskie podwójne)",
+    "slug": "smithy-frytki-belgijskie-podwojne",
+    "category": "fastfood"
+  },
+  {
+    "name": "Smażona mozzarella w panierce",
+    "slug": "smazona-mozzarella-w-panierce",
+    "category": "fastfood"
+  },
+  {
+    "name": "Serowe patyczki mozzarella",
+    "slug": "serowe-patyczki-mozzarella",
+    "category": "fastfood"
+  },
+  {
+    "name": "Krążki cebulowe",
+    "slug": "krazki-cebulowe",
+    "category": "fastfood"
+  },
+  {
+    "name": "Wrap z łososiem",
+    "slug": "wrap-z-lososiem",
+    "category": "fastfood"
+  },
+  {
+    "name": "Wrap z halloumi",
+    "slug": "wrap-z-halloumi",
+    "category": "fastfood"
+  },
+  {
+    "name": "Burger z kurczakiem curry",
+    "slug": "burger-z-kurczakiem-curry",
+    "category": "fastfood"
+  },
+  {
+    "name": "Burger z wołowiną i bekonem",
+    "slug": "burger-z-wolowina-i-bekonem",
+    "category": "fastfood"
+  },
+  {
+    "name": "Burger cheeseburger z cebulą",
+    "slug": "burger-cheeseburger-z-cebula",
+    "category": "fastfood"
+  },
+  {
+    "name": "Frytki belgijskie (grube)",
+    "slug": "frytki-belgijskie-grube",
+    "category": "fastfood"
+  },
+  {
+    "name": "Nuggetsy z ryby",
+    "slug": "nuggetsy-z-ryby",
+    "category": "fastfood"
+  },
+  {
+    "name": "Kanapka z kurczakiem i warzywami",
+    "slug": "kanapka-z-kurczakiem-i-warzywami",
+    "category": "fastfood"
+  },
+  {
+    "name": "Kanapka z serem i pomidorem",
+    "slug": "kanapka-z-serem-i-pomidorem",
+    "category": "fastfood"
+  },
+  {
+    "name": "Kanapka z mozzarellą i rukolą",
+    "slug": "kanapka-z-mozzarella-i-rukola",
+    "category": "fastfood"
+  },
+  {
+    "name": "Panini z szynką i serem",
+    "slug": "panini-z-szynka-i-serem",
+    "category": "fastfood"
+  },
+  {
+    "name": "Croque monsieur",
+    "slug": "croque-monsieur",
+    "category": "fastfood"
+  },
+  {
+    "name": "Grilled cheese (zapiekana kanapka)",
+    "slug": "grilled-cheese-zapiekana-kanapka",
+    "category": "fastfood"
+  },
+  {
+    "name": "Tost z kurczakiem",
+    "slug": "tost-z-kurczakiem",
+    "category": "fastfood"
+  },
+  {
+    "name": "Sałatka szefa",
+    "slug": "salatka-szefa",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Sałatka z jajkiem i awokado",
+    "slug": "salatka-z-jajkiem-i-awokado",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Sałatka z kozim serem",
+    "slug": "salatka-z-kozim-serem",
+    "category": "polskie-obiadki"
+  },
+  {
+    "name": "Sałatka owocowa (mix)",
+    "slug": "salatka-owocowa-mix",
+    "category": "owoce"
+  },
+  {
+    "name": "Koktajl owocowy (mix banan-jagoda)",
+    "slug": "koktajl-owocowy-mix-banan-jagoda",
+    "category": "napoje"
+  },
+  {
+    "name": "Smoothie z awokado i szpinakiem",
+    "slug": "smoothie-z-awokado-i-szpinakiem",
+    "category": "napoje"
+  },
+  {
+    "name": "Smoothie z mango i marakują",
+    "slug": "smoothie-z-mango-i-marakuja",
+    "category": "napoje"
+  },
+  {
+    "name": "Smoothie z burakiem",
+    "slug": "smoothie-z-burakiem",
+    "category": "napoje"
+  },
+  {
+    "name": "Sok z brzozy",
+    "slug": "sok-z-brzozy",
+    "category": "napoje"
+  },
+  {
+    "name": "Napój aloesowy",
+    "slug": "napoj-aloesowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Kefir wodny (jogurt kokosowy)",
+    "slug": "kefir-wodny-jogurt-kokosowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Kompot rabarbarowy",
+    "slug": "kompot-rabarbarowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Lemoniada lawendowa",
+    "slug": "lemoniada-lawendowa",
+    "category": "napoje"
+  },
+  {
+    "name": "Gruszka w syropie",
+    "slug": "gruszka-w-syropie",
+    "category": "owoce"
+  },
+  {
+    "name": "Morele w syropie",
+    "slug": "morele-w-syropie",
+    "category": "owoce"
+  },
+  {
+    "name": "Wiśnie w syropie (koktajlowe)",
+    "slug": "wisnie-w-syropie-koktajlowe",
+    "category": "owoce"
+  },
+  {
+    "name": "Śliwki w czekoladzie (markowe)",
+    "slug": "sliwki-w-czekoladzie-markowe",
+    "category": "slodycze"
+  },
+  {
+    "name": "Maliny w czekoladzie",
+    "slug": "maliny-w-czekoladzie",
+    "category": "slodycze"
+  },
+  {
+    "name": "Truskawki w czekoladzie",
+    "slug": "truskawki-w-czekoladzie",
+    "category": "slodycze"
+  },
+  {
+    "name": "Baton pralinowy",
+    "slug": "baton-pralinowy",
+    "category": "batony"
+  },
+  {
+    "name": "Czekoladka z nadzieniem miętowym",
+    "slug": "czekoladka-z-nadzieniem-mietowym",
+    "category": "batony"
+  },
+  {
+    "name": "Czekoladka z nadzieniem pomarańczowym",
+    "slug": "czekoladka-z-nadzieniem-pomaranczowym",
+    "category": "batony"
+  },
+  {
+    "name": "Draże czekoladowe z arachidami",
+    "slug": "draze-czekoladowe-z-arachidami",
+    "category": "batony"
+  },
+  {
+    "name": "Cukierki czekoladowo-karmelowe",
+    "slug": "cukierki-czekoladowo-karmelowe",
+    "category": "batony"
+  },
+  {
+    "name": "Bakaliowa mieszanka śniadaniowa",
+    "slug": "bakaliowa-mieszanka-sniadaniowa",
+    "category": "orzechy"
+  },
+  {
+    "name": "Orzechy ziemne w miodzie",
+    "slug": "orzechy-ziemne-w-miodzie",
+    "category": "orzechy"
+  },
+  {
+    "name": "Orzechy nerkowca pieczone",
+    "slug": "orzechy-nerkowca-pieczone",
+    "category": "orzechy"
+  },
+  {
+    "name": "Orzechy włoskie siekane",
+    "slug": "orzechy-wloskie-siekane",
+    "category": "orzechy"
+  },
+  {
+    "name": "Pestki słonecznika łuskane",
+    "slug": "pestki-slonecznika-luskane",
+    "category": "orzechy"
+  },
+  {
+    "name": "Masło z orzechów laskowych",
+    "slug": "maslo-z-orzechow-laskowych",
+    "category": "orzechy"
+  },
+  {
+    "name": "Tahini (markowe)",
+    "slug": "tahini-markowe",
+    "category": "orzechy"
+  },
+  {
+    "name": "Dip z awokado i cytryną",
+    "slug": "dip-z-awokado-i-cytryna",
+    "category": "sosy"
+  },
+  {
+    "name": "Dip koperkowo-ziołowy",
+    "slug": "dip-koperkowo-ziolowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Dip pomidorowo-czosnkowy",
+    "slug": "dip-pomidorowo-czosnkowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Pasta jajeczna",
+    "slug": "pasta-jajeczna",
+    "category": "sosy"
+  },
+  {
+    "name": "Pasta z makreli",
+    "slug": "pasta-z-makreli",
+    "category": "sosy"
+  },
+  {
+    "name": "Pasta z łososia",
+    "slug": "pasta-z-lososia",
+    "category": "sosy"
+  },
+  {
+    "name": "Pasta kanapkowa warzywna",
+    "slug": "pasta-kanapkowa-warzywna",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos pieczarkowy (markowy)",
+    "slug": "sos-pieczarkowy-markowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos paprykowy",
+    "slug": "sos-paprykowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Ogórek kiszony (markowy)",
+    "slug": "ogorek-kiszony-markowy",
+    "category": "warzywa"
+  },
+  {
+    "name": "Sałatka z kukurydzy i papryki",
+    "slug": "salatka-z-kukurydzy-i-papryki",
+    "category": "warzywa"
+  },
+  {
+    "name": "Cebula karmelizowana (dżem)",
+    "slug": "cebula-karmelizowana-dzem",
+    "category": "sosy"
+  },
+  {
+    "name": "Konfitura wiśniowa",
+    "slug": "konfitura-wisniowa",
+    "category": "slodycze"
+  },
+  {
+    "name": "Konfitura brzoskwiniowa",
+    "slug": "konfitura-brzoskwiniowa",
+    "category": "slodycze"
+  },
+  {
+    "name": "Marmolada pigwowa",
+    "slug": "marmolada-pigwowa",
+    "category": "slodycze"
+  },
+  {
+    "name": "Krem czekoladowy (do smarowania)",
+    "slug": "krem-czekoladowy-do-smarowania",
+    "category": "slodycze"
+  },
+  {
+    "name": "Krem śmietankowy (do smarowania)",
+    "slug": "krem-smietankowy-do-smarowania",
+    "category": "slodycze"
+  },
+  {
+    "name": "Pasta migdałowa (marcepan)",
+    "slug": "pasta-migdalowa-marcepan",
+    "category": "slodycze"
+  },
+  {
+    "name": "Jogurt z chia i owocami",
+    "slug": "jogurt-z-chia-i-owocami",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek wiejski z warzywami",
+    "slug": "serek-wiejski-z-warzywami",
+    "category": "nabial"
+  },
+  {
+    "name": "Twaróg z rzodkiewką",
+    "slug": "twarog-z-rzodkiewka",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt kokosowy",
+    "slug": "jogurt-kokosowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Kefir z dodatkiem owsa",
+    "slug": "kefir-z-dodatkiem-owsa",
+    "category": "nabial"
+  },
+  {
+    "name": "Maślanka z czosnkiem (dip)",
+    "slug": "maslanka-z-czosnkiem-dip",
+    "category": "nabial"
+  },
+  {
+    "name": "Ser halloumi grillowany",
+    "slug": "ser-halloumi-grillowany",
+    "category": "sery"
+  },
+  {
+    "name": "Ser mozzarella do pizzy (tarta)",
+    "slug": "ser-mozzarella-do-pizzy-tarta",
+    "category": "sery"
+  },
+  {
+    "name": "Ser parmezan do posypania",
+    "slug": "ser-parmezan-do-posypania",
+    "category": "sery"
+  },
+  {
+    "name": "Ser żółty w plastrach (markowy)",
+    "slug": "ser-zolty-w-plastrach-markowy",
+    "category": "sery"
+  },
+  {
+    "name": "Ser do zapiekania (tarty)",
+    "slug": "ser-do-zapiekania-tarty",
+    "category": "sery"
+  },
+  {
+    "name": "Ser stadler",
+    "slug": "ser-stadler",
+    "category": "sery"
+  },
+  {
+    "name": "Ser mazdamer w plastrach",
+    "slug": "ser-mazdamer-w-plastrach",
+    "category": "sery"
+  },
+  {
+    "name": "Ser ementaler w plastrach",
+    "slug": "ser-ementaler-w-plastrach",
+    "category": "sery"
+  },
+  {
+    "name": "Ser edamski w plastrach",
+    "slug": "ser-edamski-w-plastrach",
+    "category": "sery"
+  },
+  {
+    "name": "Ser camembert zapiekany",
+    "slug": "ser-camembert-zapiekany",
+    "category": "sery"
+  },
+  {
+    "name": "Ser pleśniowy bavaria blue",
+    "slug": "ser-plesniowy-bavaria-blue",
+    "category": "sery"
+  },
+  {
+    "name": "Serek topiony bavaria",
+    "slug": "serek-topiony-bavaria",
+    "category": "sery"
+  },
+  {
+    "name": "Ser z papryką (krajanka)",
+    "slug": "ser-z-papryka-krajanka",
+    "category": "sery"
+  },
+  {
+    "name": "Ser z szynką (krajanka)",
+    "slug": "ser-z-szynka-krajanka",
+    "category": "sery"
+  },
+  {
+    "name": "Ser z czosnkiem niedźwiedzim",
+    "slug": "ser-z-czosnkiem-niedzwiedzim",
+    "category": "sery"
+  },
+  {
+    "name": "Ser kozi miękki (kostka)",
+    "slug": "ser-kozi-miekki-kostka",
+    "category": "sery"
+  },
+  {
+    "name": "Ser pleśniowy z ziołami",
+    "slug": "ser-plesniowy-z-ziolami",
+    "category": "sery"
+  },
+  {
+    "name": "Masło osełkowe (z osełki)",
+    "slug": "maslo-oselkowe-z-oselki",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Tłuszcz z gęsi (smalec gęsi)",
+    "slug": "tluszcz-z-gesi-smalec-gesi",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Cukier wanilinowy",
+    "slug": "cukier-wanilinowy",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Proszek do pieczenia",
+    "slug": "proszek-do-pieczenia",
+    "category": "warzywa"
+  },
+  {
+    "name": "Drożdże piekarskie (świeże)",
+    "slug": "drozdze-piekarskie-swieze",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Drożdże suche",
+    "slug": "drozdze-suche",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Soda oczyszczona",
+    "slug": "soda-oczyszczona",
+    "category": "przyprawy"
+  },
+  {
+    "name": "Cukier puder",
+    "slug": "cukier-puder",
+    "category": "slodycze"
+  },
+  {
+    "name": "Galaretka brzoskwiniowa",
+    "slug": "galaretka-brzoskwiniowa",
+    "category": "slodycze"
+  },
+  {
+    "name": "Kisiel czekoladowy (budyń)",
+    "slug": "kisiel-czekoladowy-budyn",
+    "category": "slodycze"
+  },
+  {
+    "name": "Sernik na zimno z owocami",
+    "slug": "sernik-na-zimno-z-owocami",
+    "category": "slodycze"
+  },
+  {
+    "name": "Szarlotka na ciepło",
+    "slug": "szarlotka-na-cieplo",
+    "category": "slodycze"
+  },
+  {
+    "name": "Naleśniki z nutellą",
+    "slug": "nalesniki-z-nutella",
+    "category": "slodycze"
+  },
+  {
+    "name": "Naleśniki z owocami i bitą śmietaną",
+    "slug": "nalesniki-z-owocami-i-bita-smietana",
+    "category": "slodycze"
+  },
+  {
+    "name": "Gofry z owocami",
+    "slug": "gofry-z-owocami",
+    "category": "slodycze"
+  },
+  {
+    "name": "Kaczka (udo)",
+    "slug": "kaczka-udo",
+    "category": "mieso"
+  },
+  {
+    "name": "Gęś (pierś)",
+    "slug": "ges-piers",
+    "category": "mieso"
+  },
+  {
+    "name": "Przepiórka",
+    "slug": "przepiorka",
+    "category": "mieso"
+  },
+  {
+    "name": "Królik (udziec)",
+    "slug": "krolik-udziec",
+    "category": "mieso"
+  },
+  {
+    "name": "Rostbef pieczony",
+    "slug": "rostbef-pieczony",
+    "category": "mieso"
+  },
+  {
+    "name": "Mostek wołowy",
+    "slug": "mostek-wolowy",
+    "category": "mieso"
+  },
+  {
+    "name": "Brzoskwinie",
+    "slug": "brzoskwinie",
+    "category": "owoce"
+  },
+  {
+    "name": "Nektarynki",
+    "slug": "nektarynki",
+    "category": "owoce"
+  },
+  {
+    "name": "Agrest",
+    "slug": "agrest",
+    "category": "owoce"
+  },
+  {
+    "name": "Żurawina świeża",
+    "slug": "zurawina-swieza",
+    "category": "owoce"
+  },
+  {
+    "name": "Aronia",
+    "slug": "aronia",
+    "category": "owoce"
+  },
+  {
+    "name": "Chipsy bananowe",
+    "slug": "chipsy-bananowe",
+    "category": "owoce"
+  },
+  {
+    "name": "Kaki (persymona)",
+    "slug": "kaki-persymona",
+    "category": "owoce"
+  },
+  {
+    "name": "Kasza orkiszowa",
+    "slug": "kasza-orkiszowa",
+    "category": "zboza"
+  },
+  {
+    "name": "Polenta (kaszka kukurydziana)",
+    "slug": "polenta-kaszka-kukurydziana",
+    "category": "zboza"
+  },
+  {
+    "name": "Mąka ryżowa",
+    "slug": "maka-ryzowa",
+    "category": "zboza"
+  },
+  {
+    "name": "Chleb razowy na zakwasie",
+    "slug": "chleb-razowy-na-zakwasie",
+    "category": "zboza"
+  },
+  {
+    "name": "Guawa",
+    "slug": "guawa",
+    "category": "owoce"
+  },
+  {
+    "name": "Bez czarny (owoce)",
+    "slug": "bez-czarny-owoce",
+    "category": "owoce"
+  },
+  {
+    "name": "Ryż czarny (suchy)",
+    "slug": "ryz-czarny-suchy",
+    "category": "zboza"
+  },
+  {
+    "name": "Otręby żytnie",
+    "slug": "otreby-zytnie",
+    "category": "zboza"
+  },
+  {
+    "name": "Chleb bezglutenowy",
+    "slug": "chleb-bezglutenowy",
+    "category": "zboza"
+  },
+  {
+    "name": "Boczniaki",
+    "slug": "boczniaki",
+    "category": "warzywa"
+  },
+  {
+    "name": "Pieczarka portobello",
+    "slug": "pieczarka-portobello",
+    "category": "warzywa"
+  },
+  {
+    "name": "Rzodkiew",
+    "slug": "rzodkiew",
+    "category": "warzywa"
+  },
+  {
+    "name": "Musli z owocami suszonymi",
+    "slug": "musli-z-owocami-suszonymi",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Granola z orzechami",
+    "slug": "granola-z-orzechami",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Owsianka instant",
+    "slug": "owsianka-instant",
+    "category": "platki-sniadaniowe"
+  },
+  {
+    "name": "Gęś pieczona (mięso bez skóry)",
+    "slug": "ges-pieczona-mieso-bez-skory",
+    "category": "mieso"
+  },
+  {
+    "name": "Kaczka pieczona (mięso bez skóry)",
+    "slug": "kaczka-pieczona-mieso-bez-skory",
+    "category": "mieso"
+  },
+  {
+    "name": "Jagnięcina (udziec)",
+    "slug": "jagniecina-udziec",
+    "category": "mieso"
+  },
+  {
+    "name": "Cielęcina (pieczeń)",
+    "slug": "cielecina-pieczen",
+    "category": "mieso"
+  },
+  {
+    "name": "Rozbratel wołowy",
+    "slug": "rozbratel-wolowy",
+    "category": "mieso"
+  },
+  {
+    "name": "Żeberka wołowe",
+    "slug": "zeberka-wolowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Łopatka wieprzowa",
+    "slug": "lopatka-wieprzowa",
+    "category": "mieso"
+  },
+  {
+    "name": "Boczek wędzony",
+    "slug": "boczek-wedzony",
+    "category": "mieso"
+  },
+  {
+    "name": "Szynka serrano",
+    "slug": "szynka-serrano",
+    "category": "mieso"
+  },
+  {
+    "name": "Kiełbasa salami węgierska",
+    "slug": "kielbasa-salami-wegierska",
+    "category": "mieso"
+  },
+  {
+    "name": "Metka łososiowa",
+    "slug": "metka-lososiowa",
+    "category": "mieso"
+  },
+  {
+    "name": "Tatar z łososia",
+    "slug": "tatar-z-lososia",
+    "category": "mieso"
+  },
+  {
+    "name": "Sielawa wędzona",
+    "slug": "sielawa-wedzona",
+    "category": "mieso"
+  },
+  {
+    "name": "Ryba maślana wędzona",
+    "slug": "ryba-maslana-wedzona",
+    "category": "mieso"
+  },
+  {
+    "name": "Węgorz w oleju",
+    "slug": "wegorz-w-oleju",
+    "category": "mieso"
+  },
+  {
+    "name": "Krewetki koktajlowe",
+    "slug": "krewetki-koktajlowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Paluszki krabowe",
+    "slug": "paluszki-krabowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Mleko 3,8% tłuszczu",
+    "slug": "mleko-3-8-tluszczu",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko owcze",
+    "slug": "mleko-owcze",
+    "category": "nabial"
+  },
+  {
+    "name": "Napój ryżowy",
+    "slug": "napoj-ryzowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Śmietana 22%",
+    "slug": "smietana-22",
+    "category": "nabial"
+  },
+  {
+    "name": "Twaróg śmietankowy",
+    "slug": "twarog-smietankowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Ser Maasdam",
+    "slug": "ser-maasdam",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Gorgonzola",
+    "slug": "ser-gorgonzola",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Manchego",
+    "slug": "ser-manchego",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Pecorino Romano",
+    "slug": "ser-pecorino-romano",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Raclette",
+    "slug": "ser-raclette",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Emmentaler",
+    "slug": "ser-emmentaler",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Gruyère",
+    "slug": "ser-gruyere",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Burrata",
+    "slug": "ser-burrata",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Rokpol",
+    "slug": "ser-rokpol",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Warmiński",
+    "slug": "ser-warminski",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Morski",
+    "slug": "ser-morski",
+    "category": "sery"
+  },
+  {
+    "name": "Mozzarella light",
+    "slug": "mozzarella-light",
+    "category": "sery"
+  },
+  {
+    "name": "Ser topiony Hochland",
+    "slug": "ser-topiony-hochland",
+    "category": "sery"
+  },
+  {
+    "name": "Szparagi",
+    "slug": "szparagi",
+    "category": "warzywa"
+  },
+  {
+    "name": "Karczochy",
+    "slug": "karczochy",
+    "category": "warzywa"
+  },
+  {
+    "name": "Dynia hokkaido",
+    "slug": "dynia-hokkaido",
+    "category": "warzywa"
+  },
+  {
+    "name": "Polędwiczki z indyka",
+    "slug": "poledwiczki-z-indyka",
+    "category": "mieso"
+  },
+  {
+    "name": "Schab pieczony w ziołach",
+    "slug": "schab-pieczony-w-ziolach",
+    "category": "mieso"
+  },
+  {
+    "name": "Karkówka marynowana",
+    "slug": "karkowka-marynowana",
+    "category": "mieso"
+  },
+  {
+    "name": "Żeberka wędzone",
+    "slug": "zeberka-wedzone",
+    "category": "mieso"
+  },
+  {
+    "name": "Golonka pieczona",
+    "slug": "golonka-pieczona",
+    "category": "mieso"
+  },
+  {
+    "name": "Kiełbasa chorizo",
+    "slug": "kielbasa-chorizo",
+    "category": "mieso"
+  },
+  {
+    "name": "Salami z papryką",
+    "slug": "salami-z-papryka",
+    "category": "mieso"
+  },
+  {
+    "name": "Mortadela z pistacjami",
+    "slug": "mortadela-z-pistacjami",
+    "category": "mieso"
+  },
+  {
+    "name": "Pasztet warzywny",
+    "slug": "pasztet-warzywny",
+    "category": "mieso"
+  },
+  {
+    "name": "Szynka konserwowa wieprzowa",
+    "slug": "szynka-konserwowa-wieprzowa",
+    "category": "mieso"
+  },
+  {
+    "name": "Szynka wieprzowa dojrzewająca",
+    "slug": "szynka-wieprzowa-dojrzewajaca",
+    "category": "mieso"
+  },
+  {
+    "name": "Stek z antrykotu",
+    "slug": "stek-z-antrykotu",
+    "category": "mieso"
+  },
+  {
+    "name": "Mięso mielone mieszane",
+    "slug": "mieso-mielone-mieszane",
+    "category": "mieso"
+  },
+  {
+    "name": "Żołądki drobiowe",
+    "slug": "zoladki-drobiowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Serce wołowe",
+    "slug": "serce-wolowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Ozór wieprzowy",
+    "slug": "ozor-wieprzowy",
+    "category": "mieso"
+  },
+  {
+    "name": "Parówki z indyka",
+    "slug": "parowki-z-indyka",
+    "category": "mieso"
+  },
+  {
+    "name": "Serdelki",
+    "slug": "serdelki",
+    "category": "mieso"
+  },
+  {
+    "name": "Kiełbaski śniadaniowe",
+    "slug": "kielbaski-sniadaniowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Tilapia",
+    "slug": "tilapia",
+    "category": "mieso"
+  },
+  {
+    "name": "Panga",
+    "slug": "panga",
+    "category": "mieso"
+  },
+  {
+    "name": "Rostbef wołowy",
+    "slug": "rostbef-wolowy",
+    "category": "mieso"
+  },
+  {
+    "name": "Skyr pitny",
+    "slug": "skyr-pitny",
+    "category": "nabial"
+  },
+  {
+    "name": "Maślanka ziołowa",
+    "slug": "maslanka-ziolowa",
+    "category": "nabial"
+  },
+  {
+    "name": "Napój owsiany barista",
+    "slug": "napoj-owsiany-barista",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt sojowy naturalny",
+    "slug": "jogurt-sojowy-naturalny",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt naturalny wysokobiałkowy",
+    "slug": "jogurt-naturalny-wysokobialkowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Twarożek ziarnisty",
+    "slug": "twarozek-ziarnisty",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt typu greckiego 5%",
+    "slug": "jogurt-typu-greckiego-5",
+    "category": "nabial"
+  },
+  {
+    "name": "Śmietanka do kawy 10%",
+    "slug": "smietanka-do-kawy-10",
+    "category": "nabial"
+  },
+  {
+    "name": "Serek kremowy do smarowania",
+    "slug": "serek-kremowy-do-smarowania",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Mozzarella di bufala",
+    "slug": "ser-mozzarella-di-bufala",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Radamer",
+    "slug": "ser-radamer",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Wiejski",
+    "slug": "ser-wiejski",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Kurpiowski",
+    "slug": "ser-kurpiowski",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Favita",
+    "slug": "ser-favita",
+    "category": "sery"
+  },
+  {
+    "name": "Pietruszka korzeniowa",
+    "slug": "pietruszka-korzeniowa",
+    "category": "warzywa"
+  },
+  {
+    "name": "Fasola czerwona gotowana",
+    "slug": "fasola-czerwona-gotowana",
+    "category": "warzywa"
+  },
+  {
+    "name": "Soczewica brązowa gotowana",
+    "slug": "soczewica-brazowa-gotowana",
+    "category": "warzywa"
+  },
+  {
+    "name": "Bób gotowany",
+    "slug": "bob-gotowany-warzywa",
+    "category": "warzywa"
+  },
+  {
+    "name": "Kukurydza w kolbie",
+    "slug": "kukurydza-w-kolbie",
+    "category": "warzywa"
+  },
+  {
+    "name": "Jagody goji",
+    "slug": "jagody-goji",
+    "category": "owoce"
+  },
+  {
+    "name": "Krewetki tygrysie",
+    "slug": "krewetki-tygrysie",
+    "category": "mieso"
+  },
+  {
+    "name": "Małże gotowane",
+    "slug": "malze-gotowane",
+    "category": "mieso"
+  },
+  {
+    "name": "Ośmiornica gotowana",
+    "slug": "osmiornica-gotowana",
+    "category": "mieso"
+  },
+  {
+    "name": "Homar gotowany",
+    "slug": "homar-gotowany",
+    "category": "mieso"
+  },
+  {
+    "name": "Dorada",
+    "slug": "dorada",
+    "category": "mieso"
+  },
+  {
+    "name": "Halibut wędzony",
+    "slug": "halibut-wedzony",
+    "category": "mieso"
+  },
+  {
+    "name": "Łosoś dziki",
+    "slug": "losos-dziki",
+    "category": "mieso"
+  },
+  {
+    "name": "Makrela świeża",
+    "slug": "makrela-swieza",
+    "category": "mieso"
+  },
+  {
+    "name": "Śledź świeży",
+    "slug": "sledz-swiezy",
+    "category": "mieso"
+  },
+  {
+    "name": "Sardynka świeża",
+    "slug": "sardynka-swieza",
+    "category": "mieso"
+  },
+  {
+    "name": "Udziec wołowy",
+    "slug": "udziec-wolowy",
+    "category": "mieso"
+  },
+  {
+    "name": "Polędwiczki wieprzowe",
+    "slug": "poledwiczki-wieprzowe",
+    "category": "mieso"
+  },
+  {
+    "name": "Słonina",
+    "slug": "slonina",
+    "category": "mieso"
+  },
+  {
+    "name": "Golonka surowa",
+    "slug": "golonka-surowa",
+    "category": "mieso"
+  },
+  {
+    "name": "Skyr truskawkowy",
+    "slug": "skyr-truskawkowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt grecki 10%",
+    "slug": "jogurt-grecki-10",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt grecki 2%",
+    "slug": "jogurt-grecki-2",
+    "category": "nabial"
+  },
+  {
+    "name": "Śmietana 36%",
+    "slug": "smietana-36",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko A2 3,5%",
+    "slug": "mleko-a2-3-5",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko zagęszczone niesłodzone",
+    "slug": "mleko-zageszczone-nieslodzone",
+    "category": "nabial"
+  },
+  {
+    "name": "Żółtko jajka",
+    "slug": "zoltko-jajka",
+    "category": "nabial"
+  },
+  {
+    "name": "Omlet białkowy",
+    "slug": "omlet-bialkowy",
+    "category": "nabial"
+  },
+  {
+    "name": "Napój proteinowy UHT",
+    "slug": "napoj-proteinowy-uht",
+    "category": "nabial"
+  },
+  {
+    "name": "Ser kremowy kanapkowy",
+    "slug": "ser-kremowy-kanapkowy",
+    "category": "sery"
+  },
+  {
+    "name": "Topinambur",
+    "slug": "topinambur",
+    "category": "warzywa"
+  },
+  {
+    "name": "Fasola mung (gotowana)",
+    "slug": "fasola-mung-gotowana",
+    "category": "warzywa"
+  },
+  {
+    "name": "Kasztany jadalne",
+    "slug": "kasztany-jadalne",
+    "category": "orzechy"
+  },
+  {
+    "name": "Daktyle",
+    "slug": "daktyle",
+    "category": "owoce"
+  },
+  {
+    "name": "Makaron razowy (suchy)",
+    "slug": "makaron-razowy-suchy",
+    "category": "makarony"
+  },
+  {
+    "name": "Ryż czerwony (suchy)",
+    "slug": "ryz-czerwony-suchy",
+    "category": "zboza"
+  },
+  {
+    "name": "Sos gochujang",
+    "slug": "sos-gochujang",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos hoisin",
+    "slug": "sos-hoisin",
+    "category": "sosy"
+  },
+  {
+    "name": "Sos miodowo-musztardowy",
+    "slug": "sos-miodowo-musztardowy",
+    "category": "sosy"
+  },
+  {
+    "name": "Smalec gęsi",
+    "slug": "smalec-gesi",
+    "category": "tluszcze"
+  },
+  {
+    "name": "Makaron soba",
+    "slug": "makaron-soba",
+    "category": "makarony"
+  },
+  {
+    "name": "Makaron orkiszowy (suchy)",
+    "slug": "makaron-orkiszowy-suchy",
+    "category": "makarony"
+  },
+  {
+    "name": "Makaron soczewicowy (suchy)",
+    "slug": "makaron-soczewicowy-suchy",
+    "category": "makarony"
+  },
+  {
+    "name": "Polędwica z dzika",
+    "slug": "poledwica-z-dzika",
+    "category": "mieso"
+  },
+  {
+    "name": "Kiełbasa podlaska",
+    "slug": "kielbasa-podlaska",
+    "category": "mieso"
+  },
+  {
+    "name": "Wątroba wieprzowa",
+    "slug": "watroba-wieprzowa",
+    "category": "mieso"
+  },
+  {
+    "name": "Karkówka wędzona",
+    "slug": "karkowka-wedzona",
+    "category": "mieso"
+  },
+  {
+    "name": "Miętus",
+    "slug": "mietus",
+    "category": "mieso"
+  },
+  {
+    "name": "Białko jaj w proszku",
+    "slug": "bialko-jaj-w-proszku",
+    "category": "nabial"
+  },
+  {
+    "name": "Mleko 1%",
+    "slug": "mleko-1",
+    "category": "nabial"
+  },
+  {
+    "name": "Jogurt bałkański 5%",
+    "slug": "jogurt-balkanski-5",
+    "category": "nabial"
+  },
+  {
+    "name": "Ser Kashkaval",
+    "slug": "ser-kashkaval",
+    "category": "sery"
+  },
+  {
+    "name": "Ser Limburger",
+    "slug": "ser-limburger",
+    "category": "sery"
+  },
+  {
+    "name": "Kukurydza słodka w puszce",
+    "slug": "kukurydza-slodka-w-puszce",
+    "category": "warzywa"
+  },
+  {
+    "name": "Surówka z kiszonej kapusty",
+    "slug": "surowka-z-kiszonej-kapusty",
+    "category": "warzywa"
+  },
+  {
+    "name": "Batat pieczony",
+    "slug": "batat-pieczony",
+    "category": "warzywa"
+  },
+  {
+    "name": "Owoce leśne mrożone",
+    "slug": "owoce-lesne-mrozone",
+    "category": "owoce"
+  },
+  {
+    "name": "Sok wiśniowy",
+    "slug": "sok-wisniowy",
+    "category": "napoje"
+  },
+  {
+    "name": "Kasza pęczak gotowany",
+    "slug": "kasza-peczak-gotowany",
+    "category": "zboza"
+  },
+  {
+    "name": "Ryż do risotto",
+    "slug": "ryz-do-risotto",
+    "category": "zboza"
+  }
+]

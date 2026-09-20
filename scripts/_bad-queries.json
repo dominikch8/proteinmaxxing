@@ -1,0 +1,4742 @@
+[
+  {
+    "s": "szynka-konserwowa",
+    "n": "Szynka konserwowa",
+    "e": "ham",
+    "r": "generic"
+  },
+  {
+    "s": "kielbasa-szynkowa",
+    "n": "Kiełbasa szynkowa",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "kielbasa-slaska",
+    "n": "Kiełbasa śląska",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "kielbasa-zywiecka",
+    "n": "Kiełbasa żywiecka",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "kielbasa-krakowska-sucha",
+    "n": "Kiełbasa krakowska sucha",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "kielbasa-torunska",
+    "n": "Kiełbasa toruńska",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "kielbasa-jalowcowa",
+    "n": "Kiełbasa jałowcowa",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "kielbasa-mysliwska",
+    "n": "Kiełbasa myśliwska",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "parowki-z-szynki",
+    "n": "Parówki z szynki",
+    "e": "sausages",
+    "r": "generic"
+  },
+  {
+    "s": "parowki-drobiowe",
+    "n": "Parówki drobiowe",
+    "e": "sausages",
+    "r": "generic"
+  },
+  {
+    "s": "kabanosy",
+    "n": "Kabanosy",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "kabanosy-drobiowe",
+    "n": "Kabanosy drobiowe",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "mortadela",
+    "n": "Mortadela",
+    "e": "mortadella",
+    "r": "generic"
+  },
+  {
+    "s": "pasztet-wieprzowy",
+    "n": "Pasztet wieprzowy",
+    "e": "pate",
+    "r": "generic"
+  },
+  {
+    "s": "pasztet-drobiowy",
+    "n": "Pasztet drobiowy",
+    "e": "pate",
+    "r": "generic"
+  },
+  {
+    "s": "pasztet-z-dziczyzny",
+    "n": "Pasztet z dziczyzny",
+    "e": "pate",
+    "r": "generic"
+  },
+  {
+    "s": "baleron",
+    "n": "Baleron",
+    "e": "ham",
+    "r": "generic"
+  },
+  {
+    "s": "boczek-wedzony-parzony",
+    "n": "Boczek wędzony parzony",
+    "e": "bacon",
+    "r": "generic"
+  },
+  {
+    "s": "boczek-pieczony",
+    "n": "Boczek pieczony",
+    "e": "bacon",
+    "r": "generic"
+  },
+  {
+    "s": "kaszanka",
+    "n": "Kaszanka",
+    "e": "Kaszanka",
+    "r": "generic"
+  },
+  {
+    "s": "kaszanka-z-watrobka",
+    "n": "Kaszanka z wątróbką",
+    "e": "liver",
+    "r": "generic"
+  },
+  {
+    "s": "salceson",
+    "n": "Salceson",
+    "e": "Salceson",
+    "r": "generic"
+  },
+  {
+    "s": "zoladek-wieprzowy",
+    "n": "Żołądek wieprzowy",
+    "e": "Żołądek wieprzowy",
+    "r": "polish"
+  },
+  {
+    "s": "flaki-wolowe",
+    "n": "Flaki wołowe",
+    "e": "Flaki wołowe",
+    "r": "polish"
+  },
+  {
+    "s": "serca-wieprzowe",
+    "n": "Serca wieprzowe",
+    "e": "pork",
+    "r": "generic"
+  },
+  {
+    "s": "nerki-wieprzowe",
+    "n": "Nerki wieprzowe",
+    "e": "pork",
+    "r": "generic"
+  },
+  {
+    "s": "mieso-mielone-wieprzowo-wolowe",
+    "n": "Mięso mielone wieprzowo-wołowe",
+    "e": "Mięso mielone wieprzowo-wołowe",
+    "r": "polish"
+  },
+  {
+    "s": "mieso-mielone-z-indyka",
+    "n": "Mięso mielone z indyka",
+    "e": "turkey",
+    "r": "generic"
+  },
+  {
+    "s": "mieso-drobiowe-mielone",
+    "n": "Mięso drobiowe mielone",
+    "e": "Mięso drobiowe mielone",
+    "r": "polish"
+  },
+  {
+    "s": "pieczen-rzymska",
+    "n": "Pieczeń rzymska",
+    "e": "Pieczeń rzymska",
+    "r": "polish"
+  },
+  {
+    "s": "schabowe-mieso-stek",
+    "n": "Schabowe mięso (stek)",
+    "e": "Schabowe mięso",
+    "r": "polish"
+  },
+  {
+    "s": "lopatka-wieprzowa-pieczona",
+    "n": "Łopatka wieprzowa pieczona",
+    "e": "pork",
+    "r": "generic"
+  },
+  {
+    "s": "kotlet-z-karkowki",
+    "n": "Kotlet z karkówki",
+    "e": "cutlet",
+    "r": "generic"
+  },
+  {
+    "s": "klopsiki-wieprzowe",
+    "n": "Klopsiki wieprzowe",
+    "e": "pork",
+    "r": "generic"
+  },
+  {
+    "s": "mintaj",
+    "n": "Mintaj",
+    "e": "pollock",
+    "r": "generic"
+  },
+  {
+    "s": "morszczuk",
+    "n": "Morszczuk",
+    "e": "Morszczuk",
+    "r": "generic"
+  },
+  {
+    "s": "sola",
+    "n": "Sola",
+    "e": "Sola",
+    "r": "generic"
+  },
+  {
+    "s": "fladra",
+    "n": "Flądra",
+    "e": "flounder",
+    "r": "generic"
+  },
+  {
+    "s": "pstrag-teczowy",
+    "n": "Pstrąg tęczowy",
+    "e": "trout",
+    "r": "generic"
+  },
+  {
+    "s": "pstrag-lososiowy",
+    "n": "Pstrąg łososiowy",
+    "e": "trout",
+    "r": "generic"
+  },
+  {
+    "s": "karp",
+    "n": "Karp",
+    "e": "carp",
+    "r": "generic"
+  },
+  {
+    "s": "sandacz",
+    "n": "Sandacz",
+    "e": "perch",
+    "r": "generic"
+  },
+  {
+    "s": "okon",
+    "n": "Okoń",
+    "e": "Okoń",
+    "r": "polish"
+  },
+  {
+    "s": "halibut",
+    "n": "Halibut",
+    "e": "halibut",
+    "r": "generic"
+  },
+  {
+    "s": "pangasius",
+    "n": "Pangasius",
+    "e": "Pangasius",
+    "r": "generic"
+  },
+  {
+    "s": "miruna",
+    "n": "Miruna",
+    "e": "Miruna",
+    "r": "generic"
+  },
+  {
+    "s": "sardynki-w-pomidorach",
+    "n": "Sardynki w pomidorach",
+    "e": "sardines",
+    "r": "generic"
+  },
+  {
+    "s": "szprotki-wedzone",
+    "n": "Szprotki wędzone",
+    "e": "Szprotki wędzone",
+    "r": "polish"
+  },
+  {
+    "s": "losos-wedzony-na-zimno",
+    "n": "Łosoś wędzony na zimno",
+    "e": "salmon",
+    "r": "generic"
+  },
+  {
+    "s": "tunczyk-swiezy-stek",
+    "n": "Tuńczyk świeży (stek)",
+    "e": "tuna",
+    "r": "generic"
+  },
+  {
+    "s": "krewetki-obrane",
+    "n": "Krewetki (obrane)",
+    "e": "shrimp",
+    "r": "generic"
+  },
+  {
+    "s": "krewetki-krolewskie",
+    "n": "Krewetki królewskie",
+    "e": "shrimp",
+    "r": "generic"
+  },
+  {
+    "s": "kalmary",
+    "n": "Kalmary",
+    "e": "squid",
+    "r": "generic"
+  },
+  {
+    "s": "osmiornica",
+    "n": "Ośmiornica",
+    "e": "Ośmiornica",
+    "r": "polish"
+  },
+  {
+    "s": "malze-mule",
+    "n": "Małże (mule)",
+    "e": "Małże",
+    "r": "polish"
+  },
+  {
+    "s": "malze-zielone",
+    "n": "Małże zielone",
+    "e": "green",
+    "r": "generic"
+  },
+  {
+    "s": "ostrygi",
+    "n": "Ostrygi",
+    "e": "Ostrygi",
+    "r": "generic"
+  },
+  {
+    "s": "kawior",
+    "n": "Kawior",
+    "e": "Kawior",
+    "r": "generic"
+  },
+  {
+    "s": "sledz-w-smietanie",
+    "n": "Śledź w śmietanie",
+    "e": "herring",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-0-5",
+    "n": "Mleko 0,5%",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-1-5",
+    "n": "Mleko 1,5%",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-2",
+    "n": "Mleko 2%",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-3-2",
+    "n": "Mleko 3,2%",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-bez-laktozy",
+    "n": "Mleko bez laktozy",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-kozie",
+    "n": "Mleko kozie",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "maslanka-naturalna",
+    "n": "Maślanka naturalna",
+    "e": "Maślanka naturalna",
+    "r": "polish"
+  },
+  {
+    "s": "maslanka-owocowa",
+    "n": "Maślanka owocowa",
+    "e": "Maślanka owocowa",
+    "r": "polish"
+  },
+  {
+    "s": "skyr-waniliowy",
+    "n": "Skyr waniliowy",
+    "e": "skyr",
+    "r": "generic"
+  },
+  {
+    "s": "ricotta",
+    "n": "Ricotta",
+    "e": "ricotta",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-smakowe-czekoladowe",
+    "n": "Mleko smakowe czekoladowe",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "bialko-serwatkowe-shake-mleko",
+    "n": "Białko serwatkowe shake (mleko)",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "smietana-ukwaszona-12",
+    "n": "Śmietana ukwaszona 12%",
+    "e": "cream",
+    "r": "generic"
+  },
+  {
+    "s": "jogurt-z-miodem-i-orzechami",
+    "n": "Jogurt z miodem i orzechami",
+    "e": "yogurt",
+    "r": "generic"
+  },
+  {
+    "s": "jogurt-bakoma-7-zboz",
+    "n": "Jogurt Bakoma 7 zbóż",
+    "e": "yogurt",
+    "r": "generic"
+  },
+  {
+    "s": "jogurt-typu-greckiego-piatnica",
+    "n": "Jogurt typu greckiego Piątnica",
+    "e": "yogurt",
+    "r": "generic"
+  },
+  {
+    "s": "actimel-naturalny",
+    "n": "Actimel naturalny",
+    "e": "plain",
+    "r": "generic"
+  },
+  {
+    "s": "actimel-truskawkowy",
+    "n": "Actimel truskawkowy",
+    "e": "strawberry",
+    "r": "generic"
+  },
+  {
+    "s": "kefir-bieluch",
+    "n": "Kefir Bieluch",
+    "e": "kefir",
+    "r": "generic"
+  },
+  {
+    "s": "kefir-z-lomzy",
+    "n": "Kefir z Łomży",
+    "e": "kefir",
+    "r": "generic"
+  },
+  {
+    "s": "maslanka-laciata",
+    "n": "Maślanka Łaciata",
+    "e": "Maślanka Łaciata",
+    "r": "polish"
+  },
+  {
+    "s": "danio-czekoladowy",
+    "n": "Danio czekoladowy",
+    "e": "chocolate",
+    "r": "generic"
+  },
+  {
+    "s": "deser-monte-czekoladowy",
+    "n": "Deser Monte czekoladowy",
+    "e": "chocolate",
+    "r": "generic"
+  },
+  {
+    "s": "krem-kaszkowy-waniliowy-kogel-mogel",
+    "n": "Krem kaszkowy waniliowy (Kogel Mogel)",
+    "e": "spread",
+    "r": "generic"
+  },
+  {
+    "s": "jajko-przepiorcze",
+    "n": "Jajko przepiórcze",
+    "e": "egg",
+    "r": "generic"
+  },
+  {
+    "s": "jajko-kacze",
+    "n": "Jajko kacze",
+    "e": "egg",
+    "r": "generic"
+  },
+  {
+    "s": "jajecznica-z-2-jaj",
+    "n": "Jajecznica z 2 jaj",
+    "e": "egg",
+    "r": "generic"
+  },
+  {
+    "s": "majonez-z-jajek-domowy",
+    "n": "Majonez z jajek (domowy)",
+    "e": "mayonnaise",
+    "r": "generic"
+  },
+  {
+    "s": "napoj-mleczny-kakaowy-mleczna-kanapka",
+    "n": "Napój mleczny kakaowy (mleczna kanapka)",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "maslanka-czekoladowa",
+    "n": "Maślanka czekoladowa",
+    "e": "Maślanka czekoladowa",
+    "r": "polish"
+  },
+  {
+    "s": "ser-podlaski",
+    "n": "Ser Podlaski",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-mazdamer",
+    "n": "Ser mazdamer",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-tylzycki-2",
+    "n": "Ser tyłżycki",
+    "e": null,
+    "r": "missing"
+  },
+  {
+    "s": "ser-szwajcarski",
+    "n": "Ser szwajcarski",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-cheddar",
+    "n": "Ser cheddar",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-grana-padano",
+    "n": "Ser Grana Padano",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-balkanski",
+    "n": "Ser bałkański",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-kozi-kostka",
+    "n": "Ser kozi (kostka)",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-owczy-kostka",
+    "n": "Ser owczy (kostka)",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-oscypek",
+    "n": "Ser oscypek",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-korycinski",
+    "n": "Ser Koryciński",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-bryndza",
+    "n": "Ser Bryndza",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-bundz",
+    "n": "Ser bundz",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-golka",
+    "n": "Ser gołka",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-z-niebieska-plesnia-gorgonzola",
+    "n": "Ser z niebieską pleśnią (gorgonzola)",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-roquefort",
+    "n": "Ser Roquefort",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-ementaler",
+    "n": "Ser ementaler",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "salata-lodowa",
+    "n": "Sałata lodowa",
+    "e": "lettuce",
+    "r": "generic"
+  },
+  {
+    "s": "rukola",
+    "n": "Rukola",
+    "e": "arugula",
+    "r": "generic"
+  },
+  {
+    "s": "szpinak-baby",
+    "n": "Szpinak baby",
+    "e": "spinach",
+    "r": "generic"
+  },
+  {
+    "s": "jarmuz",
+    "n": "Jarmuż",
+    "e": "kale",
+    "r": "generic"
+  },
+  {
+    "s": "miks-salat-z-roszponka",
+    "n": "Miks sałat z roszponką",
+    "e": "salad",
+    "r": "generic"
+  },
+  {
+    "s": "roszponka",
+    "n": "Roszponka",
+    "e": "Roszponka",
+    "r": "generic"
+  },
+  {
+    "s": "endywia",
+    "n": "Endywia",
+    "e": "Endywia",
+    "r": "generic"
+  },
+  {
+    "s": "ogorek-malosolny",
+    "n": "Ogórek małosolny",
+    "e": "cucumber",
+    "r": "generic"
+  },
+  {
+    "s": "korniszon",
+    "n": "Korniszon",
+    "e": "Korniszon",
+    "r": "generic"
+  },
+  {
+    "s": "cebulka-perlowa-marynowana",
+    "n": "Cebulka perłowa marynowana",
+    "e": "Cebulka perłowa marynowana",
+    "r": "polish"
+  },
+  {
+    "s": "kalarepa",
+    "n": "Kalarepa",
+    "e": "Kalarepa",
+    "r": "generic"
+  },
+  {
+    "s": "fenkul-koper-wloski",
+    "n": "Fenkuł (koper włoski)",
+    "e": "Fenkuł",
+    "r": "polish"
+  },
+  {
+    "s": "rzepa",
+    "n": "Rzepa",
+    "e": "Rzepa",
+    "r": "generic"
+  },
+  {
+    "s": "brukiew",
+    "n": "Brukiew",
+    "e": "Brukiew",
+    "r": "generic"
+  },
+  {
+    "s": "patison",
+    "n": "Patison",
+    "e": "Patison",
+    "r": "generic"
+  },
+  {
+    "s": "kabaczek",
+    "n": "Kabaczek",
+    "e": "Kabaczek",
+    "r": "generic"
+  },
+  {
+    "s": "edamame-straczki",
+    "n": "Edamame (strączki)",
+    "e": "Edamame",
+    "r": "generic"
+  },
+  {
+    "s": "kurki",
+    "n": "Kurki",
+    "e": "Kurki",
+    "r": "generic"
+  },
+  {
+    "s": "borowik-prawdziwek",
+    "n": "Borowik (prawdziwek)",
+    "e": "Borowik",
+    "r": "generic"
+  },
+  {
+    "s": "podgrzybek",
+    "n": "Podgrzybek",
+    "e": "Podgrzybek",
+    "r": "generic"
+  },
+  {
+    "s": "maslak",
+    "n": "Maślak",
+    "e": "Maślak",
+    "r": "polish"
+  },
+  {
+    "s": "kania-sowa",
+    "n": "Kania (sowa)",
+    "e": "Kania",
+    "r": "generic"
+  },
+  {
+    "s": "szpinak-mrozony-kulka",
+    "n": "Szpinak mrożony (kulka)",
+    "e": "spinach",
+    "r": "generic"
+  },
+  {
+    "s": "brokuly-mrozone",
+    "n": "Brokuły mrożone",
+    "e": "broccoli",
+    "r": "generic"
+  },
+  {
+    "s": "kalafior-mrozony",
+    "n": "Kalafior mrożony",
+    "e": "cauliflower",
+    "r": "generic"
+  },
+  {
+    "s": "groszek-mrozony",
+    "n": "Groszek mrożony",
+    "e": "peas",
+    "r": "generic"
+  },
+  {
+    "s": "warzywa-mrozone-mix-7-warzyw",
+    "n": "Warzywa mrożone mix (7 warzyw)",
+    "e": "mixed",
+    "r": "generic"
+  },
+  {
+    "s": "salatka-jarzynowa",
+    "n": "Sałatka jarzynowa",
+    "e": "salad",
+    "r": "generic"
+  },
+  {
+    "s": "surowka-z-bialej-kapusty",
+    "n": "Surówka z białej kapusty",
+    "e": "Surówka z białej kapusty",
+    "r": "polish"
+  },
+  {
+    "s": "surowka-z-marchewki",
+    "n": "Surówka z marchewki",
+    "e": "Surówka z marchewki",
+    "r": "polish"
+  },
+  {
+    "s": "surowka-z-burakow",
+    "n": "Surówka z buraków",
+    "e": "Surówka z buraków",
+    "r": "polish"
+  },
+  {
+    "s": "kiszone-pomidory",
+    "n": "Kiszone pomidory",
+    "e": "tomato",
+    "r": "generic"
+  },
+  {
+    "s": "czosnek-niedzwiedzi-liscie",
+    "n": "Czosnek niedźwiedzi (liście)",
+    "e": "garlic",
+    "r": "generic"
+  },
+  {
+    "s": "szczaw",
+    "n": "Szczaw",
+    "e": "Szczaw",
+    "r": "generic"
+  },
+  {
+    "s": "botwinka",
+    "n": "Botwinka",
+    "e": "Botwinka",
+    "r": "generic"
+  },
+  {
+    "s": "nac-pietruszki",
+    "n": "Nać pietruszki",
+    "e": "Nać pietruszki",
+    "r": "polish"
+  },
+  {
+    "s": "koperek",
+    "n": "Koperek",
+    "e": "Koperek",
+    "r": "generic"
+  },
+  {
+    "s": "szczypiorek",
+    "n": "Szczypiorek",
+    "e": "Szczypiorek",
+    "r": "generic"
+  },
+  {
+    "s": "porek-por",
+    "n": "Porek (por)",
+    "e": "leek",
+    "r": "generic"
+  },
+  {
+    "s": "maliny",
+    "n": "Maliny",
+    "e": "raspberry",
+    "r": "generic"
+  },
+  {
+    "s": "jezyny",
+    "n": "Jeżyny",
+    "e": "Jeżyny",
+    "r": "polish"
+  },
+  {
+    "s": "poziomki",
+    "n": "Poziomki",
+    "e": "Poziomki",
+    "r": "generic"
+  },
+  {
+    "s": "porzeczka-czerwona",
+    "n": "Porzeczka czerwona",
+    "e": "red",
+    "r": "generic"
+  },
+  {
+    "s": "porzeczka-biala",
+    "n": "Porzeczka biała",
+    "e": "white",
+    "r": "generic"
+  },
+  {
+    "s": "borowka-bagienna",
+    "n": "Borówka bagienna",
+    "e": "Borówka bagienna",
+    "r": "polish"
+  },
+  {
+    "s": "kiwi",
+    "n": "Kiwi",
+    "e": "kiwi",
+    "r": "generic"
+  },
+  {
+    "s": "mango",
+    "n": "Mango",
+    "e": "mango",
+    "r": "generic"
+  },
+  {
+    "s": "papaja",
+    "n": "Papaja",
+    "e": "papaya",
+    "r": "generic"
+  },
+  {
+    "s": "granat",
+    "n": "Granat",
+    "e": "pomegranate",
+    "r": "generic"
+  },
+  {
+    "s": "figa-swieza",
+    "n": "Figa świeża",
+    "e": "Figa świeża",
+    "r": "polish"
+  },
+  {
+    "s": "liczi",
+    "n": "Liczi",
+    "e": "Liczi",
+    "r": "generic"
+  },
+  {
+    "s": "pitaja-smoczy-owoc",
+    "n": "Pitaja (smoczy owoc)",
+    "e": "Pitaja",
+    "r": "generic"
+  },
+  {
+    "s": "gujawa",
+    "n": "Gujawa",
+    "e": "Gujawa",
+    "r": "generic"
+  },
+  {
+    "s": "karambola",
+    "n": "Karambola",
+    "e": "Karambola",
+    "r": "generic"
+  },
+  {
+    "s": "mleczko-kokosowe",
+    "n": "Mleczko kokosowe",
+    "e": "marshmallow",
+    "r": "generic"
+  },
+  {
+    "s": "rodzynki",
+    "n": "Rodzynki",
+    "e": "raisin",
+    "r": "generic"
+  },
+  {
+    "s": "maliny-mrozone",
+    "n": "Maliny mrożone",
+    "e": "raspberry",
+    "r": "generic"
+  },
+  {
+    "s": "jagody-mrozone",
+    "n": "Jagody mrożone",
+    "e": "berry",
+    "r": "generic"
+  },
+  {
+    "s": "gruszka",
+    "n": "Gruszka",
+    "e": "pear",
+    "r": "generic"
+  },
+  {
+    "s": "jablko",
+    "n": "Jabłko",
+    "e": "apple",
+    "r": "generic"
+  },
+  {
+    "s": "sliwka-wegierka",
+    "n": "Śliwka węgierka",
+    "e": "Śliwka węgierka",
+    "r": "polish"
+  },
+  {
+    "s": "nektarynka",
+    "n": "Nektarynka",
+    "e": "nectarine",
+    "r": "generic"
+  },
+  {
+    "s": "mandarynka",
+    "n": "Mandarynka",
+    "e": "Mandarynka",
+    "r": "generic"
+  },
+  {
+    "s": "pomarancza",
+    "n": "Pomarańcza",
+    "e": "orange",
+    "r": "generic"
+  },
+  {
+    "s": "grejpfrut-czerwony",
+    "n": "Grejpfrut czerwony",
+    "e": "grapefruit",
+    "r": "generic"
+  },
+  {
+    "s": "limonka",
+    "n": "Limonka",
+    "e": "Limonka",
+    "r": "generic"
+  },
+  {
+    "s": "melon-kantalupa",
+    "n": "Melon kantalupa",
+    "e": "melon",
+    "r": "generic"
+  },
+  {
+    "s": "oliwki-zielone",
+    "n": "Oliwki zielone",
+    "e": "green",
+    "r": "generic"
+  },
+  {
+    "s": "oliwki-czarne",
+    "n": "Oliwki czarne",
+    "e": "black",
+    "r": "generic"
+  },
+  {
+    "s": "sok-z-granata-naturalny",
+    "n": "Sok z granata (naturalny)",
+    "e": "plain",
+    "r": "generic"
+  },
+  {
+    "s": "mus-jablkowy-nieslodzony",
+    "n": "Mus jabłkowy niesłodzony",
+    "e": "Mus jabłkowy niesłodzony",
+    "r": "polish"
+  },
+  {
+    "s": "kompot-z-jablek",
+    "n": "Kompot z jabłek",
+    "e": "Kompot z jabłek",
+    "r": "polish"
+  },
+  {
+    "s": "maka-zytnia",
+    "n": "Mąka żytnia",
+    "e": "flour",
+    "r": "generic"
+  },
+  {
+    "s": "maka-zytnia-razowa",
+    "n": "Mąka żytnia razowa",
+    "e": "flour",
+    "r": "generic"
+  },
+  {
+    "s": "maka-kukurydziana",
+    "n": "Mąka kukurydziana",
+    "e": "flour",
+    "r": "generic"
+  },
+  {
+    "s": "maka-orkiszowa",
+    "n": "Mąka orkiszowa",
+    "e": "flour",
+    "r": "generic"
+  },
+  {
+    "s": "maka-owsiana",
+    "n": "Mąka owsiana",
+    "e": "flour",
+    "r": "generic"
+  },
+  {
+    "s": "maka-kokosowa",
+    "n": "Mąka kokosowa",
+    "e": "flour",
+    "r": "generic"
+  },
+  {
+    "s": "maka-migdalowa",
+    "n": "Mąka migdałowa",
+    "e": "flour",
+    "r": "generic"
+  },
+  {
+    "s": "maka-ziemniaczana",
+    "n": "Mąka ziemniaczana",
+    "e": "flour",
+    "r": "generic"
+  },
+  {
+    "s": "kasza-gryczana-prazona",
+    "n": "Kasza gryczana prażona",
+    "e": "buckwheat",
+    "r": "generic"
+  },
+  {
+    "s": "kasza-jaglana",
+    "n": "Kasza jaglana",
+    "e": "millet",
+    "r": "generic"
+  },
+  {
+    "s": "kasza-jeczmienna-perlowa",
+    "n": "Kasza jęczmienna perłowa",
+    "e": "barley",
+    "r": "generic"
+  },
+  {
+    "s": "kasza-jeczmienna-peczak",
+    "n": "Kasza jęczmienna pęczak",
+    "e": "barley",
+    "r": "generic"
+  },
+  {
+    "s": "kasza-manna",
+    "n": "Kasza manna",
+    "e": "semolina",
+    "r": "generic"
+  },
+  {
+    "s": "komosa-ryzowa-quinoa",
+    "n": "Komosa ryżowa (Quinoa)",
+    "e": "quinoa",
+    "r": "generic"
+  },
+  {
+    "s": "ryz-jasminowy",
+    "n": "Ryż jaśminowy",
+    "e": "rice",
+    "r": "generic"
+  },
+  {
+    "s": "ryz-do-sushi",
+    "n": "Ryż do sushi",
+    "e": "rice",
+    "r": "generic"
+  },
+  {
+    "s": "ryz-parboiled",
+    "n": "Ryż parboiled",
+    "e": "rice",
+    "r": "generic"
+  },
+  {
+    "s": "otreby-owsiane",
+    "n": "Otręby owsiane",
+    "e": "oat",
+    "r": "generic"
+  },
+  {
+    "s": "otreby-pszenne",
+    "n": "Otręby pszenne",
+    "e": "Otręby pszenne",
+    "r": "polish"
+  },
+  {
+    "s": "platki-jeczmienne",
+    "n": "Płatki jęczmienne",
+    "e": "flakes",
+    "r": "generic"
+  },
+  {
+    "s": "platki-zytnie",
+    "n": "Płatki żytnie",
+    "e": "flakes",
+    "r": "generic"
+  },
+  {
+    "s": "platki-orkiszowe",
+    "n": "Płatki orkiszowe",
+    "e": "flakes",
+    "r": "generic"
+  },
+  {
+    "s": "platki-jaglane",
+    "n": "Płatki jaglane",
+    "e": "flakes",
+    "r": "generic"
+  },
+  {
+    "s": "siemie-lniane",
+    "n": "Siemię lniane",
+    "e": "Siemię lniane",
+    "r": "polish"
+  },
+  {
+    "s": "nasiona-chia",
+    "n": "Nasiona chia",
+    "e": "chia",
+    "r": "generic"
+  },
+  {
+    "s": "nasiona-slonecznika",
+    "n": "Nasiona słonecznika",
+    "e": "sunflower",
+    "r": "generic"
+  },
+  {
+    "s": "sezam-nasiona",
+    "n": "Sezam (nasiona)",
+    "e": "Sezam",
+    "r": "generic"
+  },
+  {
+    "s": "mak-nasiona",
+    "n": "Mak (nasiona)",
+    "e": "Mak",
+    "r": "generic"
+  },
+  {
+    "s": "czarnuszka-nasiona",
+    "n": "Czarnuszka (nasiona)",
+    "e": "Czarnuszka",
+    "r": "generic"
+  },
+  {
+    "s": "amarantus-nasiona",
+    "n": "Amarantus (nasiona)",
+    "e": "amaranth",
+    "r": "generic"
+  },
+  {
+    "s": "tapioka-perly",
+    "n": "Tapioka (perły)",
+    "e": "Tapioka",
+    "r": "generic"
+  },
+  {
+    "s": "kuskus",
+    "n": "Kuskus",
+    "e": "couscous",
+    "r": "generic"
+  },
+  {
+    "s": "makaron-ryzowy",
+    "n": "Makaron ryżowy",
+    "e": "pasta",
+    "r": "generic"
+  },
+  {
+    "s": "makaron-gryczany-soba",
+    "n": "Makaron gryczany (soba)",
+    "e": "pasta",
+    "r": "generic"
+  },
+  {
+    "s": "makaron-kukurydziany",
+    "n": "Makaron kukurydziany",
+    "e": "pasta",
+    "r": "generic"
+  },
+  {
+    "s": "platki-kukurydziane-corn-flakes",
+    "n": "Płatki kukurydziane (corn flakes)",
+    "e": "flakes",
+    "r": "generic"
+  },
+  {
+    "s": "platki-czekoladowe-chocapic",
+    "n": "Płatki czekoladowe (Chocapic)",
+    "e": "flakes",
+    "r": "generic"
+  },
+  {
+    "s": "platki-miodowe",
+    "n": "Płatki miodowe",
+    "e": "flakes",
+    "r": "generic"
+  },
+  {
+    "s": "musli-owocowe",
+    "n": "Musli owocowe",
+    "e": "muesli",
+    "r": "generic"
+  },
+  {
+    "s": "musli-czekoladowe",
+    "n": "Musli czekoladowe",
+    "e": "muesli",
+    "r": "generic"
+  },
+  {
+    "s": "musli-crunchy",
+    "n": "Musli crunchy",
+    "e": "muesli",
+    "r": "generic"
+  },
+  {
+    "s": "granola-naturalna",
+    "n": "Granola naturalna",
+    "e": "granola",
+    "r": "generic"
+  },
+  {
+    "s": "granola-czekoladowa",
+    "n": "Granola czekoladowa",
+    "e": "granola",
+    "r": "generic"
+  },
+  {
+    "s": "platki-z-otrebami-fitness",
+    "n": "Płatki z otrębami (fitness)",
+    "e": "flakes",
+    "r": "generic"
+  },
+  {
+    "s": "cheerios",
+    "n": "Cheerios",
+    "e": "Cheerios",
+    "r": "generic"
+  },
+  {
+    "s": "platki-cynamonowe",
+    "n": "Płatki cynamonowe",
+    "e": "flakes",
+    "r": "generic"
+  },
+  {
+    "s": "owsianka-blyskawiczna-saszetka",
+    "n": "Owsianka błyskawiczna saszetka",
+    "e": "Owsianka błyskawiczna saszetka",
+    "r": "polish"
+  },
+  {
+    "s": "owsianka-instant-owocowa",
+    "n": "Owsianka instant owocowa",
+    "e": "instant",
+    "r": "generic"
+  },
+  {
+    "s": "platki-orkiszowe-z-owocami",
+    "n": "Płatki orkiszowe z owocami",
+    "e": "flakes",
+    "r": "generic"
+  },
+  {
+    "s": "platki-gryczane-z-bakaliami",
+    "n": "Płatki gryczane z bakaliami",
+    "e": "flakes",
+    "r": "generic"
+  },
+  {
+    "s": "platki-proteinowe-wysokobialkowe",
+    "n": "Płatki proteinowe (wysokobiałkowe)",
+    "e": "flakes",
+    "r": "generic"
+  },
+  {
+    "s": "rosol-z-kury",
+    "n": "Rosół z kury",
+    "e": "broth",
+    "r": "generic"
+  },
+  {
+    "s": "grochowka",
+    "n": "Grochówka",
+    "e": "Grochówka",
+    "r": "polish"
+  },
+  {
+    "s": "zupa-kapusniak",
+    "n": "Zupa kapuśniak",
+    "e": "soup",
+    "r": "generic"
+  },
+  {
+    "s": "zupa-koperkowa",
+    "n": "Zupa koperkowa",
+    "e": "soup",
+    "r": "generic"
+  },
+  {
+    "s": "zupa-minestrone",
+    "n": "Zupa minestrone",
+    "e": "soup",
+    "r": "generic"
+  },
+  {
+    "s": "barszcz-ukrainski",
+    "n": "Barszcz ukraiński",
+    "e": "Barszcz ukraiński",
+    "r": "polish"
+  },
+  {
+    "s": "chlodnik-litewski",
+    "n": "Chłodnik litewski",
+    "e": "Chłodnik litewski",
+    "r": "polish"
+  },
+  {
+    "s": "zupa-rybna",
+    "n": "Zupa rybna",
+    "e": "soup",
+    "r": "generic"
+  },
+  {
+    "s": "zupa-ogonowa",
+    "n": "Zupa ogonowa",
+    "e": "soup",
+    "r": "generic"
+  },
+  {
+    "s": "zupa-neapolitanska",
+    "n": "Zupa neapolitańska",
+    "e": "soup",
+    "r": "generic"
+  },
+  {
+    "s": "zupa-zurek-z-jajkiem",
+    "n": "Zupa żurek z jajkiem",
+    "e": "soup",
+    "r": "generic"
+  },
+  {
+    "s": "zupa-grzybowa-z-lazankami",
+    "n": "Zupa grzybowa z łazankami",
+    "e": "soup",
+    "r": "generic"
+  },
+  {
+    "s": "zupa-cebulowa-zapiekana",
+    "n": "Zupa cebulowa zapiekana",
+    "e": "soup",
+    "r": "generic"
+  },
+  {
+    "s": "zupa-ramen",
+    "n": "Zupa ramen",
+    "e": "soup",
+    "r": "generic"
+  },
+  {
+    "s": "zupa-miso",
+    "n": "Zupa miso",
+    "e": "soup",
+    "r": "generic"
+  },
+  {
+    "s": "zupa-kwasna-tajska",
+    "n": "Zupa kwaśna (tajska)",
+    "e": "soup",
+    "r": "generic"
+  },
+  {
+    "s": "chlodnik-z-ogorkow",
+    "n": "Chłodnik z ogórków",
+    "e": "Chłodnik z ogórków",
+    "r": "polish"
+  },
+  {
+    "s": "maslo-migdalowe",
+    "n": "Masło migdałowe",
+    "e": "butter",
+    "r": "generic"
+  },
+  {
+    "s": "maslo-z-nerkowcow",
+    "n": "Masło z nerkowców",
+    "e": "butter",
+    "r": "generic"
+  },
+  {
+    "s": "orzeszki-ziemne-solone",
+    "n": "Orzeszki ziemne solone",
+    "e": "peanut",
+    "r": "generic"
+  },
+  {
+    "s": "orzechy-w-czekoladzie",
+    "n": "Orzechy w czekoladzie",
+    "e": "nuts",
+    "r": "generic"
+  },
+  {
+    "s": "krem-orzechowo-kakaowy",
+    "n": "Krem orzechowo-kakaowy",
+    "e": "spread",
+    "r": "generic"
+  },
+  {
+    "s": "krem-z-orzechow-laskowych",
+    "n": "Krem z orzechów laskowych",
+    "e": "spread",
+    "r": "generic"
+  },
+  {
+    "s": "oliwa-z-oliwek-extra-virgin",
+    "n": "Oliwa z oliwek extra virgin",
+    "e": "olive",
+    "r": "generic"
+  },
+  {
+    "s": "maslo-ekstra",
+    "n": "Masło ekstra",
+    "e": "butter",
+    "r": "generic"
+  },
+  {
+    "s": "margaryna-do-smarowania",
+    "n": "Margaryna do smarowania",
+    "e": "margarine",
+    "r": "generic"
+  },
+  {
+    "s": "margaryna-do-pieczenia",
+    "n": "Margaryna do pieczenia",
+    "e": "margarine",
+    "r": "generic"
+  },
+  {
+    "s": "tluszcz-roslinny-planta",
+    "n": "Tłuszcz roślinny (planta)",
+    "e": "fat",
+    "r": "generic"
+  },
+  {
+    "s": "ketchup",
+    "n": "Ketchup",
+    "e": "ketchup",
+    "r": "generic"
+  },
+  {
+    "s": "ketchup-pikantny",
+    "n": "Ketchup pikantny",
+    "e": "ketchup",
+    "r": "generic"
+  },
+  {
+    "s": "majonez",
+    "n": "Majonez",
+    "e": "mayonnaise",
+    "r": "generic"
+  },
+  {
+    "s": "majonez-light",
+    "n": "Majonez light",
+    "e": "mayonnaise",
+    "r": "generic"
+  },
+  {
+    "s": "majonez-weganski",
+    "n": "Majonez wegański",
+    "e": "mayonnaise",
+    "r": "generic"
+  },
+  {
+    "s": "musztarda-sarepska",
+    "n": "Musztarda sarepska",
+    "e": "mustard",
+    "r": "generic"
+  },
+  {
+    "s": "musztarda-delikatesowa",
+    "n": "Musztarda delikatesowa",
+    "e": "mustard",
+    "r": "generic"
+  },
+  {
+    "s": "musztarda-dijon",
+    "n": "Musztarda dijon",
+    "e": "mustard",
+    "r": "generic"
+  },
+  {
+    "s": "musztarda-miodowa",
+    "n": "Musztarda miodowa",
+    "e": "mustard",
+    "r": "generic"
+  },
+  {
+    "s": "sos-teriyaki",
+    "n": "Sos teriyaki",
+    "e": "teriyaki",
+    "r": "generic"
+  },
+  {
+    "s": "sos-worcestershire",
+    "n": "Sos worcestershire",
+    "e": "worcestershire",
+    "r": "generic"
+  },
+  {
+    "s": "pesto-bazyliowe",
+    "n": "Pesto bazyliowe",
+    "e": "pesto",
+    "r": "generic"
+  },
+  {
+    "s": "hummus",
+    "n": "Hummus",
+    "e": "hummus",
+    "r": "generic"
+  },
+  {
+    "s": "salsa-pomidorowa",
+    "n": "Salsa pomidorowa",
+    "e": "tomato",
+    "r": "generic"
+  },
+  {
+    "s": "sos-tzatziki",
+    "n": "Sos tzatziki",
+    "e": "tzatziki",
+    "r": "generic"
+  },
+  {
+    "s": "winegret",
+    "n": "Winegret",
+    "e": "vinaigrette",
+    "r": "generic"
+  },
+  {
+    "s": "sos-smietanowy",
+    "n": "Sos śmietanowy",
+    "e": "Sos śmietanowy",
+    "r": "polish"
+  },
+  {
+    "s": "sos-bolonski",
+    "n": "Sos boloński",
+    "e": "Sos boloński",
+    "r": "polish"
+  },
+  {
+    "s": "koncentrat-pomidorowy",
+    "n": "Koncentrat pomidorowy",
+    "e": "concentrate",
+    "r": "generic"
+  },
+  {
+    "s": "sos-pesto-z-rukoli",
+    "n": "Sos pesto z rukoli",
+    "e": "pesto",
+    "r": "generic"
+  },
+  {
+    "s": "sos-holenderski",
+    "n": "Sos holenderski",
+    "e": "hollandaise",
+    "r": "generic"
+  },
+  {
+    "s": "sos-winegret-musztardowy",
+    "n": "Sos winegret musztardowy",
+    "e": "vinaigrette",
+    "r": "generic"
+  },
+  {
+    "s": "sos-jablkowy-mus-z-cynamonem",
+    "n": "Sos jabłkowy (mus z cynamonem)",
+    "e": "Sos jabłkowy",
+    "r": "polish"
+  },
+  {
+    "s": "curry-przyprawa-w-proszku",
+    "n": "Curry (przyprawa w proszku)",
+    "e": "Curry",
+    "r": "generic"
+  },
+  {
+    "s": "majeranek-suszony",
+    "n": "Majeranek suszony",
+    "e": "dried",
+    "r": "generic"
+  },
+  {
+    "s": "rozmaryn-suszony",
+    "n": "Rozmaryn suszony",
+    "e": "dried",
+    "r": "generic"
+  },
+  {
+    "s": "kminek-nasiona",
+    "n": "Kminek (nasiona)",
+    "e": "Kminek",
+    "r": "generic"
+  },
+  {
+    "s": "galka-muszkatolowa",
+    "n": "Gałka muszkatołowa",
+    "e": "Gałka muszkatołowa",
+    "r": "polish"
+  },
+  {
+    "s": "lisc-laurowy",
+    "n": "Liść laurowy",
+    "e": "Liść laurowy",
+    "r": "polish"
+  },
+  {
+    "s": "pieprz-czarny-mielony",
+    "n": "Pieprz czarny mielony",
+    "e": "ground",
+    "r": "generic"
+  },
+  {
+    "s": "sol-morska",
+    "n": "Sól morska",
+    "e": "Sól morska",
+    "r": "polish"
+  },
+  {
+    "s": "sol-himalajska",
+    "n": "Sól himalajska",
+    "e": "Sól himalajska",
+    "r": "polish"
+  },
+  {
+    "s": "czosnek-granulowany",
+    "n": "Czosnek granulowany",
+    "e": "garlic",
+    "r": "generic"
+  },
+  {
+    "s": "przyprawa-do-kurczaka",
+    "n": "Przyprawa do kurczaka",
+    "e": "chicken",
+    "r": "generic"
+  },
+  {
+    "s": "przyprawa-gyros-kebab",
+    "n": "Przyprawa gyros-kebab",
+    "e": "kebab",
+    "r": "generic"
+  },
+  {
+    "s": "cukier-waniliowy",
+    "n": "Cukier waniliowy",
+    "e": "sugar",
+    "r": "generic"
+  },
+  {
+    "s": "wanilia-laska",
+    "n": "Wanilia (laska)",
+    "e": "Wanilia",
+    "r": "generic"
+  },
+  {
+    "s": "cynamon-laska",
+    "n": "Cynamon (laska)",
+    "e": "Cynamon",
+    "r": "generic"
+  },
+  {
+    "s": "gozdziki",
+    "n": "Goździki",
+    "e": "Goździki",
+    "r": "polish"
+  },
+  {
+    "s": "anyz-gwiazdkowy",
+    "n": "Anyż gwiazdkowy",
+    "e": "Anyż gwiazdkowy",
+    "r": "polish"
+  },
+  {
+    "s": "ziola-prowansalskie-mix",
+    "n": "Zioła prowansalskie (mix)",
+    "e": "mixed",
+    "r": "generic"
+  },
+  {
+    "s": "sok-pomaranczowy-100",
+    "n": "Sok pomarańczowy 100%",
+    "e": "Sok pomarańczowy 100%",
+    "r": "polish"
+  },
+  {
+    "s": "sok-jablkowy-100",
+    "n": "Sok jabłkowy 100%",
+    "e": "Sok jabłkowy 100%",
+    "r": "polish"
+  },
+  {
+    "s": "sok-z-czarnej-porzeczki",
+    "n": "Sok z czarnej porzeczki",
+    "e": "currant",
+    "r": "generic"
+  },
+  {
+    "s": "napoj-musujacy-pomaranczowy-fanta",
+    "n": "Napój musujący pomarańczowy (Fanta)",
+    "e": "Napój musujący pomarańczowy",
+    "r": "polish"
+  },
+  {
+    "s": "napoj-cytrynowy-sprite",
+    "n": "Napój cytrynowy (Sprite)",
+    "e": "Napój cytrynowy",
+    "r": "polish"
+  },
+  {
+    "s": "napoj-energetyczny",
+    "n": "Napój energetyczny",
+    "e": "Napój energetyczny",
+    "r": "polish"
+  },
+  {
+    "s": "napoj-energetyczny-zero",
+    "n": "Napój energetyczny zero",
+    "e": "Napój energetyczny zero",
+    "r": "polish"
+  },
+  {
+    "s": "napoj-izotoniczny",
+    "n": "Napój izotoniczny",
+    "e": "Napój izotoniczny",
+    "r": "polish"
+  },
+  {
+    "s": "mleko-migdalowe",
+    "n": "Mleko migdałowe",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-kokosowe-napoj",
+    "n": "Mleko kokosowe (napój)",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-ryzowe",
+    "n": "Mleko ryżowe",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "kakao-napoj",
+    "n": "Kakao (napój)",
+    "e": "Kakao",
+    "r": "generic"
+  },
+  {
+    "s": "cappuccino",
+    "n": "Cappuccino",
+    "e": "Cappuccino",
+    "r": "generic"
+  },
+  {
+    "s": "latte",
+    "n": "Latte",
+    "e": "Latte",
+    "r": "generic"
+  },
+  {
+    "s": "herbata-z-cytryna-i-miodem",
+    "n": "Herbata z cytryną i miodem",
+    "e": "Herbata z cytryną i miodem",
+    "r": "polish"
+  },
+  {
+    "s": "napoj-owocowy-nektar-wisniowy",
+    "n": "Napój owocowy (nektar) wiśniowy",
+    "e": "fruit",
+    "r": "generic"
+  },
+  {
+    "s": "piwo-jasne-pelne",
+    "n": "Piwo jasne pełne",
+    "e": "Piwo jasne pełne",
+    "r": "polish"
+  },
+  {
+    "s": "piwo-rzemieslnicze-ipa",
+    "n": "Piwo rzemieślnicze IPA",
+    "e": "Piwo rzemieślnicze IPA",
+    "r": "polish"
+  },
+  {
+    "s": "wino-czerwone-wytrawne",
+    "n": "Wino czerwone wytrawne",
+    "e": "red",
+    "r": "generic"
+  },
+  {
+    "s": "wino-biale-wytrawne",
+    "n": "Wino białe wytrawne",
+    "e": "Wino białe wytrawne",
+    "r": "polish"
+  },
+  {
+    "s": "wino-rozowe",
+    "n": "Wino różowe",
+    "e": "Wino różowe",
+    "r": "polish"
+  },
+  {
+    "s": "szampan",
+    "n": "Szampan",
+    "e": "Szampan",
+    "r": "generic"
+  },
+  {
+    "s": "prosecco",
+    "n": "Prosecco",
+    "e": "Prosecco",
+    "r": "generic"
+  },
+  {
+    "s": "cydr-jablkowy",
+    "n": "Cydr jabłkowy",
+    "e": "Cydr jabłkowy",
+    "r": "polish"
+  },
+  {
+    "s": "wodka-czysta",
+    "n": "Wódka czysta",
+    "e": "Wódka czysta",
+    "r": "polish"
+  },
+  {
+    "s": "wodka-smakowa-cytrynowa",
+    "n": "Wódka smakowa (cytrynowa)",
+    "e": "Wódka smakowa",
+    "r": "polish"
+  },
+  {
+    "s": "whisky",
+    "n": "Whisky",
+    "e": "Whisky",
+    "r": "generic"
+  },
+  {
+    "s": "rum",
+    "n": "Rum",
+    "e": "Rum",
+    "r": "generic"
+  },
+  {
+    "s": "gin",
+    "n": "Gin",
+    "e": "Gin",
+    "r": "generic"
+  },
+  {
+    "s": "tequila",
+    "n": "Tequila",
+    "e": "Tequila",
+    "r": "generic"
+  },
+  {
+    "s": "brandy",
+    "n": "Brandy",
+    "e": "Brandy",
+    "r": "generic"
+  },
+  {
+    "s": "likier-owocowy",
+    "n": "Likier owocowy",
+    "e": "fruit",
+    "r": "generic"
+  },
+  {
+    "s": "czekolada-z-orzechami",
+    "n": "Czekolada z orzechami",
+    "e": "chocolate",
+    "r": "generic"
+  },
+  {
+    "s": "czekolada-nadziewana",
+    "n": "Czekolada nadziewana",
+    "e": "chocolate",
+    "r": "generic"
+  },
+  {
+    "s": "wafel-w-czekoladzie-prince-polo",
+    "n": "Wafel w czekoladzie (Prince Polo)",
+    "e": "wafer",
+    "r": "generic"
+  },
+  {
+    "s": "goralki",
+    "n": "Góralki",
+    "e": "Góralki",
+    "r": "polish"
+  },
+  {
+    "s": "knoppers",
+    "n": "Knoppers",
+    "e": "Knoppers",
+    "r": "generic"
+  },
+  {
+    "s": "sernik-kawalek",
+    "n": "Sernik (kawałek)",
+    "e": "cheesecake",
+    "r": "generic"
+  },
+  {
+    "s": "sernik-z-brzoskwiniami",
+    "n": "Sernik z brzoskwiniami",
+    "e": "cheesecake",
+    "r": "generic"
+  },
+  {
+    "s": "paczek-z-lukrem",
+    "n": "Pączek z lukrem",
+    "e": "donut",
+    "r": "generic"
+  },
+  {
+    "s": "paczek-z-marmolada",
+    "n": "Pączek z marmoladą",
+    "e": "donut",
+    "r": "generic"
+  },
+  {
+    "s": "drozdzowka-z-serem",
+    "n": "Drożdżówka z serem",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "drozdzowka-z-makiem",
+    "n": "Drożdżówka z makiem",
+    "e": "Drożdżówka z makiem",
+    "r": "polish"
+  },
+  {
+    "s": "croissant-maslany",
+    "n": "Croissant maślany",
+    "e": "croissant",
+    "r": "generic"
+  },
+  {
+    "s": "bezy",
+    "n": "Bezy",
+    "e": "Bezy",
+    "r": "generic"
+  },
+  {
+    "s": "makaroniki",
+    "n": "Makaroniki",
+    "e": "Makaroniki",
+    "r": "generic"
+  },
+  {
+    "s": "krowki",
+    "n": "Krówki",
+    "e": "Krówki",
+    "r": "polish"
+  },
+  {
+    "s": "sezamki",
+    "n": "Sezamki",
+    "e": "Sezamki",
+    "r": "generic"
+  },
+  {
+    "s": "pierniki-staropolskie",
+    "n": "Pierniki (staropolskie)",
+    "e": "Pierniki",
+    "r": "generic"
+  },
+  {
+    "s": "herbatniki",
+    "n": "Herbatniki",
+    "e": "cookies",
+    "r": "generic"
+  },
+  {
+    "s": "jezyki",
+    "n": "Jeżyki",
+    "e": "Jeżyki",
+    "r": "polish"
+  },
+  {
+    "s": "markizy-biszkopt-z-dzemem",
+    "n": "Markizy (biszkopt z dżemem)",
+    "e": "Markizy",
+    "r": "generic"
+  },
+  {
+    "s": "krakersy-slone",
+    "n": "Krakersy słone",
+    "e": "crackers",
+    "r": "generic"
+  },
+  {
+    "s": "precle",
+    "n": "Precle",
+    "e": "Precle",
+    "r": "generic"
+  },
+  {
+    "s": "popcorn-slony",
+    "n": "Popcorn słony",
+    "e": "popcorn",
+    "r": "generic"
+  },
+  {
+    "s": "popcorn-maslany",
+    "n": "Popcorn maślany",
+    "e": "popcorn",
+    "r": "generic"
+  },
+  {
+    "s": "popcorn-karmelowy",
+    "n": "Popcorn karmelowy",
+    "e": "popcorn",
+    "r": "generic"
+  },
+  {
+    "s": "prazynki",
+    "n": "Prażynki",
+    "e": "Prażynki",
+    "r": "polish"
+  },
+  {
+    "s": "paluszki",
+    "n": "Paluszki",
+    "e": "Paluszki",
+    "r": "generic"
+  },
+  {
+    "s": "dzem-wisniowy",
+    "n": "Dżem wiśniowy",
+    "e": "jam",
+    "r": "generic"
+  },
+  {
+    "s": "dzem-morelowy",
+    "n": "Dżem morelowy",
+    "e": "jam",
+    "r": "generic"
+  },
+  {
+    "s": "miod-wielokwiatowy",
+    "n": "Miód wielokwiatowy",
+    "e": "honey",
+    "r": "generic"
+  },
+  {
+    "s": "miod-lipowy",
+    "n": "Miód lipowy",
+    "e": "honey",
+    "r": "generic"
+  },
+  {
+    "s": "miod-spadziowy",
+    "n": "Miód spadziowy",
+    "e": "honey",
+    "r": "generic"
+  },
+  {
+    "s": "miod-gryczany",
+    "n": "Miód gryczany",
+    "e": "honey",
+    "r": "generic"
+  },
+  {
+    "s": "cukier-trzcinowy",
+    "n": "Cukier trzcinowy",
+    "e": "sugar",
+    "r": "generic"
+  },
+  {
+    "s": "kitkat",
+    "n": "KitKat",
+    "e": "KitKat",
+    "r": "generic"
+  },
+  {
+    "s": "michalki",
+    "n": "Michałki",
+    "e": "Michałki",
+    "r": "polish"
+  },
+  {
+    "s": "ambasador",
+    "n": "Ambasador",
+    "e": "Ambasador",
+    "r": "generic"
+  },
+  {
+    "s": "pawelek",
+    "n": "Pawełek",
+    "e": "Pawełek",
+    "r": "polish"
+  },
+  {
+    "s": "ptasie-mleczko",
+    "n": "Ptasie Mleczko",
+    "e": "marshmallow",
+    "r": "generic"
+  },
+  {
+    "s": "drazetki-czekoladowe",
+    "n": "Drażetki czekoladowe",
+    "e": "Drażetki czekoladowe",
+    "r": "polish"
+  },
+  {
+    "s": "landrynki",
+    "n": "Landrynki",
+    "e": "Landrynki",
+    "r": "generic"
+  },
+  {
+    "s": "irysy",
+    "n": "Irysy",
+    "e": "Irysy",
+    "r": "generic"
+  },
+  {
+    "s": "zelki-owocowe",
+    "n": "Żelki owocowe",
+    "e": "gummy",
+    "r": "generic"
+  },
+  {
+    "s": "pierogi-ze-szpinakiem",
+    "n": "Pierogi ze szpinakiem",
+    "e": "pierogi",
+    "r": "generic"
+  },
+  {
+    "s": "kluski-slaskie",
+    "n": "Kluski śląskie",
+    "e": "silesian",
+    "r": "generic"
+  },
+  {
+    "s": "nalesniki-z-serem",
+    "n": "Naleśniki z serem",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "nalesniki-z-dzemem",
+    "n": "Naleśniki z dżemem",
+    "e": "Naleśniki z dżemem",
+    "r": "polish"
+  },
+  {
+    "s": "nalesniki-ze-szpinakiem",
+    "n": "Naleśniki ze szpinakiem",
+    "e": "Naleśniki ze szpinakiem",
+    "r": "polish"
+  },
+  {
+    "s": "krokiety-z-kapusta",
+    "n": "Krokiety z kapustą",
+    "e": "cabbage",
+    "r": "generic"
+  },
+  {
+    "s": "golabki-w-sosie-pomidorowym",
+    "n": "Gołąbki w sosie pomidorowym",
+    "e": "sauce",
+    "r": "generic"
+  },
+  {
+    "s": "pyzy-z-miesem",
+    "n": "Pyzy z mięsem",
+    "e": "meat",
+    "r": "generic"
+  },
+  {
+    "s": "knedle-ze-sliwkami",
+    "n": "Knedle ze śliwkami",
+    "e": "Knedle ze śliwkami",
+    "r": "polish"
+  },
+  {
+    "s": "lasagne",
+    "n": "Lasagne",
+    "e": "lasagne",
+    "r": "generic"
+  },
+  {
+    "s": "leczo",
+    "n": "Leczo",
+    "e": "Leczo",
+    "r": "generic"
+  },
+  {
+    "s": "risotto-z-kurczakiem",
+    "n": "Risotto z kurczakiem",
+    "e": "chicken",
+    "r": "generic"
+  },
+  {
+    "s": "kotlet-drobiowy",
+    "n": "Kotlet drobiowy",
+    "e": "cutlet",
+    "r": "generic"
+  },
+  {
+    "s": "pizza-cienkie-ciasto-ristorante",
+    "n": "Pizza cienkie ciasto (Ristorante)",
+    "e": "pizza",
+    "r": "generic"
+  },
+  {
+    "s": "calzone-z-szynka-mrozone",
+    "n": "Calzone z szynką (mrożone)",
+    "e": "ham",
+    "r": "generic"
+  },
+  {
+    "s": "hamburger",
+    "n": "Hamburger",
+    "e": "hamburger",
+    "r": "generic"
+  },
+  {
+    "s": "chickenburger",
+    "n": "Chickenburger",
+    "e": "Chickenburger",
+    "r": "generic"
+  },
+  {
+    "s": "kebab-w-bulce",
+    "n": "Kebab w bułce",
+    "e": "kebab",
+    "r": "generic"
+  },
+  {
+    "s": "quesadilla-z-kurczakiem",
+    "n": "Quesadilla z kurczakiem",
+    "e": "chicken",
+    "r": "generic"
+  },
+  {
+    "s": "tacos-z-miesem",
+    "n": "Tacos z mięsem",
+    "e": "meat",
+    "r": "generic"
+  },
+  {
+    "s": "nachos-z-serem",
+    "n": "Nachos z serem",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "burger-podwojny-z-serem",
+    "n": "Burger podwójny z serem",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "pepsi",
+    "n": "Pepsi",
+    "e": "Pepsi",
+    "r": "generic"
+  },
+  {
+    "s": "mirinda",
+    "n": "Mirinda",
+    "e": "Mirinda",
+    "r": "generic"
+  },
+  {
+    "s": "7up",
+    "n": "7Up",
+    "e": "7Up",
+    "r": "generic"
+  },
+  {
+    "s": "tymbark-jablko-mieta",
+    "n": "Tymbark jabłko-mięta",
+    "e": "apple",
+    "r": "generic"
+  },
+  {
+    "s": "tymbark-jablko-malina",
+    "n": "Tymbark jabłko-malina",
+    "e": "apple",
+    "r": "generic"
+  },
+  {
+    "s": "kubus-play-truskawka",
+    "n": "Kubuś play (truskawka)",
+    "e": "Kubuś play",
+    "r": "polish"
+  },
+  {
+    "s": "sok-cappy-pomaranczowy",
+    "n": "Sok Cappy pomarańczowy",
+    "e": "Sok Cappy pomarańczowy",
+    "r": "polish"
+  },
+  {
+    "s": "kombucha",
+    "n": "Kombucha",
+    "e": "Kombucha",
+    "r": "generic"
+  },
+  {
+    "s": "kawa-mrozona-iced-latte",
+    "n": "Kawa mrożona (iced latte)",
+    "e": "frozen",
+    "r": "generic"
+  },
+  {
+    "s": "kakao-mrozone",
+    "n": "Kakao mrożone",
+    "e": "Kakao mrożone",
+    "r": "polish"
+  },
+  {
+    "s": "boba-tea-mleczna",
+    "n": "Boba tea (mleczna)",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "napoj-kakaowo-bananowy",
+    "n": "Napój kakaowo-bananowy",
+    "e": "Napój kakaowo-bananowy",
+    "r": "polish"
+  },
+  {
+    "s": "somersby-cidr",
+    "n": "Somersby (cidr)",
+    "e": "Somersby",
+    "r": "generic"
+  },
+  {
+    "s": "desperados",
+    "n": "Desperados",
+    "e": "Desperados",
+    "r": "generic"
+  },
+  {
+    "s": "harnas",
+    "n": "Harnaś",
+    "e": "Harnaś",
+    "r": "polish"
+  },
+  {
+    "s": "kustosz",
+    "n": "Kustosz",
+    "e": "Kustosz",
+    "r": "generic"
+  },
+  {
+    "s": "perla",
+    "n": "Perła",
+    "e": "Perła",
+    "r": "polish"
+  },
+  {
+    "s": "zubr",
+    "n": "Żubr",
+    "e": "Żubr",
+    "r": "polish"
+  },
+  {
+    "s": "tatra",
+    "n": "Tatra",
+    "e": "Tatra",
+    "r": "generic"
+  },
+  {
+    "s": "lomza-niepasteryzowana",
+    "n": "Łomża niepasteryzowana",
+    "e": "Łomża niepasteryzowana",
+    "r": "polish"
+  },
+  {
+    "s": "wisniowka",
+    "n": "Wiśniówka",
+    "e": "Wiśniówka",
+    "r": "polish"
+  },
+  {
+    "s": "grzaniec",
+    "n": "Grzaniec",
+    "e": "Grzaniec",
+    "r": "generic"
+  },
+  {
+    "s": "winiary-majonez-dekoracyjny",
+    "n": "Winiary majonez dekoracyjny",
+    "e": "mayonnaise",
+    "r": "generic"
+  },
+  {
+    "s": "winiary-budyn-waniliowy",
+    "n": "Winiary budyń waniliowy",
+    "e": "custard",
+    "r": "generic"
+  },
+  {
+    "s": "knorr-rosol-drobiowy-kostka",
+    "n": "Knorr rosół drobiowy (kostka)",
+    "e": "broth",
+    "r": "generic"
+  },
+  {
+    "s": "knorr-fix-bolognese",
+    "n": "Knorr fix bolognese",
+    "e": "bolognese",
+    "r": "generic"
+  },
+  {
+    "s": "knorr-salatka-gyros",
+    "n": "Knorr sałatka gyros",
+    "e": "salad",
+    "r": "generic"
+  },
+  {
+    "s": "pudliszki-ketchup-lagodny",
+    "n": "Pudliszki ketchup łagodny",
+    "e": "ketchup",
+    "r": "generic"
+  },
+  {
+    "s": "pudliszki-koncentrat-pomidorowy-30",
+    "n": "Pudliszki koncentrat pomidorowy 30%",
+    "e": "concentrate",
+    "r": "generic"
+  },
+  {
+    "s": "dawtona-pasata-pomidorowa",
+    "n": "Dawtona pasata pomidorowa",
+    "e": "tomato",
+    "r": "generic"
+  },
+  {
+    "s": "lowicz-dzem-wisniowy-niskoslodzony",
+    "n": "Łowicz dżem wiśniowy niskosłodzony",
+    "e": "jam",
+    "r": "generic"
+  },
+  {
+    "s": "lowicz-powidla-sliwkowe",
+    "n": "Łowicz powidła śliwkowe",
+    "e": "Łowicz powidła śliwkowe",
+    "r": "polish"
+  },
+  {
+    "s": "roleski-ketchup",
+    "n": "Roleski ketchup",
+    "e": "ketchup",
+    "r": "generic"
+  },
+  {
+    "s": "winiary-kisiel-truskawkowy",
+    "n": "Winiary kisiel truskawkowy",
+    "e": "strawberry",
+    "r": "generic"
+  },
+  {
+    "s": "winiary-kisiel-zurawinowy",
+    "n": "Winiary kisiel żurawinowy",
+    "e": "Winiary kisiel żurawinowy",
+    "r": "polish"
+  },
+  {
+    "s": "rosol-z-kury-fix",
+    "n": "Rosół z kury (fix)",
+    "e": "broth",
+    "r": "generic"
+  },
+  {
+    "s": "sol-czosnkowa",
+    "n": "Sól czosnkowa",
+    "e": "Sól czosnkowa",
+    "r": "polish"
+  },
+  {
+    "s": "sol-ziolowa",
+    "n": "Sól ziołowa",
+    "e": "Sól ziołowa",
+    "r": "polish"
+  },
+  {
+    "s": "maggi-plynne-przyprawa",
+    "n": "Maggi płynne (przyprawa)",
+    "e": "Maggi płynne",
+    "r": "polish"
+  },
+  {
+    "s": "sos-pesto-z-suszonych-pomidorow",
+    "n": "Sos pesto z suszonych pomidorów",
+    "e": "pesto",
+    "r": "generic"
+  },
+  {
+    "s": "wedel-czekolada-deserowa",
+    "n": "Wedel czekolada deserowa",
+    "e": "chocolate",
+    "r": "generic"
+  },
+  {
+    "s": "wedel-torcik-kokosowy",
+    "n": "Wedel torcik kokosowy",
+    "e": "coconut",
+    "r": "generic"
+  },
+  {
+    "s": "terravita-paluszki-slone",
+    "n": "Terravita paluszki słone",
+    "e": "Terravita paluszki słone",
+    "r": "polish"
+  },
+  {
+    "s": "jutrzenka-jezyki-duze",
+    "n": "Jutrzenka jeżyki duże",
+    "e": "Jutrzenka jeżyki duże",
+    "r": "polish"
+  },
+  {
+    "s": "san-draze-korsarze",
+    "n": "San draże korsarze",
+    "e": "San draże korsarze",
+    "r": "polish"
+  },
+  {
+    "s": "colian-sliwka-w-czekoladzie",
+    "n": "Colian śliwka w czekoladzie",
+    "e": "Colian śliwka w czekoladzie",
+    "r": "polish"
+  },
+  {
+    "s": "orzeszki-w-ciescie",
+    "n": "Orzeszki w cieście",
+    "e": "wrap",
+    "r": "generic"
+  },
+  {
+    "s": "babka-wielkanocna",
+    "n": "Babka wielkanocna",
+    "e": "cake",
+    "r": "generic"
+  },
+  {
+    "s": "sernik-wiedenski",
+    "n": "Sernik wiedeński",
+    "e": "cheesecake",
+    "r": "generic"
+  },
+  {
+    "s": "kremowka",
+    "n": "Kremówka",
+    "e": "Kremówka",
+    "r": "polish"
+  },
+  {
+    "s": "napoleonka",
+    "n": "Napoleonka",
+    "e": "Napoleonka",
+    "r": "generic"
+  },
+  {
+    "s": "rogal-marcinski",
+    "n": "Rogal marciński",
+    "e": "Rogal marciński",
+    "r": "polish"
+  },
+  {
+    "s": "ciasteczka-z-masa-kakaowa-oreo",
+    "n": "Ciasteczka z masą kakaową (oreo)",
+    "e": "Ciasteczka z masą kakaową",
+    "r": "polish"
+  },
+  {
+    "s": "mleko-laciate-3-2",
+    "n": "Mleko Łaciate 3,2%",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-mlekovita-2",
+    "n": "Mleko Mlekovita 2%",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-bez-laktozy-laciate",
+    "n": "Mleko bez laktozy Łaciate",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "skyr-piatnica-jagodowy",
+    "n": "Skyr Piątnica jagodowy",
+    "e": "skyr",
+    "r": "generic"
+  },
+  {
+    "s": "ser-krajanka-mlekovita",
+    "n": "Ser krajanka Mlekovita",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-z-ziolami-krajanka",
+    "n": "Ser z ziołami (krajanka)",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-w-plastrach-hochland",
+    "n": "Ser w plastrach Hochland",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-philadelphia",
+    "n": "Ser Philadelphia",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-lazur-z-niebieska-plesnia",
+    "n": "Ser lazur (z niebieską pleśnią)",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-wedzony-oscypkowy-markowy",
+    "n": "Ser wędzony oscypkowy (markowy)",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-salatkowo-kanapkowy-jogurtowy",
+    "n": "Ser sałatkowo-kanapkowy jogurtowy",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "twarozek-ze-szczypiorkiem-i-rzodkiewka",
+    "n": "Twarożek ze szczypiorkiem i rzodkiewką",
+    "e": "radish",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-w-proszku",
+    "n": "Mleko w proszku",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-w-proszku-odtluszczone",
+    "n": "Mleko w proszku odtłuszczone",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "kefir-smakowy-waniliowy",
+    "n": "Kefir smakowy waniliowy",
+    "e": "kefir",
+    "r": "generic"
+  },
+  {
+    "s": "maslanka-truskawkowa",
+    "n": "Maślanka truskawkowa",
+    "e": "Maślanka truskawkowa",
+    "r": "polish"
+  },
+  {
+    "s": "ser-kremowy-do-smarowania-bez-laktozy",
+    "n": "Ser kremowy do smarowania (bez laktozy)",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "kurczak-curry-indyjskie",
+    "n": "Kurczak curry (indyjskie)",
+    "e": "chicken",
+    "r": "generic"
+  },
+  {
+    "s": "tikka-masala-z-ryzem",
+    "n": "Tikka masala z ryżem",
+    "e": "rice",
+    "r": "generic"
+  },
+  {
+    "s": "chilli-con-carne",
+    "n": "Chilli con carne",
+    "e": "chili",
+    "r": "generic"
+  },
+  {
+    "s": "moussaka",
+    "n": "Moussaka",
+    "e": "Moussaka",
+    "r": "generic"
+  },
+  {
+    "s": "ratatouille",
+    "n": "Ratatouille",
+    "e": "Ratatouille",
+    "r": "generic"
+  },
+  {
+    "s": "salatka-grecka",
+    "n": "Sałatka grecka",
+    "e": "salad",
+    "r": "generic"
+  },
+  {
+    "s": "salatka-caprese",
+    "n": "Sałatka caprese",
+    "e": "salad",
+    "r": "generic"
+  },
+  {
+    "s": "poke-bowl-z-lososiem",
+    "n": "Poke bowl z łososiem",
+    "e": "salmon",
+    "r": "generic"
+  },
+  {
+    "s": "bibimbap",
+    "n": "Bibimbap",
+    "e": "Bibimbap",
+    "r": "generic"
+  },
+  {
+    "s": "onigiri-z-tunczykiem",
+    "n": "Onigiri z tuńczykiem",
+    "e": "Onigiri z tuńczykiem",
+    "r": "polish"
+  },
+  {
+    "s": "sushi-nigiri-z-lososiem-6-szt",
+    "n": "Sushi nigiri z łososiem (6 szt)",
+    "e": "salmon",
+    "r": "generic"
+  },
+  {
+    "s": "sushi-maki-z-ogorkiem-8-szt",
+    "n": "Sushi maki z ogórkiem (8 szt)",
+    "e": "Sushi maki z ogórkiem",
+    "r": "polish"
+  },
+  {
+    "s": "tortilla-z-warzywami-wegetarianska",
+    "n": "Tortilla z warzywami (wegetariańska)",
+    "e": "tortilla",
+    "r": "generic"
+  },
+  {
+    "s": "kaczka-pieczona-z-jablkami",
+    "n": "Kaczka pieczona z jabłkami",
+    "e": "duck",
+    "r": "generic"
+  },
+  {
+    "s": "babka-ziemniaczana",
+    "n": "Babka ziemniaczana",
+    "e": "cake",
+    "r": "generic"
+  },
+  {
+    "s": "kartacze",
+    "n": "Kartacze",
+    "e": "Kartacze",
+    "r": "generic"
+  },
+  {
+    "s": "cepeliny",
+    "n": "Cepeliny",
+    "e": "Cepeliny",
+    "r": "generic"
+  },
+  {
+    "s": "knedliczki",
+    "n": "Knedliczki",
+    "e": "Knedliczki",
+    "r": "generic"
+  },
+  {
+    "s": "gulasz-wegierski-bogracz",
+    "n": "Gulasz węgierski (bogracz)",
+    "e": "stew",
+    "r": "generic"
+  },
+  {
+    "s": "leczo-z-kielbasa",
+    "n": "Leczo z kiełbasą",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "nalesniki-z-miesem-markowe",
+    "n": "Naleśniki z mięsem (markowe)",
+    "e": "meat",
+    "r": "generic"
+  },
+  {
+    "s": "ravioli-z-serem",
+    "n": "Ravioli z serem",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "tortellini-z-kurczakiem",
+    "n": "Tortellini z kurczakiem",
+    "e": "chicken",
+    "r": "generic"
+  },
+  {
+    "s": "szaszlyk-z-kurczaka-z-warzywami",
+    "n": "Szaszłyk z kurczaka z warzywami",
+    "e": "chicken",
+    "r": "generic"
+  },
+  {
+    "s": "burger-bowl-z-wolowina",
+    "n": "Burger bowl z wołowiną",
+    "e": "beef",
+    "r": "generic"
+  },
+  {
+    "s": "bagietka-z-mozzarella-i-pomidorem",
+    "n": "Bagietka z mozzarellą i pomidorem",
+    "e": "mozzarella",
+    "r": "generic"
+  },
+  {
+    "s": "sokolow-kielbasa-slaska",
+    "n": "Sokołów kiełbasa śląska",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "sokolow-szynka-wiejska",
+    "n": "Sokołów szynka wiejska",
+    "e": "ham",
+    "r": "generic"
+  },
+  {
+    "s": "kraina-wedlin-szynka-sopocka",
+    "n": "Kraina Wędlin szynka sopocka",
+    "e": "ham",
+    "r": "generic"
+  },
+  {
+    "s": "olewnik-kielbasa-wiejska",
+    "n": "Olewnik kiełbasa wiejska",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "pasztet-sokolow",
+    "n": "Pasztet Sokołów",
+    "e": "pate",
+    "r": "generic"
+  },
+  {
+    "s": "szynka-staropolska",
+    "n": "Szynka staropolska",
+    "e": "ham",
+    "r": "generic"
+  },
+  {
+    "s": "szynka-z-szynkowara",
+    "n": "Szynka z szynkowara",
+    "e": "ham",
+    "r": "generic"
+  },
+  {
+    "s": "gulasz-wieprzowy-konserwa",
+    "n": "Gulasz wieprzowy (konserwa)",
+    "e": "stew",
+    "r": "generic"
+  },
+  {
+    "s": "mieso-na-kebab-mrozone",
+    "n": "Mięso na kebab (mrożone)",
+    "e": "kebab",
+    "r": "generic"
+  },
+  {
+    "s": "losos-wedzony-na-cieplo",
+    "n": "Łosoś wędzony na ciepło",
+    "e": "salmon",
+    "r": "generic"
+  },
+  {
+    "s": "pstrag-wedzony",
+    "n": "Pstrąg wędzony",
+    "e": "trout",
+    "r": "generic"
+  },
+  {
+    "s": "dorsz-wedzony",
+    "n": "Dorsz wędzony",
+    "e": "cod",
+    "r": "generic"
+  },
+  {
+    "s": "filet-sledziowy-a-la-matias",
+    "n": "Filet śledziowy a´la matias",
+    "e": "fillet",
+    "r": "generic"
+  },
+  {
+    "s": "sledz-w-zalewie-octowej",
+    "n": "Śledź w zalewie octowej",
+    "e": "herring",
+    "r": "generic"
+  },
+  {
+    "s": "tunczyk-wedzony-paluszki",
+    "n": "Tuńczyk wędzony (paluszki)",
+    "e": "tuna",
+    "r": "generic"
+  },
+  {
+    "s": "losos-pacyficzny",
+    "n": "Łosoś pacyficzny",
+    "e": "salmon",
+    "r": "generic"
+  },
+  {
+    "s": "sola-mrozona",
+    "n": "Sola mrożona",
+    "e": "frozen",
+    "r": "generic"
+  },
+  {
+    "s": "kalmary-panierowane-krazki",
+    "n": "Kalmary panierowane (krążki)",
+    "e": "squid",
+    "r": "generic"
+  },
+  {
+    "s": "mule-w-sosie-czosnkowym",
+    "n": "Mule w sosie czosnkowym",
+    "e": "sauce",
+    "r": "generic"
+  },
+  {
+    "s": "ikra-lososiowa-kawior-czerwony",
+    "n": "Ikra łososiowa (kawior czerwony)",
+    "e": "Ikra łososiowa",
+    "r": "polish"
+  },
+  {
+    "s": "surimi-paluszki-krabowe",
+    "n": "Surimi (paluszki krabowe)",
+    "e": "Surimi",
+    "r": "generic"
+  },
+  {
+    "s": "krewetki-mrozone-koktajlowe",
+    "n": "Krewetki mrożone (koktajlowe)",
+    "e": "shrimp",
+    "r": "generic"
+  },
+  {
+    "s": "kotlet-rybny-mrozony",
+    "n": "Kotlet rybny (mrożony)",
+    "e": "cutlet",
+    "r": "generic"
+  },
+  {
+    "s": "kukurydza-konserwowa",
+    "n": "Kukurydza konserwowa",
+    "e": "corn",
+    "r": "generic"
+  },
+  {
+    "s": "groszek-konserwowy",
+    "n": "Groszek konserwowy",
+    "e": "peas",
+    "r": "generic"
+  },
+  {
+    "s": "ciecierzyca-konserwowa-2",
+    "n": "Ciecierzyca konserwowa",
+    "e": null,
+    "r": "missing"
+  },
+  {
+    "s": "soczewica-konserwowa",
+    "n": "Soczewica konserwowa",
+    "e": "lentils",
+    "r": "generic"
+  },
+  {
+    "s": "pomidory-krojone-puszka",
+    "n": "Pomidory krojone (puszka)",
+    "e": "tomato",
+    "r": "generic"
+  },
+  {
+    "s": "ogorki-konserwowe",
+    "n": "Ogórki konserwowe",
+    "e": "Ogórki konserwowe",
+    "r": "polish"
+  },
+  {
+    "s": "buraki-cwiklowe-sloik",
+    "n": "Buraki ćwikłowe (słoik)",
+    "e": "Buraki ćwikłowe",
+    "r": "polish"
+  },
+  {
+    "s": "mieszanka-zupowa-mrozona",
+    "n": "Mieszanka zupowa (mrożona)",
+    "e": "frozen",
+    "r": "generic"
+  },
+  {
+    "s": "ratatouille-mrozone",
+    "n": "Ratatouille mrożone",
+    "e": "Ratatouille mrożone",
+    "r": "polish"
+  },
+  {
+    "s": "brokuly-z-kalafiorem-mrozone",
+    "n": "Brokuły z kalafiorem (mrożone)",
+    "e": "broccoli",
+    "r": "generic"
+  },
+  {
+    "s": "szpinak-w-smietanie-mrozony",
+    "n": "Szpinak w śmietanie (mrożony)",
+    "e": "spinach",
+    "r": "generic"
+  },
+  {
+    "s": "mango-mrozone",
+    "n": "Mango mrożone",
+    "e": "mango",
+    "r": "generic"
+  },
+  {
+    "s": "wisnie-mrozone",
+    "n": "Wiśnie mrożone",
+    "e": "cherry",
+    "r": "generic"
+  },
+  {
+    "s": "ananas-w-syropie",
+    "n": "Ananas w syropie",
+    "e": "pineapple",
+    "r": "generic"
+  },
+  {
+    "s": "zurek-instant",
+    "n": "Żurek instant",
+    "e": "instant",
+    "r": "generic"
+  },
+  {
+    "s": "barszcz-czerwony-instant",
+    "n": "Barszcz czerwony instant",
+    "e": "instant",
+    "r": "generic"
+  },
+  {
+    "s": "grochowka-instant",
+    "n": "Grochówka instant",
+    "e": "instant",
+    "r": "generic"
+  },
+  {
+    "s": "zurek-zytni-karton",
+    "n": "Żurek żytni (karton)",
+    "e": "rye",
+    "r": "generic"
+  },
+  {
+    "s": "barszcz-bialy-karton",
+    "n": "Barszcz biały (karton)",
+    "e": "white",
+    "r": "generic"
+  },
+  {
+    "s": "tofu-wedzone",
+    "n": "Tofu wędzone",
+    "e": "Tofu wędzone",
+    "r": "polish"
+  },
+  {
+    "s": "tofu-naturalne-2",
+    "n": "Tofu naturalne",
+    "e": null,
+    "r": "missing"
+  },
+  {
+    "s": "tempeh",
+    "n": "Tempeh",
+    "e": "Tempeh",
+    "r": "generic"
+  },
+  {
+    "s": "seitan",
+    "n": "Seitan",
+    "e": "Seitan",
+    "r": "generic"
+  },
+  {
+    "s": "kotlety-sojowe",
+    "n": "Kotlety sojowe",
+    "e": "soy",
+    "r": "generic"
+  },
+  {
+    "s": "ser-weganski-plastry",
+    "n": "Ser wegański (plastry)",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "pasztet-roslinny-weganski",
+    "n": "Pasztet roślinny (wegański)",
+    "e": "pate",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-konopne",
+    "n": "Mleko konopne",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-z-nerkowcow",
+    "n": "Mleko z nerkowców",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-grochowe",
+    "n": "Mleko grochowe",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "guacamole",
+    "n": "Guacamole",
+    "e": "Guacamole",
+    "r": "generic"
+  },
+  {
+    "s": "pasta-z-awokado-paste",
+    "n": "Pasta z awokado (pastę)",
+    "e": "avocado",
+    "r": "generic"
+  },
+  {
+    "s": "hummus-buraczany",
+    "n": "Hummus buraczany",
+    "e": "hummus",
+    "r": "generic"
+  },
+  {
+    "s": "hummus-paprykowy",
+    "n": "Hummus paprykowy",
+    "e": "hummus",
+    "r": "generic"
+  },
+  {
+    "s": "pancakes-nalesniki-amerykanskie",
+    "n": "Pancakes (naleśniki amerykańskie)",
+    "e": "Pancakes",
+    "r": "generic"
+  },
+  {
+    "s": "gofry",
+    "n": "Gofry",
+    "e": "waffles",
+    "r": "generic"
+  },
+  {
+    "s": "jajko-na-miekko",
+    "n": "Jajko na miękko",
+    "e": "egg",
+    "r": "generic"
+  },
+  {
+    "s": "jajko-na-twardo",
+    "n": "Jajko na twardo",
+    "e": "egg",
+    "r": "generic"
+  },
+  {
+    "s": "kaszka-manna-na-mleku",
+    "n": "Kaszka manna na mleku",
+    "e": "semolina",
+    "r": "generic"
+  },
+  {
+    "s": "kaszka-ryzowa-na-mleku",
+    "n": "Kaszka ryżowa na mleku",
+    "e": "Kaszka ryżowa na mleku",
+    "r": "polish"
+  },
+  {
+    "s": "obwarzanek",
+    "n": "Obwarzanek",
+    "e": "Obwarzanek",
+    "r": "generic"
+  },
+  {
+    "s": "precel-maslany",
+    "n": "Precel maślany",
+    "e": "pretzel",
+    "r": "generic"
+  },
+  {
+    "s": "burek-z-miesem",
+    "n": "Burek z mięsem",
+    "e": "meat",
+    "r": "generic"
+  },
+  {
+    "s": "empanada",
+    "n": "Empanada",
+    "e": "Empanada",
+    "r": "generic"
+  },
+  {
+    "s": "samosa",
+    "n": "Samosa",
+    "e": "Samosa",
+    "r": "generic"
+  },
+  {
+    "s": "kanapka-z-lososiem",
+    "n": "Kanapka z łososiem",
+    "e": "salmon",
+    "r": "generic"
+  },
+  {
+    "s": "kanapka-z-pasta-jajeczna",
+    "n": "Kanapka z pastą jajeczną",
+    "e": "Kanapka z pastą jajeczną",
+    "r": "polish"
+  },
+  {
+    "s": "kawa-rozpuszczalna-instant",
+    "n": "Kawa rozpuszczalna (instant)",
+    "e": "instant",
+    "r": "generic"
+  },
+  {
+    "s": "kawa-z-mlekiem-biala",
+    "n": "Kawa z mlekiem (biała)",
+    "e": "white",
+    "r": "generic"
+  },
+  {
+    "s": "herbata-mietowa",
+    "n": "Herbata miętowa",
+    "e": "Herbata miętowa",
+    "r": "polish"
+  },
+  {
+    "s": "czekolada-do-picia-goraca",
+    "n": "Czekolada do picia (gorąca)",
+    "e": "chocolate",
+    "r": "generic"
+  },
+  {
+    "s": "napoj-waniliowy-shake",
+    "n": "Napój waniliowy (shake)",
+    "e": "Napój waniliowy",
+    "r": "polish"
+  },
+  {
+    "s": "shake-czekoladowy",
+    "n": "Shake czekoladowy",
+    "e": "chocolate",
+    "r": "generic"
+  },
+  {
+    "s": "shake-truskawkowy",
+    "n": "Shake truskawkowy",
+    "e": "strawberry",
+    "r": "generic"
+  },
+  {
+    "s": "tiramisu-deser",
+    "n": "Tiramisu (deser)",
+    "e": "Tiramisu",
+    "r": "generic"
+  },
+  {
+    "s": "creme-brulee",
+    "n": "Crème brûlée",
+    "e": "Crème brûlée",
+    "r": "polish"
+  },
+  {
+    "s": "mus-czekoladowy",
+    "n": "Mus czekoladowy",
+    "e": "chocolate",
+    "r": "generic"
+  },
+  {
+    "s": "suflet-czekoladowy",
+    "n": "Suflet czekoladowy",
+    "e": "chocolate",
+    "r": "generic"
+  },
+  {
+    "s": "kisiel-owocowy",
+    "n": "Kisiel owocowy",
+    "e": "fruit",
+    "r": "generic"
+  },
+  {
+    "s": "pudding-ryzowy",
+    "n": "Pudding ryżowy",
+    "e": "pudding",
+    "r": "generic"
+  },
+  {
+    "s": "kluski-z-makiem-na-slodko",
+    "n": "Kluski z makiem na słodko",
+    "e": "sweet",
+    "r": "generic"
+  },
+  {
+    "s": "ryz-na-mleku-z-jablkiem",
+    "n": "Ryż na mleku (z jabłkiem)",
+    "e": "rice",
+    "r": "generic"
+  },
+  {
+    "s": "sernik-na-zimno",
+    "n": "Sernik na zimno",
+    "e": "cheesecake",
+    "r": "generic"
+  },
+  {
+    "s": "karpatka",
+    "n": "Karpatka",
+    "e": "Karpatka",
+    "r": "generic"
+  },
+  {
+    "s": "bajaderka",
+    "n": "Bajaderka",
+    "e": "Bajaderka",
+    "r": "generic"
+  },
+  {
+    "s": "eklery",
+    "n": "Eklery",
+    "e": "Eklery",
+    "r": "generic"
+  },
+  {
+    "s": "brownie",
+    "n": "Brownie",
+    "e": "Brownie",
+    "r": "generic"
+  },
+  {
+    "s": "blondie",
+    "n": "Blondie",
+    "e": "Blondie",
+    "r": "generic"
+  },
+  {
+    "s": "maslo-czosnkowe",
+    "n": "Masło czosnkowe",
+    "e": "butter",
+    "r": "generic"
+  },
+  {
+    "s": "maslo-ziolowe",
+    "n": "Masło ziołowe",
+    "e": "butter",
+    "r": "generic"
+  },
+  {
+    "s": "smalec-wieprzowy",
+    "n": "Smalec wieprzowy",
+    "e": "lard",
+    "r": "generic"
+  },
+  {
+    "s": "olej-rydzowy",
+    "n": "Olej rydzowy",
+    "e": "oil",
+    "r": "generic"
+  },
+  {
+    "s": "olej-konopny",
+    "n": "Olej konopny",
+    "e": "oil",
+    "r": "generic"
+  },
+  {
+    "s": "olej-z-orzechow-wloskich",
+    "n": "Olej z orzechów włoskich",
+    "e": "oil",
+    "r": "generic"
+  },
+  {
+    "s": "olej-z-pestek-winogron",
+    "n": "Olej z pestek winogron",
+    "e": "oil",
+    "r": "generic"
+  },
+  {
+    "s": "sos-ranch",
+    "n": "Sos ranch",
+    "e": "ranch",
+    "r": "generic"
+  },
+  {
+    "s": "sos-balsamiczny-krem",
+    "n": "Sos balsamiczny (krem)",
+    "e": "spread",
+    "r": "generic"
+  },
+  {
+    "s": "smietana-kokosowa",
+    "n": "Śmietana kokosowa",
+    "e": "cream",
+    "r": "generic"
+  },
+  {
+    "s": "krem-czekoladowo-orzechowy-brand",
+    "n": "Krem czekoladowo-orzechowy (brand)",
+    "e": "spread",
+    "r": "generic"
+  },
+  {
+    "s": "migdaly-w-czekoladzie",
+    "n": "Migdały w czekoladzie",
+    "e": "almond",
+    "r": "generic"
+  },
+  {
+    "s": "slonecznik-prazony-luskany",
+    "n": "Słonecznik prażony (łuskany)",
+    "e": "Słonecznik prażony",
+    "r": "polish"
+  },
+  {
+    "s": "pistacje-prazone-solone",
+    "n": "Pistacje prażone solone",
+    "e": "roasted",
+    "r": "generic"
+  },
+  {
+    "s": "orzechy-w-karmelu",
+    "n": "Orzechy w karmelu",
+    "e": "nuts",
+    "r": "generic"
+  },
+  {
+    "s": "mieszanka-orzechow-i-zurawiny",
+    "n": "Mieszanka orzechów i żurawiny",
+    "e": "Mieszanka orzechów i żurawiny",
+    "r": "polish"
+  },
+  {
+    "s": "wafel-ryzowy-jogurtowy",
+    "n": "Wafel ryżowy jogurtowy",
+    "e": "wafer",
+    "r": "generic"
+  },
+  {
+    "s": "podplomyk",
+    "n": "Podpłomyk",
+    "e": "Podpłomyk",
+    "r": "polish"
+  },
+  {
+    "s": "lawasz",
+    "n": "Lawasz",
+    "e": "Lawasz",
+    "r": "generic"
+  },
+  {
+    "s": "pita-chlebek",
+    "n": "Pita (chlebek)",
+    "e": "Pita",
+    "r": "generic"
+  },
+  {
+    "s": "rogal-swietomarcinski",
+    "n": "Rogal świętomarciński",
+    "e": "Rogal świętomarciński",
+    "r": "polish"
+  },
+  {
+    "s": "ser-korycinski-swojski",
+    "n": "Ser koryciński swojski",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "chleb-pradnicki",
+    "n": "Chleb prądnicki",
+    "e": "bread",
+    "r": "generic"
+  },
+  {
+    "s": "oscypek-wedzony",
+    "n": "Oscypek wędzony",
+    "e": "Oscypek wędzony",
+    "r": "polish"
+  },
+  {
+    "s": "bryndza-podhalanska",
+    "n": "Bryndza podhalańska",
+    "e": "Bryndza podhalańska",
+    "r": "polish"
+  },
+  {
+    "s": "kielbasa-lisiecka",
+    "n": "Kiełbasa lisiecka",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "kabanosy-ze-strusia",
+    "n": "Kabanosy ze strusia",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "wedlina-z-dzika",
+    "n": "Wędlina z dzika",
+    "e": "Wędlina z dzika",
+    "r": "polish"
+  },
+  {
+    "s": "szynka-z-dzika",
+    "n": "Szynka z dzika",
+    "e": "ham",
+    "r": "generic"
+  },
+  {
+    "s": "kielbasa-z-jelenia",
+    "n": "Kiełbasa z jelenia",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "boczek-z-dzika-wedzony",
+    "n": "Boczek z dzika wędzony",
+    "e": "bacon",
+    "r": "generic"
+  },
+  {
+    "s": "pstrag-ojcowski-wedzony",
+    "n": "Pstrąg ojcowski (wędzony)",
+    "e": "trout",
+    "r": "generic"
+  },
+  {
+    "s": "miod-wrzosowy",
+    "n": "Miód wrzosowy",
+    "e": "honey",
+    "r": "generic"
+  },
+  {
+    "s": "miod-akacjowy",
+    "n": "Miód akacjowy",
+    "e": "honey",
+    "r": "generic"
+  },
+  {
+    "s": "miod-manuka",
+    "n": "Miód manuka",
+    "e": "honey",
+    "r": "generic"
+  },
+  {
+    "s": "golabki-z-kasza",
+    "n": "Gołąbki z kaszą",
+    "e": "Gołąbki z kaszą",
+    "r": "polish"
+  },
+  {
+    "s": "oscypek-z-grilla-z-zurawina",
+    "n": "Oscypek z grilla z żurawiną",
+    "e": "cranberry",
+    "r": "generic"
+  },
+  {
+    "s": "placki-po-wegiersku",
+    "n": "Placki po węgiersku",
+    "e": "pancakes",
+    "r": "generic"
+  },
+  {
+    "s": "nalesniki-po-wegiersku",
+    "n": "Naleśniki po węgiersku",
+    "e": "Naleśniki po węgiersku",
+    "r": "polish"
+  },
+  {
+    "s": "pierogi-z-jagodami",
+    "n": "Pierogi z jagodami",
+    "e": "pierogi",
+    "r": "generic"
+  },
+  {
+    "s": "pierogi-z-truskawkami",
+    "n": "Pierogi z truskawkami",
+    "e": "pierogi",
+    "r": "generic"
+  },
+  {
+    "s": "pierogi-leniwe-z-twarogu",
+    "n": "Pierogi leniwe z twarogu",
+    "e": "pierogi",
+    "r": "generic"
+  },
+  {
+    "s": "kisiel-zurawinowy",
+    "n": "Kisiel żurawinowy",
+    "e": "Kisiel żurawinowy",
+    "r": "polish"
+  },
+  {
+    "s": "sliwowica",
+    "n": "Śliwowica",
+    "e": "Śliwowica",
+    "r": "polish"
+  },
+  {
+    "s": "okowita-gorzala",
+    "n": "Okowita (gorzała)",
+    "e": "Okowita",
+    "r": "generic"
+  },
+  {
+    "s": "ramen-wegetarianski",
+    "n": "Ramen wegetariański",
+    "e": "Ramen wegetariański",
+    "r": "polish"
+  },
+  {
+    "s": "nalesnik-z-owocami",
+    "n": "Naleśnik z owocami",
+    "e": "pancake",
+    "r": "generic"
+  },
+  {
+    "s": "curry-warzywne-z-ciecierzyca",
+    "n": "Curry warzywne z ciecierzycą",
+    "e": "chickpeas",
+    "r": "generic"
+  },
+  {
+    "s": "salatka-z-tunczykiem",
+    "n": "Sałatka z tuńczykiem",
+    "e": "salad",
+    "r": "generic"
+  },
+  {
+    "s": "makaron-aglio-e-olio",
+    "n": "Makaron aglio e olio",
+    "e": "pasta",
+    "r": "generic"
+  },
+  {
+    "s": "lasagne-warzywna",
+    "n": "Lasagne warzywna",
+    "e": "lasagne",
+    "r": "generic"
+  },
+  {
+    "s": "pizza-domowa-z-patelni",
+    "n": "Pizza domowa z patelni",
+    "e": "pizza",
+    "r": "generic"
+  },
+  {
+    "s": "krem-z-soczewicy",
+    "n": "Krem z soczewicy",
+    "e": "spread",
+    "r": "generic"
+  },
+  {
+    "s": "zupa-z-soczewicy-z-warzywami",
+    "n": "Zupa z soczewicy z warzywami",
+    "e": "soup",
+    "r": "generic"
+  },
+  {
+    "s": "zupa-marchewkowa-z-imbirem",
+    "n": "Zupa marchewkowa z imbirem",
+    "e": "soup",
+    "r": "generic"
+  },
+  {
+    "s": "zupa-dyniowa-z-curry",
+    "n": "Zupa dyniowa z curry",
+    "e": "soup",
+    "r": "generic"
+  },
+  {
+    "s": "saltimbocca",
+    "n": "Saltimbocca",
+    "e": "Saltimbocca",
+    "r": "generic"
+  },
+  {
+    "s": "kasza-gryczana-z-gulaszem",
+    "n": "Kasza gryczana z gulaszem",
+    "e": "buckwheat",
+    "r": "generic"
+  },
+  {
+    "s": "makaron-z-twarogiem-i-cynamonem",
+    "n": "Makaron z twarogiem i cynamonem",
+    "e": "pasta",
+    "r": "generic"
+  },
+  {
+    "s": "kluski-z-makiem-makaron-z-makiem",
+    "n": "Kluski z makiem (makaron z makiem)",
+    "e": "pasta",
+    "r": "generic"
+  },
+  {
+    "s": "grillowane-warzywa-z-feta",
+    "n": "Grillowane warzywa z fetą",
+    "e": "feta",
+    "r": "generic"
+  },
+  {
+    "s": "salatka-bawarska-z-kabanosem",
+    "n": "Sałatka bawarska z kabanosem",
+    "e": "salad",
+    "r": "generic"
+  },
+  {
+    "s": "serowe-patyczki-mozzarella",
+    "n": "Serowe patyczki mozzarella",
+    "e": "mozzarella",
+    "r": "generic"
+  },
+  {
+    "s": "krazki-cebulowe",
+    "n": "Krążki cebulowe",
+    "e": "Krążki cebulowe",
+    "r": "polish"
+  },
+  {
+    "s": "burger-z-kurczakiem-curry",
+    "n": "Burger z kurczakiem curry",
+    "e": "chicken",
+    "r": "generic"
+  },
+  {
+    "s": "burger-z-wolowina-i-bekonem",
+    "n": "Burger z wołowiną i bekonem",
+    "e": "beef",
+    "r": "generic"
+  },
+  {
+    "s": "kanapka-z-kurczakiem-i-warzywami",
+    "n": "Kanapka z kurczakiem i warzywami",
+    "e": "chicken",
+    "r": "generic"
+  },
+  {
+    "s": "kanapka-z-serem-i-pomidorem",
+    "n": "Kanapka z serem i pomidorem",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "tost-z-kurczakiem",
+    "n": "Tost z kurczakiem",
+    "e": "chicken",
+    "r": "generic"
+  },
+  {
+    "s": "salatka-szefa",
+    "n": "Sałatka szefa",
+    "e": "salad",
+    "r": "generic"
+  },
+  {
+    "s": "smoothie-z-awokado-i-szpinakiem",
+    "n": "Smoothie z awokado i szpinakiem",
+    "e": "avocado",
+    "r": "generic"
+  },
+  {
+    "s": "napoj-aloesowy",
+    "n": "Napój aloesowy",
+    "e": "Napój aloesowy",
+    "r": "polish"
+  },
+  {
+    "s": "gruszka-w-syropie",
+    "n": "Gruszka w syropie",
+    "e": "pear",
+    "r": "generic"
+  },
+  {
+    "s": "wisnie-w-syropie-koktajlowe",
+    "n": "Wiśnie w syropie (koktajlowe)",
+    "e": "cherry",
+    "r": "generic"
+  },
+  {
+    "s": "sliwki-w-czekoladzie-markowe",
+    "n": "Śliwki w czekoladzie (markowe)",
+    "e": "plum",
+    "r": "generic"
+  },
+  {
+    "s": "maliny-w-czekoladzie",
+    "n": "Maliny w czekoladzie",
+    "e": "raspberry",
+    "r": "generic"
+  },
+  {
+    "s": "truskawki-w-czekoladzie",
+    "n": "Truskawki w czekoladzie",
+    "e": "strawberry",
+    "r": "generic"
+  },
+  {
+    "s": "czekoladka-z-nadzieniem-mietowym",
+    "n": "Czekoladka z nadzieniem miętowym",
+    "e": "filled",
+    "r": "generic"
+  },
+  {
+    "s": "czekoladka-z-nadzieniem-pomaranczowym",
+    "n": "Czekoladka z nadzieniem pomarańczowym",
+    "e": "filled",
+    "r": "generic"
+  },
+  {
+    "s": "draze-czekoladowe-z-arachidami",
+    "n": "Draże czekoladowe z arachidami",
+    "e": "Draże czekoladowe z arachidami",
+    "r": "polish"
+  },
+  {
+    "s": "bakaliowa-mieszanka-sniadaniowa",
+    "n": "Bakaliowa mieszanka śniadaniowa",
+    "e": "Bakaliowa mieszanka śniadaniowa",
+    "r": "polish"
+  },
+  {
+    "s": "maslo-z-orzechow-laskowych",
+    "n": "Masło z orzechów laskowych",
+    "e": "butter",
+    "r": "generic"
+  },
+  {
+    "s": "tahini-markowe",
+    "n": "Tahini (markowe)",
+    "e": "tahini",
+    "r": "generic"
+  },
+  {
+    "s": "dip-z-awokado-i-cytryna",
+    "n": "Dip z awokado i cytryną",
+    "e": "avocado",
+    "r": "generic"
+  },
+  {
+    "s": "dip-koperkowo-ziolowy",
+    "n": "Dip koperkowo-ziołowy",
+    "e": "Dip koperkowo-ziołowy",
+    "r": "polish"
+  },
+  {
+    "s": "pasta-z-lososia",
+    "n": "Pasta z łososia",
+    "e": "Pasta z łososia",
+    "r": "polish"
+  },
+  {
+    "s": "konfitura-wisniowa",
+    "n": "Konfitura wiśniowa",
+    "e": "Konfitura wiśniowa",
+    "r": "polish"
+  },
+  {
+    "s": "krem-smietankowy-do-smarowania",
+    "n": "Krem śmietankowy (do smarowania)",
+    "e": "spread",
+    "r": "generic"
+  },
+  {
+    "s": "pasta-migdalowa-marcepan",
+    "n": "Pasta migdałowa (marcepan)",
+    "e": "Pasta migdałowa",
+    "r": "polish"
+  },
+  {
+    "s": "kefir-z-dodatkiem-owsa",
+    "n": "Kefir z dodatkiem owsa",
+    "e": "kefir",
+    "r": "generic"
+  },
+  {
+    "s": "maslanka-z-czosnkiem-dip",
+    "n": "Maślanka z czosnkiem (dip)",
+    "e": "Maślanka z czosnkiem",
+    "r": "polish"
+  },
+  {
+    "s": "ser-do-zapiekania-tarty",
+    "n": "Ser do zapiekania (tarty)",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-stadler",
+    "n": "Ser stadler",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-mazdamer-w-plastrach",
+    "n": "Ser mazdamer w plastrach",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-ementaler-w-plastrach",
+    "n": "Ser ementaler w plastrach",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-z-czosnkiem-niedzwiedzim",
+    "n": "Ser z czosnkiem niedźwiedzim",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-kozi-miekki-kostka",
+    "n": "Ser kozi miękki (kostka)",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "maslo-oselkowe-z-oselki",
+    "n": "Masło osełkowe (z osełki)",
+    "e": "butter",
+    "r": "generic"
+  },
+  {
+    "s": "cukier-wanilinowy",
+    "n": "Cukier wanilinowy",
+    "e": "sugar",
+    "r": "generic"
+  },
+  {
+    "s": "drozdze-piekarskie-swieze",
+    "n": "Drożdże piekarskie (świeże)",
+    "e": "Drożdże piekarskie",
+    "r": "polish"
+  },
+  {
+    "s": "drozdze-suche",
+    "n": "Drożdże suche",
+    "e": "Drożdże suche",
+    "r": "polish"
+  },
+  {
+    "s": "cukier-puder",
+    "n": "Cukier puder",
+    "e": "sugar",
+    "r": "generic"
+  },
+  {
+    "s": "sernik-na-zimno-z-owocami",
+    "n": "Sernik na zimno z owocami",
+    "e": "cheesecake",
+    "r": "generic"
+  },
+  {
+    "s": "nalesniki-z-nutella",
+    "n": "Naleśniki z nutellą",
+    "e": "nutella",
+    "r": "generic"
+  },
+  {
+    "s": "gofry-z-owocami",
+    "n": "Gofry z owocami",
+    "e": "waffles",
+    "r": "generic"
+  },
+  {
+    "s": "kaczka-udo",
+    "n": "Kaczka (udo)",
+    "e": "duck",
+    "r": "generic"
+  },
+  {
+    "s": "ges-piers",
+    "n": "Gęś (pierś)",
+    "e": "breast",
+    "r": "generic"
+  },
+  {
+    "s": "przepiorka",
+    "n": "Przepiórka",
+    "e": "Przepiórka",
+    "r": "polish"
+  },
+  {
+    "s": "krolik-udziec",
+    "n": "Królik (udziec)",
+    "e": "rabbit",
+    "r": "generic"
+  },
+  {
+    "s": "mostek-wolowy",
+    "n": "Mostek wołowy",
+    "e": "beef",
+    "r": "generic"
+  },
+  {
+    "s": "brzoskwinie",
+    "n": "Brzoskwinie",
+    "e": "Brzoskwinie",
+    "r": "generic"
+  },
+  {
+    "s": "nektarynki",
+    "n": "Nektarynki",
+    "e": "Nektarynki",
+    "r": "generic"
+  },
+  {
+    "s": "agrest",
+    "n": "Agrest",
+    "e": "Agrest",
+    "r": "generic"
+  },
+  {
+    "s": "zurawina-swieza",
+    "n": "Żurawina świeża",
+    "e": "cranberry",
+    "r": "generic"
+  },
+  {
+    "s": "aronia",
+    "n": "Aronia",
+    "e": "Aronia",
+    "r": "generic"
+  },
+  {
+    "s": "kaki-persymona",
+    "n": "Kaki (persymona)",
+    "e": "Kaki",
+    "r": "generic"
+  },
+  {
+    "s": "polenta-kaszka-kukurydziana",
+    "n": "Polenta (kaszka kukurydziana)",
+    "e": "Polenta",
+    "r": "generic"
+  },
+  {
+    "s": "maka-ryzowa",
+    "n": "Mąka ryżowa",
+    "e": "flour",
+    "r": "generic"
+  },
+  {
+    "s": "guawa",
+    "n": "Guawa",
+    "e": "Guawa",
+    "r": "generic"
+  },
+  {
+    "s": "ryz-czarny-suchy",
+    "n": "Ryż czarny (suchy)",
+    "e": "rice",
+    "r": "generic"
+  },
+  {
+    "s": "otreby-zytnie",
+    "n": "Otręby żytnie",
+    "e": "Otręby żytnie",
+    "r": "polish"
+  },
+  {
+    "s": "chleb-bezglutenowy",
+    "n": "Chleb bezglutenowy",
+    "e": "bread",
+    "r": "generic"
+  },
+  {
+    "s": "boczniaki",
+    "n": "Boczniaki",
+    "e": "Boczniaki",
+    "r": "generic"
+  },
+  {
+    "s": "pieczarka-portobello",
+    "n": "Pieczarka portobello",
+    "e": "mushroom",
+    "r": "generic"
+  },
+  {
+    "s": "rzodkiew",
+    "n": "Rzodkiew",
+    "e": "Rzodkiew",
+    "r": "generic"
+  },
+  {
+    "s": "musli-z-owocami-suszonymi",
+    "n": "Musli z owocami suszonymi",
+    "e": "muesli",
+    "r": "generic"
+  },
+  {
+    "s": "granola-z-orzechami",
+    "n": "Granola z orzechami",
+    "e": "granola",
+    "r": "generic"
+  },
+  {
+    "s": "owsianka-instant",
+    "n": "Owsianka instant",
+    "e": "instant",
+    "r": "generic"
+  },
+  {
+    "s": "ges-pieczona-mieso-bez-skory",
+    "n": "Gęś pieczona (mięso bez skóry)",
+    "e": "Gęś pieczona",
+    "r": "polish"
+  },
+  {
+    "s": "kaczka-pieczona-mieso-bez-skory",
+    "n": "Kaczka pieczona (mięso bez skóry)",
+    "e": "duck",
+    "r": "generic"
+  },
+  {
+    "s": "jagniecina-udziec",
+    "n": "Jagnięcina (udziec)",
+    "e": "lamb",
+    "r": "generic"
+  },
+  {
+    "s": "cielecina-pieczen",
+    "n": "Cielęcina (pieczeń)",
+    "e": "veal",
+    "r": "generic"
+  },
+  {
+    "s": "rozbratel-wolowy",
+    "n": "Rozbratel wołowy",
+    "e": "beef",
+    "r": "generic"
+  },
+  {
+    "s": "lopatka-wieprzowa",
+    "n": "Łopatka wieprzowa",
+    "e": "pork",
+    "r": "generic"
+  },
+  {
+    "s": "boczek-wedzony",
+    "n": "Boczek wędzony",
+    "e": "bacon",
+    "r": "generic"
+  },
+  {
+    "s": "szynka-serrano",
+    "n": "Szynka serrano",
+    "e": "ham",
+    "r": "generic"
+  },
+  {
+    "s": "metka-lososiowa",
+    "n": "Metka łososiowa",
+    "e": "Metka łososiowa",
+    "r": "polish"
+  },
+  {
+    "s": "tatar-z-lososia",
+    "n": "Tatar z łososia",
+    "e": "Tatar z łososia",
+    "r": "polish"
+  },
+  {
+    "s": "sielawa-wedzona",
+    "n": "Sielawa wędzona",
+    "e": "smoked",
+    "r": "generic"
+  },
+  {
+    "s": "wegorz-w-oleju",
+    "n": "Węgorz w oleju",
+    "e": "oil",
+    "r": "generic"
+  },
+  {
+    "s": "krewetki-koktajlowe",
+    "n": "Krewetki koktajlowe",
+    "e": "shrimp",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-3-8-tluszczu",
+    "n": "Mleko 3,8% tłuszczu",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-owcze",
+    "n": "Mleko owcze",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "napoj-ryzowy",
+    "n": "Napój ryżowy",
+    "e": "Napój ryżowy",
+    "r": "polish"
+  },
+  {
+    "s": "smietana-22",
+    "n": "Śmietana 22%",
+    "e": "cream",
+    "r": "generic"
+  },
+  {
+    "s": "ser-maasdam",
+    "n": "Ser Maasdam",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-gorgonzola",
+    "n": "Ser Gorgonzola",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-manchego",
+    "n": "Ser Manchego",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-pecorino-romano",
+    "n": "Ser Pecorino Romano",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-raclette",
+    "n": "Ser Raclette",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-emmentaler",
+    "n": "Ser Emmentaler",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-gruyere",
+    "n": "Ser Gruyère",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-burrata",
+    "n": "Ser Burrata",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-rokpol",
+    "n": "Ser Rokpol",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-warminski",
+    "n": "Ser Warmiński",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-morski",
+    "n": "Ser Morski",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "mozzarella-light",
+    "n": "Mozzarella light",
+    "e": "mozzarella",
+    "r": "generic"
+  },
+  {
+    "s": "szparagi",
+    "n": "Szparagi",
+    "e": "asparagus",
+    "r": "generic"
+  },
+  {
+    "s": "karczochy",
+    "n": "Karczochy",
+    "e": "Karczochy",
+    "r": "generic"
+  },
+  {
+    "s": "dynia-hokkaido",
+    "n": "Dynia hokkaido",
+    "e": "pumpkin",
+    "r": "generic"
+  },
+  {
+    "s": "poledwiczki-z-indyka",
+    "n": "Polędwiczki z indyka",
+    "e": "turkey",
+    "r": "generic"
+  },
+  {
+    "s": "kielbasa-chorizo",
+    "n": "Kiełbasa chorizo",
+    "e": "sausage",
+    "r": "generic"
+  },
+  {
+    "s": "mortadela-z-pistacjami",
+    "n": "Mortadela z pistacjami",
+    "e": "mortadella",
+    "r": "generic"
+  },
+  {
+    "s": "pasztet-warzywny",
+    "n": "Pasztet warzywny",
+    "e": "pate",
+    "r": "generic"
+  },
+  {
+    "s": "mieso-mielone-mieszane",
+    "n": "Mięso mielone mieszane",
+    "e": "Mięso mielone mieszane",
+    "r": "polish"
+  },
+  {
+    "s": "zoladki-drobiowe",
+    "n": "Żołądki drobiowe",
+    "e": "Żołądki drobiowe",
+    "r": "polish"
+  },
+  {
+    "s": "serce-wolowe",
+    "n": "Serce wołowe",
+    "e": "Serce wołowe",
+    "r": "polish"
+  },
+  {
+    "s": "ozor-wieprzowy",
+    "n": "Ozór wieprzowy",
+    "e": "tongue",
+    "r": "generic"
+  },
+  {
+    "s": "serdelki",
+    "n": "Serdelki",
+    "e": "Serdelki",
+    "r": "generic"
+  },
+  {
+    "s": "kielbaski-sniadaniowe",
+    "n": "Kiełbaski śniadaniowe",
+    "e": "cereal",
+    "r": "generic"
+  },
+  {
+    "s": "tilapia",
+    "n": "Tilapia",
+    "e": "Tilapia",
+    "r": "generic"
+  },
+  {
+    "s": "panga",
+    "n": "Panga",
+    "e": "Panga",
+    "r": "generic"
+  },
+  {
+    "s": "rostbef-wolowy",
+    "n": "Rostbef wołowy",
+    "e": "beef",
+    "r": "generic"
+  },
+  {
+    "s": "maslanka-ziolowa",
+    "n": "Maślanka ziołowa",
+    "e": "Maślanka ziołowa",
+    "r": "polish"
+  },
+  {
+    "s": "napoj-owsiany-barista",
+    "n": "Napój owsiany barista",
+    "e": "Napój owsiany barista",
+    "r": "polish"
+  },
+  {
+    "s": "twarozek-ziarnisty",
+    "n": "Twarożek ziarnisty",
+    "e": "Twarożek ziarnisty",
+    "r": "polish"
+  },
+  {
+    "s": "jogurt-typu-greckiego-5",
+    "n": "Jogurt typu greckiego 5%",
+    "e": "yogurt",
+    "r": "generic"
+  },
+  {
+    "s": "ser-radamer",
+    "n": "Ser Radamer",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-kurpiowski",
+    "n": "Ser Kurpiowski",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "ser-favita",
+    "n": "Ser Favita",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "pietruszka-korzeniowa",
+    "n": "Pietruszka korzeniowa",
+    "e": "parsnip",
+    "r": "generic"
+  },
+  {
+    "s": "soczewica-brazowa-gotowana",
+    "n": "Soczewica brązowa gotowana",
+    "e": "lentils",
+    "r": "generic"
+  },
+  {
+    "s": "kukurydza-w-kolbie",
+    "n": "Kukurydza w kolbie",
+    "e": "corn",
+    "r": "generic"
+  },
+  {
+    "s": "jagody-goji",
+    "n": "Jagody goji",
+    "e": "berry",
+    "r": "generic"
+  },
+  {
+    "s": "krewetki-tygrysie",
+    "n": "Krewetki tygrysie",
+    "e": "shrimp",
+    "r": "generic"
+  },
+  {
+    "s": "malze-gotowane",
+    "n": "Małże gotowane",
+    "e": "Małże gotowane",
+    "r": "polish"
+  },
+  {
+    "s": "osmiornica-gotowana",
+    "n": "Ośmiornica gotowana",
+    "e": "Ośmiornica gotowana",
+    "r": "polish"
+  },
+  {
+    "s": "dorada",
+    "n": "Dorada",
+    "e": "Dorada",
+    "r": "generic"
+  },
+  {
+    "s": "halibut-wedzony",
+    "n": "Halibut wędzony",
+    "e": "halibut",
+    "r": "generic"
+  },
+  {
+    "s": "makrela-swieza",
+    "n": "Makrela świeża",
+    "e": "mackerel",
+    "r": "generic"
+  },
+  {
+    "s": "sledz-swiezy",
+    "n": "Śledź świeży",
+    "e": "herring",
+    "r": "generic"
+  },
+  {
+    "s": "sardynka-swieza",
+    "n": "Sardynka świeża",
+    "e": "Sardynka świeża",
+    "r": "polish"
+  },
+  {
+    "s": "udziec-wolowy",
+    "n": "Udziec wołowy",
+    "e": "beef",
+    "r": "generic"
+  },
+  {
+    "s": "poledwiczki-wieprzowe",
+    "n": "Polędwiczki wieprzowe",
+    "e": "pork",
+    "r": "generic"
+  },
+  {
+    "s": "slonina",
+    "n": "Słonina",
+    "e": "Słonina",
+    "r": "polish"
+  },
+  {
+    "s": "smietana-36",
+    "n": "Śmietana 36%",
+    "e": "cream",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-a2-3-5",
+    "n": "Mleko A2 3,5%",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "mleko-zageszczone-nieslodzone",
+    "n": "Mleko zagęszczone niesłodzone",
+    "e": "milk",
+    "r": "generic"
+  },
+  {
+    "s": "zoltko-jajka",
+    "n": "Żółtko jajka",
+    "e": "Żółtko jajka",
+    "r": "polish"
+  },
+  {
+    "s": "omlet-bialkowy",
+    "n": "Omlet białkowy",
+    "e": "Omlet białkowy",
+    "r": "polish"
+  },
+  {
+    "s": "ser-kremowy-kanapkowy",
+    "n": "Ser kremowy kanapkowy",
+    "e": "cheese",
+    "r": "generic"
+  },
+  {
+    "s": "topinambur",
+    "n": "Topinambur",
+    "e": "Topinambur",
+    "r": "generic"
+  },
+  {
+    "s": "fasola-mung-gotowana",
+    "n": "Fasola mung (gotowana)",
+    "e": "beans",
+    "r": "generic"
+  },
+  {
+    "s": "daktyle",
+    "n": "Daktyle",
+    "e": "date",
+    "r": "generic"
+  },
+  {
+    "s": "ryz-czerwony-suchy",
+    "n": "Ryż czerwony (suchy)",
+    "e": "rice",
+    "r": "generic"
+  },
+  {
+    "s": "smalec-gesi",
+    "n": "Smalec gęsi",
+    "e": "lard",
+    "r": "generic"
+  },
+  {
+    "s": "makaron-soba",
+    "n": "Makaron soba",
+    "e": "pasta",
+    "r": "generic"
+  },
+  {
+    "s": "makaron-orkiszowy-suchy",
+    "n": "Makaron orkiszowy (suchy)",
+    "e": "pasta",
+    "r": "generic"
+  },
+  {
+    "s": "makaron-soczewicowy-suchy",
+    "n": "Makaron soczewicowy (suchy)",
+    "e": "pasta",
+    "r": "generic"
+  }
+]
