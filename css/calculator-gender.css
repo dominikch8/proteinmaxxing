@@ -134,14 +134,14 @@
 
 /* Zaznaczona opcja płci (ciemny motyw) */
 :root[data-theme='dark']:has(input[name='gender'][value='female']:checked) .radio-label:has(input:checked) {
-    border-color: #f472b6;
-    background: rgba(236, 72, 153, 0.14);
-    box-shadow: inset 0 0 0 1px rgba(244, 114, 182, 0.28);
+    border-color: #db2777;
+    background: rgba(219, 39, 119, 0.18);
+    box-shadow: inset 0 0 0 1px rgba(219, 39, 119, 0.34);
 }
 
 :root[data-theme='dark']:has(input[name='gender'][value='female']:checked) .radio-label:focus-within {
-    border-color: #f472b6;
-    box-shadow: 0 0 0 3px rgba(244, 114, 182, 0.28);
+    border-color: #db2777;
+    box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.26);
 }
 
 /* Pola tekstowe i listy rozwijane — różowa obwódka przy fokusie */
