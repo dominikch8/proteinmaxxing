@@ -253,8 +253,18 @@
 
     // Every fact gets a stable number based on its position in the FULL pool
     // (all facts, regardless of the active category): #1 … #total.
+    // Facts from the data files carry their own stable number (#1…#total across the
+    // whole database), so the pool can grow while the numbering stays consistent.
     function indexFacts() {
-        FULL_FACTS.forEach(function (f, i) { f.no = i + 1; });
+        FULL_FACTS.forEach(function (f, i) { if (!Number.isFinite(f.no)) f.no = i + 1; });
+    }
+
+    /** Lista kategorii: ze spisu paczek (wszystkie), a bez niego — z tego, co mamy. */
+    function categoryList() {
+        if (INDEX && INDEX.categories && INDEX.categories.length) {
+            return INDEX.categories.map(function (c) { return c.tag; });
+        }
+        return categoriesOf(FULL_FACTS);
     }
 
     function updateMeta() {
