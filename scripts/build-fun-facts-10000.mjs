@@ -72,13 +72,13 @@ function readCurated() {
     return Array.isArray(arr) ? arr : [];
 }
 
-/** BUILTIN_FACTS z js/fun-fakty.js — tylko po to, by ich nie duplikować. */
-function readBuiltinTexts() {
+/** BUILTIN_FACTS z js/fun-fakty.js — wciągamy je do puli i używamy do deduplikacji. */
+function readBuiltinFacts() {
     const src = fs.readFileSync(path.join(ROOT, 'js', 'fun-fakty.js'), 'utf8');
     const m = src.match(/BUILTIN_FACTS\s*=\s*(\[[\s\S]*?\n\s*\]);/);
     if (!m) return [];
     const arr = vm.runInNewContext('(' + m[1] + ')');
-    return Array.isArray(arr) ? arr.map((f) => f.text).filter(Boolean) : [];
+    return Array.isArray(arr) ? arr.filter((f) => f && f.text && f.tag) : [];
 }
 
 /* ------------------------------------------------------------------ kategorie */
