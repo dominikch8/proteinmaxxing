@@ -227,7 +227,7 @@
 
         const allCount = document.createElement('span');
         allCount.className = 'funfact-cat-count';
-        allCount.textContent = String(FULL_FACTS.length);
+        allCount.textContent = String(TOTAL || FULL_FACTS.length);
 
         allChip.appendChild(star);
         allChip.appendChild(allLabel);
@@ -238,7 +238,7 @@
         // Remaining categories wrap below the featured chip.
         const rest = document.createElement('div');
         rest.className = 'funfact-cats-rest';
-        categoriesOf(FULL_FACTS).forEach(function (cat) {
+        categoryList().forEach(function (cat) {
             const chip = document.createElement('button');
             chip.type = 'button';
             chip.className = 'funfact-cat' + (cat === activeCat ? ' is-active' : '');
@@ -253,14 +253,24 @@
 
     // Every fact gets a stable number based on its position in the FULL pool
     // (all facts, regardless of the active category): #1 … #total.
+    // Facts from the data files carry their own stable number (#1…#total across the
+    // whole database), so the pool can grow while the numbering stays consistent.
     function indexFacts() {
-        FULL_FACTS.forEach(function (f, i) { f.no = i + 1; });
+        FULL_FACTS.forEach(function (f, i) { if (!Number.isFinite(f.no)) f.no = i + 1; });
+    }
+
+    /** Lista kategorii: ze spisu paczek (wszystkie), a bez niego — z tego, co mamy. */
+    function categoryList() {
+        if (INDEX && INDEX.categories && INDEX.categories.length) {
+            return INDEX.categories.map(function (c) { return c.tag; });
+        }
+        return categoriesOf(FULL_FACTS);
     }
 
     function updateMeta() {
         if (counterEl) {
             const catLabel = activeCat === ALL_CAT ? 'wszystkie kategorie' : activeCat;
-            counterEl.textContent = 'Kategoria: ' + catLabel + ' · wylosowano ' + seen + ' z ' + FUN_FACTS.length;
+            counterEl.textContent = 'Kategoria: ' + catLabel + ' · wylosowano ' + seen + ' z ' + (TOTAL || FUN_FACTS.length);
         }
     }
 
@@ -268,7 +278,7 @@
     // number of ALL facts: fact #42 of 1000 fills the bar to 4.2%.
     // A higher number therefore yields a fuller bar.
     function updateProgress(fact) {
-        const total = FULL_FACTS.length;
+        const total = TOTAL || FULL_FACTS.length;
         const no = fact && Number.isFinite(fact.no) ? fact.no : 0;
         const pct = total ? Math.min(100, Math.max(0, (no / total) * 100)) : 0;
         if (progressEl) {
@@ -288,7 +298,7 @@
     }
 
     function roll() {
-        if (rolling) return;
+        if (rolling || !FUN_FACTS.length) return;
         rolling = true;
         btnEl.disabled = true;
         btnEl.classList.add('is-spinning');
@@ -340,12 +350,13 @@
     }
 
     function setPool(cat, restoredBag) {
-        const valid = cat === ALL_CAT || categoriesOf(FULL_FACTS).indexOf(cat) !== -1;
+        const valid = cat === ALL_CAT || categoryList().indexOf(cat) !== -1;
         activeCat = valid ? cat : ALL_CAT;
         FUN_FACTS = activeCat === ALL_CAT ? FULL_FACTS : FULL_FACTS.filter(function (f) {
             return f.tag === activeCat;
         });
-        if (!FUN_FACTS.length) {
+        // Bez spisu paczek (np. brak fetch) nie ma skąd doładować kategorii.
+        if (!FUN_FACTS.length && !INDEX) {
             FUN_FACTS = FULL_FACTS;
             activeCat = ALL_CAT;
         }
@@ -357,6 +368,7 @@
             });
         }
         bag = restored && restored.length ? restored : shuffle(FUN_FACTS.map(function (_, i) { return i; }));
+        pooledLen = FUN_FACTS.length;
 
         seen = 0;
         currentFact = null;
@@ -365,11 +377,118 @@
         renderCats();
         updateMeta();
         roll();
+        ensureLoaded();
     }
 
     function selectCat(cat) {
         if (rolling || cat === activeCat) return;
         setPool(cat, null);
+    }
+
+    /* ---------------------------- dane: spis paczek + paczki per kategoria ----
+     * Serwer nie gzipuje JSON-a, więc 10 000 faktów leży w małych paczkach
+     * (data/fun-facts/*.json). Najpierw leci sam spis (index.json), a paczki
+     * tylko dla wybranej kategorii — dla „Wszystkie” dociągają się w tle.
+     * ------------------------------------------------------------------------ */
+    const DATA_DIR = 'data/fun-facts/';
+    let INDEX = null;
+    let TOTAL = 0;
+    let pooledLen = 0;
+    let allLoading = false;
+    const loadedTags = {};
+    const pendingTags = {};
+
+    function factsUrl(file) {
+        return DATA_DIR + file + (INDEX && INDEX.v ? '?v=' + INDEX.v : '');
+    }
+
+    function fetchJson(url) {
+        return fetch(url).then(function (r) {
+            if (!r.ok) throw new Error('http ' + r.status);
+            return r.json();
+        });
+    }
+
+    function addFacts(list) {
+        if (!Array.isArray(list)) return 0;
+        list.forEach(function (f) {
+            if (f && f.text && f.tag) FULL_FACTS.push(f);
+        });
+        return list.length;
+    }
+
+    /** Wciąga wszystkie paczki jednej kategorii (raz, sekwencyjnie). */
+    function loadTag(tag) {
+        if (!INDEX || !window.fetch) return Promise.resolve(0);
+        if (loadedTags[tag]) return Promise.resolve(0);
+        if (pendingTags[tag]) return pendingTags[tag];
+
+        const cat = INDEX.categories.filter(function (c) { return c.tag === tag; })[0];
+        if (!cat || !cat.files) return Promise.resolve(0);
+
+        pendingTags[tag] = cat.files.reduce(function (chain, file) {
+            return chain.then(function () { return fetchJson(factsUrl(file)); }).then(addFacts);
+        }, Promise.resolve(0))
+            .then(function () {
+                loadedTags[tag] = true;
+                delete pendingTags[tag];
+                return 1;
+            })
+            .catch(function () {
+                delete pendingTags[tag];
+                return 0;
+            });
+        return pendingTags[tag];
+    }
+
+    /** Kategorie dla „Wszystkie” dociągamy po kolei, żeby nie zapchać łącza. */
+    function loadAll() {
+        if (!INDEX || allLoading) return;
+        allLoading = true;
+        const tags = INDEX.categories.map(function (c) { return c.tag; });
+        let i = 0;
+        (function next() {
+            if (i >= tags.length) { allLoading = false; return; }
+            loadTag(tags[i]).then(function () {
+                i += 1;
+                refreshPool();
+                window.setTimeout(next, 50);
+            });
+        })();
+    }
+
+    function ensureLoaded() {
+        if (!INDEX || !window.fetch) return;
+        if (activeCat === ALL_CAT) loadAll();
+        else loadTag(activeCat).then(refreshPool);
+    }
+
+    /** Rozszerza aktywną pulę po doładowaniu paczek — bez powtarzania tego, co już widziane. */
+    function refreshPool() {
+        const start = pooledLen;
+        FUN_FACTS = activeCat === ALL_CAT ? FULL_FACTS : FULL_FACTS.filter(function (f) {
+            return f.tag === activeCat;
+        });
+        if (!FUN_FACTS.length) return;
+
+        if (!start) {
+            bag = shuffle(FUN_FACTS.map(function (_, i) { return i; }));
+            pooledLen = FUN_FACTS.length;
+            seen = 0;
+            saveBag(bag);
+            updateMeta();
+            roll();
+            return;
+        }
+
+        const known = {};
+        bag.forEach(function (i) { known[i] = true; });
+        for (let i = start; i < FUN_FACTS.length; i++) {
+            if (!known[i]) bag.push(i);
+        }
+        pooledLen = FUN_FACTS.length;
+        saveBag(bag);
+        updateMeta();
     }
 
     function boot() {
@@ -379,21 +498,21 @@
         setPool(initialCat, stored ? stored.bag : null);
     }
 
-    // Try to load the full 1000-fact pool; fall back to built-in facts.
+    // Startujemy od razu na wbudowanych faktach (pierwszy fakt widać bez sieci),
+    // a spis paczek dociągamy w tle i rozszerzamy pulę.
+    boot();
+
     if (window.fetch) {
-        fetch('fun-facts-new.json', { cache: 'no-store' })
-            .then(function (r) {
-                if (!r.ok) throw new Error('http ' + r.status);
-                return r.json();
-            })
+        fetchJson(DATA_DIR + 'index.json')
             .then(function (data) {
-                if (Array.isArray(data) && data.length) FULL_FACTS = data;
-                boot();
+                if (!data || !Array.isArray(data.categories) || !data.categories.length) return;
+                INDEX = data;
+                TOTAL = Number(data.total) || 0;
+                indexFacts();
+                renderCats();
+                updateMeta();
+                ensureLoaded();
             })
-            .catch(function () {
-                boot();
-            });
-    } else {
-        boot();
+            .catch(function () { /* zostajemy przy wbudowanych faktach */ });
     }
 })();
