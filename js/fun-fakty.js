@@ -452,19 +452,28 @@
         return pendingTags[tag];
     }
 
-    /** Kategorie dla „Wszystkie” dociągamy po kolei, żeby nie zapchać łącza. */
+    /** Dociąga kolejną kategorię w tle (jedna porcja ~150 KB). */
+    function loadNextTag() {
+        if (!INDEX || !window.fetch) return;
+        if (preloadIdx >= INDEX.categories.length) return;
+        const tag = INDEX.categories[preloadIdx].tag;
+        preloadIdx += 1;
+        loadTag(tag).then(refreshPool);
+    }
+
+    /**
+     * Tryb „Wszystkie”: na wejściu wciągamy tylko PRELOAD_TAGS kategorii,
+     * a resztę po jednej przy każdym losowaniu — wejście na stronę nie ściąga
+     * od razu całej bazy (1,4 MB bez gzipa).
+     */
     function loadAll() {
-        if (!INDEX || allLoading) return;
-        allLoading = true;
-        const tags = INDEX.categories.map(function (c) { return c.tag; });
-        let i = 0;
+        if (!INDEX || !window.fetch) return;
+        let n = 0;
         (function next() {
-            if (i >= tags.length) { allLoading = false; return; }
-            loadTag(tags[i]).then(function () {
-                i += 1;
-                refreshPool();
-                window.setTimeout(next, 50);
-            });
+            if (n >= PRELOAD_TAGS) return;
+            n += 1;
+            loadNextTag();
+            window.setTimeout(next, 120);
         })();
     }
 
