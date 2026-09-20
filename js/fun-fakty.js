@@ -350,12 +350,13 @@
     }
 
     function setPool(cat, restoredBag) {
-        const valid = cat === ALL_CAT || categoriesOf(FULL_FACTS).indexOf(cat) !== -1;
+        const valid = cat === ALL_CAT || categoryList().indexOf(cat) !== -1;
         activeCat = valid ? cat : ALL_CAT;
         FUN_FACTS = activeCat === ALL_CAT ? FULL_FACTS : FULL_FACTS.filter(function (f) {
             return f.tag === activeCat;
         });
-        if (!FUN_FACTS.length) {
+        // Bez spisu paczek (np. brak fetch) nie ma skąd doładować kategorii.
+        if (!FUN_FACTS.length && !INDEX) {
             FUN_FACTS = FULL_FACTS;
             activeCat = ALL_CAT;
         }
@@ -367,6 +368,7 @@
             });
         }
         bag = restored && restored.length ? restored : shuffle(FUN_FACTS.map(function (_, i) { return i; }));
+        pooledLen = FUN_FACTS.length;
 
         seen = 0;
         currentFact = null;
@@ -375,6 +377,7 @@
         renderCats();
         updateMeta();
         roll();
+        ensureLoaded();
     }
 
     function selectCat(cat) {
