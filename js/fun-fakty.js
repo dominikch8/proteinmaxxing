@@ -227,7 +227,7 @@
 
         const allCount = document.createElement('span');
         allCount.className = 'funfact-cat-count';
-        allCount.textContent = String(FULL_FACTS.length);
+        allCount.textContent = String(TOTAL || FULL_FACTS.length);
 
         allChip.appendChild(star);
         allChip.appendChild(allLabel);
