@@ -9,9 +9,13 @@
  *   3. js/fun-fakty.js             — BUILTIN_FACTS (na potrzeby deduplikacji).
  *
  * Wynik (serwowane artefakty):
- *   data/fun-facts/index.json      — spis: total + kategorie + pliki + token wersji.
- *   data/fun-facts/<slug>-N.json   — paczki po CHUNK_SIZE faktów (bez gzipa na serwerze,
- *                                    dlatego dzielimy je na małe pliki i ładujemy leniwie).
+ *   fun-facts/index.json      — spis: total + kategorie + pliki + token wersji.
+ *   fun-facts/<slug>-N.json    — paczki po CHUNK_SIZE faktów (bez gzipa na serwerze,
+ *                                dlatego dzielimy je na małe pliki i ładujemy leniwie).
+ *
+ * UWAGA: celowo NIE w data/ — workflow deployu (.github/workflows/deploy.yml)
+ * wyklucza z FTP cały katalog **/data/** jako dane lokalne serwera, więc pliki
+ * z data/ nie trafiłyby na produkcję.
  *
  * Uruchom: node scripts/build-fun-facts-10000.mjs
  */
