@@ -291,20 +291,20 @@ for (const p of products) {
 const label = (cat) => CAT_LABEL[cat] || cat;
 
 for (const [cat, list] of byCategory) {
-    const withProtein = list.filter((p) => Number(p.protein) > 0);
+    const withProtein = list.filter((p) => Number(p.protein) >= MIN_PROTEIN);
     if (!withProtein.length) continue;
     const catName = '„' + label(cat) + '”';
 
     const topProtein = withProtein.slice().sort((a, b) => b.protein - a.protein)[0];
     push('Rekordy', topProtein.emoji, 'W kategorii ' + catName + ' najwięcej białka na 100 g ma ' + topProtein.name + ' — ' + pl(topProtein.protein, 1) + ' g.');
 
-    const dense = withProtein.filter((p) => p.kcal > 0).sort((a, b) => density(b) - density(a))[0];
+    const dense = withProtein.filter(solid).sort((a, b) => density(b) - density(a))[0];
     if (dense) push('Rekordy', dense.emoji, 'Najlepszy stosunek białka do kalorii w kategorii ' + catName + ' ma ' + dense.name + ': ' + pl(density(dense), 1) + ' g białka na 100 kcal.');
 
-    const biggestServing = withProtein.filter((p) => Number(p.proteinInServing) > 0 && p.servingText).sort((a, b) => b.proteinInServing - a.proteinInServing)[0];
+    const biggestServing = withProtein.filter((p) => Number(p.proteinInServing) >= 10 && p.servingText).sort((a, b) => b.proteinInServing - a.proteinInServing)[0];
     if (biggestServing) push('Rekordy', biggestServing.emoji, 'Najwięcej białka w jednej porcji w kategorii ' + catName + ' daje ' + biggestServing.name + ' — ' + pl(biggestServing.proteinInServing, 1) + ' g (' + biggestServing.servingText + ').');
 
-    const priced = list.map((p) => ({ p: p, per: perGramPrice(p) })).filter((x) => x.per > 0).sort((a, b) => a.per - b.per);
+    const priced = withProtein.map((p) => ({ p: p, per: perGramPrice(p) })).filter((x) => x.per > 0).sort((a, b) => a.per - b.per);
     if (priced.length) {
         const cheapest = priced[0];
         push('Rekordy', cheapest.p.emoji, 'Najtańsze białko w kategorii ' + catName + ' to ' + cheapest.p.name + ': ' + pl(cheapest.per, 2) + ' zł za gram.');
