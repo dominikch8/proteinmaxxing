@@ -250,12 +250,25 @@ function familyPrice(p, i) {
     else push('Odżywianie', p.emoji, 'Produkt ' + Q(p.name) + ' to ' + pl(per, 2) + ' zł za każdy gram białka — ' + priceVerdict(per) + '.');
 }
 
+/** F7 — ile gramów produktu trzeba zjeść na 30 g białka (tag: Odżywianie).
+ *  Uzupełnia F3: pokrywa produkty, które wypadły z przeliczeń kalorycznych. */
+function familyGramsFor30g(p, i) {
+    if (!solid(p)) return;
+    const pr = Number(p.protein);
+    const grams = (30 / pr) * 100;
+    if (!(grams > 500) || grams > 5000) return;
+    const phrase = i % 2;
+    if (phrase === 0) push('Odżywianie', p.emoji, 'Aby dostarczyć 30 g białka z produktu ' + Q(p.name) + ', trzeba by zjeść ' + pl(grams) + ' g — to ponad pół kilograma.');
+    else push('Odżywianie', p.emoji, 'Na 30 g białka z produktu ' + Q(p.name) + ' potrzeba ' + pl(grams) + ' g produktu.');
+}
+
 for (let i = 0; i < products.length; i++) {
     const p = products[i];
     if (!p || !p.name) continue;
     familyProteinPer100(p, i);
     familyDensity(p, i);
     familyKcalFor30g(p, i);
+    familyGramsFor30g(p, i);
     familyServing(p, i);
     familyProteinShare(p, i);
     familyPrice(p, i);
