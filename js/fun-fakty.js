@@ -238,7 +238,7 @@
         // Remaining categories wrap below the featured chip.
         const rest = document.createElement('div');
         rest.className = 'funfact-cats-rest';
-        categoriesOf(FULL_FACTS).forEach(function (cat) {
+        categoryList().forEach(function (cat) {
             const chip = document.createElement('button');
             chip.type = 'button';
             chip.className = 'funfact-cat' + (cat === activeCat ? ' is-active' : '');
