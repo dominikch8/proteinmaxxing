@@ -28,7 +28,7 @@
             items = items.filter((p) => p.category === cat);
         }
         if (query) {
-            items = items.filter((p) => p.name.toLowerCase().includes(query));
+            items = items.filter((p) => foldPolish(p.name).includes(foldPolish(query)));
         }
 
         if (countEl) {

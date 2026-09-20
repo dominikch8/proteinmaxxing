@@ -1354,6 +1354,13 @@
 })();
 </script>    <script>
     // Client-side pagination + category filter + live search for artykuly list
+    function foldPolish(s) {
+        return String(s)
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/ł/g, 'l');
+    }
     window.applyArticlesPagination = function () {
         const list = document.getElementById('artykulyList');
         if (!list) return;
@@ -1368,12 +1375,12 @@
         let activeCategory = 'all';
 
         function getFilteredItems() {
-            const query = searchInput.value.trim().toLowerCase();
+            const query = foldPolish(searchInput.value.trim());
             return items.filter(item => {
                 const cat = item.getAttribute('data-category') || 'inne';
                 if (activeCategory !== 'all' && cat !== activeCategory) return false;
                 if (!query) return true;
-                const text = (item.textContent || '').toLowerCase();
+                const text = foldPolish(item.textContent || '');
                 return text.includes(query);
             });
         }

@@ -194,7 +194,7 @@
         if (typeof productsDatabase === 'undefined') return [];
         const q = query.toLowerCase().trim();
         let pool = [...productsDatabase];
-        if (q) pool = pool.filter((p) => p.name.toLowerCase().includes(q));
+        if (q) pool = pool.filter((p) => foldPolish(p.name).includes(foldPolish(q)));
         return pool.slice(0, 12);
     }
 

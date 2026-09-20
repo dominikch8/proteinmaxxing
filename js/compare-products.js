@@ -188,7 +188,7 @@
         const exclude = otherSlotSlug(slotKey);
         let pool = productsDatabase.filter((p) => p.slug !== exclude);
         if (q) {
-            pool = pool.filter((p) => p.name.toLowerCase().includes(q));
+            pool = pool.filter((p) => foldPolish(p.name).includes(foldPolish(q)));
         }
         return pool;
     }

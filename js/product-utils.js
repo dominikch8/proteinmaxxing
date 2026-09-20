@@ -1,3 +1,16 @@
+/**
+ * Normalizuje tekst do wyszukiwania: małe litery + bez polskich znaków
+ * (ą→a, ć→c, ę→e, ł→l, ń→n, ó→o, ś→s, ź/ż→z). NFD zdejmuje też inne
+ * diakrytyki (np. ü→u). Dzięki temu wpisując "o" trafisz też "ó" itd.
+ */
+function foldPolish(s) {
+    return String(s)
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/ł/g, 'l');
+}
+
 function slugify(name) {
     return name
         .toLowerCase()
