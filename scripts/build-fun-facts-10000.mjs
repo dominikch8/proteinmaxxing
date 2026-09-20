@@ -28,7 +28,7 @@ const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_DIR = path.join(ROOT, 'fun-facts');
 
 /** Token wersji paczek — bump przy każdej regeneracji (długi cache na serwerze). */
-const FACTS_V = '20260920fun10k';
+const FACTS_V = '20260920fun10k2';
 const TARGET_TOTAL = 10000;
 const CHUNK_SIZE = 800;
 
