@@ -298,7 +298,7 @@
     }
 
     function roll() {
-        if (rolling) return;
+        if (rolling || !FUN_FACTS.length) return;
         rolling = true;
         btnEl.disabled = true;
         btnEl.classList.add('is-spinning');
