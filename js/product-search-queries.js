@@ -11651,9 +11651,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "raw venison sirloin meat ingredient photo"
   ],
   "ryz-do-risotto": [
-    "arborio risotto rice grains",
-    "arborio risotto rice grains food",
-    "arborio risotto rice grains ingredient photo"
+    "uncooked arborio white rice grains in small white bowl",
+    "uncooked arborio white rice grains in small white bowl food",
+    "uncooked arborio white rice grains in small white bowl ingredient photo"
   ],
   "ser-kashkaval": [
     "kashkaval yellow cheese",
@@ -11666,9 +11666,9 @@ export const PRODUCT_SEARCH_QUERIES = {
     "limburger cheese wedge ingredient photo"
   ],
   "sok-wisniowy": [
-    "cherry juice in clear glass",
-    "cherry juice in clear glass food",
-    "cherry juice in clear glass ingredient photo"
+    "dark red cherry juice in clear glass",
+    "dark red cherry juice in clear glass food",
+    "dark red cherry juice in clear glass ingredient photo"
   ],
   "surowka-z-kiszonej-kapusty": [
     "sauerkraut salad in white bowl",

@@ -82,7 +82,7 @@ function buildPrompt(p, englishName) {
             subject = `plain colorless still drinking water in a clear glass`;
         else if (/kawa|coffee/i.test(lower)) subject = `black coffee in a white ceramic cup`;
         else if (/herbata|tea/i.test(lower) && !/ice tea|lipton/i.test(lower)) subject = `tea in a clear glass cup`;
-        else if (/sok|juice|kubu[sś]|tymbark|pomara[nń]cz/i.test(lower)) subject = `fruit juice in a clear glass`;
+        else if (/sok|juice|kubu[sś]|tymbark|pomara[nń]cz/i.test(lower)) subject = /juice/i.test(en) ? `${en}, served in a clear glass` : `fruit juice in a clear glass`;
         else if (/ice tea|lipton/i.test(lower)) subject = `iced tea in a tall clear glass with ice`;
         else if (/energy|red bull|monster/i.test(lower)) subject = `energy drink in a tall glass with ice, no brand logo`;
         else if (/cola|pepsi/i.test(lower)) subject = `dark cola soft drink in a clear glass with ice and bubbles, no can, no brand logo`;
