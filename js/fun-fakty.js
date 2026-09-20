@@ -398,10 +398,13 @@
 
     /* ---------------------------- dane: spis paczek + paczki per kategoria ----
      * Serwer nie gzipuje JSON-a, więc 10 000 faktów leży w małych paczkach
-     * (data/fun-facts/*.json). Najpierw leci sam spis (index.json), a paczki
+     * (fun-facts/*.json). Najpierw leci sam spis (index.json), a paczki
      * tylko dla wybranej kategorii — dla „Wszystkie” dociągają się w tle.
+     * Ścieżkę liczymy z położenia tego skryptu, żeby działała także przy
+     * adresie z ukośnikiem (/fun-fakty/) i w podkatalogu.
      * ------------------------------------------------------------------------ */
-    const DATA_DIR = 'data/fun-facts/';
+    const SELF_SRC = document.currentScript ? document.currentScript.src : '';
+    const DATA_DIR = (SELF_SRC ? SELF_SRC.replace(/\/js\/[^/]*$/, '/') : '') + 'fun-facts/';
     let INDEX = null;
     let TOTAL = 0;
     let pooledLen = 0;
