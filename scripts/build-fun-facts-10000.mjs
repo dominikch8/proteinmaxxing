@@ -351,3 +351,129 @@ push('Odżywianie', '🍞', 'W ' + pl(carbsBeatProtein) + ' produktach z bazy w�
 
 const bigServing = products.filter((p) => Number(p.proteinInServing) >= 30).length;
 push('Trening', '🏋️', pl(bigServing) + ' produktów w bazie dostarcza co najmniej 30 g białka w jednej porcji.');
+
+/* ------------------------------------------------------- scalanie i selekcja */
+
+const generatedCount = FACTS.length;
+
+const curated = readCurated();
+let curatedKept = 0;
+for (const f of curated) {
+    if (!f || !f.text || !f.tag) continue;
+    const before = FACTS.length;
+    push(f.tag, f.emoji, f.text);
+    if (FACTS.length > before) curatedKept++;
+}
+
+const builtin = readBuiltinFacts();
+let builtinKept = 0;
+for (const f of builtin) {
+    const before = FACTS.length;
+    push(f.tag, f.emoji, f.text);
+    if (FACTS.length > before) builtinKept++;
+}
+
+const generated = FACTS.slice(0, generatedCount);
+const handWritten = FACTS.slice(generatedCount);
+
+const buckets = new Map();
+for (const f of generated) {
+    if (!buckets.has(f.tag)) buckets.set(f.tag, []);
+    buckets.get(f.tag).push(f);
+}
+
+/** Dobieramy fakty z bazy po równo między kategorie, aż dobijemy TARGET_TOTAL. */
+const need = Math.max(0, TARGET_TOTAL - handWritten.length);
+const chosen = [];
+const keys = Array.from(buckets.keys());
+while (chosen.length < need) {
+    let progressed = false;
+    for (const k of keys) {
+        const bucket = buckets.get(k);
+        if (!bucket.length) continue;
+        progressed = true;
+        chosen.push(bucket.shift());
+        if (chosen.length >= need) break;
+    }
+    if (!progressed) break;
+}
+
+const pool = handWritten.concat(chosen);
+
+/* ------------------------------------------------- deterministyczne losowanie */
+
+function mulberry32(seed) {
+    return function () {
+        seed |= 0;
+        seed = (seed + 0x6D2B79F5) | 0;
+        let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+        t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+        return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+}
+
+const rand = mulberry32(20260920);
+for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    const tmp = pool[i];
+    pool[i] = pool[j];
+    pool[j] = tmp;
+}
+pool.forEach((f, i) => { f.no = i + 1; });
+
+/* --------------------------------------------------------------- zapis paczek */
+
+const byTag = new Map();
+for (const f of pool) {
+    if (!byTag.has(f.tag)) byTag.set(f.tag, []);
+    byTag.get(f.tag).push(f);
+}
+
+fs.mkdirSync(OUT_DIR, { recursive: true });
+for (const name of fs.readdirSync(OUT_DIR)) {
+    if (name.endsWith('.json')) fs.rmSync(path.join(OUT_DIR, name));
+}
+
+const index = {
+    v: FACTS_V,
+    total: pool.length,
+    built: new Date().toISOString().slice(0, 10),
+    source: 'products-lite.js + fun-facts-new.json',
+    categories: []
+};
+
+const orderedTags = CAT_ORDER.filter((t) => byTag.has(t))
+    .concat(Array.from(byTag.keys()).filter((t) => CAT_ORDER.indexOf(t) === -1));
+
+for (const tag of orderedTags) {
+    const list = byTag.get(tag);
+    const slug = CAT_SLUG[tag] || norm(tag);
+    const files = [];
+    for (let i = 0; i < list.length; i += CHUNK_SIZE) {
+        const part = list.slice(i, i + CHUNK_SIZE);
+        const name = slug + '-' + (Math.floor(i / CHUNK_SIZE) + 1) + '.json';
+        fs.writeFileSync(path.join(OUT_DIR, name), JSON.stringify(part), 'utf8');
+        files.push(name);
+    }
+    index.categories.push({ tag: tag, slug: slug, count: list.length, files: files });
+}
+
+fs.writeFileSync(path.join(OUT_DIR, 'index.json'), JSON.stringify(index), 'utf8');
+
+/* ----------------------------------------------------------------- podsumowanie */
+
+let bytes = 0;
+let chunkFiles = 0;
+for (const c of index.categories) chunkFiles += c.files.length;
+for (const name of fs.readdirSync(OUT_DIR)) bytes += fs.statSync(path.join(OUT_DIR, name)).size;
+
+console.log('Fun fakty zbudowane');
+console.log('  faktow w puli:       ' + pool.length + '  (cel: ' + TARGET_TOTAL + ')');
+console.log('  z bazy produktow:    ' + chosen.length);
+console.log('  ciekawostki (json):  ' + curatedKept);
+console.log('  ciekawostki (js):    ' + builtinKept);
+console.log('  pominiete duplikaty: ' + skipped);
+console.log('  paczki:              ' + chunkFiles + ' plikow, ' + Math.round(bytes / 1024) + ' KB lacznie');
+for (const c of index.categories) {
+    console.log('    - ' + c.tag + ' — ' + c.count + ' faktow  ->  ' + c.files.join(', '));
+}
