@@ -267,6 +267,15 @@
         return categoriesOf(FULL_FACTS);
     }
 
+    /** Liczba faktów w aktywnej kategorii (albo w całej bazie dla „Wszystkie”). */
+    function poolTotal() {
+        if (INDEX && activeCat !== ALL_CAT) {
+            const cat = INDEX.categories.filter(function (c) { return c.tag === activeCat; })[0];
+            if (cat && cat.count) return cat.count;
+        }
+        return TOTAL || FUN_FACTS.length;
+    }
+
     function updateMeta() {
         if (counterEl) {
             const catLabel = activeCat === ALL_CAT ? 'wszystkie kategorie' : activeCat;
