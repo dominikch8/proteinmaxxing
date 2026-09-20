@@ -25,7 +25,7 @@ import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
-const OUT_DIR = path.join(ROOT, 'data', 'fun-facts');
+const OUT_DIR = path.join(ROOT, 'fun-facts');
 
 /** Token wersji paczek — bump przy każdej regeneracji (długi cache na serwerze). */
 const FACTS_V = '20260920fun10k';
