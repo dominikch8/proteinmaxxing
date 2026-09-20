@@ -499,6 +499,9 @@ for (const name of fs.readdirSync(OUT_DIR)) bytes += fs.statSync(path.join(OUT_D
 
 console.log('Fun fakty zbudowane');
 console.log('  faktow w puli:       ' + pool.length + '  (cel: ' + TARGET_TOTAL + ')');
+if (pool.length < TARGET_TOTAL) {
+    console.log('  UWAGA: pula ponizej celu — dodaj rodziny faktow albo zluzuj filtry.');
+}
 console.log('  z bazy produktow:    ' + chosen.length);
 console.log('  ciekawostki (json):  ' + curatedKept);
 console.log('  ciekawostki (js):    ' + builtinKept);
