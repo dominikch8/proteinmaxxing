@@ -140,6 +140,14 @@ function pctOf(list, p) {
 const density = (p) => (p.kcal > 0 && p.protein > 0 ? (p.protein / p.kcal) * 100 : 0);
 const perGramPrice = (p) => (p.pricePer100gProtein > 0 ? p.pricePer100gProtein / 100 : 0);
 
+/**
+ * Produkt „sensowny” do przeliczeń: bez tego kawa (0,1 g białka/100 g) wychodziła
+ * jako „10 g białka na 100 kcal”, a bułka tarta jako „1184 kcal za 30 g białka”.
+ */
+const MIN_PROTEIN = 5;
+const MIN_KCAL = 20;
+const solid = (p) => Number(p.protein) >= MIN_PROTEIN && Number(p.kcal) >= MIN_KCAL;
+
 const pricePerGramList = products.map(perGramPrice).filter((x) => x > 0);
 const CHEAP_Q1 = pctOf(pricePerGramList, 0.1);
 const PRICE_Q3 = pctOf(pricePerGramList, 0.75);
