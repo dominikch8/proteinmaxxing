@@ -267,10 +267,19 @@
         return categoriesOf(FULL_FACTS);
     }
 
+    /** Liczba faktów w aktywnej kategorii (albo w całej bazie dla „Wszystkie”). */
+    function poolTotal() {
+        if (INDEX && activeCat !== ALL_CAT) {
+            const cat = INDEX.categories.filter(function (c) { return c.tag === activeCat; })[0];
+            if (cat && cat.count) return cat.count;
+        }
+        return TOTAL || FUN_FACTS.length;
+    }
+
     function updateMeta() {
         if (counterEl) {
             const catLabel = activeCat === ALL_CAT ? 'wszystkie kategorie' : activeCat;
-            counterEl.textContent = 'Kategoria: ' + catLabel + ' · wylosowano ' + seen + ' z ' + (TOTAL || FUN_FACTS.length);
+            counterEl.textContent = 'Kategoria: ' + catLabel + ' · wylosowano ' + seen + ' z ' + poolTotal();
         }
     }
 
@@ -326,6 +335,8 @@
             seen++;
             updateMeta();
             updateProgress(fact);
+            // W trybie „Wszystkie” każdy obrót dociąga kolejną porcję bazy.
+            if (activeCat === ALL_CAT) loadNextTag();
             rolling = false;
             btnEl.disabled = false;
             btnEl.classList.remove('is-spinning');
@@ -387,14 +398,19 @@
 
     /* ---------------------------- dane: spis paczek + paczki per kategoria ----
      * Serwer nie gzipuje JSON-a, więc 10 000 faktów leży w małych paczkach
-     * (data/fun-facts/*.json). Najpierw leci sam spis (index.json), a paczki
+     * (fun-facts/*.json). Najpierw leci sam spis (index.json), a paczki
      * tylko dla wybranej kategorii — dla „Wszystkie” dociągają się w tle.
+     * Ścieżkę liczymy z położenia tego skryptu, żeby działała także przy
+     * adresie z ukośnikiem (/fun-fakty/) i w podkatalogu.
      * ------------------------------------------------------------------------ */
-    const DATA_DIR = 'data/fun-facts/';
+    const SELF_SRC = document.currentScript ? document.currentScript.src : '';
+    const DATA_DIR = (SELF_SRC ? SELF_SRC.replace(/\/js\/[^/]*$/, '/') : '') + 'fun-facts/';
     let INDEX = null;
     let TOTAL = 0;
     let pooledLen = 0;
-    let allLoading = false;
+    /** Ile kategorii wciągamy od razu w trybie „Wszystkie” (reszta przy losowaniu). */
+    const PRELOAD_TAGS = 3;
+    let preloadIdx = 0;
     const loadedTags = {};
     const pendingTags = {};
 
@@ -441,19 +457,28 @@
         return pendingTags[tag];
     }
 
-    /** Kategorie dla „Wszystkie” dociągamy po kolei, żeby nie zapchać łącza. */
+    /** Dociąga kolejną kategorię w tle (jedna porcja ~150 KB). */
+    function loadNextTag() {
+        if (!INDEX || !window.fetch) return;
+        if (preloadIdx >= INDEX.categories.length) return;
+        const tag = INDEX.categories[preloadIdx].tag;
+        preloadIdx += 1;
+        loadTag(tag).then(refreshPool);
+    }
+
+    /**
+     * Tryb „Wszystkie”: na wejściu wciągamy tylko PRELOAD_TAGS kategorii,
+     * a resztę po jednej przy każdym losowaniu — wejście na stronę nie ściąga
+     * od razu całej bazy (1,4 MB bez gzipa).
+     */
     function loadAll() {
-        if (!INDEX || allLoading) return;
-        allLoading = true;
-        const tags = INDEX.categories.map(function (c) { return c.tag; });
-        let i = 0;
+        if (!INDEX || !window.fetch) return;
+        let n = 0;
         (function next() {
-            if (i >= tags.length) { allLoading = false; return; }
-            loadTag(tags[i]).then(function () {
-                i += 1;
-                refreshPool();
-                window.setTimeout(next, 50);
-            });
+            if (n >= PRELOAD_TAGS) return;
+            n += 1;
+            loadNextTag();
+            window.setTimeout(next, 120);
         })();
     }
 
