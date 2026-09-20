@@ -243,3 +243,67 @@ for (let i = 0; i < products.length; i++) {
     familyProteinShare(p, i);
     familyPrice(p, i);
 }
+
+/* --------------------------------------------------- rekordy i statystyki bazy */
+
+const CAT_LABEL = {
+    'mieso': 'mięso',
+    'nabial': 'nabiał',
+    'sery': 'sery',
+    'warzywa': 'warzywa',
+    'owoce': 'owoce',
+    'platki-sniadaniowe': 'płatki śniadaniowe',
+    'zboza': 'zboża',
+    'makarony': 'makarony',
+    'slodycze': 'słodycze',
+    'orzechy': 'orzechy',
+    'sosy': 'sosy',
+    'tluszcze': 'tłuszcze',
+    'batony': 'batony',
+    'batony-proteinowe': 'batony proteinowe',
+    'fastfood': 'fast food',
+    'zupy': 'zupy',
+    'polskie-obiadki': 'polskie obiadki',
+    'mrozone-pizze': 'mrożone pizze',
+    'napoje': 'napoje',
+    'alkohole': 'alkohole',
+    'przyprawy': 'przyprawy'
+};
+
+const byCategory = new Map();
+for (const p of products) {
+    if (!p || !p.category) continue;
+    if (!byCategory.has(p.category)) byCategory.set(p.category, []);
+    byCategory.get(p.category).push(p);
+}
+
+const label = (cat) => CAT_LABEL[cat] || cat;
+
+for (const [cat, list] of byCategory) {
+    const withProtein = list.filter((p) => Number(p.protein) > 0);
+    if (!withProtein.length) continue;
+    const catName = '„' + label(cat) + '”';
+
+    const topProtein = withProtein.slice().sort((a, b) => b.protein - a.protein)[0];
+    push('Rekordy', topProtein.emoji, 'W kategorii ' + catName + ' najwięcej białka na 100 g ma ' + topProtein.name + ' — ' + pl(topProtein.protein, 1) + ' g.');
+
+    const dense = withProtein.filter((p) => p.kcal > 0).sort((a, b) => density(b) - density(a))[0];
+    if (dense) push('Rekordy', dense.emoji, 'Najlepszy stosunek białka do kalorii w kategorii ' + catName + ' ma ' + dense.name + ': ' + pl(density(dense), 1) + ' g białka na 100 kcal.');
+
+    const biggestServing = withProtein.filter((p) => Number(p.proteinInServing) > 0 && p.servingText).sort((a, b) => b.proteinInServing - a.proteinInServing)[0];
+    if (biggestServing) push('Rekordy', biggestServing.emoji, 'Najwięcej białka w jednej porcji w kategorii ' + catName + ' daje ' + biggestServing.name + ' — ' + pl(biggestServing.proteinInServing, 1) + ' g (' + biggestServing.servingText + ').');
+
+    const priced = list.map((p) => ({ p: p, per: perGramPrice(p) })).filter((x) => x.per > 0).sort((a, b) => a.per - b.per);
+    if (priced.length) {
+        const cheapest = priced[0];
+        push('Rekordy', cheapest.p.emoji, 'Najtańsze białko w kategorii ' + catName + ' to ' + cheapest.p.name + ': ' + pl(cheapest.per, 2) + ' zł za gram.');
+        const priciest = priced[priced.length - 1];
+        if (priced.length > 1) {
+            const ratio = priciest.per / cheapest.per;
+            push('Rekordy', priciest.p.emoji, 'Najdroższe białko w kategorii ' + catName + ' to ' + priciest.p.name + ': ' + pl(priciest.per, 2) + ' zł za gram — ' + pl(ratio, 1) + '× drożej niż najtańsze w tej kategorii.');
+        }
+    }
+
+    const avgProtein = withProtein.reduce((s, p) => s + Number(p.protein), 0) / withProtein.length;
+    push('Rekordy', '📊', 'Produkty w kategorii ' + catName + ' mają średnio ' + pl(avgProtein, 1) + ' g białka na 100 g (na podstawie ' + pl(withProtein.length) + ' pozycji).');
+}
