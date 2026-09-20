@@ -203,6 +203,8 @@ function familyKcalFor30g(p, i) {
     const pr = Number(p.protein);
     const kcal = Number(p.kcal);
     const grams = (30 / pr) * 100;
+    // Powyżej pół kilo produktu na 30 g białka fakt przestaje mieć sens kulinarny.
+    if (grams > 500) return;
     const cost = (grams / 100) * kcal;
     const phrase = i % 3;
     if (phrase === 0) push('Odchudzanie', p.emoji, 'Żeby zjeść 30 g białka z produktu ' + Q(p.name) + ', trzeba przyjąć ' + pl(cost) + ' kcal (' + pl(grams) + ' g produktu).');
