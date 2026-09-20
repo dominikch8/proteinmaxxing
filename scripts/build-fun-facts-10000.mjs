@@ -220,7 +220,7 @@ function familyServing(p, i) {
     // „po treningu” tylko przy sensownej porcji — 1 g białka nie buduje mięśni.
     const phrase = pis >= 10 ? i % 3 : (i % 2) * 2;
     if (phrase === 0) push('Trening', p.emoji, 'Jedna porcja produktu ' + Q(p.name) + ' (' + p.servingText + ') dostarcza ' + pl(pis, 1) + ' g białka — ' + pct + '% dziennego celu ' + DAILY_PROTEIN + ' g.');
-    else if (phrase === 1) push('Trening', p.emoji, 'Porcja ' + p.servingText + ' produktu ' + Q(p.name) + ' to ' + pl(pis, 1) + ' g białka po treningu.');
+    else if (phrase === 1) push('Trening', p.emoji, 'Po treningu porcja produktu ' + Q(p.name) + ' daje ' + pl(pis, 1) + ' g białka.');
     else push('Trening', p.emoji, 'Cała porcja produktu ' + Q(p.name) + ' (' + p.servingText + ') to ' + pl(pis, 1) + ' g białka.');
 }
 
