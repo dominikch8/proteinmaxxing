@@ -14,8 +14,8 @@
  *                                dlatego dzielimy je na małe pliki i ładujemy leniwie).
  *
  * UWAGA: celowo NIE w data/ — workflow deployu (.github/workflows/deploy.yml)
- * wyklucza z FTP cały katalog **/data/** jako dane lokalne serwera, więc pliki
- * z data/ nie trafiłyby na produkcję.
+ * wyklucza z FTP caly katalog data/ jako dane lokalne serwera, wiec pliki
+ * z data/ nie trafilyby na produkcje.
  *
  * Uruchom: node scripts/build-fun-facts-10000.mjs
  */
