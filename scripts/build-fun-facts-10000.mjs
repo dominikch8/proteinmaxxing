@@ -307,3 +307,47 @@ for (const [cat, list] of byCategory) {
     const avgProtein = withProtein.reduce((s, p) => s + Number(p.protein), 0) / withProtein.length;
     push('Rekordy', '📊', 'Produkty w kategorii ' + catName + ' mają średnio ' + pl(avgProtein, 1) + ' g białka na 100 g (na podstawie ' + pl(withProtein.length) + ' pozycji).');
 }
+
+/* ------------------------------------------------------------ statystyki bazy */
+
+const withKcal = products.filter((p) => p.kcal > 0 && p.protein > 0);
+const totalProducts = products.length;
+
+const maxProtein = products.slice().sort((a, b) => b.protein - a.protein)[0];
+const maxDensity = withKcal.slice().sort((a, b) => density(b) - density(a))[0];
+const pricedAll = products.map((p) => ({ p: p, per: perGramPrice(p) })).filter((x) => x.per > 0).sort((a, b) => a.per - b.per);
+
+push('Rekordy', '🥇', 'W całej bazie Proteiner (' + pl(totalProducts) + ' produktów) najwięcej białka na 100 g ma ' + maxProtein.name + ' — ' + pl(maxProtein.protein, 1) + ' g.');
+push('Rekordy', '🥇', 'Najlepsza gęstość białka w całej bazie: ' + maxDensity.name + ' — ' + pl(density(maxDensity), 1) + ' g białka na każde 100 kcal.');
+
+if (pricedAll.length) {
+    const cheapest = pricedAll[0];
+    const priciest = pricedAll[pricedAll.length - 1];
+    push('Rekordy', cheapest.p.emoji, 'Najtańsze białko w bazie to ' + cheapest.p.name + ' — ' + pl(cheapest.per, 2) + ' zł za gram (' + pl(cheapest.per * 30, 2) + ' zł za 30 g).');
+    push('Rekordy', priciest.p.emoji, 'Najdroższe białko w bazie to ' + priciest.p.name + ' — ' + pl(priciest.per, 2) + ' zł za gram, czyli ' + pl(priciest.per / cheapest.per, 0) + '× więcej niż najtańsze.');
+    const medianPer = median(pricedAll.map((x) => x.per));
+    push('Metabolizm', '💰', 'Mediana ceny białka w bazie Proteiner to ' + pl(medianPer, 2) + ' zł za gram — najtaniej ' + pl(cheapest.per, 2) + ' zł, najdrożej ' + pl(priciest.per, 2) + ' zł.');
+}
+
+const countAtLeast = (v) => products.filter((p) => Number(p.protein) >= v).length;
+push('Rekordy', '📈', pl(countAtLeast(25)) + ' produktów w bazie ma co najmniej 25 g białka na 100 g.');
+push('Rekordy', '📉', pl(countAtLeast(20)) + ' produktów w bazie ma co najmniej 20 g białka na 100 g.');
+push('Rekordy', '🌱', 'Aż ' + pl(products.filter((p) => Number(p.protein) > 0 && Number(p.protein) < 2).length) + ' produktów w bazie ma mniej niż 2 g białka na 100 g.');
+
+const avgProteinAll = products.reduce((s, p) => s + (Number(p.protein) || 0), 0) / totalProducts;
+push('Odżywianie', '📊', 'Średnio produkt w bazie Proteiner ma ' + pl(avgProteinAll, 1) + ' g białka na 100 g.');
+
+const highDensity = withKcal.filter((p) => density(p) >= 20).length;
+push('Rekordy', '⚡', 'Tylko ' + pl(highDensity) + ' produktów w bazie daje co najmniej 20 g białka na każde 100 kcal — to absolutna czołówka gęstości białka.');
+
+const halfFromProtein = withKcal.filter((p) => (Number(p.protein) * 4) / Number(p.kcal) > 0.5).length;
+push('Odżywianie', '🥩', 'W ' + pl(halfFromProtein) + ' produktach z bazy więcej niż połowa kalorii pochodzi z białka.');
+
+const fatBeatsProtein = withKcal.filter((p) => Number(p.fat) * 9 > Number(p.protein) * 4).length;
+push('Odżywianie', '🧈', 'W ' + pl(fatBeatsProtein) + ' produktach z bazy więcej energii dostarcza tłuszcz niż białko — warto o tym pamiętać na redukcji.');
+
+const carbsBeatProtein = withKcal.filter((p) => Number(p.carbs) * 4 > Number(p.protein) * 4).length;
+push('Odżywianie', '🍞', 'W ' + pl(carbsBeatProtein) + ' produktach z bazy węglowodany dają więcej kalorii niż białko.');
+
+const bigServing = products.filter((p) => Number(p.proteinInServing) >= 30).length;
+push('Trening', '🏋️', pl(bigServing) + ' produktów w bazie dostarcza co najmniej 30 g białka w jednej porcji.');
