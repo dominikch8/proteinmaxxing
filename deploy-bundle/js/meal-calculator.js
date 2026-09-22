@@ -143,28 +143,35 @@
         };
     }
 
-    function loadState() {
+    /**
+     * Kalkulator zawsze startuje z pustym posiłkiem: wejście na stronę nie
+     * przywraca poprzedniej listy (stan trzymamy tylko w pamięci, dopóki strona
+     * jest otwarta). Przy okazji usuwamy zapis z wcześniejszych wersji, żeby nic
+     * „nie zostało dodane”.
+     */
+    function clearStoredMeal() {
         try {
-            const raw = localStorage.getItem(STORAGE_KEY);
-            if (!raw) return;
-            const data = JSON.parse(raw);
-            if (Array.isArray(data.items)) mealItems = data.items;
+            localStorage.removeItem(STORAGE_KEY);
         } catch {
             /* ignore */
         }
     }
 
-    function saveState() {
-        try {
-            localStorage.setItem(
-                STORAGE_KEY,
-                JSON.stringify({
-                    items: mealItems,
-                })
-            );
-        } catch {
-            /* ignore */
-        }
+    /** Zeruje posiłek i cały UI do stanu „nic nie jest dodane”. */
+    function resetToEmpty() {
+        mealItems = [];
+        clearStoredMeal();
+        selectedProduct = null;
+        const chip = $('mealSelectedChip');
+        if (chip) chip.hidden = true;
+        const input = $('mealProductSearch');
+        if (input) input.value = '';
+        const grams = $('mealGramsInput');
+        if (grams) grams.value = '100';
+        hideSuggestions();
+        renderMealList();
+        renderTotals();
+        updateWizardUI();
     }
 
     function setSelectedProduct(p) {
@@ -297,7 +304,6 @@
             emoji: selectedProduct.emoji || '🍽️',
             grams,
         });
-        saveState();
         renderMealList();
         renderTotals();
         setSelectedProduct(null);
@@ -311,7 +317,6 @@
 
     function removeItem(id) {
         mealItems = mealItems.filter((x) => x.id !== id);
-        saveState();
         renderMealList();
         renderTotals();
         updateWizardUI();
@@ -319,7 +324,6 @@
 
     function clearMeal() {
         mealItems = [];
-        saveState();
         renderMealList();
         renderTotals();
         updateWizardUI();
@@ -408,7 +412,6 @@
         set('mealTotalUnsat', `${t.unsatFat} g`);
 
         renderMicroTable(t.micros);
-        saveState();
     }
 
     function adultRdaTarget(key) {
@@ -518,15 +521,20 @@
     }
 
     async function boot() {
+        // Wejście na kalkulator zawsze startuje od zera — nic nie jest dodane.
+        resetToEmpty();
         if (typeof ensureProductsDatabase === 'function') {
             await ensureProductsDatabase();
         }
-        loadState();
         bind();
-        renderMealList();
-        renderTotals();
         updateWizardUI();
     }
+
+    // Powrót z cache przeglądarki (np. przyciskiem „wstecz”) nie uruchamia
+    // boot() od nowa — czyścimy więc posiłek również w takim wypadku.
+    window.addEventListener('pageshow', (e) => {
+        if (e.persisted) resetToEmpty();
+    });
 
     boot().catch((err) => console.error('meal-calculator:', err));
 })();
