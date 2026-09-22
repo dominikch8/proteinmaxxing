@@ -304,7 +304,6 @@
             emoji: selectedProduct.emoji || '🍽️',
             grams,
         });
-        saveState();
         renderMealList();
         renderTotals();
         setSelectedProduct(null);
