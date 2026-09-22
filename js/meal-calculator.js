@@ -318,7 +318,6 @@
 
     function removeItem(id) {
         mealItems = mealItems.filter((x) => x.id !== id);
-        saveState();
         renderMealList();
         renderTotals();
         updateWizardUI();
@@ -326,7 +325,6 @@
 
     function clearMeal() {
         mealItems = [];
-        saveState();
         renderMealList();
         renderTotals();
         updateWizardUI();
