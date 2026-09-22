@@ -470,8 +470,7 @@
     }
 
     function bind() {
-        const search = $('mealProductSearch');
-        if (search) {
+        const search = $('mealProductSearch');        if (search) {
             search.addEventListener('input', () => {
                 selectedProduct = null;
                 const chip = $('mealSelectedChip');
