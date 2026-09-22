@@ -143,28 +143,35 @@
         };
     }
 
-    function loadState() {
+    /**
+     * Kalkulator zawsze startuje z pustym posiłkiem: wejście na stronę nie
+     * przywraca poprzedniej listy (stan trzymamy tylko w pamięci, dopóki strona
+     * jest otwarta). Przy okazji usuwamy zapis z wcześniejszych wersji, żeby nic
+     * „nie zostało dodane”.
+     */
+    function clearStoredMeal() {
         try {
-            const raw = localStorage.getItem(STORAGE_KEY);
-            if (!raw) return;
-            const data = JSON.parse(raw);
-            if (Array.isArray(data.items)) mealItems = data.items;
+            localStorage.removeItem(STORAGE_KEY);
         } catch {
             /* ignore */
         }
     }
 
-    function saveState() {
-        try {
-            localStorage.setItem(
-                STORAGE_KEY,
-                JSON.stringify({
-                    items: mealItems,
-                })
-            );
-        } catch {
-            /* ignore */
-        }
+    /** Zeruje posiłek i cały UI do stanu „nic nie jest dodane”. */
+    function resetToEmpty() {
+        mealItems = [];
+        clearStoredMeal();
+        selectedProduct = null;
+        const chip = $('mealSelectedChip');
+        if (chip) chip.hidden = true;
+        const input = $('mealProductSearch');
+        if (input) input.value = '';
+        const grams = $('mealGramsInput');
+        if (grams) grams.value = '100';
+        hideSuggestions();
+        renderMealList();
+        renderTotals();
+        updateWizardUI();
     }
 
     function setSelectedProduct(p) {
