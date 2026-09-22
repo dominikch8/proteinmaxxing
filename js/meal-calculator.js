@@ -521,15 +521,20 @@
     }
 
     async function boot() {
+        // Wejście na kalkulator zawsze startuje od zera — nic nie jest dodane.
+        resetToEmpty();
         if (typeof ensureProductsDatabase === 'function') {
             await ensureProductsDatabase();
         }
-        loadState();
         bind();
-        renderMealList();
-        renderTotals();
         updateWizardUI();
     }
+
+    // Powrót z cache przeglądarki (np. przyciskiem „wstecz”) nie uruchamia
+    // boot() od nowa — czyścimy więc posiłek również w takim wypadku.
+    window.addEventListener('pageshow', (e) => {
+        if (e.persisted) resetToEmpty();
+    });
 
     boot().catch((err) => console.error('meal-calculator:', err));
 })();
