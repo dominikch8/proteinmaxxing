@@ -415,7 +415,6 @@
         set('mealTotalUnsat', `${t.unsatFat} g`);
 
         renderMicroTable(t.micros);
-        saveState();
     }
 
     function adultRdaTarget(key) {
