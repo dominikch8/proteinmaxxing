@@ -5,6 +5,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { ASSET_V } from './site-head-assets.mjs';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SKIP_DIRS = new Set(['node_modules', '.git', 'deploy-bundle', 'domains']);
@@ -36,7 +37,7 @@ for (const fp of walkHtml(root)) {
     if (path.basename(fp) === 'index.html' && !path.dirname(fp).includes('produkty')) {
         html = html.replace(
             /<script src="js\/products-lite\.js"><\/script>\s*<script src="js\/product-utils\.js"><\/script>\s*<script src="js\/products-data\.js"><\/script>/,
-            '<script src="js/product-utils.js"></script>\n<script src="js/products-loader.js"></script>'
+            `<script src="js/product-utils.js?v=${ASSET_V}"></script>\n<script src="js/products-loader.js?v=${ASSET_V}"></script>`
         );
     }
 

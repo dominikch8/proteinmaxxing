@@ -26,6 +26,9 @@ const FILES = [
     'js/info-tiles.js',
     'js/home.js',
     'js/home-articles.js',
+    // Loader bazy produktów: jego token trafia też do produktów danych
+    // (products-lite.js) przez resolveAssetQuery() w js/products-loader.js.
+    'js/products-loader.js',
 ];
 
 function walk(dir, list = []) {

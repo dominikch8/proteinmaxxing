@@ -9,6 +9,7 @@ import {
 import { buildSiteFooter } from './site-footer-html.mjs';
 import { buildHealthDisclaimer } from './site-legal-html.mjs';
 import {
+    ASSET_V,
     buildFaviconLinks,
     buildSocialImageMeta,
     buildThemeInitScript,
@@ -169,7 +170,7 @@ ${buildHealthDisclaimer(PREFIX, { compact: true })}
 
 ${buildSiteFooter(PREFIX)}
     <script src="${PREFIX}js/product-utils.js"></script>
-    <script src="${PREFIX}js/products-loader.js"></script>
+    <script src="${PREFIX}js/products-loader.js?v=${ASSET_V}"></script>
     <script src="${PREFIX}js/category-page.js"></script>
 ${buildThemeBodyScript(PREFIX)}
 </body>

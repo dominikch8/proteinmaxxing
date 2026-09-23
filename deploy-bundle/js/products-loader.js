@@ -9,6 +9,25 @@ function resolveProductsBaseUrl() {
     return 'js/';
 }
 
+/**
+ * Token wersji (?v=…) dla plików danych.
+ *
+ * .htaccess serwuje .js z "Cache-Control: immutable" na 30 dni, a baza
+ * produktów (products-lite.js) ładowana jest dynamicznie — bez tokenu
+ * użytkownicy z pamięcią podręczną nie zobaczyliby poprawek danych nawet po
+ * wgraniu nowej wersji. Bierzemy token z własnego tagu loadera, a gdy go nie ma
+ * (np. świeżo wygenerowana strona) — z theme-init.js, który jest na każdej
+ * stronie i jest podbijany przy każdym wydaniu (scripts/site-head-assets.mjs).
+ */
+function resolveAssetQuery() {
+    const own = document.querySelector('script[src*="products-loader.js"]');
+    const ownMatch = own?.src?.match(/\?([^#]+)/);
+    if (ownMatch) return `?${ownMatch[1]}`;
+    const fallback = document.querySelector('script[src*="theme-init.js"]');
+    const fallbackMatch = fallback?.src?.match(/\?([^#]+)/);
+    return fallbackMatch ? `?${fallbackMatch[1]}` : '';
+}
+
 function loadScript(url) {
     return new Promise((resolve, reject) => {
         const existing = document.querySelector(`script[src="${url}"]`);
@@ -37,15 +56,16 @@ async function ensureProductsDatabase() {
     if (_productsLoadPromise) return _productsLoadPromise;
 
     const base = resolveProductsBaseUrl();
+    const v = resolveAssetQuery();
     _productsLoadPromise = (async () => {
         if (typeof enrichProducts !== 'function') {
-            await loadScript(`${base}product-utils.js`);
+            await loadScript(`${base}product-utils.js${v}`);
         }
         if (typeof productsDatabaseLite === 'undefined') {
-            await loadScript(`${base}products-lite.js`);
+            await loadScript(`${base}products-lite.js${v}`);
         }
         if (typeof productsDatabase === 'undefined') {
-            await loadScript(`${base}products-data.js`);
+            await loadScript(`${base}products-data.js${v}`);
         }
 
         try {
