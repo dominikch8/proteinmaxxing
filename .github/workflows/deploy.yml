@@ -56,12 +56,12 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./
         server-dir: /public_html/proteiner.pl/
-        # Usuwanie zdalne: pliki, których nie ma w repo, są kasowane na serwerze.
-        # Dzięki temu stare/nieaktualne zdjęcia i generowane pliki nie gromadzą się
-        # (wcześniej FTP działał w trybie "tylko dodaj" i serwer zapchał się do limitu).
-        # Dane dynamiczne są wykluczone poniżej (data/**, *.sqlite, config.local.php,
-        # products-data-raw.js, deploy-bundle, node_modules, .git...) — nie zostaną usunięte.
-        delete: true
+        # UWAGA: to NIE jest parametr tej akcji — GitHub go ignoruje
+        # ("Unexpected input(s) 'delete'"), więc zdalne kasowanie nigdy nie
+        # działało i na serwerze zostawały stare pliki. Akcja synchronizuje
+        # usunięcia z repo sama (na podstawie stanu). Nie włączamy
+        # "dangerous-clean-slate", bo kasuje CAŁY katalog na serwerze
+        # (usunęłoby też data/ z bazą i config.local.php).
         log-level: verbose
         exclude: |
           **/.git*
