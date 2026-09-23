@@ -11,6 +11,14 @@ on:
       - '.hotfix-ftp/**'
   workflow_dispatch:
 
+# Watcher auto-commit wypycha commit co ~2,5 s, a każdy push odpalał osobny
+# pełny sync FTP — w historii jest ~2 150 runów i burze po 10 równoległych
+# połączeń FTP (serwer je zrywał: "write EPIPE / ECONNRESET (data socket)").
+# Jeden deploy naraz; nowszy push anuluje poprzedni, nie czeka w kolejce.
+concurrency:
+  group: deploy-main
+  cancel-in-progress: true
+
 jobs:
   web-deploy:
     name: Deploy
