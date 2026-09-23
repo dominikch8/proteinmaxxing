@@ -61,6 +61,8 @@ jobs:
           **/node_modules/**
           **/.cursor/**
           **/deploy-bundle/**
+          **/.hotfix-ftp/**
+          **/.ftp-deploy-sync-state.json
           **/scripts/**
           **/package.json
           **/package-lock.json
