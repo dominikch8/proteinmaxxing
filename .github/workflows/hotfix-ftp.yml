@@ -23,14 +23,32 @@ jobs:
     - name: Pobranie kodu
       uses: actions/checkout@v4
 
-    - name: Sync plików przez FTP (tylko .hotfix-ftp)
+    - name: Przygotowanie stagingu
+      run: |
+        set -e
+        LIST="${{ github.event.inputs.files }}"
+        [ -z "$LIST" ] && LIST="js/meal-calculator.js,kalkulator-posilkow.html"
+        IFS=',' read -ra ITEMS <<< "$LIST"
+        for f in "${ITEMS[@]}"; do
+          f="$(echo "$f" | xargs)"
+          [ -z "$f" ] && continue
+          if [ ! -f "$f" ]; then
+            echo "::error::Brak pliku w repo: $f"
+            exit 1
+          fi
+          mkdir -p ".hotfix-ftp/$(dirname "$f")"
+          cp "$f" ".hotfix-ftp/$f"
+          echo "staging: $f"
+        done
+
+    - name: Sync plików przez FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        # .hotfix-ftp/ odzwierciedla strukturę katalogów strony,
-        # np. .hotfix-ftp/js/app.js -> /public_html/proteiner.pl/js/app.js
+        # Staging odzwierciedla strukturę strony, więc
+        # .hotfix-ftp/js/app.js trafia do /public_html/proteiner.pl/js/app.js
         local-dir: ./.hotfix-ftp/
         server-dir: /public_html/proteiner.pl/
         # Własny plik stanu, żeby nie mieszać się z pełnym deployem.
