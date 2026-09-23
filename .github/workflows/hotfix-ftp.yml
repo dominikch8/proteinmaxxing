@@ -1,22 +1,18 @@
 name: Hotfix FTP (pojedyncze pliki)
 
-# Awaryjny deploy małego zestawu plików, gdy pełny sync przez FTP pada
-# (np. "write EPIPE (data socket)"). Wgrywa WYŁĄCZNIE zawartość .hotfix-ftp/,
-# odzwierciedlającą strukturę strony, więc nie dotyka niczego innego.
+# Awaryjny deploy małego zestawu plików, gdy pełny sync pada
+# (np. "write EPIPE (data socket)" lub "ECONNRESET (data socket)").
+# Wgrywa tylko wskazane pliki, w tej samej strukturze katalogów, co na stronie.
 #
-# Użycie:
-#   1. Skopiuj plik do .hotfix-ftp/ w tej samej ścieżce, co na stronie,
-#      np. .hotfix-ftp/js/meal-calculator.js
-#   2. Commit + push (ścieżka .hotfix-ftp/** uruchamia ten workflow)
-#      albo ręcznie: Actions -> "Hotfix FTP" -> Run workflow
+# Użycie: Actions -> "Hotfix FTP" -> Run workflow (można podać własne ścieżki).
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - '.hotfix-ftp/**'
+    inputs:
+      files:
+        description: 'Ścieżki do wgrania (oddzielone przecinkami)'
+        required: false
+        default: 'js/meal-calculator.js,kalkulator-posilkow.html'
 
 jobs:
   hotfix:
