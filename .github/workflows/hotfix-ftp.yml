@@ -1,0 +1,45 @@
+name: Hotfix FTP (pojedyncze pliki)
+
+# Awaryjny deploy małego zestawu plików, gdy pełny sync przez FTP pada
+# (np. "write EPIPE (data socket)"). Wgrywa WYŁĄCZNIE zawartość .hotfix-ftp/,
+# odzwierciedlającą strukturę strony, więc nie dotyka niczego innego.
+#
+# Użycie:
+#   1. Skopiuj plik do .hotfix-ftp/ w tej samej ścieżce, co na stronie,
+#      np. .hotfix-ftp/js/meal-calculator.js
+#   2. Commit + push (ścieżka .hotfix-ftp/** uruchamia ten workflow)
+#      albo ręcznie: Actions -> "Hotfix FTP" -> Run workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.hotfix-ftp/**'
+
+jobs:
+  hotfix:
+    name: Hotfix
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+    - name: Pobranie kodu
+      uses: actions/checkout@v4
+
+    - name: Sync plików przez FTP (tylko .hotfix-ftp)
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        # .hotfix-ftp/ odzwierciedla strukturę katalogów strony,
+        # np. .hotfix-ftp/js/app.js -> /public_html/proteiner.pl/js/app.js
+        local-dir: ./.hotfix-ftp/
+        server-dir: /public_html/proteiner.pl/
+        # Własny plik stanu, żeby nie mieszać się z pełnym deployem.
+        state-name: .ftp-hotfix-state.json
+        log-level: verbose
+        exclude: |
+          **/.git*
+          **/.git/**
