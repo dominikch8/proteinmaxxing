@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+    # Commity tylko-CI nie wymagają wdrożenia strony — bez tego każdy commit
+    # workflowa (i staging hotfixu) odpalał pełny sync FTP.
+    paths-ignore:
+      - '.github/**'
+      - '.hotfix-ftp/**'
   workflow_dispatch:
 
 jobs:
