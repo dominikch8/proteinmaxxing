@@ -283,4 +283,55 @@ const defs = [
         uwaga: 'Nie zakładaj, że roślinne = mniej kalorii — panierowane kotlety roślinne potrafią mieć tyle kcal, co schabowy.',
         coDalej: 'Zobacz <a href="bialko-roslinne-vs-zwierzece">białko roślinne vs zwierzęce</a> i <a href="wegetarianskie-zrodla-bialka">wegetariańskie źródła białka</a>.'
     },
+    {
+        slug: 'ryz-z-fasola-czemu-razem',
+        emoji: '🍚',
+        title: 'Ryż z fasolą — dlaczego razem, a nie osobno',
+        subtitle: 'Osobno mają „dziury” w aminokwasach, razem tworzą komplet. To najtańszy pełnowartościowy posiłek roślinny.',
+        meta: 'Dlaczego ryż z fasolą to pełne białko — aminokwasy lizyna i metionina, jak łączyć zboża ze strączkami i ile białka daje ta para.',
+        category: 'bialko',
+        lead: 'Zboża mają mało lizyny, strączki mało metioniny. Ryż uzupełnia fasolę i odwrotnie — razem dają komplet aminokwasów jak mięso.',
+        sections: [
+            { h2: 'Aminokwasy uzupełniające', p: 'Lizyna ze strączków i metionina ze zbóż składają się w pełny profil. Nie musisz jeść ich w tym samym posiłku — wystarczy ten sam dzień.' },
+            { h2: 'Ile białka daje', p: 'Porcja: 100 g ryżu (suchego) + 100 g fasoli to ~20 g białka. To baza, do której dokładasz warzywa i tłuszcz.' },
+            { h2: 'Czemu to tanie', p: 'Ryż i sucha fasola to jedne z najtańszych kalorii i białka w sklepie. Meal prep na cały tydzień za kilkanaście złotych.' }
+        ],
+        bullets: ['<strong>Ryż + strączki</strong> — komplet aminokwasów.', '<strong>~20 g białka</strong> — za porcję duetu.', '<strong>Ten sam dzień</strong> — nie musi być jeden talerz.'],
+        uwaga: 'Suchą fasolę mocz i gotuj porządnie — niedogotowane strączki mają lektyny, które podrażniają żołądek.',
+        coDalej: 'Zobacz <a href="bialko-roslinne-vs-zwierzece">białko roślinne vs zwierzęce</a> i <a href="wegetarianskie-zrodla-bialka">wegetariańskie źródła białka</a>.'
+    },
+    {
+        slug: 'czy-mozna-przedawkowac-bialko',
+        emoji: '⚠️',
+        title: 'Czy można przedawkować białko z jedzenia',
+        subtitle: 'Z normalnego jedzenia — praktycznie nie. Z proszku łychą na godzinę — to już inna rozmowa.',
+        meta: 'Czy można przedawkować białko — ile g/kg to za dużo, objawy nadmiaru białka i kiedy suplementacja robi się ryzykowna.',
+        category: 'bialko',
+        lead: 'Przedawkować białko z jedzenia jest naprawdę trudno — musiałbyś zjeść absurdalne ilości mięsa. Realne ryzyko to nadmiar kalorii, nie białka.',
+        sections: [
+            { h2: 'Ile to za dużo', p: 'Powyżej ~3,5–4 g/kg u zdrowych osób pojawiają się problemy trawienne i obciążenie nerek. To ponad 250 g białka dla 70 kg — trudne do zjedzenia.' },
+            { h2: 'Co się dzieje przy nadmiarze', p: 'Białko nie zamienia się w mięśnie — nadwyżka idzie w energię albo tłuszcz. Plus odwodnienie i obciążenie przewodu pokarmowego.' },
+            { h2: 'Kiedy uważać', p: 'Przy chorej nerce/wątrobie i przy ekstremalnym dokładaniu proszku do wszystkiego. Normalna dieta 1,6–2,2 g/kg jest całkowicie bezpieczna.' }
+        ],
+        bullets: ['<strong>1,6–2,2 g/kg</strong> — strefa bezpieczna i skuteczna.', '<strong>3,5+ g/kg</strong> — zaczynają się problemy.', '<strong>Więcej ≠ więcej mięśni</strong> — nadwyżka to tłuszcz.'],
+        uwaga: 'Proszek „łyżka do wszystkiego” potrafi zsumować się w 3+ g/kg — licz łączną podaż, nie tylko posiłki stałe.',
+        coDalej: 'Zobacz <a href="czy-bialko-obciaza-nerki">czy białko obciąża nerki</a> i <a href="ile-bialka-na-dzien">ile białka dziennie</a>.'
+    },
+    {
+        slug: 'bialko-w-platkach-owsianych',
+        emoji: '🥣',
+        title: 'Białko w płatkach owsianych — ile go naprawdę jest',
+        subtitle: 'Płatki owsiane to ~13 g białka na 100 g. To więcej niż myślisz, ale to wciąż głównie węglowodany.',
+        meta: 'Ile białka mają płatki owsiane — wartość na 100 g i porcję, jak podbić białko w owsiance i czy owies to dobre źródło białka.',
+        category: 'bialko',
+        lead: 'Płatki owsiane mają ~13 g białka na 100 g — więcej niż ryż czy pieczywo. Ale porcja owsianki to nadal głównie węglowodany.',
+        sections: [
+            { h2: 'Białko w 100 g', p: '13 g to solidnie jak na zboże (dla porównania ryż ~7 g). Ale 100 g płatków to też ~66 g węglowodanów i ~380 kcal.' },
+            { h2: 'Jak podbić białko', p: 'Owsianka na mleku + jogurt/twaróg + łyżka masła orzechowego to już ~30 g białka w jednej misce. Same płatki to za mało.' },
+            { h2: 'Czy owies buduje mięśnie', p: 'Nie sam. Białko owsa nie ma pełnego profilu (mało lizyny), więc traktuj je jako dodatek, nie główne źródło.' }
+        ],
+        bullets: ['<strong>13 g białka/100 g</strong> — dużo jak na zboże.', '<strong>Owsianka + nabiał</strong> — dobić do ~30 g białka.', '<strong>Nie jest kompletne</strong> — dokładaj nabiał/soję.'],
+        uwaga: 'Płatki „błyskawiczne” mają wyższy indeks glikemiczny — zwykłe górskie trzymają sytość dłużej.',
+        coDalej: 'Zobacz <a href="bialko-na-sniadanie-jajka-czy-platki">jajka czy płatki na śniadanie</a> i <a href="ile-bialka-na-dzien">ile białka dziennie</a>.'
+    },
 // @@MORE@@
