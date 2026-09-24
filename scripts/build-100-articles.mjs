@@ -385,4 +385,55 @@ const defs = [
         uwaga: 'Więcej błonnika wymaga więcej wody — bez nawodnienia zaparcia się nasilą, zamiast ustąpić.',
         coDalej: 'Zobacz <a href="volume-eating-jak-jesc-duzo-i-chudnac">volume eating</a> i <a href="blonnik-z-siemienia">błonnik z siemienia lnianego</a>.'
     },
+    {
+        slug: 'oliwa-czy-maslo',
+        emoji: '🫒',
+        title: 'Oliwa czy masło — co do czego na patelni',
+        subtitle: 'Oba to ~90% tłuszczu. Różnią się składem kwasów i punktem dymienia — a nie „zdrowością” na oko.',
+        meta: 'Oliwa czy masło — który tłuszcz do smażenia i na zimno: kwasy tłuszczowe, punkt dymienia, kalorie i co wybrać na diecie.',
+        category: 'odzywianie',
+        lead: 'Oliwa i masło mają niemal identyczną kaloryczność (~900 kcal/100 g). Różnica to profil tłuszczów: oliwa to głównie jednonienasycone, masło — nasycone.',
+        sections: [
+            { h2: 'Skład kwasów', p: 'Oliwa to ~73% jednonienasyconych (zdrowe dla serca). Masło to ~63% nasyconych. Na co dzień oliwa wygrywa profilem.' },
+            { h2: 'Smażenie', p: 'Masło ma niski punkt dymienia i przypala się szybciej. Do smażenia lepsza oliwa (zwłaszcza rafinowana) albo masło klarowane.' },
+            { h2: 'Kalorie', p: '1 łyżka oliwy = 1 łyżka masła = ~120 kcal. Na redukcji oba licz — łatwo wlać 300 kcal „na oko”.' }
+        ],
+        bullets: ['<strong>Na zimno</strong> — oliwa extra virgin.', '<strong>Do smażenia</strong> — oliwa lub masło klarowane.', '<strong>1 łyżka ≈ 120 kcal</strong> — mierz, nie lej.'],
+        uwaga: '„Lekkie” oliwy i masła roślinne mają tyle samo kalorii — nazwa to marketing, nie mniej energii.',
+        coDalej: 'Zobacz <a href="tluszcze-nasycone-czy-nienasycone">tłuszcze nasycone vs nienasycone</a> i <a href="kalorie-na-oko-dlaczego-sie-mylisz">kalorie na oko</a>.'
+    },
+    {
+        slug: 'witamina-d-zima',
+        emoji: '☀️',
+        title: 'Witamina D zimą — czy suplement to konieczność',
+        subtitle: 'Między październikiem a marcem słońce w Polsce nie wystarcza. U większości ludzi D3 warto brać.',
+        meta: 'Witamina D zimą — dlaczego w Polsce jej brakuje, ile IU dziennie brać, z czym łączyć i czy badać poziom przed suplementacją.',
+        category: 'odzywianie',
+        lead: 'Od października do marca kąt padania słońca jest zbyt niski, by skóra produkowała witaminę D. W polskich warunkach suplementacja to norma, nie fanaberia.',
+        sections: [
+            { h2: 'Dlaczego brakuje', p: 'Witamina D powstaje w skórze pod wpływem UVB. Zimą UVB praktycznie nie dociera — stąd powszechne niedobory nawet u zdrowych osób.' },
+            { h2: 'Ile brać', p: 'Dla dorosłych typowo 1000–2000 IU dziennie, u osób z niedoborem więcej. Najlepiej po zbadaniu poziomu 25(OH)D.' },
+            { h2: 'Z czym łączyć', p: 'D3 jest rozpuszczalna w tłuszczu — bierz z posiłkiem zawierającym tłuszcz. To realnie poprawia wchłanianie.' }
+        ],
+        bullets: ['<strong>Październik–marzec</strong> — suplementuj D3.', '<strong>1000–2000 IU/dzień</strong> — typowa dawka dorosłego.', '<strong>Z tłuszczem</strong> — lepsze wchłanianie.'],
+        uwaga: 'D3 to witamina rozpuszczalna w tłuszczach — da się ją przedawkować. Trzymaj się dawek, nie łykaj „na zapas”.',
+        coDalej: 'Zobacz <a href="wapn-bez-nabialu">wapń bez nabiału</a> i <a href="kreatyna-kofeina-bialko-co-warto">co naprawdę warto suplementować</a>.'
+    },
+    {
+        slug: 'zelazo-u-trenujacych-kobiet',
+        emoji: '🩸',
+        title: 'Żelazo u trenujących kobiet — objawy, których nie ignoruj',
+        subtitle: 'Zmęczenie, bladość, słabszy trening — to może być żelazo, nie lenistwo. Kobiety tracą go więcej.',
+        meta: 'Niedobór żelaza u trenujących kobiet — objawy, norma ferrytyny, najlepsze źródła żelaza i kiedy suplementacja ma sens.',
+        category: 'odzywianie',
+        lead: 'Miesiączka + trening + niskokaloryczna dieta = przepis na niedobór żelaza. Zmęczenie i gorsze wyniki to często ferrytyna, nie brak motywacji.',
+        sections: [
+            { h2: 'Objawy', p: 'Ciągłe zmęczenie, bladość, łamliwe paznokcie, zadyszka przy wysiłku, zimne dłonie. To klasyka niedoboru żelaza.' },
+            { h2: 'Jakie źródła', p: 'Czerwone mięso, wątróbka, strączki, szpinak, pestki dyni. Żelazo hemowe (z mięsa) wchłania się lepiej niż roślinne.' },
+            { h2: 'Wchłanianie', p: 'Witamina C podbija wchłanianie żelaza roślinnego; kawa i herbata tuż po posiłku je blokują. To praktyczne, nie kosmetyczne różnice.' }
+        ],
+        bullets: ['<strong>Zbadaj ferrytynę</strong> — zanim zaczniesz brać.', '<strong>Mięso + witamina C</strong> — najlepsze wchłanianie.', '<strong>Kawa/herbata po posiłku</strong> — blokują żelazo.'],
+        uwaga: 'Nie suplementuj żelaza „w ciemno” — nadmiar jest toksyczny. Najpierw morfologia i ferrytyna.',
+        coDalej: 'Zobacz <a href="bialko-a-wlosy-paznokcie">białko a włosy</a> i <a href="wapn-bez-nabialu">wapń bez nabiału</a>.'
+    },
 // @@MORE@@
