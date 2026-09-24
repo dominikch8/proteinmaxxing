@@ -334,4 +334,55 @@ const defs = [
         uwaga: 'Płatki „błyskawiczne” mają wyższy indeks glikemiczny — zwykłe górskie trzymają sytość dłużej.',
         coDalej: 'Zobacz <a href="bialko-na-sniadanie-jajka-czy-platki">jajka czy płatki na śniadanie</a> i <a href="ile-bialka-na-dzien">ile białka dziennie</a>.'
     },
+    {
+        slug: 'najtansze-zrodla-bialka-w-polsce',
+        emoji: '💸',
+        title: 'Najtańsze źródła białka w polskich sklepach',
+        subtitle: 'Twaróg, jaja, pierś z kurczaka i sucha fasola — ranking ceny za 100 g białka, nie za opakowanie.',
+        meta: 'Najtańsze źródła białka w Polsce — twaróg, jaja, kurczak, tuńczyk i strączki: cena za 100 g białka i który wybór daje najwięcej za złotówkę.',
+        category: 'bialko',
+        lead: 'Cena za opakowanie kłamie — liczy się cena za 100 g białka. Twaróg chudy, jaja i sucha fasola regularnie wygrywają z „proteinową” półką.',
+        sections: [
+            { h2: 'Ranking na oko', p: 'Sucha fasola/soczewica: ~2–4 zł za 100 g białka. Jaja: ~5–7 zł. Twaróg chudy: ~6–9 zł. Pierś z kurczaka: ~8–12 zł. Odżywka WPC: ~10–15 zł.' },
+            { h2: 'Dlaczego nie batony', p: 'Batony i puddingi proteinowe kosztują 30–60 zł za 100 g białka — 5× drożej niż twaróg. Płacisz za wygodę, nie za białko.' },
+            { h2: 'Jak liczyć', p: 'Weź cenę, podziel przez (białko na 100 g × liczba 100-gramowych porcji w opakowaniu). Prosty wzór, który obnaża marketing.' }
+        ],
+        bullets: ['<strong>Twaróg + jaja + strączki</strong> — tanie podstawy.', '<strong>Batony proteinowe</strong> — najdroższe białko na rynku.', '<strong>Licz zł za 100 g białka</strong> — nie za kubek.'],
+        uwaga: 'Najtańsze nie znaczy najgorsze — twaróg i jaja mają pełny profil aminokwasów, a batony często nie.',
+        coDalej: 'Sprawdź <a href="cena-bialka">ranking cena za 100 g białka</a> i <a href="twarog-poltlusty-czy-chudy">twaróg chudy czy półtłusty</a>.'
+    },
+    {
+        slug: 'konserwa-rybna-bialko-za-grosze',
+        emoji: '🥫',
+        title: 'Konserwy rybne — białko za grosze i na co uważać',
+        subtitle: 'Szprot, makrela i sardynka to tanie białko z omega-3. Ale sól i olej potrafią zepsuć rachunek.',
+        meta: 'Konserwy rybne jako źródło białka — szprot, makrela, sardynka i tuńczyk: ile białka, omega-3, ile soli i którą puszkę wybrać.',
+        category: 'bialko',
+        lead: 'Szprot w pomidorach to ~18 g białka i solidna dawka omega-3 za 5–7 zł. Jedna z najlepszych „tanich” opcji — jeśli patrzysz na sól.',
+        sections: [
+            { h2: 'Ile białka', p: 'Szprot ~18 g, makrela ~19 g, sardynki ~24 g na 100 g. Podobnie jak tuńczyk, ale z dodatkiem zdrowych tłuszczów i wapnia (ości!).' },
+            { h2: 'Sól i olej', p: 'Wersje w oleju mają więcej kalorii, w sosie pomidorowym zwykle mniej tłuszczu. Sól potrafi dobić do 1–2 g na puszkę — przy nadciśnieniu wybieraj te o niższej zawartości.' },
+            { h2: 'Jak jeść', p: 'Na kanapce, z ryżem albo prosto z puszki jako awaryjne białko w pracy. Dwa razy w tygodniu w pełni wystarczy na omega-3.' }
+        ],
+        bullets: ['<strong>18–24 g białka/100 g</strong> — tanie i sycące.', '<strong>Omega-3 + wapń</strong> — bonus, którego nie ma w mięsie.', '<strong>Sprawdzaj sól</strong> — ona jest tu głównym ryzykiem.'],
+        uwaga: 'Ryby wędzone i konserwowe bywają bardzo słone — jeśli masz nadciśnienie, odsącz zalewę i nie dolewaj soli.',
+        coDalej: 'Zobacz <a href="tunczyk-w-oleju-czy-wodzie">tuńczyk w oleju czy wodzie</a> i <a href="omega-3-ryba-czy-kapsulka">omega-3 z ryby czy kapsułki</a>.'
+    },
+    {
+        slug: 'blonnik-a-sytosc',
+        emoji: '🌾',
+        title: 'Błonnik — dlaczego syci, a nie tuczy',
+        subtitle: 'Błonnik pęcznieje w żołądku, spowalnia trawienie i prawie nie daje kalorii. To twoja broń na głód.',
+        meta: 'Błonnik a sytość — jak działa, ile gramów dziennie jeść, najlepsze źródła i dlaczego błonnik pomaga jeść mniej bez uczucia głodu.',
+        category: 'odzywianie',
+        lead: 'Błonnik nie jest trawiony, ale pęcznieje w żołądku i spowalnia opróżnianie — czujesz się pełny dłużej, a kalorii dostajesz mniej.',
+        sections: [
+            { h2: 'Jak działa', p: 'Rozpuszczalny błonnik tworzy żel, który spowalnia wchłanianie cukru; nierozpuszczalny dodaje objętości i „czyści” jelita. Oba dają sytość.' },
+            { h2: 'Ile jeść', p: 'Celuj w 25–35 g dziennie. Większość Polaków je ~18 g. Dodawaj po trochu, bo nagły skok daje wzdęcia.' },
+            { h2: 'Gdzie go szukać', p: 'Strączki, pełne ziarna, płatki owsiane, siemię, warzywa i owoce ze skórką. Biały chleb i sok mają go prawie zero.' }
+        ],
+        bullets: ['<strong>25–35 g dziennie</strong> — cel większości ludzi.', '<strong>Strączki + pełne ziarna</strong> — najwięcej błonnika.', '<strong>Dodawaj stopniowo</strong> — inaczej wzdęcia.'],
+        uwaga: 'Więcej błonnika wymaga więcej wody — bez nawodnienia zaparcia się nasilą, zamiast ustąpić.',
+        coDalej: 'Zobacz <a href="volume-eating-jak-jesc-duzo-i-chudnac">volume eating</a> i <a href="blonnik-z-siemienia">błonnik z siemienia lnianego</a>.'
+    },
 // @@MORE@@
