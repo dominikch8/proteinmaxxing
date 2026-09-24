@@ -895,4 +895,55 @@ const defs = [
         uwaga: 'Jeśli po 20 jesz z nudów, a nie głodu — problem to nawyk, nie pora posiłku.',
         coDalej: 'Zobacz <a href="weglowodany-na-noc">węglowodany na noc</a> i <a href="podjadanie-wieczorem">podjadanie wieczorem</a>.'
     },
+    {
+        slug: 'redukcja-bez-wagi',
+        emoji: '📏',
+        title: 'Redukcja bez wagi — po czym poznać, że działa',
+        subtitle: 'Waga potrafi kłamać (woda, glikogen). Miara, zdjęcia i ciuchy mówią więcej niż liczba na wyświetlaczu.',
+        meta: 'Jak mierzyć redukcję bez wagi — centymetr, zdjęcia i ubrania zamiast wagi: dlaczego waga potrafi stać, a sylwetka i tak się zmienia.',
+        category: 'odchudzanie',
+        lead: 'Waga skacze o 1–2 kg w ciągu doby przez wodę i glikogen. Centymetr w pasie i stare jeansy pokazują trend lepiej niż codzienne ważenie.',
+        sections: [
+            { h2: 'Czemu waga kłamie', p: 'Sól, węglowodany, hormony i trening zmieniają retencję wody. Możesz chudnąć w tłuszczu, a waga stoi — i odwrotnie.' },
+            { h2: 'Co mierzyć', p: 'Obwód pasa i bioder raz w tygodniu, zdjęcia co 2–4 tygodnie, i to, jak leżą ubrania. To realny obraz, nie szum dzienny.' },
+            { h2: 'Jak ważyć, jeśli już', p: 'Rano, po toalecie, na czczo — i patrz na średnią z tygodnia, nie na pojedynczy pomiar.' }
+        ],
+        bullets: ['<strong>Pas + zdjęcia</strong> — lepsze niż waga.', '<strong>Raz w tygodniu</strong> — nie codziennie.', '<strong>Średnia z tygodnia</strong> — jeśli ważysz.'],
+        uwaga: 'Codzienne ważenie u osób wrażliwych nakręca obsesję — jeśli waga psuje ci humor, schowaj ją na tydzień.',
+        coDalej: 'Zobacz <a href="waga-stoi-a-ubrania-luzniejsze">waga stoi, a ubrania luźniejsze</a> i <a href="dlaczego-waga-skacze-o-2kg">czemu waga skacze</a>.'
+    },
+    {
+        slug: 'efekt-jojo-jak-nie-nakarmic',
+        emoji: '🪀',
+        title: 'Efekt jojo — dlaczego wraca i jak go nie nakarmić',
+        subtitle: 'Jojo to nie „słaba wola”, tylko dieta, której nie da się trzymać. Wracasz do starych nawyków — i waga wraca.',
+        meta: 'Efekt jojo — dlaczego waga wraca po diecie, jak go uniknąć, czym różni się trwała zmiana nawyków od restrykcyjnej diety.',
+        category: 'odchudzanie',
+        lead: 'Jojo bierze się stąd, że po diecie wracasz do tego, co cię utuczyło. Organizm nie „pamięta” wagi — pamiętasz ty, że znów jesz jak kiedyś.',
+        sections: [
+            { h2: 'Dlaczego wraca', p: 'Restrykcyjne diety kończą się, a nawyki zostają. Do tego po głodówce apetyt rośnie, a metabolizm lekko zwalnia — waga wraca z nawiązką.' },
+            { h2: 'Jak uniknąć', p: 'Zamiast diety „na 8 tygodni” zmieniaj nawyki, które zostaną. Wolniejszy spadek, ale trwały. To nie wyścig.' },
+            { h2: 'Po redukcji', p: 'Nie wracaj do starych porcji z dnia na dzień. Przejście w utrzymanie: lekko podbij kalorie, pilnuj białka i kroków.' }
+        ],
+        bullets: ['<strong>Zmieniaj nawyki</strong> — nie „przechodź dietę”.', '<strong>Wolniej, ale trwale</strong> — to działa.', '<strong>Utrzymanie</strong> — to osobny etap, nie koniec.'],
+        uwaga: 'Diety „cud” i głodówki to fabryka jojo. Jeśli coś obiecuje 5 kg w tydzień — zapłacisz za to później.',
+        coDalej: 'Zobacz <a href="deficyt-500-czy-700">deficyt 500 czy 700</a> i <a href="detoksy-chudniesz-na-wodzie">detoksy</a>.'
+    },
+    {
+        slug: 'podjadanie-wieczorem',
+        emoji: '📺',
+        title: 'Podjadanie wieczorem — jak je uciąć bez silnej woli',
+        subtitle: 'Wieczorne podjadanie to zwykle nuda i nawyk, nie głód. Zmień rutynę, nie walcz z lodówką siłą.',
+        meta: 'Jak przestać podjadać wieczorem — dlaczego wieczorem ciągnie do jedzenia, jak odróżnić głód od nudy i proste triki na wieczorny nawyk.',
+        category: 'odchudzanie',
+        lead: 'Wieczorne podjadanie rzadko jest głodem — to nuda, stres i nawyk „coś do TV”. Walcz z rutyną, nie z apetytem.',
+        sections: [
+            { h2: 'Dlaczego wieczorem', p: 'Po całym dniu masz mniej samokontroli, a nuda i zmęczenie szukają nagrody. Do tego telewizja = bezmyślne jedzenie.' },
+            { h2: 'Triki', p: 'Nie trzymaj słodyczy na widoku, jedz sycącą kolację z białkiem, umyj zęby od razu po kolacji i zamień podjadanie na herbatę albo spacer.' },
+            { h2: 'Co jeśli to głód', p: 'Jeśli naprawdę głodny — zjedz twaróg, jogurt albo jajko. To syci, a nie nakręca. Nie głodź się do rana.' }
+        ],
+        bullets: ['<strong>Po kolacji umyj zęby</strong> — sygnał końca.', '<strong>Schowaj słodycze</strong> — z oczu, z myśli.', '<strong>Głód? Twaróg</strong> — nie czekolada.'],
+        uwaga: 'Zbyt mała kolacja to przepis na nocną wizytę w lodówce — zostaw sobie sycący, białkowy posiłek wieczorem.',
+        coDalej: 'Zobacz <a href="jedzenie-z-nudow">jedzenie z nudów</a> i <a href="glod-vs-apetyt">głód vs apetyt</a>.'
+    },
 // @@MORE@@
