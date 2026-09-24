@@ -436,4 +436,55 @@ const defs = [
         uwaga: 'Nie suplementuj żelaza „w ciemno” — nadmiar jest toksyczny. Najpierw morfologia i ferrytyna.',
         coDalej: 'Zobacz <a href="bialko-a-wlosy-paznokcie">białko a włosy</a> i <a href="wapn-bez-nabialu">wapń bez nabiału</a>.'
     },
+    {
+        slug: 'magnez-a-skurcze',
+        emoji: '🦵',
+        title: 'Magnez i skurcze po treningu — czy to naprawdę to',
+        subtitle: 'Skurcze częściej biorą się z odwodnienia i zmęczenia niż z braku magnezu. Ale magnez i tak warto pilnować.',
+        meta: 'Skurcze mięśni a magnez — czy niedobór magnezu powoduje skurcze, co naprawdę je wywołuje i ile magnezu dziennie jeść.',
+        category: 'odzywianie',
+        lead: 'Skurcz łydki o 3 w nocy to klasyk — ale najczęściej winne jest odwodnienie i przemęczenie, nie sam magnez. Mimo to magnez jest niedoborowy u wielu.',
+        sections: [
+            { h2: 'Skąd skurcze', p: 'Główni podejrzani: odwodnienie, niski sód/potas przy obfitym poceniu, zmęczenie mięśnia. Magnez bywa winny rzadziej, niż się myśli.' },
+            { h2: 'Ile magnezu', p: 'Dorośli: ~350–400 mg dziennie. Źródła: kasza gryczana, orzechy, pestki dyni, kakao, rośliny strączkowe, ciemne pieczywo.' },
+            { h2: 'Jaki suplement', p: 'Cytrynian magnezu wchłania się dobrze; tlenek — słabo i ma działanie przeczyszczające. Sprawdzaj formę na etykiecie.' }
+        ],
+        bullets: ['<strong>Najpierw woda + elektrolity</strong> — to częstsze winy.', '<strong>350–400 mg magnezu</strong> — dzienna dawka.', '<strong>Cytrynian > tlenek</strong> — lepsze wchłanianie.'],
+        uwaga: 'Nadmiar magnezu z suplementów daje biegunkę — lepiej domykać z jedzenia, a suplement tylko jako uzupełnienie.',
+        coDalej: 'Zobacz <a href="elektrolity-kiedy-woda-za-malo">elektrolity</a> i <a href="woda-przed-posilkiem">wodę przed posiłkiem</a>.'
+    },
+    {
+        slug: 'elektrolity-kiedy-woda-za-malo',
+        emoji: '🧂',
+        title: 'Elektrolity — kiedy sama woda już nie wystarcza',
+        subtitle: 'Przy długim cardio i w upał tracisz sód i potas. Woda bez elektrolitów bywa gorsza niż nic.',
+        meta: 'Kiedy brać elektrolity — sód, potas, magnez podczas treningu i upałów, objawy niedoboru i czy napoje izotoniczne mają sens.',
+        category: 'odzywianie',
+        lead: 'Przy 1–2 h intensywnego wysiłku w upale możesz wypocić kilka gramów sodu. Sama woda rozcieńcza krew, a to przepis na skurcze i słabość.',
+        sections: [
+            { h2: 'Co tracisz', p: 'Z potem ucieka głównie sód, mniej potasu i magnezu. Przy długim wysiłku to sód jest tym, co trzeba uzupełnić najszybciej.' },
+            { h2: 'Kiedy brać', p: 'Treningi 60+ minut, upał, intensywne cardio, praca fizyczna. Na krótki trening siłowy w chłodzie wystarczy woda.' },
+            { h2: 'Izotonik czy sól', p: 'Gotowe izotoniki to woda + cukier + sól. Tańszy wariant: woda, szczypta soli i odrobina soku. Skład podobny, cena inna.' }
+        ],
+        bullets: ['<strong>60+ min wysiłku</strong> — dorzuć elektrolity.', '<strong>Sód</strong> — najważniejszy do uzupełnienia.', '<strong>Domowy izotonik</strong> — woda + sól + sok.'],
+        uwaga: 'Nie przesadzaj z elektrolitami na co dzień — nadmiar sodu podnosi ciśnienie u osób wrażliwych.',
+        coDalej: 'Zobacz <a href="magnez-a-skurcze">magnez i skurcze</a> i <a href="sod-dlaczego-nie-demonizowac">sód bez demonizowania</a>.'
+    },
+    {
+        slug: 'weglowodany-na-noc',
+        emoji: '🌙',
+        title: 'Węglowodany na noc — czy naprawdę tuczą',
+        subtitle: 'Organizm nie patrzy na zegarek. Liczy się bilans dnia, nie godzina ostatniego ryżu.',
+        meta: 'Czy węglowodany wieczorem tuczą — mit o jedzeniu po 18, jak organizm trawi węgle w nocy i czy kolacja z węglowodanami psuje redukcję.',
+        category: 'odzywianie',
+        lead: 'Mit, że węglowodany po 18 „idą w tłuszcz”, nie ma podstaw. O tyciu decyduje bilans kalorii w całym dniu — nie pora ostatniego posiłku.',
+        sections: [
+            { h2: 'Skąd mit', p: 'Ludzie jedzący wieczorem często po prostu podjadają nadwyżkę kalorii. Winna jest ilość, nie godzina.' },
+            { h2: 'Co dzieje się w nocy', p: 'Organizm trawi w nocy wolniej, ale normalnie. Węglowodany na kolację mogą nawet pomóc zasnąć (podnoszą serotoninę).' },
+            { h2: 'Kiedy uważać', p: 'Przy refluksie i złej jakości snu ciężka, tłusta kolacja tuż przed snem przeszkadza. Zjedz 2–3 h przed — i to wszystko.' }
+        ],
+        bullets: ['<strong>Liczy się bilans dnia</strong> — nie godzina.', '<strong>Węgle na kolację</strong> — mogą pomóc spać.', '<strong>Zjedz 2–3 h przed snem</strong> — dla trawienia.'],
+        uwaga: 'Jeśli po kolacji z węglami śpisz gorzej i masz refluks — przesuń je wcześniej, ale nie dlatego, że „tuczą”.',
+        coDalej: 'Zobacz <a href="dlaczego-waga-skacze-o-2kg">dlaczego waga skacze</a> i <a href="sen-stres-i-waga">sen, stres i waga</a>.'
+    },
 // @@MORE@@
