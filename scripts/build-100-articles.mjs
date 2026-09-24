@@ -1150,4 +1150,55 @@ const defs = [
         uwaga: 'Kortyzol to nie „hormon tycia” — to normalna część fizjologii. Problem to przewlekłe napięcie, nie pojedynczy stres.',
         coDalej: 'Zobacz <a href="sen-6-czy-8-godzin-a-waga">sen a waga</a> i <a href="jedzenie-z-nudow">jedzenie z nudów</a>.'
     },
+    {
+        slug: 'sen-6-czy-8-godzin-a-waga',
+        emoji: '😴',
+        title: 'Sen 6 vs 8 godzin — jak to wpływa na wagę',
+        subtitle: 'Krótki sen podnosi głód i apetyt na słodycze. 6 zamiast 8 godzin potrafi po cichu dołożyć 300 kcal dziennie.',
+        meta: 'Sen a waga — ile snu trzeba, by chudnąć, jak niedobór snu podnosi głód i apetyt i dlaczego sen to część diety.',
+        category: 'odchudzanie',
+        lead: 'Po nieprzespanej nocy rośnie grelina (głód), spada leptyna (sytość), a mózg mocniej reaguje na słodycze. Sen to cichy gracz odchudzania.',
+        sections: [
+            { h2: 'Hormony', p: 'Niedobór snu podnosi grelinę i obniża leptynę — czujesz większy głód i mniejszą sytość. Do tego kortyzol i chęć na węgle.' },
+            { h2: 'Ile to kcal', p: 'Badania: krótki sen wiąże się z +300 kcal dziennie, głównie z przekąsek. To dokładnie tyle, ile wynosi twój deficyt.' },
+            { h2: 'Ile spać', p: '7–9 godzin. Regularność ważniejsza niż weekendowe „odespanie”. Stała pora snu to darmowe wsparcie diety.' }
+        ],
+        bullets: ['<strong>7–9 h snu</strong> — norma dla dorosłych.', '<strong>Stała pora</strong> — ważniejsza niż długość.', '<strong>Sen = część diety</strong> — nie dodatek.'],
+        uwaga: 'Kofeina po 15 i ekran w łóżku to dwaj najwięksi złodzieje snu — zacznij od nich.',
+        coDalej: 'Zobacz <a href="stres-kortyzol-i-brzuch">stres i kortyzol</a> i <a href="kofeina-ile-kiedy-sen">kofeinę i sen</a>.'
+    },
+    {
+        slug: 'jedzenie-z-nudow',
+        emoji: '🥱',
+        title: 'Jedzenie z nudów — jak przerwać pętlę',
+        subtitle: 'Nuda to najczęstszy fałszywy głód. Zamiast jeść, zrób coś rękami — nawyk zniknie szybciej, niż myślisz.',
+        meta: 'Jedzenie z nudów — jak rozpoznać fałszywy głód, dlaczego nuda ciągnie do lodówki i proste sposoby na przerwanie nawyku.',
+        category: 'odchudzanie',
+        lead: 'Jedzenie z nudów to nie głód — to szukanie bodźca. Mózg chce stymulacji, a lodówka jest najbliżej. Zmień bodziec, nie dietę.',
+        sections: [
+            { h2: 'Skąd się bierze', p: 'Nuda i rutyna szukają dopaminy — a jedzenie daje ją natychmiast. To nawyk, nie potrzeba energetyczna.' },
+            { h2: 'Test na nudę', p: 'Zapytaj: „Czy zjadłbym teraz jabłko?” Jeśli nie — nie jesteś głodny, tylko znudzony. Głód zadowoli każde jedzenie.' },
+            { h2: 'Co robić', p: 'Zajmij ręce: spacer, telefon do kogoś, sprzątanie, hobby. Wypij wodę. Ustal „godziny bez podjadania” poza posiłkami.' }
+        ],
+        bullets: ['<strong>Test jabłka</strong> — głód zje wszystko.', '<strong>Zajmij ręce</strong> — nuda minie.', '<strong>Woda + 10 min</strong> — zanim sięgniesz.'],
+        uwaga: 'Trzymanie słodyczy „na widoku” zamienia nudę w jedzenie automatycznie — schowaj je, a częstotliwość spadnie.',
+        coDalej: 'Zobacz <a href="glod-vs-apetyt">głód vs apetyt</a> i <a href="podjadanie-wieczorem">podjadanie wieczorem</a>.'
+    },
+    {
+        slug: 'sosy-gdzie-siedzi-200-kcal',
+        emoji: '🥣',
+        title: 'Sosy i dodatki — gdzie chowa się 200 kcal',
+        subtitle: 'Majonez, sos czosnkowy i dressing potrafią dołożyć więcej kalorii niż cały obiad. Sprawdzaj, czym polewasz.',
+        meta: 'Kalorie w sosach — ile kcal ma majonez, sos czosnkowy i ketchup, gdzie chowają się dodatkowe kalorie i jak je ograniczyć.',
+        category: 'odchudzanie',
+        lead: 'Łyżka majonezu to ~100 kcal, sosu czosnkowego ~80. Dwie łyżki do obiadu i „lekka sałatka” ma tyle kalorii co drugi posiłek.',
+        sections: [
+            { h2: 'Ile to kosztuje', p: 'Majonez ~700 kcal/100 g, sos czosnkowy ~500, dressing ~300, ketchup ~100. „Trochę sosu” potrafi dołożyć 200+ kcal.' },
+            { h2: 'Gdzie się chowa', p: 'Sałatki „fit” z dressingiem, wrap z sosem, frytki z dipem. Sosy to najczęściej pomijane kalorie w liczeniu.' },
+            { h2: 'Jak ograniczyć', p: 'Jogurt naturalny zamiast majonezu, sos na bazie twarogu, ketchup zamiast kremowych. Albo sos osobno i maczaj, nie polewaj.' }
+        ],
+        bullets: ['<strong>2 łyżki majonezu ≈ 200 kcal</strong> — licz.', '<strong>Jogurt zamiast majonezu</strong> — taniej kcal.', '<strong>Sos osobno</strong> — kontrolujesz ilość.'],
+        uwaga: '„Lekki” majonez ma mniej kalorii, ale nadal sporo — sprawdzaj etykietę zamiast ufać nazwie.',
+        coDalej: 'Zobacz <a href="zamienniki-tnace-500-kcal">zamienniki tnące 500 kcal</a> i <a href="kalorie-na-oko-dlaczego-sie-mylisz">kalorie na oko</a>.'
+    },
 // @@MORE@@
