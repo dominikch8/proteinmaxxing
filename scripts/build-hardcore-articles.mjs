@@ -277,6 +277,8 @@ for (const a of articles) {
 
 upsertHub(path.join(root, 'artykuly.html'), articles);
 upsertHub(path.join(root, 'deploy-bundle', 'artykuly.html'), articles);
+sortAndDateHub(path.join(root, 'artykuly.html'));
+sortAndDateHub(path.join(root, 'deploy-bundle', 'artykuly.html'));
 upsertHome(path.join(root, 'js', 'home-articles.js'), articles);
 upsertHome(path.join(root, 'deploy-bundle', 'js', 'home-articles.js'), articles);
 upsertSitemap(path.join(root, 'sitemap.xml'), articles);
