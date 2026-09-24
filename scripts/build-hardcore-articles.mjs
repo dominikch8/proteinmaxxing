@@ -22,7 +22,8 @@ const batches = [
     'hardcore-articles-batch6.json',
     'hardcore-articles-batch7.json',
     'hardcore-articles-batch8.json',
-    'hardcore-articles-batch9.json'
+    'hardcore-articles-batch9.json',
+    'hardcore-articles-100.json'
 ];
 
 // Mapa kategorii dla istniejących artykułów (slug -> kategoria)
