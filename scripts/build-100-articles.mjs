@@ -1354,4 +1354,55 @@ const defs = [
         uwaga: 'Najlepszy plan to ten, który robisz co tydzień. FBW 3× bije idealny split, który porzucisz po miesiącu.',
         coDalej: 'Zobacz <a href="ile-serii-na-miesien">ile serii na mięsień</a> i <a href="pierwsze-6-miesiecy-silowni">pierwsze 6 miesięcy</a>.'
     },
+    {
+        slug: 'odpoczynek-miedzy-seriami',
+        emoji: '⏳',
+        title: 'Odpoczynek między seriami — ile na siłę, ile na masę',
+        subtitle: 'Na siłę odpoczywaj 2–5 min, na hipertrofię 1–2 min. Krótka przerwa to nie lepszy trening, a mniejszy ciężar.',
+        meta: 'Ile odpoczywać między seriami — przerwy na siłę vs na masę, jak długość przerwy wpływa na ciężar i kiedy krótkie przerwy mają sens.',
+        category: 'cwiczenia',
+        lead: 'Długa przerwa = pełna regeneracja = większy ciężar. Krótka przerwa = zmęczenie = mniejsze obciążenie. To prosta zależność, którą warto rozumieć.',
+        sections: [
+            { h2: 'Na siłę', p: '2–5 min między ciężkimi seriami. Dajesz układowi nerwowemu czas na regenerację ATP — i podnosisz więcej.' },
+            { h2: 'Na masę', p: '1–2 min przy umiarkowanych ciężarach wystarcza na hipertrofię. Krótsze przerwy trzymają „pompę”, ale kosztują ciężar.' },
+            { h2: 'Kiedy krótko', p: 'Izolowane ćwiczenia, drop sety, superserie i trening na czas. Przy wielostawowych ciężarach — odpoczywaj długo.' }
+        ],
+        bullets: ['<strong>Siła: 2–5 min</strong> — pełna regeneracja.', '<strong>Masa: 1–2 min</strong> — na hipertrofię.', '<strong>Krótko = lżej</strong> — nie lepiej.'],
+        uwaga: 'Nie patrz w telefon 10 min „odpoczywając” — po 5 min mięsień stygnie, a trening się rozłazi.',
+        coDalej: 'Zobacz <a href="ile-serii-na-miesien">ile serii na mięsień</a> i <a href="trening-w-40-minut">trening w 40 minut</a>.'
+    },
+    {
+        slug: 'trening-w-40-minut',
+        emoji: '⏱️',
+        title: 'Masz 40 minut — jak zrobić sensowny trening',
+        subtitle: 'Krótki trening to nie gorszy trening. Superserie i wielostawowe ruchy dadzą efekt bez 2 godzin na siłowni.',
+        meta: 'Trening w 40 minut — jak ułożyć krótki efektywny trening, superserie, wielostawowe ćwiczenia i dlaczego czas nie jest wyznacznikiem jakości.',
+        category: 'cwiczenia',
+        lead: 'Nie potrzebujesz 2 godzin. 40 minut z wielostawowymi ćwiczeniami i superseriami da więcej niż godzina przegadana i przeczekana.',
+        sections: [
+            { h2: 'Wielostawowe', p: 'Przysiad, wyciskanie, wiosłowanie, martwy — angażują najwięcej mięśni na minutę. To podstawa krótkiego treningu.' },
+            { h2: 'Superserie', p: 'Łącz ćwiczenia antagonistyczne (klata + plecy) bez przerwy. Oszczędzasz czas, a intensywność zostaje.' },
+            { h2: 'Plan na 40 min', p: 'Rozgrzewka 5 min → 2–3 wielostawowe po 3–4 serie → 1 superseria na słabsze partie. I koniec. Krótko, ale konkretnie.' }
+        ],
+        bullets: ['<strong>Wielostawowe</strong> — najwięcej za minutę.', '<strong>Superserie</strong> — mniej czekania.', '<strong>40 min wystarczy</strong> — jeśli jest intensywnie.'],
+        uwaga: 'Krótki trening wymaga dyscypliny — telefon i pogaduchy zjedzą go w 10 minut.',
+        coDalej: 'Zobacz <a href="fbw-vs-split">FBW vs split</a> i <a href="cwiczenia-wielostawowe">ćwiczenia wielostawowe</a>.'
+    },
+    {
+        slug: 'trening-z-gumami-w-domu',
+        emoji: '🩹',
+        title: 'Trening z gumami w domu — czy coś daje',
+        subtitle: 'Gumy nie zastąpią sztangi, ale utrzymają mięśnie i siłę, gdy nie masz siłowni. Lepsze niż nic — dużo lepsze.',
+        meta: 'Trening z gumami oporowymi w domu — czy buduje mięśnie, jak trenować z gumami i ile można utrzymać bez siłowni.',
+        category: 'cwiczenia',
+        lead: 'Gumy oporowe dają inny opór niż sztanga (najcięższe na końcu ruchu), ale w domu utrzymają mięśnie i siłę. To solidny plan B.',
+        sections: [
+            { h2: 'Co dają', p: 'Przy treningu do zmęczenia gumy potrafią stymulować wzrost niemal jak wolne ciężary. Wystarczą do utrzymania, a u początkujących — do budowy.' },
+            { h2: 'Jak trenować', p: 'Przysiady, wiosłowanie, wyciskanie, rozpiętki, martwy z gumą. Rób 3–4 serie blisko upadku — opór to opór, nie musi być żelazny.' },
+            { h2: 'Limit gum', p: 'Trudno o realną progresję ciężaru i ciężkie nogi. Gumy to pomost między siłownią a niczym — nie docelowy plan.' }
+        ],
+        bullets: ['<strong>Utrzymasz mięśnie</strong> — bez siłowni.', '<strong>Trenuj blisko upadku</strong> — wtedy działa.', '<strong>Plan B</strong> — nie zamiennik na zawsze.'],
+        uwaga: 'Kup gumy o różnych oporach — jedna „uniwersalna” szybko robi się za słaba na dolne partie.',
+        coDalej: 'Zobacz <a href="kalistenika-na-mase">kalistenikę na masę</a> i <a href="regeneracja-miesnie-rosna-poza">regenerację</a>.'
+    },
 // @@MORE@@
