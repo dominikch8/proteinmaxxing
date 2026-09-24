@@ -691,4 +691,55 @@ const defs = [
         uwaga: 'Mrożone „mieszanki na patelnię” z sosem potrafią mieć sporo tłuszczu i cukru — to nie to samo co worek warzyw.',
         coDalej: 'Zobacz <a href="volume-eating-jak-jesc-duzo-i-chudnac">volume eating</a> i <a href="blonnik-a-sytosc">błonnik a sytość</a>.'
     },
+    {
+        slug: 'glutaminian-i-chemi',
+        emoji: '🍜',
+        title: 'Glutaminian i „chemia” — co jest faktem',
+        subtitle: 'Glutaminian to aminokwas, który jesz codziennie w pomidorach i serze. „Chemia” to straszak, nie argument.',
+        meta: 'Glutaminian sodu — czy jest szkodliwy, czym różni się od naturalnego, co mówią badania i dlaczego „bez glutaminianu” to głównie marketing.',
+        category: 'odzywianie',
+        lead: 'Glutaminian to sól kwasu glutaminowego — aminokwasu, który naturalnie występuje w pomidorach, serze parmezan i mięsie. Twój organizm go zna.',
+        sections: [
+            { h2: 'Naturalny vs dodany', p: 'Chemicznie to ta sama cząsteczka. Organizm nie odróżnia glutaminianu z parmezanu od tego z przyprawy — rozkłada go tak samo.' },
+            { h2: 'Czy szkodzi', p: 'Badania nie potwierdzają „syndromu chińskiej restauracji” przy normalnych dawkach. Dla zdecydowanej większości jest bezpieczny.' },
+            { h2: 'Na co naprawdę patrzeć', p: 'Glutaminian wzmacnia smak, więc produkty „umami” bywają przetworzone i słone. Problem to cały produkt, nie sam glutaminian.' }
+        ],
+        bullets: ['<strong>To aminokwas</strong> — nie trucizna.', '<strong>Bezpieczny w normalnych dawkach</strong> — potwierdzone.', '<strong>Patrz na cały produkt</strong> — nie na jeden składnik.'],
+        uwaga: 'U wrażliwych osób duża dawka na pusty żołądek może dać ból głowy — to rzadkość, ale jeśli czujesz, jedz mniej.',
+        coDalej: 'Zobacz <a href="sod-dlaczego-nie-demonizowac">sód bez demonizowania</a> i <a href="batony-fit-jak-czytac-etykiety">jak czytać etykiety</a>.'
+    },
+    {
+        slug: 'blonnik-z-siemienia',
+        emoji: '🌱',
+        title: 'Błonnik z siemienia lnianego — jak go nie przedawkować',
+        subtitle: 'Siemię to błonnik i omega-3 w jednym. Ale suche ziarno pęcznieje — łyżka bez wody to problem.',
+        meta: 'Siemię lniane — błonnik i omega-3, ile dziennie jeść, dlaczego trzeba pić wodę i jak mielić siemię, by działało.',
+        category: 'odzywianie',
+        lead: 'Siemię lniane to ~27 g błonnika i sporo ALA (roślinne omega-3) na 100 g. Ale całe ziarna przechodzą niestrawione — i pęcznieją.',
+        sections: [
+            { h2: 'Całe czy mielone', p: 'Całe siemię przechodzi przez jelita niestrawione. Mielone uwalnia składniki i faktycznie działa. Miel świeżo, bo tłuszcze jełczeją.' },
+            { h2: 'Ile jeść', p: '1–2 łyżki dziennie to rozsądna porcja. Dodawaj do owsianki, jogurtu albo smoothie — i koniecznie pij wodę.' },
+            { h2: 'Dlaczego woda', p: 'Błonnik pęcznieje. Sucha łyżka siemienia bez wody potrafi zbić się w przełyku i dać zaparcia zamiast ulgi.' }
+        ],
+        bullets: ['<strong>Mielone, nie całe</strong> — inaczej nie działa.', '<strong>1–2 łyżki dziennie</strong> — sensowna dawka.', '<strong>Pij wodę</strong> — błonnik bez wody szkodzi.'],
+        uwaga: 'Zacznij od pół łyżki i zwiększaj stopniowo — nagły skok błonnika to gwarancja wzdęć.',
+        coDalej: 'Zobacz <a href="blonnik-a-sytosc">błonnik a sytość</a> i <a href="omega-3-ryba-czy-kapsulka">omega-3</a>.'
+    },
+    {
+        slug: 'witamina-b12-dieta-roslinna',
+        emoji: '💊',
+        title: 'Witamina B12 na diecie roślinnej — jedyna, której brak',
+        subtitle: 'B12 jest tylko w produktach odzwierzęcych. Na weganizmie bez suplementu wpadniesz w niedobór — to kwestia czasu.',
+        meta: 'Witamina B12 na diecie wegańskiej i wegetariańskiej — objawy niedoboru, ile brać, jaka forma i dlaczego to jedyny obowiązkowy suplement.',
+        category: 'odzywianie',
+        lead: 'B12 nie występuje w roślinach w przyswajalnej formie. Weganie bez suplementu prędzej czy później wpadną w niedobór — a ten uszkadza nerwy i krew.',
+        sections: [
+            { h2: 'Objawy niedoboru', p: 'Zmęczenie, mrowienie rąk i nóg, problemy z pamięcią, anemia. Rozwijają się powoli, więc łatwo je zignorować.' },
+            { h2: 'Ile brać', p: 'Weganom zaleca się suplement — np. 250–500 µg dziennie cyjanokobalaminy albo 1000–2000 µg tygodniowo. Dawki zależą od formy.' },
+            { h2: 'Czy wegetarianie też', p: 'Laktoowowegetarianie dostają B12 z jaj i nabiału, ale przy małej ilości i tak warto badać poziom. Weganie — suplement obowiązkowo.' }
+        ],
+        bullets: ['<strong>Suplementuj na weganizmie</strong> — bez wyjątków.', '<strong>250–500 µg dziennie</strong> — typowa dawka.', '<strong>Badaj B12</strong> — raz do roku wystarczy.'],
+        uwaga: 'B12 z alg i „wzbogaconych” produktów bywa niewystarczająca — pewny jest tylko suplement albo regularne wzbogacone produkty w dużej ilości.',
+        coDalej: 'Zobacz <a href="bialko-roslinne-vs-zwierzece">białko roślinne</a> i <a href="wapn-bez-nabialu">wapń bez nabiału</a>.'
+    },
 // @@MORE@@
