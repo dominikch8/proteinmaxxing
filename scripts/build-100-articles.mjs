@@ -742,4 +742,55 @@ const defs = [
         uwaga: 'B12 z alg i „wzbogaconych” produktów bywa niewystarczająca — pewny jest tylko suplement albo regularne wzbogacone produkty w dużej ilości.',
         coDalej: 'Zobacz <a href="bialko-roslinne-vs-zwierzece">białko roślinne</a> i <a href="wapn-bez-nabialu">wapń bez nabiału</a>.'
     },
+    {
+        slug: 'batony-fit-jak-czytac-etykiety',
+        emoji: '🍫',
+        title: 'Batony „fit” — jak czytać etykiety bez nabierania się',
+        subtitle: '„Bez cukru”, „protein”, „fit” to ozdoby. Obróć opakowanie i sprawdź białko, cukier i listę składników.',
+        meta: 'Jak czytać etykiety batonów fit — białko, cukier, alkohole cukrowe i kalorie: na co patrzeć, by nie przepłacać za zwykły baton.',
+        category: 'odzywianie',
+        lead: 'Front opakowania to reklama. Prawda jest z tyłu: gramy białka, cukru i skład w kolejności malejącej. Tam widać, czy to baton, czy „fit” złudzenie.',
+        sections: [
+            { h2: 'Białko i cukier', p: 'Protein bar: 20+ g białka, <3 g cukru. „Fit” baton: 5–10 g białka, 15–20 g cukru. Licz obie liczby, nie jedną.' },
+            { h2: 'Słodziki i alkohole cukrowe', p: 'Maltitol i erytrytol obniżają cukier, ale maltitol potrafi wzdymać i ma kalorie. „Bez cukru” nie znaczy „bez kalorii”.' },
+            { h2: 'Kolejność składników', p: 'Składniki są od największej ilości. Jeśli cukier/syrop jest na 2. miejscu — to deser, nieważne co krzyczy front.' }
+        ],
+        bullets: ['<strong>20+ g białka, <3 g cukru</strong> — wzorzec.', '<strong>Cukier/syrop na 2. miejscu</strong> — to deser.', '<strong>Sprawdzaj maltitol</strong> — wzdyma i ma kcal.'],
+        uwaga: '„Fit” nie ma definicji prawnej — każdy może tak podpisać baton. Liczy się tylko tabela z tyłu.',
+        coDalej: 'Zobacz <a href="batonek-proteinowy-ile-bialka">ile białka ma baton proteinowy</a> i <a href="sztuczne-slodziki">sztuczne słodziki</a>.'
+    },
+    {
+        slug: 'granola-zdrowe-sniadanie-ile-cukru',
+        emoji: '🥣',
+        title: '„Zdrowe” śniadanie z granolą — ile ma cukru',
+        subtitle: 'Granola z marketu to często 20–30 g cukru na 100 g. „Zdrowe” śniadanie potrafi być słodsze niż pączek.',
+        meta: 'Ile cukru ma granola i musli — porównanie granoli, owsianki i płatków, na co patrzeć przy zakupie i jak zrobić zdrowszą wersję.',
+        category: 'odzywianie',
+        lead: 'Sklepowa granola to płatki sklejone syropem i olejem — często 20–30 g cukru na 100 g. Miska „zdrowego śniadania” potrafi mieć tyle cukru co baton.',
+        sections: [
+            { h2: 'Cukier i tłuszcz', p: 'Granola jest pieczona z dodatkiem syropu i tłuszczu, dlatego ma 400–450 kcal i sporo cukru na 100 g. Zwykłe płatki owsiane: ~1 g cukru.' },
+            { h2: 'Jak wybrać', p: 'Szukaj musli/granoli z <10 g cukru na 100 g. Albo zrób własną: płatki + orzechy + odrobina miodu, pieczone w domu.' },
+            { h2: 'Jak jeść', p: 'Granolę traktuj jak dodatek (garść), nie bazę. Na bazę daj zwykłe płatki, a chrupkość i smak dorzuć łyżką granoli.' }
+        ],
+        bullets: ['<strong><10 g cukru/100 g</strong> — szukaj takiej.', '<strong>Granola = dodatek</strong> — garść, nie miska.', '<strong>Zrób własną</strong> — kontrolujesz miód i olej.'],
+        uwaga: '„Naturalna” i „ekologiczna” granola bywa tak samo słodka — te słowa nie mówią nic o cukrze.',
+        coDalej: 'Zobacz <a href="bialko-na-sniadanie-jajka-czy-platki">jajka czy płatki na śniadanie</a> i <a href="bialko-w-platkach-owsianych">białko w płatkach</a>.'
+    },
+    {
+        slug: 'tluszcze-nasycone-czy-nienasycone',
+        emoji: '🫒',
+        title: 'Tłuszcze nasycone czy nienasycone — co wybierać',
+        subtitle: 'Nie chodzi o zero nasyconych, tylko o proporcje. Zamień część masła na oliwę i ryby — i tyle.',
+        meta: 'Tłuszcze nasycone vs nienasycone — różnica, wpływ na serce, gdzie są nasycone i jak prosto poprawić proporcje tłuszczów w diecie.',
+        category: 'odzywianie',
+        lead: 'Tłuszcze nasycone (masło, smalec, tłuste mięso) podnoszą „zły” cholesterol LDL. Nienasycone (oliwa, ryby, orzechy) go obniżają. Klucz to proporcje.',
+        sections: [
+            { h2: 'Różnica', p: 'Nasycone są stałe w temperaturze pokojowej, nienasycone płynne. Zamiana nasyconych na nienasycone realnie obniża ryzyko sercowe.' },
+            { h2: 'Gdzie są nasycone', p: 'Masło, smalec, tłuste mięso, ser, ciasta, fast food. Nie musisz ich zerować — wystarczy nie przesadzać i część zamienić.' },
+            { h2: 'Prosta zamiana', p: 'Masło na kanapce → pasta z awokado; smażenie na smalcu → oliwa; tłusta wieprzowina częściej → ryba. Małe kroki, duży efekt.' }
+        ],
+        bullets: ['<strong>Zamień część nasyconych</strong> — nie wszystkie.', '<strong>Oliwa, ryby, orzechy</strong> — baza nienasyconych.', '<strong>Proporcje > zero</strong> — nie demonizuj masła.'],
+        uwaga: 'Tłuszcze trans (utwardzone, w tanich słodyczach) są gorsze od nasyconych — to ich unikaj najmocniej.',
+        coDalej: 'Zobacz <a href="oliwa-czy-maslo">oliwę czy masło</a> i <a href="omega-3-ryba-czy-kapsulka">omega-3</a>.'
+    },
 // @@MORE@@
