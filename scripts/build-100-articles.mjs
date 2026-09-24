@@ -1405,4 +1405,55 @@ const defs = [
         uwaga: 'Kup gumy o różnych oporach — jedna „uniwersalna” szybko robi się za słaba na dolne partie.',
         coDalej: 'Zobacz <a href="kalistenika-na-mase">kalistenikę na masę</a> i <a href="regeneracja-miesnie-rosna-poza">regenerację</a>.'
     },
+    {
+        slug: 'rozklad-bialka-w-dzien-treningu',
+        emoji: '📅',
+        title: 'Białko w dzień treningowy — rozkład, nie pora',
+        subtitle: 'Nie liczy się „30 minut po”, tylko suma dnia rozłożona na 3–5 porcji. Pora jest drugorzędna.',
+        meta: 'Białko w dniu treningu — jak rozłożyć białko na posiłki, ile na porcję i dlaczego rozkład na cały dzień liczy się bardziej niż okno potreningowe.',
+        category: 'cwiczenia',
+        lead: 'Mięśnie rosną z sumy białka rozłożonej na cały dzień, nie z jednej porcji o 18:32. Liczy się 3–5 posiłków po 25–40 g.',
+        sections: [
+            { h2: 'Rozkład', p: 'Równe porcje co 3–5 h lepiej napędzają syntezę białka niż jedno ogromne i dwa śladowe posiłki.' },
+            { h2: 'Ile na porcję', p: '25–40 g białka na posiłek to praktyczne optimum. Więcej w jednym siadzie nie „przepadnie”, ale nie da ekstra efektu.' },
+            { h2: 'W dzień treningu', p: 'Nie ma obowiązkowego „shake 30 min po”. Zjedz normalny posiłek w ciągu 2–4 h po treningu — i pilnuj reszty dnia.' }
+        ],
+        bullets: ['<strong>3–5 posiłków po 25–40 g</strong> — rozkład.', '<strong>2–4 h po treningu</strong> — bez presji.', '<strong>Suma dnia > pora</strong> — zawsze.'],
+        uwaga: 'Najczęstszy błąd to 100 g białka wieczorem i prawie zero rano — rozłóż równo, a efekt będzie lepszy.',
+        coDalej: 'Zobacz <a href="bialko-po-treningu-ile-faktycznie">białko po treningu</a> i <a href="ile-bialka-na-dzien">ile białka dziennie</a>.'
+    },
+    {
+        slug: 'regeneracja-miesnie-rosna-poza',
+        emoji: '😴',
+        title: 'Regeneracja — mięśnie rosną poza siłownią',
+        subtitle: 'Trening to bodziec, wzrost dzieje się w przerwie. Sen i jedzenie to nie dodatek — to 50% planu.',
+        meta: 'Regeneracja mięśni — dlaczego mięśnie rosną po treningu, ile snu i białka potrzeba i co najszybciej spowalnia regenerację.',
+        category: 'cwiczenia',
+        lead: 'Na treningu rozbijasz mięśnie; one odbudowują się i rosną w nocy i w dni wolne. Kto ignoruje regenerację, trenuje za darmo.',
+        sections: [
+            { h2: 'Sen', p: 'Wzrost hormonów i naprawa mięśni dzieją się głównie w głębokim śnie. 7–9 h to część treningu, nie luksus.' },
+            { h2: 'Jedzenie', p: 'Białko (1,6–2,2 g/kg) i wystarczająco kalorii dają budulec. Deficyt + ciężki trening bez białka = spalanie mięśni.' },
+            { h2: 'Objawy braku', p: 'Stagnacja siły, ciągłe zmęczenie, gorszy sen, bóle stawów. To sygnały, że więcej treningu tylko pogorszy sprawę.' }
+        ],
+        bullets: ['<strong>Sen 7–9 h</strong> — podstawa regeneracji.', '<strong>Białko + kalorie</strong> — budulec.', '<strong>Dni wolne</strong> — nie strata, a plan.'],
+        uwaga: 'Trenowanie tej samej partii codziennie „na zakwasy” to nie determinacja — to sabotowanie wzrostu.',
+        coDalej: 'Zobacz <a href="sen-6-czy-8-godzin-a-waga">sen a waga</a> i <a href="zakwasy-czy-dobry-trening">zakwasy</a>.'
+    },
+    {
+        slug: 'sila-a-napompowany',
+        emoji: '💪',
+        title: 'Siła a wygląd — dlaczego „napompowany” to nie to samo',
+        subtitle: 'Pompa to chwilowa krew i woda, siła to układ nerwowy i mięśnie. Budujesz jedno i drugie — ale inaczej.',
+        meta: 'Siła vs pompa mięśniowa — różnica między treningiem na siłę a na pompę, dlaczego wygląd po treningu to nie wzrost i co naprawdę buduje mięśnie.',
+        category: 'cwiczenia',
+        lead: 'Pompa to napływ krwi do mięśnia — znika po godzinie. Siła to zdolność układu nerwowego i wielkość mięśnia — zostaje. Nie myl jednego z drugim.',
+        sections: [
+            { h2: 'Pompa', p: 'Efekt chwilowy: krew i płyn w mięśniu po seriach z dużą liczbą powtórzeń. Nie buduje trwale — ale bywa sygnałem dobrego ukrwienia.' },
+            { h2: 'Siła', p: 'Wynika z rekrutacji włókien i masy mięśniowej. Trening z ciężarem 1–5 powtórzeń buduje siłę, 6–15 — głównie masę.' },
+            { h2: 'Co buduje mięśnie', p: 'Progresja ciężaru w zakresie 6–15 powtórzeń, objętość i białko. Pompa to efekt uboczny, nie cel sam w sobie.' }
+        ],
+        bullets: ['<strong>Pompa = chwilowa</strong> — nie wzrost.', '<strong>Siła = trwała</strong> — układ nerwowy + mięśnie.', '<strong>6–15 powt. + progresja</strong> — na masę.'],
+        uwaga: 'Nie oceniaj postępu po pompie z treningu — zrób zdjęcie rano, po nocy, dopiero to pokazuje prawdę.',
+        coDalej: 'Zobacz <a href="progresja-jedyne-co-buduje">progresję</a> i <a href="ile-serii-na-miesien">ile serii na mięsień</a>.'
+    },
 // @@MORE@@
