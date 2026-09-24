@@ -1201,4 +1201,55 @@ const defs = [
         uwaga: '„Lekki” majonez ma mniej kalorii, ale nadal sporo — sprawdzaj etykietę zamiast ufać nazwie.',
         coDalej: 'Zobacz <a href="zamienniki-tnace-500-kcal">zamienniki tnące 500 kcal</a> i <a href="kalorie-na-oko-dlaczego-sie-mylisz">kalorie na oko</a>.'
     },
+    {
+        slug: 'pierwsze-6-miesiecy-silowni',
+        emoji: '🏋️',
+        title: 'Pierwsze 6 miesięcy siłowni — czego się spodziewać',
+        subtitle: 'Newbie gains: najszybszy postęp w życiu. Wykorzystaj go prostym planem i progresją, nie wymyślaniem.',
+        meta: 'Pierwsze 6 miesięcy treningu — newbie gains, ile mięśni można zbudować, czego się spodziewać i jak maksymalnie wykorzystać start.',
+        category: 'cwiczenia',
+        lead: 'W pierwsze 6–12 miesięcy organizm reaguje na trening najszybciej w życiu. To okno na realne, widoczne postępy — jeśli nie zmarnujesz go na chaos.',
+        sections: [
+            { h2: 'Newbie gains', p: 'Początkujący potrafią zbudować kilka kilogramów mięśni i podwoić siłę w pół roku. Potem tempo spada — dlatego start jest tak ważny.' },
+            { h2: 'Czego się spodziewać', p: 'Szybki wzrost siły, lepsza postura, więcej energii. Wygląd zmienia się wolniej niż liczby na sztandze — nie porównuj się po tygodniu.' },
+            { h2: 'Co robić', p: 'Prosty plan 3× w tygodniu, wielostawowe ćwiczenia i progresja co tydzień. Nie 5 splitów i nie „metoda gwiazdy z TikToka”.' }
+        ],
+        bullets: ['<strong>3× w tygodniu</strong> — wystarczy na start.', '<strong>Wielostawowe</strong> — przysiad, martwy, wyciskanie.', '<strong>Progresja</strong> — co tydzień trochę więcej.'],
+        uwaga: 'Nie goń za technikami zaawansowanych — na starcie to progresja i regularność budują 95% efektu.',
+        coDalej: 'Zobacz <a href="progresja-jedyne-co-buduje">progresję</a> i <a href="fbw-vs-split">FBW vs split</a>.'
+    },
+    {
+        slug: 'ile-serii-na-miesien',
+        emoji: '🔢',
+        title: 'Ile serii na mięsień tygodniowo wystarczy',
+        subtitle: '10–20 serii na grupę tygodniowo to słodki punkt. Więcej nie znaczy lepiej — regeneracja ma limit.',
+        meta: 'Ile serii na mięsień tygodniowo — optymalna objętość treningowa, jak rozłożyć serie i dlaczego więcej nie zawsze znaczy szybciej.',
+        category: 'cwiczenia',
+        lead: 'Badania pokazują, że 10–20 serii na grupę mięśniową tygodniowo daje najlepszy stosunek efektu do regeneracji. Powyżej 20 serii zysk maleje.',
+        sections: [
+            { h2: 'Zakres', p: 'Początkujący: 10–12 serii na grupę. Średniozaawansowani: 12–18. Zaawansowani: do 20. Licz serie „robocze”, nie rozgrzewkowe.' },
+            { h2: 'Jak rozłożyć', p: 'Lepiej 2× po 8 serii niż 1× 16 — częstszy bodziec i lepsza regeneracja między treningami.' },
+            { h2: 'Więcej = lepiej?', p: 'Do pewnego punktu tak. Potem dochodzisz do ściany regeneracji — i to ona, nie objętość, staje się limitem.' }
+        ],
+        bullets: ['<strong>10–20 serii/grupę/tydz.</strong> — słodki punkt.', '<strong>Rozłóż na 2 treningi</strong> — nie jeden.', '<strong>Serie robocze</strong> — nie rozgrzewka.'],
+        uwaga: 'Jeśli po 3 tygodniach nie progresujesz, nie dokładaj od razu serii — sprawdź sen, jedzenie i technikę.',
+        coDalej: 'Zobacz <a href="progresja-jedyne-co-buduje">progresję</a> i <a href="regeneracja-miesnie-rosna-poza">regenerację</a>.'
+    },
+    {
+        slug: 'trening-do-upadku-czy-warto',
+        emoji: '💥',
+        title: 'Trening do upadku mięśniowego — czy warto',
+        subtitle: 'Upadek daje dużo zmęczenia za niewiele więcej efektu. Zostaw go na ostatnią serię, nie na cały trening.',
+        meta: 'Trening do upadku mięśniowego — czy buduje więcej mięśni, jak często go stosować i dlaczego codzienny upadek spowalnia progres.',
+        category: 'cwiczenia',
+        lead: 'Trening do upadku (zero powtórzeń w zapasie) daje podobny wzrost mięśni co zostawienie 1–2 powtórzeń — za to dużo więcej zmęczenia.',
+        sections: [
+            { h2: 'Efekt vs koszt', p: 'Upadek buduje mięśnie, ale kosztuje regenerację. Różnica w hipertrofii wobec „1–2 powtórzenia w zapasie” jest minimalna.' },
+            { h2: 'Kiedy używać', p: 'Na izolowanych ćwiczeniach i w ostatniej serii — tam ryzyko techniczne jest małe, a zmęczenie do zniesienia.' },
+            { h2: 'Czego unikać', p: 'Upadek na przysiadzie, martwym i wyciskaniu co serię to przepis na kontuzję i wypalenie. Zostaw rezerwę na złożone ruchy.' }
+        ],
+        bullets: ['<strong>1–2 powt. w zapasie</strong> — zwykle wystarczy.', '<strong>Upadek na końcu</strong> — izolowane, ostatnia seria.', '<strong>Nie na wielostawowych</strong> — ryzyko kontuzji.'],
+        uwaga: 'Jeśli po każdym treningu czujesz się wypruty, a siła stoi — winny może być codzienny upadek.',
+        coDalej: 'Zobacz <a href="ile-serii-na-miesien">ile serii na mięsień</a> i <a href="regeneracja-miesnie-rosna-poza">regenerację</a>.'
+    },
 // @@MORE@@
