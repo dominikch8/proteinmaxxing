@@ -1837,7 +1837,11 @@
                 link.className = 'poradnik-hub-tile';
                 link.href = a.url || ('artykul/' + encodeURIComponent(a.slug));
                 link.setAttribute('role', 'listitem');
+                const created = String(a.createdAt || '').slice(0, 10);
+                if (created) link.setAttribute('data-date', created);
+                const createdPl = created ? created.split('-').reverse().join('.') : '';
                 link.innerHTML =
+                    (createdPl ? '<span class="poradnik-hub-tile-date">' + createdPl + '</span>' : '') +
                     '<span class="poradnik-hub-tile-emoji" aria-hidden="true">' +
                     (a.emoji || '📝') +
                     '</span>' +
