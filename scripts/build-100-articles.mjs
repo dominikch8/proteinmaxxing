@@ -640,4 +640,55 @@ const defs = [
         uwaga: 'Faza ładowania nie jest konieczna — 3–5 g dziennie stałej dawki da ten sam efekt, tylko wolniej.',
         coDalej: 'Zobacz <a href="kreatyna-kofeina-bialko-co-warto">co naprawdę warto brać</a> i <a href="przedtreningowka-czy-wystarczy-kawa">przedtreningówka czy kawa</a>.'
     },
+    {
+        slug: 'wapn-bez-nabialu',
+        emoji: '🥦',
+        title: 'Wapń bez nabiału — gdzie go szukać',
+        subtitle: 'Nabiał to nie jedyne źródło wapnia. Mak, tofu, sardynki i zielone warzywa domykają dzienną dawkę.',
+        meta: 'Wapń bez nabiału — mak, tofu, sardynki, migdały i warzywa: ile wapnia dziennie trzeba i jak domknąć je bez mleka.',
+        category: 'odzywianie',
+        lead: 'Dorosły potrzebuje ~1000 mg wapnia dziennie. Bez nabiału da się — mak, tofu z wapniem, sardynki i brokuły robią robotę.',
+        sections: [
+            { h2: 'Ile trzeba', p: 'Dorośli: 1000 mg, kobiety po 50. i mężczyźni po 70. — 1200 mg. Niedobór odbija się na kościach, nie tylko na diecie.' },
+            { h2: 'Najlepsze źródła', p: 'Mak (~1400 mg/100 g), sezam, tofu z solami wapnia, sardynki z ośćmi, migdały, jarmuż, brokuły. Sporo, jeśli wiesz gdzie.' },
+            { h2: 'Wchłanianie', p: 'Wapń lubi witaminę D i kwas żołądkowy. Szczawiany (szpinak) i fityniany (otręby) wiążą wapń — dlatego sam szpinak nie wystarczy.' }
+        ],
+        bullets: ['<strong>1000 mg dziennie</strong> — dorosły cel.', '<strong>Mak, tofu, sardynki</strong> — poza nabiałem.', '<strong>Witamina D</strong> — bez niej wapń gorzej wchodzi.'],
+        uwaga: 'Wegańska dieta bez planu łatwo wpada w 400–600 mg wapnia — suplement albo świadome źródła to konieczność.',
+        coDalej: 'Zobacz <a href="witamina-d-zima">witaminę D zimą</a> i <a href="witamina-b12-dieta-roslinna">witaminę B12</a>.'
+    },
+    {
+        slug: 'bialko-wegle-po-treningu',
+        emoji: '⚡',
+        title: 'Białko + węglowodany po treningu — po co ta para',
+        subtitle: 'Białko buduje, węglowodany uzupełniają glikogen i poprawiają wchłanianie. Razem działają lepiej niż solo.',
+        meta: 'Dlaczego białko z węglowodanami po treningu — jak ta para wpływa na regenerację i glikogen, ile jeść i czy ratio 3:1 ma znaczenie.',
+        category: 'odzywianie',
+        lead: 'Po treningu mięśnie chcą aminokwasów (naprawa) i glukozy (glikogen). Białko + węglowodany to nie moda — to logistyka regeneracji.',
+        sections: [
+            { h2: 'Co robi białko', p: 'Dostarcza aminokwasów do odbudowy mikrouszkodzeń mięśni. 25–40 g po treningu to sensowna porcja.' },
+            { h2: 'Co robią węgle', p: 'Uzupełniają glikogen spalony w trakcie i podbijają insulinę, która pomaga „wpakować” aminokwasy do mięśni.' },
+            { h2: 'Ile i kiedy', p: 'Nie musisz jeść w 30 minut. Posiłek w ciągu 2–4 h z białkiem i węglami wystarczy. Ratio 3:1 to sugestia, nie prawo.' }
+        ],
+        bullets: ['<strong>25–40 g białka</strong> — po treningu.', '<strong>+ węglowodany</strong> — glikogen i insulina.', '<strong>2–4 h na posiłek</strong> — bez paniki o okno.'],
+        uwaga: 'Na redukcji węgle po treningu też są OK — tylko wpisz je w dzienny bilans, zamiast dokładać ponad limit.',
+        coDalej: 'Zobacz <a href="bialko-po-treningu-ile-faktycznie">ile białka po treningu</a> i <a href="ile-bialka-na-dzien">ile białka dziennie</a>.'
+    },
+    {
+        slug: 'mrozonki-vs-swieze',
+        emoji: '🥶',
+        title: 'Mrożonki vs świeże — czy tracisz witaminy',
+        subtitle: 'Mrożone warzywa często mają więcej witamin niż „świeże” z marketu. Zamrażanie to nie wróg.',
+        meta: 'Mrożonki czy świeże warzywa i owoce — czy mrożenie niszczy witaminy, kiedy mrożonki wygrywają i które wybierać na diecie.',
+        category: 'odzywianie',
+        lead: 'Mrożone warzywa są zbierane w szczycie dojrzałości i mrożone w godziny — często mają więcej witamin niż „świeże”, które tygodniami leżały w transporcie.',
+        sections: [
+            { h2: 'Co dzieje się przy mrożeniu', p: 'Szybkie mrożenie zatrzymuje witaminy. Strata jest minimalna, a czasem mniejsza niż w warzywach leżących w sklepie.' },
+            { h2: 'Kiedy mrożonki wygrywają', p: 'Poza sezonem, przy małym budżecie i gdy nie gotujesz codziennie. Mrożony szpinak i jagody to stały, tani wybór.' },
+            { h2: 'Na co uważać', p: 'Kupuj same warzywa/owoce, bez sosów i panierek. „Mrożone gotowce” to już inna kategoria — sprawdzaj skład.' }
+        ],
+        bullets: ['<strong>Mrożenie ≈ świeże</strong> — różnice są małe.', '<strong>Poza sezonem</strong> — mrożonki lepsze.', '<strong>Bez sosów</strong> — kupuj czyste produkty.'],
+        uwaga: 'Mrożone „mieszanki na patelnię” z sosem potrafią mieć sporo tłuszczu i cukru — to nie to samo co worek warzyw.',
+        coDalej: 'Zobacz <a href="volume-eating-jak-jesc-duzo-i-chudnac">volume eating</a> i <a href="blonnik-a-sytosc">błonnik a sytość</a>.'
+    },
 // @@MORE@@
