@@ -137,8 +137,8 @@ function renderArticle(a, template) {
     // byline: personal for flagship, redakcja otherwise
     if (a.slug === 'ekstremalnie-szybkie-odchudzanie-bez-farmazonow') {
         html = html.replace(
-            '<p class="article-byline"><strong>Autorzy:</strong> redakcja</p>',
-            '<p class="article-byline"><strong>Autor:</strong> Proteiner — z doświadczenia, nie z gabinetu</p>'
+            '<strong>Autorzy:</strong> redakcja · ',
+            '<strong>Autor:</strong> Proteiner — z doświadczenia, nie z gabinetu · '
         );
     }
 
