@@ -793,4 +793,55 @@ const defs = [
         uwaga: 'Tłuszcze trans (utwardzone, w tanich słodyczach) są gorsze od nasyconych — to ich unikaj najmocniej.',
         coDalej: 'Zobacz <a href="oliwa-czy-maslo">oliwę czy masło</a> i <a href="omega-3-ryba-czy-kapsulka">omega-3</a>.'
     },
+    {
+        slug: 'talerz-80-procent-sytosci',
+        emoji: '🍽️',
+        title: 'Talerz w 80% pełny — jak jeść mniej bez liczenia',
+        subtitle: 'Japońska zasada hara hachi bu: kończ, gdy jesteś syty w 80%. Prosty trik na mniejsze porcje bez wagi.',
+        meta: 'Metoda talerza 80% — hara hachi bu: jak jeść do 80% sytości, by chudnąć bez liczenia kalorii i dlaczego mózg potrzebuje 20 minut.',
+        category: 'odchudzanie',
+        lead: 'Mózg rejestruje sytość z ~20-minutowym opóźnieniem. Jeśli kończysz posiłek na „prawie syty”, za chwilę będziesz najedzony — bez przejedzenia.',
+        sections: [
+            { h2: 'Na czym polega', p: 'Zamiast jeść do pełna, zjedz ~80% tego, co zwykle, i odczekaj 15–20 minut. Sygnał sytości dojdzie — bez dokładki.' },
+            { h2: 'Dlaczego działa', p: 'Rozciągnięcie żołądka i hormony sytości (GLP-1) potrzebują czasu. Jedząc wolniej, dajesz im szansę nadążyć.' },
+            { h2: 'Jak wdrożyć', p: 'Jedz wolniej, odkładaj sztućce między kęsami, pij wodę. Odstaw talerz na 10 minut, zanim sięgniesz po dokładkę.' }
+        ],
+        bullets: ['<strong>Kończ na 80%</strong> — nie na pełno.', '<strong>Jedz wolniej</strong> — 20 min na posiłek.', '<strong>Odczekaj przed dokładką</strong> — 10 minut.'],
+        uwaga: 'Nie tnij porcji do głodu — 80% sytości to nie 50% kalorii. Zbyt mało tylko nakręci podjadanie wieczorem.',
+        coDalej: 'Zobacz <a href="glod-vs-apetyt">głód vs apetyt</a> i <a href="volume-eating-jak-jesc-duzo-i-chudnac">volume eating</a>.'
+    },
+    {
+        slug: 'cheat-meal-a-tydzien-redukcji',
+        emoji: '🍕',
+        title: 'Cheat meal — kiedy pomaga, kiedy psuje tydzień',
+        subtitle: 'Jeden luźny posiłek nie zrujnuje redukcji. Codzienne „małe oszustwa” — już tak.',
+        meta: 'Cheat meal na redukcji — czy warto, jak często, ile kalorii może mieć i kiedy jeden luźny posiłek zamienia się w zepsuty tydzień.',
+        category: 'odchudzanie',
+        lead: 'Jeden cheat meal w tygodniu to spadek tempa, nie koniec diety. Problem zaczyna się, gdy cheat trwa cały weekend.',
+        sections: [
+            { h2: 'Matematyka', p: 'Nadwyżka 800 kcal w jednym posiłku to ułamek tygodniowego deficytu. Ta sama nadwyżka codziennie — kasuje cały postęp.' },
+            { h2: 'Kiedy pomaga', p: 'Psychicznie: oddech od diety zmniejsza napięcie i ryzyko porzucenia planu. Fizycznie: uzupełnia glikogen, co bywa miłe przed ciężkim treningiem.' },
+            { h2: 'Jak go zrobić', p: 'Zaplanuj z góry, zjedz i wróć do planu następnym posiłkiem. Nie „nadrabiaj” głodówką — to tylko napędza cykl.' }
+        ],
+        bullets: ['<strong>1 posiłek, nie weekend</strong> — granica.', '<strong>Zaplanuj</strong> — nie jedz „w nagrodę” impulsywnie.', '<strong>Wróć następnym posiłkiem</strong> — bez głodówki.'],
+        uwaga: 'Jeśli cheat meal wyzwala u ciebie tygodniowe objadanie, odpuść go — nie każdemu służy.',
+        coDalej: 'Zobacz <a href="cheat-meal-czy-rekompensata">cheat meal czy rekompensata</a> i <a href="podjadanie-wieczorem">podjadanie wieczorem</a>.'
+    },
+    {
+        slug: 'glod-vs-apetyt',
+        emoji: '🧠',
+        title: 'Głód vs apetyt — jak je odróżnić',
+        subtitle: 'Głód to sygnał ciała, apetyt to chęć przyjemności. Jeśli ich nie rozróżniasz, dieta zawsze będzie walką.',
+        meta: 'Głód fizyczny a apetyt emocjonalny — jak je odróżnić, objawy prawdziwego głodu i co robić, gdy „głód” pojawia się z nudów lub stresu.',
+        category: 'odchudzanie',
+        lead: 'Głód przychodzi stopniowo i zadowoli go każdy posiłek. Apetyt pojawia się nagle, celuje w konkretny smak i nie znika po zdrowym obiedzie.',
+        sections: [
+            { h2: 'Objawy głodu', p: 'Burczenie w brzuchu, spadek energii, drażliwość — i chęć zjedzenia czegokolwiek, nawet brokułów. To głód fizyczny.' },
+            { h2: 'Objawy apetytu', p: 'Chcesz „coś słodkiego/słonego” konkretnie, pojawia się przy stresie, nudzie albo widoku jedzenia. To nie głód, to bodziec.' },
+            { h2: 'Co robić', p: 'Przy apetycie: wypij wodę, zrób 10-minutową przerwę, sprawdź, czy nie jesteś po prostu zmęczony. Prawdziwy głód przeczekaj — nie zniknie.' }
+        ],
+        bullets: ['<strong>Głód = cokolwiek</strong> — apetyt = konkretny smak.', '<strong>Woda + 10 min</strong> — test na apetyt.', '<strong>Nuda i stres</strong> — nie głoduj, tylko się zajmij.'],
+        uwaga: 'Chroniczne tłumienie prawdziwego głodu kończy się napadem. Głód fizyczny zawsze zaspokój — tylko wybieraj mądrze.',
+        coDalej: 'Zobacz <a href="jedzenie-z-nudow">jedzenie z nudów</a> i <a href="podjadanie-wieczorem">podjadanie wieczorem</a>.'
+    },
 // @@MORE@@
