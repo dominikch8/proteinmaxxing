@@ -1711,4 +1711,25 @@ const defs = [
         uwaga: 'Nie dobieraj się do 50 kcal w górę czy dół — precyzja tabel jest mniejsza, niż myślisz.',
         coDalej: 'Zobacz <a href="kalorie-na-oko-dlaczego-sie-mylisz">kalorie na oko</a> i <a href="tracking-kalorii-bez-obsesji">tracking</a>.'
     },
-// @@MORE@@
+    {
+        slug: 'spalacze-tluszczu-co-naprawde-dziala',
+        emoji: '🔥',
+        title: 'Spalacze tłuszczu — co naprawdę działa',
+        subtitle: 'Większość „spalaczy” to kofeina i placebo. Jedyny sprawdzony spalacz to deficyt kaloryczny.',
+        meta: 'Czy spalacze tłuszczu działają — co jest w suplementach na odchudzanie, co mówią badania o kofeinie i L-karnitynie i co naprawdę spala tłuszcz.',
+        category: 'odchudzanie',
+        lead: 'Suplementy „spalające tłuszcz” mają minimalny efekt — zwykle tyle, co mocna kawa. Prawdziwy spalacz to deficyt kalorii, i to darmowy.',
+        sections: [
+            { h2: 'Co w środku', p: 'Kofeina, ekstrakty z zielonej herbaty, kapsaicyna. Dają lekki wzrost wydatku energetycznego — rzędu 1–3%, czyli kilkadziesiąt kcal dziennie.' },
+            { h2: 'Co mówią badania', p: 'Efekt jest realny, ale mikroskopijny i znika przy tolerancji na kofeinę. Żaden spalacz nie nadrobi złej diety.' },
+            { h2: 'Co naprawdę działa', p: 'Deficyt kalorii, więcej kroków, trening siłowy i białko. To „spala” tłuszcz — reszta to marketing na niecierpliwości.' }
+        ],
+        bullets: ['<strong>Deficyt</strong> — jedyny spalacz.', '<strong>Kofeina</strong> — lekki, realny efekt.', '<strong>Nie przepłacaj</strong> — spalacze to placebo+.'],
+        uwaga: '„Spalacze” z mocnymi stymulantami potrafią dać kołatanie serca i bezsenność — za efekt wart kilkadziesiąt kcal.',
+        coDalej: 'Zobacz <a href="kreatyna-kofeina-bialko-co-warto">co naprawdę warto brać</a> i <a href="deficyt-500-czy-700">deficyt kaloryczny</a>.'
+    },
+];
+
+const out = path.join(__dirname, 'hardcore-articles-100.json');
+writeFileSync(out, JSON.stringify(defs.map(buildArticle), null, 2) + '\n');
+console.log(`Zapisano ${defs.length} artykułów -> ${out}`);
