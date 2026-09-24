@@ -112,16 +112,18 @@ function renderArticle(a, template) {
         .replaceAll('{{RELATED}}', a.relatedHtml || '<a href="artykuly">artykuły</a>');
 
     // SEO: daty + JSON-LD (wartości escapowane, by nie zepsuć JSON).
-    const today = new Date().toISOString().slice(0, 10);
+    const articleDate = dateOf(a);
     const jsonStr = (s) => JSON.stringify(String(s));
     html = html
-        .replaceAll('{{DATE}}', today)
-        .replaceAll('{{DATE_MOD}}', today)
+        .replaceAll('{{DATE}}', articleDate)
+        .replaceAll('{{DATE_MOD}}', articleDate)
+        .replaceAll('{{ARTICLE_DATE}}', fmtDate(articleDate))
+        .replaceAll('{{ARTICLE_DATE_ISO}}', articleDate)
         .replaceAll('{{LD_HEADLINE}}', jsonStr(a.title))
         .replaceAll('{{LD_DESC}}', jsonStr(a.meta))
         .replaceAll('{{LD_SLUG}}', a.slug)
-        .replaceAll('{{LD_DATE}}', today)
-        .replaceAll('{{LD_DATE_MOD}}', today);
+        .replaceAll('{{LD_DATE}}', articleDate)
+        .replaceAll('{{LD_DATE_MOD}}', articleDate);
 
     // stub template has {{INTRO}} + {{SECTIONS}} — we put full body in SECTIONS and clear INTRO
     html = html.replace('<p>{{INTRO}}</p>', '');
