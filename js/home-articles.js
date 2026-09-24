@@ -1102,5 +1102,605 @@ window.HOME_ARTICLES = [
     "emoji": "📐",
     "title": "Jak mierzyć postęp bez wagi",
     "subtitle": "Wymiary, zdjęcia i siła — lepsze wskaźniki niż liczba na wadze."
+  },
+  {
+    "slug": "jajka-twarde-czy-sadzone-bialko",
+    "emoji": "🍳",
+    "title": "Jajka na twardo czy sadzone — czy białko się zmienia?",
+    "subtitle": "Gotowanie jajka zmienia jego białko w mniej niż 5%. Liczy się, ile ich zjesz, a nie jak je zrobisz."
+  },
+  {
+    "slug": "serwatka-czy-kazeina-na-noc",
+    "emoji": "🥛",
+    "title": "Serwatka czy kazeina przed snem — co realnie wygrywa",
+    "subtitle": "Kazeina trawi się wolno, serwatka szybko. Czy przed snem to w ogóle ma znaczenie?"
+  },
+  {
+    "slug": "rozgotowany-kurczak-ile-bialka",
+    "emoji": "🍗",
+    "title": "Ile białka tracisz, rozgotowując kurczaka",
+    "subtitle": "Smażenie i pieczenie odparowuje wodę, nie białko. Wartości w tabelach bywają liczone na surowo — stąd zamieszanie."
+  },
+  {
+    "slug": "twarog-poltlusty-czy-chudy",
+    "emoji": "🧀",
+    "title": "Twaróg półtłusty czy chudy — 5 g różnicy, 40 kcal",
+    "subtitle": "Różnica w białku jest symboliczna, w kaloriach realna. Który wybrać? Zależy od celu."
+  },
+  {
+    "slug": "czy-bialko-obciaza-nerki",
+    "emoji": "🫀",
+    "title": "Czy białko „zapycha” nerki zdrowym ludziom?",
+    "subtitle": "Mit powtarzany od dekad. U zdrowych nerek wysokie białko nie szkodzi — u chorych to inna historia."
+  },
+  {
+    "slug": "bialko-na-sniadanie-jajka-czy-platki",
+    "emoji": "🥣",
+    "title": "Białko na śniadanie — dlaczego jajka biją płatki",
+    "subtitle": "Płatki z mlekiem to ~10 g białka, jajecznica z 3 jaj ~19 g. Sytość wygrywa z porannym cukrem."
+  },
+  {
+    "slug": "tunczyk-w-oleju-czy-wodzie",
+    "emoji": "🐟",
+    "title": "Tuńczyk w oleju czy w wodzie — przelicznik bez emocji",
+    "subtitle": "Olej dokłada ~150 kcal do puszki. Białko to samo. Na redukcji woda wygrywa, na masie olej nie szkodzi."
+  },
+  {
+    "slug": "ser-zolty-jako-zrodlo-bialka",
+    "emoji": "🧀",
+    "title": "Ser żółty jako źródło białka — kiedy ma sens",
+    "subtitle": "Ser daje ~25 g białka, ale i ~30 g tłuszczu na 100 g. To białko premium — liczone z głową."
+  },
+  {
+    "slug": "skyr-grecki-czy-zwykly",
+    "emoji": "🥛",
+    "title": "Skyr, grecki czy zwykły jogurt — gramy za złotówkę",
+    "subtitle": "Skyr ma ~11 g białka, grecki ~9 g, zwykły ~4 g na 100 g. Cena potrafi wszystko odwrócić."
+  },
+  {
+    "slug": "losos-wedzony-ile-bialka",
+    "emoji": "🐟",
+    "title": "Łosoś wędzony na kanapce — ile białka realnie zjadasz",
+    "subtitle": "Łosoś to ~20 g białka, ale też ~13 g tłuszczu i sporo soli. Dwie plastry to nie „pół paczki”."
+  },
+  {
+    "slug": "proszek-bialkowy-jak-czytac-etykiete",
+    "emoji": "🏷️",
+    "title": "Proszek białkowy z promocji — jak czytać etykietę",
+    "subtitle": "Patrz na białko na 100 g, aminogram i cukier — nie na wielkość opakowania ani „gainer” na froncie."
+  },
+  {
+    "slug": "batonek-proteinowy-ile-bialka",
+    "emoji": "🍫",
+    "title": "Ile białka naprawdę ma „batonek proteinowy” z kasy",
+    "subtitle": "Batonek „proteinowy” z supermarketu ma 10–15 g białka i tyle samo cukru. To raczej baton niż białko."
+  },
+  {
+    "slug": "bialko-a-wlosy-paznokcie",
+    "emoji": "💇",
+    "title": "Białko a włosy i paznokcie — co jest mitem",
+    "subtitle": "Włosy i paznokcie to keratyna = białko. Ale jedzenie go w nadmiarze nie sprawi, że urosną szybciej."
+  },
+  {
+    "slug": "roslinny-kurczak-czy-dogania-mieso",
+    "emoji": "🌱",
+    "title": "Roślinny „kurczak” — czy dogania mięso w białku",
+    "subtitle": "Roślinne zamienniki mają 15–25 g białka, ale to przetworzony produkt. Sprawdź, co jesz zamiast kurczaka."
+  },
+  {
+    "slug": "ryz-z-fasola-czemu-razem",
+    "emoji": "🍚",
+    "title": "Ryż z fasolą — dlaczego razem, a nie osobno",
+    "subtitle": "Osobno mają „dziury” w aminokwasach, razem tworzą komplet. To najtańszy pełnowartościowy posiłek roślinny."
+  },
+  {
+    "slug": "czy-mozna-przedawkowac-bialko",
+    "emoji": "⚠️",
+    "title": "Czy można przedawkować białko z jedzenia",
+    "subtitle": "Z normalnego jedzenia — praktycznie nie. Z proszku łychą na godzinę — to już inna rozmowa."
+  },
+  {
+    "slug": "bialko-w-platkach-owsianych",
+    "emoji": "🥣",
+    "title": "Białko w płatkach owsianych — ile go naprawdę jest",
+    "subtitle": "Płatki owsiane to ~13 g białka na 100 g. To więcej niż myślisz, ale to wciąż głównie węglowodany."
+  },
+  {
+    "slug": "najtansze-zrodla-bialka-w-polsce",
+    "emoji": "💸",
+    "title": "Najtańsze źródła białka w polskich sklepach",
+    "subtitle": "Twaróg, jaja, pierś z kurczaka i sucha fasola — ranking ceny za 100 g białka, nie za opakowanie."
+  },
+  {
+    "slug": "konserwa-rybna-bialko-za-grosze",
+    "emoji": "🥫",
+    "title": "Konserwy rybne — białko za grosze i na co uważać",
+    "subtitle": "Szprot, makrela i sardynka to tanie białko z omega-3. Ale sól i olej potrafią zepsuć rachunek."
+  },
+  {
+    "slug": "blonnik-a-sytosc",
+    "emoji": "🌾",
+    "title": "Błonnik — dlaczego syci, a nie tuczy",
+    "subtitle": "Błonnik pęcznieje w żołądku, spowalnia trawienie i prawie nie daje kalorii. To twoja broń na głód."
+  },
+  {
+    "slug": "oliwa-czy-maslo",
+    "emoji": "🫒",
+    "title": "Oliwa czy masło — co do czego na patelni",
+    "subtitle": "Oba to ~90% tłuszczu. Różnią się składem kwasów i punktem dymienia — a nie „zdrowością” na oko."
+  },
+  {
+    "slug": "witamina-d-zima",
+    "emoji": "☀️",
+    "title": "Witamina D zimą — czy suplement to konieczność",
+    "subtitle": "Między październikiem a marcem słońce w Polsce nie wystarcza. U większości ludzi D3 warto brać."
+  },
+  {
+    "slug": "zelazo-u-trenujacych-kobiet",
+    "emoji": "🩸",
+    "title": "Żelazo u trenujących kobiet — objawy, których nie ignoruj",
+    "subtitle": "Zmęczenie, bladość, słabszy trening — to może być żelazo, nie lenistwo. Kobiety tracą go więcej."
+  },
+  {
+    "slug": "magnez-a-skurcze",
+    "emoji": "🦵",
+    "title": "Magnez i skurcze po treningu — czy to naprawdę to",
+    "subtitle": "Skurcze częściej biorą się z odwodnienia i zmęczenia niż z braku magnezu. Ale magnez i tak warto pilnować."
+  },
+  {
+    "slug": "elektrolity-kiedy-woda-za-malo",
+    "emoji": "🧂",
+    "title": "Elektrolity — kiedy sama woda już nie wystarcza",
+    "subtitle": "Przy długim cardio i w upał tracisz sód i potas. Woda bez elektrolitów bywa gorsza niż nic."
+  },
+  {
+    "slug": "weglowodany-na-noc",
+    "emoji": "🌙",
+    "title": "Węglowodany na noc — czy naprawdę tuczą",
+    "subtitle": "Organizm nie patrzy na zegarek. Liczy się bilans dnia, nie godzina ostatniego ryżu."
+  },
+  {
+    "slug": "indeks-glikemiczny-banan",
+    "emoji": "🍌",
+    "title": "Indeks glikemiczny — dlaczego banan nie jest zły",
+    "subtitle": "IG mierzy sam węglowodan, nie posiłek. Banan z twarogiem to zupełnie inna historia niż sam banan."
+  },
+  {
+    "slug": "omega-3-ryba-czy-kapsulka",
+    "emoji": "🐟",
+    "title": "Omega-3 — ryba czy kapsułka",
+    "subtitle": "Ryba daje pełen zestaw, kapsułka wygodę. Ale nie każda kapsułka ma sensowną dawkę EPA/DHA."
+  },
+  {
+    "slug": "sod-dlaczego-nie-demonizowac",
+    "emoji": "🧂",
+    "title": "Sód — dlaczego nie musisz go demonizować",
+    "subtitle": "Sól to nie trucizna, a elektrolit. Problemem jest nadmiar z przetworzonych, nie sól z solniczki."
+  },
+  {
+    "slug": "fruktoza-w-owocach",
+    "emoji": "🍎",
+    "title": "Cukier w owocach — czy fruktoza tuczy",
+    "subtitle": "Owoc to nie „cukier”. Ma błonnik, wodę i witaminy. Problemem jest fruktoza w syropach, nie w jabłku."
+  },
+  {
+    "slug": "sztuczne-slodziki",
+    "emoji": "🥤",
+    "title": "Sztuczne słodziki — co mówią badania, a nie fora",
+    "subtitle": "Słodziki nie są rakotwórcze w realnych dawkach. Są narzędziem — nie cudem i nie trucizną."
+  },
+  {
+    "slug": "kofeina-ile-kiedy-sen",
+    "emoji": "☕",
+    "title": "Kofeina — ile, kiedy i czy psuje sen",
+    "subtitle": "Kofeina działa 5–6 godzin. Kawa o 17 potrafi zepsuć sen o 23 — nawet jeśli „śpisz normalnie”."
+  },
+  {
+    "slug": "alkohol-kalorie-ktorych-nie-liczysz",
+    "emoji": "🍺",
+    "title": "Alkohol — kalorie, których nie liczysz",
+    "subtitle": "Alkohol to 7 kcal na gram — więcej niż węglowodany. A do tego obniża hamulce i psuje regenerację."
+  },
+  {
+    "slug": "woda-przed-posilkiem",
+    "emoji": "💧",
+    "title": "Woda przed posiłkiem — trik na sytość czy placebo",
+    "subtitle": "Szklanka wody przed jedzeniem realnie zmniejsza porcję o ~10%. Tani sposób na mniejszy apetyt."
+  },
+  {
+    "slug": "kreatyna-z-jedzenia",
+    "emoji": "🥩",
+    "title": "Kreatyna z jedzenia — ile jej jest w mięsie",
+    "subtitle": "Mięso i ryby mają kreatynę, ale żeby dobić dawkę z suplementu, musiałbyś zjeść kilogram dziennie."
+  },
+  {
+    "slug": "wapn-bez-nabialu",
+    "emoji": "🥦",
+    "title": "Wapń bez nabiału — gdzie go szukać",
+    "subtitle": "Nabiał to nie jedyne źródło wapnia. Mak, tofu, sardynki i zielone warzywa domykają dzienną dawkę."
+  },
+  {
+    "slug": "bialko-wegle-po-treningu",
+    "emoji": "⚡",
+    "title": "Białko + węglowodany po treningu — po co ta para",
+    "subtitle": "Białko buduje, węglowodany uzupełniają glikogen i poprawiają wchłanianie. Razem działają lepiej niż solo."
+  },
+  {
+    "slug": "mrozonki-vs-swieze",
+    "emoji": "🥶",
+    "title": "Mrożonki vs świeże — czy tracisz witaminy",
+    "subtitle": "Mrożone warzywa często mają więcej witamin niż „świeże” z marketu. Zamrażanie to nie wróg."
+  },
+  {
+    "slug": "glutaminian-i-chemi",
+    "emoji": "🍜",
+    "title": "Glutaminian i „chemia” — co jest faktem",
+    "subtitle": "Glutaminian to aminokwas, który jesz codziennie w pomidorach i serze. „Chemia” to straszak, nie argument."
+  },
+  {
+    "slug": "blonnik-z-siemienia",
+    "emoji": "🌱",
+    "title": "Błonnik z siemienia lnianego — jak go nie przedawkować",
+    "subtitle": "Siemię to błonnik i omega-3 w jednym. Ale suche ziarno pęcznieje — łyżka bez wody to problem."
+  },
+  {
+    "slug": "witamina-b12-dieta-roslinna",
+    "emoji": "💊",
+    "title": "Witamina B12 na diecie roślinnej — jedyna, której brak",
+    "subtitle": "B12 jest tylko w produktach odzwierzęcych. Na weganizmie bez suplementu wpadniesz w niedobór — to kwestia czasu."
+  },
+  {
+    "slug": "batony-fit-jak-czytac-etykiety",
+    "emoji": "🍫",
+    "title": "Batony „fit” — jak czytać etykiety bez nabierania się",
+    "subtitle": "„Bez cukru”, „protein”, „fit” to ozdoby. Obróć opakowanie i sprawdź białko, cukier i listę składników."
+  },
+  {
+    "slug": "granola-zdrowe-sniadanie-ile-cukru",
+    "emoji": "🥣",
+    "title": "„Zdrowe” śniadanie z granolą — ile ma cukru",
+    "subtitle": "Granola z marketu to często 20–30 g cukru na 100 g. „Zdrowe” śniadanie potrafi być słodsze niż pączek."
+  },
+  {
+    "slug": "tluszcze-nasycone-czy-nienasycone",
+    "emoji": "🫒",
+    "title": "Tłuszcze nasycone czy nienasycone — co wybierać",
+    "subtitle": "Nie chodzi o zero nasyconych, tylko o proporcje. Zamień część masła na oliwę i ryby — i tyle."
+  },
+  {
+    "slug": "talerz-80-procent-sytosci",
+    "emoji": "🍽️",
+    "title": "Talerz w 80% pełny — jak jeść mniej bez liczenia",
+    "subtitle": "Japońska zasada hara hachi bu: kończ, gdy jesteś syty w 80%. Prosty trik na mniejsze porcje bez wagi."
+  },
+  {
+    "slug": "cheat-meal-a-tydzien-redukcji",
+    "emoji": "🍕",
+    "title": "Cheat meal — kiedy pomaga, kiedy psuje tydzień",
+    "subtitle": "Jeden luźny posiłek nie zrujnuje redukcji. Codzienne „małe oszustwa” — już tak."
+  },
+  {
+    "slug": "glod-vs-apetyt",
+    "emoji": "🧠",
+    "title": "Głód vs apetyt — jak je odróżnić",
+    "subtitle": "Głód to sygnał ciała, apetyt to chęć przyjemności. Jeśli ich nie rozróżniasz, dieta zawsze będzie walką."
+  },
+  {
+    "slug": "deficyt-500-czy-700",
+    "emoji": "🔢",
+    "title": "Deficyt 500 czy 700 kcal — który wybrać realnie",
+    "subtitle": "Większy deficyt = szybszy spadek, ale większy głód i ryzyko utraty mięśni. Złoty środek to 500."
+  },
+  {
+    "slug": "plynne-kalorie-sok-to-nie-owoc",
+    "emoji": "🧃",
+    "title": "Płynne kalorie — dlaczego sok to nie owoc",
+    "subtitle": "Szklanka soku = kalorie 3 owoców i zero sytości. Płyny nie nasycają, a kalorie liczą tak samo."
+  },
+  {
+    "slug": "obiad-po-20-czy-psuje",
+    "emoji": "🌙",
+    "title": "Obiad po 20:00 — czy to cokolwiek psuje",
+    "subtitle": "Godzina posiłku nie zmienia bilansu. Ważniejsze, co i ile jesz — i czy po 20 nie robisz „drugiej kolacji”."
+  },
+  {
+    "slug": "redukcja-bez-wagi",
+    "emoji": "📏",
+    "title": "Redukcja bez wagi — po czym poznać, że działa",
+    "subtitle": "Waga potrafi kłamać (woda, glikogen). Miara, zdjęcia i ciuchy mówią więcej niż liczba na wyświetlaczu."
+  },
+  {
+    "slug": "efekt-jojo-jak-nie-nakarmic",
+    "emoji": "🪀",
+    "title": "Efekt jojo — dlaczego wraca i jak go nie nakarmić",
+    "subtitle": "Jojo to nie „słaba wola”, tylko dieta, której nie da się trzymać. Wracasz do starych nawyków — i waga wraca."
+  },
+  {
+    "slug": "podjadanie-wieczorem",
+    "emoji": "📺",
+    "title": "Podjadanie wieczorem — jak je uciąć bez silnej woli",
+    "subtitle": "Wieczorne podjadanie to zwykle nuda i nawyk, nie głód. Zmień rutynę, nie walcz z lodówką siłą."
+  },
+  {
+    "slug": "kalorie-na-oko-dlaczego-sie-mylisz",
+    "emoji": "👀",
+    "title": "Kalorie „na oko” — dlaczego mylisz się o 300 kcal",
+    "subtitle": "Ludzie notorycznie zaniżają porcje o 20–40%. Łyżka oliwy, garść orzechów — i 300 kcal znika."
+  },
+  {
+    "slug": "zamienniki-tnace-500-kcal",
+    "emoji": "🔁",
+    "title": "Zamienniki, które tną 500 kcal bez uczucia głodu",
+    "subtitle": "Ta sama objętość, mniej kalorii. Majonez na jogurt, cola na zero, tłuste mięso na chude."
+  },
+  {
+    "slug": "dlaczego-nie-chudniesz-na-1200-kcal",
+    "emoji": "🛑",
+    "title": "Dlaczego nie chudniesz na 1200 kcal",
+    "subtitle": "1200 kcal brzmi jak dieta, a bywa za mało — i sabotuje postęp głodem, brakami i spadkiem energii."
+  },
+  {
+    "slug": "produkty-ktore-syca",
+    "emoji": "🍽️",
+    "title": "Produkty, które naprawdę sycą — ranking sytości",
+    "subtitle": "Indeks sytości: ziemniaki, jajka i owsianka biją rogaliki. Wybieraj to, co trzyma cię najedzonym."
+  },
+  {
+    "slug": "metabolizm-po-30-mit-czy-fakt",
+    "emoji": "🎂",
+    "title": "Metabolizm po 30. — mit czy fakt",
+    "subtitle": "Spowolnienie metabolizmu po 30. to mit. Prawdziwy spadek zaczyna się koło 60. — wcześniej to styl życia."
+  },
+  {
+    "slug": "okno-zywieniowe-16-8",
+    "emoji": "⏱️",
+    "title": "Okno żywieniowe 16/8 — czy to coś więcej niż kalorie",
+    "subtitle": "Intermittent fasting to narzędzie na mniej posiłków, nie magia. Bez deficytu kalorii nie schudniesz."
+  },
+  {
+    "slug": "bialko-na-redukcji-ile-zeby-nie-stracic",
+    "emoji": "🥩",
+    "title": "Białko na redukcji — ile, żeby nie zjeść mięśni",
+    "subtitle": "Na deficycie białko chroni mięśnie i trzyma sytość. Celuj w górę zakresu: 1,8–2,2 g/kg."
+  },
+  {
+    "slug": "tluszcz-z-brzucha-schodzi-ostatni",
+    "emoji": "🎯",
+    "title": "Tłuszcz z brzucha — dlaczego schodzi ostatni",
+    "subtitle": "Nie spalisz tłuszczu punktowo. Brzuch schodzi tam, gdzie organizm chce — i zwykle na końcu."
+  },
+  {
+    "slug": "waga-stoi-a-ubrania-luzniejsze",
+    "emoji": "👖",
+    "title": "Waga stoi, a ubrania luźniejsze — co się dzieje",
+    "subtitle": "Rekompozycja: tracisz tłuszcz i budujesz mięśnie naraz. Waga się nie zmienia, sylwetka tak."
+  },
+  {
+    "slug": "detoksy-chudniesz-na-wodzie",
+    "emoji": "🥤",
+    "title": "Detoksy i głodówki — dlaczego chudniesz na wodzie",
+    "subtitle": "Detoks schudnie cię o 2 kg — wody i glikogenu. Tłuszcz zostaje, a waga wraca po pierwszym obiedzie."
+  },
+  {
+    "slug": "kroki-dziennie-ile-realnie",
+    "emoji": "🚶",
+    "title": "Kroki dziennie — ile naprawdę spalasz",
+    "subtitle": "10 000 kroków to ~300–400 kcal. To nie trening, ale codzienna baza, która utrzymuje spalanie."
+  },
+  {
+    "slug": "stres-kortyzol-i-brzuch",
+    "emoji": "😰",
+    "title": "Stres, kortyzol i brzuch — czy stres tuczy",
+    "subtitle": "Przewlekły stres podnosi kortyzol, a ten sprzyja apetytowi i tłuszczowi na brzuchu. Ale to nie wyrok."
+  },
+  {
+    "slug": "sen-6-czy-8-godzin-a-waga",
+    "emoji": "😴",
+    "title": "Sen 6 vs 8 godzin — jak to wpływa na wagę",
+    "subtitle": "Krótki sen podnosi głód i apetyt na słodycze. 6 zamiast 8 godzin potrafi po cichu dołożyć 300 kcal dziennie."
+  },
+  {
+    "slug": "jedzenie-z-nudow",
+    "emoji": "🥱",
+    "title": "Jedzenie z nudów — jak przerwać pętlę",
+    "subtitle": "Nuda to najczęstszy fałszywy głód. Zamiast jeść, zrób coś rękami — nawyk zniknie szybciej, niż myślisz."
+  },
+  {
+    "slug": "sosy-gdzie-siedzi-200-kcal",
+    "emoji": "🥣",
+    "title": "Sosy i dodatki — gdzie chowa się 200 kcal",
+    "subtitle": "Majonez, sos czosnkowy i dressing potrafią dołożyć więcej kalorii niż cały obiad. Sprawdzaj, czym polewasz."
+  },
+  {
+    "slug": "pierwsze-6-miesiecy-silowni",
+    "emoji": "🏋️",
+    "title": "Pierwsze 6 miesięcy siłowni — czego się spodziewać",
+    "subtitle": "Newbie gains: najszybszy postęp w życiu. Wykorzystaj go prostym planem i progresją, nie wymyślaniem."
+  },
+  {
+    "slug": "ile-serii-na-miesien",
+    "emoji": "🔢",
+    "title": "Ile serii na mięsień tygodniowo wystarczy",
+    "subtitle": "10–20 serii na grupę tygodniowo to słodki punkt. Więcej nie znaczy lepiej — regeneracja ma limit."
+  },
+  {
+    "slug": "trening-do-upadku-czy-warto",
+    "emoji": "💥",
+    "title": "Trening do upadku mięśniowego — czy warto",
+    "subtitle": "Upadek daje dużo zmęczenia za niewiele więcej efektu. Zostaw go na ostatnią serię, nie na cały trening."
+  },
+  {
+    "slug": "zakwasy-czy-dobry-trening",
+    "emoji": "🦵",
+    "title": "Zakwasy — czy to znak dobrego treningu",
+    "subtitle": "Zakwasy to mikrouszkodzenia po nowym bodźcu, nie dowód skuteczności. Możesz budować mięśnie bez bólu."
+  },
+  {
+    "slug": "rozgrzewka-5-minut",
+    "emoji": "🔥",
+    "title": "Rozgrzewka — 5 minut, które ratuje stawy",
+    "subtitle": "Rozgrzewka podnosi temperaturę i przygotowuje stawy. Pominięcie jej to najtańsza droga do kontuzji."
+  },
+  {
+    "slug": "progresja-jedyne-co-buduje",
+    "emoji": "📈",
+    "title": "Progresja — jedyna rzecz, która naprawdę buduje mięśnie",
+    "subtitle": "Mięśnie rosną, gdy dajesz im więcej bodźca. Bez progresji obciążenia robisz w kółko to samo — i stoisz."
+  },
+  {
+    "slug": "martwy-ciag-czy-niezbedny",
+    "emoji": "🏗️",
+    "title": "Martwy ciąg — czy jest niezbędny",
+    "subtitle": "Martwy to świetne ćwiczenie, ale nie obowiązkowe. Plecy i nogi zbudujesz też bez niego."
+  },
+  {
+    "slug": "przysiad-gleboki-czy-rownolegly",
+    "emoji": "🦵",
+    "title": "Przysiad głęboki czy równoległy",
+    "subtitle": "Głęboki buduje więcej, równoległy jest bezpieczniejszy dla kolan. Wybierz wg mobilności, nie ego."
+  },
+  {
+    "slug": "fbw-vs-split",
+    "emoji": "🔀",
+    "title": "Trening FBW vs split — co wybrać na start",
+    "subtitle": "FBW (całe ciało 3× w tygodniu) bije splity u początkujących. Częstotliwość > podział partii."
+  },
+  {
+    "slug": "odpoczynek-miedzy-seriami",
+    "emoji": "⏳",
+    "title": "Odpoczynek między seriami — ile na siłę, ile na masę",
+    "subtitle": "Na siłę odpoczywaj 2–5 min, na hipertrofię 1–2 min. Krótka przerwa to nie lepszy trening, a mniejszy ciężar."
+  },
+  {
+    "slug": "trening-w-40-minut",
+    "emoji": "⏱️",
+    "title": "Masz 40 minut — jak zrobić sensowny trening",
+    "subtitle": "Krótki trening to nie gorszy trening. Superserie i wielostawowe ruchy dadzą efekt bez 2 godzin na siłowni."
+  },
+  {
+    "slug": "trening-z-gumami-w-domu",
+    "emoji": "🩹",
+    "title": "Trening z gumami w domu — czy coś daje",
+    "subtitle": "Gumy nie zastąpią sztangi, ale utrzymają mięśnie i siłę, gdy nie masz siłowni. Lepsze niż nic — dużo lepsze."
+  },
+  {
+    "slug": "rozklad-bialka-w-dzien-treningu",
+    "emoji": "📅",
+    "title": "Białko w dzień treningowy — rozkład, nie pora",
+    "subtitle": "Nie liczy się „30 minut po”, tylko suma dnia rozłożona na 3–5 porcji. Pora jest drugorzędna."
+  },
+  {
+    "slug": "regeneracja-miesnie-rosna-poza",
+    "emoji": "😴",
+    "title": "Regeneracja — mięśnie rosną poza siłownią",
+    "subtitle": "Trening to bodziec, wzrost dzieje się w przerwie. Sen i jedzenie to nie dodatek — to 50% planu."
+  },
+  {
+    "slug": "sila-a-napompowany",
+    "emoji": "💪",
+    "title": "Siła a wygląd — dlaczego „napompowany” to nie to samo",
+    "subtitle": "Pompa to chwilowa krew i woda, siła to układ nerwowy i mięśnie. Budujesz jedno i drugie — ale inaczej."
+  },
+  {
+    "slug": "masa-bez-liczenia",
+    "emoji": "📊",
+    "title": "Trening na masę bez liczenia — da się?",
+    "subtitle": "Da się, ale wolniej i mniej pewnie. Liczenie to nie obsesja — to precyzja, gdy chcesz realnych efektów."
+  },
+  {
+    "slug": "przerwa-po-kontuzji",
+    "emoji": "🩹",
+    "title": "Przerwa po kontuzji — ile mięśni realnie tracisz",
+    "subtitle": "Tracisz mniej, niż myślisz — a siła i masa szybko wracają dzięki pamięci mięśniowej. Nie panikuj."
+  },
+  {
+    "slug": "cwiczenia-wielostawowe",
+    "emoji": "🏋️",
+    "title": "Ćwiczenia wielostawowe — dlaczego rządzą",
+    "subtitle": "Przysiad, martwy, wyciskanie, wiosłowanie — angażują wiele mięśni naraz. Więcej efektu w mniej czasu."
+  },
+  {
+    "slug": "kalistenika-na-mase",
+    "emoji": "🤸",
+    "title": "Kalistenika na masę — pompki i podciąganie wystarczą?",
+    "subtitle": "Masa ciała buduje mięśnie, ale progresja jest trudniejsza. Działa, jeśli robisz to mądrze."
+  },
+  {
+    "slug": "trening-nog-dlaczego-omijasz",
+    "emoji": "🦵",
+    "title": "Trening nóg — dlaczego go omijasz (i czemu to błąd)",
+    "subtitle": "Nogi to połowa ciała i największy potencjał wzrostu. Omijanie ich to budowanie domu bez fundamentu."
+  },
+  {
+    "slug": "cardio-a-miesnie",
+    "emoji": "🏃",
+    "title": "Cardio a mięśnie — czy bieganie je zjada",
+    "subtitle": "Umiarkowane cardio nie zjada mięśni. Zjada je za mało kalorii i brak siłowego. Biegaj spokojnie."
+  },
+  {
+    "slug": "porownywanie-sie-na-silowni",
+    "emoji": "🏆",
+    "title": "Porównywanie się na siłowni — dlaczego cię hamuje",
+    "subtitle": "Ścigasz się z cudzymi genami, stażem i wspomaganiem. Twoim jedynym rywalem jesteś ty sprzed miesiąca."
+  },
+  {
+    "slug": "bialko-30g-mit",
+    "emoji": "🧮",
+    "title": "„Białko się nie wchłania powyżej 30 g” — skąd to wyszło",
+    "subtitle": "Mit o limicie 30 g na posiłek nie ma podstaw. Organizm wchłonie i 60 g — po prostu wolniej."
+  },
+  {
+    "slug": "gluten-kiedy-naprawde-szkodzi",
+    "emoji": "🌾",
+    "title": "Gluten — kiedy naprawdę szkodzi",
+    "subtitle": "Gluten szkodzi przy celiakii i nadwrażliwości. Dla reszty to zwykłe białko z pszenicy, nie trucizna."
+  },
+  {
+    "slug": "laktoza-czy-psuje-sylwetke",
+    "emoji": "🥛",
+    "title": "Laktoza — czy mleko „psuje” sylwetkę",
+    "subtitle": "Mleko to nie wróg sylwetki, tylko kalorie i cukier mleczny. Nietolerancja to osobna sprawa — objawy, nie tycie."
+  },
+  {
+    "slug": "keto-vs-low-carb",
+    "emoji": "🥑",
+    "title": "Keto vs low carb — w czym naprawdę rzecz",
+    "subtitle": "Obie diety tną węgle, ale żadna nie spala tłuszczu magicznie. Liczy się deficyt, nie nazwa diety."
+  },
+  {
+    "slug": "superfoods-marketing",
+    "emoji": "🫐",
+    "title": "Superfoods — ile marketingu jest w jagodach goji",
+    "subtitle": "Goji, spirulina, quinoa to fajne produkty, nie cuda. Zwykłe jabłko i fasola biją je ceną za te same składniki."
+  },
+  {
+    "slug": "ujemne-kalorie-seler",
+    "emoji": "🥬",
+    "title": "Ujemne kalorie — czy seler spala więcej niż daje",
+    "subtitle": "Mit „ujemnych kalorii” jest przesadzony. Seler prawie nic nie ma, ale nie spala więcej, niż dostarcza."
+  },
+  {
+    "slug": "motywacja-vs-nawyki",
+    "emoji": "⚙️",
+    "title": "Motywacja vs nawyki — co naprawdę trzyma dietę",
+    "subtitle": "Motywacja to zryw, nawyki to autopilot. Dieta trzyma się nie siłą woli, tylko rutyną, której nie musisz chcieć."
+  },
+  {
+    "slug": "tabele-kalorii-skad-sie-biora",
+    "emoji": "📊",
+    "title": "Tabele kalorii — skąd się biorą te liczby",
+    "subtitle": "Kalorie w tabelach to wartości uśrednione, często mierzone metodą spalania sprzed 100 lat. Traktuj je jak szacunek."
+  },
+  {
+    "slug": "spalacze-tluszczu-co-naprawde-dziala",
+    "emoji": "🔥",
+    "title": "Spalacze tłuszczu — co naprawdę działa",
+    "subtitle": "Większość „spalaczy” to kofeina i placebo. Jedyny sprawdzony spalacz to deficyt kaloryczny."
+  },
+  {
+    "slug": "bialko-roslinne-jak-uzupelnic-aminokwasy",
+    "emoji": "🫘",
+    "title": "Białko roślinne — jak uzupełnić brakujące aminokwasy",
+    "subtitle": "Roślinom brakuje pojedynczych aminokwasów. Łączenie strączków ze zbożami domyka profil — bez mięsa."
   }
 ];

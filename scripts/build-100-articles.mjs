@@ -80,11 +80,11 @@ const defs = [
         coDalej: 'Sprawdź <a href="porownaj-produkty">kurczaka w porównywarce</a> i <a href="bialko-maxxing">ranking białko maxxing</a>.'
     },
     {
-        slug: 'bialko-roslinne-vs-zwierzece',
+        slug: 'bialko-roslinne-jak-uzupelnic-aminokwasy',
         emoji: '🫘',
-        title: 'Białko roślinne vs zwierzęce — gdzie naprawdę jest haczyk',
-        subtitle: 'Nie chodzi o „gorsze” białko, tylko o profil aminokwasów i ilość. Kombinacja to załatwia.',
-        meta: 'Białko roślinne czy zwierzęce: różnice w aminokwasach, przyswajalność, ile białka z fasoli i soczewicy oraz jak łączyć rośliny, by mieć pełny profil.',
+        title: 'Białko roślinne — jak uzupełnić brakujące aminokwasy',
+        subtitle: 'Roślinom brakuje pojedynczych aminokwasów. Łączenie strączków ze zbożami domyka profil — bez mięsa.',
+        meta: 'Białko roślinne a aminokwasy — czego brakuje roślinom, jak łączyć strączki ze zbożami, by mieć pełny profil i ile białka roślinnego jeść.',
         category: 'bialko',
         lead: 'Białko zwierzęce ma komplet aminokwasów, roślinne często brakuje jednego (np. lizyny w zbożach). To nie znaczy „gorsze” — trzeba tylko mądrze łączyć i jeść go trochę więcej.',
         sections: [

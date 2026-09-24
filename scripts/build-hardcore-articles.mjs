@@ -110,7 +110,7 @@ function renderArticle(a, template) {
         .replaceAll('{{DATE_MOD}}', today)
         .replaceAll('{{LD_HEADLINE}}', jsonStr(a.title))
         .replaceAll('{{LD_DESC}}', jsonStr(a.meta))
-        .replaceAll('{{LD_SLUG}}', jsonStr(a.slug))
+        .replaceAll('{{LD_SLUG}}', a.slug)
         .replaceAll('{{LD_DATE}}', today)
         .replaceAll('{{LD_DATE_MOD}}', today);
 
