@@ -946,4 +946,55 @@ const defs = [
         uwaga: 'Zbyt mała kolacja to przepis na nocną wizytę w lodówce — zostaw sobie sycący, białkowy posiłek wieczorem.',
         coDalej: 'Zobacz <a href="jedzenie-z-nudow">jedzenie z nudów</a> i <a href="glod-vs-apetyt">głód vs apetyt</a>.'
     },
+    {
+        slug: 'kalorie-na-oko-dlaczego-sie-mylisz',
+        emoji: '👀',
+        title: 'Kalorie „na oko” — dlaczego mylisz się o 300 kcal',
+        subtitle: 'Ludzie notorycznie zaniżają porcje o 20–40%. Łyżka oliwy, garść orzechów — i 300 kcal znika.',
+        meta: 'Dlaczego liczenie kalorii na oko zawodzi — jak duże są błędy przy porcjach, które produkty łatwo niedoszacować i jak ważyć, by liczyć realnie.',
+        category: 'odchudzanie',
+        lead: 'Badania pokazują, że ludzie niedoszacowują to, co jedzą, średnio o 20–40%. „Łyżeczka” masła orzechowego potrafi mieć 2× tyle kalorii, co myślisz.',
+        sections: [
+            { h2: 'Gdzie są błędy', p: 'Tłuszcze (oliwa, masło, orzechy), sosy i „garści”. Łyżka oliwy to 120 kcal, a „trochę” na patelni łatwo robi się z trzech.' },
+            { h2: 'Skala problemu', p: 'Trzy niedoszacowane rzeczy dziennie po 100 kcal = 300 kcal. Przy deficycie 500 to praktycznie kasuje postęp.' },
+            { h2: 'Jak to naprawić', p: 'Waż przez 1–2 tygodnie, żeby nauczyć oko realnych porcji. Potem liczysz sprawniej, ale raz na jakiś czas wróć do wagi.' }
+        ],
+        bullets: ['<strong>Waż 1–2 tygodnie</strong> — kalibracja oka.', '<strong>Tłuszcze i sosy</strong> — tu błąd jest największy.', '<strong>300 kcal dziennie</strong> — tyle „ginie” na oko.'],
+        uwaga: 'Nie licz na pamięć w restauracjach — porcje bywają 1,5× większe niż domowe. Lepiej założyć więcej.',
+        coDalej: 'Zobacz <a href="tracking-kalorii-bez-obsesji">tracking bez obsesji</a> i <a href="zamienniki-tnace-500-kcal">zamienniki tnące 500 kcal</a>.'
+    },
+    {
+        slug: 'zamienniki-tnace-500-kcal',
+        emoji: '🔁',
+        title: 'Zamienniki, które tną 500 kcal bez uczucia głodu',
+        subtitle: 'Ta sama objętość, mniej kalorii. Majonez na jogurt, cola na zero, tłuste mięso na chude.',
+        meta: 'Proste zamienniki produktów — jak uciąć 500 kcal dziennie bez głodu: zamiana majonezu, napojów i tłustych produktów na lżejsze.',
+        category: 'odchudzanie',
+        lead: 'Nie musisz jeść mniej — wystarczy jeść mądrzej. Kilka zamian dziennie potrafi uciąć 500 kcal przy tej samej objętości talerza.',
+        sections: [
+            { h2: 'Napojowe', p: 'Cola → zero: −140 kcal. Sok → woda z cytryną: −110 kcal. Latte z syropem → czarna kawa: −200 kcal.' },
+            { h2: 'Na talerzu', p: 'Majonez → jogurt naturalny: −80 kcal na łyżce. Tłusta wieprzowina → pierś z kurczaka: −150 kcal. Ser żółty → twaróg: −200 kcal.' },
+            { h2: 'Przekąskowe', p: 'Chipsy → popcorn bez tłuszczu: −200 kcal. Baton → owoc + jogurt: −150 kcal. Orzechy garść → mniejsza garść: −100 kcal.' }
+        ],
+        bullets: ['<strong>Napoje</strong> — najłatwiejsze cięcie.', '<strong>Majonez → jogurt</strong> — duża oszczędność.', '<strong>Te same porcje</strong> — mniej kalorii.'],
+        uwaga: 'Nie zamieniaj wszystkiego naraz — wprowadzaj 2–3 zmiany, które zostaną, zamiast rewolucji na tydzień.',
+        coDalej: 'Zobacz <a href="plynne-kalorie-sok-to-nie-owoc">płynne kalorie</a> i <a href="sosy-gdzie-siedzi-200-kcal">sosy</a>.'
+    },
+    {
+        slug: 'dlaczego-nie-chudniesz-na-1200-kcal',
+        emoji: '🛑',
+        title: 'Dlaczego nie chudniesz na 1200 kcal',
+        subtitle: '1200 kcal brzmi jak dieta, a bywa za mało — i sabotuje postęp głodem, brakami i spadkiem energii.',
+        meta: 'Dlaczego 1200 kcal nie działa — za niski deficyt, głód, utrata mięśni i spadek NEAT, czyli jak za mało kalorii blokuje odchudzanie.',
+        category: 'odchudzanie',
+        lead: '1200 kcal to często mniej niż podstawowa przemiana materii dorosłego. Organizm odpowiada głodem, mniejszą energią i mniejszym ruchem — i waga staje.',
+        sections: [
+            { h2: 'Co się dzieje', p: 'Przy zbyt niskich kaloriach spada NEAT (spontaniczny ruch), pogarsza się sen i rośnie głód. Deficyt na papierze topnieje, bo ciało oszczędza.' },
+            { h2: 'Głód i mięśnie', p: 'Za mało białka i kalorii = organizm sięga po mięśnie. Chudniesz, ale nie z tłuszczu — z mięśni. Stąd „skinny fat”.' },
+            { h2: 'Co zamiast', p: 'Policz utrzymanie i tnij 400–600 kcal. Dla większości kobiet to 1500–1800 kcal, nie 1200. Więcej jedzenia, lepszy efekt.' }
+        ],
+        bullets: ['<strong>Policz utrzymanie</strong> — nie zgaduj 1200.', '<strong>1500–1800 kcal</strong> — częstszy rozsądny cel.', '<strong>Białko wysoko</strong> — chroń mięśnie.'],
+        uwaga: '1200 kcal ma sens tylko u bardzo niskich, mało aktywnych osób — i to krótkoterminowo, pod okiem dietetyka.',
+        coDalej: 'Zobacz <a href="deficyt-500-czy-700">deficyt 500 czy 700</a> i <a href="metabolizm-po-30-mit-czy-fakt">metabolizm po 30.</a>.'
+    },
 // @@MORE@@
