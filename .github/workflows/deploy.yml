@@ -120,8 +120,26 @@ jobs:
         local-dir: ./domains/proteinmaxxing/
         server-dir: /public_html/proteinmaxxing.pl/
         timeout: 60000
-        exclude: |
-             **/.git/**
-             .git/**
-              **/node_modules/**
-              node_modules/**
+                exclude: |
+          .git
+          .git/**
+          **/.git
+          **/.git/**
+          **/.github/**
+          **/node_modules/**
+          **/.cursor/**
+          **/deploy-bundle/**
+          **/.hotfix-ftp/**
+          **/.ftp-deploy-sync-state.json
+          **/scripts/**
+          **/package.json
+          **/package-lock.json
+          **/sw.js
+          **/js/products-data-raw.js
+          **/api/config.local.php
+          **/data/**
+          **/data/*.sqlite
+          **/images/products/*.png
+          !images/products/sos-1000-wysp.png
+          !images/products/biszkopty.png
+          **/domains/**
