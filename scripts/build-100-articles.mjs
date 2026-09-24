@@ -589,4 +589,55 @@ const defs = [
         uwaga: 'Kofeina z przedtreningówek + kawa w ciągu dnia potrafią zsumować się w 600+ mg — licz całość.',
         coDalej: 'Zobacz <a href="przedtreningowka-czy-wystarczy-kawa">przedtreningówka czy kawa</a> i <a href="sen-6-czy-8-godzin-a-waga">sen a waga</a>.'
     },
+    {
+        slug: 'alkohol-kalorie-ktorych-nie-liczysz',
+        emoji: '🍺',
+        title: 'Alkohol — kalorie, których nie liczysz',
+        subtitle: 'Alkohol to 7 kcal na gram — więcej niż węglowodany. A do tego obniża hamulce i psuje regenerację.',
+        meta: 'Kalorie z alkoholu — ile kcal ma piwo, wino i wódka, jak alkohol psuje redukcję i regenerację oraz jak pić, jeśli w ogóle, bez rujnowania diety.',
+        category: 'odzywianie',
+        lead: 'Alkohol ma 7 kcal na gram — gęściej niż węgle i białko. Piwo to 250 kcal, kieliszek wina 120. I to zanim dojdzie do podjadania.',
+        sections: [
+            { h2: 'Kalorie', p: 'Gram etanolu = 7 kcal. Piwo (500 ml) ~250 kcal, wino (150 ml) ~120, wódka (50 ml) ~110. Bez syropów i coli w drinku.' },
+            { h2: 'Co robi z dietą', p: 'Alkohol spowalnia spalanie tłuszczu, psuje sen i regenerację, a po kilku głębszych znika kontrola nad jedzeniem.' },
+            { h2: 'Jak minimalizować', p: 'Wybieraj czyste trunki bez słodkich dodatków, pij wodę między kolejkami i licz te kalorie jak każde inne.' }
+        ],
+        bullets: ['<strong>7 kcal/g</strong> — licz alkohol jak makro.', '<strong>Piwo 250 kcal</strong> — za butelkę.', '<strong>Czyste trunki + woda</strong> — mniej szkód.'],
+        uwaga: 'Na redukcji alkohol to pierwszy kandydat do cięcia — jego kalorie nie dają ani sytości, ani mięśni.',
+        coDalej: 'Zobacz <a href="alkohol-a-odchudzanie">alkohol a odchudzanie</a> i <a href="plynne-kalorie-sok-to-nie-owoc">płynne kalorie</a>.'
+    },
+    {
+        slug: 'woda-przed-posilkiem',
+        emoji: '💧',
+        title: 'Woda przed posiłkiem — trik na sytość czy placebo',
+        subtitle: 'Szklanka wody przed jedzeniem realnie zmniejsza porcję o ~10%. Tani sposób na mniejszy apetyt.',
+        meta: 'Czy picie wody przed posiłkiem pomaga schudnąć — jak woda wpływa na sytość, ile pić i czy to realny trik na mniejsze porcje.',
+        category: 'odzywianie',
+        lead: 'Szklanka wody (500 ml) 15–30 min przed posiłkiem realnie zmniejsza to, ile potem zjesz — o ok. 10–15%. To nie magia, tylko objętość w żołądku.',
+        sections: [
+            { h2: 'Jak działa', p: 'Woda rozciąga żołądek i daje sygnał sytości, zanim zaczniesz jeść. Efekt jest realny, ale skromny — nie zastąpi liczenia.' },
+            { h2: 'Ile pić', p: 'Dwie szklanki przed głównymi posiłkami. Nie przesadzaj — litr naraz tylko rozcieńczy sok żołądkowy i da uczucie ciężkości.' },
+            { h2: 'Kiedy działa', p: 'Najlepiej u osób jedzących szybko i dużo. Jeśli już jesz powoli i sycąco, różnica będzie mniejsza.' }
+        ],
+        bullets: ['<strong>500 ml przed posiłkiem</strong> — mniejsza porcja.', '<strong>15–30 min przed</strong> — nie tuż przy talerzu.', '<strong>Efekt ~10%</strong> — pomocny, nie magiczny.'],
+        uwaga: 'Nie popijaj każdego kęsa dużą ilością wody — jedz, a wodę pij przed posiłkiem.',
+        coDalej: 'Zobacz <a href="volume-eating-jak-jesc-duzo-i-chudnac">volume eating</a> i <a href="blonnik-a-sytosc">błonnik a sytość</a>.'
+    },
+    {
+        slug: 'kreatyna-z-jedzenia',
+        emoji: '🥩',
+        title: 'Kreatyna z jedzenia — ile jej jest w mięsie',
+        subtitle: 'Mięso i ryby mają kreatynę, ale żeby dobić dawkę z suplementu, musiałbyś zjeść kilogram dziennie.',
+        meta: 'Kreatyna z jedzenia — ile kreatyny ma mięso i ryby, ile trzeba zjeść, by dorównać suplementowi i dlaczego monohydrat jest tańszy.',
+        category: 'odzywianie',
+        lead: 'Kreatyna siedzi w mięsie i rybach — ok. 3–5 g na kilogram. Żeby wziąć typową dawkę 3–5 g dziennie, musiałbyś zjeść ~1 kg mięsa.',
+        sections: [
+            { h2: 'Ile w produktach', p: 'Wołowina ~4–5 g/kg, śledź ~6–8 g/kg, kurczak ~3 g/kg. Wegetarianie mają jej we krwi mniej — stąd u nich suplement daje większy efekt.' },
+            { h2: 'Jedzenie vs suplement', p: 'Monohydrat to ~30–50 zł za miesięczny zapas — taniej niż kilogram mięsa dziennie. I bez kalorii.' },
+            { h2: 'Czy warto', p: 'Kreatyna to najlepiej przebadany suplement siłowy. 3–5 g dziennie poprawia siłę i masę mięśniową u większości trenujących.' }
+        ],
+        bullets: ['<strong>3–5 g/kg w mięsie</strong> — ale to mało na porcję.', '<strong>3–5 g monohydratu</strong> — standardowa dawka.', '<strong>Najtańszy efekt</strong> — kreatyna > BCAA i spalacze.'],
+        uwaga: 'Faza ładowania nie jest konieczna — 3–5 g dziennie stałej dawki da ten sam efekt, tylko wolniej.',
+        coDalej: 'Zobacz <a href="kreatyna-kofeina-bialko-co-warto">co naprawdę warto brać</a> i <a href="przedtreningowka-czy-wystarczy-kawa">przedtreningówka czy kawa</a>.'
+    },
 // @@MORE@@
