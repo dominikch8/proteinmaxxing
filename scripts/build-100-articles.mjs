@@ -1609,4 +1609,55 @@ const defs = [
         uwaga: 'Odstawienie glutenu „na próbę” przed badaniami maskuje celiakię — najpierw diagnoza, potem dieta.',
         coDalej: 'Zobacz <a href="laktoza-czy-psuje-sylwetke">laktozę</a> i <a href="glutaminian-i-chemi">glutaminian</a>.'
     },
+    {
+        slug: 'laktoza-czy-psuje-sylwetke',
+        emoji: '🥛',
+        title: 'Laktoza — czy mleko „psuje” sylwetkę',
+        subtitle: 'Mleko to nie wróg sylwetki, tylko kalorie i cukier mleczny. Nietolerancja to osobna sprawa — objawy, nie tycie.',
+        meta: 'Czy laktoza szkodzi sylwetce — mleko i laktoza a waga, nietolerancja laktozy, kalorie z mleka i czy warto pić mleko bez laktozy.',
+        category: 'odzywianie',
+        lead: 'Mleko nie „psuje” sylwetki samo w sobie — to płynne kalorie, które łatwo przesadzić. Laktoza tuczy tylko wtedy, gdy pijesz jej za dużo.',
+        sections: [
+            { h2: 'Kalorie', p: 'Szklanka mleka 2% to ~120 kcal i ~5 g cukru (laktozy). Trzy szklanki dziennie to 360 kcal — łatwo zapomnieć, że to nie woda.' },
+            { h2: 'Nietolerancja', p: 'Jeśli po mleku masz wzdęcia i biegunkę — to nietolerancja laktozy, nie „tycie od mleka”. Mleko bez laktozy rozwiązuje problem.' },
+            { h2: 'Czy pić', p: 'Mleko to tanie białko i wapń. Licz je w bilansie i pij z głową — na masie świetne, na redukcji zwracaj uwagę na ilość.' }
+        ],
+        bullets: ['<strong>Mleko = kalorie</strong> — licz jak posiłek.', '<strong>Wzdęcia po mleku</strong> — to laktoza, nie waga.', '<strong>Bez laktozy</strong> — ta sama wartość, bez objawów.'],
+        uwaga: '„Laktoza tuczy” to mit — tuczy nadwyżka kalorii, a mleko łatwo jej dokłada, bo pije się je szybko.',
+        coDalej: 'Zobacz <a href="gluten-kiedy-naprawde-szkodzi">gluten</a> i <a href="plynne-kalorie-sok-to-nie-owoc">płynne kalorie</a>.'
+    },
+    {
+        slug: 'keto-vs-low-carb',
+        emoji: '🥑',
+        title: 'Keto vs low carb — w czym naprawdę rzecz',
+        subtitle: 'Obie diety tną węgle, ale żadna nie spala tłuszczu magicznie. Liczy się deficyt, nie nazwa diety.',
+        meta: 'Keto czy low carb — różnica, czy ketoza przyspiesza odchudzanie, dla kogo niskowęglowodanowa dieta i dlaczego deficyt nadal rządzi.',
+        category: 'odchudzanie',
+        lead: 'Keto to bardzo niskie węgle i stan ketozy; low carb to po prostu mniej węglowodanów. Żadna nie omija praw fizyki — chudniesz od deficytu.',
+        sections: [
+            { h2: 'Różnica', p: 'Keto: <50 g węgli dziennie, dużo tłuszczu. Low carb: zwykle 50–150 g węgli. Keto wymusza ketozę, low carb nie.' },
+            { h2: 'Czy keto przyspiesza', p: 'Nie ma dowodów, że ketoza spala więcej tłuszczu niż ten sam deficyt na węglach. Szybki spadek na starcie to woda i glikogen.' },
+            { h2: 'Dla kogo', p: 'Niski poziom węgli pomaga kontrolować apetyt u niektórych i bywa wygodny. Ale nie jest obowiązkowy — liczy się bilans kalorii.' }
+        ],
+        bullets: ['<strong>Deficyt rządzi</strong> — nie nazwa diety.', '<strong>Keto ≠ szybsze spalanie</strong> — to woda na starcie.', '<strong>Wybierz, co utrzymasz</strong> — trwałość wygrywa.'],
+        uwaga: 'Keto bywa ubogie w błonnik i mikroelementy, jeśli jesz samo mięso i tłuszcz — warzywa na keto to konieczność, nie opcja.',
+        coDalej: 'Zobacz <a href="deficyt-500-czy-700">deficyt kaloryczny</a> i <a href="weglowodany-na-noc">węglowodany na noc</a>.'
+    },
+    {
+        slug: 'superfoods-marketing',
+        emoji: '🫐',
+        title: 'Superfoods — ile marketingu jest w jagodach goji',
+        subtitle: 'Goji, spirulina, quinoa to fajne produkty, nie cuda. Zwykłe jabłko i fasola biją je ceną za te same składniki.',
+        meta: 'Superfoods — czy jagody goji, spirulina i quinoa są zdrowsze, ile w tym marketingu i jakie zwykłe produkty dają to samo taniej.',
+        category: 'odzywianie',
+        lead: '„Superfoods” to termin marketingowy, nie naukowy. Goji ma antyoksydanty — ale truskawki i borówki mają je też, za ułamek ceny.',
+        sections: [
+            { h2: 'Czym są naprawdę', p: 'To zwykłe produkty z dobrym składem, opakowane w historię o egzotyce. Ich składniki znajdziesz w lokalnych, tańszych produktach.' },
+            { h2: 'Czy są zdrowsze', p: 'Nie bardziej niż zbilansowana dieta. Żaden pojedynczy produkt nie „odtruwa” ani nie leczy — to nie działa tak jak w reklamie.' },
+            { h2: 'Tańsze odpowiedniki', p: 'Goji → borówki/jagody, quinoa → kasza gryczana, spirulina → zwykły szpinak. Ta sama klasa składników, niższa cena.' }
+        ],
+        bullets: ['<strong>Marketing, nie nauka</strong> — „superfoods”.', '<strong>Borówki > goji</strong> — taniej i podobnie.', '<strong>Zróżnicowana dieta</strong> — bije każdy cud.'],
+        uwaga: 'Płacenie 40 zł za 100 g „super” proszku nie zrobi nic, czego nie zrobi talerz warzyw i owoców dziennie.',
+        coDalej: 'Zobacz <a href="fruktoza-w-owocach">owoce</a> i <a href="tabele-kalorii-skad-sie-biora">skąd biorą się tabele kalorii</a>.'
+    },
 // @@MORE@@
