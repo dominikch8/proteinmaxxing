@@ -1252,4 +1252,55 @@ const defs = [
         uwaga: 'Jeśli po każdym treningu czujesz się wypruty, a siła stoi — winny może być codzienny upadek.',
         coDalej: 'Zobacz <a href="ile-serii-na-miesien">ile serii na mięsień</a> i <a href="regeneracja-miesnie-rosna-poza">regenerację</a>.'
     },
+    {
+        slug: 'zakwasy-czy-dobry-trening',
+        emoji: '🦵',
+        title: 'Zakwasy — czy to znak dobrego treningu',
+        subtitle: 'Zakwasy to mikrouszkodzenia po nowym bodźcu, nie dowód skuteczności. Możesz budować mięśnie bez bólu.',
+        meta: 'Czy zakwasy świadczą o dobrym treningu — skąd się biorą, czy ból mięśni = wzrost i dlaczego brak zakwasów nie znaczy, że trening był zły.',
+        category: 'cwiczenia',
+        lead: 'Zakwasy (DOMS) pojawiają się, gdy mięsień dostaje nowy bodziec. Nie są wskaźnikiem wzrostu — możesz progresować bez odczuwania bólu.',
+        sections: [
+            { h2: 'Skąd się biorą', p: 'Mikrouszkodzenia włókien po nietypowym wysiłku — zwłaszcza ekscentrycznym (opuszczanie ciężaru). Szczyt bólu: 24–48 h.' },
+            { h2: 'Czy = wzrost', p: 'Nie. Zakwasy korelują z nowością bodźca, nie z hipertrofią. Stały trening daje postępy i coraz mniej zakwasów.' },
+            { h2: 'Co z bólem', p: 'Lekki ruch, spacer, sen i białko pomagają. Rozciąganie i „wałkowanie” dają ulgę chwilową — nie przyspieszają realnie regeneracji.' }
+        ],
+        bullets: ['<strong>Zakwasy ≠ wzrost</strong> — nie goń za bólem.', '<strong>Nowy bodziec</strong> — stąd DOMS.', '<strong>Lekki ruch</strong> — najlepsza ulga.'],
+        uwaga: 'Silny ból z obrzękiem i ciemnym moczem po treningu to może być rabdomioliza — to już wizyta u lekarza, nie zakwasy.',
+        coDalej: 'Zobacz <a href="regeneracja-miesnie-rosna-poza">regenerację</a> i <a href="rozgrzewka-5-minut">rozgrzewkę</a>.'
+    },
+    {
+        slug: 'rozgrzewka-5-minut',
+        emoji: '🔥',
+        title: 'Rozgrzewka — 5 minut, które ratuje stawy',
+        subtitle: 'Rozgrzewka podnosi temperaturę i przygotowuje stawy. Pominięcie jej to najtańsza droga do kontuzji.',
+        meta: 'Jak się rozgrzewać przed treningiem — ile minut, co robić i dlaczego rozgrzewka to inwestycja w stawy i lepszą technikę.',
+        category: 'cwiczenia',
+        lead: 'Rozgrzewka to nie strata czasu — podnosi temperaturę mięśni, smaruje stawy i przygotowuje układ nerwowy do ciężarów.',
+        sections: [
+            { h2: 'Po co', p: 'Cieplejsze mięśnie pracują sprawniej, a stawy są lepiej nawilżone. Rozgrzany organizm = mniejsze ryzyko naciągnięć i lepsza technika.' },
+            { h2: 'Jak to robić', p: '5–10 min lekkiego cardio (rower, skakanka, marsz) + kilka dynamicznych ruchów (wymachy, krążenia). Potem serie rozgrzewkowe z pustą sztangą.' },
+            { h2: 'Co pominąć', p: 'Długie statyczne rozciąganie przed ciężarami — obniża siłę. Zostaw rozciąganie na po treningu.' }
+        ],
+        bullets: ['<strong>5–10 min</strong> — wystarczy.', '<strong>Cardio + dynamiczne ruchy</strong> — przed treningiem.', '<strong>Statyczne na koniec</strong> — nie na start.'],
+        uwaga: 'Im zimniej i im cięższy trening, tym dłuższa rozgrzewka. Przy przysiadzie i martwym nie skacz od razu na ciężar roboczy.',
+        coDalej: 'Zobacz <a href="cwiczenia-wielostawowe">ćwiczenia wielostawowe</a> i <a href="przerwa-po-kontuzji">przerwę po kontuzji</a>.'
+    },
+    {
+        slug: 'progresja-jedyne-co-buduje',
+        emoji: '📈',
+        title: 'Progresja — jedyna rzecz, która naprawdę buduje mięśnie',
+        subtitle: 'Mięśnie rosną, gdy dajesz im więcej bodźca. Bez progresji obciążenia robisz w kółko to samo — i stoisz.',
+        meta: 'Progresja obciążenia — dlaczego to podstawa budowania mięśni, jak progresować (ciężar, powtórzenia, serie) i co robić, gdy progres staje.',
+        category: 'cwiczenia',
+        lead: 'Mięsień rośnie w odpowiedzi na coraz większy bodziec. Jeśli od miesięcy robisz te same ciężary i powtórzenia — ciało nie ma powodu się zmieniać.',
+        sections: [
+            { h2: 'Czym jest progresja', p: 'Stopniowe zwiększanie bodźca: ciężaru, powtórzeń albo serii. Najprościej — dokładasz 1–2 kg, gdy domkniesz zakres.' },
+            { h2: 'Jak progresować', p: 'Podwójna progresja: ustal zakres (np. 8–12 powt.), zacznij od dołu, dojdź do góry, dodaj ciężar, zejdź z powtórzeniami. I tak w kółko.' },
+            { h2: 'Gdy progres staje', p: 'Sprawdź sen, jedzenie i objętość. Czasem wystarczy tydzień lżejszy (deload), żeby wrócić silniejszym.' }
+        ],
+        bullets: ['<strong>Ciężar/powt./serie w górę</strong> — progresja.', '<strong>Podwójna progresja</strong> — najprostsza metoda.', '<strong>Deload</strong> — gdy stajesz.'],
+        uwaga: 'Progresja to nie dokładanie ciężaru za cenę techniki — zła forma to kontuzja, nie postęp.',
+        coDalej: 'Zobacz <a href="ile-serii-na-miesien">ile serii na mięsień</a> i <a href="pierwsze-6-miesiecy-silowni">pierwsze 6 miesięcy</a>.'
+    },
 // @@MORE@@
