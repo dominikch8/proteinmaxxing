@@ -102,6 +102,18 @@ function renderArticle(a, template) {
         .replaceAll('{{SUBTITLE}}', a.subtitle)
         .replaceAll('{{RELATED}}', a.relatedHtml || '<a href="artykuly">artykuły</a>');
 
+    // SEO: daty + JSON-LD (wartości escapowane, by nie zepsuć JSON).
+    const today = new Date().toISOString().slice(0, 10);
+    const jsonStr = (s) => JSON.stringify(String(s));
+    html = html
+        .replaceAll('{{DATE}}', today)
+        .replaceAll('{{DATE_MOD}}', today)
+        .replaceAll('{{LD_HEADLINE}}', jsonStr(a.title))
+        .replaceAll('{{LD_DESC}}', jsonStr(a.meta))
+        .replaceAll('{{LD_SLUG}}', jsonStr(a.slug))
+        .replaceAll('{{LD_DATE}}', today)
+        .replaceAll('{{LD_DATE_MOD}}', today);
+
     // stub template has {{INTRO}} + {{SECTIONS}} — we put full body in SECTIONS and clear INTRO
     html = html.replace('<p>{{INTRO}}</p>', '');
     html = html.replace('{{SECTIONS}}', a.bodyHtml);
