@@ -146,7 +146,9 @@ function renderArticle(a, template) {
 }
 
 function tileHtml(a) {
-    return `                    <a class="poradnik-hub-tile" data-category="${categoryOf(a)}" href="${a.slug}" role="listitem">
+    const iso = dateOf(a);
+    return `                    <a class="poradnik-hub-tile" data-category="${categoryOf(a)}" data-date="${iso}" href="${a.slug}" role="listitem">
+                        <span class="poradnik-hub-tile-date">${fmtDate(iso)}</span>
                         <span class="poradnik-hub-tile-emoji" aria-hidden="true">${a.emoji || '📝'}</span>
                         <span class="poradnik-hub-tile-title">${a.title}</span>
                         <span class="poradnik-hub-tile-desc">${a.subtitle}</span>
