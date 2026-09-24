@@ -10,6 +10,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 const templatePath = path.join(__dirname, 'article-stub-template.html');
 
+// Daty powstania artykułów (slug -> YYYY-MM-DD), generowane przez build-article-dates.mjs.
+let DATES = {};
+try {
+    DATES = JSON.parse(fs.readFileSync(path.join(__dirname, 'article-dates.json'), 'utf8'));
+} catch (_) { /* brak mapy — fallback do daty bieżącej */ }
+
+const fmtDate = (iso) => (iso ? String(iso).slice(0, 10).split('-').reverse().join('.') : '');
+const dateOf = (a) => a.date || DATES[a.slug] || new Date().toISOString().slice(0, 10);
+
 const batches = [
     'hardcore-articles-flagship.json',
     'hardcore-articles-batch1.json',
