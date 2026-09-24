@@ -844,4 +844,55 @@ const defs = [
         uwaga: 'Chroniczne tłumienie prawdziwego głodu kończy się napadem. Głód fizyczny zawsze zaspokój — tylko wybieraj mądrze.',
         coDalej: 'Zobacz <a href="jedzenie-z-nudow">jedzenie z nudów</a> i <a href="podjadanie-wieczorem">podjadanie wieczorem</a>.'
     },
+    {
+        slug: 'deficyt-500-czy-700',
+        emoji: '🔢',
+        title: 'Deficyt 500 czy 700 kcal — który wybrać realnie',
+        subtitle: 'Większy deficyt = szybszy spadek, ale większy głód i ryzyko utraty mięśni. Złoty środek to 500.',
+        meta: 'Deficyt 500 czy 700 kcal — ile chudnie się na każdym, który jest bezpieczniejszy, jak dobrać deficyt pod siebie i dlaczego 1200 kcal to często pułapka.',
+        category: 'odchudzanie',
+        lead: 'Deficyt 500 kcal to ~0,5 kg tygodniowo — bezpieczne tempo. 700+ kcal chudnie szybciej, ale częściej kończy się głodem i utratą mięśni.',
+        sections: [
+            { h2: 'Tempo spadku', p: '500 kcal dziennie = ~0,5 kg/tydz. 700 kcal = ~0,7 kg/tydz. Różnica wydaje się mała, ale w dłuższym ciągu liczy się trwałość.' },
+            { h2: 'Ryzyko', p: 'Agresywny deficyt mocniej obniża energię, podnosi głód i łatwiej zjada mięśnie. Im większy pośpiech, tym większa szansa na jojo.' },
+            { h2: 'Jak dobrać', p: 'Zacznij od 10–20% poniżej utrzymania (zwykle 400–600 kcal). Obserwuj wagę 2 tygodnie i dopiero wtedy tnij więcej.' }
+        ],
+        bullets: ['<strong>500 kcal</strong> — bezpieczny start.', '<strong>10–20% pod utrzymanie</strong> — zamiast zgadywania.', '<strong>Nie spiesz się</strong> — trwałość > tempo.'],
+        uwaga: 'Nie schodź poniżej ~1200–1500 kcal bez planu — za mało energii to głód, braki i utrata mięśni.',
+        coDalej: 'Zobacz <a href="deficyt-kaloryczny-praktyka">deficyt w praktyce</a> i <a href="dlaczego-nie-chudniesz-na-1200-kcal">czemu nie chudniesz na 1200</a>.'
+    },
+    {
+        slug: 'plynne-kalorie-sok-to-nie-owoc',
+        emoji: '🧃',
+        title: 'Płynne kalorie — dlaczego sok to nie owoc',
+        subtitle: 'Szklanka soku = kalorie 3 owoców i zero sytości. Płyny nie nasycają, a kalorie liczą tak samo.',
+        meta: 'Płynne kalorie — sok, napoje i alkohol: dlaczego nie dają sytości, ile kcal ma szklanka soku i jak płyny po cichu psują redukcję.',
+        category: 'odchudzanie',
+        lead: 'Wypicie 300 kcal soku zajmuje 30 sekund i nie syci. Zjedzenie 300 kcal owoców to 10 minut żucia i pełny żołądek. Stąd problem.',
+        sections: [
+            { h2: 'Dlaczego nie sycą', p: 'Płyny nie rozciągają żołądka jak stałe jedzenie i szybko je opuszczają. Mózg nie rejestruje kalorii z napoju tak jak z posiłku.' },
+            { h2: 'Ile to kosztuje', p: 'Szklanka soku pomarańczowego ~110 kcal, cola ~140, piwo ~250. Trzy „niewinne” płyny dziennie to dodatkowe 400–500 kcal.' },
+            { h2: 'Co pić', p: 'Woda, kawa/herbata bez cukru, napoje zero. Sok i mleko traktuj jako kalorie, nie gaszenie pragnienia.' }
+        ],
+        bullets: ['<strong>Pij wodę i „zero”</strong> — zero kalorii.', '<strong>Sok = kalorie</strong> — nie nawodnienie.', '<strong>Owoc zamiast soku</strong> — syci i ma błonnik.'],
+        uwaga: '„100% sok” to wciąż cukier — bez błonnika owocu. Nie daj się nabrać na „naturalne”.',
+        coDalej: 'Zobacz <a href="fruktoza-w-owocach">fruktozę</a> i <a href="alkohol-kalorie-ktorych-nie-liczysz">kalorie z alkoholu</a>.'
+    },
+    {
+        slug: 'obiad-po-20-czy-psuje',
+        emoji: '🌙',
+        title: 'Obiad po 20:00 — czy to cokolwiek psuje',
+        subtitle: 'Godzina posiłku nie zmienia bilansu. Ważniejsze, co i ile jesz — i czy po 20 nie robisz „drugiej kolacji”.',
+        meta: 'Czy jedzenie po 20:00 tuczy — godzina posiłku a bilans kalorii, dlaczego wieczorne jedzenie kojarzy się z tyciem i co naprawdę ma znaczenie.',
+        category: 'odchudzanie',
+        lead: 'Organizm nie ma „zamknięcia kasy” o 20:00. Tyjesz od nadwyżki kalorii w całym dniu — nie od tego, że obiad wypadł wieczorem.',
+        sections: [
+            { h2: 'Skąd mit', p: 'Wieczorne jedzenie często jest dodatkiem do już zjedzonych kalorii — podjadanie przed TV. Winna jest suma, nie zegarek.' },
+            { h2: 'Co naprawdę ma znaczenie', p: 'Bilans dnia i jakość snu. Ciężki, tłusty posiłek tuż przed snem może pogorszyć sen — i to jest jedyny realny argument.' },
+            { h2: 'Kiedy uważać', p: 'Przy refluksie i złym śnie zjedz ostatni duży posiłek 2–3 h przed. Poza tym jedz, kiedy ci wygodnie.' }
+        ],
+        bullets: ['<strong>Bilans dnia</strong> — nie godzina.', '<strong>2–3 h przed snem</strong> — dla komfortu trawienia.', '<strong>Bez „drugiej kolacji”</strong> — to ona tyje.'],
+        uwaga: 'Jeśli po 20 jesz z nudów, a nie głodu — problem to nawyk, nie pora posiłku.',
+        coDalej: 'Zobacz <a href="weglowodany-na-noc">węglowodany na noc</a> i <a href="podjadanie-wieczorem">podjadanie wieczorem</a>.'
+    },
 // @@MORE@@
