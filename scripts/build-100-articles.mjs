@@ -232,4 +232,55 @@ const defs = [
         uwaga: '„Aminokwasy dodane” i „kompleks” na etykiecie często maskują niską zawartość prawdziwego białka — licz gramy, nie slogany.',
         coDalej: 'Zobacz <a href="kreatyna-kofeina-bialko-co-warto">co naprawdę warto suplementować</a> i <a href="produkty-bialkowe-czy-oplacalne">czy odżywki się opłacają</a>.'
     },
+    {
+        slug: 'batonek-proteinowy-ile-bialka',
+        emoji: '🍫',
+        title: 'Ile białka naprawdę ma „batonek proteinowy” z kasy',
+        subtitle: 'Batonek „proteinowy” z supermarketu ma 10–15 g białka i tyle samo cukru. To raczej baton niż białko.',
+        meta: 'Ile białka ma baton proteinowy — batonik ze sklepu vs prawdziwy protein bar: białko, cukier, kalorie i czy warto za niego płacić.',
+        category: 'bialko',
+        lead: 'Tani „batonek proteinowy” z kasy ma zwykle 10–15 g białka i 15–20 g cukru. Prawdziwy protein bar (20+ g białka, <3 g cukru) to inna kategoria.',
+        sections: [
+            { h2: 'Dwa światy batonów', p: 'Baton „z dodatkiem białka” to słodycz z odrobiną białka. Protein bar to ~20 g białka, mało cukru i słodziki. Czytaj, który trzymasz.' },
+            { h2: 'Cukier a białko', p: 'Jeśli batonek ma więcej gramów cukru niż białka, to deser. Nie budujesz na nim diety — traktujesz jak słodycz z premią.' },
+            { h2: 'Kiedy ma sens', p: 'Jako awaryjna przekąska w podróży albo kontrolowany deser. Jako codzienne „białko” — przepłacasz i jesz cukier.' }
+        ],
+        bullets: ['<strong>20+ g białka, <3 g cukru</strong> — to dopiero protein bar.', '<strong>Cukier > białko</strong> — to zwykły baton.', '<strong>Przekąska awaryjna</strong> — ok, nie baza.'],
+        uwaga: '„Fit”, „protein”, „bez cukru” na froncie nic nie znaczą — obróć opakowanie i przeczytaj tabelę.',
+        coDalej: 'Zobacz <a href="batony-fit-jak-czytac-etykiety">jak czytać etykiety batonów fit</a> i <a href="produkty-bialkowe-czy-oplacalne">czy produkty białkowe się opłacają</a>.'
+    },
+    {
+        slug: 'bialko-a-wlosy-paznokcie',
+        emoji: '💇',
+        title: 'Białko a włosy i paznokcie — co jest mitem',
+        subtitle: 'Włosy i paznokcie to keratyna = białko. Ale jedzenie go w nadmiarze nie sprawi, że urosną szybciej.',
+        meta: 'Czy białko wpływa na włosy i paznokcie — rola keratyny, kiedy niedobór białka niszczy włosy i ile białka naprawdę trzeba jeść.',
+        category: 'bialko',
+        lead: 'Włosy i paznokcie są z keratyny, czyli z białka. Ale organizm nie wysyła „nadwyżki” białka do paznokci — one rosną we własnym tempie.',
+        sections: [
+            { h2: 'Kiedy białko ma znaczenie', p: 'Przy realnym niedoborze (poniżej ~0,8 g/kg) włosy robią się łamliwe i wypadają. To sygnał, że jesz za mało — nie powód, żeby brać „keratynę w tabletkach”.' },
+            { h2: 'Co naprawdę pomaga', p: 'Normalna podaż białka, żelazo, cynk i biotyna. Niedobory mikroelementów psują włosy częściej niż brak samego białka.' },
+            { h2: 'Suplementy „na włosy”', p: 'Kapsułki z keratyną i kolagenem mają zerowe dowody na porost włosów. Zjedz normalny obiad z białkiem i sprawdź żelazo.' }
+        ],
+        bullets: ['<strong>Minimum 0,8 g/kg</strong> — poniżej zaczynają się problemy.', '<strong>Żelazo i cynk</strong> — częstsze winy niż białko.', '<strong>Suplementy keratynowe</strong> — strata pieniędzy.'],
+        uwaga: 'Nagłe wypadanie włosów po diecie to często efekt zbyt niskich kalorii i braków — nie „za mało kolagenu”.',
+        coDalej: 'Zobacz <a href="zelazo-u-trenujacych-kobiet">żelazo u trenujących</a> i <a href="ile-bialka-na-dzien">ile białka dziennie</a>.'
+    },
+    {
+        slug: 'roslinny-kurczak-czy-dogania-mieso',
+        emoji: '🌱',
+        title: 'Roślinny „kurczak” — czy dogania mięso w białku',
+        subtitle: 'Roślinne zamienniki mają 15–25 g białka, ale to przetworzony produkt. Sprawdź, co jesz zamiast kurczaka.',
+        meta: 'Roślinne zamienniki kurczaka — ile białka, kalorii i składników mają roślinne kotlety, czy doganiają mięso i czy są zdrowsze.',
+        category: 'bialko',
+        lead: 'Roślinny „kurczak” z grochu i soi ma zwykle 15–25 g białka na 100 g — tyle co mięso. Ale to mocno przetworzony produkt z długą listą składników.',
+        sections: [
+            { h2: 'Białko', p: 'Kotlety z teksturowanego białka grochu/soi potrafią mieć 20+ g białka na 100 g. Pod tym kątem realnie doganiają pierś z kurczaka.' },
+            { h2: 'Co w składzie', p: 'Obok białka: oleje, zagęszczacze, aromaty, sporo soli. To nie „zdrowsza” wersja z automatu — to wybór etyczny/roślinny, nie dietetyczny cud.' },
+            { h2: 'Warto?', p: 'Jeśli jesz roślinne — tak, to wygodne białko. Jeśli liczysz kalorie i skład, tofu i tempeh są mniej przetworzone i zwykle tańsze.' }
+        ],
+        bullets: ['<strong>15–25 g białka/100 g</strong> — realnie jak mięso.', '<strong>Długa lista składników</strong> — to przetworzony produkt.', '<strong>Tofu/tempeh</strong> — czystsze opcje roślinne.'],
+        uwaga: 'Nie zakładaj, że roślinne = mniej kalorii — panierowane kotlety roślinne potrafią mieć tyle kcal, co schabowy.',
+        coDalej: 'Zobacz <a href="bialko-roslinne-vs-zwierzece">białko roślinne vs zwierzęce</a> i <a href="wegetarianskie-zrodla-bialka">wegetariańskie źródła białka</a>.'
+    },
 // @@MORE@@
