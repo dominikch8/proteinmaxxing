@@ -227,6 +227,40 @@ function upsertSitemap(sitemapPath, articles) {
     fs.writeFileSync(sitemapPath, xml);
 }
 
+// Dopisuje datę do KAŻDEGO kafelka (w tym bazowych spoza batchy) i sortuje
+// całą listę od najnowszych. Wywoływane po upsertHub, żeby porządek był stały.
+function sortAndDateHub(hubPath) {
+    let html = fs.readFileSync(hubPath, 'utf8');
+    const tiles = [...html.matchAll(/<a class="poradnik-hub-tile"[\s\S]*?<\/a>/g)].map((m) => m[0]);
+    if (!tiles.length) return;
+
+    const dated = tiles.map((t) => {
+        const slug = (t.match(/href="([a-z0-9-]+)"/) || [])[1] || '';
+        const iso = dateOf({ slug });
+        let out = t;
+        if (!/data-date=/.test(out)) {
+            out = out.replace('class="poradnik-hub-tile"', `class="poradnik-hub-tile" data-date="${iso}"`);
+        }
+        if (!/poradnik-hub-tile-date/.test(out)) {
+            out = out.replace(
+                '<span class="poradnik-hub-tile-emoji"',
+                `<span class="poradnik-hub-tile-date">${fmtDate(iso)}</span>\n                        <span class="poradnik-hub-tile-emoji"`
+            );
+        }
+        return { raw: out, iso };
+    });
+
+    dated.sort((a, b) => String(b.iso).localeCompare(String(a.iso)));
+
+    const gridOpen = html.indexOf('id="artykulyList"');
+    if (gridOpen === -1) return;
+    const gridOpenEnd = html.indexOf('>', gridOpen);
+    const gridClose = html.indexOf('</div>', gridOpenEnd);
+    if (gridClose === -1) return;
+    html = html.slice(0, gridOpenEnd + 1) + '\n' + dated.map((d) => d.raw).join('\n') + '\n                ' + html.slice(gridClose);
+    fs.writeFileSync(hubPath, html);
+}
+
 const template = fs.readFileSync(templatePath, 'utf8');
 const articles = loadArticles();
 console.log(`Artykułów do zbudowania: ${articles.length}`);
