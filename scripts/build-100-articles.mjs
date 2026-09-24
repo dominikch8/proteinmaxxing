@@ -1048,4 +1048,55 @@ const defs = [
         uwaga: 'Jeśli na czczo trenujesz ciężko i mdlejesz — jedz przed treningiem. IF nie jest obowiązkowe.',
         coDalej: 'Zobacz <a href="deficyt-kaloryczny-praktyka">deficyt w praktyce</a> i <a href="bialko-na-redukcji-ile-zeby-nie-stracic">białko na redukcji</a>.'
     },
+    {
+        slug: 'bialko-na-redukcji-ile-zeby-nie-stracic',
+        emoji: '🥩',
+        title: 'Białko na redukcji — ile, żeby nie zjeść mięśni',
+        subtitle: 'Na deficycie białko chroni mięśnie i trzyma sytość. Celuj w górę zakresu: 1,8–2,2 g/kg.',
+        meta: 'Ile białka na redukcji — dlaczego więcej białka chroni mięśnie, jaka dawka g/kg i jak domknąć ją, chudnąc bez utraty masy mięśniowej.',
+        category: 'odchudzanie',
+        lead: 'Na redukcji organizm chętnie sięga po mięśnie na energię. Wysokie białko to najtańsze „ubezpieczenie” — i najskuteczniejsze narzędzie na głód.',
+        sections: [
+            { h2: 'Ile białka', p: '1,8–2,2 g/kg masy ciała przy redukcji. Więcej niż na masie — bo deficyt sprzyja rozpadowi mięśni, a białko to hamuje.' },
+            { h2: 'Dlaczego syci', p: 'Białko ma najwyższą termogenezę i najdłużej syci. Na redukcji to podwójna korzyść: mniej głodu, lepszy skład ciała.' },
+            { h2: 'Jak domknąć', p: 'Rozłóż na 3–4 posiłki po 30–40 g: jajka, twaróg, kurczak, ryba, skyr, WPC. Pilnuj, żeby białko było w każdym posiłku.' }
+        ],
+        bullets: ['<strong>1,8–2,2 g/kg</strong> — na redukcji.', '<strong>30–40 g na posiłek</strong> — rozłóż równo.', '<strong>Białko w każdym posiłku</strong> — zasada.'],
+        uwaga: 'Samo białko bez treningu siłowego nie uratuje mięśni — połącz je z ciężarami.',
+        coDalej: 'Zobacz <a href="utrata-miesni-na-redukcji">utratę mięśni na redukcji</a> i <a href="sila-na-redukcji-dlaczego-nie-tylko-cardio">siłę na redukcji</a>.'
+    },
+    {
+        slug: 'tluszcz-z-brzucha-schodzi-ostatni',
+        emoji: '🎯',
+        title: 'Tłuszcz z brzucha — dlaczego schodzi ostatni',
+        subtitle: 'Nie spalisz tłuszczu punktowo. Brzuch schodzi tam, gdzie organizm chce — i zwykle na końcu.',
+        meta: 'Dlaczego tłuszcz z brzucha schodzi ostatni — czy da się spalać miejscowo, od czego zależy kolejność i co naprawdę działa na brzuch.',
+        category: 'odchudzanie',
+        lead: 'Brzuszki nie spalają tłuszczu z brzucha. Organizm bierze tłuszcz z całego ciała, a o kolejności decyduje genetyka — brzuch bywa ostatni w kolejce.',
+        sections: [
+            { h2: 'Czemu nie punktowo', p: 'Tkanka tłuszczowa oddaje tłuszcz globalnie, nie z „ćwiczonego” miejsca. Brzuszki budują mięsień, nie spalają tłuszczu nad nim.' },
+            { h2: 'Co decyduje o kolejności', p: 'Genetyka i hormony. U mężczyzn tłuszcz lubi brzuch, u kobiet biodra. Deficyt kaloryczny działa wszędzie — po prostu nierówno.' },
+            { h2: 'Co działa', p: 'Deficyt + trening siłowy + białko. Brzuch zniknie, gdy całościowy poziom tłuszczu spadnie — to kwestia czasu, nie ćwiczeń na „boczki”.' }
+        ],
+        bullets: ['<strong>Deficyt kaloryczny</strong> — jedyne co spala.', '<strong>Brzuszki = mięsień</strong> — nie spalanie.', '<strong>Cierpliwość</strong> — brzuch schodzi na końcu.'],
+        uwaga: 'Szeroki pas i tłuszcz wisceralny (wewnątrz brzucha) to przede wszystkim kwestia kalorii i alkoholu — nie ćwiczeń.',
+        coDalej: 'Zobacz <a href="deficyt-kaloryczny-praktyka">deficyt w praktyce</a> i <a href="stres-kortyzol-i-brzuch">kortyzol i brzuch</a>.'
+    },
+    {
+        slug: 'waga-stoi-a-ubrania-luzniejsze',
+        emoji: '👖',
+        title: 'Waga stoi, a ubrania luźniejsze — co się dzieje',
+        subtitle: 'Rekompozycja: tracisz tłuszcz i budujesz mięśnie naraz. Waga się nie zmienia, sylwetka tak.',
+        meta: 'Waga stoi a ubrania luźniejsze — rekompozycja sylwetki: jak tracić tłuszcz i budować mięśnie jednocześnie, i dlaczego waga nie pokazuje postępu.',
+        category: 'odchudzanie',
+        lead: 'Jeśli waga stoi, a pas się zmniejsza — tracisz tłuszcz i budujesz mięśnie jednocześnie. To najlepszy możliwy scenariusz, nie powód do paniki.',
+        sections: [
+            { h2: 'Co to jest', p: 'Rekompozycja: kilogram tłuszczu (duża objętość) znika, kilogram mięśnia (mniejsza objętość) przybywa. Waga taka sama, sylwetka lepsza.' },
+            { h2: 'Kiedy występuje', p: 'U początkujących, po przerwie od treningu i przy lekkim deficycie z wysokim białkiem. To najszybsza droga do „wyrzeźbienia”.' },
+            { h2: 'Jak to utrzymać', p: 'Lekki deficyt, trening siłowy i 1,8–2,2 g białka. Mierz pas i rób zdjęcia — waga przestaje być jedynym wskaźnikiem.' }
+        ],
+        bullets: ['<strong>Rekompozycja</strong> — tłuszcz na mięśnie.', '<strong>Mierz pas</strong> — nie tylko wagę.', '<strong>Białko + siła</strong> — warunki rekompozycji.'],
+        uwaga: 'Nie tnij kalorii mocniej, gdy waga stoi a ubrania luźniejsze — to znak, że działasz dobrze, nie że trzeba przyspieszać.',
+        coDalej: 'Zobacz <a href="redukcja-bez-wagi">redukcję bez wagi</a> i <a href="utrata-miesni-na-redukcji">utratę mięśni</a>.'
+    },
 // @@MORE@@
