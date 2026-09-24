@@ -1865,6 +1865,8 @@
         const list = document.getElementById('artykulyList');
         if (!list) return;
         const items = Array.from(list.querySelectorAll('.poradnik-hub-tile'));
+        // Sortuj od najnowszych (data powstania artykułu z data-date).
+        items.sort((a, b) => String(b.getAttribute('data-date') || '').localeCompare(String(a.getAttribute('data-date') || '')));
         const countEl = document.getElementById('articlesCatCount');
         if (countEl) countEl.textContent = String(items.length);
         const perPage = 16;
