@@ -487,4 +487,55 @@ const defs = [
         uwaga: 'Jeśli po kolacji z węglami śpisz gorzej i masz refluks — przesuń je wcześniej, ale nie dlatego, że „tuczą”.',
         coDalej: 'Zobacz <a href="dlaczego-waga-skacze-o-2kg">dlaczego waga skacze</a> i <a href="sen-stres-i-waga">sen, stres i waga</a>.'
     },
+    {
+        slug: 'indeks-glikemiczny-banan',
+        emoji: '🍌',
+        title: 'Indeks glikemiczny — dlaczego banan nie jest zły',
+        subtitle: 'IG mierzy sam węglowodan, nie posiłek. Banan z twarogiem to zupełnie inna historia niż sam banan.',
+        meta: 'Indeks glikemiczny — co naprawdę mierzy, dlaczego banan nie jest zły, ładunek glikemiczny i jak komponować posiłki, by cukier nie skakał.',
+        category: 'odzywianie',
+        lead: 'Indeks glikemiczny pokazuje, jak szybko sam produkt podnosi cukier. Banan ma wysoki IG, ale zjedzony z twarogiem lub orzechami — już nie.',
+        sections: [
+            { h2: 'IG vs ładunek', p: 'IG ignoruje ilość. Ładunek glikemiczny liczy realną porcję — i to on ma znaczenie. Kawałek arbuza to mniej cukru, niż sugeruje jego wysoki IG.' },
+            { h2: 'Dlaczego banan jest OK', p: 'Dojrzały banan to szybkie węgle, ale też potas i sytość. Przed treningiem to plus, nie wróg. Zielony ma mniej cukru i więcej skrobi opornej.' },
+            { h2: 'Jak obniżyć IG', p: 'Łącz węglowodany z białkiem, tłuszczem i błonnikiem. Kanapka z twarogiem, owoc z jogurtem — cukier rośnie wolniej, sytość dłużej.' }
+        ],
+        bullets: ['<strong>Ładunek > indeks</strong> — licz porcję, nie IG.', '<strong>Banan + twaróg</strong> — spłaszcza skok cukru.', '<strong>Łącz węgle z białkiem</strong> — uniwersalna zasada.'],
+        uwaga: 'IG to jedno z wielu narzędzi — nie demonizuj owoców. Przy zdrowym metabolizmie owoc dziennie to zaleta, nie grzech.',
+        coDalej: 'Zobacz <a href="weglowodany-na-noc">węglowodany na noc</a> i <a href="fruktoza-w-owocach">fruktozę w owocach</a>.'
+    },
+    {
+        slug: 'omega-3-ryba-czy-kapsulka',
+        emoji: '🐟',
+        title: 'Omega-3 — ryba czy kapsułka',
+        subtitle: 'Ryba daje pełen zestaw, kapsułka wygodę. Ale nie każda kapsułka ma sensowną dawkę EPA/DHA.',
+        meta: 'Omega-3 z ryby czy suplementu — ile EPA i DHA dziennie, która ryba ma najwięcej omega-3 i jak wybrać dobry suplement.',
+        category: 'odzywianie',
+        lead: 'Dwie porcje tłustej ryby tygodniowo domykają omega-3 lepiej niż tania kapsułka. W suplementach patrz na sumę EPA+DHA, nie na wielkość kapsułki.',
+        sections: [
+            { h2: 'Ile trzeba', p: 'Zdrowy dorosły: ~250–500 mg EPA+DHA dziennie. To 2 porcje łososia/makreli/sardynek tygodniowo albo porządny suplement.' },
+            { h2: 'Ryba czy kapsułka', p: 'Ryba daje też białko i witaminę D. Kapsułka to opcja dla tych, którzy ryb nie jedzą. Oba działają, jeśli dawka EPA+DHA się zgadza.' },
+            { h2: 'Jak wybrać', p: 'Sprawdzaj etykietę: suma EPA+DHA na porcję, nie „1000 mg oleju rybiego” (gdzie omega-3 może być 300 mg). Świeżość i źródło też mają znaczenie.' }
+        ],
+        bullets: ['<strong>250–500 mg EPA+DHA</strong> — dzienna dawka.', '<strong>2 porcje ryby/tydz.</strong> — najprościej.', '<strong>Sprawdzaj EPA+DHA</strong> — nie „olej rybi”.'],
+        uwaga: 'Jeśli bierzesz leki rozrzedzające krew, skonsultuj duże dawki omega-3 z lekarzem.',
+        coDalej: 'Zobacz <a href="losos-wedzony-ile-bialka">łososia wędzonego</a> i <a href="konserwa-rybna-bialko-za-grosze">konserwy rybne</a>.'
+    },
+    {
+        slug: 'sod-dlaczego-nie-demonizowac',
+        emoji: '🧂',
+        title: 'Sód — dlaczego nie musisz go demonizować',
+        subtitle: 'Sól to nie trucizna, a elektrolit. Problemem jest nadmiar z przetworzonych, nie sól z solniczki.',
+        meta: 'Sód w diecie — ile dziennie to norma, dlaczego sól nie jest sama w sobie zła i skąd naprawdę pochodzi nadmiar sodu.',
+        category: 'odzywianie',
+        lead: 'Sód jest niezbędny do pracy mięśni i nerwów. Problem w tym, że jemy go 2× za dużo — ale głównie z gotowców, nie z dosalania obiadu.',
+        sections: [
+            { h2: 'Ile to norma', p: 'WHO zaleca do 5 g soli (2 g sodu) dziennie. Przeciętnie jemy ~9–10 g, z czego większość siedzi w pieczywie, wędlinach i gotowcach.' },
+            { h2: 'Czemu to ważne', p: 'Nadmiar sodu podnosi ciśnienie u osób wrażliwych i zatrzymuje wodę. Ale zero sodu też jest złe — szczególnie przy intensywnym treningu.' },
+            { h2: 'Gdzie jest sód', p: 'Nie w solniczce — w chlebie, serze, wędlinach, zupach instant i fast foodzie. Gotując sam, kontrolujesz najwięcej.' }
+        ],
+        bullets: ['<strong>Do 5 g soli/dzień</strong> — norma WHO.', '<strong>Gotuj sam</strong> — najwięcej sodu jest w gotowcach.', '<strong>Nie tnij do zera</strong> — sód jest potrzebny.'],
+        uwaga: 'Jeśli masz nadciśnienie, ogranicz sód — ale najpierw w gotowcach i przetworzonych, nie w domowej kuchni.',
+        coDalej: 'Zobacz <a href="elektrolity-kiedy-woda-za-malo">elektrolity</a> i <a href="konserwa-rybna-bialko-za-grosze">sól w konserwach</a>.'
+    },
 // @@MORE@@
