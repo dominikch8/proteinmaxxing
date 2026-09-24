@@ -1507,4 +1507,55 @@ const defs = [
         uwaga: 'Wielostawowe wymagają lepszej techniki — ucz się ich z małym ciężarem, zanim dokładasz.',
         coDalej: 'Zobacz <a href="martwy-ciag-czy-niezbedny">martwy ciąg</a> i <a href="trening-w-40-minut">trening w 40 minut</a>.'
     },
+    {
+        slug: 'kalistenika-na-mase',
+        emoji: '🤸',
+        title: 'Kalistenika na masę — pompki i podciąganie wystarczą?',
+        subtitle: 'Masa ciała buduje mięśnie, ale progresja jest trudniejsza. Działa, jeśli robisz to mądrze.',
+        meta: 'Kalistenika na masę — czy pompki i podciąganie budują mięśnie, jak progresować masą ciała i kiedy ciężary są potrzebne.',
+        category: 'cwiczenia',
+        lead: 'Pompki, podciąganie i dipy budują mięśnie — do momentu, gdy stają się za łatwe. Wtedy progresja robi się wyzwaniem.',
+        sections: [
+            { h2: 'Czy działa', p: 'Tak, zwłaszcza na górę ciała. Klucz to trening blisko upadku i stałe utrudnianie: więcej powtórzeń, wolniejsze tempo, uniesienie nóg.' },
+            { h2: 'Jak progresować', p: 'Utrudniaj dźwignię (pompki na poręczach, podciąganie z obciążeniem), nie tylko dokładaj powtórzeń w nieskończoność.' },
+            { h2: 'Limit', p: 'Nogi i dolne partie trudno dobić samą masą ciała. Przysiady na jednej nodze to sporo, ale ciężar ostatecznie wygrywa.' }
+        ],
+        bullets: ['<strong>Góra ciała</strong> — kalistenika wystarczy.', '<strong>Utrudniaj dźwignię</strong> — nie tylko powtórzenia.', '<strong>Nogi</strong> — tu ciężar pomaga.'],
+        uwaga: '„Do upadku” przy kalistenice jest bezpieczniejsze niż przy ciężarach — wykorzystaj to, ale pilnuj techniki.',
+        coDalej: 'Zobacz <a href="trening-z-gumami-w-domu">trening z gumami</a> i <a href="progresja-jedyne-co-buduje">progresję</a>.'
+    },
+    {
+        slug: 'trening-nog-dlaczego-omijasz',
+        emoji: '🦵',
+        title: 'Trening nóg — dlaczego go omijasz (i czemu to błąd)',
+        subtitle: 'Nogi to połowa ciała i największy potencjał wzrostu. Omijanie ich to budowanie domu bez fundamentu.',
+        meta: 'Dlaczego warto trenować nogi — korzyści z treningu nóg dla sylwetki i metabolizmu, jak zacząć i dlaczego „leg day” nie jest straszny.',
+        category: 'cwiczenia',
+        lead: 'Nogi to największe grupy mięśniowe ciała. Ich trening podnosi ogólny wzrost, spalanie i sylwetkę — omijanie ich to strata połowy potencjału.',
+        sections: [
+            { h2: 'Korzyści', p: 'Duże mięśnie nóg = większa produkcja hormonów wzrostu i więcej spalonych kalorii. Do tego stabilny fundament pod całe ciało.' },
+            { h2: 'Czemu omijasz', p: 'Nogi bolą i są męczące — to najcięższy trening tygodnia. Ale to właśnie dlatego daje najwięcej.' },
+            { h2: 'Jak zacząć', p: 'Przysiad, martwy, wykroki, hip thrust. Dwa treningi nóg w tygodniu, zaczynając od lekkich ciężarów i pełnej techniki.' }
+        ],
+        bullets: ['<strong>Nogi = połowa ciała</strong> — nie pomijaj.', '<strong>2× w tygodniu</strong> — dobry start.', '<strong>Przysiad + martwy</strong> — podstawa.'],
+        uwaga: 'Zakwasy po nogach to norma — zaplanuj leg day tak, by nie kolidował z czymś, co wymaga chodzenia.',
+        coDalej: 'Zobacz <a href="przysiad-gleboki-czy-rownolegly">przysiad</a> i <a href="cwiczenia-wielostawowe">ćwiczenia wielostawowe</a>.'
+    },
+    {
+        slug: 'cardio-a-miesnie',
+        emoji: '🏃',
+        title: 'Cardio a mięśnie — czy bieganie je zjada',
+        subtitle: 'Umiarkowane cardio nie zjada mięśni. Zjada je za mało kalorii i brak siłowego. Biegaj spokojnie.',
+        meta: 'Czy cardio niszczy mięśnie — ile cardio jest bezpieczne przy budowaniu masy, jak łączyć bieganie z siłownią i czego naprawdę unikać.',
+        category: 'cwiczenia',
+        lead: 'Cardio nie „zjada” mięśni, dopóki jesz wystarczająco i robisz trening siłowy. Problem to ekstremalne objętości i duży deficyt.',
+        sections: [
+            { h2: 'Ile jest OK', p: '2–3 sesje cardio po 20–30 min tygodniowo nie zaszkodzą masie. Wręcz poprawią regenerację i kondycję.' },
+            { h2: 'Kiedy szkodzi', p: 'Codzienne długie biegi + niskie kalorie + brak siłowego = organizm sięga po mięśnie. Winny jest deficyt, nie samo cardio.' },
+            { h2: 'Jak łączyć', p: 'Siła przed cardio w jednym dniu, albo osobne dni. Nie rób maratonu tuż przed treningiem nóg.' }
+        ],
+        bullets: ['<strong>2–3× po 20–30 min</strong> — bezpiecznie.', '<strong>Siła przed cardio</strong> — kolejność.', '<strong>Jedz wystarczająco</strong> — wtedy cardio nie zjada.'],
+        uwaga: 'HIIT spala i buduje kondycję, ale mocniej męczy — nie dokładaj go do już ciężkiego planu siłowego.',
+        coDalej: 'Zobacz <a href="sila-na-redukcji-dlaczego-nie-tylko-cardio">siła na redukcji</a> i <a href="kardio-vs-sila-na-redukcji-2">cardio czy siła</a>.'
+    },
 // @@MORE@@
