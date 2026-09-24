@@ -1558,4 +1558,55 @@ const defs = [
         uwaga: 'HIIT spala i buduje kondycję, ale mocniej męczy — nie dokładaj go do już ciężkiego planu siłowego.',
         coDalej: 'Zobacz <a href="sila-na-redukcji-dlaczego-nie-tylko-cardio">siła na redukcji</a> i <a href="kardio-vs-sila-na-redukcji-2">cardio czy siła</a>.'
     },
+    {
+        slug: 'porownywanie-sie-na-silowni',
+        emoji: '🏆',
+        title: 'Porównywanie się na siłowni — dlaczego cię hamuje',
+        subtitle: 'Ścigasz się z cudzymi genami, stażem i wspomaganiem. Twoim jedynym rywalem jesteś ty sprzed miesiąca.',
+        meta: 'Porównywanie się na siłowni — dlaczego cudzy progres psuje motywację, jak przestać i dlaczego rywalizacja z sobą działa lepiej.',
+        category: 'cwiczenia',
+        lead: 'Gość obok wyciska 120 kg, a ty 60 — i co z tego? Nie znasz jego stażu, genetyki ani diety. Porównuj się z sobą sprzed miesiąca, nie z nim.',
+        sections: [
+            { h2: 'Czemu to pułapka', p: 'Cudzy wygląd to suma lat treningu, genów i często wspomagania. Porównanie z nim to niesprawiedliwy wyścig, który tylko zniechęca.' },
+            { h2: 'Co porównywać', p: 'Własne liczby: ciężar, powtórzenia, obwody, zdjęcia. To jedyna miara, która ma sens — i jedyna, na którą masz wpływ.' },
+            { h2: 'Jak to robić', p: 'Dziennik treningowy + zdjęcie raz w miesiącu. Zobaczysz trend, nie jednorazowy strzał. I przestaniesz patrzeć w bok.' }
+        ],
+        bullets: ['<strong>Rywal = ty sprzed miesiąca</strong> — nie gość obok.', '<strong>Dziennik</strong> — liczby zamiast emocji.', '<strong>Zdrowy dystans</strong> — cudzy progres to nie twój minus.'],
+        uwaga: 'Zazdrość o czyjąś sylwetkę to często brak informacji o jego drodze — skup się na swojej, bo tylko ją kontrolujesz.',
+        coDalej: 'Zobacz <a href="motywacja-vs-nawyki">motywację vs nawyki</a> i <a href="progresja-jedyne-co-buduje">progresję</a>.'
+    },
+    {
+        slug: 'bialko-30g-mit',
+        emoji: '🧮',
+        title: '„Białko się nie wchłania powyżej 30 g” — skąd to wyszło',
+        subtitle: 'Mit o limicie 30 g na posiłek nie ma podstaw. Organizm wchłonie i 60 g — po prostu wolniej.',
+        meta: 'Czy organizm wchłania maksymalnie 30 g białka — skąd mit o limicie na posiłek, ile białka naprawdę można zjeść naraz i co to znaczy w praktyce.',
+        category: 'odzywianie',
+        lead: 'Mit „max 30 g białka na posiłek” wziął się z uproszczenia jednego badania. Organizm wchłonie i 60 g — większa porcja po prostu trawi się dłużej.',
+        sections: [
+            { h2: 'Skąd mit', p: 'Badania pokazały, że ~30 g maksymalnie pobudza syntezę mięśniową na raz. Ktoś to uprościł do „więcej się nie wchłonie” — i poleciało.' },
+            { h2: 'Co naprawdę', p: 'Całe zjedzone białko zostanie strawione i wchłonięte. Większa porcja = dłuższe trawienie i mniejszy „bonus” do syntezy, ale zero marnotrawstwa.' },
+            { h2: 'Praktycznie', p: 'Nie musisz jeść co 3 h po 30 g. Licz dzienną sumę i rozłóż mniej więcej równo — 3–5 posiłków po 25–40 g w zupełności wystarczy.' }
+        ],
+        bullets: ['<strong>Nie ma limitu 30 g</strong> — to mit.', '<strong>Większa porcja = dłuższe trawienie</strong> — nie strata.', '<strong>Licz sumę dnia</strong> — nie pojedynczy posiłek.'],
+        uwaga: 'Ściganie się z „idealnym rozkładem” to strata energii — suma białka w ciągu dnia robi 95% roboty.',
+        coDalej: 'Zobacz <a href="ile-bialka-na-dzien">ile białka dziennie</a> i <a href="rozklad-bialka-w-dzien-treningu">rozkład białka</a>.'
+    },
+    {
+        slug: 'gluten-kiedy-naprawde-szkodzi',
+        emoji: '🌾',
+        title: 'Gluten — kiedy naprawdę szkodzi',
+        subtitle: 'Gluten szkodzi przy celiakii i nadwrażliwości. Dla reszty to zwykłe białko z pszenicy, nie trucizna.',
+        meta: 'Czy gluten jest szkodliwy — celiakia, nadwrażliwość i moda na bezglutenowe: kiedy unikać glutenu, a kiedy to tylko trend.',
+        category: 'odzywianie',
+        lead: 'Gluten to białko pszenicy. Szkodzi tylko osobom z celiakią i realną nadwrażliwością — dla reszty to neutralny składnik, nie „zapychacz”.',
+        sections: [
+            { h2: 'Kiedy szkodzi', p: 'Celiakia (ok. 1% ludzi) i nieceliakalna nadwrażliwość. Tam gluten wywołuje stan zapalny i objawy — i wymaga diety bezglutenowej.' },
+            { h2: 'Moda na bezglutenowe', p: 'Dla zdrowych osób produkty „bez glutenu” nie są zdrowsze — bywają bardziej przetworzone i droższe, a nie lepsze.' },
+            { h2: 'Jak sprawdzić', p: 'Jeśli po pieczywie masz wzdęcia i biegunkę regularnie — zbadaj się na celiakię, zanim sam usuniesz gluten. Inaczej testy wyjdą fałszywie.' }
+        ],
+        bullets: ['<strong>Celiakia</strong> — tu gluten trzeba odstawić.', '<strong>Zdrowi</strong> — gluten jest neutralny.', '<strong>Zbadaj, zanim odstawisz</strong> — nie zgaduj.'],
+        uwaga: 'Odstawienie glutenu „na próbę” przed badaniami maskuje celiakię — najpierw diagnoza, potem dieta.',
+        coDalej: 'Zobacz <a href="laktoza-czy-psuje-sylwetke">laktozę</a> i <a href="glutaminian-i-chemi">glutaminian</a>.'
+    },
 // @@MORE@@
