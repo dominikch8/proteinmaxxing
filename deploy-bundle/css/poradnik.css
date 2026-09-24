@@ -179,6 +179,18 @@
     color: var(--text-muted) !important;
 }
 
+.poradnik-hub-tile-date {
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: var(--text-muted) !important;
+}
+
 [data-theme='dark'] .poradnik-hub-tile {
     background: linear-gradient(145deg, rgba(26, 34, 56, 0.95) 0%, rgba(18, 24, 42, 0.92) 100%);
     border-color: rgba(147, 197, 253, 0.14);
