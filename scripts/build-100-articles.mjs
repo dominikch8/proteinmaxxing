@@ -997,4 +997,55 @@ const defs = [
         uwaga: '1200 kcal ma sens tylko u bardzo niskich, mało aktywnych osób — i to krótkoterminowo, pod okiem dietetyka.',
         coDalej: 'Zobacz <a href="deficyt-500-czy-700">deficyt 500 czy 700</a> i <a href="metabolizm-po-30-mit-czy-fakt">metabolizm po 30.</a>.'
     },
+    {
+        slug: 'produkty-ktore-syca',
+        emoji: '🍽️',
+        title: 'Produkty, które naprawdę sycą — ranking sytości',
+        subtitle: 'Indeks sytości: ziemniaki, jajka i owsianka biją rogaliki. Wybieraj to, co trzyma cię najedzonym.',
+        meta: 'Ranking sycących produktów — ziemniaki, jajka, owsianka i białko: które jedzenie daje najdłuższą sytość i jak jeść, by nie głodnieć.',
+        category: 'odchudzanie',
+        lead: 'Nie wszystkie kalorie sycą tak samo. Ziemniaki i jajka trzymają najedzonego godzinami, a rogalik z kawą — ledwo chwilę.',
+        sections: [
+            { h2: 'Indeks sytości', p: 'W badaniach najwyżej wypadają: gotowane ziemniaki, ryby, owsianka, jajka, jabłka, mięso. Najniżej — rogaliki, ciasta, batony.' },
+            { h2: 'Dlaczego', p: 'Białko i błonnik + woda + objętość = sytość. Kaloryczne, ale puste produkty (cukier, tłuszcz) nasycają najsłabiej.' },
+            { h2: 'Jak to wykorzystać', p: 'Buduj posiłki na białku i warzywach, dodaj ziemniaki/kaszę zamiast frytek i białego chleba. Mniej głodu, łatwiejszy deficyt.' }
+        ],
+        bullets: ['<strong>Ziemniaki, jajka, owsianka</strong> — top sytości.', '<strong>Białko + błonnik</strong> — baza każdego posiłku.', '<strong>Unikaj pustych kalorii</strong> — nie nasycają.'],
+        uwaga: 'Sycące nie znaczy niskokaloryczne — orzechy sycą, ale mają dużo kcal. Licz je, tylko się nie bój.',
+        coDalej: 'Zobacz <a href="volume-eating-jak-jesc-duzo-i-chudnac">volume eating</a> i <a href="blonnik-a-sytosc">błonnik a sytość</a>.'
+    },
+    {
+        slug: 'metabolizm-po-30-mit-czy-fakt',
+        emoji: '🎂',
+        title: 'Metabolizm po 30. — mit czy fakt',
+        subtitle: 'Spowolnienie metabolizmu po 30. to mit. Prawdziwy spadek zaczyna się koło 60. — wcześniej to styl życia.',
+        meta: 'Czy metabolizm zwalnia po 30 — co mówią badania o spadku przemiany materii z wiekiem, ile to naprawdę kcal i co naprawdę zmienia się z wiekiem.',
+        category: 'odchudzanie',
+        lead: 'Badania pokazują, że metabolizm spoczynkowy jest stabilny od 20. do 60. roku życia. „Zwalnia po 30” to wymówka — winny jest ruch i nawyki.',
+        sections: [
+            { h2: 'Co mówią badania', p: 'PPM (spoczynkowa przemiana) spada realnie dopiero po ~60. roku życia, o ~1% rocznie. Po 30. różnicy praktycznie nie ma.' },
+            { h2: 'Skąd ten mit', p: 'Z wiekiem ludzie mniej się ruszają i tracą mięśnie — to obniża dzienne spalanie. Ale to efekt stylu życia, nie „zepsutego metabolizmu”.' },
+            { h2: 'Co robić', p: 'Trzymaj masę mięśniową (trening siłowy + białko) i codzienny ruch. To utrzymuje spalanie bez względu na metrykę.' }
+        ],
+        bullets: ['<strong>20–60 lat</strong> — metabolizm stabilny.', '<strong>Winny ruch i mięśnie</strong> — nie wiek.', '<strong>Siła + białko</strong> — trzymają spalanie.'],
+        uwaga: '„Zepsuty metabolizm” po dietach-cud istnieje krótkotrwale — to adaptacja, która mija po powrocie do normalnego jedzenia.',
+        coDalej: 'Zobacz <a href="dlaczego-nie-chudniesz-na-1200-kcal">czemu nie chudniesz na 1200</a> i <a href="neat-kroki-wiecej-niz-silownia">NEAT i kroki</a>.'
+    },
+    {
+        slug: 'okno-zywieniowe-16-8',
+        emoji: '⏱️',
+        title: 'Okno żywieniowe 16/8 — czy to coś więcej niż kalorie',
+        subtitle: 'Intermittent fasting to narzędzie na mniej posiłków, nie magia. Bez deficytu kalorii nie schudniesz.',
+        meta: 'Okno żywieniowe 16/8 — jak działa intermittent fasting, czy przyspiesza odchudzanie, dla kogo jest i czy to coś więcej niż ograniczenie kalorii.',
+        category: 'odchudzanie',
+        lead: '16/8 to jedzenie w 8-godzinnym oknie i 16 h postu. Samo w sobie nie spala tłuszczu — działa, bo łatwiej zjeść mniej, gdy masz mniej czasu na jedzenie.',
+        sections: [
+            { h2: 'Jak działa', p: 'Ograniczasz okno jedzenia, więc zwykle jesz mniej posiłków i mniej kalorii. To cała „magia” — reszta to wygoda i rutyna.' },
+            { h2: 'Czy przyspiesza', p: 'Nie ma solidnych dowodów, że 16/8 spala więcej niż ten sam deficyt w normalnym rozkładzie. Liczy się bilans kalorii.' },
+            { h2: 'Dla kogo', p: 'Dla tych, którzy wolą 2–3 większe posiłki i nie lubią śniadań. Nie dla osób z tendencją do napadów i przy intensywnych treningach rano.' }
+        ],
+        bullets: ['<strong>To narzędzie</strong> — nie cud.', '<strong>Deficyt nadal rządzi</strong> — bez niego nic.', '<strong>2–3 większe posiłki</strong> — dla lubiących.'],
+        uwaga: 'Jeśli na czczo trenujesz ciężko i mdlejesz — jedz przed treningiem. IF nie jest obowiązkowe.',
+        coDalej: 'Zobacz <a href="deficyt-kaloryczny-praktyka">deficyt w praktyce</a> i <a href="bialko-na-redukcji-ile-zeby-nie-stracic">białko na redukcji</a>.'
+    },
 // @@MORE@@
