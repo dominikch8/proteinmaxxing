@@ -1660,4 +1660,55 @@ const defs = [
         uwaga: 'Płacenie 40 zł za 100 g „super” proszku nie zrobi nic, czego nie zrobi talerz warzyw i owoców dziennie.',
         coDalej: 'Zobacz <a href="fruktoza-w-owocach">owoce</a> i <a href="tabele-kalorii-skad-sie-biora">skąd biorą się tabele kalorii</a>.'
     },
+    {
+        slug: 'ujemne-kalorie-seler',
+        emoji: '🥬',
+        title: 'Ujemne kalorie — czy seler spala więcej niż daje',
+        subtitle: 'Mit „ujemnych kalorii” jest przesadzony. Seler prawie nic nie ma, ale nie spala więcej, niż dostarcza.',
+        meta: 'Czy istnieją produkty o ujemnych kaloriach — seler, ogórek i sałata: ile naprawdę mają kalorii i czy jedzenie ich spala więcej energii.',
+        category: 'odchudzanie',
+        lead: 'Seler ma ~14 kcal na 100 g — prawie nic. Ale „ujemne kalorie” to mit: trawienie nie spala więcej, niż produkt dostarcza.',
+        sections: [
+            { h2: 'Skąd mit', p: 'Efekt termiczny jedzenia (TEF) to ~10% kalorii. Ktoś uznał, że przy 14 kcal organizm spali więcej na trawienie — w praktyce nie.' },
+            { h2: 'Ile naprawdę', p: 'Seler, ogórek, sałata mają 10–15 kcal/100 g. Są świetne na objętość i sytość, ale bilans zostaje lekko dodatni.' },
+            { h2: 'Czemu i tak warto', p: 'Warzywa wodniste dają objętość za grosze kalorii. To podstawa volume eating — nie dlatego, że „spalają”, tylko że sycą.' }
+        ],
+        bullets: ['<strong>Nie ma ujemnych kalorii</strong> — to mit.', '<strong>10–15 kcal/100 g</strong> — prawie zero.', '<strong>Jedz na objętość</strong> — sycą za grosze.'],
+        uwaga: 'Warzywa niskokaloryczne to nie „licencja na wszystko” — liczą się w całości dnia jak każde inne.',
+        coDalej: 'Zobacz <a href="volume-eating-jak-jesc-duzo-i-chudnac">volume eating</a> i <a href="produkty-ktore-syca">produkty, które sycą</a>.'
+    },
+    {
+        slug: 'motywacja-vs-nawyki',
+        emoji: '⚙️',
+        title: 'Motywacja vs nawyki — co naprawdę trzyma dietę',
+        subtitle: 'Motywacja to zryw, nawyki to autopilot. Dieta trzyma się nie siłą woli, tylko rutyną, której nie musisz chcieć.',
+        meta: 'Motywacja czy nawyki — dlaczego dieta nie trzyma się na sile woli, jak budować nawyki żywieniowe i treningowe, które zostają.',
+        category: 'odchudzanie',
+        lead: 'Motywacja spada po tygodniu. Nawyki działają latami, bo nie wymagają decyzji. Buduj rutynę, zamiast liczyć na zapał.',
+        sections: [
+            { h2: 'Różnica', p: 'Motywacja to chwilowa energia; nawyk to automat. Diety padają, gdy opierają się na zapał — nie na powtarzalnych zasadach.' },
+            { h2: 'Jak budować', p: 'Zacznij od małego (jedna zmiana na 2 tygodnie), przypnij do istniejącej rutyny (po kawie, przed obiadem) i powtarzaj.' },
+            { h2: 'Sztuczka', p: 'Ułatwiaj dobre wybory: meal prep, lista zakupów, stałe godziny. Im mniej decyzji, tym mniej miejsca na „nie chce mi się”.' }
+        ],
+        bullets: ['<strong>Nawyki > motywacja</strong> — zawsze.', '<strong>1 zmiana na 2 tygodnie</strong> — nie rewolucja.', '<strong>Ułatwiaj</strong> — mniej decyzji = mniej porażek.'],
+        uwaga: 'Nie czekaj na „lepszy moment” i idealny zapał — działanie buduje motywację, nie odwrotnie.',
+        coDalej: 'Zobacz <a href="tracking-kalorii-bez-obsesji">tracking bez obsesji</a> i <a href="porownywanie-sie-na-silowni">porównywanie się</a>.'
+    },
+    {
+        slug: 'tabele-kalorii-skad-sie-biora',
+        emoji: '📊',
+        title: 'Tabele kalorii — skąd się biorą te liczby',
+        subtitle: 'Kalorie w tabelach to wartości uśrednione, często mierzone metodą spalania sprzed 100 lat. Traktuj je jak szacunek.',
+        meta: 'Skąd biorą się tabele kalorii — jak mierzy się kaloryczność jedzenia, dlaczego wartości się różnią i czy można im ufać przy liczeniu.',
+        category: 'odzywianie',
+        lead: 'Kaloryczność produktu to uśredniona wartość z bazy danych, nie wyrok. Różnice między tabelami i realnym jedzeniem sięgają 10–20%.',
+        sections: [
+            { h2: 'Jak to mierzą', p: 'Historycznie spalano jedzenie w kalorymetrze i liczono ciepło. Dziś używa się współczynników Atwater (4/4/9 kcal na gram makro).' },
+            { h2: 'Dlaczego się różni', p: 'Różne odmiany, dojrzałość, sposób przygotowania i błonnik zmieniają realne kalorie. Stąd te same produkty mają różne wartości w różnych bazach.' },
+            { h2: 'Czy liczyć', p: 'Tak, ale z marginesem. Tabele są dobre do śledzenia trendu, nie do liczenia co do kcal. Celuj w zakres, nie w perfekcję.' }
+        ],
+        bullets: ['<strong>To szacunek</strong> — nie wyrok.', '<strong>10–20% błędu</strong> — norma.', '<strong>Licz trend</strong> — nie co do kcal.'],
+        uwaga: 'Nie dobieraj się do 50 kcal w górę czy dół — precyzja tabel jest mniejsza, niż myślisz.',
+        coDalej: 'Zobacz <a href="kalorie-na-oko-dlaczego-sie-mylisz">kalorie na oko</a> i <a href="tracking-kalorii-bez-obsesji">tracking</a>.'
+    },
 // @@MORE@@
