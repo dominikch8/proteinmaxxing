@@ -1303,4 +1303,55 @@ const defs = [
         uwaga: 'Progresja to nie dokładanie ciężaru za cenę techniki — zła forma to kontuzja, nie postęp.',
         coDalej: 'Zobacz <a href="ile-serii-na-miesien">ile serii na mięsień</a> i <a href="pierwsze-6-miesiecy-silowni">pierwsze 6 miesięcy</a>.'
     },
+    {
+        slug: 'martwy-ciag-czy-niezbedny',
+        emoji: '🏗️',
+        title: 'Martwy ciąg — czy jest niezbędny',
+        subtitle: 'Martwy to świetne ćwiczenie, ale nie obowiązkowe. Plecy i nogi zbudujesz też bez niego.',
+        meta: 'Czy martwy ciąg jest konieczny — zalety i ryzyko martwego ciągu, dla kogo jest, a kto może go zastąpić innymi ćwiczeniami.',
+        category: 'cwiczenia',
+        lead: 'Martwy ciąg angażuje pół ciała i buduje potężną siłę. Ale to nie jest ćwiczenie obowiązkowe — dla części osób ryzyko przeważa nad zyskiem.',
+        sections: [
+            { h2: 'Zalety', p: 'Plecy, pośladki, tył ud, chwyt i core w jednym. Niewiele ćwiczeń daje tyle „za jednym razem”.' },
+            { h2: 'Ryzyko', p: 'Przy złej technice i zbyt dużym ciężarze martwy obciąża dolną część pleców. To ćwiczenie, które wymaga szacunku, nie odwagi.' },
+            { h2: 'Alternatywy', p: 'Rumuński martwy, hip thrust, wiosłowanie, przysiad. Jeśli martwy ci nie leży — zamień go, zamiast robić na siłę.' }
+        ],
+        bullets: ['<strong>Świetny, ale nie obowiązkowy</strong> — bez presji.', '<strong>Technika > ciężar</strong> — zawsze.', '<strong>RDL/hip thrust</strong> — sensowne zamienniki.'],
+        uwaga: 'Ból dolnej części pleców w trakcie to sygnał stopu — nie „hartuj się”, tylko popraw technikę lub zmień ćwiczenie.',
+        coDalej: 'Zobacz <a href="cwiczenia-wielostawowe">ćwiczenia wielostawowe</a> i <a href="przysiad-gleboki-czy-rownolegly">przysiad</a>.'
+    },
+    {
+        slug: 'przysiad-gleboki-czy-rownolegly',
+        emoji: '🦵',
+        title: 'Przysiad głęboki czy równoległy',
+        subtitle: 'Głęboki buduje więcej, równoległy jest bezpieczniejszy dla kolan. Wybierz wg mobilności, nie ego.',
+        meta: 'Przysiad głęboki czy równoległy — różnice w aktywacji mięśni, wpływ na kolana i jak wybrać głębokość przysiadu pod swoją mobilność.',
+        category: 'cwiczenia',
+        lead: 'Głęboki przysiad (poniżej równoległości) mocniej aktywuje pośladki i uda. Równoległy jest łagodniejszy dla kolan i wymaga mniej mobilności.',
+        sections: [
+            { h2: 'Aktywacja', p: 'Im głębiej, tym więcej pracy pośladków i przywodzicieli. Równoległy skupia się bardziej na czworogłowych.' },
+            { h2: 'Kolana', p: 'Głęboki przysiad nie „niszczy kolan” przy dobrej technice. Ale przy ograniczonej mobilności kostek/bioder wymusza złą pozycję — stąd kontuzje.' },
+            { h2: 'Co wybrać', p: 'Schodź tak głęboko, jak pozwala ci czysta technika. Lepszy pełny kontrolowany równoległy niż „głęboki” z zaokrąglonymi plecami.' }
+        ],
+        bullets: ['<strong>Głębiej = więcej pośladków</strong> — ale trudniej.', '<strong>Technika wyznacza głębokość</strong> — nie ego.', '<strong>Mobilność kostek</strong> — klucz do głębi.'],
+        uwaga: 'Nie pogłębiaj przysiadu na siłę z bólem kolan — popracuj najpierw nad mobilnością bioder i kostek.',
+        coDalej: 'Zobacz <a href="trening-nog-dlaczego-omijasz">trening nóg</a> i <a href="cwiczenia-wielostawowe">ćwiczenia wielostawowe</a>.'
+    },
+    {
+        slug: 'fbw-vs-split',
+        emoji: '🔀',
+        title: 'Trening FBW vs split — co wybrać na start',
+        subtitle: 'FBW (całe ciało 3× w tygodniu) bije splity u początkujących. Częstotliwość > podział partii.',
+        meta: 'FBW czy split — który trening lepszy dla początkujących i średniozaawansowanych, zalety treningu całego ciała i kiedy przejść na split.',
+        category: 'cwiczenia',
+        lead: 'Trening całego ciała (FBW) 3× w tygodniu uderza każdą partię częściej — a częstotliwość to jeden z głównych motorów wzrostu u początkujących.',
+        sections: [
+            { h2: 'FBW', p: 'Całe ciało na jednym treningu, 3× w tygodniu. Każda partia dostaje bodziec co 48 h. Idealne na start i po przerwie.' },
+            { h2: 'Split', p: 'Dzielisz ciało na partie (np. push/pull/nogi). Sensowny, gdy potrzebujesz więcej objętości na partię i trenujesz 4–6× w tygodniu.' },
+            { h2: 'Co wybrać', p: 'Początkujący i wracający: FBW. Średniozaawansowani z czasem: push/pull/legs. Nie skacz na 5-dniowy split „bo tak robią zawodowcy”.' }
+        ],
+        bullets: ['<strong>Początkujący → FBW</strong> — częstotliwość wygrywa.', '<strong>3× w tygodniu</strong> — baza.', '<strong>Split</strong> — dopiero przy większej objętości.'],
+        uwaga: 'Najlepszy plan to ten, który robisz co tydzień. FBW 3× bije idealny split, który porzucisz po miesiącu.',
+        coDalej: 'Zobacz <a href="ile-serii-na-miesien">ile serii na mięsień</a> i <a href="pierwsze-6-miesiecy-silowni">pierwsze 6 miesięcy</a>.'
+    },
 // @@MORE@@
