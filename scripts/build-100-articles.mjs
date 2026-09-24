@@ -1099,4 +1099,55 @@ const defs = [
         uwaga: 'Nie tnij kalorii mocniej, gdy waga stoi a ubrania luźniejsze — to znak, że działasz dobrze, nie że trzeba przyspieszać.',
         coDalej: 'Zobacz <a href="redukcja-bez-wagi">redukcję bez wagi</a> i <a href="utrata-miesni-na-redukcji">utratę mięśni</a>.'
     },
+    {
+        slug: 'detoksy-chudniesz-na-wodzie',
+        emoji: '🥤',
+        title: 'Detoksy i głodówki — dlaczego chudniesz na wodzie',
+        subtitle: 'Detoks schudnie cię o 2 kg — wody i glikogenu. Tłuszcz zostaje, a waga wraca po pierwszym obiedzie.',
+        meta: 'Czy detoksy działają — dlaczego traci się na nich wodę zamiast tłuszczu, co dają soki i głodówki i dlaczego waga wraca.',
+        category: 'odchudzanie',
+        lead: 'Detoks sokowy daje szybki spadek wagi — ale to woda i glikogen, nie tłuszcz. Wracasz do jedzenia i waga wraca. Organizm sam się „detoksuje”.',
+        sections: [
+            { h2: 'Skąd spadek wagi', p: 'Bez węglowodanów i soli organizm traci wodę związaną z glikogenem. 2 kg „zgubione” w tydzień to głównie płyny.' },
+            { h2: 'Czy to detoks', p: 'Wątroba i nerki detoksykują cię non stop — nie potrzebują soków. „Toksyny” to marketing, nie fizjologia.' },
+            { h2: 'Co zamiast', p: 'Realny deficyt kalorii z normalnym jedzeniem. Wolniej, ale chudniesz z tłuszczu i efekt zostaje.' }
+        ],
+        bullets: ['<strong>To woda i glikogen</strong> — nie tłuszcz.', '<strong>Organizm się sam detoksykuje</strong> — masz wątrobę.', '<strong>Deficyt z jedzeniem</strong> — jedyne trwałe.'],
+        uwaga: 'Głodówki i detoksy potrafią skończyć się napadem objadania — szybki spadek, szybki powrót z nawiązką.',
+        coDalej: 'Zobacz <a href="efekt-jojo-jak-nie-nakarmic">efekt jojo</a> i <a href="deficyt-500-czy-700">deficyt kaloryczny</a>.'
+    },
+    {
+        slug: 'kroki-dziennie-ile-realnie',
+        emoji: '🚶',
+        title: 'Kroki dziennie — ile naprawdę spalasz',
+        subtitle: '10 000 kroków to ~300–400 kcal. To nie trening, ale codzienna baza, która utrzymuje spalanie.',
+        meta: 'Ile kalorii spalają kroki — 10 000 kroków, ile to kcal, czy kroki zastąpią trening i dlaczego NEAT to podstawa redukcji.',
+        category: 'odchudzanie',
+        lead: '10 000 kroków to dla większości ~300–400 kcal. Nie schudniesz od samych spacerów, ale kroki to fundament, bez którego redukcja stoi.',
+        sections: [
+            { h2: 'Ile to kcal', p: 'Zależnie od wagi i tempa: 10 000 kroków to 300–500 kcal. To sporo — tyle co godzina marszu, ale rozbite na cały dzień.' },
+            { h2: 'Czemu to ważne', p: 'NEAT (ruch poza treningiem) to nawet 15–30% dziennego spalania. Mało kroków = wolniejszy metabolizm dnia codziennego.' },
+            { h2: 'Jak dobić', p: 'Spacer do pracy, schody zamiast windy, rozmowa telefoniczna na nogach. Zacznij od 6–8 tys. i zwiększaj.' }
+        ],
+        bullets: ['<strong>10 000 kroków ≈ 300–400 kcal</strong> — baza.', '<strong>NEAT</strong> — większy gracz niż siłownia.', '<strong>Dodawaj po 1000</strong> — stopniowo.'],
+        uwaga: 'Kroki nie zastąpią treningu siłowego, ale trening nie zastąpi kroków — potrzebujesz obu.',
+        coDalej: 'Zobacz <a href="neat-kroki-wiecej-niz-silownia">NEAT więcej niż siłownia</a> i <a href="metabolizm-po-30-mit-czy-fakt">metabolizm po 30.</a>.'
+    },
+    {
+        slug: 'stres-kortyzol-i-brzuch',
+        emoji: '😰',
+        title: 'Stres, kortyzol i brzuch — czy stres tuczy',
+        subtitle: 'Przewlekły stres podnosi kortyzol, a ten sprzyja apetytowi i tłuszczowi na brzuchu. Ale to nie wyrok.',
+        meta: 'Stres a tycie — jak kortyzol wpływa na apetyt i tłuszcz brzuszny, czy stres realnie blokuje odchudzanie i co z tym zrobić.',
+        category: 'odchudzanie',
+        lead: 'Przewlekły stres = stale podniesiony kortyzol = większy apetyt na słodycze i skłonność do magazynowania tłuszczu na brzuchu.',
+        sections: [
+            { h2: 'Jak to działa', p: 'Kortyzol podnosi apetyt i przesuwa magazynowanie tłuszczu w okolice brzucha (tłuszcz wisceralny). Do tego gorszy sen i mniej ruchu.' },
+            { h2: 'Czy to blokuje redukcję', p: 'Nie bezpośrednio — stres nie kasuje praw fizyki. Ale utrudnia: podjadasz, śpisz gorzej, masz mniej sił na trening.' },
+            { h2: 'Co robić', p: 'Sen to najtańszy „anty-stres”. Do tego spacer, siłownia, ograniczenie kofeiny wieczorem. Nie da się wyzerować stresu, ale da się nim zarządzać.' }
+        ],
+        bullets: ['<strong>Sen 7–8 h</strong> — obniża kortyzol.', '<strong>Trening i spacer</strong> — naturalny reset.', '<strong>Nie zajadaj stresu</strong> — przerwij pętlę.'],
+        uwaga: 'Kortyzol to nie „hormon tycia” — to normalna część fizjologii. Problem to przewlekłe napięcie, nie pojedynczy stres.',
+        coDalej: 'Zobacz <a href="sen-6-czy-8-godzin-a-waga">sen a waga</a> i <a href="jedzenie-z-nudow">jedzenie z nudów</a>.'
+    },
 // @@MORE@@
