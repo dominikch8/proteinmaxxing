@@ -1456,4 +1456,55 @@ const defs = [
         uwaga: 'Nie oceniaj postępu po pompie z treningu — zrób zdjęcie rano, po nocy, dopiero to pokazuje prawdę.',
         coDalej: 'Zobacz <a href="progresja-jedyne-co-buduje">progresję</a> i <a href="ile-serii-na-miesien">ile serii na mięsień</a>.'
     },
+    {
+        slug: 'masa-bez-liczenia',
+        emoji: '📊',
+        title: 'Trening na masę bez liczenia — da się?',
+        subtitle: 'Da się, ale wolniej i mniej pewnie. Liczenie to nie obsesja — to precyzja, gdy chcesz realnych efektów.',
+        meta: 'Czy da się budować masę bez liczenia kalorii — jak jeść intuicyjnie na masie, kiedy to działa i kiedy liczenie jest konieczne.',
+        category: 'cwiczenia',
+        lead: 'Bez liczenia możesz budować masę — jeśli jesz do syta i pilnujesz białka. Ale „do syta” u jednych znaczy nadwyżka, u innych deficyt.',
+        sections: [
+            { h2: 'Kiedy działa', p: 'U osób, które naturalnie jedzą dużo i mają stabilną wagę. Dorzucasz porcję białka i kalorii do każdego posiłku — i rośniesz.' },
+            { h2: 'Kiedy nie działa', p: 'U „niejadków” i osób z małym apetytem. Oni bez liczenia jedzą za mało i dziwią się, że masa nie idzie.' },
+            { h2: 'Złoty środek', p: 'Licz tylko białko (i kalorie przez pierwsze 2 tygodnie, żeby skalibrować). Potem intuicja wystarcza, jeśli waga idzie w górę.' }
+        ],
+        bullets: ['<strong>Pilnuj białka</strong> — minimum.', '<strong>Waga w górę?</strong> — działa, nie licz.', '<strong>Waga stoi?</strong> — wróć do liczenia.'],
+        uwaga: 'Nadwyżka „na oko” bywa za mała lub za duża — ważąc się raz w tygodniu, szybko złapiesz właściwy kierunek.',
+        coDalej: 'Zobacz <a href="bulk-brudny-vs-czysty">bulk brudny vs czysty</a> i <a href="budowanie-miesni-minimalny-plan">minimalny plan na masę</a>.'
+    },
+    {
+        slug: 'przerwa-po-kontuzji',
+        emoji: '🩹',
+        title: 'Przerwa po kontuzji — ile mięśni realnie tracisz',
+        subtitle: 'Tracisz mniej, niż myślisz — a siła i masa szybko wracają dzięki pamięci mięśniowej. Nie panikuj.',
+        meta: 'Ile mięśni tracisz po przerwie od treningu — zanik mięśni po 2–4 tygodniach, pamięć mięśniowa i jak bezpiecznie wrócić po kontuzji.',
+        category: 'cwiczenia',
+        lead: 'Po 2–3 tygodniach przerwy mięśnie wyglądają na mniejsze (spadek glikogenu i wody), ale realnej masy tracisz mało. Pamięć mięśniowa odbuduje ją szybko.',
+        sections: [
+            { h2: 'Co się dzieje', p: 'Pierwszy spadek to woda i glikogen, nie mięśnie. Realny zanik zaczyna się po ~3 tygodniach i jest wolny.' },
+            { h2: 'Pamięć mięśniowa', p: 'Komórki mięśniowe, które zbudowałeś, zostają „zapisane”. Po powrocie odbudowujesz siłę i masę dużo szybciej niż za pierwszym razem.' },
+            { h2: 'Jak wracać', p: 'Zacznij od 50–60% dawnych ciężarów, progresuj co tydzień, nie goń za starym poziomem w miesiąc. Kontuzja to sygnał, żeby poprawić technikę.' }
+        ],
+        bullets: ['<strong>Tracisz mało</strong> — to głównie woda.', '<strong>Pamięć mięśniowa</strong> — szybki powrót.', '<strong>Wracaj stopniowo</strong> — 50–60% na start.'],
+        uwaga: 'Powrót za szybko po kontuzji to przepis na jej powtórkę — lepiej wolniej i pewnie niż szybko i znów na przerwie.',
+        coDalej: 'Zobacz <a href="rozgrzewka-5-minut">rozgrzewkę</a> i <a href="regeneracja-miesnie-rosna-poza">regenerację</a>.'
+    },
+    {
+        slug: 'cwiczenia-wielostawowe',
+        emoji: '🏋️',
+        title: 'Ćwiczenia wielostawowe — dlaczego rządzą',
+        subtitle: 'Przysiad, martwy, wyciskanie, wiosłowanie — angażują wiele mięśni naraz. Więcej efektu w mniej czasu.',
+        meta: 'Ćwiczenia wielostawowe — dlaczego to podstawa treningu, które ruchy dają najwięcej i jak ułożyć plan na wielostawowych.',
+        category: 'cwiczenia',
+        lead: 'Wielostawowe ćwiczenia ruszają kilka stawów i grup mięśni naraz. To najwięcej bodźca za minutę treningu — i fundament każdego planu.',
+        sections: [
+            { h2: 'Dlaczego', p: 'Więcej mięśni w ruchu = większe obciążenie = większy bodziec wzrostowy. Do tego realna siła funkcjonalna i spalanie kalorii.' },
+            { h2: 'Które', p: 'Przysiad, martwy ciąg, wyciskanie leżąc, wiosłowanie, podciąganie, wyciskanie nad głowę. To 80% efektu w 6 ruchach.' },
+            { h2: 'Jak ułożyć', p: 'Zacznij trening od wielostawowych (świeży układ nerwowy), a izolowane zostaw na koniec. 2–3 wielostawowe + 1–2 izolowane to dobry szablon.' }
+        ],
+        bullets: ['<strong>Przysiad, martwy, wyciskanie</strong> — baza.', '<strong>Najpierw wielostawowe</strong> — na świeżo.', '<strong>Więcej mięśni = większy efekt</strong> — na minutę.'],
+        uwaga: 'Wielostawowe wymagają lepszej techniki — ucz się ich z małym ciężarem, zanim dokładasz.',
+        coDalej: 'Zobacz <a href="martwy-ciag-czy-niezbedny">martwy ciąg</a> i <a href="trening-w-40-minut">trening w 40 minut</a>.'
+    },
 // @@MORE@@
