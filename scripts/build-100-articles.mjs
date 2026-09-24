@@ -538,4 +538,55 @@ const defs = [
         uwaga: 'Jeśli masz nadciśnienie, ogranicz sód — ale najpierw w gotowcach i przetworzonych, nie w domowej kuchni.',
         coDalej: 'Zobacz <a href="elektrolity-kiedy-woda-za-malo">elektrolity</a> i <a href="konserwa-rybna-bialko-za-grosze">sól w konserwach</a>.'
     },
+    {
+        slug: 'fruktoza-w-owocach',
+        emoji: '🍎',
+        title: 'Cukier w owocach — czy fruktoza tuczy',
+        subtitle: 'Owoc to nie „cukier”. Ma błonnik, wodę i witaminy. Problemem jest fruktoza w syropach, nie w jabłku.',
+        meta: 'Fruktoza w owocach — czy cukier z owoców tuczy, ile owoców dziennie jeść i czym różni się fruktoza z jabłka od syropu glukozowo-fruktozowego.',
+        category: 'odzywianie',
+        lead: 'Owoc to nie to samo co cukier z torebki. Fruktoza w jabłku idzie z błonnikiem i wodą, a ta w napojach — jako czysty zastrzyk. Różnica jest ogromna.',
+        sections: [
+            { h2: 'Fruktoza a glukoza', p: 'Fruktoza jest metabolizowana w wątrobie, nie podnosi cukru tak szybko. Problem zaczyna się, gdy jesz jej nadmiar w syropach i słodyczach.' },
+            { h2: 'Ile owoców', p: '2–3 porcje dziennie (np. jabłko + garść jagód) to zdrowa norma. Owoców nie trzeba się bać — to kalorie, nie trucizna.' },
+            { h2: 'Gdzie jest pułapka', p: 'Syrop glukozowo-fruktozowy w napojach i słodyczach to ukryta fruktoza bez błonnika. To on jest winny, nie owoce.' }
+        ],
+        bullets: ['<strong>2–3 porcje owoców dziennie</strong> — spokojnie.', '<strong>Owoc ≠ sok</strong> — sok traci błonnik.', '<strong>Syrop GF</strong> — to on jest problemem.'],
+        uwaga: 'Soki i smoothie bez błonnika potrafią mieć tyle cukru co cola — owoc jedz, a nie pij.',
+        coDalej: 'Zobacz <a href="indeks-glikemiczny-banan">banan i indeks glikemiczny</a> i <a href="sztuczne-slodziki">sztuczne słodziki</a>.'
+    },
+    {
+        slug: 'sztuczne-slodziki',
+        emoji: '🥤',
+        title: 'Sztuczne słodziki — co mówią badania, a nie fora',
+        subtitle: 'Słodziki nie są rakotwórcze w realnych dawkach. Są narzędziem — nie cudem i nie trucizną.',
+        meta: 'Sztuczne słodziki — czy są bezpieczne, co mówią badania o aspartamie i sukralozie, ile można ich jeść i czy pomagają schudnąć.',
+        category: 'odzywianie',
+        lead: 'Panika wokół aspartamu jest przesadzona — agencje uznają go za bezpieczny w dawkach wielokrotnie wyższych niż realne. Ale słodzik to narzędzie, nie magiczna szczupłość.',
+        sections: [
+            { h2: 'Czy są bezpieczne', p: 'Aspartam, sukraloza, stewia — przy normalnym spożyciu bezpieczne. Limity (ADI) są tak wysokie, że trudno je przekroczyć.' },
+            { h2: 'Czy pomagają chudnąć', p: 'Pomagają, jeśli realnie zastępują słodzone napoje i tną kalorie. Same w sobie nie odchudzają, ale nie tuczą.' },
+            { h2: 'Na co uważać', p: 'Słodki smak może podtrzymywać ochotę na słodycze u niektórych osób. Jeśli po „zero” masz większy apetyt na ciastko — to nie słodzik, to nawyk.' }
+        ],
+        bullets: ['<strong>Bezpieczne w realnych dawkach</strong> — nie panikuj.', '<strong>Zamień colę na zero</strong> — tniesz setki kcal.', '<strong>Obserwuj apetyt</strong> — niektórzy reagują słodyczą na słodycz.'],
+        uwaga: 'Unikaj tylko przy fenyloketonurii (aspartam) — dla reszty osób to kwestia preferencji, nie bezpieczeństwa.',
+        coDalej: 'Zobacz <a href="fruktoza-w-owocach">fruktozę</a> i <a href="plynne-kalorie-sok-to-nie-owoc">płynne kalorie</a>.'
+    },
+    {
+        slug: 'kofeina-ile-kiedy-sen',
+        emoji: '☕',
+        title: 'Kofeina — ile, kiedy i czy psuje sen',
+        subtitle: 'Kofeina działa 5–6 godzin. Kawa o 17 potrafi zepsuć sen o 23 — nawet jeśli „śpisz normalnie”.',
+        meta: 'Kofeina przed treningiem i w ciągu dnia — ile mg to bezpieczna dawka, jak długo działa i o której wypić ostatnią kawę, by nie psuła snu.',
+        category: 'odzywianie',
+        lead: 'Kofeina ma okres półtrwania ~5 h. Kawa o 17 to o 23 wciąż połowa dawki we krwi — sen przychodzi, ale jest płytszy.',
+        sections: [
+            { h2: 'Ile to bezpieczne', p: 'Do 400 mg dziennie (ok. 4 espresso) u zdrowych dorosłych jest OK. Powyżej — nerwowość, kołatanie, gorszy sen.' },
+            { h2: 'Kiedy ostatnia kawa', p: 'Najpóźniej 6–8 h przed snem. Dla większości to ok. 14–15. Wrażliwi na kofeinę powinni kończyć jeszcze wcześniej.' },
+            { h2: 'Kofeina a trening', p: '3–6 mg/kg przed wysiłkiem realnie podnosi wydolność. Efekt słabnie przy codziennym piciu — tolerancja rośnie szybko.' }
+        ],
+        bullets: ['<strong>Do 400 mg/dzień</strong> — bezpieczny sufit.', '<strong>Ostatnia kawa 6–8 h przed snem</strong> — reguła.', '<strong>Przed treningiem</strong> — 3–6 mg/kg działa.'],
+        uwaga: 'Kofeina z przedtreningówek + kawa w ciągu dnia potrafią zsumować się w 600+ mg — licz całość.',
+        coDalej: 'Zobacz <a href="przedtreningowka-czy-wystarczy-kawa">przedtreningówka czy kawa</a> i <a href="sen-6-czy-8-godzin-a-waga">sen a waga</a>.'
+    },
 // @@MORE@@
