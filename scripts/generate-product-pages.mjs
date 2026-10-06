@@ -4,19 +4,9 @@ import { fileURLToPath } from 'url';
 import { buildSiteFooter } from './site-footer-html.mjs';
 import { buildHealthDisclaimer } from './site-legal-html.mjs';
 import {
-    buildCategoryEditorialHtml,
-    productHasRichContent,
-    MIN_EXTRA_FOR_INDEX
-} from './category-editorial.mjs';
-import {
-    generateProductEditorial,
-    generatedEditorialIsRich
-} from './product-editorial-generator.mjs';
-import { polishEditorial, polishGenderInText } from './polish-gender.mjs';
-import {
-    applyProductNameCases,
-    renderEditorialFragment
-} from './polish-cases.mjs';
+    buildProductStats,
+    buildStatsContext
+} from './product-stats.mjs';
 import {
     buildFaviconLinks,
     buildSocialImageMeta,
@@ -63,10 +53,6 @@ function writeFileRetry(fp, content, tries = 10) {
     }
     throw last;
 }
-
-const editorialBySlug = JSON.parse(
-    fs.readFileSync(path.join(__dirname, 'product-editorial.json'), 'utf8')
-);
 
 const retailPath = path.join(__dirname, 'retail-prices-pl.json');
 const retailMeta = fs.existsSync(retailPath)
@@ -425,99 +411,25 @@ function buildSeoLead(p) {
     return `${p.name}: ${p.protein} g białka, ${p.kcal} kcal, ${p.carbs} g węglowodanów i ${p.fat} g tłuszczu na 100 g. Kategoria: ${cat}.`;
 }
 
-function buildEditorialContext(products) {
-    const densityOf = (p) => {
-        const kcal = Number(p.kcal) || 0;
-        const protein = Number(p.protein) || 0;
-        return kcal > 0 && protein > 0 ? (protein / kcal) * 100 : 0;
-    };
-    const rankIn = (sorted, slug) => {
-        const i = sorted.findIndex((x) => x.slug === slug);
-        return i >= 0 ? i + 1 : 0;
-    };
-    const byCat = new Map();
-    for (const p of products) {
-        if (!byCat.has(p.category)) byCat.set(p.category, []);
-        byCat.get(p.category).push(p);
-    }
-    const bySlug = {};
-    const allDensity = [];
-    const allPrice = [];
-    for (const [cat, list] of byCat) {
-        const byProtein = [...list].sort((a, b) => (Number(b.protein) || 0) - (Number(a.protein) || 0));
-        const byDensity = [...list].sort((a, b) => densityOf(b) - densityOf(a));
-        const priced = list.filter((p) => Number(p.pricePer100gProtein) > 0);
-        const byPrice = [...priced].sort(
-            (a, b) => Number(a.pricePer100gProtein) - Number(b.pricePer100gProtein)
-        );
-        for (const p of list) {
-            const d = densityOf(p);
-            if (d > 0) allDensity.push(d);
-            const price = Number(p.pricePer100gProtein) || 0;
-            if (price > 0) allPrice.push(price);
-            bySlug[p.slug] = {
-                cat,
-                catCount: list.length,
-                catLabel: CATEGORY_LABELS[cat] || cat,
-                proteinRank: rankIn(byProtein, p.slug),
-                densityRank: rankIn(byDensity, p.slug),
-                priceRank: price > 0 ? rankIn(byPrice, p.slug) : 0,
-                priceCount: byPrice.length,
-            };
-        }
-    }
-    allDensity.sort((a, b) => a - b);
-    allPrice.sort((a, b) => a - b);
-    const quantile = (arr, q) =>
-        arr.length ? arr[Math.min(arr.length - 1, Math.floor(q * arr.length))] : 0;
-    return {
-        bySlug,
-        densityP50: quantile(allDensity, 0.5),
-        densityP75: quantile(allDensity, 0.75),
-        priceP25: quantile(allPrice, 0.25),
-        priceP75: quantile(allPrice, 0.75),
-    };
-}
+const STAT_ICONS = ['✨', '💡', '⚖️', '📊', '🎯'];
 
-function getProductEditorial(p) {
-    if (editorialBySlug[p.slug]?.paragraphs?.length) {
-        return polishEditorial(editorialBySlug[p.slug], p.name);
-    }
-    return generateProductEditorial(p);
-}
-
-function renderEditorialParagraph(para, productName) {
-    const withCases = applyProductNameCases(para, productName);
-    const withGender = polishGenderInText(withCases, productName);
-    return withGender
-        .split(/(<[^>]+>)/)
-        .map((part) => (part.startsWith('<') ? part : renderEditorialFragment(part, esc)))
-        .join('');
-}
-
-function buildProductGuideSection(p) {
-    const ed = getProductEditorial(p);
-    if (ed?.paragraphs?.length) {
-        const titleHtml = renderEditorialParagraph(ed.title || p.name, p.name);
-        const paras = ed.paragraphs
-            .map((para) => `            <p>${renderEditorialParagraph(para, p.name)}</p>`)
-            .join('\n');
-        return `        <section class="product-guide">
-            <h2>${titleHtml}</h2>
-${paras}
+function buildProductGuideSection(p, statsCtx) {
+    const stats = buildProductStats(p, statsCtx);
+    const items = stats
+        .map(
+            (text, i) =>
+                `                <li><span class="product-stat-icon" aria-hidden="true">${STAT_ICONS[i] || '✨'}</span><span>${esc(text)}</span></li>`
+        )
+        .join('\n');
+    return `        <section class="product-stats" aria-labelledby="product-stats-heading">
+            <h2 id="product-stats-heading">${esc(p.name)} — 5 ciekawych statystyk</h2>
+            <ol class="product-stats-list">
+${items}
+            </ol>
         </section>`;
-    }
-    const extra = (p.extra || '').trim();
-    if (extra.length >= MIN_EXTRA_FOR_INDEX) {
-        return `        <section class="product-guide">
-            <h2>Praktyczne wskazówki</h2>
-            <p>${esc(extra)}</p>
-        </section>`;
-    }
-    return buildCategoryEditorialHtml(p.category, '../');
 }
 
-function buildPage(p, similar = []) {
+function buildPage(p, similar = [], statsCtx) {
     const title = `${p.name} – białko, kalorie, węglowodany, tłuszcz | Proteiner`;
     const desc = `${p.name}: ${p.protein}g białka, ${p.kcal} kcal, ${p.carbs}g węglowodanów, ${p.fat}g tłuszczu na 100g. Zdrowe odżywianie, proteiny, odchudzanie – makro i mikro na Proteiner.`;
     const canonical = `https://proteiner.pl/produkty/${p.slug}`;
@@ -547,7 +459,7 @@ function buildPage(p, similar = []) {
         ? `<div class="extra-box"><strong>Uwaga:</strong> ${esc(p.note)}</div>`
         : '';
 
-    const indexable = productHasRichContent(p, editorialBySlug) || generatedEditorialIsRich(p);
+    const indexable = true;
     const robotsMeta = indexable ? 'index, follow' : 'noindex, follow';
 
     const hasLocalImg = hasWebp || hasPng || hasJpg;
@@ -685,7 +597,7 @@ ${buildCookieConsentBody('../')}
 ${buildMicrosSectionHtml(p)}
         </article>
 
-${buildProductGuideSection(p)}
+${buildProductGuideSection(p, statsCtx)}
 ${buildSimilarProductsSection(p, similar)}
 
 ${buildHealthDisclaimer('../', { compact: true })}
@@ -720,16 +632,19 @@ const outDir = path.join(root, 'produkty');
 fs.mkdirSync(outDir, { recursive: true });
 fs.mkdirSync(path.join(root, 'images', 'products'), { recursive: true });
 
-const editorialCtx = buildEditorialContext(products);
-for (const p of products) p._editorialCtx = editorialCtx;
+for (const p of products) {
+    p._foodPrice = estimateFoodPricePer100g(p);
+    p._proteinPrice = estimateProteinPricePer100g(p);
+}
+const statsCtx = buildStatsContext(products);
 
 let written = 0;
 let indexedCount = 0;
 for (const p of products) {
     const similar = getSimilarProducts(p, products);
-    writeFileRetry(path.join(outDir, `${p.slug}.html`), buildPage(p, similar));
+    writeFileRetry(path.join(outDir, `${p.slug}.html`), buildPage(p, similar, statsCtx));
     written++;
-    if (productHasRichContent(p, editorialBySlug) || generatedEditorialIsRich(p)) indexedCount++;
+    indexedCount++;
 }
 
 generateCategoryPages(products);
@@ -782,7 +697,6 @@ const categorySitemapUrls = CATEGORY_ORDER.map(
 const staticSitemapUrls = STATIC_SITEMAP_ENTRIES.map(sitemapUrlEntry);
 
 const sitemapUrls = products
-    .filter((p) => productHasRichContent(p, editorialBySlug) || generatedEditorialIsRich(p))
     .map(
     (p) => `  <url>\n    <loc>https://proteiner.pl/produkty/${p.slug}</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`
 );

@@ -720,6 +720,47 @@ a.product-category:hover {
     font-weight: 650;
 }
 
+/* Sekcja „5 ciekawych statystyk" na stronie produktu */
+.product-stats {
+    margin-top: 28px;
+    padding: 22px 24px;
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+.product-stats h2 {
+    font-size: 1.1rem;
+    color: var(--primary-dark);
+    margin: 0 0 14px;
+}
+
+.product-stats-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-stats-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 14px;
+    background: var(--surface-muted);
+    border-radius: 12px;
+}
+
+.product-stat-icon {
+    flex: 0 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.4;
+}
+
 .seo-block h2 {
     font-size: 1.1rem;
     color: var(--primary-dark);
