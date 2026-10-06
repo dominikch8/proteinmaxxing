@@ -538,3 +538,4 @@
 
     boot().catch((err) => console.error('meal-calculator:', err));
 })();
+// deploy retry 2026-09-23

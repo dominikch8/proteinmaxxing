@@ -2577,7 +2577,11 @@
                 link.className = 'poradnik-hub-tile';
                 link.href = a.url || ('artykul/' + encodeURIComponent(a.slug));
                 link.setAttribute('role', 'listitem');
+                const created = String(a.createdAt || '').slice(0, 10);
+                if (created) link.setAttribute('data-date', created);
+                const createdPl = created ? created.split('-').reverse().join('.') : '';
                 link.innerHTML =
+                    (createdPl ? '<span class="poradnik-hub-tile-date">' + createdPl + '</span>' : '') +
                     '<span class="poradnik-hub-tile-emoji" aria-hidden="true">' +
                     (a.emoji || '📝') +
                     '</span>' +
@@ -2605,6 +2609,8 @@
         const list = document.getElementById('artykulyList');
         if (!list) return;
         const items = Array.from(list.querySelectorAll('.poradnik-hub-tile'));
+        // Sortuj od najnowszych (data powstania artykułu z data-date).
+        items.sort((a, b) => String(b.getAttribute('data-date') || '').localeCompare(String(a.getAttribute('data-date') || '')));
         const countEl = document.getElementById('articlesCatCount');
         if (countEl) countEl.textContent = String(items.length);
         const perPage = 16;

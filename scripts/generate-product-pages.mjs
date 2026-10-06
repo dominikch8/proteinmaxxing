@@ -425,6 +425,60 @@ function buildSeoLead(p) {
     return `${p.name}: ${p.protein} g białka, ${p.kcal} kcal, ${p.carbs} g węglowodanów i ${p.fat} g tłuszczu na 100 g. Kategoria: ${cat}.`;
 }
 
+function buildEditorialContext(products) {
+    const densityOf = (p) => {
+        const kcal = Number(p.kcal) || 0;
+        const protein = Number(p.protein) || 0;
+        return kcal > 0 && protein > 0 ? (protein / kcal) * 100 : 0;
+    };
+    const rankIn = (sorted, slug) => {
+        const i = sorted.findIndex((x) => x.slug === slug);
+        return i >= 0 ? i + 1 : 0;
+    };
+    const byCat = new Map();
+    for (const p of products) {
+        if (!byCat.has(p.category)) byCat.set(p.category, []);
+        byCat.get(p.category).push(p);
+    }
+    const bySlug = {};
+    const allDensity = [];
+    const allPrice = [];
+    for (const [cat, list] of byCat) {
+        const byProtein = [...list].sort((a, b) => (Number(b.protein) || 0) - (Number(a.protein) || 0));
+        const byDensity = [...list].sort((a, b) => densityOf(b) - densityOf(a));
+        const priced = list.filter((p) => Number(p.pricePer100gProtein) > 0);
+        const byPrice = [...priced].sort(
+            (a, b) => Number(a.pricePer100gProtein) - Number(b.pricePer100gProtein)
+        );
+        for (const p of list) {
+            const d = densityOf(p);
+            if (d > 0) allDensity.push(d);
+            const price = Number(p.pricePer100gProtein) || 0;
+            if (price > 0) allPrice.push(price);
+            bySlug[p.slug] = {
+                cat,
+                catCount: list.length,
+                catLabel: CATEGORY_LABELS[cat] || cat,
+                proteinRank: rankIn(byProtein, p.slug),
+                densityRank: rankIn(byDensity, p.slug),
+                priceRank: price > 0 ? rankIn(byPrice, p.slug) : 0,
+                priceCount: byPrice.length,
+            };
+        }
+    }
+    allDensity.sort((a, b) => a - b);
+    allPrice.sort((a, b) => a - b);
+    const quantile = (arr, q) =>
+        arr.length ? arr[Math.min(arr.length - 1, Math.floor(q * arr.length))] : 0;
+    return {
+        bySlug,
+        densityP50: quantile(allDensity, 0.5),
+        densityP75: quantile(allDensity, 0.75),
+        priceP25: quantile(allPrice, 0.25),
+        priceP75: quantile(allPrice, 0.75),
+    };
+}
+
 function getProductEditorial(p) {
     if (editorialBySlug[p.slug]?.paragraphs?.length) {
         return polishEditorial(editorialBySlug[p.slug], p.name);
@@ -665,6 +719,9 @@ function generateCategoryPages(allProducts) {
 const outDir = path.join(root, 'produkty');
 fs.mkdirSync(outDir, { recursive: true });
 fs.mkdirSync(path.join(root, 'images', 'products'), { recursive: true });
+
+const editorialCtx = buildEditorialContext(products);
+for (const p of products) p._editorialCtx = editorialCtx;
 
 let written = 0;
 let indexedCount = 0;
