@@ -114,3 +114,14 @@ function pmx_logout_user(): void
     }
     session_destroy();
 }
+
+function pmx_public_comment(array $row): array
+{
+    return [
+        'id' => (int) $row['id'],
+        'author' => (string) $row['author_name'],
+        'body' => (string) $row['body'],
+        'createdAt' => (string) $row['created_at'],
+        'isOwner' => false,
+    ];
+}

@@ -493,6 +493,7 @@ ${buildAdSenseHead()}
 ${headAssets}
 ${buildFontLinks('../')}
 ${buildThemeStylesheets('../', { productPage: true })}
+    <link rel="stylesheet" href="../css/comments.css">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -601,10 +602,13 @@ ${buildProductGuideSection(p, statsCtx)}
 ${buildSimilarProductsSection(p, similar)}
 
 ${buildHealthDisclaimer('../', { compact: true })}
+
+    <div id="comments" class="comments" data-entity-type="product" data-entity-slug="${p.slug}"></div>
     </main>
 
 ${buildSiteFooter('../')}
 ${buildThemeBodyScript('../')}
+    <script src="../js/comments.js"></script>
 </body>
 </html>`;
 }

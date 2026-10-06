@@ -60,6 +60,20 @@ function pmx_db(array $config): PDO
             updated_at TEXT NOT NULL
         )'
     );
+    $pdo->exec(
+        'CREATE TABLE IF NOT EXISTS comments (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            entity_type TEXT NOT NULL,
+            entity_slug TEXT NOT NULL,
+            user_id INTEGER,
+            author_name TEXT NOT NULL,
+            author_email TEXT NOT NULL DEFAULT \'\',
+            body TEXT NOT NULL,
+            is_approved INTEGER NOT NULL DEFAULT 1,
+            created_at TEXT NOT NULL
+        )'
+    );
+    $pdo->exec('CREATE INDEX IF NOT EXISTS idx_comments_entity ON comments (entity_type, entity_slug)');
 
     pmx_bootstrap_admin($pdo, $config);
     pmx_sync_admin_emails($pdo, $config);

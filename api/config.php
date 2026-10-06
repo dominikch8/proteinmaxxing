@@ -12,11 +12,11 @@ $default = [
         'bambolejo8888@seznam.cz',
     ],
     // Tworzone przy pierwszym starcie API, jeśli konto jeszcze nie istnieje.
+    // Hasło NIE jest tu przechowywane — ustaw je w api/config.local.php (gitignored).
     'bootstrap_admin' => [
         'email' => 'developeranios@gmail.com',
         'name' => 'Admin Proteiner',
-        // Zmień po pierwszym logowaniu (to samo hasło co dawny PIN panelu).
-        'password' => 'Bencwal181',
+        'password' => '',
     ],
 ];
 
