@@ -260,7 +260,10 @@
 
 .home-section > .home-section-head,
 .home-section > .home-articles,
-.home-section > .home-picks-grid {
+.home-section > .home-picks-grid,
+.home-section > .home-about-body,
+.home-section > .home-stats,
+.home-section > .home-faq-item {
     max-width: var(--site-content-max, 1180px);
     margin-left: auto;
     margin-right: auto;
@@ -444,11 +447,10 @@
 .home-path-list {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0;
+    gap: 16px;
     list-style: none;
     margin: 0;
     padding: 0;
-    border-top: 1px solid var(--home-line);
 }
 
 @media (max-width: 800px) {
@@ -457,18 +459,22 @@
     }
 }
 
+/* Karty oddzielone kolorem — każda ma własne tło i obwódkę */
 .home-path-list li {
-    border-bottom: 1px solid var(--home-line);
+    border: 1px solid color-mix(in srgb, var(--primary) 34%, var(--border));
+    border-radius: 16px;
+    background: color-mix(in srgb, var(--primary) 12%, var(--surface));
+    transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-@media (min-width: 801px) {
-    .home-path-list li {
-        border-right: 1px solid var(--home-line);
-        border-bottom: 1px solid var(--home-line);
-    }
-    .home-path-list li:last-child {
-        border-right: none;
-    }
+.home-path-list li:nth-child(2) {
+    border-color: color-mix(in srgb, #2563eb 34%, var(--border));
+    background: color-mix(in srgb, #2563eb 12%, var(--surface));
+}
+
+.home-path-list li:nth-child(3) {
+    border-color: color-mix(in srgb, #0d9488 36%, var(--border));
+    background: color-mix(in srgb, #0d9488 12%, var(--surface));
 }
 
 .home-path-link {
@@ -602,11 +608,9 @@
 }
 
 /* --- Strona główna: „Czym jest Proteiner?", statystyki, FAQ --- */
-.home-about-body {
-    max-width: 74ch;
-}
 .home-about-body p {
     margin: 0 0 0.9rem;
+    max-width: 74ch;
     line-height: 1.7;
     color: var(--text-muted);
 }
