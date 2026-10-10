@@ -22,6 +22,7 @@ const FILES = [
     'js/theme.js',
     'js/auth-ui.js',
     'js/site-motion.js',
+    'js/consent-head.js',
     'js/cookie-banner.js',
     'js/info-tiles.js',
     'js/home.js',

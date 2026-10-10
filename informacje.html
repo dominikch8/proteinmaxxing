@@ -2,10 +2,10 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <script src="js/theme-init.js?v=20260914navfix"></script>
+    <script src="js/theme-init.js?v=20260921consentfix"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="js/consent-head.js"></script>
+    <script src="js/consent-head.js?v=20260921consentfix"></script>
 <meta name="google-adsense-account" content="ca-pub-8540801395510703">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8540801395510703"
         crossorigin="anonymous"></script>
@@ -33,11 +33,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Encode+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/themes.css?v=20260914navfix">
-    <link rel="stylesheet" href="css/site.css?v=20260914navfix">
-    <link rel="stylesheet" href="css/theme-switch.css?v=20260914navfix">
-    <link rel="stylesheet" href="css/site-motion.css?v=20260914navfix">
-    <link rel="stylesheet" href="css/brand-text.css?v=20260914navfix">
+        <link rel="stylesheet" href="css/themes.css?v=20260921consentfix">
+    <link rel="stylesheet" href="css/site.css?v=20260921consentfix">
+    <link rel="stylesheet" href="css/theme-switch.css?v=20260921consentfix">
+    <link rel="stylesheet" href="css/site-motion.css?v=20260921consentfix">
+    <link rel="stylesheet" href="css/brand-text.css?v=20260921consentfix">
     </head>
 <body>
 <header class="site-header">
@@ -119,9 +119,9 @@
                     </ul>
                     <p>Więcej informacji na temat tego, jak Google wykorzystuje dane, znajdziesz w <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Polityce prywatności</a> i <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">warunkach korzystania z usług Google</a>.</p>
 
-                    <h3>3. Pliki cookies i zgoda (UE / RODO)</h3>
-                    <p>Przy pierwszej wizycie wyświetlamy baner zgody na pliki cookie. Możesz <strong>zaakceptować</strong> reklamy Google (w tym spersonalizowane) lub <strong>odrzucić wszystkie</strong> jednym kliknięciem — bez dodatkowych kroków; po odrzuceniu reklamy mogą być mniej dopasowane, ale nadal mogą się wyświetlać. Wybór zapisujemy w przeglądarce (localStorage, klucz <code>pm_cookie_consent</code>) i stosujemy <strong>Google Consent Mode v2</strong> przed załadowaniem skryptu AdSense.</p>
-                    <p>Strona może używać plików cookie technicznych oraz cookie dostawców reklam (np. Google). Są to pliki tekstowe przechowywane na urządzeniu użytkownika. Aby zmienić wybór, wyczyść dane witryny w przeglądarce lub usuń zapisany wybór zgody — baner pojawi się ponownie.</p>
+                    <h3 id="cookies">3. Pliki cookies i zgoda (UE / RODO)</h3>
+                    <p>Przy pierwszej wizycie wyświetlamy baner zgody na pliki cookie. Zgoda jest <strong>domyślnie odmówiona</strong> — do momentu Twojej decyzji nie włączamy reklam personalizowanych ani analityki. Możesz <strong>zaakceptować</strong> reklamy Google (w tym spersonalizowane) lub <strong>odrzucić wszystkie</strong> jednym kliknięciem — bez dodatkowych kroków; po odrzuceniu reklamy mogą być mniej dopasowane, ale nadal mogą się wyświetlać. Wybór zapisujemy w przeglądarce (localStorage, klucz <code>pm_cookie_consent</code>) i stosujemy <strong>Google Consent Mode v2</strong> przed załadowaniem skryptu AdSense.</p>
+                    <p>Zgodę możesz w każdej chwili <strong>zmienić lub wycofać</strong>, klikając <a href="#cookies" data-pm-cookie-settings>Ustawienia cookies</a> (link w stopce każdej strony) — baner pojawi się ponownie. Zapisany wybór wygasa po 180 dniach, po czym pytamy ponownie. Możesz też po prostu wyczyścić dane witryny w przeglądarce.</p>
 
                     <h3>4. Twoje prawa (RODO)</h3>
                     <p>Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia („prawo do bycia zapomnianym”), ograniczenia przetwarzania, przenoszenia danych oraz wniesienia sprzeciwu wobec przetwarzania. Masz też prawo wnieść skargę do organu nadzorczego (w Polsce: Prezes Urzędu Ochrony Danych Osobowych).</p>
@@ -178,13 +178,15 @@
             <a href="artykuly">Artykuły</a>
             <span aria-hidden="true">·</span>
             <a href="fun-fakty">Fun fakty</a>
+            <span aria-hidden="true">·</span>
+            <a href="informacje" data-pm-cookie-settings>Ustawienia cookies</a>
         </nav>
         <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>
-<script src="js/auth-ui.js?v=20260914navfix"></script>
-    <link rel="stylesheet" href="css/cookie-consent.css?v=20260914navfix">
-    <script src="js/cookie-banner.js?v=20260914navfix"></script>
-<script src="js/theme.js?v=20260914navfix"></script>
-<script src="js/site-motion.js?v=20260914navfix"></script>
+<script src="js/auth-ui.js?v=20260921consentfix"></script>
+    <link rel="stylesheet" href="css/cookie-consent.css?v=20260921consentfix">
+    <script src="js/cookie-banner.js?v=20260921consentfix"></script>
+<script src="js/theme.js?v=20260921consentfix"></script>
+<script src="js/site-motion.js?v=20260921consentfix"></script>
 </body>
 </html>

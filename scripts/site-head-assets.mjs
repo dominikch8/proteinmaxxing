@@ -5,7 +5,7 @@
 
 const SITE = 'https://proteiner.pl';
 /** Bump when shipping CSS/JS changes (long browser cache + immutable). */
-export const ASSET_V = '20260914navfix';
+export const ASSET_V = '20260921consentfix';
 
 function asset(prefix, path) {
     return `${prefix}${path}?v=${ASSET_V}`;
@@ -65,7 +65,7 @@ export function buildThemeInitScript(prefix = '') {
 
 /** Google Consent Mode v2 — przed AdSense. */
 export function buildConsentHeadScript(prefix = '') {
-    return `    <script src="${prefix}js/consent-head.js"></script>`;
+    return `    <script src="${asset(prefix, 'js/consent-head.js')}"></script>`;
 }
 
 /** Google AdSense — meta + loader script (after viewport). */

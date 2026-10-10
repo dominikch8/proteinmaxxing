@@ -18,6 +18,8 @@ export function buildSiteFooter(prefix = '') {
             <a href="${prefix}poradnik-zywienia">Poradnik</a>
             <span aria-hidden="true">·</span>
             <a href="${prefix}artykuly">Artykuły</a>
+            <span aria-hidden="true">·</span>
+            <a href="${prefix}informacje" data-pm-cookie-settings>Ustawienia cookies</a>
         </nav>
         <p class="site-footer-copy">&copy; 2026 Wszelkie prawa zastrzeżone.</p>
     </footer>`;
